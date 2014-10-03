@@ -1,0 +1,41 @@
+Description: Use Ubuntu system help instead of GNOME's
+Forwarded: Not needed
+Index: vino-3.8.1/server/vino-status-icon.c
+===================================================================
+--- vino-3.8.1.orig/server/vino-status-icon.c	2013-11-18 15:14:13.574555625 +0100
++++ vino-3.8.1/server/vino-status-icon.c	2013-11-18 15:14:13.566555625 +0100
+@@ -223,7 +223,7 @@
+ 
+   screen = gtk_status_icon_get_screen (GTK_STATUS_ICON (icon));
+   if (!gtk_show_uri (screen,
+-		     "help:gnome-help/sharing-desktop",
++		     "help:ubuntu-help/sharing-desktop",
+ 		     GDK_CURRENT_TIME,
+ 		     &error))
+     {
+Index: vino-3.8.1/server/vino-status-tube-icon.c
+===================================================================
+--- vino-3.8.1.orig/server/vino-status-tube-icon.c	2013-11-18 15:14:13.574555625 +0100
++++ vino-3.8.1/server/vino-status-tube-icon.c	2013-11-18 15:14:13.570555625 +0100
+@@ -186,7 +186,7 @@
+   GError    *error = NULL;
+ 
+   screen = gtk_status_icon_get_screen (GTK_STATUS_ICON (icon));
+-  if (!gtk_show_uri (screen, "help:gnome-help/sharing-desktop",
++  if (!gtk_show_uri (screen, "help:ubuntu-help/sharing-desktop",
+       GDK_CURRENT_TIME, &error))
+     {
+       vino_util_show_error (_("Error displaying help"), error->message, NULL);
+Index: vino-3.8.1/capplet/vino-preferences.c
+===================================================================
+--- vino-3.8.1.orig/capplet/vino-preferences.c	2013-11-18 15:14:13.574555625 +0100
++++ vino-3.8.1/capplet/vino-preferences.c	2013-11-18 15:14:27.000000000 +0100
+@@ -232,7 +232,7 @@
+     case GTK_RESPONSE_HELP:
+       screen = gtk_widget_get_screen (widget);
+ 
+-      if (!gtk_show_uri (screen, "help:gnome-help/sharing-desktop",
++      if (!gtk_show_uri (screen, "help:ubuntu-help/sharing-desktop",
+                          GDK_CURRENT_TIME, &error))
+         {
+           GtkWidget *message_dialog;

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-tools-html-export" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="addins#tools"/>
+    <desc>Exportar notas a HTML.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-16" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Exportar a HTML</title>
+
+  <p>Puede exportar notas individuales de <app>Tomboy</app> a páginas HTML usando el complemento <gui>Exportar a HTML</gui>. Este complemento está activado de manera predeterminada.</p>
+
+  <steps>
+    <title>Para exportar una nota a HTML:</title>
+    <item>
+      <p>Desde el icono de la rueda dentada en la barra de herramientas de la nota, seleccione <gui style="menuitem">Exportar a HTML</gui>.</p>
+    </item>
+    <item>
+      <p>Examine y selecciona la carpeta en la que quiere guardar la nota. Puede cambiar el nombre del archivo HTML, si quiere que sea diferente del nombre de la nota.</p>
+    </item>
+    <item>
+      <p>Pulse <gui style="button">Guardar</gui>.</p>
+    </item>
+  </steps>
+
+   <p>La nota se guardará como un archivo HTML y se abrirá con su navegador web predeterminado.</p>
+
+</page>

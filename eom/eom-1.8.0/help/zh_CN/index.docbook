@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "February 2007">
+<!ENTITY app "<application>Image Viewer</application>">
+<!ENTITY appname "Image Viewer">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh-CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>图像查看器手册</title>
+    
+    <copyright lang="en"> 
+      <year>2006</year> 
+      <year>2007</year>
+      <holder>MATE Documentation Project</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2002</year> 
+      <year>2003</year> 
+      <year>2004</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>Eliot Landrum</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>The Free Software Foundation</holder> 
+    </copyright>	 
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>MATE 文档项目</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+         <para>对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本， 该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="help:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+          <para>本手册是在 GFDL 许可之下分发的 MATE 手册集合的一部分。如果想要 单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的 第 6 部分所述。</para>
+ 
+         <para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 MATE 文档以及 MATE 文档项目的成员中，这些名称都 是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+ 
+         <para lang="en">
+           DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+           UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+           WITH THE FURTHER UNDERSTANDING THAT:
+ 
+           <orderedlist>
+                 <listitem>
+                   <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                     WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                     IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                     THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                     A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                     RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                     OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                     MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                     YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                     CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                     SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                     OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                     LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                     VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                     EXCEPT UNDER THIS DISCLAIMER; AND
+                   </para>
+                 </listitem>
+                 <listitem>
+                   <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                        THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                        CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                        INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                        DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                        OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                        PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                        DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                        CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                        INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                        OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                        MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                        LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                        DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                        EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                        THE POSSIBILITY OF SUCH DAMAGES.
+                   </para>
+                 </listitem>
+           </orderedlist>
+         </para>
+   </legalnotice>
+ 
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+   <authorgroup>
+   <author lang="en"> 
+	<firstname>Jens</firstname> 
+	<surname>Finke</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Angela</firstname> 
+	<surname>Boyle</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Stuart</firstname> 
+	<surname>Ellis</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Sun</firstname> 
+	<surname>MATE Documentation Team</surname> 
+	<affiliation> 
+	  <orgname>Sun Microsystems</orgname>  
+	</affiliation> 
+   </author> 
+   <author lang="en"> 
+	<firstname>Eliot</firstname> 
+	<surname>Landrum</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+   </author> 
+   <author lang="en"> 
+	<firstname>Federico</firstname> 
+	<surname>Mena Quintero</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+   </author>	
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <email>translator@gnome.org</email> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+ 
+    <revhistory>
+    <revision lang="en"> 
+		<revnumber>Image Viewer Manual V2.8</revnumber> 
+		<date>February 2007</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">MATE Documentation Project</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en">
+		<revnumber>Image Viewer Manual V2.7</revnumber>
+		<date>February 2004</date>
+		<revdescription>
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription>
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.6</revnumber> 
+		<date>November 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.5</revnumber> 
+		<date>September 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.4</revnumber> 
+		<date>January 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.3</revnumber> 
+		<date>October 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.2</revnumber> 
+		<date>August 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.1</revnumber> 
+		<date>July 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.0</revnumber> 
+		<date>May 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en"> 
+		<revnumber>Eye of MATE User's Guide</revnumber> 
+		<date>2000</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Eliot Landrum 
+	    		  <email>eliot@landrum.cx</email>
+	  		</para>
+	  		<para role="author" lang="en">Federico Mena Quintero 
+	    		  <email>federico@gnu.org</email>
+	  		</para>	  
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+    <releaseinfo>本手册介绍MATE 之眼 图像查看器 2.18 版。</releaseinfo> 
+    <legalnotice> 
+      <title>反馈</title> 
+      <para>要报告关于 MATE 之眼 应用程序或本手册的错误或提出建议，请遵循 <ulink url="help:mate-feedback" type="help">MATE 反馈页</ulink>中的指导。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+    <abstract role="description">
+      <para>可以通过以下方式启动 <application>MATE 之眼图像查看器</application>：</para>
+    </abstract>
+
+  </articleinfo> 
+
+  <indexterm lang="en">
+    <primary>Eye of MATE</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+<sect1 id="eom-introduction">
+  <title>简介</title>
+  <para><application>MATE 之眼 图像查看器</application> 应用程序使您可以查看单个或多个图像文件。 </para>
+
+  <sect2 id="eom-tostartapp">
+    <title>启动图像查看器</title>
+    <para>可以通过以下方式启动 <application>图像查看器</application>：</para>
+    <itemizedlist>
+      <listitem>
+        <para>从<application>文档管理器</application>中打开图片</para>
+      </listitem>
+      <listitem>
+	<para lang="en">Choose <menuchoice><guimenu>Graphics</guimenu>
+	<guimenuitem>Image Viewer</guimenuitem></menuchoice>
+	from the <guimenu>Applications</guimenu> menu.</para>
+      </listitem>
+      <listitem>
+	<para>在如<application>mate-terminal</application>的终端或者<application>运行程序</application>对话框中运行命令<command>eom</command></para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
+
+  <sect2 id="eom-closeapp">
+    <title>退出图像查看器</title>
+    <para lang="en">To close the current <application>Image Viewer</application> window choose <menuchoice><guimenu>File</guimenu>
+    <guimenuitem>Close</guimenuitem></menuchoice>, or press
+    <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>.</para>
+  </sect2>
+
+  <sect2 id="eom-filetypes">
+    <title>支持的文件格式</title>
+    <para><application>图像查看器</application>支持一系列图像格式。下列格式的图像均可打开：</para>
+		<itemizedlist>
+			<listitem><para>ANI - 动画</para>
+			</listitem>
+			<listitem><para>BMP - Windows 位图</para>
+			</listitem>
+			<listitem><para>GIF - 可交换的图形格式</para>
+			</listitem>
+			<listitem><para>ICO - Windows 图标</para>
+			</listitem>
+			<listitem><para>JPEG - 联合图像专家组</para>
+			</listitem>
+			<listitem><para>PCX - PC Paintbrush</para>
+			</listitem>
+			<listitem><para>PNG - 可移植网络图像</para>
+			</listitem>
+			<listitem><para>PNM - PPM 工具包的可移植 Anymap 格式</para>
+			</listitem>
+			<listitem><para>RAS - Sun 光栅</para>
+			</listitem>
+			<listitem><para>SVG - 可缩放的矢量图形</para>
+			</listitem>
+			<listitem><para>TGA - Targa</para>
+			</listitem>
+			<listitem><para>TIFF - 标记图像文件格式</para>
+			</listitem>
+			<listitem><para>WBMP - 无线网络位图</para>
+			</listitem>
+			<listitem><para>XBM - X 位图</para>
+			</listitem>
+			<listitem><para>XPM - X 像素图</para>
+			</listitem>
+		</itemizedlist>
+
+  <para><application>图像查看器</application> 支持将图像保存为下列格式:</para>
+		<itemizedlist>
+			<listitem><para>BMP - Windows 位图</para>
+			</listitem>
+			<listitem><para>ICO - Windows 图标</para>
+			</listitem>
+			<listitem><para>JPEG - 联合图像专家组</para>
+			</listitem>
+			<listitem><para>PNG - 可移植网络图像</para>
+			</listitem>
+		</itemizedlist>
+		<para>根据你的系统设置和其它安装的软件，<application>图像查看器</application>也可以打开或保存其它图像格式。</para>
+  </sect2>
+
+  <sect2 id="eom-features">
+    <title>图像查看器的功能</title>
+    <para><application>图像查看器</application>有许多功能有助于你查看图像. 你可以放大、缩小图像或全屏查看图像。不论图像缩放程度如何，<application>图像查看器</application> 只占用很少量的内存。你还可以旋转/翻转查看的图像。</para>
+
+    <para>画廊模式可以对图像批量查看、编辑。在该视图中对图像的操作可以一次性对所有选中的图像生效。</para>
+
+    <para><application>图像查看器</application> 有对数码照片的特殊支持，并可以显示数码照片的 EXIF 元数据信息。该功能要求系统中已安装 <systemitem class="library">libexif</systemitem>。对JEPG图片进行的所有操作都是无损的。 也就是说，旋转、翻转 JPEG 图片不会降低质量。此外，所有可用的图像元数据(如 EXIF )都会保存并更新。</para>
+  </sect2>
+</sect1>
+
+<!--============== When You Start ===========-->
+<sect1 id="eom-whenyoustart">
+  <title>入门</title>
+  <para>在启动 <application>MATE 之眼</application> 之后，会显示下面的窗口。</para>
+  <figure id="mainwindow-fig">
+		<title>图像查看器启动窗口</title>
+		<screenshot>
+		  <mediaobject lang="en">
+		    <imageobject>
+		      <imagedata fileref="figures/eom_start_window.png" format="PNG"/>
+		    </imageobject>
+		    <textobject>
+		      <phrase>Shows <application>Image Viewer</application> main window. Contains titlebar, menubar, toolbar, and display area. Menubar contains File, Edit, View, and Help menus.</phrase>
+		    </textobject>
+		  </mediaobject>
+		</screenshot>
+  </figure>
+  <para><application>图像查看器</application> 窗口包括下列元件：</para>
+  <variablelist>
+	<varlistentry>
+  	  <term>菜单栏</term>
+ 	  <listitem>
+	    <para>菜单栏的各个菜单选项包含了所有你需要在<application>图像查看器</application>中对图片操作的命令</para>
+	  </listitem>
+ 	</varlistentry>
+	<varlistentry>
+	  <term>工具栏</term>
+	  <listitem>
+	    <para>工具栏包含了菜单栏中的一部分工具。要显示或隐藏工具栏，请选择<menuchoice><guimenu>查看</guimenu><guimenuitem>工具栏</guimenuitem></menuchoice>。</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>显示区</term>
+	  <listitem>
+ 	    <para>显示区用于显示图像</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>状态栏</term>
+	  <listitem>
+	    <para>状态栏提供了图像的信息。要显示或隐藏状态栏，请选择<menuchoice><guimenu>查看</guimenu><guimenuitem>状态栏</guimenuitem></menuchoice>。</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>画廊</term>
+	  <listitem>
+	    <para>画廊能显示当前工作目录下所有支持的图像。当打开一张图片时“画廊”栏即出现。要显示或隐藏画廊，单击菜单 <menuchoice><guimenu>查看</guimenu><guimenuitem>画廊</guimenuitem></menuchoice> 或按下 <keycap>F9</keycap>键即可。</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>图像信息面板</term>
+	  <listitem>
+	    <para>图像信息面板提供了当前显示的图像的详细信息，例如数码照片的 EXIF 信息（如果能获得的话）。当一张图片被打开时图像信息面板即出现。要显示或隐藏图像信息面板，选择菜单<menuchoice><guimenu>查看</guimenu><guimenuitem>图像信息</guimenuitem></menuchoice> 或按下 <keycombo><keycap>Ctrl</keycap><keycap>I</keycap></keycombo> 组合键。</para>
+	  </listitem>
+	</varlistentry>
+  </variablelist>
+  <para><application>图像查看器</application>中的许多操作可以有多种方法。例如，你可以用下面的方式打开一个图像文件：</para>
+  <itemizedlist>
+    <listitem><para>把一张图从其他程序或窗口拖拽到<application>图像查看器</application>窗口。</para></listitem>
+    <listitem><para>在文件管理器或其他应用程序中双击图片文件。</para></listitem>
+    <listitem><para lang="en">Choose <menuchoice><guimenu>File</guimenu>
+    <guimenuitem>Open</guimenuitem></menuchoice> and select an image file
+    in the <application>Load Image</application> dialog.</para></listitem>
+    <listitem><para lang="en">Press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap>
+    </keycombo> and select an image file in the <application>Load
+    Image</application> dialog.</para></listitem>
+  </itemizedlist>
+</sect1>
+
+
+<!-- ============= Viewing Images ============================== -->
+<sect1 id="eom-view">
+	<title>查看图像</title>
+
+	<!--=========== To Open an Image ============================= -->
+	<sect2 id="eom-open-image">
+		<title>打开图像</title>
+                <para>要打开一张图片，请按如下步骤操作：</para>
+                <orderedlist>
+                  <listitem>
+                    <para lang="en">
+                      Choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice>, or press <keycombo> <keycap>Ctrl</keycap><keycap>O</keycap> </keycombo>.  </para>
+                  </listitem>
+                  <listitem>
+                    <para>在<guilabel>装入图像</guilabel>对话框中，选择你要打开的图像文件名称。</para>
+                  </listitem>
+                  <listitem>
+                    <para>单击 <guibutton>打开</guibutton>按钮。<application>图像查看器</application> 即在窗口标题栏中显示图像文件的名称。</para>
+                  </listitem>
+                </orderedlist>
+                <para lang="en"> 
+	          To open another image, choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice> again. <application>Image Viewer</application> opens each image in a new window.
+                </para>
+	</sect2>
+
+	<!--=========== To View the Images in a Directory ==================== -->
+	<sect2 id="eom-open-folder">
+		<title>查看文件夹中所有图像</title>
+		<para>要查看文件夹中所有图像，请按如下步骤操作：</para>
+                <orderedlist>
+                  <listitem>
+                    <para>打开文件夹中的一张图片(参见 <xref linkend="eom-open-image"/>)。</para>
+                  </listitem>
+                  <listitem>
+                    <para>要打开画廊，选择<menuchoice><guimenu>查看</guimenu><guimenuitem>画廊</guimenuitem></menuchoice> 或按下 <keycap>F9</keycap>键。</para>
+                  </listitem>
+		</orderedlist>
+	     <para>画廊中将显示该文件夹中所有支持的图片的缩略图。你可以单击画廊里的缩略图来浏览图片，或者选择<guimenu>转到</guimenu>菜单里合适的选项，或者按下<keycombo><keycap>Alt</keycap><keycap>左</keycap></keycombo> 或 <keycombo><keycap>Alt</keycap><keycap>右</keycap></keycombo>组合键。</para>
+             <para lang="en">To view all of the images in the directory fullscreen, choose <menuchoice> <guimenu>View</guimenu><guimenuitem>Full Screen</guimenuitem> </menuchoice> or press <keycap>F11</keycap>. To view them as a slide show, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Slideshow</guimenuitem></menuchoice> or press <keycap>F5</keycap>. To return to the collection view, press the <keycap>Esc</keycap> key, or <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>. For more information about how to customize the slide show, see <xref linkend="eom-prefs-slideshow"/>.
+                    </para>
+	</sect2>
+
+	<!--============ To Scroll an Image ======================= -->
+	<sect2 id="eom-scroll-image">
+		<title>滚动图像</title>
+		<para>要滚动浏览一幅比图像窗口或者全屏窗口还要大的图像，您可以使用以下方法：</para>
+		<itemizedlist>
+			<listitem><para>使用键盘上的箭头键。</para>
+			</listitem>
+			<listitem><para>拖拽图像在窗口中移动。（这意味着您应该朝着您想要滚动图像的相反方向拖动图像。例如，如果您想要朝下滚动图像，那么请在窗口中向上拖动该图像。）</para>
+			</listitem>
+			<listitem><para>使用该窗口中的滚动条。</para>
+			</listitem>
+		</itemizedlist>
+	</sect2>
+
+	<!--=========== To Zoom In and Out ==================== -->
+	<sect2 id="eom-zoom">
+		<title>缩放</title>
+		<para>你可以用如下方式放大，缩小图像：</para>
+			<itemizedlist>
+				<listitem><para>使用鼠标上的 <mousebutton>滚轮</mousebutton>。向下滚，缩小图像；向上滚，放大图像。</para></listitem>
+ 			  <listitem><para>选择 <menuchoice><guimenu>查看</guimenu><guimenuitem>放大</guimenuitem></menuchoice> 或 <menuchoice><guimenu>查看</guimenu><guimenuitem>缩小</guimenuitem></menuchoice>。要复原图片大小，选择 <menuchoice><guimenu>查看</guimenu><guimenuitem>正常大小</guimenuitem></menuchoice>。要使图像大小适合窗口，选择 <menuchoice><guimenu>查看</guimenu><guimenuitem>最佳匹配</guimenuitem></menuchoice>。</para></listitem>				
+ 				<listitem><para>使用工具栏上的缩放按钮。按钮<guilabel>正常</guilabel> 将使图像恢复正常大小。按钮<guilabel>适合</guilabel> 将调整图像到合适窗口的大小。</para></listitem>
+
+				<listitem><para lang="en">Use the keyboard. To zoom in, <keycombo> <keycap>Ctrl</keycap><keycap>+</keycap> </keycombo> or <keycap>+</keycap>. To zoom out, <keycombo> <keycap>Ctrl</keycap><keycap>-</keycap> </keycombo> or <keycap>-</keycap>. To go back to the normal size, <keycombo> <keycap>Ctrl</keycap><keycap>0</keycap> </keycombo> or <keycap>1</keycap>. To scale the image to fit the window, press <keycap>F</keycap>.</para></listitem>
+			</itemizedlist>
+			<para>当图片设置为适合窗口大小时，改变窗口大小也会改变图片缩放程度，使得图像仍然匹配窗口大小。</para>
+	</sect2>
+
+	<!--=========== To View Image Fullscreen ==================== -->
+	<sect2 id="eom-fullscreen">
+		<title>全屏查看图像/幻灯片播放</title>
+		<para>要全屏显示图像，请选择 <menuchoice><guimenu>查看</guimenu><guimenuitem>全屏</guimenuitem></menuchoice>。</para>
+		<para>全屏查看图像时面板、窗口边框和菜单栏均不可见。要返回正常视图，请按<keycap>Esc</keycap>，或<keycap>F11</keycap>，或 <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>。</para>
+		<para>您可以像正常视图一样使用键盘或鼠标对图像进行缩放或滚动操作。</para>
+		<para>如果在画廊中有多张图片，您可以按<keycap>Space</keycap>键 或 右/下 方向键前进到下一张图片。您还可以按<keycap>Backspace</keycap>键或左/上方向键后退到上一张图片。</para>
+	<para>全屏模式下您还可以使用幻灯片播放的方式查看图片，此时 <application>图像查看器</application> 会自动依次跳转到画廊中的下一张图片。您可以选择 <menuchoice><guimenu>查看</guimenu><guimenuitem>幻灯片播放</guimenuitem></menuchoice>或按下<keycap>F5</keycap>键开启幻灯片播放模式。按<keycap>P</keycap>键可暂停/继续幻灯片播放。按<keycap>Esc</keycap>键或 <keycap>F5</keycap> 键或 <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>键可结束幻灯片播放。 要了解更多关于设置幻灯片播放的信息，请查阅<xref linkend="eom-prefs-slideshow"/>。</para>
+	</sect2>
+</sect1>
+
+
+<!-- ============= Manipulating Images ============================== -->
+<sect1 id="eom-manipulate">
+	<title>图像处理</title>
+
+	<para>所有的图像操作对于所选中的图片立刻生效。 对图像的修改暂时保留在内存中，当您选择“保存”图像（参见<xref linkend="eom-save-image"/>）时，才会替换磁盘上的源文件。</para>
+
+	<!--============ To Flip an Image ======================= -->
+	<sect2 id="eom-flip">
+		<title>翻转图像</title>
+		<para lang="en">To flip an image along the horizontal axis of the image, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Flip Horizontal</guimenuitem>
+		</menuchoice>.</para>
+		<para lang="en">To flip an image along the vertical axis of the image, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Flip Vertical</guimenuitem>
+		</menuchoice>.</para>
+	</sect2>
+
+	<!--============ To Rotate an Image ======================= -->
+	<sect2 id="eom-rotate">
+		<title>旋转图像</title>
+		<para lang="en">To rotate an image 90 degrees in a clockwise direction, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Rotate Clockwise</guimenuitem>
+		</menuchoice>.</para>
+		<para lang="en">To rotate an image 90 degrees in an anticlockwise direction, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Rotate Counter Clockwise</guimenuitem>
+		</menuchoice>.</para>
+	</sect2>
+
+	<!--============ To Undo an Action ======================= -->
+	<sect2 id="eom-undo">
+		<title>撤销操作</title>
+		<para lang="en">To undo a flip or rotate action, choose 
+		<menuchoice>
+		<guimenu>Edit</guimenu>
+		<guimenuitem>Undo</guimenuitem>
+		</menuchoice> or press 
+		<keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>
+		.</para>
+	</sect2>
+
+	<!--============ To Delete An Image ======================== -->
+	<sect2 id="eom-delete-image">
+		<title>删除图像</title>
+		<para lang="en">To move an image to the Trash, choose
+			<menuchoice>
+			<guimenu>Edit</guimenu>
+			<guimenuitem>Move to Trash</guimenuitem>
+			</menuchoice>.
+			This moves the file to the Trash folder. Multiple images can also be moved to the trash in the same way: select them all first.</para>
+	    <para>要从回收站中还原图像，在<application>Caja</application>文件浏览器中打开回收站文件夹，将图片移到其他文件夹即可。 要彻底删除图像， 请清空回收站。 要了解更多关于回收站的信息，参见<ulink type="help" url="help:user-guide?caja-trash">用户指南</ulink>。</para>
+				
+			<note><para>您还可以按<keycap>Del</keycap>键将图片移到到回收站，此时系统会让您确认操作。</para></note>
+			
+	</sect2>
+</sect1> 
+
+<!-- ============= Saving Images ============================== -->
+<sect1 id="eom-save-rename">
+	<title>保存图像</title>
+
+	<para><application>图像查看器</application>总是尝试采用不影响图片质量的方式来保存图像。例如，一张未经修改的图片以相同格式、不同名称保存，则该文件就是原先的拷贝。如果系统上的 <systemitem class="library">libjpeg</systemitem> 可用，所有对于 JPEG 格式图片的修改都是无损操作。</para>
+
+<!--============ To Save an Image ======================= -->
+	<sect2 id="eom-save-image">
+		<title>保存一张图片</title>
+		<para lang="en">To save an image, choose 
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save</guimenuitem>
+			</menuchoice>.
+		The image will be saved under the same name and file type. Therefore, unmodified images needn't be saved.</para>
+	</sect2>
+
+	<!--============ To Save As an Image ======================= -->
+	<sect2 id="eom-save-as-image">
+		<title>以其他名称保存一个图像文件</title>
+		<para lang="en">To save an image under a different name, or convert it to a different file type, choose
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save As</guimenuitem>
+			</menuchoice>.</para>
+		<para>在弹出的<guilabel>保存图像</guilabel>对话框中，在<guilabel>名称</guilabel>一栏填入文件名称，然后单击<guibutton>保存</guibutton>按钮。 默认情况下文件将被保存在当前文件夹里。<application>图像查看器</application> 会尝试根据您给定的文件扩展名确定图像格式。 若要将图像保存到其他文件夹或者系统无法确定文件格式，请单击<guilabel>浏览其他文件夹</guilabel>来扩展对话框。之后您可以选择其他文件夹或从下拉列表中选择其他要保存的文件类型。</para>
+		<para>您可以一次性保存多张图片：见下一节内容。</para>
+	</sect2>    
+
+	<!--============ To Save As an Image ======================= -->
+	<sect2 id="eom-save-as-multiple">
+		<title>保存多张图片</title>
+		<para>您可以通过一次性保存多张图片来批量转换图片格式或者批量命名图片。</para>
+		<para lang="en">To save multiple images, select the images and choose 
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save As</guimenuitem>
+			</menuchoice>. 		
+		The following window is displayed:</para>
+  		<figure id="saveas-dialog-fig">
+			<title>保存多张图片的对话框</title>
+			<screenshot>
+			  <mediaobject lang="en">
+			    <imageobject>
+			      <imagedata fileref="figures/eom_save_as_window.png" format="PNG"/>
+			    </imageobject>
+			    <textobject>
+			      <phrase>Shows Eye of MATE <guilabel>Save As</guilabel> dialog when saving multiple images.</phrase>
+			    </textobject>
+			  </mediaobject>
+			</screenshot>
+  		</figure>
+		<para>您可以通过<guilabel>目标文件夹</guilabel>下拉框设置保存图像的文件夹，初始值设为当前文件夹。选择下拉列表中<guilabel>其它...</guilabel>可以打开一个标准的选择文件夹对话框用于在目录中选择。每张图片的文件名由<guilabel>文件名格式</guilabel>确定。文件名结构由简单的字符和特殊的标签组成。支持下列特殊标签：</para>
+		<itemizedlist>
+			<listitem><para><guilabel>文件名 (%f)</guilabel> - 原始文件名，去掉格式后缀</para>
+			</listitem>
+			<listitem><para><guilabel>计数 (%n)</guilabel> - 自动递增计数（由特定的计数起点开始）</para>
+			</listitem>			
+		</itemizedlist>	
+		<para>除这些特殊标签之外的其它字符均作为普通文本处理。</para>
+		<para>图像格式由位于“文件名栏”后面的下拉框设置。请选择一种特定的文件格式或选择<guilabel>原样</guilabel>保持源文件的格式。</para>
+	
+		<para>在<guilabel>选项</guilabel> 一栏，如果勾上<guilabel>将空格替换为下划线</guilabel> 的复选框，则会把文件名中所有的空格替换为下划线。 <guilabel>开始计数：</guilabel> 一栏用于计数起点设置，当你在文件名格式中使用了 %n 标签时。</para>
+		<para>对话框中<guilabel>文件名预览</guilabel> 一栏显示所选中图片之一的文件名命名结果。</para>
+	</sect2>
+
+
+
+</sect1>
+
+<sect1 id="eom-print">
+	<title>打印图片</title>
+	<sect2 id="eom-print-pagesettings">
+		<title>页面设置</title>
+		<para>在打印之前您可能需要进行打印页面设置。 请选择<menuchoice><guimenu>文件</guimenu><guimenuitem>页面设置</guimenuitem></menuchoice>。</para>
+		<para>在<guilabel>页面设置</guilabel> 对话框中您可以选择纸张大小和方向。如果可能的话也可以选择您的打印机并正确设置页边距。</para>
+	</sect2>
+
+	<sect2 id="eom-print-image">
+		<title>打印图像</title>
+		<para>要打印一张图片，请按下列步骤操作：</para>
+		<orderedlist>
+			<listitem>
+				<para>选择 <menuchoice><guimenu>文件</guimenu><guimenuitem>打印</guimenuitem></menuchoice></para>
+			</listitem>
+			<listitem>
+				<para>在<guilabel>打印</guilabel> 对话框中，从列表中选择你需要的打印机。</para>
+			</listitem>
+			<listitem>
+				<para>单击 <guilabel>打印</guilabel> 按钮，<application>图像查看器</application> 开始打印。</para>
+			</listitem>
+		</orderedlist>
+		<para>超过纸张页面大小的图像会自动缩小以适合页面。 小于纸张页面大小的图像则会居中放置。 </para>
+		<important>
+			<para>请注意， 目前<application>图像查看器</application>不支持查看打印进度。 在打印过程中程序窗口可能在短时间内无响应。</para>
+		</important>
+	</sect2>
+
+	<sect2 id="eom-print-settings">
+		<title>打印图像设置</title>
+		<para>也许您不想让图像居中放置或想让图像进一步缩小。请打开<guilabel>打印</guilabel> 对话框（参见<xref linkend="eom-print-image"/>）， 选择<guilabel>图像设置</guilabel> 选项卡， 然后可进行以下操作：</para>
+		<itemizedlist>
+			<listitem>
+				<para><guilabel>位置</guilabel> 一栏的各个选项可用于调整图像在纸张的位置。</para>
+			</listitem>
+			<listitem>
+				<para>您也可以直接在<guilabel>预览</guilabel> 区拖拽图片以调整位置。</para>
+			</listitem>
+			<listitem>
+				<para><guilabel>大小</guilabel> 一栏的各个选项可用于缩放图像达到满意效果。缩小程度同时受限于图像大小与纸张大小。</para>
+			</listitem>
+			<listitem>
+				<para><guilabel>单位</guilabel> 选项允许您改变<guilabel>图像设置</guilabel>选项卡中的图像大小度量单位。 当你改变单位后其他项目的长度值也会自动转换。</para>
+			</listitem>
+		</itemizedlist>
+	</sect2>
+		
+</sect1>
+<sect1 id="eom-toolbareditor">
+	<title>个性化工具栏</title>
+	<para>图像查看器的工具栏默认只含有一些基本的条目以保持工具栏简洁。但您也可以根据自己的喜好设置工具栏条目。</para>
+	<sect2 id="eom-toolbareditor-use">
+		<title>设置工具栏</title>
+		<para>如果您希望设置工具栏，请选择<menuchoice><guimenu>编辑</guimenu><guimenuitem>工具栏</guimenuitem></menuchoice>，将会弹出下列窗口：</para>
+		<figure id="toolbar-editor-fig">
+			<title>工具栏编辑窗口</title>
+			<screenshot>
+				<mediaobject lang="en">
+					<imageobject>
+						<imagedata fileref="figures/eom_toolbar_editor_window.png" format="PNG"/>
+					</imageobject>
+					<textobject>
+						<phrase>Shows Eye of MATE toolbar editor window.</phrase>
+					</textobject>
+				</mediaobject>
+			</screenshot>
+		</figure>
+		<para>它包含了一些工具栏上没有的条目以及“分隔符”条目。现在您可以编辑工具栏了：</para>
+		<itemizedlist>
+			<listitem>
+				<para>要向工具栏添加新条目，请将它们从该编辑器对话框窗口拖拽到工具栏。</para>
+			</listitem>
+			<listitem>
+				<para>要删除工具栏上的条目，请将它们从工具栏拖拽到编辑器窗口。</para>
+			</listitem>
+			<listitem>
+				<para>要重新排列工具栏上的条目，请在工具栏上拖拽它们到新的位置。</para>
+			</listitem>
+		</itemizedlist>
+		<para>当您完成编辑工具栏后，单击工具栏编辑器窗口上的<guibutton>关闭</guibutton> 按钮， 工具栏编辑器将会关闭，使设置完成的工具栏生效。</para>
+		</sect2>
+		<sect2 id="eom-toolbareditor-reset">
+			<title>重设工具栏</title>
+			<para>要撤销您对工具栏的设置，恢复默认状态，请按如下步骤操作：</para>
+			<orderedlist>
+				<listitem>
+					<para>打开工具栏编辑器（参见<xref linkend="eom-toolbareditor-use"/>）。</para>
+				</listitem>
+				<listitem>
+					<para>单击<guibutton>重设为默认值</guibutton> 按钮。</para>
+				</listitem>
+				<listitem>
+					<para>单击 <guibutton>关闭</guibutton> 按钮以关闭工具栏编辑器。现在工具栏已被重设为默认的状态了。</para>
+				</listitem>
+			</orderedlist>
+		</sect2>
+</sect1>
+<sect1 id="eom-prefs">
+	<title>首选项</title>
+	<para>首选项可以通过选择<menuchoice><guimenu>编辑</guimenu><guimenuitem>首选项</guimenuitem></menuchoice> 来进行修改。 您可以改变查看图像和幻灯片放映的选项。这些更改对所有打开的窗口立即生效。</para>
+
+	<!--============ Image View ======================= -->
+  <sect2 id="eom-prefs-image">
+         <title>图像查看</title>
+	<variablelist>
+	<varlistentry>
+		<term lang="en"><guilabel>Image Enhancements</guilabel></term>
+		<listitem>
+		<para>选择<guilabel>放大/缩小时平滑图像</guilabel>选项，当改变图像缩放系数时能使图像保持平滑。 如果您选择了这一项，使用<application>图像查看器</application>查看图像时会自动平滑图像以提高它们的显示质量。</para>
+                <para>选择<guilabel>自动旋转</guilabel> 选项，您的图像在载入时会根据自身元数据自动旋转。 例如，肖像会自动旋转到竖向方位。 注意这个功能需要系统正确设置了方向标签，故不是对所有图像都有效。 该视图的旋转不会被保存，除非您手动保存了旋转后的图像 (参见<xref linkend="eom-save-rename"/>)。</para>
+		</listitem>
+	</varlistentry>
+
+	<varlistentry>
+		<term lang="en"><guilabel>Transparent Parts</guilabel></term>
+		<listitem>
+		<para>下列选项用于决定<application>图像查看器</application>显示图像透明部分的方式：</para>
+		<itemizedlist>
+			<listitem><para lang="en"><guilabel>As check pattern</guilabel> </para>
+			<para>将图像任何透明部分显示为检查图案</para>
+			</listitem>
+			<listitem><para lang="en"><guilabel>As custom color</guilabel> </para>
+			<para>将图像任何透明部分显示为自定义的一种颜色。 点击颜色选择按钮可以选择一种颜色。</para>
+			</listitem>
+			<listitem><para lang="en"><guimenuitem>As background</guimenuitem> </para>
+			<para>将图像任何透明部分显示为<application>图像查看器</application>的背景颜色。</para>
+			</listitem>
+		</itemizedlist>
+		</listitem>
+	</varlistentry>		
+	</variablelist>
+  </sect2>
+		
+	<!--============ Slide Show ==================-->                                                                                               
+  <sect2 id="eom-prefs-slideshow">
+         <title>幻灯片放映</title>
+	<variablelist>
+	<varlistentry>
+		<term lang="en"><guilabel>Image Zoom</guilabel></term>
+		<listitem>
+		<para>选择<guilabel>将图像扩展以适合屏幕</guilabel> 选项，在幻灯片放映时可以扩展图像以适合屏幕尺寸。如果您不选择这个选项，小于屏幕大小的图像将不会放大以填充整个屏幕。</para>
+		</listitem>
+	</varlistentry>
+	<varlistentry>
+		<term lang="en"><guilabel>Sequence</guilabel></term>
+		<listitem>
+		<para>选择<guilabel>循环</guilabel> 选项， 幻灯片播放时将安装图像列表无限循环播放。 如果您不选择这个选项，幻灯片播放至最后一张图片时会返回画廊视图。</para>
+		<para>使用<guilabel>切换图像的时间</guilabel>选框设置幻灯片播放过程中每张图片显示时间。 如果您设置该值为 0，则自动前进播放功能将不可用，只能手动浏览 (参见<xref linkend="eom-fullscreen"/>)。</para>
+		</listitem>
+	</varlistentry>		
+	</variablelist>
+  </sect2>
+</sect1>
+</article>

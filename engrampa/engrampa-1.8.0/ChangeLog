@@ -1,0 +1,2171 @@
+commit da051c29c20b2bf32a555abed8e1b88689cc968a
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   2014-03-01
+
+    Bump version to 1.8.0
+
+M	NEWS
+M	configure.ac
+
+commit 5788b90f5adbf7031bb9497728e7aea8f09fb214
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-03-01
+
+    Sync translations with transifex
+
+M	po/be.po
+M	po/ko.po
+
+commit bdd01932458567c591ec1b825f528ef76db10b17
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-23
+
+    Sync translations with transifex
+
+M	po/cs.po
+M	po/es.po
+M	po/sk.po
+M	po/sl.po
+M	po/zh_TW.po
+
+commit e2aff4fb4be2d35b7742a7d842d86fff1bfe422d
+Author: infirit <infirit@gmail.com>
+Date:	2014-02-19
+
+    Bump version to 1.7.90
+
+M	configure.ac
+
+commit dcb9220d03a7a70428ed4b57976e6c1093081176
+Author: infirit <infirit@gmail.com>
+Date:	2014-02-19
+
+    Update news
+
+M	NEWS
+
+commit 907a68bb69759c6e366ee758e9eeb09bbe43212a
+Author: infirit <infirit@gmail.com>
+Date:	2014-02-19
+
+    Sync translations with transifex
+
+M	po/el.po
+M	po/sv.po
+
+commit 34bb48ca6aace0a85f49de0dea29ee9f8e26b3ad
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-17
+
+    engrampa.1: Remove copyright row
+
+M	data/engrampa.1
+
+commit b87108f2005292387462612df97b28377f1645b8
+Merge: 318c652 81aef8d
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-17
+
+    Merge pull request #44 from hekel/master
+
+    Update Manual
+
+commit 318c6524455498ed398ddb3742074924f4153b5f
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-15
+
+    Sync translations with transifex
+
+M	po/ar.po
+M	po/bg.po
+M	po/cs.po
+M	po/de.po
+M	po/en_AU.po
+M	po/en_GB.po
+M	po/es.po
+M	po/gl.po
+M	po/hu.po
+M	po/ms.po
+M	po/nl.po
+M	po/pl.po
+M	po/pt_BR.po
+M	po/ru.po
+M	po/sk.po
+M	po/tr.po
+M	po/zh_TW.po
+
+commit 81aef8d2c98283a9c23a8f961b801a6f1c317775
+Author: hekel <hekel@archlinux.info>
+Date:	2014-02-14
+
+    Update engrampa.1
+
+M	data/engrampa.1
+
+commit d228ffa491f2f62bdbcc6d05be816b486f9da681
+Author: infirit <infirit@gmail.com>
+Date:	2014-02-13
+
+    Update NEWS
+
+M	NEWS
+
+commit 7bc931a1f6ff25ddf83f4ceeb06fb4a2fa4d6749
+Author: infirit <infirit@gmail.com>
+Date:	2014-02-13
+
+    Add check-news to AM_INIT_AUTOMAKE
+
+M	configure.ac
+
+commit a1057f9a0f05f4d88bdddb44064585ad2adbc480
+Author: infirit <infirit@gmail.com>
+Date:	2014-02-13
+
+    Fix zip file extract broken by
+    93134547b19b35556388b4a94df29ff5570d1c06
+
+M	src/fr-command-zip.c
+
+commit 06bb003dd3130e3c326fac672c20c7bc3f1bbd92
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-09
+
+    Bump version to 1.7.1
+
+M	configure.ac
+
+commit bd86c63787c8094a57ac572a778812899e3dc3b3
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-09
+
+    Sync translations with transifex
+
+M	po/da.po
+M	po/fr.po
+M	po/nl.po
+M	po/sl.po
+M	po/uk.po
+
+commit 73b082ee04ba84226d752a6c93e0dcedc73a8bf5
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-09
+
+    Sync translations with transifex
+
+M	po/LINGUAS
+M	po/af.po
+M	po/am.po
+M	po/ar.po
+M	po/as.po
+M	po/ast.po
+M	po/az.po
+M	po/be.po
+M	po/bg.po
+M	po/bn.po
+M	po/bn_IN.po
+M	po/br.po
+M	po/bs.po
+M	po/ca.po
+M	po/ca@valencia.po
+C069	po/zh_TW.po	po/cmn.po
+M	po/cs.po
+M	po/cy.po
+M	po/da.po
+M	po/de.po
+M	po/dz.po
+M	po/el.po
+M	po/en_AU.po
+M	po/en_CA.po
+M	po/en_GB.po
+M	po/eo.po
+M	po/es.po
+M	po/et.po
+M	po/eu.po
+M	po/fa.po
+M	po/fi.po
+M	po/fr.po
+M	po/fur.po
+M	po/fy.po
+M	po/ga.po
+M	po/gl.po
+M	po/gu.po
+M	po/he.po
+M	po/hi.po
+M	po/hr.po
+M	po/hu.po
+M	po/hy.po
+M	po/id.po
+M	po/is.po
+M	po/it.po
+M	po/ja.po
+M	po/ka.po
+M	po/kk.po
+M	po/kn.po
+M	po/ko.po
+M	po/ku.po
+M	po/ky.po
+M	po/lt.po
+M	po/lv.po
+M	po/mai.po
+M	po/mg.po
+M	po/mk.po
+M	po/ml.po
+M	po/mn.po
+M	po/mr.po
+M	po/ms.po
+M	po/nb.po
+M	po/nds.po
+M	po/ne.po
+M	po/nl.po
+M	po/nn.po
+M	po/oc.po
+M	po/or.po
+M	po/pa.po
+M	po/pl.po
+M	po/ps.po
+M	po/pt.po
+M	po/pt_BR.po
+M	po/ro.po
+M	po/ru.po
+M	po/si.po
+M	po/sk.po
+M	po/sl.po
+M	po/sq.po
+M	po/sr.po
+M	po/sr@latin.po
+M	po/sv.po
+M	po/ta.po
+M	po/te.po
+M	po/th.po
+M	po/tk.po
+M	po/tr.po
+M	po/ug.po
+M	po/uk.po
+M	po/ur.po
+M	po/ur_PK.po
+M	po/vi.po
+M	po/xh.po
+M	po/zh_CN.po
+M	po/zh_HK.po
+M	po/zh_TW.po
+
+commit 1cbd30e5d962da18ecd7f44c3088f6315c5fc437
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-09
+
+    Fix translation of some menu items
+
+M	src/ui.h
+
+commit 4eaa64b71e2c4276f7c88f3eda17a0802e0910fe
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-01-27
+
+    Add NEWS file for MATE
+
+A	NEWS
+
+commit 1112aca3dddd3841c16fe05501235988358559f4
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-01-27
+
+    Rename NEWS -> NEWS.GNOME
+
+R100	NEWS	NEWS.GNOME
+
+commit ad2cc940f469a2c3b0bb6bd70e25ff7a797876ad
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-01-27
+
+    Show always the "extract to" action
+
+    As suggested in forum
+    (http://forums.mate-desktop.org/viewtopic.php?f=17&t=812)
+
+M	caja/caja-engrampa.c
+
+commit 9f32109b8aa05bb2124aa768305db73bacc05e4d
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-01-17
+
+    Add manpage for engrampa
+
+    Taken from debian file-roller package and adapted
+
+    Closes #16
+    https://github.com/mate-desktop/engrampa/issues/16
+
+M	data/Makefile.am
+A	data/engrampa.1
+
+commit 9c32611f64a68d2693b6f12ee9a2be46cf6af603
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-01-15
+
+    Remove rpm spec file refs from configure and Makefile
+
+M	Makefile.am
+M	configure.ac
+
+commit cb49ae4fd122280c13d8a3475a385a7e46977ae4
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-01-15
+
+    Remove old rpm spec file
+
+D	engrampa.spec.in
+
+commit bbcf8d5e6c543215a69bdd3f78c32b705c85a3ae
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-01-15
+
+    Bump version to 1.7.0
+
+M	configure.ac
+
+commit 18ea859277e9d9e23e1a501693ad0a9fd134ecbd
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-01-15
+
+    Add autogen.sh to tarball
+
+M	Makefile.am
+
+commit d5b643e339e529853e6442e07f6c7f9d2d6ac169
+Merge: f4611c3 547005a
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-01-06
+
+    Merge pull request #40 from infirit/master
+
+    Add  to ACLOCAL_AMFLAGS for user added flags
+
+commit 547005a1b193d8fd6ede7bca6e9614d4cda23f6f
+Author: infirit <infirit@gmail.com>
+Date:	2014-01-05
+
+    Add  to ACLOCAL_AMFLAGS for user added flags
+
+M	Makefile.am
+
+commit f4611c3411c44e792f729a0780c31b0aa55fe004
+Merge: 0e4df16 e15aa1d
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-12-15
+
+    Merge pull request #34 from NiceandGently/master
+
+    add support for cab and .ar files + zip improvements
+
+commit 0e4df16ea5762fb11aac4cece97aa5210ccb6f0f
+Merge: 36aefd0 8d28410
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-11-20
+
+    Merge pull request #35 from eyelash/gtk3
+
+    add GTK3 support
+
+commit 8d284101a0ee5714a198424926612a163c3c691f
+Author: Elias Aebi <user142@hotmail.com>
+Date:	2013-11-16
+
+    fix the GTK3 version
+
+M	copy-n-paste/eggsmclient-private.h
+M	src/fr-window.c
+M	src/gtk-utils.c
+
+commit 3b99041059ea2147c296443a9460be67443776d0
+Author: Elias Aebi <user142@hotmail.com>
+Date:	2013-11-15
+
+    add the primary-toolbar style class
+
+M	src/fr-window.c
+
+commit 612e6529a66899e5466b9bf4bd9bdc2443075896
+Author: Elias Aebi <user142@hotmail.com>
+Date:	2013-11-15
+
+    port to GTK3
+
+M	copy-n-paste/eggsmclient-private.h
+M	src/dlg-batch-add.c
+M	src/fr-window.c
+M	src/gtk-utils.c
+
+commit 084bfc5807982b4f3e32850a64993766fd9993d0
+Author: Elias Aebi <user142@hotmail.com>
+Date:	2013-11-13
+
+    replace GDK_<keyname> with GDK_KEY_<keyname>
+
+M	src/fr-window.c
+
+commit e15aa1d331f2ded59ab740559015850cdb8cb7fb
+Author: raveit65 <chat-to-me@raveit.de>
+Date:	2013-11-11
+
+    Add *.ar files as supported
+
+M	data/engrampa.desktop.in.in
+
+commit 05fde63e637e17dc2d082b7fdad20581b9cf74a0
+Author: raveit65 <chat-to-me@raveit.de>
+Date:	2013-11-11
+
+    Add Microsoft Cabinet to the supported mime types
+
+M	data/engrampa.desktop.in.in
+
+commit 93134547b19b35556388b4a94df29ff5570d1c06
+Author: raveit65 <chat-to-me@raveit.de>
+Date:	2013-11-11
+
+    zip: fixed -- position for the extraction command, added for list
+    and test
+
+M	src/fr-command-zip.c
+
+commit 25402a6a9c66fb827490e72430082740ab89bfc0
+Author: raveit65 <chat-to-me@raveit.de>
+Date:	2013-11-11
+
+     fixed error when creating zip archives with files starting with
+     an hyphen
+
+M	src/fr-command-zip.c
+
+commit 36aefd0601529725931abbf7280684c1efdc3f34
+Merge: d320643 c5b9218
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-11-11
+
+    Merge pull request #33 from NiceandGently/master
+
+    add support for (.wim, .swm), change 7z compression level options +
+    minor improvements
+
+commit d320643fa8818590744b525b497a64b4dc0878f3
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-11-06
+
+    Fix Sun GNOME Documentation Team references
+
+M	help/C/index.docbook
+
+commit c5b92183993bc71fd7798f3dac869174453fe1db
+Author: raveit65 <chat-to-me@raveit.de>
+Date:	2013-10-28
+
+    7z: changed the compression level options
+
+    normal compression : from "-mx=5" to "-mx=7"
+    maximum compression: from "-mx=7" to "-mx=9 -m0=lzma2"
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=635083
+
+M	src/fr-command-7z.c
+
+commit d2e86889e0386a0dda2f4f8bbffd464bd3778ee7
+Author: raveit65 <chat-to-me@raveit.de>
+Date:	2013-10-28
+
+    engrampa does not build without packagekit
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=634356
+
+M	src/dlg-package-installer.c
+
+commit 5ef1b4801e7365b4cbf53c6ee829259dde32b5ee
+Author: raveit65 <chat-to-me@raveit.de>
+Date:	2013-10-28
+
+    adds Windows Imaging Format (.wim, .swm) support
+
+M	caja/caja-engrampa.c
+M	data/engrampa.desktop.in.in
+M	engrampa.spec.in
+M	src/fr-command-7z.c
+M	src/main.c
+
+commit b28ae6fe841663d7cfc96908172c4adecd1dd3c6
+Author: raveit65 <chat-to-me@raveit.de>
+Date:	2013-10-28
+
+    package installer: don't display an error message if the user
+    cancelled the operation
+
+M	src/dlg-package-installer.c
+
+commit 9f27a08a962aaf861ce7ffffc911f5c15a95f4f2
+Merge: 040aec0 14790d2
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-10-24
+
+    Merge pull request #26 from NiceandGently/master
+
+    add support for rar-5.0x
+
+commit 040aec00a2422b276eed5836a138d8a0231b2611
+Merge: 63a43cf 8d268d4
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-10-19
+
+    Merge pull request #32 from infirit/master
+
+    Fix distcheck so it can run without root privilage
+
+commit 8d268d4f7dbdfb66b66880ea4cdf81a756396bf4
+Author: infirit <infirit@gmail.com>
+Date:	2013-10-18
+
+    Fix distcheck so it can run without root privilage
+
+M	Makefile.am
+M	configure.ac
+
+commit 63a43cfd77e7d8677bab2dbd3323bf0f3c7f51e0
+Merge: 65506a1 7f698a6
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-10-18
+
+    Merge pull request #31 from infirit/master
+
+    Finish the mate-file-archiver -> engrampa rename + misc fixes
+
+commit 7f698a6b163da556164b9b92d11d8d54498bddb5
+Author: infirit <infirit@gmail.com>
+Date:	2013-10-18
+
+    Fix dist-hook
+
+M	data/Makefile.am
+
+commit 56577d11863a4e07daccf7a1c3d0c53961e473c8
+Author: infirit <infirit@gmail.com>
+Date:	2013-10-18
+
+    Remove obsolete distro folder
+
+D	distro/archlinux/PKGBUILD
+D	distro/archlinux/mate-file-archiver.install
+
+commit 97d7d0a31f20c7ed25a7bfe6c88d62e01100a670
+Author: infirit <infirit@gmail.com>
+Date:	2013-10-18
+
+    Make autofoo happy
+
+M	Makefile.am
+M	configure.ac
+
+commit 9c915ec6a6ea3227c2b86b30b6f23599bcc2bb83
+Author: infirit <infirit@gmail.com>
+Date:	2013-10-18
+
+    Name change mate-file-archiver -> engrampa
+
+M	autogen.sh
+
+commit a8aa702929e20a01d9fbaa3c2b95dca2a80610ad
+Author: infirit <infirit@gmail.com>
+Date:	2013-10-18
+
+    Fixes for make dist
+
+M	configure.ac
+
+commit 65506a18e77da734bb0f82f04dd2517fc5c4b8bf
+Merge: 9c93369 cb9affd
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-10-18
+
+    Merge pull request #30 from infirit/master
+
+    Cherry pick commits from 1.6 branch on master
+
+commit cb9affd67249833821af33775e60cdb61118e292
+Author: infirit <infirit@gmail.com>
+Date:	2013-10-18
+
+    Follow configure for DEPRECATED cflags
+
+M	copy-n-paste/Makefile.am
+
+commit 6aebc237833eba167e8401a989d88a1c5696371c
+Author: infirit <infirit@gmail.com>
+Date:	2013-10-18
+
+    Fix whitespace in summary
+
+M	configure.ac
+
+commit f9786747669f93fd10711fb408b2ca57bed608c1
+Author: infirit <infirit@gmail.com>
+Date:	2013-10-18
+
+    update remaining file-roller->engrampa name change
+
+M	help/bg/bg.po
+M	help/ca/ca.po
+M	help/de/de.po
+M	help/el/el.po
+M	help/en_GB/en_GB.po
+M	help/es/es.po
+M	help/fr/fr.po
+M	help/it/it.po
+M	help/ja/ja.po
+M	help/oc/oc.po
+M	help/ru/ru.po
+M	help/uk/uk.po
+M	help/zh_CN/zh_CN.po
+
+commit 14790d2d45e43643ff6b11cde1b1bb53cc4ea9ac
+Author: raveit65 <chat-to-me@raveit.de>
+Date:	2013-10-07
+
+    add support for rar-5.0x
+
+M	src/fr-command-rar.c
+M	src/fr-command-rar.h
+
+commit 9c93369a4aeab033544ed9357c259989973df8d0
+Merge: d782c92 2ccb336
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-09-26
+
+    Merge pull request #25 from kallisti5/master
+
+    fr-window: Assertion check to prevent ptr dereference
+
+commit 2ccb3362b8895a8d8f5f2011d5187e4782dba088
+Author: Alexander von Gluck IV <kallisti5@unixzen.com>
+Date:	2013-09-26
+
+    fr-window: Assertion check to prevent ptr dereference
+
+    * clang static analysis shows that if this function
+      is called with file_list set to NULL, it would be
+      dereferenced.
+
+D	ChangeLog
+M	src/fr-window.c
+
+commit d782c92db5254e7eca56fdbaedb635717bd5878c
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-08-06
+
+    Sync translations with transifex
+
+M	po/LINGUAS
+M	po/am.po
+M	po/ca.po
+A	po/en_AU.po
+M	po/gl.po
+A	po/ky.po
+M	po/lv.po
+M	po/ms.po
+M	po/sk.po
+M	po/sl.po
+M	po/uk.po
+M	po/ur.po
+M	po/zh_CN.po
+
+commit a7307773b458a5a3d1ac3ef99f9667db6e06641b
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-08-06
+
+    Add transifex configuration file
+
+A	.tx/config
+
+commit 0f9758bfdedfd0c5a67a795f421cfbc2d07f0f6c
+Merge: 472e1e8 ac5d324
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-08-01
+
+    Merge pull request #21 from infirit/unarchiver
+
+    Add unarchiver support
+
+commit 472e1e834bc1033c1ec8f0f88250460e138fbf35
+Merge: 95ebd69 f03a750
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-08-01
+
+    Merge pull request #23 from infirit/yelptools
+
+    Use yelp-tools instead of mate-doc-utils
+
+commit f03a750b9d654d43bb582991e40b66f6bbde6341
+Author: infirit <infirit@gmail.com>
+Date:	2013-07-31
+
+    Use yelp-tools instead of mate-doc-utils
+
+M	Makefile.am
+M	autogen.sh
+M	configure.ac
+R099	help/C/engrampa.xml	help/C/index.docbook
+M	help/C/legal.xml
+M	help/Makefile.am
+M	help/bg/bg.po
+M	help/ca/ca.po
+M	help/cs/cs.po
+M	help/de/de.po
+M	help/el/el.po
+M	help/en_GB/en_GB.po
+M	help/es/es.po
+M	help/fi/fi.po
+M	help/fr/fr.po
+M	help/it/it.po
+M	help/ja/ja.po
+M	help/nl/nl.po
+M	help/oc/oc.po
+M	help/ru/ru.po
+M	help/sv/sv.po
+M	help/uk/uk.po
+M	help/vi/vi.po
+M	help/zh_CN/zh_CN.po
+M	src/gtk-utils.c
+
+commit 95ebd69d2966d331d6e294c8f09fa8b5bf0862ee
+Merge: 7cea830 774f1ef
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-07-30
+
+    Merge pull request #22 from infirit/automake-fixes
+
+    automake fixes: INCLUDES -> AM_CPPFLAGS
+
+commit 774f1efd8f6cd3c3499face84553f85e8300f901
+Author: infirit <infirit@gmail.com>
+Date:	2013-07-30
+
+    automake fixes: INCLUDES -> AM_CPPFLAGS
+
+M	caja/Makefile.am
+M	copy-n-paste/Makefile.am
+M	src/Makefile.am
+M	src/commands/Makefile.am
+
+commit 7cea830d6bb27cc902c6069d2d8fe1c14b0099cb
+Merge: c1c61af c36eedd
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-06-30
+
+    Merge pull request #20 from infirit/master
+
+    Fix for the missing schema issue 19
+
+commit ac5d3248257e9e1ddbf57ca5828a1de165d445a4
+Author: infirit <infirit@gmail.com>
+Date:	2013-06-30
+
+    Add unachiver support
+
+    Based on the following commits from file-roller,
+    https://git.gnome.org/browse/file-roller/commit/?id=2575177ac037d2a8d8f3056b10685928d80d6275
+    https://git.gnome.org/browse/file-roller/commit/?id=f26caa6d5b76d406976ea78630fbaae4c8126a2e
+
+M	caja/Makefile.am
+M	configure.ac
+M	data/packages.match
+M	src/Makefile.am
+A	src/fr-command-unarchiver.c
+A	src/fr-command-unarchiver.h
+M	src/main.c
+
+commit c36eeddc49f116d5d860f2cd13eb94996489f70b
+Author: infirit <infirit@gmail.com>
+Date:	2013-06-29
+
+    Move keys to the correct schema
+
+    The keys update, recursive and no-symlinks are in the wrong schema,
+    in org.mate.engrampa.dialogs.extract instead of
+    org.mate.engrampa.dialogs.add
+
+    Fixes https://github.com/mate-desktop/mate-file-archiver/issues/19
+
+M	data/org.mate.engrampa.gschema.xml.in
+
+commit c1c61af0b7d286aefdff7466f2d5e26903798654
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-04-27
+
+    Add support for application/x-archive in desktop file
+
+    Closes #17
+    (https://github.com/mate-desktop/mate-file-archiver/issues/17)
+
+M	data/engrampa.desktop.in.in
+
+commit e9feb45f53e0f02ed89d3eea9839631b4e292d1e
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2013-03-31
+
+    Preparing for 1.6.0 release.
+
+M	configure.ac
+
+commit 0df4ff179e13a2b47f26344c40da2dd201a02f8d
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2013-03-31
+
+    Added empty ChangeLog.
+
+A	ChangeLog
+
+commit c94e55cabfe217ad2b609e33bb57e5d5838bd5ef
+Merge: 19da01b 4421eb3
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-03-31
+
+    Merge pull request #15 from Salz/master
+
+    Directory name in drag'n'drop extraction sometimes garbeled
+
+commit 4421eb314b10868707bea9f3375ff61a174f4b2b
+Author: Ingo Saitz <Ingo.Saitz@stud.uni-hannover.de>
+Date:	2013-03-27
+
+    Fix garbled dir on extraction (closes GH-1)
+
+    Add a missing \0 on receiving the char* from the XDS_ATOM. g_strndup
+    is
+    needed, because the returned char* is of fixed length and one byte too
+    small if it has no final \0.
+
+M	src/fr-window.c
+
+commit 19da01b11830015657c83235a48934a78b693990
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2013-03-24
+
+    "Removed ChangeLog"
+
+D	ChangeLog
+
+commit 12a1967f21cc5277e3884047172cd0cf5aa2c6c7
+Merge: 13ed183 3d5e133
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-03-17
+
+    Merge pull request #14 from NiceandGently/master
+
+    fix desktop file
+
+commit 3d5e133521de229a9a84082c4d14c992a1e2240c
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:	2013-03-17
+
+    Update engrampa.desktop.in.in
+
+    choose unique name
+    add generic name
+
+M	data/engrampa.desktop.in.in
+
+commit 13ed1839179d6ee4cd01e3959f29437d549571b6
+Merge: cee6f9f 6cab8b6
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-11-22
+
+    Merge pull request #10 from sbalneav/master
+
+    Deprecations and warnings
+
+commit 6cab8b63ebbf27525b53cf75ff18d5811fa2d39a
+Author: Scott Balneaves <sbalneav@alburg.net>
+Date:	2012-11-22
+
+    Fix deprecations and warnings
+
+M	copy-n-paste/eggsmclient-xsmp.c
+M	src/dlg-add-folder.c
+M	src/dlg-ask-password.c
+M	src/dlg-prop.c
+M	src/fr-command-ace.c
+M	src/fr-command-cfile.c
+M	src/fr-window.c
+
+commit cee6f9ff77c3c54f5524a7e725183e93e32a8ada
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-11-18
+
+    Preparing for 1.5.1 release.
+
+A	ChangeLog
+M	configure.ac
+
+commit 8809c96c6d4d965b3fb5191ee462f0d2d363f867
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-11-17
+
+    Merge branches 'master' and 'bugfixes'
+
+commit 8be8ad7fd9caed29de99a9f8bf422f26c4ca7339
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-11-17
+
+    Can't open rar files with password protected file data and headers.
+
+M	src/fr-command-rar.c
+
+commit e2061107755bdb65cd5b6bb451dc7905fa405c43
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-11-17
+
+    Fixed error when a filename contains the % sign
+
+M	src/fr-archive.c
+
+commit e9cbe2e79fb341828dcf512ae7ec0f4d64d4e756
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-11-17
+
+    Removed unused variables.
+
+M	src/fr-command-lrzip.c
+M	src/gtk-utils.c
+
+commit 3d8d22f8abe8b9604668bdcaba3ccc9da57b5d52
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-11-17
+
+    Added g_warning message when a symbolic link could not be created.
+
+M	src/fr-archive.c
+
+commit e6dca8b9f292702254792bac10fcc2904457bae6
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-11-17
+
+    file-roller crashes when clicking Cancel in Add Files
+
+M	src/dlg-add-files.c
+
+commit 35d6ad55bcc7f23aea34e88d63c67fee381b8b45
+Merge: 326ea96 758e39c
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-15
+
+    Merge pull request #9 from leigh123linux/master
+
+    Fix another schema error
+
+commit 758e39c6191a1a1a4c828872c49005076cfeaf0c
+Author: leigh123linux <leigh123linux@googlemail.com>
+Date:	2012-11-15
+
+    Fix another schema error
+
+M	data/engrampa.convert
+
+commit bda91c86ef5be407e044f99a8d0a6dfc11bf175d
+Author: leigh123linux <leigh123linux@googlemail.com>
+Date:	2012-11-15
+
+    Fix another schema error
+
+M	data/engrampa.convert
+
+commit 326ea96b59037381f1e8f6b671b50fb0a99160a1
+Merge: 3bf03d2 ee97a3f
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-15
+
+    Merge pull request #8 from leigh123linux/master
+
+    Fix schema error
+
+commit ee97a3fcf252f9b7e3cfe344c17303ec8a13ecfa
+Author: leigh123linux <leigh123linux@googlemail.com>
+Date:	2012-11-15
+
+    Fix https://bugzilla.redhat.com/show_bug.cgi?id=876354
+
+M	data/engrampa.convert
+
+commit 3bf03d208f81f37ca83f107fb1af4242b29dde1f
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:	2012-11-06
+
+    remove MATE from Categories in desktop file
+
+M	data/engrampa.desktop.in.in
+
+commit 6a6b0c38c7690b773c88cd85f9d2d5e1d6ca169c
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-05
+
+    remove mateconf from configure.ac
+
+M	configure.ac
+
+commit 3f63e0dfa6e6c0679275294b41b24cf4b32e46e8
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-05
+
+    bump version to 1.5.0
+
+M	configure.ac
+
+commit b40f95296e60d838b231ab325a4b0c009280814c
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-05
+
+    remove copyright from schema
+
+M	data/org.mate.engrampa.gschema.xml.in
+
+commit 0d97b91e417fda108955b155cc287db086850c81
+Merge: 8f8784b 61fe44b
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-05
+
+    Merge pull request #7 from NiceandGently/master
+
+    port to gsettings
+
+commit 61fe44bd16be34d89b127f403b3e07d63aa67e89
+Author: raveit <chat-to-me@raveit.de>
+Date:	2012-11-05
+
+    fix compiler warning
+    warning: "GETTEXT_PACKAGE" redefined
+
+M	copy-n-paste/Makefile.am
+
+commit e06e9b088a12dd098e11110f7d0d77ab8032e4eb
+Author: raveit <chat-to-me@raveit.de>
+Date:	2012-11-05
+
+    Port to gsettings
+
+M	configure.ac
+M	data/Makefile.am
+A	data/engrampa.convert
+D	data/engrampa.schemas
+A	data/org.mate.engrampa.gschema.xml.in
+M	po/POTFILES.in
+M	src/Makefile.am
+M	src/actions.c
+M	src/dlg-add-files.c
+M	src/dlg-add-folder.c
+M	src/dlg-batch-add.c
+M	src/dlg-extract.c
+M	src/dlg-new.c
+M	src/dlg-open-with.c
+M	src/dlg-password.c
+M	src/dlg-update.c
+M	src/file-utils.c
+M	src/fr-archive.c
+M	src/fr-window.c
+M	src/fr-window.h
+M	src/glib-utils.c
+M	src/glib-utils.h
+M	src/main.c
+D	src/mateconf-utils.c
+D	src/mateconf-utils.h
+M	src/preferences.c
+M	src/preferences.h
+M	src/typedefs.h
+
+commit 8f8784ba4ebcd8eb099c4e119a9a8d5a349efd61
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-10-09
+
+    Fixed fsf addresses. Closes #4.
+
+M	caja/caja-engrampa.c
+M	caja/caja-engrampa.h
+M	caja/engrampa-module.c
+M	copy-n-paste/eggdesktopfile.c
+M	copy-n-paste/eggdesktopfile.h
+M	copy-n-paste/eggsmclient-private.h
+M	copy-n-paste/eggsmclient-xsmp.c
+M	copy-n-paste/eggsmclient.c
+M	copy-n-paste/eggsmclient.h
+M	src/actions.c
+M	src/actions.h
+M	src/commands/rpm2cpio.c
+M	src/dlg-add-files.c
+M	src/dlg-add-files.h
+M	src/dlg-add-folder.c
+M	src/dlg-add-folder.h
+M	src/dlg-ask-password.c
+M	src/dlg-ask-password.h
+M	src/dlg-batch-add.c
+M	src/dlg-batch-add.h
+M	src/dlg-delete.c
+M	src/dlg-delete.h
+M	src/dlg-extract.c
+M	src/dlg-extract.h
+M	src/dlg-new.c
+M	src/dlg-new.h
+M	src/dlg-open-with.c
+M	src/dlg-open-with.h
+M	src/dlg-package-installer.c
+M	src/dlg-package-installer.h
+M	src/dlg-password.c
+M	src/dlg-password.h
+M	src/dlg-prop.c
+M	src/dlg-prop.h
+M	src/dlg-update.c
+M	src/dlg-update.h
+M	src/eggfileformatchooser.c
+M	src/eggfileformatchooser.h
+M	src/eggtreemultidnd.c
+M	src/eggtreemultidnd.h
+M	src/file-data.c
+M	src/file-data.h
+M	src/file-utils.c
+M	src/file-utils.h
+M	src/fr-archive.c
+M	src/fr-archive.h
+M	src/fr-command-7z.c
+M	src/fr-command-7z.h
+M	src/fr-command-ace.c
+M	src/fr-command-ace.h
+M	src/fr-command-alz.c
+M	src/fr-command-alz.h
+M	src/fr-command-ar.c
+M	src/fr-command-ar.h
+M	src/fr-command-arj.c
+M	src/fr-command-arj.h
+M	src/fr-command-cfile.c
+M	src/fr-command-cfile.h
+M	src/fr-command-cpio.c
+M	src/fr-command-cpio.h
+M	src/fr-command-dpkg.c
+M	src/fr-command-dpkg.h
+M	src/fr-command-iso.c
+M	src/fr-command-iso.h
+M	src/fr-command-jar.c
+M	src/fr-command-jar.h
+M	src/fr-command-lha.c
+M	src/fr-command-lha.h
+M	src/fr-command-rar.c
+M	src/fr-command-rar.h
+M	src/fr-command-rpm.c
+M	src/fr-command-rpm.h
+M	src/fr-command-tar.c
+M	src/fr-command-tar.h
+M	src/fr-command-unstuff.c
+M	src/fr-command-unstuff.h
+M	src/fr-command-zip.c
+M	src/fr-command-zip.h
+M	src/fr-command-zoo.c
+M	src/fr-command-zoo.h
+M	src/fr-command.c
+M	src/fr-command.h
+M	src/fr-error.c
+M	src/fr-error.h
+M	src/fr-list-model.c
+M	src/fr-list-model.h
+M	src/fr-process.c
+M	src/fr-process.h
+M	src/fr-stock.c
+M	src/fr-stock.h
+M	src/fr-window.c
+M	src/fr-window.h
+M	src/gio-utils.c
+M	src/gio-utils.h
+M	src/glib-utils.c
+M	src/glib-utils.h
+M	src/gtk-utils.c
+M	src/gtk-utils.h
+M	src/java-utils.c
+M	src/java-utils.h
+M	src/main.c
+M	src/main.h
+M	src/mateconf-utils.c
+M	src/mateconf-utils.h
+M	src/mkdtemp.c
+M	src/mkdtemp.h
+M	src/open-file.c
+M	src/open-file.h
+M	src/preferences.c
+M	src/preferences.h
+M	src/typedefs.h
+M	src/ui.h
+
+commit a3890b35f383de1c866fd3e9c27e37a9145a1850
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-07-11
+
+    Preparing for 1.4 release.
+
+M	configure.ac
+
+commit a415670992e4ed9f991e16d7553e843158575d11
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-07-11
+
+    add po gnome copyrights file
+
+A	po/gnome-copyrights.txt
+
+commit d84c34d38dfac47b970de02c6399710aaae306c5
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-07-11
+
+    fix wrong app name
+
+M	src/actions.c
+
+commit e67f7f62fe308a6b6e67656aa61c43c6b6c9ef13
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-04-29
+
+    move config folder to .config/mate, thanks to gapan
+
+M	src/typedefs.h
+
+commit edf425b3d056675cff109414847bb84ebe9ef8c8
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-03-30
+
+    Preparing for 1.2.1 release
+
+M	configure.ac
+
+commit 835cc7a0e7689947a28778244356a547760a9d1b
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-03-29
+
+    Changed refrences of File Roller to Engrampa
+
+M	data/icons/scalable/apps/engrampa.svg
+M	engrampa.spec.in
+M	help/C/engrampa.xml
+M	help/bg/bg.po
+M	help/ca/ca.po
+M	help/cs/cs.po
+M	help/de/de.po
+M	help/el/el.po
+M	help/en_GB/en_GB.po
+M	help/es/es.po
+M	help/fi/fi.po
+M	help/fr/fr.po
+M	help/it/it.po
+M	help/ja/ja.po
+M	help/nl/nl.po
+M	help/oc/oc.po
+M	help/ru/ru.po
+M	help/sv/sv.po
+M	help/uk/uk.po
+M	help/vi/vi.po
+M	help/zh_CN/zh_CN.po
+M	src/fr-stock.c
+M	src/fr-stock.h
+M	src/main.c
+
+commit bdd1cbc1c0f8855e4b5b2db3debb4813e2ccf364
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-03-07
+
+    update for 1.2 release
+
+M	AUTHORS
+M	README
+M	autogen.sh
+M	configure.ac
+
+commit f35ff35d8cd591cd2d92a480d029ea3000c3dc6f
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-01-13
+
+    Added mate-desktop.org to about window.
+
+M	src/actions.c
+
+commit 06cf226d0e9f5f7e8dea5cfbc8927f4625d99f97
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-01-09
+
+    Changed mate.gr.jp to gnome.gr.jp as requested in Issue #86
+
+M	po/ChangeLog
+M	po/ja.po
+
+commit d4a9636b318206193998b16df6cacf45bd8056c0
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2011-12-13
+
+    updated info files
+
+M	AUTHORS
+M	configure.ac
+
+commit 958aae8a9c9632c27451c4382a358a3cf92d7c15
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2011-12-09
+
+    updated version
+
+M	configure.ac
+M	distro/archlinux/PKGBUILD
+
+commit 6951b3ffc551ddf238a8a1182c65a31d83a804fa
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2011-12-02
+
+    Changed version to 2011.12.01
+
+M	configure.ac
+M	distro/archlinux/PKGBUILD
+
+commit 74006931828ada2d1041bd0e23cacdb3818b6860
+Merge: 98ccf8e 7024a08
+Author: Perberos <perberos@gmail.com>
+Date:	2011-12-01
+
+    Merge pull request #2 from stefano-k/master
+
+    updated .po files
+
+commit 7024a0882aa1bbf22ff8aa533ebf00b46075f7c7
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2011-11-30
+
+    updated .po files
+
+M	po/af.po
+M	po/am.po
+M	po/ar.po
+M	po/as.po
+M	po/ast.po
+M	po/az.po
+M	po/be.po
+M	po/be@latin.po
+M	po/bg.po
+M	po/bn.po
+M	po/bn_IN.po
+M	po/br.po
+M	po/bs.po
+M	po/ca.po
+M	po/ca@valencia.po
+M	po/cs.po
+M	po/cy.po
+M	po/da.po
+M	po/de.po
+M	po/dz.po
+M	po/el.po
+M	po/en@shaw.po
+M	po/en_CA.po
+M	po/en_GB.po
+M	po/eo.po
+M	po/es.po
+M	po/et.po
+M	po/eu.po
+M	po/fa.po
+M	po/fi.po
+M	po/fr.po
+M	po/fur.po
+M	po/fy.po
+M	po/ga.po
+M	po/gl.po
+M	po/gu.po
+M	po/he.po
+M	po/hi.po
+M	po/hr.po
+M	po/hu.po
+M	po/hy.po
+M	po/id.po
+M	po/is.po
+M	po/it.po
+M	po/ja.po
+M	po/ka.po
+M	po/kk.po
+M	po/kn.po
+M	po/ko.po
+M	po/ku.po
+M	po/lt.po
+M	po/lv.po
+M	po/mai.po
+M	po/mg.po
+M	po/mk.po
+M	po/ml.po
+M	po/mn.po
+M	po/mr.po
+M	po/ms.po
+M	po/nb.po
+M	po/nds.po
+M	po/ne.po
+M	po/nl.po
+M	po/nn.po
+M	po/oc.po
+M	po/or.po
+M	po/pa.po
+M	po/pl.po
+M	po/ps.po
+M	po/pt.po
+M	po/pt_BR.po
+M	po/ro.po
+M	po/ru.po
+M	po/rw.po
+M	po/si.po
+M	po/sk.po
+M	po/sl.po
+M	po/sq.po
+M	po/sr.po
+M	po/sr@ije.po
+M	po/sr@latin.po
+M	po/sv.po
+M	po/ta.po
+M	po/te.po
+M	po/th.po
+M	po/tk.po
+M	po/tr.po
+M	po/ug.po
+M	po/uk.po
+M	po/ur.po
+M	po/ur_PK.po
+M	po/vi.po
+M	po/xh.po
+M	po/zh_CN.po
+M	po/zh_HK.po
+M	po/zh_TW.po
+
+commit 98ccf8e158d8419e9c06dafb40ff15b83972f6af
+Merge: 21b3ff8 38968c0
+Author: Perberos <perberos@gmail.com>
+Date:	2011-11-30
+
+    Merge pull request #1 from stefano-k/master
+
+    many renames from file-roller to engrampa
+
+commit 38968c052d6cee9eb9449f994de57814c87ea77d
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2011-11-30
+
+    many renames from file-roller to engrampa
+
+M	README
+M	caja/caja-engrampa.c
+M	caja/caja-engrampa.h
+M	caja/engrampa-module.c
+M	src/actions.c
+M	src/actions.h
+M	src/dlg-add-files.c
+M	src/dlg-add-files.h
+M	src/dlg-add-folder.c
+M	src/dlg-add-folder.h
+M	src/dlg-ask-password.c
+M	src/dlg-ask-password.h
+M	src/dlg-batch-add.c
+M	src/dlg-batch-add.h
+M	src/dlg-delete.c
+M	src/dlg-delete.h
+M	src/dlg-extract.c
+M	src/dlg-extract.h
+M	src/dlg-new.c
+M	src/dlg-new.h
+M	src/dlg-open-with.c
+M	src/dlg-open-with.h
+M	src/dlg-package-installer.c
+M	src/dlg-package-installer.h
+M	src/dlg-password.c
+M	src/dlg-password.h
+M	src/dlg-prop.c
+M	src/dlg-prop.h
+M	src/dlg-update.c
+M	src/dlg-update.h
+M	src/eggtreemultidnd.c
+M	src/file-data.c
+M	src/file-data.h
+M	src/file-utils.c
+M	src/file-utils.h
+M	src/fr-archive.c
+M	src/fr-archive.h
+M	src/fr-command-7z.c
+M	src/fr-command-7z.h
+M	src/fr-command-ace.c
+M	src/fr-command-ace.h
+M	src/fr-command-alz.c
+M	src/fr-command-alz.h
+M	src/fr-command-ar.c
+M	src/fr-command-ar.h
+M	src/fr-command-arj.c
+M	src/fr-command-arj.h
+M	src/fr-command-cfile.c
+M	src/fr-command-cfile.h
+M	src/fr-command-cpio.c
+M	src/fr-command-cpio.h
+M	src/fr-command-dpkg.c
+M	src/fr-command-dpkg.h
+M	src/fr-command-iso.c
+M	src/fr-command-iso.h
+M	src/fr-command-jar.c
+M	src/fr-command-jar.h
+M	src/fr-command-lha.c
+M	src/fr-command-lha.h
+M	src/fr-command-rar.c
+M	src/fr-command-rar.h
+M	src/fr-command-rpm.c
+M	src/fr-command-rpm.h
+M	src/fr-command-tar.c
+M	src/fr-command-tar.h
+M	src/fr-command-unstuff.c
+M	src/fr-command-unstuff.h
+M	src/fr-command-zip.c
+M	src/fr-command-zip.h
+M	src/fr-command-zoo.c
+M	src/fr-command-zoo.h
+M	src/fr-command.c
+M	src/fr-command.h
+M	src/fr-error.c
+M	src/fr-error.h
+M	src/fr-list-model.c
+M	src/fr-list-model.h
+M	src/fr-process.c
+M	src/fr-process.h
+M	src/fr-window.c
+M	src/fr-window.h
+M	src/gio-utils.c
+M	src/gio-utils.h
+M	src/glib-utils.c
+M	src/glib-utils.h
+M	src/gtk-utils.c
+M	src/gtk-utils.h
+M	src/java-utils.c
+M	src/java-utils.h
+M	src/main.c
+M	src/main.h
+M	src/mateconf-utils.c
+M	src/mateconf-utils.h
+M	src/open-file.c
+M	src/open-file.h
+M	src/preferences.c
+M	src/preferences.h
+M	src/typedefs.h
+M	src/ui.h
+
+commit 21b3ff82393313b00f352c84cdd21c40fb84e27e
+Author: Perberos <perberos@gmail.com>
+Date:	2011-11-09
+
+    renaming fileroller to engrampa
+
+M	HACKING
+M	Makefile.am
+M	NEWS
+M	README
+M	TODO
+A	autogen.sh
+M	caja/Makefile.am
+R098	caja/caja-fileroller.c	caja/caja-engrampa.c
+R094	caja/caja-fileroller.h	caja/caja-engrampa.h
+R098	caja/fileroller-module.c	caja/engrampa-module.c
+M	configure.ac
+M	data/Makefile.am
+R091	data/file-roller.desktop.in.in	data/engrampa.desktop.in.in
+R059	data/file-roller.schemas	data/engrampa.schemas
+M	data/icons/16x16/apps/Makefile.am
+R100	data/icons/16x16/apps/file-roller.png
+data/icons/16x16/apps/engrampa.png
+M	data/icons/22x22/apps/Makefile.am
+R100	data/icons/22x22/apps/file-roller.png
+data/icons/22x22/apps/engrampa.png
+M	data/icons/24x24/apps/Makefile.am
+R100	data/icons/24x24/apps/file-roller.png
+data/icons/24x24/apps/engrampa.png
+M	data/icons/32x32/apps/Makefile.am
+R100	data/icons/32x32/apps/file-roller.png
+data/icons/32x32/apps/engrampa.png
+M	data/icons/scalable/apps/Makefile.am
+R099	data/icons/scalable/apps/file-roller.svg
+data/icons/scalable/apps/engrampa.svg
+M	data/ui/Makefile.am
+M	distro/archlinux/PKGBUILD
+D	distro/archlinux/download
+D	distro/archlinux/mate-extract-2011.08.31-1-x86_64.pkg.tar.xz
+R095	distro/archlinux/mate-extract.install
+distro/archlinux/mate-file-archiver.install
+R087	file-roller.spec.in	engrampa.spec.in
+R093	help/C/file-roller.xml	help/C/engrampa.xml
+R100	help/C/figures/file-roller_home.png
+help/C/figures/engrampa_home.png
+R100	help/C/figures/file-roller_leftarrow.png
+help/C/figures/engrampa_leftarrow.png
+R100	help/C/figures/file-roller_main_window.png
+help/C/figures/engrampa_main_window.png
+R100	help/C/figures/file-roller_rightarrow.png
+help/C/figures/engrampa_rightarrow.png
+R100	help/C/figures/file-roller_uparrow.png
+help/C/figures/engrampa_uparrow.png
+M	help/ChangeLog
+M	help/Makefile.am
+M	help/bg/bg.po
+R100	help/bg/figures/file-roller_leftarrow.png
+help/bg/figures/engrampa_leftarrow.png
+R100	help/bg/figures/file-roller_main_window.png
+help/bg/figures/engrampa_main_window.png
+M	help/ca/ca.po
+R100	help/ca/figures/file-roller_home.png
+help/ca/figures/engrampa_home.png
+R100	help/ca/figures/file-roller_leftarrow.png
+help/ca/figures/engrampa_leftarrow.png
+R100	help/ca/figures/file-roller_main_window.png
+help/ca/figures/engrampa_main_window.png
+R100	help/ca/figures/file-roller_rightarrow.png
+help/ca/figures/engrampa_rightarrow.png
+R100	help/ca/figures/file-roller_uparrow.png
+help/ca/figures/engrampa_uparrow.png
+M	help/cs/cs.po
+R100	help/cs/figures/file-roller_home.png
+help/cs/figures/engrampa_home.png
+R100	help/cs/figures/file-roller_leftarrow.png
+help/cs/figures/engrampa_leftarrow.png
+R100	help/cs/figures/file-roller_main_window.png
+help/cs/figures/engrampa_main_window.png
+R100	help/cs/figures/file-roller_rightarrow.png
+help/cs/figures/engrampa_rightarrow.png
+R100	help/cs/figures/file-roller_uparrow.png
+help/cs/figures/engrampa_uparrow.png
+M	help/de/de.po
+R100	help/de/figures/file-roller_home.png
+help/de/figures/engrampa_home.png
+R100	help/de/figures/file-roller_leftarrow.png
+help/de/figures/engrampa_leftarrow.png
+R100	help/de/figures/file-roller_main_window.png
+help/de/figures/engrampa_main_window.png
+R100	help/de/figures/file-roller_rightarrow.png
+help/de/figures/engrampa_rightarrow.png
+R100	help/de/figures/file-roller_uparrow.png
+help/de/figures/engrampa_uparrow.png
+M	help/el/el.po
+R100	help/el/figures/file-roller_main_window.png
+help/el/figures/engrampa_main_window.png
+M	help/en_GB/en_GB.po
+R100	help/file-roller.omf.in help/engrampa.omf.in
+M	help/es/es.po
+R100	help/es/figures/file-roller_leftarrow.png
+help/es/figures/engrampa_leftarrow.png
+R100	help/es/figures/file-roller_main_window.png
+help/es/figures/engrampa_main_window.png
+M	help/fi/fi.po
+R100	help/fi/figures/file-roller_leftarrow.png
+help/fi/figures/engrampa_leftarrow.png
+R100	help/fi/figures/file-roller_main_window.png
+help/fi/figures/engrampa_main_window.png
+R100	help/fr/figures/file-roller_leftarrow.png
+help/fr/figures/engrampa_leftarrow.png
+R100	help/fr/figures/file-roller_main_window.png
+help/fr/figures/engrampa_main_window.png
+M	help/fr/fr.po
+R100	help/it/figures/file-roller_home.png
+help/it/figures/engrampa_home.png
+R100	help/it/figures/file-roller_leftarrow.png
+help/it/figures/engrampa_leftarrow.png
+R100	help/it/figures/file-roller_main_window.png
+help/it/figures/engrampa_main_window.png
+R100	help/it/figures/file-roller_rightarrow.png
+help/it/figures/engrampa_rightarrow.png
+R100	help/it/figures/file-roller_uparrow.png
+help/it/figures/engrampa_uparrow.png
+M	help/it/it.po
+R100	help/ja/figures/file-roller_home.png
+help/ja/figures/engrampa_home.png
+R100	help/ja/figures/file-roller_leftarrow.png
+help/ja/figures/engrampa_leftarrow.png
+R100	help/ja/figures/file-roller_main_window.png
+help/ja/figures/engrampa_main_window.png
+R100	help/ja/figures/file-roller_rightarrow.png
+help/ja/figures/engrampa_rightarrow.png
+R100	help/ja/figures/file-roller_uparrow.png
+help/ja/figures/engrampa_uparrow.png
+M	help/ja/ja.po
+M	help/nl/nl.po
+M	help/oc/oc.po
+M	help/ru/ru.po
+R100	help/sv/figures/file-roller_leftarrow.png
+help/sv/figures/engrampa_leftarrow.png
+R100	help/sv/figures/file-roller_main_window.png
+help/sv/figures/engrampa_main_window.png
+M	help/sv/sv.po
+R100	help/uk/figures/file-roller_home.png
+help/uk/figures/engrampa_home.png
+R100	help/uk/figures/file-roller_leftarrow.png
+help/uk/figures/engrampa_leftarrow.png
+R100	help/uk/figures/file-roller_main_window.png
+help/uk/figures/engrampa_main_window.png
+R100	help/uk/figures/file-roller_rightarrow.png
+help/uk/figures/engrampa_rightarrow.png
+R100	help/uk/figures/file-roller_uparrow.png
+help/uk/figures/engrampa_uparrow.png
+M	help/uk/uk.po
+M	help/vi/vi.po
+M	help/zh_CN/zh_CN.po
+M	po/ChangeLog
+M	po/POTFILES.in
+M	po/POTFILES.skip
+M	po/af.po
+M	po/am.po
+M	po/ar.po
+M	po/as.po
+M	po/ast.po
+M	po/az.po
+M	po/be.po
+M	po/be@latin.po
+M	po/bg.po
+M	po/bn.po
+M	po/bn_IN.po
+M	po/br.po
+M	po/bs.po
+M	po/ca.po
+M	po/ca@valencia.po
+M	po/cs.po
+M	po/cy.po
+M	po/da.po
+M	po/de.po
+M	po/dz.po
+M	po/el.po
+M	po/en@shaw.po
+M	po/en_CA.po
+M	po/en_GB.po
+M	po/eo.po
+M	po/es.po
+M	po/et.po
+M	po/eu.po
+M	po/fa.po
+M	po/fi.po
+M	po/fr.po
+M	po/fur.po
+M	po/fy.po
+M	po/ga.po
+M	po/gl.po
+M	po/gu.po
+M	po/he.po
+M	po/hi.po
+M	po/hr.po
+M	po/hu.po
+M	po/hy.po
+M	po/id.po
+M	po/is.po
+M	po/it.po
+M	po/ja.po
+M	po/ka.po
+M	po/kk.po
+M	po/kn.po
+M	po/ko.po
+M	po/ku.po
+M	po/lt.po
+M	po/lv.po
+M	po/mai.po
+M	po/mg.po
+M	po/mk.po
+M	po/ml.po
+M	po/mn.po
+M	po/mr.po
+M	po/ms.po
+M	po/nb.po
+M	po/nds.po
+M	po/ne.po
+M	po/nl.po
+M	po/nn.po
+M	po/oc.po
+M	po/or.po
+M	po/pa.po
+M	po/pl.po
+M	po/ps.po
+M	po/pt.po
+M	po/pt_BR.po
+M	po/ro.po
+M	po/ru.po
+M	po/rw.po
+M	po/si.po
+M	po/sk.po
+M	po/sl.po
+M	po/sq.po
+M	po/sr.po
+M	po/sr@ije.po
+M	po/sr@latin.po
+M	po/sv.po
+M	po/ta.po
+M	po/te.po
+M	po/th.po
+M	po/tk.po
+M	po/tr.po
+M	po/ug.po
+M	po/uk.po
+M	po/ur.po
+M	po/ur_PK.po
+M	po/vi.po
+M	po/xh.po
+M	po/zh_CN.po
+M	po/zh_HK.po
+M	po/zh_TW.po
+M	src/Makefile.am
+M	src/actions.c
+M	src/dlg-add-files.c
+M	src/dlg-add-folder.c
+M	src/dlg-batch-add.c
+M	src/dlg-extract.c
+M	src/dlg-prop.c
+M	src/eggtreemultidnd.c
+M	src/fr-error.c
+M	src/fr-window.c
+M	src/gtk-utils.c
+M	src/main.c
+M	src/preferences.c
+M	src/preferences.h
+M	src/typedefs.h
+
+commit 70438138096a47b2505ac55634cd94947ce378b6
+Author: Perberos <perberos@gmail.com>
+Date:	2011-11-09
+
+    initial
+
+A	AUTHORS
+A	COPYING
+A	HACKING
+A	MAINTAINERS
+A	Makefile.am
+A	NEWS
+A	README
+A	TODO
+A	caja/Makefile.am
+A	caja/caja-fileroller.c
+A	caja/caja-fileroller.h
+A	caja/fileroller-module.c
+A	configure.ac
+A	copy-n-paste/Makefile.am
+A	copy-n-paste/eggdesktopfile.c
+A	copy-n-paste/eggdesktopfile.h
+A	copy-n-paste/eggsmclient-private.h
+A	copy-n-paste/eggsmclient-xsmp.c
+A	copy-n-paste/eggsmclient.c
+A	copy-n-paste/eggsmclient.h
+A	data/Makefile.am
+A	data/file-roller.desktop.in.in
+A	data/file-roller.schemas
+A	data/icons/16x16/Makefile.am
+A	data/icons/16x16/actions/Makefile.am
+A	data/icons/16x16/actions/add-files-to-archive.png
+A	data/icons/16x16/actions/add-folder-to-archive.png
+A	data/icons/16x16/actions/extract-archive.png
+A	data/icons/16x16/apps/Makefile.am
+A	data/icons/16x16/apps/file-roller.png
+A	data/icons/22x22/Makefile.am
+A	data/icons/22x22/apps/Makefile.am
+A	data/icons/22x22/apps/file-roller.png
+A	data/icons/24x24/Makefile.am
+A	data/icons/24x24/actions/Makefile.am
+A	data/icons/24x24/actions/add-files-to-archive.png
+A	data/icons/24x24/actions/add-folder-to-archive.png
+A	data/icons/24x24/actions/extract-archive.png
+A	data/icons/24x24/apps/Makefile.am
+A	data/icons/24x24/apps/file-roller.png
+A	data/icons/32x32/Makefile.am
+A	data/icons/32x32/apps/Makefile.am
+A	data/icons/32x32/apps/file-roller.png
+A	data/icons/Makefile.am
+A	data/icons/scalable/Makefile.am
+A	data/icons/scalable/apps/Makefile.am
+A	data/icons/scalable/apps/file-roller.svg
+A	data/packages.match
+A	data/packages.match.in
+A	data/ui/Makefile.am
+A	data/ui/add-options.ui
+A	data/ui/batch-add-files.ui
+A	data/ui/batch-password.ui
+A	data/ui/delete.ui
+A	data/ui/new.ui
+A	data/ui/open-with.ui
+A	data/ui/password.ui
+A	data/ui/properties.ui
+A	data/ui/update.ui
+A	distro/archlinux/PKGBUILD
+A	distro/archlinux/download
+A	distro/archlinux/mate-extract-2011.08.31-1-x86_64.pkg.tar.xz
+A	distro/archlinux/mate-extract.install
+A	file-roller.spec.in
+A	help/C/figures/file-roller_home.png
+A	help/C/figures/file-roller_leftarrow.png
+A	help/C/figures/file-roller_main_window.png
+A	help/C/figures/file-roller_rightarrow.png
+A	help/C/figures/file-roller_uparrow.png
+A	help/C/file-roller.xml
+A	help/C/legal.xml
+A	help/ChangeLog
+A	help/Makefile.am
+A	help/bg/bg.po
+A	help/bg/figures/file-roller_leftarrow.png
+A	help/bg/figures/file-roller_main_window.png
+A	help/ca/ca.po
+A	help/ca/figures/file-roller_home.png
+A	help/ca/figures/file-roller_leftarrow.png
+A	help/ca/figures/file-roller_main_window.png
+A	help/ca/figures/file-roller_rightarrow.png
+A	help/ca/figures/file-roller_uparrow.png
+A	help/cs/cs.po
+A	help/cs/figures/file-roller_home.png
+A	help/cs/figures/file-roller_leftarrow.png
+A	help/cs/figures/file-roller_main_window.png
+A	help/cs/figures/file-roller_rightarrow.png
+A	help/cs/figures/file-roller_uparrow.png
+A	help/de/de.po
+A	help/de/figures/file-roller_home.png
+A	help/de/figures/file-roller_leftarrow.png
+A	help/de/figures/file-roller_main_window.png
+A	help/de/figures/file-roller_rightarrow.png
+A	help/de/figures/file-roller_uparrow.png
+A	help/el/el.po
+A	help/el/figures/file-roller_main_window.png
+A	help/en_GB/en_GB.po
+A	help/es/es.po
+A	help/es/figures/file-roller_leftarrow.png
+A	help/es/figures/file-roller_main_window.png
+A	help/fi/fi.po
+A	help/fi/figures/file-roller_leftarrow.png
+A	help/fi/figures/file-roller_main_window.png
+A	help/file-roller.omf.in
+A	help/fr/figures/file-roller_leftarrow.png
+A	help/fr/figures/file-roller_main_window.png
+A	help/fr/fr.po
+A	help/it/figures/file-roller_home.png
+A	help/it/figures/file-roller_leftarrow.png
+A	help/it/figures/file-roller_main_window.png
+A	help/it/figures/file-roller_rightarrow.png
+A	help/it/figures/file-roller_uparrow.png
+A	help/it/it.po
+A	help/ja/figures/file-roller_home.png
+A	help/ja/figures/file-roller_leftarrow.png
+A	help/ja/figures/file-roller_main_window.png
+A	help/ja/figures/file-roller_rightarrow.png
+A	help/ja/figures/file-roller_uparrow.png
+A	help/ja/ja.po
+A	help/nl/nl.po
+A	help/oc/oc.po
+A	help/ru/ru.po
+A	help/sv/figures/file-roller_leftarrow.png
+A	help/sv/figures/file-roller_main_window.png
+A	help/sv/sv.po
+A	help/uk/figures/file-roller_home.png
+A	help/uk/figures/file-roller_leftarrow.png
+A	help/uk/figures/file-roller_main_window.png
+A	help/uk/figures/file-roller_rightarrow.png
+A	help/uk/figures/file-roller_uparrow.png
+A	help/uk/uk.po
+A	help/vi/vi.po
+A	help/zh_CN/zh_CN.po
+A	po/ChangeLog
+A	po/LINGUAS
+A	po/POTFILES.in
+A	po/POTFILES.skip
+A	po/af.po
+A	po/am.po
+A	po/ar.po
+A	po/as.po
+A	po/ast.po
+A	po/az.po
+A	po/be.po
+A	po/be@latin.po
+A	po/bg.po
+A	po/bn.po
+A	po/bn_IN.po
+A	po/br.po
+A	po/bs.po
+A	po/ca.po
+A	po/ca@valencia.po
+A	po/cs.po
+A	po/cy.po
+A	po/da.po
+A	po/de.po
+A	po/dz.po
+A	po/el.po
+A	po/en@shaw.po
+A	po/en_CA.po
+A	po/en_GB.po
+A	po/eo.po
+A	po/es.po
+A	po/et.po
+A	po/eu.po
+A	po/fa.po
+A	po/fi.po
+A	po/fr.po
+A	po/fur.po
+A	po/fy.po
+A	po/ga.po
+A	po/gl.po
+A	po/gu.po
+A	po/he.po
+A	po/hi.po
+A	po/hr.po
+A	po/hu.po
+A	po/hy.po
+A	po/id.po
+A	po/is.po
+A	po/it.po
+A	po/ja.po
+A	po/ka.po
+A	po/kk.po
+A	po/kn.po
+A	po/ko.po
+A	po/ku.po
+A	po/lt.po
+A	po/lv.po
+A	po/mai.po
+A	po/mg.po
+A	po/mk.po
+A	po/ml.po
+A	po/mn.po
+A	po/mr.po
+A	po/ms.po
+A	po/nb.po
+A	po/nds.po
+A	po/ne.po
+A	po/nl.po
+A	po/nn.po
+A	po/oc.po
+A	po/or.po
+A	po/pa.po
+A	po/pl.po
+A	po/ps.po
+A	po/pt.po
+A	po/pt_BR.po
+A	po/ro.po
+A	po/ru.po
+A	po/rw.po
+A	po/si.po
+A	po/sk.po
+A	po/sl.po
+A	po/sq.po
+A	po/sr.po
+A	po/sr@ije.po
+A	po/sr@latin.po
+A	po/sv.po
+A	po/ta.po
+A	po/te.po
+A	po/th.po
+A	po/tk.po
+A	po/tr.po
+A	po/ug.po
+A	po/uk.po
+A	po/ur.po
+A	po/ur_PK.po
+A	po/vi.po
+A	po/xh.po
+A	po/zh_CN.po
+A	po/zh_HK.po
+A	po/zh_TW.po
+A	src/Makefile.am
+A	src/actions.c
+A	src/actions.h
+A	src/commands/Makefile.am
+A	src/commands/rpm2cpio.c
+A	src/dlg-add-files.c
+A	src/dlg-add-files.h
+A	src/dlg-add-folder.c
+A	src/dlg-add-folder.h
+A	src/dlg-ask-password.c
+A	src/dlg-ask-password.h
+A	src/dlg-batch-add.c
+A	src/dlg-batch-add.h
+A	src/dlg-delete.c
+A	src/dlg-delete.h
+A	src/dlg-extract.c
+A	src/dlg-extract.h
+A	src/dlg-new.c
+A	src/dlg-new.h
+A	src/dlg-open-with.c
+A	src/dlg-open-with.h
+A	src/dlg-package-installer.c
+A	src/dlg-package-installer.h
+A	src/dlg-password.c
+A	src/dlg-password.h
+A	src/dlg-prop.c
+A	src/dlg-prop.h
+A	src/dlg-update.c
+A	src/dlg-update.h
+A	src/egg-macros.h
+A	src/eggfileformatchooser.c
+A	src/eggfileformatchooser.h
+A	src/eggtreemultidnd.c
+A	src/eggtreemultidnd.h
+A	src/file-data.c
+A	src/file-data.h
+A	src/file-utils.c
+A	src/file-utils.h
+A	src/fr-archive.c
+A	src/fr-archive.h
+A	src/fr-command-7z.c
+A	src/fr-command-7z.h
+A	src/fr-command-ace.c
+A	src/fr-command-ace.h
+A	src/fr-command-alz.c
+A	src/fr-command-alz.h
+A	src/fr-command-ar.c
+A	src/fr-command-ar.h
+A	src/fr-command-arj.c
+A	src/fr-command-arj.h
+A	src/fr-command-cfile.c
+A	src/fr-command-cfile.h
+A	src/fr-command-cpio.c
+A	src/fr-command-cpio.h
+A	src/fr-command-dpkg.c
+A	src/fr-command-dpkg.h
+A	src/fr-command-iso.c
+A	src/fr-command-iso.h
+A	src/fr-command-jar.c
+A	src/fr-command-jar.h
+A	src/fr-command-lha.c
+A	src/fr-command-lha.h
+A	src/fr-command-lrzip.c
+A	src/fr-command-lrzip.h
+A	src/fr-command-rar.c
+A	src/fr-command-rar.h
+A	src/fr-command-rpm.c
+A	src/fr-command-rpm.h
+A	src/fr-command-tar.c
+A	src/fr-command-tar.h
+A	src/fr-command-unstuff.c
+A	src/fr-command-unstuff.h
+A	src/fr-command-zip.c
+A	src/fr-command-zip.h
+A	src/fr-command-zoo.c
+A	src/fr-command-zoo.h
+A	src/fr-command.c
+A	src/fr-command.h
+A	src/fr-error.c
+A	src/fr-error.h
+A	src/fr-list-model.c
+A	src/fr-list-model.h
+A	src/fr-marshal.list
+A	src/fr-process.c
+A	src/fr-process.h
+A	src/fr-stock.c
+A	src/fr-stock.h
+A	src/fr-window.c
+A	src/fr-window.h
+A	src/gio-utils.c
+A	src/gio-utils.h
+A	src/glib-utils.c
+A	src/glib-utils.h
+A	src/gtk-utils.c
+A	src/gtk-utils.h
+A	src/java-utils.c
+A	src/java-utils.h
+A	src/main.c
+A	src/main.h
+A	src/mateconf-utils.c
+A	src/mateconf-utils.h
+A	src/mkdtemp.c
+A	src/mkdtemp.h
+A	src/open-file.c
+A	src/open-file.h
+A	src/preferences.c
+A	src/preferences.h
+A	src/sh/Makefile.am
+A	src/sh/isoinfo.sh
+A	src/typedefs.h
+A	src/ui.h

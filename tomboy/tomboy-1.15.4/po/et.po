@@ -1,0 +1,2076 @@
+# Tomboy eesti keele tõlge.
+# Estonian translation of Tomboy.
+#
+# Copyright (C) 2006–2010 The Gnome Project.
+# This file is distributed under the same license as the tomboy package.
+#
+# Ivar Smolin <okul linux ee>, 2006–2010.
+# Priit Laes <amd store20 com>, 2007.
+# Mattias Põldaru <mahfiaz@gmail.com>, 2009, 2011, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tomboy MASTER\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=tomboy&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-10-24 18:23+0000\n"
+"PO-Revision-Date: 2012-10-30 01:13+0300\n"
+"Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
+"Language-Team: Estonian <>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Tomboy Applet Factory"
+msgstr "Tomboy rakendi Factory"
+
+msgid "Tomboy Notes"
+msgstr "Tomboy märkmed"
+
+msgid "Simple and easy to use note-taking"
+msgstr "Lihtne ja kergestikasutatav märkmete tegemise programm"
+
+msgid "Accessories"
+msgstr "Tarvikud"
+
+msgid "S_ynchronize Notes"
+msgstr "Sü_nkroniseeri märkmed"
+
+msgid "_Preferences"
+msgstr "_Eelistused"
+
+msgid "_Help"
+msgstr "A_bi"
+
+msgid "_About"
+msgstr "_Tomboy'st lähemalt"
+
+msgid "Take notes, link ideas, and stay organized"
+msgstr "Tee märkmeid, ühenda ideed omavahel ja ole organiseeritud"
+
+msgid "Note-taker"
+msgstr "Märkmik"
+
+msgid "Enable spellchecking"
+msgstr "Õigekirjakontrolli lubamine"
+
+msgid ""
+"If true, misspellings will be underlined in red, and correct spelling "
+"suggestions shown in the right-click menu."
+msgstr ""
+"Kui märgitud, siis õigekirjakontrolli poolt kahtlaseks märgitud sõnad "
+"joonitakse punaselt alla ja sõnal parema hiireklõpsu peale avanev menüü "
+"sisaldab õigekirjakontrolli soovitusi."
+
+msgid "Enable WikiWord highlighting"
+msgstr "WikiWord esiletõstmise lubamine"
+
+msgid ""
+"Enable this option to highlight words ThatLookLikeThis. Clicking the word "
+"will create a note with that name."
+msgstr ""
+"Selle võtme lubamisega tõstetakse SellisedSõnad (sõnad millel on suur täht "
+"keskel) esile. Sellisele sõnale klõpsates luuakse uus märge, mille "
+"pealkirjaks on klõpsatud sõna."
+
+msgid "Enable automatic bulleted lists."
+msgstr "Automaatsete täpploetelude lubamine."
+
+msgid ""
+"Enable this option if you want bulleted lists to be automatic when you place "
+"- or * at the beginning of a line."
+msgstr ""
+"Kui märgitud, siis rea algusesse paigutatud märgi '-' või '*' korral "
+"alustatakse automaatselt täpploetelu."
+
+msgid "Enable Middle-Click Paste On Icon."
+msgstr "Ikoonile keskmise nupuga asetamise lubamine."
+
+msgid ""
+"Enable this option if you want to be able to middle-click the Tomboy icon to "
+"paste timestamped content into the Start Here note."
+msgstr ""
+"Kui märgitud, siis on võimalik Tomboy ikoonil keskmise hiirenupu "
+"klõpsamisega asetada lõikelaua sisu \"Alusta siit\" märkmesse. Lisatav tekst "
+"varustatakse ajatempliga."
+
+msgid "Enable custom font"
+msgstr "Kohandatud kirjatüübi lubamine"
+
+msgid ""
+"If true, the font name set in custom_font_face will be used as the font when "
+"displaying notes. Otherwise the desktop default font will be used."
+msgstr ""
+"Kui märgitud, siis märkmete kuvamiseks kasutatakse custom_font_face võtmes "
+"määratud kirjatüüpi. Vastasel juhul kasutatakse töölaua kirjatüüpi."
+
+msgid "Custom Font Face"
+msgstr "Kohandatud kirjatüüp"
+
+msgid ""
+"If enable_custom_font is true, the font name set here will be used as the "
+"font when displaying notes."
+msgstr ""
+"Kui enable_custom_font võti on märgitud, siis kasutatakse märkmete "
+"kuvamiseks siinkirjeldatud kirjatüüpi."
+
+msgid "Enable global keybindings"
+msgstr "Globaalsete kiirklahvide lubamine"
+
+msgid ""
+"If true, the desktop-global keybindings set in /apps/tomboy/"
+"global_keybindings will be enabled, allowing for useful Tomboy actions to be "
+"available from any application."
+msgstr ""
+"Kui märgitud, siis on /apps/tomboy/global_keybindings all määratud "
+"globaalsed kiirklahvid lubatud ja nende abil on võimalik Tomboy toiminguid "
+"igast rakendusest välja kutsuda."
+
+msgid "Enable the Delete Note confirmation dialog"
+msgstr "Märkme kustutamise kinnitusdialoogi lubamine"
+
+msgid ""
+"If disabled, the \"Delete Note\" confirmation dialog will be suppressed."
+msgstr ""
+"Kui keelatud, siis toimub märkme kustutamine ilma kasutajalt kinnitust "
+"küsimata."
+
+msgid "Enable Tray Icon"
+msgstr "Salveikooni lubamine"
+
+msgid ""
+"If true, Tomboy's tray icon will be displayed in the notification area. "
+"Disabling this may be useful when another application is providing the "
+"functionality of the tray icon."
+msgstr ""
+"Kui märgitud, siis näidatakse teatealal Tomboy salveikooni. Ikooni näitamise "
+"keelamine võib vajalik olla juhul, kui mõni muu rakendus asendab Tomboy "
+"salveikooni."
+
+msgid "Start Here Note"
+msgstr "\"Alusta siit\" märge"
+
+msgid ""
+"The note URI of the note that should be considered the \"Start Here\" note, "
+"which is always placed at the bottom of the Tomboy note menu and also "
+"accessible by hotkey."
+msgstr ""
+"\"Alusta siit\" märkme URI. See märge on alati nähtav Tomboy märkmete menüü "
+"allosas ja seda on võimalik kiirklahvi abil avada."
+
+msgid "Minimum number of notes to show in menu"
+msgstr "Vähim menüüs näidatavate märgete arv"
+
+msgid ""
+"Integer determining the minimum number of notes to show in the Tomboy note "
+"menu."
+msgstr "Täisarv, millega määratakse vähim märgete arv Tomboy märkmemenüüs."
+
+msgid "List of pinned notes."
+msgstr "Laualolevate märkmete nimekiri."
+
+msgid ""
+"Whitespace-separated list of note URIs for notes that should always appear "
+"in the Tomboy note menu."
+msgstr ""
+"Tühja ruumiga eraldatud nimekiri märgete URI-dest, mis peavad alati olema "
+"Tomboy märgete menüüs."
+
+msgid "Maximum note title length to show in tray menu."
+msgstr "Salvemenüüs näidatava märkme pealkirja suurim pikkus."
+
+msgid ""
+"Maximum characters of note title to show in the Tomboy tray or panel applet "
+"note menu."
+msgstr ""
+"Tomboy salves või paneelirakendi märkmemenüüs näidatava märkme pealkirja "
+"suurim pikkus."
+
+msgid "Enable startup notes"
+msgstr "Märkmete avamine käivitamisel"
+
+msgid ""
+"If enabled, all notes that were open when Tomboy quit will automatically be "
+"reopened at startup."
+msgstr ""
+"Kui märgitud, siis avatakse käivitamisel automaatselt kõik märkmed, mis "
+"Tomboy sulgemisel avatud olid."
+
+msgid "Show applet menu"
+msgstr "Rakendimenüü näitamine"
+
+msgid ""
+"The global keybinding for showing the Tomboy applet's menu. The format looks "
+"like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
+"fairly liberal and allows lower or upper case, and also abbreviations such "
+"as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
+"special string \"disabled\", then there will be no keybinding for this "
+"action."
+msgstr ""
+"Globaalne klahvikombinatsioon Tomboy rakendimenüü näitamiseks. Vorming on "
+"kujul \"&lt;Control&gt;a\" või \"&lt;Shift&gt;&lt;Alt&gt;F1\". Parser on "
+"vormingu suhtes üpris leplik ja lubab läbisegi nii suur- kui väiketähti, "
+"samuti ka lühendeid nagu \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". Kui "
+"väärtuseks määrata eristring \"disabled\", siis on selle toimingu jaoks "
+"klahvikombinatsioon keelatud."
+
+msgid "Open Start Here"
+msgstr "\"Alusta siit\" avamine"
+
+msgid ""
+"The global keybinding for opening the \"Start Here\" note. The format looks "
+"like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
+"fairly liberal and allows lower or upper case, and also abbreviations such "
+"as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
+"special string \"disabled\", then there will be no keybinding for this "
+"action."
+msgstr ""
+"Globaalne klahvikombinatsioon \"Alusta siit\" märkme avamiseks. Vorming on "
+"kujul \"&lt;Control&gt;a\" või \"&lt;Shift&gt;&lt;Alt&gt;F1\". Parser on "
+"vormingu suhtes üpris leplik ja lubab läbisegi nii suur- kui väiketähti, "
+"samuti ka lühendeid nagu \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". Kui "
+"väärtuseks määrata eristring \"disabled\", siis on selle toimingu jaoks "
+"klahvikombinatsioon keelatud."
+
+msgid "Create a new Note"
+msgstr "Uue märkme loomine"
+
+msgid ""
+"The global keybinding for creating and displaying a new Note. The format "
+"looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The "
+"parser is fairly liberal and allows lower or upper case, and also "
+"abbreviations such as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the "
+"option to the special string \"disabled\", then there will be no keybinding "
+"for this action."
+msgstr ""
+"Globaalne klahvikombinatsioon uue märkme loomiseks ja kuvamiseks. Vorming on "
+"kujul \"&lt;Control&gt;a\" või \"&lt;Shift&gt;&lt;Alt&gt;F1\". Parser on "
+"vormingu suhtes üpris leplik ja lubab läbisegi nii suur- kui väiketähti, "
+"samuti ka lühendeid nagu \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". Kui "
+"väärtuseks määrata eristring \"disabled\", siis on selle toimingu jaoks "
+"klahvikombinatsioon keelatud."
+
+msgid "Open Search Dialog"
+msgstr "Otsimisdialoogi avamine"
+
+msgid ""
+"The global keybinding for opening the Note Search dialog. The format looks "
+"like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
+"fairly liberal and allows lower or upper case, and also abbreviations such "
+"as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
+"special string \"disabled\", then there will be no keybinding for this "
+"action."
+msgstr ""
+"Globaalne klahvikombinatsioon märkmete otsimise dialoogi avamiseks. Vorming "
+"on kujul \"&lt;Control&gt;a\" või \"&lt;Shift&gt;&lt;Alt&gt;F1\". Parser on "
+"vormingu suhtes üpris leplik ja lubab läbisegi nii suur- kui väiketähti, "
+"samuti ka lühendeid nagu \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". Kui "
+"väärtuseks määrata eristring \"disabled\", siis on selle toimingu jaoks "
+"klahvikombinatsioon keelatud."
+
+msgid "Open Recent Changes"
+msgstr "Viimaste muudatuste avamine"
+
+msgid ""
+"The global keybinding for opening the Recent Changes dialog. The format "
+"looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The "
+"parser is fairly liberal and allows lower or upper case, and also "
+"abbreviations such as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the "
+"option to the special string \"disabled\", then there will be no keybinding "
+"for this action."
+msgstr ""
+"Globaalne klahvikombinatsioon viimaste muudatuste dialoogi avamiseks. "
+"Vorming on kujul \"&lt;Control&gt;a\" või \"&lt;Shift&gt;&lt;Alt&gt;F1\". "
+"Parser on vormingu suhtes üpris leplik ja lubab läbisegi nii suur- kui "
+"väiketähti, samuti ka lühendeid nagu \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". "
+"Kui väärtuseks määrata eristring \"disabled\", siis on selle toimingu jaoks "
+"klahvikombinatsioon keelatud."
+
+msgid "Saved height of \"Search All Notes\" window"
+msgstr "\"Kõigi märkmete otsingu\" akna salvestatud kõrgus"
+
+msgid ""
+"Determines pixel height of \"Search All Notes\" window; stored on Tomboy "
+"exit."
+msgstr ""
+"Määrab \"Kõigi märkmete otsingu\" akna kõrguse, salvestatakse Tomboyst "
+"väljumisel."
+
+msgid "Saved width of \"Search All Notes\" window"
+msgstr "\"Kõigi märkmete otsingu\" akna salvestatud laius"
+
+msgid ""
+"Determines pixel width of \"Search All Notes\" window; stored on Tomboy exit."
+msgstr ""
+"Määrab \"Kõigi märkmete otsingu\" akna laiuse, salvestatakse Tomboyst "
+"väljumisel."
+
+msgid "Saved horizontal position of \"Search All Notes\" window"
+msgstr ""
+"\"Kõigi märkmete otsingu\" akna salvestatud horisontaalsuunaline asukoht"
+
+msgid ""
+"Determines X coordinate of \"Search All Notes\" window; stored on Tomboy "
+"exit."
+msgstr ""
+"Määrab \"Kõigi märkmete otsingu\" akna X-koordinaadi, salvestatakse Tomboyst "
+"väljumisel."
+
+msgid "Saved vertical position of \"Search All Notes\" window"
+msgstr "\"Kõigi märkmete otsingu\" akna salvestatud vertikaalsuunaline asukoht"
+
+msgid ""
+"Determines Y coordinate of \"Search All Notes\" window; stored on Tomboy "
+"exit."
+msgstr ""
+"Määrab \"Kõigi märkmete otsingu\" akna Y-koordinaadi, salvestatakse Tomboyst "
+"väljumisel."
+
+msgid "Last Directory used in HTML Export"
+msgstr "HTMLi eksportimisel viimati kasutatud kataloog"
+
+msgid ""
+"The last directory a note was exported to using the Export To HTML plugin."
+msgstr "Viimane kataloog, kuhu HTML-iks eksportimise plugin märkme salvestas."
+
+msgid "HTML Export Linked Notes"
+msgstr "Viidatud märkmete HTML-eksport"
+
+msgid ""
+"The last setting for the 'Export linked notes' checkbox in the Export to "
+"HTML plugin."
+msgstr ""
+"HTML-iks eksportimise plugina märkeruudu \"Eksporditakse ka viidatud märkmed"
+"\" viimane olek."
+
+msgid "HTML Export All Linked Notes"
+msgstr "Kõigi viidatud märkmete HTML-eksport"
+
+msgid ""
+"The last setting for the 'Include all other linked notes' checkbox in the "
+"Export to HTML plugin. This setting is used in conjunction with the 'HTML "
+"Export Linked Notes' setting and is used to specify whether all notes (found "
+"recursively) should be included during an export to HTML."
+msgstr ""
+"HTML-iks eksportimise plugina märkeruudu \"Kaasa arvatud kõik ülejäänud "
+"viidatud märkmed\" viimane olek. Seda sätet kasutatakse koos sättega "
+"'Viidatud märkmete HTML-eksport' ja selle abil määratakse, kas HTML-iks "
+"eksportimise ajal kaasatakse kõik eksporditava märkme poolt viidatud "
+"märkmed, mis leitakse rekursiivse otsingu abil."
+
+msgid "Sticky Note Importer First Run"
+msgstr "Märkmepaberite importeri esimene töökord"
+
+msgid ""
+"Indicates that the Sticky Note Importer plugin has not been run, so it "
+"should run automatically the next time Tomboy starts."
+msgstr ""
+"Näitab, et Märkmepaberite importija pole varem käivitatud, seega tuleb see "
+"järgmisel Tomboy käivitamisel automaatselt käima panna."
+
+msgid "Synchronization Client ID"
+msgstr "Sünkroniseerimiskliendi ID"
+
+msgid ""
+"Unique identifier for this Tomboy client, used when communicating with a "
+"sychronization server."
+msgstr ""
+"Sünkroniseerimisserveriga suhtlemiseks kasutatava Tomboy kliendi unikaalne "
+"identifikaator."
+
+msgid "Synchronization Local Server Path"
+msgstr "Sünkroniseerimise kohaliku serveri rada"
+
+msgid ""
+"Path to the synchronization server when using the filesystem synchronization "
+"service addin."
+msgstr ""
+"Sünkroniseerimisserveri rada failisüsteemipõhise sünkroniseerimise lisa "
+"kasutamise korral."
+
+msgid "Selected Synchronization Service Addin"
+msgstr "Sünkroniseerimisteenuseks valitud lisa"
+
+msgid ""
+"Unique identifier for the currently configured note synchronization service "
+"addin."
+msgstr ""
+"Hetkel seadistatud sünkroniseerimisteenuse lisa unikaalne identifikaator."
+
+msgid "FUSE Mounting Timeout (ms)"
+msgstr "FUSE-ga haakimise aegumine (ms)"
+
+msgid ""
+"Time (in milliseconds) Tomboy should wait for a response when using FUSE to "
+"mount a sync share."
+msgstr ""
+"Aeg (millisekundites) mille jooksul Tomboy peaks vastama jagatud "
+"sünkroniseerimiskausta haakimisel, kui kasutatakse FUSE-t."
+
+msgid "SSHFS Remote Synchronization Folder"
+msgstr "SSHFS kaugsünkroniseerimise kataloog"
+
+msgid "Path on SSH server to Tomboy synchronization directory (optional)."
+msgstr "Tomboy sünkroniseerimiskataloogi asukoht SSH serveris (valikuline)."
+
+msgid "SSHFS Synchronization Server URL"
+msgstr "SSHFS kaugsünkroniseerimise serveri URL"
+
+msgid "URL of SSH server containing Tomboy synchronization directory."
+msgstr "SSH serveri URL, kus asub Tomboy sünkroniseerimiskataloog."
+
+msgid "SSHFS Remote Synchronization User Name"
+msgstr "SSHFS kaugsünkroniseerimise kasutajanimi"
+
+msgid "User name to use when connecting to the synchronization server via SSH."
+msgstr "SSH sünkroniseerimisserveriga ühendumise kasutajanimi."
+
+msgid "SSHFS Synchronization Server Port"
+msgstr "SSHFS kaugsünkroniseerimise serveri port"
+
+msgid ""
+"The port to use when connecting to the synchronization server via SSH. Set "
+"to -1 or less if default SSH port settings should be used instead."
+msgstr ""
+"SSH-ga sünkroniseerimisserverisse ühendumisel kasutatav port. SSH sätete "
+"vaikimisi pordi jaoks kasuta väärtust -1."
+
+msgid "Accept SSL Certificates"
+msgstr "SSL-sertifikaatide aktsepteerimine"
+
+msgid ""
+"Use wdfs option \"-ac\" to accept SSL certificates without prompting the "
+"user."
+msgstr ""
+"Wdfs valiku \"-ac\" kasutamine SSL sertifikaatidega nõustumiseks ilma "
+"kasutajalt küsimata."
+
+msgid "Note Synchronization Conflict Saved Behavior"
+msgstr "Salvestatud käitumine märkmete sünkroniseerimise vastuolu tarbeks"
+
+msgid ""
+"Integer value indicating if there is a preference to always perform a "
+"specific behavior when a conflict is detected, instead of prompting the "
+"user. The values map to an internal enumeration. 0 indicates that the user "
+"wishes to be prompted when a conflict occurs, so that they may handle each "
+"conflict situation on a case-by-case basis."
+msgstr ""
+"Täisarvuline väärtus meetodi kohta, mille kasutaja on määranud vastuolude "
+"lahendamiseks. Väärtus 0 määrab, et iga vastuolu leidmisel küsitakse "
+"kasutajalt lahendamiseks kinnitust ja kasutaja peab iga juhtumi eraldi "
+"lahendama."
+
+msgid "Automatic Background Synchronization Timeout"
+msgstr "Automaatsünkroniseerimise intervall"
+
+msgid ""
+"Integer value indicating how frequently to perform a background sync of your "
+"notes (when sync is configured). Any value less than 1 indicates that "
+"autosync is disabled. The lowest acceptable positive value is 5. Value is in "
+"minutes."
+msgstr ""
+"Täisarvuline väärtus, mis määrab kui tihti teostatakse märkemete automaatset "
+"sünkroniseermist taustal (kui sünkroniseerimine on seadistatud). Iga "
+"väärtus, mis on väiksem kui 1, tühistab automaatsünkroniseerimise. Väikseim "
+"lubatud positiivne väärtus on 5. Väärtus on minutites."
+
+msgid "Link Updating Behavior on Note Rename"
+msgstr "Viite uuendamise käitumine märkme ümbernimetamisel"
+
+msgid ""
+"Integer value indicating if there is a preference to always perform a "
+"specific link updating behavior when a note is renamed, instead of prompting "
+"the user. The values map to an internal enumeration. 0 indicates that the "
+"user wishes to be prompted when renaming a note may impact links that exist "
+"in other notes. 1 indicates that links should automatically be removed. 2 "
+"indicates that link text should be updated to the new note name so that it "
+"will continue linking to the renamed note."
+msgstr ""
+"Täisarvuline väärtus, mis määrab märkmete ümbernimetamisel viidete "
+"uuendamise käitumise selle asemel, et küsida iga kord kasutajalt. Väärtus 0 "
+"määrab, et vastuolu leidmisel küsitakse kasutajalt lahendamiseks kinnitust. "
+"Väärtus 1 määrab, et viited eemaldatakse automaatselt. Väärtus 2 määrab, et "
+"viidete nimed asendatakse uute nimedega nii, et ümbernimetatud märgete vahel "
+"säilib viitamine."
+
+msgid "Timestamp format"
+msgstr "Ajatempli vorming"
+
+msgid "The date format that is used for the timestamp."
+msgstr "Ajatemplis kasutatav kuupäeva vorming."
+
+msgid "Enable closing notes with escape."
+msgstr "Escape-klahvi abil märkmete sulgemise lubamine"
+
+msgid "If enabled, an opened note can be closed by hitting the escape key."
+msgstr ""
+"Kui lubatud, siis on võimalik avatud märget sulgeda escape-klahvi abil."
+
+msgid "The handler for \"note://\" URLs"
+msgstr "\"note://\" URL-ide käsitleja"
+
+msgid "Set to TRUE to activate"
+msgstr "Aktiveerimiseks tuleb see märkida"
+
+msgid "_File"
+msgstr "_Fail"
+
+msgid "_New"
+msgstr "_Uus"
+
+msgid "Create a new note"
+msgstr "Uue märkme loomine"
+
+msgid "_Open..."
+msgstr "_Ava..."
+
+msgid "Open the selected note"
+msgstr "Valitud märkme avamine"
+
+msgid "_Delete"
+msgstr "_Kustuta"
+
+msgid "Delete the selected note"
+msgstr "Valitud märkme kustutamine"
+
+msgid "_Close"
+msgstr "_Sulge"
+
+msgid "Close this window"
+msgstr "Selle akna sulgemine"
+
+msgid "_Quit"
+msgstr "_Lõpeta"
+
+msgid "Quit Tomboy"
+msgstr "Tomboy töö lõpetamine"
+
+msgid "_Edit"
+msgstr "_Redaktor"
+
+msgid "Tomboy Preferences"
+msgstr "Tomboy eelistused"
+
+msgid "_Contents"
+msgstr "_Sisukord"
+
+msgid "Tomboy Help"
+msgstr "Tomboy Abi"
+
+msgid "About Tomboy"
+msgstr "Tomboy'st lähemalt"
+
+msgid "TrayIcon"
+msgstr "SalveIkoon"
+
+msgid "Create _New Note"
+msgstr "Loo _uus märge"
+
+msgid "_Search All Notes"
+msgstr "_Otsi kõikide märkmete hulgast"
+
+msgid "Open the Search All Notes window"
+msgstr "Otsing kõikide märkmete hulgast"
+
+msgid "Start synchronizing notes"
+msgstr "Märkmete sünkroniseerimise alustamine"
+
+#. Addin's tab caption
+msgid "Advanced"
+msgstr "Laiendatud"
+
+#. Menu Note Count option
+msgid "Minimum number of notes to show in Recent list (maximum 18)"
+msgstr "Vähim menüüs näidatavate hiljutiste märgete arv (maksimaalne 18)"
+
+msgid "What links here?"
+msgstr "Mis siia viitab?"
+
+#. This is a disabled placeholder item for an empty menu
+msgid "(none)"
+msgstr "(puudub)"
+
+msgid ""
+"You can use any bugzilla just by dragging links into notes.  If you want a "
+"special icon for certain hosts, add them here."
+msgstr ""
+"Sa võid kasutada igat bugzilla't lihtsalt viitasid märkmetesse lohistades. "
+"Kui sa soovid hostidele eristamiseks ikoone lisada, saad sa seda siin teha."
+
+msgid "Host Name"
+msgstr "Hosti nimi"
+
+msgid "Icon"
+msgstr "Ikoon"
+
+msgid "Select an icon..."
+msgstr "Ikooni valimine..."
+
+#. Extra Widget
+msgid "_Host name:"
+msgstr "_Hosti nimi:"
+
+msgid "No host name specified"
+msgstr "Hosti nimi on määramata"
+
+msgid "You must specify the Bugzilla host name to use with this icon."
+msgstr "Sa pead määrama selle ikooniga kasutamiseks Bugzilla hosti nime"
+
+msgid "Error saving icon"
+msgstr "Viga ikooni salvestamisel"
+
+msgid "Could not save the icon file."
+msgstr "Ikoonifaili pole võimalik salvestada."
+
+msgid "Really remove this icon?"
+msgstr "Kas kustutada see ikoon?"
+
+msgid "If you remove an icon it is permanently lost."
+msgstr "Kui sa ikooni kustutad, siis on see jäädavalt kadunud."
+
+msgid "Cannot open email"
+msgstr "E-posti pole võimalik avada"
+
+msgid "HTML"
+msgstr "HTML"
+
+msgid "Destination for HTML Export"
+msgstr "HTML-ekspordi sihtkoht"
+
+msgid "Export linked notes"
+msgstr "Eksporditakse ka viidatud märkmed"
+
+msgid "Include all other linked notes"
+msgstr "Kaasa arvatud kõik ülejäänud viidatud märkmed"
+
+msgid "Export to HTML"
+msgstr "Ekspordi HTML-iks"
+
+#, csharp-format
+msgid "Your note was exported to \"{0}\"."
+msgstr "Märge eksporditi edukalt faili \"{0}\"."
+
+msgid "Note exported successfully"
+msgstr "Märge on edukalt eksporditud"
+
+msgid "Access denied."
+msgstr "Juurdepääs keelatud."
+
+msgid "Folder does not exist."
+msgstr "Kataloogi pole olemas."
+
+#, csharp-format
+msgid "Could not save the file \"{0}\""
+msgstr "Faili \"{0}\" pole võimalik salvestada"
+
+msgid "_Folder Path:"
+msgstr "_Kataloogi rada:"
+
+msgid "Select Synchronization Folder..."
+msgstr "Sünkroniseerimiskataloogi valimine..."
+
+msgid "Folder path field is empty."
+msgstr "Kataloogi raja väli on tühi."
+
+msgid ""
+"Specified folder path does not exist, and Tomboy was unable to create it."
+msgstr ""
+"Kataloogile määratud rada pole olemas ja Tomboy'l pole võimalik ka seda luua."
+
+msgid "Local Folder"
+msgstr "Kohalik kataloog"
+
+msgid "Fixed Wid_th"
+msgstr "_Määratud laiusega"
+
+#, csharp-format
+msgid "Cannot contact '{0}'"
+msgstr "Kasutajaga '{0}' pole võimalik ühendust võtta"
+
+#, csharp-format
+msgid "Error running gaim-remote: {0}"
+msgstr "Viga gaim-remote käivitamisel: {0}"
+
+msgid "Insert Timestamp"
+msgstr "Sisesta ajatempel"
+
+#. initial newline
+msgid "dddd, MMMM d, h:mm tt"
+msgstr "dddd, d. MMMM, h:mm tt"
+
+msgid "Choose one of the predefined formats or use your own."
+msgstr "Vali mõni eelkirjeldatud vorming või kirjelda omale ise."
+
+msgid "Use _Selected Format"
+msgstr "Kasutatakse _valitud vormingut"
+
+msgid "_Use Custom Format"
+msgstr "_Kasutatakse kohandatud kirjatüüpi"
+
+msgid "Today: Template"
+msgstr "Täna: Mall"
+
+msgid "Today: "
+msgstr "Täna: "
+
+#. Format: "Today: Friday, July 01 2005"
+msgid "dddd, MMMM d yyyy"
+msgstr "dddd, d. MMMM yyyy"
+
+msgid "Tasks"
+msgstr "Ülesanded"
+
+msgid "Appointments"
+msgstr "Sündmused"
+
+msgid ""
+"Change the <b>Today: Template</b> note to customize the text that new Today "
+"notes have."
+msgstr ""
+"Uute \"Täna\" märkmete teksti muutmiseks muuda <b>Täna: mall</b> märkme "
+"teksti."
+
+msgid "_Open Today: Template"
+msgstr "_Ava Täna: mall"
+
+msgid "Print"
+msgstr "Prindi"
+
+msgid "Error printing note"
+msgstr "Viga märkme printimisel"
+
+#, csharp-format
+msgid "Page {0} of {1}"
+msgstr "Lehekülg {0} / {1}"
+
+#. Translators: Explanation of the date and time format specifications can be found here:
+#. * http://msdn.microsoft.com/en-us/library/system.globalization.datetimeformatinfo.aspx
+msgid "dddd MM/dd/yyyy, hh:mm:ss tt"
+msgstr "dddd, d. MMMM yyyy, h:mm tt"
+
+#. Adding menu item when note is opened and window created
+msgid "Remove broken links"
+msgstr "Katkiste linkide eemaldamine"
+
+msgid "_Tools"
+msgstr "_Tööriistad"
+
+msgid "_Remove broken links"
+msgstr "_Katkiste linkide eemaldamine"
+
+msgid "Add a sketch"
+msgstr "Lisa visand"
+
+msgid "Se_rver:"
+msgstr "_Server:"
+
+msgid "User_name:"
+msgstr "_Kasutajanimi:"
+
+msgid "_Folder Path (optional):"
+msgstr "Kataloogi _rada (valikuline):"
+
+#. Text for label describing setup required for SSH sync addin to work
+msgid ""
+"SSH synchronization requires an existing SSH key for this server and user, "
+"added to a running SSH daemon."
+msgstr ""
+"SSH-sünkroniseerimine vajab selle serveri jaoks olemasolevat SSH-võtit ning "
+"SSH-deemoni poolt aktsepteeritavat kasutajakontot."
+
+msgid "Server or username field is empty."
+msgstr "Serveri või kasutajanime väli on tühi."
+
+msgid "SSH"
+msgstr "SSH"
+
+msgid ""
+"Timeout connecting to server. Please ensure that your SSH key has been added "
+"to a running SSH daemon."
+msgstr ""
+"Serveriga ühenduse võtmine ületas ajapiirangu. Palun veendu, et sinu SSH-"
+"võti on SSH-deemonile selgeks õpetatud."
+
+msgid "Import from Sticky Notes"
+msgstr "Impordi Märkmepaberid"
+
+msgid "No Sticky Notes found"
+msgstr "Märkmepabereid ei leitud"
+
+#, csharp-format
+msgid "No suitable Sticky Notes file was found at \"{0}\"."
+msgstr "Asukohast \"{0}\" ei leitud sobivat Märkmepaberite faili."
+
+msgid "Sticky Notes import completed"
+msgstr "Märkmepaberite import on valmis"
+
+#, csharp-format
+msgid "<b>{0}</b> of <b>{1}</b> Sticky Note was successfully imported."
+msgid_plural ""
+"<b>{0}</b> of <b>{1}</b> Sticky Notes were successfully imported."
+msgstr[0] "<b>{0}</b> <b>{1}</b>-st kleepmärkmest on edukalt imporditud."
+msgstr[1] "<b>{0}</b> <b>{1}</b>-st kleepmärkmest on edukalt imporditud."
+
+msgid "Untitled"
+msgstr "Pealkirjata"
+
+msgid "Sticky Note: "
+msgstr "Märkmepaber: "
+
+msgid "Tasque"
+msgstr "Tasque"
+
+#. Note to translators: "All" here must match up with the "All"
+#. category translation in Tasque for this to work properly.  "All"
+#. is used here to allow Tasque to decide which default category
+#. will be used to create the new task.
+msgid "All"
+msgstr "Kõik"
+
+msgid "--- Tasque is not running ---"
+msgstr "--- Tasque ei tööta ---"
+
+msgid "_Underline"
+msgstr "_Allajoonitud"
+
+msgid "_URL:"
+msgstr "_URL:"
+
+msgid "_Password:"
+msgstr "_Parool:"
+
+msgid "URL, username, or password field is empty."
+msgstr "URL-i, kasutajanime või parooliväli on tühi."
+
+msgid "WebDAV"
+msgstr "WebDAV"
+
+msgid ""
+"There was an error connecting to the server.  This may be caused by using an "
+"incorrect user name and/or password."
+msgstr ""
+"Serveriga ühenduse võtmisel tekkis viga.  See võib olla põhjustatud valest "
+"kasutajanimest või paroolist."
+
+#. TODO: If the above fails (no keyring daemon), save all but password
+#. to GConf, and notify user.
+#. Save configuration into GConf
+#. Preferences.Set ("/apps/tomboy/sync_wdfs_url", url ?? string.Empty);
+#. Preferences.Set ("/apps/tomboy/sync_wdfs_username", username ?? string.Empty);
+msgid ""
+"Saving configuration to the GNOME keyring failed with the following message:"
+msgstr "Seadistuste salvestamine GNOME võtmerõngasse lõppes järgneva veaga:"
+
+msgid "Connect to Server"
+msgstr "Serveriga ühenduse võtmine"
+
+msgid "Connected"
+msgstr "Ühendatud"
+
+#. Translators: The web service supporting Tomboy WebSync is not responding as expected
+msgid "Server not responding. Try again later."
+msgstr "Server ei vasta. Proovi mõne aja pärast uuesti."
+
+msgid "Authorization Failed, Try Again"
+msgstr "Tõrge autoriseerimisel. Proovi uuesti"
+
+#. Translators: Title of web page presented to user after they authorized Tomboy for sync
+msgid "Tomboy Web Authorization Successful"
+msgstr "Tomboy veebiautoriseerimine oli edukas"
+
+#. Translators: Body of web page presented to user after they authorized Tomboy for sync
+msgid ""
+"Please return to the Tomboy Preferences window and press Save to start "
+"synchronizing."
+msgstr ""
+"Palun naase Tomboy eelistuste aknasse ja klõpra sünkroniseerimise "
+"alustamiseks salvestamise nupul."
+
+msgid "Connected. Press Save to start synchronizing"
+msgstr "Ühendatud. Sünkroniseerimise alustamiseks klõpsa salvestamise nupul"
+
+#. Translators: The user must take action in their web browser to continue the authorization process
+msgid "Authorizing in browser (Press to reset connection)"
+msgstr "Autoriseerimine veebisirvijas (Vajuta ühenduse lähtestamiseks)"
+
+#. Translators: Sometimes a user's default browser is not set, so we recommend setting it and trying again
+msgid "Set the default browser and try again"
+msgstr "Määra vaikimisi veebisirvija ja proovi uuesti"
+
+msgid "Tomboy Web"
+msgstr "Tomboy veebisait"
+
+#, csharp-format
+msgid "Export All Notes to {0}"
+msgstr "Ekspordi kõik märkmed kohta {0}"
+
+#, csharp-format
+msgid "Start exporting notes to {0}"
+msgstr "Alusta märkmete eksportimist kohta {0}"
+
+#, csharp-format
+msgid "Export selected notebook to {0}"
+msgstr "Ekspordi valitud märkmik kohta {0}"
+
+#, csharp-format
+msgid "Start exporting notebook to {0}"
+msgstr "Alusta märkmiku eksportimist kohta {0}"
+
+msgid "Export"
+msgstr "Eksport"
+
+msgid "Export your notes."
+msgstr "Märkmete eksportimine."
+
+#, csharp-format
+msgid "Export All Notes To {0}"
+msgstr "Kõigi märkmete eksportimine kohta {0}"
+
+#, csharp-format
+msgid "Export Selected Notebook To {0}"
+msgstr "Valitud märkmiku eksportimine kohta {0}"
+
+msgid "Could not export, access denied."
+msgstr "Eksportimine pole võimalik, ligipääs on keelatud."
+
+msgid "Could not export, folder does not exist."
+msgstr "Eksportimine pole võimalik, kataloogi pole olemas."
+
+msgid "Could not export, error with the path. (No ending \"?)"
+msgstr "Eksportimine pole võimalik, asukoha viga. (lõpus pole \"?)"
+
+#, csharp-format
+msgid "Could not export: {0}"
+msgstr "Eksportimine pole võimalik: {0}"
+
+#, csharp-format
+msgid "All Notes {0} Export"
+msgstr "Kõigi märkmete {0} eksportimine"
+
+msgid "Unknown error."
+msgstr "Tundmatu viga."
+
+msgid "Unfiled Notes"
+msgstr "Liigitamata märkmed"
+
+#, csharp-format
+msgid "Your notes were exported to \"{0}\"."
+msgstr "Sinu märkmed eksporditi kohta \"{0}\"."
+
+msgid "Notes exported successfully"
+msgstr "Märkmed on edukalt eksporditud"
+
+#, csharp-format
+msgid "Could not save the files in \"{0}\""
+msgstr "Faile pole võimalik salvestada kataloogi \"{0}\""
+
+#. Translators: {0} is the export type, e.g. HTML
+#, csharp-format
+msgid "Create destination folder for {0} export"
+msgstr "{0} eksportimiseks sihtkausta loomine"
+
+msgid "Search All Notes"
+msgstr "Otsing kõikide märkmete hulgast"
+
+#. IShellLink new_notebook = CreateShellLink("New Notebook", topmboy_path, "--new-notebook",
+#. icons_path, (int)TomboyIcons.NewNotebook);
+#. if (new_notebook != null)
+#. object_collection.AddObject(new_notebook);
+msgid "Create New Note"
+msgstr "Uue märkme loomine"
+
+#, csharp-format
+msgid "{0} (new)"
+msgstr "{0} (uus)"
+
+msgid "Recent Notes"
+msgstr "Viimased märkmed"
+
+#. Translators: This is the name of "Window" menu in the Mac menubar
+msgid "_Window"
+msgstr "_Aken"
+
+msgid "Preferences..."
+msgstr "Eelistused..."
+
+msgid "Create a new notebook"
+msgstr "Uue märkmiku loomine"
+
+msgid "Type the name of the notebook you'd like to create."
+msgstr "Määra loodavale märkmikule nimi."
+
+msgid "N_otebook name:"
+msgstr "Märkmiku _nimi:"
+
+msgid "Name already taken"
+msgstr "Nimi on juba kasutusel"
+
+#. Translation note: This is the Create button in the Create
+#. New Note Dialog.
+msgid "C_reate"
+msgstr "L_oo"
+
+msgid "Note_books"
+msgstr "_Märkmikud"
+
+msgid "Create a new note in a notebook"
+msgstr "Märkmikusse uue märkme loomine"
+
+msgid "New Note_book..."
+msgstr "_Uus märkmik..."
+
+msgid "_New Note"
+msgstr "_Uus märge"
+
+msgid "Create a new note in this notebook"
+msgstr "Uue märkme loomine sellesse märkmikusse"
+
+msgid "_Open Template Note"
+msgstr "Ava _märkme mall"
+
+msgid "Open this notebook's template note"
+msgstr "Selle märkmiku mallmärkme avamine"
+
+msgid "Delete Note_book"
+msgstr "Kustuta _märkmik"
+
+msgid "Delete the selected notebook"
+msgstr "Valitud märkmiku kustutamine"
+
+msgid "Notebooks"
+msgstr "Märkmikud"
+
+#. The templateNoteTite should show the name of the
+#. notebook.  For example, if the name of the notebooks
+#. "Meetings", the templateNoteTitle should be "Meetings
+#. Notebook Template".  Translators should place the
+#. name of the notebook accordingly using "{0}".
+#. TODO: Figure out how to make this note for
+#. translators appear properly.
+#, csharp-format
+msgid "{0} Notebook Template"
+msgstr "Märkmiku {0} mall"
+
+msgid "New Note"
+msgstr "Uus märge"
+
+msgid "All Notes"
+msgstr "Kõik märkmed"
+
+msgid "Really delete this notebook?"
+msgstr "Kas kustutada see märkmik?"
+
+msgid ""
+"The notes that belong to this notebook will not be deleted, but they will no "
+"longer be associated with this notebook.  This action cannot be undone."
+msgstr ""
+"Sellesse märkmikku kuuluvaid märkmeid ei kustutata, küll aga kustutatakse "
+"nende seos selle märkmikuga.  Seda tegevuse tagajärgi pole võimalik tagasi "
+"pöörata."
+
+msgid "No notebook"
+msgstr "Märkmik puudub"
+
+#. Translators should preserve the "{0}" in the following
+#. string.  After being formatted for a notebook named,
+#. "Meetings", for example, the resultant string would be:
+#. New "Meetings" Note
+#, csharp-format
+msgid "New \"{0}\" Note"
+msgstr "Uus märge märkmikusse \"{0}\""
+
+msgid "Place this note into a notebook"
+msgstr "Selle märkme asetamine märkmikusse"
+
+msgid "Notebook"
+msgstr "Märkmik"
+
+msgid "_New notebook..."
+msgstr "_Uus märkmik..."
+
+#, csharp-format
+msgid "New Note {0}"
+msgstr "Uus märge {0}"
+
+#, csharp-format
+msgid "Really delete \"{0}\"?"
+msgstr "Kas kustutada märge \"{0}\"?"
+
+#, csharp-format
+msgid "Really delete this {0} note?"
+msgid_plural "Really delete these {0} notes?"
+msgstr[0] "Kas kustutada see märge?"
+msgstr[1] "Kas kustutada need {0} märget?"
+
+msgid "If you delete a note it is permanently lost."
+msgstr "Kui sa märkme kustutad, siis on see jäädavalt kadunud."
+
+#, csharp-format
+msgid ""
+"An error occurred while saving your notes. Please check that you have "
+"sufficient disk space, and that you have appropriate rights on {0}. Error "
+"details can be found in {1}."
+msgstr ""
+"Sinu märkmete salvestamise käigus tekkis viga. Palun kontrolli, kas Sul on "
+"piisavalt vaba kettaruumi ja kas sul on kataloogi {0} kirjutamiseks "
+"piisavalt õiguseis. Vea üksikasjad leiab failist {1}."
+
+msgid "Error saving note data."
+msgstr "Viga märkme andmete salvestamisel."
+
+#. New Note Template
+#. Translators: This is 'New Note' Template, not New 'Note Template'
+msgid "New Note Template"
+msgstr "Uue märkme mall"
+
+#. Create migration notification note
+#. Translators: The title of the data migration note
+msgid "Your Notes Have Moved!"
+msgstr "Sinu märkmed tõsteti ümber!"
+
+#. Translators: The contents (not including the title) of the data migration note. {0}, {1}, {2}, {3}, and {4} are replaced by directory paths and should not be changed
+#, csharp-format
+msgid ""
+"In the latest version of Tomboy, your note files have moved.  You have "
+"probably never cared where your notes are stored, and if you still don't "
+"care, please go ahead and <bold>delete this note</bold>.  :-)\n"
+"\n"
+"Your old note directory is still safe and sound at <link:url>{0}</link:"
+"url> . If you go back to an older version of Tomboy, it will look for notes "
+"there.\n"
+"\n"
+"But we've copied your notes and configuration info into new directories, "
+"which will be used from now on:\n"
+"\n"
+"<list><list-item dir=\"ltr\">Notes can now be found at <link:url>{1}</link:"
+"url>\n"
+"</list-item><list-item dir=\"ltr\">Configuration is at <link:url>{2}</link:"
+"url>\n"
+"</list-item><list-item dir=\"ltr\">You can install add-ins at <link:url>{3}</"
+"link:url>\n"
+"</list-item><list-item dir=\"ltr\">Log files can be found at <link:url>{4}</"
+"link:url></list-item></list>\n"
+"\n"
+"Ciao!"
+msgstr ""
+"Viimases Tomboy versioonis tõsteti su märkmed ümber.  Arvatavasti pole Sa "
+"senimaani märkmete hoidmise koha vastu huvi tundnud ja kui see ka edaspidi "
+"tähtis ei ole, siis lihtsalt <bold>kustuta see märge</bold>. :-)\n"
+"\n"
+"Sinu vana märkmekataloog on senimaani ohutu ja asub <link:url>{0}</link:"
+"url> . Kui sa kavatsed Tomboy vanemat versiooni kasutada, siis vanemad "
+"versioonid hoiavad märkmeid seal.\n"
+"\n"
+"Kuid praegu on sinu märkmed ja seadistused kopeeritud uutesse kataloogidesse "
+"ja alates praegusest hakatakse neid ka kasutama:\n"
+"\n"
+"<list><list-item dir=\"ltr\">Märkmete asukoht on <link:url>{1}</link:url>\n"
+"</list-item><list-item dir=\"ltr\">Seadistuste asukoht on <link:url>{2}</"
+"link:url>\n"
+"</list-item><list-item dir=\"ltr\">Lisad paigaldatakse kataloogi <link:url>"
+"{3}</link:url>\n"
+"</list-item><list-item dir=\"ltr\">Logifailid asuvad <link:url>{4}</link:"
+"url></list-item></list>\n"
+"\n"
+"Ciao!"
+
+msgid ""
+"<note-content>Start Here\n"
+"\n"
+"<bold>Welcome to Tomboy!</bold>\n"
+"\n"
+"Use this \"Start Here\" note to begin organizing your ideas and thoughts.\n"
+"\n"
+"You can create new notes to hold your ideas by selecting the \"Create New "
+"Note\" item from the Tomboy Notes menu in your GNOME Panel. Your note will "
+"be saved automatically.\n"
+"\n"
+"Then organize the notes you create by linking related notes and ideas "
+"together!\n"
+"\n"
+"We've created a note called <link:internal>Using Links in Tomboy</link:"
+"internal>.  Notice how each time we type <link:internal>Using Links in "
+"Tomboy</link:internal> it automatically gets underlined?  Click on the link "
+"to open the note.</note-content>"
+msgstr ""
+"<note-content>Alusta siit\n"
+"\n"
+"<bold>Tere tulemast kasutama Tomboy'd!</bold>\n"
+"\n"
+"Seda \"Alusta siit\" märget on hea kasutada oma ideede ja mõtete "
+"organiseerimiseks.\n"
+"\n"
+"Ideede salvestamiseks saab teha uue märkme, valides GNOME paneelil olevast "
+"Tomboy märgete menüüst \"Loo uus märge\". Märge salvestatakse automaatselt.\n"
+"\n"
+"Seejärel on võimalik märkmete ja ideede vahel viiteid luues neid ühtseks "
+"tervikuks organiseerida!\n"
+"\n"
+"Me oleme loonud märkme <link:internal>Viitade kasutamine Tomboy's</link:"
+"internal>.  Paned tähele, et iga kord kui sisestada <link:internal>Viitade "
+"kasutamine Tomboy's</link:internal>, siis joonitakse see automaatselt alla?  "
+"Sellel viidal klõpsates avaneb vastava nimega märge.</note-content>"
+
+msgid ""
+"<note-content>Using Links in Tomboy\n"
+"\n"
+"Notes in Tomboy can be linked together by highlighting text in the current "
+"note and clicking the <bold>Link</bold> button above in the toolbar.  Doing "
+"so will create a new note and also underline the note's title in the current "
+"note.\n"
+"\n"
+"Changing the title of a note will update links present in other notes.  This "
+"prevents broken links from occurring when a note is renamed.\n"
+"\n"
+"Also, if you type the name of another note in your current note, it will "
+"automatically be linked for you.</note-content>"
+msgstr ""
+"<note-content>Viitade kasutamine Tomboy's\n"
+"\n"
+"Tomboy märkmetest on võimalik teistele märkmetele viidata valides avatud "
+"märkmest teksti ja klõpsates tööriistaribal oleval <bold>Viit</bold> nupul. "
+"Niimoodi loodakse uus märge ja avatud märkmes valitud tekst hakkab sellele "
+"viitama.\n"
+"\n"
+"Märkme pealkirja muutmine muudab ka teksti sellele viitavates teistes "
+"märkmetes. See välistab märkmete ümbernimetamisel katkiste viitade "
+"tekkimise.\n"
+"\n"
+"Kui sa sisestad avatud märkmes mõne teise märkme nime, siis luuakse "
+"automaatselt uus viit nimetatud märkmele.</note-content>"
+
+#. Attempt to find an existing Start Here note
+msgid "Start Here"
+msgstr "Alusta siit"
+
+msgid "Using Links in Tomboy"
+msgstr "Viitade kasutamine Tomboy's"
+
+#. Use a simple "Describe..." body and highlight
+#. it so it can be easily overwritten
+msgid "Describe your new note here."
+msgstr "Siia saad uue märkme kirjutada."
+
+msgid "Rename Note Links?"
+msgstr "Kas muuta viitade nimesid?"
+
+msgid "_Rename Links"
+msgstr "_Muuda viitade nimesid"
+
+msgid "_Don't Rename Links"
+msgstr "Ä_ra muuda viitade nimesid"
+
+#, csharp-format
+msgid ""
+"Rename links in other notes from \"<span underline=\"single\">{0}</span>\" "
+"to \"<span underline=\"single\">{1}</span>\"?\n"
+"\n"
+"If you do not rename the links, they will no longer link to anything."
+msgstr ""
+"Nimetada kõigis märkmeid \"<span underline=\"single\">{0}</span>\" viited "
+"ümber \"<span underline=\"single\">{1}</span>\"-ks?\n"
+"Kui viiteid ümber ei nimetata, siis ei viita nad enam millelegi."
+
+msgid "Rename Links"
+msgstr "Nimeta ümber"
+
+msgid "Note Title"
+msgstr "Märkme pealkiri"
+
+#. Translators: This button causes all notes in the list to be selected
+msgid "Select All"
+msgstr "Vali kõik"
+
+#. Translators: This button causes all notes in the list to be unselected
+msgid "Select None"
+msgstr "Valiku tühistamine"
+
+msgid "Ad_vanced"
+msgstr "_Laiendatud..."
+
+msgid "Always show this _window"
+msgstr "Alati näidatakse seda _akent"
+
+msgid "Never rename _links"
+msgstr "Viiteid ei nimetata _kunagi ümber"
+
+msgid "Alwa_ys rename links"
+msgstr "Viited nimetatakse _alati ümber"
+
+msgid "Find in This Note"
+msgstr "Otsi sellest märkmest"
+
+msgid "_Link to New Note"
+msgstr "_Viita uuele märkmele"
+
+msgid "Te_xt"
+msgstr "_Tekst"
+
+msgid "_Find in This Note"
+msgstr "_Otsi sellest märkmest"
+
+msgid "Clos_e All Notes"
+msgstr "_Sulge kõik märkmed"
+
+msgid "Search"
+msgstr "Otsing"
+
+#. TODO: If we ever add a way to customize internal keybindings, this will need to change
+msgid "Search your notes"
+msgstr "Otsing märkmete hulgast"
+
+msgid "Link"
+msgstr "Viit"
+
+msgid "Link selected text to a new note"
+msgstr "Valitud tekstiga uuele märkmele viitamine"
+
+msgid "_Text"
+msgstr "_Tekst"
+
+msgid "Set properties of text"
+msgstr "Teksti omaduste määramine"
+
+msgid "T_ools"
+msgstr "Töö_riistad"
+
+msgid "Use tools on this note"
+msgstr "Tööriistade kasutamine selle märkme jaoks"
+
+msgid "Delete this note"
+msgstr "Selle märkme kustutamine"
+
+msgid "Synchronize Notes"
+msgstr "Sünkroniseeri märkmeid"
+
+msgid ""
+"This note is a template note. It determines the default content of regular "
+"notes, and will not show up in the note menu or search window."
+msgstr ""
+"See on mallmärge. See määrab tavaliste märgete vaikimisi sisu ning seda ei "
+"näidata märkmete menüüs ega otsingu aknas."
+
+msgid "Convert to regular note"
+msgstr "Tavaliseks märkmeks teisendamine"
+
+msgid "Save Si_ze"
+msgstr "Salvesta _suurus"
+
+msgid "Save Se_lection"
+msgstr "Salvesta _valik"
+
+msgid "Save _Title"
+msgstr "Salvesta _pealkiri"
+
+msgid "_Find..."
+msgstr "_Leia..."
+
+msgid "Find _Next"
+msgstr "Leia _järgmine"
+
+msgid "Find _Previous"
+msgstr "Leia _eelmine"
+
+msgid "Cannot create note"
+msgstr "Märget pole võimalik luua"
+
+msgid "_Find:"
+msgstr "_Otsing:"
+
+msgid "_Previous"
+msgstr "_Eelmine"
+
+msgid "_Next"
+msgstr "_Järgmine"
+
+#. x of x - specifically Number of Matches and what location is the cursor in the list of matches
+#, csharp-format
+msgid "{0} of {1}"
+msgstr "{0} / {1}"
+
+msgid "_Bold"
+msgstr "_Rasvane"
+
+msgid "_Italic"
+msgstr "_Kursiiv"
+
+msgid "_Strikeout"
+msgstr "_Läbijoonitud"
+
+msgid "_Highlight"
+msgstr "_Esiletõstetud"
+
+msgid "Font Size"
+msgstr "Kirjatüübi suurus"
+
+msgid "_Normal"
+msgstr "_Tavaline"
+
+msgid "Hu_ge"
+msgstr "Vä_ga suur"
+
+msgid "_Large"
+msgstr "_Suur"
+
+msgid "S_mall"
+msgstr "_Väike"
+
+msgid "Increase Font Size"
+msgstr "Kirja suuruse suurendamine"
+
+msgid "Decrease Font Size"
+msgstr "Kirja suuruse vähendamine"
+
+msgid "Bullets"
+msgstr "Täpid"
+
+msgid "Editing"
+msgstr "Redigeerimine"
+
+msgid "Hotkeys"
+msgstr "Kuumad klahvid"
+
+msgid "Synchronization"
+msgstr "Sünkroniseerimine"
+
+msgid "Add-ins"
+msgstr "Lisad"
+
+msgid "_Spell check while typing"
+msgstr "Õi_gekirjakontroll sisestamise ajal"
+
+msgid ""
+"Misspellings will be underlined in red, with correct spelling suggestions "
+"shown in the context menu."
+msgstr ""
+"Õigekirjakontrolli poolt kahtlaseks märgitud sõnad joonitakse punaselt alla "
+"ja sõna kontekstimenüü sisaldab õigekirjakontrolli soovitusi."
+
+#. WikiWords...
+msgid "Highlight _WikiWords"
+msgstr "_WikiSõnad tõstetakse esile"
+
+msgid ""
+"Enable this option to highlight words <b>ThatLookLikeThis</b>. Clicking the "
+"word will create a note with that name."
+msgstr ""
+"Selle võtme lubamisega tõstetakse <b>SellisedSõnad</b> (sõnad millel on suur "
+"täht keskel) esile. Sellisele sõnale klõpsates luuakse uus märge, mille "
+"pealkirjaks on klõpsatud sõna."
+
+#. Auto bulleted list
+msgid "Enable auto-_bulleted lists"
+msgstr "_Täpploetelud on lubatud"
+
+msgid "Use custom _font"
+msgstr "_Kasutatakse kohandatud kirjatüüpi"
+
+msgid "When renaming a linked note: "
+msgstr "Viite ümbernimetamisel:"
+
+msgid "Ask me what to do"
+msgstr "Küsitakse, mida teha"
+
+msgid "Never rename links"
+msgstr "Viitade nimesid ei muudeta kunagi"
+
+msgid "Always rename links"
+msgstr "Muudetakse alati viitade nimesid"
+
+msgid ""
+"Use the new note template to specify the text that should be used when "
+"creating a new note."
+msgstr "Uue märkme mall võetakse iga uue märkme loomisel aluseks."
+
+msgid "Open New Note Template"
+msgstr "Ava uue märkme mall"
+
+#. Hotkeys...
+msgid "Listen for _Hotkeys"
+msgstr "Kiirklahve _jälgitakse"
+
+msgid ""
+"Hotkeys allow you to quickly access your notes from anywhere with a "
+"keypress. Example Hotkeys: <b>&lt;Control&gt;&lt;Shift&gt;F11</b>, <b>&lt;"
+"Alt&gt;N</b>"
+msgstr ""
+"Kuumad klavhid võimvaldavad sul enamikes olukordades märkmeid klahvivajutuse "
+"abil kärmelt avada. Näide: <b>&lt;Control&gt;&lt;Shift&gt;F11</b>, <b>&lt;"
+"Alt&gt;N</b>"
+
+#. Show notes menu keybinding...
+msgid "Show notes _menu"
+msgstr "Näite _märgete menüüd"
+
+#. Open Start Here keybinding...
+msgid "Open \"_Start Here\""
+msgstr "_Ava \"Alusta siit\""
+
+#. Create new note keybinding...
+msgid "Create _new note"
+msgstr "Loo uus _märge"
+
+#. Open Search All Notes window keybinding...
+msgid "Open \"Search _All Notes\""
+msgstr "_Kõikide märkmete hulgast otsimise avamine"
+
+msgid "Ser_vice:"
+msgstr "_Teenus:"
+
+msgid "Not configurable"
+msgstr "Pole seadistatav"
+
+msgid "Automaticall_y Sync in Background Every"
+msgstr "A_utomaatne sünkroniseerimine iga"
+
+#. Translators: See above comment for details on
+#. this string.
+msgid "Minutes"
+msgstr "minuti tagant"
+
+#. "Advanced..." button to bring up extra sync config dialog
+msgid "_Advanced..."
+msgstr "_Laiendatud..."
+
+msgid "The following add-ins are installed"
+msgstr "Need lisad on paigaldatud"
+
+msgid "Get More Add-Ins..."
+msgstr "Hangi veel lisasid..."
+
+msgid "_Enable"
+msgstr "_Luba"
+
+msgid "_Disable"
+msgstr "_Keela"
+
+msgid "Not Implemented"
+msgstr "Pole teostatud"
+
+#, csharp-format
+msgid "{0} Preferences"
+msgstr "{0} - eelistused"
+
+msgid "Choose Note Font"
+msgstr "Märkme kirjatüübi valimine"
+
+msgid "Other Synchronization Options"
+msgstr "Muud sünkroniseerimisvalikud"
+
+msgid ""
+"When a conflict is detected between a local note and a note on the "
+"configured synchronization server:"
+msgstr ""
+"Kui kohaliku märkme ja sünkroniseerimisserveri märkme vahel avastatakse "
+"vastuolu, siis:"
+
+msgid "Always ask me what to do."
+msgstr "Küsitakse alati, mida teha."
+
+msgid "Rename my local note."
+msgstr "Muudetakse kohalik märkme nime."
+
+msgid "Replace my local note with the server's update."
+msgstr "Asendatakse kohalik märge serverist tuleva märkmega."
+
+msgid "Are you sure?"
+msgstr "Kas sa oled kindel?"
+
+msgid ""
+"Clearing your synchronization settings is not recommended.  You may be "
+"forced to synchronize all of your notes again when you save new settings."
+msgstr ""
+"Sünkroniseerimissätete tühjendamine pole soovitatav.  Pärast uute sätete "
+"salvestamist võib tekkida olukord, kus sa pead kõik oma märkmed uuesti "
+"sünkroniseerima."
+
+msgid "Resetting Synchronization Settings"
+msgstr "Sünkroniseerimissätete lähtestamine"
+
+msgid ""
+"You have disabled the configured synchronization service.  Your "
+"synchronization settings will now be cleared.  You may be forced to "
+"synchronize all of your notes again when you save new settings."
+msgstr ""
+"Sa keelasid seadistatud sünkroniseerimisteenuse. Sinu sünkroniseerimissätted "
+"puhastatakse. Pärast sätete salvestamist võid olla sunnitud kõiki märkmeid "
+"uuesti sünkroniseerima."
+
+msgid "Connection successful"
+msgstr "Ühendus edukas"
+
+msgid ""
+"Tomboy is ready to synchronize your notes. Would you like to synchronize "
+"them now?"
+msgstr ""
+"Tomboy on valmis Sinu märkmeid sünkroniseerima. Kas sa soovid kohe "
+"sünkroniseerida?"
+
+#, csharp-format
+msgid ""
+"Please check your information and try again.  The log file {0} may contain "
+"more information about the error."
+msgstr ""
+"Palun kontrolli oma andmeid ja proovi uuesti. Võib-olla sisaldab logifail "
+"{0} infot vea kohta."
+
+msgid "Error connecting"
+msgstr "Viga ühendumisel"
+
+msgid "Version:"
+msgstr "Versioon:"
+
+msgid "Author:"
+msgstr "Autor:"
+
+msgid "Copyright:"
+msgstr "Autoriõigus:"
+
+msgid "Add-in Dependencies:"
+msgstr "Lisa sõltuvused:"
+
+msgid "_Search:"
+msgstr "_Otsing:"
+
+msgid "Note"
+msgstr "Märge"
+
+msgid "Last Changed"
+msgstr "Viimati muudetud"
+
+msgid "Matches"
+msgstr "Vastavused"
+
+msgid "Title match"
+msgstr "Pealkirja vastavus"
+
+#, csharp-format
+msgid "{0} match"
+msgid_plural "{0} matches"
+msgstr[0] "{0} vastavus"
+msgstr[1] "{0} vastavust"
+
+#, csharp-format
+msgid "Total: {0} note"
+msgid_plural "Total: {0} notes"
+msgstr[0] "Kokku: {0} märge"
+msgstr[1] "Kokku: {0} märget"
+
+#, csharp-format
+msgid "Matches: {0} note"
+msgid_plural "Matches: {0} notes"
+msgstr[0] "Vastavusi: {0} märge"
+msgstr[1] "Vastavusi: {0} märget"
+
+msgid ""
+"No results found in the selected notebook.\n"
+"Click here to search across all notes."
+msgstr ""
+"Valitud märkmikust ei leitud vasteid.\n"
+"Kõigist märkmetest otsimiseks klõpsa siia."
+
+msgid "Click here to search across all notebooks"
+msgstr "Kõigist märkmikutest otsimiseks klõpsa siia."
+
+msgid "Notes"
+msgstr "Märkmed"
+
+#, csharp-format
+msgid ""
+"This synchronization addin is not supported on your computer. Please make "
+"sure you have FUSE and {0} correctly installed and configured"
+msgstr ""
+"See sünkroniseerimislisa pole sinu arvuti poolt toetatud. Palun veendu, et "
+"FUSE ja {0} on korrektselt paigaldatud ja seadistatud."
+
+msgid "Could not read testfile."
+msgstr "Testfaili pole võimalik lugeda."
+
+msgid "Write test failed."
+msgstr "Kirjutamistest nurjus."
+
+msgid "Timeout connecting to server."
+msgstr "Serveriga ühenduse võtmine ületas ajapiirangu."
+
+msgid "Error connecting to server."
+msgstr "Viga serveriga ühendusmisel."
+
+msgid "FUSE could not be enabled."
+msgstr "FUSE-t pole võimalik lubada."
+
+msgid "An error ocurred while connecting to the specified server:"
+msgstr "Määratud serveriga ühenduse võtmisel tekkis viga:"
+
+#. Expander containing TreeView
+msgid "Details"
+msgstr "Üksikasjad"
+
+msgid "Status"
+msgstr "Olek"
+
+msgid "Acquiring sync lock..."
+msgstr "Sünkroniseerimisluku seadmine..."
+
+msgid "Committing changes..."
+msgstr "Muudatuste rakendamine..."
+
+msgid "Synchronizing Notes"
+msgstr "Märkmete sünkroniseerimine"
+
+msgid "Synchronizing your notes..."
+msgstr "Märkmete sünkroniseerimine..."
+
+msgid "This may take a while, kick back and enjoy!"
+msgstr "See võib veidi aega võtta!"
+
+msgid "Connecting to the server..."
+msgstr "Serveriga ühenduse võtmine..."
+
+msgid "Deleting notes off of the server..."
+msgstr "Märkmete kustutamine serverist..."
+
+msgid "Downloading new/updated notes..."
+msgstr "Uute või värskendatud märkmete allalaadimine..."
+
+msgid "Server Locked"
+msgstr "Server on lukus"
+
+msgid "Server is locked"
+msgstr "Server on lukus"
+
+msgid ""
+"One of your other computers is currently synchronizing.  Please wait 2 "
+"minutes and try again."
+msgstr ""
+"Üks sinu teistest arvutitest tegeleb parasjagu sünkroniseerimisega.  Palun "
+"oota 2 minutit ja proovi siis uuesti."
+
+msgid "Preparing to download updates from server..."
+msgstr "Ettevalmistused serverist uuenduste allalaadimiseks..."
+
+msgid "Preparing to upload updates to server..."
+msgstr "Ettevalmistused serverisse uuenduste üleslaadimiseks..."
+
+msgid "Uploading notes to server..."
+msgstr "Märkmete üleslaadimine serverisse..."
+
+msgid "Synchronization Failed"
+msgstr "Tõrge sünkroniseerimisel"
+
+msgid "Failed to synchronize"
+msgstr "Sünkroniseerimine ei õnnestunud"
+
+msgid "Could not synchronize notes.  Check the details below and try again."
+msgstr ""
+"Märkmeid pole võimalik sünkroniseerida.  Kontrolli allpoolasuvaid üksikasju "
+"ja proovi uuesti."
+
+msgid "Synchronization Complete"
+msgstr "Sünkroniseerimine on valmis"
+
+msgid "Synchronization is complete"
+msgstr "Sünkroniseerimine on valmis"
+
+#, csharp-format
+msgid "{0} note updated."
+msgid_plural "{0} notes updated."
+msgstr[0] "Uuendatud {0} märge."
+msgstr[1] "Uuendatud {0} märget."
+
+msgid "Your notes are now up to date."
+msgstr "Sinu märkmed on nüüd ajakohased."
+
+msgid "Synchronization Canceled"
+msgstr "Sünkroniseerimine katkestati"
+
+msgid "Synchronization was canceled"
+msgstr "Sünkroniseerimine katkestati"
+
+msgid "You canceled the synchronization.  You may close the window now."
+msgstr "Sa tühistasid sünkroniseerimise.  Akna võib nüüd kinni panna."
+
+msgid "Synchronization Not Configured"
+msgstr "Sünkroniseerimise sätted on määramata"
+
+msgid "Synchronization is not configured"
+msgstr "Sünkroniseerimissätted on määramata"
+
+msgid "Please configure synchronization in the preferences dialog."
+msgstr "Palun määra sünkroniseerimissätted eelistuste dialoogist."
+
+msgid "Synchronization Service Error"
+msgstr "Sünkroniseerimisteenuse viga"
+
+msgid "Service error"
+msgstr "Teenuse viga"
+
+msgid "Error connecting to the synchronization service.  Please try again."
+msgstr "Viga sünkroniseerimisteenusega ühendumisel.  Palun proovi uuesti."
+
+msgid "Deleted locally"
+msgstr "Kohapeal kustutatud"
+
+msgid "Deleted from server"
+msgstr "Serverist kustutatud"
+
+msgid "Updated"
+msgstr "Uuendatud"
+
+msgid "Added"
+msgstr "Lisatud"
+
+msgid "Uploaded changes to server"
+msgstr "Muudatused serverisse üles laaditud"
+
+msgid "Uploaded new note to server"
+msgstr "Uus märge serverisse üles laaditud"
+
+msgid "Note Conflict"
+msgstr "Märkmete vastuolu"
+
+#. Suggest renaming note by appending " (old)" to the existing title
+msgid " (old)"
+msgstr " (vana)"
+
+msgid "Rename local note:"
+msgstr "Kohaliku märkme nime muutmine:"
+
+msgid "Update links in referencing notes"
+msgstr "Viitade uuendamine viitavates märkmetes"
+
+msgid "Overwrite local note"
+msgstr "Kohaliku märkme ülekirjutamine"
+
+msgid "Always perform this action"
+msgstr "Tulevikus tuleb alati nii teha"
+
+#. Set initial dialog text
+msgid "Note conflict detected"
+msgstr "Tuvastati märkmete vastuolu"
+
+#, csharp-format
+msgid ""
+"The server version of \"{0}\" conflicts with your local note.  What do you "
+"want to do with your local note?"
+msgstr ""
+"Serveris olev \"{0}\" versioon on vastuolus sinu kohaliku märkmega.  Mida sa "
+"soovid kohaliku märkmega ette võtta?"
+
+msgid "Could not enable FUSE"
+msgstr "FUSE-t pole võimalik lubada"
+
+msgid ""
+"The FUSE module could not be loaded. Please check that it is installed "
+"properly and try again."
+msgstr ""
+"FUSE-moodulit pole võimalik laadida. Palun veendu, et see oleks korrektselt "
+"paigaldatud ja proovi uuesti."
+
+msgid "Enable FUSE?"
+msgstr "Kas lubada FUSE?"
+
+#. TODO: This message isn't entirely accurate.
+#. We should fix it.
+msgid ""
+"The synchronization you've chosen requires the FUSE module to be loaded.\n"
+"\n"
+"To avoid getting this prompt in the future, you should load FUSE at "
+"startup.  Add \"modprobe fuse\" to /etc/init.d/boot.local or \"fuse\" to /"
+"etc/modules."
+msgstr ""
+"Sinu poolt valitud sünkroniseerimise jaoks on tarvis, et FUSE moodulid oleks "
+"laaditud.\n"
+"\n"
+"Et tulevikus seda teatet vältida, peaks FUSE moodulid laaditama arvuti "
+"üleslaadimise ajal.  Lisa oma /etc/init.d/boot.local skripti rida \"modprobe "
+"fuse\" või faili /etc/modules rida \"fuse\"."
+
+msgid "Cannot create new note"
+msgstr "Uut märget pole võimalik luua"
+
+msgid "Primary Development:"
+msgstr "Põhiarendus:"
+
+msgid "Contributors:"
+msgstr "Kaasaaitajad:"
+
+msgid "translator-credits"
+msgstr ""
+"Ivar Smolin <okul linux ee>, 2006–2010.\n"
+"Priit Laes <amd store20 com>, 2007.\n"
+"Mattias Põldaru <mahfiaz gmail com>, 2009, 2011.\n"
+"Rene Pärts <rene87 hot ee>, 2010."
+
+msgid ""
+"Copyright © 2004-2007 Alex Graveley\n"
+"Copyright © 2004-2011 Others\n"
+msgstr ""
+"Copyright © 2004-2007 Alex Graveley\n"
+"Copyright © 2004-2011 ülejäänud\n"
+
+msgid "A simple and easy to use desktop note-taking application."
+msgstr "Lihtne ja kergestikasutatav märkmete tegemise programm."
+
+msgid "Homepage"
+msgstr "Koduleht"
+
+msgid ""
+"Tomboy: A simple, easy to use desktop note-taking application.\n"
+"Copyright © 2004-2007 Alex Graveley\n"
+"<alex@beatniksoftware.com>\n"
+"\n"
+"Copyright © 2004-2011 Others\n"
+msgstr ""
+"Tomboy on lihtne ja hõlpsasti kasutatav märkmete tegemise rakendus.\n"
+"Copyright © 2004-2007 Alex Graveley\n"
+"<alex@beatniksoftware.com>\n"
+"\n"
+"Copyright © 2004-2011 ülejäänud\n"
+
+msgid ""
+"Usage:\n"
+"  --version\t\t\tPrint version information.\n"
+"  --help\t\t\tPrint this usage message.\n"
+"  --note-path [path]\t\tLoad/store note data in this directory.\n"
+"  --search [text]\t\tOpen the search all notes window with the search text.\n"
+msgstr ""
+"Kasutamine:\n"
+"  --version\t\t\tVersiooniandmete printimine.\n"
+"  --help\t\t\tSelle kasutusõpetuse printimine.\n"
+"  --note-path [path]\t\tMärkmete laadimine ja salvestamine selles "
+"kataloogis.\n"
+"  --search [tekst]\t\tMärkmeotsinguakna avamine koos määratud "
+"otsingutekstiga.\n"
+
+msgid ""
+"  --new-note\t\t\tCreate and display a new note.\n"
+"  --new-note [title]\t\tCreate and display a new note, with a title.\n"
+"  --open-note [title/url]\tDisplay the existing note matching title.\n"
+"  --start-here\t\t\tDisplay the 'Start Here' note.\n"
+"  --highlight-search [text]\tSearch and highlight text in the opened note.\n"
+msgstr ""
+"  --new-note\t\t\tUue märkme loomine ja kuvamine.\n"
+"  --new-note [pealkiri]\t\tUue, etteantud pealkirjaga märkme loomine ja "
+"kuvamine.\n"
+"  --open-note [pealkiri/url]\tOlemasoleva, etteantud pealkirjaga märkme "
+"kuvamine.\n"
+"  --start-here\t\t\t'Alusta siit' märkme kuvamine.\n"
+"  --highlight-search [tekst]\tAvatud märkmest teksti otsimine ja "
+"esiletõstmine.\n"
+
+msgid ""
+"  --addin:html-export-all [path]\tExports all notes to HTML in the given "
+"location.\n"
+"  --addin:html-export-all-quit [path]\tExports all notes to HTML in the "
+"given location and then quits.\n"
+msgstr ""
+"  --addin:html-export-all [asukoht]\tEkspordib kõik märkmed HTML faili antud "
+"asukohas.\n"
+"  --addin:html-export-all-quit [asukoht]\tEkspordib kõik märkmed HTML faili "
+"antud asukohas ning lõpetab.\n"
+
+#, csharp-format
+msgid "Version {0}"
+msgstr "Versioon {0}"
+
+msgid " (new)"
+msgstr " (uus)"
+
+msgid "_About Tomboy"
+msgstr "_Tomboy'st lähemalt"
+
+msgid ""
+"The \"Tomboy Notes Manual\" could not be found.  Please verify that your "
+"installation has been completed successfully."
+msgstr ""
+"\"Tomboy märgete käsiraamatut\" pole võimalik leida. Palun veendu, et "
+"programm on korrektselt paigaldatud."
+
+msgid "Help not found"
+msgstr "Abiteavet ei leitud"
+
+msgid "Cannot open location"
+msgstr "Asukohta pole võimalik avada"
+
+#, csharp-format
+msgid "Today, {0}"
+msgstr "Täna, {0}"
+
+msgid "Today"
+msgstr "Täna"
+
+#, csharp-format
+msgid "Yesterday, {0}"
+msgstr "Eile, {0}"
+
+msgid "Yesterday"
+msgstr "Eile"
+
+#, csharp-format
+msgid "{0} day ago, {1}"
+msgid_plural "{0} days ago, {1}"
+msgstr[0] "{0} päev tagasi, {1}"
+msgstr[1] "{0} päeva tagasi, {1}"
+
+#, csharp-format
+msgid "{0} day ago"
+msgid_plural "{0} days ago"
+msgstr[0] "{0} päev tagasi"
+msgstr[1] "{0} päeva tagasi"
+
+#, csharp-format
+msgid "Tomorrow, {0}"
+msgstr "Homme, {0}"
+
+msgid "Tomorrow"
+msgstr "Homme"
+
+#, csharp-format
+msgid "In {0} day, {1}"
+msgid_plural "In {0} days, {1}"
+msgstr[0] "{0} päeva jooksul, {1}"
+msgstr[1] "{0} päeva jooksul, {1}"
+
+#, csharp-format
+msgid "In {0} day"
+msgid_plural "In {0} days"
+msgstr[0] "{0} päeva jooksul"
+msgstr[1] "{0} päeva jooksul"
+
+msgid "MMMM d, h:mm tt"
+msgstr "d. MMMM h:mm tt"
+
+msgid "MMMM d"
+msgstr "d. MMMM"
+
+msgid "No Date"
+msgstr "Kuupäev puudub"
+
+msgid "MMMM d yyyy, h:mm tt"
+msgstr "d. MMMM yyyy, h:mm tt"
+
+msgid "MMMM d yyyy"
+msgstr "d. MMMM yyyy"
+
+#, csharp-format
+msgid "(Untitled {0})"
+msgstr "(Pealkirjata {0})"
+
+#, csharp-format
+msgid ""
+"A note with the title <b>{0}</b> already exists. Please choose another name "
+"for this note before continuing."
+msgstr ""
+"Märge pealkirjaga <b>{0}</b> on juba olemas. Enne jätkamist vali sellele "
+"märkmele mõni muu pealkiri."
+
+msgid "Note title taken"
+msgstr "Pealkiri on juba kasutusel"
+
+msgid "_Copy Link Address"
+msgstr "_Kopeeri viida aadress"
+
+msgid "_Open Link"
+msgstr "_Ava viit"

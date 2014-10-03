@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.12">
+<!ENTITY manrevision "2.4">
+<!ENTITY date "October 2005">
+<!ENTITY app "System Log Viewer">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.mate.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="uk">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Довідка з програми  "Переглядач системних журналів"</title>
+
+    <abstract role="description">
+      <para lang="en">System Log Viewer is a graphical user interface to view and monitor
+      system log files.</para>
+    </abstract>
+
+    <copyright lang="en"> 
+      <year>2003</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>Judith Samson</holder> 
+    </copyright> 
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+    <publisher> 
+      <publishername>Проект документування MATE</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Дозволяється копіювати, розповсюджувати та/або змінювати цей документ на умовах ліцензії GNU Free Documentation License (GFDL), версії 1.1 або будь-якої старшої версії, що опублікована Free Software Foundation без інваріантних розділів, тексту титульної сторінки, та тексту фінальної сторінки. Копію GFDL можна знайти <ulink type="help" url="help:fdl">за адресою</ulink> або у файлі COPYING-DOCS, що постачається з цією довідкою.</para>
+         <para>Ця довідка є частиною збірки документації з MATE, що постачається на умовах ліцензії GFDL. Якщо ви бажаєте розповсюджувати цю довідку окремо від збірки, можете це зробити додавши до довідки копію ліцензії, як описано у пункті 6 ліцензії.</para>
+
+	<para>Більшість назв, що використовуються компаніями для розповсюдження їх продуктів та послуг є торговими марками. Якщо такі назви зустрічаються у документації з MATE та учасникам проекту документування MATE відомо, що вони є торговими марками, тоді ці назви пишуться великими літерами або починаються з великої літери.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+
+   <authorgroup> 
+   <author lang="en"> 
+		<firstname>Sun</firstname> 
+		<surname>MATE Documentation Team</surname> 
+		<affiliation> 
+	  	<orgname>Sun Microsystems</orgname> 
+	  	<address> <email>gdocteam@sun.com</email> </address> 
+		</affiliation> 
+   </author> 
+
+   <author lang="en"> 
+		<firstname>Judith</firstname> 
+		<surname>Samson</surname> 
+		<affiliation> 
+	  	<orgname>MATE Documentation Project</orgname> 
+	  	<address> <email>judith@samsonsource.com</email> </address> 
+		</affiliation> 
+   </author> 
+   
+    <author lang="en"> 
+		<firstname>Paul</firstname> 
+		<surname>Cutler</surname> 
+		<affiliation> 
+	  	<orgname>MATE Documentation Team</orgname> 
+	  	<address> <email>pcutler@gnome.org</email> </address> 
+		</affiliation> 
+   </author> 
+
+   <author role="maintainer" lang="en">
+   	<firstname>Vincent</firstname>
+	<surname>Noel</surname>
+	<affiliation>
+	  <address><email>vincent.noel@gmail.com</email></address>
+	</affiliation>
+   </author>
+      
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+   <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  	<orgname>Latin Translation Team</orgname> 
+	  	<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+   </othercredit>
+-->
+    </authorgroup>
+
+    <revhistory>
+            <revision lang="en"> 
+		<revnumber>System Log Viewer Manual V2.5</revnumber> 
+		<date>October 2009</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Paul Cutler
+	    		<email>pcutler@gnome.org</email>
+	  		</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+      </revision>
+      <revision lang="en"> 
+		<revnumber>System Log Viewer Manual V2.4</revnumber> 
+		<date>October 2005</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Vincent Noel
+	    		<email>vincent.noel@gmail.com</email>
+	  		</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+      </revision>
+      <revision lang="en"> 
+		<revnumber>System Log Viewer Manual V2.3</revnumber> 
+		<date>October 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team
+	    		<email>gdocteam@sun.com</email>
+	  		</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+      </revision>
+      <revision lang="en"> 
+		<revnumber>System Log Viewer Manual V2.2</revnumber> 
+		<date>August 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team
+	    		<email>gdocteam@sun.com</email>
+	  		</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+      </revision>
+      <revision lang="en"> 
+		<revnumber>System Log Viewer Manual V2.1</revnumber> 
+		<date>July 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team
+	    		<email>gdocteam@sun.com</email>
+	  		</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+      </revision>
+      <revision lang="en"> 
+		<revnumber>System Log Viewer Manual V2.0</revnumber> 
+		<date>May 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team
+	    		<email>gdocteam@sun.com</email>
+	  		</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+      </revision> 
+      <revision lang="en"> 
+		<revnumber>Logview Manual</revnumber> 
+		<date>2000</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Judith Samson
+	    		<email>judith@samsonsource.com</email>
+	  		</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>У довідці описується програма "Переглядач системних журналів" версії 2.12</releaseinfo> 
+    <legalnotice> 
+      <title>Зворотний зв'язок</title> 
+      <para>Щоб сповістити про помилку або внести пропозицію відносно програми Переглядач системних журналів або цієї довідки, дотримуйтесь інструкцій на сторінці <ulink url="help:mate-feedback" type="help">Зворотний зв'язок з MATE</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm lang="en"> 
+    <primary>System Log Viewer</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="syslog-introduction"> 
+    <title>Введення</title> 
+
+      <para lang="en">
+      <application>System Log Viewer</application> is a graphical, menu-driven
+      viewer that you can use to view and monitor your system
+      logs. <application>System Log Viewer</application> comes with a few functions that
+      can help you manage your logs, including a log monitor and log statistics
+      display.
+      </para>
+
+      <para lang="en">
+      <application>System Log Viewer</application> is useful if you are new to system
+      administration because it provides an easier, more user-friendly
+      display of your logs than a
+      text display of the log file. It is also useful for more
+      experienced administrators, as it contains a monitor to enable you
+      to continuously monitor crucial logs.
+      </para>
+
+      <warning><para>Для правильної роботи програма <application>Переглядач системних журналів</application>  повинна мати доступ до файлів системних журналів, що зазвичай вимагає привілей адміністратора (root).</para></warning>
+
+  </sect1>
+
+  <sect1 id="syslog-getting-started">
+    <title>Початок роботи</title> 
+
+    <para>Програму <application>Переглядач системних журналів</application> можна запустити наступними способами:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>З меню <guimenu>Програми</guimenu></term>
+    		<listitem>
+    		<para lang="en">Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>Log File Viewer</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Командний рядок</term>
+    		<listitem>
+    		<para>Наберіть <command>mate-system-log</command> та натисніть <keycap>Enter</keycap>.</para>
+    		<para> 		 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+
+    <para>Після запуску програми <application>Переглядач системних журналів</application> відобразиться наступне вікно.</para>
+
+    <!-- ==== Figure ==== -->
+      <figure id="syslog-fig"> 
+	<title>Вікно "Переглядач системних журналів"</title> 
+	<screenshot> 
+	  <mediaobject lang="en"> 
+	    <imageobject>
+	    <imagedata fileref="figures/syslog_window.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Shows System Log Viewer main window. Contains menubar, display area, scrollbars, and statusbar. </phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+    <para>При першому запуску програми <application>Переглядач системних журналів</application> відображаються декілька файлів (такі як <filename>/var/log/messages</filename>). Відкриті журнали перелічені у лівій частині вікна програми. Вибраний у цьому списку журнал відображається у у головній частині вікна програми.</para>
+
+      <para>С початку програма <application>Переглядач системних журналів</application> слідкує за кожним відкритим журналом, будь-які зміни автоматично з'являються у головному вікні. Докладніше про це у <xref linkend="syslog-monitor"/>.</para>
+
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="syslog-usage"> 
+    <title>Використання</title>
+
+    <sect2 id="syslog-open">
+    	<title>Перегляд файлу журналу</title>
+    	<para lang="en">To view a log, choose <menuchoice><guimenu>File</guimenu><guimenuitem>Open</guimenuitem></menuchoice>. 
+    	In the <guilabel>Open Log</guilabel> dialog, select the 
+        log that you want to open, then click 
+    	<guibutton>Open</guibutton>. Use the scrollbars to scroll through the
+    	log.</para>
+
+        <para>Можна відкрити будь-яку кількість журналів. <application>Переглядач системних журналів</application> відображає у своєму вікні лише один журнал одночасно. Відкриті журнали перелічені ліворуч у головному вікні програми. Вибраний журнал відображається у головній частині вікна програми. Щоб відобразити інший вже відкритий журнал, виберіть його  у списку.</para>
+
+        <para>Зауважте, що <application>Переглядач системних журналів</application> також дозволяє відкривати стиснені журнали (їх назви файлів закінчуються на ".gz").</para>
+    </sect2>
+
+    <sect2 id="syslog-selection">
+    <title>Копіювати виділені повідомлення в буфер обміну</title>
+    <para>Можна скопіювати один або більше рядків у буфер обміну, просто виділіть рядки у головній області вікна та виберіть <menuchoice><guimenu>Правка</guimenu><guimenuitem>Копіювати</guimenuitem></menuchoice>. Якщо у буфер обміну треба скопіювати весь журнал , виділіть весь журнал командою меню <menuchoice><guimenu>Правка</guimenu><guimenuitem>Виділити все</guimenuitem></menuchoice>, потім виберіть <menuchoice><guimenu>Правка</guimenu><guimenuitem>Копіювати</guimenuitem></menuchoice>.</para>
+    </sect2>
+
+    <sect2 id="syslog-hide-sidebar">
+    <title>Показати чи сховати бічну панель</title>
+    <para lang="en">To hide the left sidebar, which contains the log list and calendar,
+    just select the
+    <menuchoice><guimenu>View</guimenu><guimenuitem>Side pane</guimenuitem></menuchoice>
+    menu option.</para>
+    </sect2>
+    
+    <sect2 id="syslog-monitor">
+    	<title>Додати журнал до списку контрольованих</title>
+    	<para>Програму <application>Перегляд системних журналів</application> можна використовувати для слідкування за журналами. Спочатку зміни відслідковуються в усіх відкритих журналах. Якщо у журнал, за яким ведеться спостереження, додаються нові рядки, назва журналу у списку журналів виділяється жирним шрифтом. Якщо цей журнал відображається у головній області вікна, нові рядки автоматично являться наприкінці журналу, а через  п'ять секунд, шрифтове виділення назви журналу у списку буде знято.</para>
+
+    </sect2>
+    
+    <sect2 id="syslog-stats">
+    	<title>Перегляд файлу журналу</title>
+    	<para>У рядку стану зазвичай відображається інформація про журнал:</para> 
+    	<itemizedlist>
+    		<listitem><para>Кількість рядків у журналі.</para>
+    		</listitem>
+    		<listitem><para>Розмір файлу у байтах.</para>
+    		</listitem>
+    		<listitem><para>Дату останньої зміни файлу.</para>
+    		</listitem>
+    	</itemizedlist> 
+        <para>Рядок стану можна відобразити чи сховати вибираючи пункт меню <menuchoice><guimenu>Вигляд</guimenu><guimenuitem>Панель стану</guimenuitem></menuchoice>.</para>
+    </sect2>
+    
+    <sect2 id="syslog-close">
+    	<title>Закривання файлу журналу</title>
+    	<para lang="en">To close a log, choose
+    	<menuchoice><guimenu>File</guimenu><guimenuitem>Close</guimenuitem></menuchoice>.
+    	</para>
+    </sect2>
+    
+    <sect2 id="syslog-exit">
+    	<title>Завершення програми "Переглядач системних журналів"</title>
+    	<para lang="en">To exit <application>System Log Viewer</application>, choose
+    	<menuchoice><guimenu>File</guimenu><guimenuitem>Quit</guimenuitem></menuchoice>.
+    	</para>
+    </sect2>
+ 
+  </sect1>
+
+</article>

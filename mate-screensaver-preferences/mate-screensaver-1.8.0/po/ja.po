@@ -1,0 +1,601 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Satoru SATOH <ss@gnome.gr.jp>, 2006
+# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-08 13:22+0100\n"
+"PO-Revision-Date: 2014-02-08 12:24+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/MATE/language/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../data/mate-screensaver-preferences.desktop.in.h:1
+#: ../src/mate-screensaver.desktop.in.in.h:1
+msgid "Screensaver"
+msgstr "スクリーンセーバー"
+
+#: ../data/mate-screensaver-preferences.desktop.in.h:2
+msgid "Set your screensaver preferences"
+msgstr "お使いのスクリーンセーバーを設定します"
+
+#: ../data/mate-screensaver-preferences.ui.h:1
+msgid "Screensaver Preferences"
+msgstr "スクリーンセーバーの設定"
+
+#: ../data/mate-screensaver-preferences.ui.h:2
+msgid "Power _Management"
+msgstr "パワー・マネージメント(_M)"
+
+#: ../data/mate-screensaver-preferences.ui.h:3
+msgid "_Preview"
+msgstr "プレビュー(_P)"
+
+#: ../data/mate-screensaver-preferences.ui.h:4
+msgid "_Screensaver theme:"
+msgstr "スクリーンセーバーのテーマ(_S):"
+
+#: ../data/mate-screensaver-preferences.ui.h:5
+msgid "Regard the computer as _idle after:"
+msgstr "アイドル状態になるまでの時間(_I):"
+
+#: ../data/mate-screensaver-preferences.ui.h:6
+msgid "_Activate screensaver when computer is idle"
+msgstr "アイドル状態になったらスクリーンセーバーを起動する(_A)"
+
+#: ../data/mate-screensaver-preferences.ui.h:7
+msgid "_Lock screen when screensaver is active"
+msgstr "スクリーンセーバーを起動したら画面をロックする(_L):"
+
+#: ../data/mate-screensaver-preferences.ui.h:8
+msgid "<b>Warning: the screen will not be locked for the root user.</b>"
+msgstr "<b>注意: root ユーザの場合、スクリーンはロックされないので注意して下さい</b>"
+
+#: ../data/mate-screensaver-preferences.ui.h:9
+msgid "Screensaver Preview"
+msgstr "スクリーンセーバーのプレビュー"
+
+#: ../data/mate-screensaver-preferences.ui.h:10
+msgid "<b>Screensaver preview</b>"
+msgstr "<b>スクリーンセーバーのプレビュー</b>"
+
+#: ../data/mate-screensaver.directory.in.h:1
+msgid "Screensavers"
+msgstr "いろいろなスクリーンセーバーを格納するフォルダ"
+
+#: ../data/mate-screensaver.directory.in.h:2
+msgid "Screensaver themes"
+msgstr "スクリーンセーバーのテーマ"
+
+#. Translators: This is the name of a desktop background image that shows
+#. outer space images.
+#. You might want to translate it into the equivalent words of your language
+#: ../data/images/cosmos/cosmos.xml.in.in.h:3
+#: ../savers/cosmos-slideshow.desktop.in.in.h:1
+msgid "Cosmos"
+msgstr "宇宙"
+
+#: ../data/lock-dialog-default.ui.h:2
+#, no-c-format
+msgid "<span size=\"xx-large\" weight=\"ultrabold\">%s</span>"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:4
+#, no-c-format
+msgid "<span size=\"large\">%s</span>"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:6
+#, no-c-format
+msgid "<span size=\"x-large\">%R</span>"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:8
+#, no-c-format
+msgid "<span size=\"small\">%U on %h</span>"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:9
+msgid "_Leave Message"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:10
+msgid "_Switch User"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:11
+msgid "_Log Out"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:12
+msgid "_Cancel"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:13 ../src/gs-lock-plug.c:1778
+msgid "_Unlock"
+msgstr "ロックの解除(_U)"
+
+#: ../data/lock-dialog-default.ui.h:15
+#, no-c-format
+msgid "<b>Leave a message for %R:</b>"
+msgstr ""
+
+#: ../savers/cosmos-slideshow.desktop.in.in.h:2
+msgid "Display a slideshow of pictures of the cosmos"
+msgstr "\"宇宙の画像\" をスライドショー形式で表示します"
+
+#: ../savers/footlogo-floaters.desktop.in.in.h:1
+msgid "Floating MATE"
+msgstr ""
+
+#: ../savers/footlogo-floaters.desktop.in.in.h:2
+msgid "Bubbles the MATE logo around the screen"
+msgstr ""
+
+#: ../savers/gnomelogo-floaters.desktop.in.in.h:1
+msgid "Floating GNOME"
+msgstr ""
+
+#: ../savers/gnomelogo-floaters.desktop.in.in.h:2
+msgid "Bubbles the GNOME logo around the screen"
+msgstr ""
+
+#: ../savers/personal-slideshow.desktop.in.in.h:1
+msgid "Pictures folder"
+msgstr "画像フォルダ"
+
+#: ../savers/personal-slideshow.desktop.in.in.h:2
+msgid "Display a slideshow from your Pictures folder"
+msgstr "これはお気に入りのフォルダにある画像をスライドショー形式で表示します"
+
+#: ../savers/popsquares.desktop.in.in.h:1
+msgid "Pop art squares"
+msgstr "ポップな矩形のアート"
+
+#: ../savers/popsquares.desktop.in.in.h:2
+msgid "A pop-art-ish grid of pulsing colors."
+msgstr "四角形が脈打つように見えるポップ・アートを表示します"
+
+#: ../savers/popsquares.c:51 ../savers/floaters.c:1252
+#, c-format
+msgid "%s. See --help for usage information.\n"
+msgstr "%s (用法については --help オプションで確認して下さい)\n"
+
+#: ../savers/floaters.c:94
+msgid "Show paths that images follow"
+msgstr "画像を表示していくパス名を表示する"
+
+#: ../savers/floaters.c:99
+msgid "Occasionally rotate images as they move"
+msgstr "時々画像が移動しているかのように回転させる"
+
+#: ../savers/floaters.c:104
+msgid "Print out frame rate and other statistics"
+msgstr "画像を描画した時のフレームレートとその他の統計情報を表示する"
+
+#: ../savers/floaters.c:109
+msgid "The maximum number of images to keep on screen"
+msgstr "スクリーンに残しておく画像の個数 (最大値) を指定する"
+
+#: ../savers/floaters.c:109
+msgid "MAX_IMAGES"
+msgstr "MAX_IMAGES"
+
+#: ../savers/floaters.c:114
+msgid "The initial size and position of window"
+msgstr "ウィンドウの初期サイズと位置を指定する"
+
+#: ../savers/floaters.c:114
+msgid "WIDTHxHEIGHT+X+Y"
+msgstr "幅x高さ+X+Y"
+
+#: ../savers/floaters.c:119
+msgid "The source image to use"
+msgstr "使用する元の画像"
+
+#. translators: the word "image" here
+#. * represents a command line argument
+#: ../savers/floaters.c:1246
+msgid "image - floats images around the screen"
+msgstr "画像 - スクリーンの回りに画像を浮かす"
+
+#: ../savers/floaters.c:1261
+#, c-format
+msgid "You must specify one image.  See --help for usage information.\n"
+msgstr "少なくとも画像を一つ指定して下さい (用法については --help オプションで確認して下さい)\n"
+
+#: ../savers/slideshow.c:55
+msgid "Location to get images from"
+msgstr "画像を格納している場所"
+
+#: ../savers/slideshow.c:55
+msgid "PATH"
+msgstr "PATH"
+
+#: ../savers/slideshow.c:59
+msgid "Color to use for images background"
+msgstr "画像の背景に使用する色を指定する"
+
+#: ../savers/slideshow.c:59
+msgid "\"#rrggbb\""
+msgstr "\"#rrggbb\""
+
+#: ../savers/slideshow.c:63
+msgid "Do not randomize pictures from location"
+msgstr "画像をランダムに表示しない"
+
+#: ../savers/slideshow.c:67
+msgid "Do not try to stretch images on screen"
+msgstr "画像を画面の大きさに引き伸ばさない"
+
+#: ../src/copy-theme-dialog.c:219
+msgid "Copying files"
+msgstr "ファイルのコピー"
+
+#: ../src/copy-theme-dialog.c:237
+msgid "From:"
+msgstr "コピー元:"
+
+#: ../src/copy-theme-dialog.c:241
+msgid "To:"
+msgstr "コピー先:"
+
+#: ../src/copy-theme-dialog.c:261
+msgid "Copying themes"
+msgstr "テーマのコピー中"
+
+#: ../src/copy-theme-dialog.c:307
+msgid "Invalid screensaver theme"
+msgstr "スクリーンセーバーのテーマが間違っています"
+
+#: ../src/copy-theme-dialog.c:310
+#, c-format
+msgid "%s does not appear to be a valid screensaver theme."
+msgstr "%s はスクリーンセーバーとして妥当なテーマではないようです。"
+
+#: ../src/copy-theme-dialog.c:490
+#, c-format
+msgid "Copying file: %u of %u"
+msgstr "ファイルのコピー中: %u / %u"
+
+#: ../src/mate-screensaver-command.c:64
+msgid "Causes the screensaver to exit gracefully"
+msgstr "スクリーンセーバーを強制終了する"
+
+#: ../src/mate-screensaver-command.c:68
+msgid "Query the state of the screensaver"
+msgstr "スクリーンセーバーの状態を問い合わせる"
+
+#: ../src/mate-screensaver-command.c:72
+msgid "Query the length of time the screensaver has been active"
+msgstr "スクリーンセーバーが起動するしている時間を問い合わせる"
+
+#: ../src/mate-screensaver-command.c:76
+msgid "Tells the running screensaver process to lock the screen immediately"
+msgstr "起動中のスクリーンセーバーに今すぐ画面をロックさせる"
+
+#: ../src/mate-screensaver-command.c:80
+msgid "If the screensaver is active then switch to another graphics demo"
+msgstr "スクリーンセーバーが起動されていたら別のグラフィックス・デモに切り替える"
+
+#: ../src/mate-screensaver-command.c:84
+msgid "Turn the screensaver on (blank the screen)"
+msgstr "スクリーンセーバーを有効にする (ブランク・スクリーン)"
+
+#: ../src/mate-screensaver-command.c:88
+msgid "If the screensaver is active then deactivate it (un-blank the screen)"
+msgstr "有効になっているスクリーンセーバーを無効にする (ブランク・スクリーン解除)"
+
+#: ../src/mate-screensaver-command.c:92
+msgid "Poke the running screensaver to simulate user activity"
+msgstr "ユーザが設定できる機能を模擬するためにスクリーンセーバーをランダムに実行する"
+
+#: ../src/mate-screensaver-command.c:96
+msgid ""
+"Inhibit the screensaver from activating.  Command blocks while inhibit is "
+"active."
+msgstr "スクリーンセーバーの起動を抑制する (これが有効な場合はコマンドが無視される)"
+
+#: ../src/mate-screensaver-command.c:100
+msgid "The calling application that is inhibiting the screensaver"
+msgstr "スクリーンセーバーを抑止するアプリケーションを呼び出す"
+
+#: ../src/mate-screensaver-command.c:104
+msgid "The reason for inhibiting the screensaver"
+msgstr "スクリーンセーバーを抑止するための理由を指定する"
+
+#: ../src/mate-screensaver-command.c:108 ../src/mate-screensaver-dialog.c:60
+#: ../src/mate-screensaver.c:55
+msgid "Version of this application"
+msgstr "このアプリケーションのバージョンを表示する"
+
+#: ../src/mate-screensaver-command.c:357
+#, c-format
+msgid "The screensaver is %s\n"
+msgstr "スクリーンセーバーは%s\n"
+
+#: ../src/mate-screensaver-command.c:357
+msgid "active"
+msgstr "起動されています"
+
+#: ../src/mate-screensaver-command.c:357
+msgid "inactive"
+msgstr "起動されていません"
+
+#: ../src/mate-screensaver-command.c:373
+#, c-format
+msgid "The screensaver is not inhibited\n"
+msgstr "スクリーンセーバーは無効になっていません\n"
+
+#: ../src/mate-screensaver-command.c:381
+#, c-format
+msgid "The screensaver is being inhibited by:\n"
+msgstr "次のアプリがスクリーンセーバーを無効にしています:\n"
+
+#: ../src/mate-screensaver-command.c:416
+#, c-format
+msgid "The screensaver has been active for %d seconds.\n"
+msgstr "スクリーンセーバーは %d 秒間起動されています\n"
+
+#: ../src/mate-screensaver-command.c:422
+#, c-format
+msgid "The screensaver is not currently active.\n"
+msgstr "スクリーンセーバーは現在、有効になっていません。\n"
+
+#: ../src/mate-screensaver-dialog.c:59
+msgid "Show debugging output"
+msgstr "デバッグ出力を表示する"
+
+#: ../src/mate-screensaver-dialog.c:61
+msgid "Show the logout button"
+msgstr "ログアウト・ボタンを表示する"
+
+#: ../src/mate-screensaver-dialog.c:62
+msgid "Command to invoke from the logout button"
+msgstr "ログアウト・ボタンから呼び出すコマンド"
+
+#: ../src/mate-screensaver-dialog.c:63
+msgid "Show the switch user button"
+msgstr "ログアウト・ボタンを表示する"
+
+#: ../src/mate-screensaver-dialog.c:64
+msgid "Message to show in the dialog"
+msgstr "ダイアログに表示するメッセージ"
+
+#: ../src/mate-screensaver-dialog.c:64 ../src/mate-screensaver-dialog.c:65
+msgid "MESSAGE"
+msgstr "MESSAGE"
+
+#: ../src/mate-screensaver-dialog.c:65
+msgid "Not used"
+msgstr "未使用"
+
+#. login: is whacked always translate to Username:
+#: ../src/mate-screensaver-dialog.c:171 ../src/mate-screensaver-dialog.c:172
+#: ../src/mate-screensaver-dialog.c:173 ../src/gs-auth-pam.c:756
+msgid "Username:"
+msgstr "ユーザ名:"
+
+#: ../src/mate-screensaver-dialog.c:174 ../src/mate-screensaver-dialog.c:175
+#: ../src/gs-auth-pam.c:171
+msgid "Password:"
+msgstr "パスワード:"
+
+#: ../src/mate-screensaver-dialog.c:176
+msgid "You are required to change your password immediately (password aged)"
+msgstr "今すぐパスワードの変更が必要です (パスワードは期限切れです)"
+
+#: ../src/mate-screensaver-dialog.c:177
+msgid "You are required to change your password immediately (root enforced)"
+msgstr "今すぐパスワードの変更が必要です (管理者が強制しています)"
+
+#: ../src/mate-screensaver-dialog.c:178
+msgid "Your account has expired; please contact your system administrator"
+msgstr "お使いのアカウントは期限切れです; システム管理者に問い合わせて下さい"
+
+#: ../src/mate-screensaver-dialog.c:179
+msgid "No password supplied"
+msgstr "パスワードを指定していません"
+
+#: ../src/mate-screensaver-dialog.c:180
+msgid "Password unchanged"
+msgstr "パスワードは変更されていません"
+
+#: ../src/mate-screensaver-dialog.c:181
+msgid "Can not get username"
+msgstr "ユーザ名を取得できません"
+
+#: ../src/mate-screensaver-dialog.c:182
+msgid "Retype new UNIX password:"
+msgstr "(確認) 新しい UNIX パスワード:"
+
+#: ../src/mate-screensaver-dialog.c:183
+msgid "Enter new UNIX password:"
+msgstr "新しい UNIX パスワード:"
+
+#: ../src/mate-screensaver-dialog.c:184
+msgid "(current) UNIX password:"
+msgstr "(現在の) UNIX パスワード:"
+
+#: ../src/mate-screensaver-dialog.c:185
+msgid "Error while changing NIS password."
+msgstr "NIS パスワードを変更する際にエラー"
+
+#: ../src/mate-screensaver-dialog.c:186
+msgid "You must choose a longer password"
+msgstr "もっと長いパスワードを選択して下さい"
+
+#: ../src/mate-screensaver-dialog.c:187
+msgid "Password has been already used. Choose another."
+msgstr "既にパスワードは使用されているので別のものを選択して下さい"
+
+#: ../src/mate-screensaver-dialog.c:188
+msgid "You must wait longer to change your password"
+msgstr "パスワードを変更するまで待たなければなりません"
+
+#: ../src/mate-screensaver-dialog.c:189
+msgid "Sorry, passwords do not match"
+msgstr "すみませんが、パスワードが一致しません"
+
+#: ../src/mate-screensaver-dialog.c:260
+msgid "Checking..."
+msgstr "確認中..."
+
+#: ../src/mate-screensaver-dialog.c:306 ../src/gs-auth-pam.c:495
+msgid "Authentication failed."
+msgstr "認証に失敗しました"
+
+#: ../src/mate-screensaver-preferences.c:487
+msgid "Blank screen"
+msgstr "ブランク・スクリーン"
+
+#: ../src/mate-screensaver-preferences.c:493
+msgid "Random"
+msgstr "ランダム"
+
+#: ../src/mate-screensaver-preferences.c:983
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d時間"
+
+#: ../src/mate-screensaver-preferences.c:986
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d分"
+
+#: ../src/mate-screensaver-preferences.c:989
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d秒"
+
+#. hour:minutes:seconds
+#: ../src/mate-screensaver-preferences.c:997
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. hour:minutes
+#. minutes:seconds
+#: ../src/mate-screensaver-preferences.c:1002
+#: ../src/mate-screensaver-preferences.c:1015
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#. hour
+#. minutes
+#. seconds
+#: ../src/mate-screensaver-preferences.c:1007
+#: ../src/mate-screensaver-preferences.c:1020
+#: ../src/mate-screensaver-preferences.c:1026
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#: ../src/mate-screensaver-preferences.c:1041
+#, c-format
+msgid "Never"
+msgstr "しない"
+
+#: ../src/mate-screensaver-preferences.c:1622
+msgid "Could not load the main interface"
+msgstr "Glade インタフェースを読み込めませんでした"
+
+#: ../src/mate-screensaver-preferences.c:1624
+msgid "Please make sure that the screensaver is properly installed"
+msgstr "mate-screensaver が正しくインストールされているか確認して下さい。"
+
+#: ../src/mate-screensaver.c:56
+msgid "Don't become a daemon"
+msgstr "デーモン化しない"
+
+#: ../src/mate-screensaver.c:57
+msgid "Enable debugging code"
+msgstr "デバッグ・モードにする"
+
+#: ../src/mate-screensaver.desktop.in.in.h:2
+msgid "Launch screen saver and locker program"
+msgstr "スクリーンセーバーおよびロックするプロラグラムを起動"
+
+#: ../src/gs-auth-pam.c:425
+#, c-format
+msgid "Unable to establish service %s: %s\n"
+msgstr "サービス %s を確立できません: %s\n"
+
+#: ../src/gs-auth-pam.c:455
+#, c-format
+msgid "Can't set PAM_TTY=%s"
+msgstr "PAM_TTY=%s にセットできません"
+
+#: ../src/gs-auth-pam.c:491
+msgid "Incorrect password."
+msgstr "パスワードが間違っています"
+
+#: ../src/gs-auth-pam.c:511
+msgid "Not permitted to gain access at this time."
+msgstr "この時点ではアクセスが拒否されています"
+
+#: ../src/gs-auth-pam.c:519
+msgid "No longer permitted to access the system."
+msgstr "システムへのアクセスが許可されていません"
+
+#: ../src/gs-listener-dbus.c:2219
+msgid "failed to register with the message bus"
+msgstr "メッセージ・バスへの登録に失敗しました"
+
+#: ../src/gs-listener-dbus.c:2230
+msgid "not connected to the message bus"
+msgstr "メッセージ・バスに接続していません"
+
+#: ../src/gs-listener-dbus.c:2240 ../src/gs-listener-dbus.c:2272
+msgid "screensaver already running in this session"
+msgstr "このセッションで既にスクリーンセーバーが実行中です"
+
+#. Translators: Time format, see https://developer.gnome.org/glib/stable/glib-
+#. GDateTime.html#g-date-time-format
+#: ../src/gs-lock-plug.c:304
+msgid "%l:%M %p"
+msgstr ""
+
+#. Translators: Date format, see https://developer.gnome.org/glib/stable/glib-
+#. GDateTime.html#g-date-time-format
+#: ../src/gs-lock-plug.c:306
+msgid "%A, %B %e"
+msgstr ""
+
+#: ../src/gs-lock-plug.c:408
+msgid "Time has expired."
+msgstr "タイムアウトしました"
+
+#: ../src/gs-lock-plug.c:439
+msgid "You have the Caps Lock key on."
+msgstr "[Caps Lock] キーが押されています"
+
+#: ../src/gs-lock-plug.c:1758
+msgid "S_witch User..."
+msgstr "ユーザの切り替え(_W)..."
+
+#: ../src/gs-lock-plug.c:1767
+msgid "Log _Out"
+msgstr "ログアウト(_O)"
+
+#. To translators: This expands to USERNAME on HOSTNAME
+#: ../src/gs-lock-plug.c:1976
+msgid "%U on %h"
+msgstr "%U@%h"
+
+#: ../src/gs-lock-plug.c:1990
+msgid "_Password:"
+msgstr "パスワード(_P):"

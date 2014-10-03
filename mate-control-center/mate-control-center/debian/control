@@ -1,0 +1,83 @@
+Source: mate-control-center
+Section: mate
+Priority: optional
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Build-Depends: debhelper (>= 9),
+               dh-autoreconf,
+               mate-common,
+               docbook-to-man,
+               autotools-dev,
+               yelp-tools,
+               intltool,
+               libxt-dev,
+               libx11-dev,
+               libxss-dev,
+               libcanberra-gtk-dev,
+               libgtk2.0-dev,
+               libglib2.0-dev,
+               libmate-desktop-dev,
+               libmatemenu-dev,
+               libdbus-1-dev,
+               libdbus-glib-1-dev,
+               libxml2-dev,
+               libmarco-dev,
+               libxft-dev,
+               libxrender-dev,
+               libxrandr-dev,
+               libxcursor-dev,
+               libxi-dev,
+               libmatekbd-dev,
+               libxklavier-dev,
+               libunique-dev,
+               desktop-file-utils,
+               shared-mime-info,
+               libgtop2-dev,
+               xsltproc,
+               libstartup-notification0-dev,
+               libpango1.0-dev,
+               librsvg2-dev,
+               libdconf-dev,
+               mate-settings-daemon
+Standards-Version: 3.9.5
+Homepage: http://www.mate-desktop.org/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-control-center.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-control-center.git
+
+Package: mate-control-center
+Architecture: any
+Section: mate
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         mate-settings-daemon,
+         mate-menus,
+         mate-desktop,
+         mate-icon-theme,
+         desktop-file-utils,
+         gsettings-desktop-schemas,
+         libglib2.0-bin
+Suggests: gconf2
+Conflicts: libslab0,
+           libslab0a
+Description: utilities to configure the MATE desktop
+ This package contains configuration applets for the MATE desktop,
+ allowing to set accessibility configuration, desktop fonts, keyboard
+ and mouse properties, sound setup, desktop theme and background, user
+ interface properties, screen resolution, and other MATE parameters.
+ .
+ It also contains a front end to these applets, which can also be
+ accessed with the MATE panel or the Caja file manager.
+
+Package: mate-control-center-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-control-center (= ${binary:Version})
+Description: utilities to configure the MATE desktop (debugging symbols)
+ This package contains debugging symbols for mate-control-center.
+ It is provided to help debugging problems. The debugging symbols are
+ installed  in /usr/lib/debug and will automatically be used by gdb.

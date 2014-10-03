@@ -1,0 +1,47 @@
+<!-- ##### SECTION Title ##### -->
+caja-info-provider
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT CajaInfoProvider ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT CajaInfoProviderIface ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### USER_FUNCTION CajaInfoProviderUpdateComplete ##### -->
+<para>
+
+</para>
+
+@provider: 
+@handle: 
+@result: 
+@user_data: 
+
+

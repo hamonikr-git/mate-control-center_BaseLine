@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="create-notes" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="edit-notes"/>
+    <link type="seealso" xref="delete-notes"/>
+    <desc>Jak v aplikaci Tomboy vytvořit novou poznámku.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Vytvoření nové poznámky</title>    
+  
+  <p>Novou poznámku v aplikaci Tomboy můžete vytvořit kliknutím na ikonu Tomboy na panelu GNOME, na pruhu úloh Windows nebo v doku OS X a následným výběrem <gui>Vytvořit novou poznámku</gui>. Můžete také použít klávesovou zkratku zmáčknutím <keyseq><key>Alt + F12</key></keyseq>.</p>
+  
+  <p>Nová poznámka se zobrazí v novém okně s názvem Nová poznámka <em>N</em>. Poznámka obsahuje lištu nástrojů s volbami pro hledání vašich poznámek, odkazy na poznámky, formátování textu poznámky a další. Více informací viz <link xref="edit-notes"/>.</p>
+	
+</page>

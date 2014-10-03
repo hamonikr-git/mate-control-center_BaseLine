@@ -1,0 +1,859 @@
+# Chinese (Hong Kong) translation for gconf-editor.
+# Copyright (C) 2011 gconf-editor's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gconf-editor package.
+# Pin-hsien Li <pspeter9931@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gconf-editor master\n"
+"POT-Creation-Date: 2011-04-03 16:36+0000\n"
+"PO-Revision-Date: 2011-05-02 20:29+0800\n"
+"Last-Translator: Pin-hsien Li < pspeter9931@gmail.com>\n"
+"Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gconf-editor.xml:187(None)
+msgid ""
+"@@image: 'figures/gconf_editor_anno_window.png'; "
+"md5=e8bcda23f3fbe88915bd1850be62f9e8"
+msgstr "@@image: 'figures/gconf_editor_anno_window.png'; md5=e8bcda23f3fbe88915bd1850be62f9e8"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gconf-editor.xml:484(None)
+msgid "@@image: 'figures/entry-bool.png'; md5=2966eb7f1115df0eb45da84d5e1ec202"
+msgstr "@@image: 'figures/entry-bool.png'; md5=2966eb7f1115df0eb45da84d5e1ec202"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gconf-editor.xml:492(None)
+msgid ""
+"@@image: 'figures/entry-number.png'; md5=ed3c59de590c2f556fc88c11db5d3ce5"
+msgstr "@@image: 'figures/entry-number.png'; md5=ed3c59de590c2f556fc88c11db5d3ce5"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gconf-editor.xml:499(None)
+msgid ""
+"@@image: 'figures/entry-string.png'; md5=6e66a2292b70c4b4332af98b07c4cb5d"
+msgstr "@@image: 'figures/entry-string.png'; md5=6e66a2292b70c4b4332af98b07c4cb5d"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gconf-editor.xml:505(None)
+msgid ""
+"@@image: 'figures/entry-schema.png'; md5=6eafa713ecb0e6452e00c44c9c373dea"
+msgstr "@@image: 'figures/entry-schema.png'; md5=6eafa713ecb0e6452e00c44c9c373dea"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gconf-editor.xml:514(None)
+msgid "@@image: 'figures/entry-list.png'; md5=f11b0fcf542ccd936409c2c4a85da634"
+msgstr "@@image: 'figures/entry-list.png'; md5=f11b0fcf542ccd936409c2c4a85da634"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gconf-editor.xml:522(None) C/gconf-editor.xml:531(None)
+msgid ""
+"@@image: 'figures/entry-blank.png'; md5=ef9f97ca90eeffda318fe6b39bd3ed87"
+msgstr "@@image: 'figures/entry-blank.png'; md5=ef9f97ca90eeffda318fe6b39bd3ed87"
+
+#: C/gconf-editor.xml:22(title)
+msgid "Configuration Editor Manual"
+msgstr "組態編輯器手冊"
+
+#: C/gconf-editor.xml:24(year)
+msgid "2004"
+msgstr "2004"
+
+#: C/gconf-editor.xml:25(holder) C/gconf-editor.xml:47(orgname)
+msgid "Sun Microsystems"
+msgstr "昇陽電腦 (Sun Microsystems)"
+
+#: C/gconf-editor.xml:35(publishername) C/gconf-editor.xml:53(orgname)
+#: C/gconf-editor.xml:60(orgname) C/gconf-editor.xml:83(para)
+#: C/gconf-editor.xml:84(para) C/gconf-editor.xml:93(para)
+#: C/gconf-editor.xml:101(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOME 文件專案"
+
+#: C/gconf-editor.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr "根據自由軟件基金會 (Free Software Foundation) 所發佈的 GNU 自由文件授權 (GNU Free Documentation License, GFDL) 1.1 (含) 以後版本，使用者可以複製、散佈，或修改本文件，但不得增刪章節，不得加上封面文字，亦不得加上封底文字。如要取得 GFDL 的副本，請參閱此<ulink type=\"help\" url=\"ghelp:fdl\">連結</ulink>，或是參閱與本手冊一同隨附的 COPYING-DOCS 檔案。"
+
+#: C/gconf-editor.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr "本手冊是屬於根據 GFDL 授權所發佈之 GNOME 手冊集中的一部份。如果你只要單獨散佈本手冊，根據據授權聲明第六節之敘述，你必須另外將授權聲明加入本手冊中。"
+
+#: C/gconf-editor.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr "許多公司為了突顯其產品與服務，會使用特別名稱，並亦已聲明這些名稱為其商標。當這些名稱出現在 GNOME 文件中，同時 GNOME 文件專案小組成員亦明白這些名稱為商標時， 這些名稱會以大寫字母或是首字母大寫表示。"
+
+#: C/gconf-editor.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr "文件提供是以其「原樣」呈現，不管明示或暗示，皆不具任何保證，包括 (但不限於) 文件或修正版毫無錯誤、可販售、 具特殊用途，或不侵權。關於本文件與修正版文件之品質、正確性及功用，其風險你必須自行承擔。若本文件或修正版有任何缺陷，任何必須之保養、修理及更正，應由你自行承擔，原始作者、作者或任何散佈者無須負責。本免責聲明是本授權聲明極重要與必要的一部份，因此任何文件或修正版的授權，皆須在同意本免責聲明的情況下進行；同時"
+
+#: C/gconf-editor.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr "在任何情況或法律理論下，亦即不管是在侵權 (包括疏忽)、契約或其他情形，或是已預先告知會有下列損害之可能時，本文件或修正版的任何作者、原始作者、投稿人以及散佈者，或是任何提供單位，對於因使用本文件及修正版，或與本文件及修正版使用相關所造成的任何直接、間接、特殊、偶然或必然之損害，包括 (但不限於) 信譽受損、工作停止、電腦當機或不正常運作，或任何所有其他損害，上述人等皆不需負任何責任。"
+
+#: C/gconf-editor.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr "文件以及此文件的修改版本必須遵循 GNU 自由文件許可證，進一步資訊請見： <placeholder-1/>"
+
+#: C/gconf-editor.xml:45(firstname)
+msgid "Sun"
+msgstr "昇陽 (Sun)"
+
+#: C/gconf-editor.xml:46(surname)
+msgid "GNOME Documentation Team"
+msgstr "GNOME 文件隊伍"
+
+#: C/gconf-editor.xml:50(firstname)
+msgid "Angela"
+msgstr "Angela"
+
+#: C/gconf-editor.xml:51(surname)
+msgid "Boyle"
+msgstr "Boyle"
+
+#: C/gconf-editor.xml:57(firstname)
+msgid "Shaun"
+msgstr "Shaun"
+
+#: C/gconf-editor.xml:58(surname)
+msgid "McCance"
+msgstr "McCance"
+
+#: C/gconf-editor.xml:76(para)
+msgid ""
+"Configuration Editor can be used to change configuration options used by "
+"applications that may not be available through Preference dialogs"
+msgstr "組態編輯器可以用來更改那些不會在偏好設定中出現的程式設置選項。"
+
+#: C/gconf-editor.xml:80(revnumber)
+msgid "Version 2.8"
+msgstr "版本 2.8"
+
+#: C/gconf-editor.xml:81(date)
+msgid "September 2004"
+msgstr "2004 年九月"
+
+#: C/gconf-editor.xml:85(para)
+msgid "unreviewed"
+msgstr "未被審核的"
+
+#: C/gconf-editor.xml:89(revnumber)
+msgid "Version 2.1"
+msgstr "版本 2.1"
+
+#: C/gconf-editor.xml:90(date)
+msgid "August 2004"
+msgstr "2004 年八月"
+
+#: C/gconf-editor.xml:92(para) C/gconf-editor.xml:100(para)
+msgid "Sun GNOME Documentation Team"
+msgstr "昇陽 GNOME 文件隊伍"
+
+#: C/gconf-editor.xml:97(revnumber)
+msgid "Version 2.0.1"
+msgstr "版本 2.0.1"
+
+#: C/gconf-editor.xml:98(date)
+msgid "January 2004"
+msgstr "2004 年一月"
+
+#: C/gconf-editor.xml:105(releaseinfo)
+msgid "This manual describes version 2.8 of Configuration Editor."
+msgstr "這個手冊描述的是「組態編輯器」2.8 版。"
+
+#: C/gconf-editor.xml:107(title)
+msgid "Feedback"
+msgstr "意見回覆"
+
+#: C/gconf-editor.xml:108(para)
+msgid ""
+"To report a bug or make a suggestion regarding the Configuration Editor "
+"application or this manual, follow the directions in the <ulink url=\"ghelp:"
+"gnome-feedback\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr "要回報「組態編輯器」應用程式或這本手冊的錯誤或給予建議，請根據 <ulink url=\"ghelp:gnome-feedback\" type=\"help\">GNOME 回饋頁面</ulink>中的指示。"
+
+#: C/gconf-editor.xml:118(primary)
+msgid "GConf Editor"
+msgstr "GConf 編輯器"
+
+#: C/gconf-editor.xml:122(title)
+msgid "Introduction"
+msgstr "引言"
+
+#: C/gconf-editor.xml:123(para)
+msgid ""
+"The GNOME Desktop and many applications use <application>GConf</application> "
+"to store user preferences and system configuration data. <application>GConf</"
+"application> provides a central storage location for preferences, "
+"simplifying configuration management for users and system administrators. "
+"More information about <application>GConf</application> can be found in the "
+"<ulink url=\"ghelp:system-admin-guide#gconf-0\">GNOME System Administrator's "
+"Guide</ulink>."
+msgstr "GNOME 桌面環境以及許多應用程式，會使用 <application>GConf</application> 來儲存使用者的的偏好設定和系統配置資料。<application>GConf</application> 提供了一個中心位置來儲存偏好設定，為使用者和系統管理員簡化配置管理。更多有關 <application>GConf</application> 的資訊可參見<ulink url=\"ghelp:system-admin-guide#gconf-0\"> GNOME 系統管理員指南</ulink>。"
+
+#: C/gconf-editor.xml:131(para)
+msgid ""
+"<application>Configuration Editor</application> allows users to modify their "
+"preferences for the entire GNOME Desktop and any applications which use "
+"<application>GConf</application>. Additionally, system administrators can "
+"use <application>Configuration Editor</application> to set default and "
+"mandatory settings which will affect all users."
+msgstr "<application>組態編輯器</application>允許用戶改變個人的偏好設定以調整整個 GNOME 桌面環境以及任何使用 <application>GConf</application> 的應用程式。另外，系統管理員可以使用<application>組態編輯器</application>設置預設以及強制性的設定，這些將會影響到所有使用者。"
+
+#: C/gconf-editor.xml:136(para)
+msgid ""
+"Preferences are stored in <application>GConf</application> in a hierarchy of "
+"keys. Each key has an associated value which specifies your setting for that "
+"preference. For instance, the key <literal>/apps/glines/preferences/"
+"ball_theme</literal> stores which theme you use in the game "
+"<application>Five or More</application>."
+msgstr "偏好設定被儲存於 <application>GConf</application> 內架構式的設定鍵中。每個設定鍵都有一個關聯的值，指定你所設定的偏好。舉例來說，設定鍵 <literal>/app/glines/preferences/ball_theme</literal> 中儲存了你在遊戲 <application>Five or More</application> 裏所使用的主題。"
+
+#: C/gconf-editor.xml:141(para)
+msgid ""
+"<application>Configuration Editor</application> enables you to modify your "
+"configuration source directly. If you are not an experienced user, do not "
+"use <application>Configuration Editor</application> to set preferences for "
+"the GNOME Desktop. Instead, use the preference tools in the GNOME Desktop. "
+"For information about how to use preference tools, see the latest version of "
+"the <ulink url=\"ghelp:user-guide\">GNOME Desktop User Guide</ulink> for "
+"your platform."
+msgstr "<application>組態編輯器</application>可以讓你直接修改設置源。如果你不是一個有經驗的用戶，不要使用<application>組態編輯器</application>來改變 GNOME 桌面環境的設定。反之，使用 GNOME 桌面環境的設定工具。有關如何使用設定工具的資訊，請參閱最新版本、對應你的平台的<ulink url=\"ghelp:user-guide\"> GNOME 桌面環境使用者指南</ulink>。"
+
+#: C/gconf-editor.xml:151(title)
+msgid "Getting Started"
+msgstr "開始使用"
+
+#: C/gconf-editor.xml:154(title)
+msgid "To Start Configuration Editor"
+msgstr "啟動組態編輯器"
+
+#: C/gconf-editor.xml:155(para)
+msgid ""
+"You can start <application>Configuration Editor</application> in the "
+"following ways:"
+msgstr "你可以照以下的方式來啟動<application>組態編輯器</application>："
+
+#: C/gconf-editor.xml:159(term)
+msgid "<guimenu>Applications</guimenu> menu"
+msgstr "<guimenu>應用程式</guimenu>選單"
+
+#: C/gconf-editor.xml:161(para)
+msgid ""
+"Choose <menuchoice><guisubmenu>System Tools</"
+"guisubmenu><guimenuitem>Configuration Editor</guimenuitem></menuchoice>."
+msgstr "選擇<menuchoice><guisubmenu>系統工具</guisubmenu><guimenuitem>組態編輯器</guimenuitem></menuchoice>。"
+
+#: C/gconf-editor.xml:163(para)
+msgid ""
+"Some distributions hide this menu. In this case, use the second method "
+"described below."
+msgstr "有些發行版本會隱藏這個選單。在這種情況下，使用下面所述的第二種方式。"
+
+#: C/gconf-editor.xml:168(term)
+msgid "Command line"
+msgstr "指令列"
+
+#: C/gconf-editor.xml:170(para)
+msgid "Execute the following command: <command>gconf-editor</command>"
+msgstr "執行下列指令：<command>gconf-editor</command>"
+
+#: C/gconf-editor.xml:178(title)
+msgid "When You Start Configuration Editor"
+msgstr "當你啟動了組態編輯器"
+
+#: C/gconf-editor.xml:179(para)
+msgid ""
+"When you start <application>Configuration Editor</application>, the "
+"following window is displayed."
+msgstr "在你啟動<application>組態編輯器</application>之後，會出現下面的視窗。"
+
+#: C/gconf-editor.xml:182(title)
+msgid "<application>Configuration Editor</application> Window"
+msgstr "<application>組態編輯器</application>視窗"
+
+#: C/gconf-editor.xml:190(phrase)
+msgid ""
+"Shows GConf Editor window. Callouts: Tree pane, Modification pane, "
+"Documentation pane."
+msgstr "顯示組態管理員 (GConf Editor) 視窗。標註了：樹狀面板、修改面板、說明面板"
+
+#: C/gconf-editor.xml:196(para)
+msgid ""
+"The <application>Configuration Editor</application> window contains the "
+"following panes:"
+msgstr "<application>組態編輯器</application>視窗包含了下列的面板："
+
+#: C/gconf-editor.xml:200(term)
+msgid "Tree pane"
+msgstr "樹狀面板"
+
+#: C/gconf-editor.xml:201(para)
+msgid ""
+"Enables you to navigate the hierarchy of keys in <application>GConf</"
+"application>. Use this pane to display the keys that you want to modify in "
+"the modification pane. The tree pane is on the left side of the window."
+msgstr "讓你能在 <application>GConf</application> 中瀏覽階層式的設定鍵。在這個面板下，把你想要調整的設定鍵顯示在修改面板上。樹狀面板位於視窗的左側。"
+
+#: C/gconf-editor.xml:207(term)
+msgid "Modification pane"
+msgstr "修改面板"
+
+#: C/gconf-editor.xml:209(para)
+msgid ""
+"Displays the keys in the selected <application>GConf</application> location "
+"in the tree pane. Use this pane to select keys that you want to modify and "
+"to modify the values of keys. The modification pane is in the upper part of "
+"the right side of the window."
+msgstr "顯示在樹狀面板中所選取的 <application>GConf</application> 位置。在這個面板下，選擇你想要修改的設定鍵並修改鍵值。修改面板位於視窗右側上方。"
+
+#: C/gconf-editor.xml:214(para)
+msgid ""
+"The icons beside the keys in the modification pane indicate what type of "
+"value you can enter for the key. For example, the check mark icon beside the "
+"<literal>/system/http_proxy/use_http_proxy</literal> key indicates that you "
+"can enter a Boolean value (true or false) for the key. See <xref linkend="
+"\"icons\"/> for more information on each icon."
+msgstr "修改面板內，設定鍵旁邊的圖示說明了你可以為它輸入什麼型式的值。舉例來說，設定鍵<literal>/system/http_proxy/use_http_proxy</literal>旁邊的勾選標記圖示，代表你可以在此鍵輸入邏輯值(是或否)。有關每一種圖示的更多資訊，請參閱<xref linkend=\"icons\"/>。"
+
+#: C/gconf-editor.xml:223(term)
+msgid "Documentation pane"
+msgstr "說明面板"
+
+#: C/gconf-editor.xml:224(para)
+msgid ""
+"Displays documentation for the currently selected key. Use this pane to read "
+"more information about the <application>GConf</application> preference keys."
+msgstr "顯示目前所選設定鍵的說明。在這個面板下可獲得有關 <application>GConf</application> 設定鍵的更多資訊。"
+
+#: C/gconf-editor.xml:230(term)
+msgid "Results pane (not shown)"
+msgstr "結果面板 (不被顯示)"
+
+#: C/gconf-editor.xml:231(para)
+msgid ""
+"Enables you to view the results of a search or to search through the list of "
+"your recently viewed key names. The rest of the window will show the "
+"information for whichever key you have selected in this pane. The results "
+"pane will appear on the bottom of the window when you list the recent keys "
+"or perform a search."
+msgstr "讓你檢視搜尋結果，或是搜尋你最近檢視過的設定鍵名稱。剩餘的窗口將會顯示你在此面板選擇的設定鍵的相關資訊。當你列出最近的設定鍵或是執行一次搜索時，結果面板將會出現在視窗的底部。"
+
+#: C/gconf-editor.xml:243(title)
+msgid "Working with Windows"
+msgstr "視窗用法"
+
+#: C/gconf-editor.xml:245(title)
+msgid "Opening New Windows"
+msgstr "開啟新的視窗"
+
+#: C/gconf-editor.xml:246(para)
+msgid ""
+"There are a three types of window you can open in <application>Configuration "
+"Editor</application>: <application>Settings</application>, "
+"<application>Defaults</application>, and <application>Mandatory</"
+"application>. What values <application>Configuration Editor</application> "
+"sets depends on what type of window you have open. You can open each type of "
+"window with the appropriate item under the <guimenu>File</guimenu> menu."
+msgstr "在<application>組態編輯器</application>內有三種你可以開啟的視窗：<application>設定</application>， <application>預設值</application>，以及<application>強制性設定</application>。<application>組態編輯器</application>要設定什麼值，端視你所開啟的視窗而定。你可以用<guimenu>檔案</guimenu>選單的對應選項來開啟每一種視窗。"
+
+#: C/gconf-editor.xml:252(para)
+msgid ""
+"Since the settings in <application>Defaults</application> and "
+"<application>Mandatory</application> windows affect all users of the "
+"computer, only a system administrator can use these types of windows. To "
+"change your preferences, you should use the <application>Settings</"
+"application> window."
+msgstr "因為<application>預設值</application>和<application>強制性設定</application>視窗下的設定會影響這台電腦上的所有使用者，只有系統管理員可以使用這些類型的視窗。若要更改你的偏好設定，你應該使用<application>設定</application>視窗。"
+
+#: C/gconf-editor.xml:259(application)
+msgid "Settings"
+msgstr "設定"
+
+#: C/gconf-editor.xml:260(para)
+msgid ""
+"You can use the <application>Settings</application> window to set your "
+"personal preferences. Changes made in the <application>Settings</"
+"application> window only affect your desktop. You cannot change the settings "
+"that the system administrator has made mandatory."
+msgstr "你可以使用<application>設定</application>視窗以設置你的個人組態。在<application>設定</application>視窗下所作的更改將只影響你的桌面。你無法更動系統管理員已設為強制性的設定。"
+
+#: C/gconf-editor.xml:269(application)
+msgid "Defaults"
+msgstr "預設值"
+
+#: C/gconf-editor.xml:270(para)
+msgid ""
+"If you are a system administrator, you can use the <application>Defaults</"
+"application> window to edit the default settings for all users. If a user "
+"does not set the value of a key explicitly, the value will be taken from the "
+"default settings. Users can always override the default settings."
+msgstr "如果你是一位系統管理員，你可以使用<application>預設值</application>視窗來編輯所有使用者的預設設定。如果有一位使用者沒有明確的配置某個設定鍵的值，該值將會被預設設定給取代。使用者永遠可以用自己的值來蓋過預設值。"
+
+#: C/gconf-editor.xml:277(application)
+msgid "Mandatory"
+msgstr "強制性設定"
+
+#: C/gconf-editor.xml:278(para)
+msgid ""
+"If you are a system administrator, you can use the <application>Mandatory</"
+"application> window to edit the mandatory settings for all users. When a "
+"mandatory value is set for a key, users are not able to change that value. "
+"This can be used to lock down certain options."
+msgstr "如果你是一位系統管理員，你可以使用<application>強制性設定</application>視窗來編輯所有使用者的強制性設定。當一個設定鍵被設定了強制性的值，使用者將無法更動該值。這可以用來鎖定某些選項。"
+
+#: C/gconf-editor.xml:288(title)
+msgid "Closing and Quitting"
+msgstr "關閉和結束"
+
+#: C/gconf-editor.xml:289(para)
+msgid ""
+"You can close a <application>Configuration Editor</application> window by "
+"selecting <menuchoice><guimenu>File</guimenu><guimenuitem>Close Window</"
+"guimenuitem></menuchoice> in that window. To close all "
+"<application>Configuration Editor</application> windows and quit the "
+"application completely, select <menuchoice><guimenu>File</"
+"guimenu><guimenuitem>Quit</guimenuitem></menuchoice> in any "
+"<application>Configuration Editor</application> window."
+msgstr "你可以關閉一個<application>組態編輯器</application>視窗，只要在視窗內選擇<menuchoice><guimenu>檔案</guimenu><guimenuitem>關閉視窗</guimenuitem></menuchoice>。若要關閉所有<application>組態編輯器</application>視窗並徹底結束程式，在任何一個<application>組態編輯器</application>視窗內選擇<menuchoice><guimenu>檔案</guimenu><guimenuitem>結束</guimenuitem></menuchoice>。"
+
+#: C/gconf-editor.xml:299(title)
+msgid "Working with Keys"
+msgstr "設定鍵用法"
+
+#: C/gconf-editor.xml:300(para)
+msgid ""
+"Keys are a way of looking up a value. Every preference stored in "
+"<application>GConf</application> is assigned to a key. Applications which "
+"use <application>GConf</application> access the values of keys to determine "
+"how to look and behave. When you change something in the "
+"<guilabel>Preferences</guilabel> of an application, you are changing the "
+"value associated to a key in <application>GConf</application>."
+msgstr "設定鍵是用來查閱鍵值的方式。每一個存放在 <application>GConf</application> 的設定組態會被分配到一個設定鍵。使用 <application>GConf</application> 的應用程式會存取這些設定鍵的值，以決定它們如何展現和動作。當你在應用程式的<guilabel>偏好設定</guilabel>中更改某個東西時，你也改變了與 <application>GConf</application> 中的設定鍵相關的值。"
+
+#: C/gconf-editor.xml:308(title)
+msgid "Copying a Key Name"
+msgstr "複製設定鍵名稱"
+
+#: C/gconf-editor.xml:309(para)
+msgid ""
+"To copy a key name to the clipboard, select the key name you want to copy in "
+"the modification pane. Choose <menuchoice><guimenu>Edit</"
+"guimenu><guimenuitem>Copy Key Name</guimenuitem></menuchoice>. You can paste "
+"the key name into any other application."
+msgstr "若要複製一個設定鍵名稱到剪貼簿，在修改面板中選擇你想要複製的設定鍵名稱。選擇<menuchoice><guimenu>編輯</guimenu><guimenuitem>複製設定鍵名稱</guimenuitem></menuchoice>。你可以將設定鍵名稱複製到其他應用程式中。"
+
+#: C/gconf-editor.xml:315(title)
+msgid "Viewing Recent Key Names"
+msgstr "檢視最近的設定鍵名稱"
+
+#: C/gconf-editor.xml:316(para)
+msgid ""
+"To view recent key names, choose <menuchoice><guimenu>Edit</"
+"guimenu><guimenuitem>List Recent Keys</guimenuitem></menuchoice>. This "
+"action will open the results pane at the bottom of the current window. You "
+"can move through the results list by scrolling up and down with the scroll "
+"bar or the arrow keys. The information for the selected key or folder will "
+"appear in the rest of the window."
+msgstr "若要檢視最近的設定鍵名稱，選擇<menuchoice><guimenu>編輯</guimenu><guimenuitem>列出最近的設定鍵</guimenuitem></menuchoice>。這個動作將在目前視窗的底部開啟結果面板。你可以藉由在滾動欄上上下滾動、或是方向鍵的方式來翻動結果。選擇的設定鍵或資料夾的相關資訊將會顯示在餘下的視窗中。"
+
+#: C/gconf-editor.xml:322(para)
+msgid ""
+"Viewing recent keys is useful if you need to get back to a key you just "
+"changed and don't remember where it is."
+msgstr "在你需要回到剛剛更動的設定鍵，卻忘記它在哪邊的時候，「檢視最近的設定鍵」會十分有用。"
+
+#. REMARK
+#: C/gconf-editor.xml:325(remark) C/gconf-editor.xml:407(remark)
+msgid ""
+"A screenshot may be in order. In particular, The close, copy, and clear "
+"buttons on the results pane should be explained."
+msgstr "應該需要一個截圖。特別是結果面板上的關閉、複製、清除按鈕需要解釋。"
+
+#: C/gconf-editor.xml:329(title)
+msgid "Modifying the Value of a Key"
+msgstr "更動設定鍵的值"
+
+#: C/gconf-editor.xml:330(para)
+msgid ""
+"The icons next to the key name show what kind of value that key can take. "
+"See <xref linkend=\"icons\"/> for more information on each icon. To modify "
+"the value of a key, perform the following steps:"
+msgstr "在設定鍵名稱旁邊的圖示顯示它們可以接受何種類型的值。詳見<xref linkend=\"icons\"/>以獲得每種圖示的更多資訊。若要更改設定鍵的鍵值，根據下列的步驟進行："
+
+#: C/gconf-editor.xml:334(para)
+msgid ""
+"Use the tree pane to display the key that you want to modify in the "
+"modification pane."
+msgstr "使用樹狀面板以讓你想要更改的設定鍵出現在修改面板中。"
+
+#: C/gconf-editor.xml:336(para)
+msgid "Select the key to modify in the modification pane."
+msgstr "在修改面板中選擇要更動的設定鍵"
+
+#: C/gconf-editor.xml:338(para)
+msgid ""
+"To change the value of an integer key or a string key, click in the "
+"<guilabel>Value</guilabel> column of the key. Type the new value for the "
+"key. Alternatively, right-click on the key and select <guimenuitem>Edit Key</"
+"guimenuitem> from the popup menu."
+msgstr "若要改變數值鍵或字串鍵的值，點擊設定鍵的<guilabel>鍵值</guilabel>欄位。輸入設定鍵的新鍵值。你也可以在設定鍵上按下右鍵，並從跳出選單選擇<guimenuitem>編輯設定鍵</guimenuitem>。"
+
+#: C/gconf-editor.xml:342(para)
+msgid ""
+"To change the value of a Boolean key, click in the <guilabel>Value</"
+"guilabel> column of the key to select or deselect the check box. "
+"Alternatively, right-click on the key and select <guimenuitem>Edit Key</"
+"guimenuitem> from the popup menu."
+msgstr "若要改變邏輯值鍵的值，在設定鍵的<guilabel>鍵值</guilabel>欄位中點擊，選取或取消選取勾選框。你也可以在設定鍵上按下右鍵，並從跳出選單選擇<guimenuitem>編輯設定鍵</guimenuitem>。"
+
+#: C/gconf-editor.xml:347(para)
+msgid ""
+"To change the value of a list key, right-click on the key and select "
+"<guimenuitem>Edit Key</guimenuitem> from the popup menu. The "
+"<application>Edit Key</application> dialog provides a list of the values "
+"associated to that key. You can use this dialog to edit each particular "
+"value in the list, add or remove values from the list, and move each value "
+"up or down in the list."
+msgstr "若要改變清單鍵的值，在設定鍵上按下右鍵並從跳出選單中選擇<guimenuitem>編輯設定鍵</guimenuitem>。<application>編輯設定鍵</application>對話框提供了有關該鍵的鍵值清單。你可以在該對話框中編輯清單內各種特定的值、加入或移除清單內的值、以及將清單內的各個值往上或往下移動。"
+
+#: C/gconf-editor.xml:355(para)
+msgid ""
+"Your system administrator may have locked down certain keys by providing "
+"mandatory values. If the selected key has a mandatory value set, you will "
+"not be able to edit the value. The documentation pane will display the label "
+"<guilabel>This key is not writable</guilabel> if you are not allowed to edit "
+"the value of that key."
+msgstr "你的系統管理員可能會用強制性的鍵值來鎖定特定的設定鍵。若選擇的設定鍵被設定了強制性的值，你將無法編輯該鍵值。如果你不被允許編輯該鍵鍵值的話，說明面板上將會顯示<guilabel>此設定鍵無法寫入</guilabel>的標籤。"
+
+#: C/gconf-editor.xml:364(title)
+msgid "Finding Keys Quickly"
+msgstr "快速尋找設定鍵"
+
+#: C/gconf-editor.xml:365(para)
+msgid ""
+"To locate keys quickly, <application>Configuration Editor</application> "
+"allows you to search the key names in <application>GConf</application>. "
+"Additionally, you can use bookmarks to find directories of keys that you "
+"need to access frequently."
+msgstr "為了快速找到設定鍵，<application>組態編輯器</application>可以讓你搜索 <application>GConf</application> 內的設定鍵名稱。此外，你可以使用書籤功能以定位那些你常存取的目錄或設定鍵。"
+
+#: C/gconf-editor.xml:371(title)
+msgid "Using Bookmarks"
+msgstr "使用書籤"
+
+#: C/gconf-editor.xml:372(para)
+msgid ""
+"To access a directory location in your bookmarks, choose the location from "
+"the <guimenu>Bookmarks</guimenu> menu. You can add and remove directory "
+"locations to your <guimenu>Bookmarks</guimenu> menu."
+msgstr "若要從你的書籤內存取一個目錄位置，在<guimenu>書籤</guimenu>選單內選擇它。你可以在<guimenu>書籤</guimenu>選單內加入和刪除目錄位置。"
+
+#: C/gconf-editor.xml:375(para)
+msgid ""
+"To add a bookmark, select the location that you want to bookmark in the tree "
+"pane. Choose <menuchoice><guimenu>Bookmarks</guimenu><guimenuitem>Add "
+"Bookmark</guimenuitem></menuchoice>."
+msgstr "若要加入書籤，在樹狀面板上選擇你想要加入書籤的位置。選擇<menuchoice><guimenu>書籤</guimenu><guimenuitem>加入書籤</guimenuitem></menuchoice>。"
+
+#: C/gconf-editor.xml:378(para)
+msgid "To delete a bookmark, perform the following steps:"
+msgstr "若要刪除一個書籤，根據下列的步驟進行："
+
+#: C/gconf-editor.xml:380(para)
+msgid ""
+"Choose <menuchoice><guimenu>Bookmarks</guimenu><guimenuitem>Edit bookmarks</"
+"guimenuitem></menuchoice>."
+msgstr "選擇<menuchoice><guimenu>書籤</guimenu><guimenuitem>編輯書籤</guimenuitem></menuchoice>。"
+
+#: C/gconf-editor.xml:382(para)
+msgid ""
+"Select the bookmark in the <application>Edit bookmarks</application> dialog, "
+"then click <guibutton>Delete</guibutton>."
+msgstr "在<application>修改書籤</application>對話框內選擇書籤，接着點下<guibutton>刪除</guibutton>。"
+
+#: C/gconf-editor.xml:385(para)
+msgid "Click <guibutton>Close</guibutton>."
+msgstr "點擊<guibutton>關閉</guibutton>。"
+
+#: C/gconf-editor.xml:389(title)
+msgid "Searching for Keys"
+msgstr "搜尋設定鍵"
+
+#: C/gconf-editor.xml:390(para)
+msgid "To search for keys, perform the following steps:"
+msgstr "若要搜尋設定鍵，根據下列的步驟進行："
+
+#: C/gconf-editor.xml:392(para)
+msgid ""
+"Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Find</guimenuitem></"
+"menuchoice>."
+msgstr "選擇<menuchoice><guimenu>編輯</guimenu><guimenuitem>尋找</guimenuitem></menuchoice>。"
+
+#: C/gconf-editor.xml:394(para)
+msgid ""
+"Enter the keyword you want to search for in the <guilabel>Search for</"
+"guilabel> field. You can also select the optional check boxes "
+"<guilabel>Search also in key names</guilabel> and <guilabel>Search also in "
+"key values</guilabel>. If these check boxes are not selected, the search "
+"will only be performed on folder names. Selecting these boxes will expand "
+"the search parameters."
+msgstr "在<guilabel>搜索</guilabel>欄內輸入你想要搜尋的關鍵字。你也可以選擇額外的勾選框<guilabel>搜尋設定鍵名稱</guilabel>以及<guilabel>搜尋鍵值</guilabel>。如果沒有選擇這些勾選框，將只會搜尋資料夾名稱。選擇這些勾選框將會擴大搜索參數。"
+
+#: C/gconf-editor.xml:400(para)
+msgid "Click <guibutton>Find</guibutton>."
+msgstr "點選<guibutton>尋找</guibutton>。"
+
+#: C/gconf-editor.xml:402(para)
+msgid ""
+"The results from the search will appear in the results pane. To move through "
+"the results list, first select that pane. Then you can move through the "
+"results with the scroll bar or the arrow keys. The information for the "
+"selected key or folder will appear in the rest of the window."
+msgstr "搜尋結果將會顯示在結果面板中。若要翻動結果列表，請先選擇面板。接着你便可以用滾動欄或是方向鍵來翻動結果。選擇的設定鍵或資料夾的相關資訊將會顯示在餘下的視窗中。"
+
+#: C/gconf-editor.xml:413(title)
+msgid "Default and Mandatory Settings"
+msgstr "預設值和強制性設定"
+
+#: C/gconf-editor.xml:414(para)
+msgid ""
+"If you are a system administrator, you can set default and mandatory "
+"settings in <application>GConf</application> which will affect all users. "
+"Default settings are used when the user has not set a value explicitly, and "
+"users can always override them. Mandatory settings are always used for all "
+"users, and they cannot override them."
+msgstr "如果你是一位系統管理員，你可以在 <application>GConf</application> 設置預設值和強制性設定，這些將會影響所有使用者。如果有使用者沒有明確設定鍵值，預設值將會被使用，且使用者的設定可以凌駕它們。強制性設定將會被採用至所有使用者，且使用者的設定無法凌駕它們。"
+
+#: C/gconf-editor.xml:419(para)
+msgid ""
+"You can use the <application>Defaults</application> and "
+"<application>Mandatory</application> windows to edit and remove default and "
+"mandatory settings. The <application>Defaults</application> and "
+"<application>Mandatory</application> windows will only show you those "
+"settings which have already been made default or mandatory. You cannot use "
+"these windows to create new default and mandatory settings. Instead, you can "
+"set settings from the <application>Settings</application> window to be "
+"default or mandatory."
+msgstr "你可以使用<application>預設值</application>以及<application>強制性設定</application>視窗來編輯和移除預設值和強制性設定。<application>預設值</application>以及<application>強制性設定</application>視窗將只會向你顯示那些已被設為預設值或強制性的設定。你無法使用這些視窗來建立新的預設值和強制性設定。反之，你可以從<application>設定</application>視窗來將設定說為預設值或強制性設定。"
+
+#: C/gconf-editor.xml:427(para)
+msgid ""
+"To open a <application>Defaults</application> window, choose "
+"<menuchoice><guimenu>File</guimenu><guimenuitem>New Defaults Window</"
+"guimenuitem></menuchoice>. To open a <application>Mandatory</application> "
+"window, choose <menuchoice><guimenu>File</guimenu><guimenuitem>New Mandatory "
+"Window</guimenuitem></menuchoice>."
+msgstr "若要開啟<application>預設值</application>視窗，選擇<menuchoice><guimenu>檔案</guimenu><guimenuitem>新增修改預設值的視窗</guimenuitem></menuchoice>。若要開啟<application>強制性設定</application>視窗，選擇<menuchoice><guimenu>檔案</guimenu><guimenuitem>新增修改強制性設定的視窗</guimenuitem></menuchoice>。"
+
+#: C/gconf-editor.xml:435(title)
+msgid "Creating Default Settings"
+msgstr "建立預設值設定"
+
+#: C/gconf-editor.xml:436(para)
+msgid "To create a default setting, perform the following steps:"
+msgstr "若要建立預設設定，根據下列的步驟進行："
+
+#: C/gconf-editor.xml:438(para)
+msgid ""
+"In the <application>Settings</application> window, use the tree pane to "
+"display the key that you want to set as default."
+msgstr "在<application>設定</application>視窗中，使用樹狀面板以顯示你想要設置為預設值的設定值。"
+
+#: C/gconf-editor.xml:440(para)
+msgid ""
+"Right-click on the key and select <guimenuitem>Set as Default</guimenuitem> "
+"from the popup menu."
+msgstr "在設定值上點擊右鍵，並在跳出選單內選擇<guimenuitem>設定為預設值</guimenuitem>。"
+
+#: C/gconf-editor.xml:445(title)
+msgid "Creating Mandatory Settings"
+msgstr "建立強制性設定"
+
+#: C/gconf-editor.xml:446(para)
+msgid "To create a mandatory setting, perform the following steps:"
+msgstr "若要建立強制性設定，根據下列的步驟進行："
+
+#: C/gconf-editor.xml:448(para)
+msgid ""
+"In the <application>Settings</application> window, use the tree pane to "
+"display the key that you want to set as mandatory."
+msgstr "在<application>設定</application>視窗中，使用樹狀面板以顯示你想要設置為強制性設定的設定值。"
+
+#: C/gconf-editor.xml:451(para)
+msgid ""
+"Right-click on the key and select <guimenuitem>Set as Mandatory</"
+"guimenuitem> from the popup menu."
+msgstr "在設定值上點擊右鍵，並在跳出選單內選擇<guimenuitem>設定為強制性鍵值</guimenuitem>。"
+
+#: C/gconf-editor.xml:456(title)
+msgid "Modifying and Removing Default and Mandatory Settings"
+msgstr "更動和刪除預設值以及強制性設定"
+
+#: C/gconf-editor.xml:457(para)
+msgid ""
+"You can use the <application>Defaults</application> and "
+"<application>Mandatory</application> windows to modify and remove default "
+"and mandatory settings. To modify a default or mandatory setting, use the "
+"appropriate window and modify the key as you would for keys in the "
+"<application>Settings</application> window. See <xref linkend=\"modify-key\"/"
+"> for more information on modifying keys."
+msgstr "你可以使用<application>預設值</application>以及<application>強制性設定</application>視窗來更動和移除預設值和強制性設定。若要更動一個預設值或強制性設定，使用適當的視窗並更動設定鍵，方式和你在<application>設定</application>視窗中所做的一樣。詳見<xref linkend=\"modify-key\"/>以獲取更動設定鍵的更多資訊。"
+
+#: C/gconf-editor.xml:464(para)
+msgid "To remove a default or mandatory key, perform the following steps:"
+msgstr "若要移除一個預設或強制性的設定鍵，根據下列的步驟進行："
+
+#: C/gconf-editor.xml:467(para)
+msgid ""
+"In the appropriate window, use the tree pane to display the key that you "
+"want to remove from the default or mandatory settings."
+msgstr "在適當的視窗內，使用樹狀面板顯示你想要從預設值或強制性設定移除的設定鍵。"
+
+#: C/gconf-editor.xml:470(para)
+msgid ""
+"Right-click on the key and select <guimenuitem>Unset Key</guimenuitem> from "
+"the popup menu."
+msgstr "在設定鍵上按下右鍵，並從跳出選單中選擇<guimenuitem>清除設定鍵</guimenuitem>。"
+
+#: C/gconf-editor.xml:477(title)
+msgid "Icons and Key Types"
+msgstr "圖示和設定鍵種類"
+
+#: C/gconf-editor.xml:478(para)
+msgid ""
+"The icons beside the keys in the modification pane indicate what type of "
+"value you can enter for the key. The following list shows the possible icons "
+"and what types of values they represent."
+msgstr "修改面板中位於設定鍵旁邊的圖示，代表着你可以在設定鍵中輸入什麼類型的值。下面的列表展示了各種可能的圖示以及它們所代表的值域類型。"
+
+#: C/gconf-editor.xml:483(term)
+msgid "<placeholder-1/> Boolean key"
+msgstr "<placeholder-1/> 邏輯值鍵"
+
+#: C/gconf-editor.xml:486(para)
+msgid ""
+"Can be either true or false. <application>Configuration Editor</application> "
+"will provide a check box for this type of key."
+msgstr "可以為是(true)或否(false)。<application>組態編輯器</application>會為這類型的設定鍵提供一個勾選框。"
+
+#: C/gconf-editor.xml:491(term)
+msgid "<placeholder-1/> Number key"
+msgstr "<placeholder-1/> 數值鍵"
+
+#: C/gconf-editor.xml:494(para)
+msgid ""
+"Can hold numbers. These can be either integer or floating point (fractional) "
+"numbers."
+msgstr "可以儲存數值。它們可以是整數或是浮點數(有小數點)。"
+
+#: C/gconf-editor.xml:498(term)
+msgid "<placeholder-1/> String key"
+msgstr "<placeholder-1/> 字串鍵"
+
+#: C/gconf-editor.xml:501(para)
+msgid "Can hold any string of text."
+msgstr "可以儲存任何文字字串。"
+
+#: C/gconf-editor.xml:504(term)
+msgid "<placeholder-1/> Schema key"
+msgstr "<placeholder-1/> 架構鍵"
+
+#: C/gconf-editor.xml:507(para)
+msgid ""
+"Used for documenting other keys. The documentation for each key is provided "
+"by a seperate key, typically under the <literal>/schemas</literal> "
+"directory. Users and system administrators usually will not need to work "
+"with schema keys directly."
+msgstr "用來說明其他設定鍵。每個設定鍵的說明由另外的設定鍵提供，這些鍵位於<literal>/schemas</literal>目錄底下。使用者和系統管理員通常不需要直接使用架構鍵。"
+
+#: C/gconf-editor.xml:513(term)
+msgid "<placeholder-1/> List key"
+msgstr "<placeholder-1/> 清單鍵"
+
+#: C/gconf-editor.xml:516(para)
+msgid ""
+"Lists of arbitrary length. Each element of the list must be of the same "
+"type, and one of the primitive types of boolean, number, or string."
+msgstr "任意長度的清單。清單內每個元素必須為同一種類型，而且為基本類型如邏輯值、數值或字串。"
+
+#: C/gconf-editor.xml:521(term)
+msgid "<placeholder-1/> Pair key"
+msgstr "<placeholder-1/> 成對鍵"
+
+#: C/gconf-editor.xml:524(para)
+msgid ""
+"Can hold exactly two values. The two values must be one of the primitive "
+"types, but they do not have to be the same type. Currently, "
+"<application>Configuration Editor</application> is unable to edit pair keys."
+msgstr "可以儲存兩個值。這兩個值必須為基本類型的其中一種，但它們可不需為同一種類型。目前，<application>組態編輯器</application>無法編輯成對鍵。"
+
+#: C/gconf-editor.xml:530(term)
+msgid "<placeholder-1/> Blank"
+msgstr "<placeholder-1/> 空白"
+
+#: C/gconf-editor.xml:533(para)
+msgid ""
+"Used when <application>Configuration Editor</application> does not "
+"understand the type of key. The blank icon is also currently used for pair "
+"keys."
+msgstr "當<application>組態編輯器</application>無法辨識該鍵的類型時就會使用。這個空白圖示目前也被成對鍵所使用。"
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/gconf-editor.xml:0(None)
+msgid "translator-credits"
+msgstr ""
+"如對翻譯有任何意見，請送一封電子郵件給\n"
+"以下地址，GNOME 翻譯隊伍會盡快回覆你：\n"
+"zh-l10n@lists.linux.org.tw\n"
+"\n"
+"Pin-hsien Li  <pspeter9931@gmail.com>, 2011."

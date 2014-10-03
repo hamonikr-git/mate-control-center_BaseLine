@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="new" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#new"/>
+    <revision pkgversion="2.30" version="0.1" date="2010-05-29" status="draft"/>
+    <desc>Novetats del <app>Tomboy</app></desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Novetats del <app>Tomboy</app></title>
+
+  <p>El <app>Tomboy</app> porta una gran quantitat de millores. És possible que el Tomboy s'iniciï més ràpid amb les millores que s'han introduït a l'engegada.</p>
+  <p>Les funcions de copiar i enganxar des del Tomboy a d'altres aplicacions han millorat la compatibilitat amb la formatació d'aplicacions que admeten HTML com l'Evolution i l'OpenOffice.org.</p>
+  <p>
+    <app>Tomboy</app> can now synchronize your notes automatically for you
+    when you when you have synchronize enabled.
+  </p>
+
+  <p>S'ha afegit la compatibilitat amb les llistes de salts del Microsoft Windows 7 per poder accedir, buscar o crear notes noves de forma més ràpida des de la barra de tasques del Windows.</p>
+
+</page>

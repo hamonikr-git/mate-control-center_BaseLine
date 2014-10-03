@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "0.2">
+<!ENTITY manrevision "1.1">
+<!ENTITY date "April 2008">
+<!ENTITY app "<application>Atril Document Viewer</application>">
+<!ENTITY appname "Atril Document Viewer">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.mate.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ru">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Руководство по приложению просмотра документов Atril</title>       
+    <abstract role="description">
+      <para>Приложение для просмотра документов Atril позволяет просматривать документы различных форматов, таких как файлы в формате PDF и PostScript</para>
+    </abstract>
+    <copyright lang="en">
+      <year>2005</year>
+      <holder>Nickolay V. Shmyrev</holder>
+    </copyright>
+    <copyright lang="en">
+      <year>2004</year>
+      <holder>Sun Microsystems</holder>
+    </copyright>
+
+<!-- translators: uncomment this:
+    <copyright>
+      <year>2002</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+-->
+
+    <publisher> 
+      <publishername>Проект документирования MATE</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Следующим разрешается копировать, распространять и модифицировать этот документ при условии соблюдения GNU Free Documentation License (GFDL), версии 1.1 или любой более поздней опубликованной ассоциацией свободного программного обеспечения версией без неизменяемых частей, без текстов на обложках. Вы можете найти копию лицензии по этой <ulink type="help" url="help:fdl">ссылке</ulink> или в файле COPYING-DOCS, распространяемом с этим документом.</para>
+         <para>Этот документ является частью документации MATE распространяемой под лицензией GFDL. Если вы хотите распространять этот документ отдельно от общей документации, вы должны приложить копию лицензии к документу, как написано в части 6 лицензии.</para>
+
+	<para>Некоторые имена и марки используются компаниями для обозначения их продуктов и услуг и являются торговыми марками. Эти марки присутствуют в документации и члены проекта документирования MATE знают об этом. Имена выделяются заглавными буквами или начальной заглавной буквой.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+    <!-- This file  contains link to license for the documentation (GNU FDL), and 
+         other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	 any of this. -->
+
+    <authorgroup> 
+      <author lang="en">
+        <firstname>Sun</firstname>
+        <surname>MATE Documentation Team</surname>
+        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+      </author>
+      <author role="maintainer" lang="en"> 
+	<firstname>Nickolay V. </firstname> 
+	<surname>Shmyrev</surname> 
+	<affiliation> 
+  	  <orgname>MATE Documentation Project</orgname> 
+	  <address> <email>nshmyrev@yandex.ru</email> </address> 
+	</affiliation> 
+      </author> 
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+      <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+  	  <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+    <revhistory>
+      <revision lang="en"> 
+        <revnumber>Atril Document Viewer Manual V1.1</revnumber> 
+	<date>2008-04-05</date>
+        <revdescription>
+          <para role="author" lang="en">Niels Giesen</para>
+          <para role="author" lang="en">Claude Paroz</para>
+          <para role="publisher" lang="en">MATE Documentation Project</para>
+        </revdescription>
+      </revision> 
+      <revision lang="en"> 
+        <revnumber>Atril Document Viewer Manual V1.0</revnumber> 
+	<date>2005-04-06</date>
+        <revdescription>
+          <para role="author" lang="en">Nickolay V. Shmyrev</para>
+          <para role="publisher" lang="en">MATE Documentation Project</para>
+        </revdescription>
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Эта документация описывает приложение просмотра документов Atril версии 0.2</releaseinfo> 
+    <legalnotice> 
+      <title>Обратная связь</title> 
+      <para>Для того чтобы сообщить о проблеме или сделать предложение для приложения Atril или по этому документу, следуйте инструкцим по <ulink url="help:mate-feedback" type="help">Обратной связи MATE</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index" lang="en"> 
+    <primary>Atril Document Viewer</primary> 
+  </indexterm> 
+  <indexterm zone="index" lang="en"> 
+    <primary>atril</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="atril-introduction"> 
+    <title>Введение</title> 
+    <para>Приложение <application>Atril</application> позволяет вам просматривать документы различных форматов, таких как файлы Portable Document Format (PDF) и Postscript. Приложение <application>Atril</application> следует стандартам MATE и Freedesktop.org и предлагает пользователю полную интеграцию в рабочую среду.</para>
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+
+  <sect1 id="atril-getting-started"> 
+    <title>Начало работы</title> 
+
+    <sect2 id="atril-start">
+    <title>Запуск приложения просмотра документов Atril</title>
+    <para>Приложение <application>Atril</application> запускается, когда вы открываете документы формата PDF или PostScript.</para>
+    <para>Также можно запустить приложение <application>Atril</application> из командной строки, выполнив команду <command>atril</command>.</para>
+    
+    </sect2>
+
+    <sect2 id="atril-when-start">
+    <title>После запуска приложения просмотра документов Atril</title>
+    <para>Когда вы запустите <application>Приложение Atril</application>, появится следующее окно.</para>
+
+    <!-- ==== Figure ==== -->
+      <figure id="mainwindow-fig"> 
+	<title>Главное окно приложения просмотра документов</title> 
+	<screenshot> 
+	  <mediaobject lang="en"> 
+	    <imageobject><imagedata fileref="figures/atril_start_window.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Shows Atril Document Viewer main window. Contains titlebar, menubar, toolbar and display area. Menubar contains File, Edit, View, Go and Help menus. </phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+
+    <para>Окно приложения <application>Atril</application> содержит следующие элементы:</para>
+      <variablelist>
+	<varlistentry>
+  	  <term>Меню</term>
+ 	  <listitem>
+	    <para>Меню содержит все действия, которые вы можете производить над докуметом в приложении просмотра документов <application>Atril</application></para>
+	  </listitem>
+ 	</varlistentry>
+	<varlistentry>
+	  <term>Панель инструментов</term>
+	  <listitem>
+	    <para>Панель инструментов содержит наиболее часто употребляемые действия из меню.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Рабочая область</term>
+	  <listitem>
+ 	    <para>Рабочая область отображает содержимое документа.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+
+      <para lang="en">
+        In <application>Atril Document Viewer</application>, you can perform the same action in several ways. For example, you can open a document in the following ways:
+                  <informaltable frame="all">
+                    <tgroup cols="2" colsep="1" rowsep="1">
+                      <colspec colname="COLSPEC0" colwidth="50*"/>
+                      <colspec colname="COLSPEC1" colwidth="50*"/>
+                      <thead>
+                        <row valign="top">
+                          <entry colname="COLSPEC0">
+                            <para lang="en">UI Component</para></entry>
+                          <entry colname="COLSPEC1" align="left"> 
+                            <para lang="en">Action</para></entry>
+                        </row>
+                      </thead>
+                      <tbody>
+                        <row valign="top">               
+                          <entry><para lang="en">Window</para></entry>
+                          <entry>
+                            <itemizedlist>
+                              <listitem>
+                                <para lang="en">Drag a file into the <application>Atril Document Viewer</application> window from another application such as a file manager.</para>
+                              </listitem>
+                              <listitem>
+                                <para lang="en">Double-click on the file name in the file manager</para>
+                              </listitem>
+                            </itemizedlist>
+                          </entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Menubar</para></entry>
+                          <entry><para lang="en">Choose <menuchoice><guimenu>File</guimenu><guimenuitem>Open</guimenuitem></menuchoice>.</para>
+</entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Shortcut keys</para></entry>
+                          <entry><para lang="en">Press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo>.</para></entry>
+                        </row>
+                      </tbody>
+                    </tgroup>
+                  </informaltable>
+      </para>
+      <para>Это руководство описывает функциональность, доступную из меню</para>
+    </sect2>
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+  <sect1 id="atril-usage"> 
+    <title>Использование</title> 
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="atril-open-file"> 
+      <title>Открытие</title> 
+      <para>Для того, чтобы открыть документ, выполните следующие шаги:</para>
+      <orderedlist>
+        <listitem>
+          <para lang="en">
+            Choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice>.  </para>
+        </listitem>
+        <listitem>
+          <para>В диалоге <guilabel>Открыть файл</guilabel> выберите нужный файл.</para>
+        </listitem>
+        <listitem>
+          <para>Нажмите <guibutton>Открыть</guibutton>. Приложение <application>Atril</application> покажет имя документа в титульной строке окна.</para>
+        </listitem>
+      </orderedlist>
+      <para lang="en"> 
+	To open another document, choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice> again. <application>Atril Document Viewer</application> opens each file in a new window.
+      </para>
+      <para>Если вы попытаетесь открыть документ, формат которого приложение <application>Atril</application> не распознаёт, появится диалог, извещающий об ошибке.</para>
+    </sect2>
+
+    <sect2 id="atril-navigate-file">
+    <title>Перемещения</title>
+      <para>Вы можете перемещаться по документу следующими способами:</para>
+      <itemizedlist>
+        <listitem>
+          <para lang="en">To view the next page, choose <menuchoice> <guimenu>Go</guimenu> <guimenuitem>Next Page</guimenuitem> </menuchoice>.
+          </para>
+        </listitem>
+	<listitem>
+	  <para lang="en">To view the previous page, choose <menuchoice> <guimenu>Go</guimenu> <guimenuitem>Previous Page</guimenuitem> </menuchoice>.
+          </para>
+        </listitem>
+	<listitem>
+	  <para lang="en">To view the first page in the document, choose <menuchoice> <guimenu>Go</guimenu> <guimenuitem>First Page</guimenuitem> </menuchoice>.
+          </para>
+        </listitem>
+	<listitem>
+	  <para lang="en">To view the last page in the document, choose <menuchoice> <guimenu>Go</guimenu> <guimenuitem>Last Page</guimenuitem> </menuchoice>.
+          </para>
+        </listitem>
+	<listitem>
+	  <para>Для перехода к заданной странице, введите её номер или метку в текстовом поле на панели инструменов и нажмите <keycap>Ввод</keycap>.</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="atril-scroll-page"> 
+      <title>Прокрутка страниц</title> 
+      <para>Для отображения скрытого содержимого страницы, используйте следующие действия:</para> 
+        <itemizedlist> 
+	  <listitem> 
+  	    <para>Прокручивайте окно с помощью стрелок или пробела на клавиатуре.</para> 
+  	  </listitem> 
+	  <listitem> 
+  	    <para>Захватите документ средней кнопкой мыши и перетащите в противоположном желаемому направлении. Например, чтобы прокрутить документ вниз, перетащите рабочую область к верху окна.</para> 
+	  </listitem> 
+	  <listitem> 
+	    <para>Используйте элементы прокрутки окна.</para> 
+  	  </listitem> 
+      </itemizedlist> 
+    </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+	 <sect2 id="atril-manipulate-zoom-factor"> 
+      <title>Изменение размера страницы</title> 
+      <para>Для изменения размера страницы сделайте следующее:</para> 
+      <itemizedlist> 
+	<listitem> 
+	  <para lang="en">
+            To increase the page size, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Zoom In</guimenuitem> </menuchoice>.
+          </para> 
+	</listitem> 
+	<listitem> 
+	  <para lang="en">
+            To decrease the page size, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Zoom Out</guimenuitem> </menuchoice>.
+          </para> 
+	</listitem> 
+	<listitem> 
+	  <para lang="en">
+            To resize a page to have the same width as the <application>Atril Document Viewer</application> display area, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Fit page width</guimenuitem> </menuchoice>.
+          </para> 
+	</listitem> 
+	<listitem> 
+	  <para lang="en">
+            To resize a page to fit within the <application>Atril Document Viewer</application> display area, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Best Fit</guimenuitem> </menuchoice>.
+          </para> 
+	</listitem> 
+	<listitem> 
+	  <para lang="en">
+            To resize the <application>Atril Document Viewer</application> window to have the same width and height as the screen, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Full Screen</guimenuitem> </menuchoice>. To resize the <application>Atril Document Viewer</application> window to the original size, click on the <guibutton>Exit Full Screen</guibutton> button.
+          </para> 
+	</listitem> 
+      </itemizedlist> 
+    </sect2> 
+
+    <sect2 id="atril-view-pages">
+      <title>Просмотр страниц или структуры</title>
+      <para>Для просмотра страниц или структуры документа произведите следующие действия:</para>
+      <orderedlist>
+        <listitem>
+          <para lang="en">
+	    Choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Sidebar</guimenuitem> </menuchoice> or press <keycap>F9</keycap>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Используйте выпадающий список для выбора нужного элемента - структуры документа или страниц на боковой панели.</para>
+        </listitem>
+        <listitem>
+          <para>Используйте полосы прокрутки на боковой панели для отображения требуемой ссылки или страницы.</para>
+        </listitem>
+        <listitem>
+          <para>Щёлкните мышью на элементе чтобы отобразить его в основной области. Нажмите на страницу чтобы показать её.</para>
+        </listitem>
+      </orderedlist>
+    </sect2> 
+
+    <sect2 id="atril-view-properties">
+      <title>Свойства</title>
+      <para lang="en">To view the properties of a document, choose 
+        <menuchoice>
+          <guimenu>File</guimenu>
+          <guimenuitem>Properties</guimenuitem>
+        </menuchoice>. 
+      </para>
+      <para>Диалог <guilabel>Свойства</guilabel> показывает всю доступную информацию</para>
+    </sect2>
+
+    <sect2 id="atril-print-file">
+      <title>Печать</title>
+      <para lang="en">
+        To print a Document, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print</guimenuitem> </menuchoice>.
+      </para>
+      <note>
+        <para>Если вы не можете выбрать <guimenuitem>Печать</guimenuitem> в меню, значит автор документа запретил его печать. Чтобы получить возможность напечатать документ, вы должны ввести главный пароль при открытии документа. Смотрите  часть <xref linkend="atril-password"/> где описана работа с защищёнными файлами.</para>
+      </note>
+      <para>Диалог <guilabel>Печать</guilabel> имеет следующие вкладки:</para>
+      <itemizedlist>
+        <listitem>
+          <para lang="en">
+            <link linkend="print-dialog-job">Job</link>
+          </para>
+        </listitem>
+        <listitem>
+          <para lang="en">
+            <link linkend="print-dialog-printer">Printer</link>
+          </para>
+        </listitem>
+        <listitem>
+          <para lang="en">
+            <link linkend="print-dialog-paper">Paper</link>
+          </para>
+        </listitem>
+      </itemizedlist>
+
+      <sect3 id="print-dialog-job">
+      <title>Задание</title>
+	<variablelist>
+	  <varlistentry> <term lang="en"><guilabel>Print range</guilabel> </term> 
+	    <listitem> 
+	      <para>Выберите одну из следующих возможностей для задания количества печатаемых страниц:</para>
+	      <itemizedlist>
+		<listitem>
+		  <para lang="en"><guilabel>All</guilabel></para>
+		  <para>Выберите эту возможно для печати всех страниц документа</para>
+		</listitem>
+		<listitem>
+		  <para lang="en"><guilabel>Pages From</guilabel></para>
+		  <para>Выберите этот вариант для печати заданного промежутка страниц. Используйте поля ввода чисел для задания первой и последней страницы промежутка.</para>
+		</listitem>							
+	      </itemizedlist>
+	    </listitem>
+	  </varlistentry>
+        </variablelist>  
+      </sect3>
+		
+	<sect3 id="print-dialog-printer">
+	<title>Принтер</title>
+	<variablelist>
+	  <varlistentry> <term lang="en"><guilabel>Printer</guilabel> </term> 
+	    <listitem> 
+	      <para>Используйте этот выпадающий список для выбора нужного принтера.</para>
+              <note>
+              <para>Функция <guilabel>Создать документ PDF</guilabel> не поддерживается в этой версии приложения <application>Atril</application>.</para>
+              </note>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Settings</guilabel> </term> 
+	    <listitem> 
+	      <para>Используйте этот выпадающий список для изменения настроек принтера.</para>
+	      <para>Для настройки принтера, нажмите <guibutton>Настроить</guibutton>. Например, можно выключать или выключать дуплексный режим, планировать печать по расписанию, если эта функциональность поддерживается принтером.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Location</guilabel> </term> 
+	    <listitem> 
+	      <para>Используйте выпадающий список для выбора одного из принтеров:</para>
+	      <variablelist>
+	        <varlistentry>
+	          <term lang="en"><guilabel>CUPS</guilabel></term>
+	          <listitem>
+	            <para>Печатать документ используя систему печати CUPS.</para>
+	            <note>
+	              <para>Если выбранный принтер работает через систему CUPS, единственной меткой в поле будет <guilabel>CUPS</guilabel>.</para>
+	            </note>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>lpr</guilabel></term>
+	          <listitem>
+	            <para>Отправить документ прямо на принтер.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>File</guilabel></term>
+	          <listitem>
+	            <para>Печатать документ в файл PostScript.</para>
+	            <para>Нажмите <guibutton>Сохранить как</guibutton> и введите путь к создаваемому файлу в появившемся диалоге.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>Custom</guilabel></term>
+	          <listitem>
+	            <para>Задать команду для печати документа.</para>
+	            <para>Задайте команду в поле ввода. Не забудьте про аргументы.</para>
+	          </listitem>
+	        </varlistentry>
+	      </variablelist>
+            </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>State</guilabel> </term> 
+	    <listitem> 
+	      <para>Эта функция не поддерживается в этой версии <application>Atril</application>.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Type</guilabel> </term> 
+	    <listitem> 
+	      <para>Эта функция не поддерживается в этой версии <application>Atril</application>.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Comment</guilabel> </term> 
+	    <listitem> 
+	      <para>Эта функция не поддерживается в этой версии <application>Atril</application>.</para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+	</sect3>
+		
+	<sect3 id="print-dialog-paper">
+	<title>Бумага</title>
+	<variablelist>
+	  <varlistentry> <term lang="en"><guilabel>Paper size</guilabel> </term> 
+	    <listitem> 
+	      <para>Используйте выпадающий список для выбора размера бумаги для печати документа.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Width</guilabel> </term> 
+	    <listitem> 
+	      <para>Используйте поле ввода чисел для задания ширины бумаги. Используйте дополнительный выпадающий список для задания единиц измерения.</para>
+	    </listitem>
+	  </varlistentry>
+	    <varlistentry> <term lang="en"><guilabel>Height</guilabel> </term> 
+	    <listitem> 
+	      <para>Используйте поле ввода чисел для задания высоты бумаги.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Feed orientation</guilabel> </term> 
+	    <listitem> 
+	      <para>Используйте выпадающий список для задания ориентации бумаги в принтере.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Page orientation</guilabel> </term> 
+	    <listitem> 
+	      <para>Используйте выпадающий список для задания ориентации страниц.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Layout</guilabel> </term> 
+	    <listitem> 
+	      <para>Используейте выпадающий список для выбора расположения страниц. Предварительно результат показывается в области <guilabel>Образец</guilabel>.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Paper Tray</guilabel> </term> 
+	    <listitem> 
+	      <para>Используйте выпадающий список чтобы выбрать поток печати.</para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+      </sect3>
+    </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="atril-copy-file"> 
+      <title>Создание копии</title> 
+      <para>Для создания копии документа, выполните следующее:</para>
+      <orderedlist>
+        <listitem>
+          <para lang="en">
+            Choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Save a Copy</guimenuitem> </menuchoice>. 
+          </para> 
+        </listitem>
+        <listitem>
+          <para>Введите новое имя файла в поле ввода <guilabel>Имя</guilabel> в диалоге <guilabel>Сохранить копию</guilabel> dialog.</para> 
+          <para>Если необходимо, задайте расположение нового документа. По умолчанию, копии сохраняются в домашний каталог пользователя.</para> 
+        </listitem>
+        <listitem>
+          <para>Нажмите <guibutton>Сохранить</guibutton></para> 
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+    <!-- this id must be kept in sync with atril-persist-file.cc/atril-persist-stream.cc -->
+    <sect2 id="atril-password">
+      <title>Работа с защищёнными документами</title>
+      <para>Автор может использовать следующие уровни доступа для защиты документа:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Пароль пользователя который позволяет другим читать этот документ.</para>
+        </listitem>        
+        <listitem>
+          <para>Главный пароль который позволяет другим производить дополнительные действия, например, печатать документ.</para>
+        </listitem>        
+      </itemizedlist>
+      <para>Когда вы пытаетесь открыть документ, защищённый паролем, <application>Atril</application> представит диалог. Введите пароль пользователя или главный пароль в поле ввода пароля, потом нажмите на кнопку <guibutton>ОК</guibutton>.</para>
+    </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="atril-close-file"> 
+      <title>Завершение работы</title> 
+      <para lang="en">To close a document, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Close</guimenuitem> </menuchoice>. 
+      </para> 
+      <para>Если закрыто последнее окно приложения <application>Atril</application>, приложение завершит работу.</para> 
+    </sect2> 
+
+  </sect1>
+
+  <!-- ================ Shortcuts ================================ -->
+  <sect1 id="atril-shortcuts"> 
+    <title>Быстрые клавиши</title> 
+    <para>Ниже перечислены клавиатурные комбинации <application>Atril</application>.</para>
+    <informaltable frame="all">
+      <tgroup cols="2" colsep="1" rowsep="1">
+        <colspec colname="COLSPEC0" colwidth="50*"/>
+        <colspec colname="COLSPEC1" colwidth="50*"/>
+        <thead>
+          <row valign="top">
+            <entry colname="COLSPEC0">
+            <para>Клавиатурные комбинации</para></entry>
+            <entry colname="COLSPEC1" align="left"> 
+            <para>Действие</para></entry>
+          </row>
+        </thead>
+        <tbody>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo></para></entry>
+            <entry><para>Открыть документ</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>S</keycap></keycombo></para></entry>
+            <entry><para>Сохранить копию текущего документа</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>P</keycap></keycombo></para></entry>
+            <entry><para>Напечатать документ</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo></para></entry>
+            <entry><para>Закрыть окно</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>C</keycap></keycombo></para></entry>
+            <entry><para>Скопировать выделение</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>A</keycap></keycombo></para></entry>
+            <entry><para>Выделить всё</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+              <para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>F</keycap></keycombo></para>
+              <para><keycap>/</keycap> (слеш)</para>
+            </entry>
+            <entry><para>Найти слово или фразу в документе</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+              <para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>G</keycap></keycombo></para>
+              <para lang="en"><keycap>F3</keycap></para> 
+            </entry>
+            <entry><para>Найти следующее вхождение слова</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+              <para><keycombo><keycap>Ctrl</keycap><keycap>+</keycap></keycombo> (знак плюс)</para>
+              <para lang="en"><keycap>+</keycap></para>
+              <para lang="en"><keycap>=</keycap></para>
+            </entry>
+            <entry><para>Увеличить масштаб</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+              <para><keycombo><keycap>Ctrl</keycap><keycap>-</keycap></keycombo>. (знак минус)</para>
+              <para lang="en"><keycap>-</keycap></para>
+            </entry>
+            <entry><para>Уменьшить масштаб</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>R</keycap></keycombo></para></entry>
+            <entry><para>Перечитать документ</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+            <para lang="en"><keycap>Page Up</keycap></para></entry>
+            <entry><para>Перейти к предыдущей странице</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycap>Page Down</keycap></para></entry>
+            <entry><para>Перейти к следующей странице</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+              <para lang="en"><keycap>Space</keycap></para>
+              <para lang="en"><keycombo><keycap>Shift</keycap><keycap>Backspace</keycap></keycombo></para>
+              <para lang="en"><keycap>Return</keycap></para>
+            </entry>
+            <entry><para>Прокрутить вперёд</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+              <para lang="en"><keycombo><keycap>Shift</keycap><keycap>Space</keycap></keycombo></para>
+              <para lang="en"><keycap>Backspace</keycap></para>
+              <para lang="en"><keycombo><keycap>Shift</keycap><keycap>Return</keycap></keycombo></para>
+            </entry>
+            <entry><para>Прокрутить назад</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+            <para lang="en"><keycombo><keycap>Shift</keycap><keycap>Page Up</keycap></keycombo></para></entry>
+            <entry><para>Перейти на несколько страниц вверх</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Shift</keycap><keycap>Page Down</keycap></keycombo></para></entry>
+            <entry><para>Перейти на несколько страниц вниз</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycap>Home</keycap></para></entry>
+            <entry><para>Перейти к первой странице</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycap>End</keycap></para></entry>
+            <entry><para>Перейти к последней странице</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>L</keycap></keycombo></para></entry>
+            <entry><para>Перейти к странице по номеру или по метке</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycap>F1</keycap></para></entry>
+            <entry><para>Показать справку</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycap>F5</keycap></para></entry>
+            <entry><para>Перейти в режим презентации</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycap>F9</keycap></para></entry>
+            <entry><para>Показать или скрыть боковую панель</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycap>F11</keycap></para></entry>
+            <entry><para>Перейти в полноэкранный режим</para></entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </informaltable>
+  </sect1>
+
+</article>

@@ -1,0 +1,47 @@
+Source: mate-notification-daemon
+Section: x11
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Uploaders: Steve Zesch <stevezesch2@gmail.com>
+Build-Depends: debhelper (>= 9),
+               libglib2.0-dev,
+               libx11-dev,
+               libgtk2.0-dev,
+               libdbus-1-dev,
+               libdbus-glib-1-dev,
+               libwnck-dev,
+               libcanberra-gtk-dev,
+               libnotify-dev,
+               intltool,
+               mate-common
+Standards-Version: 3.9.4
+Homepage: http://www.mate-desktop.org/
+
+Package: mate-notification-daemon
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Provides: notification-daemon
+Description: daemon to displays passive pop-up notifications
+ mate-notification-daemon displays passive pop-up notifications, as per
+ the Desktop Notifications Specification.
+ .
+ The Desktop Notifications Specification provides a standard way of
+ doing passive pop-up notifications on the Linux desktop. These are
+ designed to notify the user of something without interrupting their
+ work with a dialog box that they must close.  Passive popups can
+ automatically disappear after a short period of time, as per the
+ Desktop Notifications spec.
+ 
+Package: mate-notification-daemon-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-notification-daemon (= ${binary:Version})
+Description: daemon to display passive pop-up notifications (debugging symbols)
+ This package contains debugging symbols for the mate-notification-daemon
+ package. It is provided to help debugging problems in the daemon. The
+ debugging symbols are installed in /usr/lib/debug and will automatically be
+ used by gdb.
+

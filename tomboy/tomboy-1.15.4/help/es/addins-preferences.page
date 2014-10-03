@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="addins-preferences" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="addins#preferences"/>
+    <link type="seealso" xref="pin-notes"/>
+    <desc>Activar los complementos de opciones avanzadas.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-14" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Preferencias avanzadas</title>
+
+  <p>El complemento <gui>Preferencias avanzadas</gui> le permite establecer el número de notas recientes que se muestran en la lista de recientes. Debe <link xref="addins">activar</link> este complemento para poder usarlo.</p>
+
+ <section id="recent-notes">
+  <title>Controlar las notas recientes</title>
+    <p>Puede configurar el número mínimo y máximo de notas recientes que es muestran cuando pulsa en el icono de la bandeja de mensajes de <app>Tomboy</app>:</p>
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">Editar</gui><gui style="menuitem">Preferencias</gui><gui style="tab">Avanzado</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Establezca el número mínimo y máximo de notas que mostrar en la lista de notas recientes.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="startup-notes">
+    <title>Notas al inicio</title>
+
+    <steps>
+      <title>Para activar las notas al inicio:</title>
+      <item>
+        <p>Pulse sobre el icono de <app>Tomboy</app> y seleccione <guiseq><gui style="menuitem">Preferencias</gui><gui style="tab">Avanzado</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Seleccione <gui style="checkbox">Activar notas al inicio</gui>,</p>
+      </item>
+    </steps>
+  </section>
+</page>

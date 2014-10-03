@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-desktop-bugzilla" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="addins#desktop-integration"/>
+    <desc>Complemento para enlazar automáticamente a las páginas de Bugzilla.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-16" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Enlaces de Bugzilla</title>
+
+  <p>El complemento de enlaces de Bugzilla le permite arrastrar un URL de Bugzilla hasta Tomboy.</p>
+
+  <steps>
+    <item>
+        <p>Arrastre un enlace a Bugzilla que contenga el número de informe de error desde su navegador web hasta su nota de <app>Tomboy</app>.</p>
+    </item>
+  </steps>
+
+  <p><app>Tomboy</app> mostrará el número de informe de error como un enlace junto a un icono, para indicar que es un enlace a <app>Bugzilla</app>. Puede pulsar en este enlace para abrirlo en su navegador web.</p>
+
+</page>

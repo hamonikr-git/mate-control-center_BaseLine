@@ -1,0 +1,71 @@
+mate-calc (1.8.0-0+qiana) qiana; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Thu, 06 Mar 2014 23:24:56 +0100
+
+mate-calc (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 19 Feb 2014 19:03:13 +0100
+
+mate-calc (1.7.0-1) unstable; urgency=medium
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 18 Jan 2014 14:02:33 +0100
+
+mate-calc (1.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Mon, 01 Apr 2013 01:08:09 +0200
+
+mate-calc (1.5.2-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 23 Mar 2013 12:11:05 +0100
+
+mate-calc (1.5.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 03 Nov 2012 21:52:50 +0100
+
+mate-calc (1.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Sun, 15 Jul 2012 13:34:23 -0400
+
+mate-calc (1.2.0-2) unstable; urgency=low
+
+  * Rebuild for precise. 
+
+ -- Steve Zesch <stevezesch2@gmail.com>  Fri, 30 Mar 2012 20:28:26 -0400
+
+mate-calc (1.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 14 Mar 2012 01:15:52 +0100
+
+mate-calc (1.1.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 13 Dec 2011 23:17:32 +0100
+
+mate-calc (1.0.3-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 09 Nov 2011 02:36:20 +0100
+
+mate-calc (1.0.2-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 08 Nov 2011 00:16:18 +0100

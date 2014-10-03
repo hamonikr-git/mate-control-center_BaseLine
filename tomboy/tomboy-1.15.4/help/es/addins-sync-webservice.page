@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-sync-webservice" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="addins#sync"/>
+    <desc>Sincronizar sus notas con un servicio de Internet.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2010-08-01" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Servicio de sincronización Web</title>
+
+  <p>El complemento de servicio de sincronización web le permite sincronizar sus notas con un servidor web remoto o con otros servicios web compatibles.</p>
+
+ </page>

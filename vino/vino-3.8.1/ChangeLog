@@ -1,0 +1,3340 @@
+2013-04-15  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.8.1 release
+
+2013-04-03  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation
+
+2013-03-28  Andika Triwidada  <andika@gmail.com>
+
+	Updated Indonesian translation
+
+2013-03-27  Daniel Korostil  <ted.korostiled@gmail.com>
+
+	Update uk translation
+
+2013-03-26  Daniel Mustieles  <daniel.mustieles@gmail.com>
+
+	Fixed syntax in translation of Keywords string
+
+2013-03-25  David King  <amigadave@amigadave.com>
+
+	Back out "authentication-method" setting change
+
+	This partially reverts commit 130d6a4a1f4f6e90586d42903484e5899459c403.
+	The schema changes to remove the (bogus) choices remain, but the code
+	changes were incorrect, as discussed in bug 683103.
+
+2013-03-25  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.8.1
+
+2013-03-25  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.8.0 release
+
+2013-03-25  Shankar Prasad  <svenkate@redhat.com>
+
+	Updated kn translations
+
+2013-03-25  Krishnababu Krothapalli  <kkrothap@redhat.com>
+
+	Updated Telugu Translations
+
+2013-03-24  Ask H. Larsen  <asklarsen@gmail.com>
+
+	Updated Danish translation
+
+2013-03-24  ManojKumar Giri  <mgiri@redhat.com>
+
+	Updated Odia Language along with FUEL implementation
+
+2013-03-23  Khaled Hosny  <khaledhosny@eglug.org>
+
+	Update Arabic translation
+
+2013-03-23  Dr.T.Vasudevan  <drtvasudevan@gmail.com>
+
+	Updated Tamil translation
+
+2013-03-22  Arash Mousavi  <mousavi.arash@gmail.com>
+
+	L10N: Updated Persian Translation
+
+2013-03-21  Rajesh Ranjan  <rranjan@redhat.com>
+
+	hindi translation
+
+2013-03-19  Victor Ibragimov  <victor.ibragimov@gmail.com>
+
+	[l10n] Added Tadjik translation
+
+2013-03-19  Sandeep Sheshrao Shedmake  <sshedmak@redhat.com>
+
+	Updated Marathi Translations
+
+2013-03-18  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.8.0
+
+2013-03-18  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.7.92 release
+
+2013-03-18  David King  <amigadave@amigadave.com>
+
+	Remove choices from authentication-methods setting
+
+	The "authentication-methods" setting was intended to list the valid
+	authentication methods. In practice, only VNC authentication is
+	supported. Remove the incorrect choices listed in the schema, and set
+	the default method to be the empty list rather than ['none'].
+
+	Fixes bug 683103.
+
+2013-03-17  Carles Ferrando  <carles.ferrando@gmail.com>
+
+	[l10n] Updated Catalan (Valencian) translation
+
+2013-03-17  Joe Hansen  <joedalton2@yahoo.dk>
+
+	Updated Danish translation
+
+2013-03-17  Changwoo Ryu  <cwryu@debian.org>
+
+	Updated Korean translation
+
+2013-03-15  Balázs Úr  <urbalazs@src.gnome.org>
+
+	Updated Hungarian translation
+
+2013-03-13  Jonathan Kamens  <jik@kamens.us>
+
+	Reset sockets when changing ports, bug 668187
+
+	Explicitly remove the IO watches on the server sockets before setting up
+	new watches, to handle the case where the file descriptor for the socket
+	has changed. This can occur if during initialisation the bind for
+	either the IPv4 or IPv6 socket fails, and then the port is changed while
+	the server is running to a port where both the IPv4 and IPv6 bind
+	succeeds. In this case, the address family with the failed bind will
+	have an invalid file descriptor and the socket would not have an
+	attached IO watch.
+
+2013-03-13  Sweta Kothari  <swkothar@redhat.com>
+
+	Updated gujarati file
+
+2013-03-12  Claudio Arseni  <claudio.arseni@ubuntu.com>
+
+	[l10n] Updated Italian translation.
+
+2013-03-12  Claude Paroz  <claude@2xlibre.net>
+
+	Updated French translation
+
+2013-03-12  Mattias Põldaru  <mahfiaz@gmail.com>
+
+	[l10n] Updated Estonian translation
+
+2013-03-12  Duarte Loreto  <happyguy_pt@hotmail.com>
+
+	Updated Portuguese translation and converted to New Spelling (Novo AO)
+
+2013-03-10  Joan Duran  <jodufi@gmail.com>
+
+	[l10] Updated Catalan translation
+
+2013-03-11  Rūdolfs Mazurs  <rudolfsm@src.gnome.org>
+
+	Updated Latvian translation
+
+2013-03-07  Ville-Pekka Vainio  <vpvainio@iki.fi>
+
+	Finnish translation update by Jiri Grönroos
+
+2013-03-07  Ihar Hrachyshka  <ihar.hrachyshka@gmail.com>
+
+	Updated Belarusian translation.
+
+2013-03-06  Nilamdyuti Goswami  <ngoswami@redhat.com>
+
+	Assamese translation updated for gnome 3.8
+
+2013-03-05  Enrico Nicoletto  <liverig@gmail.com>
+
+	Updated Brazilian Portuguese translation
+
+2013-03-05  Richard Stanislavský  <kenny.vv@gmail.com>
+
+	Updated slovak translation
+
+2013-03-04  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.7.92
+
+2013-03-04  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.7.91 release
+
+2013-03-03  Dimitris Spingos  <dmtrs32@gmail.com>
+
+	Updated Greek translation
+
+2013-03-03  Mario Blättermann  <mario.blaettermann@gmail.com>
+
+	[l10n] Updated German translation
+
+2013-02-27  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation
+
+2013-02-23  Yuri Myasoedov  <omerta13@yandex.ru>
+
+	Updated Russian translation
+
+2013-02-22  A S Alam  <aalam@users.sf.net>
+
+	Punjabi: Translation updated (aalam)
+
+2013-02-21  Marek Černocký  <marek@manet.cz>
+
+	Updated Czech translation
+
+2013-02-18  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.7.91
+
+2013-02-18  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.7.90 release
+
+2013-02-17  Piotr Drąg  <piotrdrag@gmail.com>
+
+	Updated Polish translation
+
+2013-02-16  Gheyret Kenji  <gheyret@gmail.com>
+
+	Updated Uyghur translation
+
+	Signed-off-by: Gheyret Kenji <gheyret@gmail.com>
+
+2013-02-10  Anish A  <aneesh.nl@gmail.com>
+
+	Updated Malayalam Localization
+
+2013-02-09  Aurimas Černius  <aurisc4@gmail.com>
+
+	Updated Lithuanian translation
+
+2013-02-09  Wouter Bolsterlee  <uws@xs4all.nl>
+
+	Updated Dutch translation
+
+2013-02-06  Fran Diéguez  <fran.dieguez@mabishu.com>
+
+	Updated Galician translations
+
+2013-02-04  Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
+
+	Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+2013-02-02  Inaki Larranaga Murgoitio  <dooteo@zundan.com>
+
+	Updated Basque language
+
+2013-02-02  Yaron Shahrabani  <sh.yaron@gmail.com>
+
+	Updated Hebrew translation.
+
+2013-01-31  Piotr Drąg  <piotrdrag@gmail.com>
+
+	Updated Polish translation
+
+2013-01-30  Daniel Mustieles  <daniel.mustieles@gmail.com>
+
+	Updated Spanish translation
+
+2013-01-30  Мирослав Николић  <miroslavnikolic@rocketmail.com>
+
+	Updated Serbian translation
+
+2013-01-29  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation
+
+2013-01-28  Robert Ancell  <robert.ancell@canonical.com>
+
+	Change schema path to standard format
+
+2013-01-28  Matej Urbančič  <mateju@svn.gnome.org>
+
+	Updated Slovenian translation
+
+2013-01-28  Piotr Drąg  <piotrdrag@gmail.com>
+
+	Updated POTFILES.in
+
+2013-01-28  Bastien Nocera  <hadess@hadess.net>
+
+	Fix notification desktop hint
+
+	And tell gnome-shell that we do use notifications so we appear in
+	the Notifications panel.
+
+	https://bugzilla.gnome.org/show_bug.cgi?id=691045#c2
+
+2013-01-28  Bastien Nocera  <hadess@hadess.net>
+
+	Use notifications to prompt
+
+	https://bugzilla.gnome.org/show_bug.cgi?id=461785
+
+2013-01-28  Bastien Nocera  <hadess@hadess.net>
+
+	server: Make libnotify a hard dependency
+
+	As it's been a blessed dependency for a long while now.
+
+	https://bugzilla.gnome.org/show_bug.cgi?id=461785
+
+2013-01-28  Matej Urbančič  <mateju@svn.gnome.org>
+
+	Updated Slovenian translation
+
+2013-01-28  Matthias Clasen  <mclasen@redhat.com>
+
+	Bring up the sharing panel when available
+
+	The statusicon brings up the vino preferences when clicked.
+	When available, make it show the control-center sharing panel
+	instead.
+	https://bugzilla.gnome.org/show_bug.cgi?id=692480
+
+2013-01-28  Matthias Clasen  <mclasen@redhat.com>
+
+	Don't show vino-preferences in GNOME
+
+	The gnome-control-center has a sharing panel, which has
+	screen sharing preferences, so the standalong vino-preferences
+	are no longer necessary for GNOME.
+	https://bugzilla.gnome.org/show_bug.cgi?id=692480
+
+2013-01-27  Gheyret Kenji  <gheyret@gmail.com>
+
+	Updated Uyghur translation
+
+	Signed-off-by: Gheyret Kenji <gheyret@gmail.com>
+
+2013-01-27  Gheyret Kenji  <gheyret@gmail.com>
+
+	Updated Uyghur translation
+
+	Signed-off-by: Gheyret Kenji <gheyret@gmail.com>
+
+2013-01-26  Bastien Nocera  <hadess@hadess.net>
+
+	Export whether the server is connected to through D-Bus
+
+	Using the "Connected" property. This allows gnome-settings-daemon
+	to know whether to disable-animations in the desktop to make
+	things faster.
+
+	https://bugzilla.gnome.org/show_bug.cgi?id=690337
+
+2013-01-19  Мирослав Николић  <miroslavnikolic@rocketmail.com>
+
+	Updated Serbian translation
+
+2013-01-16  Ihar Hrachyshka  <ihar.hrachyshka@gmail.com>
+
+	Updated Belarusian translation.
+
+2013-01-14  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.7.5
+
+2013-01-14  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.7.4 release
+
+2013-01-14  Gheyret Kenji  <gheyret@gmail.com>
+
+	Updated Uyghur translation
+
+	Signed-off-by: Gheyret Kenji <gheyret@gmail.com>
+
+2013-01-13  Alexander Shopov  <ash@kambanaria.org>
+
+	Updated Bulgarian translation
+
+2013-01-07  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation
+
+2013-01-06  Daniel Mustieles  <daniel.mustieles@gmail.com>
+
+	Added keywords to .desktop file, bug 691062
+
+2013-01-06  David King  <amigadave@amigadave.com>
+
+	Add "desktop-entry" notification hint, bug 691045
+
+	Support notification filtering by setting a hint to match up
+	NotifyNotifications with the Vinagre desktop file.
+
+2013-01-02  Aurimas Černius  <aurisc4@gmail.com>
+
+	Updated Lithuanian translation
+
+2012-12-29  Dimitris Spingos  <dmtrs32@gmail.com>
+
+	Updated Greek translation
+
+2012-12-27  Piotr Drąg  <piotrdrag@gmail.com>
+
+	Updated Polish translation
+
+2012-12-24  Fran Diéguez  <fran.dieguez@mabishu.com>
+
+	Updated Galician translations
+
+2012-12-24  Khaled Hosny  <khaledhosny@eglug.org>
+
+	Update Arabic translation
+
+2012-12-24  Adrián Arévalo  <adri58@gmail.com>
+
+	Updated Spanish translation
+
+2012-12-21  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation
+
+2012-12-20  Yaron Shahrabani  <sh.yaron@gmail.com>
+
+	Updated Hebrew translation.
+
+2012-12-19  Mattias Põldaru  <mahfiaz@gmail.com>
+
+	[l10n] Updated Estonian translation
+
+2012-12-18  Shankar Prasad  <svenkate@redhat.com>
+
+	Updated Kannada Translations
+
+2012-12-17  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.7.4
+
+2012-12-17  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.7.3 release
+
+2012-12-17  Huzaifa Sidhpurwala  <huzaifas@redhat.com>
+
+	Do not leak clipboard to unauthenticated clients
+
+	vino_server_clipboard_cb() in vino-server.c is the callback which is
+	triggered when a clipboard copy event is fired.
+
+	After doing some initial checks, (1. If there are any connected clients,
+	2. If the server is on hold etc), it converts the text to UTF-8 and then
+	passes it on to rfbSendServerCutText(). Here data is pasted to each
+	client, without verifying if the client is authenticated.
+
+	The patch checks if the client is authenticated and only then it allows
+	the clipboard text to be sent to it.
+
+	Fixes bug 678434. This is a security issue, and has been assigned
+	CVE-2012-4429:
+	http://www.openwall.com/lists/oss-security/2012/09/14/1
+
+2012-12-16  Fran Diéguez  <fran.dieguez@mabishu.com>
+
+	Updated Galician translations
+
+2012-12-02  Dr.T.Vasudevan  <drtvasudevan@gmail.com>
+
+	Updated Tamil translation
+
+2012-11-23  Nilamdyuti Goswami  <ngoswami@redhat.com>
+
+	Assamese translation updated
+
+2012-11-22  ManojKumar Giri  <mgiri@redhat.com>
+
+	Updated Odia Translation with FUEL implementation.
+
+2012-11-12  ozu17928  <ozu17928@msb.minsmail.com>
+
+	Set quality level if JPEG support is enabled
+
+	Fixes bug 683793.
+
+2012-11-10  Ryan Lortie  <desrt@desrt.ca>
+
+	server/miniupnp/: -Wmissing-prototypes fixups
+
+	Fix up a couple of cases of now-fatal missing prototypes either by
+	appropriately marking functions as 'static' or including the proper
+	headers.
+
+2012-10-27  Richard Stanislavský  <kenny.vv@gmail.com>
+
+	Updated slovak translation
+
+2012-10-23  Richard Stanislavský  <kenny.vv@gmail.com>
+
+	Updated Slovak translation
+
+2012-10-23  Richard Stanislavský  <kenny.vv@gmail.com>
+
+	Updated Slovak translation
+
+2012-10-23  Wolfgang Stoeggl  <c72578@yahoo.de>
+
+	Updated German translation
+
+2012-10-20  David King  <amigadave@amigadave.com>
+
+	Use https URLs where possible in DOAP file
+
+2012-10-20  David King  <amigadave@amigadave.com>
+
+	Update GSettings schema descriptions and summaries
+
+	Fix some problems with the user-visible strings from the GSettings
+	schema. Fixes bug 683387 and bug 686500.
+
+2012-10-03  Khoem Sokhem  <khoemsokhem@khmeros.info>
+
+	[l10n] Added Khmer translation
+
+2012-10-01  Alexandre Rostovtsev  <tetromino@gentoo.org>
+
+	Consistently use SECRET_DEPS, not LIBSECRET_DEPS
+
+	https://bugzilla.gnome.org/show_bug.cgi?id=685171
+
+2012-10-01  Ihar Hrachyshka  <ihar.hrachyshka@gmail.com>
+
+	Updated Belarusian translation.
+
+2012-09-26  Rūdolfs Mazurs  <rudolfsm@src.gnome.org>
+
+	Updated Latvian translation
+
+2012-09-24  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.7.1
+
+2012-09-24  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.6.0 release
+
+2012-09-24  Rūdolfs Mazurs  <rudolfsm@src.gnome.org>
+
+	Updated Latvian translation
+
+2012-09-24  Ihar Hrachyshka  <ihar.hrachyshka@gmail.com>
+
+	Updated Belarusian translation.
+
+2012-09-24  Mattias Põldaru  <mahfiaz@gmail.com>
+
+	[l10n] Updated Estonian translation
+
+2012-09-24  David King  <amigadave@amigadave.com>
+
+	Add a translation comment for tube mode
+
+	Fixes bug 684656.
+
+2012-09-23  Ihar Hrachyshka  <ihar.hrachyshka@gmail.com>
+
+	Updated Belarusian translation.
+
+2012-09-23  YunQiang Su  <yqsu@src.gnome.org>
+
+	update Simplified Chinese (zh_CN) translation
+
+2012-09-22  Carles Ferrando  <carles.ferrando@gmail.com>
+
+	[l10n]Updated Catalan (Valencian) translation
+
+2012-09-22  Joan Duran  <jodufi@gmail.com>
+
+	[l10n] Updated Catalan translation
+
+2012-09-22  Milo Casagrande  <milo@ubuntu.com>
+
+	[l10n] Updated Italian translation.
+
+2012-09-21  Krishnababu Krothapalli  <kkrothap@redhat.com>
+
+	Updated Telugu Translations
+
+2012-09-21  Rajesh Ranjan  <rranjan@redhat.com>
+
+	hindi update by Chandan Kumar
+
+2012-09-21  Runa Bhattacharjee  <runab@redhat.com>
+
+	Updated Bengali India Translation
+
+2012-09-20  Daniel Korostil  <ted.korostiled@gmail.com>
+
+	Uploaded Ukranian
+
+2012-09-18  Alexander Shopov  <ash@kambanaria.org>
+
+	Updated Bulgarian translation
+
+2012-09-17  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.5.92 release
+
+2012-09-17  Ani Peter  <apeter@redhat.com>
+
+	Updated Malayalam file
+
+2012-09-17  Sweta Kothari  <swkothar@redhat.com>
+
+	Updated gujarati file
+
+2012-09-15  Ask H. Larsen  <asklarsen@gmail.com>
+
+	Updated Danish translation
+
+2012-09-15  Changwoo Ryu  <cwryu@debian.org>
+
+	Updated Korean translation
+
+2012-09-12  Timo Jyrinki  <timo@debian.org>
+
+	Finnish translation update by Jiri Grönroos
+
+2012-09-12  Sandeep Sheshrao Shedmake  <sshedmak@redhat.com>
+
+	Updated Marathi Translations
+
+2012-09-11  Rafael Ferreira  <rafael.f.f1@gmail.com>
+
+	Updated Brazilian Portuguese translation
+
+2012-09-09  Duarte Loreto  <happyguy_pt@hotmail.com>
+
+	Updated Portuguese translation
+
+2012-09-09  Changwoo Ryu  <cwryu@debian.org>
+
+	Updated Korean translation
+
+2012-09-08  Marek Černocký  <marek@manet.cz>
+
+	Updated Czech translation
+
+2012-09-07  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	Updated Thai translation.
+
+2012-09-06  Мирослав Николић  <miroslavnikolic@rocketmail.com>
+
+	Updated Serbian translation
+
+2012-09-05  Chris Leonard  <cjl@laptop.org>
+
+	Updated British English translation
+
+2012-09-05  Gabor Kelemen  <kelemeng@gnome.hu>
+
+	Updated Hungarian translation
+
+2012-09-04  Piotr Drąg  <piotrdrag@gmail.com>
+
+	Updated Polish translation
+
+2012-09-04  Muhammet Kara  <muhammetk@acikkaynak.name.tr>
+
+	[l10n]Updated Turkish translation
+
+2012-09-02  Daniel Nylander  <po@danielnylander.se>
+
+	Updated Swedish translation
+
+2012-09-02  Dr.T.Vasudevan  <agnihot3@gmail.com>
+
+	updated Tamil translation
+
+2012-09-01  Aurimas Černius  <aurisc4@gmail.com>
+
+	Updated Lithuanian translation
+
+2012-09-01  Claude Paroz  <claude@2xlibre.net>
+
+	Updated French translation
+
+2012-08-29  Matej Urbančič  <mateju@svn.gnome.org>
+
+	Updated Slovenian translation
+
+2012-08-29  Dirgita  <dirgitadevina@yahoo.co.id>
+
+	Updated Indonesian translation
+
+2012-08-29  Fran Diéguez  <fran.dieguez@mabishu.com>
+
+	Updated Galician translations
+
+2012-08-28  Nilamdyuti Goswami  <nilamdyuti@gmail.com>
+
+	Implemented FUEL entries to Assamese translation
+
+2012-08-27  Nilamdyuti Goswami  <nilamdyuti@gmail.com>
+
+	Assamese translation updated
+
+2012-08-27  Vincent Untz  <vuntz@gnome.org>
+
+	Fix license headers of a few files
+
+	They were mentioning GPL-3.0+ when the intent was GPL-2.0+. This has
+	been confirmed by Jonh at
+	https://bugzilla.gnome.org/show_bug.cgi?id=636600#c2
+
+2012-08-26  Tom Tryfonidis  <tomtryf@gmail.com>
+
+	Updated Greek translation
+
+2012-08-26  Nguyễn Thái Ngọc Duy  <pclouds@gmail.com>
+
+	Updated Vietnamese translation
+
+2012-08-26  Nguyễn Thái Ngọc Duy  <pclouds@gmail.com>
+
+	po/vi: import from Damned Lies
+
+2012-08-24  Yaron Shahrabani  <sh.yaron@gmail.com>
+
+	Updated Hebrew translation.
+
+2012-08-24  Yaron Shahrabani  <sh.yaron@gmail.com>
+
+	Updated Hebrew translation.
+
+2012-08-24  Takayuki KUSANO  <AE5T-KSN@asahi-net.or.jp>
+
+	[l10n] Update Japanese translation
+
+2012-08-24  Yuri Myasoedov  <omerta13@yandex.ru>
+
+	Updated Russian translation
+
+2012-08-23  Daniel Mustieles  <daniel.mustieles@gmail.com>
+
+	Updated Spanish translation
+
+2012-08-23  Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
+
+	Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+2012-08-22  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation
+
+2012-08-22  A S Alam  <aalam@users.sf.net>
+
+	update Punjabi Translation
+
+2012-08-22  Piotr Drąg  <piotrdrag@gmail.com>
+
+	Updated Polish translation
+
+2012-08-20  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.5.91
+
+2012-08-20  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.5.90 release
+
+2012-08-20  David King  <amigadave@amigadave.com>
+
+	Update POTFILES.in
+
+2012-08-20  David King  <amigadave@amigadave.com>
+
+	Rename defines from gnome-keyring to secret
+
+2012-08-20  Stef Walter  <stefw@gnome.org>
+
+	Migrate from libgnome-keyring to libsecret
+
+	See: https://live.gnome.org/GnomeGoals/LibsecretMigration
+
+2012-08-20  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.5.90
+
+2012-08-17  Fran Diéguez  <fran.dieguez@mabishu.com>
+
+	Updated Galician translations
+
+2012-08-16  Sandeep Sheshrao Shedmake  <sshedmak@redhat.com>
+
+	Updated Marathi Translations
+
+2012-08-15  Duarte Loreto  <happyguy_pt@hotmail.com>
+
+	Updated Portuguese translation
+
+2012-08-09  Mattias Põldaru  <mahfiaz@gmail.com>
+
+	[l10n] Updated Estonian translation
+
+2012-08-08  Mattias Põldaru  <mahfiaz@gmail.com>
+
+	[l10n] Updated Estonian translation
+
+2012-08-08  Sweta Kothari  <swkothar@redhat.com>
+
+	Updated gujarati file
+
+2012-08-02  Jiro Matsuzawa  <jmatsuzawa@gnome.org>
+
+	[l10n] Update Japanese translation
+
+	Modify the About label
+
+2012-08-01  Мирослав Николић  <miroslavnikolic@rocketmail.com>
+
+	Updated Serbian translation
+
+2012-07-30  Sweta Kothari  <swkothar@redhat.com>
+
+	Updated gujarati file
+
+2012-07-25  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation
+
+2012-07-17  Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
+
+	Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+2012-07-16  Nilamdyuti Goswami  <nilamdyuti@gmail.com>
+
+	Assamese translation reviewed
+
+2012-07-15  Mitsuya Shibata  <mty.shibata@gmail.com>
+
+	[l10n] Update Japanese translation
+
+2012-07-10  Yaron Shahrabani  <sh.yaron@gmail.com>
+
+	Updated Hebrew translation.
+
+2012-07-10  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation
+
+2012-07-04  Alexander Shopov  <ash@kambanaria.org>
+
+	Updated Bulgarian translation
+
+2012-07-02  Tom Tryfonidis  <tomtryf@gmail.com>
+
+	Updated Greek translation
+
+2012-06-16  Matej Urbančič  <mateju@svn.gnome.org>
+
+	Updated Slovenian translation
+
+2012-06-05  Daniel Mustieles  <daniel.mustieles@gmail.com>
+
+	Updated Spanish translation
+
+2012-06-05  Fran Diéguez  <fran.dieguez@mabishu.com>
+
+	Updated Galician translations
+
+2012-06-04  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.5.3
+
+2012-06-04  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.5.2 release
+
+2012-06-04  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.5.2
+
+2012-06-04  David King  <amigadave@amigadave.com>
+
+	Depend on intltool 0.50 for GSettings translations
+
+2012-05-26  Mantas Kriaučiūnas  <mantas@akl.lt>
+
+	Updated Lithuanian translation
+
+2012-05-26  Luca Ferretti  <lferrett@gnome.org>
+
+	l10n: updated Italian translation
+
+2012-05-23  Bruno Brouard  <annoa.b@gmail.com>
+
+	Updated French translation
+
+2012-05-23  Bruno Brouard  <annoa.b@gmail.com>
+
+	Updated French translation
+
+2012-05-08  Fabrice Bellet  <fabrice@bellet.info>
+
+	Fix iteration of the cursor->source[] array
+
+	See bug 492033.
+
+2012-05-08  Fabrice Bellet  <fabrice@bellet.info>
+
+	Fix the cursor bounds computation
+
+	See bug 492033.
+
+2012-05-08  Fabrice Bellet  <fabrice@bellet.info>
+
+	Use XFixes to provide RFB cursor image
+
+	Fixes bug 492033.
+
+2012-05-03  Kostas Papadimas  <pkst@gnome.org>
+
+	Updated Greek translation
+
+2012-05-03  Kostas Papadimas  <pkst@gnome.org>
+
+	Updated Greek translation
+
+2012-05-02  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.5.1 release
+
+2012-04-27  Fran Diéguez  <fran.dieguez@mabishu.com>
+
+	Updated Galician translations
+
+2012-04-26  Yaron Shahrabani  <sh.yaron@gmail.com>
+
+	Updated Hebrew translation.
+
+2012-04-25  Daniel Mustieles  <daniel.mustieles@gmail.com>
+
+	Updated Spanish translation
+
+2012-04-25  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	Use tp_stream_tube_channel_get_service()
+
+	The offering high level API is not used as it does not currently support
+	offering an existing socket. Completes the fixes for bug 674707.
+
+2012-04-25  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	Use TP_CONTACT_FEATURE_AVATAR_DATA
+
+	See bug 674707.
+
+2012-04-25  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	Remove VinoTubeServer::connection property
+
+	The TpConnection from the TpChannel can be used instead. See bug 674707.
+
+2012-04-25  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	Rename VinoTubeServer.tp_channel to .tube
+
+	That is already the name of the property. See bug 674707.
+
+2012-04-25  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	Rely on the factory to prepare the TpContact
+
+	See bug 674707.
+
+2012-04-25  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	Use tp_simple_handler_new_with_factory()
+
+	See bug 674707.
+
+2012-04-25  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	Depend on telepathy-glib 0.18.0
+
+	This is the stable version recommended for GNOME 3.4. See bug 674707.
+
+2012-04-25  David King  <amigadave@amigadave.com>
+
+	Add vino_server_set_notify_on_connect()
+
+	Without the property setter, g_settings_bind() cannot update the
+	notify-on-connect property when the setting changes.
+
+2012-04-25  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	Exit when tube is closed if run in tube mode
+
+	See bug 651960.
+
+2012-04-25  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	Relay tube-disconnected signal in VinoDbusListener
+
+	See bug 651960.
+
+2012-04-25  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	VinoTubeServersManager::tube-disconnected signal
+
+	See bug 651960.
+
+2012-04-25  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	Add --tube arg to launch Vino in ‘tube only’ mode
+
+	This fixes the ‘Share my Desktop’ feature when screen sharing has been
+	disabled in the preferences.
+
+	This regression was introduced when Vino switched to GSettings, as it
+	started exiting on startup when desktop sharing was disabled.
+
+	Fixes bug 651960.
+
+2012-04-25  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	Add VinoServer:reject-incoming property
+
+	See bug 651960.
+
+2012-04-25  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	Add vino_dbus_listener_get_server()
+
+	See bug 651960.
+
+2012-04-22  Mitsuya Shibata  <mty.shibata@gmail.com>
+
+	[l10n] Update Japanese translation
+
+2012-04-10  Carles Ferrando  <carles.ferrando@gmail.com>
+
+	[l10n]Updated Catalan (Valencian) translation
+
+2012-04-10  Jordi Serratosa  <jordis@softcatala.cat>
+
+	[l10n] Fixes on Catalan translation
+
+2012-03-30  Khaled Hosny  <khaledhosny@eglug.org>
+
+	Updated Arabic translation
+
+2012-03-26  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.5.1
+
+2012-03-26  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.4.0 release
+
+2012-03-23  Alexander Shopov  <ash@kambanaria.org>
+
+	Updated Bulgarian translation
+
+2012-03-22  Sweta Kothari  <swkothar@redhat.com>
+
+	Updated Gujarati Translations
+
+2012-03-20  Krishnababu Krothapalli  <email>
+
+	Translations Updated with FUEL
+
+2012-03-20  YunQiang Su  <yqsu@src.gnome.org>
+
+	update Simplified Chinese (zh_CN) translation
+
+2012-03-20  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.4.0
+
+2012-03-19  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.3.92 release
+
+2012-03-19  David King  <amigadave@amigadave.com>
+
+	Version bump to 3.3.92
+
+2012-03-19  Rajesh Ranjan  <rranjan@redhat.com>
+
+	hindi translation by Chandan Kumar, correcting and commiting right file
+
+2012-03-19  Rajesh Ranjan  <rranjan@redhat.com>
+
+	hindi translation by Chandan Kumar
+
+2012-03-19  Rajesh Ranjan  <rranjan@redhat.com>
+
+	hindi translation by Chandan Kumar
+
+2012-03-18  Daniel Korostil  <ted.korostiled@gmail.com>
+
+	Uploaded Ukranian
+
+2012-03-16  Bruce Cowan  <bruce@bcowan.me.uk>
+
+	Updated British English translation
+
+2012-03-16  Carles Ferrando  <carles.ferrando@gmail.com>
+
+	[l10n]Updated Catalan (Valencian) translation
+
+2012-03-16  Joan Duran  <jodufi@gmail.com>
+
+	[l10n] Updated Catalan translation
+
+2012-03-15  A S Alam  <aalam@users.sf.net>
+
+	update Punjabi Translation
+
+2012-03-15  Krishnababu Krothapalli  <email>
+
+	Updated Telugu Translations
+
+2012-03-14  Antonio Fernandes C. Neto  <fernandesn@gnome.org>
+
+	Updated Brazilian Portuguese translation
+
+2012-03-14  Duarte Loreto  <happyguy_pt@hotmail.com>
+
+	Updated Portuguese translation
+
+2012-03-13  Anita Reitere  <nitalynx@gmail.com>
+
+	Updated Latvian translation.
+
+2012-03-12  Nilamdyuti Goswami  <nilamdyuti@gmail.com>
+
+	Assamese translation completed
+
+2012-03-10  Arash Mousavi  <amousavi@src.gnome.org>
+
+	Updated Persian Translation
+
+2012-03-11  Changwoo Ryu  <cwryu@debian.org>
+
+	Updated Korean translation
+
+2012-03-07  Inaki Larranaga Murgoitio  <dooteo@zundan.com>
+
+	Updated Basque language
+
+2012-03-05  Mario Blättermann  <mario.blaettermann@gmail.com>
+
+	[l10n] Updated German translation
+
+2012-03-04  Piotr Drąg  <piotrdrag@gmail.com>
+
+	Updated Polish translation
+
+2012-03-03  Claudio Arseni  <claudio.arseni@gmail.com>
+
+	[l10n] Updated Italian translation
+
+2012-02-29  Gabor Kelemen  <kelemeng@gnome.hu>
+
+	Updated Hungarian translation
+
+2012-02-28  Dr.T.Vasudevan  <agnihot3@gmail.com>
+
+	updated Tamil translation
+
+2012-02-20  Ask H. Larsen  <asklarsen@gmail.com>
+
+	Updated Danish translation
+
+2012-02-20  Мирослав Николић  <miroslavnikolic@rocketmail.com>
+
+	Updated Serbian translation
+
+2012-02-19  Kristjan SCHMIDT  <kristjan.schmidt@googlemail.com>
+
+	Updated Esperanto translation
+
+2012-02-08  Yuri Myasoedov  <omerta13@yandex.ru>
+
+	Updated Russian translation
+
+2012-01-30  Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
+
+	Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+2012-01-28  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation
+
+2012-01-19  Marek Černocký  <marek@manet.cz>
+
+	Updated Czech translation
+
+2012-01-18  Daniel Nylander  <po@danielnylander.se>
+
+	Updated Swedish translation
+
+2012-01-15  Fran Diéguez  <fran.dieguez@mabishu.com>
+
+	Updated Galician translations
+
+2012-01-12  Timo Jyrinki  <timo.jyrinki@iki.fi>
+
+	Updated Finnish translation by Jiri Grönroos
+
+2012-01-08  Alexander Shopov  <ash@kambanaria.org>
+
+	Updated Bulgarian translation
+
+2012-01-02  Mattias Põldaru  <mahfiaz@gmail.com>
+
+	[l10n] Updated Estonian translation
+
+2011-12-19  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.3.4
+
+2011-12-19  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.3.3 release
+
+2011-12-10  Yaron Shahrabani  <sh.yaron@gmail.com>
+
+	Updated Hebrew translation.
+
+2011-12-01  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation
+
+2011-11-26  Muhammet Kara  <muhammet.k@gmail.com>
+
+	[l10n]Updated Turkish translation
+
+2011-11-25  Daniel Mustieles  <daniel.mustieles@gmail.com>
+
+	Updated Spanish translation
+
+2011-11-24  Matej Urbančič  <mateju@svn.gnome.org>
+
+	Updated Slovenian translation
+
+2011-11-24  Alexandre Franke  <alexandre.franke@gmail.com>
+
+	Update French translation
+
+2011-11-22  Mateusz Maćkowski  <matx-1997@o2.pl>
+
+	Added option to disable connect notifications
+
+	Fixes bug 588305.
+
+2011-11-12  Mattias Põldaru  <mahfiaz@gmail.com>
+
+	[l10n] Updated Estonian translation
+
+2011-11-11  Hideki Yamane  <henrich@debian.org>
+
+	Updated Japanese translation
+
+2011-10-24  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.3.2
+
+2011-10-24  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.3.1 release
+
+2011-10-24  Ihar Hrachyshka  <ihar.hrachyshka@gmail.com>
+
+	Updated Belarusian translation.
+
+2011-10-10  krishnababu k  <kkrothap@redhat.ocm>
+
+	Updated Telugu Translations
+
+2011-09-28  David King  <amigadave@amigadave.com>
+
+	Update smclient to latest libegg version
+
+2011-09-26  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.3.1
+
+2011-09-26  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.2.0 release
+
+2011-09-26  Carles Ferrando  <carles.ferrando@gmail.com>
+
+	[l10n]Updated Catalan (Valencian) translation
+
+2011-09-25  Piotr Drąg  <piotrdrag@gmail.com>
+
+	Updated Polish translation
+
+2011-09-25  Piotr Drąg  <piotrdrag@gmail.com>
+
+	Updated Polish translation
+
+2011-09-25  Inaki Larranaga Murgoitio  <dooteo@zundan.com>
+
+	Updated Basque language
+
+2011-09-23  Changwoo Ryu  <cwryu@debian.org>
+
+	Updated Korean translation
+
+2011-09-22  Nilamdyuti Goswami  <ngoswami@redhat.com>
+
+	Update Assamese translation
+
+2011-09-21  Gabor Kelemen  <kelemeng@gnome.hu>
+
+	Updated Hungarian translation
+
+2011-09-19  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.2.0
+
+2011-09-19  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.1.92 release
+
+2011-09-18  Joe Hansen  <joedalton2@yahoo.dk>
+
+	Updated Danish translation
+
+2011-09-17  Yinghua Wang  <wantinghard@gmail.com>
+
+	update Simplified Chinese (zh_CN) translation
+
+2011-09-17  Jiro Matsuzawa  <jmatsuzawa@src.gnome.org>
+
+	Updated Japanese translation
+
+2011-09-17  Claudio Arseni  <claudio.arseni@ubuntu.com>
+
+	l10n: Updated Italian translation
+
+2011-09-16  Joan DUran  <jodufi@gmail.com>
+
+	[l10n]Updated Catalan translation
+
+2011-09-11  Ihar Hrachyshka  <ihar.hrachyshka@gmail.com>
+
+	Updated Belarusian translation.
+
+2011-09-08  Piotr Drąg  <piotrdrag@gmail.com>
+
+	Updated Polish translation
+
+2011-09-08  David King  <amigadave@amigadave.com>
+
+	Enable AM_MAINTAINER_MODE in configure.ac
+
+	As pointed out by Ryan Lortie, and with thanks to Frédéric Péters:
+
+	http://blogs.gnome.org/desrt/2011/09/08/am_maintainer_mode-is-not-cool/
+
+2011-09-08  Bruce Cowan  <bruce@bcowan.me.uk>
+
+	Updated British English translation
+
+2011-09-07  Duarte Loreto  <happyguy_pt@hotmail.com>
+
+	Updated Portuguese translation
+
+2011-09-05  Jeremy Bicha  <jbicha@ubuntu.com>
+
+	Corrected new help links The new help: protocol uses a slash instead of a question mark. Also updating two old help references that hadn't been updated.
+
+2011-09-06  Wouter Bolsterlee  <wbolster@gnome.org>
+
+	Updated Dutch translation by Wouter Bolsterlee
+
+2011-09-05  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.1.92
+
+2011-09-05  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.1.91 release
+
+2011-09-05  David King  <amigadave@amigadave.com>
+
+	Make all targets use compiler warning flags
+
+	Additionally, make sure that the warnings are set to maxmium severity
+	during a distcheck.
+
+2011-09-05  David King  <amigadave@amigadave.com>
+
+	Use new location for Mallard help, bug 657927
+
+2011-09-05  Dr.T.Vasudevan  <agnihot3@gmail.com>
+
+	updated Tamil translation
+
+2011-09-01  Yuri Myasoedov  <omerta13@yandex.ru>
+
+	Updated Russian translation
+
+2011-08-31  Og B. Maciel  <ogmaciel@gnome.org>
+
+	Updated Brazilian Portuguese translation.
+
+2011-08-29  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.1.91
+
+2011-08-29  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.1.90 release
+
+2011-08-19  Mario Blättermann  <mariobl@gnome.org>
+
+	[l10n] Updated German translation
+
+2011-08-19  Marek Černocký  <marek@manet.cz>
+
+	Updated Czech translation
+
+2011-08-19  A S Alam  <aalam@users.sf.net>
+
+	update translation for Punjabi
+
+2011-08-15  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.1.90
+
+2011-08-15  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.1.5 release
+
+2011-08-15  David King  <amigadave@amigadave.com>
+
+	Use GtkBox rather than GtkHBox or GtkVBox
+
+2011-08-13  Claude Paroz  <claude@2xlibre.net>
+
+	Updated French translation
+
+2011-08-13  Aurimas Černius  <aurisc4@gmail.com>
+
+	Updated Lithuanian translation
+
+2011-08-13  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	Updated Thai translation.
+
+2011-08-12  Alexander Shopov  <ash@kambanaria.org>
+
+	Updated Bulgarian translation
+
+2011-07-29  Daniel Nylander  <po@danielnylander.se>
+
+	Updated Swedish translation
+
+2011-07-25  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.1.5
+
+2011-07-25  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.1.4 release
+
+2011-07-18  Tommi Vainikainen  <thv@iki.fi>
+
+	Updated Finnish translation
+
+2011-07-13  Rudolfs Mazurs  <rudolfs.mazurs@gmail.com>
+
+	Updated Latvian translation.
+
+2011-07-08  David King  <amigadave@amigadave.com>
+
+	Only call g_settings_sync() when necessary
+
+	Versions of Gio since 2.29.2 call g_settings_sync() during GApplication
+	shutdown, thus it is not required to call it manually, bug 653914.
+
+2011-07-08  Bastien Nocera  <hadess@hadess.net>
+
+	Add GConf to GSettings convert file, bug 654901
+
+2011-07-07  Abduxukur Abdurixit  <abdurixit@gmail.com>
+
+	Added UG translation
+
+2011-07-04  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.1.4
+
+2011-07-04  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.1.3 release
+
+2011-07-01  David King  <amigadave@amigadave.com>
+
+	Add more categories to preferences desktop file
+
+2011-07-01  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.1.3
+
+2011-07-01  Michael Terry  <michael.terry@canonical.com>
+
+	Make desktop files appear in Unity too, bug 653802
+
+	Signed-off-by: David King <amigadave@amigadave.com>
+
+2011-06-13  Javier Jardón  <jjardon@gnome.org>
+
+	Use const instead deprecated G_CONST_RETURN
+
+2011-06-13  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.1.2 release
+
+2011-06-10  Abduxukur Abdurixit  <abdurixit@gmail.com>
+
+	Added UG translation
+
+2011-06-09  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation
+
+2011-06-06  Sjoerd Simons  <sjoerd.simons@collabora.co.uk>
+
+	Do not set non-existent use-dbus-listener property
+
+	The ‘use-dbus-listener’ property has been removed from VinoServer, so
+	do not try to set it when creating a VinoDBusServer.
+
+2011-06-06  Sjoerd Simons  <sjoerd.simons@collabora.co.uk>
+
+	Fix _TELEPATHY_GLIB mistyped as _TELEPATHY_GLUB
+
+2011-06-03  Arash Mousavi  <amousavi@src.gnome.org>
+
+	Updated Persian translation
+
+2011-05-29  Carles Ferrando  <carles.ferrando@gmail.com>
+
+	[l10n]Updated Catalan (Valencian) translation
+
+2011-05-27  Kristjan SCHMIDT  <kristjan.schmidt@googlemail.com>
+
+	Updated Esperanto translation
+
+2011-05-24  David King  <amigadave@amigadave.com>
+
+	Remove gettext macros from configure.ac
+
+2011-05-22  Мирослав Николић  <miroslavnikolic@rocketmail.com>
+
+	Updated Serbian translation
+
+2011-05-19  Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
+
+	Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+2011-05-15  Andika Triwidada  <andika@gmail.com>
+
+	Updated Indonesian translation
+
+2011-05-09  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.1.2
+
+2011-05-09  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.1.1 release
+
+2011-05-09  David King  <amigadave@amigadave.com>
+
+	Change *.tar.gz to *.tar.xz in .gitignore
+
+2011-05-09  Yaron Shahrabani  <sh.yaron@gmail.com>
+
+	Updated Hebrew translation.
+
+2011-05-04  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation
+
+2011-05-03  Daniel Korostil  <ted.korostiled@gmail.com>
+
+	Uploaded Ukranian
+
+2011-05-03  Muhammet Kara  <muhammet.k@gmail.com>
+
+	Updated Turkish translation
+
+2011-05-02  David King  <amigadave@amigadave.com>
+
+	Avoid out-of-bounds memory accesses
+
+	This fixes two critical security vulnerabilities that lead to an
+	out-of-bounds memory access with a crafted client framebuffer update
+	request packet. The dimensions of the update from the packet are checked
+	to ensure that they are within the screen dimensions.
+
+	Thanks to Kevin Chen from the Bitblaze group for the reports in bugs
+	641802 and 641803. The CVE identifiers for these vulnerabilities are
+	CVE-2011-0904 and CVE-2011-0905.
+
+2011-05-02  Abduxukur Abdurixit  <abdurixit@gmail.com>
+
+	Added UG translation
+
+2011-04-30  Fran Diéguez  <fran.dieguez@mabishu.com>
+
+	Updated galician translations
+
+2011-04-30  Marek Černocký  <marek@manet.cz>
+
+	Updated Czech translation
+
+2011-04-29  Daniel Mustieles  <daniel.mustieles@gmail.com>
+
+	Updated Spanish translation
+
+2011-04-28  Matej Urbančič  <mateju@svn.gnome.org>
+
+	Updated Slovenian translation
+
+2011-04-28  Matej Urbančič  <mateju@svn.gnome.org>
+
+	Updated Slovenian translation
+
+2011-04-28  David King  <amigadave@amigadave.com>
+
+	Use ‘Desktop Sharing’ rather than ‘Remote Desktop’
+
+	As pointed out in bug 625623, Vino deals with sharing a desktop of a
+	current session, not starting a session and providing a remote desktop.
+
+2011-04-28  Daniel Mustieles  <daniel.mustieles@gmail.com>
+
+	Updated Spanish translation
+
+2011-04-26  David King  <amigadave@amigadave.com>
+
+	Do not use deprecated GnuTLS functions, bug 648606
+
+	Bump the GnuTLS version check to 2.2.0 from 1.0.0. Use
+	gnutls_priority_set_direct() rather than gnutls_kx_set_priority() to set
+	the key exchange algorithm.
+
+2011-04-26  Muhammet Kara  <muhammet.k@gmail.com>
+
+	Updated Turkish translation
+
+2011-04-24  Abduxukur Abdurixit  <abdurixit@gmail.com>
+
+	Added UG translation
+
+2011-04-24  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	Updated Thai translation.
+
+2011-04-20  Jordi Mallach  <jordi@sindominio.net>
+
+	Fix defines to match configure script output
+
+	In 99d0f293b7ed2527c127a45bb6bc5b34b61bbcdb, configure was changed to
+	prefix all AC_DEFINE macros with VINO_, and features were changed to use
+	AC_ARG_WITH.
+
+	Some of the guarded features didn't have their defines updated in the
+	code, resulting in any build having NetworkManager, GCrypt/GnuTLS,
+	libnotify or Telepathy support.
+
+	Fixes bug 648322.
+
+2011-04-18  David King  <amigadave@amigadave.com>
+
+	Update copyright information in about dialog
+
+2011-04-18  Oliver Gerlich  <oliver.gerlich@gmx.de>
+
+	Only send a motion event when the pointer moved
+
+	Only generate a MotionNotify event if the button state did not change or
+	if the mouse coordinates have changed. Fixes bug 564520.
+
+2011-04-18  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 3.1.1
+
+2011-04-17  Oliver Gerlich  <oliver.gerlich@gmx.de>
+
+	Fix cursor update logic, bug 617436
+
+2011-04-16  David King  <amigadave@amigadave.com>
+
+	Improve status icon tooltip string, bug 594253
+
+2011-04-16  Travis B. Hartwell  <nafai@travishartwell.net>
+
+	String improvements in preferences capplet
+
+	Patch modified from version in bug 606419.
+
+2011-04-11  Daniel Mustieles  <daniel.mustieles@gmail.com>
+
+	Updated Spanish translation
+
+2011-04-11  Thorsten Glaser  <tg@mirbsd.de>
+
+	Bind both an IPv4 and an IPv6 socket
+
+	Under some configurations on Linux, and an BSD, the dfault behaviour is
+	to bind only an IPv6 socket when IPv6 support is enabled. The default
+	Linux kernel configuration is to bind both an IPv4 and an IPv6 socket.
+	Using two listening sockets fixes the problem, bug 604809.
+
+2011-04-05  Jordi Serratosa  <jordis@softcatala.cat>
+
+	[l10n]Fixes on Catalan translation
+
+2011-04-05  David King  <amigadave@amigadave.com>
+
+	Improve description of UPnP feature, bug 594521
+
+	Additionally, add back the tooltip, which was accidentally removed in
+	commit 854a89544020c087680cce2c36cdcda9f38b841d.
+
+2011-04-04  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 3.0.0 release
+
+2011-04-04  David King  <amigadave@amigadave.com>
+
+	Add translator comments from eggsmclient
+
+	This clarifies the translation of two strings from libegg, fixing bug
+	614107.
+
+2011-04-02  Ask H. Larsen  <asklarsen@gmail.com>
+
+	Updated Danish translation
+
+2011-04-02  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Include config.h where necessary
+
+	Add ‘#include <config.h>’ to all file that include translatable strings,
+	so that they appear translated in the UI. Fixes bug 645860.
+
+2011-04-01  Inaki Larranaga Murgoitio  <dooteo@zundan.com>
+
+	Updated Basque language
+
+2011-03-30  Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
+
+	Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+2011-03-30  Dr.T.Vasudevan  <agnihot3@gmail.com>
+
+	Updated Tamil translation
+
+2011-03-29  David King  <amigadave@amigadave.com>
+
+	Add dbus-glib-1 to telepathy-glib pkg-config check
+
+	In recent linker versions, transitive imports of library symbols are
+	rejected by the linker. dbus-glib-1 exists in the Requires.private
+	variable of the telepathy-glib pkg-config file, so results in a
+	transitive import of dbus-glib-1, which fails during the link phase as
+	dbus_g_type_specialized_construct is called from
+	server/vino-tube-server.c. Underlinking is another term for this
+	problem.
+
+	Explicitly adding dbus-glib-1 to the telepathy-glib pkg-config check
+	fixes the problem, bug 646018. Also see
+	http://blog.flameeyes.eu/2010/11/26/it-s-not-all-gold-that-shines-why-underlinking-is-a-bad-thing
+
+2011-03-27  Abduxukur Abdurixit  <abdurixit@gmail.com>
+
+	Added UG translation
+
+2011-03-26  David King  <amigadave@amigadave.com>
+
+	Require automake 1.11.1 and dist as .xz only
+
+2011-03-26  David King  <amigadave@amigadave.com>
+
+	Add description to DOAP file
+
+2011-03-25  David King  <amigadave@amigadave.com>
+
+	Update NEWS for 2.99.5 release
+
+2011-03-25  Rodrigo Padula de Oliveira  <contato@rodrigopadula.com>
+
+	Updated Brazilian Portuguese translation
+
+2011-03-24  Runa Bhattacharjee  <runab@redhat.com>
+
+	Updated Bengali India Translation
+
+2011-03-22  Claudio Arseni  <claudio.arseni@gmail.com>
+
+	Updated Italian translation
+
+2011-03-21  Brett Witherspoon  <spoonb@exherbo.org>
+
+	Use GSettings autostart condition
+
+2011-03-21  David King  <amigadave@amigadave.com>
+
+	Post-release version bump to 2.99.5
+
+2011-03-21  David King  <amigadave@amigadave.com>
+
+	Update NEWS and release 2.99.4
+
+2011-03-21  David King  <amigadave@amigadave.com>
+
+	Remove server reachability message from the UI
+
+	As there is not enough time to fix bug 596190 before a release, disable
+	the server reachability test by not connecting the 'changed' signal on
+	the VinoConnectivityInfo object. Comment the UI objects in the
+	GtkBuilder XML description. This addresses CVE-2011-1164 until a fix for
+	the reachability test is available.
+
+2011-03-21  Amitakhya Phukan  <amitakhya@svn.gnome.org>
+
+	Updated Assamese translations
+
+2011-03-20  David King  <amigadave@amigadave.com>
+
+	Generate enums and marshalers before they are used
+
+	Make vinagre/vinagre-enums.c depend on vinagre/vinagre-enums.h. Reorder
+	sources so that the marshallers and enums sources are generated before
+	they are needed, fixing bug 645266.
+
+2011-03-19  Rudolfs Mazurs  <rudolfs.mazurs@gmail.com>
+
+	Updated Latvian translation.
+
+2011-03-19  Dirgita  <dirgitadevina@yahoo.co.id>
+
+	Updated Indonesian translation
+
+2011-03-18  Yunqiang Su  <wzssyqa@gmail.com>
+
+	Update Simplified Chinese translation.
+
+2011-03-17  Mario Blättermann  <mariobl@gnome.org>
+
+	[l10n] Updated German translation
+
+2011-03-17  Claudio Arseni  <claudio.arseni@gmail.com>
+
+	Updated Italian translation
+
+2011-03-16  Lucian Adrian Grijincu  <lucian.grijincu@gmail.com>
+
+	Updated Romanian translation
+
+2011-03-16  Lucian Adrian Grijincu  <lucian.grijincu@gmail.com>
+
+	Updated Romanian translation
+
+2011-03-16  Bruce Cowan  <bruce@bcowan.me.uk>
+
+	Updated British English translation
+
+2011-03-16  Mattias Põldaru  <mahfiaz@gmail.com>
+
+	[l10n] Updated Estonian translation
+
+2011-03-16  Yuri Myasoedov  <omerta13@yandex.ru>
+
+	Updated Russian translation
+
+2011-03-15  Marek Černocký  <marek@manet.cz>
+
+	Updated Czech translation
+
+2011-03-15  Gabor Kelemen  <kelemeng@gnome.hu>
+
+	Updated Hungarian translation
+
+2011-03-15  Fran Diéguez  <fran@openhost.es>
+
+	Updated Galician translations
+
+2011-03-14  David King  <amigadave@amigadave.com>
+
+	Remove some unnecessary code in the capplet
+
+2011-03-13  Priit Laes  <plaes@plaes.org>
+
+	[l10n] Updated Estonian translation
+
+2011-03-13  Piotr Drąg  <piotrdrag@gmail.com>
+
+	Updated Polish translation
+
+2011-03-13  David King  <amigadave@amigadave.com>
+
+	Update README for upcoming release
+
+2011-03-12  Wouter Bolsterlee  <wbolster@gnome.org>
+
+	Updated Dutch translation by Wouter Bolsterlee
+
+2011-03-12  David King  <amigadave@amigadave.com>
+
+	Tidy the marshal and enums generation rules
+
+	Taking inspiration from the libgdata rules for glib-mkenums and
+	glib-genmarshal, rewrite the make rules so that BUILT_SOURCES is not
+	used. Additionally, provide more human-readable generated files.
+
+2011-03-12  Duarte Loreto  <happyguy_pt@hotmail.com>
+
+	Updated Portuguese translation
+
+2011-03-11  David King  <amigadave@amigadave.com>
+
+	Generate ChangeLog from commit log during 'dist'
+
+2011-03-11  Joan Duran  <jodufi@gmail.com>
+
+	[l10n] Updated Catalan translation
+
+2011-03-08  David King  <amigadave@amigadave.com>
+
+	Check for the inline keyword with AC_C_INLINE
+
+2011-03-08  David King  <amigadave@amigadave.com>
+
+	Add website to AC_INIT and use in about dialog
+
+2011-03-08  David King  <amigadave@amigadave.com>
+
+	Correct gcrypt CFLAGS and LIBS variable usage
+
+	The variables created by the AM_PATH_GCRYPT macro are LIBGCRYPT_CFLAGS
+	and LIBGCRYPT_LIBS, not GCRYPT_CFLAGS and GCRYPT_LIBS.
+
+2011-03-08  David King  <amigadave@amigadave.com>
+
+	Fix non-functional PKG_CHECK_EXISTS checks
+
+	PKG_CHECK_EXISTS does not have the same first argument as
+	PKG_CHECK_MODULES, so remove the first argument from all
+	PKG_CHECK_EXISTS calls.
+
+2011-03-08  David King  <amigadave@amigadave.com>
+
+	Fix underlinking with libX11 and libz
+
+	AB_SUBST a variable with the zlib linker command line and add it to
+	LDADD for vino-server. Remove the weird check to see if Pango provided
+	'-lX11' in the linker command line, and use AC_PATH_XTRA always. Fixes
+	bug 644192.
+
+2011-03-07  David King  <amigadave@amigadave.com>
+
+	Fix configure options containing extra dashes
+
+	The logic for evaluating configure options that contained a dash was
+	wrong. This includes --enable-http-server, --with-network-manager and
+	--with-gnome-keyring. Thanks to David Ronis for the report in bug
+	644153.
+
+2011-03-07  David King  <amigadave@amigadave.com>
+
+	Post-release bump to 2.99.4
+
+2011-03-07  David King  <amigadave@amigadave.com>
+
+	Update NEWS for release
+
+2011-03-07  David King  <amigadave@amigadave.com>
+
+	Distribute the DOAP file
+
+2011-03-05  David King  <amigadave@amigadave.com>
+
+	Include if.h before ifaddrs.h in configure test
+
+	The getifaddrs manpage states that if both <net/if.h> and <ifaddrs.h>
+	are being included, <net/if.h> must be included before <ifaddrs.h>.
+
+2011-03-05  A S Alam  <aalam@users.sf.net>
+
+	update Punjabi Translation by A S Alam
+
+2011-03-04  David King  <amigadave@amigadave.com>
+
+	Add me as a maintainer, remove MAINTAINERS file
+
+2011-03-04  Manoj Kumar Giri  <mgiri@redhat.com>
+
+	Updated Oriya Translation
+
+2011-03-04  David King  <amigadave@amigadave.com>
+
+	Fix strict-aliasing warning in VNC authentication
+
+2011-03-04  David King  <amigadave@amigadave.com>
+
+	Fix strict-aliasing warnings in HTTP server
+
+2011-03-04  David King  <amigadave@amigadave.com>
+
+	Correct prototype for vino_get_http_server_port()
+
+2011-03-04  David King  <amigadave@amigadave.com>
+
+	Use G_GSIZE_FORMAT when printing a gsize
+
+2011-03-02  David King  <amigadave@amigadave.com>
+
+	Update NEWS and add check-news to AM_INIT
+
+	Add a note to packagers in the NEWS announcement for the upcoming
+	release about the changes to configure arguments. Add check-news to
+	AM_INIT so that NEWS is checked during make distcheck.
+
+2011-03-02  David King  <amigadave@amigadave.com>
+
+	Only use convenience libraries for smclient
+
+	Cut down linking complexity by only using libtool convenience libraries
+	for eggsmclient.
+
+2011-03-02  David King  <amigadave@amigadave.com>
+
+	Reduce duplicate libraries during linking
+
+2011-03-02  David King  <amigadave@amigadave.com>
+
+	Check for sed with AC_PROG_SED
+
+2011-03-02  David King  <amigadave@amigadave.com>
+
+	Convert docs subdirectory to build non-recursively
+
+2011-03-02  David King  <amigadave@amigadave.com>
+
+	Convert server/libvncserver to non-recursive build
+
+2011-03-02  David King  <amigadave@amigadave.com>
+
+	Convert server/smclient to build non-recursively
+
+2011-03-02  David King  <amigadave@amigadave.com>
+
+	Convert server/miniupnp to build non-recursively
+
+2011-03-02  David King  <amigadave@amigadave.com>
+
+	Convert server subdir to build non-recursively
+
+2011-03-02  David King  <amigadave@amigadave.com>
+
+	Convert tools subdir to build non-recursively
+
+2011-03-02  David King  <amigadave@amigadave.com>
+
+	Convert capplet subdir to build non-recursively
+
+2011-03-02  David King  <amigadave@amigadave.com>
+
+	Convert common subdir to build non-recursively
+
+2011-03-02  David King  <amigadave@amigadave.com>
+
+	Check for presence of glib-mkenums in configure
+
+	AC_SUBST a GLIB_MKENUMS variable in configure, that can be used in
+	Makefile.am.
+
+2011-03-02  David King  <amigadave@amigadave.com>
+
+	Use AC_CONFIG_AUX_DIR and update .gitignore
+
+	Also remove outdated .cvsignore files.
+
+2011-02-28  Sweta Kothari  <swkothar@redhat.com>
+
+	Updated Gujarati Translations
+
+2011-02-27  David King  <davidk@openismus.com>
+
+	Overhaul configure script
+
+	Rename configure.in to configure.ac. Rearrange to recommended standard
+	layout. Use M4sh where possible. Enable automake warnings, disable
+	defines and disable standard includes. Switch all configure arguments
+	that enable support for external libraries to use AC_ARG_WITH, and be
+	automatically enabled by default. Prefix all defines from AC_DEFINE
+	macros with 'VINO_'. Discover glib-genmarshal path from GLib pkg-config
+	file. Drop confusing checking of both zlib and libz, and replace with
+	just checking for zlib. Drop checking for Perl to decide whether to
+	rebuild generated files. Drop configure summary.
+
+	Additionally, make the minimum adjustments necessary in other files to
+	enable the build to succeed.
+
+2011-02-27  Changwoo Ryu  <cwryu@debian.org>
+
+	Updated Korean translation
+
+2011-02-25  Bruno Brouard  <annoa.b@gmail.com>
+
+	Updated French translation
+
+2011-02-23  Matej Urbančič  <mateju@svn.gnome.org>
+
+	Updated Slovenian translation
+
+2011-02-23  Chris Kühl  <chrisk@openismus.com>
+
+	Post-release bump to 2.99.3.
+
+2011-02-23  Chris Kühl  <chrisk@openismus.com>
+
+	Release: 2.99.2
+
+2011-02-23  Chris Kühl  <chrisk@openismus.com>
+
+	Fixed dereferencing issue overlooked on merge.
+
+2011-02-23  Chris Kühl  <chrisk@openismus.com>
+
+	Added -enable-debug to DISTCHECK_CONFIGURE_FLAGS.
+
+2011-02-23  Pierre Wieser  <pwieser@trychlos.org>
+
+	Added back telepathy functionality.
+
+2011-02-23  Chris Kühl  <chrisk@openismus.com>
+
+	Added DISTCHECK_CONFIGURE_FLAGS to Makefile.am.
+
+2011-02-23  Chris Kühl  <chrisk@openismus.com>
+
+	Post-release bump to 2.99.2.
+
+2011-02-23  Chris Kühl  <chrisk@openismus.com>
+
+	Release: 2.99.1
+
+2011-02-23  Chris Kühl  <chrisk@openismus.com>
+
+	Added back basic mdns functionality.
+
+2011-02-23  Chris Kühl  <chrisk@openismus.com>
+
+	Fixed typo in configure.in
+
+2011-02-23  Chris Kühl  <chrisk@openismus.com>
+
+	Removed overlooked has-seperator property.
+
+2011-02-23  Daniel Nylander  <po@danielnylander.se>
+
+	Updated Swedish translation
+
+2011-02-23  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation.
+
+2011-02-23  Alexander Shopov  <ash@kambanaria.org>
+
+	Updated Bulgarian translation
+
+2011-02-22  Daniel Mustieles  <daniel.mustieles@gmail.com>
+
+	Updated Spanish translation
+
+2011-02-21  Chris Kühl  <chrisk@openismus.com>
+
+	Post-release bump to 2.99.1.
+
+2011-02-21  Chris Kühl  <chrisk@openismus.com>
+
+	Release: 2.99.0
+
+2011-02-21  Yaron Shahrabani  <sh.yaron@gmail.com>
+
+	Updated Hebrew translation.
+
+2011-02-21  Daniel Korostil  <ted.korostiled@gmail.com>
+
+	Uploaded Ukranian
+
+2011-02-21  Daniel Korostil  <ted.korostiled@gmail.com>
+
+	Uploaded Ukranian
+
+2011-02-21  Chris Kühl  <chrisk@openismus.com>
+
+	Updated POTFILE.in to use GSettings schema.
+
+2011-02-19  Chris Kühl  <chrisk@openismus.com>
+
+	Fixed typo in common/Makefile.am
+
+2011-02-18  Chris Kühl  <chrisk@openismus.com>
+
+	Fixed typo in settings schema
+
+2011-02-18  Chris Kühl  <chrisk@openismus.com>
+
+	Bumped version number to 2.99.0 to reflect deps.
+
+2011-02-18  Chris Kühl  <chrisk@openismus.com>
+
+	Completed GConf to GSettings port.
+
+2011-02-18  Chris Kühl  <chrisk@openismus.com>
+
+	Updated GtkApplication code.
+
+2011-02-17  Chris Kühl  <chrisk@openismus.com>
+
+	Use GDK_WINDOW_XID instead of GDK_WINDOW_XWINDOW.
+
+2011-02-09  Matthias Clasen  <mclasen@redhat.com>
+
+	Port to GTK+ 3
+
+	Based on a patch by Andreas Henriksson
+	https://bugzilla.gnome.org/show_bug.cgi?id=631670
+
+2011-02-09  Matthias Clasen  <mclasen@redhat.com>
+
+	Update EggSMClient from libegg
+
+2011-02-08  Daniel Korostil  <ted.korostiled@gmail.com>
+
+	Uploaded Ukranian
+
+2011-01-27  Fran Diéguez  <fran.dieguez@mabishu.com>
+
+	QA of Galician translations
+
+2011-01-23  Wei-Lun Chao  <chaoweilun@gmail.com>
+
+	Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+2010-12-23  Gheyret T.Kenji  <gheyret@gmail.com>
+
+	Added UG translation
+
+2010-12-23  Vincent Untz  <vuntz@gnome.org>
+
+	release: post-release bump to 2.32.2
+
+2010-12-23  Vincent Untz  <vuntz@gnome.org>
+
+	release: 2.32.1
+
+2010-12-23  Vincent Untz  <vuntz@gnome.org>
+
+	Stay compatible with both old and new libnotify
+
+	Since this is still a stable branch, it's worth supporting libnotify <
+	0.7.
+
+2010-12-20  Priit Laes  <plaes@plaes.org>
+
+	[l10n] Updated Estonian translation
+
+2010-12-12  Simos Xenitellis  <simos@gnome.org>
+
+	l10n: Updated Greek translation for vino
+
+2010-12-02  Jonh Wendell  <jwendell@gnome.org>
+
+	adapt to new libnotify api
+
+2010-11-20  Gheyret T.Kenji  <gheyret@gmail.com>
+
+	Added UG translation
+
+2010-11-13  Gheyret T.Kenji  <gheyret@gmail.com>
+
+	Added UG translation
+
+2010-10-29  Gheyret T.Kenji  <gheyret@gmail.com>
+
+	Added UG translation
+
+2010-10-29  Carles Ferrando  <carles.ferrando@gmail.com>
+
+	Updated Catalan (Valencian) translation
+
+2010-10-20  Takayuki KUSANO  <AE5T-KSN@asahi-net.or.jp>
+
+	Updated Japanese translation
+
+2010-10-09  Changwoo Ryu  <cwryu@debian.org>
+
+	Updated Korean translation
+
+2010-09-27  Jonh Wendell  <jwendell@gnome.org>
+
+	2.32.0
+
+2010-09-27  Jonh Wendell  <jwendell@gnome.org>
+
+	Updated m4 folder
+
+2010-09-27  Baurzhan Muftakhidinov  <baurthefirst@gmail.com>
+
+	Initial translation to Kazakh
+
+2010-09-19  Takayuki KUSANO  <AE5T-KSN@asahi-net.or.jp>
+
+	Updated Japanese translation
+
+2010-08-30  Jonh Wendell  <jwendell@gnome.org>
+
+	2.31.91
+
+2010-07-21  Fran Diéguez  <fran.dieguez@mabishu.com>
+
+	Updated Galician translations
+
+2010-07-20  krishnababu k  <kkrothap@redhat.ocm>
+
+	Updated Telugu Translations
+
+2010-07-12  Ryan Lortie  <desrt@desrt.ca>
+
+	keyring fixes
+
+2010-07-11  Petr Kovar  <pknbe@volny.cz>
+
+	Update Czech translation by Marek Cernocky
+
+2010-07-07  Ryan Lortie  <desrt@desrt.ca>
+
+	soup_session_abort() does callbacks still
+
+	so don't do the cleanup work that the handler will
+
+2010-07-07  Ryan Lortie  <desrt@desrt.ca>
+
+	okay.  preferences are done now.
+
+2010-07-05  Ryan Lortie  <desrt@desrt.ca>
+
+	radio button tweak
+
+2010-07-05  Ryan Lortie  <desrt@desrt.ca>
+
+	exit immediately if not enabled
+
+2010-07-05  Ryan Lortie  <desrt@desrt.ca>
+
+	radio buttons are working
+
+2010-07-05  Ryan Lortie  <desrt@desrt.ca>
+
+	more progress...
+
+2010-07-05  Ryan Lortie  <desrt@desrt.ca>
+
+	more...
+
+2010-07-05  Ryan Lortie  <desrt@desrt.ca>
+
+	remove GConf from server
+
+2010-07-04  Ryan Lortie  <desrt@desrt.ca>
+
+	remove generated files, bump depends
+
+2010-07-04  Ryan Lortie  <desrt@desrt.ca>
+
+	Drop GConf schemas
+
+2010-07-04  Ryan Lortie  <desrt@desrt.ca>
+
+	GSettings + GDBus + GtkApplication
+
+	goodbye to GConf, dbus-glib, libunique
+
+2010-07-03  Kristjan Schmidt  <kristjan.schmidt@googlemail.com>
+
+	Add Esperanto translation
+
+2010-07-03  Kristjan Schmidt  <kristjan.schmidt@googlemail.com>
+
+	Add Esperanto translation
+
+2010-06-29  Jonh Wendell  <jwendell@gnome.org>
+
+	2.31.4
+
+2010-06-29  Jonh Wendell  <jwendell@gnome.org>
+
+	Use debug autoconf checks provided by gnome-common
+
+2010-06-29  Jonh Wendell  <jwendell@gnome.org>
+
+	Modernize autotools
+
+2010-06-21  Halton Huo  <halton.huo@sun.com>
+
+	Make code is compatible with diffrent ifaddrs strcucture
+
+	OpenSolaris (after b137) uses "struct sockaddr_storage", not "struct sockaddr"
+	for ifa_addr member of "struct ifaddrs". This is followed RFC2553. Before
+	BSD and Linux systems move to follow RFC2553, the codes need to be compiled
+	under both cases.
+
+	Fixes https://bugzilla.gnome.org/show_bug.cgi?id=617848
+
+2010-06-21  Jonh Wendell  <jwendell@gnome.org>
+
+	Added some comments for translators
+
+	Closes #614112.
+
+2010-06-21  Jonh Wendell  <jwendell@gnome.org>
+
+	Fixed POTFILES.in
+
+2010-06-21  Jonh Wendell  <jwendell@gnome.org>
+
+	Get rid of SexyUrlLabel
+
+2010-06-21  Marcus Carlson  <gnomebugzilla@mejlamej.nu>
+
+	Use GtkInfoBar
+
+2010-06-21  Thomas Hindoe Paaboel Andersen  <phomes@gmail.com>
+
+	Use AM_SILENT_RULES
+
+2010-06-21  Javier Jardón  <jjardon@gnome.org>
+
+	Use GtkSpinner
+
+	Instead own copy of gedit-spinner
+
+	Fixes https://bugzilla.gnome.org/show_bug.cgi?id=612503
+
+2010-06-18  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	Activate the Telepathy service instead of the Vino one
+
+2010-06-18  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	add Telepathy client file
+
+2010-06-18  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	No need to wait that the connection and channel are ready
+
+	TpSimpleHandler prepare them for us.
+
+2010-06-18  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	tube-server: replace tube-path and channel-properties props by the TpChannel itself
+
+2010-06-18  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	tube-server: replace the connection-path property by the connection itself
+
+2010-06-18  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	remove ShareWithTube D-Bus method
+
+	We don't need it any more as Vino is proper channel handler.
+
+2010-06-18  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	Be a proper Handler
+
+2010-06-18  Guillaume Desmottes  <guillaume.desmottes@collabora.co.uk>
+
+	bump telepathy-glib dep to 0.11.6
+
+	We need it for TpSimpleHandler.
+
+2010-06-07  Matej Urbančič  <mateju@svn.gnome.org>
+
+	Updated Slovenian translation
+
+2010-06-07  Sira Nokyoongtong  <gumaraa@gmail.com>
+
+	Updated Thai translation.
+
+2010-05-29  Priit Laes  <plaes@plaes.org>
+
+	Estonian translation updated
+
+2010-05-18  Thomas Thurman  <tthurman@gnome.org>
+
+	Updated Shavian translation
+
+2010-05-12  Thomas Thurman  <tthurman@gnome.org>
+
+	Updated Shavian transliteration
+
+2010-04-26  Andika Triwidada  <andika@gmail.com>
+
+	Updated Indonesian translation
+
+2010-04-25  Leonid Kanter  <leon@asplinux.ru>
+
+	fixed https://bugzilla.gnome.org/show_bug.cgi?id=616359  Please enter the commit message for your changes. Lines starting
+
+2010-04-21  Carles Ferrando  <carles.ferrando@gmail.com>
+
+	Updated Catalan (Valencian) translation
+
+2010-04-18  Luca Ferretti  <lferrett@gnome.org>
+
+	Udated Italian translation
+
+2010-04-08  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	Updated Thai translation.
+
+2010-03-30  Jonh Wendell  <jwendell@voipforall.com.br>
+
+	2.28.2
+
+2010-03-29  Jordi Serratosa  <jordis.lists@gmail.com>
+
+	Fixes to Catalan translation
+
+2010-03-29  Sweta Kothari  <swkothar@redhat.com>
+
+	Updated Gujarati Translations
+
+2010-03-28  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation
+
+2010-03-28  Jamil Ahmed  <itsjamil@gmail.com>
+
+	Updated Bengali translation
+
+2010-03-27  Inaki Larranaga Murgoitio  <dooteo@zundan.com>
+
+	Updated Basque language
+
+2010-03-24  Inaki Larranaga Murgoitio  <dooteo@zundan.com>
+
+	Updated Basque language
+
+2010-03-20  Wouter Bolsterlee  <wbolster@gnome.org>
+
+	Dutch translation updated by Wouter Bolsterlee
+
+2010-03-13  Torstein Adolf Winterseth  <kvikende@fsfe.org>
+
+	Updated Norwegian Nynorsk translation
+
+2010-03-07  Peteris Krisjanis  <pecisk@gmail.com>
+
+	Updated Latvian translation.
+
+2010-02-26  Piotr Drąg  <piotrdrag@gmail.com>
+
+	Updated Polish translation
+
+2010-02-15  Fran Diéguez  <frandieguez@ubuntu.com>
+
+	Updated Galician Translation
+
+2010-01-24  Kenneth Nielsen  <k.nielsen81@gmail.com>
+
+	Updated Danish translation
+
+2010-01-04  Xandru Armesto Fernandez  <xandru@softastur.org>
+
+	Updated asturian translation
+
+2009-11-24  Tao Wei  <weitao1979@gmail.com>
+
+	Updated Simplified Chinese translation.
+
+2009-11-17  Peteris Krisjanis  <pecisk@gmail.com>
+
+	Updated Latvian translation.
+
+2009-11-15  Thomas Thurman  <tthurman@gnome.org>
+
+	Shavian translation
+
+2009-10-20  Yaron Shahrabani  <sh.yaron@gmail.com>
+
+	Updated Hebrew translation
+
+2009-10-19  Jonh Wendell  <jwendell@gnome.org>
+
+	Check if mDNS is active before asking for a local hostname.
+
+	Closes Ubuntu #440712.
+
+2009-10-19  Jonh Wendell  <jwendell@gnome.org>
+
+	2.28.1 release
+
+2009-10-15  Matthias Clasen  <mclasen@redhat.com>
+
+	Don't use restart feature of session manager
+
+2009-10-15  Jasper Lievisse Adriaanse  <jasper@humppa.nl>
+
+	Fix build in OpenBSD
+
+2009-10-13  Takeshi AIHANA  <takeshi.aihana@gmail.com>
+
+	2009-10-13  Updated Japanese translation.
+
+2009-10-06  Leonid Kanter  <leon@asplinux.ru>
+
+	Updated Russian translation by Eugenia Vlasova <jane.vlasova@gmail.com>
+
+2009-09-26  Tomasz Dominikowski  <dominikowski@gmail.com>
+
+	Updated Polish translation
+
+2009-09-21  Jonh Wendell  <jwendell@gnome.org>
+
+	2.28.0 release
+
+2009-09-21  Shankar Prasad  <svenkate@redhat.com>
+
+	Updated Kannada(kn) translation
+
+2009-09-21  Joan Duran  <jodufi@gmail.com>
+
+	Updated Catalan translation
+
+2009-09-20  Amitakhya Phukan  <aphukan@fedoraproject.org>
+
+	Updating Assamese translations.
+
+2009-09-19  Christian Kirbach  <Christian.Kirbach@googlemail.com>
+
+	Updated German translation
+
+2009-09-19  Kostas Papadimas  <pkst@gnome.org>
+
+	Updated Greek translation.
+
+2009-09-19  Pavel Šefránek  <pavel.sefranek@gmail.com>
+
+	Update Czech translation
+
+2009-09-19  Rajesh Ranjan  <rranjan@rranjan.csb>
+
+	maithili update, translated by Sangeeta Kumari
+
+2009-09-18  Luca Ferretti  <elle.uca@libero.it>
+
+	Added Italian translation
+
+2009-09-18  Matej Urbančič  <mateju@svn.gnome.org>
+
+	Updated Slovenian translation
+
+2009-09-17  Adi Roiban  <adi@roiban.ro>
+
+	Updated Romanian translation
+
+2009-09-17  Maxim V. Dziumanenko  <dziumanenko@gmail.com>
+
+	Added Ukrainian translation
+
+2009-09-17  Manoj Kumar Giri  <mgiri@mgiri.csb>
+
+	Upadated Oriya Translation
+
+2009-09-17  Shankar Prasad  <svenkate@redhat.com>
+
+	Updated Kannada(kn) translation
+
+2009-09-14  Carles Ferrando  <carles.ferrando@gmail.com>
+
+	Added Catalan (Valencian) translation
+
+2009-09-14  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Update Norwegian bokmål translation.
+
+2009-09-14  Rajesh Ranjan  <rranjan@rranjan.csb>
+
+	hindi update by Rajesh Ranjan
+
+2009-09-12  Bruce Cowan  <bcowan@fastmail.co.uk>
+
+	Updated British English translation
+
+2009-09-12  Ask H. Larsen  <asklarsen@gmail.com>
+
+	Updated Danish translation
+
+2009-09-11  Fábio Nogueira  <fnogueira@gnome.org>
+
+	Corrected some inconsistencies about quotations marks in Brazilian Portuguese translation
+
+2009-09-11  Ani  <peter.ani@gmail.com>
+
+	Updaeted Malayalam Translations
+
+2009-09-11  krishnababu k  <kkrothap@redhat.ocm>
+
+	Updated Telugu Translations
+
+2009-09-10  Rajesh Ranjan  <rranjan@rranjan.csb>
+
+	hindi update by Rajesh Ranjan
+
+2009-09-10  Gabor Kelemen  <kelemeng@gnome.hu>
+
+	Hungarian translation updated
+
+2009-09-07  Jonh Wendell  <jwendell@gnome.org>
+
+	2.27.92 release
+
+2009-09-06  G Karunakar  <karunakar@indlinux.org>
+
+	Updated Hindi translation
+
+2009-09-06  Tomasz Torcz  <zdzichu@irc.pl>
+
+	Fixed a warning in libgcrypt initialization
+
+2009-09-06  Jonh Wendell  <jwendell@gnome.org>
+
+	Use integer (instead of double) as the port parameter in dbus calls.
+
+	Regression in the tube merge. Closes #594104.
+
+2009-09-06  Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
+
+	Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+2009-09-05  Ivar Smolin  <okul@linux.ee>
+
+	Updating Estonian translation
+
+2009-09-05  Jamil Ahmed  <itsjamil@gmail.com>
+
+	Updated Bengali translation
+
+2009-09-04  A S Alam  <aalam@users.sf.net>
+
+	Updating Translation for Punjabi
+
+2009-09-03  Jonh Wendell  <jwendell@gnome.org>
+
+	Make Avahi use the VinoServer interface.
+
+	Closes #593191 -  Still publishing over avahi if network_interface is set
+
+2009-09-01  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Update Norwegian bokmål translation.
+
+2009-08-31  Khaled Hosny  <khaledhosny@eglug.org>
+
+	Updated Arabic translation
+
+2009-08-31  Sandeep Shedmake  <sshedmak@redhat.com>
+
+	Updated Marathi Translations
+
+2009-08-30  Baris Cicek  <baris@teamforce.name.tr>
+
+	Updated Turkish translation.
+
+2009-08-29  Tomasz Dominikowski  <dominikowski@gmail.com>
+
+	Updated Polish translation
+
+2009-08-29  Changwoo Ryu  <cwryu@debian.org>
+
+	Update Korean translation
+
+2009-08-28  Jonh Wendell  <jwendell@gnome.org>
+
+	Use dprintf instead of g_printerr
+
+2009-08-28  Jonh Wendell  <jwendell@gnome.org>
+
+	Use dprintf with the new category 'tube' instead of g_debug/g_printerr
+
+2009-08-28  Jonh Wendell  <jwendell@gnome.org>
+
+	Added "tube" category to dprintf debug messages.
+
+2009-08-28  Jonh Wendell  <jwendell@gnome.org>
+
+	Fixed programming style. Also use dprintf instead of g_debug.
+
+2009-08-28  Jonh Wendell  <jwendell@gnome.org>
+
+	Fix a regression that allows more than one instance od the server to run.
+
+	It was introduced in Telepathy Tube stuff.
+
+2009-08-28  Sweta Kothari  <swkothar@redhat.com>
+
+	Updated Gujarati Translations
+
+2009-08-28  Miloš Popović  <mpopovic@src.gnome.org>
+
+	Updated Serbian translation
+
+2009-08-28  Miloš Popović  <mpopovic@src.gnome.org>
+
+	Updated Serbian translation
+
+2009-08-27  Inaki Larranaga Murgoitio  <dooteo@zundan.com>
+
+	Updated Basque language
+
+2009-08-26  ifelix  <ifelix@redhat.com>
+
+	Updated Tamil Translations
+
+2009-08-25  Duarte Loreto  <happyguy_pt@hotmail.com>
+
+	Updated Portuguese translation
+
+2009-08-25  Jonh Wendell  <jwendell@gnome.org>
+
+	Updated Brazilian Portuguese translation
+
+2009-08-25  Jonh Wendell  <jwendell@gnome.org>
+
+	2.27.91 release
+
+2009-08-25  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	VinoTubeServer uses the mc5 avatar cache and no more the mc4 avatar cache
+
+2009-08-25  Runa Bhattacharjee  <runab@redhat.com>
+
+	Updated Bengali India Translations
+
+2009-08-23  Gintautas Miliauskas  <gintautas@miliauskas.lt>
+
+	Updated Lithuanian translation.
+
+2009-08-22  Claude Paroz  <claude@2xlibre.net>
+
+	Updated French translation
+
+2009-08-20  Alexander Shopov  <ash@contact.bg>
+
+	Updated Bulgarian translation
+
+2009-08-19  Antón Méixome  <meixome@mancomun.org>
+
+	Updated Galician Translation
+
+2009-08-17  Seán de Búrca  <leftmostcat@gmail.com>
+
+	Added Irish translation
+
+2009-08-15  Tommi Vainikainen  <thv@iki.fi>
+
+	Updated Finnish translation
+
+2009-08-13  Jorge González  <jorgegonz@svn.gnome.org>
+
+	Updated Spanish translation
+
+2009-08-13  Jochen Skulj  <jochen@jochenskulj.de>
+
+	Updated German translation
+
+2009-08-13  Daniel Nylander  <po@danielnylander.se>
+
+	Updated Swedish translation
+
+2009-08-13  Daniel Nylander  <po@danielnylander.se>
+
+	Updated Swedish translation
+
+2009-08-13  Daniel Nylander  <po@danielnylander.se>
+
+	Updated Swedish translation
+
+2009-08-12  Mattias Põldaru  <mahfiaz gmail com>
+
+	Updating Estonian translation
+
+2009-08-12  Jonh Wendell  <jwendell@gnome.org>
+
+	Return values other than zero if the program fails.
+
+2009-08-12  Jonh Wendell  <jwendell@gnome.org>
+
+	Do not crash if a GConf server is not available. Ubuntu #267760.
+
+2009-08-12  Antón Méixome  <meixome@mancoumun.org>
+
+	Updated Galician translation
+
+2009-08-12  Tommi Vainikainen  <thv@iki.fi>
+
+	Updated Finnish translation
+
+2009-08-11  Jonh Wendell  <jwendell@gnome.org>
+
+	2.27.90 release
+
+2009-08-11  Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
+
+	Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+2009-08-06  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation.
+
+2009-08-06  Kjartan Maraas  <kmaraas@gnome.org>
+
+	Updated Norwegian bokmål translation.
+
+2009-08-06  Fran Dieguez  <fran.dieguez@glug.es>
+
+	Updated Galician Translation
+
+2009-08-06  Jonh Wendell  <jwendell@gnome.org>
+
+	Fix a compiler warning, closes #590765
+
+2009-08-04  Jorge González  <jorgegonz@svn.gnome.org>
+
+	Updated Spanish translation
+
+2009-07-29  Robert Ancell  <robert.ancell@gmail.com>
+
+	Undo Changelog change (Changelog no longer used)
+
+2009-07-29  Robert Ancell  <robert.ancell@gmail.com>
+
+	Change linking order so that external libraries are linked after vino code. Closes #589953.
+
+2009-07-29  Daniel Nylander  <po@danielnylander.se>
+
+	Updated Swedish translation
+
+2009-07-28  Mattias Põldaru  <mahfiaz gmail com>
+
+	Updating Estonian translation
+
+2009-07-27  Jonh Wendell  <jwendell@gnome.org>
+
+	2.27.5 release
+
+2009-07-27  Jonh Wendell  <jwendell@gnome.org>
+
+	Fixed POTFILES.in
+
+2009-07-27  Jonh Wendell  <jwendell@gnome.org>
+
+	Added dbus-interface.xml to Makefile's extra_dist
+
+2009-07-23  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Remove telepathy stuff in VinoStatusIcon
+
+2009-07-23  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Instantiate VinoTubeServersManager to use VinoStatusTubeIcon
+
+2009-07-23  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Instantiate VinoStatusTubeIcon in VinoTubeServer
+
+2009-07-23  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Remove an useless method
+
+2009-07-23  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Add display_status_icon property to set if the VinoServer will use the vino status icon or not
+
+2009-07-23  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Instantiate vino-types.h in VinoTubeServer
+
+2009-07-23  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Instantiate vino-types.h in VinoServer
+
+2009-07-23  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Add the new files to the makefile
+
+2009-07-23  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Add vino-types.h to allow multi inclusion
+
+2009-07-23  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Add VinoStatusTubeIcon files
+
+2009-07-22  Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
+
+	Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+2009-07-07  Daniel Nylander  <po@danielnylander.se>
+
+	Updated Swedish translation
+
+2009-07-07  Yaron Shahrabani  <sh.yaron@gmail.com>
+
+	Updated Hebrew translation
+
+2009-07-02  Laurent Coudeur  <laurentc@iol.ie>
+
+	Updated French translation
+
+2009-07-01  Maxim V. Dziumanenko  <dziumanenko@gmail.com>
+
+	Updated Ukrainian translation
+
+2009-07-01  Maxim V. Dziumanenko  <dziumanenko@gmail.com>
+
+	Updated Ukrainian translation
+
+2009-06-25  Mattias Põldaru  <mahfiaz gmail com>
+
+	Updating Estonian translation
+
+2009-06-24  A S Alam  <aalam@users.sf.net>
+
+	updating translation for Punjabi
+
+2009-06-23  drtvasudevan  <agnihot3@gmail.com>
+
+	Updated Tamil translation
+
+2009-06-21  Javier Jardón  <javierjc1982@gmail.com>
+
+	Fix ui files directory
+
+	* capplet/vino-url-webservice.c
+	(vino_url_webservice_get_random)
+
+2009-06-21  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
+
+	Updated Spanish translation
+
+2009-06-21  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
+
+	Updated Spanish translation
+
+2009-06-20  Funda Wang  <fundawang@gmail.com>
+
+	fix Bug 584330 – vino does not build with gnutls 2.8
+
+2009-06-20  Claude Paroz  <claude@2xlibre.net>
+
+	fix Bug 586455 – Remove markup from translatable strings
+
+2009-06-19  Jonh Wendell  <jwendell@gnome.org>
+
+	Added missing files to POTFILES.in
+
+2009-06-19  Jonh Wendell  <jwendell@gnome.org>
+
+	Fix Bug 330691 – show .local hostname if avahi is present
+
+2009-06-19  Javier Jardón  <javierjc1982@gmail.com>
+
+	Migrate from libglade to GtkBuilder (solves GnomeBug:582507)
+
+	* capplet/Makefile.am
+	* capplet/vino-preferences.c
+	(vino_preferences_dialog_setup_allowed_toggle),
+	(vino_preferences_dialog_setup_prompt_enabled_toggle),
+	(vino_preferences_dialog_setup_view_only_toggle),
+	(vino_preferences_dialog_setup_icon_visibility),
+	(vino_preferences_dialog_get_use_password),
+	(vino_preferences_dialog_setup_password_entry),
+	(vino_preferences_dialog_setup_use_upnp_toggle),
+	(vino_preferences_dialog_setup_message_box),
+	(vino_preferences_start_listening),
+	(vino_preferences_dialog_init),
+	(vino_preferences_dialog_finalize)
+	* capplet/vino-preferences.glade: removed
+	* capplet/vino-preferences.ui: new ui file
+	* configure.in
+	* po/POTFILES.in
+	* server/Makefile.am
+	* server/vino-prompt.c
+	(vino_prompt_handle_dialog_response),
+	(vino_prompt_setup_icons)
+	* server/vino-prompt.glade: removed
+	* server/vino-prompt.ui: new ui file
+
+2009-06-19  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	Fix Bug 585838 – vino fails to build outside source tree
+
+2009-06-19  Jonh Wendell  <jwendell@gnome.org>
+
+	Drop libgnome dependency. Use EggSmClient. Closes #500632.
+
+2009-06-19  Jonh Wendell  <jwendell@gnome.org>
+
+	fixed a warning
+
+2009-06-19  Jonh Wendell  <jwendell@gnome.org>
+
+	ignore a file
+
+2009-06-19  Jonh Wendell  <jwendell@gnome.org>
+
+	removed a warning
+
+2009-06-15  Ivar Smolin  <okul@linux.ee>
+
+	Updating Estonian translation
+
+2009-06-13  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
+
+	Updated Spanish translation
+
+2009-06-12  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Add the avatar's contact in vino notification
+
+2009-06-12  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Add TpContact Alias in the status notification
+
+2009-06-07  Javier Jardón  <javierjc1982@gmail.com>
+
+	Use accessor functions instead direct access (closes GnomeBug:585042)
+
+	* capplet/vino-preferences.c
+	(vino_preferences_dialog_setup_allowed_toggle)
+
+2009-06-07  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Instantiate VinoTubeServer in Vino
+
+2009-06-07  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Remove an useless define
+
+2009-06-07  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Adding new files to Makefile
+
+2009-06-07  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Adding the tp-glib dependency
+
+2009-06-07  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Add VinoDbusError files
+
+2009-06-07  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Add VinoTubeServersManager
+
+2009-06-07  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Add VinoTubeServer
+
+2009-06-07  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Add ShareWithTube dbus method
+
+2009-06-07  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Add service file for vino
+
+2009-06-07  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Add use_dbus_listener property to make VinoServer more flexible
+
+2009-05-30  Ask H. Larsen  <asklarsen@gmail.com>
+
+	Updated Danish translation
+
+2009-05-23  drtvasudevan  <agnihot3@gmail.com>
+
+	Updated Tamil translation
+
+2009-05-23  drtvasudevan  <agnihot3@gmail.com>
+
+	Updated Tamil translation
+
+2009-05-19  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Old g-object style removed
+
+2009-05-19  Alexander Shopov  <ash@contact.bg>
+
+	Updated Bulgarian translation
+
+2009-05-17  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
+
+	Updated Spanish translation
+
+2009-05-17  Jonh Wendell  <jwendell@gnome.org>
+
+	Ignoring vino.pot
+
+2009-05-17  Jonh Wendell  <jwendell@gnome.org>
+
+	Updated Brazilian Portuguese translation
+
+2009-05-17  Jonh Wendell  <jwendell@gnome.org>
+
+	Ignoring dbus-interface-glue.h
+
+2009-05-17  Gabor Kelemen  <kelemeng@gnome.hu>
+
+	Hungarian translation updated
+
+2009-05-16  Alexis Ballier  <aballier@gentoo.org>
+
+	Include netinet/in.h for sockaddr_in. POSIX specifies the declaration to be there, this is not a problem on Linux because other headers already include it but on FreeBSD it is.
+
+2009-05-15  Matej Urban  <matej.urban@gmail.com>
+
+	Updated Slovenian translation
+
+2009-05-15  Ivar Smolin  <okul@linux.ee>
+
+	Updating Estonian translation
+
+2009-05-15  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	fix bug 582619 - remove unused function
+
+2009-05-15  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	fix bug 582608 - set pointers to NULL after freeing, otherwise you can't create a VinoServer after the destruction of another
+
+2009-05-13  Marios Zindilis  <m.zindilis@dmajor.org>
+
+	Updated Greel translation
+
+2009-05-12  Claude Paroz  <claude@2xlibre.net>
+
+	Updated French translation
+
+2009-05-12  Luca Ferretti  <elle.uca@libero.it>
+
+	Fix UTF-8 encoding declaration
+
+2009-05-12  Luca Ferretti  <elle.uca@libero.it>
+
+	Updated Italian translation
+
+2009-05-12  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	port from libdbus to dbus-glib
+
+2009-05-12  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	Generate DBus interface glue
+
+2009-05-12  Arnaud Maillet  <arnaud.maillet@collabora.co.uk>
+
+	add xml file
+
+2009-05-12  Halton Huo  <halton.huo@sun.com>
+
+	Fixes bug #581822 - vino server can not detect the real IP address On Solaris.
+
+2009-05-08  Halton Huo  <halton.huo@sun.com>
+
+	* server/vino-dbus-listener.c:
+	(get_local_hostname): Use strncmp rather than strcmp to deal with different
+	loopback interface for Linux and Solaris.
+
+2009-05-11  kutio  <kutioo@gmail.com>
+
+	fix bug 580114
+
+	fix bug 580114
+
+2009-05-11  Jonh Wendell  <jwendell@gnome.org>
+
+	Added an option to disable XDamage extension.
+
+	In some environments the XDamage extension does not work properly
+	on 3D desktops. This adds a boolean gconf key 'disable_xdamage'.
+	If it is set to TRUE, VinoFB object willl not use it. Closes #533613.
+
+2009-05-03  Javier Jardón  <javierjc1982@gmail.com>
+
+	Use g_timeout_add_seconds to reduce wakeups (closes:GnomeBug #581204)
+
+	* server/vino-server.c
+	(vino_server_defer_client_auth)
+
+2009-05-02  Thomas Hindoe Paaboel Andersen  <phomes@gmail.com>
+
+	Replace deprecated gtk_status_icon_set_tooltip
+
+	Use gtk_status_icon_set_tooltip_text instead. Also bumps required gtk to 2.16 as needed for gtk_status_icon_set_tooltip_text.
+	GNOME Bug #578463
+
+2009-05-02  Jonh Wendell  <jwendell@gnome.org>
+
+	Removed a warning
+
+2009-05-02  Jonh Wendell  <jwendell@gnome.org>
+
+	Fixed vino.doap
+
+2009-05-02  Jonh Wendell  <jwendell@gnome.org>
+
+	Added .gitignore
+
+2009-04-20  Jonh Wendell  <jwendell@gnome.org>
+
+	Added vino.doap file
+
+2009-04-15  Ihar Hrachyshka  <iharh@src.gnome.org>
+
+	Added Belarusian translation.
+
+	svn path=/trunk/; revision=1169
+

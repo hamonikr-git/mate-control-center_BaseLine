@@ -1,0 +1,676 @@
+# Swedish messages for gconf-editor.
+# Copyright (C) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+# Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008.
+# Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gconf-editor\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-27 18:51+0100\n"
+"PO-Revision-Date: 2011-02-27 18:52+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/gconf-editor.desktop.in.in.h:1
+#: ../src/gconf-editor-window.c:393
+#: ../src/gconf-editor-window.c:395
+#: ../src/gconf-editor-window.c:873
+#: ../src/gconf-editor-window.c:1372
+msgid "Configuration Editor"
+msgstr "Konfigurationsredigerare"
+
+#: ../data/gconf-editor.desktop.in.in.h:2
+msgid "Directly edit your entire configuration database"
+msgstr "Redigera hela din konfigurationsdatabas direkt"
+
+#: ../data/gconf-editor.schemas.in.h:1
+msgid "Bookmarks"
+msgstr "Bokmärken"
+
+#: ../data/gconf-editor.schemas.in.h:2
+msgid "gconf-editor folder bookmarks"
+msgstr "Mappbokmärken för gconf-editor"
+
+#: ../src/gconf-bookmarks-dialog.c:205
+msgid "Edit Bookmarks"
+msgstr "Redigera bokmärken"
+
+#: ../src/gconf-cell-renderer.c:144
+#: ../src/gconf-cell-renderer.c:343
+msgid "<no value>"
+msgstr "<inget värde>"
+
+#: ../src/gconf-editor-window.c:359
+#, c-format
+msgid "Couldn't display help: %s"
+msgstr "Kunde inte visa hjälp: %s"
+
+#: ../src/gconf-editor-window.c:399
+msgid "An editor for the GConf configuration system."
+msgstr "En redigerare för konfigurationssystemet GConf."
+
+#: ../src/gconf-editor-window.c:402
+msgid "translator-credits"
+msgstr ""
+"Daniel Nylander <po@danielnylander.se>\n"
+"Christian Rose\n"
+"\n"
+"Skicka synpunkter på översättningen till\n"
+"<tp-sv@listor.tp-sv.se>."
+
+#: ../src/gconf-editor-window.c:429
+#, c-format
+msgid ""
+"Couldn't unset key. Error was:\n"
+"%s"
+msgstr ""
+"Kunde inte nollställa nyckeln. Felet var:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:454
+#, c-format
+msgid ""
+"Could not create key. The error is:\n"
+"%s"
+msgstr ""
+"Kunde inte skapa nyckel. Felet är:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:536
+#, c-format
+msgid ""
+"Could not change key value. Error message:\n"
+"%s"
+msgstr ""
+"Kunde inte ändra nyckelvärde. Felmeddelande:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:568
+msgid "Currently pairs and schemas can't be edited. This will be changed in a later version."
+msgstr "För tillfället kan par och scheman inte redigeras. Detta kommer att ändras i en senare version."
+
+#: ../src/gconf-editor-window.c:648
+#, c-format
+msgid ""
+"Could not set value. Error was:\n"
+"%s"
+msgstr ""
+"Kunde inte ställa in värde. Felet var:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:684
+#: ../src/gconf-editor-window.c:728
+#, c-format
+msgid ""
+"Could not sync value. Error was:\n"
+"%s"
+msgstr ""
+"Kunde inte synkronisera värde. Felet var:\n"
+"%s"
+
+# Arkiv, Arkiv och inget annat än Arkiv.
+#: ../src/gconf-editor-window.c:740
+msgid "_File"
+msgstr "_Arkiv"
+
+#: ../src/gconf-editor-window.c:741
+msgid "_Edit"
+msgstr "_Redigera"
+
+#: ../src/gconf-editor-window.c:742
+msgid "_Search"
+msgstr "_Sök"
+
+#: ../src/gconf-editor-window.c:743
+msgid "_Bookmarks"
+msgstr "_Bokmärken"
+
+#: ../src/gconf-editor-window.c:744
+msgid "_Help"
+msgstr "_Hjälp"
+
+#: ../src/gconf-editor-window.c:746
+msgid "New _Settings Window"
+msgstr "Nytt _inställningsfönster"
+
+#: ../src/gconf-editor-window.c:747
+msgid "Open a new Configuration Editor window editing current settings"
+msgstr "Öppna ett nytt konfigurationsredigerarfönster som redigerar de aktuella inställningarna"
+
+#: ../src/gconf-editor-window.c:749
+msgid "New _Defaults Window"
+msgstr "Nytt _standardinställningsfönster"
+
+#: ../src/gconf-editor-window.c:750
+msgid "Open a new Configuration Editor window editing system default settings"
+msgstr "Öppna ett nytt konfigurationsredigerarfönster som redigerar systemets standardinställningar"
+
+#: ../src/gconf-editor-window.c:752
+msgid "New _Mandatory Window"
+msgstr "Nytt _obligatoriskt fönster"
+
+#: ../src/gconf-editor-window.c:753
+msgid "Open a new Configuration Editor window editing system mandatory settings"
+msgstr "Öppnar ett nytt konfigurationsredigerarfönster som redigerar systemets obligatoriska inställningar"
+
+#: ../src/gconf-editor-window.c:755
+msgid "_Close Window"
+msgstr "_Stäng fönster"
+
+#: ../src/gconf-editor-window.c:755
+msgid "Close this window"
+msgstr "Stäng detta fönster"
+
+#: ../src/gconf-editor-window.c:757
+msgid "_Quit"
+msgstr "_Avsluta"
+
+#: ../src/gconf-editor-window.c:757
+msgid "Quit the Configuration Editor"
+msgstr "Avsluta konfigurationsredigeraren"
+
+#: ../src/gconf-editor-window.c:760
+msgid "_Copy Key Name"
+msgstr "_Kopiera nyckelnamn"
+
+#: ../src/gconf-editor-window.c:760
+msgid "Copy the name of the selected key"
+msgstr "Kopiera namnet på den valda nyckeln"
+
+#: ../src/gconf-editor-window.c:762
+msgid "_Find..."
+msgstr "_Sök..."
+
+#: ../src/gconf-editor-window.c:762
+msgid "Find patterns in keys and values"
+msgstr "Sök mönster i nycklar och värden"
+
+#: ../src/gconf-editor-window.c:764
+msgid "_List Recent Keys"
+msgstr "_Visa senaste nycklar i lista"
+
+#: ../src/gconf-editor-window.c:764
+msgid "Show recently modified keys"
+msgstr "Visa nyligen ändrade nycklar"
+
+#: ../src/gconf-editor-window.c:767
+msgid "_Add Bookmark"
+msgstr "_Lägg till bokmärke"
+
+#: ../src/gconf-editor-window.c:767
+msgid "Add a bookmark to the selected directory"
+msgstr "Lägg till ett bokmärke till den valda katalogen"
+
+#: ../src/gconf-editor-window.c:769
+msgid "_Edit Bookmarks"
+msgstr "_Redigera bokmärken"
+
+#: ../src/gconf-editor-window.c:769
+msgid "Edit the bookmarks"
+msgstr "Redigera bokmärkena"
+
+#: ../src/gconf-editor-window.c:772
+msgid "_Contents"
+msgstr "_Innehåll"
+
+#: ../src/gconf-editor-window.c:772
+msgid "Open the help contents for the Configuration Editor"
+msgstr "Öppna hjälpinnehållsförteckningen för konfigurationsredigeraren"
+
+#: ../src/gconf-editor-window.c:774
+msgid "_About"
+msgstr "_Om"
+
+#: ../src/gconf-editor-window.c:774
+msgid "Show the about dialog for the Configuration Editor"
+msgstr "Visa omdialogrutan för konfigurationsredigeraren"
+
+#: ../src/gconf-editor-window.c:777
+msgid "_New Key..."
+msgstr "_Ny nyckel..."
+
+#: ../src/gconf-editor-window.c:777
+msgid "Create a new key"
+msgstr "Skapa en ny nyckel"
+
+#: ../src/gconf-editor-window.c:779
+msgid "_Edit Key..."
+msgstr "_Redigera nyckel..."
+
+#: ../src/gconf-editor-window.c:779
+msgid "Edit the selected key"
+msgstr "Redigera den valda nyckeln"
+
+#: ../src/gconf-editor-window.c:781
+msgid "_Unset Key"
+msgstr "_Nollställ nyckel"
+
+#: ../src/gconf-editor-window.c:781
+msgid "Unset the selected key"
+msgstr "Nollställ den valda nyckeln"
+
+#: ../src/gconf-editor-window.c:783
+msgid "Set as _Default"
+msgstr "Ställ in som _standard"
+
+#: ../src/gconf-editor-window.c:783
+msgid "Set the selected key to be the default"
+msgstr "Ställ in den valda nyckeln att vara standardvärdet"
+
+#: ../src/gconf-editor-window.c:785
+msgid "Set as _Mandatory"
+msgstr "Ställ in som _obligatorisk"
+
+# Konstig originalsträng...
+#: ../src/gconf-editor-window.c:785
+msgid "Set the selected key to the mandatory"
+msgstr "Ställ in den valda nyckeln till de obligatoriska"
+
+#: ../src/gconf-editor-window.c:867
+msgid "Configuration Editor (Default settings)"
+msgstr "Konfigurationsredigerare (Standardinställningar)"
+
+#: ../src/gconf-editor-window.c:870
+#: ../src/gconf-editor-window.c:1369
+msgid "Configuration Editor (Mandatory settings)"
+msgstr "Konfigurationsredigerare (Obligatoriska inställningar)"
+
+#: ../src/gconf-editor-window.c:1115
+#: ../src/gconf-editor-window.c:1116
+#: ../src/gconf-editor-window.c:1117
+#: ../src/gconf-editor-window.c:1118
+#: ../src/gconf-editor-window.c:1147
+#: ../src/gconf-editor-window.c:1155
+#: ../src/gconf-editor-window.c:1164
+#: ../src/gconf-editor-window.c:1715
+#: ../src/gconf-editor-window.c:1727
+#: ../src/gconf-editor-window.c:1739
+#: ../src/gconf-editor-window.c:1754
+msgid "(None)"
+msgstr "(Inget)"
+
+#: ../src/gconf-editor-window.c:1328
+#: ../src/gconf-editor-window.c:1338
+#, c-format
+msgid ""
+"Cannot create GConf engine. Error was:\n"
+"%s"
+msgstr ""
+"Kunde inte skapa GConf-motor. Felet var:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:1366
+msgid "Configuration Editor (Defaults settings)"
+msgstr "Konfigurationsredigerare (Standardinställningar)"
+
+#: ../src/gconf-editor-window.c:1611
+msgid "Name"
+msgstr "Namn"
+
+#: ../src/gconf-editor-window.c:1635
+msgid "Value"
+msgstr "Värde"
+
+#: ../src/gconf-editor-window.c:1662
+msgid "Key Documentation"
+msgstr "Nyckeldokumentation"
+
+#: ../src/gconf-editor-window.c:1691
+#: ../src/gconf-key-editor.c:614
+msgid "This key is not writable"
+msgstr "Denna nyckel är inte skrivbar"
+
+#: ../src/gconf-editor-window.c:1704
+msgid "This key has no schema"
+msgstr "Denna nyckel har inget schema"
+
+#: ../src/gconf-editor-window.c:1709
+msgid "Key name:"
+msgstr "Nyckelnamn:"
+
+#: ../src/gconf-editor-window.c:1722
+msgid "Key owner:"
+msgstr "Nyckelägare:"
+
+#: ../src/gconf-editor-window.c:1734
+msgid "Short description:"
+msgstr "Kort beskrivning:"
+
+#: ../src/gconf-editor-window.c:1747
+msgid "Long description:"
+msgstr "Lång beskrivning:"
+
+#: ../src/gconf-key-editor.c:87
+msgid "T_rue"
+msgstr "_Sant"
+
+#: ../src/gconf-key-editor.c:90
+#: ../src/gconf-key-editor.c:247
+#: ../src/gconf-key-editor.c:355
+#: ../src/gconf-key-editor.c:645
+msgid "_False"
+msgstr "_Falskt"
+
+#. These have to be ordered so the EDIT_ enum matches the
+#. * menu indices
+#.
+#. These have to be ordered so the EDIT_ enum matches the
+#. * combobox indices
+#.
+#: ../src/gconf-key-editor.c:125
+#: ../src/gconf-key-editor.c:155
+msgid "Integer"
+msgstr "Heltal"
+
+#: ../src/gconf-key-editor.c:126
+#: ../src/gconf-key-editor.c:156
+msgid "Boolean"
+msgstr "Booleskt värde"
+
+#: ../src/gconf-key-editor.c:127
+#: ../src/gconf-key-editor.c:157
+msgid "String"
+msgstr "Sträng"
+
+#. Translators: this refers to "Floating point":
+#. * see http://en.wikipedia.org/wiki/Floating_point
+#.
+#: ../src/gconf-key-editor.c:131
+msgid "Float"
+msgstr "Flyttal"
+
+#: ../src/gconf-key-editor.c:132
+msgid "List"
+msgstr "Lista"
+
+#: ../src/gconf-key-editor.c:220
+msgid "Add New List Entry"
+msgstr "Lägg till ny listpost"
+
+#: ../src/gconf-key-editor.c:238
+msgid "_New list value:"
+msgstr "_Nytt listvärde:"
+
+#: ../src/gconf-key-editor.c:325
+msgid "Edit List Entry"
+msgstr "Redigera listpost"
+
+#: ../src/gconf-key-editor.c:343
+msgid "_Edit list value:"
+msgstr "_Redigera listvärde:"
+
+#: ../src/gconf-key-editor.c:566
+msgid "Path:"
+msgstr "Sökväg:"
+
+#: ../src/gconf-key-editor.c:577
+msgid "_Name:"
+msgstr "_Namn:"
+
+#: ../src/gconf-key-editor.c:589
+msgid "_Type:"
+msgstr "_Typ:"
+
+#: ../src/gconf-key-editor.c:626
+#: ../src/gconf-key-editor.c:644
+#: ../src/gconf-key-editor.c:663
+#: ../src/gconf-key-editor.c:680
+msgid "_Value:"
+msgstr "_Värde:"
+
+#: ../src/gconf-key-editor.c:702
+msgid "List _type:"
+msgstr "List_typ:"
+
+#: ../src/gconf-key-editor.c:710
+msgid "_Values:"
+msgstr "_Värden:"
+
+#: ../src/gconf-key-editor.c:812
+msgid "New Key"
+msgstr "Ny nyckel"
+
+#: ../src/gconf-key-editor.c:816
+msgid "Edit Key"
+msgstr "Redigera nyckel"
+
+#: ../src/gconf-search-dialog.c:60
+msgid "Pattern not found"
+msgstr "Mönstret hittades inte"
+
+#: ../src/gconf-search-dialog.c:142
+msgid "Find"
+msgstr "Sök"
+
+#: ../src/gconf-search-dialog.c:144
+msgid "_Search for: "
+msgstr "_Sök efter: "
+
+#: ../src/gconf-search-dialog.c:165
+msgid "Search also in key _names"
+msgstr "Sök även i nyckel_namn"
+
+#: ../src/gconf-search-dialog.c:168
+msgid "Search also in key _values"
+msgstr "Sök även i nyckel_värden"
+
+#: ../src/gedit-output-window.c:347
+msgid "Close the output window"
+msgstr "Stäng utdatafönstret"
+
+#: ../src/gedit-output-window.c:382
+msgid "Copy selected lines"
+msgstr "Kopiera markerade rader"
+
+#: ../src/gedit-output-window.c:399
+msgid "Clear the output window"
+msgstr "Töm utdatafönstret"
+
+#: ../src/gedit-output-window.c:438
+msgid "Output Lines"
+msgstr "Utdatarader"
+
+#: ../src/main.c:69
+msgid "[KEY]"
+msgstr "[NYCKEL]"
+
+#: ../src/main.c:77
+msgid "- Directly edit your entire configuration database"
+msgstr "- Redigera hela din konfigurationsdatabas direkt"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+#~ msgid "The Configuration Editor window type."
+#~ msgstr "Fönstertypen för konfigurationsredigeraren."
+#~ msgid "Invalid key \"%s\": %s"
+#~ msgstr "Nyckeln \"%s\" är ogiltig: %s"
+#~ msgid "translator_credits"
+#~ msgstr ""
+#~ "Svensk översättning: Christian Rose\n"
+#~ "Skicka synpunkter på översättningen till sv@li.org."
+#~ msgid "Configuration Editor (Default Settings)"
+#~ msgstr "Konfigurationsredigerare (Standardinställningar)"
+#~ msgid "Configuration Editor (Mandatory Settings)"
+#~ msgstr "Konfigurationsredigerare (Obligatoriska inställningar)"
+#~ msgid "Type:"
+#~ msgstr "Typ:"
+#~ msgid "_Typ"
+#~ msgstr "_Typ"
+#~ msgid "_Key name:"
+#~ msgstr "_Nyckelnamn:"
+#~ msgid "Key Owner:"
+#~ msgstr "Nyckelägare:"
+#~ msgid "Key owner"
+#~ msgstr "Nyckelägare"
+#~ msgid "Short Description:"
+#~ msgstr "Kort beskrivning:"
+#~ msgid "Short description"
+#~ msgstr "Kort beskrivning"
+#~ msgid "Long Description:"
+#~ msgstr "Lång beskrivning:"
+#~ msgid "Long description"
+#~ msgstr "Lång beskrivning"
+#~ msgid "Path"
+#~ msgstr "Sökväg"
+#~ msgid "Name:"
+#~ msgstr "Namn:"
+#~ msgid "_Value"
+#~ msgstr "_Värde"
+#~ msgid "Value:"
+#~ msgstr "Värde:"
+#~ msgid "GConf-Editor"
+#~ msgstr "GConf-Editor"
+#~ msgid "Quit the gconf editor"
+#~ msgstr "Avsluta gconf-redigeraren"
+#~ msgid "GConf editor"
+#~ msgstr "GConf-redigerare"
+#~ msgid "GConf editor - %s"
+#~ msgstr "GConf-redigerare - %s"
+#~ msgid "Key Name:"
+#~ msgstr "Nyckelnamn:"
+#~ msgid "Key path:"
+#~ msgstr "Nyckelsökväg:"
+#~ msgid "Key _value:"
+#~ msgstr "Nyckel_värde:"
+#~ msgid "Bookmark"
+#~ msgstr "Bokmärke"
+#~ msgid "Contents"
+#~ msgstr "Innehåll"
+#~ msgid "_Find"
+#~ msgstr "_Sök"
+#~ msgid "_Search for:"
+#~ msgstr "_Sök efter:"
+#~ msgid "About GConf-Editor"
+#~ msgstr "Om GConf-Editor"
+#~ msgid "/File/tearoff1"
+#~ msgstr "/Arkiv/avskiljare1"
+#~ msgid "/File/_New window"
+#~ msgstr "/Arkiv/_Nytt fönster"
+#~ msgid "/File/sep1"
+#~ msgstr "/Arkiv/avsk1"
+#~ msgid "/Edit/tearoff2"
+#~ msgstr "/Redigera/avskiljare2"
+#~ msgid "/Bookmarks/tearoff3"
+#~ msgstr "/Bokmärken/avskiljare3"
+#~ msgid "/Bookmarks/_Add bookmark"
+#~ msgstr "/Bokmärken/_Lägg till bokmärke"
+#~ msgid "/Bookmarks/_Edit bookmarks..."
+#~ msgstr "/Bokmärken/_Redigera bokmärken..."
+#~ msgid "/Help/tearoff4"
+#~ msgstr "/Hjälp/avskiljare4"
+#~ msgid "/Help/_About..."
+#~ msgstr "/Hjälp/_Om..."
+#~ msgid "/File/New window"
+#~ msgstr "/Arkiv/Nytt fönster"
+#~ msgid "/File/Quit"
+#~ msgstr "/Arkiv/Avsluta"
+#~ msgid "/Edit/Copy key name"
+#~ msgstr "/Redigera/Kopiera nyckelnamn"
+#~ msgid "/Help/About..."
+#~ msgstr "/Hjälp/Om..."
+#~ msgid ""
+#~ "Could not get schema location. Error was:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Kunde inte få tag i schemaplats. Felet var:\n"
+#~ "%s"
+#~ msgid ""
+#~ "Could not get schema. Error was:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Kunde inte hämta schema. Felet var:\n"
+#~ "%s"
+#~ msgid ""
+#~ "Could not set schema. Error was:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Kunde inte ställa in schema. Felet var:\n"
+#~ "%s"
+#~ msgid ""
+#~ "Could not associate schema. Error was:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Kunde inte associera schema. Felet var:\n"
+#~ "%s"
+#~ msgid "/sep1"
+#~ msgstr "/avsk1"
+#~ msgid "/sep2"
+#~ msgstr "/avsk2"
+#~ msgid "/New key..."
+#~ msgstr "/Ny nyckel..."
+#~ msgid "/Unset key"
+#~ msgstr "/Nollställ nyckel"
+#~ msgid "_Show this dialog again"
+#~ msgstr "_Visa detta dialogfönster igen"
+#~ msgid ""
+#~ "This tool allows you to directly edit your configuration database. This "
+#~ "is not the recommended way of setting desktop preferences. Use this tool "
+#~ "at your own risk."
+#~ msgstr ""
+#~ "Detta verktyg låter dig redigera din konfigurationsdatabas direkt. Detta "
+#~ "är inte det rekommenderade sättet att ställa in skrivbordsinställningar. "
+#~ "Använd detta verktyg på din egen risk."
+#~ msgid "Copyright (C) Anders Carlsson 2001, 2002"
+#~ msgstr "Copyright © Anders Carlsson 2001, 2002"
+#~ msgid "/File/tear1"
+#~ msgstr "/Arkiv/avsk1"
+#~ msgid ""
+#~ "This is the GConf configuration editor. It is not tested and may cause "
+#~ "the GConf configuration database to wreak Havoc and other bad things. Use "
+#~ "it at your own risk!"
+#~ msgstr ""
+#~ "Detta är GConf-konfigurationsredigeraren. Den är inte testad och kan "
+#~ "orsaka att GConf-konfigurationsdatabasen går sönder och andra dåliga "
+#~ "saker. Användes på egen risk!"
+#~ msgid "GConf configuration editor"
+#~ msgstr "GConf-konfigurationsredigerare"
+#~ msgid ""
+#~ "Currently lists, pairs and schemas can't be edited. This will be changed "
+#~ "in a later version."
+#~ msgstr ""
+#~ "För tillfället kan listor, par och scheman inte redigeras. Detta kommer "
+#~ "att ändras i en senare version."
+#~ msgid "An editor for the GConf configuration system.."
+#~ msgstr "En redigerare för konfigurationssystemet GConf."
+#~ msgid "Key"
+#~ msgstr "Nyckel"
+#~ msgid "_Add Key"
+#~ msgstr "_Lägg till nyckel"
+#~ msgid "Add _Schema"
+#~ msgstr "Lägg till _schema"
+#~ msgid "_Delete Key"
+#~ msgstr "_Ta bort nyckel"
+#~ msgid "Show _Location Bar"
+#~ msgstr "Visa _platsrad"
+#~ msgid "_Key"
+#~ msgstr "_Nyckel"
+#~ msgid "Locale:"
+#~ msgstr "Lokal:"
+#~ msgid "Default Value:"
+#~ msgstr "Standardvärde:"
+#~ msgid "Schema:"
+#~ msgstr "Schema:"
+#~ msgid "Apply"
+#~ msgstr "Tillämpa"
+#~ msgid "Reset"
+#~ msgstr "Återställ"
+#~ msgid "New"
+#~ msgstr "Ny"
+#~ msgid "New File"
+#~ msgstr "Ny fil"
+#~ msgid "Open"
+#~ msgstr "Öppna"
+#~ msgid "Open File"
+#~ msgstr "Öppna fil"
+#~ msgid "Save"
+#~ msgstr "Spara"
+#~ msgid "Save File"
+#~ msgstr "Spara fil"
+#~ msgid "Location:"
+#~ msgstr "Plats:"
+

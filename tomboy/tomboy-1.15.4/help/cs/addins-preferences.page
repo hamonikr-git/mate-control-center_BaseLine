@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="addins-preferences" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="addins#preferences"/>
+    <link type="seealso" xref="pin-notes"/>
+    <desc>Doplněk umožňující pokročilé volby.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-14" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Pokročilé předvolby</title>
+
+  <p>Doplněk <gui>Pokročilé předvolby</gui> umožňuje nastavit počet naposledy použitých poznámek, které se mají zobrazit v nedávných poznámkách. Abyste tak mohli učinit, musí být doplněk <link xref="addins">povolen</link>.</p>
+
+ <section id="recent-notes">
+  <title>Ovládání nedávných poznámek</title>
+    <p>Můžete nastavit minimální a maximální počet naposledy použitých poznámek, které se mají zobrazit po kliknutí na ikonu <app>Tomboy</app> v oznamovací oblasti:</p>
+    <steps>
+      <item>
+        <p>Vyberte <guiseq><gui style="menu">Upravit</gui><gui style="menuitem">Předvolby</gui><gui style="tab">Pokročilé</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Nastavte minimální a maximální počet poznámek, které se mají zobrazit v seznamu nedávných poznámek.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="startup-notes">
+    <title>Poznámky při spuštění</title>
+
+    <steps>
+      <title>Jestli chcete, aby se při spuštění otevřely poznámky:</title>
+      <item>
+        <p>Klikněte na ikonu <app>Tomboy</app> a vyberte <guiseq><gui style="menuitem">Předvolby</gui> <gui style="tab">Pokročilé</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Vyberte <gui style="checkbox">Otevřít poznámky při spuštění</gui></p>
+      </item>
+    </steps>
+  </section>
+</page>

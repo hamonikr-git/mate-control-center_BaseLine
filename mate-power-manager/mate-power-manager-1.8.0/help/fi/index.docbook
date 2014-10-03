@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY GFDL SYSTEM "fdl-appendix.xml">
+<!ENTITY app "MATE Power Manager">
+<!ENTITY application "<application>&app;</application>">
+<!ENTITY appversion "2.27.3">
+<!ENTITY manrevision "2.27.3">
+]>
+<!--
+      (Do not remove this comment block.)
+  Template Maintained by the MATE Documentation Project:
+	  http://developer.mate.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fi">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+
+  <articleinfo>
+    <title><application>Maten virranhallinnan</application> käyttöohje</title>
+    <abstract role="description">
+      <para><application>Maten virranhallinta</application> on Mate-työpöydän istuntotaustaprosessi, joka hallinnoi kannettavan tai pöytäkoneen virrankäyttöasetuksia.</para>
+    </abstract>
+    <copyright lang="en">
+      <year>2006-2009</year>
+      <holder>Richard Hughes (richard@hughsie.com)</holder>
+    </copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2006</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+  -->
+
+<!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+    <publisher role="maintainer">
+      <publishername>Richard Hughes</publishername>
+    </publisher>
+
+     <legalnotice id="legalnotice">
+	<para>Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software Foundationin julkaiseman GNU Free Documentation Licensen (GFDL) version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. Kopion GFDL:stä voi nähdä napsauttamalla <ulink type="help" url="help:fdl">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-nimisen tiedoston.</para>
+         <para>Tämä käyttöohje on osa Maten käyttöohjekokoelmaa ja levitetään GFDL-lisenssin alaisena. Jos haluat levittää tätä käyttöohjetta erillään kokoelmasta, voit tehdä sen liittämällä lisenssin kopion ohjeen mukaan, kuten lisenssin luku 6 sanelee.</para>
+
+	<para>Monet tuotteiden ja palveluiden nimet ovat tuotemerkkejä. Maten dokumentointiprojektissa nämä nimet pyritään kirjoittamaan suuraakkosin tai isolla alkukirjaimella, sikäli kun projektin jäsenet tietävät kyseisistä tuotemerkeistä.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+        other legal stuff such as "NO WARRANTY" statement. Please do not change
+        any of this. -->
+
+    <authorgroup>
+      <author role="maintainer" lang="en">
+        <firstname>Richard</firstname>
+        <surname>Hughes</surname>
+	<email>richard@hughsie.com</email>
+      </author>
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+        <firstname>Latin</firstname>
+        <surname>Translator 1</surname>
+        <affiliation>
+          <orgname>Latin Translation Team</orgname>
+          <address> <email>translator@gnome.org</email> </address>
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+    <revhistory>
+      <revision lang="en">
+        <revnumber>2.0</revnumber>
+        <date>2006-08-30</date>
+        <revdescription>
+          <para role="author" lang="en">Richard Hughes
+            <email>richard@hughsie.com</email>
+          </para>
+          <para role="publisher" lang="en">Richard Hughes</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <legalnotice>
+      <title>Palaute</title>
+      <para>Jos haluat ilmoittaa ohjelmavirheestä tai sinulla on ehdotuksia Maten virranhallintasovelluksesta tai tästä käyttöohjeesta, seuraa ohjeita <ulink url="http://www.mate.org/projects/mate-power-manager/" type="http"><application>Maten virranhallinnan</application> yhteystietosivulta</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index" lang="en">
+    <primary><application>MATE Power Manager</application></primary>
+  </indexterm>
+  <indexterm zone="index" lang="en">
+    <primary>mate-power-manager</primary>
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<section id="intro">
+  <title>Johdanto</title>
+  <!-- manrevision 2.0 compatibility -->
+  <anchor id="aboutex"/>
+  <anchor id="notice"/>
+  <indexterm lang="en">
+    <primary><application>MATE Power Manager</application></primary>
+    <secondary>Manual</secondary>
+    <tertiary>mate-power-manager</tertiary>
+  </indexterm>
+
+  <para>Maten virranhallinnan istuntotaustaprosessi on virranhallintataustaprosessi <systemitem>Mate-työpöytää</systemitem> varten</para>
+
+</section>
+
+<section id="using">
+  <title>Käyttö</title>
+  <para><application>Maten virranhallinta</application> käynnistyy yleensä Maten käynnistyessä, mutta voit käynnistää <application>Maten virranhallinnan</application> itse seuraavasti:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Komentorivi</term>
+      <listitem>
+    	<para>Kirjoita <command>mate-power-manager --verbose --no-daemon</command> ja paina <keycap>Enter</keycap>-näppäintä:</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>
+
+<section id="notify">
+  <title>Huomautusviestit</title>
+  <para>Kun <application>Maten virranhallinta</application> on käynnistynyt, seuraavat huomautukset saattavat näkyä.</para>
+
+  <section id="notify-unplugged">
+    <title>Virtajohto irrotettu</title>
+    <figure>
+      <title>Maten virranhallinnan huomautus, kun virtajohto on irrotettu</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-unplugged.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <note>
+      <para>Voit estää tämän huomautuksen muokkaamalla MateConfista avainta <command>/apps/mate-power-manager/notify/discharging</command>.</para>
+    </note>
+  </section>
+
+  <section id="notify-fully-charged">
+    <title>Täysin ladattu</title>
+    <figure>
+      <title>Maten virranhallinnan huomautus, kun kannettavan pääakku on täysin ladattu</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-charged.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <note>
+      <para>Voit estää tämän huomautuksen muokkaamalla MateConfista avainta <command>/apps/mate-power-manager/notify/fully_charged</command>.</para>
+    </note>
+    <note>
+      <para>Uusi huomautus tulee vasta, jos akun latausaste putoaa alle 95 prosentin, ja sen jälkeen nousee täysille. Tämä estää joitakin koneita näyttämästä turhia huomautuksia, jos akku ilmoittaa lataustilansa virheellisesti.</para>
+    </note>
+  </section>
+
+  <section id="notify-low">
+  <title>Virta matalalla</title>
+    <para>Kun akku on vähissä, saat seuraavan huomautuksen. Sinun kannattaa kytkeä verkkojohto pikaisesti.</para>
+    <figure>
+      <title>Maten virranhallinnan ilmoitus, kun akku on vähissä</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-low.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <note>
+      <para>Voit estää tämän huomautuksen muokkaamalla MateConfista avainta <command>/apps/mate-power-manager/notify/low_power</command>.</para>
+    </note>
+  </section>
+
+  <section id="notify-critical">
+  <title>Virta kriittinen</title>
+    <para>Kun virta on vähissä, tietokone näyttää tämän ilmoituksen ja kertoo, mitä on tehtävä. Voit vaihtaa kriittisen virtatilan toimintoja asetuksista. </para>
+    <figure>
+      <title>Maten virranhallinnan huomautus, kun virta on kriittisen alhainen</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-critical.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+  </section>
+
+  <section id="notify-suspend-failure">
+  <title>Keskeytyksen epäonnistuminen</title>
+    <para>Kun keskeytys epäonnistuu, voit saada seuraavanlaisen ilmoituksen. Yleisin syy ilmoitukselle on se, että senhetkisellä käyttäjällä ei ole oikeuksia asettaa konetta keskeytys- tai lepotilaan.</para>
+    <figure>
+      <title>Maten virranhallinnan huomautus, kun keskeytys epäonnistuu</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-suspend-problem.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <note>
+      <para>Voit estää tämän huomautuksen muokkaamalla MateConfista avainta <command>/apps/mate-power-manager/notify/sleep_failed</command>.</para>
+    </note>
+  </section>
+</section>
+
+<section id="statistics">
+  <title>Tilastot</title>
+  <para>Tilasto-ohjelma luo kuvaajan kannettavan tietokoneen komponenttien virrankulutuksesta.</para>
+  <note>
+    <para>Tämä on poistettu Maten virranhallinnan informaatioikkunasta, koska tietorajapinta käyttää nyt DBUSia sisäisen IPC:n asemesta. Tämän ansiosta toiset sovellukset voivat kysellä ja näyttää dataa tarvittaessa.</para>
+  </note>
+  <figure id="statistics-graph">
+    <title>Virrankäytön historia siirryttäessä akkuvirrasta verkkovirtaan</title>
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="figures/gpm-stats-graph.png" format="PNG"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+  </figure>
+  <note>
+    <para>Joitakin vaihtoehtoja tai diagrammeja ei välttämättä näy, jos tietokoneessasi ei ole tarvittavaa laitteistoa. Saatat myös nähdä laitteita, joita ei näy tässä (esimerkiksi UPS-laitteita), mutta niitä kohdellaan samalla tavoin kuin muitakin laitteita.</para>
+  </note>
+
+  <section id="statistics-charge">
+    <title>Lataushistoria</title>
+    <para>Tämä diagrammi näyttää pääkomposiittiakun jäljellä olevan latauksen prosentteina. Jos sinulla on kannettavassa pääakun ohella lisäakku, tämä näyttää keskiarvon. Tämän diagrammin mukana ei ole selostetta.</para>
+  </section>
+
+  <section id="statistics-power">
+    <title>Virtahistoria</title>
+    <para>Tämä diagrammi näyttää pääkomposiittiakun latausvirtahistorian. Tämä viiva edustaa joko virtaa, jota käytetään järjestelmän akkujen lataamiseen, tai virtaa, jota järjestelmä käyttää akuista. Käyrän tulisi kulkea ylöspäin, kun suoritetaan paljon prosessoritehoa vaativia tehtäviä, ja alaspäin, kun järjestelmä on hiljaisena tai näyttö on himmennetty. Tämän diagrammin mukana on selsote, kun on otettu vastaan tapahtumia.</para>
+
+    <note>
+      <para>Et saa tietokoneesi nopeustietoja, jos se ei ole latautumassa tai kertynyttä latausta ei käytetä, tai jos tietokone on keskeytystilassa. Tämä johtuu laitteiston rajoituksista, koska nopeustiedot tulevat vain akun hallintasirusta, eivätkä emolevyn virranhallintasirusta.</para>
+    </note>
+  </section>
+
+  <section id="statistics-time">
+    <title>Arvioidun ajan historia</title>
+    <para>Tämä diagrammi näyttää pääkomposiittiakun lataushistoria-arvion. Tämä käyrä näyttää täyteen lataukseen vaadittavan ajan, tai ajan siihen, että lataus on käytetty. Tämän käyrän kuuluisi kulkea ylöspäin suhteessa nopeuden laskuun ja alaspäin suhteessa nopeuden nousuun.</para>
+  </section>
+</section>
+
+<section id="preferences">
+  <title>Asetukset</title>
+
+  <para>Asetusikkunasta voi säätää:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>Näytön kirkkautta verkkovirtaa ja akkua käytettäessä</para>
+    </listitem>
+    <listitem>
+      <para>Joutenoloaika ennen näytön sammuttamista ja keskeytystilaa.</para>
+    </listitem>
+    <listitem>
+      <para>Toiminnot, jotka suoritetaan kun kannettavan kansi on suljettu.</para>
+    </listitem>
+    <listitem>
+      <para>Ilmoitusalueen kuvakekäytäntö</para>
+    </listitem>
+  </itemizedlist>
+
+  <note>
+    <para>Jotkin liukusäätimet tai vaihtoehdot voivat olla estettyinä, jos MateConfin toimintoavaimia ei voida kirjoittaa. Tämän avulla ylläpitäjät voivat lukita käyttäjien valittavissa olevia toimintoja.</para>
+  </note>
+
+  <section id="preferences-ac">
+    <title>Verkkovirta-asetukset</title>
+    <figure id="prefs-ac">
+      <title>Maten virrankäytön hallinnan verkkovirtavälilehti</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-prefs-ac.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+  </section>
+
+  <section id="preferences-battery">
+    <title>Akkuasetukset</title>
+    <figure id="prefs-processor">
+      <title>Maten virranhallinnan akkuvälilehti</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-prefs-battery.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <para>Tämän avulla voi vähentää tehokkaan tietokoneen virrankäyttöä kun kone on toimettomana tai kun täyttä kapasiteettia ei tarvita.</para>
+  </section>
+
+  <section id="preferences-general">
+    <title>Yleisasetukset</title>
+    <figure id="prefs-general">
+      <title>Maten virranhallinnan yleisvälilehti</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-prefs-general.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+  </section>
+
+  <section id="preferences-idletimes">
+    <title>Istunnon ja järjestelmän toimettomuusajat</title>
+    <para><command>mate-screensaver</command> on istunnon taustaprosessi joka valvoo käyttäjän syötteitä, ja jos hiirtä ei ole liikutettu tai näppäimistöä painettu, aloittaa aikakatkaisun. Kun aikakatkaisun arvo saavuttaa <command>mate-screensaver-preferences</command>-valinnoissa annetun arvon, sisäänkirjautuminen merkitään toimettomaksi istunnoksi. Tässä vaiheessa <application>Maten virranhallinta</application> suorittaa toimettomuusajalle määritetyt toiminnot, kuten vähävirtaisen tilan mahdollistamisen ja kannettavan näytön himmentämisen.</para>
+
+    <figure>
+      <title>Istunnon toimettomuusajan aikakatkaisun muuttaminen  <command>mate-screensaver-preferences</command>-valinnoissa.</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gs-prefs.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <para>Heti kun istunto on merkitty toimettomaksi, <application>Maten virranhallinta</application> aloittaa oman järjestelmäaikalaskurinsa. Kun <command>mate-power-preferences</command>-valinnoissa määritetty aikakatkaisun raja saavutetaan ja prosessorilla ei ole työkuormaa, toimettomuudelle määritetyt tehtävät suoritetaan. Yleensä nämä tehtävät ovat näytön sammuttaminen tai keskeytys- tai lepotila.</para>
+    <para>Asian selventämiseksi: <command>mate-power-preferences</command>-valinnoissa olevien liukusäädinten arvot alkavat arvosta 1 minuutti istunnon aikakatkaisun jälkeen, koska on loogista että toimettomuustilalle määritettyjä tehtäviä ei voi suorittaa ennen kuin istunto on merkitty toimettomaksi. Jos muutat istunnon toimettomuuden aikakatkaisun rajaa <command>mate-screensaver-preferences</command>-valinnoissa, liukusäädinten aloitusarvo <command>mate-power-preferences</command>-valinnoissa muuttuu vastaavasti.</para>
+  </section>
+</section>
+
+<section id="preferences-advanced">
+  <title>Lisäasetukset</title>
+
+  <section id="advanced-preferences-brightness">
+    <title>Näytön kirkkaus himmennettynä</title>
+    <note>
+      <para>Voit muuttaa toimettoman kannettavan näytön kirkkautta muuttamalla MateConf-arvoa <command>/apps/mate-power-manager/backlight/idle_brightness</command>-valinnoissa.</para>
+    </note>
+  </section>
+
+  <section id="advanced-preferences-locking">
+    <title>Näytön lukitseminen</title>
+    <para>Oletusarvoisesti <application>Maten virranhallinta</application> tukee yksinkertaista lukitusta. Tämä tarkoittaa, että näyttö menee lukituksi, kun kansi suljetaan tai järjestelmä siirtyy keskeytys- tai lepotilaan, mikäli mate-screensaver-valinnoissa on valittu  "Lock screen".</para>
+    <para>Tehokäyttäjiä varten on monimutkainen lukitusjärjestelmä, joka sallii lukitustavan muuttamisen erikseen kantta suljettaessa tai keskeytys- tai lepotilaan siirryttäessä. Tämän sallimiseksi on poistettava käytöstä seuraava MateConf-avain: </para>
+
+    <itemizedlist>
+      <listitem>
+        <para lang="en">
+          <command>/apps/mate-power-manager/lock/use_screensaver_settings</command>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>Silloin avaimista voidaan pakottaa näytönsäästäjän lukitustapa, kun suoritetaan toiminto:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para lang="en">
+          <command>/apps/mate-power-manager/lock/blank_screen</command>
+        </para>
+      </listitem>
+      <listitem>
+        <para lang="en">
+          <command>/apps/mate-power-manager/lock/suspend</command>
+        </para>
+      </listitem>
+      <listitem>
+        <para lang="en">
+          <command>/apps/mate-power-manager/lock/hibernate</command>
+        </para>
+      </listitem>
+    </itemizedlist>
+
+    <note>
+      <para>Näytönsäästäjän lukitusmäärityksiä ei käytetä, ennen kuin yksinkertainen lukitusjärjestelmä palautetaan.</para>
+    </note>
+  </section>
+</section>
+
+<section id="applets-general">
+  <title>Maten virranhallintasovelmat</title>
+
+  <section id="applets-brightness">
+    <title>Kirkkaudensäätösovelma</title>
+    <para>Kirkkaudensäätösovelmalla käyttäjä voi vaihtaa kirkkautta väliaikaisesti muuttamatta perusasetuksia. Tämä voi olla hyödyllistä, jos kannettavassa ei ole kirkkaudensäätönäppäimiä, koska se helpottaa kirkkaudensäätöä.</para>
+    <figure>
+      <title>Kirkkaudensäätösovelman pudotusvalikko.</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/applet-brightness.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <note>
+      <para>Jos laitteistoasi ei tueta, liukusäädin ei ole käytettävissä.</para>
+    </note>
+  </section>
+
+  <section id="applets-inhibit">
+    <title>Estosovelma</title>
+    <para>Estosovelma antaa käyttäjän estää automaattisen keskeytystilan tietokoneen ollessa käyttämättömänä. Vanhat tai suljetut ohjelmat voivat vaatia tätä, esimerkiksi VMWare tai Matlab. Napsauta kuvaketta automaattisen keskeytystilan estämiseksi, ja napsauta sitä uudestaan normaalitilaan palataksesi.</para>
+    <figure>
+      <title>Estosovelma estetyssä tilassa.</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/applet-inhibit.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <note>
+      <para>Älä käytä tätä sovelmaa jos käytät vain Maten ohjelmistoa. Ilmoita sen sijaan ohjelmavirheestä, jotta sovellus käyttäisi menetelmiä Inhibit() ja UnInhibit(), koska tämän pitäisi toimia.</para>
+    </note>
+  </section>
+</section>
+
+<section id="faq">
+  <title>Usein kysyttyjä kysymyksiä</title>
+  <para>Nämä ovat kysymyksiä, joita kysytään usein sähköpostilistalla.</para>
+  <section id="faq-capacity">
+    <title>Mikä on akun lataus?</title>
+    <para>Lataus tarkoittaa, kuinka paljon virtaa akku voi varastoida verrattuna valmistajan ilmoitukseen.</para>
+    <figure>
+      <title>Tämä käyrä näyttää tyypillisen litiumioniakun latauksen muutaman sadan latauksen ja purun jälkeen.</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-cell-capacity.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+  </section>
+
+  <section id="faq-suspend-hibernate-differences">
+    <title>Mikä on keskeytystilan ja lepotilan ero?</title>
+    <para>Keskeytystila on virransäästöominaisuus, joka käyttää mahdollisimman vähän virtaa säilyttääkseen ohjelmatiedot tietokoneen muistissa. Kun kone on keskeytystilassa, laskentatoimintoja ei suoriteta, ennen kuin palataan normaalitilaan. Normaalitilaan palataan vasta, kun jokin ulkoinen merkki antaa käskyn, esimerkiksi jotain näppäintä painetaan. Keskeytystilaan siirtymiseen ja siitä palaamiseen menee yleensä muutama sekunti.</para>
+    <caution>
+      <para>Keskeytystilassa käytetään yhä hieman akkuvirtaa, joten sitä ei suositella matalan latauksen toiminnaksi. Jos pöytäkoneesta katkaistaan verkkovirta tai akku tyhjenee, kesken olevat työt menetetään.</para>
+    </caution>
+    <para>Lepotila tallentaa tietokoneen tilanteen täydellisenä kiintolevylle ja sammuttaa virran, jolloin tietokone näyttää sammutetulta. Tilasta palataan vasta, kun jokin ulkoinen merkki antaa käskyn, esimerkiksi jotain näppäintä painetaan. Lepotilaan siirtyminen ja siitä palaaminen voi viedä jopa minuutin.</para>
+  </section>
+
+  <section id="faq-dpms-broken-monitor">
+    <title>Näyttöni on rikki. Se käsittelee DPMS-tiloja standby ja off tilana 'no-signal', ja näyttö jää päälle.</title>
+    <para>On määriteltävä DPMS-keskeytystila, jota <application>Maten virranhallinta</application> käyttää. Käynnistä <command>mateconf-editor</command>, ja muuta avaimet <literal>/apps/mate-power-manager/backlight/dpms_method_ac</literal> ja <literal>/apps/mate-power-manager/backlight/dpms_method_battery</literal> sellaiseen tilaan joka toimii, esimerkiksi standby, suspend tai off.</para>
+  </section>
+
+  <section id="faq-discharge-time-wrong">
+    <title>Purkautumisaikani on aina virheellinen viallisen akun vuoksi. Mitä voin tehdä?</title>
+    <para>Saatat onnistua käyttämään latausprosenttia Maten virranhallinnan käytäntötietoina. Avaa <command>mateconf-editor</command>, ja muuta avaimen <command>/apps/mate-power-manager/general/use_time_for_policy</command> arvoksi false. Tämä on helppoa tehdä seuraavasti: <command> mateconftool-2 --set --type bool /apps/mate-power-manager/general/use_time_for_policy false </command></para>
+    <para>Tämän pitäisi saada käytännöt toimimaan, mutta tietenkin jäljellä oleva aika on yhä virheellinen.</para>
+  </section>
+
+  <section id="faq-inhibit">
+    <title>Miten saan sovellukseni estämään tietokoneen automaattisen siirtymisen keskeytystilaan?</title>
+    <para lang="en">
+      If your application is doing a long operation, you might want to
+      disable the ability to suspend for a little while.
+      You should use mate-session if you really don't want the user to be
+      able to suspend, or for the computer to save power by hibernating
+      or suspending.
+    </para>
+  </section>
+
+  <section id="faq-acpi-delay">
+    <title>Käytän ACPI:tä. Miksi tapahtumien rekisteröintiin (esimerkiksi verkkovirtajohtoa irrottaessa) menee niin pitkä aika?</title>
+    <para>Mahdollisia ongelmia on kaksi.</para>
+    <itemizedlist>
+      <listitem>
+        <para>HAL ei ehkä käytä lisäosaa, joka kaappaa ACPI-tapahtuman.</para>
+      </listitem>
+      <listitem>
+        <para>BIOSissa voi olla vikaa, joka täytyy kiertää. Ole hyvä ja lähetä ilmoitus ohjelmavirheestä.</para>
+      </listitem>
+    </itemizedlist>
+    <para>Ensimmäisessä tilanteessa yritä löytää pyörivät HAL-prosessit: <command>ps -eaf | grep hal</command></para>
+    <para>Varmista, että prosessi <command>hald-addon-acpi</command> pyörii. Jos se ei pyöri, varmista että HAL on käynnistetty asetuksalla <command>--retain-privileges</command> <command>haldaemon</command>-komennon initscriptissä. Vaihtoehto on käyttää acpidiä käyttöjärjestelmän ytimen proc-tiedoston asemesta.</para>
+  </section>
+
+</section>
+
+<section id="about">
+  <title>Tietoja</title>
+  <para lang="en">
+    MATE Power Manager was written by Richard Hughes <email>richard@hughsie.com</email>.
+    To find more information about MATE Power Manager, please visit the
+    <ulink url="http://www.mate.org/projects/mate-power-manager" type="http">
+    <application>MATE Power Manager</application> web page</ulink>.
+  </para>
+  <para lang="en">
+    To report a bug or make a suggestion regarding this application or
+    this manual, follow the directions at the
+    <ulink url="http://www.mate.org/projects/mate-power-manager/bugs.html" type="http">
+    <application>MATE Power Manager</application> Bug Page</ulink>.
+  </para>
+  <para>Tätä ohjelmaa jaetaan GNU yleisen lisenssin (GPL-lisenssin) ehtojen mukaan sellaisina kuin Free Software Foundation on ne julkaissut; joko Lisenssin version 2, tai (valinnan mukaan) minkä tahansa myöhemmän version mukaisesti. Lisenssin kopio löytyy tästä <ulink url="mate-power-manager:gpl" type="help">linkistä</ulink>, tai tiedostosta COPYING, joka on tämän ohjelman lähdekoodin mukana.</para>
+</section>
+
+</article>

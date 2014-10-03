@@ -1,0 +1,35 @@
+#!/usr/bin/make -f 
+
+export CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
+export CFLAGS:=$(shell dpkg-buildflags --get CFLAGS)
+export CXXFLAGS:=$(shell dpkg-buildflags --get CXXFLAGS)
+export LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS)
+
+LDFLAGS+=-Wl,--as-needed
+
+%:
+	dh $@ --with=autoreconf,scour
+
+# Fixes FTBFS
+override_dh_auto_test:
+
+# Autoreconf due to 01_lpi.patch
+override_dh_autoreconf:
+	[ -e gnome-doc-utils.make ] || \
+	ln -s /usr/share/gnome-doc-utils/gnome-doc-utils.make
+	dh_autoreconf
+
+override_dh_auto_clean:
+	dh_auto_clean
+	[ ! -h gnome-doc-utils.make ] || \
+	rm gnome-doc-utils.make
+
+override_dh_auto_build:
+	cd po; intltool-update -p
+	dh_auto_build
+
+override_dh_strip:
+	dh_strip -psimple-scan --dbg-package=simple-scan-dbg
+
+override_dh_installdocs:
+	dh_installdocs --link-doc=simple-scan

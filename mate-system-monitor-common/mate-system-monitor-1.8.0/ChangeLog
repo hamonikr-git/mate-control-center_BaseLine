@@ -1,0 +1,1319 @@
+commit dda672f5ddf147575d8ef6a33b043b0066b05cf8
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:   2014-03-01
+
+    Bump version to 1.8.0
+
+M	NEWS
+M	configure.ac
+
+commit c0e5871c4bbc28bf1f9a4939b546eed179e14180
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-03-01
+
+    Sync translations with transifex
+
+M	po/be.po
+
+commit 504d9eea345391ab9099a441d665f6f36caed235
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-23
+
+    Sync translations with transifex
+
+M	po/en_GB.po
+M	po/sk.po
+M	po/sl.po
+M	po/zh_TW.po
+
+commit 307c63d242c2b20229f5088ee6580127d07eb8ff
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-19
+
+    Bump version to 1.7.90
+
+M	NEWS
+M	configure.ac
+
+commit 3c5265005a0cb10f078dad2663456b7045e87339
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-19
+
+    Add NEWS for MATE
+
+A	NEWS
+
+commit 2e8086de2e0fea14e710c3f8a41c40bdb38e045d
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-19
+
+    Rename NEWS -> NEWS.GNOME
+
+R100	NEWS	NEWS.GNOME
+
+commit b529886eaa1d80dbbc8a256a6782f12ca725232e
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-19
+
+    configure: Add check-news
+
+M	configure.ac
+
+commit 8b58308f0ffb2bc00e15dd61673b8a4eb5b7adfa
+Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Date:	2014-02-18
+
+    Add keywords key to .desktop file
+
+    Closes https://github.com/mate-desktop/mate-system-monitor/issues/33
+
+M	mate-system-monitor.desktop.in.in
+
+commit d43264fc51c3506487c3fedef1bf6f6287428e35
+Merge: a82c82a 320ad82
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-17
+
+    Merge pull request #32 from hekel/master
+
+    Update Manual and make it more uniform with others
+
+commit 320ad827106232e07e9d49eba45e10b5c2832f16
+Author: hekel <hekel@archlinux.info>
+Date:	2014-02-14
+
+    Update Manual and make it more uniform with others
+
+M	mate-system-monitor.1
+
+commit a82c82acb9ce4aa3058212c52db44a717b45bcd2
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-11
+
+    Include autogen.sh in tarball
+
+M	Makefile.am
+
+commit 56ac6e87628044f0465cdb78cb49f59f5e626bc6
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-10
+
+    Bump version to 1.7.1
+
+M	configure.ac
+
+commit 6a476e95514a001d8146519cab5e8ab354d78d04
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-02-10
+
+    Sync translations with transifex
+
+M	po/LINGUAS
+A	po/cmn.po
+A	po/es_MX.po
+A	po/kk.po
+A	po/nah.po
+A	po/ur.po
+
+commit 15c304d28c6f3fe6127e4e060ef109e842a79a57
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-01-20
+
+    Remove useless g_print
+
+    It was added with commit
+    http://git.mate-desktop.org/mate-system-monitor/commit/src/procman.cpp?id=f27253b155db8d3c06bf13801c63bdc282da4157
+
+M	src/procman.cpp
+
+commit 58747780ffbc1df372a1c113e8a6e412e1f8f0a9
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-01-15
+
+    Update copyright info
+
+M	src/callbacks.cpp
+
+commit 9ae8cbe28a1c91b9a40d208c4045a3706e0929bc
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-01-15
+
+    Fix indentation
+
+M	src/callbacks.cpp
+
+commit 0846ba2d034d2eb1fd43ad2122a34a45273210a9
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2014-01-15
+
+    Bump version to 1.7.0
+
+M	configure.ac
+
+commit 43414fec3d31d10c8ca2c9fa227b7e4a75500719
+Merge: 77940a4 cec5516
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-11-23
+
+    Merge pull request #29 from eyelash/gtk3
+
+    add support for GTK3
+
+commit 77940a42279f216e9707223e7f3320f13cb8d500
+Merge: 11c4069 59c0981
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-11-23
+
+    Merge pull request #30 from infirit/master
+
+    Add Gtk3 support to configure
+
+commit 59c098115d1044bb3df58bddece6bb4a8ec0c92d
+Author: infirit <infirit@gmail.com>
+Date:	2013-11-23
+
+    Add Gtk3 support to configure
+
+M	configure.ac
+
+commit cec5516cb84a7ecc9489a36cd19bfe28d1bba54e
+Author: Elias Aebi <user142@hotmail.com>
+Date:	2013-11-21
+
+    add support for GTK3
+
+M	src/gsm_color_button.c
+M	src/interface.cpp
+M	src/load-graph.cpp
+M	src/load-graph.h
+M	src/lsof.cpp
+M	src/openfiles.cpp
+M	src/procdialogs.cpp
+M	src/sysinfo.cpp
+
+commit 11c4069c618a6253db551fa5300b0ee5fc4f5de6
+Merge: 97e8d50 89d783a
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-11-13
+
+    Merge pull request #28 from flexiondotorg/master
+
+    Remove distro folder.
+
+commit 89d783a84394224f1c8e02f0743a22ce49b314ca
+Author: Martin Wimpress <code@flexion.org>
+Date:	2013-11-13
+
+    Remove distro folder.
+
+D	distro/archlinux/PKGBUILD
+D	distro/archlinux/mate-system-monitor.install
+
+commit 97e8d5025a4373237366b83406b9d671fccbc556
+Merge: 769aa03 7784304
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-11-08
+
+    Merge pull request #27 from infirit/master
+
+    Cleanups
+
+commit 7784304322821afd5b40728c27f40b17fbb330cb
+Author: infirit <infirit@gmail.com>
+Date:	2013-11-08
+
+    Add dist-hook for Changelog creation
+
+M	Makefile.am
+
+commit 64f551f2ac731b5b863b2255076681847aabb3ce
+Author: infirit <infirit@gmail.com>
+Date:	2013-11-08
+
+    Only create a tar.xz file
+
+M	configure.ac
+
+commit 9f34d7be4956d86f6a43385940a3b5f1e027e49b
+Author: infirit <infirit@gmail.com>
+Date:	2013-11-08
+
+    Silence autofoo warnings
+
+M	Makefile.am
+M	configure.ac
+
+commit 769aa03e4ede6ebf47b920a4d3dcfbc16974cd6a
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-10-14
+
+    Sync translations with transifex
+
+M	po/am.po
+M	po/ar.po
+M	po/as.po
+M	po/az.po
+M	po/be.po
+M	po/bg.po
+M	po/bn.po
+M	po/bn_IN.po
+M	po/bs.po
+M	po/ca.po
+M	po/ca@valencia.po
+M	po/cs.po
+M	po/cy.po
+M	po/da.po
+M	po/de.po
+M	po/dz.po
+M	po/el.po
+M	po/en_CA.po
+M	po/en_GB.po
+M	po/eo.po
+M	po/es.po
+M	po/et.po
+M	po/eu.po
+M	po/fa.po
+M	po/fi.po
+M	po/fr.po
+M	po/ga.po
+M	po/gl.po
+M	po/gu.po
+M	po/he.po
+M	po/hi.po
+M	po/hr.po
+M	po/hu.po
+M	po/id.po
+M	po/it.po
+M	po/ja.po
+M	po/ka.po
+M	po/kn.po
+M	po/ku.po
+M	po/ky.po
+M	po/li.po
+M	po/lt.po
+M	po/lv.po
+M	po/mai.po
+M	po/mg.po
+M	po/mk.po
+M	po/ml.po
+M	po/mn.po
+M	po/mr.po
+M	po/ms.po
+M	po/nb.po
+M	po/nds.po
+M	po/nl.po
+M	po/nn.po
+M	po/oc.po
+M	po/or.po
+M	po/pa.po
+M	po/pl.po
+M	po/ps.po
+M	po/pt.po
+M	po/pt_BR.po
+M	po/ro.po
+M	po/rw.po
+M	po/si.po
+M	po/sk.po
+M	po/sl.po
+M	po/sq.po
+M	po/sr.po
+M	po/sr@latin.po
+M	po/sv.po
+M	po/ta.po
+M	po/te.po
+M	po/th.po
+M	po/tr.po
+M	po/ug.po
+M	po/uk.po
+M	po/vi.po
+M	po/zh_CN.po
+M	po/zh_HK.po
+
+commit 84ae373c1c412eb260fcfdaf57be7ddf4942d310
+Merge: 82314df 01999fa
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-10-08
+
+    Merge pull request #24 from infirit/master
+
+    back to libwnck
+
+commit 01999fa43ecc9a5a1432cbbee0e69925e1d8c1fb
+Author: infirit <infirit@gmail.com>
+Date:	2013-10-08
+
+    back to libwnck
+
+M	configure.ac
+M	src/prettytable.cpp
+M	src/prettytable.h
+M	src/procman.h
+M	src/proctable.cpp
+
+commit 82314dfe634a141792a4b274bebb63901730bf98
+Merge: 8e517ce 886978d
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-08-02
+
+    Merge pull request #23 from infirit/yelptools
+
+    Use yelp-tools instead of mate-doc-utils
+
+commit 8e517ce5e6e79f325a6d614064708aaa77b42cd2
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-08-02
+
+    Bump version to 1.6.1
+
+M	configure.ac
+
+commit 886978d2efd71b829d677913ec65a5bfdcc64d91
+Author: infirit <infirit@gmail.com>
+Date:	2013-08-01
+
+    Use yelp-tools instead of mate-doc-utils
+
+M	Makefile.am
+M	autogen.sh
+M	configure.ac
+R099	help/C/mate-system-monitor.xml	help/C/index.docbook
+M	help/C/legal.xml
+M	help/Makefile.am
+M	help/ar/ar.po
+M	help/bg/bg.po
+M	help/ca/ca.po
+M	help/cs/cs.po
+M	help/da/da.po
+M	help/de/de.po
+M	help/el/el.po
+M	help/es/es.po
+M	help/fr/fr.po
+M	help/oc/oc.po
+M	help/pa/pa.po
+M	help/sv/sv.po
+M	help/zh_CN/zh_CN.po
+M	src/callbacks.cpp
+
+commit 8fb0d3fb26c376da3029450a182e82a9637f7d00
+Merge: 92bda27 16348f5
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-07-26
+
+    Merge pull request #22 from NiceandGently/master
+
+    fix make file for automake-1.13
+
+commit 16348f50a9e7949138e78c671854d9aa7be9f146
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:	2013-07-26
+
+    fix make file for automake-1.13
+
+M	src/Makefile.am
+
+commit 92bda2727b604e442178e9d79ce133bf3947109d
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-06-28
+
+    Fixes for make dist
+
+M	Makefile.am
+M	configure.ac
+M	src/Makefile.am
+
+commit 0eda7f51e3612b50da0985fa5399c99f446890db
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-06-28
+
+    Check if cpu color key exists before read it
+
+    Closes #14
+    (https://github.com/mate-desktop/mate-system-monitor/issues/14)
+
+M	src/procman.cpp
+
+commit 459dad23fc583cff00201935f562a084284344aa
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-06-28
+
+    Fix indentation
+
+M	src/procman.cpp
+
+commit e9854abd045441d9168249c8afec5cee5caf5bd2
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-04-23
+
+    Add manpage for mate-system-monitor
+    Closes #20
+    (https://github.com/mate-desktop/mate-system-monitor/issues/20)
+
+M	Makefile.am
+A	mate-system-monitor.1
+
+commit 69ab51cda64cc66d4844a86bdeacaf47b7788011
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-04-01
+
+    Bump version to 1.6.0
+
+M	configure.ac
+
+commit d578fa16c1732052a936590a0bde158e2b22e4ab
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-04-01
+
+    Sync translations with transifex
+
+M	po/LINGUAS
+M	po/am.po
+M	po/ast.po
+C063	po/zh_TW.po	po/en_AU.po
+M	po/ko.po
+C062	po/zh_TW.po	po/ky.po
+M	po/ru.po
+M	po/zh_TW.po
+
+commit 4be768a0ed112e1d68a31dca0d5ebce7a3750da8
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-04-01
+
+    Add transifex configuration file
+
+A	.tx/config
+
+commit 7c3540a1a01f303a4ff13a91ec2df3c67e6e6535
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-04-01
+
+    Add empty ChangeLog to allow build from git
+
+A	ChangeLog
+
+commit a1a107efafa9ad94709a32391df2b10d7eca68bd
+Merge: 798a9fb c15f32d
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2013-03-24
+
+    Merge branch 'master' of github.com:mate-desktop/mate-system-monitor
+
+commit 798a9fb1047487d923fb2d04a88d309151a6b523
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2013-03-24
+
+    "Removed ChangeLog"
+
+D	ChangeLog
+
+commit c15f32dc7a63448b6276fb291a95fbb704ed0cfb
+Merge: 5bb751a 69a8053
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-03-24
+
+    Merge pull request #19 from NiceandGently/master
+
+    fix desktop file
+
+commit 69a80538478d3a12bb0012ea65ffdd713b8fe2b7
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:	2013-03-17
+
+    Update mate-system-monitor.desktop.in.in
+
+    choose a unique name
+    add generic name
+
+M	mate-system-monitor.desktop.in.in
+
+commit 5bb751a77a7a8216c779bb378bff864444321f81
+Merge: 1660ca1 1f856ef
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-02-05
+
+    Merge pull request #18 from MDykstra/master
+
+    AC_CONFIG_HEADERS to please automake 1.13
+
+commit 1f856ef391f6bcf7c9ce8bfde68f249326330fa0
+Author: Marcel Dijkstra <marcel.dykstra@gmail.com>
+Date:	2013-02-05
+
+    AC_CONFIG_HEADERS to please automake 1.13
+
+M	autogen.sh
+R098	configure.in	configure.ac
+
+commit 1660ca1fadd15f3a785ce48a85c9947b98cb847d
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2013-01-17
+
+    Preparing for 1.5.1 release.
+
+M	ChangeLog
+M	configure.in
+
+commit d26233e7395c81f4974b1d13a5b3c532f773f42b
+Merge: c1553da 801b5ab
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-01-07
+
+    Merge pull request #17 from MDykstra/master
+
+    grayscale sidebar image, compatible with any color scheme
+
+commit 801b5ab326a490739c838b4328ed17c4368d22e0
+Author: Marcel Dijkstra <marcel.dykstra@gmail.com>
+Date:	2013-01-06
+
+    grayscaled sidebar image, compatible with any color scheme
+
+M	pixmaps/side.png
+
+commit c1553da1a3b25a116f999d0c40bfdc6f3012849d
+Merge: 8335218 6b58b44
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-01-04
+
+    Merge pull request #13 from cygwinports/master
+
+    Add mateconf-gsettings-data-convert file
+
+commit 8335218ae2c9ab769d584cd1bcc9d5da581efed4
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-01-04
+
+    Restore first 4 original cpu colors
+
+M	src/org.mate.system-monitor.gschema.xml.in.in
+
+commit 6c8240e5611355fdf8f69ab603c0113a2840000b
+Merge: 99a70e0 7816180
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2013-01-04
+
+    Merge pull request #16 from sbalneav/master
+
+    Paint it black
+
+commit 781618080e373211921222bef4696fe9ce3edd61
+Author: Scott Balneaves <sbalneav@alburg.net>
+Date:	2013-01-02
+
+    I have to turn my head until my darkness goes
+
+M	src/procman.cpp
+
+commit 73da57f093a422229c053333a81738a97ac000fb
+Author: Scott Balneaves <sbalneav@alburg.net>
+Date:	2013-01-01
+
+    Fix deprecations
+
+M	src/gsm_color_button.c
+M	src/gsm_color_button.h
+M	src/procman.cpp
+
+commit fd824a7e03a8303801db03abf59fbdd5dfe3e39a
+Author: Scott Balneaves <sbalneav@alburg.net>
+Date:	2013-01-01
+
+    Fix Issue #14
+
+M	src/org.mate.system-monitor.gschema.xml.in.in
+M	src/procman.cpp
+
+commit 6b58b44c9516f1dc8c163323e45bb840eab940e2
+Author: Yaakov Selkowitz <yselkowitz@users.sourceforge.net>
+Date:	2012-12-25
+
+    Add mateconf-gsettings-data-convert file
+
+M	src/Makefile.am
+A	src/mate-system-monitor.convert
+
+commit 99a70e0dac224bf34ab2753bafc1344c04991b2a
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-11-20
+
+    Added a comment related to previous commit.
+
+M	src/prettytable.cpp
+
+commit 42e355492516efe168b1ad16e3762610402fce10
+Merge: 6d06a22 244dabb
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-11-19
+
+    Merge pull request #11 from sbalneav/master
+
+    Fixes #9
+
+commit 244dabb83477ab71b8f023c58461b3246988c34c
+Author: Scott Balneaves <sbalneav@alburg.net>
+Date:	2012-11-19
+
+    Fixes issue #9
+
+M	src/prettytable.cpp
+
+commit 6d06a224d764c5b58127f665b2fcfa7eeac080ee
+Author: Nelson Marques <nmo.marques@gmail.com>
+Date:	2012-11-07
+
+    add missing semi-colon to OnlyShowIn desktop file
+
+M	mate-system-monitor.desktop.in.in
+
+commit f2633b384c62eafeb7c395fc3831940ee2a3a724
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-07
+
+    gsettings schema transatable
+
+M	src/org.mate.system-monitor.gschema.xml.in.in
+
+commit 2607287294831b187ee28f0009c713f6df9134e4
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-07
+
+    fix POTFILES.in
+
+M	po/POTFILES.in
+
+commit 2d0ac0aa94fa42554146a6eaede36d445d078db2
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-07
+
+    fix gsettings keys names
+
+M	src/procdialogs.cpp
+
+commit 9b4f1532d7a38c0850a0c164c405c25c806a9137
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-07
+
+    fix gsettings key name
+
+M	src/callbacks.cpp
+
+commit 39c9b9529e46dd0847fca0aa8840150ad898ccb0
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-06
+
+    bump version to 1.5.0
+
+M	configure.in
+
+commit 17ceaa364a9cf482612dc1babbe9d300b70aa41a
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-06
+
+    re-add desktop file
+
+A	mate-system-monitor.desktop.in.in
+
+commit eb7b95cc5e20488865a6950341c3a8ed8d721b55
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-06
+
+    fix schema installation
+
+M	src/Makefile.am
+D	src/mate-system-monitor.schemas.in
+R090	src/org.mate.mate-system-monitor.gschema.xml.in
+src/org.mate.system-monitor.gschema.xml.in.in
+M	src/procman.h
+
+commit 066eec2b099b863ab3a5e5f505340493903935ba
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-06
+
+    remove mateconf schema
+
+D	mate-system-monitor.desktop.in.in
+
+commit 684e6bb4c072f707a92ce72d85954b5790aaab53
+Merge: 7caef9a f27253b
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-11-06
+
+    Merge pull request #10 from NiceandGently/master
+
+    port to gsettings
+
+commit f27253b155db8d3c06bf13801c63bdc282da4157
+Author: raveit <chat-to-me@raveit.de>
+Date:	2012-11-06
+
+    Port to gesettings
+
+M	configure.in
+M	po/POTFILES.in
+M	src/Makefile.am
+M	src/callbacks.cpp
+M	src/disks.cpp
+M	src/interface.cpp
+M	src/mate-system-monitor.schemas.in
+D	src/mateconf-keys.cpp
+M	src/memmaps.cpp
+M	src/openfiles.cpp
+A	src/org.mate.mate-system-monitor.gschema.xml.in
+M	src/procdialogs.cpp
+M	src/procman.cpp
+M	src/procman.h
+M	src/proctable.cpp
+A	src/settings-keys.cpp
+R060	src/mateconf-keys.h	src/settings-keys.h
+M	src/smooth_refresh.cpp
+M	src/smooth_refresh.h
+
+commit 7caef9a314fc9f1fea996d79601d4242286825b1
+Merge: d1453ff bd77d12
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-10-12
+
+    Merge pull request #7 from NiceandGently/master
+
+    fix incorrect FSF address
+
+commit bd77d1287b5434014ce52a0a3bb195ff2883185b
+Author: raveit65 <chat-to-me@raveit.de>
+Date:	2012-10-12
+
+    fix incorrect FSF address
+
+M	src/bacon-message-connection.c
+M	src/bacon-message-connection.h
+M	src/callbacks.cpp
+M	src/callbacks.h
+M	src/gsm_color_button.c
+M	src/gsm_color_button.h
+M	src/interface.cpp
+M	src/interface.h
+M	src/procactions.cpp
+M	src/procactions.h
+M	src/procdialogs.cpp
+M	src/procdialogs.h
+M	src/procman.cpp
+M	src/procman.h
+M	src/proctable.cpp
+M	src/proctable.h
+
+commit d1453ff860c405a5405d856da0d670f028d30101
+Merge: ed445b3 f02b38e
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-10-02
+
+    Merge pull request #6 from NiceandGently/master
+
+    add OnlyShowIn=MATE and remove Categories=MATE entry in desktop file
+
+commit f02b38e3cbd3e484c1fb3707ac821963be72bff5
+Author: Wolfgang Ulbrich <chat-to-me@raveit.de>
+Date:	2012-10-02
+
+    Update mate-system-monitor.desktop.in.in
+
+    add OnlyShowIn=MATE and remove Categories=MATE entry in desktop file
+
+M	mate-system-monitor.desktop.in.in
+
+commit ed445b315c23031bd4c2d9357459e744e52479fe
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-07-12
+
+    Preparing for 1.4 release.
+
+M	ChangeLog
+M	configure.in
+D	distro/ubuntu/build
+D	distro/ubuntu/postinst
+D	distro/ubuntu/postrm
+D	distro/ubuntu/preinst
+D	distro/ubuntu/prerm
+
+commit 4f9e5e2320f0a27fe676962b71d5160efec479a7
+Merge: 4595921 3fa35a8
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-07-12
+
+    Merge branch 'master' of github.com:mate-desktop/mate-system-monitor
+
+commit 45959215873762f93accd1384d40b145c007f100
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-07-12
+
+    add po gnome copyrights file
+
+A	po/gnome-copyrights.txt
+
+commit 3fa35a8281ee5088b7e2222b683e5d9191cfd902
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-06-14
+
+    port to libmatewnck
+
+M	configure.in
+M	distro/archlinux/PKGBUILD
+M	src/prettytable.cpp
+M	src/prettytable.h
+M	src/procman.h
+M	src/proctable.cpp
+
+commit 6f24d86e80d059e7d050eae400441029c0e34e59
+Merge: fb91675 f6e7ded
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-05-23
+
+    Merge pull request #5 from MDykstra/master
+
+    backward compatible dependency on gmodule-2.0
+
+commit f6e7ded9039d35f3e9c26ca10a8bf242ed4198e2
+Author: Marcel Dijkstra <marcel.dykstra@gmail.com>
+Date:	2012-05-16
+
+    only depend on gmodule-2.0 if it exists
+
+M	configure.in
+
+commit e4be2442cab4116d8d6c6fdb69efeeefd7ed78e2
+Author: Marcel Dijkstra <marcel.dykstra@gmail.com>
+Date:	2012-04-27
+
+    liner now requires gmodule-2.0 in mate-text-editor
+
+M	configure.in
+
+commit fb9167552795d7ec526c39b8238ded596b5665c7
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-04-06
+
+    Removed empty, useless acconfig.h file
+
+D	acconfig.h
+
+commit de2ad9ebb7d4da2e2adaf6af06506042d777bf48
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-03-25
+
+    Preparing for 1.2.1 release
+
+M	configure.in
+
+commit d8f49f31e5d2987cf494e47a16efd298eeb1e17e
+Merge: 7d89fc8 7b0f14e
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-03-17
+
+    Merge pull request #3 from benpicco/master
+
+    sync with upstream
+
+commit 7b0f14e04533ae7cdb3689862e763f90c688dccf
+Author: =?UTF-8?q?Chris=20K=C3=BChl?= <chrisk@openismus.com>
+Date:	2011-01-27
+
+    Removed use of deprecated mateconf_init.
+
+M	src/procman.cpp
+
+commit bb04c1debe08a65ca834ad531b73fcc58b37eb2a
+Author: =?UTF-8?q?Javier=20Jard=C3=B3n?= <jjardon@gnome.org>
+Date:	2010-09-30
+
+    Replacing GtkNotebookPage with GtkWidget according to changes in GTK+
+
+    Signed-off-by: Chris Kühl <chrisk@openismus.com>
+
+M	src/callbacks.cpp
+M	src/callbacks.h
+
+commit 0a2d8ddbcd904afbd80aace9de6732a7bea28399
+Author: Chris Kühl <chrisk@openismus.com>
+Date:	2011-01-27
+
+    Moved rsvg_init and rsvg_term into main to fix Bug #613752.
+
+M	src/gsm_color_button.c
+M	src/procman.cpp
+
+commit ed0b5b561f7adada1e62041d29edd18612d42ea8
+Author: Chris Kühl <chrisk@openismus.com>
+Date:	2011-01-26
+
+    Replaced occurances of gtk_dialog_set_has_separator with g_object_set.
+
+M	src/lsof.cpp
+M	src/memmaps.cpp
+M	src/openfiles.cpp
+M	src/procdialogs.cpp
+
+commit a43f2684570c10f3c5ee2f32b41065c9d2f2f14e
+Author: Chris Kühl <chrisk@openismus.com>
+Date:	2011-01-26
+
+    Replace old GDK drawing API
+
+    Patch from Sergey Nizovtsev.
+    See https://bugzilla.gnome.org/show_bug.cgi?id=627568
+
+M	src/load-graph.cpp
+M	src/load-graph.h
+
+commit d978ff67175c8e0b05b2a6732ec47aff2dbd21b8
+Author: Andreas Nilsson <nisses.mail@home.se>
+Date:	2010-10-26
+
+    Remove duplicate label in File System tab
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=597250
+
+M	src/disks.cpp
+
+commit 7d89fc8a9fbe3d16bdbb3f5eaeeb978e212c4c83
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-03-11
+
+    added serious image (thanks to Rowen_Stipe)
+
+A	TODO
+C100	pixmaps/side.png	pixmaps/side-cat.png
+M	pixmaps/side.png
+
+commit 1d633a3a02df3809cbe01b592d875374e931373d
+Author: Perberos <perberos@gmail.com>
+Date:	2012-03-09
+
+    build error with glib2-2.31
+    (https://github.com/mate-desktop/mate-system-monitor/issues/2)
+
+M	src/interface.h
+M	src/load-graph.h
+M	src/lsof.h
+M	src/openfiles.h
+M	src/procman_matesu.h
+M	src/util.cpp
+
+commit 8f583a5decc28f0f1283bc0067be77904e78871e
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2012-03-07
+
+    update for 1.2 release
+
+M	AUTHORS
+M	ChangeLog
+M	README
+M	autogen.sh
+M	configure.in
+
+commit 9f898bdcf2a7478ac61942e0d9c1c919f3fa4c65
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-01-13
+
+    Added mate-desktop.org to about window
+
+M	src/callbacks.cpp
+
+commit 1f882326df89b8c2990f71e014586fc2310b7c11
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2012-01-10
+
+    Changed mate.gr.jp to gnome.gr.jp as requested in issue #86
+
+M	po/ChangeLog
+M	po/ja.po
+
+commit 74cb9efe234214c79ba6a685126b387fcef0be34
+Merge: b7b1526 ef37d8f
+Author: Perberos <perberos@gmail.com>
+Date:	2011-12-24
+
+    Merge pull request #1 from samtygier/master
+
+    fix that solves a PATH issue for me 2
+
+commit ef37d8f0e5391a6c955e5c77816b182d5f6ee824
+Author: Sam Tygier <samtygier@yahoo.co.uk>
+Date:	2011-12-24
+
+    Use MATECONFTOOL in makefile. Without this install fails if PATH
+    for sudo does not contain install prefixed bin.
+
+M	configure.in
+M	src/Makefile.am
+
+commit b7b15266d086a24e8b48868b9b1b18bc04cd6c21
+Author: Stefano Karapetsas <stefano@karapetsas.com>
+Date:	2011-12-14
+
+    updated version to 1.1.0
+
+M	AUTHORS
+M	configure.in
+M	distro/archlinux/PKGBUILD
+M	distro/ubuntu/build
+
+commit a0f499ad5f0156d2089fee2cd145e084ce85305d
+Author: Steve Zesch <stevezesch2@gmail.com>
+Date:	2011-12-02
+
+    Changed version to 2011.12.01
+
+M	configure.in
+M	distro/archlinux/PKGBUILD
+M	distro/ubuntu/build
+
+commit ddb8ec9ffd94f9c1c40a1e38618401e0c9f0e077
+Author: Perberos <perberos@gmail.com>
+Date:	2011-11-14
+
+    updating autogen.sh
+
+M	autogen.sh
+
+commit 428acec0268528eeb8f99c1a7b621334eeaaa802
+Author: Perberos <perberos@gmail.com>
+Date:	2011-11-11
+
+    ignore this commit
+
+M	pixmaps/side.png
+
+commit 94fb1159f50ff579c48204f588abd1aee290f4f9
+Author: Perberos <perberos@gmail.com>
+Date:	2011-11-08
+
+    readme still need more info
+
+M	README
+
+commit 881277e87ea63f43b1bd2c3763f0ae3b92f7d64e
+Author: Perberos <perberos@gmail.com>
+Date:	2011-11-08
+
+    chmod +x to autogen.sh
+
+M	autogen.sh
+
+commit f45852ab2a7126f354079499fc8b03976c0eab27
+Author: Perberos <perberos@gmail.com>
+Date:	2011-11-08
+
+    initial
+
+A	AUTHORS
+A	COPYING
+A	ChangeLog
+A	Makefile.am
+A	NEWS
+A	README
+A	acconfig.h
+A	autogen.sh
+A	configure.in
+A	distro/archlinux/PKGBUILD
+A	distro/archlinux/mate-system-monitor.install
+A	distro/ubuntu/build
+A	distro/ubuntu/postinst
+A	distro/ubuntu/postrm
+A	distro/ubuntu/preinst
+A	distro/ubuntu/prerm
+A	help/C/figures/addColumn.png
+A	help/C/figures/changePriority.png
+A	help/C/figures/colorPanel.png
+A	help/C/figures/columnContextMenu.png
+A	help/C/figures/mate-system-monitor_window.png
+A	help/C/figures/memoryMaps.png
+A	help/C/figures/moreInfo.png
+A	help/C/figures/processListing.png
+A	help/C/figures/sortButton.png
+A	help/C/figures/sortMenu.png
+A	help/C/figures/sortMenu2.png
+A	help/C/figures/systemMonitor.png
+A	help/C/figures/viewMenu.png
+A	help/C/legal.xml
+A	help/C/mate-system-monitor.xml
+A	help/ChangeLog
+A	help/Makefile.am
+A	help/ar/ar.po
+A	help/ar/figures/mate-system-monitor_window.png
+A	help/bg/bg.po
+A	help/bg/figures/addColumn.png
+A	help/bg/figures/changePriority.png
+A	help/bg/figures/colorPanel.png
+A	help/bg/figures/columnContextMenu.png
+A	help/bg/figures/mate-system-monitor_window.png
+A	help/bg/figures/memoryMaps.png
+A	help/bg/figures/moreInfo.png
+A	help/bg/figures/processListing.png
+A	help/bg/figures/sortButton.png
+A	help/bg/figures/sortMenu.png
+A	help/bg/figures/sortMenu2.png
+A	help/bg/figures/systemMonitor.png
+A	help/bg/figures/viewMenu.png
+A	help/ca/ca.po
+A	help/ca/figures/mate-system-monitor_window.png
+A	help/cs/cs.po
+A	help/cs/figures/mate-system-monitor_window.png
+A	help/da/da.po
+A	help/de/de.po
+A	help/de/figures/mate-system-monitor_window.png
+A	help/el/el.po
+A	help/es/es.po
+A	help/es/figures/mate-system-monitor_window.png
+A	help/fr/figures/mate-system-monitor_window.png
+A	help/fr/fr.po
+A	help/mate-system-monitor.omf.in
+A	help/oc/oc.po
+A	help/pa/pa.po
+A	help/sv/figures/mate-system-monitor_window.png
+A	help/sv/sv.po
+A	help/zh_CN/figures/mate-system-monitor_window.png
+A	help/zh_CN/zh_CN.po
+A	mate-system-monitor.desktop.in.in
+A	pixmaps/Makefile.am
+A	pixmaps/download.svg
+A	pixmaps/side.png
+A	pixmaps/upload.svg
+A	po/ChangeLog
+A	po/LINGUAS
+A	po/POTFILES.in
+A	po/POTFILES.skip
+A	po/am.po
+A	po/ar.po
+A	po/as.po
+A	po/ast.po
+A	po/az.po
+A	po/be.po
+A	po/be@latin.po
+A	po/bg.po
+A	po/bn.po
+A	po/bn_IN.po
+A	po/bs.po
+A	po/ca.po
+A	po/ca@valencia.po
+A	po/cs.po
+A	po/cy.po
+A	po/da.po
+A	po/de.po
+A	po/dz.po
+A	po/el.po
+A	po/en@shaw.po
+A	po/en_CA.po
+A	po/en_GB.po
+A	po/eo.po
+A	po/es.po
+A	po/et.po
+A	po/eu.po
+A	po/fa.po
+A	po/fi.po
+A	po/fr.po
+A	po/ga.po
+A	po/gl.po
+A	po/gu.po
+A	po/he.po
+A	po/hi.po
+A	po/hr.po
+A	po/hu.po
+A	po/id.po
+A	po/it.po
+A	po/ja.po
+A	po/ka.po
+A	po/kn.po
+A	po/ko.po
+A	po/ku.po
+A	po/li.po
+A	po/lt.po
+A	po/lv.po
+A	po/mai.po
+A	po/mg.po
+A	po/mk.po
+A	po/ml.po
+A	po/mn.po
+A	po/mr.po
+A	po/ms.po
+A	po/nb.po
+A	po/nds.po
+A	po/ne.po
+A	po/nl.po
+A	po/nn.po
+A	po/oc.po
+A	po/or.po
+A	po/pa.po
+A	po/pl.po
+A	po/ps.po
+A	po/pt.po
+A	po/pt_BR.po
+A	po/ro.po
+A	po/ru.po
+A	po/rw.po
+A	po/si.po
+A	po/sk.po
+A	po/sl.po
+A	po/sq.po
+A	po/sr.po
+A	po/sr@latin.po
+A	po/sv.po
+A	po/ta.po
+A	po/te.po
+A	po/th.po
+A	po/tr.po
+A	po/ug.po
+A	po/uk.po
+A	po/vi.po
+A	po/zh_CN.po
+A	po/zh_HK.po
+A	po/zh_TW.po
+A	src/Makefile.am
+A	src/argv.cpp
+A	src/argv.h
+A	src/bacon-message-connection.c
+A	src/bacon-message-connection.h
+A	src/callbacks.cpp
+A	src/callbacks.h
+A	src/defaulttable.h
+A	src/disks.cpp
+A	src/disks.h
+A	src/e_date.c
+A	src/e_date.h
+A	src/gsm_color_button.c
+A	src/gsm_color_button.h
+A	src/iconthemewrapper.cpp
+A	src/iconthemewrapper.h
+A	src/interface.cpp
+A	src/interface.h
+A	src/load-graph.cpp
+A	src/load-graph.h
+A	src/lsof.cpp
+A	src/lsof.h
+A	src/mate-system-monitor.schemas.in
+A	src/mateconf-keys.cpp
+A	src/mateconf-keys.h
+A	src/memmaps.cpp
+A	src/memmaps.h
+A	src/openfiles.cpp
+A	src/openfiles.h
+A	src/prettytable.cpp
+A	src/prettytable.h
+A	src/procactions.cpp
+A	src/procactions.h
+A	src/procdialogs.cpp
+A	src/procdialogs.h
+A	src/procman.cpp
+A	src/procman.h
+A	src/procman_gksu.cpp
+A	src/procman_gksu.h
+A	src/procman_matesu.cpp
+A	src/procman_matesu.h
+A	src/proctable.cpp
+A	src/proctable.h
+A	src/selection.cpp
+A	src/selection.h
+A	src/selinux.cpp
+A	src/selinux.h
+A	src/smooth_refresh.cpp
+A	src/smooth_refresh.h
+A	src/sysinfo.cpp
+A	src/sysinfo.h
+A	src/util.cpp
+A	src/util.h

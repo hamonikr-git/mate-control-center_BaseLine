@@ -1,0 +1,275 @@
+virt-viewer (0.5.6-2) unstable; urgency=low
+
+  * [72a675c] Remove now unused DM-Upload-Allowed
+  * [ff900a3] Swith to dh
+  * [274651a] Unapply patches after the build
+  * [ba6f30c] Bump standards version to 3.9.4 (no source changes)
+  * [20493e3] Spice is only available on i386 and amd64 so don't try to use it
+    on other architectures
+  * [508a44f] Install spice-xpi-client-remote-viewer and make it available as
+    alternative for spice-xpi-client (Closes: #704217)
+
+ -- Guido Günther <agx@sigxcpu.org>  Tue, 25 Jun 2013 17:18:25 +0200
+
+virt-viewer (0.5.6-1) unstable; urgency=low
+
+  * Upload to unstable (Closes: #667565)
+  * [01d4881] New upstream version 0.5.6
+  * [a40ea7d] Drop all patches - fixed upstream.
+  * [6a48df3] Fix compilation due to missing format string
+
+ -- Guido Günther <agx@sigxcpu.org>  Tue, 25 Jun 2013 12:29:56 +0200
+
+virt-viewer (0.5.5-5) experimental; urgency=low
+
+  * Upload to unstable (Closes: #667565)
+
+ -- Guido Günther <agx@sigxcpu.org>  Thu, 16 May 2013 19:18:31 +0200
+
+virt-viewer (0.5.5-4) experimental; urgency=low
+
+  * Upload to experimental since recent libvirt and spice-gtk aren't
+    available in sid/wheezy.
+  * [1ed354b] Depend on newer libvirt (Closes: #701684)
+  * [450bfec] Depend on newer spice-gtk
+
+ -- Guido Günther <agx@sigxcpu.org>  Sat, 02 Mar 2013 12:31:06 +0100
+
+virt-viewer (0.5.5-3) unstable; urgency=low
+
+  * New upload
+
+ -- Laurent Léonard <laurent@open-minds.org>  Sun, 24 Feb 2013 19:45:49 +0100
+
+virt-viewer (0.5.5-2) unstable; urgency=low
+
+  * New upload
+
+ -- Laurent Léonard <laurent@open-minds.org>  Sun, 24 Feb 2013 16:53:02 +0100
+
+virt-viewer (0.5.5-1) unstable; urgency=low
+
+  * [5bf850a] Imported Upstream version 0.5.5 (Closes: #684725)
+
+ -- Laurent Léonard <laurent@open-minds.org>  Wed, 20 Feb 2013 23:20:54 +0100
+
+virt-viewer (0.5.4-3) experimental; urgency=low
+
+  * [af14ec8] Fix ssh connection tunneling
+
+ -- Guido Günther <agx@sigxcpu.org>  Mon, 22 Oct 2012 22:40:32 +0200
+
+virt-viewer (0.5.4-2) experimental; urgency=low
+
+  * Upload to experimental
+  * [0029b1c] Enable spice support (Closes: #667565)
+  * [b139b7c] Drop unneeded build-deps
+
+ -- Guido Günther <agx@sigxcpu.org>  Wed, 26 Sep 2012 08:59:19 +0200
+
+virt-viewer (0.5.4-1) unstable; urgency=low
+
+  * [e3fbded] Imported Upstream version 0.5.4
+  * [43b4d1e] Remove LDFLAGS override
+
+ -- Laurent Léonard <laurent@open-minds.org>  Mon, 17 Sep 2012 23:09:48 +0200
+
+virt-viewer (0.5.3-1) unstable; urgency=low
+
+  * [7ef218a] Imported Upstream version 0.5.3
+
+ -- Laurent Léonard <laurent@open-minds.org>  Mon, 28 May 2012 19:47:27 +0200
+
+virt-viewer (0.5.2-1) unstable; urgency=low
+
+  * [e7ae231] Imported Upstream version 0.5.2
+  * [26e78cf] Bump Standards-Version to 3.9.3
+
+ -- Laurent Léonard <laurent@open-minds.org>  Sun, 22 Apr 2012 00:33:01 +0200
+
+virt-viewer (0.5.1-1) unstable; urgency=low
+
+  * [78f733f] Imported Upstream version 0.5.1
+
+ -- Laurent Léonard <laurent@open-minds.org>  Fri, 17 Feb 2012 18:10:34 +0100
+
+virt-viewer (0.5.0-1) unstable; urgency=low
+
+  * [e2a8e17] Imported Upstream version 0.5.0
+
+ -- Laurent Léonard <laurent@open-minds.org>  Thu, 16 Feb 2012 10:46:00 +0100
+
+virt-viewer (0.4.2-1) unstable; urgency=low
+
+  * [032178c] Imported Upstream version 0.4.2
+  * [c290303] Drop patches
+    - 0001-Really-fix-using-alternate-ssh-ports.patch - applied upstream
+    - 0002-ff-callbacks-must-be-invoked-from-a-clean-stack.patch - applied
+      upstream
+
+ -- Laurent Léonard <laurent@open-minds.org>  Thu, 10 Nov 2011 09:01:35 +0100
+
+virt-viewer (0.4.1-4) experimental; urgency=low
+
+  * [0029b1c] Enable spice support
+
+ -- Guido Günther <agx@sigxcpu.org>  Fri, 02 Sep 2011 21:04:44 +0200
+
+virt-viewer (0.4.1-3) unstable; urgency=low
+
+  * [9e79afb] ff callbacks must be invoked from a clean stack. Fixes a hang
+    when connecting to an unknown host or wrong port.
+
+ -- Guido Günther <agx@sigxcpu.org>  Tue, 16 Aug 2011 18:06:57 +0200
+
+virt-viewer (0.4.1-2) unstable; urgency=low
+
+  * [3c6e6de] Build against GTK+3
+  * [599a1e1] Really fix using alternate ssh ports. Many,many thanks to Luca
+    Capello for debugging this and for providing a patch. (Closes: #637548)
+
+ -- Guido Günther <agx@sigxcpu.org>  Fri, 12 Aug 2011 19:16:05 +0200
+
+virt-viewer (0.4.1-1) unstable; urgency=low
+
+  * [09d4f14] Imported Upstream version 0.4.1
+  * [16b141a] Drop patch
+    - 0001-Don-t-hardcode-sshport.patch - applied upstream
+
+ -- Laurent Léonard <laurent@open-minds.org>  Sat, 06 Aug 2011 12:37:48 +0200
+
+virt-viewer (0.4.0-1) unstable; urgency=low
+
+  * [8d9bbb8] New upstream version 0.4.0
+  * [2376c06] New patch 0001-Don-t-hardcode-sshport.patch.  Don't hardcode
+    sshport. This unbreaks using different ports via .ssh/config.
+  * [7cad1db] Bump standards version
+  * [8f6536f] Switch to 3.0 (quilt) source format
+
+ -- Guido Günther <agx@sigxcpu.org>  Sat, 23 Jul 2011 18:49:55 +0200
+
+virt-viewer (0.3.1-2) unstable; urgency=low
+
+  * [7a46ee9] Use DEB_CONFIGURE_SCRIPT_ENV to define LDFLAGS
+  * Upload to unstable (Closes: #618614)
+
+ -- Laurent Léonard <laurent@open-minds.org>  Thu, 17 Mar 2011 22:52:44 +0100
+
+virt-viewer (0.3.1-1) unstable; urgency=low
+
+  [ Guido Günther ]
+  * [6977871] Add versioned dependency on libvirt-dev
+    since at least 0.6.0 is needed according to configure.ac. (Closes: #590219)
+    Thanks to Matt Taggart
+
+  [ Laurent Léonard ]
+  * [07b9d4d] Imported Upstream version 0.3.1
+  * [ea28cf2] Redo patches
+  * [38b2dc4] Bump Standards-Version to 3.9.1
+  * [ad642d7] Remove mozilla-virt-viewer
+
+ -- Laurent Léonard <laurent@open-minds.org>  Wed, 09 Mar 2011 23:24:35 +0100
+
+virt-viewer (0.2.1-1) unstable; urgency=low
+
+  [ Guido Günther ]
+  * [c2945b4] bump standards version
+  * [8ca5ea3] exclude plugins from dh_makeshlibs
+
+  [ Laurent Léonard ]
+  * [39043d7] Remove libtool issue fix.
+  * [a460a21] Revert "Remove libtool issue fix." This reverts commit
+    39043d7460220d7aeecb30b7b489e9064b591440.
+  * [9ab8056] Bump Debhelper version to 7.
+  * [366e279] Bump Standards-Version to 3.8.3.
+  * [0a4e524] Clean debian/rules.
+  * [e662ab7] Remove debian/docs.
+  * [409e5bf] Update clean target in debian/rules.
+  * [a57c8ba] Allow DM upload and add myself as uploader.
+  * [2f26f4f] Clean debian/watch.
+
+  [ Guido Günther ]
+  * [6806613] Imported Upstream version 0.2.1
+  * [b956a6e] Build-dep on intltool
+  * [b6fa2e2] Use xulrunner-dev instead of iceape-dev
+  * [431a46e] New patch 0001-Fix-build-with-xulrunner-1.9.1.patch: Fix build
+    with xulrunner 1.9.1
+  * [c3381c5] New patch 0002-Define-GLADE_DIR.patch: Define GLADE_DIR
+  * [720c999] Depend on virt-viewer
+  * [94828c7] New patch 0003-Add-some-docs.patch: Adds some docs
+  * [8aaf986] Add example web page
+  * [ae04386] Warn about security implications
+
+ -- Guido Günther <agx@sigxcpu.org>  Tue, 02 Feb 2010 21:27:29 +0100
+
+virt-viewer (0.2.0-1) experimental; urgency=low
+
+  * [67b0e98] Imported Upstream version 0.2.0
+  * [6152ea0] drop patch applied upstream rm-in-plugindir.diff
+  * [5d943f5] add missing libglade2-dev
+  * [adbf4fc] install ui files
+
+ -- Guido Günther <agx@sigxcpu.org>  Thu, 30 Jul 2009 15:50:55 +0200
+
+virt-viewer (0.0.3-7) experimental; urgency=low
+
+  [ Laurent Léonard ]
+  * [06ed1a6] Add missing separator in mozilla-virt-viewer dependencies.
+  * [1bd570f] Fix libtool issue.
+
+ -- Guido Günther <agx@sigxcpu.org>  Wed, 29 Jul 2009 12:34:06 +0200
+
+virt-viewer (0.0.3-6) experimental; urgency=low
+
+  * [1f49897] install missing binary (Closes: #507549)
+
+ -- Guido Günther <agx@sigxcpu.org>  Thu, 04 Dec 2008 12:41:50 +0100
+
+virt-viewer (0.0.3-5) experimental; urgency=low
+
+  * [a645d5c] really look into destdir (Closes: #504287)
+
+ -- Guido Günther <agx@sigxcpu.org>  Mon, 03 Nov 2008 19:36:55 +0100
+
+virt-viewer (0.0.3-4) experimental; urgency=low
+
+  * [fc7c0aa] rm files in plugindir - same bug as in gtk-vnc so use the
+    same fix (Closes: #504287)
+
+ -- Guido Günther <agx@sigxcpu.org>  Sun, 02 Nov 2008 18:20:49 +0100
+
+virt-viewer (0.0.3-3) experimental; urgency=low
+
+  * [24287e3] set maintainer to pkg-libvirt-maintainers
+  * [314c1a9] build the mozilla-plugin
+  * [0749e02] add README.source
+  * [937201b] bump standards version
+  * [02cf615] add Vcs-{Git,Browser} and Homepage fields
+
+ -- Guido Günther <agx@sigxcpu.org>  Mon, 27 Oct 2008 20:59:02 +0100
+
+virt-viewer (0.0.3-2) unstable; urgency=low
+
+  * debian/control: depend on gtk that has gtk_widget_is_composited
+  * debian/copyright: make copyright match what's in main.c
+
+ -- Guido Guenther <agx@sigxcpu.org>  Tue, 25 Mar 2008 11:53:23 +0100
+
+virt-viewer (0.0.3-1) unstable; urgency=low
+
+  * new upstream version 0.0.3
+  * remove upstream author(s) template
+  * add watch file
+  * build depend on recent libgtk-vnc (>= 0.3.4) since we need some new
+    symbols out of it
+  * remove superflous debian/dirs
+  * bump standards version
+
+ -- Guido Guenther <agx@sigxcpu.org>  Wed, 12 Mar 2008 10:48:19 +0100
+
+virt-viewer (0.0.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #452514)
+
+ -- Guido Guenther <agx@sigxcpu.org>  Fri, 23 Nov 2007 00:20:13 +0100
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-tools" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="addins#tools"/>
+    <desc>Jak si nechat automaticky vytvářet poznámky pro každý den.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-16" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Poznámka pro dnešek</title>
+
+  <p>Můžete si nechat automaticky vytvářet poznámky pro jednotlivé dny. Tyto poznámky budete mít připraveny s textem obsahujícím datum. Například: <em>Dnes: čtvrtek, 21. ledna 2010</em>. Tento doplněk je ve výchozím stavu zakázán.</p>
+
+  <steps>
+    <title>Pro otevření poznámky pro dnešek:</title>
+    <item>
+      <p>Klikněte na ikonu <gui>Tomboy</gui> v oznamovací liště.</p>
+    </item>
+    <item>
+      <p>V seznamu poznámek vyberte poznámku s aktuálním datem.</p>
+    </item>
+  </steps>
+
+	<note style="tip">
+    <p>Poznámka rovněž automaticky přidá řádky <em>Úkoly</em> a <em>Události</em>.</p>
+  </note>
+
+</page>

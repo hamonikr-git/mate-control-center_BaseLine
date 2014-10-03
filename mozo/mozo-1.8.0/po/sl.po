@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# jierro <jierro@windowslive.com>, 2013
+# Matej Urbančič <mateju@svn.mate.org>, 2010
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-14 14:26+0100\n"
+"PO-Revision-Date: 2014-02-19 16:31+0000\n"
+"Last-Translator: jierro <jierro@windowslive.com>\n"
+"Language-Team: Slovenian (http://www.transifex.com/projects/p/MATE/language/sl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sl\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
+
+#: ../Mozo/MainWindow.py:164
+msgid "Name"
+msgstr "Ime"
+
+#: ../Mozo/MainWindow.py:180
+msgid "Show"
+msgstr "Pokaži"
+
+#: ../Mozo/MainWindow.py:188
+msgid "Item"
+msgstr "Predmet"
+
+#: ../data/mozo.desktop.in.in.h:1 ../data/mozo.ui.h:2
+msgid "Main Menu"
+msgstr "Glavni meni"
+
+#: ../data/mozo.desktop.in.in.h:2
+msgid "Change which applications are shown on the main menu"
+msgstr "Določitev programov, ki so prikazani v osnovnem meniju"
+
+#: ../data/mozo.ui.h:1
+msgid "_Revert to Original"
+msgstr "_Povrni na prvotne vrednosti"
+
+#: ../data/mozo.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "Povrni privzeto postavitev menija"
+
+#: ../data/mozo.ui.h:4
+msgid "_Menus:"
+msgstr "_Meniji:"
+
+#: ../data/mozo.ui.h:5
+msgid "It_ems:"
+msgstr "_Predmeti:"
+
+#: ../data/mozo.ui.h:6
+msgid "_New Menu"
+msgstr "Nov _meni"
+
+#: ../data/mozo.ui.h:7
+msgid "Ne_w Item"
+msgstr "_Nov predmet"
+
+#: ../data/mozo.ui.h:8
+msgid "New _Separator"
+msgstr "Nov _ločilnik"
+
+#: ../data/mozo.ui.h:9
+msgid "Move Up"
+msgstr "Premakni navzgor"
+
+#: ../data/mozo.ui.h:10
+msgid "Move Down"
+msgstr "Premakni navzdol"
+
+#: ../data/mozo.ui.h:11
+msgid "Revert Changes?"
+msgstr "Ali želite povrniti spremembe?"
+
+#: ../data/mozo.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "Ali želite povrniti vse menije na privzete nastavitve?"

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="create-notebook" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#notebooks"/>
+    <desc>Jak v aplikaci Tomboy vytvořit nový sešit.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Vytvoření sešitu</title>    
+  
+  <p>Sešity vám umožňují seskupovat poznámky, které patří k sobě. Poznámku můžete přidat do sešitu v okně Hledat ve všech poznámkách nebo přímo v okně s poznámkou.</p>
+  
+<steps>
+	<item>
+	<p>Klikněte na ikonu Tomboy na panelu GNOME, na pruhu úloh v Microsoft Windows nebo v doku v Mac OS X. Objeví se nabídka.</p>
+	</item>
+	
+<!--
+<comment>Screenshots need to be updated using Clearlooks</comment>
+-->
+
+	<item>
+		<p>Zvolte <guiseq><gui>Sešity</gui><gui>Nový sešit</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Zadejte název pro nový sešit.</p>
+	</item>
+</steps>
+
+	<p>Postup vytvoření nového sešitu z dialogového okna <gui>Hledat ve všech poznámkách</gui>:</p>
+
+<steps>
+	<item>
+		<p>Otevřete <gui>Hledat ve všech poznámkách</gui> buď v nabídce z ikony Tomboy na panelu GNOME, na pruhu úloh v Microsoft Windows nebo v doku v Mac OS X a nebo kliknutím na tlačítko Hledat v otevřené poznámce.</p>
+	</item>
+	<item>
+		<p>Pomocí myši klikněte pravým tlačítkem do levé části a zvolte <gui>Nový sešit</gui>.</p>
+	</item>
+	<item>
+		<p>Zadejte název pro nový sešit.</p>
+	</item>
+</steps>
+
+	<p>Nebo:</p>
+	
+<steps>
+	<item>
+		<p>V otevřeném dialogovém okně <gui>Hledat ve všech poznámkách</gui> zvolte <guiseq><gui>Soubor</gui><gui>Sešity</gui><gui>Nový sešit</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Zadejte název pro nový sešit.</p>
+	</item>
+</steps>	
+
+        
+	
+	
+</page>

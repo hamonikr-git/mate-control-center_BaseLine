@@ -1,0 +1,4 @@
+[Atril Backend]
+Module=djvudocument
+_TypeDescription=DjVu Documents
+MimeType=image/vnd.djvu

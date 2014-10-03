@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="create-notebook" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#notebooks"/>
+    <desc>Crear un caderno de notas novo en Tomboy.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Crear un caderno de notas</title>    
+  
+  <p>Os cadernos de notas permítenlle agrupar notas relacionadas. Pode engadir unha nota a un caderno de notas na xanela Buscar en todas as notas ou directamente dentro dunha nota.</p>
+  
+<steps>
+	<item>
+	<p>Prema sobre a icona de Tomboy presente no panel de GNOME, a barra de tarefas en Microsoft Windows, ou o «dock» en Mac OS X. Aparecerá un menú.</p>
+	</item>
+	
+<!--
+<comment>Screenshots need to be updated using Clearlooks</comment>
+-->
+
+	<item>
+		<p>Seleccione <guiseq><gui>Cadernos de notas</gui><gui>Caderno de notas novo</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Introduza un nome para o caderno de notas novo.</p>
+	</item>
+</steps>
+
+	<p>Para crear un caderno de notas novo desde o diálogo <gui>Buscar en todas as notas</gui>:</p>
+
+<steps>
+	<item>
+		<p>Abra <gui>Buscar en todas as notas</gui> elixindo desde a icona de Tomboy no panel de GNOME, a barra de tarefas en Microsoft Windows, ou o «dock» en Mac OS X, ou prema Buscar nunha nota aberta.</p>
+	</item>
+	<item>
+		<p>Usando o seu rato, prema co botón dereito na caixa da esquerda e elixa <gui>Novo caderno de notas</gui>.</p>
+	</item>
+	<item>
+		<p>Introduza un nome para o caderno de notas novo.</p>
+	</item>
+</steps>
+
+	<p>Ou:</p>
+	
+<steps>
+	<item>
+		<p>Con <gui>Buscar en todas as notas</gui> aberto, elixa <guiseq><gui>Ficheiro</gui><gui>Cadernos</gui><gui>Caderno de notas novo</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Introduza un nome para o caderno de notas novo.</p>
+	</item>
+</steps>	
+
+        
+	
+	
+</page>

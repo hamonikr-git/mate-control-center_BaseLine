@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_install:
+	dh_install --list-missing
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--disable-static \
+		--disable-scrollkeeper \
+		--with-gtk=2.0
+
+override_dh_strip:
+	dh_strip --dbg-package=mate-calc-dbg
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

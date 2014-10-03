@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="create-notebook" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#notebooks"/>
+    <desc>Izveidot jaunu piezīmju bloku Tomboy programmā.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Izveidot piezīmju bloku</title>    
+  
+  <p>Piezīmju bloki ļauj tev sagrupēt piezīmes kopā. Tu vari pievienot piezīmi piezīmju blokam, "Meklēt visas piezīmes" logā vai no pašas piezīmes loga.</p>
+  
+<steps>
+	<item>
+	<p>Spied uz Tomboy piezīmes ikonu GNOME panelī, Microsoft Windows rīkjoslā vai Mac OS X dokā un parādīsies izvēlne.</p>
+	</item>
+	
+<!--
+<comment>Screenshots need to be updated using Clearlooks</comment>
+-->
+
+	<item>
+		<p>Izvēlies <guiseq><gui>Piezīmju bloki</gui><gui>Jauns piezīmju bloks</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Ievadi jaunā piezīmju bloka nosaukumu.</p>
+	</item>
+</steps>
+
+	<p>Lai izveidotu jaunu piezīmju bloku no <gui>Meklēt visas piezīmes</gui> loga:</p>
+
+<steps>
+	<item>
+		<p>Atver <gui>Meklēt visas piezīmes</gui>, izvēloties to no Tomboy ikonas GNOME panelī, Microsoft Windows rīkjoslā vai Mac OS X dokā, vai spied Meklēt jau atvērtā piezīmē.</p>
+	</item>
+	<item>
+		<p>Izmantojot savu peli, veic labo peles klikšķi uz kreisās puses laukā un izvēlies <gui>Jauns piezīmju bloks</gui>.</p>
+	</item>
+	<item>
+		<p>Ievadi jaunā piezīmju bloka nosaukumu.</p>
+	</item>
+</steps>
+
+	<p>Vai:</p>
+	
+<steps>
+	<item>
+		<p>Ar <gui>Meklēt visas piezīmes</gui> logu atvēru, izvēlies <guiseq><gui>Fails</gui><gui>Piezīmju bloki</gui><gui>Jauns piezīmju bloks</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Ievadi jaunā piezīmju bloka nosaukumu.</p>
+	</item>
+</steps>	
+
+        
+	
+	
+</page>

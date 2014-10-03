@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "February 2007">
+<!ENTITY app "<application>Image Viewer</application>">
+<!ENTITY appname "Image Viewer">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Εγχειρίδιο της προβολής εικόνων</title>
+    
+    <copyright lang="en"> 
+      <year>2006</year> 
+      <year>2007</year>
+      <holder>MATE Documentation Project</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2002</year> 
+      <year>2003</year> 
+      <year>2004</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>Eliot Landrum</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>The Free Software Foundation</holder> 
+    </copyright>	 
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Έργο τεκμηρίωσης του MATE</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+         <para>Επιτρέπεται η αντιγραφή, η αναδιανομή και/ή η τροποποίηση αυτού του εγγράφου υπό τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GPL (GFDL), έκδοση 1.1 ή νεότερη που εκδόθηκε από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Αμετάβλητα Τμήματα, χωρίς Κείμενο Εξωφύλλου και χωρίς Κείμενο Οπισθοφύλλου. Μπορείτε να βρείτε ένα αντίγραφο της GDFL σ' <ulink type="help" url="help:fdl">αυτό το σύνδεσμο</ulink> ή στο αρχείο COPYING DOCS που διανέμεται μαζί με αυτό το εγχειρίδιο.</para>
+          <para>Αυτό το εγχειρίδιο είναι μέρος μιας συλλογής από εγχειρίδια του MATE που διανέμονται υπό την GFDL. Αν θέλετε να διανείμετε αυτό το εγχειρίδιο ξεχωριστά από τη συλλογή, μπορείτε να το κάνετε προσθέτοντας σ' αυτό ένα αντίγραφο της άδειας, όπως περιγράφεται στο τμήμα 6 της άδειας.</para>
+ 
+         <para>Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρείες για να διακρίνουν τα προϊόντα και τις υπηρεσίες τους είναι κατατεθέντα σήματα. Όπου εμφανίζονται τέτοια ονόματα σε οποιαδήποτε τεκμηρίωση του MATE. και τα μέλη του Έργου Τεκμηρίωσης του MATE το γνωρίζουν, τότε αυτά τα ονόματα γράφονται με κεφαλαία γράμματα ή ξεκινούν με κεφαλαίο γράμμα.</para>
+ 
+         <para lang="en">
+           DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+           UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+           WITH THE FURTHER UNDERSTANDING THAT:
+ 
+           <orderedlist>
+                 <listitem>
+                   <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                     WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                     IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                     THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                     A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                     RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                     OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                     MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                     YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                     CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                     SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                     OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                     LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                     VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                     EXCEPT UNDER THIS DISCLAIMER; AND
+                   </para>
+                 </listitem>
+                 <listitem>
+                   <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                        THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                        CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                        INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                        DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                        OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                        PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                        DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                        CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                        INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                        OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                        MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                        LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                        DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                        EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                        THE POSSIBILITY OF SUCH DAMAGES.
+                   </para>
+                 </listitem>
+           </orderedlist>
+         </para>
+   </legalnotice>
+ 
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+   <authorgroup>
+   <author lang="en"> 
+	<firstname>Jens</firstname> 
+	<surname>Finke</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Angela</firstname> 
+	<surname>Boyle</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Stuart</firstname> 
+	<surname>Ellis</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Sun</firstname> 
+	<surname>MATE Documentation Team</surname> 
+	<affiliation> 
+	  <orgname>Sun Microsystems</orgname>  
+	</affiliation> 
+   </author> 
+   <author lang="en"> 
+	<firstname>Eliot</firstname> 
+	<surname>Landrum</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+   </author> 
+   <author lang="en"> 
+	<firstname>Federico</firstname> 
+	<surname>Mena Quintero</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+   </author>	
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <email>translator@gnome.org</email> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+ 
+    <revhistory>
+    <revision lang="en"> 
+		<revnumber>Image Viewer Manual V2.8</revnumber> 
+		<date>February 2007</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">MATE Documentation Project</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en">
+		<revnumber>Image Viewer Manual V2.7</revnumber>
+		<date>February 2004</date>
+		<revdescription>
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription>
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.6</revnumber> 
+		<date>November 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.5</revnumber> 
+		<date>September 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.4</revnumber> 
+		<date>January 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.3</revnumber> 
+		<date>October 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.2</revnumber> 
+		<date>August 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.1</revnumber> 
+		<date>July 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.0</revnumber> 
+		<date>May 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en"> 
+		<revnumber>Eye of MATE User's Guide</revnumber> 
+		<date>2000</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Eliot Landrum 
+	    		  <email>eliot@landrum.cx</email>
+	  		</para>
+	  		<para role="author" lang="en">Federico Mena Quintero 
+	    		  <email>federico@gnu.org</email>
+	  		</para>	  
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+    <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.18 της Προβολής εικόνων.</releaseinfo> 
+    <legalnotice> 
+      <title>Ανάδραση</title> 
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια εισήγηση σχετικά με την Προβολή εικόνων η με αυτό το έγγραφο, ακολουθήστε τις οδηγίες στη <ulink url="help:user-guide?feedback-bugs" type="help">Σελίδα ανάδρασης του MATE</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+    <abstract role="description">
+      <para>Εγχειρίδιο για την <application>Εφαρμογή προβολής εικόνων Μάτι του MATE</application>.</para>
+    </abstract>
+
+  </articleinfo> 
+
+  <indexterm lang="en">
+    <primary>Eye of MATE</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+<sect1 id="eom-introduction">
+  <title>Εισαγωγή</title>
+  <para>Η <application>Εφαρμογή προβολής εικόνων Μάτι του MATE</application> σας επιτρέπει να βλέπετε εικόνες μία μία ή και μεγάλες συλλογές από εικόνες.</para>
+
+  <sect2 id="eom-tostartapp">
+    <title>Εκκίνηση της εφαρμογής προβολής εικόνων</title>
+    <para>Μπορείτε να εκκινήσετε την <application>Εφαρμογή προβολής εικόνων</application> με τους ακόλουθους τρόπους:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Ανοίξτε μια εικόνα από τον <application>Ναυτίλο</application>.</para>
+      </listitem>
+      <listitem>
+	<para lang="en">Choose <menuchoice><guimenu>Graphics</guimenu>
+	<guimenuitem>Image Viewer</guimenuitem></menuchoice>
+	from the <guimenu>Applications</guimenu> menu.</para>
+      </listitem>
+      <listitem>
+	<para>Εκτελέστε την εντολή <command>eom</command> από ένα τερματικό όπως το <application>mate-terminal</application>, ή από το διάλογο <application>Εκτέλεση εφαρμογής</application>.</para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
+
+  <sect2 id="eom-closeapp">
+    <title>Κλείσιμο της εφαρμογής προβολής εικόνων</title>
+    <para lang="en">To close the current <application>Image Viewer</application> window choose <menuchoice><guimenu>File</guimenu>
+    <guimenuitem>Close</guimenuitem></menuchoice>, or press
+    <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>.</para>
+  </sect2>
+
+  <sect2 id="eom-filetypes">
+    <title>Υποστηριζόμενοι τύποι αρχείων</title>
+    <para>Η <application>Εφαρμογή προβολής εικόνων</application> υποστηρίζει μια ποικιλία τύπων αρχείων εικόνων. Οι ακόλουθοι τύποι μπορούν να ανοίξουν:</para>
+		<itemizedlist>
+			<listitem><para>ANI - Κινούμενη εικόνα</para>
+			</listitem>
+			<listitem><para>BMP - Windows Bitmap</para>
+			</listitem>
+			<listitem><para>GIF - Graphics Interchange Format</para>
+			</listitem>
+			<listitem><para>ICO - Εικονίδιο Windows</para>
+			</listitem>
+			<listitem><para>JPEG - Joint Photographic Experts Group</para>
+			</listitem>
+			<listitem><para>PCX - PC Paintbrush</para>
+			</listitem>
+			<listitem><para>PNG - Portable Network Graphics</para>
+			</listitem>
+			<listitem><para>PNM - Portable Anymap από το PPM Toolkit</para>
+			</listitem>
+			<listitem><para>RAS - Sun Raster</para>
+			</listitem>
+			<listitem><para>SVG - Scalable Vector Graphics</para>
+			</listitem>
+			<listitem><para>TGA - Targa</para>
+			</listitem>
+			<listitem><para>TIFF - Tagged Image File Format</para>
+			</listitem>
+			<listitem><para>WBMP - Wireless Bitmap</para>
+			</listitem>
+			<listitem><para>XBM - X Bitmap</para>
+			</listitem>
+			<listitem><para>XPM - X Pixmap</para>
+			</listitem>
+		</itemizedlist>
+
+  <para>Η <application>Εφαρμογή προβολής εικόνων</application> υποστηρίζει τους ακόλουθους τύπους αρχείων για αποθήκευση:</para>
+		<itemizedlist>
+			<listitem><para>BMP - Windows Bitmap</para>
+			</listitem>
+			<listitem><para>ICO - Εικονίδιο Windows</para>
+			</listitem>
+			<listitem><para>JPEG - Joint Photographic Experts Group</para>
+			</listitem>
+			<listitem><para>PNG - Portable Network Graphics</para>
+			</listitem>
+		</itemizedlist>
+		<para>Η <application>Εφαρμογή προβολής εικόνων</application> ενδέχεται να ανοίγει και να αποθηκεύει και άλλους τύπους αρχείων, ανάλογα με τη ρύθμιση του συστήματός σας και τις υπόλοιπες εγκατεστημένες εφαρμογές.</para>
+  </sect2>
+
+  <sect2 id="eom-features">
+    <title>Χαρακτηριστικά της εφαρμογής προβολής εικόνων</title>
+    <para>Η <application>Εφαρμογή προβολής εικόνων</application> έχει μια ποικιλία λειτουργιών για να σας βοηθήσει να προβάλετε τις εικόνες σας. Μπορείτε να κάνετε μεγέθυνση και σμίκρυνση ή να προβάλετε την εικόνα σε πλήρη οθόνη. Ανεξάρτητα από το επίπεδο μεγέθυνσης, ο <application>Προβολέας εικόνων</application> χρησιμοποιεί ένα μικρό ποσό μνήμης. Μπορείτε επίσης να περιστρέψετε και να αναστρέψετε την εικόνα που βλέπετε.</para>
+
+    <para>Η προβολή συλλογής σας επιτρέπει να εμφανίζετε και να επεξεργάζεστε μεγάλες συλλογές εικόνων. Σε αυτή την προβολή, οι ενέργειες σε εικόνες μπορούν να εφαρμόζονται σε όλες τις επιλεγμένες εικόνες αμέσως.</para>
+
+    <para>Η <application>Εφαρμογή προβολής εικόνων</application> έχει ειδική υποστήριξη για εικόνες ψηφιακής φωτογραφικής μηχανής και εμφανίζει μεταδεδομένα (metadata) EXIF που καταγράφηκαν με την εικόνα. Αυτή η λειτουργία χρειάζεται να υπάρχει εγκατεστημένο στο σύστημά σας το <systemitem class="library">libexif</systemitem>. Όλες οι τροποποιήσεις που έγιναν σε εικόνες JPEG είναι χωρίς απώλειες. Δηλαδή, κατά την αποθήκευση περιστραμμένων και ανεστραμμένων εικόνων JPEG δεν θα επανασυμπιεστεί η εικόνα. Εκτός από αυτό, όλα τα διαθέσιμα μεταδεδομένα (όπως EXIF) θα συντηρηθούν και θα ενημερωθούν αναλόγως.</para>
+  </sect2>
+</sect1>
+
+<!--============== When You Start ===========-->
+<sect1 id="eom-whenyoustart">
+  <title>Ξεκινώντας</title>
+  <para>Όταν εκκινείτε τον <application>Προβολέα εικόνων</application>, το ακόλουθο παράθυρο εμφανίζεται:</para>
+  <figure id="mainwindow-fig">
+		<title>Αρχικό παράθυρο προβολέα εικόνων</title>
+		<screenshot>
+		  <mediaobject lang="en">
+		    <imageobject>
+		      <imagedata fileref="figures/eom_start_window.png" format="PNG"/>
+		    </imageobject>
+		    <textobject>
+		      <phrase>Shows <application>Image Viewer</application> main window. Contains titlebar, menubar, toolbar, and display area. Menubar contains File, Edit, View, and Help menus.</phrase>
+		    </textobject>
+		  </mediaobject>
+		</screenshot>
+  </figure>
+  <para>Το παράθυρο <application>Εφαρμογή προβολής εικόνων</application> περιέχει τα ακόλουθα στοιχεία:</para>
+  <variablelist>
+	<varlistentry>
+  	  <term>Μπάρα μενού</term>
+ 	  <listitem>
+	    <para>Τα μενού στην μπάρα μενού περιέχουν όλες τις εντολές που θα χρειαστείτε για να δουλέψετε με εικόνες στην <application>Εφαρμογή προβολής εικόνων</application>.</para>
+	  </listitem>
+ 	</varlistentry>
+	<varlistentry>
+	  <term>Εργαλειοθήκη</term>
+	  <listitem>
+	    <para>Η εργαλειοθήκη περιέχει ένα υποσύνολο των εντολών που μπορείτε να βρείτε στην μπάρα μενού. Για να εμφανίσετε ή να αποκρύψετε την εργαλειοθήκη, επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Εργαλειοθήκη</guimenuitem></menuchoice>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Περιοχή προβολής</term>
+	  <listitem>
+ 	    <para>Η περιοχή προβολής εμφανίζει την εικόνα.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Γραμμή κατάστασης</term>
+	  <listitem>
+	    <para>Η γραμμή κατάστασης παρέχει πληροφορίες για την εικόνα. Για να εμφανίσετε ή να αποκρύψετε την γραμμή κατάστασης, επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Γραμμή κατάστασης</guimenuitem></menuchoice>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Συλλογή εικόνων</term>
+	  <listitem>
+	    <para>Οι συλλογή εικόνων εμφανίζει όλες τις υποστηριζόμενες εικόνες στο τρέχων κατάλογο εργασίας. Εμφανίζεται μία φορά όταν φορτωθεί μία εικόνα. Για εμφάνιση ή απόκρυψη της συλλογής, επιλέξτε  <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Συλλογή εικόνων</guimenuitem></menuchoice> ή πατήστε <keycap>F9</keycap>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Πλαίσιο πληροφοριών εικόνας</term>
+	  <listitem>
+	    <para>Το πλαίσιο πληροφοριών εικόνας παρέχει περισσότερες πληροφορίες για την τρέχουσα εικόνα, για παράδειγμα μεταδεδομένα EXIF (αν είναι διαθέσιμα). Εμφανίζεται αφού φορτωθεί μια εικόνα. Για να εμφανίσετε ή να αποκρύψετε το  πλαίσιο πληροφοριών εικόνας, επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Πληροφορίες εικόνας</guimenuitem></menuchoice> ή πατήστε <keycombo><keycap>Ctrl</keycap><keycap>I</keycap></keycombo>.</para>
+	  </listitem>
+	</varlistentry>
+  </variablelist>
+  <para>Οι περισσότερες ενέργειες στην <application>Εφαρμογή προβολής εικόνων</application> μπορούν να εκτελεστούν με διάφορους τρόπους. Για παράδειγμα, μπορείτε να ανοίξετε ένα αρχείο με τους ακόλουθους τρόπους:</para>
+  <itemizedlist>
+    <listitem><para>Σύρετε ένα αρχείο εικόνας στο παράθυρο της <application>Εφαρμογής προβολής εικόνων</application> από μια άλλη εφαρμογή ή παράθυρο.</para></listitem>
+    <listitem><para>Κάντε διπλό κλικ σε ένα αρχείο εικόνας στον διαχειριστή αρχείων ή σε μια άλλη εφαρμογή.</para></listitem>
+    <listitem><para lang="en">Choose <menuchoice><guimenu>File</guimenu>
+    <guimenuitem>Open</guimenuitem></menuchoice> and select an image file
+    in the <application>Load Image</application> dialog.</para></listitem>
+    <listitem><para lang="en">Press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap>
+    </keycombo> and select an image file in the <application>Load
+    Image</application> dialog.</para></listitem>
+  </itemizedlist>
+</sect1>
+
+
+<!-- ============= Viewing Images ============================== -->
+<sect1 id="eom-view">
+	<title>Προβάλλοντας εικόνες</title>
+
+	<!--=========== To Open an Image ============================= -->
+	<sect2 id="eom-open-image">
+		<title>Ανοίγοντας μια εικόνα</title>
+                <para>Για να ανοίξετε μια εικόνα, εκτελέστε τα ακόλουθα βήματα:</para>
+                <orderedlist>
+                  <listitem>
+                    <para lang="en">
+                      Choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice>, or press <keycombo> <keycap>Ctrl</keycap><keycap>O</keycap> </keycombo>.  </para>
+                  </listitem>
+                  <listitem>
+                    <para>Στον διάλογο <guilabel>Φόρτωση εικόνας</guilabel>, επιλέξτε το αρχείο που θέλετε να ανοίξετε.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Κάντε κλικ στο <guibutton>Άνοιγμα</guibutton>. Το <application>Εικονοσκόπιο</application> προβάλει το όνομα της εικόνας του αρχείουστη γραμμή ονομασίας του παραθύρου.</para>
+                  </listitem>
+                </orderedlist>
+                <para lang="en"> 
+	          To open another image, choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice> again. <application>Image Viewer</application> opens each image in a new window.
+                </para>
+	</sect2>
+
+	<!--=========== To View the Images in a Directory ==================== -->
+	<sect2 id="eom-open-folder">
+		<title>Προβολή των εικόνων σε ένα φάκελο</title>
+		<para>Για να προβάλλετε όλες τις εικόνες σε ένα φάκελο, εκτελέστε τα ακόλουθα βήματα:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Ανοίξτε μια από τις εικόνες στο φάκελο (δείτε <xref linkend="eom-open-image"/>).</para>
+                  </listitem>
+                  <listitem>
+                    <para>Ανοίξτε τη συλλογή εικόνων επιλέγοντας <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Συλλογή εικόνων</guimenuitem></menuchoice> ή πατώντας το <keycap>F9</keycap>.</para>
+                  </listitem>
+		</orderedlist>
+	     <para>Η συλλογή δείχνει τις μικρογραφίες όλων των υποστηριζόμενων εικόνων στο φάκελο. Μπορείτε να ξεφυλλίσετε τις εικόνες κάνοντας κλικ σε μία εικόνα στη συλλογή, επιλέγοντας την κατάλληλη επιλογή στο επιλογή <guimenu>Μετάβαση</guimenu> ή πατώντας  <keycombo><keycap>Alt</keycap><keycap>Αριστερό</keycap></keycombo> ή <keycombo><keycap>Alt</keycap><keycap>Δεξιό</keycap></keycombo>.</para>
+             <para lang="en">To view all of the images in the directory fullscreen, choose <menuchoice> <guimenu>View</guimenu><guimenuitem>Full Screen</guimenuitem> </menuchoice> or press <keycap>F11</keycap>. To view them as a slide show, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Slideshow</guimenuitem></menuchoice> or press <keycap>F5</keycap>. To return to the collection view, press the <keycap>Esc</keycap> key, or <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>. For more information about how to customize the slide show, see <xref linkend="eom-prefs-slideshow"/>.
+                    </para>
+	</sect2>
+
+	<!--============ To Scroll an Image ======================= -->
+	<sect2 id="eom-scroll-image">
+		<title>Κύλιση μιας εικόνας</title>
+		<para>Για να κυλίσετε μια εικόνα που είναι μεγαλύτερη από το παράθυρο της, ή σε προβολή πλήρους οθόνης, μπορείτε να χρησιμοποιήσετε τις ακόλουθες μεθόδους:</para>
+		<itemizedlist>
+			<listitem><para>Χρησιμοποιήστε τα βέλη στο πληκτρολόγιο.</para>
+			</listitem>
+			<listitem><para>Σύρετε την εικόνα για να την μετακινήσετε στο παράθυρο. (Αυτό σημαίνει πως σύρετε την εικόνα προς την αντίθετη κατεύθυνση από αυτήν που θέλετε να κυλίσει: για να κυλίσετε την εικόνα προς τα κάτω, σύρετε την προς τα πάνω στο παράθυρο.)</para>
+			</listitem>
+			<listitem><para>Χρησιμοποιήστε τις μπάρες κύλισης στο παράθυρο.</para>
+			</listitem>
+		</itemizedlist>
+	</sect2>
+
+	<!--=========== To Zoom In and Out ==================== -->
+	<sect2 id="eom-zoom">
+		<title>Μεγέθυνση</title>
+		<para>Μπορείτε να κάνετε μεγέθυνση ή σμίκρυνση σε μια εικόνα με τους ακόλουθους τρόπους:</para>
+			<itemizedlist>
+				<listitem><para>Χρησιμοποιήστε τον <mousebutton>τροχό κύλισης</mousebutton> στο ποντίκι σας. Η κύλιση προς τα κάτω κάνει σμίκρυνση· ενώ η κύλιση προς τα πάνω μεγέθυνση.</para></listitem>
+ 			  <listitem><para>Επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Μεγέθυνση</guimenuitem></menuchoice> ή <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Σμίκρυνση</guimenuitem></menuchoice>. Για να επαναφέρετε την εικόνα στο αρχικό της μέγεθος, επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Κανονικό μέγεθος</guimenuitem></menuchoice>. Για να κάνετε την εικόνα να ταιριάζει στο παράθυρο, επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Καλύτερο ταίριασμα</guimenuitem></menuchoice>.</para></listitem>				
+ 				<listitem><para>Χρησιμοποιήστε τα κουμπιά μεγέθυνσης ή σμίκρυνσης στην γραμμή εργαλείων. Το <guilabel>Κανονικό</guilabel> θα επαναφέρει την εικόνα στο αρχικό της μέγεθος. Το <guilabel>Προσαρμογή</guilabel> θα αλλάξει το μέγεθος της εικόνας ώστε να ταιριάζει στο παράθυρο αν είναι μεγαλύτερο.</para></listitem>
+
+				<listitem><para lang="en">Use the keyboard. To zoom in, <keycombo> <keycap>Ctrl</keycap><keycap>+</keycap> </keycombo> or <keycap>+</keycap>. To zoom out, <keycombo> <keycap>Ctrl</keycap><keycap>-</keycap> </keycombo> or <keycap>-</keycap>. To go back to the normal size, <keycombo> <keycap>Ctrl</keycap><keycap>0</keycap> </keycombo> or <keycap>1</keycap>. To scale the image to fit the window, press <keycap>F</keycap>.</para></listitem>
+			</itemizedlist>
+			<para>Όταν σε μία εικόνα μεταβάλετε η εστίαση της για να χωρέσει στο παράθυρο, με την αλλαγή μεγέθους του παραθύρου θα αλλάξει επίσης το επίπεδο μεταβλητής εστίασης, έτσι η εικόνα ακόμη χωράει στο παράθυρο.</para>
+	</sect2>
+
+	<!--=========== To View Image Fullscreen ==================== -->
+	<sect2 id="eom-fullscreen">
+		<title>Προβολή εικόνας σε Πλήρη οθόνη/Αλληλουχία</title>
+		<para>Για να εμφανίσετε την εικόνα σε ολόκληρη την οθόνη, επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Πλήρης οθόνη</guimenuitem></menuchoice>.</para>
+		<para>Χωρίς να είναι ορατά τα φατνώματα, πλαίσια παραθύρου ή γραμμές επιλογών όταν μία εικόνα εμφανίζεται έτσι. Για επιστροφή στην κανονική προβολή, πατήστε <keycap>Esc</keycap>, ή <keycap>F11</keycap>, ή <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>.</para>
+		<para>Μπορείτε να μεταβάλλεται στην εστίαση ή να κυλίσετε γύρω από την εικόνα με τον ίδιο τρόπο όπως όταν φαινόταν στο παράθυρο, με τη χρήση του ποντικιού ή του πληκτρολογίου.</para>
+		<para>Αν έχετε πολλές εικόνες στην συλλογή σας μπορείτε να πιέσετε το <keycap>Διάστημαα</keycap> ή να χρησιμοποιήσετε το πλήκτρα δεξιά/κάτω για να προχωρήσετε στην επόμενη εικόνα. Η προηγούμενη εικόνα μπορεί να επανέλθει με τη χρήση του <keycap>Διάστημα προς τα πίσω</keycap> ή χρησιμοποιώντας τα πλήκτρα αριστερά/απάνω.</para>
+	<para>Σε αυτή την περίπτωση μπορείτε επίσης να χρησιμοποιήσετε την προβολή σε αλληλουχία, στην οποία η <application>Εφαρμογή προβολής εικόνων</application> περνάει αυτόματα στην επόμενη εικόνα στην συλλογή σας. Μπορείτε να ξεκινήσετε μια προβολή σε αλληλουχία επιλέγοντας <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Προβολή σε αλληλουχία</guimenuitem></menuchoice> ή με το πάτημα του <keycap>F5</keycap>. Η προβολή σε αλληλουχία μπορεί να παυθεί/συνεχιστεί με το πάτημα του <keycap>P</keycap>. Για να σταματήσετε την προβολή σε αλληλουχία, πατήστε το <keycap>Esc</keycap> ή το <keycap>F5</keycap>, ή <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>. Για περισσότερες πληροφορίες σχετικά με την προσαρμογή της προβολής σε αλληλουχία, δείτε <xref linkend="eom-prefs-slideshow"/>.</para>
+	</sect2>
+</sect1>
+
+
+<!-- ============= Manipulating Images ============================== -->
+<sect1 id="eom-manipulate">
+	<title>Επεξεργασία εικόνων</title>
+
+	<para>Όλοι οι χειρισμοί εικόνων εφαρμόζονται σε όλες τις επιλεγμένες εικόνες κατευθείαν. Οι τροποποιήσεις γίνονται στην μνήμη και αλλάζουν τα αρχικά αρχεία στο δίσκο μόνο όταν οι εικόνες αποθηκεύονται με τη λειτουργία αποθήκευσης (βλέπε <xref linkend="eom-save-image"/>).</para>
+
+	<!--============ To Flip an Image ======================= -->
+	<sect2 id="eom-flip">
+		<title>Αναστροφή μιας εικόνας</title>
+		<para lang="en">To flip an image along the horizontal axis of the image, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Flip Horizontal</guimenuitem>
+		</menuchoice>.</para>
+		<para lang="en">To flip an image along the vertical axis of the image, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Flip Vertical</guimenuitem>
+		</menuchoice>.</para>
+	</sect2>
+
+	<!--============ To Rotate an Image ======================= -->
+	<sect2 id="eom-rotate">
+		<title>Περιστροφή μιας εικόνας</title>
+		<para lang="en">To rotate an image 90 degrees in a clockwise direction, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Rotate Clockwise</guimenuitem>
+		</menuchoice>.</para>
+		<para lang="en">To rotate an image 90 degrees in an anticlockwise direction, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Rotate Counter Clockwise</guimenuitem>
+		</menuchoice>.</para>
+	</sect2>
+
+	<!--============ To Undo an Action ======================= -->
+	<sect2 id="eom-undo">
+		<title>Αναιρώντας μια ενέργεια</title>
+		<para lang="en">To undo a flip or rotate action, choose 
+		<menuchoice>
+		<guimenu>Edit</guimenu>
+		<guimenuitem>Undo</guimenuitem>
+		</menuchoice> or press 
+		<keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>
+		.</para>
+	</sect2>
+
+	<!--============ To Delete An Image ======================== -->
+	<sect2 id="eom-delete-image">
+		<title>Διαγραφή μιας εικόνας</title>
+		<para lang="en">To move an image to the Trash, choose
+			<menuchoice>
+			<guimenu>Edit</guimenu>
+			<guimenuitem>Move to Trash</guimenuitem>
+			</menuchoice>.
+			This moves the file to the Trash folder. Multiple images can also be moved to the trash in the same way: select them all first.</para>
+	    <para>Για να επαναφέρετε μια εικόνα από τα απορρίμματα, ανοίξτε τον φάκελο απορριμμάτων στον διαχειριστή αρχείων <application>Ναυτίλο</application> και μετακινήστε το αρχείο εικόνας σε έναν άλλο φάκελο. Για να διαγράψετε την εικόνα οριστικά, αδειάστε τα απορρίμματα. Για να μάθετε περισσότερα σχετικά με την χρήση των απορριμμάτων, δείτε τον <ulink type="help" url="help:user-guide?caja-trash">Οδηγό χρήσης</ulink>.</para>
+				
+			<note><para>Μπορείτε επίσης να χρησιμοποιήσετε το πλήκτρο <keycap>Del</keycap> για να μετακινήσετε μια εικόνα στα απορρίμματα. Σε αυτή την περίπτωση θα ερωτηθείτε για επιβεβαίωση.</para></note>
+			
+	</sect2>
+</sect1> 
+
+<!-- ============= Saving Images ============================== -->
+<sect1 id="eom-save-rename">
+	<title>Αποθήκευση εικόνων</title>
+
+	<para>Το <application>Εικονοσκόπιο</application> πάντοτε προσπαθεί να επιλέξει την μέθοδο αποθήκευσης με την λιγότερη επιρροή στα δεδομένα της εικόνας. Για παράδειγμα, αν με κάπιο άλλο τρόπο μία μη τροποποιημένη εικόνα έχει αποθηκευτεί με διαφορετικό όνομα αλλά με την ίδια μορφή, το αρχείο απλά αντιγράφεται. Αν το <systemitem class="library">libjpeg</systemitem> είναι διαθέσιμο στο σύστημα όλες οι τροποποιήσεις της εικόνας JPEG γίνονται χωρίς την απώλεια της πληροφορίας της εικόνας.</para>
+
+<!--============ To Save an Image ======================= -->
+	<sect2 id="eom-save-image">
+		<title>Αποθήκευση μιας εικόνας</title>
+		<para lang="en">To save an image, choose 
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save</guimenuitem>
+			</menuchoice>.
+		The image will be saved under the same name and file type. Therefore, unmodified images needn't be saved.</para>
+	</sect2>
+
+	<!--============ To Save As an Image ======================= -->
+	<sect2 id="eom-save-as-image">
+		<title>Αποθήκευση μιας εικόνας με διαφορετικό όνομα</title>
+		<para lang="en">To save an image under a different name, or convert it to a different file type, choose
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save As</guimenuitem>
+			</menuchoice>.</para>
+		<para>Ορίστε το όνομα αρχείου στο πεδίο <guilabel>Όνομα</guilabel> στον διάλογο <guilabel>Αποθήκευση εικόνας</guilabel>, μετά κάντε κλικ στο <guibutton>Αποθήκευση</guibutton>. Το αρχείο αποθηκεύεται στον τρέχων φάκελο από προεπιλογή. Η <application>Εφαρμογή προβολής εικόνων</application> προσπαθεί να προσδιορίσει τον τύπο αρχείου από την κατάληξη του ονόματος αρχείου που δίνετε. Αν η εικόνα πρέπει να αποθηκευτεί σε άλλο φάκελο ή ο εντοπισμός του τύπου αρχείου αποτύχει, αναπτύξτε τον διάλογο κάνοντας κλικ στο <guilabel>Περιήγηση για άλλους φακέλους</guilabel>. Αυτό επιτρέπει επιπλέον περιήγηση στους φακέλους και τον καθορισμό του τύπου αρχείου από το πλαίσιο επιλογών.</para>
+		<para>Μπορείτε να αποθηκεύσετε πολλαπλές εικόνες απευθείας: δείτε την επόμενη ενότητα.</para>
+	</sect2>    
+
+	<!--============ To Save As an Image ======================= -->
+	<sect2 id="eom-save-as-multiple">
+		<title>Αποθήκευση πολλαπλών εικόνων</title>
+		<para>Η αποθήκευση πολλαπλών εικόνων απευθείας σας επιτρέπει να μετατρέψετε διάφορες εικόνες σε μια διαφορετική μορφή, ή να τους δώσετε παρόμοια ονόματα.</para>
+		<para lang="en">To save multiple images, select the images and choose 
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save As</guimenuitem>
+			</menuchoice>. 		
+		The following window is displayed:</para>
+  		<figure id="saveas-dialog-fig">
+			<title>Παράθυρο διαλόγου Αποθήκευσης ως για πολλαπλές εικόνες</title>
+			<screenshot>
+			  <mediaobject lang="en">
+			    <imageobject>
+			      <imagedata fileref="figures/eom_save_as_window.png" format="PNG"/>
+			    </imageobject>
+			    <textobject>
+			      <phrase>Shows Eye of MATE <guilabel>Save As</guilabel> dialog when saving multiple images.</phrase>
+			    </textobject>
+			  </mediaobject>
+			</screenshot>
+  		</figure>
+		<para>Ο φάκελος στον οποίο οι εικόνες θα αποθηκευτούν καθορίζεται από το αναπτυσσόμενο πλαίσιο <guilabel>Φάκελο προοριμού</guilabel>. Αρχικά ο φάκελος ορίζεται στον τρέχων φάκελο. Επιλέξτε <guilabel>Άλλο...</guilabel> από το αναπτυσσόμενο κατάλογο  για να ανοίξει ένα παράθυρο διαλόγου άνοιγμα φακέλου για αναζήτηση στο σύστημα αρχείων. Το όνομα αρχείου που προκύπτει για κάθε εικόνα ορίζεται από <guilabel>Μορφή αρχείου</guilabel>. Το σχήμα του αρχείου δημιουργείτε από απλούς χαρακτήρες και ειδικά πινακίδια. Τα παρακάτω πινακίδια είναι διαθέσιμα:</para>
+		<itemizedlist>
+			<listitem><para><guilabel>Όνομα αρχείου (%f)</guilabel> - Αρχικό όνομα αρχείου χωρίς το επίθεμα της μορφής του αρχείου.</para>
+			</listitem>
+			<listitem><para><guilabel>Μετρητής (%n)</guilabel> - Ο αριθμός  αυτόματης επαύξησης (ξεκινάει σε συγκεκριμένη έναρξη του μετρητή).</para>
+			</listitem>			
+		</itemizedlist>	
+		<para>Όλα εκτός από αυτά τα ειδικά πινακίδια θεωρούνται σαν κανονικό κείμενο.</para>
+		<para>Η μορφή του αρχείου υπολογίζεται από το αναπτυσσόμενο πλαίσιο μετά τον ορισμό του σχήματος. Επιλέξτε μία συγκεκριμένη μορφή εικόνας ή χρησιμοποιήστε την <guilabel>όπως είναι</guilabel> επιλογή για να δηλώσετε την ίδια μορφή όπως το αρχικό αρχείο που θα χρησιμοποιούταν.</para>
+	
+		<para>Το τμήμα <guilabel>Επιλογές</guilabel> επιτρέπει την αφαίρεση όλων των χαρακτήρων διαστήματος με τη χρήση χαρακτήρων υπογράμμισης στο επακόλουθο όνομα αρχείου αν το  <guilabel>Αντικατάασταση διαστημάτων με χαρακτήρες υπογράμμισης</guilabel> είνια επιλεγμένο. Το πλαίσιο περιστροφής <guilabel>Έναρξη μετρητή στο</guilabel> υπολογίζει σε πιο αριθμό ο μετρητής ξεκινάει γίνει χρήση του πινακιδίου %n για την προδιαγραφή της μορφής του αρχείου.</para>
+		<para>Το τμήμα <guilabel>Προβολή ονόματος αρχείου</guilabel> του παραθύρου διαλόγου δείχνει το επακόλουθο όνομα αρχείου σύμφωνα με τις παραπάνω ρυθμίσεις για ένα όνομα αρχείου παραδείγματος από τις επιλεγμένες εικόνες.</para>
+	</sect2>
+
+
+
+</sect1>
+
+<sect1 id="eom-print">
+	<title>Εκτύπωση εικόνων</title>
+	<sect2 id="eom-print-pagesettings">
+		<title>Ορίζοντας τις ρυθμίσεις σελίδας σας</title>
+		<para>Πριν την εκτύπωση, χρειάζεται να ορίσετε τις ρυθμίσεις σελίδας που επιθυμείτε να χρησιμοποιήσετε. Για να το κάνετε αυτό, επιλέξτε <menuchoice><guimenu>Αρχείο</guimenu><guimenuitem>Διαμόρφωση σελίδας</guimenuitem></menuchoice>.</para>
+		<para>Στον διάλογο <guilabel>Μορφοποίηση σελίδας</guilabel> μπορείτε να επιλέξετε το μέγεθος του χαρτιού και τον προσανατολισμό. Αν είναι δυνατό, επιλέξτε επίσης και τον εκτυπωτή σας για να ρυθμιστούν σωστά τα περιθώρια.</para>
+	</sect2>
+
+	<sect2 id="eom-print-image">
+		<title>Εκτύπωση μιας εικόνας</title>
+		<para>Για να εκτυπώσετε μια εικόνα, εκτελέστε τα ακόλουθα βήματα:</para>
+		<orderedlist>
+			<listitem>
+				<para>Επιλέξτε <menuchoice><guimenu>Αρχείο</guimenu><guimenuitem>Εκτύπωση</guimenuitem></menuchoice></para>
+			</listitem>
+			<listitem>
+				<para>Στον διάλογο <guilabel>Εκτύπωση</guilabel>, επιλέξτε τον εκτυπωτή που θέλετε να χρησιμοποιήσετε από την λίστα.</para>
+			</listitem>
+			<listitem>
+				<para>Κάντε κλικ στο <guilabel>Εκτύπωση</guilabel>. Η <application>Εφαρμογή προβολής εικόνων</application> θα ξεκινήσει να εκτυπώνει.</para>
+			</listitem>
+		</orderedlist>
+		<para>Οι εικόνες που είναι πολύ μεγάλες για την σελίδα, κλιμακώνονται αυτόματα ώστε να ταιριάζουν στη σελίδα. Οι εικόνες που είναι μικρότερες από την σελίδα τοποθετούνται στο κέντρο της.</para>
+		<important>
+			<para>Παρακαλώ σημειώστε ότι το <application>Εικονοσκόπιο</application> είναι αυτή τη στιγμή απασχολημένο με την εκτύπωση και δεν μπορεί να δώσει αναφορά. Κατά την διάρκεια αυτή η διεπαφή του χρήστη  μπορεί να παγώσει για λίγη ώρα.</para>
+		</important>
+	</sect2>
+
+	<sect2 id="eom-print-settings">
+		<title>Διευθέτηση μίας εικόνας στη σελίδα</title>
+		<para>Ίσως δεν θέλετε την εικόνα κεντροποιημένη ή την θέλετε με κλιμάκωση προς τα κάτω ακόμη πιο πολύ. Για να γίνει αυτό χρειάζεται να ανοίξετε το παράθυεο διαλόγου <guilabel>Εκύπωση</guilabel>  (βλέπε <xref linkend="eom-print-image"/>) και μετά επέλεξε τον στηλοθέτη <guilabel>Ρυθμίσεις εικόνας</guilabel> που σας προσφέρει τις παρακάτω επιλογές:</para>
+		<itemizedlist>
+			<listitem>
+				<para>Οι επιλογές στην ενότητα <guilabel>Θέση</guilabel> σας επιτρέπουν να αλλάξετε την θέση των εικόνων στην σελίδα.</para>
+			</listitem>
+			<listitem>
+				<para>Είναι επίσης δυνατό να τοποθετήσετε την εικόνα στην σελίδα σύροντας την στο πεδίο <guilabel>Προεπισκόπηση</guilabel>.</para>
+			</listitem>
+			<listitem>
+				<para>Οι επιλογές στην ενότητα <guilabel>Μέγεθος</guilabel> σας επιτρέπουν να κλιμακώσετε την εικόνα στις προτιμήσεις σας. Η κλιμάκωση περιορίζεται είτε από το μέγεθος της εικόνας ή από το μέγεθος της σελίδας, ανάλογα ποια συνθήκη ικανοποιείται πρώτα.</para>
+			</listitem>
+			<listitem>
+				<para>Η επιλογή <guilabel>Μονάδα</guilabel> σας επιτρέπει να αλλάξετε τη μονάδα μέτρησης που χρησιμοποιείται από τις επιλογές στην καρτέλα <guilabel>Ρυθμίσεις εικόνας</guilabel>. Όταν αλλάζετε αυτή την επιλογή, οι μονάδες στα άλλα πεδία μετατρέπονται αναλόγως.</para>
+			</listitem>
+		</itemizedlist>
+	</sect2>
+		
+</sect1>
+<sect1 id="eom-toolbareditor">
+	<title>Εξατομίκευση της γραμμής εργαλειών</title>
+	<para>Η προεπιλεγμένη γραμμή εργαλείων του εικονοσκοπίου περιέχει μόνο μία βασική ομοείδεια στοιχείων για να είναι απλή. Αλλά μπορείτε να τροποποιήσετε τη γραμμή εργαλείων αν προτιμάτε μία διαφορετική ομοείδεια.</para>
+	<sect2 id="eom-toolbareditor-use">
+		<title>Επεξεργασία της εργαλειοθήκης</title>
+		<para>Αν θέλετε να επεξεργαστείτε την εργαλειοθήκη θα πρέπει να ανοίξετε τον επεξεργαστή εργαλειοθήκης πηγαίνοντας στο <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Εργαλειοθήκη</guimenuitem></menuchoice>. Το ακόλουθο παράθυρο θα εμφανιστεί:</para>
+		<figure id="toolbar-editor-fig">
+			<title>Το παράθυρο επεξεργασίας εργαλειοθήκης</title>
+			<screenshot>
+				<mediaobject lang="en">
+					<imageobject>
+						<imagedata fileref="figures/eom_toolbar_editor_window.png" format="PNG"/>
+					</imageobject>
+					<textobject>
+						<phrase>Shows Eye of MATE toolbar editor window.</phrase>
+					</textobject>
+				</mediaobject>
+			</screenshot>
+		</figure>
+		<para>Περιέχει τα στοιχεία που δεν είναι στην γραμμή εργαλείων και το διαχωριστικό στοιχείο. Μπορείτε τώρα να επεξεργαστείτε τη γραμμή εργαλειών:</para>
+		<itemizedlist>
+			<listitem>
+				<para>Για να προσθέσετε νέα αντικείμενα στην εργαλειοθήκη, σύρετε τα από τον επεξεργαστή εργαλειοθήκης στην εργαλειοθήκη.</para>
+			</listitem>
+			<listitem>
+				<para>Για να αφαιρέσετε αντικείμενα από την εργαλειοθήκη, σύρετε τα από την εργαλειοθήκη στον επεξεργαστή εργαλειοθήκης.</para>
+			</listitem>
+			<listitem>
+				<para>Για να αναδιατάξετε αντικείμενα στην εργαλειοθήκη, σύρετε τα στην νέα τους θέση στην εργαλειοθήκη</para>
+			</listitem>
+		</itemizedlist>
+		<para>Όταν τελειώσετε την επεξεργασία της εργαλειοθήκης, κάντε κλικ στο κουμπί <guibutton>Κλείσιμο</guibutton> στο παράθυρο επεξεργασίας εργαλειοθήκης. Αυτό θα κλείσει τον επεξεργαστή εργαλειοθήκης και θα κάνει την τροποποιημένη εργαλειοθήκη σας ενεργή.</para>
+		</sect2>
+		<sect2 id="eom-toolbareditor-reset">
+			<title>Επαναφορά της εργαλειοθήκης</title>
+			<para>Για να επαναφέρετε τις αλλαγές που κάνατε στην εργαλειοθήκη και να επιστρέψετε στην προεπιλεγμένη διάταξη, εκτελέστε τα ακόλουθα βήματα:</para>
+			<orderedlist>
+				<listitem>
+					<para>Ανοίξτε τον επεξεργαστή εργαλειοθήκης (δείτε <xref linkend="eom-toolbareditor-use"/>).</para>
+				</listitem>
+				<listitem>
+					<para>Κάντε κλικ στο κουμπί <guibutton>Επαναφορά στις προεπιλογές</guibutton>.</para>
+				</listitem>
+				<listitem>
+					<para>Κάντε κλικ στο κουμπί <guibutton>Κλείσιμο</guibutton> για να κλείσετε τον επεξεργαστή εργαλειοθήκης. Η εργαλειοθήκη θα έχει επανέρθει στην αρχική διάταξη.</para>
+				</listitem>
+			</orderedlist>
+		</sect2>
+</sect1>
+<sect1 id="eom-prefs">
+	<title>Προτιμήσεις</title>
+	<para>Μπορείτε να αλλάξετε τις προτιμήσεις πηγαίνοντας στο <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Προτιμήσεις</guimenuitem></menuchoice>. Μπορείτε να αλλάξετε τις επιλογές σας για την προβολή εικόνων και την προβολή σε αλληλουχία. Οι αλλαγές εφαρμόζονται σε όλα τα ανοιχτά παράθυρα άμεσα.</para>
+
+	<!--============ Image View ======================= -->
+  <sect2 id="eom-prefs-image">
+         <title>Προβολή εικόνας</title>
+	<variablelist>
+	<varlistentry>
+		<term lang="en"><guilabel>Image Enhancements</guilabel></term>
+		<listitem>
+		<para>Επιλέξτε την επιλογή <guilabel>Εξομάλυνση εικόνων στη μεγέθυνση</guilabel> για να ενεργοποιήσετε την εξομάλυνση εικόνων όταν αλλάζετε τον παράγοντα μεγέθυνσης της εικόνας. Αν επιλέξετε αυτή την επιλογή, οι εικόνες σας θα εξομαλύνονται ώστε να βελτιώνεται η ποιότητα εμφάνισης όταν τις προβάλλετε με την <application>Εφαρμογή προβολής εικόνων</application>.</para>
+                <para>Αν επιλέξετε την επιλογή <guilabel>Αυτόματος προσανατολισμός</guilabel>, οι εικόνες σας θα περιστρέφονται κατά την φόρτωση ανάλογα με τα μεταδεδομένα τους. Για παράδειγμα ο κατακόρυφος προσανατολισμός περιστρέφεται αυτόματα κάθετα. Σημειώστε ότι αυτή η λειτουργία απαιτεί μία σωστή ρύθμισης του πινακιδίου προσανατολισμού στα μεταδεδομένα της εικόνας και έτσι δεν δουλεύει με όλες με τις εικόνες. Η περιστροφή δεν αποθηκεύεται μέχρι να αποθηκεύσετε την περιστρεφόμενη εικόνα (βλέπε <xref linkend="eom-save-rename"/>).</para>
+		</listitem>
+	</varlistentry>
+
+	<varlistentry>
+		<term lang="en"><guilabel>Transparent Parts</guilabel></term>
+		<listitem>
+		<para>Επιλέξτε μια από τις παρακάτω επιλογές για να καθορίσετε το πώς η <application>Εφαρμογή προβολής εικόνων</application> θα εμφανίζει τα διαφανή μέρη μιας εικόνας:</para>
+		<itemizedlist>
+			<listitem><para lang="en"><guilabel>As check pattern</guilabel> </para>
+			<para>Εμφανίζει όλα τα διαφανή μέρη της εικόνας σε ένα μοτίβο τετραγωνιδίων.</para>
+			</listitem>
+			<listitem><para lang="en"><guilabel>As custom color</guilabel> </para>
+			<para>Εμφανίζει όλα τα διαφανή μέρη της εικόνας σε ένα συμπαγές χρώμα που ορίζετε. Κάντε κλικ στον επιλογέα χρώματος για να επιλέξετε ένα χρώμα.</para>
+			</listitem>
+			<listitem><para lang="en"><guimenuitem>As background</guimenuitem> </para>
+			<para>Εμφανίζει όλα τα διαφανή μέρη της εικόνας στο χρώμα παρασκηνίου της <application>Εφαρμογής προβολής εικόνων</application>.</para>
+			</listitem>
+		</itemizedlist>
+		</listitem>
+	</varlistentry>		
+	</variablelist>
+  </sect2>
+		
+	<!--============ Slide Show ==================-->                                                                                               
+  <sect2 id="eom-prefs-slideshow">
+         <title>Προβολή σε αλληλουχία</title>
+	<variablelist>
+	<varlistentry>
+		<term lang="en"><guilabel>Image Zoom</guilabel></term>
+		<listitem>
+		<para>Επιλέξτε την επιλογή <guilabel>Ανάπτυξη εικόνων ώστε να καταλαμβάνουν την οθόνη</guilabel> για να μεγεθύνετε τις εικόνες ώστε να καταλαμβάνουν την οθόνη κατά την προβολή σε αλληλουχία. Αν δεν επιλέξετε αυτή την επιλογή, οι εικόνες που είναι μικρότερες από το μέγεθος της οθόνης δεν θα μεγεθύνονται ώστε να καταλαμβάνουν την οθόνη.</para>
+		</listitem>
+	</varlistentry>
+	<varlistentry>
+		<term lang="en"><guilabel>Sequence</guilabel></term>
+		<listitem>
+		<para>Επιλέξτε την επιλογή <guilabel>Κυκλική επανάληψη</guilabel> ώστε να γίνεται ασταμάτητη κυκλική προβολή των εικόνων κατά την προβολή σε αλληλουχία. Αν δεν επιλέξετε αυτή την επιλογή, η προβολή σε αλληλουχία επιστρέφει στην προβολή συλλογής μετά την προβολή της τελευταίας εικόνας.</para>
+		<para>Χρησιμοποιήστε το κουτί κυλιόμενων επιλογών <guilabel>Εναλλαγή εικόνας μετά από: ... δευτερόλεπτα</guilabel> για να ορίσετε τον χρόνο που θα εμφανίζεται κάθε εικόνα κατά την προβολή σε αλληλουχία. Αν ορίσετε αυτή την τιμή σε μηδέν, η λειτουργία αυτόματης εναλλαγής απενεργοποιείται και μόνο η χειροκίνητη εναλλαγή είναι διαθέσιμη (δείτε <xref linkend="eom-fullscreen"/>).</para>
+		</listitem>
+	</varlistentry>		
+	</variablelist>
+  </sect2>
+</sect1>
+</article>

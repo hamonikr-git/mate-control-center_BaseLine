@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-sync-webdav" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="addins#sync"/>
+    <desc>Sincronizar sus notas con un servidor WebDav.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-16" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Servicio de sincronización WebDav</title>
+
+  <p>El complemento de servicio de sincronización WebDav le permite sincronizar sus notas con un servidor WebDav remoto. Este complemento está activado de manera predeterminada.</p>
+
+  <p>Para usar el complemento de servicio de sincronización WebDav necesita tener instalado el paquete <em>wdfs FUSE file system</em> en su distribución Linux, algo que está fuera del objetivo de este documento.</p>
+
+ </page>

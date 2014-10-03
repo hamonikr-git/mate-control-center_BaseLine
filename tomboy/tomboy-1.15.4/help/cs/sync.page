@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync-notes" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <desc>Jak synchronizovat vaše poznámky Tomboy s jinými počítači.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Synchronizace vašich poznámek</title>
+
+ <section id="sync">
+
+	<title>Ruční synchronizace poznámek</title>
+	
+	<p>Své poznámky můžete synchronizovat jedním ze tří způsobů:</p>
+	
+	<list type="numbered">
+	  <item><p>V kterékoliv poznámce klikněte na ikonu <gui>Nástroje</gui> a zvolte <gui>Synchronizovat poznámky</gui>.</p></item>
+	  <item><p>V dialogovém okně <gui>Hledat ve všech poznámkách</gui> zvolte <guiseq><gui>Nástroje</gui><gui>Synchronizovat poznámky</gui></guiseq>.</p></item>
+	  <item><p>Použijte svoji myš, klikněte pravým tlačítkem na ikonu Tomboy na svém panelu, na pruhu úloh nebo v doku a zvolte <gui>Synchronizovat všechny poznámky</gui>.</p></item>
+	</list>
+
+ </section>
+ 
+ <section id="autosync">
+ 
+ 	<title>Automatická synchronizace vašich poznámek</title>
+ 	
+	<p>Tomboy může vaše poznámky synchronizovat automaticky na pozadí. Je doporučeno, abyste před tím, než automatické synchronizace zapnete, nastavili, jak se mají řešit konflikty poznámek. O řešení konfliktů mezi poznámkami se můžete poučit na stránce <link xref="sync-setup#conflict"/>.</p>
+
+ 	<p>Synchronizaci můžete zapnout otevřením <gui>Předvoleb Tomboy</gui> pomocí kliknutí pravým tlačítkem myši na svém panelu, na pruhu úloh nebo na doku a zvolením <gui>Předvolby</gui> a následným výběrem karty <gui>Synchronizace</gui>. <gui>Předvolby Tomboy</gui> můžete otevřít také z dialogového okna <gui>Hledat ve všech poznámkách</gui>. V nabídce zvolte <guiseq><gui>Upravit</gui><gui>Předvolby</gui></guiseq>.</p>
+	
+	<p>Pokud chcete zapnout automatické synchronizace, zaškrtněte políčko <gui>Automaticky synchronizovat na pozadí každých x minut</gui> na kartě Synchronizace.</p>
+	
+	<p>Výchozí volbou Tomboy je automatická synchronizace každých 10 minut. Jestli chcete údaj, jak často by se mělo synchronizovat, změnit, zadejte počet minut v dialogovém okně, případně použijte myši a šipek pro zvýšení/snížení údaje.</p>
+	
+	<p>Pokud chcete automatickou synchronizaci vypnout, zrušte zaškrtnutí políčka <gui>Automaticky synchronizovat na pozadí každých x minut</gui>.</p>
+	
+  </section>
+
+ </page>

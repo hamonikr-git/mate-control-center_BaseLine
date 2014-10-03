@@ -1,0 +1,456 @@
+# Translation of gconf-editor to Uyghur
+# Copyright (C) 2002-2004 Free Software Foundation, Inc.
+# Gheyret T.Kenji <gheyret@yahoo.com>, 2005.
+# Sahran <sahran.ug@gmail.com>, 2010
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gconf-editor HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gconf-editor&component=general\n"
+"POT-Creation-Date: 2010-12-23 17:42+0000\n"
+"PO-Revision-Date: 2004-12-05 17:02+0900\n"
+"Last-Translator: Sahran <sahran.ug@gmail.com>\n"
+"Language-Team: GNOME Uighur Translation Project <gnome-uighur@yahoogroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/gconf-editor.desktop.in.in.h:1 ../src/gconf-editor-window.c:393
+#: ../src/gconf-editor-window.c:395 ../src/gconf-editor-window.c:873
+#: ../src/gconf-editor-window.c:1372
+msgid "Configuration Editor"
+msgstr "سەپلىمە تەھرىرلىگۈچ"
+
+#: ../data/gconf-editor.desktop.in.in.h:2
+msgid "Directly edit your entire configuration database"
+msgstr "سەپلىمە ساندىنىنى بىۋاسىتە تەھرىرلەيدۇ"
+
+#: ../data/gconf-editor.schemas.in.h:1
+msgid "Bookmarks"
+msgstr "خەتكۈشلەر"
+
+#: ../data/gconf-editor.schemas.in.h:2
+msgid "gconf-editor folder bookmarks"
+msgstr "gconf-editor قىسقۇچ خەتكۈچلەر"
+
+#: ../src/gconf-bookmarks-dialog.c:205
+msgid "Edit Bookmarks"
+msgstr "خەتكۈش تەھرىر"
+
+#: ../src/gconf-cell-renderer.c:144 ../src/gconf-cell-renderer.c:343
+msgid "<no value>"
+msgstr "<قىممەت يوق>"
+
+#: ../src/gconf-editor-window.c:359
+#, c-format
+msgid "Couldn't display help: %s"
+msgstr "ياردەمنى كۆرسەتكىلى بولمىدى: %s"
+
+#: ../src/gconf-editor-window.c:399
+msgid "An editor for the GConf configuration system."
+msgstr "GConf سەپلىمە سىستېمىسىنىڭ تەھرىرلىگۈچى"
+
+#: ../src/gconf-editor-window.c:402
+msgid "translator-credits"
+msgstr "Gheyret Kenji <gheyret@gmail.com>\n"
+"Sahran<sahran@live.com>\n"
+"Muhemmed Erdem <misran_erdem@hotmail.com>"
+
+#: ../src/gconf-editor-window.c:429
+#, c-format
+msgid ""
+"Couldn't unset key. Error was:\n"
+"%s"
+msgstr "ئاچقۇچنى نى تازىلىغىلى بولمىدى. خاتالىق:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:454
+#, c-format
+msgid ""
+"Could not create key. The error is:\n"
+"%s"
+msgstr "ئاچقۇچنى قۇرالمىدى. خاتالىق:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:536
+#, c-format
+msgid ""
+"Could not change key value. Error message:\n"
+"%s"
+msgstr "ئاچقۇچ قىممىتىنى ئۆزگەرتكىلى بولمىدى. خاتالىق:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:568
+msgid ""
+"Currently pairs and schemas can't be edited. This will be changed in a later "
+"version."
+msgstr "ھازىر جۈپتە ۋە لايىھىلەرنى تەھرىرلىگىلى بولمايدۇ. بۇ كېيىنكى نەشرلىرىدە تۈزىتىلمەكچى."
+
+#: ../src/gconf-editor-window.c:648
+#, c-format
+msgid ""
+"Could not set value. Error was:\n"
+"%s"
+msgstr "قىممەتنى تەڭشىيەلمىدى. خاتالىق:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:684 ../src/gconf-editor-window.c:728
+#, c-format
+msgid ""
+"Could not sync value. Error was:\n"
+"%s"
+msgstr "قىممىتىنى قەدەمداش قىلالمىدى. خاتالىق: \n"
+"%s"
+
+#: ../src/gconf-editor-window.c:740
+msgid "_File"
+msgstr "ھۆججەت(_F)"
+
+#: ../src/gconf-editor-window.c:741
+msgid "_Edit"
+msgstr "تەھرىر(_E)"
+
+#: ../src/gconf-editor-window.c:742
+msgid "_Search"
+msgstr "ئىزدە(_S)"
+
+#: ../src/gconf-editor-window.c:743
+msgid "_Bookmarks"
+msgstr "خەتكۈچلەر(_B)"
+
+#: ../src/gconf-editor-window.c:744
+msgid "_Help"
+msgstr "ياردەم(_H)"
+
+#: ../src/gconf-editor-window.c:746
+msgid "New _Settings Window"
+msgstr "يېڭى تەڭشەك كۆزنىكى(_S)"
+
+#: ../src/gconf-editor-window.c:747
+msgid "Open a new Configuration Editor window editing current settings"
+msgstr "يېڭىدىن سەپلىمە تەھرىرلىگۈچ كۆزنىكى ئېچىپ ھازىرقى تەڭشەك تەھرىرلىنىدۇ"
+
+#: ../src/gconf-editor-window.c:749
+msgid "New _Defaults Window"
+msgstr "يېڭى كۆڭۈلدىكى رامكا(_D)"
+
+#: ../src/gconf-editor-window.c:750
+msgid "Open a new Configuration Editor window editing system default settings"
+msgstr "يېڭىدىن سەپلىمە تەھرىرلىگۈچ كۆزنەك ئېچىپ سىستېمىنىڭ  كۆڭۈلدىكى تەڭشىكى تەھرىرلىنىدۇ"
+
+#: ../src/gconf-editor-window.c:752
+msgid "New _Mandatory Window"
+msgstr "يېڭى مەجبۇرىي كۆزنەك(_M)"
+
+#: ../src/gconf-editor-window.c:753
+msgid ""
+"Open a new Configuration Editor window editing system mandatory settings"
+msgstr "يېڭىدىن سەپلىمە تەھرىرلىگۈچ كۆزنەك ئېچىپ سىستېمىنىڭ  مەجبۇرىي تەڭشەك تەھرىرلىنىدۇ"
+
+#: ../src/gconf-editor-window.c:755
+msgid "_Close Window"
+msgstr "كۆزنەك ياپ(_C)"
+
+#: ../src/gconf-editor-window.c:755
+msgid "Close this window"
+msgstr "بۇ كۆزنەكنى ياپىدۇ"
+
+#: ../src/gconf-editor-window.c:757
+msgid "_Quit"
+msgstr "چېكىن(_Q)"
+
+#: ../src/gconf-editor-window.c:757
+msgid "Quit the Configuration Editor"
+msgstr "سەپلىمە تەھرىرلىگۈچتىن چېكىنىدۇ"
+
+#: ../src/gconf-editor-window.c:760
+msgid "_Copy Key Name"
+msgstr "كۇنۇپكا ئاتىنى كۆچۈر(_C)"
+
+#: ../src/gconf-editor-window.c:760
+msgid "Copy the name of the selected key"
+msgstr "تاللانغان كۇنۇپكىنىڭ ئاتىنى كۆچۈرىدۇ"
+
+#: ../src/gconf-editor-window.c:762
+msgid "_Find..."
+msgstr "ئىزدە(_F)…"
+
+#: ../src/gconf-editor-window.c:762
+msgid "Find patterns in keys and values"
+msgstr "كۇنۇپكا ۋە ئۇلارنىڭ قىممەتلىرىنى ئىزدەيدۇ"
+
+#: ../src/gconf-editor-window.c:764
+msgid "_List Recent Keys"
+msgstr "يېڭىلانغان كۇنۇپكىلارنى كۆرسەت(_L)"
+
+#: ../src/gconf-editor-window.c:764
+msgid "Show recently modified keys"
+msgstr "يېقىندا ئۆزگەرتىلگەن كۇنۇپكىلارنى كۆرسىتىدۇ"
+
+#: ../src/gconf-editor-window.c:767
+msgid "_Add Bookmark"
+msgstr "خەتكۈش قوش(_A)"
+
+#: ../src/gconf-editor-window.c:767
+msgid "Add a bookmark to the selected directory"
+msgstr "تاللانغان مۇندەرىجىگە خەتكۈچتىن بىرنى قوشىدۇ"
+
+#: ../src/gconf-editor-window.c:769
+msgid "_Edit Bookmarks"
+msgstr "خەتكۈش تەھرىر(_E)"
+
+#: ../src/gconf-editor-window.c:769
+msgid "Edit the bookmarks"
+msgstr "خەتكۈچلەرنى تەھرىرلەيدۇ"
+
+#: ../src/gconf-editor-window.c:772
+msgid "_Contents"
+msgstr "مەزمۇنلار(_C)"
+
+#: ../src/gconf-editor-window.c:772
+msgid "Open the help contents for the Configuration Editor"
+msgstr "سەپلىمە تەھرىرلىگۈچىنىڭ ياردەمچى مەزمۇنلىرىنى ئاچىدۇ"
+
+#: ../src/gconf-editor-window.c:774
+msgid "_About"
+msgstr "ھەققىدە(_A)"
+
+#: ../src/gconf-editor-window.c:774
+msgid "Show the about dialog for the Configuration Editor"
+msgstr "سەپلىمە تەھرىرلىگۈچكە مۇناسىۋەتلىك ئۇچۇرلارنى كۆرسىتىدىغان سۆزلەشكۈنى كۆرسىتىدۇ"
+
+#: ../src/gconf-editor-window.c:777
+msgid "_New Key..."
+msgstr "يېڭى كۇنۇپكا (_N)…"
+
+#: ../src/gconf-editor-window.c:777
+msgid "Create a new key"
+msgstr "يېڭى ئاچقۇچتىن بىرنى قۇرىدۇ"
+
+#: ../src/gconf-editor-window.c:779
+msgid "_Edit Key..."
+msgstr "ئاچقۇچ تەھرىر(_E)…"
+
+#: ../src/gconf-editor-window.c:779
+msgid "Edit the selected key"
+msgstr "تاللانغان ئاچقۇچنى تەھرىرلەيدۇ"
+
+#: ../src/gconf-editor-window.c:781
+msgid "_Unset Key"
+msgstr "ئاچقۇچنى تازىلا(_U)"
+
+#: ../src/gconf-editor-window.c:781
+msgid "Unset the selected key"
+msgstr "تاللانغان ئاچقۇچنى تازىلايدۇ"
+
+#: ../src/gconf-editor-window.c:783
+msgid "Set as _Default"
+msgstr "كۆڭۈلدىكىگە تەڭشە(_D)"
+
+#: ../src/gconf-editor-window.c:783
+msgid "Set the selected key to be the default"
+msgstr "تاللانغان ئاچقۇچنى كۆڭۈلدىكىگە تەڭشەيدۇ"
+
+#: ../src/gconf-editor-window.c:785
+msgid "Set as _Mandatory"
+msgstr "مەجبۇرىي قىممەتكە تەڭشە(_M)"
+
+#: ../src/gconf-editor-window.c:785
+msgid "Set the selected key to the mandatory"
+msgstr "تاللانغان ئاچقۇچنى مەجبۇرىي قىلىپ تەڭشەيدۇ"
+
+#: ../src/gconf-editor-window.c:867
+msgid "Configuration Editor (Default settings)"
+msgstr "سەپلىمە تەھرىرلىگۈچ(كۆڭۈلدىكى تەڭشەك)"
+
+#: ../src/gconf-editor-window.c:870 ../src/gconf-editor-window.c:1369
+msgid "Configuration Editor (Mandatory settings)"
+msgstr "سەپلىمە تەھرىرلىگۈچى(مەجبۇرىي تەڭشەك)"
+
+#: ../src/gconf-editor-window.c:1115 ../src/gconf-editor-window.c:1116
+#: ../src/gconf-editor-window.c:1117 ../src/gconf-editor-window.c:1118
+#: ../src/gconf-editor-window.c:1147 ../src/gconf-editor-window.c:1155
+#: ../src/gconf-editor-window.c:1164 ../src/gconf-editor-window.c:1715
+#: ../src/gconf-editor-window.c:1727 ../src/gconf-editor-window.c:1739
+#: ../src/gconf-editor-window.c:1754
+msgid "(None)"
+msgstr "(يوق)"
+
+#: ../src/gconf-editor-window.c:1328 ../src/gconf-editor-window.c:1338
+#, c-format
+msgid ""
+"Cannot create GConf engine. Error was:\n"
+"%s"
+msgstr "GConf ماتورىنى قۇرالمىدى. خاتالىق:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:1366
+msgid "Configuration Editor (Defaults settings)"
+msgstr "سەپلىمە تەھرىرلىگۈچ(كۆڭۈلدىكى تەڭشەك)"
+
+#: ../src/gconf-editor-window.c:1611
+msgid "Name"
+msgstr "ئاتى"
+
+#: ../src/gconf-editor-window.c:1635
+msgid "Value"
+msgstr "قىممىتى"
+
+#: ../src/gconf-editor-window.c:1662
+msgid "Key Documentation"
+msgstr "ئاچقۇچنىڭ پۈتۈكلىرى"
+
+#: ../src/gconf-editor-window.c:1691 ../src/gconf-key-editor.c:614
+msgid "This key is not writable"
+msgstr "مەزكۇر ئاچقۇچقا يازغىلى بولمايدۇ"
+
+#: ../src/gconf-editor-window.c:1704
+msgid "This key has no schema"
+msgstr "مەزكۇر ئاچقۇچنىڭ ئەندىزىسى يوق"
+
+#: ../src/gconf-editor-window.c:1709
+msgid "Key name:"
+msgstr "ئاچقۇچ ئاتى:"
+
+#: ../src/gconf-editor-window.c:1722
+msgid "Key owner:"
+msgstr "ئاچقۇچ ئىگىسى:"
+
+#: ../src/gconf-editor-window.c:1734
+msgid "Short description:"
+msgstr "قىسقىچە چۈشەندۈرۈلۈشى:"
+
+#: ../src/gconf-editor-window.c:1747
+msgid "Long description:"
+msgstr "تەپسىلىي چۈشەندۈرۈلۈشى:"
+
+#: ../src/gconf-key-editor.c:87
+msgid "T_rue"
+msgstr "راست(_R)"
+
+#: ../src/gconf-key-editor.c:90 ../src/gconf-key-editor.c:247
+#: ../src/gconf-key-editor.c:355 ../src/gconf-key-editor.c:645
+msgid "_False"
+msgstr "يالغان(_F)"
+
+#. These have to be ordered so the EDIT_ enum matches the
+#. * menu indices
+#.
+#. These have to be ordered so the EDIT_ enum matches the
+#. * combobox indices
+#.
+#: ../src/gconf-key-editor.c:125 ../src/gconf-key-editor.c:155
+msgid "Integer"
+msgstr "پۈتۈن سان"
+
+#: ../src/gconf-key-editor.c:126 ../src/gconf-key-editor.c:156
+msgid "Boolean"
+msgstr "بۇلىن"
+
+#: ../src/gconf-key-editor.c:127 ../src/gconf-key-editor.c:157
+msgid "String"
+msgstr "تېكىست"
+
+#. Translators: this refers to "Floating point":
+#. * see http://en.wikipedia.org/wiki/Floating_point
+#.
+#: ../src/gconf-key-editor.c:131
+msgid "Float"
+msgstr "لەيلىمە كەسىر سان"
+
+#: ../src/gconf-key-editor.c:132
+msgid "List"
+msgstr "تىزىم"
+
+#: ../src/gconf-key-editor.c:220
+msgid "Add New List Entry"
+msgstr "يېڭى تىزىملىك قوش"
+
+#: ../src/gconf-key-editor.c:238
+msgid "_New list value:"
+msgstr "يېڭى تىزىملىكنىڭ قىممىتى(_N):"
+
+#: ../src/gconf-key-editor.c:325
+msgid "Edit List Entry"
+msgstr "تىزىملىك تۈرى تەھرىر"
+
+#: ../src/gconf-key-editor.c:343
+msgid "_Edit list value:"
+msgstr "تىزىملىك قىممىتى تەھرىر(_E):"
+
+#: ../src/gconf-key-editor.c:566
+msgid "Path:"
+msgstr "يول:"
+
+#: ../src/gconf-key-editor.c:577
+msgid "_Name:"
+msgstr "ئاتى(_N):"
+
+#: ../src/gconf-key-editor.c:589
+msgid "_Type:"
+msgstr "تىپى(_T):"
+
+#: ../src/gconf-key-editor.c:626 ../src/gconf-key-editor.c:644
+#: ../src/gconf-key-editor.c:663 ../src/gconf-key-editor.c:680
+msgid "_Value:"
+msgstr "قىممىتى(_V):"
+
+#: ../src/gconf-key-editor.c:702
+msgid "List _type:"
+msgstr "تىزىملىك تىپى(_T):"
+
+#: ../src/gconf-key-editor.c:710
+msgid "_Values:"
+msgstr "قىممەتلىرى(_V):"
+
+#: ../src/gconf-key-editor.c:812
+msgid "New Key"
+msgstr "يېڭى ئاچقۇچ"
+
+#: ../src/gconf-key-editor.c:816
+msgid "Edit Key"
+msgstr "ئاچقۇچ تەھرىر"
+
+#: ../src/gconf-search-dialog.c:60
+msgid "Pattern not found"
+msgstr "قېلىپ تېپىلمىدى"
+
+#: ../src/gconf-search-dialog.c:142
+msgid "Find"
+msgstr "ئىزدە"
+
+#: ../src/gconf-search-dialog.c:144
+msgid "_Search for: "
+msgstr "ئىزدە(_S): "
+
+#: ../src/gconf-search-dialog.c:165
+msgid "Search also in key _names"
+msgstr "ئاچقۇچنىڭ ئاتىدىنمۇ ئىزدە(_N)"
+
+#: ../src/gconf-search-dialog.c:168
+msgid "Search also in key _values"
+msgstr "ئاچقۇچنىڭ قىممىتى ئىچىدىنمۇ ئىزدە(_V)"
+
+#: ../src/gedit-output-window.c:347
+msgid "Close the output window"
+msgstr "چىقىرىش كۆزنىكىنى ياپ"
+
+#: ../src/gedit-output-window.c:382
+msgid "Copy selected lines"
+msgstr "تاللانغان قۇرنى كۆچۈر"
+
+#: ../src/gedit-output-window.c:399
+msgid "Clear the output window"
+msgstr "چىقىرىش كۆزنىكىنى تازىلا"
+
+#: ../src/gedit-output-window.c:438
+msgid "Output Lines"
+msgstr "قۇرنى چىقار"
+
+#: ../src/main.c:69
+msgid "[KEY]"
+msgstr "[KEY]"
+
+#: ../src/main.c:77
+msgid "- Directly edit your entire configuration database"
+msgstr "- پۈتكۈل سەپلىمە ساندىنىڭىزنى بىۋاسىتە تەھرىرلەيدۇ"

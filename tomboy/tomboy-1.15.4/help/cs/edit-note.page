@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="edit-notes" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="create-notes"/>
+    <link type="seealso" xref="delete-notes"/>
+    <desc>Jak upravovat a formátovat poznámky.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Úpravy poznámek</title>    
+  
+		<p>Poznámky Tomboy vám umožňují si text v rámci poznámky upravovat řadou různých způsobů, včetně funkci zpět a znovu, tučného písma, kurzívy, podtržení a dalších věcí.</p>
+		
+   <section id="redo-undo">
+	
+	<title>Zpět a znovu</title>
+	
+		<p>Pokud chcete vrátit zpět poslední akci, včetně psaní slov a formátování textu, zmáčkněte ikonu <gui>Text</gui> na liště nástrojů a výberte <gui>Zpět</gui>.</p>
+
+		<p>Pokud chcete znovu provést akci se slovem nebo textem po té, co jste ji vrátili zpět, zmáčkněte ikonu <gui>Text</gui> na liště nástrojů a vyberte <gui>Znovu</gui>.</p>
+	
+  </section>
+	 
+  <section id="text-format">
+	
+	<title>Formátování textu</title>
+	
+		<p>Text svých poznámek si můžete řadou různých způsobů formátovat, včetně podtrhávání slov, nastavování písma na tučné nebo kurzívu, zvýrazňování slov nebo frází a nebo přeškrtávání textu.</p>
+  </section>
+	 
+  <section id="text-size">
+	
+	<title>Změna velikosti textu</title>
+	
+		<p>Velikost textu ve svých poznámkách můžete měnit dvěma způsoby.</p>
+		<p>Označte text, který chcete zvětšit nebo zmenšit a zmáčkněte <keyseq><key>Ctrl</key><key>+</key></keyseq> pro zvětšení textu nebo <keyseq><key>Ctrl</key><key>-</key></keyseq> pro zmenšení textu.</p>
+		<p>Jinou možností je zmáčknout ikonu <gui>Text</gui> na liště nástrojů a zvolení jedné ze čtyř předdefinovaných velikostí – malé, normální, velké a obrovské.</p>
+	
+  </section>
+	 
+  <section id="bullets">
+	
+	<title>Formátování odrážek</title>
+	
+		<p>Odrážky je možné vytvořit použitím klávesnice nebo ikony <gui>Text</gui> na liště nástrojů.</p>
+		<p>Jestli chcete odrážku vytvořit ručně, napište klíčový znak hvězdička <key>*</key> a za něj svůj text. Po odřádkování klávesou Enter převede aplikace Tomboy řádek začínající hvězdičkou automaticky na odrážku a následující řádek bude rovněž automaticky naformátovaný s odrážkou. Když budete chtít vytvořit pododrážku, zmáčkněte bezprostředně po klávese <key>Enter</key> klávesu <key>Tab</key>.</p>
+		<p>Můžete také označit konkrétní řádek a zvolit ikonu <gui>Text</gui> na liště nástrojů, kde zaškrtnete políčko <gui>Odrážky</gui>, čímž daný řádek změníte na řádek s odrážkou.</p>
+
+	
+  </section>
+</page>

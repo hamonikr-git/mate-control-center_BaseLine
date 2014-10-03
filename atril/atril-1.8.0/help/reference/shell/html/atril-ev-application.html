@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Atril Programmer's Reference Manual: ev-application</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Atril Programmer's Reference Manual">
+<link rel="up" href="atril-frontend.html" title="Part I. Frontend">
+<link rel="prev" href="EvOpenRecentAction.html" title="EvOpenRecentAction">
+<link rel="next" href="EvSidebarThumbnails.html" title="EvSidebarThumbnails">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#atril-ev-application.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#atril-ev-application.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="atril-frontend.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="EvOpenRecentAction.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="EvSidebarThumbnails.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="atril-ev-application"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="atril-ev-application.top_of_page"></a>ev-application</span></h2>
+<p>ev-application</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="atril-ev-application.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="atril-ev-application.html#EvApplication"><span class="returnvalue">EvApplication</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-get-instance" title="ev_application_get_instance ()">ev_application_get_instance</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-shutdown" title="ev_application_shutdown ()">ev_application_shutdown</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-load-session" title="ev_application_load_session ()">ev_application_load_session</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-open-window" title="ev_application_open_window ()">ev_application_open_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-open-uri-at-dest" title="ev_application_open_uri_at_dest ()">ev_application_open_uri_at_dest</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-open-uri-list" title="ev_application_open_uri_list ()">ev_application_open_uri_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-has-window" title="ev_application_has_window ()">ev_application_has_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-get-uri" title="ev_application_get_uri ()">ev_application_get_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-get-media-keys" title="ev_application_get_media_keys ()">ev_application_get_media_keys</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-set-filechooser-uri" title="ev_application_set_filechooser_uri ()">ev_application_set_filechooser_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-get-filechooser-uri" title="ev_application_get_filechooser_uri ()">ev_application_get_filechooser_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-screensaver-enable" title="ev_application_screensaver_enable ()">ev_application_screensaver_enable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-screensaver-disable" title="ev_application_screensaver_disable ()">ev_application_screensaver_disable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-get-dot-dir" title="ev_application_get_dot_dir ()">ev_application_get_dot_dir</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="atril-ev-application.html#ev-application-get-data-dir" title="ev_application_get_data_dir ()">ev_application_get_data_dir</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="EvApplication"></a><div class="refsect1">
+<a name="atril-ev-application.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="atril-ev-application.html#EvApplication-struct" title="EvApplication">EvApplication</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="atril-ev-application.html#EvApplicationClass" title="EvApplicationClass">EvApplicationClass</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="atril-ev-application.html#EV-APP:CAPS" title="EV_APP">EV_APP</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="atril-ev-application.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> EvApplication
+</pre>
+</div>
+<div class="refsect1">
+<a name="atril-ev-application.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="atril-ev-application.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ev-application-get-instance"></a><h3>ev_application_get_instance ()</h3>
+<pre class="programlisting"><a class="link" href="atril-ev-application.html#EvApplication"><span class="returnvalue">EvApplication</span></a> *
+ev_application_get_instance (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Checks for <a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> instance, if it doesn't exist it does create it.</p>
+<div class="refsect3">
+<a name="id-1.2.8.8.2.5"></a><h4>Returns</h4>
+<p> an instance of the <a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> data.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-application-shutdown"></a><h3>ev_application_shutdown ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ev_application_shutdown (<em class="parameter"><code><a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> *application</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-application-load-session"></a><h3>ev_application_load_session ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ev_application_load_session (<em class="parameter"><code><a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> *application</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-application-open-window"></a><h3>ev_application_open_window ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ev_application_open_window (<em class="parameter"><code><a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> *application</code></em>,
+                            <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/GdkScreen.html"><span class="type">GdkScreen</span></a> *screen</code></em>,
+                            <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>);</pre>
+<p>Creates a new window</p>
+<div class="refsect3">
+<a name="id-1.2.8.8.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>application</p></td>
+<td class="parameter_description"><p>The instance of the application.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>timestamp</p></td>
+<td class="parameter_description"><p>Current time value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-application-open-uri-at-dest"></a><h3>ev_application_open_uri_at_dest ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ev_application_open_uri_at_dest (<em class="parameter"><code><a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> *application</code></em>,
+                                 <em class="parameter"><code>const <span class="type">char</span> *uri</code></em>,
+                                 <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/GdkScreen.html"><span class="type">GdkScreen</span></a> *screen</code></em>,
+                                 <em class="parameter"><code><a href="/usr/share/gtk-doc/html/libatrildocument/libatrildocument-ev-link-dest.html#EvLinkDest"><span class="type">EvLinkDest</span></a> *dest</code></em>,
+                                 <em class="parameter"><code><a class="link" href="EvWindow.html#EvWindowRunMode" title="enum EvWindowRunMode"><span class="type">EvWindowRunMode</span></a> mode</code></em>,
+                                 <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *search_string</code></em>,
+                                 <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.8.8.6.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>application</p></td>
+<td class="parameter_description"><p>The instance of the application.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>The uri to be opened.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>screen</p></td>
+<td class="parameter_description"><p>Thee screen where the link will be shown.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest</p></td>
+<td class="parameter_description"><p>The <a href="/usr/share/gtk-doc/html/libatrildocument/libatrildocument-ev-link-dest.html#EvLinkDest"><span class="type">EvLinkDest</span></a> of the document.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>The run mode of the window.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>timestamp</p></td>
+<td class="parameter_description"><p>Current time value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-application-open-uri-list"></a><h3>ev_application_open_uri_list ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ev_application_open_uri_list (<em class="parameter"><code><a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> *application</code></em>,
+                              <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *uri_list</code></em>,
+                              <em class="parameter"><code><a href="http://developer.gnome.org/gdk2/GdkScreen.html"><span class="type">GdkScreen</span></a> *screen</code></em>,
+                              <em class="parameter"><code><span class="type">guint32</span> timestamp</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-application-has-window"></a><h3>ev_application_has_window ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ev_application_has_window (<em class="parameter"><code><a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> *application</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-application-get-uri"></a><h3>ev_application_get_uri ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+ev_application_get_uri (<em class="parameter"><code><a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> *application</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-application-get-media-keys"></a><h3>ev_application_get_media_keys ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *
+ev_application_get_media_keys (<em class="parameter"><code><a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> *application</code></em>);</pre>
+<p>It gives you access to the media player keys handler object.</p>
+<div class="refsect3">
+<a name="id-1.2.8.8.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>application</p></td>
+<td class="parameter_description"><p>The instance of the application.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.8.8.10.6"></a><h4>Returns</h4>
+<p> A <a class="link" href="atril-ev-media-player-keys.html#EvMediaPlayerKeys"><span class="type">EvMediaPlayerKeys</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-application-set-filechooser-uri"></a><h3>ev_application_set_filechooser_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ev_application_set_filechooser_uri (<em class="parameter"><code><a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> *application</code></em>,
+                                    <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk3/GtkFileChooser.html#GtkFileChooserAction"><span class="type">GtkFileChooserAction</span></a> action</code></em>,
+                                    <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-application-get-filechooser-uri"></a><h3>ev_application_get_filechooser_uri ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+ev_application_get_filechooser_uri (<em class="parameter"><code><a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> *application</code></em>,
+                                    <em class="parameter"><code><a href="http://library.gnome.org/devel/gtk3/GtkFileChooser.html#GtkFileChooserAction"><span class="type">GtkFileChooserAction</span></a> action</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-application-screensaver-enable"></a><h3>ev_application_screensaver_enable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ev_application_screensaver_enable (<em class="parameter"><code><a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> *application</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-application-screensaver-disable"></a><h3>ev_application_screensaver_disable ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ev_application_screensaver_disable (<em class="parameter"><code><a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> *application</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-application-get-dot-dir"></a><h3>ev_application_get_dot_dir ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+ev_application_get_dot_dir (<em class="parameter"><code><a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> *application</code></em>,
+                            <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> create</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ev-application-get-data-dir"></a><h3>ev_application_get_data_dir ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+ev_application_get_data_dir (<em class="parameter"><code><a class="link" href="atril-ev-application.html#EvApplication"><span class="type">EvApplication</span></a> *application</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="atril-ev-application.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="EvApplication-struct"></a><h3>EvApplication</h3>
+<pre class="programlisting">typedef struct _EvApplication EvApplication;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EvApplicationClass"></a><h3>EvApplicationClass</h3>
+<pre class="programlisting">typedef struct _EvApplicationClass EvApplicationClass;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="EV-APP:CAPS"></a><h3>EV_APP</h3>
+<pre class="programlisting">#define EV_APP					(ev_application_get_instance ())
+</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

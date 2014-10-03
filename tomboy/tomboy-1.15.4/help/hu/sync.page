@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync-notes" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <desc>Szinkronizálja Tomboy jegyzeteit más számítógépekkel.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Szinkronizálja jegyzeteit</title>
+
+ <section id="sync">
+
+	<title>Jegyzetek kézi szinkronizálása</title>
+	
+	<p>You can synchronize your notes one of three ways:</p>
+	
+	<list type="numbered">
+	  <item><p>Bármely jegyzeten kattintson az <gui>Eszközök</gui> ikonra, és válassza a <gui>Jegyzetek szinkronizálása</gui> menüpontot.</p></item>
+	  <item><p>A <gui>Keresés minden jegyzetben</gui> ablakban válassza az <guiseq><gui>Eszközök</gui><gui>Jegyzetek szinkronizálása</gui></guiseq> menüpontot.</p></item>
+	  <item><p>Kattintson a jobb egérgombbal a Tomboy ikonra a panelen, tálcán vagy dokkon, és válassza a <gui>Jegyzetek szinkronizálása</gui> menüpontot.</p></item>
+	</list>
+
+ </section>
+ 
+ <section id="autosync">
+ 
+ 	<title>Jegyzetek automatikus szinkronizálása</title>
+ 	
+	<p>Tomboy can automatically synchronize your notes for you in the
+	background.It is recommended that you configure how you handle note
+	conflicts before enabling syncing automatically. You can learn about
+	handling note conflicts in the <link xref="sync-setup#conflict"/>
+	page.</p>
+
+ 	<p>You can enable synchronize by opening <gui>Tomboy Preferences</gui> by 
+	using your mouse to right click on the Tomboy icon in your panel,
+	taskbar or dock and choose <gui>Preferences</gui> and then select
+	the <gui>Synchronization</gui> tab.  You can also open <gui> Tomboy
+	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
+	the menu choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
+	</guiseq>.
+	</p>
+	
+	<p>Az automatikus szinkronizálás engedélyezéséhez jelölje be az <gui>Automatikus szinkronizálás a háttérben minden x percben</gui> négyzetet a Szinkronizálás lapon.</p>
+	
+	<p>Tomboy's default option is to autosync every 10 minutes.  To change
+	how often Tomboy should synchronize enter the number of minutes in the
+	dialog or use your mouse to move the time up or down.</p>
+	
+	<p>Az automatikus szinkronizálás kikapcsolásához törölje az <gui>Automatikus szinkronizálás a háttérben minden x percben</gui> négyzetet.</p>
+	
+  </section>
+
+ </page>

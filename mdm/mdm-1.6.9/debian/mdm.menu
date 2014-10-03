@@ -1,0 +1,10 @@
+?package(mdm):needs="X11" section="Applications/System/Administration" \
+  title="MDM flexiserver" command="mdmflexiserver"\
+  hints="Display Manager"\
+  icon="/usr/share/pixmaps/mdm.xpm"\
+  longtitle="New MDM Session"
+?package(mdm):needs="X11" section="Applications/System/Administration" \
+  title="MDM Setup" command="su-to-root -X -p root -c /usr/sbin/mdmsetup"\
+  hints="Display Manager"\
+  icon="/usr/share/pixmaps/mdm.xpm"\
+  longtitle="MDM Setup"

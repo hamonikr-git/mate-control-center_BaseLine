@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="search" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="create-notebook"/>
+    <desc>Jak hledat své poznámky.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+        <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Hledání poznámek</title>
+
+
+	<p>V kterékoliv poznámce můžete vyhledat slovo nebo frázi pomocí nástroje Hledat. Kliknutím pravým tlačítkem na ikonu Tomboy ve vašem panelu nebo zmáčknutím ikony <gui>Hledat</gui> v liště nástrojů u poznámky získáte dialogové okno Hledat ve všech poznámkách.</p>
+	<p>Do pole <gui>Hledat</gui> zadejte hledaný výraz, zmáčkněte klávesu <key>Enter</key> a vypíší se vám všechny poznámky, které výraz obsahují.</p>
+	<p>Pokud máte poznámky uspořádané do sešitu, můžete hledat určitý výraz i jen v sešitu, který vyberete. Po jeho vybrání zadejte normálně kritéria hledání.</p>
+
+ </page>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="edit-prefs" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Preferencje edycji notatek.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Preferencje notatek</title>
+ 
+ 	<p>Można zmienić domyślne ustawienia tekstu. Aby zmienić ustawienia notatki, należy otworzyć okno <gui>Preferencje</gui>, klikając prawym przyciskiem myszy na ikonę programu w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X, a następnie wybrać opcję <gui>Preferencje</gui> oraz kartę <gui>Redagowanie</gui>. Okno <gui>Preferencje</gui> można także otworzyć z okna <gui>"Przeszukiwanie notatek"</gui>. Z menu wybierz opcję <guiseq><gui>Edycja</gui><gui>Preferencje</gui></guiseq>.</p>
+ 
+ <section id="spellcheck">
+   <title>Sprawdzanie pisowni podczas pisania</title>
+   <p>Dostępna jest opcja sprawdzania pisowni podczas pisania. Opcja jest domyślnie włączona. Błędnie napisane wyrazy zostaną podkreślone, a podpowiedzi prawidłowej pisowni będą dostępne po kliknięciu prawym przyciskiem myszy błędnie napisanego wyrazu.</p>
+   
+   <p>Aby wyłączyć automatyczne sprawdzanie pisowni, należy przy użyciu myszki lub klawisza spacji odznaczyć w preferencjach programu na karcie <gui>Modyfikowanie</gui> opcję <gui>Sprawdzanie pisowni podczas pisania</gui>.</p>
+   
+ </section>
+
+ <section id="wikiwords">
+   <title>Wyróżnianie WikiSłów</title>
+   <p>Słowa napisane łącznie, np. <gui>PrzykładowyTekst</gui> zostaną wyróżnione. Podobnie jak na stronach typu wiki, słowa pisane wielką literą bez użycia spacji zostaną wyróżnione, a program utworzy odnośnik. Kliknięcie odnośnika utworzy nową notatkę, której tytułem będzie wpisane WikiSłowo.</p>
+   
+   <p>Opcja słów Wiki jest domyślnie wyłączona. Aby włączyć opcję, należy przy użyciu myszki lub klawisza spacji zaznaczyć w preferencjach programu na karcie <gui>Modyfikowanie</gui> pole <gui>Wyróżnianie WikiSłów</gui>.</p>
+   
+ </section>
+
+ <section id="bullets">
+   <title>Automatyczne wypunktowanie list</title>
+   <p>Dostępna jest opcja automatycznego utworzenia listy wypunktowanej. Opcja jest domyślnie włączona. Podczas edycji notatki wpisanie klawisza <key>*</key> oraz tekstu, a następnie naciśnięcie klawisza <key>Enter</key> spowoduje automatyczne utworzenie listy wypunktowanej. Po wciśnięciu klawisza <key>Enter</key> następny wiersz tekstu również rozpocznie się od punktora.</p>
+   
+   <p>Aby wyłączyć automatyczne wypunktowanie, należy przy użyciu myszki lub klawisza spacji odznaczyć w preferencjach programu na karcie <gui>Modyfikowanie</gui> opcję <gui>Włącz automatyczne wypunktowanie</gui>.</p>
+   
+ </section>
+
+ <section id="customfont">
+   <title>Własna czcionka</title>
+   <p>Można wybrać inny rozmiar czcionki lub jej rodzaj niż domyślne używana czcionka pulpitu użytkownika. Ta opcja jest domyślnie wyłączona.</p>
+   
+   <p>Aby użyć innej czcionki, przy użyciu myszki lub klawisza spacji należy zaznaczyć w preferencjach programu na karcie <gui>Modyfikowanie</gui> opcję <gui>Własna czcionka</gui>.</p>
+
+   <p>Następnie należy nacisnąć przycisk czcionki. Pojawi się okno dialogowe wyboru czcionki, w którym należy wybrać czcionkę i style czcionki (pogrubienie, kursywa i inne) oraz wielkość czcionki. Aby zapisać wybór, należy kliknąć przycisk <key>Ok</key>.</p>
+   
+ </section>
+
+ <section id="renamelinks">
+ 
+   <title>Zmiana nazwy notatki połączonej</title>
+   <p>Wpisanie tytułu zapisanej notki w tekście notki bieżącej automatycznie spowoduje utworzenie odnośnika. Przy próbie zmiany nazwy notatki połączonej, użytkownik będzie mógł wybrać domyślne zachowanie programu w przypadku wykrycia zmiany. Opcje domyślnego zachowania:</p>
+   
+   <list>
+     <item><p><gui>Pytanie co robić</gui>: w przypadku wykrycia zmiany pojawi się monit z prośbą o wybór jednej z poniższych opcji.</p></item>
+     <item><p><gui>Bez zmieniania odnośników</gui>: notatki zostaną rozłączone bez zmiany ich treści.</p></item>
+     <item><p><gui>Stałe zmienianie odnośników</gui>: nazwy odnośników w notatkach zostaną automatycznie zmienione na nazwy zmienionej nazwy notatki.</p></item>
+   </list>
+   
+   <p>Wybierz jedną z powyższych opcji w polu rozwijanym <gui>"Podczas zmieniania nazwy notatki, do której prowadzą odnośniki:"</gui> na karcie <gui>Modyfikowanie</gui> w preferencjach programu.</p>
+   
+ </section>
+
+<section id="newnotetemplate">
+  <title>Tworzenie nowego wzoru notatki</title>
+  <p>Użytkownik może tworzyć nowe wzory notatki przy każdym tworzeniu nowej notatki.</p>
+  
+  <p>Naciśnij przycisk <gui>Otwórz wzór nowej notatki</gui> w preferencjach programu na karcie <gui>Modyfikowanie</gui>. Wyświetlony zostanie nowy szablon przypominający notatkę programu. Zamień domyślny tekst w notatce (<gui>"Treść nowej notatki"</gui>) na nowy tekst wzoru. Aby ukończyć tworzenie nowego wzoru, należy zamknąć notatkę. Nowy wzór pojawi się każdorazowo przy tworzeniu nowej notatki.</p>
+   
+</section>
+
+ </page>

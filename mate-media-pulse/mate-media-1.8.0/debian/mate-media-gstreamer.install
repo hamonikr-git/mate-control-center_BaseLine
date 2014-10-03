@@ -1,0 +1,11 @@
+usr/bin/
+usr/lib/
+usr/share/applications/
+usr/share/dbus-1/
+usr/share/glib-2.0/
+usr/share/icons/
+usr/share/mate-2.0/
+usr/share/mate-media/
+usr/share/mate-panel/
+usr/share/help/
+usr/share/sounds/

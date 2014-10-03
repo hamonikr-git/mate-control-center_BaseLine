@@ -1,0 +1,956 @@
+# Persian translation of vino.
+# Copyright (C) 2011 Iranian Free Software Users Group (IFSUG.org)translation team.
+# Copyright (C) 2005 Sharif FarsiWeb, Inc.
+# This file is distributed under the same license as the vino package.
+# Elnaz Sarbar <elnaz@farsiweb.info>, 2005.
+# Meelad Zakaria <meelad@farsiweb.info>, 2005.
+# Arash Mousavi <mousavi.arash@gmail.com>, 2011, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vino HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=vino&keywords=I18N+L10N&component=Preferences Dialog\n"
+"POT-Creation-Date: 2013-03-13 22:48+0000\n"
+"PO-Revision-Date: 2013-03-22 10:51+0330\n"
+"Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
+"Language-Team: Persian\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: ../capplet/vino-message-box.c:55
+#, c-format
+msgid "There was an error showing the URL \"%s\""
+msgstr "خطایی هنگام نمایش آدرس اینترنتی «%s» رخ داد"
+
+#: ../capplet/vino-preferences.c:245
+#, c-format
+msgid ""
+"There was an error displaying help:\n"
+"%s"
+msgstr ""
+"خطایی هنگام نمایش راهنما رخ داد\n"
+"%s"
+
+#: ../capplet/vino-preferences.c:278
+msgid "Checking the connectivity of this machine..."
+msgstr "بررسی وضعیت اتصال این ماشین..."
+
+#: ../capplet/vino-preferences.c:298
+msgid "Your desktop is only reachable over the local network."
+msgstr "میزکار شما تنها از طریق شبکه محلی قابل دسترسی است."
+
+#: ../capplet/vino-preferences.c:311
+msgid " or "
+msgstr "یا"
+
+#: ../capplet/vino-preferences.c:315
+#, c-format
+msgid "Others can access your computer using the address %s."
+msgstr "دیگران از طریق آدرس %s می‌توانند به رایانه شما دسترسی داشته باشند."
+
+#: ../capplet/vino-preferences.c:324
+msgid "Nobody can access your desktop."
+msgstr "هیچکس نمی‌تواند به رایانه شما دسترسی داشته باشد."
+
+#: ../capplet/vino-preferences.desktop.in.in.h:1
+#: ../server/vino-server.desktop.in.in.h:1
+msgid "Desktop Sharing"
+msgstr "به‌اشتراک‌گذاری رومیزی"
+
+#: ../capplet/vino-preferences.desktop.in.in.h:2
+msgid "Choose how other users can remotely view your desktop"
+msgstr ""
+"انتخاب کنید که چگونه کاربران دیگر می‌توانند از دوردست رومیزی شما را ببینند"
+
+#: ../capplet/vino-preferences.ui.h:1
+msgid "Desktop Sharing Preferences"
+msgstr "ترجیحات اشتراک‌گذاری رومیزی"
+
+#: ../capplet/vino-preferences.ui.h:2
+msgid "Sharing"
+msgstr "اشتراک‌گذاری"
+
+#: ../capplet/vino-preferences.ui.h:3
+msgid "Some of these preferences are locked down"
+msgstr "بعضی از این ترجیحات قفل شده‌اند"
+
+#: ../capplet/vino-preferences.ui.h:4
+msgid "Allow other users to _view your desktop"
+msgstr "به کاربران دیگر اجازه‌ی _نمایش رومیزی شما داده شود"
+
+#: ../capplet/vino-preferences.ui.h:5
+msgid "Your desktop will be shared"
+msgstr "رومیزی شما به‌اشتراک گذاشته خواهد شد"
+
+#: ../capplet/vino-preferences.ui.h:6
+msgid "_Allow other users to control your desktop"
+msgstr "به کاربران دیگر _اجازه‌ی کنترل رومیزی شما داده شود"
+
+#: ../capplet/vino-preferences.ui.h:7
+msgid "Remote users are able to control your mouse and keyboard"
+msgstr "کاربران دوردست قابلیت کنترل موشی و صفحه‌کلید را دارند"
+
+#: ../capplet/vino-preferences.ui.h:8
+msgid "Security"
+msgstr "امنیت"
+
+#: ../capplet/vino-preferences.ui.h:9
+msgid "_You must confirm each access to this machine"
+msgstr "_شما باید هر دسترسی‌ای را به این ماشین تایید کنید"
+
+#: ../capplet/vino-preferences.ui.h:10
+msgid "_Require the user to enter this password:"
+msgstr "_لازم باشد کاربر این گذرواژه را وارد کند:"
+
+#: ../capplet/vino-preferences.ui.h:11
+msgid "Automatically _configure UPnP router to open and forward ports"
+msgstr ""
+"امکان UPnP مسیریاب را بطور خودکار جهت بازکردن و ارجاع درگاه‌ها پیکربندی کن"
+
+#: ../capplet/vino-preferences.ui.h:12
+msgid "The router must have the UPnP feature enabled"
+msgstr "مسیریاب باید از امکان UPnP پشتیبانی کند"
+
+#: ../capplet/vino-preferences.ui.h:13
+msgid "Show Notification Area Icon"
+msgstr "نمایش شمایل در ناحیه اعلان"
+
+#: ../capplet/vino-preferences.ui.h:14
+msgid "Al_ways"
+msgstr "_همیشه"
+
+#: ../capplet/vino-preferences.ui.h:15
+msgid "_Only when someone is connected"
+msgstr "_تنها زمانی که یک نفر متصل است"
+
+#: ../capplet/vino-preferences.ui.h:16
+msgid "_Never"
+msgstr "ه_رگز"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:1
+msgid "Enable remote access to the desktop"
+msgstr "فعال کردن دسترسی دوردست به رومیزی"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:2
+msgid ""
+"If true, allows remote access to the desktop via the RFB protocol. Users on "
+"remote machines may then connect to the desktop using a VNC viewer."
+msgstr ""
+"اگر درست باشد، اجازه‌ی دسترسی دوردست به رومیزی از طریق قرارداد RFB را می‌دهد. "
+"آن وقت کاربران ماشین‌های دوردست می‌توانند با استفاده از نمایشگر VNC به رومیزی "
+"متصل شوند."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:3
+msgid "Prompt the user before completing a connection"
+msgstr "کسب تکلیف از کاربر قبل از تکمیل اتصال"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:4
+msgid ""
+"If true, remote users accessing the desktop are not allowed access until the "
+"user on the host machine approves the connection. Recommended especially "
+"when access is not password protected."
+msgstr ""
+"اگر درست باشد، کاربران دوردست هنگام دسترسی به رومیزی، اجازه‌ی دسترسی را "
+"ندارند مگر این که کاربر ماشین میزبان اتصال را تأیید کند. برای مواقعی که "
+"دسترسی با گذرواژه محافظت نشده است توصیه می‌شود."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:5
+msgid "Only allow remote users to view the desktop"
+msgstr "فقط کاربران دوردست مجاز با نمایش رومیزی باشند"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:6
+msgid ""
+"If true, remote users accessing the desktop are only allowed to view the "
+"desktop. Remote users will not be able to use the mouse or keyboard."
+msgstr ""
+"اگر درست باشد، کاربران دوردست هنگام دسترسی به رومیزی تنها اجازه‌ی دیدن رومیزی "
+"را دارند. کاربران دوردست قادر به استفاده از موشی یا صفحه‌کلید را نخواهند داشت."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:7
+msgid "Network interface for listening"
+msgstr "واسط شبکه جهت گوش سپردن"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:8
+#| msgid ""
+#| "If not set, the server will listen on all network interfaces. Set this if "
+#| "you want that accept connections only from some specific network "
+#| "interface. eg: eth0, wifi0, lo, ..."
+msgid ""
+"If not set, the server will listen on all network interfaces.\n"
+"\n"
+"Set this if you want to accept connections only from some specific network "
+"interface. For example, eth0, wifi0, lo and so on."
+msgstr ""
+"اگر تنظیم نشود، کارگزار به تمام واسطهای شبکه گوش می‌سپارد.\n"
+"\n"
+"چنانچه می‌خواهید تنها اتصال‌های مشخصی از واسط‌های شبکه را نظیر eth0، wifi0، lo "
+"و... را بپذیرید، این کلید را تنظیم کنید."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:11
+msgid "Listen on an alternative port"
+msgstr "گوش‌سپردن به یک درگاه دیگر"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:12
+#| msgid ""
+#| "If true, the server will listen to another port, instead of the default "
+#| "(5900). The port must be specified in the 'alternative-port' key."
+msgid ""
+"If true, the server will listen on another port, instead of the default "
+"(5900). The port must be specified in the 'alternative-port' key."
+msgstr ""
+"اگر درست باشد، کارگزار به یک درگاه دیگر بجای پیش‌فرض (۵۹۰۰) گوش می‌سپارد. "
+"درگاه باید در کلید «alternative-port» تعریف شده باشد."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:13
+msgid "Alternative port number"
+msgstr "عدد درگاه دیگر"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:14
+#| msgid ""
+#| "The port which the server will listen to if the 'use-alternative-port' "
+#| "key is set to true. Valid values are in the range from 5000 to 50000."
+msgid ""
+"The port which the server will listen to if the 'use-alternative-port' key "
+"is set to true. Valid values are in the range of 5000 to 50000."
+msgstr ""
+"درگاهی که کارگزار به آن گوش خواهد سپرد چنانچه کلید «use-alternative-port» بر "
+"روی درست تنظیم شده باشد. مقادیر معتبر در بازه‌ی ۵۰۰۰ تا ۵۰۰۰۰ هستند."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:15
+msgid "Require encryption"
+msgstr "ملزم کردن رمزنگاری"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:16
+msgid ""
+"If true, remote users accessing the desktop are required to support "
+"encryption. It is highly recommended that you use a client which supports "
+"encryption unless the intervening network is trusted."
+msgstr ""
+"اگر درست باشد، کاربران دوردست هنگام دسترسی به رومیزی ملزم به پشتیبانی "
+"رمزنگاری هستند. به شدت توصیه می‌شود که شما از کارگیری که از رمزنگاری پشتیبانی "
+"می‌کنند استفاده کنید مگر اینکه شبکه‌ی متصل شونده مورد اعتماد باشد."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:17
+msgid "Allowed authentication methods"
+msgstr "روش‌های تأیید هویت مجاز"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:18
+#| msgid ""
+#| "Lists the authentication methods with which remote users may access the "
+#| "desktop. There are two possible authentication methods; \"vnc\" causes "
+#| "the remote user to be prompted for a password (the password is specified "
+#| "by the vnc-password key) before connecting and \"none\" which allows any "
+#| "remote user to connect."
+msgid ""
+"Lists the authentication methods with which remote users may access the "
+"desktop.\n"
+"\n"
+"There are two possible authentication methods; \"vnc\" causes the remote "
+"user to be prompted for a password (the password is specified by the vnc-"
+"password key) before connecting and \"none\" which allows any remote user to "
+"connect."
+msgstr ""
+"روش‌های تأیید هویتی که کاربران دوردست می‌توانند با آن‌ها به رومیزی دسترسی داشته "
+"باشند فهرست می‌کند.\n"
+"\n"
+"دو روش تأیید هویت وجود دارد: «vnc» که قبل از اتصال از کاربر دوردست تقاضای "
+"گذرواژه می‌کند (گذرواژه با کلید vnc_password تعریف می‌شود) و «none» که به هر "
+"کاربر دوردستی اجازه‌ی اتصال می‌دهد."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:21
+msgid "Password required for \"vnc\" authentication"
+msgstr "برای تأیید هویت «vcn» گذرواژه لازم است"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:22
+#| msgid ""
+#| "The password which the remote user will be prompted for if the \"vnc\" "
+#| "authentication method is used. The password specified by the key is "
+#| "base64 encoded. The special value of 'keyring' (which is not valid "
+#| "base64) means that the password is stored in the GNOME keyring."
+msgid ""
+"The password which the remote user will be prompted for if the \"vnc\" "
+"authentication method is used. The password specified by the key is base64 "
+"encoded.\n"
+"\n"
+"The special value of 'keyring' (which is not valid base64) means that the "
+"password is stored in the GNOME keyring."
+msgstr ""
+"گذرواژه‌ای که از کاربر دوردست تقاضا خواهد شد اگر از روش تأیید هویت «vnc» "
+"استفاده شود. گذرواژه تعریف شده با کلید با base64 کدگذاری می‌شود.\n"
+"\n"
+"مقدار خاص «keyring» (که یک base64 معتبر نیست) به این معنی‌است که گذرواژه در "
+"جاکلیدی گنوم ذخیره شده است."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:25
+msgid "E-mail address to which the remote desktop URL should be sent"
+msgstr "آدرس پست الکترونیکی‌ای که نشانی اینترنتی رومیزی باید به آن فرستاده شود"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:26
+msgid ""
+"This key specifies the e-mail address to which the remote desktop URL should "
+"be sent if the user clicks on the URL in the Desktop Sharing preferences "
+"dialog."
+msgstr ""
+"این کلید آدرس پست الکترونیکی‌ای را تعریف می‌کند که در صورتی که کاربر روی نشانی "
+"اینترنتی محاوره‌ی ترجیحات رومیزی دوردست کلیک کند،‌ نشانی اینترنتی رومیزی "
+"دوردست به‌ آن فرستاده می‌شود."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:27
+msgid "Lock the screen when last user disconnect"
+msgstr "قفل کردن صفحه زمانی که ارتباط آخرین کاربر قطع شد"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:28
+#| msgid ""
+#| "If true, screen will be locked after the last remote client disconnect."
+msgid ""
+"If true, the screen will be locked after the last remote client disconnects."
+msgstr ""
+"اگر درست باشد، بعد از قطع ارتباط آخرین کارگیر دوردست، صفحه قفل خواهد شد."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:29
+msgid "When the status icon should be shown"
+msgstr "زمانی که شمایل وضعیت باید نشان داده شود"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:30
+#| msgid ""
+#| "This key controls the behavior of the status icon. There are three "
+#| "options: \"always\" - The icon will be always there; \"client\" - You "
+#| "will see the icon only when there is someone connected, this is the "
+#| "default behavior; \"never\" - Never shows the icon."
+msgid ""
+"This key controls the behavior of the status icon. There are three options: "
+"\"always\" - the icon will always be present; \"client\" - the icon will "
+"only be present when someone is connected (this is the default behavior); "
+"\"never\" - the icon will not be present."
+msgstr ""
+"این کلید رفتار شمایل وضعیت را کنترل می‌کند. سه گزینه وجود دارد: «always» - "
+"شمایل همواره همانجا خواهد بود؛ «client» - شما تنها زمانی شمایل را خواهید دید "
+"که یک نفر متصل شده باشد، این گزینه پیش‌فرض می‌باشد؛ «never» - هیچ‌وقت شمایل را "
+"نشان نمی‌دهد."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:31
+#| msgid "When true, disable the background on receive valid session"
+msgid "Whether to disable the desktop background when a user is connected"
+msgstr "اینکه آیا هنگام اتصال یک کاربر پس‌زمینه رومیزی را غیرفعال کند یا خیر"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:32
+msgid ""
+"When true, disable the desktop background and replace it with a single block "
+"of color when a user successfully connects."
+msgstr ""
+"اگر درست باشد، هنگامی که یک کاربر به‌طور موفقیت‌آمیزی متصل شود، پس‌زمینه رومیزی "
+"را غیرفعال و آن را باید یک بلوک رنگی جایگزین میکند."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:33
+#| msgid "Whether we should use UPNP to forward the port in routers"
+msgid "Whether a UPnP router should be used to forward and open ports"
+msgstr ""
+"اینکه آیا باید از یک مسیریاب UPnP جهت ارجاع و بازکردن درگاه‌ها استفاده کرد یا "
+"خیر"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:34
+msgid ""
+"If true, request that a UPnP-capable router should forward and open the port "
+"used by Vino."
+msgstr ""
+"اگر درست باشد، درخواست می‌کند تا یک روتر با قابلیت UPnP درگاه استفاده شده "
+"توسط Vino را منتقل و باز کند."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:35
+msgid "Whether we should disable the XDamage extension of X.org"
+msgstr "اینکه آیا باید افزونه‌ی XDamage مربوط به X.org را غیرفعال کنیم یا خیر"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:36
+#| msgid ""
+#| "If true, we will not use the XDamage extension of X.org. This extension "
+#| "does not work properly on some video drivers when using 3D effects. "
+#| "Disabling it will make vino work on these environments with a slower "
+#| "rendering as side effect."
+msgid ""
+"If true, do not use the XDamage extension of X.org. This extension does not "
+"work properly on some video drivers when using 3D effects. Disabling it will "
+"make Vino work in these environments, with slower rendering as a side effect."
+msgstr ""
+"اگر درست باشد، از افزونه‌ی XDamage مربوط به X.org استفاده نمی‌شود. این افزونه "
+"بر روی تعدادی از راه‌اندازهای ویدئویی هنگامی که از جلوه‌های سه‌بعدی استفاده "
+"میکنند بدرستی کار نمی‌کند. غیرفعال کردن این گزینه باعث می‌شود تا وینو بتواند "
+"در این محیط‌ها با سرعت کمتری در رندر اجرا شود."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:37
+msgid "Notify on connect"
+msgstr "اعلان هنگام اتصال"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:38
+#| msgid "If true, we will notify, when the user connects to the system."
+msgid "If true, show a notification when a user connects to the system."
+msgstr ""
+"اگر درست باشد، در هنگام اتصال کاربر به سیستم، یک اعلان نمایش داده می‌شود."
+
+#: ../common/vino-keyring.c:54 ../tools/vino-passwd.c:54
+#| msgid "Retype new Vino password: "
+msgid "Remote desktop sharing password"
+msgstr "گذرواژه‌‌ی اشتراک‌گذاری رومیزی دوردست"
+
+#: ../server/smclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "پرونده، یک پرونده‌ی معتبر desktop. نمی‌باشد"
+
+#. translators: 'Version' is from a desktop file, and
+#. * should not be translated. '%s' would probably be a
+#. * version number.
+#: ../server/smclient/eggdesktopfile.c:191
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "پرونده‌ی رومیزی ناشناس «%s»"
+
+#: ../server/smclient/eggdesktopfile.c:974
+#, c-format
+msgid "Starting %s"
+msgstr "درحال شروع %s"
+
+#: ../server/smclient/eggdesktopfile.c:1116
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "برنامه اسناد را از طریق خط فرمان نمی‌پذیرد"
+
+#: ../server/smclient/eggdesktopfile.c:1184
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "گزینه اجرا ناشناس: %Id"
+
+#. translators: The 'Type=Link' string is found in a
+#. * desktop file, and should not be translated.
+#: ../server/smclient/eggdesktopfile.c:1391
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "ناتوان در ارجاع URIهای سند به یک ورودی رومیزی «Type=Link»"
+
+#: ../server/smclient/eggdesktopfile.c:1412
+#, c-format
+msgid "Not a launchable item"
+msgstr "یک مورد قابل اجرا نیست"
+
+#: ../server/smclient/eggsmclient.c:226
+msgid "Disable connection to session manager"
+msgstr "غیرفعال کردن امکان اتصال به مدیر نشست"
+
+#: ../server/smclient/eggsmclient.c:229
+msgid "Specify file containing saved configuration"
+msgstr "پرونده‌ی حاوی پیکربندی ذخیره شده را مشخص کنید"
+
+#: ../server/smclient/eggsmclient.c:229
+msgid "FILE"
+msgstr "FILE"
+
+#: ../server/smclient/eggsmclient.c:232
+msgid "Specify session management ID"
+msgstr "شناسه مدیریت نشست را مشخص کنید"
+
+#: ../server/smclient/eggsmclient.c:232
+msgid "ID"
+msgstr "ID"
+
+#: ../server/smclient/eggsmclient.c:253
+msgid "Session management options:"
+msgstr "گزینه‌های مدیریت نشست:"
+
+#: ../server/smclient/eggsmclient.c:254
+msgid "Show session management options"
+msgstr "نمایش گزینه‌های مدیریت نشست"
+
+#: ../server/vino-main.c:202
+msgid ""
+"Your XServer does not support the XTest extension - remote desktop access "
+"will be view-only\n"
+msgstr ""
+"کارگزار X شما از ضمیمه‌ی XTest پشتیبانی نمی‌کند ـ دسترسی رومیزی دوردست فقط "
+"نمایش خواهد بود\n"
+
+#. Tube mode uses Telepathy's Tubes to share a user's desktop directly
+#. * with another IM contact. http://telepathy.freedesktop.org/wiki/Tubes
+#.
+#: ../server/vino-main.c:301
+msgid "Start in tube mode, for the ‘Share my Desktop’ feature"
+msgstr "شروع در حالت تونلی، برای استفاده از امکان «اشتراک‌گذاری رومیزی من»"
+
+#: ../server/vino-main.c:307
+msgid "- VNC Server for GNOME"
+msgstr "- کارگذار VNC برای گنوم"
+
+#: ../server/vino-main.c:315
+msgid ""
+"Run 'vino-server --help' to see a full list of available command line options"
+msgstr ""
+"جهت دیدن تمام گزینه‌های خط فرمان از «vino-mdns:showusername» را اجرا کنید"
+
+#: ../server/vino-main.c:336
+msgid "GNOME Desktop Sharing"
+msgstr "اشتراک‌گذاری رومیزی گنوم"
+
+#.
+#. * Translators: translate "vino-mdns:showusername" to
+#. * "1" if "%s's remote desktop" doesn't make sense in
+#. * your language.
+#.
+#: ../server/vino-mdns.c:62
+msgid "vino-mdns:showusername"
+msgstr "vino-mdns:showusername"
+
+#.
+#. * Translators: this string is used ONLY if you
+#. * translated "vino-mdns:showusername" to anything
+#. * other than "1"
+#.
+#: ../server/vino-mdns.c:74
+#, c-format
+msgid "%s's remote desktop on %s"
+msgstr "رومیزی دوردست %s بر روی %s"
+
+#: ../server/vino-prefs.c:111
+#, c-format
+msgid "Received signal %d, exiting."
+msgstr "سیگنال %Id دریافت شد، در حال خروج."
+
+#: ../server/vino-prompt.c:144
+msgid "Screen"
+msgstr "صفحه"
+
+#: ../server/vino-prompt.c:145
+msgid "The screen on which to display the prompt"
+msgstr "صفحه‌ای که محاوره‌ی کسب تکلیف در آن نمایش داده شود"
+
+#: ../server/vino-prompt.c:263 ../server/vino-status-icon.c:598
+#: ../server/vino-status-tube-icon.c:389
+#, c-format
+msgid "Error initializing libnotify\n"
+msgstr "خطا در هنگام مقدار دهی اولیه libnotify\n"
+
+#: ../server/vino-prompt.c:282
+#, c-format
+msgid ""
+"A user on the computer '%s' is trying to remotely view or control your "
+"desktop."
+msgstr ""
+"کاربری از کامپیوتر «%s» تلاش می‌کند رومیزی شما را از دوردست نمایش دهد یا "
+"کنترل کند."
+
+#: ../server/vino-prompt.c:285
+msgid "Another user is trying to view your desktop."
+msgstr "کاربر دیگری در حال تلاش برای دیدن رومیزی شما است."
+
+#: ../server/vino-prompt.c:291
+#| msgid "_Refuse"
+msgid "Refuse"
+msgstr "رد کردن"
+
+#: ../server/vino-prompt.c:297
+msgid "Accept"
+msgstr "پذیرفتن"
+
+#: ../server/vino-server.c:166 ../server/vino-server.c:189
+#, c-format
+msgid "Failed to open connection to bus: %s\n"
+msgstr "بازکردن اتصال به bus شکست خورد: %s\n"
+
+#: ../server/vino-server.desktop.in.in.h:2
+msgid "GNOME Desktop Sharing Server"
+msgstr "کارگزار اشتراک‌گذاری رومیزی گنوم"
+
+#: ../server/vino-server.desktop.in.in.h:3
+msgid "vnc;share;remote;"
+msgstr "vnc;اشتراک‌گذاری;دوردست;"
+
+#: ../server/vino-status-icon.c:97 ../server/vino-status-tube-icon.c:90
+msgid "Desktop sharing is enabled"
+msgstr "اشتراک‌گذاری رومیزی فعال است"
+
+#: ../server/vino-status-icon.c:105
+#, c-format
+msgid "One person is viewing your desktop"
+msgid_plural "%d people are viewing your desktop"
+msgstr[0] "یک نفر درحال دیدن رومیزی شماست"
+msgstr[1] "%Id نفر درحال دیدن رومیزی شما هستند"
+
+#: ../server/vino-status-icon.c:208 ../server/vino-status-tube-icon.c:172
+msgid "Error displaying preferences"
+msgstr "خطا در هنگام نمایش ترجیحات"
+
+#: ../server/vino-status-icon.c:230 ../server/vino-status-tube-icon.c:192
+msgid "Error displaying help"
+msgstr "خطایی هنگام نمایش راهنما رخ داد"
+
+#: ../server/vino-status-icon.c:263
+msgid ""
+"Licensed under the GNU General Public License Version 2\n"
+"\n"
+"Vino is free software; you can redistribute it and/or\n"
+"modify it under the terms of the GNU General Public License\n"
+"as published by the Free Software Foundation; either version 2\n"
+"of the License, or (at your option) any later version.\n"
+"\n"
+"Vino is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n"
+"02110-1301, USA.\n"
+msgstr ""
+"گواهی‌شده تحت نسخه‌ی ۲ مجور عمومی گنو\n"
+"وینو نرم‌افزار آزاد است؛ شما می‌توانید آن را تحت شرایط اجازه‌نامه‌ی\n"
+"همگانی عمومی گنو که بنیاد نرم‌افزارهای آزاد منتشر کرده است،‌ تغییر\n"
+"دهید یا دوباره توزیع کنید. یا نسخه‌ی 2 اجازه‌نامه یا (به اختیار خودتان)\n"
+"هر نسخه‌ی بالاتر دیگری.\n"
+"وینو با این امید توزیع شده است که به درد بخور باشد، اما بدون هر گونه\n"
+"ضمانتی؛ حتی بدون ضمانت ضمنی قابل فروش بودن یا مناسب بودن برای\n"
+"یک هدف مشخص. برای جزئیات بیشتر به اجازه‌نامه‌ی همگانی عمومی گنو را ببینید.\n"
+"\n"
+"شما باید نسخه‌ای از اجازه‌نامه‌ی همگانی عمومی گنو دریافت کرده باشد؛ اگر\n"
+"این طور نیست برای شرکت بنیاد نرم افزارهای آزاد به آدرس زیر\n"
+"بنویسید: Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA\n"
+
+#. Translators comment: put your own name here to appear in the about dialog.
+#: ../server/vino-status-icon.c:278
+msgid "translator-credits"
+msgstr "آرش موسوی <mousavi.arash@gmail.com>"
+
+#: ../server/vino-status-icon.c:284
+msgid "Share your desktop with other users"
+msgstr "رومیزی خود را با کاربران دیگر به‌اشتراک گذارید"
+
+#: ../server/vino-status-icon.c:351 ../server/vino-status-tube-icon.c:224
+#, c-format
+msgid "Are you sure you want to disconnect '%s'?"
+msgstr "آیا در خصوص قطع ارتباط «%s» مطمئن هستید؟"
+
+#: ../server/vino-status-icon.c:354
+#, c-format
+msgid "The remote user from '%s' will be disconnected. Are you sure?"
+msgstr "ارتباط با کاربر دوردست از «%s» قطع خواهد شد. آیا مطمئنید؟"
+
+#: ../server/vino-status-icon.c:360
+msgid "Are you sure you want to disconnect all clients?"
+msgstr "آیا مطمئن هستید که می‌خواهید از تمام کارگیرها قطع ارتباط کنید؟"
+
+#: ../server/vino-status-icon.c:362
+msgid "All remote users will be disconnected. Are you sure?"
+msgstr "تمام کاربران دوردست قطع ارتباط خواهند شد. آیا مطمئنید؟"
+
+#: ../server/vino-status-icon.c:374 ../server/vino-status-tube-icon.c:238
+msgid "Disconnect"
+msgstr "قطع ارتباط"
+
+#: ../server/vino-status-icon.c:400 ../server/vino-status-tube-icon.c:263
+msgid "_Preferences"
+msgstr "_ترجیحات"
+
+#: ../server/vino-status-icon.c:415
+msgid "Disconnect all"
+msgstr "قطع ارتباط از همه"
+
+#. Translators: %s is a hostname
+#. Translators: %s is the alias of the telepathy contact
+#: ../server/vino-status-icon.c:439 ../server/vino-status-tube-icon.c:276
+#, c-format
+msgid "Disconnect %s"
+msgstr "قطع ارتباط از %s"
+
+#: ../server/vino-status-icon.c:460 ../server/vino-status-tube-icon.c:295
+msgid "_Help"
+msgstr "_راهنما"
+
+#: ../server/vino-status-icon.c:468
+msgid "_About"
+msgstr "_درباره"
+
+#. Translators: %s is a hostname
+#: ../server/vino-status-icon.c:619
+msgid "Another user is viewing your desktop"
+msgstr "کاربر دیگر درحال دیدن رومیزی شماست"
+
+#: ../server/vino-status-icon.c:621
+#, c-format
+msgid "A user on the computer '%s' is remotely viewing your desktop."
+msgstr "کاربری از کامپیوتر «%s» درحال دیدن رومیزی شما از دوردست است."
+
+#. Translators: %s is a hostname
+#: ../server/vino-status-icon.c:627
+msgid "Another user is controlling your desktop"
+msgstr "کاربر دیگری درحال کنترل سیستم شماست"
+
+#: ../server/vino-status-icon.c:629
+#, c-format
+msgid "A user on the computer '%s' is remotely controlling your desktop."
+msgstr "کاربری از کامپیوتر «%s» درحال کنترل رومیزی شما از دوردست است."
+
+#: ../server/vino-status-icon.c:651 ../server/vino-status-tube-icon.c:423
+#, c-format
+msgid "Error while displaying notification bubble: %s\n"
+msgstr "خطا در هنگام نمایش حباب اعلان: %s\n"
+
+#: ../server/vino-status-tube-icon.c:227
+#, c-format
+msgid "The remote user '%s' will be disconnected. Are you sure?"
+msgstr "ارتباط کاربر دوردست «%s» قطع خواهد شد. آیا مطمئنید؟"
+
+#: ../server/vino-tube-server.c:220 ../server/vino-tube-server.c:249
+msgid "Share my desktop information"
+msgstr "اشتراک اطلاعات رومیزی من"
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:224
+#, c-format
+msgid "'%s' rejected the desktop sharing invitation."
+msgstr "کاربر «%s» دعوتنامه اشتراک‌گذاری میزکار را رد کرد."
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:228
+#, c-format
+msgid "'%s' disconnected"
+msgstr "«%s» قطع شد"
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:255
+#, c-format
+msgid "'%s' is remotely controlling your desktop."
+msgstr "کاربر «%s» درحال کنترل رومیزی شما از دوردست است."
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:264
+#, c-format
+msgid "Waiting for '%s' to connect to the screen."
+msgstr "در انتظار «%s» جهت اتصال به صفحه."
+
+#: ../server/vino-util.c:89
+msgid "_Allow"
+msgstr "_اجازه دادن"
+
+#: ../server/vino-util.c:90
+msgid "_Refuse"
+msgstr "_رد کردن"
+
+#: ../server/vino-util.c:140
+msgid "An error has occurred:"
+msgstr "یک خطا رُخ داد:"
+
+#: ../tools/vino-passwd.c:108
+#, c-format
+msgid "Cancelled"
+msgstr "لغو شد"
+
+#: ../tools/vino-passwd.c:115
+#, c-format
+msgid ""
+"ERROR: Maximum length of password is %d character. Please, re-enter the "
+"password."
+msgid_plural ""
+"ERROR: Maximum length of password is %d characters. Please, re-enter the "
+"password."
+msgstr[0] ""
+"خطا: حداکثر طول گذرواژه %Id نویسه است. لطفا گذرواژه را مجدد وارد کنید."
+msgstr[1] ""
+"خطا: حداکثر طول گذرواژه %Id نویسه است. لطفا گذرواژه را مجدد وارد کنید."
+
+#: ../tools/vino-passwd.c:149
+#, c-format
+msgid "Changing Vino password.\n"
+msgstr "درحال تغییر گذرواژه وینو.\n"
+
+#: ../tools/vino-passwd.c:151
+msgid "Enter new Vino password: "
+msgstr "یک گذرواژه جدید برای وینو وارد کنید:"
+
+#: ../tools/vino-passwd.c:154
+msgid "Retype new Vino password: "
+msgstr "گذرواژه‌‌ی جدید وینو را دوباره تایپ کنید:"
+
+#: ../tools/vino-passwd.c:160
+#, c-format
+msgid "vino-passwd: password updated successfully.\n"
+msgstr "vino-passwd: گذرواژه به طور موفقیت‌آمیزی بروزرسانی شد.\n"
+
+#: ../tools/vino-passwd.c:165
+#, c-format
+msgid "Sorry, passwords do not match.\n"
+msgstr "متاسفم، گذرواژه‌ها مطابقت ندارند.\n"
+
+#: ../tools/vino-passwd.c:166
+#, c-format
+msgid "vino-passwd: password unchanged.\n"
+msgstr "vino-passwd: گذرواژه تغییر نکرد.\n"
+
+#: ../tools/vino-passwd.c:182
+msgid "Show Vino version"
+msgstr "نمایش نسخه‌ی وینو"
+
+#: ../tools/vino-passwd.c:191
+msgid "- Updates Vino password"
+msgstr "- بروزرسانی گذرواژه وینو"
+
+#: ../tools/vino-passwd.c:201
+msgid ""
+"Run 'vino-passwd --help' to see a full list of available command line options"
+msgstr ""
+"فرمان «vino-passwd --help» را اجرا کنید تا فهرست کامل گزینه‌های خط فرمان را "
+"ببینید."
+
+#: ../tools/vino-passwd.c:208
+#, c-format
+msgid "VINO Version %s\n"
+msgstr "نسخه وینو %s\n"
+
+#: ../tools/vino-passwd.c:219
+#, c-format
+msgid "ERROR: You do not have enough permissions to change Vino password.\n"
+msgstr "خطا: شما اجازه دسترسی لازم جهت تغییر گذرواژه‌ی وینو را ندارید.\n"
+
+#~ msgid ""
+#~ "If true, we will use UPNP protocol to automatically forward the port used "
+#~ "by vino in the router."
+#~ msgstr ""
+#~ "اگر درست باشد، ما از پرتکل UPNP جهت ارجاع درگاه استفاده شده توسط وینو در "
+#~ "مسیریاب بطور خودکار استفاده میکنیم."
+
+#~ msgid ""
+#~ "A user on another computer is trying to remotely view or control your "
+#~ "desktop."
+#~ msgstr ""
+#~ "کاربری از یک کامپیوتر دیگر تلاش می‌کند رومیزی شما را از دوردست نمایش دهد "
+#~ "یا کنترل کند."
+
+#~ msgid "Do you want to allow them to do so?"
+#~ msgstr "آیا مایلید به آن‌ها اجازه‌ی این کار را دهید؟"
+
+#~ msgid "Question"
+#~ msgstr "پرسش"
+
+#~ msgid "Send this command by email"
+#~ msgstr "فرستادن این فرمان با پست الکترونیکی"
+
+#~ msgid "Remote Desktop"
+#~ msgstr "رومیزی دوردست"
+
+#~ msgid "Set your remote desktop access preferences"
+#~ msgstr "ترجیحات دسترسی رومیزی دوردست‌تان را تنظیم کنید"
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "        "
+#~ msgstr "        "
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "A_sk you for confirmation"
+#~ msgstr "برای تأیید از شما _سئوال شود"
+
+#~ msgid "Users can view your desktop using this command:"
+#~ msgstr "کاربران با استفاده از این فرمان می‌توانند رومیزی شما را نمایش دهند:"
+
+#~ msgid "When a user tries to view or control your desktop:"
+#~ msgstr "وقتی که یک کاربر تلاش می‌کند رومیزی شما را نمایش دهند یا کنترل کند:"
+
+#~ msgid "_Password:"
+#~ msgstr "_گذرواژه:"
+
+#~ msgid "Address"
+#~ msgstr "نشانی"
+
+#~ msgid "The address pointed to by the widget"
+#~ msgstr "نشانی‌ای که ویجت به آن اشاره می‌کند"
+
+#~ msgid "Tooltip"
+#~ msgstr "راهنمای آنی"
+
+#~ msgid "A tooltip for this URL"
+#~ msgstr "راهنمای آنی برای این نشانی اینترنتی"
+
+#~ msgid "URL color"
+#~ msgstr "رنگ نشانی اینترنتی"
+
+#~ msgid "The color of the URL's label"
+#~ msgstr "رنگ برچسب نشانی اینترنتی"
+
+#~ msgid "The screen to be monitored"
+#~ msgstr "صفحه‌ای که پایش شود"
+
+#~ msgid "The screen for which to create a VNC server"
+#~ msgstr "صفحه‌ای که کارگزار VNC روی آن ایجاد می‌شود"
+
+#~ msgid "On Hold"
+#~ msgstr "پشت خط"
+
+#~ msgid "Place all clients on hold"
+#~ msgstr "پشت خط نگه داشتن همه‌ی کارگیران"
+
+#~ msgid "Prompt enabled"
+#~ msgstr "کسب تکلیف به کار انداخته شد"
+
+#~ msgid "Prompt the user about connection attempts"
+#~ msgstr "کسب تکلیف از کاربر درباره‌ی تلاش‌های اتصال"
+
+#~ msgid "View Only"
+#~ msgstr "فقط نمایش"
+
+#~ msgid "Disallow keyboard/pointer input from clients"
+#~ msgstr "اجازه‌ندادن به ورودی‌های اشاره‌گر/صفحه‌کلید کارگیران"
+
+#~ msgid "Require Encryption"
+#~ msgstr "الزامی کردن رمزنگاری"
+
+#~ msgid "Require clients to use encryption"
+#~ msgstr "ملزم کردن کارگیران به استفاده از رمزنگاری"
+
+#~ msgid "Authentication methods"
+#~ msgstr "روش‌های تأیید هویت"
+
+#~ msgid "The authentication methods this server should allow"
+#~ msgstr "روش‌های تأیید هویت مجاز این کارگزار"
+
+#~ msgid "VNC Password"
+#~ msgstr "گذرواژه‌ی VNC"
+
+#~ msgid ""
+#~ "The password (base64 encoded) used to authenticate types using the "
+#~ "VncAuth method"
+#~ msgstr ""
+#~ "گذرواژه‌ی (کدگذاری شده با base64) استفاده شده برای انواعی از تأیید هویت که "
+#~ "از روش VncAuth استفاده می‌کنند"
+
+#~ msgid "Remote Desktop server already running; exiting ...\n"
+#~ msgstr "کارگزار رومیزی دوردست از قبل در حال اجرا است؛ در حال خروج ...\n"
+
+#~ msgid ""
+#~ "Problem registering the remote desktop server with bonobo-activation; "
+#~ "exiting ...\n"
+#~ msgstr ""
+#~ "اشکال هنگام ثبت کارگزار رومیزی دوردست با فعال‌سازی بونوبو؛ در حال "
+#~ "خروج ...\n"
+
+#~ msgid "Remote desktop server died, restarting\n"
+#~ msgstr "کارگزار رومیزی دوردست مرد، در حال راه‌اندازی مجدد\n"
+
+#~ msgid "Activation of %s failed: %s\n"
+#~ msgstr "فعال‌سازی %s شکست خورد: %s\n"
+
+#~ msgid "Activation of %s failed: Unknown Error\n"
+#~ msgstr "فعال‌سازی %s شکست خورد: خطای نامعلوم\n"
+
+#~ msgid "Failed to activate remote desktop server: tried too many times\n"
+#~ msgstr "فعال‌سازی کارگزار رومیزی دوردست شکست خورد: دفعات بسیاری تلاش شد\n"
+
+#~ msgid "Svncviewertarting remote desktop server"
+#~ msgstr "در حال آغاز کارگزار رومیزی دوردست"
+
+#~ msgid "Not starting remote desktop server"
+#~ msgstr "کارگزار رومیزی دوردست آغاز نمی‌شود"

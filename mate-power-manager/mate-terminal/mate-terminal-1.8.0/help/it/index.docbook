@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY app "MATE Terminal">
+<!ENTITY appversion "2.30">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2010">
+]>
+<!-- =============Document Header ============================= -->
+<!-- (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  Template version: 2.0 beta
+  Template last modified Jan 2, 2002 
+    
+  -->
+<article id="index" lang="it"> 
+  <articleinfo> 
+     <title>Manuale del Terminale MATE</title> 
+     <abstract role="description">
+       <para>Il terminale fornisce agli utenti la possibilità di comandare il sistema sistema utilizzando un'interfaccia testuale attraverso una shell come Bash.</para>
+     </abstract>
+     <copyright lang="en"> 
+        <year>2002</year> 
+        <year>2003</year> 
+        <year>2004</year> 
+        <holder>Sun Microsystems</holder> 
+     </copyright> 
+     <copyright lang="en"> 
+        <year>2000</year> 
+        <holder>Miguel de Icaza</holder> 
+     </copyright> 
+     <copyright lang="en"> 
+        <year>2000</year> 
+        <holder>Michael Zucchi</holder> 
+     </copyright>
+     <copyright lang="en"> 
+        <year>2000</year> 
+        <holder>Alexander Kirillov</holder> 
+     </copyright>
+     <copyright lang="en"> 
+        <year>2008</year> 
+        <holder>Christian Persch</holder> 
+     </copyright>
+     <copyright lang="en">
+        <year>2009</year>
+        <year>2010</year> 
+        <holder>Paul Cutler</holder> 
+     </copyright>	 
+     <publisher> 
+        <publishername>MATE Documentation Project</publishername> 
+     </publisher>    <legalnotice id="legalnotice">
+         <para>Questo documento può essere copiato, distribuito o modificato solo in conformità con i termini della GNU Free Documentation License (GFDL) Versione 1.1 o delle versioni successive pubblicate dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Una copia della GFDL è disponibile su questo <ulink type="help" url="help:fdl">collegamento</ulink> o nel file COPYING-DOCS distribuito con questo manuale.</para>
+          <para>Questo manuale fa parte di una raccolta di manuali MATE distribuita in conformità con la GFDL. Per poter distribuire questo manuale separatamente, è necessario inserirvi una copia della licenza, come descritto nella sezione 6 della licenza.</para>
+ 
+         <para>Molti dei nomi usati dalle aziende per distinguere i propri prodotti e servizi sono rivendicati come marchi. Quando questi nomi compaiono nella documentazione di MATE, e i partecipanti al MATE Documentation Project sono consapevoli del loro utilizzo, essi vengono scritti in lettere maiuscole o con l'iniziale maiuscola.</para>
+ 
+         <para lang="en">
+           DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+           UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+           WITH THE FURTHER UNDERSTANDING THAT:
+ 
+           <orderedlist>
+                 <listitem>
+                   <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                     WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                     IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                     THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                     A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                     RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                     OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                     MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                     YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                     CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                     SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                     OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                     LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                     VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                     EXCEPT UNDER THIS DISCLAIMER; AND
+                   </para>
+                 </listitem>
+                 <listitem>
+                   <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                        THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                        CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                        INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                        DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                        OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                        PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                        DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                        CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                        INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                        OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                        MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                        LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                        DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                        EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                        THE POSSIBILITY OF SUCH DAMAGES.
+                   </para>
+                 </listitem>
+           </orderedlist>
+         </para>
+   </legalnotice>
+  
+     <authorgroup> 
+        <author lang="en"> 
+          <firstname>Sun</firstname> 
+          <surname>MATE Documentation Team</surname> 
+          <affiliation> 
+             <orgname>Sun Microsystems</orgname> 
+          </affiliation> 
+        </author> 
+        <author lang="en"> 
+          <firstname>Miguel</firstname> 
+          <surname>de Icaza</surname> 
+          <affiliation> 
+             <orgname>MATE Documentation Project</orgname> 
+          </affiliation> 
+        </author> 
+        <author lang="en"> 
+          <firstname>Michael</firstname> 
+          <surname>Zucchi</surname> 
+          <affiliation> 
+             <orgname>MATE Documentation Project</orgname> 
+          </affiliation> 
+        </author> 
+        <author lang="en"> 
+          <firstname>Alexander</firstname> 
+          <surname>Kirillov</surname> 
+          <affiliation> 
+             <orgname>MATE Documentation Project</orgname> 
+          </affiliation> 
+        </author> 
+     </authorgroup> 
+     <publisher role="maintainer">
+       <publishername>MATE Documentation Project</publishername>
+     </publisher>
+	<releaseinfo revision="2.30" role="review">
+    </releaseinfo>
+     <revhistory>
+	<revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.9</revnumber> 
+          <date>January 2010</date> 
+          <revdescription> 
+             <para role="author" lang="en">Paul Cutler
+		<email>pcutler@gnome.org</email> </para>
+             <para role="publisher" lang="en">MATE Documentation Project</para>
+          </revdescription> 
+        </revision> 
+	<revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.8</revnumber> 
+          <date>March 2009</date> 
+          <revdescription> 
+             <para role="author" lang="en">Paul Cutler</para>
+             <para role="publisher" lang="en">MATE Documentation Project</para>
+          </revdescription> 
+        </revision>
+	<revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.7</revnumber> 
+          <date>November 2003</date> 
+          <revdescription> 
+             <para role="author" lang="en">Sun GNOME Documentation Team</para>
+             <para role="publisher" lang="en">MATE Documentation Project</para>
+          </revdescription> 
+        </revision>
+	<revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.6</revnumber> 
+          <date>September 2003</date> 
+          <revdescription> 
+             <para role="author" lang="en">Sun GNOME Documentation Team</para>
+             <para role="publisher" lang="en">MATE Documentation Project</para>
+          </revdescription> 
+        </revision>
+	<revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.5</revnumber> 
+          <date>May 2003</date> 
+          <revdescription> 
+             <para role="author" lang="en">
+                Sun GNOME Documentation Team
+             </para>
+             <para role="publisher" lang="en">
+                MATE Documentation Project 
+             </para>
+          </revdescription> 
+        </revision>
+			<revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.4</revnumber> 
+          <date>January 2003</date> 
+          <revdescription> 
+             <para role="author" lang="en">
+                Sun GNOME Documentation Team
+             </para>
+             <para role="publisher" lang="en">
+                MATE Documentation Project 
+             </para>
+          </revdescription> 
+        </revision>
+        <revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.3</revnumber> 
+          <date>August 2002</date> 
+          <revdescription> 
+             <para role="author" lang="en">
+                Sun GNOME Documentation Team
+             </para>
+             <para role="publisher" lang="en">
+                MATE Documentation Project 
+             </para>
+          </revdescription> 
+        </revision>
+        <revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.2</revnumber> 
+          <date>August 2002</date> 
+          <revdescription> 
+             <para role="author" lang="en">
+                Sun GNOME Documentation Team
+             </para>
+             <para role="publisher" lang="en">
+                MATE Documentation Project 
+             </para>
+          </revdescription> 
+        </revision>
+        <revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.1</revnumber> 
+          <date>August 2002</date> 
+          <revdescription> 
+             <para role="author" lang="en">
+                Sun GNOME Documentation Team
+             </para>
+             <para role="publisher" lang="en">
+                MATE Documentation Project 
+             </para>
+          </revdescription> 
+        </revision>
+        <revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.0</revnumber> 
+          <date>April 2002</date> 
+          <revdescription> 
+             <para role="author" lang="en">
+                Sun GNOME Documentation Team
+             </para>
+             <para role="publisher" lang="en">
+                MATE Documentation Project 
+             </para>
+          </revdescription> 
+        </revision> 
+        <revision lang="en"> 
+          <revnumber>MATE Terminal User's Guide</revnumber> 
+          <date>May 2000</date> 
+          <revdescription> 
+             <para role="author" lang="en">
+                Miguel de Icaza, Michael Zucchi, Alexander Kirollov
+                <email>docs@gnome.org</email> 
+             </para>
+             <para role="publisher" lang="en">
+                MATE Documentation Project 
+             </para>
+          </revdescription> 
+        </revision> 
+     </revhistory> 
+     <releaseinfo lang="en"> This manual describes version 2.30 of MATE Terminal.
+        </releaseinfo> 
+     <legalnotice> 
+        <title>Commenti</title> 
+        <para>Per segnalare un problema o inviare suggerimenti sull'applicazione Terminale di MATE o su questo manuale, seguire le istruzioni presenti alla <ulink url="help:user-guide?mate-feedback" type="help">pagina di commenti di MATE</ulink>.</para>
+     </legalnotice> 
+  </articleinfo> 
+  <indexterm lang="en"> 
+     <primary>MATE Terminal</primary> 
+  </indexterm> 
+  <indexterm lang="en"> 
+     <primary>terminal application</primary> 
+  </indexterm> 
+  
+  <!-- ============= Introduction ============================== -->
+  <sect1 id="mate-terminal-introduction"> 
+     <title>Introduzione</title> 
+     <para>Il <application>Terminale MATE</application> è un'applicazione di emulazione di terminale che può essere usata per eseguire le seguenti azioni:</para>
+     <variablelist> 
+        <varlistentry> 
+          <term>Accedere a una shell UNIX nell'ambiente MATE</term> 
+          <listitem> 
+             <para>La shell è un programma che interpreta ed esegue i comandi digitati dall'utente alla riga di comando. Quando si avvia il <application>Terminale MATE</application>, viene eseguita la shell predefinita specificata nel proprio account di sistema. È possibile selezionare una shell differente in qualsiasi momento.</para>
+          </listitem> 
+        </varlistentry> 
+        <varlistentry> 
+          <term>Eseguire applicazioni progettate per i terminali VT102, VT220 e terminali <application>xterm</application></term> 
+          <listitem> 
+             <para>Il <application>Terminale MATE</application> emula il programma <application>xterm</application> sviluppato dall'X Consortium. A sua volta il programma <application>xterm</application> emula il terminale DEC VT102 e supporta anche le sequenze di escape di DEC VT220. Una sequenza di escape è una serie di caratteri che iniziano con il carattere <keycap>Esc</keycap>. Il <application>Terminale MATE</application> riconosce tutte le sequenze di escape usate dai terminali VT102 e VT220 per funzioni quali il posizionamento del cursore e la cancellazione dello schermo.</para>
+          </listitem> 
+        </varlistentry> 
+     </variablelist> 
+  </sect1> 
+
+  <!--=========== Getting Started ============================== -->
+  
+  <sect1 id="mate-terminal-get-started"> 
+     <title>Per iniziare</title> 
+     <para>Le sezioni seguenti descrivono i possibili metodi per avviare il <application>Terminale MATE</application>.</para>
+     <sect2 id="mate-terminal-to-start"> 
+        <title>Avviare il Terminale MATE</title> 
+        <para>Il <application>Terminale MATE</application> può essere avviato nei seguenti modi:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term>Menù <guimenu>Applicazioni</guimenu></term> 
+             <listitem>
+                <para>Scegliere <menuchoice><guimenu>Accessori</guimenu><guimenuitem>Terminale</guimenuitem></menuchoice>.</para>
+             </listitem>
+          </varlistentry> 
+          <varlistentry> 
+             <term>Riga di comando</term> 
+             <listitem> 
+                <para>Eseguire il seguente comando: <command>mate-terminal</command></para>
+                <para>È possibile usare le opzioni dalla riga di comando per modificare la modalità di esecuzione del <application>Terminale MATE</application>. Per visualizzare le opzioni disponibili digitare il comando: <command>mate-terminal --help</command></para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="mate-terminal-first-start"> 
+        <title>Primo avvio del Terminale MATE</title> 
+        <para>Al primo avvio del <application>Terminale MATE</application>, l'applicazione apre una finestra di terminale usando un insieme di impostazioni predefinite, chiamate Profilo predefinito. Il nome del profilo in uso appare nella barra del titolo della finestra del <application>Terminale MATE</application>.</para>
+        <figure id="mate-terminal_default"> 
+          <title>Esempio di finestra predefinita del Terminale MATE</title> 
+          <screenshot> 
+             <screeninfo>Finestra predefinita del Terminale MATE</screeninfo> 
+             <mediaobject lang="en"> 
+                <imageobject>
+                  <imagedata fileref="figures/mate-terminal-default.png" format="PNG"/> 
+                </imageobject> 
+                <textobject> 
+                  <phrase>MATE Terminal default window</phrase> 
+                </textobject> 
+             </mediaobject> 
+          </screenshot> 
+        </figure> 
+        <para>La finestra del terminale visualizza un prompt di comandi nel quale si possono digitare comandi UNIX. Il prompt può essere rappresentato dai caratteri %, #, &gt;, $ o da qualsiasi altro carattere speciale. Il cursore viene posizionato automaticamente dopo il prompt dei comandi. Quando si inserisce un comando UNIX e si preme <keycap>Invio</keycap>, il computer esegue il comando. Nell'impostazione predefinita, il <application>Terminale MATE</application> usa la shell predefinita per l'utente che ha avviato l'applicazione.</para>
+        <para>Il <application>Terminale MATE</application> imposta anche le seguenti variabili d'ambiente:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term lang="en"> 
+                <varname>TERM</varname></term> 
+             <listitem> 
+                <para>Impostata su <application>xterm</application> in modo predefinito.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <varname>COLORTERM</varname></term> 
+             <listitem> 
+                <para>Impostata su <application>mate-terminal</application> in modo predefinito.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <varname>WINDOWID</varname></term> 
+             <listitem> 
+                <para>Impostata sull'identificatore di finestra X11 in modo predefinito.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+
+     <sect2 id="mate-terminal-profiles"> 
+        <title>Profili del terminale</title> 
+        <para>È possibile creare un nuovo profilo e applicarlo al terminale per modificare caratteristiche come il tipo di carattere, il colore e gli effetti, le impostazioni di scorrimento, il titolo della finestra e la compatibilità. È inoltre possibile definire nel profilo un comando da eseguire automaticamente all'avvio di <application>Terminale MATE</application>.</para>
+          <para lang="en">You define each terminal profile in the <guilabel>Profiles</guilabel> dialog, which you access from the <guimenu>Edit</guimenu> menu. You can define as many different profiles as you require. When you start a terminal, you can choose the profile that you want to use for the terminal. Alternatively, you can change the terminal profile while you use the terminal. To specify an initial profile for a terminal when you start the application from a command line, use the following command: </para>
+        <para lang="en">
+          <command>mate-terminal --window-with-profile=<replaceable>profilename</replaceable></command> 
+        </para>
+        <para>Il nome del profilo in uso appare nella barra del titolo del <application>Terminale MATE</application> se non è stato impostato un nome differente nel dialogo <guilabel>Profili</guilabel>.</para>
+        <para>Per ulteriori informazioni sulla definizione e l'utilizzo di un nuovo profilo di terminale consultare la sezione <xref linkend="mate-terminal-manage-profiles"/>.</para>
+     </sect2> 
+     <sect2 id="mate-terminal-more-windows"> 
+        <title>Utilizzo di terminali multipli</title> 
+        <para>Il <application>Terminale MATE</application> prevede l'utilizzo di schede che permettono l'apertura di più terminali in una singola finestra. Ogni terminale viene aperto in una scheda separata. Fare clic con il mouse sulla scheda desiderata per visualizzare il terminale nella finestra. Ogni scheda di terminale rappresenta un sottoprocesso separato, per cui è possibile utilizzare ogni scheda di terminale per una differente applicazione. Ad ogni scheda di terminale è inoltre possibile associare un diverso profilo.</para>
+       <para>La barra del titolo della finestra del terminale mostra il nome del profilo corrente o il nome specificato dal profilo corrente. La figura <xref linkend="mate-terminal-tabbed"/> mostra una finestra di <application>Terminale MATE</application> con quattro schede, ognuna delle quali contiene un diverso profilo. Il nome del profilo della scheda attiva, Profilo 1, appare nella barra del titolo.</para>
+        <figure id="mate-terminal-tabbed"> 
+          <title>Esempio di finestra di terminale con più schede</title> 
+          <screenshot> 
+             <screeninfo>Finestra predefinita del Terminale MATE</screeninfo> 
+             <mediaobject lang="en"> 
+                <imageobject>
+                  <imagedata fileref="figures/mate-terminal-tabbed.png" format="PNG"/> 
+                </imageobject> 
+                <textobject> 
+                  <phrase>MATE Terminal default window</phrase> 
+                </textobject> 
+             </mediaobject> 
+          </screenshot> 
+        </figure> 
+        <para>Per ulteriori informazioni sull'apertura di nuove schede di terminale consultare <xref linkend="mate-terminal-windows"/>.</para>
+     </sect2> 
+
+  </sect1> 
+  
+  <!--=========== Usage ============================== -->  
+
+  <sect1 id="mate-terminal-usage"> 
+     <title>Uso</title> 
+
+     <sect2 id="mate-terminal-windows"> 
+        <title>Aprire e chiudere i terminali</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Per aprire una nuova finestra di terminale:</term> 
+             <listitem> 
+                <para>Scegliere <menuchoice><guimenu>File</guimenu><guimenuitem>Apri terminale</guimenuitem></menuchoice>.</para>
+                <para>Il nuovo terminale eredita dal terminale padre le impostazioni di applicazione e la shell predefinita.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per chiudere una finestra di terminale:</term> 
+             <listitem> 
+                <para>Scegliere <menuchoice><guimenu>File</guimenu><guimenuitem>Chiudi finestra</guimenuitem></menuchoice>.</para>
+                <para>Questa azione chiude il terminale e tutti i sottoprocessi aperti a partire da quel terminale. Quando viene chiusa l'ultima finestra di terminale, l'applicazione <application>Terminale MATE</application> termina.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Aggiungere una nuova scheda di terminale a una finestra:</term> 
+             <listitem> 
+                <para>Scegliere <menuchoice><guimenu>File</guimenu><guisubmenu>Apri scheda</guisubmenu><guimenuitem>Predefinita&gt;</guimenuitem></menuchoice> o semplicemente <menuchoice><guimenu>File</guimenu><guimenuitem>Apri scheda</guimenuitem></menuchoice> se non c'è alcun sottomenù.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per aprire una scheda di terminale:</term> 
+             <listitem> 
+                <para>Fare clic sul nome della scheda che si desidera aprire, oppure selezionare il titolo della scheda del menù <guimenu>Schede</guimenu>.</para>
+                <para>Alternativamente, scegliere <menuchoice><guimenu>Schede</guimenu><guimenuitem>Scheda successiva</guimenuitem></menuchoice> o <menuchoice><guimenu>Schede</guimenu><guimenuitem>Scheda precedente</guimenuitem></menuchoice> per spostarsi tra le schede.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per chiudere una scheda di terminale:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Visualizzare la scheda di terminale che si desidera chiudere.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Scegliere <menuchoice><guimenu>File</guimenu><guimenuitem>Chiudi scheda</guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="mate-terminal-manage-profiles"> 
+        <title>Gestire i profili</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Per aggiungere un nuovo profilo:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Scegliere <menuchoice><guimenu>File</guimenu><guimenuitem>Nuovo profilo</guimenuitem></menuchoice> per visualizzare il dialogo <guilabel>Nuovo profilo</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Digitare il nome del nuovo profilo nella casella di testo <guilabel>Nome profilo</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Usare la casella di riepilogo <guilabel>Basato su</guilabel> per selezionare il profilo sul quale basare quello nuovo.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Fare clic su <guibutton>Crea</guibutton> per visualizzare il dialogo <guilabel>Modifica del profilo</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Fare clic su <guibutton>Chiudi</guibutton>. Il <application>Terminale MATE</application> aggiungerà il profilo al sottomenù <menuchoice><guimenu>Terminale</guimenu><guisubmenu>Cambia profilo</guisubmenu></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per modificare il profilo di una scheda di terminale:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Fare clic sulla scheda di terminale della quale si desidera modificare il profilo.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Scegliere <menuchoice><guimenu>Terminale</guimenu><guisubmenu>Modifica profilo</guisubmenu><guimenuitem><replaceable>nome_profilo</replaceable></guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per modificare un profilo:</term> 
+             <listitem> 
+                <para>È possibile modificare i profili tramite il dialogo <guilabel>Modifica profili</guilabel>. È possibile raggiungere il dialogo <guilabel>Modifica profili</guilabel> nei seguenti modi:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Scegliere <menuchoice><guimenu>Modifica</guimenu><guisubmenu>Profilo corrente</guisubmenu></menuchoice>.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para lang="en">
+                        Right-click in the terminal window, then choose <menuchoice><guimenuitem>Profiles</guimenuitem> <guimenuitem>Profile Preferences</guimenuitem></menuchoice> from the popup menu.  </para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Scegliere <menuchoice><guimenu>Modifica</guimenu><guisubmenu>Profili...</guisubmenu></menuchoice>, selezionare il profilo da modificare quindi fare clic su <guibutton>Modifica</guibutton>. Per maggiori informazioni sulle opzioni disponibili per i profili, consultare <xref linkend="mate-terminal-prefs"/>.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per eliminare un profilo:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Scegliere <menuchoice><guimenu>Modifica</guimenu><guimenuitem>Profili...</guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Selezionare il nome del profilo da eliminare dall'elenco <guilabel>Profili</guilabel> quindi fare clic su <guibutton>Elimina</guibutton>. Verrà visualizzato il dialogo <guilabel>Elimina il profilo</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Fare clic su <guibutton>Elimina</guibutton> per confermare l'eliminazione.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Fare quindi clic su <guibutton>Chiudi</guibutton> per chiudere il dialogo <guilabel>Profili</guilabel>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="mate-terminal-tabs"> 
+        <title>Modificare una finestra di terminale</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Per nascondere la barra dei menù:</term> 
+             <listitem> 
+                <para>Scegliere <menuchoice><guimenu>Visualizza</guimenu><guimenuitem>Mostra barra dei menù</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per mostrare una barra dei menù nascosta:</term> 
+             <listitem> 
+                <para>Fare clic con il tasto destro nella finestra del terminale, selezionare <guimenuitem>Mostra barra dei menù</guimenuitem> dal menù a comparsa.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry><term>Per visualizzare la finestra di <application>Terminale MATE</application> a pieno schermo:</term>
+            <listitem>
+              <para>Scegliere <menuchoice><guimenu>Visualizza</guimenu><guimenuitem>Schermo intero</guimenuitem></menuchoice>. In questa modalità il testo viene visualizzato in una finestra che coincide con la dimensione massima dello schermo. Non vengono visualizzati il bordo ed il titolo della finestra. Per uscire da questa modalità scegliere nuovamente <menuchoice><guimenu>Visualizza</guimenu><guimenuitem>Schermo intero</guimenuitem></menuchoice>.</para>
+            </listitem>     
+          </varlistentry>
+          <varlistentry> 
+             <term>Per modificare l'aspetto della finestra del terminale:</term> 
+             <listitem> 
+                <para>La finestra di dialogo <guilabel>Modifica del profilo</guilabel> può venire utilizzata per modificare l'aspetto della finestra del terminale. È possibile, per  esempio, cambiare il colore di fondo oppure la posizione della barra di scorrimento. Consultare le sezione <xref linkend="mate-terminal-prefs"/> per ulteriori informazioni.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="mate-terminal-contents"> 
+        <title>Usare il contenuto della finestra del terminale</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Per scorrere i comandi e l'output generato in precedenza:</term> 
+             <listitem> 
+                <para>Procedere in uno dei seguenti modi:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Usare la barra di scorrimento, solitamente posizionata sul lato destro della finestra del terminale.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Premere i tasti <keycombo><keycap>Maiusc</keycap><keycap>PagSu</keycap></keycombo>, <keycombo><keycap>Maiusc</keycap><keycap>PagGiù</keycap></keycombo>, <keycombo><keycap>Maiusc</keycap><keycap>Home</keycap></keycombo> o <keycombo><keycap>Maiusc</keycap><keycap>Fine</keycap></keycombo>.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para lang="en">
+                  The number of lines that you can scroll back to in the terminal window is determined by the <guilabel>Scrollback</guilabel> setting in the <guilabel>Scrolling</guilabel> tabbed section of the <guilabel>Editing Profile</guilabel> dialog.  You can also scroll up or down one line at a time by pressing <keycombo><keycap>Control</keycap><keycap>Shift</keycap><keycap>Up</keycap></keycombo> or <keycombo><keycap>Control</keycap><keycap>Shift</keycap><keycap>Down</keycap></keycombo>. </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per selezionare e copiare il testo:</term> 
+             <listitem> 
+                <para>È possibile selezionare una porzione di testo in uno dei seguenti modi:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Per selezionare un carattere alla volta, fare clic sul primo carattere che si intende selezionare e trascinare il mouse fino all'ultimo carattere desiderato.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Per selezionare una parola alla volta, fare doppio clic sulla prima parola da selezionare e trascinare il mouse fino all'ultima parola desiderata. I simboli vengono selezionati singolarmente.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Per selezionare una riga alla volta fare clic tre volte sulla prima riga da selezionare e trascinare il mouse fino all'ultima riga desiderata.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>Queste azioni selezionano tutto il testo compreso fra il primo e l'ultimo elemento. <application>Terminale MATE</application> copia il testo selezionato negli appunti solo quando viene rilasciato il pulsante del mouse. Per copiare esplicitamente una porzione di testo, selezionare <menuchoice><guimenu>Modifica</guimenu><guimenuitem>Copia</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per incollare il testo in un terminale:</term> 
+             <listitem> 
+                <para>Se il testo era stato precedentemente copiato negli appunti è possibile incollarlo mediante una delle seguenti procedure:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Per incollare il testo selezionato, fare clic con il pulsante centrale del mouse alla riga di comando. Se il mouse non dispone di un tasto centrale, fare riferimento alla documentazione del server X per informazioni su come emulare il pulsante centrale.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Per incollare il testo copiato, scegliere <menuchoice><guimenu>Modifica</guimenu><guimenuitem>Incolla</guimenuitem></menuchoice>.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per trascinare un nome di file in una finestra di terminale:</term> 
+             <listitem> 
+                <para>È possibile trascinare un nome di file da un'altra applicazione tipo il file manager. Il terminale visualizza il percorso e il nome completo del file.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Per accedere ad un collegamento:</term> 
+             <listitem> 
+                <para>Per accedere un URL (Uniform Resource Locator) visualizzato in un terminale, procedere come segue:</para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Spostare il mouse sopra l'URL fino a quando quest'ultimo non appare sottolineato.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Fare clic con il pulsante destro del mouse sull'URL per aprire il menù a comparsa.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Scegliere <guimenuitem>Apri collegamento</guimenuitem> per avviare un'applicazione per il collegamento e visualizzare la pagina indicata dall'URL.</para>
+                     </listitem> 
+                  </orderedlist>                
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     
+     <sect2 id="mate-terminal-shortcuts"> 
+        <title>Visualizzare le scorciatoie da tastiera</title> 
+        <para>Per visualizzare le impostazioni delle scorciatoie da tastiera definite per il <application>Terminale MATE</application> scegliere <menuchoice><guimenu>Modifica</guimenu><guimenuitem>Scorciatoie da tastiera</guimenuitem></menuchoice>. Il dialogo <guilabel>Scorciatoie da tastiera</guilabel> contiene le seguenti informazioni:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term lang="en"><guilabel>Disable all menu access keys (such as Alt+f to open File menu)</guilabel></term> 
+             <listitem> 
+                <para>Deselezionare questa opzione per disabilitare l'uso della tastiera al posto del mouse nella selezione dei menù. Ogni sequenza è identificata da una lettera sottolineata nel menù o in un dialogo. In alcuni casi è necessario premere il tasto <keycap>Alt</keycap> in combinazione con la lettera per effettuare l'azione desiderata.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"><guilabel>Disable menu shortcut key (F10 by default)</guilabel></term> 
+             <listitem> 
+                <para>Deselezionare questa opzione per disabilitare la scorciatoia definita per accedere al menù del <application>Terminale MATE</application>. La scorciatoia predefinita è il tasto <keycap>F10</keycap>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"><guilabel>Shortcut Keys</guilabel></term> 
+             <listitem> 
+                <para>La sezione <guilabel>Tasti scorciatoia</guilabel> del dialogo contiene un elenco delle scorciatoie definite per ogni voce di menù.</para>
+                <note><para>Non tutti i tasti possono essere usati come scorciatoia, per esempio il tasto <keycap>Tab</keycap>.</para></note>
+             </listitem> 
+          </varlistentry>
+        </variablelist> 
+     </sect2>
+     
+	<sect2 id="mate-terminal-resize">
+	<title>Dimensione del testo</title>
+	<para>Per modificare la dimensione del testo in una finestra di <application>Terminale MATE</application> è possibile utilizzare uno dei seguenti metodi:</para>
+		<itemizedlist>
+			<listitem><para>Per aumentare la dimensione del testo, scegliere <menuchoice><guimenu>Visualizza</guimenu><guimenuitem>Aumenta ingrandimento</guimenuitem></menuchoice>.</para>
+			</listitem>
+			<listitem><para>Per diminuire la dimensione del testo, scegliere <menuchoice><guimenu>Visualizza</guimenu><guimenuitem>Riduci ingrandimento</guimenuitem></menuchoice>.</para>
+			</listitem>
+			<listitem><para>Per tornare alla dimensione normale del testo, scegliere <menuchoice><guimenu>Visualizza</guimenu><guimenuitem>Dimensione normale</guimenuitem></menuchoice>.</para>
+			</listitem>
+		</itemizedlist>
+
+	</sect2>	
+
+     <sect2 id="mate-terminal-title"> 
+        <title>Modificare il titolo del terminale</title> 
+        <para>Per modificare il titolo della finestra del terminale, procedere come segue:</para>
+        <orderedlist>
+          <listitem>
+            <para>Scegliere <menuchoice><guimenu>Terminale</guimenu><guimenuitem>Imposta titolo...</guimenuitem></menuchoice>.</para>
+          </listitem>
+          <listitem>
+            <para>Digitare il nuovo titolo nella casella di testo <guilabel>Titolo</guilabel>. Il <application>Terminale MATE</application> cambierà il titolo immediatamente.</para>
+          </listitem>
+          <listitem>
+            <para>Fare clic su <guibutton>Chiudi</guibutton> per chiudere il dialogo <guilabel>Imposta titolo</guilabel>.</para>
+          </listitem>
+        </orderedlist>
+	</sect2>	
+
+     <sect2 id="mate-terminal-encoding"> 
+        <title>Cambiare la codifica dei caratteri</title> 
+        <para lang="en">
+          To change the character encoding, choose <menuchoice><guimenu>Terminal</guimenu><guisubmenu>Set Character Encoding</guisubmenu></menuchoice>, then select the appropriate encoding. 
+        </para>
+
+     <sect3 id="mate-terminal-encoding-add"> 
+        <title>Cambiare l'elenco delle codifiche dei caratteri</title> 
+        <para>Per cambiare l'elenco delle codifiche dei caratteri visualizzati nel menù <guisubmenu>Imposta codifica dei caratteri</guisubmenu>, procedere come segue:</para>
+        <orderedlist>
+          <listitem>
+            <para>Scegliere <menuchoice><guimenu>Terminale</guimenu><guisubmenu>Imposta codifica dei caratteri</guisubmenu><guimenuitem>Aggiungi o rimuovi...</guimenuitem></menuchoice>.</para>
+          </listitem>
+          <listitem>
+            <para>Per aggiungere una codifica al menù <guisubmenu>Imposta codifica dei caratteri</guisubmenu>, selezionare la codifica desiderata dall'elenco <guilabel>Codifiche disponibili</guilabel>, quindi fare clic sul tasto Freccia destra.</para>
+          </listitem>
+          <listitem>
+            <para>Per rimuovere una codifica dal menù <guisubmenu>Imposta codifica dei caratteri</guisubmenu>, selezionare la codifica dall'elenco <guilabel>Codifiche mostrate nel menù</guilabel>, quindi fare clic sul tasto Freccia sinistra.</para>
+          </listitem>
+          <listitem>
+            <para>Fare clic su <guibutton>Chiudi</guibutton> per chiudere il dialogo <guilabel>Aggiunge o rimuove codifiche di terminale</guilabel>.</para>
+          </listitem>
+        </orderedlist>
+	</sect3>	
+
+	</sect2>	
+
+     <sect2 id="mate-terminal-reset"> 
+        <title>Risolvere i problemi del terminale</title> 
+        <para>Questa sezione fornisce alcune informazioni utili in caso di problemi con il terminale.</para>
+        <variablelist> 
+          <varlistentry> 
+             <term>Per ripristinare lo stato del terminale:</term> 
+             <listitem> 
+                <para>Scegliere <menuchoice><guimenu>Terminale</guimenu><guimenuitem>Ripristina</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Ripristinare il terminale e pulire lo schermo:</term> 
+             <listitem> 
+                <para>Selezionare <menuchoice><guimenu>Terminale</guimenu><guimenuitem>Ripristina e pulisci</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2>   
+
+  </sect1> 
+  
+  <!--=========== Preferences ============================== -->  
+
+  <sect1 id="mate-terminal-prefs"> 
+     <title>Preferenze</title> 
+     <para>Per configurare il <application>Terminale MATE</application>, selezionare <menuchoice><guimenu>Modifica</guimenu><guimenuitem>Profilo attuale</guimenuitem></menuchoice>. Per configurare un profilo differente, selezionare <menuchoice><guimenu>Modifica</guimenu><guimenuitem>Profili</guimenuitem></menuchoice>, selezionare il profilo che si intende modificare, quindi fare clic su <guibutton>Modifica</guibutton>.</para>
+     <para>Il dialogo <guilabel>Modifica profilo</guilabel> contiene le seguenti schede che possono essere utilizzate per configurare il <application>Terminale MATE</application>:</para>
+     <itemizedlist> 
+		<listitem><para><xref linkend="mate-terminal-prefs-general"/></para>
+		</listitem>
+		<listitem><para><xref linkend="mate-terminal-prefs-title"/></para>
+		</listitem>
+		<listitem><para><xref linkend="mate-terminal-prefs-colors"/></para>
+		</listitem>
+		<listitem><para><xref linkend="mate-terminal-prefs-effects"/></para>
+		</listitem>
+		<listitem><para><xref linkend="mate-terminal-prefs-scrolling"/></para>
+		</listitem>
+		<listitem><para><xref linkend="mate-terminal-prefs-compatibility"/></para>
+		</listitem>
+	 </itemizedlist>
+
+     
+     <sect2 id="mate-terminal-prefs-general"> 
+        <title>Generale</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Profile name</guilabel> </term> 
+             <listitem> 
+                <para>Usare questa casella di testo per inserire il nome del profilo attuale.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Use the system fixed width font</guilabel> </term>
+             <listitem> 
+                <para>Selezionare questa opzione per utilizzare il carattere standard a larghezza fissa specificato nello strumento <application>Tipi di carattere</application> del menù di sistema.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Font</guilabel> </term> 
+             <listitem> 
+                <para>Fare clic su questo pulsante per selezionare il tipo di carattere per il terminale e la sua grandezza. Questo pulsante è attivo solo se l'opzione <guilabel>Usare il carattere di sistema per il terminale</guilabel> è deselezionata.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry>
+             <term lang="en"> 
+                <guilabel>Allow bold text</guilabel> </term> 
+             <listitem> 
+                <para>Selezionare questa opzione per abilitare il terminale a visualizzare caratteri in grassetto.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry>
+             <term lang="en"> 
+                <guilabel>Show menubar by default in new terminals</guilabel>
+                </term> 
+             <listitem> 
+                <para>Selezionare quest'opzione per visualizzare la barra dei menù nelle nuove finestre dei terminali.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Terminal bell</guilabel> </term> 
+             <listitem> 
+                <para>Selezionare quest'opzione per abilitare l'avviso acustico del terminale.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Select-by-word characters</guilabel> </term> 
+             <listitem> 
+                <para>Usare questa casella di testo per specificare quali caratteri, o gruppi di caratteri, il <application>Terminale MATE</application> riconosce come parole quando viene utilizzata la selezione di parole di testo. Consultare la sezione <xref linkend="mate-terminal-contents"/> per ulteriori informazioni su come selezionare parole di testo.</para>
+             </listitem> 
+          </varlistentry> 
+          
+        </variablelist> 
+     </sect2> 
+     <sect2 id="mate-terminal-prefs-title"> 
+        <title>Titolo e comando</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Initial title</guilabel> </term> 
+             <listitem> 
+                <para>Usare questa casella di testo per specificare il titolo iniziale dei terminali che usano il profilo attuale. I nuovi terminali attivati da quello corrente useranno il nuovo titolo.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>When terminal commands set their own titles</guilabel> </term>
+             <listitem> 
+                <para>Utilizzare questo elenco a discesa per gestire dinamicamente i titoli, in modo che vengano impostati da comandi eseguiti nel terminale.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Run command as a login shell</guilabel> </term> 
+             <listitem> 
+                <para>Selezionare quest'opzione per fare in modo che i comandi eseguiti nel terminale siano eseguiti come una shell di login. Se il comando non è una shell, questa impostazione non ha effetto.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Update login records when command is launched</guilabel> </term> 
+             <listitem> 
+                <para>Selezionare quest'opzione per inserire una nuova voce nei record di login quando si apre una nuova shell.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Run a custom command instead of my shell</guilabel>
+                </term> 
+             <listitem> 
+                <para>Selezionare quest'opzione per eseguire un comando specifico, diverso dalla normale shell, nel terminale. Specificare il comando personalizzato nella casella di testo <guilabel>Comando specifico</guilabel>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>When command exits</guilabel> </term> 
+             <listitem> 
+                <para>Utilizzare questo elenco a discesa per specificare l'azione da eseguire al termine del comando.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="mate-terminal-prefs-colors"> 
+        <title>Colori</title> 
+        <variablelist> 
+        <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Foreground and Background</guilabel>
+                </term> 
+             <listitem> 
+                <para>Selezionare l'opzione <guilabel>Usare i colori del tema di sistema</guilabel> per usare i colori specificati nel tema del desktop MATE, selezionato attraverso lo strumento di preferenze <ulink type="help" url="help:user-guide?prefs-theme"><application>Aspetto</application></ulink>.</para>
+                <para>Usare l'elenco a discesa <guilabel>Schemi predefiniti</guilabel> per specificare i colori di sfondo e primo piano del terminale. <application>Terminale MATE</application> supporta le seguenti combinazioni di colori:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Black on light yellow</guilabel> 
+                     </para>
+                  </listitem>
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Black on white</guilabel> 
+                     </para>
+                  </listitem> 
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Gray on black</guilabel> 
+                     </para>
+                  </listitem>             
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Green on black</guilabel> 
+                     </para>
+                  </listitem>             
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>White on black</guilabel> 
+                     </para>
+                  </listitem> 
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Custom</guilabel> 
+                     </para>
+                     <para>Questa opzione consente di selezionare colori non presenti nello schema selezionato.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>La visualizzazione effettiva dei colori di primo piano e sfondo può variare in base allo schema di colori selezionato. Per esempio, selezionando <guilabel>Bianco su nero</guilabel> e lo schema incorporato <guilabel>Console di Linux</guilabel>, l'applicazione visualizza i colori di primo piano e sfondo come grigio chiaro su nero. L'elenco a discesa <guilabel>Schemi incorporati</guilabel> è abilitato solo se l'opzione <guilabel>Usare i colori del tema di sistema</guilabel> non è selezionata.</para>
+                <para>Fare clic sul pulsante <guilabel>Colore del testo</guilabel> per visualizzare il dialogo <guilabel>Scelta colore del testo del terminale</guilabel>. Usare la ruota dei colori o i controlli di selezione per personalizzare il colore del testo, quindi fare clic su <guibutton>OK</guibutton>. Il pulsante <guilabel>Colore del testo</guilabel> è abilitato solo se l'opzione <guilabel>Usare i colori del tema di sistema</guilabel> non è selezionata.</para>
+                <para>Fare clic sul pulsante <guilabel>Colore dello sfondo</guilabel> per visualizzare il dialogo <guilabel>Scelta del colore dello sfondo del terminale</guilabel>. Usare la ruota dei colori o i controlli di selezione per personalizzare il colore dello sfondo, quindi fare clic su <guilabel>OK</guilabel>. Il pulsante <guilabel>Colore dello sfondo</guilabel> è abilitato solo se l'opzione <guilabel>Usare i colori del tema di sistema</guilabel> non è selezionata.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Palette</guilabel></term> 
+             <listitem> 
+                <para>L'emulazione di terminale può utilizzare solamente 16 colori per la visualizzazione del testo. La tavolozza dei colori specifica quali. Le applicazioni che vengono eseguite nel terminale usano un indice per specificare un colore all'interno della tavolozza.</para>
+               <para>Usare l'elenco a discesa <guilabel>Schemi incorporati</guilabel> per selezionare uno schema di colori predefinito. La tavolozza dei colori e la finestra del terminale si aggiornano immediatamente con i colori dello schema.</para>
+               <para>Usare la <guilabel>Tavolozza dei colori</guilabel> per personalizzare i 16 colori predefiniti. Per modificare un colore, fare clic sul colore per visualizzare il dialogo <guilabel>Scelta colore della tavolozza</guilabel>. Usare la ruota dei colori o i controlli di selezione per la personalizzazione, quindi fare clic su <guilabel>OK</guilabel>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="mate-terminal-prefs-effects"> 
+        <title>Effetti</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Background</guilabel> </term> 
+             <listitem> 
+                <para>Selezionare uno sfondo per la finestra del terminale. Le opzioni possibili sono:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Solid color</guilabel>
+                     </para>
+                     <para>Selezionare quest'opzione per usare come sfondo del terminale il colore impostato nella scheda <guilabel>Colori</guilabel>.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Background image</guilabel> 
+                     </para>
+                     <para>Selezionare questa opzione per usare un file immagine come sfondo per il terminale. Usare la casella combinata <guilabel>File immagine</guilabel> per specificare la posizione e il nome del file immagine. In alternativa, fare clic sul pulsante <guilabel>Sfoglia</guilabel> per cercare il file immagine.</para>
+                     <para>Selezionare l'opzione <guilabel>Immagine di sfondo scorrevole</guilabel> per abilitare lo scorrimento dell'immagine insieme al testo quando si scorre il terminale. Se questa opzione non è selezionata, l'immagine resta fissa sullo sfondo mentre il testo scorre. Questa opzione è abilitata solo se è selezionata l'opzione <guilabel>Immagine di sfondo</guilabel>.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Transparent background</guilabel> 
+                     </para>
+                     <para>Selezionare quest'opzione per usare uno sfondo trasparente per il terminale.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry>
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Shade transparent or image background</guilabel>
+                </term> 
+             <listitem> 
+                <para>Usare questa barra scorrevole per aumentare o diminuire la sfumatura dello sfondo del terminale. Quest'opzione è abilitata solo se sono selezionate le opzioni <guilabel>Immagine di sfondo</guilabel> o <guilabel>Sfondo trasparente</guilabel>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     
+     <sect2 id="mate-terminal-prefs-scrolling">
+    <title>Scorrimento</title>
+     <variablelist>
+     <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Scrollbar is</guilabel> </term> 
+             <listitem> 
+                <para>Usare questo elenco a discesa per specificare la posizione della barra di scorrimento nella finestra del terminale.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Scrollback ... lines</guilabel> </term> 
+             <listitem> 
+                <para>Usare questo controllo di selezione per specificare il numero di righe di cui può essere eseguito lo scorrimento all'indietro con la barra. Per esempio, selezionando 100 verranno scorse le ultime 100 righe visualizzate sul terminale.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry>
+             <term lang="en"> 
+                <guilabel>Scroll on output</guilabel> </term> 
+             <listitem> 
+                <para>Selezionare questa opzione per abilitare lo scorrimento dell'output del terminale mentre altro testo viene visualizzato come output di un comando.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Scroll on keystroke</guilabel> </term> 
+             <listitem> 
+                <para>Selezionare questa opzione per abilitare, mediante la pressione di un tasto, lo scorrimento della finestra fino al prompt dei comandi. L'opzione ha effetto solo se si è scorso in alto e si desidera ritornare al prompt dei comandi.</para>
+             </listitem> 
+          </varlistentry> 
+          </variablelist>
+     </sect2>
+     
+     <sect2 id="mate-terminal-prefs-compatibility"> 
+        <title>Compatibilità</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Backspace key generates</guilabel> </term> 
+             <listitem> 
+                <para>Usare l'elenco a discesa per selezionare la funzione che si desidera associare al tasto <keycap>Backspace</keycap>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Delete key generates</guilabel> </term> 
+             <listitem> 
+                <para>Usare l'elenco a discesa per selezionare la funzione che si desidera associare al tasto <keycap>Cancella</keycap>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guibutton>Reset compatibility options to defaults</guibutton> </term> 
+             <listitem> 
+                <para>Fare clic su questo pulsante per ripristinare le opzioni della scheda <guilabel>Compatibilità</guilabel> ai valori predefiniti.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+  </sect1> 
+</article>

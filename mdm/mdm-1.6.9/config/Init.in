@@ -1,0 +1,43 @@
+#!/bin/sh
+# Run as mdm user just before starting the greeter
+
+PATH="@X_PATH@:$PATH"
+OLD_IFS=$IFS
+
+if test -x "/sbin/initctl" ; then
+  /sbin/initctl -q emit login-session-start DISPLAY_MANAGER=mdm
+fi
+
+mdmwhich () {
+  COMMAND="$1"
+  OUTPUT=
+  IFS=:
+  for dir in $PATH
+  do
+    if test -x "$dir/$COMMAND" ; then
+      if test "x$OUTPUT" = "x" ; then
+        OUTPUT="$dir/$COMMAND"
+      fi
+    fi
+  done
+  IFS=$OLD_IFS 
+  echo "$OUTPUT"
+}
+
+sysresources=/etc/X11/Xresources
+
+# merge in defaults
+if [ -f "$sysresources" ]; then
+    xrdb -merge "$sysresources"
+fi
+
+sysmodmap=/etc/X11/Xmodmap
+
+XMODMAP=`mdmwhich xmodmap`
+if [ "x$XMODMAP" != "x" ] ; then
+  if [ -f $sysmodmap ]; then
+    $XMODMAP $sysmodmap
+  fi
+fi
+
+exit 0

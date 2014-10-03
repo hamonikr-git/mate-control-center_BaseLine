@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-formatting-fixed-width" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="addins#formatting"/>
+    <desc>Jak nastavit písmu v poznámkách pevnou šířku.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-16" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Pevná šířka</title>
+
+  <p>Doplněk Pevná šířka nastavuje textu ve vašich poznámkách <app>Tomboy</app> pevnou šířku. Tento doplněk je ve výchozím stavu zakázán.</p>
+
+  <steps>
+    <title>Když chcete ve své poznámce <app>Tomboy</app> použít písmo s pevnou šířkou:</title>
+    <item>
+      <p><link xref="addins">Povolte</link> doplněk Pevná šířka.</p>
+    </item>
+    <item>
+      <p>V poznámce <app>Tomboy</app> vyberte požadovaný text.</p>
+    </item>
+    <item>
+      <p>Pod ikonou <gui style="button">Text</gui> v poznámce vyberte <gui style="menuitem">Pevná šířka</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Rychlým způsobem, jak nastavit vybraný text do písma s pevnou šířkou, je zmáčknout <keyseq><key>Ctrl</key><key>T</key></keyseq>.</p>
+  </note>
+
+</page>

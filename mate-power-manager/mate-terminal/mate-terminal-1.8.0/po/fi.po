@@ -1,0 +1,1504 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-25 23:34+0100\n"
+"PO-Revision-Date: 2014-01-25 22:35+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Finnish (http://www.transifex.com/projects/p/MATE/language/fi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../mate-terminal.desktop.in.in.h:1 ../src/terminal-options.c:188
+#: ../src/terminal-window.c:4168
+msgid "MATE Terminal"
+msgstr "Maten pääte"
+
+#: ../mate-terminal.desktop.in.in.h:2 ../src/terminal-accels.c:325
+#: ../src/terminal.c:567 ../src/terminal-profile.c:158
+#: ../src/terminal-window.c:2140
+msgid "Terminal"
+msgstr "Pääte"
+
+#: ../mate-terminal.desktop.in.in.h:3
+msgid "Use the command line"
+msgstr "Käytä komentoriviä"
+
+#: ../src/eggsmclient.c:229
+msgid "Disable connection to session manager"
+msgstr "Estä yhteys istunnonhallintaan"
+
+#: ../src/eggsmclient.c:234
+msgid "Specify file containing saved configuration"
+msgstr "Anna tiedosto, joka sisältää tallennetut asetukset"
+
+#: ../src/eggsmclient.c:234 ../src/terminal-options.c:958
+#: ../src/terminal-options.c:967
+msgid "FILE"
+msgstr "TIEDOSTO"
+
+#: ../src/eggsmclient.c:239
+msgid "Specify session management ID"
+msgstr "Anna istunnonhallinnan tunniste"
+
+#: ../src/eggsmclient.c:239
+msgid "ID"
+msgstr "TUNNISTE"
+
+#: ../src/eggsmclient.c:265
+msgid "Session management options:"
+msgstr "Istunnonhallinnan valitsimet:"
+
+#: ../src/eggsmclient.c:266
+msgid "Show session management options"
+msgstr "Näytä istunnonhallinnan valitsimet"
+
+#: ../src/profile-editor.c:44
+msgid "Black on light yellow"
+msgstr "Musta keltaisella"
+
+#: ../src/profile-editor.c:48
+msgid "Black on white"
+msgstr "Musta valkoisella"
+
+#: ../src/profile-editor.c:52
+msgid "Gray on black"
+msgstr "Harmaa mustalla"
+
+#: ../src/profile-editor.c:56
+msgid "Green on black"
+msgstr "Vihreä mustalla"
+
+#: ../src/profile-editor.c:60
+msgid "White on black"
+msgstr "Valkoinen mustalla"
+
+#: ../src/profile-editor.c:487
+#, c-format
+msgid "Error parsing command: %s"
+msgstr "Virhe tulkittaessa komentoa: %s"
+
+#: ../src/profile-editor.c:505
+#, c-format
+msgid "Editing Profile “%s”"
+msgstr "Muokataan profiilia ”%s”"
+
+#. Translators: This is the name of a colour scheme
+#: ../src/profile-editor.c:538 ../src/profile-preferences.ui.h:11
+#: ../src/extra-strings.c:80
+msgid "Custom"
+msgstr "Mukautettu"
+
+#: ../src/profile-editor.c:673
+msgid "Images"
+msgstr "Kuvat"
+
+#: ../src/profile-editor.c:847
+#, c-format
+msgid "Choose Palette Color %d"
+msgstr "Valitse paletin väri %d"
+
+#: ../src/profile-editor.c:851
+#, c-format
+msgid "Palette entry %d"
+msgstr "Paletin väri %d"
+
+#: ../src/encodings-dialog.ui.h:1
+msgid "Add or Remove Terminal Encodings"
+msgstr "Lisää tai poista päätteen merkistöjä"
+
+#: ../src/encodings-dialog.ui.h:2
+msgid "A_vailable encodings:"
+msgstr "_Mahdolliset merkistöt:"
+
+#: ../src/encodings-dialog.ui.h:3
+msgid "E_ncodings shown in menu:"
+msgstr "_Valikossa näkyvät merkistöt:"
+
+#: ../src/find-dialog.ui.h:1
+msgid "Find"
+msgstr "Etsi"
+
+#: ../src/find-dialog.ui.h:2
+msgid "_Search for:"
+msgstr "_Hakusana:"
+
+#: ../src/find-dialog.ui.h:3
+msgid "_Match case"
+msgstr "_Huomioi kirjainkoko"
+
+#: ../src/find-dialog.ui.h:4
+msgid "Match _entire word only"
+msgstr "Etsi _kokonaista sanaa"
+
+#: ../src/find-dialog.ui.h:5
+msgid "Match as _regular expression"
+msgstr ""
+
+#: ../src/find-dialog.ui.h:6
+msgid "Search _backwards"
+msgstr "Etsi _taaksepäin"
+
+#: ../src/find-dialog.ui.h:7
+msgid "_Wrap around"
+msgstr "Jatka _alusta"
+
+#: ../src/keybinding-editor.ui.h:1
+msgid "Keyboard Shortcuts"
+msgstr "Pikanäppäimet"
+
+#: ../src/keybinding-editor.ui.h:2
+msgid "_Enable menu access keys (such as Alt+F to open the File menu)"
+msgstr "Käytä _pikavalintoja (esim. Alt+t tiedostovalikon avaamiseksi)"
+
+#: ../src/keybinding-editor.ui.h:3
+msgid "Enable the _menu shortcut key (F10 by default)"
+msgstr "Käytä valikko_näppäintä (oletuksena F10)"
+
+#: ../src/keybinding-editor.ui.h:4
+msgid "_Shortcut keys:"
+msgstr "P_ikanäppäimet:"
+
+#: ../src/profile-manager.ui.h:1
+msgid "Profiles"
+msgstr "Profiilit"
+
+#: ../src/profile-manager.ui.h:2
+msgid "_Profile used when launching a new terminal:"
+msgstr "Uutta päätettä _käynnistäessä käytetty profiili:"
+
+#: ../src/profile-new-dialog.ui.h:1 ../src/terminal-accels.c:152
+msgid "New Profile"
+msgstr "Uusi profiili"
+
+#: ../src/profile-new-dialog.ui.h:2
+msgid "C_reate"
+msgstr "_Luo"
+
+#: ../src/profile-new-dialog.ui.h:3
+msgid "Profile _name:"
+msgstr "Profiilin _nimi:"
+
+#: ../src/profile-new-dialog.ui.h:4
+msgid "_Base on:"
+msgstr "_Perusta:"
+
+#. Translators: Cursor shape: ...
+#: ../src/profile-preferences.ui.h:1 ../src/extra-strings.c:35
+msgid "Block"
+msgstr "Lohko"
+
+#. Translators: Cursor shape: ...
+#: ../src/profile-preferences.ui.h:2 ../src/extra-strings.c:37
+msgid "I-Beam"
+msgstr "I-viiva"
+
+#. Translators: Cursor shape: ...
+#: ../src/profile-preferences.ui.h:3 ../src/extra-strings.c:39
+msgid "Underline"
+msgstr "Alleviivaus"
+
+#. Translators: When terminal commands set their own titles: ...
+#: ../src/profile-preferences.ui.h:4 ../src/extra-strings.c:63
+msgid "Replace initial title"
+msgstr "Korvaa alkuperäinen otsikko"
+
+#. Translators: When terminal commands set their own titles: ...
+#: ../src/profile-preferences.ui.h:5 ../src/extra-strings.c:65
+msgid "Append initial title"
+msgstr "Lisää alkuperäisen otsikon perään"
+
+#. Translators: When terminal commands set their own titles: ...
+#: ../src/profile-preferences.ui.h:6 ../src/extra-strings.c:67
+msgid "Prepend initial title"
+msgstr "Lisää alkuperäisen otsikon eteen"
+
+#. Translators: When terminal commands set their own titles: ...
+#: ../src/profile-preferences.ui.h:7 ../src/extra-strings.c:69
+msgid "Keep initial title"
+msgstr "Pidä alkuperäinen otsikko"
+
+#. Translators: When command exits: ...
+#: ../src/profile-preferences.ui.h:8 ../src/extra-strings.c:49
+msgid "Exit the terminal"
+msgstr "Poistu päätteestä"
+
+#. Translators: When command exits: ...
+#: ../src/profile-preferences.ui.h:9 ../src/extra-strings.c:51
+msgid "Restart the command"
+msgstr "Käynnistä komento uudelleen"
+
+#. Translators: When command exits: ...
+#: ../src/profile-preferences.ui.h:10 ../src/extra-strings.c:53
+msgid "Hold the terminal open"
+msgstr "Säilytä pääte avoinna"
+
+#. Translators: This is the name of a colour scheme
+#: ../src/profile-preferences.ui.h:12 ../src/extra-strings.c:72
+msgid "Tango"
+msgstr "Tango"
+
+#. Translators: This is the name of a colour scheme
+#: ../src/profile-preferences.ui.h:13 ../src/extra-strings.c:74
+msgid "Linux console"
+msgstr "Linux-konsoli"
+
+#. Translators: This is the name of a colour scheme
+#: ../src/profile-preferences.ui.h:14 ../src/extra-strings.c:76
+msgid "XTerm"
+msgstr "XTerm"
+
+#. Translators: This is the name of a colour scheme
+#: ../src/profile-preferences.ui.h:15 ../src/extra-strings.c:78
+msgid "Rxvt"
+msgstr "Rxvt"
+
+#. Translators: Scrollbar is: ...
+#: ../src/profile-preferences.ui.h:16 ../src/extra-strings.c:56
+msgid "On the left side"
+msgstr "Vasemmalla"
+
+#. Translators: Scrollbar is: ...
+#: ../src/profile-preferences.ui.h:17 ../src/extra-strings.c:58
+msgid "On the right side"
+msgstr "Oikealla"
+
+#. Translators: Scrollbar is: ...
+#: ../src/profile-preferences.ui.h:18 ../src/terminal-accels.c:383
+#: ../src/extra-strings.c:60
+msgid "Disabled"
+msgstr "Ei käytössä"
+
+#. * Copyright © 2009 Christian Persch
+#. *
+#. * Mate-terminal is free software; you can redistribute it and/or modify
+#. * it under the terms of the GNU General Public License as published by
+#. * the Free Software Foundation; either version 3 of the License, or
+#. * (at your option) any later version.
+#. *
+#. * Mate-terminal is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. * GNU General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU General Public License
+#. * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#. This file contains extra strings that need to be translated, but
+#. * can't be extracted by intltool since the ui files aren't in git, and
+#. * the glade files don't contain them in the right form. See bug #553357.
+#. Translators: This refers to the Delete keybinding option
+#: ../src/profile-preferences.ui.h:19 ../src/extra-strings.c:24
+msgid "Automatic"
+msgstr "Automaattinen"
+
+#. Translators: This refers to the Delete keybinding option
+#: ../src/profile-preferences.ui.h:20 ../src/extra-strings.c:26
+msgid "Control-H"
+msgstr "Control-H"
+
+#. Translators: This refers to the Delete keybinding option
+#: ../src/profile-preferences.ui.h:21 ../src/extra-strings.c:28
+msgid "ASCII DEL"
+msgstr "ASCII DEL"
+
+#. Translators: This refers to the Delete keybinding option
+#: ../src/profile-preferences.ui.h:22 ../src/extra-strings.c:30
+msgid "Escape sequence"
+msgstr "Escape-sarja"
+
+#. Translators: This refers to the Delete keybinding option
+#: ../src/profile-preferences.ui.h:23 ../src/extra-strings.c:32
+msgid "TTY Erase"
+msgstr ""
+
+#. Translators: Cursor blink: ...
+#: ../src/profile-preferences.ui.h:24 ../src/extra-strings.c:42
+msgid "Use system settings"
+msgstr ""
+
+#. Translators: Cursor blink: ...
+#: ../src/profile-preferences.ui.h:25 ../src/extra-strings.c:44
+msgid "Always blink"
+msgstr ""
+
+#. Translators: Cursor blink: ...
+#: ../src/profile-preferences.ui.h:26 ../src/extra-strings.c:46
+msgid "Never blink"
+msgstr ""
+
+#: ../src/profile-preferences.ui.h:27
+msgid "Profile Editor"
+msgstr "Profiilimuokkain"
+
+#: ../src/profile-preferences.ui.h:28
+msgid "_Profile name:"
+msgstr "_Profiilin nimi:"
+
+#: ../src/profile-preferences.ui.h:29
+msgid "_Use the system fixed width font"
+msgstr "_Käytä järjestelmän tasalevyistä kirjasinta"
+
+#: ../src/profile-preferences.ui.h:30
+msgid "_Font:"
+msgstr "_Kirjasin:"
+
+#: ../src/profile-preferences.ui.h:31
+msgid "Choose A Terminal Font"
+msgstr "Valitse päätteen kirjasin"
+
+#: ../src/profile-preferences.ui.h:32
+msgid "_Allow bold text"
+msgstr "_Salli lihavoitu teksti"
+
+#: ../src/profile-preferences.ui.h:33
+msgid "Show _menubar by default in new terminals"
+msgstr "Näytä _valikkopalkki oletuksena uusissa päätteissä"
+
+#: ../src/profile-preferences.ui.h:34
+msgid "Terminal _bell"
+msgstr "Päätteen _äänimerkki"
+
+#: ../src/profile-preferences.ui.h:35
+msgid "Cursor blin_k:"
+msgstr ""
+
+#: ../src/profile-preferences.ui.h:36
+msgid "Cursor _shape:"
+msgstr "_Kohdistimen _muoto:"
+
+#: ../src/profile-preferences.ui.h:37
+msgid "Select-by-_word characters:"
+msgstr "_Sanoihin kuuluvat merkit:"
+
+#: ../src/profile-preferences.ui.h:38
+msgid "Use custom default terminal si_ze"
+msgstr ""
+
+#: ../src/profile-preferences.ui.h:39
+msgid "Default size:"
+msgstr ""
+
+#: ../src/profile-preferences.ui.h:40
+msgid "columns"
+msgstr "saraketta"
+
+#: ../src/profile-preferences.ui.h:41
+msgid "rows"
+msgstr "riviä"
+
+#: ../src/profile-preferences.ui.h:42
+msgid "General"
+msgstr "Yleistä"
+
+#: ../src/profile-preferences.ui.h:43
+msgid "<b>Title</b>"
+msgstr "<b>Otsikko</b>"
+
+#: ../src/profile-preferences.ui.h:44
+msgid "Initial _title:"
+msgstr "Otsikko _käynnistettäessä:"
+
+#: ../src/profile-preferences.ui.h:45
+msgid "When terminal commands set their o_wn titles:"
+msgstr "Kun päätekomennot asettavat _otsikon itse:"
+
+#: ../src/profile-preferences.ui.h:46
+msgid "<b>Command</b>"
+msgstr "<b>Komento</b>"
+
+#: ../src/profile-preferences.ui.h:47
+msgid "_Run command as a login shell"
+msgstr "_Aja komento kirjautumiskomentotulkkina"
+
+#: ../src/profile-preferences.ui.h:48
+msgid "_Update login records when command is launched"
+msgstr "_Päivitä kirjautumistallenne kun komento käynnistetään"
+
+#: ../src/profile-preferences.ui.h:49
+msgid "Ru_n a custom command instead of my shell"
+msgstr "Suorita _muu komento komentotulkin sijaan"
+
+#: ../src/profile-preferences.ui.h:50
+msgid "Custom co_mmand:"
+msgstr "Muu _komento:"
+
+#: ../src/profile-preferences.ui.h:51
+msgid "When command _exits:"
+msgstr "Kun komento _loppuu:"
+
+#: ../src/profile-preferences.ui.h:52
+msgid "Title and Command"
+msgstr "Otsikko ja komento"
+
+#: ../src/profile-preferences.ui.h:53
+msgid "<b>Foreground, Background, Bold and Underline</b>"
+msgstr ""
+
+#: ../src/profile-preferences.ui.h:54
+msgid "_Use colors from system theme"
+msgstr "Käytä _järjestelmäteeman värejä"
+
+#: ../src/profile-preferences.ui.h:55
+msgid "Built-in sche_mes:"
+msgstr "Sisäänrakennetut _mallit:"
+
+#: ../src/profile-preferences.ui.h:56
+msgid "_Text color:"
+msgstr "_Tekstin väri:"
+
+#: ../src/profile-preferences.ui.h:57
+msgid "_Background color:"
+msgstr "Taustan _väri:"
+
+#: ../src/profile-preferences.ui.h:58
+msgid "Choose Terminal Background Color"
+msgstr "Valitse päätteen taustaväri"
+
+#: ../src/profile-preferences.ui.h:59
+msgid "Choose Terminal Text Color"
+msgstr "Valitse päätteen tekstin väri"
+
+#: ../src/profile-preferences.ui.h:60
+msgid "_Underline color:"
+msgstr ""
+
+#: ../src/profile-preferences.ui.h:61
+msgid "_Same as text color"
+msgstr "_Sama kuin tekstin väri"
+
+#: ../src/profile-preferences.ui.h:62
+msgid "Bol_d color:"
+msgstr "_Lihavoitu väri:"
+
+#: ../src/profile-preferences.ui.h:63
+msgid "<b>Palette</b>"
+msgstr "<b>Paletti</b>"
+
+#: ../src/profile-preferences.ui.h:64
+msgid "Built-in _schemes:"
+msgstr "Sisään_rakennetut mallit:"
+
+#: ../src/profile-preferences.ui.h:65
+msgid ""
+"<small><i><b>Note:</b> Terminal applications have these colors available to "
+"them.</i></small>"
+msgstr "<small><i><b>Huomautus:</b> Päätesovellukset voivat käyttää näitä värejä.</i></small>"
+
+#: ../src/profile-preferences.ui.h:66
+msgid "Color p_alette:"
+msgstr "Väri_paletti:"
+
+#: ../src/profile-preferences.ui.h:67
+msgid "Colors"
+msgstr "Värit"
+
+#: ../src/profile-preferences.ui.h:68
+msgid "_Solid color"
+msgstr "_Tasainen väri"
+
+#: ../src/profile-preferences.ui.h:69
+msgid "_Background image"
+msgstr "Tausta_kuva"
+
+#: ../src/profile-preferences.ui.h:70
+msgid "Image _file:"
+msgstr "Kuva_tiedosto:"
+
+#: ../src/profile-preferences.ui.h:71
+msgid "Select Background Image"
+msgstr "Valitse taustakuva"
+
+#: ../src/profile-preferences.ui.h:72
+msgid "Background image _scrolls"
+msgstr "Taustakuva _vierii"
+
+#: ../src/profile-preferences.ui.h:73
+msgid "_Transparent background"
+msgstr "_Läpinäkyvä tausta"
+
+#: ../src/profile-preferences.ui.h:74
+msgid "S_hade transparent or image background:"
+msgstr "Taustavärin ja taustakuvan _sekoitus:"
+
+#: ../src/profile-preferences.ui.h:75
+msgid "<small><i>None</i></small>"
+msgstr "<small><i>Läpinäkyvä</i></small>"
+
+#: ../src/profile-preferences.ui.h:76
+msgid "<small><i>Maximum</i></small>"
+msgstr "<small><i>Taustaväri</i></small>"
+
+#: ../src/profile-preferences.ui.h:77
+msgid "Background"
+msgstr "Tausta"
+
+#: ../src/profile-preferences.ui.h:78
+msgid "_Scrollbar is:"
+msgstr "_Vierityspalkin sijainti:"
+
+#: ../src/profile-preferences.ui.h:79
+msgid "Scroll_back:"
+msgstr "_Takaisinvieritys:"
+
+#: ../src/profile-preferences.ui.h:80
+msgid "Scroll on _keystroke"
+msgstr "Vieritä _kirjoitettaessa"
+
+#: ../src/profile-preferences.ui.h:81
+msgid "Scroll on _output"
+msgstr "Vieritä t_ulostaessa"
+
+#: ../src/profile-preferences.ui.h:82
+msgid "_Unlimited"
+msgstr "_Rajoittamaton"
+
+#: ../src/profile-preferences.ui.h:83
+msgid "lines"
+msgstr "riviä"
+
+#: ../src/profile-preferences.ui.h:84
+msgid "Scrolling"
+msgstr "Vieritys"
+
+#: ../src/profile-preferences.ui.h:85
+msgid ""
+"<small><i><b>Note:</b> These options may cause some applications to behave "
+"incorrectly.  They are only here to allow you to work around certain "
+"applications and operating systems that expect different terminal "
+"behavior.</i></small>"
+msgstr "<small><i><b>Huomautus:</b> Nämä valinnat saattavat saada jotkin sovellukset toimimaan väärin. Ne ovat olemassa vain, jotta voit käyttää ohjelmia ja käyttöjärjestelmiä, jotka odottavat erilaista päätteen käyttäytymistä.</i></small>"
+
+#: ../src/profile-preferences.ui.h:86
+msgid "_Delete key generates:"
+msgstr "_Delete tuottaa:"
+
+#: ../src/profile-preferences.ui.h:87
+msgid "_Backspace key generates:"
+msgstr "_Askelpalautin tuottaa:"
+
+#: ../src/profile-preferences.ui.h:88
+msgid "_Reset Compatibility Options to Defaults"
+msgstr "_Palauta yhteensopivuusasetukset oletuksiksi"
+
+#: ../src/profile-preferences.ui.h:89
+msgid "Compatibility"
+msgstr "Yhteensopivuus"
+
+#: ../src/skey-challenge.ui.h:1
+msgid "S/Key Challenge Response"
+msgstr "S/Key-haastevastaus"
+
+#: ../src/skey-challenge.ui.h:2
+msgid "_Password:"
+msgstr "_Salasana:"
+
+#: ../src/skey-popup.c:165
+msgid "The text you clicked on doesn't seem to be a valid S/Key challenge."
+msgstr "Napsauttamasi teksti ei vaikuta olevan kelvollinen S/Key-haaste."
+
+#: ../src/skey-popup.c:176
+msgid "The text you clicked on doesn't seem to be a valid OTP challenge."
+msgstr "Napsauttamasi teksti ei vaikuta olevan kelvollinen OTP-haaste."
+
+#: ../src/terminal-accels.c:144
+msgid "New Tab"
+msgstr "Uusi välilehti"
+
+#: ../src/terminal-accels.c:148
+msgid "New Window"
+msgstr "Uusi ikkuna"
+
+#: ../src/terminal-accels.c:157
+msgid "Save Contents"
+msgstr "Tallenna sisältö"
+
+#: ../src/terminal-accels.c:162
+msgid "Close Tab"
+msgstr "Sulje välilehti"
+
+#: ../src/terminal-accels.c:166
+msgid "Close Window"
+msgstr "Sulje ikkuna"
+
+#: ../src/terminal-accels.c:174
+msgid "Copy"
+msgstr "Kopioi"
+
+#: ../src/terminal-accels.c:178
+msgid "Paste"
+msgstr "Liitä"
+
+#: ../src/terminal-accels.c:186
+msgid "Hide and Show menubar"
+msgstr "Näytä tai piilota valikkopalkki"
+
+#: ../src/terminal-accels.c:190
+msgid "Full Screen"
+msgstr "Kokoruututila"
+
+#: ../src/terminal-accels.c:194
+msgid "Zoom In"
+msgstr "Suurenna"
+
+#: ../src/terminal-accels.c:198
+msgid "Zoom Out"
+msgstr "Pienennä"
+
+#: ../src/terminal-accels.c:202
+msgid "Normal Size"
+msgstr "Tavallinen koko"
+
+#: ../src/terminal-accels.c:210 ../src/terminal-window.c:3933
+msgid "Set Title"
+msgstr "Aseta otsikko"
+
+#: ../src/terminal-accels.c:214
+msgid "Reset"
+msgstr "Alusta"
+
+#: ../src/terminal-accels.c:218
+msgid "Reset and Clear"
+msgstr "Alusta ja tyhjennä"
+
+#: ../src/terminal-accels.c:222
+msgid "Switch to Previous Profile"
+msgstr ""
+
+#: ../src/terminal-accels.c:226
+msgid "Switch to Next Profile"
+msgstr ""
+
+#: ../src/terminal-accels.c:234
+msgid "Switch to Previous Tab"
+msgstr "Siirry edelliseen välilehteen"
+
+#: ../src/terminal-accels.c:238
+msgid "Switch to Next Tab"
+msgstr "Siirry seuraavaan välilehteen"
+
+#: ../src/terminal-accels.c:242
+msgid "Move Tab to the Left"
+msgstr "Siirrä välilehteä vasemmalle"
+
+#: ../src/terminal-accels.c:246
+msgid "Move Tab to the Right"
+msgstr "Siirrä välilehteä oikealle"
+
+#: ../src/terminal-accels.c:250
+msgid "Detach Tab"
+msgstr "_Irrota välilehti"
+
+#: ../src/terminal-accels.c:254
+msgid "Switch to Tab 1"
+msgstr "Siirry välilehteen 1"
+
+#: ../src/terminal-accels.c:259
+msgid "Switch to Tab 2"
+msgstr "Siirry välilehteen 2"
+
+#: ../src/terminal-accels.c:264
+msgid "Switch to Tab 3"
+msgstr "Siirry välilehteen 3"
+
+#: ../src/terminal-accels.c:269
+msgid "Switch to Tab 4"
+msgstr "Siirry välilehteen 4"
+
+#: ../src/terminal-accels.c:274
+msgid "Switch to Tab 5"
+msgstr "Siirry välilehteen 5"
+
+#: ../src/terminal-accels.c:279
+msgid "Switch to Tab 6"
+msgstr "Siirry välilehteen 6"
+
+#: ../src/terminal-accels.c:284
+msgid "Switch to Tab 7"
+msgstr "Siirry välilehteen 7"
+
+#: ../src/terminal-accels.c:289
+msgid "Switch to Tab 8"
+msgstr "Siirry välilehteen 8"
+
+#: ../src/terminal-accels.c:294
+msgid "Switch to Tab 9"
+msgstr "Siirry välilehteen 9"
+
+#: ../src/terminal-accels.c:299
+msgid "Switch to Tab 10"
+msgstr "Siirry välilehteen 10"
+
+#: ../src/terminal-accels.c:304
+msgid "Switch to Tab 11"
+msgstr "Siirry välilehteen 11"
+
+#: ../src/terminal-accels.c:309
+msgid "Switch to Tab 12"
+msgstr "Siirry välilehteen 12"
+
+#: ../src/terminal-accels.c:317
+msgid "Contents"
+msgstr "Sisältö"
+
+#: ../src/terminal-accels.c:322
+msgid "File"
+msgstr "Tiedosto"
+
+#: ../src/terminal-accels.c:323
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: ../src/terminal-accels.c:324
+msgid "View"
+msgstr "Näytä"
+
+#: ../src/terminal-accels.c:326
+msgid "Tabs"
+msgstr "Välilehdet"
+
+#: ../src/terminal-accels.c:327
+msgid "Help"
+msgstr "Ohje"
+
+#: ../src/terminal-accels.c:831
+#, c-format
+msgid "The shortcut key “%s” is already bound to the “%s” action"
+msgstr "Pikanäppäin ”%s” on jo kytketty toimintoon ”%s”"
+
+#: ../src/terminal-accels.c:987
+msgid "_Action"
+msgstr "_Toiminto"
+
+#: ../src/terminal-accels.c:1006
+msgid "Shortcut _Key"
+msgstr "Pika_näppäin"
+
+#: ../src/terminal-app.c:460
+msgid "Click button to choose profile"
+msgstr "Napsauta painiketta valitaksesi profiilin"
+
+#: ../src/terminal-app.c:543
+msgid "Profile list"
+msgstr "Profiililuettelo"
+
+#: ../src/terminal-app.c:604
+#, c-format
+msgid "Delete profile “%s”?"
+msgstr "Poista profiili ”%s”?"
+
+#: ../src/terminal-app.c:620
+msgid "Delete Profile"
+msgstr "Poista profiili"
+
+#: ../src/terminal-app.c:1053
+#, c-format
+msgid ""
+"You already have a profile called “%s”. Do you want to create another "
+"profile with the same name?"
+msgstr "Profiilin ”%s” on jo olemassa. Haluatko luoda toisen profiilin samalla nimellä?"
+
+#: ../src/terminal-app.c:1148
+msgid "Choose base profile"
+msgstr "Valitse perusprofiili"
+
+#: ../src/terminal-app.c:1751
+#, c-format
+msgid "No such profile \"%s\", using default profile\n"
+msgstr "Profiilia ”%s” ei ole: käytetään oletusprofiilia\n"
+
+#: ../src/terminal-app.c:1775
+#, c-format
+msgid "Invalid geometry string \"%s\"\n"
+msgstr "Virheellinen mittamerkkijono ”%s”\n"
+
+#: ../src/terminal-app.c:1953
+msgid "User Defined"
+msgstr "Käyttäjän määrittelemä"
+
+#: ../src/terminal.c:562
+#, c-format
+msgid "Failed to parse arguments: %s\n"
+msgstr "Virhe tulkittaessa argumentteja: %s\n"
+
+#: ../src/terminal-encoding.c:53 ../src/terminal-encoding.c:66
+#: ../src/terminal-encoding.c:80 ../src/terminal-encoding.c:102
+#: ../src/terminal-encoding.c:113
+msgid "Western"
+msgstr "Läntinen"
+
+#: ../src/terminal-encoding.c:54 ../src/terminal-encoding.c:81
+#: ../src/terminal-encoding.c:92 ../src/terminal-encoding.c:111
+msgid "Central European"
+msgstr "Keskieurooppalainen"
+
+#: ../src/terminal-encoding.c:55
+msgid "South European"
+msgstr "Eteläeurooppalainen"
+
+#: ../src/terminal-encoding.c:56 ../src/terminal-encoding.c:64
+#: ../src/terminal-encoding.c:118
+msgid "Baltic"
+msgstr "Baltialainen"
+
+#: ../src/terminal-encoding.c:57 ../src/terminal-encoding.c:82
+#: ../src/terminal-encoding.c:88 ../src/terminal-encoding.c:89
+#: ../src/terminal-encoding.c:94 ../src/terminal-encoding.c:112
+msgid "Cyrillic"
+msgstr "Kyrillinen"
+
+#: ../src/terminal-encoding.c:58 ../src/terminal-encoding.c:85
+#: ../src/terminal-encoding.c:91 ../src/terminal-encoding.c:117
+msgid "Arabic"
+msgstr "Arabialainen"
+
+#: ../src/terminal-encoding.c:59 ../src/terminal-encoding.c:97
+#: ../src/terminal-encoding.c:114
+msgid "Greek"
+msgstr "Kreikkalainen"
+
+#: ../src/terminal-encoding.c:60
+msgid "Hebrew Visual"
+msgstr "Heprealainen (visual)"
+
+#: ../src/terminal-encoding.c:61 ../src/terminal-encoding.c:84
+#: ../src/terminal-encoding.c:100 ../src/terminal-encoding.c:116
+msgid "Hebrew"
+msgstr "Heprealainen"
+
+#: ../src/terminal-encoding.c:62 ../src/terminal-encoding.c:83
+#: ../src/terminal-encoding.c:104 ../src/terminal-encoding.c:115
+msgid "Turkish"
+msgstr "Turkkilainen"
+
+#: ../src/terminal-encoding.c:63
+msgid "Nordic"
+msgstr "Skandinavialainen"
+
+#: ../src/terminal-encoding.c:65
+msgid "Celtic"
+msgstr "Kelttiläinen"
+
+#: ../src/terminal-encoding.c:67 ../src/terminal-encoding.c:103
+msgid "Romanian"
+msgstr "Romanialainen"
+
+#. These encodings do NOT pass-through ASCII, so are always rejected.
+#. * FIXME: why are they in this table; or rather why do we need
+#. * the ASCII pass-through requirement?
+#: ../src/terminal-encoding.c:68 ../src/terminal-encoding.c:125
+#: ../src/terminal-encoding.c:126 ../src/terminal-encoding.c:127
+#: ../src/terminal-encoding.c:128
+msgid "Unicode"
+msgstr "Unicode"
+
+#: ../src/terminal-encoding.c:69
+msgid "Armenian"
+msgstr "Armenialainen"
+
+#: ../src/terminal-encoding.c:70 ../src/terminal-encoding.c:71
+#: ../src/terminal-encoding.c:75
+msgid "Chinese Traditional"
+msgstr "Kiinalainen (perinteinen)"
+
+#: ../src/terminal-encoding.c:72
+msgid "Cyrillic/Russian"
+msgstr "Kyrillinen/venäläinen"
+
+#: ../src/terminal-encoding.c:73 ../src/terminal-encoding.c:86
+#: ../src/terminal-encoding.c:106
+msgid "Japanese"
+msgstr "Japanilainen"
+
+#: ../src/terminal-encoding.c:74 ../src/terminal-encoding.c:87
+#: ../src/terminal-encoding.c:109 ../src/terminal-encoding.c:129
+msgid "Korean"
+msgstr "Korealainen"
+
+#: ../src/terminal-encoding.c:76 ../src/terminal-encoding.c:77
+#: ../src/terminal-encoding.c:78
+msgid "Chinese Simplified"
+msgstr "Kiinalainen (yksinkertaistettu)"
+
+#: ../src/terminal-encoding.c:79
+msgid "Georgian"
+msgstr "Georgialainen"
+
+#: ../src/terminal-encoding.c:90 ../src/terminal-encoding.c:105
+msgid "Cyrillic/Ukrainian"
+msgstr "Kyrillinen/ukrainalainen"
+
+#: ../src/terminal-encoding.c:93
+msgid "Croatian"
+msgstr "Kroatialainen"
+
+#: ../src/terminal-encoding.c:95
+msgid "Hindi"
+msgstr "Hindi"
+
+#: ../src/terminal-encoding.c:96
+msgid "Persian"
+msgstr "Persialainen"
+
+#: ../src/terminal-encoding.c:98
+msgid "Gujarati"
+msgstr "Gujarati"
+
+#: ../src/terminal-encoding.c:99
+msgid "Gurmukhi"
+msgstr "Gurmukhi"
+
+#: ../src/terminal-encoding.c:101
+msgid "Icelandic"
+msgstr "Islantilainen"
+
+#: ../src/terminal-encoding.c:107 ../src/terminal-encoding.c:110
+#: ../src/terminal-encoding.c:119
+msgid "Vietnamese"
+msgstr "Vietnamilainen"
+
+#: ../src/terminal-encoding.c:108
+msgid "Thai"
+msgstr "Thaimaalainen"
+
+#: ../src/terminal-encoding.c:506 ../src/terminal-encoding.c:531
+msgid "_Description"
+msgstr "_Kuvaus"
+
+#: ../src/terminal-encoding.c:515 ../src/terminal-encoding.c:540
+msgid "_Encoding"
+msgstr "_Merkistö"
+
+#: ../src/terminal-encoding.c:598
+msgid "Current Locale"
+msgstr "Nykyinen maa-asetusto"
+
+#: ../src/terminal-options.c:175
+#, c-format
+msgid ""
+"Option \"%s\" is no longer supported in this version of mate-terminal; you "
+"might want to create a profile with the desired setting, and use the new '--"
+"profile' option\n"
+msgstr "Valitsin ”%s” ei ole enää tuettu tässä mate-terminal -versiossa. Halunnet luoda uuden profiilin halutuilla asetuksilla ja käyttää uutta valitsinta ”--profile”.\n"
+
+#: ../src/terminal-options.c:208
+#, c-format
+msgid "Argument to \"%s\" is not a valid command: %s"
+msgstr "Valitsimen ”%s” arvo ei ole kelvollinen komento: %s"
+
+#: ../src/terminal-options.c:343
+msgid "Two roles given for one window"
+msgstr "Samalle ikkunalle on annet kaksi eri roolia"
+
+#: ../src/terminal-options.c:364 ../src/terminal-options.c:397
+#, c-format
+msgid "\"%s\" option given twice for the same window\n"
+msgstr "Valitsin ”%s” annettu kahdesti samaa ikkunaa kohden\n"
+
+#: ../src/terminal-options.c:596
+#, c-format
+msgid "\"%s\" is not a valid zoom factor"
+msgstr "”%s” ei ole kelvollinen suurennoskerroin"
+
+#: ../src/terminal-options.c:603
+#, c-format
+msgid "Zoom factor \"%g\" is too small, using %g\n"
+msgstr "Suurennoskerroin ”%g” on liian pieni: sen sijaan on käytössä %g\n"
+
+#: ../src/terminal-options.c:611
+#, c-format
+msgid "Zoom factor \"%g\" is too large, using %g\n"
+msgstr "Suurennoskerroin ”%g” on liian suuri: sen sijaan on käytössä %g\n"
+
+#: ../src/terminal-options.c:646
+#, c-format
+msgid ""
+"Option \"%s\" requires specifying the command to run on the rest of the "
+"command line"
+msgstr "Valitsin \"%s\" vaatii ajettavan komennon annettavaksi komentorivin lopussa"
+
+#: ../src/terminal-options.c:807
+msgid "Not a valid terminal config file."
+msgstr "Ei ole kelvollinen päätteen asetustiedosto."
+
+#: ../src/terminal-options.c:820
+msgid "Incompatible terminal config file version."
+msgstr "Epäyhteensopiva päätteen asetustiedoston versio."
+
+#: ../src/terminal-options.c:948
+msgid ""
+"Do not register with the activation nameserver, do not re-use an active "
+"terminal"
+msgstr "Älä rekisteröidy aktivointinimipalvelimeen tai käytä jo aktiivista päätettä"
+
+#: ../src/terminal-options.c:957
+msgid "Load a terminal configuration file"
+msgstr "Lataa päätteen asetustiedosto"
+
+#: ../src/terminal-options.c:966
+msgid "Save the terminal configuration to a file"
+msgstr "Tallenna päätteen asetukset tiedostoon"
+
+#: ../src/terminal-options.c:981
+msgid "Open a new window containing a tab with the default profile"
+msgstr "Avaa uusi ikkuna, jossa on välilehti oletusprofiililla"
+
+#: ../src/terminal-options.c:990
+msgid "Open a new tab in the last-opened window with the default profile"
+msgstr "Avaa uusi välilehti viimeksi avattuun ikkunaan oletusprofiililla"
+
+#: ../src/terminal-options.c:1004
+msgid "Turn on the menubar"
+msgstr "Näytä valikkopalkki"
+
+#: ../src/terminal-options.c:1013
+msgid "Turn off the menubar"
+msgstr "Piilota valikkopalkki"
+
+#: ../src/terminal-options.c:1022
+msgid "Maximise the window"
+msgstr "Suurenna ikkuna"
+
+#: ../src/terminal-options.c:1031
+msgid "Full-screen the window"
+msgstr "Ikkuna kokoruututilassa"
+
+#: ../src/terminal-options.c:1040
+msgid ""
+"Set the window size; for example: 80x24, or 80x24+200+200 (ROWSxCOLS+X+Y)"
+msgstr "Aseta ikkunakoko, esimerkiksi: 80x24 tai 80x24+200+200 (RIVITxSARAKKEET+X+Y)"
+
+#: ../src/terminal-options.c:1041
+msgid "GEOMETRY"
+msgstr "MITAT"
+
+#: ../src/terminal-options.c:1049
+msgid "Set the window role"
+msgstr "Aseta päätteen rooli"
+
+#: ../src/terminal-options.c:1050
+msgid "ROLE"
+msgstr "ROOLI"
+
+#: ../src/terminal-options.c:1058
+msgid "Set the last specified tab as the active one in its window"
+msgstr "Säädä viimeksi annettu välilehti aktiiviseksi omassa ikkunassaan"
+
+#: ../src/terminal-options.c:1072
+msgid "Execute the argument to this option inside the terminal"
+msgstr "Suorita valitsimessa annettu komento päätteessä"
+
+#: ../src/terminal-options.c:1081
+msgid "Use the given profile instead of the default profile"
+msgstr "Käytä annettua profiilia oletusprofiilin sijasta"
+
+#: ../src/terminal-options.c:1082
+msgid "PROFILE-NAME"
+msgstr "PROFIILINIMI"
+
+#: ../src/terminal-options.c:1090
+msgid "Set the terminal title"
+msgstr "Aseta päätteen otsikko"
+
+#: ../src/terminal-options.c:1091
+msgid "TITLE"
+msgstr "OTSIKKO"
+
+#: ../src/terminal-options.c:1099
+msgid "Set the working directory"
+msgstr "Aseta työkansio"
+
+#: ../src/terminal-options.c:1100
+msgid "DIRNAME"
+msgstr "TYÖKANSIO"
+
+#: ../src/terminal-options.c:1108
+msgid "Set the terminal's zoom factor (1.0 = normal size)"
+msgstr "Aseta päätteen suurennoskerroin (1.0 = tavallinen koko)"
+
+#: ../src/terminal-options.c:1109
+msgid "ZOOM"
+msgstr "ZOOMAUS"
+
+#: ../src/terminal-options.c:1360 ../src/terminal-options.c:1363
+msgid "MATE Terminal Emulator"
+msgstr "Maten pääte"
+
+#: ../src/terminal-options.c:1364
+msgid "Show MATE Terminal options"
+msgstr "Näytä Maten päätteen valitsimet"
+
+#: ../src/terminal-options.c:1374
+msgid ""
+"Options to open new windows or terminal tabs; more than one of these may be "
+"specified:"
+msgstr "Valitsimet uusien ikkunoiden ja välilehtien avaamiseksi. Useampi kuin yksi valitsin seuraavista voidaan antaa:"
+
+#: ../src/terminal-options.c:1375
+msgid "Show terminal options"
+msgstr "Näytä päätteen valitsimet"
+
+#: ../src/terminal-options.c:1383
+msgid ""
+"Window options; if used before the first --window or --tab argument, sets "
+"the default for all windows:"
+msgstr "Ikkunavalitsimet. Jos käytetään ennen ensimmäistä --window tai --tab -valitsinta, asettaa oletusikkunan kaikille ikkunoille:"
+
+#: ../src/terminal-options.c:1384
+msgid "Show per-window options"
+msgstr "Näytä ikkunakohtaiset valitsimet"
+
+#: ../src/terminal-options.c:1392
+msgid ""
+"Terminal options; if used before the first --window or --tab argument, sets "
+"the default for all terminals:"
+msgstr "Päätevalitsimet. Jos käytetään ennen ensimmäistä --window tai --tab -valitsinta, asettaa oletusikkunan kaikille ikkunoille:"
+
+#: ../src/terminal-options.c:1393
+msgid "Show per-terminal options"
+msgstr "Näytä päätekohtaiset valitsimet"
+
+#: ../src/terminal-profile.c:165
+msgid "Unnamed"
+msgstr "Nimeämätön"
+
+#: ../src/terminal-screen.c:1519
+msgid "_Profile Preferences"
+msgstr ""
+
+#: ../src/terminal-screen.c:1520 ../src/terminal-screen.c:1909
+msgid "_Relaunch"
+msgstr ""
+
+#: ../src/terminal-screen.c:1523
+msgid "There was an error creating the child process for this terminal"
+msgstr "Virhe luodessa lapsiprosessia tätä päätettä varten"
+
+#: ../src/terminal-screen.c:1914
+#, c-format
+msgid "The child process exited normally with status %d."
+msgstr ""
+
+#: ../src/terminal-screen.c:1919
+#, c-format
+msgid "The child process was terminated by signal %d."
+msgstr ""
+
+#: ../src/terminal-screen.c:1924
+msgid "The child process was terminated."
+msgstr ""
+
+#: ../src/terminal-tab-label.c:151
+msgid "Close tab"
+msgstr "Sulje välilehti"
+
+#: ../src/terminal-tabs-menu.c:198
+msgid "Switch to this tab"
+msgstr "Siirry tähän välilehteen"
+
+#: ../src/terminal-util.c:167
+msgid "There was an error displaying help"
+msgstr "Virhe ohjetta näyttäessä"
+
+#: ../src/terminal-util.c:239
+#, c-format
+msgid "Could not open the address “%s”"
+msgstr "Osoitetta ”%s” ei voitu avata"
+
+#: ../src/terminal-util.c:347
+msgid ""
+"MATE Terminal is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 3 of the License, or (at your option) "
+"any later version."
+msgstr ""
+
+#: ../src/terminal-util.c:351
+msgid ""
+"MATE Terminal is distributed in the hope that it will be useful, but WITHOUT"
+" ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr "Maten päätettä levitetään siinä toivossa, että se olisi hyödyllinen, mutta ilman mitään takuuta; ilman edes hiljaista takuuta kaupallisesti hyväksyttävästä laadusta tai soveltuvuudesta tiettyyn tarkoitukseen. Katso GPL lisenssistä lisää yksityiskohtia."
+
+#: ../src/terminal-util.c:355
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" MATE Terminal; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin St, Fifth Floor, Boston, MA  02110-1301 USA"
+msgstr "Maten päätteen mukana pitäisi tulla kopio GPL-lisenssistä; jos näin ei ole, kirjoita osoitteeseen Free Software Foundation Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
+
+#. Translators: This is the label of a menu item to choose a profile.
+#. * _%d is used as the accelerator (with d between 1 and 9), and
+#. * the %s is the name of the terminal profile.
+#: ../src/terminal-window.c:477
+#, c-format
+msgid "_%d. %s"
+msgstr "_%d. %s"
+
+#. Translators: This is the label of a menu item to choose a profile.
+#. * _%c is used as the accelerator (it will be a character between A and Z),
+#. * and the %s is the name of the terminal profile.
+#: ../src/terminal-window.c:483
+#, c-format
+msgid "_%c. %s"
+msgstr "_%c. %s"
+
+#. Toplevel
+#: ../src/terminal-window.c:1818
+msgid "_File"
+msgstr "_Tiedosto"
+
+#: ../src/terminal-window.c:1819 ../src/terminal-window.c:1832
+#: ../src/terminal-window.c:2073
+msgid "Open _Terminal"
+msgstr "Avaa _pääte"
+
+#: ../src/terminal-window.c:1820 ../src/terminal-window.c:1837
+#: ../src/terminal-window.c:2078
+msgid "Open Ta_b"
+msgstr "Avaa _välilehti"
+
+#: ../src/terminal-window.c:1821
+msgid "_Edit"
+msgstr "_Muokkaa"
+
+#: ../src/terminal-window.c:1822
+msgid "_View"
+msgstr "_Näytä"
+
+#: ../src/terminal-window.c:1823
+msgid "_Search"
+msgstr "_Etsi"
+
+#: ../src/terminal-window.c:1824
+msgid "_Terminal"
+msgstr "_Pääte"
+
+#: ../src/terminal-window.c:1825
+msgid "Ta_bs"
+msgstr "_Välilehdet"
+
+#: ../src/terminal-window.c:1826
+msgid "_Help"
+msgstr "O_hje"
+
+#: ../src/terminal-window.c:1842
+msgid "New _Profile…"
+msgstr "Uusi _profiili…"
+
+#: ../src/terminal-window.c:1847
+msgid "_Save Contents"
+msgstr "_Tallenna sisältö"
+
+#: ../src/terminal-window.c:1852 ../src/terminal-window.c:2088
+msgid "C_lose Tab"
+msgstr "S_ulje välilehti"
+
+#: ../src/terminal-window.c:1857
+msgid "_Close Window"
+msgstr "_Sulje ikkuna"
+
+#: ../src/terminal-window.c:1874 ../src/terminal-window.c:2068
+msgid "Paste _Filenames"
+msgstr "Liitä _tiedostonimet"
+
+#: ../src/terminal-window.c:1884
+msgid "P_rofiles…"
+msgstr "P_rofiilit…"
+
+#: ../src/terminal-window.c:1889
+msgid "_Keyboard Shortcuts…"
+msgstr "_Pikanäppäimet…"
+
+#: ../src/terminal-window.c:1894
+msgid "Pr_ofile Preferences"
+msgstr "Profiilin _asetukset"
+
+#: ../src/terminal-window.c:1918
+msgid "_Find..."
+msgstr "_Etsi..."
+
+#: ../src/terminal-window.c:1923
+msgid "Find Ne_xt"
+msgstr "Etsi _seuraava"
+
+#: ../src/terminal-window.c:1928
+msgid "Find Pre_vious"
+msgstr "Etsi e_dellinen"
+
+#: ../src/terminal-window.c:1933
+msgid "_Clear Highlight"
+msgstr ""
+
+#: ../src/terminal-window.c:1939
+msgid "Go to _Line..."
+msgstr ""
+
+#: ../src/terminal-window.c:1944
+msgid "_Incremental Search..."
+msgstr ""
+
+#. Terminal menu
+#: ../src/terminal-window.c:1951
+msgid "Change _Profile"
+msgstr "Vaihda pro_fiilia"
+
+#: ../src/terminal-window.c:1953
+msgid "_Previous Profile"
+msgstr ""
+
+#: ../src/terminal-window.c:1958
+msgid "_Next Profile"
+msgstr ""
+
+#: ../src/terminal-window.c:1963
+msgid "_Set Title…"
+msgstr "Aseta otsikko…"
+
+#: ../src/terminal-window.c:1967
+msgid "Set _Character Encoding"
+msgstr "Aseta _merkistö"
+
+#: ../src/terminal-window.c:1969
+msgid "_Reset"
+msgstr "_Alusta"
+
+#: ../src/terminal-window.c:1974
+msgid "Reset and C_lear"
+msgstr "Alusta ja t_yhjennä"
+
+#: ../src/terminal-window.c:1981
+msgid "_Add or Remove…"
+msgstr "_Lisää tai poista…"
+
+#: ../src/terminal-window.c:1988
+msgid "_Previous Tab"
+msgstr "_Edellinen välilehti"
+
+#: ../src/terminal-window.c:1993
+msgid "_Next Tab"
+msgstr "_Seuraava välilehti"
+
+#: ../src/terminal-window.c:1998
+msgid "Move Tab _Left"
+msgstr "Siirrä välilehteä _vasemmalle"
+
+#: ../src/terminal-window.c:2003
+msgid "Move Tab _Right"
+msgstr "Siirrä välilehteä _oikealle"
+
+#: ../src/terminal-window.c:2008
+msgid "_Detach tab"
+msgstr "_Irrota välilehti"
+
+#: ../src/terminal-window.c:2015
+msgid "_Contents"
+msgstr "_Sisältö"
+
+#: ../src/terminal-window.c:2020
+msgid "_About"
+msgstr "_Tietoja"
+
+#: ../src/terminal-window.c:2027
+msgid "_Send Mail To…"
+msgstr "_Lähetä sähköpostia…"
+
+#: ../src/terminal-window.c:2032
+msgid "_Copy E-mail Address"
+msgstr "Kopioi _sähköpostiosoite"
+
+#: ../src/terminal-window.c:2037
+msgid "C_all To…"
+msgstr "_Soita…"
+
+#: ../src/terminal-window.c:2042
+msgid "_Copy Call Address"
+msgstr "Kopioi soitto-osoite"
+
+#: ../src/terminal-window.c:2047
+msgid "_Open Link"
+msgstr "_Avaa linkki"
+
+#: ../src/terminal-window.c:2052
+msgid "_Copy Link Address"
+msgstr "Kopioi _linkin kohde"
+
+#: ../src/terminal-window.c:2056
+msgid "P_rofiles"
+msgstr "P_rofiilit"
+
+#: ../src/terminal-window.c:2083 ../src/terminal-window.c:3334
+msgid "C_lose Window"
+msgstr "_Sulje ikkuna"
+
+#: ../src/terminal-window.c:2093
+msgid "L_eave Full Screen"
+msgstr "Lop_eta kokoruututila"
+
+#: ../src/terminal-window.c:2097
+msgid "_Input Methods"
+msgstr "Sy_öttötavat"
+
+#: ../src/terminal-window.c:2104
+msgid "Show _Menubar"
+msgstr "Näytä valikkopalkki"
+
+#: ../src/terminal-window.c:2110
+msgid "_Full Screen"
+msgstr "_Kokoruututila"
+
+#: ../src/terminal-window.c:3321
+msgid "Close this window?"
+msgstr "Suljetaanko tämä ikkuna?"
+
+#: ../src/terminal-window.c:3321
+msgid "Close this terminal?"
+msgstr "Suljetaanko tämä pääte?"
+
+#: ../src/terminal-window.c:3325
+msgid ""
+"There are still processes running in some terminals in this window. Closing "
+"the window will kill all of them."
+msgstr "Joissain tämän ikkunan päätteissä on vielä prosesseja käynnissä. Ikkunan sulkeminen lopettaa kaikki nämä prosessit."
+
+#: ../src/terminal-window.c:3329
+msgid ""
+"There is still a process running in this terminal. Closing the terminal will"
+" kill it."
+msgstr "Tässä päätteessä on vielä käynnissä prosessi. Päätteen sulkeminen lopettaa tämän prosessin."
+
+#: ../src/terminal-window.c:3334
+msgid "C_lose Terminal"
+msgstr "S_ulje pääte"
+
+#: ../src/terminal-window.c:3407
+msgid "Could not save contents"
+msgstr "Ei voitu tallentaa sisältöä"
+
+#: ../src/terminal-window.c:3431
+msgid "Save as..."
+msgstr "Tallenna nimellä…"
+
+#: ../src/terminal-window.c:3956
+msgid "_Title:"
+msgstr "_Otsikko:"
+
+#: ../src/terminal-window.c:4151
+msgid "Contributors:"
+msgstr "Osallistujat:"
+
+#: ../src/terminal-window.c:4170
+msgid "A terminal emulator for the MATE desktop"
+msgstr "Pääteikkuna Mate-työpöydälle"
+
+#: ../src/terminal-window.c:4177
+msgid "translator-credits"
+msgstr "Ilkka Tuohela, 2005-2009\nPauli Virtanen, 2000-2005\nVille Hautamäki, 1998, 2000\nMikko Rauhala, 1999\n\nhttp://mate.fi/"

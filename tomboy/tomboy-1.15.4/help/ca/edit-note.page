@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="edit-notes" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="create-notes"/>
+    <link type="seealso" xref="delete-notes"/>
+    <desc>Edició i formatació de les notes.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Edició de notes</title>    
+  
+		<p>El Tomboy us permet formatar el text d'una nota de moltes maneres amb les opcions desfés/refés, negreta, cursiva i subratllat.</p>
+		
+   <section id="redo-undo">
+	
+	<title>Opcions desfés/refés</title>
+	
+		<p>Per desfer la darrera acció, com escriure una paraula o la formatació d'un text, premeu la icona <gui>Text</gui> de la barra de tasques i trieu <gui>Desfés</gui>.</p>
+
+		<p>Si voleu refer una paraula o un text després d'haver utilitzat l'opció de desfer, premeu la icona <gui>Text</gui> a la barra de tasques i trieu <gui>Refés</gui>.</p>
+	
+  </section>
+	 
+  <section id="text-format">
+	
+	<title>Formatació del text</title>
+	
+		<p>Podeu formatar el text de les notes de moltes maneres amb funcions com, per exemple, el subratllat de paraules, l'escriptura del text en negreta o en cursiva, el realçament de paraules i frases o el barrat del text.</p>
+  </section>
+	 
+  <section id="text-size">
+	
+	<title>Canvi de la mida del text</title>
+	
+		<p>Podeu canviar la mida del text de les notes de dues maneres.</p>
+		<p>Realceu el text que voleu engrandir o disminuir i premeu <keyseq><key>Ctrl</key><key>+</key></keyseq> per engrandir-lo o <keyseq><key>Ctrl</key><key>-</key></keyseq> per disminuir-lo.</p>
+		<p>També podeu prémer la icona <gui>Text</gui> a la barra de tasques i triar una de les quatre mides predefinides: petita, normal, gran o molt gran.</p>
+	
+  </section>
+	 
+  <section id="bullets">
+	
+	<title>Formatació dels pics</title>
+	
+		<p>Els pics es poden crear amb el teclat o amb la icona <gui>Text</gui> de la barra de tasques.</p>
+		<p>Per crear un pic manualment, premeu la tecla <key>*</key> i després escriviu el text. Després de prémer la tecla de retorn, el Tomboy convertirà automàticament la línia que comenci amb un asterisc en un pic i la línia següent també s'autoformatarà amb un pic. Si voleu crear un pic de segon nivell, premeu la <key>Tecla de tabulació</key> després de prémer la <key>Tecla de retorn</key>.</p>
+		<p>També podeu convertir a un element de llista qualsevol línia si la realceu, trieu la icona <gui>Text</gui> de la barra de tasques i activeu la casella de selecció <gui>Pics</gui>.</p>
+
+	
+  </section>
+</page>

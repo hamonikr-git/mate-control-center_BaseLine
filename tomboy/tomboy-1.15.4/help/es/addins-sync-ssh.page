@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-sync-ssh" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="addins#sync"/>
+    <desc>Sincronizar sus notas con otro equipo mediante SSH.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2010-08-01" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Servicio de sincronización SSH</title>
+
+  <p>El complemento de servicio de sincronización por SSH le permite sincronizar sus notas con otro equipo usando el protocolo SSH. Este complemento está desactivado de manera predeterminada.</p>
+
+  <p>Es posible que deba instalar el paquete <em>sshfs</em> para su distribución de Linux para que este complemento funcione, algo que está fuera del objetivo de este documento de ayuda.</p>
+
+</page>

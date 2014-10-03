@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MATE Dictionary Library Reference Manual: GdictClientContext</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="MATE Dictionary Library Reference Manual">
+<link rel="up" href="context-types.html" title="Context Implementations">
+<link rel="prev" href="context-types.html" title="Context Implementations">
+<link rel="next" href="sources.html" title="Dictionary Source">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#GdictClientContext.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#GdictClientContext.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties"> <span class="dim">|</span> 
+                  <a href="#GdictClientContext.properties" class="shortcut">Properties</a></span><span id="nav_signals"> <span class="dim">|</span> 
+                  <a href="#GdictClientContext.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="context-types.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="context-types.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="sources.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GdictClientContext"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GdictClientContext.top_of_page"></a>GdictClientContext</span></h2>
+<p>GdictClientContext — DICT client transport</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GdictClientContext.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GdictClientContext.html#gdict-client-context-error-quark" title="gdict_client_context_error_quark ()">gdict_client_context_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GdictContext.html" title="GdictContext"><span class="returnvalue">GdictContext</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GdictClientContext.html#gdict-client-context-new" title="gdict_client_context_new ()">gdict_client_context_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GdictClientContext.html#gdict-client-context-set-hostname" title="gdict_client_context_set_hostname ()">gdict_client_context_set_hostname</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GdictClientContext.html#gdict-client-context-get-hostname" title="gdict_client_context_get_hostname ()">gdict_client_context_get_hostname</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GdictClientContext.html#gdict-client-context-set-port" title="gdict_client_context_set_port ()">gdict_client_context_set_port</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GdictClientContext.html#gdict-client-context-get-port" title="gdict_client_context_get_port ()">gdict_client_context_get_port</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GdictClientContext.html#gdict-client-context-set-client" title="gdict_client_context_set_client ()">gdict_client_context_set_client</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GdictClientContext.html#gdict-client-context-get-client" title="gdict_client_context_get_client ()">gdict_client_context_get_client</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GdictClientContext.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="GdictClientContext.html#GdictClientContext--client-name" title="The “client-name” property">client-name</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="GdictClientContext.html#GdictClientContext--hostname" title="The “hostname” property">hostname</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="GdictClientContext.html#GdictClientContext--port" title="The “port” property">port</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="mate-dict-gdict-utils.html#GdictStatusCode" title="enum GdictStatusCode"><span class="type">GdictStatusCode</span></a></td>
+<td class="property_name"><a class="link" href="GdictClientContext.html#GdictClientContext--status" title="The “status” property">status</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GdictClientContext.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GdictClientContext.html#GdictClientContext-connected" title="The “connected” signal">connected</a></td>
+<td class="signal_flags"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GdictClientContext.html#GdictClientContext-disconnected" title="The “disconnected” signal">disconnected</a></td>
+<td class="signal_flags"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GdictClientContext.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="GdictClientContext.html#GDICT-CLIENT-CONTEXT-ERROR:CAPS" title="GDICT_CLIENT_CONTEXT_ERROR">GDICT_CLIENT_CONTEXT_ERROR</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GdictClientContext.html#GdictClientContextError" title="enum GdictClientContextError">GdictClientContextError</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GdictClientContext.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> GdictClientContext
+</pre>
+</div>
+<div class="refsect1">
+<a name="GdictClientContext.description"></a><h2>Description</h2>
+<p><a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a> is an implementation of the <a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a> interface.
+It implements the Dictionary Protocol as defined by the RFC 2229 in order
+to connect to a dictionary server.</p>
+<p>You should rarely instantiate this object directely: use an appropriate
+<a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a> instead.</p>
+</div>
+<div class="refsect1">
+<a name="GdictClientContext.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gdict-client-context-error-quark"></a><h3>gdict_client_context_error_quark ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+gdict_client_context_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.3.3.3.9.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-client-context-new"></a><h3>gdict_client_context_new ()</h3>
+<pre class="programlisting"><a class="link" href="GdictContext.html" title="GdictContext"><span class="returnvalue">GdictContext</span></a> *
+gdict_client_context_new (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *hostname</code></em>,
+                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> port</code></em>);</pre>
+<p>Creates a new <a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a> object for <em class="parameter"><code>hostname</code></em>
+. Use this
+object to connect and query the dictionary server using the Dictionary
+Protocol as defined by RFC 2229.</p>
+<div class="refsect3">
+<a name="id-1.3.3.3.9.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>hostname</p></td>
+<td class="parameter_description"><p>the hostname of a dictionary server, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for the
+default server</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>port</p></td>
+<td class="parameter_description"><p>port to be used when connecting to the dictionary server,
+or -1 for the default port</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.3.3.9.3.6"></a><h4>Returns</h4>
+<p> the newly created <a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a> object.  You should
+free it using <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-client-context-set-hostname"></a><h3>gdict_client_context_set_hostname ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdict_client_context_set_hostname (<em class="parameter"><code><a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a> *context</code></em>,
+                                   <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *hostname</code></em>);</pre>
+<p>Sets <em class="parameter"><code>hostname</code></em>
+ as the hostname of the dictionary server to be used.
+If <em class="parameter"><code>hostname</code></em>
+ is <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the default dictionary server will be used.</p>
+<div class="refsect3">
+<a name="id-1.3.3.3.9.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>hostname</p></td>
+<td class="parameter_description"><p>the hostname of a Dictionary server, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-client-context-get-hostname"></a><h3>gdict_client_context_get_hostname ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gdict_client_context_get_hostname (<em class="parameter"><code><a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a> *context</code></em>);</pre>
+<p>Gets the hostname of the dictionary server used by <em class="parameter"><code>context</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.3.3.3.9.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.3.3.9.5.6"></a><h4>Returns</h4>
+<p> the hostname of a dictionary server. The returned string is
+owned by the <a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a> object and should never be modified or
+freed.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-client-context-set-port"></a><h3>gdict_client_context_set_port ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdict_client_context_set_port (<em class="parameter"><code><a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a> *context</code></em>,
+                               <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> port</code></em>);</pre>
+<p>Sets the port of the dictionary server to be used when connecting.</p>
+<p>If <em class="parameter"><code>port</code></em>
+ is -1, the default port will be used.</p>
+<div class="refsect3">
+<a name="id-1.3.3.3.9.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>port</p></td>
+<td class="parameter_description"><p>port of the dictionary server to be used, or -1</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-client-context-get-port"></a><h3>gdict_client_context_get_port ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gdict_client_context_get_port (<em class="parameter"><code><a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a> *context</code></em>);</pre>
+<p>Gets the port of the dictionary server used by <em class="parameter"><code>context</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.3.3.3.9.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.3.3.9.7.6"></a><h4>Returns</h4>
+<p> the number of the port.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-client-context-set-client"></a><h3>gdict_client_context_set_client ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdict_client_context_set_client (<em class="parameter"><code><a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a> *context</code></em>,
+                                 <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *client</code></em>);</pre>
+<p>Sets <em class="parameter"><code>client</code></em>
+ as the client name to be used when advertising ourselves when
+a connection the the dictionary server has been established.
+If <em class="parameter"><code>client</code></em>
+ is <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>, the default client name will be used.</p>
+<div class="refsect3">
+<a name="id-1.3.3.3.9.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>client</p></td>
+<td class="parameter_description"><p>the client name to use, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-client-context-get-client"></a><h3>gdict_client_context_get_client ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gdict_client_context_get_client (<em class="parameter"><code><a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a> *context</code></em>);</pre>
+<p>Gets the client name used by <em class="parameter"><code>context</code></em>
+. See <a class="link" href="GdictClientContext.html#gdict-client-context-set-client" title="gdict_client_context_set_client ()"><code class="function">gdict_client_context_set_client()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.3.3.9.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.3.3.9.9.6"></a><h4>Returns</h4>
+<p> the client name. The returned string is owned by the
+<a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a> object and should never be modified or freed.</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GdictClientContext.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GDICT-CLIENT-CONTEXT-ERROR:CAPS"></a><h3>GDICT_CLIENT_CONTEXT_ERROR</h3>
+<pre class="programlisting">#define GDICT_CLIENT_CONTEXT_ERROR (gdict_client_context_error_quark ())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GdictClientContextError"></a><h3>enum GdictClientContextError</h3>
+<p><a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a> error enumeration</p>
+<div class="refsect3">
+<a name="id-1.3.3.3.10.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GDICT-CLIENT-CONTEXT-ERROR-SOCKET:CAPS"></a>GDICT_CLIENT_CONTEXT_ERROR_SOCKET</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GDICT-CLIENT-CONTEXT-ERROR-LOOKUP:CAPS"></a>GDICT_CLIENT_CONTEXT_ERROR_LOOKUP</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GDICT-CLIENT-CONTEXT-ERROR-NO-CONNECTION:CAPS"></a>GDICT_CLIENT_CONTEXT_ERROR_NO_CONNECTION</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GDICT-CLIENT-CONTEXT-ERROR-SERVER-DOWN:CAPS"></a>GDICT_CLIENT_CONTEXT_ERROR_SERVER_DOWN</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GdictClientContext.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GdictClientContext--client-name"></a><h3>The <code class="literal">“client-name”</code> property</h3>
+<pre class="programlisting">  “client-name”              <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The name of the client of the context object.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+<p class="since">Since 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GdictClientContext--hostname"></a><h3>The <code class="literal">“hostname”</code> property</h3>
+<pre class="programlisting">  “hostname”                 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The hostname of the dictionary server to connect to.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+<p class="since">Since 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GdictClientContext--port"></a><h3>The <code class="literal">“port”</code> property</h3>
+<pre class="programlisting">  “port”                     <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>The port of the dictionary server to connect to.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 65535</p>
+<p>Default value: 2628</p>
+<p class="since">Since 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GdictClientContext--status"></a><h3>The <code class="literal">“status”</code> property</h3>
+<pre class="programlisting">  “status”                   <a class="link" href="mate-dict-gdict-utils.html#GdictStatusCode" title="enum GdictStatusCode"><span class="type">GdictStatusCode</span></a></pre>
+<p>The status code as returned by the dictionary server.</p>
+<p>Flags: Read</p>
+<p>Default value: GDICT_STATUS_INVALID</p>
+<p class="since">Since 1.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GdictClientContext.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GdictClientContext-connected"></a><h3>The <code class="literal">“connected”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a> *client,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>            user_data)</pre>
+<p>Flags: <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GdictClientContext-disconnected"></a><h3>The <code class="literal">“disconnected”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GdictClientContext.html" title="GdictClientContext"><span class="type">GdictClientContext</span></a> *client,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>            user_data)</pre>
+<p>Flags: <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since 1.0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

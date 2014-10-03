@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="introduction" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <desc>Úvod do <app>Poznámek Tomboy</app>.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Úvod</title>
+
+  <p><app>Tomboy</app> je aplikace k psaní poznámek v pracovním prostředí GNOME, Microsoft Windows a Mac OS X. Je snadno použitelná a pomůže vám uspořádat si své nápady a informace, se kterými pracujete dennodenně.</p>
+  <p><app>Tomboy</app> obsahuje funkce, které vám pomohou si lépe roztřídit a zapamatovat informace a umožní vám provázat poznámky mezi sebou, abyste informace snadněji nalezli. Poznámky si může uspořádat do sešitů, což je jednoduchý způsob, jak si je seskupovat.</p>
+  <p>Poznámky můžete rovněž synchronizovat mezi více počítači, takže je máte snadno dostupné kdekoliv se nacházíte.</p>
+
+  <figure>
+    <title>Okno aplikace <gui>Poznámky Tomboy</gui></title>
+    <desc>Hlavní okno aplikace <app>Poznámky Tomboy</app></desc>
+    <media type="image" src="figures/tomboy.png" mime="image/png" style="right">
+      <p>Výchozí poznámka <app>Tomboy</app>.</p>
+    </media>
+  </figure>
+
+</page>

@@ -1,0 +1,54 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/utils.mk
+include /usr/share/cdbs/1/class/autotools.mk
+
+DEB_DH_INSTALL_ARGS += --list-missing
+
+DEB_SRCDIR_mate-media-pulse := $(CURDIR)/debian/build/mate-media-pulse
+DEB_BUILDDIR_mate-media-pulse := $(CURDIR)/debian/build/mate-media-pulse
+DEB_DESTDIR_mate-media-pulse := $(CURDIR)/debian/mate-media-pulse
+
+DEB_DH_MAKESHLIBS_ARGS_mate-media-gstreamer += --no-act
+DEB_DH_MAKESHLIBS_ARGS_mate-media-pulse += --no-act
+
+DEB_CONFIGURE_SCRIPT := ./autogen.sh
+
+DEB_CONFIGURE_EXTRA_FLAGS += --libexecdir=/usr/lib/mate-media \
+		--localstatedir=/var --disable-static \
+		--disable-pulseaudio \
+		--disable-scrollkeeper \
+		--enable-gstmix \
+		--enable-gst-mixer-applet \
+		--with-gtk=2.0
+
+#DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(DEB_DESTDIR) MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+
+configure/mate-media-pulse:: $(DEB_BUILDDIR_mate-media-pulse)/config.status
+$(DEB_BUILDDIR_mate-media-pulse)/config.status:
+	cp -a `find . -maxdepth 1 -mindepth 1 -not -name debian` $(DEB_SRCDIR_mate-media-pulse)/$*
+	cd $(DEB_BUILDDIR_mate-media-pulse) && \
+		$(DEB_CONFIGURE_SCRIPT_ENV) $(DEB_CONFIGURE_SCRIPT) \
+			$(DEB_CONFIGURE_NORMAL_ARGS) \
+			$(cdbs_configure_flags) \
+			--libexecdir=/usr/lib/mate-media \
+			--localstatedir=/var --disable-static \
+			--enable-pulseaudio \
+			--disable-scrollkeeper \
+			--disable-gstmix \
+			--disable-gst-mixer-applet \
+			--with-gtk=2.0 \
+			$(DEB_CONFIGURE_USER_FLAGS)
+
+build/mate-media-pulse::
+	make -C $(DEB_BUILDDIR_mate-media-pulse)
+
+install/mate-media-pulse::
+	make -C $(DEB_BUILDDIR_mate-media-pulse) install DESTDIR=$(DEB_DESTDIR_mate-media-pulse)
+	rm -rf debian/mate-media-pulse/usr/lib/*/*.la
+	# delete conflicts file with mate-media-common
+	rm -rf debian/mate-media-pulse/usr/share/locale/
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

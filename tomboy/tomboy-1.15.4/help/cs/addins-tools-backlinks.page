@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-tools-backlinks" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="addins#tools"/>
+    <desc>Jak mít přehled, která poznámka se odkazuje na kterou.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-02" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Zpětné odkazy</title>
+
+	<p>Rozšíření <gui>Zpětné odkazy</gui> je standardně zapnuté. Umožňuje vám vidět, které poznámky se odkazují na poznámku, kterou máte právě zobrazenou. Takovéto odkazy na poznámku se nazývají <em>zpětné odkazy</em>.</p>
+
+  <steps>
+    <title>Když chcete vytvořit a zobrazit zpětné odkazy na poznámku:</title>
+    <item>
+      <p>Začněte v libovolné poznámce psát název poznámky.</p>
+    </item>
+  </steps>
+  <note style="important">
+    <p>Aby <app>Tomboy</app> automaticky vytvořil odkazy na existující poznámku, musí text přesně odpovídat názvu této existující poznámky.</p>
+  </note>
+ </page>

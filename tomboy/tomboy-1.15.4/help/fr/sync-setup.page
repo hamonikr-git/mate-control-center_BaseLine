@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync-setup" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <desc>Configuration de Tomboy pour la synchronisation de vos notes.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <credit type="author copyright">
+      <name>Le projet de documentation GNOME</name>
+      <years>2010-2012</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Configuration de la synchronisation</title>
+
+ <section id="enablesync">
+
+	<title>Activer la synchronisation</title>
+	
+	<p><app>Tomboy</app> peut synchroniser vos notes entre plusieurs ordinateurs. Cela permet d'avoir une sauvegarde de vos notes sur un autre ordinateur ou de partager vos notes entre plusieurs ordinateurs pour que vous puissiez toujours accéder à celles-ci.</p>
+	
+	<p>You can enable synchronize by opening <gui>Tomboy Preferences</gui>
+	by using your mouse to right click on the Tomboy icon in your panel,
+	taskbar or dock and choose <gui>Preferences</gui> and then select
+	the <gui>Synchronization</gui> tab.  You can also open <gui> Tomboy
+	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
+	the menu choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
+	</guiseq>.
+	</p>
+
+ </section>
+
+ <section id="conflict">
+
+	<title>Gestion des conflits entre les notes</title>
+	
+	<p>Vous pouvez configurer le comportement par défaut de Tomboy quand une note pose un problème de conflit. Cela peut arriver si les notes ne sont pas synchronisées régulièrement.</p>
+	
+	<p>Dans la boîte de dialogue <gui>Préférences</gui>, cliquez sur le bouton <gui>Avancé</gui>. Vous pouvez choisir le fonctionnement par défaut pour gérer les conflits parmi trois options :</p>
+	
+	<list>
+		<item><p><gui>Toujours me demander quoi faire</gui> est l'option par défaut. Quand Tomboy rencontre un conflit, il demande toujours si vous souhaitez renommer la note locale ou la remplacer par la note se trouvant sur le serveur.</p></item>
+		<item><p><gui>Renommer ma note locale</gui>. Si cette option est sélectionnée, Tomboy remplace automatiquement la note par une copie de celle de l'ordinateur distant et renomme la note sur votre ordinateur pour que vous ne perdiez pas les informations qu'elle contient.</p>
+		</item>
+		
+		<item><p><gui>Replace my local note with the server's update.</gui>
+  		If you have selected this option, when you synchronize, 
+		Tomboy will overwrite and replace your note stored on your
+		computer with a copy from the remote computer.</p>
+		
+		<note style="warning">
+		<p>Remplacer la note automatiquement est définitif. Votre note locale est remplacée par une copie de celle présente sur l'ordinateur distant et vous perdez toutes les informations qui étaient stockées dans cette note avant la synchronisation.</p>
+		</note>
+                </item>
+		
+	</list>
+		
+
+ </section> 
+ 
+  <section id="webdav">
+
+	<title>Configuration de la synchronisation avec WebDav</title>
+	
+	<p>Pour synchroniser vos notes avec un serveur WebDAV, vous devez installer le système de fichiers FUSE wdfs. Référez-vous à la documentation de votre système d'exploitation pour paramétrer FUSE pour votre compte. Vous avez également besoin du gestionnaire de trousseaux GNOME.</p>
+	
+	<p>Choisissez <gui>WebDAV</gui> dans la liste déroulante <gui>Service</gui>. Remplissez les informations de connexion à votre serveur et cliquez ensuite sur le bouton <gui>Enregistrer</gui>. Vous pouvez désormais synchroniser vos notes.</p>
+
+ </section>
+ 
+  <section id="ssh">
+
+	<title>Configuration de la synchronisation avec SSH</title>
+	
+	<p>Pour synchroniser vos notes avec un serveur SSH, vous devez avoir installé le système de fichiers FUSE, aussi appelé <app>sshfs</app>. Référez-vous à la documentation de votre système d'exploitation pour paramétrer FUSE pour votre compte utilisateur. Vous avez également besoin d'une clé SSH pour votre compte serveur SSH, qui peut être fournie par l'application <app>Seahorse</app>, aussi connue sous le nom de <app>Mots de passe et clés de chiffrement</app>.</p>
+	
+	<p>Il est conseillé d'utiliser un troisième ordinateur ou serveur comme ordinateur distant pour stocker les notes qui doivent être synchronisées entre plusieurs postes.</p>
+
+	<p>Open <app>Passwords and Encryption Keys</app> by choosing 
+	<guiseq><gui>Applications</gui><gui>Accessories</gui>
+	<gui>Passwords and Encryption Keys</gui></guiseq>.  
+	Click on your key, and from the menu choose <guiseq><gui>Remote</gui>
+	<gui>Configure Key for Secure Shell</gui></guiseq>  
+	and enter the domain name or IP address of the computer you want to 
+	synchronize to in <gui>Computer Name</gui>.  Enter the username of the 
+	remote computer in <gui>Login Name:</gui> and press <gui>Set Up</gui>. 
+	When prompted, enter the password and setting up your key will 
+	be completed.
+	</p>
+	
+	<p>Dans Tomboy, choisissez <gui>SSH</gui> dans la liste déroulante <gui>Service</gui>. Remplissez les informations de connexion à votre serveur et cliquez ensuite sur le bouton <gui>Enregistrer</gui>. Le <gui>Chemin du dossier</gui>, même s'il est facultatif, devrait indiquer un dossier vide. Vous pouvez désormais synchroniser vos notes.</p>
+
+ </section>
+
+ <section id="local">
+
+	<title>Configuration de la synchronisation dans un dossier local</title>
+	
+	<p>Vous pouvez avoir besoin de synchroniser vos notes avec un dossier local si celui-ci est disponible depuis vos autres systèmes, ou si ce dossier est un montage local d'un serveur distant.</p>
+
+	<p>Choisissez <gui>Dossier local</gui> dans la liste déroulante <gui>Service</gui>. Choisissez le <gui>Chemin du dossier</gui> souhaité pour la synchronisation, puis cliquez sur le bouton <gui>Enregistrer</gui>. Vous pouvez désormais synchroniser vos notes.</p>
+
+ </section>
+ 
+ </page>

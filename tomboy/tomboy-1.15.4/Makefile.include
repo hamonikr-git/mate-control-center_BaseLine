@@ -1,0 +1,21 @@
+## Makefile.include
+
+## Links
+
+TOMBOY_EXE_PATH = $(top_builddir)/bin/Tomboy.exe
+LINK_TOMBOY_EXE =					\
+	-r:$(TOMBOY_EXE_PATH)
+
+LINK_MONO_ADDINS = $(MONO_ADDINS_LIBS)
+
+## Build
+
+CSC_FLAGS = -debug
+CSC = $(GMCS) $(CSC_FLAGS) -target:exe
+CSC_LIB = $(CSC) -target:library
+
+## Runtime
+
+MONO_DEBUGFLAGS = --debug
+RUNTIME = mono $(MONO_DEBUGFLAGS)
+

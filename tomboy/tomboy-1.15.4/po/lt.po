@@ -1,0 +1,2612 @@
+# translation of tomboy.HEAD.po to Lithuanian
+# Lithuanian translation for Tomboy.
+# Copyright (C) 2005-2009 Alex Graveley <alex@beatniksoftware.com>
+# This file is distributed under the same license as the Tomboy package.
+#
+#
+# Žygimantas Beručka <zygis@gnome.org>, 2005-2007, 2009.
+# Gintautas Miliauskas <gintas@akl.lt>, 2006, 2007, 2008.
+# Vytautas Rėkus <v.rekus@gmail.com>, 2009.
+# Aurimas Černius <aurisc4@gmail.com>, 2010, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tomboy.HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=tomboy&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-01-20 01:02+0000\n"
+"PO-Revision-Date: 2013-03-02 17:07+0200\n"
+"Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
+"Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+
+#: ../data/GNOME_TomboyApplet.server.in.in.h:1
+msgid "Tomboy Applet Factory"
+msgstr "Tomboy įtaiso gamykla"
+
+#: ../data/GNOME_TomboyApplet.server.in.in.h:2 ../data/tomboy.desktop.in.h:1
+#: ../Tomboy/Tray.cs:581
+msgid "Tomboy Notes"
+msgstr "Tomboy užrašai"
+
+#: ../data/GNOME_TomboyApplet.server.in.in.h:3
+msgid "Simple and easy to use note-taking"
+msgstr "Paprasta ir lengvai naudojama užrašinė"
+
+#: ../data/GNOME_TomboyApplet.server.in.in.h:4
+msgid "Accessories"
+msgstr "Reikmenys"
+
+#: ../data/GNOME_TomboyApplet.xml.h:1 ../Tomboy/ActionManager.cs:179
+#: ../Tomboy/Tray.cs:274
+msgid "S_ynchronize Notes"
+msgstr "S_inchronizuoti raštelius"
+
+#: ../data/GNOME_TomboyApplet.xml.h:2 ../Tomboy/ActionManager.cs:153
+#: ../Tomboy/Tray.cs:283
+msgid "_Preferences"
+msgstr "_Nustatymai"
+
+#: ../data/GNOME_TomboyApplet.xml.h:3 ../Tomboy/ActionManager.cs:157
+#: ../Tomboy/Tray.cs:288
+msgid "_Help"
+msgstr "_Žinynas"
+
+#: ../data/GNOME_TomboyApplet.xml.h:4 ../Tomboy/ActionManager.cs:164
+msgid "_About"
+msgstr "_Apie"
+
+#: ../data/tomboy.desktop.in.h:2
+msgid "Take notes, link ideas, and stay organized"
+msgstr "Konspektuokite, susiekite idėjas ir dirbkite tvarkingai"
+
+#: ../data/tomboy.desktop.in.h:3
+msgid "Note-taker"
+msgstr "Užrašinė"
+
+#: ../data/tomboy.schemas.in.h:1
+msgid "Enable spellchecking"
+msgstr "Įjungti rašybos tikrinimą"
+
+#: ../data/tomboy.schemas.in.h:2
+msgid ""
+"If true, misspellings will be underlined in red, and correct spelling "
+"suggestions shown in the right-click menu."
+msgstr ""
+"Jei teigiama, rašybos klaidos bus pabrauktos raudonai, ir paspaudus dešinįjį "
+"pelės mygtuką bus rodomi teisingos rašybos pasiūlymai."
+
+#: ../data/tomboy.schemas.in.h:3
+msgid "Enable WikiWord highlighting"
+msgstr "Įjungti WikiWord paryškinimą"
+
+#: ../data/tomboy.schemas.in.h:4
+msgid ""
+"Enable this option to highlight words ThatLookLikeThis. Clicking the word "
+"will create a note with that name."
+msgstr ""
+"Įjunkite šį nustatymą norėdami paryškinti žodžius KurieAtrodoŠtaiTaip. "
+"Paspaudus šį žodį bus sukurtas naujas raštelis su tokiu pavadinimu."
+
+#: ../data/tomboy.schemas.in.h:5
+msgid "Enable automatic bulleted lists."
+msgstr "Įjungti automatinius sąrašus."
+
+#: ../data/tomboy.schemas.in.h:6
+msgid ""
+"Enable this option if you want bulleted lists to be automatic when you place "
+"- or * at the beginning of a line."
+msgstr ""
+"Pasirinkite, jei norite automatiškai suformuoti nenumeruojamus sąrašus, kai "
+"eilutės pradžioje yra - arba *."
+
+#: ../data/tomboy.schemas.in.h:7
+msgid "Enable Middle-Click Paste On Icon."
+msgstr "Įjungti įkėlimą, paspaudus vidurinį pelės mygtuką ant piktogramos."
+
+#: ../data/tomboy.schemas.in.h:8
+msgid ""
+"Enable this option if you want to be able to middle-click the Tomboy icon to "
+"paste timestamped content into the Start Here note."
+msgstr ""
+"Įjunkite, jei norite įkelti turinį į „Pradėti čia“ raštelį iš atmintinės "
+"paspaudę viduriniuoju pelės mygtuku Tomboy piktogramą."
+
+#: ../data/tomboy.schemas.in.h:9
+msgid "Enable custom font"
+msgstr "Įjungti pasirinktinį šriftą"
+
+#: ../data/tomboy.schemas.in.h:10
+msgid ""
+"If true, the font name set in custom_font_face will be used as the font when "
+"displaying notes. Otherwise the desktop default font will be used."
+msgstr ""
+"Jei teigiama, rašteliuose bus naudojamas šriftas nurodytas custom_font_face "
+"rakte. Kitu atveju bus naudojamas numatytasis aplinkos šriftas."
+
+#: ../data/tomboy.schemas.in.h:11
+msgid "Custom Font Face"
+msgstr "Kitas šriftas"
+
+#: ../data/tomboy.schemas.in.h:12
+msgid ""
+"If enable_custom_font is true, the font name set here will be used as the "
+"font when displaying notes."
+msgstr ""
+"Jeigu enable_custom_font reikšmė yra teigiama, rašteliuose bus naudojamas "
+"čia nurodytas šriftas."
+
+#: ../data/tomboy.schemas.in.h:13
+msgid "Enable global keybindings"
+msgstr "Įjungti globalius klavišų susiejimus"
+
+#: ../data/tomboy.schemas.in.h:14
+msgid ""
+"If true, the desktop-global keybindings set in /apps/tomboy/"
+"global_keybindings will be enabled, allowing for useful Tomboy actions to be "
+"available from any application."
+msgstr ""
+"Jei teigiama, bus įjungti visoje aplinkoje veikiantys klavišų susiejimai, "
+"nurodyti /apps/tomboy/global_keybindings rakte."
+
+#: ../data/tomboy.schemas.in.h:15
+msgid "Enable the Delete Note confirmation dialog"
+msgstr "Įjungti raštelio trynimo patvirtinimo dialogą"
+
+#: ../data/tomboy.schemas.in.h:16
+msgid ""
+"If disabled, the \"Delete Note\" confirmation dialog will be suppressed."
+msgstr "Jei išjungta, patvirtinimo dialogas \"Trinti raštelį\" bus praleistas."
+
+#: ../data/tomboy.schemas.in.h:17
+msgid "Enable Tray Icon"
+msgstr "Įjungti pranešimų skydelio piktogramą"
+
+#: ../data/tomboy.schemas.in.h:18
+msgid ""
+"If true, Tomboy's tray icon will be displayed in the notification area. "
+"Disabling this may be useful when another application is providing the "
+"functionality of the tray icon."
+msgstr ""
+"Jei teigiama, Tomboy dėklo piktograma bus rodoma pranešimų vietoje. Šios "
+"funkcijos išjungimas gali būti naudingas, kai kita programa pateikia dėklo "
+"piktogramos funkcionalumą."
+
+#: ../data/tomboy.schemas.in.h:19
+msgid "Start Here Note"
+msgstr "Raštelis Pradėkite čia"
+
+#: ../data/tomboy.schemas.in.h:20
+msgid ""
+"The note URI of the note that should be considered the \"Start Here\" note, "
+"which is always placed at the bottom of the Tomboy note menu and also "
+"accessible by hotkey."
+msgstr ""
+"Raštelio, kuris turėtų būti laikomas rašteliu „Pradėti čia“, URI. Šis "
+"raštelis visada rodomas Tomboy raštelių meniu viršuje ir pasiekiamas "
+"karštaisiais klavišais."
+
+#: ../data/tomboy.schemas.in.h:21
+msgid "Minimum number of notes to show in menu"
+msgstr "Mažiausias leistinas meniu rodomų raštelių skaičius"
+
+#: ../data/tomboy.schemas.in.h:22
+msgid ""
+"Integer determining the minimum number of notes to show in the Tomboy note "
+"menu."
+msgstr ""
+"Sveikasis skaičius, nurodantis mažiausią leistiną raštelių, rodomų Tomboy "
+"raštelių meniu, skaičių."
+
+#: ../data/tomboy.schemas.in.h:23
+#| msgid "Minimum number of notes to show in menu"
+msgid "Maximum number of notes to show in menu"
+msgstr "Didžiausias leistinas meniu rodomų raštelių skaičius"
+
+#: ../data/tomboy.schemas.in.h:24
+#| msgid ""
+#| "Integer determining the minimum number of notes to show in the Tomboy "
+#| "note menu."
+msgid ""
+"Integer determining the maximum number of notes to show in the Tomboy note "
+"menu."
+msgstr ""
+"Sveikasis skaičius, nurodantis didžiausią leistiną raštelių, rodomų Tomboy "
+"raštelių meniu, skaičių."
+
+#: ../data/tomboy.schemas.in.h:25
+msgid "List of pinned notes."
+msgstr "Prismeigtų raštelių sąrašas."
+
+#: ../data/tomboy.schemas.in.h:26
+msgid ""
+"Whitespace-separated list of note URIs for notes that should always appear "
+"in the Tomboy note menu."
+msgstr ""
+"Tarpais atskirtų raštelių, kurie turėtų būti visada rodomi Tomboy raštelių "
+"meniu, URI sąrašas."
+
+#: ../data/tomboy.schemas.in.h:27
+msgid "Maximum note title length to show in tray menu."
+msgstr "Mažiausias leistinas meniu rodomų raštelių pavadinimų ilgis."
+
+#: ../data/tomboy.schemas.in.h:28
+msgid ""
+"Maximum characters of note title to show in the Tomboy tray or panel applet "
+"note menu."
+msgstr ""
+"Maksimalus simbolių skaičius užrašo antraštėje, rodomas Tomboy dėklės ar "
+"įtaiso užrašo meniu."
+
+#: ../data/tomboy.schemas.in.h:29
+msgid "Enable startup notes"
+msgstr "Įjungti paleidimo raštelius"
+
+#: ../data/tomboy.schemas.in.h:30
+msgid ""
+"If enabled, all notes that were open when Tomboy quit will automatically be "
+"reopened at startup."
+msgstr ""
+"Jeigu įjungta, visi rašteliai, kurie buvo atverti uždarant Tomboy, paleidimo "
+"metu bus automatiškai atidaryti."
+
+#: ../data/tomboy.schemas.in.h:31
+msgid "Show applet menu"
+msgstr "Rodyti įtaiso meniu"
+
+#: ../data/tomboy.schemas.in.h:32
+msgid ""
+"The global keybinding for showing the Tomboy applet's menu. The format looks "
+"like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
+"fairly liberal and allows lower or upper case, and also abbreviations such "
+"as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
+"special string \"disabled\", then there will be no keybinding for this "
+"action."
+msgstr ""
+"Globalus susiejimas Tomboy įtaiso meniu parodymui. Formatas atrodo kaip „&lt;"
+"Control&gt;a“ arba „&lt;Shift&gt;&lt;Alt&gt;F1“. Apdoroklis yra pakankamai "
+"liberalus ir leidžia didžiąsias ir mažąsias raides, taip pat tokius "
+"sutrumpinimus kaip „&lt;Ctl&gt;“ and „&lt;Ctrl&gt;“. Jeigu nurodysite "
+"parametrą į specialų užrašą „disabled“, šiam veiksmui nebus priskirtas joks "
+"klavišų susiejimas."
+
+#: ../data/tomboy.schemas.in.h:33
+msgid "Open Start Here"
+msgstr "Atverti „pradėti čia“"
+
+#: ../data/tomboy.schemas.in.h:34
+msgid ""
+"The global keybinding for opening the \"Start Here\" note. The format looks "
+"like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
+"fairly liberal and allows lower or upper case, and also abbreviations such "
+"as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
+"special string \"disabled\", then there will be no keybinding for this "
+"action."
+msgstr ""
+"Globalus susiejimas atverti „Pradėti čia“ rašteliui. Formatas atrodo kaip "
+"„&lt;Control&gt;a“ arba „&lt;Shift&gt;&lt;Alt&gt;F1“. Apdoroklis yra "
+"pakankamai liberalus ir leidžia didžiąsias ir mažąsias raides, taip pat "
+"tokius sutrumpinimus kaip „&lt;Ctl&gt;“ and „&lt;Ctrl&gt;“. Jeigu nurodysite "
+"parametrą į specialų užrašą „disabled“, šiam veiksmui nebus priskirtas joks "
+"klavišų susiejimas."
+
+#: ../data/tomboy.schemas.in.h:35
+msgid "Create a new Note"
+msgstr "Sukurti naują raštelį"
+
+#: ../data/tomboy.schemas.in.h:36
+msgid ""
+"The global keybinding for creating and displaying a new Note. The format "
+"looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The "
+"parser is fairly liberal and allows lower or upper case, and also "
+"abbreviations such as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the "
+"option to the special string \"disabled\", then there will be no keybinding "
+"for this action."
+msgstr ""
+"Globalus susiejimas kurti ir parodyti naujam rašteliui. Formatas atrodo kaip "
+"„&lt;Control&gt;a“ arba „&lt;Shift&gt;&lt;Alt&gt;F1“. Apdoroklis yra "
+"pakankamai liberalus ir leidžia didžiąsias ir mažąsias raides, taip pat "
+"tokius sutrumpinimus kaip „&lt;Ctl&gt;“ and „&lt;Ctrl&gt;“. Jeigu nurodysite "
+"parametrą į specialų užrašą „disabled“, šiam veiksmui nebus priskirtas joks "
+"klavišų susiejimas."
+
+#: ../data/tomboy.schemas.in.h:37
+msgid "Open Search Dialog"
+msgstr "Atverti paieškos dialogą"
+
+#: ../data/tomboy.schemas.in.h:38
+msgid ""
+"The global keybinding for opening the Note Search dialog. The format looks "
+"like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
+"fairly liberal and allows lower or upper case, and also abbreviations such "
+"as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
+"special string \"disabled\", then there will be no keybinding for this "
+"action."
+msgstr ""
+"Globalus susiejimas atverti raštelių paieškos langui. Formatas atrodo kaip "
+"„&lt;Control&gt;a“ arba „&lt;Shift&gt;&lt;Alt&gt;F1“. Apdoroklis yra "
+"pakankamai liberalus ir leidžia didžiąsias ir mažąsias raides, taip pat "
+"tokius sutrumpinimus kaip „&lt;Ctl&gt;“ and „&lt;Ctrl&gt;“. Jeigu nurodysite "
+"parametrą į specialų užrašą „disabled“, šiam veiksmui nebus priskirtas joks "
+"klavišų susiejimas."
+
+#: ../data/tomboy.schemas.in.h:39
+msgid "Open Recent Changes"
+msgstr "Atverti paskutiniuosius pakeitimus"
+
+#: ../data/tomboy.schemas.in.h:40
+msgid ""
+"The global keybinding for opening the Recent Changes dialog. The format "
+"looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The "
+"parser is fairly liberal and allows lower or upper case, and also "
+"abbreviations such as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the "
+"option to the special string \"disabled\", then there will be no keybinding "
+"for this action."
+msgstr ""
+"Globalus susiejimas atverti paskutinių pakeitimų langui. Formatas atrodo "
+"kaip „&lt;Control&gt;a“ arba „&lt;Shift&gt;&lt;Alt&gt;F1“. Apdoroklis yra "
+"pakankamai liberalus ir leidžia didžiąsias ir mažąsias raides, taip pat "
+"tokius sutrumpinimus kaip „&lt;Ctl&gt;“ and „&lt;Ctrl&gt;“. Jeigu nurodysite "
+"parametrą į specialų užrašą „disabled“, šiam veiksmui nebus priskirtas joks "
+"klavišų susiejimas."
+
+#: ../data/tomboy.schemas.in.h:41
+msgid "Saved height of \"Search All Notes\" window"
+msgstr "Įrašytas lango „Ieškoti visuose rašteliuose“ aukštis"
+
+#: ../data/tomboy.schemas.in.h:42
+msgid ""
+"Determines pixel height of \"Search All Notes\" window; stored on Tomboy "
+"exit."
+msgstr ""
+"Nustato lango „Ieškoti visuose rašteliuose“ aukštį pikseliais; įrašoma "
+"uždarant Tomboy."
+
+#: ../data/tomboy.schemas.in.h:43
+msgid "Saved width of \"Search All Notes\" window"
+msgstr "Įrašytas lango „Ieškoti visuose rašteliuose“ plotis"
+
+#: ../data/tomboy.schemas.in.h:44
+msgid ""
+"Determines pixel width of \"Search All Notes\" window; stored on Tomboy exit."
+msgstr ""
+"Nustato lango „Ieškoti visuose rašteliuose“ protį pikseliais; įrašoma "
+"uždarant Tomboy."
+
+#: ../data/tomboy.schemas.in.h:45
+msgid "Saved horizontal position of \"Search All Notes\" window"
+msgstr "Įrašyta lango „Ieškoti visuose rašteliuose“ horizontali padėtis"
+
+#: ../data/tomboy.schemas.in.h:46
+msgid ""
+"Determines X coordinate of \"Search All Notes\" window; stored on Tomboy "
+"exit."
+msgstr ""
+"Nustato lango „Ieškoti visuose rašteliuose“ X koordinatę; įrašoma uždarant "
+"Tomboy."
+
+#: ../data/tomboy.schemas.in.h:47
+msgid "Saved vertical position of \"Search All Notes\" window"
+msgstr "Įrašyta lango „Ieškoti visuose rašteliuose“ vertikali padėtis"
+
+#: ../data/tomboy.schemas.in.h:48
+msgid ""
+"Determines Y coordinate of \"Search All Notes\" window; stored on Tomboy "
+"exit."
+msgstr ""
+"Nustato lango „Ieškoti visuose rašteliuose“ Y koordinatę; įrašoma uždarant "
+"Tomboy."
+
+#: ../data/tomboy.schemas.in.h:49
+msgid "Last Directory used in HTML Export"
+msgstr "Paskutinis katalogas, naudotas HTML eksportavime"
+
+#: ../data/tomboy.schemas.in.h:50
+msgid ""
+"The last directory a note was exported to using the Export To HTML plugin."
+msgstr ""
+"Paskutinis aplankas, į kurį buvo eksportuotas raštelis naudojant "
+"„Eksportuoti į HTML“ įskiepį."
+
+#: ../data/tomboy.schemas.in.h:51
+msgid "HTML Export Linked Notes"
+msgstr "Eksportuoti į HTML susietus raštelius"
+
+#: ../data/tomboy.schemas.in.h:52
+msgid ""
+"The last setting for the 'Export linked notes' checkbox in the Export to "
+"HTML plugin."
+msgstr ""
+"Paskutinis „Eksportuoti susietus raštelius“ žymimosios akutės pažymėjimas "
+"„Eksportuoti į HTML“ įskiepyje."
+
+#: ../data/tomboy.schemas.in.h:53
+msgid "HTML Export All Linked Notes"
+msgstr "Eksportuoti į HTML visus susietus raštelius"
+
+#: ../data/tomboy.schemas.in.h:54
+msgid ""
+"The last setting for the 'Include all other linked notes' checkbox in the "
+"Export to HTML plugin. This setting is used in conjunction with the 'HTML "
+"Export Linked Notes' setting and is used to specify whether all notes (found "
+"recursively) should be included during an export to HTML."
+msgstr ""
+"Paskutinis parametras žymės langeliui „Įtraukti visus kitus susietus "
+"raštelius“ įskiepyje Eksportuoti į HTML. Šis parametras yra naudojamas kartu "
+"su parametru „Eksportuoti į HTML susietus raštelius“ ir yra naudojamas "
+"nurodyti, ar visi rašteliai (rasti rekursyviai) turėtų būti įtraukti "
+"eksportuojant į HTML."
+
+#: ../data/tomboy.schemas.in.h:55
+msgid "Sticky Note Importer First Run"
+msgstr "Lipnių raštelių pirmas paleidimas"
+
+#: ../data/tomboy.schemas.in.h:56
+msgid ""
+"Indicates that the Sticky Note Importer plugin has not been run, so it "
+"should run automatically the next time Tomboy starts."
+msgstr ""
+"Rodo, kad lipnių raštelių įskiepis nebuvo paleistas, todėl jis turėtų būti "
+"paleistas kitą kartą paleidus Tomboy."
+
+#: ../data/tomboy.schemas.in.h:57
+msgid "Synchronization Client ID"
+msgstr "Sinchronizavimo kliento ID"
+
+#: ../data/tomboy.schemas.in.h:58
+msgid ""
+"Unique identifier for this Tomboy client, used when communicating with a "
+"sychronization server."
+msgstr ""
+"Unikalus šio Tomboy kliento identifikatorius, naudojamas bendraujant su "
+"sinchronizavimo serveriu."
+
+#: ../data/tomboy.schemas.in.h:59
+msgid "Synchronization Local Server Path"
+msgstr "Sinchronizavimo vietinio serverio kelias"
+
+#: ../data/tomboy.schemas.in.h:60
+msgid ""
+"Path to the synchronization server when using the filesystem synchronization "
+"service addin."
+msgstr ""
+"Kelias iki sinchronizavimo serverio, kai naudojamas failų sistemos "
+"sinchronizavimo tarnybos priedas."
+
+#: ../data/tomboy.schemas.in.h:61
+msgid "Selected Synchronization Service Addin"
+msgstr "Pasirinktas sinchronizavimo tarnybos priedas"
+
+#: ../data/tomboy.schemas.in.h:62
+msgid ""
+"Unique identifier for the currently configured note synchronization service "
+"addin."
+msgstr ""
+"Unikalus dabar sukonfigūruoto raštelių sinchronizavimo tarnybos priedo "
+"identifikatorius."
+
+#: ../data/tomboy.schemas.in.h:63
+msgid "FUSE Mounting Timeout (ms)"
+msgstr "FUSE prijungimo delsa (ms)"
+
+#: ../data/tomboy.schemas.in.h:64
+msgid ""
+"Time (in milliseconds) Tomboy should wait for a response when using FUSE to "
+"mount a sync share."
+msgstr ""
+"Laikas (milisekundėmis), kiek Tomboy turėtų laukti atsakymo naudojant FUSE "
+"sinchronizuoto viešinio prijungimui."
+
+#: ../data/tomboy.schemas.in.h:65
+msgid "SSHFS Remote Synchronization Folder"
+msgstr "SSHFS nuotolinio sinchronizavimo aplankas"
+
+#: ../data/tomboy.schemas.in.h:66
+msgid "Path on SSH server to Tomboy synchronization directory (optional)."
+msgstr "Kelias SSH serveryje į Tomboy sinchronizavimo katalogą (nebūtinas)."
+
+#: ../data/tomboy.schemas.in.h:67
+msgid "SSHFS Synchronization Server URL"
+msgstr "SSHFS sinchronizavimo serverio URL"
+
+#: ../data/tomboy.schemas.in.h:68
+msgid "URL of SSH server containing Tomboy synchronization directory."
+msgstr "SSH serverio URL su Tomboy sinchronizavimo aplanku."
+
+#: ../data/tomboy.schemas.in.h:69
+msgid "SSHFS Remote Synchronization User Name"
+msgstr "SSHFS nuotolinio sinchronizavimo naudotojo vardas"
+
+#: ../data/tomboy.schemas.in.h:70
+msgid "User name to use when connecting to the synchronization server via SSH."
+msgstr ""
+"Naudotojo vardas, naudojamas jungiantis prie sinchronizavimo serverio per "
+"SSH."
+
+#: ../data/tomboy.schemas.in.h:71
+msgid "SSHFS Synchronization Server Port"
+msgstr "SSHFS sinchronizavimo serverio prievadas"
+
+#: ../data/tomboy.schemas.in.h:72
+msgid ""
+"The port to use when connecting to the synchronization server via SSH. Set "
+"to -1 or less if default SSH port settings should be used instead."
+msgstr ""
+"Prievadas, naudojamas jungiantis prie sinchronizavimo serverio per SSH. "
+"Nustatyti į -1, jei turėtų būti naudojami numatytieji SSH prievadų "
+"nustatymai."
+
+#: ../data/tomboy.schemas.in.h:73
+msgid "Accept SSL Certificates"
+msgstr "Priimti SSL sertifikatus"
+
+#: ../data/tomboy.schemas.in.h:74
+msgid ""
+"Use wdfs option \"-ac\" to accept SSL certificates without prompting the "
+"user."
+msgstr ""
+"Naudokite wdfs parinktį „-ac“, jei norite priimti SSL sertifikatus be "
+"neklausiant naudotojo."
+
+#: ../data/tomboy.schemas.in.h:75
+msgid "Note Synchronization Conflict Saved Behavior"
+msgstr "Raštelių sinchronizavimo konflikto išsaugotas veikimas"
+
+#: ../data/tomboy.schemas.in.h:76
+msgid ""
+"Integer value indicating if there is a preference to always perform a "
+"specific behavior when a conflict is detected, instead of prompting the "
+"user. The values map to an internal enumeration. 0 indicates that the user "
+"wishes to be prompted when a conflict occurs, so that they may handle each "
+"conflict situation on a case-by-case basis."
+msgstr ""
+"Sveikojo skaičiaus reikšmė nurodanti, ar yra pageidavimas visada atlikti tam "
+"tikrus veiksmus aptikus konfliktą, užuot klausus naudotojo. Reikšmės "
+"priskirto vidiniam sąrašui. 0 nurodo, kad naudotojas pageidauja būti "
+"paklaustas, kai atsitinka konfliktas, kad jis galėtų susidoroti su kiekvienu "
+"konfliktu atsižvelgdamas į konkrečią situaciją."
+
+#: ../data/tomboy.schemas.in.h:77
+msgid "Automatic Background Synchronization Timeout"
+msgstr "Automatinio sinchronizavimo fone laiko limitas"
+
+#: ../data/tomboy.schemas.in.h:78
+msgid ""
+"Integer value indicating how frequently to perform a background sync of your "
+"notes (when sync is configured). Any value less than 1 indicates that "
+"autosync is disabled. The lowest acceptable positive value is 5. Value is in "
+"minutes."
+msgstr ""
+"Sveikasis skaičius, nurodantis, kiek dažnai atlikti raštelių sinchronizavimą "
+"fone (kai jis sukonfigūruotas). Reikšmė, mažesnė už 1, reiškia, kad "
+"automatinis sinchronizavimas išjungtas. Mažiausia leistina reikšmė yra 5. "
+"Reikšmė reiškia minučių skaičių."
+
+#: ../data/tomboy.schemas.in.h:79
+msgid "Link Updating Behavior on Note Rename"
+msgstr "Saitų atnaujinimo elgsena pervadinant raštelį"
+
+#: ../data/tomboy.schemas.in.h:80
+msgid ""
+"Integer value indicating if there is a preference to always perform a "
+"specific link updating behavior when a note is renamed, instead of prompting "
+"the user. The values map to an internal enumeration. 0 indicates that the "
+"user wishes to be prompted when renaming a note may impact links that exist "
+"in other notes. 1 indicates that links should automatically be removed. 2 "
+"indicates that link text should be updated to the new note name so that it "
+"will continue linking to the renamed note."
+msgstr ""
+"Sveikojo skaičiaus reikšmė nurodanti, ar yra pageidavimas visada atlikti tam "
+"tikrus saitų atnaujinimo veiksmus pervadinus raštelį, užuot klausus "
+"naudotojo. Reikšmės priskirtos vidiniam sąrašui. 0 nurodo, kad naudotojas "
+"pageidauja būti paklaustas, kai raštelio pervadinimas gali paveikti saitus "
+"kituose rašteliuose. 1 – saitai automatiškai šalinami, 2 – nurodo, kad saito "
+"tekstas turi būti atnaujintas į naują raštelio pavadinimą, kad.jis toliau "
+"sietų su pervadintu rašteliu."
+
+#: ../data/tomboy.schemas.in.h:81
+msgid "Timestamp format"
+msgstr "Laiko žymės formatas"
+
+#: ../data/tomboy.schemas.in.h:82
+msgid "The date format that is used for the timestamp."
+msgstr "Datos ir laiko formatas."
+
+#: ../data/tomboy.schemas.in.h:83
+msgid "Enable closing notes with escape."
+msgstr "Įjungti raštelių uždarymą klavišu „Escape“"
+
+#: ../data/tomboy.schemas.in.h:84
+msgid "If enabled, an opened note can be closed by hitting the escape key."
+msgstr "Jei įjungta, atvertas raštelis gali būti uždarytas Escape klavišu."
+
+#: ../data/tomboy.schemas.in.h:85
+msgid "The handler for \"note://\" URLs"
+msgstr "„note://“ URL apdorojimo programa"
+
+#: ../data/tomboy.schemas.in.h:86
+msgid "Set to TRUE to activate"
+msgstr "Norėdami aktyvuoti, nustatykite į TEIGIAMĄ"
+
+#: ../Tomboy/ActionManager.cs:127
+msgid "_File"
+msgstr "_Failas"
+
+#: ../Tomboy/ActionManager.cs:130
+msgid "_New"
+msgstr "_Naujas"
+
+#: ../Tomboy/ActionManager.cs:131 ../Tomboy/ActionManager.cs:172
+msgid "Create a new note"
+msgstr "Sukurti naują raštelį"
+
+#: ../Tomboy/ActionManager.cs:134
+msgid "_Open..."
+msgstr "_Atverti..."
+
+#: ../Tomboy/ActionManager.cs:135
+msgid "Open the selected note"
+msgstr "Atverti pasirinktą raštelį"
+
+#: ../Tomboy/ActionManager.cs:138
+msgid "_Delete"
+msgstr "_Ištrinti"
+
+#: ../Tomboy/ActionManager.cs:139
+msgid "Delete the selected note"
+msgstr "Ištrinti pasirinktą raštelį"
+
+#: ../Tomboy/ActionManager.cs:142 ../Tomboy/NoteWindow.cs:411
+msgid "_Close"
+msgstr "_Užverti"
+
+#: ../Tomboy/ActionManager.cs:143
+msgid "Close this window"
+msgstr "Užverti šį langą"
+
+#: ../Tomboy/ActionManager.cs:146 ../Tomboy/Tray.cs:300
+msgid "_Quit"
+msgstr "Iš_eiti"
+
+#: ../Tomboy/ActionManager.cs:147
+msgid "Quit Tomboy"
+msgstr "Išeiti iš Tomboy"
+
+#: ../Tomboy/ActionManager.cs:150
+msgid "_Edit"
+msgstr "K_eisti"
+
+#: ../Tomboy/ActionManager.cs:154 ../Tomboy/PreferencesDialog.cs:63
+msgid "Tomboy Preferences"
+msgstr "Tomboy nustatymai"
+
+#: ../Tomboy/ActionManager.cs:160
+msgid "_Contents"
+msgstr "_Turinys"
+
+#: ../Tomboy/ActionManager.cs:161
+msgid "Tomboy Help"
+msgstr "Tomboy žinynas"
+
+#: ../Tomboy/ActionManager.cs:165 ../Tomboy/MacApplication.cs:233
+msgid "About Tomboy"
+msgstr "Apie Tomboy"
+
+#: ../Tomboy/ActionManager.cs:168
+msgid "TrayIcon"
+msgstr "Pranešimų skydelio piktograma"
+
+#: ../Tomboy/ActionManager.cs:171
+msgid "Create _New Note"
+msgstr "Sukurti _naują raštelį"
+
+#: ../Tomboy/ActionManager.cs:175 ../Tomboy/NoteWindow.cs:354
+msgid "_Search All Notes"
+msgstr "_Ieškoti visuose rašteliuose"
+
+#: ../Tomboy/ActionManager.cs:176
+msgid "Open the Search All Notes window"
+msgstr "Atverti langą Ieškoti visuose rašteliuose"
+
+#: ../Tomboy/ActionManager.cs:180
+msgid "Start synchronizing notes"
+msgstr "Pradėti raštelių sinchronizavimą"
+
+#. Addin's tab caption
+#: ../Tomboy/Addins/AdvancedPreferences/AdvancedPreferencesAddin.cs:26
+msgid "Advanced"
+msgstr "Sudėtingesni"
+
+#. Menu Min Note Count option
+#: ../Tomboy/Addins/AdvancedPreferences/MenuMinMaxNoteCountPreference.cs:34
+#| msgid "Minimum number of notes to show in Recent list (maximum 18)"
+msgid "Minimum number of notes to show in Recent list"
+msgstr "Mažiausias rodomų raštelių skaičius nesenų sąraše"
+
+#. Menu Max Note Count option
+#: ../Tomboy/Addins/AdvancedPreferences/MenuMinMaxNoteCountPreference.cs:58
+#| msgid "Minimum number of notes to show in Recent list (maximum 18)"
+msgid "Maximum number of notes to show in Recent list"
+msgstr "Didžiausias rodomų raštelių skaičius nesenų sąraše"
+
+#: ../Tomboy/Addins/Backlinks/BacklinksNoteAddin.cs:38
+msgid "What links here?"
+msgstr "Kur yra saitai į čia?"
+
+#. This is a disabled placeholder item for an empty menu
+#: ../Tomboy/Addins/Backlinks/BacklinksNoteAddin.cs:85
+msgid "(none)"
+msgstr "(nėra)"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:23
+msgid ""
+"You can use any bugzilla just by dragging links into notes.  If you want a "
+"special icon for certain hosts, add them here."
+msgstr ""
+"Galite naudoti bugzillą tiesiog nuvilkdami saitus į raštelius. Jeigu tam "
+"tikriems serveriams norite specialių piktogramų, galite jas čia pridėti."
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:41
+msgid "Host Name"
+msgstr "Kompiuterio vardas"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:58
+msgid "Icon"
+msgstr "Piktograma"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:176
+msgid "Select an icon..."
+msgstr "Pasirinkite piktogramą..."
+
+#. Extra Widget
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:191
+msgid "_Host name:"
+msgstr "_Kompiuterio vardas:"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:220
+msgid "No host name specified"
+msgstr "Kompiuterio vardas nenurodytas"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:221
+msgid "You must specify the Bugzilla host name to use with this icon."
+msgstr ""
+"Turite nurodyti Bugzilla kompiuterio vardą, naudotiną su šia piktograma."
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:247
+msgid "Error saving icon"
+msgstr "Klaida saugant piktogramą"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:248
+msgid "Could not save the icon file."
+msgstr "Nepavyko įrašyti piktogramos failo."
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:302
+msgid "Really remove this icon?"
+msgstr "Tikrai pašalinti šią piktogramą?"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:303
+msgid "If you remove an icon it is permanently lost."
+msgstr "Jeigu pašalinti šią piktogramą, ji bus prarasta visam laikui."
+
+#: ../Tomboy/Addins/Evolution/EvolutionNoteAddin.cs:273
+msgid "Cannot open email"
+msgstr "Nepavyko atverti el.pašto"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlApplicationAddin.cs:59
+msgid "HTML"
+msgstr "HTML"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:13
+msgid "Destination for HTML Export"
+msgstr "HTML eksportavimo paskirties vieta"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:23
+msgid "Export linked notes"
+msgstr "Eksportuoti susietus raštelius"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:28
+msgid "Include all other linked notes"
+msgstr "Įtraukti visus kitus susietus raštelius"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:67
+msgid "Export to HTML"
+msgstr "Eksportuoti į HTML"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:115
+#, csharp-format
+msgid "Your note was exported to \"{0}\"."
+msgstr "Jūsų raštelis buvo eksportuotas į „{0}“."
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:126
+msgid "Note exported successfully"
+msgstr "Raštelis eksportuotas sėkmingai"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:132
+#: ../Tomboy/ExportAllApplicationAddin.cs:250
+#: ../Tomboy/ExportAllApplicationAddin.cs:328
+msgid "Access denied."
+msgstr "Prieiga uždrausta."
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:134
+#: ../Tomboy/ExportAllApplicationAddin.cs:255
+#: ../Tomboy/ExportAllApplicationAddin.cs:333
+msgid "Folder does not exist."
+msgstr "Aplankas neegzistuoja."
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:149
+#, csharp-format
+msgid "Could not save the file \"{0}\""
+msgstr "Nepavyko išsaugoti failo „{0}“"
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:93
+msgid "_Folder Path:"
+msgstr "_Aplanko kelias:"
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:100
+msgid "Select Synchronization Folder..."
+msgstr "Pasirinkite sinchronizavimo aplanką..."
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:127
+msgid "Folder path field is empty."
+msgstr "Aplanko kelio laukas tuščias."
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:136
+msgid ""
+"Specified folder path does not exist, and Tomboy was unable to create it."
+msgstr "Nurodytas aplanko kelias neegzistuoja, ir Tomboy nepavyko jo sukurti."
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:214
+msgid "Local Folder"
+msgstr "Vietinis aplankas"
+
+#: ../Tomboy/Addins/FixedWidth/FixedWidthMenuItem.cs:13
+msgid "Fixed Wid_th"
+msgstr "_Fiksuoto pločio"
+
+#: ../Tomboy/Addins/GalagoPresence/GalagoPresenceNoteAddin.cs:244
+#, csharp-format
+msgid "Cannot contact '{0}'"
+msgstr "Nepavyko susisiekti su „{0}“"
+
+#: ../Tomboy/Addins/GalagoPresence/GalagoPresenceNoteAddin.cs:247
+#, csharp-format
+msgid "Error running gaim-remote: {0}"
+msgstr "Klaida paleidžiant gaim-remote: {0}"
+
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampNoteAddin.cs:29
+msgid "Insert Timestamp"
+msgstr "Įterpti laiko žymę"
+
+#. initial newline
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:29
+#: ../Tomboy/Applet.cs:223 ../Tomboy/Preferences.cs:159
+msgid "dddd, MMMM d, h:mm tt"
+msgstr "dddd, MMMM d, h:mm tt"
+
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:54
+msgid "Choose one of the predefined formats or use your own."
+msgstr "Pasirinkite vieną iš formatų arba nurodykite savąjį."
+
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:62
+msgid "Use _Selected Format"
+msgstr "Naudoti _pasirinktą formatą"
+
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:87
+msgid "_Use Custom Format"
+msgstr "Naudoti _nurodytą formatą"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:10
+msgid "Today: Template"
+msgstr "Šiandien: šablonas"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:12
+msgid "Today: "
+msgstr "Šiandien: "
+
+#. Format: "Today: Friday, July 01 2005"
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:17
+msgid "dddd, MMMM d yyyy"
+msgstr "dddd, yyyy MMMM d"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:43
+msgid "Tasks"
+msgstr "Užduotys"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:44
+msgid "Appointments"
+msgstr "Paskyrimai"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDayPreferences.cs:16
+msgid ""
+"Change the <b>Today: Template</b> note to customize the text that new Today "
+"notes have."
+msgstr ""
+"Norėdami tinkinti šiandienos raštelių tekstą, pakeiskite raštelį "
+"<b>Šiandien: šablonas<b>."
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDayPreferences.cs:24
+msgid "_Open Today: Template"
+msgstr "_Atverti Šiandien: šablonas"
+
+#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:52
+msgid "Print"
+msgstr "Spausdinti"
+
+#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:82
+msgid "Error printing note"
+msgstr "Klaida spausdinant raštelį"
+
+#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:223
+#, csharp-format
+msgid "Page {0} of {1}"
+msgstr "Puslapis {0} iš {1}"
+
+#. Translators: Explanation of the date and time format specifications can be found here:
+#. * http://msdn.microsoft.com/en-us/library/system.globalization.datetimeformatinfo.aspx
+#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:242
+msgid "dddd MM/dd/yyyy, hh:mm:ss tt"
+msgstr "dddd, MMMM d, h:mm tt"
+
+#. Adding menu item when note is opened and window created
+#: ../Tomboy/Addins/RemoveBrokenLinks/RemoveBrokenLinksAddin.cs:31
+msgid "Remove broken links"
+msgstr "Pašalinti neveikiančius saitus"
+
+#: ../Tomboy/Addins/RemoveBrokenLinks/RemoveBrokenLinksApplicationAddin.cs:42
+#: ../Tomboy/ExportAllApplicationAddin.cs:70
+#: ../Tomboy/Synchronization/SyncManager.cs:162
+msgid "_Tools"
+msgstr "Į_rankiai"
+
+#: ../Tomboy/Addins/RemoveBrokenLinks/RemoveBrokenLinksApplicationAddin.cs:44
+msgid "_Remove broken links"
+msgstr "Pa_šalinti neveikiančius saitus"
+
+#: ../Tomboy/Addins/Sketching/SketchingNoteAddin.cs:19
+msgid "Add a sketch"
+msgstr "Pridėti eskizą"
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:48
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:59
+msgid "Se_rver:"
+msgstr "Se_rveris:"
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:52
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:61
+msgid "User_name:"
+msgstr "_Naudotojo vardas:"
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:56
+msgid "_Folder Path (optional):"
+msgstr "_Aplanko kelias (nebūtina):"
+
+#. Text for label describing setup required for SSH sync addin to work
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:59
+msgid ""
+"SSH synchronization requires an existing SSH key for this server and user, "
+"added to a running SSH daemon."
+msgstr ""
+"SSH sinchronizavimui reikalingas egzistuojantis šio serverio ir naudotojo "
+"SSH raktas, nurodytas SSH tarnybai."
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:83
+msgid "Server or username field is empty."
+msgstr "Serverio ar naudotojo vardo laukas tuščias."
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:143
+msgid "SSH"
+msgstr "SSH"
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:192
+msgid ""
+"Timeout connecting to server. Please ensure that your SSH key has been added "
+"to a running SSH daemon."
+msgstr ""
+"Jungiantis prie serverio viršytas laiko limitas. Įsitikinkite, kad Jūsų SSH "
+"raktas pridėtas veikiančioje SSH tarnyboje."
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:50
+msgid "Import from Sticky Notes"
+msgstr "Importuoti iš Lipnių raštelių"
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:133
+msgid "No Sticky Notes found"
+msgstr "Lipnių raštelių nerasta"
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:134
+#, csharp-format
+msgid "No suitable Sticky Notes file was found at \"{0}\"."
+msgstr "„{0}“ nerasta tinkamo lipnių raštelių failo."
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:143
+msgid "Sticky Notes import completed"
+msgstr "Lipnūs rašteliai importuoti"
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:144
+#, csharp-format
+msgid "<b>{0}</b> of <b>{1}</b> Sticky Note was successfully imported."
+msgid_plural ""
+"<b>{0}</b> of <b>{1}</b> Sticky Notes were successfully imported."
+msgstr[0] "<b>{0}</b> iš <b>{1}</b> lipnus raštelis sėkmingai importuotas."
+msgstr[1] "<b>{0}</b> iš <b>{1}</b> lipnūs rašteliai sėkmingai importuoti."
+msgstr[2] "<b>{0}</b> iš <b>{1}</b> lipnių raštelių sėkmingai importuota."
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:159
+msgid "Untitled"
+msgstr "Nepavadinta"
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:188
+msgid "Sticky Note: "
+msgstr "Lipnus raštelis: "
+
+#: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:62
+msgid "Tasque"
+msgstr "Tasque"
+
+#. Note to translators: "All" here must match up with the "All"
+#. category translation in Tasque for this to work properly.  "All"
+#. is used here to allow Tasque to decide which default category
+#. will be used to create the new task.
+#: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:86
+msgid "All"
+msgstr "Visi"
+
+#: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:145
+msgid "--- Tasque is not running ---"
+msgstr "--- Tasque nepaleistas ---"
+
+#: ../Tomboy/Addins/Underline/UnderlineMenuItem.cs:12
+msgid "_Underline"
+msgstr "_Pabraukimas"
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:56
+msgid "_URL:"
+msgstr "_URL:"
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:67
+msgid "_Password:"
+msgstr "_Slaptažodis:"
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:80
+msgid "URL, username, or password field is empty."
+msgstr "URL, naudotojo vardo arba slaptažodžio laukas tuščias."
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:133
+msgid "WebDAV"
+msgstr "WebDAV"
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:192
+msgid ""
+"There was an error connecting to the server.  This may be caused by using an "
+"incorrect user name and/or password."
+msgstr ""
+"Jungiantis prie serverio įvyko klaida. Tai galėjo atsitikti dėl neteisingo "
+"naudotojo vardo ir / arba slaptažodžio."
+
+#. TODO: If the above fails (no keyring daemon), save all but password
+#. to GConf, and notify user.
+#. Save configuration into GConf
+#. Preferences.Set ("/apps/tomboy/sync_wdfs_url", url ?? string.Empty);
+#. Preferences.Set ("/apps/tomboy/sync_wdfs_username", username ?? string.Empty);
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:268
+msgid ""
+"Saving configuration to the GNOME keyring failed with the following message:"
+msgstr "Išsaugoti konfigūracijos GNOME raktinėje nepavyko. Klaidos pranešimas:"
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:66
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:97
+msgid "Connect to Server"
+msgstr "Prisijungti prie serverio"
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:68
+msgid "Connected"
+msgstr "Prisijungta"
+
+#. Translators: The web service supporting Tomboy WebSync is not responding as expected
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:126
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:157
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:171
+msgid "Server not responding. Try again later."
+msgstr "Serveris neatsako. Pabandykite vėliau."
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:202
+msgid "Authorization Failed, Try Again"
+msgstr "Autorizacija nesėkminga, bandykite dar kartą"
+
+#. Translators: Title of web page presented to user after they authorized Tomboy for sync
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:211
+msgid "Tomboy Web Authorization Successful"
+msgstr "Tomboy autorizacija sėkminga"
+
+#. Translators: Body of web page presented to user after they authorized Tomboy for sync
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:213
+msgid ""
+"Please return to the Tomboy Preferences window and press Save to start "
+"synchronizing."
+msgstr ""
+"Grįžkite į Tomboy nustatymų langą ir spauskite „Įrašyti“, jei norite pradėti "
+"sinchronizuoti."
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:222
+msgid "Connected. Press Save to start synchronizing"
+msgstr "Prisijungta. Paspauskite „Įrašyti“, jei norite pradėti sinchronizuoti"
+
+#. Translators: The user must take action in their web browser to continue the authorization process
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:228
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:240
+msgid "Authorizing in browser (Press to reset connection)"
+msgstr "Autorizuojama naršyklėje (spauskite, jei norite nutraukti ryšį)"
+
+#. Translators: Sometimes a user's default browser is not set, so we recommend setting it and trying again
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:236
+msgid "Set the default browser and try again"
+msgstr "Nustatykite numatytąją naršyklę ir bandykite dar kartą"
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncServiceAddin.cs:70
+msgid "Tomboy Web"
+msgstr "Tomboy tinkle"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:58
+#, csharp-format
+msgid "Export All Notes to {0}"
+msgstr "Eksportuoti visus susietus raštelius į {0}"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:59
+#, csharp-format
+msgid "Start exporting notes to {0}"
+msgstr "Pradėti raštelių eksportavimą į {0}"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:63
+#, csharp-format
+msgid "Export selected notebook to {0}"
+msgstr "Ištrinti pasirinktą užrašinę į {0}"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:64
+#, csharp-format
+msgid "Start exporting notebook to {0}"
+msgstr "Pradėti eksportuoti užrašinę į {0}"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:73
+msgid "Export"
+msgstr "Eksportuoti"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:74
+msgid "Export your notes."
+msgstr "Eksportuoti raštelius."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:77
+#, csharp-format
+msgid "Export All Notes To {0}"
+msgstr "Eksportuoti visus raštelius į {0}"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:82
+#, csharp-format
+msgid "Export Selected Notebook To {0}"
+msgstr "Eksportuoti pasirinktą užrašinę į {0}"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:171
+#: ../Tomboy/ExportAllApplicationAddin.cs:248
+#: ../Tomboy/ExportAllApplicationAddin.cs:326
+msgid "Could not export, access denied."
+msgstr "Nepavyko eksportuoti, nėra leidimo."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:173
+#: ../Tomboy/ExportAllApplicationAddin.cs:253
+#: ../Tomboy/ExportAllApplicationAddin.cs:331
+msgid "Could not export, folder does not exist."
+msgstr "Nepavyko eksportuoti, aplankas neegzistuoja."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:175
+msgid "Could not export, error with the path. (No ending \"?)"
+msgstr "Nepavyko eksportuoti, klaida su keliu. (Nesibagia \"?)"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:177
+#: ../Tomboy/ExportAllApplicationAddin.cs:258
+#: ../Tomboy/ExportAllApplicationAddin.cs:336
+#, csharp-format
+msgid "Could not export: {0}"
+msgstr "Nepavyko eksportuoti: {0}."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:231
+#, csharp-format
+msgid "All Notes {0} Export"
+msgstr "Visų {0} raštelių eksportavimas"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:260
+#: ../Tomboy/ExportAllApplicationAddin.cs:338
+msgid "Unknown error."
+msgstr "Nežinoma klaida."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:291
+#: ../Tomboy/Notebooks/Notebook.cs:243
+msgid "Unfiled Notes"
+msgstr "Neįkelti rašteliai"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:445
+#, csharp-format
+msgid "Your notes were exported to \"{0}\"."
+msgstr "Jūsų rašteliai buvo eksportuoti į „{0}“."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:454
+msgid "Notes exported successfully"
+msgstr "Rašteliai sėkmingai eksportuoti"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:477
+#, csharp-format
+msgid "Could not save the files in \"{0}\""
+msgstr "Nepavyko išsaugoti failų „{0}“"
+
+#. Translators: {0} is the export type, e.g. HTML
+#: ../Tomboy/ExportAllApplicationAddin.cs:563
+#, csharp-format
+msgid "Create destination folder for {0} export"
+msgstr "Sukurti paskirties vietą {0} eksportavimui"
+
+#: ../Tomboy/JumpListManager.cs:96 ../Tomboy/RecentChanges.cs:85
+msgid "Search All Notes"
+msgstr "Ieškoti visuose rašteliuose"
+
+#. IShellLink new_notebook = CreateShellLink("New Notebook", topmboy_path, "--new-notebook",
+#. icons_path, (int)TomboyIcons.NewNotebook);
+#. if (new_notebook != null)
+#. object_collection.AddObject(new_notebook);
+#: ../Tomboy/JumpListManager.cs:106
+msgid "Create New Note"
+msgstr "Sukurti naują raštelį"
+
+#: ../Tomboy/JumpListManager.cs:136
+#, csharp-format
+msgid "{0} (new)"
+msgstr "{0} (naujas)"
+
+#: ../Tomboy/JumpListManager.cs:158
+msgid "Recent Notes"
+msgstr "Vėliausi rašteliai"
+
+#. Translators: This is the name of "Window" menu in the Mac menubar
+#: ../Tomboy/MacApplication.cs:215
+msgid "_Window"
+msgstr "_Langas"
+
+#: ../Tomboy/MacApplication.cs:234
+msgid "Preferences..."
+msgstr "Nustatymai..."
+
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:24
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:53
+msgid "Create a new notebook"
+msgstr "Sukurti naują užrašinę"
+
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:25
+msgid "Type the name of the notebook you'd like to create."
+msgstr "Įveskite naujosios užrašinės pavadinimą."
+
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:31
+msgid "N_otebook name:"
+msgstr "_Užrašinės pavadinimas:"
+
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:45
+msgid "Name already taken"
+msgstr "Pavadinimas jau užimtas"
+
+#. Translation note: This is the Create button in the Create
+#. New Note Dialog.
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:59
+msgid "C_reate"
+msgstr "_Sukurti"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:48
+msgid "Note_books"
+msgstr "_Užrašinės"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:49
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:69
+msgid "Create a new note in a notebook"
+msgstr "Sukurti naują raštelį užrašinėje"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:52
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:223
+msgid "New Note_book..."
+msgstr "Nauja _užrašinė..."
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:56
+msgid "_New Note"
+msgstr "_Naujas raštelis"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:57
+msgid "Create a new note in this notebook"
+msgstr "Sukurti naują raštelį šioje užrašinėje"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:60
+msgid "_Open Template Note"
+msgstr "_Atverti šablono raštelį"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:61
+msgid "Open this notebook's template note"
+msgstr "Atverti šios užrašinės šablono raštelį"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:64
+msgid "Delete Note_book"
+msgstr "Išt_rinti užrašinę"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:65
+msgid "Delete the selected notebook"
+msgstr "Ištrinti pasirinktą užrašinę"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:68
+#: ../Tomboy/RecentChanges.cs:277
+msgid "Notebooks"
+msgstr "Užrašinės"
+
+#. The templateNoteTite should show the name of the
+#. notebook.  For example, if the name of the notebooks
+#. "Meetings", the templateNoteTitle should be "Meetings
+#. Notebook Template".  Translators should place the
+#. name of the notebook accordingly using "{0}".
+#. TODO: Figure out how to make this note for
+#. translators appear properly.
+#: ../Tomboy/Notebooks/Notebook.cs:79
+#, csharp-format
+msgid "{0} Notebook Template"
+msgstr "{0} užrašinės šablonas"
+
+#: ../Tomboy/Notebooks/Notebook.cs:159
+msgid "New Note"
+msgstr "Naujas raštelis"
+
+#: ../Tomboy/Notebooks/Notebook.cs:211
+msgid "All Notes"
+msgstr "Visi rašteliai"
+
+#: ../Tomboy/Notebooks/NotebookManager.cs:367
+msgid "Really delete this notebook?"
+msgstr "Tikrai ištrinti šią užrašinę?"
+
+#: ../Tomboy/Notebooks/NotebookManager.cs:369
+msgid ""
+"The notes that belong to this notebook will not be deleted, but they will no "
+"longer be associated with this notebook.  This action cannot be undone."
+msgstr ""
+"Rašteliai, priklausantys šiai užrašinei, nebus ištrinti, bet jie nebebus "
+"susieti su šia užrašine. Veiksmas nebegalės būti atšauktas."
+
+#: ../Tomboy/Notebooks/NotebookMenuItem.cs:14
+msgid "No notebook"
+msgstr "Jokios užrašinės"
+
+#. Translators should preserve the "{0}" in the following
+#. string.  After being formatted for a notebook named,
+#. "Meetings", for example, the resultant string would be:
+#. New "Meetings" Note
+#: ../Tomboy/Notebooks/NotebookNewNoteMenuItem.cs:27
+#, csharp-format
+msgid "New \"{0}\" Note"
+msgstr "Naujas \"{0}\" raštelis"
+
+#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:56
+msgid "Place this note into a notebook"
+msgstr "Įkelkite šį raštelį į užrašinę"
+
+#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:148
+msgid "Notebook"
+msgstr "Užrašinė"
+
+#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:177
+msgid "_New notebook..."
+msgstr "Nauja _užrašinė..."
+
+#: ../Tomboy/Note.cs:515 ../Tomboy/NoteManager.cs:480
+#, csharp-format
+msgid "New Note {0}"
+msgstr "Naujas raštelis {0}"
+
+#: ../Tomboy/Note.cs:1675
+#, csharp-format
+msgid "Really delete \"{0}\"?"
+msgstr "Tikrai ištrinti „{0}“?"
+
+#: ../Tomboy/Note.cs:1678
+#, csharp-format
+msgid "Really delete this {0} note?"
+msgid_plural "Really delete these {0} notes?"
+msgstr[0] "Tikrai ištrinti šį {0} raštelį?"
+msgstr[1] "Tikrai ištrinti šiuos {0} raštelius?"
+msgstr[2] "Tikrai ištrinti šiuos {0} raštelių?"
+
+#: ../Tomboy/Note.cs:1689
+msgid "If you delete a note it is permanently lost."
+msgstr "Jeigu ištrinsite raštelį, jis bus prarastas visam laikui."
+
+#: ../Tomboy/Note.cs:1723
+#, csharp-format
+msgid ""
+"An error occurred while saving your notes. Please check that you have "
+"sufficient disk space, and that you have appropriate rights on {0}. Error "
+"details can be found in {1}."
+msgstr ""
+"Įrašant raštelius įvyko klaida.  Patikrinkite, ar yra pakankamai laisvos "
+"vietos diske ir ar turite teises keisti aplanką {0}. Smulkesnę informaciją "
+"galima rasti faile {1}."
+
+#: ../Tomboy/Note.cs:1739
+msgid "Error saving note data."
+msgstr "Klaida įrašant raštelio duomenis."
+
+#. New Note Template
+#. Translators: This is 'New Note' Template, not New 'Note Template'
+#: ../Tomboy/NoteManager.cs:21 ../Tomboy/PreferencesDialog.cs:263
+msgid "New Note Template"
+msgstr "Naujas raštelio šablonas"
+
+#. Create migration notification note
+#. Translators: The title of the data migration note
+#: ../Tomboy/NoteManager.cs:151
+msgid "Your Notes Have Moved!"
+msgstr "Jūsų pranešimai buvo perkelti!"
+
+#. Translators: The contents (not including the title) of the data migration note. {0}, {1}, {2}, {3}, and {4} are replaced by directory paths and should not be changed
+#: ../Tomboy/NoteManager.cs:164
+#, csharp-format
+msgid ""
+"In the latest version of Tomboy, your note files have moved.  You have "
+"probably never cared where your notes are stored, and if you still don't "
+"care, please go ahead and <bold>delete this note</bold>.  :-)\n"
+"\n"
+"Your old note directory is still safe and sound at <link:url>{0}</link:"
+"url> . If you go back to an older version of Tomboy, it will look for notes "
+"there.\n"
+"\n"
+"But we've copied your notes and configuration info into new directories, "
+"which will be used from now on:\n"
+"\n"
+"<list><list-item dir=\"ltr\">Notes can now be found at <link:url>{1}</link:"
+"url>\n"
+"</list-item><list-item dir=\"ltr\">Configuration is at <link:url>{2}</link:"
+"url>\n"
+"</list-item><list-item dir=\"ltr\">You can install add-ins at <link:url>{3}</"
+"link:url>\n"
+"</list-item><list-item dir=\"ltr\">Log files can be found at <link:url>{4}</"
+"link:url></list-item></list>\n"
+"\n"
+"Ciao!"
+msgstr ""
+"Vėliausioje Tomboy versijoje Jūsų užrašai buvo perkelti. Turbūt Jums niekada "
+"nerūpėjo, kur saugomi užrašai, ir jei vis dar nerūpi, galite <bold>trinti šį "
+"pranešimą</bold>. :-)\n"
+"\n"
+"Senas užrašų aplankas liko  <link:url>{0}</link:url> . Jei grįšite prie "
+"ankstesnės Tomboy versijos, ji ieškos užrašų ten.\n"
+"\n"
+"Užrašai ir nustatymai buvo perkelti į naujus aplankus:\n"
+"\n"
+"<list><list-item dir=\"ltr\">Užrašai: <link:url>{1}</link:url>\n"
+"</list-item><list-item dir=\"ltr\">Nustatymai: <link:url>{2}</link:url>\n"
+"</list-item><list-item dir=\"ltr\">Priedai: <link:url>{3}</link:url>\n"
+"</list-item><list-item dir=\"ltr\">Žurnalas: <link:url>{4}</link:url></list-"
+"item></list>\n"
+"\n"
+"Iki!"
+
+#: ../Tomboy/NoteManager.cs:269
+msgid ""
+"<note-content>Start Here\n"
+"\n"
+"<bold>Welcome to Tomboy!</bold>\n"
+"\n"
+"Use this \"Start Here\" note to begin organizing your ideas and thoughts.\n"
+"\n"
+"You can create new notes to hold your ideas by selecting the \"Create New "
+"Note\" item from the Tomboy Notes menu in your GNOME Panel. Your note will "
+"be saved automatically.\n"
+"\n"
+"Then organize the notes you create by linking related notes and ideas "
+"together!\n"
+"\n"
+"We've created a note called <link:internal>Using Links in Tomboy</link:"
+"internal>.  Notice how each time we type <link:internal>Using Links in "
+"Tomboy</link:internal> it automatically gets underlined?  Click on the link "
+"to open the note.</note-content>"
+msgstr ""
+"<note-content>Pradėti čia\n"
+"\n"
+"<bold>Sveiki paleidę Tomboy!</bold>\n"
+"\n"
+"Pradėkite šiame raštelyje „Pradėti čia“ tvarkyti savo mintis ir idėjas.\n"
+"\n"
+"Savo idėjas galite saugoti naujuose rašteliuose, GNOME skydelyje esančiame "
+"Tomboy užrašų meniu pasirinkę elementą „Sukurti naują raštelį“. Jūsų "
+"raštelis bus išsaugotas automatiškai.\n"
+"\n"
+"Tada tvarkykite kuriamus raštelius susiedami susijusius raštelius ir idėjas "
+"kartu!\n"
+"\n"
+"Sukurtas raštelis <link:internal>Nuorodų naudojimas Tomboy</link:internal>. "
+"Pastebite, kad kiekvieną kartą parašius <link:internal>Nuorodų naudojimas "
+"Tomboy</link:internal>, jis automatiškai pabraukiamas? Norėdami atverti "
+"raštelį, spustelėkite nuorodą.</note-content>"
+
+#: ../Tomboy/NoteManager.cs:288
+msgid ""
+"<note-content>Using Links in Tomboy\n"
+"\n"
+"Notes in Tomboy can be linked together by highlighting text in the current "
+"note and clicking the <bold>Link</bold> button above in the toolbar.  Doing "
+"so will create a new note and also underline the note's title in the current "
+"note.\n"
+"\n"
+"Changing the title of a note will update links present in other notes.  This "
+"prevents broken links from occurring when a note is renamed.\n"
+"\n"
+"Also, if you type the name of another note in your current note, it will "
+"automatically be linked for you.</note-content>"
+msgstr ""
+"<note-content>Saitų naudojimas Tomboy\n"
+"\n"
+"Programoje Tomboy raštelius galima susieti kartu, pažymėjus raštelyje esantį "
+"tekstą ir spustelėjus virš įrankinės esantį mygtuką <bold>Susieti</bold> "
+"Taip bus sukurtas naujas raštelis bei šiame raštelyje pabrėžtas raštelio "
+"pavadinimas.\n"
+"\n"
+"Pakeitus raštelio pavadinimą, saitai, esantys kituose rašteliuose, taip pat "
+"bus atnaujinti. Taip pervadinus raštelį nesugadinami saitai į jį.\n"
+"\n"
+"Taip pat, jeigu įvesite kito raštelio pavadinimą dabartiniame raštelyje, "
+"automatiškai bus sukurtas saitas į jį.</note-content>"
+
+#. Attempt to find an existing Start Here note
+#: ../Tomboy/NoteManager.cs:303 ../Tomboy/NoteManager.cs:398
+msgid "Start Here"
+msgstr "Pradėkite čia"
+
+#: ../Tomboy/NoteManager.cs:308
+msgid "Using Links in Tomboy"
+msgstr "Saitų naudojimas Tomboy"
+
+#. Use a simple "Describe..." body and highlight
+#. it so it can be easily overwritten
+#: ../Tomboy/NoteManager.cs:560 ../Tomboy/NoteManager.cs:663
+msgid "Describe your new note here."
+msgstr "Čia aprašykite naują raštelį"
+
+#: ../Tomboy/NoteRenameDialog.cs:50
+msgid "Rename Note Links?"
+msgstr "Pervadinti raštelių saitus?"
+
+#: ../Tomboy/NoteRenameDialog.cs:56
+msgid "_Rename Links"
+msgstr "_Pervadinti saitus"
+
+#: ../Tomboy/NoteRenameDialog.cs:59
+msgid "_Don't Rename Links"
+msgstr "_Nepervadinti saitų"
+
+#: ../Tomboy/NoteRenameDialog.cs:67
+#, csharp-format
+msgid ""
+"Rename links in other notes from \"<span underline=\"single\">{0}</span>\" "
+"to \"<span underline=\"single\">{1}</span>\"?\n"
+"\n"
+"If you do not rename the links, they will no longer link to anything."
+msgstr ""
+"Pervadinti \"<span underline=\"single\">{0}</span>\" į \"<span underline="
+"\"single\">{1}</span>\"?\n"
+"\n"
+"Jei nepervadinsite saitų, jos į nieką neberodys."
+
+#: ../Tomboy/NoteRenameDialog.cs:83
+msgid "Rename Links"
+msgstr "Pervadinti saitus"
+
+#: ../Tomboy/NoteRenameDialog.cs:95
+#: ../Tomboy/Synchronization/SyncDialog.cs:119
+msgid "Note Title"
+msgstr "Raštelio pavadinimas"
+
+#. Translators: This button causes all notes in the list to be selected
+#: ../Tomboy/NoteRenameDialog.cs:118
+msgid "Select All"
+msgstr "Pažymėti visus"
+
+#. Translators: This button causes all notes in the list to be unselected
+#: ../Tomboy/NoteRenameDialog.cs:127
+msgid "Select None"
+msgstr "Nežymėti nieko"
+
+#: ../Tomboy/NoteRenameDialog.cs:144
+msgid "Ad_vanced"
+msgstr "S_udėtingesni"
+
+#: ../Tomboy/NoteRenameDialog.cs:147
+msgid "Always show this _window"
+msgstr "Visada rodyti šį _langą"
+
+#: ../Tomboy/NoteRenameDialog.cs:155
+msgid "Never rename _links"
+msgstr "_Niekada nepervadinti saitų"
+
+#: ../Tomboy/NoteRenameDialog.cs:163
+msgid "Alwa_ys rename links"
+msgstr "_Visada pervadinti saitus"
+
+#: ../Tomboy/NoteWindow.cs:59
+msgid "Find in This Note"
+msgstr "Ieškoti šiame raštelyje"
+
+#: ../Tomboy/NoteWindow.cs:366
+msgid "_Link to New Note"
+msgstr "Sukurti saitą į naują _raštelį"
+
+#: ../Tomboy/NoteWindow.cs:378
+msgid "Te_xt"
+msgstr "Te_kstas"
+
+#: ../Tomboy/NoteWindow.cs:386
+msgid "_Find in This Note"
+msgstr "_Ieškoti šiame raštelyje"
+
+#: ../Tomboy/NoteWindow.cs:401
+msgid "Clos_e All Notes"
+msgstr "Už_verti visus raštelius"
+
+#: ../Tomboy/NoteWindow.cs:441
+msgid "Search"
+msgstr "Ieškoti"
+
+#. TODO: If we ever add a way to customize internal keybindings, this will need to change
+#: ../Tomboy/NoteWindow.cs:445
+msgid "Search your notes"
+msgstr "Ieškoti rašteliuose"
+
+#: ../Tomboy/NoteWindow.cs:457
+msgid "Link"
+msgstr "Susieti"
+
+#: ../Tomboy/NoteWindow.cs:464
+msgid "Link selected text to a new note"
+msgstr "Susieti pažymėtą tekstą su nauju rašteliu"
+
+#: ../Tomboy/NoteWindow.cs:477
+msgid "_Text"
+msgstr "_Tekstas"
+
+#: ../Tomboy/NoteWindow.cs:482
+msgid "Set properties of text"
+msgstr "Nurodyti teksto savybes"
+
+#: ../Tomboy/NoteWindow.cs:487
+msgid "T_ools"
+msgstr "Į_rankiai"
+
+#: ../Tomboy/NoteWindow.cs:491
+msgid "Use tools on this note"
+msgstr "Naudoti įrankius šiame raštelyje"
+
+#: ../Tomboy/NoteWindow.cs:499
+msgid "Delete this note"
+msgstr "Ištrinti šį raštelį"
+
+#: ../Tomboy/NoteWindow.cs:507 ../Tomboy/Synchronization/SyncManager.cs:164
+msgid "Synchronize Notes"
+msgstr "Sinchronizoti raštelius"
+
+#: ../Tomboy/NoteWindow.cs:565
+msgid ""
+"This note is a template note. It determines the default content of regular "
+"notes, and will not show up in the note menu or search window."
+msgstr ""
+"Tai yra šablono raštelis. Jis nusako numatytąjį įprastinių raštelių turinį "
+"ir nebus rodomas raštelių meniu arba paieškos lange."
+
+#: ../Tomboy/NoteWindow.cs:571
+msgid "Convert to regular note"
+msgstr "Paversti įprastiniu rašteliu"
+
+#: ../Tomboy/NoteWindow.cs:576
+msgid "Save Si_ze"
+msgstr "Išsaugoti _dydį"
+
+#: ../Tomboy/NoteWindow.cs:585
+msgid "Save Se_lection"
+msgstr "Įrašyti pažymėjimą"
+
+#: ../Tomboy/NoteWindow.cs:594
+msgid "Save _Title"
+msgstr "Įrašyti _pavadinimą"
+
+#: ../Tomboy/NoteWindow.cs:639
+msgid "_Find..."
+msgstr "_Ieškoti..."
+
+#: ../Tomboy/NoteWindow.cs:650
+msgid "Find _Next"
+msgstr "Ieškoti _kito"
+
+#: ../Tomboy/NoteWindow.cs:663
+msgid "Find _Previous"
+msgstr "Ieškoti _ankstesnio"
+
+#: ../Tomboy/NoteWindow.cs:751
+msgid "Cannot create note"
+msgstr "Nepavyko sukurti raštelio"
+
+#: ../Tomboy/NoteWindow.cs:833
+msgid "_Find:"
+msgstr "_Ieškoti:"
+
+#: ../Tomboy/NoteWindow.cs:847
+msgid "_Previous"
+msgstr "_Ankstesnis"
+
+#: ../Tomboy/NoteWindow.cs:856
+msgid "_Next"
+msgstr "_Kitas"
+
+#. x of x - specifically Number of Matches and what location is the cursor in the list of matches
+#: ../Tomboy/NoteWindow.cs:885
+#, csharp-format
+msgid "{0} of {1}"
+msgstr "{0} iš {1}"
+
+#: ../Tomboy/NoteWindow.cs:1368
+msgid "_Bold"
+msgstr "P_usjuodis"
+
+#: ../Tomboy/NoteWindow.cs:1380
+msgid "_Italic"
+msgstr "_Kursyvas"
+
+#: ../Tomboy/NoteWindow.cs:1392
+msgid "_Strikeout"
+msgstr "_Perbrauktas"
+
+#: ../Tomboy/NoteWindow.cs:1404
+msgid "_Highlight"
+msgstr "Pa_ryškintas"
+
+#: ../Tomboy/NoteWindow.cs:1417
+msgid "Font Size"
+msgstr "Šrifto dydis"
+
+#: ../Tomboy/NoteWindow.cs:1420
+msgid "_Normal"
+msgstr "_Normalus"
+
+#: ../Tomboy/NoteWindow.cs:1437
+msgid "Hu_ge"
+msgstr "Milžiniš_kas"
+
+#: ../Tomboy/NoteWindow.cs:1445
+msgid "_Large"
+msgstr "_Didelis"
+
+#: ../Tomboy/NoteWindow.cs:1453
+msgid "S_mall"
+msgstr "_Mažas"
+
+#: ../Tomboy/NoteWindow.cs:1462
+msgid "Increase Font Size"
+msgstr "Didinti šriftą"
+
+#: ../Tomboy/NoteWindow.cs:1480
+msgid "Decrease Font Size"
+msgstr "Mažinti šriftą"
+
+#: ../Tomboy/NoteWindow.cs:1500
+msgid "Bullets"
+msgstr "Punktai"
+
+#: ../Tomboy/PreferencesDialog.cs:74
+msgid "Editing"
+msgstr "Redagavimas"
+
+#: ../Tomboy/PreferencesDialog.cs:77
+msgid "Hotkeys"
+msgstr "Karštieji klavišai"
+
+#: ../Tomboy/PreferencesDialog.cs:79
+msgid "Synchronization"
+msgstr "Sinchronizavimas"
+
+#: ../Tomboy/PreferencesDialog.cs:80
+msgid "Add-ins"
+msgstr "Priedai"
+
+#: ../Tomboy/PreferencesDialog.cs:180
+msgid "_Spell check while typing"
+msgstr "_Rašant tekstą tikrinti rašybą"
+
+#: ../Tomboy/PreferencesDialog.cs:189
+msgid ""
+"Misspellings will be underlined in red, with correct spelling suggestions "
+"shown in the context menu."
+msgstr ""
+"Neteisingai parašyti žodžiai bus pabraukti raudonai, kontekstiniame meniu "
+"rodant teisingos rašybos pasiūlymus."
+
+#. WikiWords...
+#: ../Tomboy/PreferencesDialog.cs:200
+msgid "Highlight _WikiWords"
+msgstr "Paryškinti _WikiŽodžius"
+
+#: ../Tomboy/PreferencesDialog.cs:208
+msgid ""
+"Enable this option to highlight words <b>ThatLookLikeThis</b>. Clicking the "
+"word will create a note with that name."
+msgstr ""
+"Įjunkite šį nustatymą norėdami paryškinti žodžius <b>AtrodančiusŠtaiTaip</"
+"b>. Paspaudus tokį žodį bus sukurtas raštelis su tokiu pavadinimu."
+
+#. Auto bulleted list
+#: ../Tomboy/PreferencesDialog.cs:215
+msgid "Enable auto-_bulleted lists"
+msgstr "Įjungti automatinį _sąrašų formatą"
+
+#: ../Tomboy/PreferencesDialog.cs:224
+msgid "Use custom _font"
+msgstr "Naudoti pasirinktinį šri_ftą"
+
+#: ../Tomboy/PreferencesDialog.cs:242
+msgid "When renaming a linked note: "
+msgstr "Pervadinant susijusį raštelį: "
+
+#: ../Tomboy/PreferencesDialog.cs:245
+msgid "Ask me what to do"
+msgstr "Paklausti, ką daryti"
+
+#: ../Tomboy/PreferencesDialog.cs:246
+msgid "Never rename links"
+msgstr "Niekada nepervadinti saitų"
+
+#: ../Tomboy/PreferencesDialog.cs:247
+msgid "Always rename links"
+msgstr "Visada pervadinti saitus"
+
+#: ../Tomboy/PreferencesDialog.cs:267
+msgid ""
+"Use the new note template to specify the text that should be used when "
+"creating a new note."
+msgstr ""
+"Nurodykite naujo raštelio šablone tekstą, kuris turėtų būti naudojamas "
+"kuriant naujus raštelius."
+
+#: ../Tomboy/PreferencesDialog.cs:276
+msgid "Open New Note Template"
+msgstr "Atverti naujo raštelio šabloną"
+
+#. Hotkeys...
+#: ../Tomboy/PreferencesDialog.cs:333
+msgid "Listen for _Hotkeys"
+msgstr "Klausytis _karštųjų klavišų"
+
+#: ../Tomboy/PreferencesDialog.cs:342
+msgid ""
+"Hotkeys allow you to quickly access your notes from anywhere with a "
+"keypress. Example Hotkeys: <b>&lt;ALT&gt;F11</b>, <b>&lt;ALT&gt;N</b>"
+msgstr ""
+"Karštieji klavišai leidžia jums pasiekti raštelius iš bet kur klavišų "
+"paspaudimu. Pavyzdiniai karštieji klavišai: <b>&lt;ALT&gt;F11</b>, <b>&lt;"
+"ALT&gt;N</b>"
+
+#. Show notes menu keybinding...
+#: ../Tomboy/PreferencesDialog.cs:362
+msgid "Show notes _menu"
+msgstr "Rodyti raštelių _meniu"
+
+#. Open Start Here keybinding...
+#: ../Tomboy/PreferencesDialog.cs:379
+msgid "Open \"_Start Here\""
+msgstr "Atverti „Pradėti čia“"
+
+#. Create new note keybinding...
+#: ../Tomboy/PreferencesDialog.cs:396
+msgid "Create _new note"
+msgstr "Sukurti _naują raštelį"
+
+#. Open Search All Notes window keybinding...
+#: ../Tomboy/PreferencesDialog.cs:413
+msgid "Open \"Search _All Notes\""
+msgstr "Atverti „Ieškoti _visuose rašteliuose“"
+
+#: ../Tomboy/PreferencesDialog.cs:440
+msgid "Ser_vice:"
+msgstr "Tar_nyba:"
+
+#: ../Tomboy/PreferencesDialog.cs:493 ../Tomboy/PreferencesDialog.cs:1112
+msgid "Not configurable"
+msgstr "Nekonfigūruojama"
+
+#: ../Tomboy/PreferencesDialog.cs:519
+msgid "Automaticall_y Sync in Background Every"
+msgstr "_Automatiškai sinchronizuoti fone kas"
+
+#. Translators: See above comment for details on
+#. this string.
+#: ../Tomboy/PreferencesDialog.cs:525
+msgid "Minutes"
+msgstr "minučių"
+
+#. "Advanced..." button to bring up extra sync config dialog
+#: ../Tomboy/PreferencesDialog.cs:547
+msgid "_Advanced..."
+msgstr "_Sudėtingesni..."
+
+#: ../Tomboy/PreferencesDialog.cs:608
+msgid "The following add-ins are installed"
+msgstr "Įdiegti šie priedai"
+
+#: ../Tomboy/PreferencesDialog.cs:629
+msgid "Get More Add-Ins..."
+msgstr "Parsiųsti daugiau įskiepių..."
+
+#: ../Tomboy/PreferencesDialog.cs:647
+msgid "_Enable"
+msgstr "Įj_ungti"
+
+#: ../Tomboy/PreferencesDialog.cs:653
+msgid "_Disable"
+msgstr "_Išjungti"
+
+#: ../Tomboy/PreferencesDialog.cs:784
+msgid "Not Implemented"
+msgstr "Neįgyvendinta"
+
+#: ../Tomboy/PreferencesDialog.cs:798
+#, csharp-format
+msgid "{0} Preferences"
+msgstr "{0} nustatymai"
+
+#: ../Tomboy/PreferencesDialog.cs:937
+msgid "Choose Note Font"
+msgstr "Pasirinkite raštelio šriftą"
+
+#: ../Tomboy/PreferencesDialog.cs:981
+msgid "Other Synchronization Options"
+msgstr "Kitos sinchronizavimo parinktys"
+
+#: ../Tomboy/PreferencesDialog.cs:987
+msgid ""
+"When a conflict is detected between a local note and a note on the "
+"configured synchronization server:"
+msgstr ""
+"Kai randamas konfliktas tarp vietinio raštelio ir raštelio sukonfigūruotame "
+"sinchronizavimo serveryje:"
+
+#: ../Tomboy/PreferencesDialog.cs:994
+msgid "Always ask me what to do."
+msgstr "Visada paklausti manęs ką daryti."
+
+#: ../Tomboy/PreferencesDialog.cs:998
+msgid "Rename my local note."
+msgstr "Pervadinti mano vietinį raštelį."
+
+#: ../Tomboy/PreferencesDialog.cs:1002
+msgid "Replace my local note with the server's update."
+msgstr "Pakeisti mano vietinį raštelį naujesniu iš serverio."
+
+#: ../Tomboy/PreferencesDialog.cs:1148
+msgid "Are you sure?"
+msgstr "Ar tikrai?"
+
+#: ../Tomboy/PreferencesDialog.cs:1150
+msgid ""
+"Clearing your synchronization settings is not recommended.  You may be "
+"forced to synchronize all of your notes again when you save new settings."
+msgstr ""
+"Išvalyti sinchronizavimo parametrų nerekomenduojama. Išsaugojus naujus "
+"parametrus galite būti priversti sinchronizuoti visus savo raštelius dar "
+"kartą."
+
+#: ../Tomboy/PreferencesDialog.cs:1163
+msgid "Resetting Synchronization Settings"
+msgstr "Atstatomi sinchronizavimo parametrai"
+
+#: ../Tomboy/PreferencesDialog.cs:1165
+msgid ""
+"You have disabled the configured synchronization service.  Your "
+"synchronization settings will now be cleared.  You may be forced to "
+"synchronize all of your notes again when you save new settings."
+msgstr ""
+"Jūs išjungėte sukonfigūruotą sinchronizavimo tarnybą. Jūsų sinchronizavimo "
+"parametrai dabar bus išvalyti. Išsaugoję naujus parametrus galite būti "
+"priversti sinchronizuoti visus savo raštelius dar kartą."
+
+#: ../Tomboy/PreferencesDialog.cs:1243
+msgid "Connection successful"
+msgstr "Prisijungimas sėkmingas"
+
+#: ../Tomboy/PreferencesDialog.cs:1245
+msgid ""
+"Tomboy is ready to synchronize your notes. Would you like to synchronize "
+"them now?"
+msgstr ""
+"Tomboy paruošta jūsų raštelių sinchronizavimui. Ar norėtumėte sinchronizuoti "
+"juos dabar?"
+
+#: ../Tomboy/PreferencesDialog.cs:1268
+#, csharp-format
+msgid ""
+"Please check your information and try again.  The log file {0} may contain "
+"more information about the error."
+msgstr ""
+"Patikrinkite savo informaciją ir bandykite dar kartą. Žurnalo failas {0} "
+"gali turėti daugiau informacijos apie klaidą."
+
+#: ../Tomboy/PreferencesDialog.cs:1280
+msgid "Error connecting"
+msgstr "Klaida jungiantis"
+
+#: ../Tomboy/PreferencesDialog.cs:1364
+msgid "Version:"
+msgstr "Versija:"
+
+#: ../Tomboy/PreferencesDialog.cs:1371
+msgid "Author:"
+msgstr "Autorius:"
+
+#: ../Tomboy/PreferencesDialog.cs:1378
+msgid "Copyright:"
+msgstr "Autorinės teisės:"
+
+#: ../Tomboy/PreferencesDialog.cs:1384
+msgid "Add-in Dependencies:"
+msgstr "Priedo priklausomybės:"
+
+#: ../Tomboy/RecentChanges.cs:100
+msgid "_Search:"
+msgstr "_Ieškoti:"
+
+#: ../Tomboy/RecentChanges.cs:350
+msgid "Note"
+msgstr "Raštelis"
+
+#: ../Tomboy/RecentChanges.cs:373
+msgid "Last Changed"
+msgstr "Paskutinis pakeitimas"
+
+#: ../Tomboy/RecentChanges.cs:512
+msgid "Matches"
+msgstr "Atitikmenys"
+
+#: ../Tomboy/RecentChanges.cs:563
+msgid "Title match"
+msgstr "Atitikmuo pavadinime"
+
+#: ../Tomboy/RecentChanges.cs:566
+#, csharp-format
+msgid "{0} match"
+msgid_plural "{0} matches"
+msgstr[0] "{0} atitikmuo"
+msgstr[1] "{0} atitikmenys"
+msgstr[2] "{0} atitkmenų"
+
+#: ../Tomboy/RecentChanges.cs:580
+#, csharp-format
+msgid "Total: {0} note"
+msgid_plural "Total: {0} notes"
+msgstr[0] "Iš viso: {0} raštelis"
+msgstr[1] "Iš viso: {0} rašteliai"
+msgstr[2] "Iš viso: {0} raštelių"
+
+#: ../Tomboy/RecentChanges.cs:591
+#, csharp-format
+msgid "Matches: {0} note"
+msgid_plural "Matches: {0} notes"
+msgstr[0] "Atitinka: {0} raštelį"
+msgstr[1] "Atitinka: {0} raštelius"
+msgstr[2] "Atitinka: {0} raštelių"
+
+#: ../Tomboy/RecentChanges.cs:603
+msgid ""
+"No results found in the selected notebook.\n"
+"Click here to search across all notes."
+msgstr ""
+"Nerasta rezultatų pasirinktoje užrašinėje.\n"
+"Spauskite čia, jei norite ieškoti visuose rašteliuose."
+
+#: ../Tomboy/RecentChanges.cs:609
+msgid "Click here to search across all notebooks"
+msgstr "Spauskite čia, jei norite ieškoti visuose rašteliuose"
+
+#: ../Tomboy/RecentChanges.cs:780
+msgid "Notes"
+msgstr "Rašteliai"
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:94
+#, csharp-format
+msgid ""
+"This synchronization addin is not supported on your computer. Please make "
+"sure you have FUSE and {0} correctly installed and configured"
+msgstr ""
+"Šis sinchronizacijos įskiepis jūsų kompiuteryje nepalaikomas. Įsitikinkite, "
+"kad FUSE ir {0} įdiegti ir sukonfigūruoti"
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:129
+msgid "Could not read testfile."
+msgstr "Nepavyko perskaityti bandomojo failo."
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:132
+msgid "Write test failed."
+msgstr "Rašymo bandymas nepavyko."
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:176
+msgid "Timeout connecting to server."
+msgstr "Jungiantis prie serverio viršytas laiko limitas."
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:184
+msgid "Error connecting to server."
+msgstr "Klaida jungiantis prie serverio."
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:198
+msgid "FUSE could not be enabled."
+msgstr "Nepavyko įjungti FUSE."
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:233
+msgid "An error ocurred while connecting to the specified server:"
+msgstr "Jungiantis prie nurodyto serverio įvyko klaida:"
+
+#. Expander containing TreeView
+#: ../Tomboy/Synchronization/SyncDialog.cs:89
+msgid "Details"
+msgstr "Išsami informacija"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:126
+msgid "Status"
+msgstr "Būsena"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:236
+msgid "Acquiring sync lock..."
+msgstr "Gaunamas sinchronizavimo užraktas..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:239
+msgid "Committing changes..."
+msgstr "Perduodami pakeitimai..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:242
+msgid "Synchronizing Notes"
+msgstr "Sinchronizuojami rašteliai"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:243
+msgid "Synchronizing your notes..."
+msgstr "Sinchronizuojami jūsų rašteliai..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:244
+msgid "This may take a while, kick back and enjoy!"
+msgstr "Tai gali šiek tiek užtrukti."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:246
+msgid "Connecting to the server..."
+msgstr "Jungiamasi prie serverio..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:252
+msgid "Deleting notes off of the server..."
+msgstr "Trinami rašteliai iš serverio..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:256
+msgid "Downloading new/updated notes..."
+msgstr "Atsiunčiami nauji / atnaujinti rašteliai..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:268
+msgid "Server Locked"
+msgstr "Serveris užrakintas"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:269
+msgid "Server is locked"
+msgstr "Serveris užrakintas"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:270
+msgid ""
+"One of your other computers is currently synchronizing.  Please wait 2 "
+"minutes and try again."
+msgstr ""
+"Vienas iš kitų Jūsų kompiuterių dabar vykdo sinchronizavimą. Palaukite porą "
+"minučių ir bandykite dar kartą."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:274
+msgid "Preparing to download updates from server..."
+msgstr "Ruošiamasi iš serverio atsiųsti atnaujinimus..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:277
+msgid "Preparing to upload updates to server..."
+msgstr "Ruošiamasi į serverį siųsti atnaujinimus..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:280
+msgid "Uploading notes to server..."
+msgstr "Rašteliai siunčiami į serverį..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:283
+msgid "Synchronization Failed"
+msgstr "Sinchronizavimas nesėkmingas"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:284
+msgid "Failed to synchronize"
+msgstr "Sinchronizuoti nepavyko"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:285
+msgid "Could not synchronize notes.  Check the details below and try again."
+msgstr ""
+"Nepavyko sinchronizuoti raštelių. Žiūrėkite žemiau esančią informaciją ir "
+"bandykite dar kartą."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:291
+msgid "Synchronization Complete"
+msgstr "Sinchronizavimas baigtas"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:292
+msgid "Synchronization is complete"
+msgstr "Sinchronizavimas baigtas"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:294
+#, csharp-format
+msgid "{0} note updated."
+msgid_plural "{0} notes updated."
+msgstr[0] "Atnaujintas {0} raštelis."
+msgstr[1] "Atnaujinti {0} rašteliai."
+msgstr[2] "Atnaujinta {0} raštelių."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:299
+msgid "Your notes are now up to date."
+msgstr "Jūsų rašteliai yra naujausi."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:303
+msgid "Synchronization Canceled"
+msgstr "Sinchronizavimas atšauktas"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:304
+msgid "Synchronization was canceled"
+msgstr "Sinchronizavimas buvo atšauktas"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:305
+msgid "You canceled the synchronization.  You may close the window now."
+msgstr "Jūs atšaukėte sinchronizavimą. Dabar galite užverti šį langą."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:309
+msgid "Synchronization Not Configured"
+msgstr "Sinchronizacija nesukonfigūruota"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:310
+msgid "Synchronization is not configured"
+msgstr "Sinchronizacija nesukonfigūruota"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:311
+msgid "Please configure synchronization in the preferences dialog."
+msgstr "Sukonfigūruokite sinchronizaciją nustatymų dialoge."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:315
+msgid "Synchronization Service Error"
+msgstr "Sinchronizavimo tarnybos klaida"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:316
+msgid "Service error"
+msgstr "Tarnybos klaida"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:317
+msgid "Error connecting to the synchronization service.  Please try again."
+msgstr "Klaida jungiantis prie sinchronizavimo tarnybos. Bandykite dar kartą."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:334
+msgid "Deleted locally"
+msgstr "Ištrinta vietiniame kompiuteryje"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:337
+msgid "Deleted from server"
+msgstr "Ištrinta iš serverio"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:340
+msgid "Updated"
+msgstr "Atnaujinta"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:343
+msgid "Added"
+msgstr "Pridėta"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:346
+msgid "Uploaded changes to server"
+msgstr "Į serverį nusiųsti pakeitimai"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:349
+msgid "Uploaded new note to server"
+msgstr "Į serverį nusiųstas naujas raštelis"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:496
+msgid "Note Conflict"
+msgstr "Raštelių konfliktas"
+
+#. Suggest renaming note by appending " (old)" to the existing title
+#: ../Tomboy/Synchronization/SyncDialog.cs:502
+msgid " (old)"
+msgstr " (senas)"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:541
+msgid "Rename local note:"
+msgstr "Pervadinti vietinį raštelį:"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:547
+msgid "Update links in referencing notes"
+msgstr "Atnaujinti saitus susietuose rašteliuose"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:554
+msgid "Overwrite local note"
+msgstr "Perrašyti vietinį raštelį"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:558
+msgid "Always perform this action"
+msgstr "Visada atlikti šį veiksmą"
+
+#. Set initial dialog text
+#: ../Tomboy/Synchronization/SyncDialog.cs:564
+msgid "Note conflict detected"
+msgstr "Aptiktas raštelių konfliktas"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:565
+#, csharp-format
+msgid ""
+"The server version of \"{0}\" conflicts with your local note.  What do you "
+"want to do with your local note?"
+msgstr ""
+"Serveryje esanti „{0}“ versija konfliktuoja su jūsų vietiniu rašteliu. Ką "
+"daryti su jūsų vietiniu rašteliu?"
+
+#: ../Tomboy/Synchronization/SyncUtils.cs:119
+#: ../Tomboy/Synchronization/SyncUtils.cs:163
+msgid "Could not enable FUSE"
+msgstr "Nepavyko įjungti FUSE"
+
+#: ../Tomboy/Synchronization/SyncUtils.cs:120
+#: ../Tomboy/Synchronization/SyncUtils.cs:164
+msgid ""
+"The FUSE module could not be loaded. Please check that it is installed "
+"properly and try again."
+msgstr ""
+"Nepavyko įkelti FUSE modulio. Patikrinkite, ar jis tinkamai įdiegtas ir "
+"bandykite dar kartą."
+
+#: ../Tomboy/Synchronization/SyncUtils.cs:135
+msgid "Enable FUSE?"
+msgstr "Įjungti FUSE?"
+
+#. TODO: This message isn't entirely accurate.
+#. We should fix it.
+#: ../Tomboy/Synchronization/SyncUtils.cs:139
+msgid ""
+"The synchronization you've chosen requires the FUSE module to be loaded.\n"
+"\n"
+"To avoid getting this prompt in the future, you should load FUSE at "
+"startup.  Add \"modprobe fuse\" to /etc/init.d/boot.local or \"fuse\" to /"
+"etc/modules."
+msgstr ""
+"Jūsų pasirinktam sinchronizavimui reikia įkelti FUSE modulį.\n"
+"\n"
+"Norėdami išvengti šio klausimo ateityje, turėtumėte įkelti FUSE paleidimo "
+"metu. Faile /etc/init.d/boot.local pridėkite „modprobe fuse“ arba faile /etc/"
+"modules – „fuse“."
+
+#: ../Tomboy/Tomboy.cs:253
+msgid "Cannot create new note"
+msgstr "Nepavyko sukurti naujo raštelio"
+
+#: ../Tomboy/Tomboy.cs:316
+msgid "Primary Development:"
+msgstr "Pagrindinis vystymas:"
+
+#: ../Tomboy/Tomboy.cs:329
+msgid "Contributors:"
+msgstr "Pagalbininkai:"
+
+#: ../Tomboy/Tomboy.cs:418
+msgid "translator-credits"
+msgstr "Žygimantas Beručka <zygis@gnome.org>"
+
+#: ../Tomboy/Tomboy.cs:427
+msgid ""
+"Copyright © 2004-2007 Alex Graveley\n"
+"Copyright © 2004-2011 Others\n"
+msgstr ""
+"Autorinės teisės priklauso © 2004-2007 Alex Graveley\n"
+"Autorinės teisės priklauso © 2004-2011 kitiems\n"
+
+#: ../Tomboy/Tomboy.cs:429
+msgid "A simple and easy to use desktop note-taking application."
+msgstr "Paprasta ir lengva naudoti aplinkos užrašinė."
+
+#: ../Tomboy/Tomboy.cs:439
+msgid "Homepage"
+msgstr "Tinklalapis"
+
+#: ../Tomboy/Tomboy.cs:575
+msgid ""
+"Tomboy: A simple, easy to use desktop note-taking application.\n"
+"Copyright © 2004-2007 Alex Graveley\n"
+"<alex@beatniksoftware.com>\n"
+"\n"
+"Copyright © 2004-2011 Others\n"
+msgstr ""
+"Tomboy: Paprasta, lengva naudoti darbastalio užrašinė.\n"
+"Autorinės teisės priklauso © 2004-2007 Alex Graveley\n"
+"<alex@beatniksoftware.com>\n"
+"\n"
+"Autorinės teisės priklauso © 2004-2011 kitiems\n"
+
+#: ../Tomboy/Tomboy.cs:589
+msgid ""
+"Usage:\n"
+"  --version\t\t\tPrint version information.\n"
+"  --help\t\t\tPrint this usage message.\n"
+"  --note-path [path]\t\tLoad/store note data in this directory.\n"
+"  --search [text]\t\tOpen the search all notes window with the search text.\n"
+msgstr ""
+"Naudojimas:\n"
+"  --version\t\t\tParodyti versijos informaciją.\n"
+"  --help\t\t\tParodyti šią naudojimosi žinutę.\n"
+"  --note-path [kelias]\t\tĮkelti/išsaugoti raštelio duomenis šiame aplanke.\n"
+"  --search [tekstas]\t\tAtverti paieškos visuose rašteliuose langą su "
+"paieškos tekstu.\n"
+
+#: ../Tomboy/Tomboy.cs:599
+msgid ""
+"  --new-note\t\t\tCreate and display a new note.\n"
+"  --new-note [title]\t\tCreate and display a new note, with a title.\n"
+"  --open-note [title/url]\tDisplay the existing note matching title.\n"
+"  --start-here\t\t\tDisplay the 'Start Here' note.\n"
+"  --highlight-search [text]\tSearch and highlight text in the opened note.\n"
+msgstr ""
+"Naudojimas:\n"
+"  --new-note\t\t\tSukurti ir parodyti naują raštelį.\n"
+"  --new-note [pavadinimas]\t\tSukurti ir parodyti naują raštelį su "
+"pavadinimu.\n"
+"  --open-note [pavadinimas/url]\tParodyti egzistuojantį raštelį atitinkamu "
+"pavadinimu.\n"
+"  --start-here\t\t\tParodyti raštelį„Pradėti čia“.\n"
+"  --highlight-search [tekstas]\tAtvertame raštelyje surasti ir paryškinti "
+"tekstą.\n"
+
+#: ../Tomboy/Tomboy.cs:609
+msgid ""
+"  --addin:html-export-all [path]\tExports all notes to HTML in the given "
+"location.\n"
+"  --addin:html-export-all-quit [path]\tExports all notes to HTML in the "
+"given location and then quits.\n"
+msgstr ""
+"  --addin:html-export-all [kelias]\tEksportuoja visus raštelius į HTML "
+"nurodytoje vietoje.\n"
+"  --addin:html-export-all-quit [kelias]\tEksportuoja visus raštelius į HTML "
+"nurodytoje vietoje ir baigia darbą.\n"
+
+#: ../Tomboy/Tomboy.cs:619
+#, csharp-format
+msgid "Version {0}"
+msgstr "Versija {0}"
+
+#: ../Tomboy/Tray.cs:68
+msgid " (new)"
+msgstr " (naujas)"
+
+#: ../Tomboy/Tray.cs:293
+msgid "_About Tomboy"
+msgstr "_Apie Tomboy"
+
+#: ../Tomboy/Utils.cs:189
+msgid ""
+"The \"Tomboy Notes Manual\" could not be found.  Please verify that your "
+"installation has been completed successfully."
+msgstr ""
+"„Tomboy raštelių žinynas“ nerastas. Patikrinkite, ar programa buvo įdiegta "
+"sėkmingai."
+
+#: ../Tomboy/Utils.cs:198
+msgid "Help not found"
+msgstr "Žinynas nerastas"
+
+#: ../Tomboy/Utils.cs:214
+msgid "Cannot open location"
+msgstr "Nepavyko atverti vietos"
+
+#: ../Tomboy/Utils.cs:236
+#, csharp-format
+msgid "Today, {0}"
+msgstr "Šiandien, {0}"
+
+#: ../Tomboy/Utils.cs:238
+msgid "Today"
+msgstr "Šiandien"
+
+#: ../Tomboy/Utils.cs:242
+#, csharp-format
+msgid "Yesterday, {0}"
+msgstr "Vakar, {0}"
+
+#: ../Tomboy/Utils.cs:244
+msgid "Yesterday"
+msgstr "Vakar"
+
+#: ../Tomboy/Utils.cs:249
+#, csharp-format
+msgid "{0} day ago, {1}"
+msgid_plural "{0} days ago, {1}"
+msgstr[0] "prieš {0} dieną, {1}"
+msgstr[1] "prieš {0} dienas, {1}"
+msgstr[2] "prieš {0} dienų, {1}"
+
+#: ../Tomboy/Utils.cs:253
+#, csharp-format
+msgid "{0} day ago"
+msgid_plural "{0} days ago"
+msgstr[0] "prieš {0} dieną"
+msgstr[1] "prieš {0} dienas"
+msgstr[2] "prieš {0} dienų"
+
+#: ../Tomboy/Utils.cs:259
+#, csharp-format
+msgid "Tomorrow, {0}"
+msgstr "Rytoj, {0}"
+
+#: ../Tomboy/Utils.cs:261
+msgid "Tomorrow"
+msgstr "Rytoj"
+
+#: ../Tomboy/Utils.cs:266
+#, csharp-format
+msgid "In {0} day, {1}"
+msgid_plural "In {0} days, {1}"
+msgstr[0] "Po {0} dienos, {1}"
+msgstr[1] "Po {0} dienų, {1}"
+msgstr[2] "Po {0} dienų, {1}"
+
+#: ../Tomboy/Utils.cs:270
+#, csharp-format
+msgid "In {0} day"
+msgid_plural "In {0} days"
+msgstr[0] "Po {0} dienos"
+msgstr[1] "Po {0} dienų"
+msgstr[2] "Po {0} dienų"
+
+#: ../Tomboy/Utils.cs:275
+msgid "MMMM d, h:mm tt"
+msgstr "MMMM d, h:mm tt"
+
+#: ../Tomboy/Utils.cs:276
+msgid "MMMM d"
+msgstr "MMMM d"
+
+#: ../Tomboy/Utils.cs:278
+msgid "No Date"
+msgstr "Nėra datos"
+
+#: ../Tomboy/Utils.cs:281
+msgid "MMMM d yyyy, h:mm tt"
+msgstr "yyyy MMMM d, hh:mm tt"
+
+#: ../Tomboy/Utils.cs:282
+msgid "MMMM d yyyy"
+msgstr "yyyy MMMM d"
+
+#: ../Tomboy/Watchers.cs:155
+#, csharp-format
+msgid "(Untitled {0})"
+msgstr "(Nepavadinta {0})"
+
+#: ../Tomboy/Watchers.cs:189
+#, csharp-format
+msgid ""
+"A note with the title <b>{0}</b> already exists. Please choose another name "
+"for this note before continuing."
+msgstr ""
+"Raštelis pavadinimu <b>{0}</b> jau egzistuoja. Norėdami tęsti, turite "
+"pasirinkti kitą šio raštelio pavadinimą."
+
+#: ../Tomboy/Watchers.cs:204
+msgid "Note title taken"
+msgstr "Raštelio pavadinimas užimtas"
+
+#: ../Tomboy/Watchers.cs:608
+msgid "_Copy Link Address"
+msgstr "_Kopijuoti saito adresą"
+
+#: ../Tomboy/Watchers.cs:613
+msgid "_Open Link"
+msgstr "_Atverti saitą"

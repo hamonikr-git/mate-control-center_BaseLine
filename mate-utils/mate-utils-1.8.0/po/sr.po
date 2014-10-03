@@ -1,0 +1,3215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: https://github.com/mate-desktop/\n"
+"POT-Creation-Date: 2012-03-12 11:59+0100\n"
+"PO-Revision-Date: 2012-03-12 11:11+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sr\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:1
+#: ../baobab/data/baobab-main-window.ui.h:15
+msgid "Disk Usage Analyzer"
+msgstr "Анализер искоришћености диска"
+
+#: ../baobab/data/mate-disk-usage-analyzer.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr "Провери величине директоријума и слободни простор на диску"
+
+#: ../baobab/data/baobab-dialog-scan-props.ui.h:1
+msgid "Disk Usage Analyzer Preferences"
+msgstr "Опције програма за анализу заузетости диска"
+
+#: ../baobab/data/baobab-dialog-scan-props.ui.h:2
+msgid "Select _devices to include in filesystem scan:"
+msgstr "Изаберите _уређаје који ће бити укључени у преглед:"
+
+#: ../baobab/data/baobab-dialog-scan-props.ui.h:3
+msgid "_Monitor changes to your home folder"
+msgstr "Надгледај измене на корисничком директоријуму"
+
+#: ../baobab/data/baobab-main-window.ui.h:1
+msgid "_Analyzer"
+msgstr "_Анализатор"
+
+#: ../baobab/data/baobab-main-window.ui.h:2
+msgid "Scan _Home Folder"
+msgstr "_Лична фасцикла"
+
+#: ../baobab/data/baobab-main-window.ui.h:3
+msgid "Scan _Filesystem"
+msgstr "Систем _датотека"
+
+#: ../baobab/data/baobab-main-window.ui.h:4
+msgid "Scan F_older..."
+msgstr "_Фасцикла..."
+
+#: ../baobab/data/baobab-main-window.ui.h:5
+msgid "S_can Remote Folder..."
+msgstr "_Удаљена фасцикла..."
+
+#: ../baobab/data/baobab-main-window.ui.h:6
+#: ../mate-dictionary/src/gdict-window.c:1176 ../logview/logview-window.c:808
+msgid "_Edit"
+msgstr "_Уређивање"
+
+#: ../baobab/data/baobab-main-window.ui.h:7
+msgid "_Expand All"
+msgstr "_Прошири све"
+
+#: ../baobab/data/baobab-main-window.ui.h:8
+msgid "_Collapse All"
+msgstr "_Скупи све"
+
+#: ../baobab/data/baobab-main-window.ui.h:9
+#: ../mate-dictionary/src/gdict-window.c:1177 ../logview/logview-window.c:809
+msgid "_View"
+msgstr "_Преглед"
+
+#: ../baobab/data/baobab-main-window.ui.h:10
+msgid "_Toolbar"
+msgstr "Трака са алатима"
+
+#: ../baobab/data/baobab-main-window.ui.h:11
+msgid "St_atusbar"
+msgstr "_Статусна линија"
+
+#: ../baobab/data/baobab-main-window.ui.h:12
+msgid "All_ocated Space"
+msgstr "Заузет простор"
+
+#: ../baobab/data/baobab-main-window.ui.h:13
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:6
+#: ../mate-dictionary/src/gdict-window.c:1179 ../logview/logview-window.c:811
+msgid "_Help"
+msgstr "_Помоћ"
+
+#. Help menu
+#: ../baobab/data/baobab-main-window.ui.h:14
+#: ../mate-dictionary/src/gdict-window.c:1229 ../logview/logview-window.c:837
+msgid "_Contents"
+msgstr "_Садржај"
+
+#: ../baobab/data/baobab-main-window.ui.h:16
+msgid "Scan home folder"
+msgstr "Лична фасцикла"
+
+#: ../baobab/data/baobab-main-window.ui.h:17
+msgid "Scan Home"
+msgstr "Лична фацикла"
+
+#: ../baobab/data/baobab-main-window.ui.h:18
+msgid "Scan filesystem"
+msgstr "Систем датотека"
+
+#: ../baobab/data/baobab-main-window.ui.h:19
+msgid "Scan Filesystem"
+msgstr "Систем датотека"
+
+#: ../baobab/data/baobab-main-window.ui.h:20
+msgid "Scan a folder"
+msgstr "Фасцикла"
+
+#: ../baobab/data/baobab-main-window.ui.h:21
+msgid "Scan Folder"
+msgstr "Фасцикла"
+
+#: ../baobab/data/baobab-main-window.ui.h:22
+msgid "Scan a remote folder"
+msgstr "Удаљена фасцикла"
+
+#: ../baobab/data/baobab-main-window.ui.h:23
+msgid "Scan Remote Folder"
+msgstr "Удаљена фасцикла"
+
+#: ../baobab/data/baobab-main-window.ui.h:24
+msgid "Stop scanning"
+msgstr "Заустави"
+
+#: ../baobab/data/baobab-main-window.ui.h:25
+msgid "Refresh"
+msgstr "Освежи "
+
+#: ../baobab/data/baobab.schemas.in.h:1
+msgid "Toolbar is Visible"
+msgstr "Трака са алаткама је видљива"
+
+#: ../baobab/data/baobab.schemas.in.h:2
+msgid "Whether the toolbar should be visible in main window."
+msgstr "Да ли трака са алаткама треба да буде видљива у главном прозору."
+
+#: ../baobab/data/baobab.schemas.in.h:3
+msgid "Status Bar is Visible"
+msgstr "Трака статуса је видљива"
+
+#: ../baobab/data/baobab.schemas.in.h:4
+msgid "Whether the status bar at the bottom of main window should be visible."
+msgstr "Да ли трака статуса треба да буде видљива у главном прозору."
+
+#: ../baobab/data/baobab.schemas.in.h:5
+msgid "Enable monitoring of home directory"
+msgstr "Укључи надгледање корисничког директоријума"
+
+#: ../baobab/data/baobab.schemas.in.h:6
+msgid "Whether any change to the home directory should be monitored."
+msgstr "Да ли треба надгледати измене корисничког директоријума."
+
+#: ../baobab/data/baobab.schemas.in.h:7
+msgid "Excluded partitions URIs"
+msgstr "Локације издвојених партиција"
+
+#: ../baobab/data/baobab.schemas.in.h:8
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "Списак адреса партиција које ће бити издвојене из претраживања."
+
+#: ../baobab/data/baobab.schemas.in.h:9
+msgid "Subfolders tooltips visible"
+msgstr "Видљиве ознаке фасцикла из фасцикле"
+
+#: ../baobab/data/baobab.schemas.in.h:10
+msgid "Whether the subfolder tooltips of the selected folder are drawn."
+msgstr "Да ли да се исцртавају савети подфасцикли из одабране фасцикле."
+
+#: ../baobab/src/baobab.c:134 ../baobab/src/baobab.c:353
+msgid "Scanning..."
+msgstr "Брз преглед..."
+
+#: ../baobab/src/baobab.c:180
+msgid "Total filesystem capacity:"
+msgstr "Укупни капацитет система датотека:"
+
+#: ../baobab/src/baobab.c:181
+msgid "used:"
+msgstr "искоришћено:"
+
+#: ../baobab/src/baobab.c:182
+msgid "available:"
+msgstr "доступно:"
+
+#. set statusbar, percentage and allocated/normal size
+#: ../baobab/src/baobab.c:238 ../baobab/src/baobab.c:295
+#: ../baobab/src/callbacks.c:260
+msgid "Calculating percentage bars..."
+msgstr "Израчунавам траке процената..."
+
+#: ../baobab/src/baobab.c:249 ../baobab/src/baobab.c:1289
+#: ../baobab/src/callbacks.c:264
+msgid "Ready"
+msgstr "Спремно"
+
+#: ../baobab/src/baobab.c:386
+msgid "Total filesystem capacity"
+msgstr "Величина система датотека"
+
+#: ../baobab/src/baobab.c:408
+msgid "Total filesystem usage"
+msgstr "Заузетост система датотека"
+
+#: ../baobab/src/baobab.c:449
+msgid "contains hardlinks for:"
+msgstr "садржи чврсте везе за:"
+
+#: ../baobab/src/baobab.c:458
+#, c-format
+msgid "%5d item"
+msgid_plural "%5d items"
+msgstr[0] "% 5d ставка"
+msgstr[1] "% 5d ставке"
+msgstr[2] "% 5d ставки"
+
+#: ../baobab/src/baobab.c:585
+msgid "Could not initialize monitoring"
+msgstr "Нисам могао да започнем надгледање"
+
+#: ../baobab/src/baobab.c:586
+msgid "Changes to your home folder will not be monitored."
+msgstr "Кориснички директоријум неће бити надгледан за измене."
+
+#: ../baobab/src/baobab.c:965
+msgid "Move to parent folder"
+msgstr "Премести у фасциклу изнад"
+
+#: ../baobab/src/baobab.c:969
+msgid "Zoom in"
+msgstr "Увећај"
+
+#: ../baobab/src/baobab.c:973
+msgid "Zoom out"
+msgstr "Умањи"
+
+#: ../baobab/src/baobab.c:977
+msgid "Save screenshot"
+msgstr "Сачувај снимак екрана"
+
+#: ../baobab/src/baobab.c:1114
+msgid "View as Rings Chart"
+msgstr "Прикажи као прстене"
+
+#: ../baobab/src/baobab.c:1116
+msgid "View as Treemap Chart"
+msgstr "Прикажи као стабло"
+
+#: ../baobab/src/baobab.c:1214
+msgid "Show version"
+msgstr "Прикажи издање"
+
+#: ../baobab/src/baobab.c:1215
+msgid "[DIRECTORY]"
+msgstr "[ДИРЕКТОРИЈУМ]"
+
+#: ../baobab/src/baobab.c:1245
+msgid "Too many arguments. Only one directory can be specified."
+msgstr "Има превише аргумената. Можете одредити само један директоријум."
+
+#: ../baobab/src/baobab.c:1262
+msgid "Could not detect any mount point."
+msgstr "Не могу да одредим место качења."
+
+#: ../baobab/src/baobab.c:1264
+msgid "Without mount points disk usage cannot be analyzed."
+msgstr "Без места качења, заузеће простора на диску не може бити анализирано."
+
+#: ../baobab/src/baobab-chart.c:206
+msgid "Maximum depth"
+msgstr "Максимална дубина"
+
+#: ../baobab/src/baobab-chart.c:207
+msgid "The maximum depth drawn in the chart from the root"
+msgstr "Максимална дубина која се исцртава у графикону почев од корена"
+
+#: ../baobab/src/baobab-chart.c:216
+msgid "Chart model"
+msgstr "Модел графикона"
+
+#: ../baobab/src/baobab-chart.c:217
+msgid "Set the model of the chart"
+msgstr "Постави модел графикона"
+
+#: ../baobab/src/baobab-chart.c:224
+msgid "Chart root node"
+msgstr "Коренски чвор графикона"
+
+#: ../baobab/src/baobab-chart.c:225
+msgid "Set the root node from the model"
+msgstr "Поставити чвор root-а из модела"
+
+#: ../baobab/src/baobab-chart.c:1710
+msgid "Cannot create pixbuf image!"
+msgstr "Не могу да направим pixbuf слику!"
+
+#. Popup the File chooser dialog
+#: ../baobab/src/baobab-chart.c:1720
+msgid "Save Snapshot"
+msgstr "Сачувај слику екрана"
+
+#: ../baobab/src/baobab-chart.c:1749
+msgid "_Image type:"
+msgstr "Тип слике:"
+
+#: ../baobab/src/baobab-prefs.c:184
+msgid "Scan"
+msgstr "Брз преглед"
+
+#: ../baobab/src/baobab-prefs.c:191
+msgid "Device"
+msgstr "Уређај"
+
+#: ../baobab/src/baobab-prefs.c:199
+msgid "Mount Point"
+msgstr "Место прикључивања уређаја"
+
+#: ../baobab/src/baobab-prefs.c:207
+msgid "Filesystem Type"
+msgstr "Тип система датотека"
+
+#: ../baobab/src/baobab-prefs.c:215
+msgid "Total Size"
+msgstr "Укупна величина"
+
+#: ../baobab/src/baobab-prefs.c:224
+msgid "Available"
+msgstr "Доступно"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:77
+#, c-format
+msgid "Cannot scan location \"%s\""
+msgstr "Не могу да очитам локацију „%s“"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:175
+msgid "Custom Location"
+msgstr "Прилагођено смештање"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:177
+msgid "SSH"
+msgstr "SSH"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:180
+msgid "Public FTP"
+msgstr "Јавни FTP"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:182
+msgid "FTP (with login)"
+msgstr "FTP (са пријавом)"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:185
+msgid "Windows share"
+msgstr "Windows-ове дељене омотнице"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:187
+msgid "WebDAV (HTTP)"
+msgstr "WebDAV (HTTP)"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:189
+msgid "Secure WebDAV (HTTPS)"
+msgstr "Безбедни WebDAV (HTTPS)"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:249
+msgid "Cannot Connect to Server. You must enter a name for the server."
+msgstr "Не могу да се повежем на сервер: морате унети име сервера."
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:252
+msgid "Please enter a name and try again."
+msgstr "Унесите име и пробајте опет."
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:441
+msgid "_Location (URI):"
+msgstr "Положај (URI):"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:463
+msgid "_Server:"
+msgstr "_Сервер:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:482
+msgid "Optional information:"
+msgstr "Додатне информације:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:494
+msgid "_Share:"
+msgstr "_Део:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:515
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:4
+msgid "_Port:"
+msgstr "_Порт:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:535
+msgid "_Folder:"
+msgstr "_Директоријум:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:555
+msgid "_User Name:"
+msgstr "_Корисничко име:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:576
+msgid "_Domain Name:"
+msgstr "Име _домена:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:643
+msgid "Connect to Server"
+msgstr "Повежи се на сервер"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:660
+msgid "Service _type:"
+msgstr "_Тип сервиса:"
+
+#: ../baobab/src/baobab-remote-connect-dialog.c:779
+msgid "_Scan"
+msgstr "_Брз преглед"
+
+#: ../baobab/src/baobab-treeview.c:82
+msgid "Rescan your home folder?"
+msgstr "Да поново претражим Ваш кориснички директоријум?"
+
+#: ../baobab/src/baobab-treeview.c:83
+msgid ""
+"The content of your home folder has changed. Select rescan to update the "
+"disk usage details."
+msgstr "Променио се садржај вашег корисничког директоријума. Изаберите поновни преглед да бисте ажурирали дераље искоришћености диска."
+
+#: ../baobab/src/baobab-treeview.c:84
+msgid "_Rescan"
+msgstr "_Поново претражи"
+
+#: ../baobab/src/baobab-treeview.c:222 ../gsearchtool/gsearchtool.c:2406
+msgid "Folder"
+msgstr "Фасцикла"
+
+#: ../baobab/src/baobab-treeview.c:244
+msgid "Usage"
+msgstr "Употреба"
+
+#: ../baobab/src/baobab-treeview.c:258 ../gsearchtool/gsearchtool.c:2419
+msgid "Size"
+msgstr "Величина"
+
+#: ../baobab/src/baobab-treeview.c:274
+msgid "Contents"
+msgstr "Садржај"
+
+#: ../baobab/src/baobab-utils.c:106
+msgid "Select Folder"
+msgstr "Одаберите директоријум"
+
+#. add extra widget
+#: ../baobab/src/baobab-utils.c:118
+msgid "_Show hidden folders"
+msgstr "_Прикажи скривене директоријуме"
+
+#: ../baobab/src/baobab-utils.c:297
+msgid "Cannot check an excluded folder!"
+msgstr "Не могу да проверим искључену фасциклу!"
+
+#: ../baobab/src/baobab-utils.c:321
+#, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "\"%s\"  није директоријум"
+
+#: ../baobab/src/baobab-utils.c:324
+msgid "Could not analyze disk usage."
+msgstr "Нисам могао да изанализирам искоришћеност диска."
+
+#: ../baobab/src/baobab-utils.c:364
+msgid "_Open Folder"
+msgstr "_Отвори директоријум"
+
+#: ../baobab/src/baobab-utils.c:370
+#: ../gsearchtool/gsearchtool-callbacks.c:1203
+msgid "Mo_ve to Trash"
+msgstr "Ба_ци у смеће"
+
+#: ../baobab/src/baobab-utils.c:404
+#, c-format
+msgid "Could not open folder \"%s\""
+msgstr "Не могу да отворим директоријум „%s“"
+
+#: ../baobab/src/baobab-utils.c:407
+msgid "There is no installed viewer capable of displaying the folder."
+msgstr "Ни један прегледач није инсталиран"
+
+#: ../baobab/src/baobab-utils.c:476
+#, c-format
+msgid "Could not move \"%s\" to the Trash"
+msgstr "Нисам могао да преместим \"%s\" у ђубре."
+
+#: ../baobab/src/baobab-utils.c:484
+msgid "Could not move file to the Trash"
+msgstr "Не могу да преместим у смеће"
+
+#: ../baobab/src/baobab-utils.c:486
+#, c-format
+msgid "Details: %s"
+msgstr "Детаљи: %s"
+
+#: ../baobab/src/baobab-utils.c:533
+msgid "There was an error displaying help."
+msgstr "Дошло је до грешке при приказивању помоћи."
+
+#: ../baobab/src/callbacks.c:77 ../logview/logview-about.h:49
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr "Овај програм је слободан; можете га расподељивати и/или мењати под условима ГНУ Опште Јавне Лиценце (GNU GPL) како је објављује Задужбина за Слободни Софтвер (FSF); било верзије 2 те Лиценце, било (по вашем нахођењу) било које новије верзије."
+
+#: ../baobab/src/callbacks.c:82 ../logview/logview-about.h:53
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr "Овај програм се расподељује у нади да ће бити од користи, али БЕЗ ИКАКВИХ ГАРАНЦИЈА; чак и без подразумеване гаранције КОРИСНОСТИ или ПРИЛАГОЂЕНОСТИ ОДРЕЂЕНОЈ НАМЕНИ.  Видите ГНУ Општу Јавну Лиценцу за више детаља."
+
+#: ../baobab/src/callbacks.c:87 ../logview/logview-about.h:57
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr "Требали сте да добијете примерак ГНУ Опште Јавне Лиценце уз програм; ако нисте, пишите Задужбини за Слободни Софтвер (Free Software Foundation, Inc.), 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA"
+
+#: ../baobab/src/callbacks.c:98
+msgid "Baobab"
+msgstr "Баобаб"
+
+#: ../baobab/src/callbacks.c:99
+msgid "A graphical tool to analyze disk usage."
+msgstr "Графилка алатка за анализу искоришености диска."
+
+#. translator credits
+#: ../baobab/src/callbacks.c:105 ../mate-dictionary/src/gdict-about.c:55
+#: ../logview/logview-about.h:63
+msgid "translator-credits"
+msgstr "Марко Ускоковић <uskokovic@etf.bg.ac.yu>\nСаша Марић <Sasha_Maric@yahoo.com>\nДанило Шеган <danilo@prevod.org>\nСлободан Д. Средојевић <slobo@akrep.be>\n\nPrevod.org — превод на српски језик."
+
+#: ../baobab/src/callbacks.c:203 ../gsearchtool/gsearchtool-callbacks.c:504
+#: ../gsearchtool/gsearchtool-callbacks.c:843
+msgid "The document does not exist."
+msgstr "Документ не постоји."
+
+#: ../baobab/src/callbacks.c:314
+msgid "The folder does not exist."
+msgstr "Не постоји директоријум."
+
+#: ../mate-dictionary/data/default.desktop.in.h:1
+msgid "Default Dictionary Server"
+msgstr "Подразумевани сервер речника"
+
+#: ../mate-dictionary/data/MATE_DictionaryApplet.server.in.in.h:1
+msgid "Dictionary Look up"
+msgstr "Претрага речника"
+
+#: ../mate-dictionary/data/MATE_DictionaryApplet.server.in.in.h:2
+msgid "Look up words in a dictionary"
+msgstr "Претрага речи у речнику"
+
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:1
+msgid "_Look Up Selected Text"
+msgstr "_Пронађи одабрани текст..."
+
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:2
+msgid "Cl_ear"
+msgstr "Очи_сти"
+
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:3
+msgid "_Print"
+msgstr "_Штампај"
+
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:4
+msgid "_Save"
+msgstr "_Сачувај"
+
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:5
+#: ../mate-dictionary/src/gdict-window.c:1205
+msgid "_Preferences"
+msgstr "По_ставке"
+
+#: ../mate-dictionary/data/MATE_DictionaryApplet.xml.h:7
+#: ../mate-dictionary/src/gdict-window.c:1231 ../logview/logview-window.c:839
+msgid "_About"
+msgstr "_О програму"
+
+#: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:1
+#: ../mate-dictionary/src/gdict-about.c:78
+#: ../mate-dictionary/src/gdict-app.c:385
+#: ../mate-dictionary/src/gdict-window.c:605
+#: ../mate-dictionary/src/gdict-window.c:1947
+msgid "Dictionary"
+msgstr "Речник"
+
+#: ../mate-dictionary/data/mate-dictionary.desktop.in.in.h:2
+msgid "Check word definitions and spellings in an online dictionary"
+msgstr "Проверите значење речи и спеловање у речнику на интернету"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:1
+msgid "Dictionary server (Deprecated)"
+msgstr "Сервер речника (напуштено)"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:2
+msgid ""
+"The dictionary server to connect to. The default server is dict.org. See "
+"http://www.dict.org for details on other servers. This key is deprecated and"
+" no longer in use."
+msgstr "Сервер речника на који се повезујем. Подразумевани сервер је dict.org. Видети http://www.dict.org за податке о осталим серверима. Овај кључ је напуштен и више се не користи."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:3
+msgid "Port used to connect to server (Deprecated)"
+msgstr "Порт који се користи за повезивање на сервер (напуштено)"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:4
+msgid ""
+"The port number to connect to. The default port is 2628. This key is "
+"deprecated and no longer in use."
+msgstr "Број порта на који се повезује. Подразумевани порт је 2628. Овај кључ је напуштен и више се не користи."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:5
+msgid "Use smart lookup (Deprecated)"
+msgstr "Користи паметну претрагу (напуштено)"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:6
+msgid ""
+"Specify whether to use smart lookup. This key is dependant on whether the "
+"dictionary server supports this option. The default is TRUE. This key is "
+"deprecated and no longer in use."
+msgstr "Одредите да ли се користи паметна претрага. Овај кључ зависи од тога да ли сервер речника подржава ову опцију. Подразумевано је укључено. Овај кључ је напуштен и више се не користи."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:7
+msgid "The default database to use"
+msgstr "Подразумевана база података која се користи"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:8
+msgid ""
+"The name of the default individual database or meta-database to use on a "
+"dictionary source. An exclamation mark (\"!\") means that all the databases "
+"present in a dictionary source should be searched"
+msgstr "Име појединачне или мета базе података која се користи на серверу речника.  Узвичник „!“ означава да би требало претражити све базе података садржане у извору речи."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:9
+msgid "The default search strategy to use"
+msgstr "Који начин претраге се користи"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:10
+msgid ""
+"The name of the default search strategy to use on a dictionary source, if "
+"available. The default strategy is 'exact', that is match exact words."
+msgstr "Име подразумеване стратегије претраге која се користи на неком извору речи, уколико је стратегија доступна. Подразумевана вредност је „пуна реч“, која значи да се тражи потпуно подударање речи."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:11
+msgid "The font to be used when printing"
+msgstr "Словни лик намењен за штампу"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:12
+msgid "The font to be used when printing a definition."
+msgstr "Словни лик намењен за штампу дефининиција."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:13
+msgid "The name of the dictionary source used"
+msgstr "Име за извор речи који се користи"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:14
+msgid ""
+"The name of the dictionary source used to retrieve the definitions of words."
+msgstr "Име извора речи које се користи за претраживање дефиниција речи."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:15
+msgid "The default width of the application window"
+msgstr "Подразумевана ширина програмског прозора"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:16
+msgid ""
+"This key defines the window width and it's used to remember the size of the "
+"dictionary window across sessions. Setting it to -1 will make the dictionary"
+" window use a width based on the font size."
+msgstr "Овај кључ одређује ширину прозора и користи се за памћење величине прозора речника између сесија. Постављањем вредности на „-1“ значи да ће прозор  речника користити ширину коју намеће величина словног лика."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:17
+msgid "The default height of the application window"
+msgstr "Подразумевана висина програмског прозора"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:18
+msgid ""
+"This key defines the window height and it's used to remember the size of the"
+" dictionary window across sessions. Setting it to -1 will make the "
+"dictionary window use a height based on the font size."
+msgstr "Овај кључ одређује висину прозора и користи се за памћење величине прозора речника између сесија. Постављањем вредности на „-1“ значи да ће прозор  речника користити висину коју намеће величина словног лика."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:19
+msgid "Whether the application window should be maximized"
+msgstr "Да ли прозор програма треба да буде приказан увећано"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:20
+msgid ""
+"This key defines whether the window should be maximized and it's used to "
+"remember the state of the dictionary window across sessions. Setting it to "
+"TRUE will make the window always appear as maximized."
+msgstr "Овај кључ одређује да ли прозор треба приказати увећано и користи се за памћење стања прозора речника између сесија. Постављањем вредности на „Тачно“ значи да ће прозор увек бити приказан увећан."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:21
+msgid "Whether the sidebar should be visible"
+msgstr "Да ли палета са стране да буде видљива"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:22
+msgid ""
+"This key defines whether the sidebar should be visible and it's used to "
+"remember the state of the sidebar across sessions. Setting it to TRUE will "
+"make the sidebar always be displayed."
+msgstr "Ово поље одређује која страна палете са стране треба да буде приказана и памти подешавање кроз сесије. Штиклирањем ИСТИНИТО палета са стране ће увек бити приказана."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:23
+msgid "Whether the statusbar should be visible"
+msgstr "Да ли статусни бар треба да буде видљив"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:24
+msgid ""
+"This key defines whether the statusbar should be visible and it's used to "
+"remember the state of the statusbar across sessions. Setting it to TRUE will"
+" make the statusbar always be displayed."
+msgstr "Ово поље одлучује да ли статусни бар треба да буде видљив и памти свој положај кроз сесије. Ако подесите на ИСТИНИТО, статусни бар ће увек бити видљив."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:25
+msgid "The page of the sidebar to show"
+msgstr "Страна која ће бити приказана у палети са стране"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:26
+msgid ""
+"This key defines which page of the sidebar should be displayed and it's used"
+" to remember the setting across sessions.. It can be \"speller\" or "
+"\"databases\"."
+msgstr "Ово поље одређује која страница палете са стране треба да буде приказана и да памти подешавање кроз сесије. Може бити \"speller\" или \"databases\"."
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:27
+msgid "The width of the sidebar"
+msgstr "Ширина палете са стране"
+
+#: ../mate-dictionary/data/mate-dictionary.schemas.in.h:28
+msgid ""
+"This key defines the width of the sidebar and it's used to remember the "
+"setting across sessions."
+msgstr "Ово поље одређује која страна палете са стране треба да буде приказана и памти подешавање кроз сесије. "
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:1
+msgid "_Select a dictionary source for looking up words:"
+msgstr "_Изаберите један извор речи за претрагу речи:"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:2
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:6
+msgid "Source"
+msgstr "Извор речи"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:3
+msgid "_Print font:"
+msgstr "_Словни лик за штампу:"
+
+#: ../mate-dictionary/data/mate-dictionary-preferences.ui.h:4
+msgid "Print"
+msgstr "Штампај"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:1
+msgid "_Description:"
+msgstr "_Опис:"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:2
+msgid "_Transport:"
+msgstr "Преносни _механизам:"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:3
+msgid "H_ostname:"
+msgstr "И_ме рачунара:"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:5
+msgid "Source Name"
+msgstr "Име извора речи"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:7
+msgid "Dictionaries"
+msgstr "Речници"
+
+#: ../mate-dictionary/data/mate-dictionary-source.ui.h:8
+msgid "Strategies"
+msgstr "Планови"
+
+#: ../mate-dictionary/data/spanish.desktop.in.h:1
+msgid "Spanish Dictionaries"
+msgstr "Шпански речници"
+
+#: ../mate-dictionary/data/thai.desktop.in.h:1
+msgid "Longdo Thai-English Dictionaries"
+msgstr "Longdo Thai - енглески речници"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:283
+msgid "Client Name"
+msgstr "Име рачунара-корисника"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:284
+msgid "The name of the client of the context object"
+msgstr "Име рачунара-корисника контекст објекта"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:297
+msgid "Hostname"
+msgstr "Име рачунара"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:298
+msgid "The hostname of the dictionary server to connect to"
+msgstr "Име рачунара сервера речника на који се повезујем"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:311
+msgid "Port"
+msgstr "Порт"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:312
+msgid "The port of the dictionary server to connect to"
+msgstr "Порт сервера речника на који се повезујем"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:327
+msgid "Status"
+msgstr "Стање"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:328
+msgid "The status code as returned by the dictionary server"
+msgstr "Повратна вредност коју враћа сервер речника"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:777
+#, c-format
+msgid "No connection to the dictionary server at '%s:%d'"
+msgstr "Није успостављена веза са сервером речника „%s:%d“"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1060
+#, c-format
+msgid "Lookup failed for hostname '%s': no suitable resources found"
+msgstr "Није успела претрага рачунара „%s“: није пронађен подесан ресурс"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1091
+#, c-format
+msgid "Lookup failed for host '%s': %s"
+msgstr "Није успела претрага за рачунар „%s“: %s"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1125
+#, c-format
+msgid "Lookup failed for host '%s': host not found"
+msgstr "Претрага за рачунар „%s“ није успела: рачунар није пронађен"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1177
+#, c-format
+msgid ""
+"Unable to connect to the dictionary server at '%s:%d'. The server replied "
+"with code %d (server down)"
+msgstr "Не могу да се повежем на сервер речника „%s:%d“. Одговор сервера је код %d (сервер је оборен)"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1196
+#, c-format
+msgid ""
+"Unable to parse the dictionary server reply\n"
+": '%s'"
+msgstr "Не могу да рашчланим одговор сервера речника\n: „%s“"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1225
+#, c-format
+msgid "No definitions found for '%s'"
+msgstr "Није пронађена ниједна дефиниција за „%s“"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1240
+#, c-format
+msgid "Invalid database '%s'"
+msgstr "Неисправна база података „%s“"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1255
+#, c-format
+msgid "Invalid strategy '%s'"
+msgstr "Неисправна стратегија „%s“"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1270
+#, c-format
+msgid "Bad command '%s'"
+msgstr "Лоша наредба „%s“"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1285
+#, c-format
+msgid "Bad parameters for command '%s'"
+msgstr "Лоши параметри за наредбу „%s“"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1300
+#, c-format
+msgid "No databases found on dictionary server at '%s'"
+msgstr "Није пронађена ниједна база података на серверу речника „%s“"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1315
+#, c-format
+msgid "No strategies found on dictionary server at '%s'"
+msgstr "Није пронађена ниједна стратегија на серверу речника „%s“"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1748
+#, c-format
+msgid "Connection failed to the dictionary server at %s:%d"
+msgstr "Није успело повезивање на сервер речника %s:%d"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1787
+#, c-format
+msgid ""
+"Error while reading reply from server:\n"
+"%s"
+msgstr "Грешка приликом читања одговора са сервера:\n%s"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1860
+#, c-format
+msgid "Connection timeout for the dictionary server at '%s:%d'"
+msgstr "Истекло је време за сервер речника на '%s:%d'"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1894
+#, c-format
+msgid "No hostname defined for the dictionary server"
+msgstr "Није наведено име рачунара за сервер речника"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1930
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1945
+#, c-format
+msgid "Unable to create socket"
+msgstr "Не могу да направим мрежну утичницу"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1971
+#, c-format
+msgid "Unable to set the channel as non-blocking: %s"
+msgstr "Не могу да поставим канал као не блокирајући: %s"
+
+#: ../mate-dictionary/libgdict/gdict-client-context.c:1986
+#, c-format
+msgid "Unable to connect to the dictionary server at '%s:%d'"
+msgstr "Не могу да се повежем на сервер речника „%s:%d“"
+
+#: ../mate-dictionary/libgdict/gdict-context.c:218
+msgid "Local Only"
+msgstr "Само локално"
+
+#: ../mate-dictionary/libgdict/gdict-context.c:219
+msgid "Whether the context uses only local dictionaries or not"
+msgstr "Да ли се за контекст користе само локални речници или не"
+
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:382
+msgid "Reload the list of available databases"
+msgstr "Понови учитај списак доступних база података"
+
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:394
+msgid "Clear the list of available databases"
+msgstr "Испразни списак доступних база података"
+
+#: ../mate-dictionary/libgdict/gdict-database-chooser.c:841
+#: ../mate-dictionary/libgdict/gdict-speller.c:779
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:789
+msgid "Error while matching"
+msgstr "Грешка се догодила приликом упраривања"
+
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1143
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1237
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1271
+#: ../logview/logview-window.c:485
+msgid "Not found"
+msgstr "Није пронађено"
+
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1332
+msgid "F_ind:"
+msgstr "На_ђи:"
+
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1345
+msgid "_Previous"
+msgstr "Прет_ходни"
+
+#: ../mate-dictionary/libgdict/gdict-defbox.c:1353
+msgid "_Next"
+msgstr "Сле_дећи"
+
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2528
+msgid "Error while looking up definition"
+msgstr "Грешка приликом претраге дефиниције"
+
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2570
+#: ../mate-dictionary/libgdict/gdict-speller.c:737
+msgid "Another search is in progress"
+msgstr "Још једна претрага је у току"
+
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2571
+#: ../mate-dictionary/libgdict/gdict-speller.c:738
+msgid "Please wait until the current search ends."
+msgstr "Молим сачекајте док се не обави текућа претрага."
+
+#: ../mate-dictionary/libgdict/gdict-defbox.c:2610
+msgid "Error while retrieving the definition"
+msgstr "Грешка приликом преузимања дефиниције"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:232
+msgid "Filename"
+msgstr "Датотека"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:233
+msgid "The filename used by this dictionary source"
+msgstr "Датотека коју користи овај извор речи"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:246
+#: ../gsearchtool/gsearchtool.c:2382
+msgid "Name"
+msgstr "Име"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:247
+msgid "The display name of this dictonary source"
+msgstr "Име које се приказује за овај извор речи"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:260
+msgid "Description"
+msgstr "Опис"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:261
+msgid "The description of this dictionary source"
+msgstr "Опис овог извора речи"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:274
+#: ../mate-dictionary/libgdict/gdict-speller.c:384
+msgid "Database"
+msgstr "База података"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:275
+msgid "The default database of this dictonary source"
+msgstr "Подразумевана база података овог извора речи"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:288
+#: ../mate-dictionary/libgdict/gdict-speller.c:391
+msgid "Strategy"
+msgstr "Стратегија:"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:289
+msgid "The default strategy of this dictonary source"
+msgstr "Подразумевана стратегија овог извора речи"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:302
+msgid "Transport"
+msgstr "Преносни механизам"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:303
+msgid "The transport mechanism used by this dictionary source"
+msgstr "Преносни механизам који се користи за овај извор речи"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:317
+#: ../mate-dictionary/libgdict/gdict-speller.c:377
+msgid "Context"
+msgstr "Садржај"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:318
+msgid "The GdictContext bound to this source"
+msgstr "GdictContext привезан на овај извор"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:413
+#, c-format
+msgid "Invalid transport type '%d'"
+msgstr "Неисправан начин преноса „%d“"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:441
+#, c-format
+msgid "No '%s' group found inside the dictionary source definition"
+msgstr "Није пронађена група „%s“ унутар дефиниције извора речи"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:457
+#: ../mate-dictionary/libgdict/gdict-source.c:481
+#: ../mate-dictionary/libgdict/gdict-source.c:505
+#: ../mate-dictionary/libgdict/gdict-source.c:530
+#, c-format
+msgid "Unable to get the '%s' key inside the dictionary source definition: %s"
+msgstr "Не могу да добијем кључ „%s“ унутар дефиниције извора речи: %s"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:555
+#, c-format
+msgid ""
+"Unable to get the '%s' key inside the dictionary source definition file: %s"
+msgstr "Не могу да добијем кључ „%s“ унутар датотеке дефиниције извора речи: %s"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:741
+#, c-format
+msgid "Dictionary source does not have name"
+msgstr "Извор речи нема име"
+
+#: ../mate-dictionary/libgdict/gdict-source.c:750
+#, c-format
+msgid "Dictionary source '%s' has invalid transport '%s'"
+msgstr "Извор речи „%s“ има неисправан механизам преноса „%s“"
+
+#: ../mate-dictionary/libgdict/gdict-source-chooser.c:299
+msgid "Reload the list of available sources"
+msgstr "Поново учитај списак доступних извора"
+
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:171
+msgid "Paths"
+msgstr "Путање"
+
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:172
+msgid "Search paths used by this object"
+msgstr "Путање за претрагу које користи овај објекат"
+
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:184
+msgid "Sources"
+msgstr "Извори"
+
+#: ../mate-dictionary/libgdict/gdict-source-loader.c:185
+msgid "Dictionary sources found"
+msgstr "Пронађени су извори речника"
+
+#: ../mate-dictionary/libgdict/gdict-speller.c:354
+msgid "Clear the list of similar words"
+msgstr "Испразни списак сличних речи"
+
+#: ../mate-dictionary/libgdict/gdict-speller.c:378
+msgid "The GdictContext object used to get the word definition"
+msgstr "GdictContext објекат који се користи за добијање дефиниције речи"
+
+#: ../mate-dictionary/libgdict/gdict-speller.c:385
+msgid "The database used to query the GdictContext"
+msgstr "База података која се користи за GdictContext упит"
+
+#: ../mate-dictionary/libgdict/gdict-speller.c:392
+msgid "The strategy used to query the GdictContext"
+msgstr "План је искоришћен за упит GdictContext-у"
+
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:365
+msgid "Reload the list of available strategies"
+msgstr "Поново учитај списак доступних планова"
+
+#: ../mate-dictionary/libgdict/gdict-strategy-chooser.c:377
+msgid "Clear the list of available strategies"
+msgstr "Испразни списак доступних планова"
+
+#: ../mate-dictionary/libgdict/gdict-utils.c:97
+msgid "GDict debugging flags to set"
+msgstr "Заставице за отклањање грешака у речнику за укључивање"
+
+#: ../mate-dictionary/libgdict/gdict-utils.c:97
+#: ../mate-dictionary/libgdict/gdict-utils.c:99
+msgid "FLAGS"
+msgstr "ЗАСТАВИЦЕ"
+
+#: ../mate-dictionary/libgdict/gdict-utils.c:99
+msgid "GDict debugging flags to unset"
+msgstr "Заставице за отклањање грешака у речнику за искључивање"
+
+#: ../mate-dictionary/libgdict/gdict-utils.c:157
+msgid "GDict Options"
+msgstr "Опције речника"
+
+#: ../mate-dictionary/libgdict/gdict-utils.c:158
+msgid "Show GDict Options"
+msgstr "Прикажи додатне опције речника"
+
+#: ../mate-dictionary/src/gdict-about.c:57
+#: ../mate-dictionary/src/gdict-applet.c:591
+msgid "Look up words in dictionaries"
+msgstr "Пронађи речи у речницима"
+
+#. Translators: the first is the word found, the second is the
+#. * database name and the last is the definition's text; please
+#. * keep the new lines.
+#: ../mate-dictionary/src/gdict-app.c:217
+#, c-format
+msgid ""
+"Definition for '%s'\n"
+"  From '%s':\n"
+"\n"
+"%s\n"
+msgstr "Дефиниција за реч %s\n  из речника %s:\n\n%s\n"
+
+#: ../mate-dictionary/src/gdict-app.c:231
+#, c-format
+msgid "Error: %s\n"
+msgstr "Грешка: %s\n"
+
+#: ../mate-dictionary/src/gdict-app.c:257
+#, c-format
+msgid "See mate-dictionary --help for usage\n"
+msgstr "За употребу погледати mate-dictionary --help\n"
+
+#: ../mate-dictionary/src/gdict-app.c:270
+msgid "Unable to find a suitable dictionary source"
+msgstr "Не могу да пронађем подесан извор речи"
+
+#: ../mate-dictionary/src/gdict-app.c:304
+#, c-format
+msgid ""
+"Error while looking up the definition of \"%s\":\n"
+"%s"
+msgstr "Грешка при претрази дефиниције за „%s“:\n%s"
+
+#: ../mate-dictionary/src/gdict-app.c:337
+#: ../mate-dictionary/src/gdict-app.c:351
+msgid "Words to look up"
+msgstr "Речи које тражите"
+
+#: ../mate-dictionary/src/gdict-app.c:337
+#: ../mate-dictionary/src/gdict-app.c:339
+#: ../mate-dictionary/src/gdict-app.c:351
+msgid "word"
+msgstr "реч"
+
+#: ../mate-dictionary/src/gdict-app.c:339
+msgid "Words to match"
+msgstr "Речи за упаривање"
+
+#: ../mate-dictionary/src/gdict-app.c:341
+msgid "Dictionary source to use"
+msgstr "Извор речи који се користи"
+
+#: ../mate-dictionary/src/gdict-app.c:341
+msgid "source"
+msgstr "извор"
+
+#: ../mate-dictionary/src/gdict-app.c:343
+msgid "Show available dictionary sources"
+msgstr "Прикажи доступне изворе речи"
+
+#: ../mate-dictionary/src/gdict-app.c:345
+msgid "Print result to the console"
+msgstr "Одштампај резултат у конзоли"
+
+#: ../mate-dictionary/src/gdict-app.c:347
+msgid "Database to use"
+msgstr "База података која се користи"
+
+#: ../mate-dictionary/src/gdict-app.c:347
+msgid "db"
+msgstr "база података"
+
+#: ../mate-dictionary/src/gdict-app.c:349
+msgid "Strategy to use"
+msgstr "План који ћете користити"
+
+#: ../mate-dictionary/src/gdict-app.c:349
+msgid "strat"
+msgstr "слој"
+
+#. create the new option context
+#: ../mate-dictionary/src/gdict-app.c:367
+msgid " - Look up words in dictionaries"
+msgstr " - Претрага речи у речницима"
+
+#: ../mate-dictionary/src/gdict-applet.c:206
+#: ../mate-dictionary/src/gdict-window.c:834
+msgid "Save a Copy"
+msgstr "Сачувај један примерак"
+
+#: ../mate-dictionary/src/gdict-applet.c:216
+#: ../mate-dictionary/src/gdict-window.c:844
+msgid "Untitled document"
+msgstr "Неименован документ"
+
+#: ../mate-dictionary/src/gdict-applet.c:237
+#: ../mate-dictionary/src/gdict-window.c:865
+#, c-format
+msgid "Error while writing to '%s'"
+msgstr "Грешка приликом уписа на „%s“"
+
+#: ../mate-dictionary/src/gdict-applet.c:362
+msgid "Clear the definitions found"
+msgstr "Очисти пронађене дефиниције"
+
+#: ../mate-dictionary/src/gdict-applet.c:364
+msgid "Clear definition"
+msgstr "Очисти дефиницију"
+
+#: ../mate-dictionary/src/gdict-applet.c:365
+msgid "Clear the text of the definition"
+msgstr "Очисти текст дефиниције"
+
+#: ../mate-dictionary/src/gdict-applet.c:372
+msgid "Print the definitions found"
+msgstr "Одштампај пронађене дефиниције"
+
+#: ../mate-dictionary/src/gdict-applet.c:374
+msgid "Print definition"
+msgstr "Штампај дефиницију речи"
+
+#: ../mate-dictionary/src/gdict-applet.c:375
+msgid "Print the text of the definition"
+msgstr "Штампај текст текуће дефиниције"
+
+#: ../mate-dictionary/src/gdict-applet.c:382
+msgid "Save the definitions found"
+msgstr "Сачувај пронађене дефиниције"
+
+#: ../mate-dictionary/src/gdict-applet.c:384
+msgid "Save definition"
+msgstr "Сачувај дефиницију речи"
+
+#: ../mate-dictionary/src/gdict-applet.c:385
+msgid "Save the text of the definition to a file"
+msgstr "Сачувај текст дефиниције речи у неку датотеку"
+
+#: ../mate-dictionary/src/gdict-applet.c:533
+msgid "Click to view the dictionary window"
+msgstr "Притисните да видите прозор речника"
+
+#: ../mate-dictionary/src/gdict-applet.c:535
+msgid "Toggle dictionary window"
+msgstr "Пали/гаси прозор речника"
+
+#: ../mate-dictionary/src/gdict-applet.c:536
+msgid "Show or hide the definition window"
+msgstr "Прикажи или сакриј прозор са дефиницијама"
+
+#: ../mate-dictionary/src/gdict-applet.c:588
+msgid "Type the word you want to look up"
+msgstr "Укуцајте ону реч коју тражите"
+
+#: ../mate-dictionary/src/gdict-applet.c:590
+msgid "Dictionary entry"
+msgstr "Унос у речнику"
+
+#: ../mate-dictionary/src/gdict-applet.c:716
+#: ../mate-dictionary/src/gdict-window.c:998
+msgid "Dictionary Preferences"
+msgstr "Поставке речника"
+
+#: ../mate-dictionary/src/gdict-applet.c:742
+#: ../mate-dictionary/src/gdict-pref-dialog.c:503
+#: ../mate-dictionary/src/gdict-source-dialog.c:479
+#: ../mate-dictionary/src/gdict-window.c:1140
+#, c-format
+msgid "There was an error while displaying help"
+msgstr "Дошло је до грешке при приказивању помоћи"
+
+#: ../mate-dictionary/src/gdict-applet.c:896
+#: ../mate-dictionary/src/gdict-window.c:514
+#, c-format
+msgid "No dictionary source available with name '%s'"
+msgstr "Није доступан извор речи по имену „%s“"
+
+#: ../mate-dictionary/src/gdict-applet.c:900
+#: ../mate-dictionary/src/gdict-window.c:518
+msgid "Unable to find dictionary source"
+msgstr "Не могу да пронађем извор речника"
+
+#: ../mate-dictionary/src/gdict-applet.c:916
+#: ../mate-dictionary/src/gdict-window.c:534
+#, c-format
+msgid "No context available for source '%s'"
+msgstr "Није доступан контекст за извор „%s“"
+
+#: ../mate-dictionary/src/gdict-applet.c:920
+#: ../mate-dictionary/src/gdict-window.c:538
+msgid "Unable to create a context"
+msgstr "Не могу да образујем контекст"
+
+#: ../mate-dictionary/src/gdict-applet.c:1172
+#: ../mate-dictionary/src/gdict-window.c:2078
+msgid "Unable to connect to MateConf"
+msgstr "Не могу да се повежем са базом подешавања"
+
+#: ../mate-dictionary/src/gdict-applet.c:1185
+#: ../mate-dictionary/src/gdict-window.c:2091
+msgid "Unable to get notification for preferences"
+msgstr "Не могу добити обавештење за поставке"
+
+#: ../mate-dictionary/src/gdict-applet.c:1199
+#: ../mate-dictionary/src/gdict-window.c:2104
+msgid "Unable to get notification for the document font"
+msgstr "Не могу добити обавештење за словни лик за документа"
+
+#: ../mate-dictionary/src/gdict-common.c:80
+#, c-format
+msgid "Unable to rename file '%s' to '%s': %s"
+msgstr "Не могу да преименујем датотеку „%s“ у „%s“: %s"
+
+#: ../mate-dictionary/src/gdict-common.c:104
+#: ../mate-dictionary/src/gdict-common.c:127
+#, c-format
+msgid "Unable to create the data directory '%s': %s"
+msgstr "Не могу да направим директоријум „%s“ за податке: %s"
+
+#: ../mate-dictionary/src/gdict-pref-dialog.c:244
+msgid "Edit Dictionary Source"
+msgstr "Уреди извор речника"
+
+#: ../mate-dictionary/src/gdict-pref-dialog.c:308
+msgid "Add Dictionary Source"
+msgstr "Додај извор речника"
+
+#: ../mate-dictionary/src/gdict-pref-dialog.c:353
+#, c-format
+msgid "Remove \"%s\"?"
+msgstr "Желите да уклоните „%s“?"
+
+#: ../mate-dictionary/src/gdict-pref-dialog.c:355
+msgid "This will permanently remove the dictionary source from the list."
+msgstr "Ово ће трајно уклонити извор речника са списка."
+
+#: ../mate-dictionary/src/gdict-pref-dialog.c:385
+#, c-format
+msgid "Unable to remove source '%s'"
+msgstr "Не могу да уклоним извор „%s“"
+
+#: ../mate-dictionary/src/gdict-pref-dialog.c:666
+msgid "Add a new dictionary source"
+msgstr "Додај један нови извор речи"
+
+#: ../mate-dictionary/src/gdict-pref-dialog.c:672
+msgid "Remove the currently selected dictionary source"
+msgstr "Уклони тренутно означени извор речника"
+
+#: ../mate-dictionary/src/gdict-pref-dialog.c:685
+msgid "Set the font used for printing the definitions"
+msgstr "Поставите словни лик намењен за штампу дефиниција"
+
+#: ../mate-dictionary/src/gdict-print.c:249
+#: ../mate-dictionary/src/gdict-print.c:313
+#, c-format
+msgid "Unable to display the preview: %s"
+msgstr "Не могу да прикажем преглед: %s"
+
+#: ../mate-dictionary/src/gdict-source-dialog.c:341
+#: ../mate-dictionary/src/gdict-source-dialog.c:434
+msgid "Unable to create a source file"
+msgstr "Не могу да направим изворну датотеку"
+
+#: ../mate-dictionary/src/gdict-source-dialog.c:359
+#: ../mate-dictionary/src/gdict-source-dialog.c:452
+msgid "Unable to save source file"
+msgstr "Не могу да сачувам изворну датотеку"
+
+#: ../mate-dictionary/src/gdict-window.c:315
+#, c-format
+msgid "Searching for '%s'..."
+msgstr "Тражим „%s“..."
+
+#: ../mate-dictionary/src/gdict-window.c:347
+#: ../mate-dictionary/src/gdict-window.c:404
+msgid "No definitions found"
+msgstr "Није пронађена ниједна дефиниција"
+
+#: ../mate-dictionary/src/gdict-window.c:349
+#, c-format
+msgid "A definition found"
+msgid_plural "%d definitions found"
+msgstr[0] "Пронађена је %d дефиниција"
+msgstr[1] "Пронађено је %d дефиниције"
+msgstr[2] "Пронађено је %d дефиниција"
+
+#: ../mate-dictionary/src/gdict-window.c:603
+#, c-format
+msgid "%s - Dictionary"
+msgstr "%s - Речник"
+
+#: ../mate-dictionary/src/gdict-window.c:1175 ../logview/logview-window.c:807
+msgid "_File"
+msgstr "_Датотека"
+
+#: ../mate-dictionary/src/gdict-window.c:1178
+msgid "_Go"
+msgstr "_Иди"
+
+#. File menu
+#: ../mate-dictionary/src/gdict-window.c:1182
+msgid "_New"
+msgstr "_Нова"
+
+#: ../mate-dictionary/src/gdict-window.c:1183
+msgid "New look up"
+msgstr "Нова претрага"
+
+#: ../mate-dictionary/src/gdict-window.c:1184
+msgid "_Save a Copy..."
+msgstr "Сачу_вај примерак..."
+
+#: ../mate-dictionary/src/gdict-window.c:1186
+msgid "P_review..."
+msgstr "_Преглед..."
+
+#: ../mate-dictionary/src/gdict-window.c:1187
+msgid "Preview this document"
+msgstr "Преглед документа"
+
+#: ../mate-dictionary/src/gdict-window.c:1188
+msgid "_Print..."
+msgstr "_Штампај..."
+
+#: ../mate-dictionary/src/gdict-window.c:1189
+msgid "Print this document"
+msgstr "Штампај овај документ"
+
+#: ../mate-dictionary/src/gdict-window.c:1196 ../logview/logview-window.c:822
+msgid "Select _All"
+msgstr "Изабери _све"
+
+#: ../mate-dictionary/src/gdict-window.c:1199
+msgid "Find a word or phrase in the document"
+msgstr "Пронађи реч или фразу у документу"
+
+#: ../mate-dictionary/src/gdict-window.c:1201
+msgid "Find Ne_xt"
+msgstr "Нађи _следеће"
+
+#: ../mate-dictionary/src/gdict-window.c:1203
+msgid "Find Pre_vious"
+msgstr "Тражи прет_ходни"
+
+#. Go menu
+#: ../mate-dictionary/src/gdict-window.c:1209
+msgid "_Previous Definition"
+msgstr "Претхо_дна дефиниција"
+
+#: ../mate-dictionary/src/gdict-window.c:1210
+msgid "Go to the previous definition"
+msgstr "Иди на претходну дефиницију"
+
+#: ../mate-dictionary/src/gdict-window.c:1211
+msgid "_Next Definition"
+msgstr "С_ледећа дефиниција"
+
+#: ../mate-dictionary/src/gdict-window.c:1212
+msgid "Go to the next definition"
+msgstr "Иди на следећу дефиницију"
+
+#: ../mate-dictionary/src/gdict-window.c:1213
+msgid "_First Definition"
+msgstr "_Прва дефиниција"
+
+#: ../mate-dictionary/src/gdict-window.c:1214
+msgid "Go to the first definition"
+msgstr "Иди на прву дефиницију"
+
+#: ../mate-dictionary/src/gdict-window.c:1215
+msgid "_Last Definition"
+msgstr "Пос_ледња дефиниција"
+
+#: ../mate-dictionary/src/gdict-window.c:1216
+msgid "Go to the last definition"
+msgstr "Иди на последњу дефиницију"
+
+#. View menu
+#: ../mate-dictionary/src/gdict-window.c:1219
+msgid "Similar _Words"
+msgstr "Сличне речи"
+
+#: ../mate-dictionary/src/gdict-window.c:1221
+msgid "Dictionary Sources"
+msgstr "Извори речника"
+
+#: ../mate-dictionary/src/gdict-window.c:1223
+msgid "Available _Databases"
+msgstr "Доступне базе података"
+
+#: ../mate-dictionary/src/gdict-window.c:1225
+msgid "Available St_rategies"
+msgstr "Доступне ст_ратегије"
+
+#. View menu
+#: ../mate-dictionary/src/gdict-window.c:1242
+msgid "_Sidebar"
+msgstr "Палета са стране"
+
+#: ../mate-dictionary/src/gdict-window.c:1244
+msgid "S_tatusbar"
+msgstr "Статусни бар"
+
+#: ../mate-dictionary/src/gdict-window.c:1365
+#, c-format
+msgid "Dictionary source `%s' selected"
+msgstr "Извор речи „%s“ је одабран"
+
+#: ../mate-dictionary/src/gdict-window.c:1386
+#, c-format
+msgid "Strategy `%s' selected"
+msgstr "План `%s' је одабран"
+
+#: ../mate-dictionary/src/gdict-window.c:1406
+#, c-format
+msgid "Database `%s' selected"
+msgstr "Одабрана је база података `%s'"
+
+#: ../mate-dictionary/src/gdict-window.c:1426
+#, c-format
+msgid "Word `%s' selected"
+msgstr "Одабрана је реч `%s'"
+
+#. speller
+#: ../mate-dictionary/src/gdict-window.c:1448
+msgid "Double-click on the word to look up"
+msgstr "Двапут кликните на реч коју желите да потражите"
+
+#. strat-chooser
+#: ../mate-dictionary/src/gdict-window.c:1454
+msgid "Double-click on the matching strategy to use"
+msgstr "Двапут кликните на стратегију која се поклапа и желите да је користите"
+
+#. source-chooser
+#: ../mate-dictionary/src/gdict-window.c:1459
+msgid "Double-click on the source to use"
+msgstr "Двапут кликните на извор коју желите да користите"
+
+#. db-chooser
+#: ../mate-dictionary/src/gdict-window.c:1468
+msgid "Double-click on the database to use"
+msgstr "Двапут кликните на базу података коју желите да користите"
+
+#: ../mate-dictionary/src/gdict-window.c:1755
+msgid "Look _up:"
+msgstr "_Пронађи:"
+
+#: ../mate-dictionary/src/gdict-window.c:1829
+msgid "Similar words"
+msgstr "Сличне речи"
+
+#: ../mate-dictionary/src/gdict-window.c:1842
+msgid "Available dictionaries"
+msgstr "Доступни речници"
+
+#: ../mate-dictionary/src/gdict-window.c:1855
+msgid "Available strategies"
+msgstr "Допступне стратегије"
+
+#: ../mate-dictionary/src/gdict-window.c:1866
+msgid "Dictionary sources"
+msgstr "Извори речника"
+
+#: ../mate-screenshot/mate-screenshot.c:133
+msgid "Error loading the help page"
+msgstr "Грешка у учитавању стране са помоћи"
+
+#: ../mate-screenshot/mate-screenshot.c:245
+msgid "None"
+msgstr "Ништа"
+
+#: ../mate-screenshot/mate-screenshot.c:246
+msgid "Drop shadow"
+msgstr "Исцртај сенку"
+
+#: ../mate-screenshot/mate-screenshot.c:247
+msgid "Border"
+msgstr "Ивица"
+
+#. * Include pointer *
+#: ../mate-screenshot/mate-screenshot.c:351
+msgid "Include _pointer"
+msgstr "Укључи _показивач"
+
+#. * Include window border *
+#: ../mate-screenshot/mate-screenshot.c:360
+msgid "Include the window _border"
+msgstr "Укључи _ивицу прозора"
+
+#: ../mate-screenshot/mate-screenshot.c:375
+msgid "Apply _effect:"
+msgstr "Примени _ефекат:"
+
+#: ../mate-screenshot/mate-screenshot.c:437
+msgid "Grab the whole _desktop"
+msgstr "Ухвати целу _радну површину"
+
+#: ../mate-screenshot/mate-screenshot.c:449
+msgid "Grab the current _window"
+msgstr "Ухвати _тренутни прозор"
+
+#: ../mate-screenshot/mate-screenshot.c:461
+msgid "Select _area to grab"
+msgstr "Изабери _област за хватање"
+
+#. translators: this is the first part of the "grab after a
+#. * delay of <spin button> seconds".
+#. 
+#: ../mate-screenshot/mate-screenshot.c:478
+msgid "Grab _after a delay of"
+msgstr "_Ухвати после паузе од"
+
+#. translators: this is the last part of the "grab after a
+#. * delay of <spin button> seconds".
+#. 
+#: ../mate-screenshot/mate-screenshot.c:498
+#: ../mate-screenshot/mate-screenshot.c:1289
+msgid "seconds"
+msgstr "секунде"
+
+#: ../mate-screenshot/mate-screenshot.c:516
+#: ../mate-screenshot/mate-screenshot.c:524
+#: ../mate-screenshot/mate-screenshot.desktop.in.h:1
+msgid "Take Screenshot"
+msgstr "Снимак екрана"
+
+#: ../mate-screenshot/mate-screenshot.c:525
+msgid "Effects"
+msgstr "Ефекти"
+
+#: ../mate-screenshot/mate-screenshot.c:531
+msgid "Take _Screenshot"
+msgstr "Сликај екран"
+
+#: ../mate-screenshot/mate-screenshot.c:657
+msgid "Error while saving screenshot"
+msgstr "Грешка при чувању снимка"
+
+#: ../mate-screenshot/mate-screenshot.c:660
+#, c-format
+msgid ""
+"Impossible to save the screenshot to %s.\n"
+" Error was %s.\n"
+" Please choose another location and retry."
+msgstr "Не могу да сачувам снимак екрана у „%s“.\nГрешка: %s.\nОдаберите друго место и покушајте поново."
+
+#: ../mate-screenshot/mate-screenshot.c:792
+msgid "Screenshot taken"
+msgstr "Снимак је ухваћен"
+
+#: ../mate-screenshot/mate-screenshot.c:846
+msgid "Unable to take a screenshot of the current window"
+msgstr "Нисам могао да сликам тренутни прозор"
+
+#: ../mate-screenshot/mate-screenshot.c:896
+#, c-format
+msgid "Screenshot-%s.png"
+msgstr "снимак-екрана-%s.png"
+
+#. translators: this is the name of the file that gets
+#. * made up with the screenshot if a specific window is
+#. * taken
+#: ../mate-screenshot/mate-screenshot.c:903
+#, c-format
+msgid "Screenshot-%s-%d.png"
+msgstr "снимак-екрана-%s-%d.png"
+
+#. translators: this is the name of the file that gets made up
+#. * with the screenshot if the entire screen is taken
+#: ../mate-screenshot/mate-screenshot.c:913
+#: ../mate-screenshot/screenshot-dialog.c:353
+#: ../mate-screenshot/screenshot-save.c:196
+msgid "Screenshot.png"
+msgstr "снимак-екрана.png"
+
+#. translators: this is the name of the file that gets
+#. * made up with the screenshot if the entire screen is
+#. * taken
+#: ../mate-screenshot/mate-screenshot.c:920
+#, c-format
+msgid "Screenshot-%d.png"
+msgstr "снимак-екрана-%d.png"
+
+#: ../mate-screenshot/mate-screenshot.c:1285
+msgid "Grab a window instead of the entire screen"
+msgstr "Снимите прозор уместо читавог екрана"
+
+#: ../mate-screenshot/mate-screenshot.c:1286
+msgid "Grab an area of the screen instead of the entire screen"
+msgstr "Ухвати област екрана уместо прозор уместо читавог екрана"
+
+#: ../mate-screenshot/mate-screenshot.c:1287
+msgid "Include the window border with the screenshot"
+msgstr "Укључи ивице прозора у снимак екрана"
+
+#: ../mate-screenshot/mate-screenshot.c:1288
+msgid "Remove the window border from the screenshot"
+msgstr "Уклони ивице прозора из снимка екрана"
+
+#: ../mate-screenshot/mate-screenshot.c:1289
+msgid "Take screenshot after specified delay [in seconds]"
+msgstr "Сними екран након наведеног времена (у секундама)"
+
+#: ../mate-screenshot/mate-screenshot.c:1290
+msgid "Effect to add to the border (shadow, border or none)"
+msgstr "Ефекта који се додаје на ивицу (сенка, ивица или ништа)"
+
+#: ../mate-screenshot/mate-screenshot.c:1290
+msgid "effect"
+msgstr "Ефекат ивица"
+
+#: ../mate-screenshot/mate-screenshot.c:1291
+msgid "Interactively set options"
+msgstr "Интерактивно поставља опције"
+
+#: ../mate-screenshot/mate-screenshot.c:1302
+msgid "Take a picture of the screen"
+msgstr "Узмите снимак екрана вашег радног окружења"
+
+#: ../mate-screenshot/mate-screenshot.c:1320
+#, c-format
+msgid ""
+"Conflicting options: --window and --area should not be used at the same "
+"time.\n"
+msgstr "Опције не могу заједно: --window и --area се не могу користити у исто време.\n"
+
+#: ../mate-screenshot/mate-screenshot.desktop.in.h:2
+msgid "Save images of your desktop or individual windows"
+msgstr "Сачувај слике десктопа или појединачних прозора"
+
+#: ../mate-screenshot/mate-screenshot.ui.h:1
+msgid "Save Screenshot"
+msgstr "Сачувај снима екрана"
+
+#: ../mate-screenshot/mate-screenshot.ui.h:2
+msgid "C_opy to Clipboard"
+msgstr "У_множи у оставу"
+
+#: ../mate-screenshot/mate-screenshot.ui.h:3
+#: ../logview/data/logview-filter.ui.h:1
+msgid "_Name:"
+msgstr "_Назив:"
+
+#: ../mate-screenshot/mate-screenshot.ui.h:4
+msgid "Save in _folder:"
+msgstr "Сачувај у _фасцикли:"
+
+#: ../mate-screenshot/mate-screenshot.ui.h:5
+msgid "*"
+msgstr "*"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:1
+msgid "Window-specific screenshot (deprecated)"
+msgstr "Снимак одређеног прозора (превазиђено)"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:2
+msgid ""
+"Grab just the current window, rather than the whole desktop. This key has "
+"been deprecated and it is no longer in use."
+msgstr "Снима само текући прозор уместо целе радне површи. Овај кључ је превазиђен и више се не користи."
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:3
+msgid "Screenshot delay"
+msgstr "Чекање на снимак"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:4
+msgid "The number of seconds to wait before taking the screenshot."
+msgstr "Време до узимања снимка екрана."
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:5
+msgid "Screenshot directory"
+msgstr "Фасцикла за снимке"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:6
+msgid "The directory the last screenshot was saved in."
+msgstr "Фасцикла у коју је стављен последњи узети снимак."
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:7
+msgid "Include Border"
+msgstr "Укључи ивицу"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:8
+msgid "Include the window manager border along with the screenshot"
+msgstr "Укључи ивицу управника прозора у снимак екрана"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:9
+msgid "Include Pointer"
+msgstr "Укључи показивач"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:10
+msgid "Include the pointer in the screenshot"
+msgstr "Укључи показивач у снимак екрана"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:11
+msgid "Border Effect"
+msgstr "Ефекат ивица"
+
+#: ../mate-screenshot/mate-screenshot.schemas.in.h:12
+msgid ""
+"Effect to add to the outside of a border. Possible values are \"shadow\", "
+"\"none\", and \"border\"."
+msgstr "Ефекат који се додаје са спољне стране ивице. Могуће је изабрати \"сенка\", \"ништа\", и \"ивица\"."
+
+#: ../mate-screenshot/screenshot-dialog.c:236
+msgid ""
+"UI definition file for the screenshot program is missing.\n"
+"Please check your installation of mate-utils"
+msgstr "Недостаје датотека са дефиницијом сучеља за програм за снимке екрана.\nМолим проверите вашу mate-utils инсталацију."
+
+#: ../mate-screenshot/screenshot-dialog.c:257
+msgid "Select a folder"
+msgstr "Изаберите директоријум"
+
+#: ../mate-screenshot/screenshot-save.c:57
+#, c-format
+msgid ""
+"Unable to clear the temporary folder:\n"
+"%s"
+msgstr "Не могу да испразним привремени директоријум:\n%s"
+
+#: ../mate-screenshot/screenshot-save.c:95
+msgid ""
+"The child save process unexpectedly exited.  We are unable to write the "
+"screenshot to disk."
+msgstr "Позвани процес за чување је неочекивано завршен. Не можемо да упишемо снимак екрана на диск."
+
+#: ../mate-screenshot/screenshot-save.c:223
+msgid "Unknown error saving screenshot to disk"
+msgstr "Непозната грешка при чувању снимка екрана на диск"
+
+#. TODO: maybe we should also look at WM_NAME and WM_CLASS?
+#: ../mate-screenshot/screenshot-utils.c:894
+msgid "Untitled Window"
+msgstr "Неименовани прозор"
+
+#: ../mate-screenshot/screenshot-xfer.c:72
+msgid "File already exists"
+msgstr "Датотека већ постоји"
+
+#: ../mate-screenshot/screenshot-xfer.c:75
+#, c-format
+msgid "The file \"%s\" already exists. Would you like to replace it?"
+msgstr "Датотека „%s“ већ постоји.  Желите ли да је замените?"
+
+#: ../mate-screenshot/screenshot-xfer.c:82
+#: ../gsearchtool/gsearchtool-callbacks.c:1722
+msgid "_Replace"
+msgstr "_Замени"
+
+#: ../mate-screenshot/screenshot-xfer.c:120
+msgid "Saving file..."
+msgstr "Спремање датотеке..."
+
+#: ../mate-screenshot/screenshot-xfer.c:290
+msgid "Can't access source file"
+msgstr "Не могу да приступим изворној датотеци"
+
+#: ../gsearchtool/mate-search-tool.desktop.in.h:1
+msgid "Search for Files..."
+msgstr "Тражи датотеке..."
+
+#: ../gsearchtool/mate-search-tool.desktop.in.h:2
+msgid "Locate documents and folders on this computer by name or content"
+msgstr "Пронаћи документе или директоријуме на рачунару помићу имена или садржаја"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:1
+msgid "Show Additional Options"
+msgstr "Прикажи додатне могућности"
+
+#. Translators: The quoted text is the label of the additional
+#. options expander that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:4
+msgid ""
+"This key determines if the \"Select more options\" section is expanded when "
+"the search tool is started."
+msgstr "Овај кључ одређуј да ли је одељак „Прикажи још опција“ раширен када се покрене алат за претрагу."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:7
+msgid "Select the search option \"Contains the text\""
+msgstr "Изабери правило претраге „Садржи текст“"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:8
+msgid ""
+"This key determines if the \"Contains the text\" search option is selected "
+"when the search tool is started."
+msgstr "Овај кључ одређуј да ли је правило „Садржи текст“ изабрано када се покрене алат за претрагу."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:11
+msgid "Select the search option \"Date modified less than\""
+msgstr "Изабери правило претраге „Датум промене пре“"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:12
+msgid ""
+"This key determines if the \"Date modified less than\" search option is "
+"selected when the search tool is started."
+msgstr "Овај кључ одређуј да ли је правило „Датум измене је мање од“ изабрано када се покрене алат за претрагу."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:15
+msgid "Select the search option \"Date modified more than\""
+msgstr "Изабери правило претраге „Датум промене више од“"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:16
+msgid ""
+"This key determines if the \"Date modified more than\" search option is "
+"selected when the search tool is started."
+msgstr "Овај кључ одређуј да ли је правило „Датум измене је више од“ изабрано када се покрене алат за претрагу."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:19
+msgid "Select the search option \"Size at least\""
+msgstr "Изабери правило претраге „Величине најмање“"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:20
+msgid ""
+"This key determines if the \"Size at least\" search option is selected when "
+"the search tool is started."
+msgstr "Овај кључ одређуј да ли је правило „Величина најмање“ изабрано када се покрене алат за претрагу."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:23
+msgid "Select the search option \"Size at most\""
+msgstr "Изабери правило претраге „Величине највише“"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:24
+msgid ""
+"This key determines if the \"Size at most\" search option is selected when "
+"the search tool is started."
+msgstr "Овај кључ одређуј да ли је правило „Величина највише“ изабрано када се покрене алат за претрагу."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:27
+msgid "Select the search option \"File is empty\""
+msgstr "Изабери правило претраге „Датотека је празна“"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:28
+msgid ""
+"This key determines if the \"File is empty\" search option is selected when "
+"the search tool is started."
+msgstr "Овај кључ одређуј да ли је правило „Датотека је празна“ изабрано када се покрене алат за претрагу."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:31
+msgid "Select the search option \"Owned by user\""
+msgstr "Изабери правило претраге „У власништву је корисника“"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:32
+msgid ""
+"This key determines if the \"Owned by user\" search option is selected when "
+"the search tool is started."
+msgstr "Овај кључ одређуј да ли је правило „У власништву је корисника“ изабрано када се покрене алат за претрагу."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:35
+msgid "Select the search option \"Owned by group\""
+msgstr "Изабери правило претраге „У власништву је групе“"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:36
+msgid ""
+"This key determines if the \"Owned by group\" search option is selected when"
+" the search tool is started."
+msgstr "Овај кључ одређуј да ли је правило „У власништву је групе“ изабрано када се покрене алат за претрагу."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:39
+msgid "Select the search option \"Owner is unrecognized\""
+msgstr "Изабери правило претраге „Власник је непрепознат“"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:40
+msgid ""
+"This key determines if the \"Owner is unrecognized\" search option is "
+"selected when the search tool is started."
+msgstr "Овај кључ одређуј да ли је правило „Корисник је непрепознат“ изабрано када се покрене алат за претрагу."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:43
+msgid "Select the search option \"Name does not contain\""
+msgstr "Изабери правило претраге „Име не садржи“"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:44
+msgid ""
+"This key determines if the \"Name does not contain\" search option is "
+"selected when the search tool is started."
+msgstr "Овај кључ одређуј да ли је правило „Име не садржи“ изабрано када се покрене алат за претрагу."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:47
+msgid "Select the search option \"Name matches regular expression\""
+msgstr "Изабери правило претраге „Име одговара регуларном изразу“"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:48
+msgid ""
+"This key determines if the \"Name matches regular expression\" search option"
+" is selected when the search tool is started."
+msgstr "Овај кључ одређуј да ли је правило „Име одговара регуларном изразу“ изабрано када се покрене алат за претрагу."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:51
+msgid "Select the search option \"Show hidden files and folders\""
+msgstr "Изабери правило претраге „Прикажи сакривене датотеке и фасцикле“"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:52
+msgid ""
+"This key determines if the \"Show hidden files and folders\" search option "
+"is selected when the search tool is started."
+msgstr "Овај кључ одређуј да ли је правило „Прикажи сакривене датотеке и фасцикле“ изабрано када се покрене алат за претрагу."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:55
+msgid "Select the search option \"Follow symbolic links\""
+msgstr "Изабери правило претраге „Прати симболичке везе“"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:56
+msgid ""
+"This key determines if the \"Follow symbolic links\" search option is "
+"selected when the search tool is started."
+msgstr "Овај кључ одређуј да ли је правило „Прати симболичке везе“ изабрано када се покрене алат за претрагу."
+
+#. Translators: The quoted text is the label of an available
+#. search option that is translated elsewhere.
+#: ../gsearchtool/mate-search-tool.schemas.in.h:59
+msgid "Select the search option \"Exclude other filesystems\""
+msgstr "Изабери правило претраге „Искључи остале системе датотека“"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:60
+msgid ""
+"This key determines if the \"Exclude other filesystems\" search option is "
+"selected when the search tool is started."
+msgstr "Овај кључ одређуј да ли је правило „Искљичи остале системе датотека“ изабрано када се покрене алат за претрагу."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:61
+msgid "Disable Quick Search"
+msgstr "Искључи брзу претрагу"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:62
+msgid ""
+"This key determines if the search tool disables the use of the locate "
+"command when performing simple file name searches."
+msgstr "Овај кључ одређује да ли алат за претрагу онемогућава употребу наредбе „locate“ при обављању једноставне претраге за именом датотеке."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:63
+msgid "Quick Search Excluded Paths"
+msgstr "Искључење путање из брзе претраге"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:64
+msgid ""
+"This key defines the paths the search tool will exclude from a quick search."
+" The wildcards '*' and '?' are supported. The default values are /mnt/*, "
+"/media/*, /dev/*, /tmp/*, /proc/*, and /var/*."
+msgstr "Овај кључ одређује путање које ће алат за претрагу избацити из брзе претраге. Замене „*“ и „?“ су подржане. Подразумеване вредности су /mnt/*, /media/*, /dev/*, /tmp/*, /proc/*, и /var/*."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:65
+msgid "Disable Quick Search Second Scan"
+msgstr "Искључи други преглед брзе претраге"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:66
+msgid ""
+"This key determines if the search tool disables the use of the find command "
+"after performing a quick search."
+msgstr "Овај кључ одређује да ли алат за претрагу онемогућава употребу наредбе „find“ након завршетка брзе претраге."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:67
+msgid "Quick Search Second Scan Excluded Paths"
+msgstr "Искључење путање из другог прегледа брзе претраге"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:68
+msgid ""
+"This key defines the paths the search tool will exclude from a second scan "
+"when performing a quick search. The second scan uses the find command to "
+"search for files. The purpose of the second scan is to find files that have "
+"not been indexed. The wildcards '*' and '?' are supported. The default value"
+" is /."
+msgstr "Овај кључ одређује путање које ће алат за претрагу избацити из другог прегледа брзе претраге. Други преглед користи наредбу „find“ за тражење, и његова сврха је да нађе датотеке које нису пописане. Замене „*“ и „?“ су подржане. Подразумеване вредности су /."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:69
+msgid "Search Result Columns Order"
+msgstr "Редослед колона резултата претраге"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:70
+msgid ""
+"This key defines the order of the columns in the search results. This key "
+"should not be modified by the user."
+msgstr "Овај кључ дефинише редослед колона у резултатима претраге. Корисник не би требао да мења вредност овог кључа."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:71
+msgid "Default Window Width"
+msgstr "Подразумевана ширина прозора"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:72
+msgid ""
+"This key defines the window width, and it's used to remember the size of the"
+" search tool between sessions. Setting it to -1 will make the search tool "
+"use the default width."
+msgstr "Овај кључ одређује ширину прозора и користи се за памћење величине алата за претрагу између сесија. Постављањем вредности на „-1“ значи да алат за претрагу има подразумевану ширину."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:73
+msgid "Default Window Height"
+msgstr "Подразумевана висина прозора"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:74
+msgid ""
+"This key defines the window height, and it's used to remember the size of "
+"the search tool between sessions. Setting it to -1 will make the search tool"
+" use the default height."
+msgstr "Овај кључ одређује висину прозора и користи се за памћење величине алата за претрагу између сесија. Постављањем вредности на „-1“ значи да алат за претрагу има подразумевану висину."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:75
+msgid "Default Window Maximized"
+msgstr "Подразумевани прозор је увећан до краја"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:76
+msgid ""
+"This key determines if the search tool window starts in a maximized state."
+msgstr "Овај кључ одређује да ли ће прозор алата за претрагу бити приказан у пуној величини."
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:77
+msgid "Look in Folder"
+msgstr "Тражи у фасцикли"
+
+#: ../gsearchtool/mate-search-tool.schemas.in.h:78
+msgid "This key defines the default value of the \"Look in Folder\" widget."
+msgstr "Овај кључ одређује подразумевану вредност елемента „тражи у фасцикли“"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:194
+msgid "Could not open help document."
+msgstr "Не могу да отворим документ помоћи."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:345
+#, c-format
+msgid "Are you sure you want to open %d document?"
+msgid_plural "Are you sure you want to open %d documents?"
+msgstr[0] "Да ли сте сигурни да желите да отворите %d документ?"
+msgstr[1] "Да ли сте сигурни да желите да отворите %d документа?"
+msgstr[2] "Да ли сте сигурни да желите да отворите %d докумената?"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:350
+#: ../gsearchtool/gsearchtool-callbacks.c:547
+#, c-format
+msgid "This will open %d separate window."
+msgid_plural "This will open %d separate windows."
+msgstr[0] "Ово ће отворити %d одвојени прозор."
+msgstr[1] "Ово ће отворити %d одвојена прозора."
+msgstr[2] "Ово ће отворити %d одвојених прозора."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:390
+#, c-format
+msgid "Could not open document \"%s\"."
+msgstr "Не могу да отворим документ „%s“."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:419
+#, c-format
+msgid "Could not open folder \"%s\"."
+msgstr "Не могу да отворим фасциклу „%s“"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:427
+msgid "The caja file manager is not running."
+msgstr "Управљач датотека Наутилус није покренут."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:519
+msgid "There is no installed viewer capable of displaying the document."
+msgstr "Нема постављеног приказивача за документ."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:542
+#, c-format
+msgid "Are you sure you want to open %d folder?"
+msgid_plural "Are you sure you want to open %d folders?"
+msgstr[0] "Сигурно желите да отворите %d фасциклу?"
+msgstr[1] "Сигурно желите да отворите %d фасцикле?"
+msgstr[2] "Сигурно желите да отворите %d фасцикли?"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:695
+#, c-format
+msgid "Could not move \"%s\" to trash."
+msgstr "Не могу да бацим „%s“ у смеће."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:726
+#, c-format
+msgid "Do you want to delete \"%s\" permanently?"
+msgstr "Да ли желите да трајно уклоните „%s“?"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:729
+#, c-format
+msgid "Trash is unavailable.  Could not move \"%s\" to the trash."
+msgstr "Смеће је недоступно. Не могу да бацим „%s“ у смеће."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:768
+#, c-format
+msgid "Could not delete \"%s\"."
+msgstr "Не могу да обришем „%s“."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:879
+#, c-format
+msgid "Deleting \"%s\" failed: %s."
+msgstr "Неуспешно брисање „%s“: %s."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:891
+#, c-format
+msgid "Moving \"%s\" failed: %s."
+msgstr "Неуспешно премештање „%s“: %s."
+
+#. Popup menu item: Open
+#: ../gsearchtool/gsearchtool-callbacks.c:1019
+#: ../gsearchtool/gsearchtool-callbacks.c:1049
+msgid "_Open"
+msgstr "_Отвори"
+
+#. Popup menu item: Open with (default)
+#: ../gsearchtool/gsearchtool-callbacks.c:1074
+#, c-format
+msgid "_Open with %s"
+msgstr "_Отвори помоћу %s"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1108
+#, c-format
+msgid "Open with %s"
+msgstr "Отвори помоћу %s"
+
+#. Popup menu item: Open With
+#: ../gsearchtool/gsearchtool-callbacks.c:1140
+msgid "Open Wit_h"
+msgstr "Отвори по_моћу"
+
+#. Popup menu item: Open Folder
+#: ../gsearchtool/gsearchtool-callbacks.c:1185
+msgid "Open _Folder"
+msgstr "Отвори _фасциклу"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1225
+msgid "_Save Results As..."
+msgstr "_Сачувај резултате као..."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1607
+msgid "Save Search Results As..."
+msgstr "Сачувај резултате претраге као..."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1638
+msgid "Could not save document."
+msgstr "Не могу да сачувам документ."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1639
+msgid "You did not select a document name."
+msgstr "Не могу да изаберем име документа."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1669
+#, c-format
+msgid "Could not save \"%s\" document to \"%s\"."
+msgstr "Не могу да сачувам документ „%s“ у „%s“."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1703
+#, c-format
+msgid "The document \"%s\" already exists.  Would you like to replace it?"
+msgstr "Документ „%s“ већ постоји.  Желите ли да га замените?"
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1707
+msgid "If you replace an existing file, its contents will be overwritten."
+msgstr "Уколико замените постојећу датотеку, њен садржај ће бити преснимљен."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1772
+msgid "The document name you selected is a folder."
+msgstr "Име документа који сте изабрали представља фасциклу."
+
+#: ../gsearchtool/gsearchtool-callbacks.c:1810
+msgid "You may not have write permissions to the document."
+msgstr "Можда немате овлашћења за писање документа."
+
+#: ../gsearchtool/gsearchtool-support.c:63
+#, c-format
+msgid ""
+"MateConf error:\n"
+"  %s"
+msgstr "Гконф грешка:\n  %s"
+
+#. Translators:  Below are the strings displayed in the 'Date Modified'
+#. column of the list view.  The format of this string can vary depending
+#. on age of a file.  Please modify the format of the timestamp to match
+#. your locale.  For example, to display 24 hour time replace the '%-I'
+#. with '%-H' and remove the '%p'.  (See bugzilla report #120434.)
+#: ../gsearchtool/gsearchtool-support.c:696
+msgid "today at %-I:%M %p"
+msgstr "данас у %-H:%M"
+
+#: ../gsearchtool/gsearchtool-support.c:698
+msgid "yesterday at %-I:%M %p"
+msgstr "јуче у %-H:%M"
+
+#: ../gsearchtool/gsearchtool-support.c:700
+#: ../gsearchtool/gsearchtool-support.c:702
+msgid "%A, %B %-d %Y at %-I:%M:%S %p"
+msgstr "%A, %-d. %B %Y. у %-H:%M:%S"
+
+#: ../gsearchtool/gsearchtool-support.c:889
+msgid "link (broken)"
+msgstr "веза (неисправна)"
+
+#: ../gsearchtool/gsearchtool-support.c:893
+#, c-format
+msgid "link to %s"
+msgstr "веза на %s"
+
+#. START OF CAJA/EEL FUNCTIONS: USED FOR HANDLING OF DUPLICATE FILENAMES
+#. Localizers:
+#. * Feel free to leave out the st, nd, rd and th suffix or
+#. * make some or all of them match.
+#. 
+#. localizers: tag used to detect the first copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1495
+msgid " (copy)"
+msgstr " (умножак)"
+
+#. localizers: tag used to detect the second copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1497
+msgid " (another copy)"
+msgstr " (други умножак)"
+
+#. localizers: tag used to detect the x11th copy of a file
+#. localizers: tag used to detect the x12th copy of a file
+#. localizers: tag used to detect the x13th copy of a file
+#. localizers: tag used to detect the xxth copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1500
+#: ../gsearchtool/gsearchtool-support.c:1502
+#: ../gsearchtool/gsearchtool-support.c:1504
+#: ../gsearchtool/gsearchtool-support.c:1514
+msgid "th copy)"
+msgstr "и умножак)"
+
+#. localizers: tag used to detect the x1st copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1507
+msgid "st copy)"
+msgstr "први умножак)"
+
+#. localizers: tag used to detect the x2nd copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1509
+msgid "nd copy)"
+msgstr "други умножак)"
+
+#. localizers: tag used to detect the x3rd copy of a file
+#: ../gsearchtool/gsearchtool-support.c:1511
+msgid "rd copy)"
+msgstr "трећи умножак)"
+
+#. localizers: appended to first file copy
+#: ../gsearchtool/gsearchtool-support.c:1528
+#, c-format
+msgid "%s (copy)%s"
+msgstr "%s (умножак)%s"
+
+#. localizers: appended to second file copy
+#: ../gsearchtool/gsearchtool-support.c:1530
+#, c-format
+msgid "%s (another copy)%s"
+msgstr "%s (други умножак)%s"
+
+#. localizers: appended to x11th file copy
+#. localizers: appended to x12th file copy
+#. localizers: appended to x13th file copy
+#. localizers: appended to xxth file copy
+#: ../gsearchtool/gsearchtool-support.c:1533
+#: ../gsearchtool/gsearchtool-support.c:1535
+#: ../gsearchtool/gsearchtool-support.c:1537
+#: ../gsearchtool/gsearchtool-support.c:1546
+#, c-format
+msgid "%s (%dth copy)%s"
+msgstr "%s (умножак по реду %d)%s"
+
+#. localizers: appended to x1st file copy
+#: ../gsearchtool/gsearchtool-support.c:1540
+#, c-format
+msgid "%s (%dst copy)%s"
+msgstr "%s (умножак по реду %d)%s"
+
+#. localizers: appended to x2nd file copy
+#: ../gsearchtool/gsearchtool-support.c:1542
+#, c-format
+msgid "%s (%dnd copy)%s"
+msgstr "%s (умножак по реду %d)%s"
+
+#. localizers: appended to x3rd file copy
+#: ../gsearchtool/gsearchtool-support.c:1544
+#, c-format
+msgid "%s (%drd copy)%s"
+msgstr "%s (умножак по реду %d)%s"
+
+#: ../gsearchtool/gsearchtool-support.c:1591
+msgid " (invalid Unicode)"
+msgstr " (неисправан Уникод)"
+
+#. localizers: opening parentheses to match the "th copy)" string
+#: ../gsearchtool/gsearchtool-support.c:1680
+msgid " ("
+msgstr " ("
+
+#. localizers: opening parentheses of the "th copy)" string
+#: ../gsearchtool/gsearchtool-support.c:1688
+#, c-format
+msgid " (%d"
+msgstr " (%d"
+
+#: ../gsearchtool/gsearchtool.c:80
+msgid "Contains the _text"
+msgstr "Сад_ржи текст"
+
+#: ../gsearchtool/gsearchtool.c:82
+msgid "_Date modified less than"
+msgstr "Промењено пре мање о_д"
+
+#: ../gsearchtool/gsearchtool.c:82 ../gsearchtool/gsearchtool.c:83
+msgid "days"
+msgstr "дана"
+
+#: ../gsearchtool/gsearchtool.c:83
+msgid "Date modified more than"
+msgstr "Промењено пре _више од"
+
+#: ../gsearchtool/gsearchtool.c:85
+msgid "S_ize at least"
+msgstr "Величина нај_мање"
+
+#: ../gsearchtool/gsearchtool.c:85 ../gsearchtool/gsearchtool.c:86
+msgid "kilobytes"
+msgstr "килобајта"
+
+#: ../gsearchtool/gsearchtool.c:86
+msgid "Si_ze at most"
+msgstr "Величина на_јвише"
+
+#: ../gsearchtool/gsearchtool.c:87
+msgid "File is empty"
+msgstr "Датотека је празна"
+
+#: ../gsearchtool/gsearchtool.c:89
+msgid "Owned by _user"
+msgstr "Власништво _корисника"
+
+#: ../gsearchtool/gsearchtool.c:90
+msgid "Owned by _group"
+msgstr "Власништво _групе"
+
+#: ../gsearchtool/gsearchtool.c:91
+msgid "Owner is unrecognized"
+msgstr "Власник је непрепознатљив"
+
+#: ../gsearchtool/gsearchtool.c:93
+msgid "Na_me does not contain"
+msgstr "И_ме не садржи"
+
+#: ../gsearchtool/gsearchtool.c:94
+msgid "Name matches regular e_xpression"
+msgstr "Име одговара регуларном и_зразу"
+
+#: ../gsearchtool/gsearchtool.c:96
+msgid "Show hidden and backup files"
+msgstr "Прикажи сакривене и резервне датотеке"
+
+#: ../gsearchtool/gsearchtool.c:97
+msgid "Follow symbolic links"
+msgstr "Прати симболичке везе"
+
+#: ../gsearchtool/gsearchtool.c:98
+msgid "Exclude other filesystems"
+msgstr "Искључи остале системе датотека"
+
+#: ../gsearchtool/gsearchtool.c:156
+msgid "Show version of the application"
+msgstr "Прикажи издање програма"
+
+#: ../gsearchtool/gsearchtool.c:157 ../gsearchtool/gsearchtool.c:162
+#: ../gsearchtool/gsearchtool.c:171
+msgid "STRING"
+msgstr "НИСКА"
+
+#: ../gsearchtool/gsearchtool.c:158
+msgid "PATH"
+msgstr "ПУТАЊА"
+
+#: ../gsearchtool/gsearchtool.c:159
+msgid "VALUE"
+msgstr "ВРЕДНОСТ"
+
+#: ../gsearchtool/gsearchtool.c:163 ../gsearchtool/gsearchtool.c:164
+msgid "DAYS"
+msgstr "ДАНА"
+
+#: ../gsearchtool/gsearchtool.c:165 ../gsearchtool/gsearchtool.c:166
+msgid "KILOBYTES"
+msgstr "КИЛОБАЈТА"
+
+#: ../gsearchtool/gsearchtool.c:168
+msgid "USER"
+msgstr "КОРИСНИК"
+
+#: ../gsearchtool/gsearchtool.c:169
+msgid "GROUP"
+msgstr "ГРУПА"
+
+#: ../gsearchtool/gsearchtool.c:172
+msgid "PATTERN"
+msgstr "ОБРАЗАЦ"
+
+#: ../gsearchtool/gsearchtool.c:383
+msgid "A locate database has probably not been created."
+msgstr "База за тражење вероватно није направљена."
+
+#: ../gsearchtool/gsearchtool.c:485
+#, c-format
+msgid "Character set conversion failed for \"%s\""
+msgstr "Неуспешно претварање скупа знакова за „%s“"
+
+#: ../gsearchtool/gsearchtool.c:509
+msgid "Searching..."
+msgstr "Тражим..."
+
+#: ../gsearchtool/gsearchtool.c:509 ../gsearchtool/gsearchtool.c:1015
+#: ../gsearchtool/gsearchtool.c:2988
+msgid "Search for Files"
+msgstr "Потражи датотеке"
+
+#: ../gsearchtool/gsearchtool.c:961 ../gsearchtool/gsearchtool.c:990
+msgid "No files found"
+msgstr "Ниједна датотека није нађена"
+
+#: ../gsearchtool/gsearchtool.c:983
+msgid "(stopped)"
+msgstr "(заустављен)"
+
+#: ../gsearchtool/gsearchtool.c:989
+msgid "No Files Found"
+msgstr "Ниједна датотека није нађена"
+
+#: ../gsearchtool/gsearchtool.c:994
+#, c-format
+msgid "%'d File Found"
+msgid_plural "%'d Files Found"
+msgstr[0] "Нађена је %'d датотека"
+msgstr[1] "Нађене су %'d датотеке"
+msgstr[2] "Нађено је %'d датотека"
+
+#: ../gsearchtool/gsearchtool.c:998 ../gsearchtool/gsearchtool.c:1036
+#, c-format
+msgid "%'d file found"
+msgid_plural "%'d files found"
+msgstr[0] "Нађена је %'d датотека"
+msgstr[1] "Нађене су %'d датотеке"
+msgstr[2] "Нађено је %'d датотека"
+
+#: ../gsearchtool/gsearchtool.c:1127
+msgid "Entry changed called for a non entry option!"
+msgstr "Позвана је промена уноса за опцију која се не тиче уноса!"
+
+#: ../gsearchtool/gsearchtool.c:1287
+msgid "Set the text of \"Name contains\" search option"
+msgstr "Постави текст за опцију „име садржи“"
+
+#: ../gsearchtool/gsearchtool.c:1288
+msgid "Set the text of \"Look in folder\" search option"
+msgstr "Постави текст за опцију „тражи у фасцикли“"
+
+#: ../gsearchtool/gsearchtool.c:1289
+msgid "Sort files by one of the following: name, folder, size, type, or date"
+msgstr "Поређај датотеке према неком од следећих: по имену, фасцикли, величини, врсти, или датуму"
+
+#: ../gsearchtool/gsearchtool.c:1290
+msgid "Set sort order to descending, the default is ascending"
+msgstr "Користи опадајући поредак, уобичајено је растући"
+
+#: ../gsearchtool/gsearchtool.c:1291
+msgid "Automatically start a search"
+msgstr "Сам започни претрагу"
+
+#: ../gsearchtool/gsearchtool.c:1297
+#, c-format
+msgid "Select the \"%s\" search option"
+msgstr "Изабери правило претраге „%s“"
+
+#: ../gsearchtool/gsearchtool.c:1300
+#, c-format
+msgid "Select and set the \"%s\" search option"
+msgstr "Изабери и постави правило претраге „%s“"
+
+#: ../gsearchtool/gsearchtool.c:1407
+msgid "Invalid option passed to sortby command line argument."
+msgstr "Предата је неисправна опција аргументу наредбе „sortby“."
+
+#: ../gsearchtool/gsearchtool.c:1701
+msgid ""
+"\n"
+"... Too many errors to display ..."
+msgstr "\n... Превише грешака за приказ ..."
+
+#: ../gsearchtool/gsearchtool.c:1715
+msgid ""
+"The search results may be invalid.  There were errors while performing this "
+"search."
+msgstr "Резултати претраге могу бити неисправни.  Дошло је до грешака при овој претрази."
+
+#: ../gsearchtool/gsearchtool.c:1727 ../gsearchtool/gsearchtool.c:1771
+msgid "Show more _details"
+msgstr "Прикажи још _детаља"
+
+#: ../gsearchtool/gsearchtool.c:1757
+msgid ""
+"The search results may be out of date or invalid.  Do you want to disable "
+"the quick search feature?"
+msgstr "Резултати претраге могу бити застарели или неисправни.  Желите ли да искључите могућност брзе претраге?"
+
+#: ../gsearchtool/gsearchtool.c:1782
+msgid "Disable _Quick Search"
+msgstr "Искључи _брзу претрагу"
+
+#: ../gsearchtool/gsearchtool.c:1809
+#, c-format
+msgid "Failed to set process group id of child %d: %s.\n"
+msgstr "Неуспешно постављање групног ИБ-а процеса садржаног %d: %s.\n"
+
+#: ../gsearchtool/gsearchtool.c:1834
+msgid "Error parsing the search command."
+msgstr "Грешка приликом обраде наредбе за претрагу."
+
+#: ../gsearchtool/gsearchtool.c:1867
+msgid "Error running the search command."
+msgstr "Грешка приликом покретања наредбе за претрагу."
+
+#: ../gsearchtool/gsearchtool.c:1987
+#, c-format
+msgid "Enter a text value for the \"%s\" search option."
+msgstr "Унесите текстуалну вредност за правило претраге „%s“."
+
+#. Translators:  Below is a string displaying the search options name
+#. and unit value.  For example, "\"Date modified less than\" in days".
+#: ../gsearchtool/gsearchtool.c:1992
+#, c-format
+msgid "\"%s\" in %s"
+msgstr "„%s“ као %s"
+
+#: ../gsearchtool/gsearchtool.c:1994
+#, c-format
+msgid "Enter a value in %s for the \"%s\" search option."
+msgstr "Унесите вредност као %s за правило претраге „%s“."
+
+#: ../gsearchtool/gsearchtool.c:2052
+#, c-format
+msgid "Remove \"%s\""
+msgstr "Уклони „%s“"
+
+#: ../gsearchtool/gsearchtool.c:2053
+#, c-format
+msgid "Click to remove the \"%s\" search option."
+msgstr "Кликните да уклоните правило претраге „%s“."
+
+#: ../gsearchtool/gsearchtool.c:2146
+msgid "A_vailable options:"
+msgstr "Доступна _правила:"
+
+#: ../gsearchtool/gsearchtool.c:2175
+msgid "Available options"
+msgstr "Доступна правила"
+
+#: ../gsearchtool/gsearchtool.c:2176
+msgid "Select a search option from the drop-down list."
+msgstr "Изаберите правило претраге из падајућег списка."
+
+#: ../gsearchtool/gsearchtool.c:2188
+msgid "Add search option"
+msgstr "Додај правило претраге"
+
+#: ../gsearchtool/gsearchtool.c:2189
+msgid "Click to add the selected available search option."
+msgstr "Кликните да додате изабрано доступно правило претраге."
+
+#: ../gsearchtool/gsearchtool.c:2278
+msgid "S_earch results:"
+msgstr "Р_езултати претраге:"
+
+#: ../gsearchtool/gsearchtool.c:2322
+msgid "List View"
+msgstr "Преглед у списку"
+
+#: ../gsearchtool/gsearchtool.c:2431
+msgid "Type"
+msgstr "Тип"
+
+#: ../gsearchtool/gsearchtool.c:2443
+msgid "Date Modified"
+msgstr "Датум и време измене"
+
+#: ../gsearchtool/gsearchtool.c:2759
+msgid "_Name contains:"
+msgstr "_Име садржи:"
+
+#: ../gsearchtool/gsearchtool.c:2773 ../gsearchtool/gsearchtool.c:2774
+msgid "Enter a filename or partial filename with or without wildcards."
+msgstr "Унесите име или део имена датотеке са или без пречица."
+
+#: ../gsearchtool/gsearchtool.c:2774
+msgid "Name contains"
+msgstr "Име садржи"
+
+#: ../gsearchtool/gsearchtool.c:2780
+msgid "_Look in folder:"
+msgstr "_Тражите у фасцикли:"
+
+#: ../gsearchtool/gsearchtool.c:2786
+msgid "Browse"
+msgstr "Разгледај"
+
+#: ../gsearchtool/gsearchtool.c:2795
+msgid "Look in folder"
+msgstr "Тражи у фасцикли"
+
+#: ../gsearchtool/gsearchtool.c:2795
+msgid "Select the folder or device from which you want to begin the search."
+msgstr "Изаберите фасциклу или уређај од којег желите почети претрагу."
+
+#: ../gsearchtool/gsearchtool.c:2813
+msgid "Select more _options"
+msgstr "Прикажи још _опција"
+
+#: ../gsearchtool/gsearchtool.c:2822
+msgid "Select more options"
+msgstr "Одаберите више опција"
+
+#: ../gsearchtool/gsearchtool.c:2822
+msgid "Click to expand or collapse the list of available options."
+msgstr "Кликните да разгранате или скупите списак доступних правила."
+
+#: ../gsearchtool/gsearchtool.c:2846
+msgid "Click to display the help manual."
+msgstr "Кликните да прикажете упутство."
+
+#: ../gsearchtool/gsearchtool.c:2854
+msgid "Click to close \"Search for Files\"."
+msgstr "Кликните да затворите „Тражење датотека“."
+
+#: ../gsearchtool/gsearchtool.c:2880
+msgid "Click to perform a search."
+msgstr "Кликните да почнете претрагу."
+
+#: ../gsearchtool/gsearchtool.c:2881
+msgid "Click to stop a search."
+msgstr "Кликните да зауставите претрагу."
+
+#: ../gsearchtool/gsearchtool.c:2973
+msgid "- the MATE Search Tool"
+msgstr "— Гномова алатка за претраживање"
+
+#: ../gsearchtool/gsearchtool.c:2982
+#, c-format
+msgid "Failed to parse command line arguments: %s\n"
+msgstr "Не могу да обрадим аргументе из командне линије: %s\n"
+
+#: ../libeggsmclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Ово није исправна .desktop датотека"
+
+#: ../libeggsmclient/eggdesktopfile.c:188
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Није познато издање „%s“ датотеке за радну површ"
+
+#: ../libeggsmclient/eggdesktopfile.c:958
+#, c-format
+msgid "Starting %s"
+msgstr "Покрећем %s"
+
+#: ../libeggsmclient/eggdesktopfile.c:1100
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "Програм не прихвата документе из командне линије"
+
+#: ../libeggsmclient/eggdesktopfile.c:1168
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Непозната опција при покретању: %d"
+
+#: ../libeggsmclient/eggdesktopfile.c:1373
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "Не могу да проследим адресу документа у „Type=Link“ унос датотеке за радну површ"
+
+#: ../libeggsmclient/eggdesktopfile.c:1392
+#, c-format
+msgid "Not a launchable item"
+msgstr "Не можете да покренете ову ставку"
+
+#: ../libeggsmclient/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr "Онемогући везу са управником сесије"
+
+#: ../libeggsmclient/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr "Изаберите датотеку са сачуваним подешавањима"
+
+#: ../libeggsmclient/eggsmclient.c:228
+msgid "FILE"
+msgstr "ДАТОТЕКА"
+
+#: ../libeggsmclient/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr "Унесите ИБ управника сесијом"
+
+#: ../libeggsmclient/eggsmclient.c:231
+msgid "ID"
+msgstr "ИБ"
+
+#: ../libeggsmclient/eggsmclient.c:252
+msgid "Session management options:"
+msgstr "Опције управника сесијама:"
+
+#: ../libeggsmclient/eggsmclient.c:253
+msgid "Show session management options"
+msgstr "Прикажи опције управника сесијама"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:1
+msgid "Log File Viewer"
+msgstr "Прегледач системског дневника"
+
+#: ../logview/data/mate-system-log.desktop.in.in.h:2
+msgid "View or monitor system log files"
+msgstr "Разгледа или пратити системске дневике"
+
+#: ../logview/data/mate-system-log.schemas.in.h:1
+msgid "Log file to open up on startup"
+msgstr "Датотека дневника коју треба отворити приликом покретања"
+
+#: ../logview/data/mate-system-log.schemas.in.h:2
+msgid ""
+"Specifies the log file displayed at startup. The default is either "
+"/var/adm/messages or /var/log/messages, depending on your operating system."
+msgstr "Одређује датотеку дневника која се отвара приликом покретања. Подразумевана је или /var/adm/messages или /var/log/messages, зависно од вашег оперативног система."
+
+#: ../logview/data/mate-system-log.schemas.in.h:3
+msgid "Size of the font used to display the log"
+msgstr "Величина словног лика који се користи за приказ дневника"
+
+#: ../logview/data/mate-system-log.schemas.in.h:4
+msgid ""
+"Specifies the size of the fixed-width font used to display the log in the "
+"main tree view. The default is taken from the default terminal font size."
+msgstr "Задаје величину словног лика сразмерне ширине за приказивање дневника у главном прегледу стабла. Подразумевана вредност се преузима из терминала."
+
+#: ../logview/data/mate-system-log.schemas.in.h:5
+msgid "Height of the main window in pixels"
+msgstr "Висина главног прозора у тачкама"
+
+#: ../logview/data/mate-system-log.schemas.in.h:6
+msgid "Specifies the height of the log viewer main window in pixels."
+msgstr "Задаје висину главног прозора прегледника дневника (у тачкама)."
+
+#: ../logview/data/mate-system-log.schemas.in.h:7
+msgid "Width of the main window in pixels"
+msgstr "Ширина главног прозора изражена у тачкама"
+
+#: ../logview/data/mate-system-log.schemas.in.h:8
+msgid "Specifies the width of the log viewer main window in pixels."
+msgstr "Задаје ширину главног прозора прегледника дневника изражену у тачкама."
+
+#: ../logview/data/mate-system-log.schemas.in.h:9
+msgid "Log files to open up on startup"
+msgstr "Датотека дневника коју треба отворити приликом покретања"
+
+#: ../logview/data/mate-system-log.schemas.in.h:10
+msgid ""
+"Specifies a list of log files to open up at startup. A default list is "
+"created by reading /etc/syslog.conf."
+msgstr "Одређује списак дневника који се отварају при покретању. Подразумевани списак се ствара читањем из /etc/syslog.conf датотеке."
+
+#: ../logview/data/logview-filter.ui.h:2
+msgid "_Regular Expression:"
+msgstr "_Регуларни израз:"
+
+#: ../logview/data/logview-filter.ui.h:3
+msgid "Highlight"
+msgstr "Истакнуто"
+
+#: ../logview/data/logview-filter.ui.h:4
+msgid "Hide"
+msgstr "Сакривено"
+
+#: ../logview/data/logview-filter.ui.h:5
+msgid "Foreground:"
+msgstr "Предњи план:"
+
+#: ../logview/data/logview-filter.ui.h:6
+msgid "Background:"
+msgstr "Позадина:"
+
+#: ../logview/data/logview-filter.ui.h:7
+msgid "Effect:"
+msgstr "Ефекат:"
+
+#: ../logview/logview-app.c:374
+#, c-format
+msgid "Impossible to open the file %s"
+msgstr "Није могуће отворити датотеку %s"
+
+#: ../logview/logview-filter-manager.c:90
+msgid "Filter name is empty!"
+msgstr "Име филтера је празно!"
+
+#: ../logview/logview-filter-manager.c:103
+msgid "Filter name may not contain the ':' character"
+msgstr "Име филтера не зме да садржи „:“"
+
+#: ../logview/logview-filter-manager.c:126
+msgid "Regular expression is empty!"
+msgstr "Регуларни израз је празан!"
+
+#: ../logview/logview-filter-manager.c:142
+#, c-format
+msgid "Regular expression is invalid: %s"
+msgstr "Регуларни израз није исправан: %s"
+
+#: ../logview/logview-filter-manager.c:238
+msgid "Please specify either foreground or background color!"
+msgstr "Изаберите боју позадине или боју слова!"
+
+#: ../logview/logview-filter-manager.c:292
+msgid "Edit filter"
+msgstr "Измени филтер"
+
+#: ../logview/logview-filter-manager.c:292
+msgid "Add new filter"
+msgstr "Додај нови филтер"
+
+#: ../logview/logview-filter-manager.c:502
+msgid "Filters"
+msgstr "Филтери"
+
+#: ../logview/logview-findbar.c:169
+msgid "_Find:"
+msgstr "На_ђи:"
+
+#: ../logview/logview-findbar.c:184
+msgid "Find Previous"
+msgstr "Нађи прет_ходно"
+
+#: ../logview/logview-findbar.c:187
+msgid "Find previous occurrence of the search string"
+msgstr "Тражи претходну појаву задатое речи"
+
+#: ../logview/logview-findbar.c:192
+msgid "Find Next"
+msgstr "Нађи _следеће"
+
+#: ../logview/logview-findbar.c:195
+msgid "Find next occurrence of the search string"
+msgstr "Тражи следећу појаву задатое речи"
+
+#: ../logview/logview-findbar.c:202
+msgid "Clear the search string"
+msgstr "Очисти реч за претрагу"
+
+#: ../logview/logview-log.c:595
+msgid "Error while uncompressing the GZipped log. The file might be corrupt."
+msgstr "Грешка приликом отпаковања Gzip дневника. Можда је оштећена датотека."
+
+#: ../logview/logview-log.c:642
+msgid "You don't have enough permissions to read the file."
+msgstr "Немате овлашћења за читање датотеке."
+
+#: ../logview/logview-log.c:657
+msgid "The file is not a regular file or is not a text file."
+msgstr "Датотека није обична нити текстуална датотека."
+
+#: ../logview/logview-log.c:739
+msgid "This version of System Log does not support GZipped logs."
+msgstr "Ово издање системског дневника не подржава запаковани упис (gzip)."
+
+#: ../logview/logview-loglist.c:311
+msgid "Loading..."
+msgstr "Учитавам..."
+
+#: ../logview/logview-main.c:61
+msgid "Show the application's version"
+msgstr "Прикажи верзију програма"
+
+#: ../logview/logview-main.c:63
+msgid "[LOGFILE...]"
+msgstr "[ДНЕВНИК...]"
+
+#: ../logview/logview-main.c:67
+msgid " - Browse and monitor logs"
+msgstr " — Разгледа и прати извештаје"
+
+#: ../logview/logview-main.c:102
+msgid "Log Viewer"
+msgstr "Преглед системског дневника"
+
+#: ../logview/logview-window.c:38 ../logview/logview-window.c:759
+msgid "System Log Viewer"
+msgstr "Преглед системског дневника"
+
+#: ../logview/logview-window.c:210
+#, c-format
+msgid "last update: %s"
+msgstr "последње ажурирање: %s"
+
+#: ../logview/logview-window.c:213
+#, c-format
+msgid "%d lines (%s) - %s"
+msgstr "број линија: %d (%s) - %s"
+
+#: ../logview/logview-window.c:317
+msgid "Open Log"
+msgstr "_Отвори дневник"
+
+#: ../logview/logview-window.c:356
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Дошло је до грешке при приказивању помоћи: %s"
+
+#: ../logview/logview-window.c:470
+msgid "Wrapped"
+msgstr "Омотач"
+
+#: ../logview/logview-window.c:764
+msgid "A system log viewer for MATE."
+msgstr "Преглед системског дневника Гнома."
+
+#: ../logview/logview-window.c:810
+msgid "_Filters"
+msgstr "_Филтери:"
+
+#: ../logview/logview-window.c:813
+msgid "_Open..."
+msgstr "_Отвори..."
+
+#: ../logview/logview-window.c:813
+msgid "Open a log from file"
+msgstr "Отворите дневник из датотеке"
+
+#: ../logview/logview-window.c:815
+msgid "_Close"
+msgstr "_Затвори"
+
+#: ../logview/logview-window.c:815
+msgid "Close this log"
+msgstr "Затвори овај дневник"
+
+#: ../logview/logview-window.c:817
+msgid "_Quit"
+msgstr "_Изађи"
+
+#: ../logview/logview-window.c:817
+msgid "Quit the log viewer"
+msgstr "Затвори прегледач дневника"
+
+#: ../logview/logview-window.c:820
+msgid "_Copy"
+msgstr "_Умножи"
+
+#: ../logview/logview-window.c:820
+msgid "Copy the selection"
+msgstr "Умножи изабрано"
+
+#: ../logview/logview-window.c:822
+msgid "Select the entire log"
+msgstr "Изабери читав дневник"
+
+#: ../logview/logview-window.c:824
+msgid "_Find..."
+msgstr "_Нађи..."
+
+#: ../logview/logview-window.c:824
+msgid "Find a word or phrase in the log"
+msgstr "Пронађи реч или фразу унутар дневника"
+
+#: ../logview/logview-window.c:827
+msgid "Bigger text size"
+msgstr "Већи текст"
+
+#: ../logview/logview-window.c:829
+msgid "Smaller text size"
+msgstr "Мањи текст"
+
+#: ../logview/logview-window.c:831
+msgid "Normal text size"
+msgstr "Обична величина текста"
+
+#: ../logview/logview-window.c:834
+msgid "Manage Filters"
+msgstr "Уреди филтере"
+
+#: ../logview/logview-window.c:834
+msgid "Manage filters"
+msgstr "Уреди филтере"
+
+#: ../logview/logview-window.c:837
+msgid "Open the help contents for the log viewer"
+msgstr "Отвори садржај помоћи за прегледач дневника"
+
+#: ../logview/logview-window.c:839
+msgid "Show the about dialog for the log viewer"
+msgstr "Прикажи прозор са информацијама о прегледачу дневника"
+
+#: ../logview/logview-window.c:844
+msgid "_Statusbar"
+msgstr "Линија са _стањем"
+
+#: ../logview/logview-window.c:844
+msgid "Show Status Bar"
+msgstr "Прикажи линију са стањем"
+
+#: ../logview/logview-window.c:846
+msgid "Side _Pane"
+msgstr "_Бочна површ"
+
+#: ../logview/logview-window.c:846
+msgid "Show Side Pane"
+msgstr "Прикажи бочну површ"
+
+#: ../logview/logview-window.c:848
+msgid "Show matches only"
+msgstr "Покажи само поклапања"
+
+#: ../logview/logview-window.c:848
+msgid "Only show lines that match one of the given filters"
+msgstr "Приказује само линије које се поклапају са једним од задатих филтера"
+
+#: ../logview/logview-window.c:962
+#, c-format
+msgid "Can't read from \"%s\""
+msgstr "Не могу да читам са „%s“"
+
+#: ../logview/logview-window.c:1381
+msgid "Version: "
+msgstr "Издање: "
+
+#: ../logview/logview-window.c:1488
+msgid "Could not open the following files:"
+msgstr "Не могу да отворим следеће датотеке:"

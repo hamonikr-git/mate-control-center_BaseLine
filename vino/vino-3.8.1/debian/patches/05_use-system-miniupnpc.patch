@@ -1,0 +1,183 @@
+Description: Use system-installed miniupnpc instead of bundled library
+ Needs to be made optional before forwarding upstream, see 
+ https://trac.transmissionbt.com/ticket/4323 for similar code
+Author: Jeremy Bicha <jbicha@ubuntu.com>
+Forwarded: no
+Index: vino-3.8.1/Makefile.am
+===================================================================
+--- vino-3.8.1.orig/Makefile.am	2013-11-18 15:14:13.546555626 +0100
++++ vino-3.8.1/Makefile.am	2013-11-18 15:15:34.000000000 +0100
+@@ -39,29 +39,6 @@
+ 	server/smclient/eggdesktopfile.c \
+ 	server/smclient/eggdesktopfile.h
+ 
+-VINO_MINIUPNP_cppflags = -DNDEBUG
+-
+-VINO_MINIUPNP_sources = \
+-	server/miniupnp/bsdqueue.h \
+-	server/miniupnp/codelength.h \
+-	server/miniupnp/declspec.h \
+-	server/miniupnp/igd_desc_parse.c \
+-	server/miniupnp/igd_desc_parse.h \
+-	server/miniupnp/minisoap.c \
+-	server/miniupnp/minisoap.h \
+-	server/miniupnp/minissdpc.c \
+-	server/miniupnp/minissdpc.h \
+-	server/miniupnp/miniupnpc.c \
+-	server/miniupnp/miniupnpc.h \
+-	server/miniupnp/miniwget.c \
+-	server/miniupnp/miniwget.h \
+-	server/miniupnp/minixml.c \
+-	server/miniupnp/minixml.h \
+-	server/miniupnp/upnpcommands.c \
+-	server/miniupnp/upnpcommands.h \
+-	server/miniupnp/upnpreplyparse.c \
+-	server/miniupnp/upnpreplyparse.h
+-
+ if VINO_HAVE_SELF_IFADDRS
+ VINO_IFADDRS_sources = \
+ 	server/libvncserver/ifaddr/getifaddrs.c \
+@@ -104,12 +81,10 @@
+ 	-I$(top_srcdir) \
+ 	-I$(top_srcdir)/common \
+ 	-I$(top_srcdir)/server/libvncserver \
+-	-I$(top_srcdir)/server/miniupnp \
+ 	-I$(top_srcdir)/server/smclient \
+ 	-I$(top_builddir) \
+ 	-I$(top_builddir)/server \
+ 	$(VINO_SERVER_CFLAGS) \
+-	$(VINO_MINIUPNP_cppflags) \
+ 	$(LIBGCRYPT_CFLAGS) \
+ 	$(WARN_CFLAGS) \
+ 	$(DISABLE_DEPRECATED) \
+@@ -125,6 +100,7 @@
+ 	$(VINO_SERVER_LIBS) \
+ 	$(LIBGCRYPT_LIBS) \
+ 	$(JPEG_LIBS) \
++	$(LIBUPNP_LIBS) \
+ 	$(X_LIBS) $(XTEST_LIBS) $(XSHM_LIBS) $(XDAMAGE_LIBS) $(ZLIB_LIBS)
+ 
+ if VINO_ENABLE_HTTP_SERVER
+@@ -177,7 +153,6 @@
+ 	server/vino-dbus-error.h \
+ 	server/vino-upnp.h \
+ 	server/vino-upnp.c \
+-	$(VINO_MINIUPNP_sources) \
+ 	$(VINO_IFADDR_sources) \
+ 	$(VINO_LIBVNCSERVER_sources) \
+ 	$(VINO_HTTP_sources) \
+@@ -346,8 +321,6 @@
+ 	server/libvncserver/tabletranstemplate.c \
+         server/libvncserver/tableinitcmtemplate.c \
+         server/libvncserver/zrleencodetemplate.c \
+-	server/miniupnp/README \
+-	server/miniupnp/LICENCE \
+ 	\
+ 	ChangeLog.pre-git \
+ 	intltool-extract.in \
+Index: vino-3.8.1/configure.ac
+===================================================================
+--- vino-3.8.1.orig/configure.ac	2013-11-18 15:14:13.546555626 +0100
++++ vino-3.8.1/configure.ac	2013-11-18 15:15:34.000000000 +0100
+@@ -296,6 +296,13 @@
+     [AC_MSG_ERROR([IPv6 support requested but not found])])])
+ AC_MSG_RESULT([$have_ipv6])
+ 
++dnl ----------------------------------------------------------------------------
++dnl
++dnl Allow use of system miniupnp library
++
++LIBUPNP_LIBS="-lminiupnpc"
++AC_SUBST(LIBUPNP_LIBS)
++
+ # GNOME libraries
+ GTK_VERSION=3.0.0
+ GLIB_VERSION=2.17.0
+Index: vino-3.8.1/server/vino-upnp.c
+===================================================================
+--- vino-3.8.1.orig/server/vino-upnp.c	2013-11-18 15:14:13.546555626 +0100
++++ vino-3.8.1/server/vino-upnp.c	2013-11-18 15:14:13.542555626 +0100
+@@ -27,8 +27,8 @@
+ #endif
+ 
+ #include <string.h>
+-#include "miniupnp/miniupnpc.h"
+-#include "miniupnp/upnpcommands.h"
++#include <miniupnpc/miniupnpc.h>
++#include <miniupnpc/upnpcommands.h>
+ 
+ #ifdef VINO_HAVE_NETWORKMANAGER
+ #include <NetworkManager/NetworkManager.h>
+@@ -75,6 +75,7 @@
+ {
+   struct UPNPDev * devlist;
+   int res;
++  int upnperror = 0;
+ 
+   if (upnp->priv->have_igd)
+     return TRUE;
+@@ -82,7 +83,7 @@
+   clean_upnp_data (upnp);
+ 
+   dprintf (UPNP, "UPnP: Doing the discovery... ");
+-  devlist = upnpDiscover (2000, NULL, NULL, 0);
++  devlist = upnpDiscover (2000, NULL, NULL, 0, 0, &upnperror);
+   if (!devlist)
+     {
+       dprintf (UPNP, "nothing found, aborting.");
+@@ -207,7 +208,7 @@
+     return NULL;
+ 
+   UPNP_GetExternalIPAddress (upnp->priv->urls->controlURL,
+-			     upnp->priv->data->servicetype,
++			     upnp->priv->data->first.servicetype,
+ 			     ip);
+   if (ip[0])
+     if (strcmp (ip, "0.0.0.0") == 0)
+@@ -238,11 +239,14 @@
+       ext_port = g_strdup_printf ("%d", local_port);
+       dprintf (UPNP, "UPnP: Trying to forward port %d...: ", local_port);
+       UPNP_GetSpecificPortMappingEntry (upnp->priv->urls->controlURL,
+-					upnp->priv->data->servicetype,
++					upnp->priv->data->first.servicetype,
+ 					ext_port,
+ 					"TCP",
+ 					int_client_tmp,
+-					int_port_tmp);
++					int_port_tmp,
++					NULL,
++					NULL,
++					NULL);
+       if ( (strcmp (int_client_tmp, upnp->priv->lanaddr) == 0) && (strcmp (int_port_tmp, ext_port) == 0) )
+ 	{
+ 	  dprintf (UPNP, "UPnP: Found a previous redirect\n");
+@@ -274,12 +278,14 @@
+ 			  g_get_host_name ());  
+ 
+   err = UPNP_AddPortMapping (upnp->priv->urls->controlURL,
+-			     upnp->priv->data->servicetype,
++			     upnp->priv->data->first.servicetype,
+ 			     ext_port,
+ 			     int_port,
+ 			     upnp->priv->lanaddr,
+ 			     desc,
+-			     "TCP");
++			     "TCP", 
++			     NULL, 
++			     NULL);
+   if (err == 0)
+     {
+       upnp->priv->port = local_port;
+@@ -312,9 +318,10 @@
+ 
+   port = g_strdup_printf ("%d", upnp->priv->port);
+   err = UPNP_DeletePortMapping (upnp->priv->urls->controlURL,
+-				upnp->priv->data->servicetype,
++				upnp->priv->data->first.servicetype,
+ 				port,
+-				"TCP");
++				"TCP",
++				NULL);
+   if (err == 0)
+     dprintf (UPNP, "UPnP: Removed forwarded port %d\n", upnp->priv->port);
+   else

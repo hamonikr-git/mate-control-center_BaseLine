@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync-setup" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <desc>Ρυθμίστε το Tomboy να συχρονίζει τις σημειώσεις σας.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <credit type="author copyright">
+      <name>Έργο Τεκμηρίωσης GNOME</name>
+      <years>2010-2012</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Διαμόρφωση και ρύθμιση του συγχρονισμού</title>
+
+ <section id="enablesync">
+
+	<title>Ενεργοποίηση συγχρονισμού</title>
+	
+	<p>Το <app>Tomboy</app> μπορεί να συγχρονίσει τις σημειώσεις σας μεταξύ πολλών υπολογιστών. Σας επιτρέπει να έχετε ένα αντίγραφο ασφαλείας των σημειώσεων σας σε άλλο υπολογιστή ή να διαμοιραστείτε από κοινού τις σημειώσεις σας και να έχετε πάντα πρόσβαση σε αυτές.</p>
+	
+	<p>You can enable synchronize by opening <gui>Tomboy Preferences</gui>
+	by using your mouse to right click on the Tomboy icon in your panel,
+	taskbar or dock and choose <gui>Preferences</gui> and then select
+	the <gui>Synchronization</gui> tab.  You can also open <gui> Tomboy
+	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
+	the menu choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
+	</guiseq>.
+	</p>
+
+ </section>
+
+ <section id="conflict">
+
+	<title>Διαχείριση συγκρούσεων των σημειώσεων</title>
+	
+	<p>Μπορείτε να ορίσετε την προεπιλεγμένη συμπεριφορά του Tomboy όταν ανακαλύπτει μια συγκρουόμενη σημείωση. Αυτό μπορεί να συμβεί όταν δεν συγχρονίζονται οι σημειώσεις σε τακτική βάση.</p>
+	
+	<p>Στις <gui>Προτιμήσεις</gui> πατήστε το κουμπί <gui>Για προχωρημένους</gui>.  Μπορείτε να επιλέξετε ανάμεσα από τρεις επιλογές ως τη προεπιλεγμένη συμπεριφορά στη διαχείριση των συγκρούσεων:</p>
+	
+	<list>
+		<item><p><gui>Να γίνεται πάντα ερώτηση πριν από κάθε ενέργεια.</gui> Αυτή είναι η προεπιλεγμένη επιλογή όταν το Tomboy αντιμετωπίζει μια σύγκρουση σημειώσεων, το Tomboy θα σας ρωτήσει αν θέλετε να μετονομάσετε ή να αντικαταστήσετε την τοπική σημείωση με τη σημείωση που έχει αποθηκευτεί στον εξυπηρετητή.</p></item>
+		<item><p><gui>Μετονομασία της τοπικής μου σημείωσης.</gui> Αν είναι επιλεγμένη αυτή η επιλογή, το Tomboy θα αντικαταστήσει αυτόματα τη σημείωση με ένα αντίγραφο από τον απομακρυσμένο υπολογιστή και θα μετονομάσει τη σημείωση στον υπολογιστή σας, έτσι ώστε να μη χάσετε τις πληροφορίες της σημείωσης.</p>
+		</item>
+		
+		<item><p><gui>Replace my local note with the server's update.</gui>
+  		If you have selected this option, when you synchronize, 
+		Tomboy will overwrite and replace your note stored on your
+		computer with a copy from the remote computer.</p>
+		
+		<note style="warning">
+		<p>Η αυτόματη αντικατάσταση της σημείωσης είναι μόνιμη. Η τοπική σας σημείωση θα αντικατασταθεί από το αντίγραφο του απομακρυσμένου υπολογιστή και θα χάσετε τις πληροφορίες που ήταν αποθηκευμένες πριν το συγχρονισμό.</p>
+		</note>
+                </item>
+		
+	</list>
+		
+
+ </section> 
+ 
+  <section id="webdav">
+
+	<title>Διαμόρφωση συγχρονισμού χρησιμοποιώντας WebDav</title>
+	
+	<p>Για να συγχρονίσετε τις σημειώσεις σας με έναν εξυπηρετητή WebDAV, θα χρειαστεί να έχετε εγκατεστημένο το σύστημα αρχείων wdfs FUSE. Ακολουθήστε τις οδηγίες του λειτουργικού σας συστήματος για να εγκαταστήσετε το FUSE στο λογαριασμό σας. Επιπλέον θα χρειαστεί να έχετε εγκατεστημένο και το GNOME Keyring.</p>
+	
+	<p>Επιλέξτε <gui>WebDAV</gui> από τη λίστα επιλογών <gui>Υπηρεσία</gui>. Συμπληρώστε τις πληροφορίες σύνδεσης για τον εξυπηρετητή σας και στη συνέχεια κάντε κλικ στο κουμπί <gui>Αποθήκευση</gui>. Είστε πλέον έτοιμος να συγχρονίσετε τις σημειώσεις σας.</p>
+
+ </section>
+ 
+  <section id="ssh">
+
+	<title>Διαμόρφωση συγχρονισμού χρησιμοποιώντας SSH</title>
+	
+	<p>Για να συγχρονίσετε τις σημειώσεις σας με έναν εξυπηρετητή SSH, θα χρειαστεί να έχετε εγκατεστημένο το σύστημα αρχείων FUSE, εγκατεστημένο ονομάζεται και <app>sshfs</app>. Ακολουθήστε τις οδηγίες του λειτουργικού σας συστήματος για να ρυθμίσετε το FUSE στο λογαριασμό σας. Επιπλέον θα χρειαστείτε ένα κλειδί SSH για το λογαριασμό σας στον εξυπηρετητή SSH το οποίο μπορεί να δοθεί από την εφαρμογή <app>Seahorse</app>, γνωστή και ως <app>Κωδικοί και κλειδιά κρυπτογράφησης</app>.</p>
+	
+	<p>Συνίσταται η χρήση ενός τρίτου υπολογιστή ή ενός εξυπηρετητή ως τον απομακρυσμένο υπολογιστή στον οποίο θα αποθηκεύονται οι σημειώσεις που θα συγχρονίζονται μεταξύ υπολογιστών.</p>
+
+	<p>Open <app>Passwords and Encryption Keys</app> by choosing 
+	<guiseq><gui>Applications</gui><gui>Accessories</gui>
+	<gui>Passwords and Encryption Keys</gui></guiseq>.  
+	Click on your key, and from the menu choose <guiseq><gui>Remote</gui>
+	<gui>Configure Key for Secure Shell</gui></guiseq>  
+	and enter the domain name or IP address of the computer you want to 
+	synchronize to in <gui>Computer Name</gui>.  Enter the username of the 
+	remote computer in <gui>Login Name:</gui> and press <gui>Set Up</gui>. 
+	When prompted, enter the password and setting up your key will 
+	be completed.
+	</p>
+	
+	<p>Επιλέξτε <gui>SSH</gui> από τη λίστα επιλογών <gui>Υπηρεσία</gui>. Συμπληρώστε τις πληροφορίες σύνδεσης για τον εξυπηρετητή σας και στη συνέχεια κάντε κλικ στο κουμπί <gui>Αποθήκευση</gui>. Η <gui>Διαδρομή φακέλου</gui>, αν και προαιρετική, πρέπει να δείχνει σε έναν άδειο φάκελο. Είστε πλέον έτοιμος να συγχρονίσετε τις σημειώσεις σας.</p>
+
+ </section>
+
+ <section id="local">
+
+	<title>Διαμόρφωση συγχρονισμού σε έναν τοπικό φάκελο</title>
+	
+	<p>Μπορεί να θέλετε να συγχρονίσετε τις σημειώσεις σας σε ένα τοπικό φάκελο αν αυτός είναι διαθέσιμος και στα άλλα συστήματα σας, ή αν ο φάκελος αντιπροσωπεύει μια τοπική προσάρτηση ή έναν απομακρυσμένο εξυπηρετητή.</p>
+
+	<p>Επιλέξτε από τη λίστα επιλογών <gui>Υπηρεσία</gui>. Επιλέξτε την επιθυμητή <gui>Διαδρομή φακέλου</gui> και στη συνέχεια κάντε κλικ στο κουμπί <gui>Αποθήκευση</gui>. Είστε πλέον έτοιμος να συγχρονίσετε τις σημειώσεις σας.</p>
+
+ </section>
+ 
+ </page>

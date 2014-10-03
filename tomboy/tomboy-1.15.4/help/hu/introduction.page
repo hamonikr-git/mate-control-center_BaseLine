@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="introduction" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <desc>A <app>Tomboy jegyzettömb</app> bemutatása.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Bevezetés</title>
+
+  <p>A <app>Tomboy</app> egy jegyzetelő alkalmazás a GNOME asztali környezethez, Microsoft Windows és Mac OS X rendszerekhez. A <app>Tomboy</app> használata egyszerű, és segít rendszerezni ötleteit és a minden nap használt információkat.</p>
+  <p>A <app>Tomboy</app> szolgáltatásai segítenek rendszerezni és megjegyezni az információkat, valamint lehetővé teszi a jegyzetek összekapcsolását az információk egyszerűbb keresése és rendezése érdekében. Több jegyzetet jegyzettömbbé szervezhet, így megkönnyítve a jegyzetek csoportosítását.</p>
+  <p>
+    You can also synchronize your notes across multiple computers, making it
+    easy to take your notes with you wherever you are.
+  </p>
+
+  <figure>
+    <title>A <gui>Tomboy jegyzettömb</gui> ablak</title>
+    <desc>A <gui>Tomboy jegyzettömb</gui> főablaka</desc>
+    <media type="image" src="figures/tomboy.png" mime="image/png" style="right">
+      <p>A <gui>Tomboy</gui> alapértelmezett jegyzete.</p>
+    </media>
+  </figure>
+
+</page>

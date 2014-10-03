@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="edit-notes" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="create-notes"/>
+    <link type="seealso" xref="delete-notes"/>
+    <desc>Urejajte in oblikujte svoja sporočilca.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Urejajte sporočilca</title>    
+  
+		<p>Tomboy sporočilca vam omogočajo oblikovanje besedila v sporočilcu na več različnih načinov, vključno z uveljavitvijo in razveljavitvijo, krepko, ležečo in podčrtano pisavo in več.</p>
+		
+   <section id="redo-undo">
+	
+	<title>Razveljavi in uveljavi</title>
+	
+		<p>Za razveljavitev zadnjega dejanja, vključno s tipkanjem beseda ali oblikovanjem besedila pritisnite ikono <gui>Besedilo</gui> v orodni vrstici in izberite <gui>Razveljavi</gui>.</p>
+
+		<p>V primeru da želite besedo ali besedilo uveljaviti po razveljavitvi, pritisnite ikono <gui>Besedilo</gui> v orodni vrstici in izberite <gui>Uveljavi</gui>.</p>
+	
+  </section>
+	 
+  <section id="text-format">
+	
+	<title>Oblikovanje besedila</title>
+	
+		<p>Besedilo svojih sporočilc lahko oblikujete na številne različne načine, vključno s podčrtavanjem besed, krepkim ali ležečim besedilom, poudarjanjem besed ali fraz ali prečrtanjem skozi besedilo.</p>
+  </section>
+	 
+  <section id="text-size">
+	
+	<title>Spreminjanje velikosti pisave</title>
+	
+		<p>Velikost besedila v sporočilcih lahko spremenite na dva načina.</p>
+		<p>Poudarite besedilo, ki ga želite povečati ali pomanjšati in pritisnite <keyseq><key>Ctrl</key><key>+</key></keyseq> za povečanje svojega besedila ali <keyseq><key>Ctrl</key><key>-</key></keyseq> za pomanjšanje svojega besedila.</p>
+		<p>Dodatno lahko pritisnete ikono <gui>Besedilo</gui> v orodni vrstici in izberete eno od štirih prednastavljenih velikosti, vključno z majhno, običajno, veliko in ogromno.</p>
+	
+  </section>
+	 
+  <section id="bullets">
+	
+	<title>Oblikovanje seznamskih točk</title>
+	
+		<p>Seznamske točke je mogoče ustvariti s tipkovnico ali z ikono <gui>Besedilo</gui> v orodni vrstici.</p>
+		<p>Za ročno ustvarjanje seznamske točke, vpišite <key>*</key> in nato napišite svoje besedilo. Po pritisku vnosne tipke bo Tomboy vrstico, ki se začne z zvezdico, samodejno pretvoril v seznamsko točko. Tudi naslednja vrstica bo samodejno oblikovana kot seznamska točka. V primeru da želite ustvariti točno podseznama, nemudoma po pritisku <key>Vnosne tipke</key> pritisnite <key>Tabulator</key>.</p>
+		<p>Poudarite lahko tudi določeno vrstico in v orodni vrstici izberete ikono <gui>Besedilo</gui> in izberete izbirno polje <gui>Seznamske oznake</gui>. To bo poudarjeno vrstico spremenilo v seznamsko oznako.</p>
+
+	
+  </section>
+</page>

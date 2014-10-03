@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="guide" style="2column" id="addins" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Jak přidat rozšiřující funkcionalitu do aplikace Tomboy.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-02" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Doplňky pro aplikaci Tomboy</title>
+
+  <p><gui>Doplňky</gui> jsou zásuvné moduly aplikace <app>Tomboy</app>, které vám doplní další vlastnosti a funkcionalitu, která není přítomna jako výchozí.</p>
+
+  <steps>
+    <title>Pro povolení doplňku:</title>
+    <item>
+      <p>Vyberte <guiseq><gui style="menu">Upravit</gui> <gui style="menuitem">Předvolby</gui> <gui style="tab">Doplňky</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Kliknutím na <gui>+</gui> rozbalte kategorii doplňků.</p>
+    </item>
+    <item>
+      <p>Vyberte doplněk, které si přejete povolit.</p>
+    </item>
+    <item>
+      <p>Zmáčkněte <gui style="button">Povolit</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Jestli chcete získat další doplňky z Internetu, klikněte v okně <gui>Předvolby <app>Tomboy</app></gui> na kartě <gui style="tab">Doplňky</gui> na <gui style="button">Získat více doplňků…</gui>.</p>
+  </note>
+
+  <section id="preferences" style="2column">
+    <title>Předvolby</title>
+  </section>
+
+  <section id="tools" style="2column">
+    <title>Nástroje</title>
+  </section>
+
+  <section id="desktop-integration" style="2column">
+    <title>Integrace do pracovního prostředí</title>
+  </section>
+
+  <section id="sync" style="2column">
+    <title>Synchronizace</title>
+    <p>Doplněk pro synchronizaci vám umožní zvolit si různé způsoby a místa pro synchronizaci vašich poznámek Tomboy.</p>
+  </section>
+
+  <section id="formatting" style="2column">
+    <title>Formátování</title>
+  </section>
+</page>

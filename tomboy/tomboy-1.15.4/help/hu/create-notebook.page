@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="create-notebook" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#notebooks"/>
+    <desc>Új jegyzettömb létrehozása a Tomboyban.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Új jegyzettömb létrehozása</title>    
+  
+  <p>A jegyzettömbök lehetővé teszik a kapcsolódó jegyzetek csoportosítását. A jegyzettömbhöz a Keresés minden jegyzetben ablakban, vagy közvetlenül a jegyzeten belül adhat jegyzetet.</p>
+  
+<steps>
+	<item>
+	<p>Kattintson a GNOME panelen, Windows tálcán vagy az OS X dokkon lévő Tomboy ikonra. Megjelenik egy menü.</p>
+	</item>
+	
+<!--
+<comment>Screenshots need to be updated using Clearlooks</comment>
+-->
+
+	<item>
+		<p>Válassza a <guiseq><gui>Jegyzettömbök</gui><gui>Új jegyzettömb</gui></guiseq> menüpontot.</p>
+	</item>
+	<item>
+		<p>Adja meg az új jegyzettömb nevét.</p>
+	</item>
+</steps>
+
+	<p>Új jegyzettömb létrehozása a <gui>Keresés minden jegyzetben</gui> ablakban:</p>
+
+<steps>
+	<item>
+		<p>Nyissa meg a <gui>Keresés minden jegyzetben</gui> ablakot a GNOME panelen, Windows tálcán vagy az OS X dokkon lévő Tomboy ikonra kattintva, vagy kattintson a Keresés gombra egy megnyitott jegyzetben.</p>
+	</item>
+	<item>
+		<p>Kattintson a jobb egérgombbal a bal oldali mezőbe, és válassza az <gui>Új jegyzettömb</gui> menüpontot.</p>
+	</item>
+	<item>
+		<p>Adja meg az új jegyzettömb nevét.</p>
+	</item>
+</steps>
+
+	<p>Vagy:</p>
+	
+<steps>
+	<item>
+		<p>A megnyitott <gui>Keresés minden jegyzetben</gui> ablakban válassza a <guiseq><gui>Fájl</gui><gui>Jegyzettömbök</gui><gui>Új jegyzettömb</gui></guiseq> menüpontot.</p>
+	</item>
+	<item>
+		<p>Adja meg az új jegyzettömb nevét.</p>
+	</item>
+</steps>	
+
+        
+	
+	
+</page>

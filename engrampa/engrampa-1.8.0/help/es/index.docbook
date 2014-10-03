@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26.0">
+<!ENTITY manrevision "2.26.0">
+<!ENTITY date "April 2006">
+<!ENTITY appname "Archive Manager">
+<!ENTITY app "<application>Archive Manager</application>">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.MATE.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="es">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manual del <application>Gestor de archivadores</application></title>
+     <abstract role="description">
+       <para>Gestor de archivadores, también conocido como Engrampa para crear, ver, modificar o desempaquetar un archivador.</para>
+     </abstract>
+    <copyright lang="en">
+      <year>2009</year>
+      <holder>Paul Cutler</holder>
+    </copyright>	    
+	<copyright lang="en"> 
+      <year>2006</year> 
+      <year>2008</year>
+      <holder>Paolo Bacchilega</holder> 
+    </copyright> 
+     <copyright lang="en">
+        <year>2003</year>
+        <year>2004</year>
+        <holder>Sun Microsystems</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2003</year> 
+      <holder>Paolo Bacchilega</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2002</year> 
+      <holder>Alexander Kirillov</holder> 
+    </copyright> 
+
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Proyecto de documentación de Mate</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+         <para>Se concede permiso para copiar, distribuir y/o modificar este documento bajo los términos de la Licencia de Documentación Libre de GNU, Versión 1.1 o cualquier otra versión posterior publicada por la Free Software Foundation; sin Secciones Invariantes ni Textos de Cubierta Delantera ni Textos de Cubierta Trasera. Puede encontrar una copia de la licencia GFDL en este <ulink type="help" url="help:fdl">enlace</ulink> o en el archivo COPYING-DOCS distribuido con este manual.</para>
+          <para>Este manual es parte de una colección de manuales de Mate distribuido bajo la GFDL. Si quiere distribuir este manual por separado de la colección, puede hacerlo añadiendo una copia de la licencia al manual, tal como se describe en la sección 6 de la licencia.</para>
+ 
+         <para>Muchos de los nombres usados por compañías para distinguir sus productos y servicios son mencionados como marcas comerciales. Donde esos nombres aparezcan en cualquier documentación de Mate, y los miembros del Proyecto de Documentación de Mate están al corriente de esas marcas comerciales, entonces los nombres se pondrán en mayúsculas o con la inicial en mayúsculas.</para>
+ 
+         <para lang="en">
+           DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+           UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+           WITH THE FURTHER UNDERSTANDING THAT:
+ 
+           <orderedlist>
+                 <listitem>
+                   <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                     WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                     IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                     THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                     A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                     RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                     OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                     MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                     YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                     CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                     SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                     OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                     LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                     VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                     EXCEPT UNDER THIS DISCLAIMER; AND
+                   </para>
+                 </listitem>
+                 <listitem>
+                   <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                        THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                        CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                        INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                        DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                        OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                        PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                        DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                        CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                        INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                        OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                        MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                        LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                        DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                        EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                        THE POSSIBILITY OF SUCH DAMAGES.
+                   </para>
+                 </listitem>
+           </orderedlist>
+         </para>
+   </legalnotice>
+  <!-- This file contains link to license for the
+   documentation (GNU FDL), and other legal stuff such as "NO
+   WARRANTY" statement. Please do not change any of this. -->
+
+    <authorgroup> 
+       <author lang="en"> 
+         <firstname>Sun </firstname>
+         <surname>MATE Documentation Team</surname>
+         <affiliation> 
+            <orgname>Sun Microsystems</orgname>
+        </affiliation>
+      </author>
+      <author lang="en"> 
+	<firstname>Paolo</firstname> 
+	<surname>Bacchilega</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+      </author> 
+      <author lang="en"> 
+	<firstname>Alexander</firstname> 
+	<surname>Kirillov</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	  <address> <email>kirillov@math.sunysb.edu</email> </address> 
+	</affiliation> 
+      </author> 
+      <author lang="en">
+        <firstname>Paul</firstname>
+        <surname>Cutler</surname>
+        <affiliation>
+          <orgname>MATE Documentation Project</orgname>
+          <address><email>pcutler@foresightlinux.org</email></address>
+        </affiliation>
+      </author>	  
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review">
+		<ulink type="techreview" url="http://bugzilla.mate.org/show_bug.cgi?id=575419"/>
+	</releaseinfo>
+
+         <revhistory>
+                <revision lang="en">
+                  <revnumber>Archive Manager Manual V2.26.0</revnumber>
+                  <date>March 2009</date>
+                  <revdescription>
+                         <para role="author" lang="en">Paul Cutler</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+				
+                <revision lang="en">
+                  <revnumber>Archive Manager Manual V2.24.0</revnumber>
+                  <date>July 2008</date>
+                  <revdescription>
+                         <para role="author" lang="en">Paolo Bacchilega</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+				
+                <revision lang="en">
+                  <revnumber>Archive Manager Manual V2.6</revnumber>
+                  <date>April 2006</date>
+                  <revdescription>
+                         <para role="author" lang="en">Paolo Bacchilega</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.5</revnumber>
+                  <date>March 2004</date>
+                  <revdescription>
+                         <para role="author" lang="en">Sun GNOME Documentation Team</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.4</revnumber>
+                  <date>February 2004</date>
+                  <revdescription>
+                         <para role="author" lang="en">Sun GNOME Documentation Team</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.3</revnumber>
+                  <date>August 2003</date>
+                  <revdescription>
+                         <para role="author" lang="en">Sun GNOME Documentation Team</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.2</revnumber>
+                  <date>June 2003</date>
+                  <revdescription>
+                         <para role="author" lang="en">Sun GNOME Documentation Team</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.1</revnumber>
+                  <date>January 2003</date>
+                  <revdescription>
+                         <para role="author" lang="en">Paolo Bacchilega</para>                         
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.0</revnumber>
+                  <date>June 2002</date>
+                  <revdescription>
+                         <para role="author" lang="en">Alexander Kirillov</para>                         
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+         </revhistory>
+
+    <releaseinfo>Este manual describe la versión 2.26.0 del Gestor de archivadores.</releaseinfo> 
+    <legalnotice> 
+        <title>Comentarios</title>
+        <para>Para informar de un defecto o hacer alguna sugerencia sobre respecto al <application>Gestor de archivadores</application> o el presente manual, siga las instrucciones que aparecen en la <ulink url="help:mate-feedback" type="help">página de comentarios de Mate</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo> 
+  <indexterm zone="index" lang="en"> 
+    <primary>Engrampa</primary> 
+  </indexterm> 
+  <indexterm zone="index" lang="en"> 
+    <primary>engrampa</primary> 
+  </indexterm>
+  <indexterm zone="index" lang="en"> 
+    <primary>Archiving</primary> 
+  </indexterm>
+  <indexterm zone="engrampa-add-files" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Adding files to</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-delete-files" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Deleting files from</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-open" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Opening</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-view" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Viewing</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-extract" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Extracting</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-create" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Creating</secondary>
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="engrampa-intro"> 
+    <title>Introducción</title> 
+    <para>La aplicación <application>Gestor de archivadores</application> se utiliza para crear, ver, modificar o desempaquetar un archivador. Un archivador es un archivo que actúa como contenedor de otros archivos. Un archivador puede contener muchos archivos, carpetas y subcarpetas, usualmente de forma comprimida.</para>
+    <para>La aplicación <application>Gestor de archivadores</application> proporciona únicamente una interfaz gráfica, basándose en utilidades de línea de comandos como <command>tar</command>, <command>gzip</command> y <command>bzip2</command> para las operaciones de archivado.</para>
+    <para>Si tiene instaladas en su sistema las herramientas de línea de comandos apropiadas, el <application>Gestor de archivadores</application> soporta los formatos de archivador listados en la siguiente tabla.</para> 
+      <informaltable frame="all">
+        <tgroup cols="2" colsep="1" rowsep="1">
+          <colspec colname="COLSPEC0" colwidth="50*"/>
+          <colspec colname="COLSPEC1" colwidth="50*"/>
+          <thead>
+            <row valign="top">
+              <entry colname="COLSPEC0">
+                <para>Formato</para></entry>
+              <entry colname="COLSPEC1" align="left">
+                <para>Extensión del archivo</para></entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">
+              <entry><para>Archivador 7-Zip</para></entry>
+              <entry align="left"><para lang="en"><filename>.7z</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador WinAce</para></entry>
+              <entry align="left"><para lang="en"><filename>.ace</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador ALZip</para></entry>
+              <entry align="left"><para lang="en"><filename>.alz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador indexado pequeño AIX</para></entry>
+              <entry align="left"><para lang="en"><filename>.ar</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador ARJ</para></entry>
+              <entry align="left"><para lang="en"><filename>.arj</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivo Cabinet</para></entry>
+              <entry align="left"><para lang="en"><filename>.cab</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador UNIX CPIO</para></entry>
+              <entry align="left"><para lang="en"><filename>.cpio</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Paquete Debian de Linux</para></entry>
+              <entry align="left"><para lang="en"><filename>.deb</filename></para></entry>
+            </row>            
+            <row valign="top">
+              <entry><para>Imagen de CD ISO-9660</para></entry>
+              <entry align="left"><para lang="en"><filename>.iso</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador Java</para></entry>
+              <entry align="left"><para lang="en"><filename>.jar</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador Java Enterprise</para></entry>
+              <entry align="left"><para lang="en"><filename>.ear</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador Java web</para></entry>
+              <entry align="left"><para lang="en"><filename>.war</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador LHA</para></entry>
+              <entry align="left"><para><filename>.lha</filename>, <filename>.lzh</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador comprimido con WinRAR</para></entry>
+              <entry align="left"><para lang="en"><filename>.rar</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Libro de cómic archivado en RAR</para></entry>
+              <entry align="left"><para lang="en"><filename>.cbr</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Paquete RPM de Linux</para></entry>
+              <entry align="left"><para lang="en"><filename>.rpm</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador tar no comprimido</para></entry>
+              <entry align="left"><para lang="en"><filename>.tar</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador tar comprimido con <command>bzip</command></para></entry>
+              <entry align="left"><para><filename>.tar.bz</filename> o <filename>.tbz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador tar comprimido con <command>bzip2</command></para></entry>
+              <entry align="left"><para><filename>.tar.bz2</filename> o <filename>.tbz2</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador tar comprimido con <command>gzip</command></para></entry>
+              <entry align="left"><para><filename>.tar.gz</filename> o <filename>.tgz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador tar comprimido con <command>lzip</command></para></entry>
+              <entry align="left"><para><filename>.tar.lz</filename> o <filename>.tlz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador tar comprimido con <command>lzop</command></para></entry>
+              <entry align="left"><para><filename>.tar.lzo</filename> o <filename>.tzo</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador tar comprimido con <command>compress</command></para></entry>
+              <entry align="left"><para><filename>.tar.Z</filename> o <filename>.taz</filename></para></entry>
+            </row>
+             <row valign="top">
+              <entry><para>Archivador tar comprimido con <command>7zip</command></para></entry>
+              <entry align="left"><para lang="en"><filename>.tar.7z</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivadores Stuffit</para></entry>
+              <entry align="left"><para><filename>.bin</filename> o <filename>.sit</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador PKZIP o Winzip</para></entry>
+              <entry align="left"><para lang="en"><filename>.zip</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Libro de cómic archivado en ZIP</para></entry>
+              <entry align="left"><para lang="en"><filename>.cbz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Archivador Zoo</para></entry>
+              <entry align="left"><para lang="en"><filename>.zoo</filename></para></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    <para>El formato de archivador más común en los sistemas UNIX y GNU/Linux es el archivador tar comprimido con <command>gzip</command> o <command>bzip2</command>.</para>  
+    <para>El formato de archivador más común en los sistemas Microsoft Windows es el archivador creado con <application>PKZIP</application> o <application>WinZip</application>.</para>
+    <sect2 id="engrampa-intro-nonarchive">
+      <title>Archivos comprimidos que no son archivadores</title> 
+      <para>Un archivo comprimido que no es archivador es aquel que se crea al utilizar <command>bzip2</command>, <command>gzip</command>, <command>lzip</command>, <command>lzop</command>,  <command>compress</command> o <command>rzip</command> para comprimir un archivo que no es un archivador. Por ejemplo, <filename>archivo.txt.gz</filename> se crea al utilizar <command>gzip</command> para comprimir <filename>archivo.txt</filename>.</para>
+      <para>Se puede utilizar el <application>Gestor de archivadores</application> para abrir y extraer archivos comprimidos que no son archivadores.</para> 
+    </sect2>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="engrampa-get-start">
+    <title>Inicio</title>
+    <para>En este apartado se ofrece información acerca de cómo iniciar el <application>Gestor de archivadores</application> y se describe la interfaz de usuario del <application>Gestor de archivadores</application>.</para>
+
+<!-- ============= To Start Engrampa ============================ -->
+         <sect2 id="engrampa-to-start">
+                <title>Para iniciar el <application>Gestor de archivadores</application></title>
+                <para>Para iniciar el <application>Gestor de archivadores</application> de las formas siguientes:</para>
+                <variablelist>
+                <varlistentry>
+                <term>Menú <guimenu>Aplicaciones</guimenu></term>
+                <listitem>
+                <para>Elija <menuchoice><guisubmenu>Accesorios</guisubmenu><guimenuitem>Gestor de archivadores</guimenuitem></menuchoice>.</para>
+                </listitem>
+                </varlistentry>
+                <varlistentry>
+                <term>Línea de comandos</term>
+                <listitem>
+                <para>Ejecute el comando siguiente: <command>engrampa</command></para>
+                </listitem>
+                </varlistentry>
+                </variablelist>
+        </sect2>
+
+         <sect2 id="engrampa-when-start">
+                <title>Cuando inicie el <application>Gestor de archivadores</application></title>
+                <para>Cuando se inicia el <application>Gestor de archivadores</application>, aparece la ventana siguiente:</para>
+
+                <figure id="engrampa-FIG-main-window">
+                  <title>Ventana del <application>Gestor de archivadores</application></title>
+                  <screenshot>
+                         <mediaobject lang="en">
+                                <imageobject>
+                                  <imagedata fileref="figures/engrampa_main_window.png" format="PNG"/>
+                                         </imageobject>
+                                <textobject> <phrase>Shows Engrampa main window.</phrase>
+                                </textobject>
+                        </mediaobject>
+                  </screenshot>
+                </figure>
+
+                <para>La ventana del <application>Gestor de archivadores</application> contiene los elementos siguientes:</para>
+                <variablelist>
+                  <varlistentry> <term>Barra de menús</term>
+                         <listitem>
+                                <para>Los menús de la barra contienen todos los comandos necesarios para trabajar con archivadores en el <application>Gestor de archivadores</application>.</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Barra de herramientas</term>
+                         <listitem>
+                                <para>La barra de herramientas contiene un subconjunto de los comandos a los que puede acceder desde la barra de menús. El <application>Gestor de archivadores</application> muestra la barra de herramientas de forma predeterminada. Para ocultar la barra de herramientas, seleccione <menuchoice><guimenu>Ver</guimenu><guimenuitem>Barra de herramientas</guimenuitem></menuchoice>. Para mostrar la barra de herramientas, seleccione de nuevo <menuchoice><guimenu>Ver</guimenu><guimenuitem>Barra de herramientas</guimenuitem></menuchoice>.</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Barra de carpetas</term>
+                         <listitem>
+                                <para>La barra de carpetas permite desplazarse entre las carpetas de un archivador. El <application>Gestor de archivadores</application> sólo muestra la barra de carpetas en la vista de carpetas. Para obtener más información, consulte la <xref linkend="engrampa-view-type-folder"/>.</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Área de visualización</term>
+                         <listitem>
+                                <para>El área de visualización muestra el contenido del archivador.</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Barra de estado</term>
+                         <listitem>
+                                <para>La barra de estado muestra información sobre la actividad actual del <application>Gestor de archivadores</application> e información contextual sobre el contenido del archivador. El <application>Gestor de archivadores</application> muestra la barra de estado de forma predeterminada. Para ocultar la barra de estado, seleccione <menuchoice><guimenu>Ver</guimenu><guimenuitem>Barra de estado</guimenuitem></menuchoice>. Para mostrar la barra de estado, seleccione de nuevo <menuchoice><guimenu>Ver</guimenu><guimenuitem>Barra de estado</guimenuitem></menuchoice>.</para>
+                         </listitem>
+                  </varlistentry>
+                </variablelist>
+                <para>Cuando pulse con el botón derecho del ratón en la ventana del <application>Gestor de archivadores</application>, la aplicación muestra un menú emergente. El menú emergente contiene los comandos contextuales del archivador más habituales.</para>
+
+     <sect3 id="engrampa-bookmarks">
+        <title>Buscar en el sistema de archivos</title>
+        <para>Varios diálogos del <application>Gestor de archivadores</application> (<guilabel>Nuevo</guilabel>, <guilabel>Abrir</guilabel>, <guilabel>Extraer</guilabel>, ...) le permiten examinar archivos y carpetas en su equipo. Consulte la <ulink type="help" url="help:user-guide?filechooser-open">Guía del usuario del Escritorio</ulink> para aprender más acerca de cómo usar los diálogos de examinar.</para>
+        <para>También puede consultar la sección <ulink type="help" url="help:user-guide?caja-bookmarks">Marcadores</ulink> de la Guía del usuario del Escritorio para aprender a usar el panel <guilabel>Lugares</guilabel> para acceder a sus ubicaciones favoritas.</para>
+     </sect3>
+   </sect2>
+</sect1>
+
+
+
+<!-- ======= Working with archives ============= --> 
+
+<sect1 id="engrampa-working">
+      <title>Trabajar con archivadores</title>
+      <para>Cuando usa el <application>Gestor de archivadores</application> para trabajar con un archivador, todos los cambios se guardan al disco inmediatamente. Por ejemplo, si borra un archivo de un archivador, <application>Gestor de archivadores</application> borra el archivo tan pronto como pulsa <guibutton>Aceptar</guibutton>. Este comportamiento es diferente al de la mayoría de las aplicaciones, que guardan los cambios al disco sólo cuando sale de la aplicación o selecciona <guimenuitem>Guardar</guimenuitem> en el menú.</para>
+      <para>Si un archivador es muy grande, o tiene un sistema lento, algunas acciones de archivado pueden tardar un tiempo considerable. Para abortar la acción actual pulse <keycap>Esc</keycap>. Alternativamente, elija <menuchoice><guimenu>Ver</guimenu><guimenuitem>Detener</guimenuitem></menuchoice>, o pulse en <guibutton>Detener</guibutton> en la barra de herramientas.</para>      
+      <para lang="en">
+        In <application>Archive Manager</application>, you can perform the same action in several ways. For example, you can open an archive in the following ways:
+                  <informaltable frame="all">
+                    <tgroup cols="2" colsep="1" rowsep="1">
+                      <colspec colname="COLSPEC0" colwidth="50*"/>
+                      <colspec colname="COLSPEC1" colwidth="50*"/>
+                      <thead>
+                        <row valign="top">
+                          <entry colname="COLSPEC0">
+                            <para lang="en">UI Component</para></entry>
+                          <entry colname="COLSPEC1" align="left"> 
+                            <para lang="en">Action</para></entry>
+                        </row>
+                      </thead>
+                      <tbody>
+                        <row valign="top">               
+                          <entry><para lang="en">Window</para></entry>
+                          <entry><para lang="en">Drag an archive into the <application>Archive Manager</application> window from another application such as a file manager.</para></entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Menubar</para></entry>
+                          <entry><para lang="en">Choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Open</guimenuitem></menuchoice>.</para>
+           <para lang="en">If you have recently opened the archive, it will be listed directly in the <menuchoice><guimenu>Archive</guimenu></menuchoice> menu.</para> 
+</entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Toolbar</para></entry>
+                          <entry><para lang="en">Click on the <guibutton>Open</guibutton> toolbar button.</para>
+           <para lang="en">If you have recently opened the archive, click on the down arrow near the <guibutton>Open</guibutton> toolbar button.</para></entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Right-click popup menu</para></entry>
+                          <entry><para lang="en">Right-click on the archive, then choose <guilabel>Open</guilabel> from the popup menu.</para></entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Shortcut keys</para></entry>
+                          <entry><para lang="en">Press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo>.</para></entry>
+                        </row>
+                      </tbody>
+                    </tgroup>
+                  </informaltable>
+      </para>
+      <para>Este manual documenta las funciones de la barra de menús.</para>
+
+    <sect2 id="engrampa-pattern">
+      <title>Patrones de nombres de archivo</title>
+      <para>El <application>Gestor de archivadores</application> le permite añadir, extraer o borrar varios archivos a la vez. Para aplicar una acción a todos los archivos que coincidan con un patrón determinado, introduzca el patrón en la caja de texto. El patrón puede incluir símbolos de comodines estándar como <keycap>*</keycap> para coincidir con cualquier cadena, y <keycap>?</keycap> para coincidir sólo con un símbolo cualquiera. Puede introducir varios patrones separados por puntos y comas. El <application>Gestor de archivadores</application> aplica la acción a todos los archivos que coincidan con al menos uno de los patrones. Los ejemplos en la tabla siguiente muestran cómo usar los patrones de nombres de archivo para seleccionar los archivos.</para>
+      <informaltable frame="all">
+        <tgroup cols="2" colsep="1" rowsep="1">
+          <colspec colname="COLSPEC0" colwidth="50*"/>
+          <colspec colname="COLSPEC1" colwidth="50*"/>
+          <thead>
+            <row valign="top">
+              <entry colname="COLSPEC0">
+                <para>Patrón</para></entry>
+              <entry colname="COLSPEC1" align="left"> 
+                <para>Archivos que coinciden</para></entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">               
+              <entry><para lang="en"><filename>*</filename></para></entry>
+              <entry align="left"><para>Todos los archivos</para></entry>
+            </row>
+            <row valign="top">               
+              <entry><para lang="en"><filename>*.tar*</filename></para></entry>
+              <entry align="left"><para>Todos los archivos con extensión <filename>tar</filename>, incluyendo aquellos en los que la extensión <filename>tar</filename> está seguida de cualquier secuencia de símbolos como <filename>archivo.tar.gz</filename></para></entry>
+            </row>
+            <row valign="top">               
+              <entry><para lang="en"><filename>*.jpg; *.jpeg</filename></para></entry>
+              <entry align="left"><para>Todos los archivos con extensión <filename>jpg</filename> y todos los archivos con extensión <filename>jpeg</filename></para></entry>
+            </row>
+            <row valign="top">               
+              <entry><para lang="en"><filename>file?.gz</filename></para></entry>
+              <entry align="left"><para>Todos los archivos con extensión <filename>gz</filename> que tienen el nombre del «archivo» seguido por uno sólo carácter, ej <filename>archivo2.gz</filename>, <filename>archivox.gz</filename>.</para></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </sect2>
+
+<!-- ======= To open an archive ============= --> 
+
+<sect2 id="engrampa-open">
+      <title>Para abrir un archivador</title>
+      <para lang="en">
+	To open an archive, perform the following steps:
+        <orderedlist>
+          <listitem>
+           <para lang="en">Choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Open</guimenuitem></menuchoice> to display the <guilabel>Open</guilabel> dialog. Alternatively press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo>, or click <guibutton>Open</guibutton> in the toolbar.</para> 
+          </listitem>
+          <listitem>
+           <para lang="en">Select the archive that you want to open.</para> 
+          </listitem>
+          <listitem>
+           <para lang="en">Click <guibutton>Open</guibutton>.</para> 
+          </listitem>
+        </orderedlist>
+      </para>
+      <para lang="en"><application>Archive Manager</application> automatically determines the archive type, and displays:
+        <itemizedlist>
+          <listitem>
+            <para lang="en">The archive name in the window titlebar</para>
+          </listitem>
+          <listitem>
+            <para lang="en">The archive contents in the display area</para>
+          </listitem>
+          <listitem>
+            <para lang="en">The number files and folders (objects) in the current location, and their size when uncompressed, in the statusbar</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>Para abrir otro archivador, elija <menuchoice><guimenu>Archivador</guimenu><guimenuitem>Abrir</guimenuitem></menuchoice> otra vez. El <application>Gestor de archivadores</application> abre cada archivador en una ventana nueva. No puede abrir otro archivador en la misma ventana.</para>
+      <para>Si intenta abrir un archivador que fue creado con un formato no reconocido por el <application>Gestor de archivadores</application>, la aplicación mostrará un mensaje de error. Consulte la <xref linkend="engrampa-intro"/> para ver la lista de los formatos admitidos.</para>
+  </sect2>
+
+<!-- ======= Selecting files in an archive  ============= --> 
+    <sect2 id="engrampa-select-files">
+      <title>Para seleccionar archivos dentro de un archivador</title>
+    <para>Para seleccionar todos los archivos en un archivador, elija <menuchoice><guimenu>Editar</guimenu><guimenuitem>Seleccionar todo</guimenuitem></menuchoice> o pulse <keycombo><keycap>Ctrl</keycap><keycap>A</keycap></keycombo>.</para>
+      <para>Para deseleccionar todos los archivos en un archivador, elija <menuchoice><guimenu>Editar</guimenu><guimenuitem>Deseleccionar todo</guimenuitem></menuchoice> o pulse <keycombo><keycap>Shift</keycap><keycap>Ctrl</keycap><keycap>A</keycap></keycombo>.</para>
+    </sect2>
+
+  <!-- =========== Extracting Files From an Archive ==================== -->
+
+  <sect2 id="engrampa-extract"> 
+    <title>Para extraer archivos de un archivador</title> 
+    <para lang="en">
+	To extract files from an open archive, perform the following steps:
+        <orderedlist>
+        <listitem><para lang="en">
+        Select the files that you want to extract.  To select more files, press-and-hold <keycap>Ctrl</keycap> and click on the files you want to select.</para>
+        </listitem>
+        <listitem><para lang="en">
+        Choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Extract</guimenuitem></menuchoice> to display the <guilabel>Extract</guilabel> dialog.  Alternatively click <guibutton>Extract</guibutton> in the toolbar.</para>
+        </listitem>
+        <listitem><para lang="en">
+        Select the folder where <application>Archive Manager</application> extracts the files.</para>
+        </listitem>
+        <listitem><para lang="en">
+        Select the required extract options. For more information about the extract options, see <xref linkend="engrampa-extract-options"/>.</para>
+        </listitem>
+        <listitem><para lang="en">
+        Click <guibutton>Extract</guibutton>.</para>
+        <note>
+          <para lang="en">
+            If all of the files in the archive are protected by a password, and you have not specified it, <application>Archive Manager</application> asks you to enter the password.
+          </para>
+          <para lang="en">
+            If some but not all of the files in the archive are protected by a password, and you have not specified the password, <application>Archive Manager</application> does not ask for a password. However, <application>Archive Manager</application> extracts only the unprotected files.
+          </para>
+          <para lang="en">
+            For more information about passwords, see <xref linkend="engrampa-encrypt-files"/>.
+          </para>
+        </note>
+        </listitem>
+        </orderedlist>
+        </para>
+      <para>El <application>Gestor de archivadores</application> ofrece también formas de extraer archivos de un archivador dentro de una ventana del administrador de archivos, sin tener que abrir una ventana del <application>Gestor de archivadores</application>. Para obtener más información, consulte la <xref linkend="engrampa-fmgr"/>.</para>
+    <para>La operación de extracción extrae una <emphasis>copia</emphasis> de los archivos especificados del archivo. Los archivos extraídos tienen los mismos permisos y fecha de modificación que los archivos originales que fueron añadidos al archivador.</para>
+    <para>La operación de extracción no cambia el contenido del archivador. Para más información sobre cómo borrar archivos desde dentro de un archivador, vea la <xref linkend="engrampa-delete-files"/>.</para>
+  </sect2>
+    
+<!-- ======= Closing the Archive ============= --> 
+  <sect2 id="engrampa-archive-close">
+    <title>Para cerrar un archivo</title>
+    <para lang="en">To close the current archive and the current <application>Archive Manager</application> window, choose <menuchoice> <guimenu>Archive</guimenu> <guimenuitem>Close</guimenuitem> </menuchoice>, or press <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>.
+    </para>
+    <note>
+      <para>No hay forma de cerrar el archivador actual sin cerrar la ventana del <application>Gestor de archivadores</application>.</para>
+    </note>
+  </sect2>
+</sect1>
+
+
+<!-- =============  Creating Archives ============================= -->
+<sect1 id="engrampa-creating"> 
+    <title>Crear archivadores</title> 
+    <para>Además de abrir archivadores existentes, puede también crear archivadores nuevos con el <application>Gestor de archivadores</application>.</para>
+    <sect2 id="engrampa-create"> 
+    <title>Crear un archivador</title> 
+    <para lang="en">
+      To create an archive, perform the following steps:
+      <orderedlist>
+        <listitem>
+          <para lang="en">Choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>New</guimenuitem></menuchoice> to display the <guilabel>New</guilabel> dialog.  Alternatively press <keycombo><keycap>Ctrl</keycap><keycap>N</keycap></keycombo>, or click <guibutton>New</guibutton> in the toolbar.
+          </para>
+        </listitem>
+        <listitem>
+          <para lang="en">Specify the folder where <application>Archive Manager</application> places the new archive clicking on the entry in the <guilabel>Save in folder</guilabel> drop-down list. If the folder is not present in list, click on <guilabel>Browse for other folders</guilabel>, and select the folder. Alternatively, enter the path in the <guilabel>Name</guilabel> text box.
+          </para>
+        </listitem>
+        <listitem>
+          <para lang="en">Enter the name of the new archive, including the file extension, in the <guilabel>Name</guilabel> text box.  Alternatively you can specify the archive name without extension, and then select the archive type from the <guilabel>Archive type</guilabel> drop-down menu, this way the extension will be added automatically.  
+          </para>
+        </listitem>
+        <listitem><para lang="en">
+        Select the required create options clicking on <guilabel>Other Options</guilabel>. For more information about the create options, see <xref linkend="engrampa-create-options"/>.</para>
+        </listitem>
+        <listitem>
+          <para lang="en">Click <guibutton>New</guibutton>. <application>Archive Manager</application> creates an empty archive, but does not yet write the archive to disk. 
+          </para>
+        </listitem>
+        <listitem>
+          <para lang="en">Add files to the new archive as described in <xref linkend="engrampa-add-files"/>.  
+                <note>
+                  <para lang="en"><application>Archive Manager</application> writes a new archive to disk only when the archive contains at least one file. If you create a new archive and quit <application>Archive Manager</application> before you add any files to the archive, <application>Archive Manager</application> deletes the archive.
+                  </para>
+                </note>
+          </para>
+        </listitem>
+      </orderedlist>
+    </para>
+</sect2>
+
+    <!-- ======= Adding files to an archive  ============= --> 
+  <sect2 id="engrampa-add-files">
+    <title>Para añadir archivos a un archivador</title>
+    <para lang="en">
+      To add files to an archive, perform the following steps:
+      <orderedlist>
+         <listitem>
+           <para lang="en">Decide where in the archive you want to add the files, then open that location in the archive.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Add Files</guimenuitem></menuchoice> to display the <guilabel>Add Files</guilabel> dialog, or click <guibutton>Add Files</guibutton> in the toolbar.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Select the files that you want to add.  To select more files press-and-hold <keycap>Ctrl</keycap> and click the files.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Click <guibutton>Add</guibutton>. <application>Archive Manager</application> adds the files to the current folder in the archive.
+          </para> 
+         </listitem>
+      </orderedlist>
+    </para>
+    <para>No puede añadir carpetas al archivador con el diálogo <guilabel>Añadir archivos</guilabel>. Para añadir una carpeta vea <xref linkend="engrampa-add-folder"/>.</para>
+    <para>El diálogo <guilabel>Añadir archivos</guilabel> proporciona la opción <guilabel>Añadir sólo si es más nuevo</guilabel>, vea <xref linkend="engrampa-add-options"/> para más información acerca de esta opción.</para>
+    <para>También se pueden añadir archivos a un archivador desde la ventana de un administrador de archivos, sin tener que abrir una ventana del <application>Gestor de archivadores</application>. Para obtener más información, consulte la <xref linkend="engrampa-fmgr"/>.</para>
+    <para>La operación Añadir añade una <emphasis>copia</emphasis> de los archivos o carpetas especificados al archivador. El <application>Gestor de archivadores</application> no elimina los archivos originales; éstos permanecen sin cambios en el sistema de archivos. Las copias añadidas al archivador tienen los mismos permisos y fechas de modificación que los archivos originales.</para>
+    </sect2>
+
+<!-- ======= Adding files - Adding folder  ============= --> 
+    <sect2 id="engrampa-add-folder">
+      <title>Para añadir una carpeta a un archivador</title>
+    <para lang="en">
+      To add a folder to an archive, perform the following steps:
+      <orderedlist>
+         <listitem>
+           <para lang="en">Decide where in the archive you want to add the files, then open that location in the archive.</para>
+         </listitem>
+         <listitem>
+           <para lang="en">Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Add a Folder</guimenuitem></menuchoice> to display the <guilabel>Add a Folder</guilabel> dialog.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Select the folder that you want to add.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Click <guibutton>Add</guibutton>. <application>Archive Manager</application> adds the folder to the current folder in the archive.
+          </para> 
+         </listitem>
+      </orderedlist>
+    </para>
+    <para>El diálogo <guilabel>Añadir una carpeta</guilabel> proporciona varias opciones avanzadas. Vea la <xref linkend="engrampa-add-options"/> para más información.</para>
+    </sect2>
+
+  <!-- ======= Converting an Archive to Another Format ============= --> 
+  <sect2 id="engrampa-convert-archive">
+    <title>Para convertir un archivador a otro formato</title>
+    <para>Para convertir un archivador a otro formato y guardarlo como un archivo nuevo, haga lo siguiente:</para>
+    <orderedlist>
+      <listitem>
+        <para>Abra el archivador que quiere convertir.</para>
+      </listitem>
+      <listitem>
+        <para>Elija <menuchoice><guimenu>Archivador</guimenu><guimenuitem>Guardar como</guimenuitem></menuchoice> para mostrar el diálogo <guilabel>Guardar</guilabel>.</para>
+      </listitem>
+      <listitem>
+        <para>Introduzca el nombre nuevo del archivador en la caja de texto <guilabel>Nombre</guilabel>.</para>
+      </listitem>
+      <listitem>
+        <para>Seleccione el formato nuevo de la lista desplegable <guilabel>Tipo de archivador</guilabel>. Alternativamente, introduzca la extensión del nombre de archivo en la caja de texto <guilabel>Nombre</guilabel> y seleccione <guilabel>Automático</guilabel> en la lista desplegable <guilabel>Tipo de archivador</guilabel>.</para>
+      </listitem>
+      <listitem>
+        <para>Seleccione las opciones de creación requeridas en <guilabel>Otras opciones</guilabel>. Para obtener más información acerca de las opciones de creación, consulte la <xref linkend="engrampa-create-options"/>.</para>
+      </listitem>      
+      <listitem>
+        <para>Pulse en <guibutton>Guardar</guibutton>.</para>
+        <note>
+          <para>Si todos los archivos en el archivador están protegidos por una contraseña y no ha especificado la contraseña, el <application>Gestor de archivadores</application> le pide que introduzca la contraseña.</para>
+          <para>Si algunos pero no todos los archivos en el archivador están protegidos por una contraseña, y no ha especificado la contraseña, el <application>Gestor de archivadores</application> no le pide una contraseña. Sin embargo, el <application>Gestor de archivadores</application> sólo copia los archivos desprotegidos al archivador nuevo.</para>
+          <para>Para más información sobre de las contraseñas, vea la <xref linkend="engrampa-encrypt-files"/>.</para>
+        </note>
+      </listitem>
+    </orderedlist>
+  </sect2>
+</sect1>
+
+<!-- ======= Operations on Archive Contents ============= --> 
+<sect1 id="engrampa-modify-contents">
+  <title>Modificar el contenido de un archivador</title>
+  <para>Puede modificar el contenido de un archivador de varias formas.</para>
+
+<!-- ======= Encrypting files in an archive  ============= --> 
+    <sect2 id="engrampa-encrypt-files">
+      <title>Para cifrar archivos en un archivador</title>
+    <para>Por seguridad, quizá quiera cifrar los archivos que añada a un archivador.</para>
+      <para>Si el formato del archivador soporta cifrado puede especificar una contraseña para cifrar los archivos que añada al archivador.</para>
+      <note>
+        <para>Actualmente sólo los archivadores 7-Zip, ZIP, RAR y ARJ soportan cifrado.</para>
+      </note>
+     <para>Para especificar una contraseña para el cifrado de archivos, realice los siguientes pasos:</para>
+       <orderedlist>
+          <listitem><para lang="en">Choose <menuchoice><guimenu>Edit</guimenu> <guimenuitem>Password</guimenuitem></menuchoice> to display the <guilabel>Password</guilabel> dialog.</para></listitem> 
+<listitem><para>Introduzca la contraseña en la caja de texto <guilabel>Contraseña</guilabel>.</para></listitem>
+<listitem><para>Pulse <guibutton>Aceptar</guibutton>.</para></listitem>
+       </orderedlist>
+    <para>El <application>Gestor de archivadores</application> usa la contraseña para cifrar los archivos que añada al archivador actual, y para descifrar los archivos que extraiga del archivador actual. El <application>Gestor de archivadores</application> borra la contraseña cuando usted cierra el archivador.</para>
+      <para>Para más información acerca de cómo comprobar si un archivador contiene archivos cifrados, vea la <xref linkend="engrampa-extra-info"/>.</para>
+      <note>
+      <para>El cifrado proporcionado por las utilidades de archivado es débil e inseguro. Si la seguridad es importante, use una herramienta de cifrado fuerte como <ulink url="http://www.gnupg.org" type="http">GNU Privacy Guard</ulink>.</para>
+      </note>
+    </sect2>
+
+<!-- ======= Renaming files in an archive  ============= --> 
+  <sect2 id="engrampa-rename-files">
+    <title>Para renombrar un archivo dentro de un archivador</title>
+    <para>Para renombrar un archivo dentro de un archivador, realice los pasos siguientes:</para>
+      <orderedlist>
+        <listitem>
+          <para>Seleccione el archivo que quiere renombrar.</para>
+        </listitem>
+        <listitem>
+          <para>Elija <menuchoice><guimenu>Editar</guimenu><guimenuitem>Renombrar</guimenuitem></menuchoice> o pulse 
+<keycombo><keycap>F2</keycap></keycombo> para mostrar el diálogo <guilabel>Renombrar</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Introduzca el nombre del archivo nuevo en la caja de texto <guilabel>Nombre de archivo nuevo</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Pulse <guibutton> Renombrar</guibutton>.</para>
+        </listitem>
+      </orderedlist>
+  </sect2>
+
+<!-- ======= Copying files in an archive  ============= --> 
+  <sect2 id="engrampa-copy-files">
+    <title>Para copiar archivos de un archivador</title>
+    <para>Para copiar los archivos que estén dentro de un archivador, realice los pasos siguientes:</para>
+      <orderedlist>
+        <listitem>
+          <para>Seleccione los archivos que quiere copiar.</para>
+        </listitem>
+        <listitem>
+          <para>Elija <menuchoice><guimenu>Editar</guimenu><guimenuitem>Copiar</guimenuitem></menuchoice> o pulse <keycombo><keycap>Ctrl</keycap><keycap>C</keycap></keycombo>.</para>
+        </listitem>
+        <listitem>
+          <para>Abra el lugar donde quiere poner los archivos copiados.</para>
+        </listitem>
+        <listitem>
+          <para>Elija <menuchoice><guimenu>Editar</guimenu><guimenuitem>Pegar</guimenuitem></menuchoice> o pulse <keycombo><keycap>Ctrl</keycap><keycap>V</keycap></keycombo>.</para>
+        </listitem>
+      </orderedlist>
+  </sect2>
+
+<!-- ======= Moving files in an archive  ============= --> 
+  <sect2 id="engrampa-move-files">
+    <title>Para mover archivos de un archivador</title>
+    <para>Para mover archivos que estén dentro de un archivador, realice los pasos siguientes:</para>
+      <orderedlist>
+        <listitem>
+          <para>Seleccione los archivos que quiere mover.</para>
+        </listitem>
+        <listitem>
+          <para>Elija <menuchoice><guimenu>Editar</guimenu><guimenuitem>Cortar</guimenuitem></menuchoice> o pulse <keycombo><keycap>Ctrl</keycap><keycap>X</keycap></keycombo>.</para>
+        </listitem>
+        <listitem>
+          <para>Abra el lugar donde quiere poner los archivos movidos.</para>
+        </listitem>
+        <listitem>
+          <para>Elija <menuchoice><guimenu>Editar</guimenu><guimenuitem>Pegar</guimenuitem></menuchoice> o pulse <keycombo><keycap>Ctrl</keycap><keycap>V</keycap></keycombo>.</para>
+        </listitem>
+      </orderedlist>
+  </sect2>
+
+<!-- ======= Deleting files from an archive  ============= --> 
+  <sect2 id="engrampa-delete-files">
+    <title>Para borrar archivos del interior de un archivador</title>
+    <para>Para borrar archivos del interior de un archivador, realice los pasos siguientes:</para>
+      <orderedlist>
+        <listitem>
+          <para>Seleccione los archivos que quiere borrar.</para>
+        </listitem>
+        <listitem>
+          <para>Elija <menuchoice><guimenu>Editar</guimenu><guimenuitem>Borrar</guimenuitem></menuchoice> para mostrar el diálogo <guilabel>Borrar</guilabel> o pulse <keycap>Borrar</keycap> para mostrar el diálogo <guilabel>Borrar</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Seleccione una de las opciones de borrado siguientes:</para>
+          <variablelist>
+            <varlistentry>
+              <term lang="en"><guilabel>All files</guilabel></term>
+              <listitem>
+                <para>Borra todos los archivos del archivador.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term lang="en"><guilabel>Selected files</guilabel></term>
+              <listitem>
+                <para>Borra los archivos seleccionados del archivador.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term lang="en"><guilabel>Files</guilabel></term>
+              <listitem>
+                <para>Borra del archivador todos los archivos que coincidan con el patrón especificado. Vea la <xref linkend="engrampa-pattern"/> para más información acerca de los patrones de nombres de archivo.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+        </listitem>
+        <listitem>
+          <para>Pulse <guibutton>Aceptar</guibutton>.</para>
+        </listitem>
+      </orderedlist>
+  </sect2>
+
+<!-- =============  Modify a File in an Archive ==================== -->
+  <sect2 id="engrampa-modify-archive-file"> 
+    <title>Modificar un archivo en un archivador</title> 
+    <para lang="en">
+      To modify a file in an archive perform the following steps:
+      <orderedlist>
+      <listitem><para lang="en">Double-click the file that you want to open. Alternatively right-click the file and choose <menuchoice><guimenuitem>Open</guimenuitem></menuchoice>.</para></listitem>
+      <listitem><para lang="en">Edit the file opened in step 1, and then save your changes.</para></listitem>
+      <listitem><para lang="en"><application>Archive Manager</application> shows a confirmation dialog, asking confirmation to update the file in the archive with the changes you made.</para></listitem>
+      <listitem><para lang="en">Click on <guilabel>Update</guilabel>.</para></listitem>
+      </orderedlist>
+    </para>
+    <para>El <application>Gestor de archivadores</application> usa las asociaciones definidas en el sistema entre tipos de archivo y programas para determinar la aplicación apropiada que lanzar para un archivo específico. Estas asociaciones se pueden mostrar y modificar en la solapa <guilabel>Abrir con</guilabel> del diálogo de propiedades del archivo. Si el <application>Gestor de archivadores</application> no puede determinar la aplicación apropiada, el <application>Gestor de archivadores</application> muestra el diálogo <guilabel>Abrir archivos</guilabel> para dejarle elegir una aplicación, como se describe anteriormente.</para>
+    <sect3 id="engrampa-modifiy-archive-file-custom-app">
+    <title>Modificar un archivo en un archivador con una aplicación personalizada</title>
+    <para lang="en">
+      You can use an application specified by you, rather than the default application, to modify a file. To use an external application to open a file:
+      <orderedlist>
+      <listitem><para lang="en">Right click the file.</para></listitem>
+      <listitem><para lang="en">Choose <menuchoice><guimenuitem>Open With...</guimenuitem></menuchoice>.</para></listitem>
+      </orderedlist>
+    </para>    
+    <para>El <application>Gestor de archivadores</application> muestra el diálogo <guilabel>Abrir archivos</guilabel>, que lista todas las aplicaciones que pueden abrir archivos del tipo especificado. Para seleccionar una de las aplicaciones pulse dos veces en el nombre de la aplicación o pulse en el nombre de la aplicación y después pulse <guibutton>Abrir</guibutton>. Alternativamente, introduzca el nombre de la aplicación en la caja de texto <guilabel>Aplicación</guilabel> y pulse <guibutton>Abrir</guibutton> para lanzar la aplicación elegida.</para>
+    <para>Una vez que la aplicación se inicia siga el procedimiento desde el paso 2 tal y como se describe en la <xref linkend="engrampa-modify-archive-file"/>.</para>
+    </sect3>
+  </sect2>
+</sect1>
+
+
+<!-- ======= Viewing an archive ============= --> 
+<sect1 id="engrampa-view">
+  <title>Ver archivadores</title>
+  <para>El <application>Gestor de archivadores</application> le permite ver varios aspectos de un archivador.</para>
+
+<!-- ======= Archive Properties ============= --> 
+    <sect2 id="engrampa-view-archive-properties">
+      <title>Para ver las propiedades de un archivador</title>
+      <para lang="en">To view the properties of an archive, choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Properties</guimenuitem></menuchoice> to display the <guilabel>Properties</guilabel> dialog. The <guilabel>Properties</guilabel> dialog displays the following information about the archive:
+            <variablelist>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Name</guilabel></term>
+	        <listitem><para lang="en">The name of the archive. 
+                </para></listitem>
+	      </varlistentry>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Location</guilabel></term>
+	        <listitem><para lang="en">The position of the archive in the file system. 
+                </para></listitem>
+	      </varlistentry>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Modified on</guilabel></term>
+	        <listitem><para lang="en">The date and time at which the archive was last modified. 
+                </para></listitem>
+	      </varlistentry>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Archive size</guilabel></term>
+	        <listitem><para lang="en">The size of the archive contents when compressed.
+                </para></listitem>
+	      </varlistentry>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Content size</guilabel></term>
+	        <listitem><para lang="en">The size of the archive contents when uncompressed.  This information is also available in the statusbar.
+                </para></listitem>
+	      </varlistentry>
+
+	      <varlistentry>
+	        <term lang="en"><guilabel>Compression ratio</guilabel></term>
+	        <listitem><para lang="en">The compression ratio is a value used to describe the reduction in size of the data. For example a compression ratio of 5 means that the compressed archive is 1/5th the size of the original data. 
+                </para></listitem>
+	      </varlistentry>
+
+	      <varlistentry>
+	        <term lang="en"><guilabel>Number of files</guilabel></term>
+	        <listitem><para lang="en">The number of files in the archive. 
+                </para></listitem>
+	      </varlistentry>
+            </variablelist>
+      </para>
+    </sect2>
+ 
+
+<!-- ======= Archive Contents ============= --> 
+    <sect2 id="engrampa-view-archive-contents">
+      <title>Para ver el contenido de un archivador</title>
+
+      <para lang="en"> <application>Archive Manager</application> displays the archive contents in the main window as a file list with the following columns:
+        <variablelist>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Name</guilabel></term>
+	    <listitem><para lang="en">The name of a file or folder in the archive. 
+            </para></listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Size</guilabel></term>
+	    <listitem><para lang="en">The size of the file when the file is extracted from the archive. For a folder, the <guilabel>Size</guilabel> field is blank. For information on how to display the size of the compressed file, see <xref linkend="engrampa-extra-info"/>.
+            </para></listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Type</guilabel></term>
+	    <listitem><para lang="en">The type of the file. For a folder, the value in the <guilabel>Type</guilabel> field is <literal>Folder</literal>.
+            </para></listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Date modified</guilabel></term>
+	    <listitem><para lang="en">The date on which the file was last modified. For a folder, the <guilabel>Date modified</guilabel> field is blank.
+            </para></listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Location</guilabel></term>
+	    <listitem><para lang="en">The path to the file within the archive. This column is visible only when the window is in file view, when in folder view the location of the files is displayed in the <guilabel>Location</guilabel> text box of the folderbar. For more information about view types see <xref linkend="engrampa-view-type-folder"/>.
+            </para></listitem>
+	  </varlistentry>
+        </variablelist>
+      </para>
+      <para>Si otro programa ha modificado el archivador desde que el <application>Gestor de archivadores</application> lo abrió, elija <menuchoice><guimenu>Ver</guimenu><guimenuitem>Recargar</guimenuitem></menuchoice> para recargar el contenido del archivador desde el disco.</para>
+      <para>Para información sobre cómo personalizar la forma en que el <application>Gestor de archivadores</application> muestra el contenido del archivador, vea la <xref linkend="engrampa-archive-custom"/>.</para>
+      <para>Para más tareas avanzadas, use una aplicación instalada en su sistema. Para más información, vea la <xref linkend="engrampa-view-archive-file"/>.</para>
+    </sect2>
+
+  <!-- =============  Viewing a File in an Archive ==================== -->
+  <sect2 id="engrampa-view-archive-file"> 
+    <title>Para ver un archivo dentro de un archivador</title> 
+    <para>Para ver un archivo en un archivador, siga los pasos descritos en la <xref linkend="engrampa-modify-archive-file"/>. Si guarda el archivo abierto, pulse <guilabel>Cancelar</guilabel> cuando el <application>Gestor de archivos</application> le pida confirmación para actualizar el archivo dentro del archivador.</para>
+  </sect2>
+
+<!-- =============  Testing the Integrity of an Archive ==================== -->
+  <sect2 id="engrampa-test-archive"> 
+    <title>Comprobar la integridad de un archivador</title> 
+    <para lang="en">Sometimes an archive can be damaged for some reason, to check whether an archive is damaged, choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Test Integrity</guimenuitem></menuchoice>:
+            <itemizedlist>
+              <listitem>
+                <para lang="en">If the archive contains no errors, <application>Archive Manager</application> opens the <guilabel>Test Result</guilabel> dialog to list each file in the archive, and indicates that each file has status <literal>OK</literal>.
+                </para>
+              </listitem>
+              <listitem>
+                <para lang="en">If the archive contains some error, <application>Archive Manager</application> opens the <guilabel>Test Result</guilabel> dialog displaying the part of the archive contains the error.
+                </para>
+              </listitem>
+            </itemizedlist>
+    </para>
+    <para>Puede que sea imposible extraer un archivador dañado, esto puede acarrear pérdidas de datos. Por esta razón debería comprobar la integridad del archivador antes de borrar los archivos originales.</para>
+    <para>Si el archivador contiene archivos cifrados el <application>Gestor de archivadores</application> pregunta la contraseña del archivador antes de realizar la comprobación.</para>
+    <note>
+      <para>No todos los tipos de archivador soportan comprobación de integridad, la siguiente lista de tipos de archivadores muestra los que sí la soportan: 7-Zip, RAR, ZIP, ACE, ARJ y Zoo.</para>
+    </note>
+    <tip>
+      <title>Consejo</title>
+      <para>Para comprobar la integridad de un archivador que no soporta comprobación de integridad, extraiga todos los archivos del archivador y compruebe que la operación se lleva a cabo satisfactoriamente.</para>      
+    </tip>
+  </sect2>  
+</sect1>
+    
+<!-- ======= Customizing the Archive Display ============= --> 
+<sect1 id="engrampa-archive-custom">
+  <title>Personalizar la visualización de archivadores</title>
+  <para>Puede personalizar la manera en que el <application>Gestor de archivadores</application> muestra el contenido de los archivadores, como sigue:</para>
+  <itemizedlist>
+    <listitem>
+      <para>Cambiando entre la vista de carpeta y la vista de archivo. Para más información, vea la <xref linkend="engrampa-view-type"/>.</para>
+    </listitem>
+    <listitem>
+      <para>Especificando el orden en el cual se muestran los archivos en la lista. Para más información, vea la <xref linkend="engrampa-view-sort"/>.</para>
+    </listitem> 
+    <listitem>
+      <para>Mostrando detalles adicionales sobre el contenido del archivador. Para más información, vea la <xref linkend="engrampa-extra-info"/>.</para>
+    </listitem> 
+  </itemizedlist>
+  <para>El <application>Gestor de archivadores</application> actualiza el visor inmediatamente, cuando hace cualquiera de las personalizaciones de arriba.</para>
+
+  <sect2 id="engrampa-view-type">
+    <title>Para establecer el tipo de vista</title>
+    <para>Si el archivador contiene carpetas, puede mostrar el contenido del archivador tanto en una <link linkend="engrampa-view-type-folder">vista de carpetas</link> como en una <link linkend="engrampa-view-type-file">vista de archivo</link>.</para>
+
+    <sect3 id="engrampa-view-type-folder">
+      <title>Vista de carpeta</title>
+      <para>El <application>Gestor de archivadores</application> muestra el contenido de los archivadores en la vista de carpeta por omisión. Para seleccionar explícitamente la vista de carpeta, elija <menuchoice><guimenu>Ver</guimenu><guimenuitem> Ver como carpeta</guimenuitem></menuchoice>.</para>
+      <para>En la vista de carpeta, el <application>Gestor de archivadores</application> muestra las carpetas de la misma manera que un administrador de archivos muestra las carpetas. Esto es, el <application>Gestor de archivadores</application> indica las carpetas en el área de visualización con un icono de carpeta y un nombre de carpeta. Para ver el contenido de una carpeta, pulse dos veces en el nombre de la carpeta.</para>
+      <para>La barra de carpetas, que el <application>Gestor de archivadores</application> muestra sólo en la vista de carpeta, contiene los componentes descritos en la tabla siguiente.</para>
+      <informaltable frame="all">
+        <tgroup cols="2" colsep="1" rowsep="1">
+          <colspec colname="COLSPEC0" colwidth="50*"/>
+          <colspec colname="COLSPEC1" colwidth="50*"/>
+          <thead>
+            <row valign="top">
+              <entry colname="COLSPEC0">
+                <para>Componente</para></entry>
+              <entry colname="COLSPEC1">
+                <para>Descripción</para></entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="figures/engrampa_leftarrow.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                      <phrase>Shows icon to navigate backwards in location history list.</phrase>
+                    </textobject>
+                  </inlinemediaobject>
+                </para>
+              </entry>
+              <entry>
+                <para>Pulse en este botón para navegar hacia atrás en la lista del historial de lugares.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="figures/engrampa_rightarrow.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                      <phrase>Shows icon to navigate forwards in location history list.</phrase>
+                    </textobject>
+                  </inlinemediaobject>
+                </para>
+              </entry>
+              <entry>
+                <para>Pulse en este botón para navegar hacia adelante en la lista del historial de lugares.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="figures/engrampa_uparrow.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                      <phrase>Shows icon to navigate up one level in folder tree.</phrase>
+                    </textobject>
+                  </inlinemediaobject>
+                </para>
+              </entry>
+              <entry>
+                <para>Pulse en este botón para navegar un nivel por encima en el árbol de carpetas.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="figures/engrampa_home.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                      <phrase>Shows icon to open the top-level folder in the archive.</phrase>
+                    </textobject>
+                  </inlinemediaobject>
+                </para>
+              </entry>
+              <entry>
+                <para>Pulse en este botón para abrir la carpeta del nivel superior en el archivador.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <guilabel>Location</guilabel>
+                </para>
+              </entry>
+              <entry>
+                <para>Este campo muestra la ruta completa, dentro del archivador, de la carpeta actual.</para>
+                <para>Para cambiar a un nivel diferente en el árbol de la carpeta, teclee el lugar nuevo en la caja de texto <guilabel>Lugar</guilabel> y después pulse <keycap>Retorno</keycap>. El <application>Gestor de archivadores</application> muestra el contenido del lugar nuevo.</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </sect3>
+
+    <sect3 id="engrampa-view-type-file">
+      <title>Vista de archivo</title>
+      <para>Para seleccionar la vista de archivos, seleccione <menuchoice><guimenu>Ver</guimenu><guimenuitem>Ver todos los archivos</guimenuitem></menuchoice>.</para>
+      <para>En la vista de archivo, el <application>Gestor de archivadores</application> muestra todos los archivos en el archivador, incluyendo los archivos de las subcarpetas, en una lista simple.</para>
+    </sect3>
+
+  </sect2>
+
+  <sect2 id="engrampa-view-sort">
+    <title>Para ordenar la lista de archivos</title>
+    <para>Puede ordenar la lista de archivos por nombre, tamaño, tipo, fecha de modificación o ubicación.</para>
+    <para>Para especificar el orden pulse en la cabecera de la columna correspondiente.</para>
+    <para>Para invertir el orden pulse en la cabecera de la columna de nuevo.</para>
+    <para>Por ejemplo, para ordenar la lista de archivos por fecha de modificación, pulse en la cabecera <guilabel>Fecha de modificación</guilabel>. El <application>Gestor de archivadores</application> recoloca la lista de archivos para mostrar los archivos por fecha de modificación, comenzando con el más cercano. Para mostrar los últimos archivos primeros, pulsa en la cabecera <guilabel>Fecha de modificación</guilabel> otra vez.</para>
+    <para>El <application>Gestor de archivadores</application> siempre realiza una ordenación secundaria basándose en el nombre del archivo. En el ejemplo anterior el <application>Gestor de archivadores</application> ordena por nombre cualquier archivo que tenga la misma fecha de modificación.</para>
+  </sect2>
+
+  <sect2 id="engrampa-extra-info">
+    <title>Para mostrar detalles adicionales</title>
+      <para lang="en">To open the <guilabel>Last Output</guilabel> dialog, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Last Output</guimenuitem></menuchoice>: 
+            <itemizedlist>
+              <listitem>
+                <para lang="en">If you tested the archive in the current <application>Archive Manager</application> session, the <guilabel>Last Output</guilabel> dialog displays the results of the last test.
+                </para>
+              </listitem>
+              <listitem>
+                <para lang="en">If you did not test the archive in the current <application>Archive Manager</application> session, the <guilabel>Last Output</guilabel> dialog displays a list of all files in the archive, but does not indicate any status for the files. Instead, the <guilabel>Last Output</guilabel> dialog provides the compressed size of each file and the percentage of compression, and the date and time at which the file was last modified.
+                </para>
+              </listitem>
+            </itemizedlist>
+    </para>
+  </sect2>
+</sect1>
+
+<!-- ====== Using the File Manager Popup Menu to Manipulate an Archive ===== -->
+
+<sect1 id="engrampa-fmgr"> 
+    <title>Usar el administrador de archivos para trabajar con un archivador</title> 
+    <para>Puede usar el administrador de archivos para añadir archivos a un archivador, o para extraer archivos de un archivador.</para>
+
+<!-- ======= Adding files Using File Manager Menu  ============= --> 
+    <sect2 id="engrampa-fmgr-add">
+      <title>Para añadir archivos a un archivador usando el Administrador de archivos</title>
+           <para lang="en">You can use the file manager to add files to an archive, in the following ways:
+           <itemizedlist>
+             <listitem><para lang="en">Drag the files into a <application>Archive Manager</application> window from a file manager window.</para>
+             </listitem>
+             <listitem><para lang="en">Use the file manager popup menu to add the files to the archive.</para>
+             </listitem>
+          </itemizedlist>
+           </para>
+      <para>Para usar el menú emergente del administrador de archivos para añadir archivos a un archivador, realice los pasos siguientes:</para>
+      <orderedlist>
+        <listitem><para>Pulse con el botón derecho del ratón sobre los archivos o carpetas en la ventana del administrador de archivos.</para>
+        </listitem>
+        <listitem><para lang="en">Choose <guimenuitem>Create Archive</guimenuitem> from the file manager popup menu to display the <application>Archive Manager</application> <guilabel>Create Archive</guilabel> dialog.  </para>
+        </listitem>
+        <listitem><para>Introduzca el nombre del archivador sin la extensión de archivo en la caja de texto <guilabel>Archivador</guilabel>.</para>
+        </listitem>
+        <listitem><para>Elija el tipo de archivador de la lista desplegable.</para>
+        </listitem>
+        <listitem><para>Elija la ubicación donde guardar el archivo del archivador de la lista desplegable <guilabel>Lugar</guilabel>. Si la ubicación no está presente en la lista elija <guilabel>Otro...</guilabel> para seleccionarlo con el diálogo <guilabel>Lugar</guilabel>.</para>
+        </listitem>
+        <listitem><para>Seleccione las opciones de creación requeridas en <guilabel>Otras opciones</guilabel>. Para obtener más información acerca de las opciones de creación, consulte la <xref linkend="engrampa-create-options"/>.</para>
+        </listitem>
+        <listitem><para>Pulse <guilabel>Crear</guilabel> para añadir los archivos seleccionados a la carpeta raíz del archivador especificado.</para>
+                 <note><para>Para seleccionar cualquiera de las opciones avanzadas para añadir, debe invocar al <application>Gestor de archivadores</application> tal como se describe en la <xref linkend="engrampa-to-start"/>.</para></note>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+<!-- ======= Extracting files Using File Manager Menu  ============= --> 
+  <sect2 id="engrampa-fmgr-extract">
+      <title>Para extraer archivos de un archivador usando el administrador de archivos</title>
+           <para lang="en">You can use the file manager to extract files from an archive, in the following ways:
+           <itemizedlist>
+             <listitem><para lang="en">Drag the files from a <application>Archive Manager</application> window into a file manager window.</para>
+             </listitem>
+             <listitem><para lang="en">Use the file manager popup menu to extract the files from the archive.</para>
+             </listitem>
+          </itemizedlist>
+           </para>
+      <para>Para usar el menú emergente del administrador de archivos para extraer archivos del interior de un archivador, realice los pasos siguientes:</para>
+      <orderedlist>
+        <listitem><para>Pulse con el botón derecho en el archivador en la ventana del administrador de archivos.</para>
+        </listitem>
+        <listitem><para>Elija <guimenuitem>Extraer aquí</guimenuitem> para extraer todo el contenido del archivador en el directorio donde se encuentre el archivador.</para>
+        </listitem>
+      </orderedlist>
+      <note><para>Si el archivo está cifrado el <application>Gestor de archivadores</application> le pedirá que introduzca la contraseña antes de extraer los archivos.</para></note>
+    </sect2>
+
+</sect1>
+
+<!-- ======= Create Archive Advanced Options  ============= --> 
+    <sect1 id="engrampa-create-options">
+      <title>Opciones de creación</title>
+      <para>Al crear un archivador nuevo o al convertir un archivador existente a otro formato, pulse <guilabel>Otras opciones</guilabel> para especificar las siguientes opciones avanzadas:</para>
+      <variablelist>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Password</guilabel></term>
+	  <listitem>
+	  <para>Escriba la contraseña que se usará para cifrar los archivos. Si no se especifica ninguna contraseña no se cifrará el archivador.</para>
+	  <note>
+	    <para>No todos los tipos de archivador soportan cifrado. Para obtener más información acerca del cifrado de archivos consulte la <xref linkend="engrampa-encrypt-files"/>.</para>
+	  </note>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>	  
+	  <term lang="en"><guilabel>Encrypt the file list too</guilabel></term>
+	  <listitem>
+	  <para>Si ésta opción está seleccionada la contraseña se pedirá incluso para ver la lista de archivos contenida en el archivador, de otra forma sólo se pedirá para extraer los archivos del archivador. Esta opción está disponible sólo si se especifica una contraseña.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>	  
+	  <term lang="en"><guilabel>Split in volumes</guilabel></term>
+	  <listitem>
+	  <para>Seleccione esta opción para partir el archivador en varios archivos del tamaño especificado.</para>
+	  <note>
+	    <para>Sólo los archivadores 7-ZIP y RAR soportan esta característica.</para>
+	  </note>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect1>
+
+<!-- ======= Add Advanced Options  ============= --> 
+    <sect1 id="engrampa-add-options">
+      <title>Opciones al añadir</title>
+      <para>Los diálogos <guilabel>Añadir archivos</guilabel> y <guilabel>Añadir carpeta</guilabel> proporcionan la siguiente opción:</para>
+      <variablelist>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Add only if newer</guilabel></term>
+	  <listitem>
+            <para>Seleccione esta opción para añadir el archivo especificado al archivador sólo si el archivador no contiene el archivo especificado, o si el archivador contiene una versión más antigua del archivo especificado. El <application>Gestor de archivadores</application> usa la fecha de modificación para determinar qué archivo es el más reciente. Si la versión del archivo de dentro del archivador es la más reciente, el <application>Gestor de archivadores</application> no añade el archivo especificado al archivador.</para>
+	    <para>Si no selecciona esta opción, el <application>Gestor de archivadores</application> añade el archivo al archivador y sobreescribe el contenido anterior del archivador.</para>
+	    <tip>
+	      <title>Consejo</title>
+	      <para lang="en">If you use <application>Archive Manager</application> to create backups, the <guilabel>Add only if newer</guilabel> option is very useful. For example, the archive <filename>backup.tar.gz</filename> contains a week-old backup of your home folder. To update the archive to contain a current backup of your home folder, perform the following steps: 
+                    <orderedlist>
+                      <listitem>
+                        <para lang="en">
+                          Open the <filename>backup.tar.gz</filename> archive in <application>Archive Manager</application>. 
+                        </para>
+                      </listitem>
+                      <listitem>
+                        <para lang="en">
+                          Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Add</guimenuitem></menuchoice> to display the <guilabel>Add a Folder</guilabel> dialog.</para> 
+                      </listitem>
+                      <listitem>
+                        <para lang="en">
+		          Select your home folder. 
+                        </para>
+                      </listitem>
+                      <listitem>
+                        <para lang="en">
+                          Select the <guilabel>Add only if newer</guilabel> option.
+                        </para>
+                      </listitem>
+                      <listitem>
+                        <para lang="en">
+                          Click <guibutton>Add</guibutton>. 
+                        </para>
+                      </listitem>
+                    </orderedlist>
+                </para>
+                <para>El <application>Gestor de archivadores</application> añade automáticamente al archivador todos los archivos que creó durante la última semana y actualiza todos los archivos que haya modificado durante la última semana. No obstante el <application>Gestor de archivadores</application> no elimina del archivador los archivos que borró durante la pasada semana. La operación de actualización del archivador es mucho más rápida que un respaldo de su carpeta personal.</para>
+	  </tip>
+	</listitem>
+      </varlistentry>
+      </variablelist>
+      <sect2 id="engrampa-add-folder-options">
+      <title>Opciones de añadir a carpeta</title>
+      <para>Puede usar las siguientes opciones disponibles en el diálogo <guilabel>Añadir una carpeta</guilabel> para permitir seleccionar y añadir automáticamente todos los archivos que satisfagan cierto criterio:</para>
+      <variablelist>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Include files</guilabel></term>
+	  <listitem>
+            <para>Escriba un patrón de nombre de archivo en esta caja de texto para incluir los archivos cuyo nombre coincida con el patrón especificado. Para obtener más información acerca de patrones de nombres de archivo consulte la <xref linkend="engrampa-pattern"/>.</para>
+          </listitem>
+	</varlistentry>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Exclude files</guilabel></term>
+	  <listitem>
+            <para>Escriba un patrón de nombre de archivo en esta caja de texto para excluir los archivos cuyo nombre coincida con el patrón especificado. Para obtener más información acerca de patrones de nombres de archivo consulte la <xref linkend="engrampa-pattern"/>.</para>
+          </listitem>
+	</varlistentry>
+        <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Exclude folders</guilabel></term>
+	  <listitem>
+            <para>Escriba un patrón de nombre de archivo en esta caja de texto para excluir las carpetas cuyo nombre coincida con el patrón especificado. Para obtener más información acerca de patrones de nombres de archivo consulte la <xref linkend="engrampa-pattern"/>.</para>
+          </listitem>
+	</varlistentry>      
+       <!-- ============= -->	
+      <varlistentry>
+	<term lang="en"><guilabel>Include subfolders</guilabel></term>
+	<listitem>
+          <para>Seleccione esta opción para añadir todos los archivos que coincidan con el patrón especificado, de la carpeta actual y de las subcarpetas.</para>
+          <note>
+          <para>El nombre de archivo, no el nombre de la subcarpeta, debe coincidir con el patrón.</para>
+          </note>
+	  <para>Si no selecciona esta opción, el <application>Gestor de archivadores</application> añade los archivos que coincidan desde la carpeta actual únicamente.</para>
+        </listitem>
+      </varlistentry>
+       <!-- ============= -->	
+     <varlistentry>
+	<term lang="en"><guilabel>Exclude folders that are symbolic links</guilabel></term>
+	  <listitem>
+            <para>Seleccione esta opción para omitir archivos desde las carpetas que sean enlaces simbólicos. Los enlaces simbólicos son punteros, accesos directos, alias o atajos a otras carpetas.</para>
+	    <para>Si no selecciona esta opción, el <application>Gestor de archivadores</application> añade los archivos coincidentes de las carpetas que sean enlaces simbólicos.</para>
+          </listitem>
+	</varlistentry>
+       <!-- ============= -->
+     <varlistentry>
+	<term lang="en"><guibutton>Save Options</guibutton></term>
+	  <listitem>
+            <para>Pulse en este botón para guardar la selección actual de las opciones de adición a un archivo. Se muestra el diálogo <guilabel>Guardar opciones</guilabel>. Introduzca un nombre de archivo descriptivo en la caja de texto <guilabel>Nombre de opciones</guilabel>, después pulse <guibutton>Guardar</guibutton>.</para>
+          </listitem>
+	</varlistentry>
+       <!-- ============= -->	
+     <varlistentry>
+	<term lang="en"><guibutton>Load Options</guibutton></term>
+	  <listitem>
+            <para>Pulse en este botón para cargar o borrar una selección de opciones avanzadas guardada con anterioridad. Se muestra el diálogo <guilabel>Cargar opciones</guilabel>.</para>
+            <itemizedlist>
+              <listitem>
+                <para>Para cargar un conjunto de opciones, seleccione el archivo de opciones en la lista, después pulse <guibutton>Aplicar</guibutton>.</para>
+              </listitem>
+              <listitem>
+                <para>Para borrar un conjunto de opciones, seleccione el archivo de opciones en la lista, después pulse en <guibutton>Eliminar</guibutton>. Pulse <guibutton>Cerrar</guibutton> para cerrar el diálogo de <guilabel>Cargar opciones</guilabel>.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+	</varlistentry>
+       <!-- ============= -->	
+     <varlistentry>
+	<term lang="en"><guibutton>Reset Options</guibutton></term>
+	  <listitem>
+            <para>Pulse este botón para restablecer la selección actual de opciones avanzadas a sus valores predeterminados.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+<!-- ======= Extract Options  ============= --> 
+  <sect1 id="engrampa-extract-options">
+    <title>Opciones de extracción</title>
+      
+    <para>El diálogo <guilabel>Extraer</guilabel> proporciona las opciones siguientes, las cuales se guardan cuando sale del <application>Gestor de archivadores</application>:</para>
+      <variablelist>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Extract</guilabel></term>
+	  <listitem>
+            <para>Seleccione los archivos para extraer:</para>
+            <variablelist>
+              <varlistentry>
+                <term lang="en"><guilabel>All files</guilabel></term>
+                <listitem>
+                  <para>Extrae todos los archivos del archivador.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Selected files</guilabel></term>
+                <listitem>
+                  <para>Extrae los archivos seleccionados del archivador.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Files</guilabel></term>
+                <listitem>
+                  <para>Extrae del archivador todos los archivos que coinciden con el patrón especificado. Vea la <xref linkend="engrampa-pattern"/> para más información acerca de los patrones de nombres de archivo.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+	  </listitem>
+	</varlistentry>
+	<!-- ============= -->	
+	<varlistentry>
+      <term lang="en"><guilabel>Actions</guilabel></term>
+        <listitem>
+          <para>Seleccione las siguientes opciones de extracción:</para>	
+          <variablelist>
+	        <varlistentry>
+	          <term lang="en"><guilabel>Re-create folders</guilabel></term>
+	          <listitem><para>Seleccione esta opción para reconstruir la estructura de la carpeta al extraer los archivos especificados.</para> 
+                <para lang="en">For example, you specify <filename>/tmp</filename> in the <guilabel>Filename</guilabel> text box and choose to extract all files. The archive contains a subfolder called <filename>doc</filename>. 
+                <itemizedlist>
+                  <listitem><para lang="en">
+                    If you select the <guilabel>Re-create folders</guilabel> option, <application>Archive Manager</application> extracts the contents of the subfolder to <filename>/tmp/doc</filename>.
+                    </para>
+                 </listitem>
+                 <listitem><para lang="en">
+                   If you do not select the <guilabel>Re-create folders</guilabel> option, <application>Archive Manager</application> does not create any subfolders. Instead, <application>Archive Manager</application> extracts all files from the archive, including files from subfolders, to <filename>/tmp</filename>.
+                   </para>
+                 </listitem>
+               </itemizedlist>
+	           </para></listitem>
+	         </varlistentry>
+             <!-- ============= -->	
+	         <varlistentry>
+	           <term lang="en"><guilabel>Overwrite existing files</guilabel> </term>
+	           <listitem><para>Seleccione esta opción para sobreescribir cualquier archivo en la carpeta de destino que tenga el mismo nombre que los archivos especificados.</para>
+	             <para>Si no selecciona esta opción, el <application>Gestor de archivadores</application> no extrae el archivo especificado si ya existe un archivo con el mismo nombre en la carpeta de destino.</para>
+	           </listitem>
+	         </varlistentry>
+             <!-- ============= -->	
+	         <varlistentry>
+	           <term lang="en"><guilabel>Do not extract older files</guilabel> </term>
+	           <listitem>
+	             <para>Esta opción sólo es efectiva cuando la opción <guilabel>Sobreescribir archivos existentes</guilabel> está seleccionada.</para>
+	             <para>Seleccione la opción <guilabel>No extraer archivos más antiguos</guilabel> para extraer el archivo sólo si la carpeta de destino no contiene el archivo especificado, o si la carpeta de destino contiene una versión más antigua del archivo especificado. El <application>Gestor de archivadores</application> usa la fecha de modificación para determinar qué archivo es el más reciente. Si la versión del archivo en el archivador es más antigua, el <application>Gestor de archivadores</application> no extrae el archivo especificado a la carpeta de destino.</para>
+	             <para>Si no selecciona la opción <guilabel>No extraer archivos más antiguos</guilabel> mientras la opción <guilabel>Sobreescribir archivos existentes</guilabel> está seleccionada, el <application>Gestor de archivadores</application> extrae el archivo especificado del archivador y sobreescribe el contenido anterior de la carpeta de destino.</para>
+	           </listitem>
+	         </varlistentry>
+	       </variablelist>
+	     </listitem>
+	   </varlistentry>
+     </variablelist>	
+  </sect1>
+
+
+</article>

@@ -1,0 +1,48 @@
+mintinstall-icons (1.0.7) olivia; urgency=low
+
+  * Added icon for steam-launcher
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 11 Aug 2013 13:16:00 +0100
+
+mintinstall-icons (1.0.6) nadia; urgency=low
+
+  * Changed "depends imagemagick" to "build-depends imagemagick"
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 11 Oct 2012 14:13:35 +0100
+
+mintinstall-icons (1.0.5) julia; urgency=low
+
+  * Icons for dropbox
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri,  22 Oct 2010 12:39:00 +0000
+
+mintinstall-icons (1.0.4) julia; urgency=low
+
+  * Icon for virtualbox-nonfree
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon,  04 Oct 2010 15:38:00 +0000
+
+mintinstall-icons (1.0.3) julia; urgency=low
+
+  * More icons
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue,  21 Sep 2010 16:01:00 +0000
+
+mintinstall-icons (1.0.2) julia; urgency=low
+
+  * Ported to Julia
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed,  08 Sep 2010 10:23:00 +0000
+
+mintinstall-icons (1.0.1) isadora; urgency=low
+
+  * Added more icons
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri,  23 Jul 2010 10:48:00 +0000
+
+mintinstall-icons (1.0.0) isadora; urgency=low
+
+  * Initial release
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri,  23 Jul 2010 10:09:00 +0000
+

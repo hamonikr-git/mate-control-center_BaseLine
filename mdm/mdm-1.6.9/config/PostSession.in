@@ -1,0 +1,27 @@
+#!/bin/sh
+
+PATH="@X_PATH@:$PATH:/bin:/usr/bin"
+OLD_IFS=$IFS
+
+mdmwhich () {
+  COMMAND="$1"
+  OUTPUT=
+  IFS=:
+  for dir in $PATH
+  do
+    if test -x "$dir/$COMMAND" ; then
+      if test "x$OUTPUT" = "x" ; then
+        OUTPUT="$dir/$COMMAND"
+      fi
+    fi
+  done
+  IFS=$OLD_IFS 
+  echo "$OUTPUT"
+}
+
+# Use common Xreset framework if it exist
+if [ -x /etc/X11/Xreset ] ; then
+  /etc/X11/Xreset
+fi
+
+exit 0

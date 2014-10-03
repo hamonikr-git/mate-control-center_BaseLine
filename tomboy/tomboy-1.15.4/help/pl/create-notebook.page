@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="create-notebook" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#notebooks"/>
+    <desc>Tworzenie nowego notatnika.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Tworzenie nowego notatnika</title>    
+  
+  <p>Notatniki pozwalają na grupowanie powiązanych notatek w jednym miejscu. Notatkę można dodać do notatnika po otworzeniu okna "Przeszukiwanie notatek" lub bezpośrednio w oknie notatki.</p>
+  
+<steps>
+	<item>
+	<p>Kliknij ikonę programu Tomboy w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X. Pojawi się wówczas menu.</p>
+	</item>
+	
+<!--
+<comment>Screenshots need to be updated using Clearlooks</comment>
+-->
+
+	<item>
+		<p>Z menu podręcznego wybierz <guiseq><gui>Notatniki</gui><gui>Nowy notatnik</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Wprowadzić nazwę notatnika.</p>
+	</item>
+</steps>
+
+	<p>Aby utworzyć nowy notatnik w oknie "Przeszukiwanie notatek", należy:</p>
+
+<steps>
+	<item>
+		<p>Aby otworzyć okno <gui>"Przeszukiwanie notatek"</gui> należy kliknąć ikonę programu Tomboy w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X, lub kliknąć przycisk Szukaj w oknie notatki.</p>
+	</item>
+	<item>
+		<p>Kliknąć prawym przyciskiem myszy w lewej części okna i wybrać polecenie <gui>Nowy notatnik</gui>.</p>
+	</item>
+	<item>
+		<p>Wprowadzić nazwę notatnika.</p>
+	</item>
+</steps>
+
+	<p>Lub:</p>
+	
+<steps>
+	<item>
+		<p>Po otwarciu okna <gui>Przeszukiwanie notatek</gui> należy wybrać z menu <guiseq><gui>Plik</gui><gui>Notatniki</gui><gui>Nowy notatnik</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Wprowadzić nazwę notatnika.</p>
+	</item>
+</steps>	
+
+        
+	
+	
+</page>

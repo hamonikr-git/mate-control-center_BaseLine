@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY toolversion "2.15.2">
+<!ENTITY manrevision "2.15.2">
+<!ENTITY date "August 2006">
+<!ENTITY tool "Network Administration Tool">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.mate.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 06, 2003
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="it">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manuale Impostazioni di rete</title> 
+    <copyright lang="en">
+      <year>2004-2006</year>
+      <holder>Carlos Garnacho Parro</holder>
+    </copyright>
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+   -->
+
+    <publisher role="maintainer"> 
+	 <publishername>Carlos Garnacho Parro</publishername> 
+    </publisher> 
+
+  <legalnotice id="legalnotice">
+	<para>Questo documento può essere copiato, distribuito o modificato solo in conformità con i termini della GNU Free Documentation License (GFDL), Versione 1.1 o delle versioni successive pubblicate dalla Free Software Foundation senza sezioni invariabili, frontespizi e testi di copertina. Una copia della GFDL è disponibile su questo <ulink type="help" url="help:fdl">collegamento</ulink> o nel file COPYNG-DOCS distribuito con questo manuale.</para>
+         <para>Questo manuale fa parte di una raccolta di manuali MATE distribuita in conformità con la GFDL. Per poter distribuire questo manuale separatamente, è necessario inserirvi una copia della licenza, come descritto nella sezione 6 della licenza.</para>
+
+	<para>Molti dei nomi usati dalle aziende per distinguere i propri prodotti e servizi sono rivendicati come marchi. Quando questi nomi compaiono nella documentazione di MATE, e i partecipanti al MATE Documentation Project sono consapevoli del loro utilizzo, essi vengono scritti in lettere maiuscole o con l'iniziale maiuscola.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and 
+     other legal stuff such as "NO WARRANTY" statement. Please do not change 
+     any of this. -->
+
+    <authorgroup> 
+      <author lang="en">
+        <firstname>Carlos</firstname>
+        <surname>Garnacho Parro</surname>
+      </author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+        <othercredit role="translator">
+	      <firstname>Latin</firstname> 
+	      <surname>Translator 1</surname> 
+	      <affiliation> 
+	      	<orgname>Latin Translation Team</orgname> 
+	       	<address> <email>translator@gnome.org</email> </address> 
+	      </affiliation>
+	      <contrib>Latin translation</contrib>
+        </othercredit>
+-->
+    </authorgroup>
+
+    <revhistory>
+	 <revision lang="en">
+	   <revnumber>Network Administration Tool Manual V2.15.2</revnumber>
+	   <date>August 2006</date>
+	   <revdescription>
+          <para role="author" lang="en">carlosg@gnome.org (Carlos Garnacho Parro)</para>
+          <para role="publisher" lang="en">carlosg@gnome.org (Carlos Garnacho Parro)</para>
+	   </revdescription>
+	 </revision>
+	 <revision lang="en">
+	   <revnumber>Network Administration Tool Manual V0.35</revnumber>
+	   <date>June 2004</date>
+	   <revdescription>
+          <para role="author" lang="en">carlosg@gnome.org (Carlos Garnacho Parro)</para>
+          <para role="publisher" lang="en">carlosg@gnome.org (Carlos Garnacho Parro)</para>
+	   </revdescription>
+	 </revision>
+    </revhistory>
+
+    <releaseinfo>Questo manuale riguarda la versione 2.15.2 dello strumento Impostazioni di rete</releaseinfo> 
+
+    <legalnotice> 
+	 <title>Commenti</title> 
+	 <para>Per segnalare un bug o fornire un suggerimento riguardo lo strumento Impostazione di rete, seguire le istruzioni contenute nella <ulink url="help:mate-feedback" type="help">pagina dei commenti di MATE</ulink>.</para>
+    </legalnotice>
+    <abstract role="description">
+      <para>Lo strumento Impostazioni di rete permette di impostare in che modo il sistema si connette ad altri computer e a Internet.</para>
+    </abstract> 
+  </articleinfo> 
+
+  <indexterm zone="index" lang="en"> 
+    <primary>Network Administration Tool</primary> 
+  </indexterm> 
+
+  <!-- ============= Document Body ============================= -->
+  <sect1 id="tool-introduction"> 
+    <title>Introduzione</title> 
+    <para>Lo strumento <application>Impostazioni di rete</application> permette di impostare in che modo il sistema si connette ad altri computer e a Internet.</para> 
+  </sect1>
+
+  <sect1 id="tool-getting-started">
+    <title>Per iniziare</title>
+
+    <para>È possibile avviare lo strumento <application>Impostazioni di rete</application> nei seguenti modi:</para>
+
+    <variablelist>
+	 <varlistentry>
+	   <term>Menù <guimenu>Sistema</guimenu></term>
+	   <listitem>
+		<para>Scegliere <menuchoice><guisubmenu>Amministrazione</guisubmenu><guimenuitem>Rete</guimenuitem></menuchoice>.</para>
+	   </listitem>
+	 </varlistentry>
+
+	 <varlistentry>
+	   <term>Riga di comando</term>
+	   <listitem>
+		<para>Eseguire il seguente comando: <command>network-admin</command></para>
+	   </listitem>
+	 </varlistentry>
+    </variablelist>
+
+    <para>Quando si avvia lo strumento <application>Impostazioni di rete</application>, sarà chiesta la password di amministratore, questo è necessario perché i cambiamenti avranno effetto sul sistema.</para>
+
+    <para>Dopo avere inserito la password, si aprirà la seguente finestra.</para>
+
+    <figure id="network-main-window">
+	 <title>Finestra principale dello strumento Impostazioni di rete</title>
+	 <screenshot>
+	   <mediaobject lang="en">
+		<imageobject>
+		  <imagedata fileref="figures/network-tool.png" format="PNG"/>
+		</imageobject>
+		<textobject>
+		  <phrase>Shows Network Administration Tool main window.</phrase>
+		</textobject>
+	   </mediaobject>
+	 </screenshot>
+    </figure>
+
+    <para>La finestra principale dello strumento <application>Impostazioni di rete</application> contiene quattro schede:</para>
+
+    <variablelist>
+	 <varlistentry>
+	   <term lang="en"><guilabel>Connections</guilabel></term>
+	   <listitem>
+		<para>Mostra tutte le interfacce di rete, permette inoltre di modificare le loro impostazioni.</para>
+	   </listitem>
+	 </varlistentry>
+
+	 <varlistentry>
+	   <term lang="en"><guilabel>General</guilabel></term>
+	   <listitem>
+		<para>Permette di modificare il nome dell'host e il dominio del sistema.</para>
+	   </listitem>
+	 </varlistentry>
+
+    	 <varlistentry>
+	   <term lang="en"><guilabel>DNS</guilabel></term>
+	   <listitem>
+		<para>Comprende due sezioni, i <guilabel>Server DNS</guilabel> sono utilizzati dal computer per risolvere gli indirizzi IP dei domini. I <guilabel>Domini di ricerca</guilabel> sono i domini predefiniti all'interno dei quali il sistema cerca qualsiasi host quando non è specificato alcun dominio.</para>
+	   </listitem>
+	 </varlistentry>
+
+      <varlistentry>
+	   <term lang="en"><guilabel>Hosts</guilabel></term>
+	   <listitem>
+		<para>Mostra l'elenco degli alias per accedere ad altri computer.</para>
+	   </listitem>
+	 </varlistentry>
+    </variablelist>
+  </sect1>
+
+  <sect1 id="tool-usage">
+    <title>Utilizzo</title>
+
+    <sect2 id="tool-modify-connection">
+	 <title>Modificare le impostazioni di una connessione</title>
+	 <para>Nella sezione <guilabel>Connessioni</guilabel>, selezionare l'interfaccia che si vuole modificare e fare clic sul pulsante <guilabel>Proprietà</guilabel>. A seconda del tipo di interfaccia sarà possibile modificare impostazioni diverse.</para>
+
+	 <variablelist>
+	   <varlistentry>
+		<term>Interfacce ethernet e IRLAN</term>
+		<listitem>
+		  <para>È possibile modificare la modalità con cui è configurata l'interfaccia (DHCP o manuale); se l'interfaccia è impostata in modalità manuale, è possibile modificare l'indirizzo IP dell'interfaccia, la maschera di rete e il gateway.</para>
+		</listitem>
+	   </varlistentry>
+
+	   <varlistentry>
+		<term>Interfacce wireless</term>
+		<listitem>
+		  <para>È possibile modificare la modalità con cui è configurata l'interfaccia (DHCP o manuale); se l'interfaccia è impostata in modalità manuale, è possibile modificare l'indirizzo IP dell'interfaccia, la maschera di rete e il gateway. È possibile inoltre modificare il nome di rete (ESSID) per l'interfaccia.</para>
+		</listitem>
+	   </varlistentry>
+
+	   <varlistentry>
+		<term>Interfacce parallele</term>
+		<listitem>
+		  <para>È possibile modificare l'indirizzo IP dell'interfaccia e l'indirizzo IP remoto.</para>
+		</listitem>
+	   </varlistentry>
+
+	   <varlistentry>
+		<term>Interfacce PPP/ Modem</term>
+		<listitem>
+		  <para>È possibile modificare il dispositivo del modem, se si vuole la connessione a toni o a impulsi, il volume del modem, il numero di telefono, il nome utente e la password che ha fornito il provider e altre impostazioni avanzate per PPP.</para>
+		</listitem>
+	   </varlistentry>
+	 </variablelist>
+    </sect2>
+
+    <sect2>
+	 <title>Abilitare o disabilitare un'interfaccia</title>
+	 <para>Nella sezione <guilabel>Connessioni</guilabel>, abilitare o disabilitare la casella accanto all'interfaccia.</para>
+    </sect2>
+    
+    <sect2>
+	 <title>Modificare il nome host e il dominio</title>
+	 <para>Nella sezione <guilabel>Generale</guilabel>, modificare il nome dell'host o il dominio.</para>
+    </sect2>
+
+    <sect2>
+	 <title>Aggiungere un nuovo DNS</title>
+	 <para>Nella sezione <guilabel>Server DNS</guilabel>, fare clic sul pulsante <guilabel>Aggiungi</guilabel> e riempire la nuova riga creata con il nuovo DNS.</para>
+    </sect2>
+
+    <sect2>
+	 <title>Eliminare un DNS</title>
+	 <para>Nella sezione <guilabel>Server DNS</guilabel>, selezionare un indirizzo IP di un server DNS dall'elenco e fare clic sul pulsante <guilabel>Elimina</guilabel>.</para>
+    </sect2>
+
+    <sect2>
+	 <title>Aggiungere un dominio di ricerca</title>
+	 <para>Nella sezione <guilabel>Domini di ricerca</guilabel>, fare clic sul pulsante <guilabel>Aggiungi</guilabel> e riempire la nuova riga con il nuovo dominio di ricerca.</para>
+    </sect2>
+
+    <sect2>
+	 <title>Eliminare un dominio di ricerca</title>
+	 <para>Nella sezione <guilabel>Domini di ricerca</guilabel>, selezionare dall'elenco un dominio di ricerca e fare clic sul pulsante <guilabel>Elimina</guilabel>.</para>
+    </sect2>
+
+    <sect2>
+	 <title>Aggiungere un nuovo host alias</title>
+	 <para>Nella sezione <guilabel>Host</guilabel>, fare clic sul pulsante <guilabel>Aggiungi</guilabel> e scrivere un indirizzo IP e gli alias verso cui sarà indirizzato nella finestra che si aprirà.</para>
+    </sect2>
+
+    <sect2>
+	 <title>Modificare un host alias</title>
+	 <para>Nella sezione <guilabel>Host</guilabel>, selezionare un alias, fare clic sul pulsante <guilabel>Proprietà</guilabel> dall'elenco e modificare le impostazioni dell'alias nella finestra che si aprirà.</para>
+    </sect2>
+
+    <sect2>
+	 <title>Eliminare un host alias</title>
+	 <para>Nella sezione <guilabel>Host</guilabel>, selezionare un alias dall'elenco e fare clic sul pulsante <guilabel>Elimina</guilabel>.</para>
+    </sect2>
+
+    <sect2 id="tool-add-new-profile">
+	 <title>Salvare la configurazione di rete attuale come "Postazione"</title>
+	 <para>Fare clic sul pulsante <guilabel>Aggiungi</guilabel> accanto al menù <guilabel>Postazioni</guilabel>, specificare il nome della postazione nella finestra che si aprirà.</para>
+    </sect2>
+
+    <sect2>
+	 <title>Eliminare una postazione</title>
+	 <para>Fare clic sul pulsante <guilabel>Elimina</guilabel> accanto al menù <guilabel>Postazioni</guilabel>, il profilo selezionato sarà eliminato.</para>
+    </sect2>
+
+    <sect2>
+	 <title>Passare a una postazione</title>
+	 <para>Selezionare una postazione dal menù <guilabel>Postazioni</guilabel>, saranno automaticamente attivate tutte le impostazioni associate alla postazione scelta.</para>
+    </sect2>
+  </sect1>
+</article>

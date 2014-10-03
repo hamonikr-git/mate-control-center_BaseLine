@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="MATE Dictionary Library Reference Manual" link="index.html" author="Emmanuele Bassi" name="mate-dict" version="2" language="c">
+  <chapters>
+    <sub name="Introduction" link="introduction.html"/>
+    <sub name="The MATE Dictionary Library" link="gdict.html">
+      <sub name="Dictionary Context" link="context.html">
+        <sub name="GdictContext" link="GdictContext.html"/>
+      </sub>
+      <sub name="Context Implementations" link="context-types.html">
+        <sub name="GdictClientContext" link="GdictClientContext.html"/>
+      </sub>
+      <sub name="Dictionary Source" link="sources.html">
+        <sub name="GdictSource" link="GdictSource.html"/>
+        <sub name="GdictSourceLoader" link="GdictSourceLoader.html"/>
+      </sub>
+      <sub name="Gdict Utilities" link="gdict-utils.html">
+        <sub name="gdict-utils" link="mate-dict-gdict-utils.html"/>
+        <sub name="gdict-version" link="mate-dict-gdict-version.html"/>
+      </sub>
+    </sub>
+    <sub name="The MATE Dictionary Library Widgets" link="gdictui.html">
+      <sub name="Base widgets" link="ch05.html">
+        <sub name="GdictDefbox" link="GdictDefbox.html"/>
+        <sub name="GdictSpeller" link="GdictSpeller.html"/>
+      </sub>
+      <sub name="Advanced widgets" link="ch06.html">
+        <sub name="GdictDatabaseChooser" link="GdictDatabaseChooser.html"/>
+        <sub name="GdictStrategyChooser" link="GdictStrategyChooser.html"/>
+        <sub name="GdictSourceChooser" link="GdictSourceChooser.html"/>
+      </sub>
+    </sub>
+    <sub name="Index" link="ix01.html"/>
+    <sub name="Index of deprecated symbols" link="ix02.html"/>
+    <sub name="Index of new symbols in 0.10" link="ix03.html"/>
+    <sub name="Index of new symbols in 0.12" link="ix04.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="gdict_context_error_quark ()" link="GdictContext.html#gdict-context-error-quark"/>
+    <keyword type="function" name="gdict_database_ref ()" link="GdictContext.html#gdict-database-ref" since="1.0"/>
+    <keyword type="function" name="gdict_database_unref ()" link="GdictContext.html#gdict-database-unref" since="1.0"/>
+    <keyword type="function" name="gdict_database_get_name ()" link="GdictContext.html#gdict-database-get-name" since="1.0"/>
+    <keyword type="function" name="gdict_database_get_full_name ()" link="GdictContext.html#gdict-database-get-full-name" since="1.0"/>
+    <keyword type="function" name="gdict_strategy_ref ()" link="GdictContext.html#gdict-strategy-ref" since="1.0"/>
+    <keyword type="function" name="gdict_strategy_unref ()" link="GdictContext.html#gdict-strategy-unref" since="1.0"/>
+    <keyword type="function" name="gdict_strategy_get_name ()" link="GdictContext.html#gdict-strategy-get-name" since="1.0"/>
+    <keyword type="function" name="gdict_strategy_get_description ()" link="GdictContext.html#gdict-strategy-get-description" since="1.0"/>
+    <keyword type="function" name="gdict_match_ref ()" link="GdictContext.html#gdict-match-ref" since="1.0"/>
+    <keyword type="function" name="gdict_match_unref ()" link="GdictContext.html#gdict-match-unref" since="1.0"/>
+    <keyword type="function" name="gdict_match_get_word ()" link="GdictContext.html#gdict-match-get-word" since="1.0"/>
+    <keyword type="function" name="gdict_match_get_database ()" link="GdictContext.html#gdict-match-get-database" since="1.0"/>
+    <keyword type="function" name="gdict_definition_ref ()" link="GdictContext.html#gdict-definition-ref" since="1.0"/>
+    <keyword type="function" name="gdict_definition_unref ()" link="GdictContext.html#gdict-definition-unref" since="1.0"/>
+    <keyword type="function" name="gdict_definition_get_total ()" link="GdictContext.html#gdict-definition-get-total" since="1.0"/>
+    <keyword type="function" name="gdict_definition_get_word ()" link="GdictContext.html#gdict-definition-get-word" since="1.0"/>
+    <keyword type="function" name="gdict_definition_get_database ()" link="GdictContext.html#gdict-definition-get-database" since="1.0"/>
+    <keyword type="function" name="gdict_definition_get_text ()" link="GdictContext.html#gdict-definition-get-text" since="1.0"/>
+    <keyword type="function" name="gdict_context_set_local_only ()" link="GdictContext.html#gdict-context-set-local-only" since="1.0"/>
+    <keyword type="function" name="gdict_context_get_local_only ()" link="GdictContext.html#gdict-context-get-local-only" since="1.0"/>
+    <keyword type="function" name="gdict_context_lookup_databases ()" link="GdictContext.html#gdict-context-lookup-databases" since="1.0"/>
+    <keyword type="function" name="gdict_context_lookup_strategies ()" link="GdictContext.html#gdict-context-lookup-strategies" since="1.0"/>
+    <keyword type="function" name="gdict_context_match_word ()" link="GdictContext.html#gdict-context-match-word" since="1.0"/>
+    <keyword type="function" name="gdict_context_define_word ()" link="GdictContext.html#gdict-context-define-word" since="1.0"/>
+    <keyword type="macro" name="GDICT_CONTEXT_ERROR" link="GdictContext.html#GDICT-CONTEXT-ERROR:CAPS"/>
+    <keyword type="enum" name="enum GdictContextError" link="GdictContext.html#GdictContextError"/>
+    <keyword type="struct" name="struct GdictContextIface" link="GdictContext.html#GdictContextIface"/>
+    <keyword type="struct" name="GdictDefinition" link="GdictContext.html#GdictDefinition-struct"/>
+    <keyword type="struct" name="GdictMatch" link="GdictContext.html#GdictMatch-struct"/>
+    <keyword type="struct" name="GdictDatabase" link="GdictContext.html#GdictDatabase-struct"/>
+    <keyword type="struct" name="GdictStrategy" link="GdictContext.html#GdictStrategy-struct"/>
+    <keyword type="property" name="The “local-only” property" link="GdictContext.html#GdictContext--local-only"/>
+    <keyword type="signal" name="The “database-found” signal" link="GdictContext.html#GdictContext-database-found"/>
+    <keyword type="signal" name="The “definition-found” signal" link="GdictContext.html#GdictContext-definition-found"/>
+    <keyword type="signal" name="The “error” signal" link="GdictContext.html#GdictContext-error"/>
+    <keyword type="signal" name="The “lookup-end” signal" link="GdictContext.html#GdictContext-lookup-end"/>
+    <keyword type="signal" name="The “lookup-start” signal" link="GdictContext.html#GdictContext-lookup-start"/>
+    <keyword type="signal" name="The “match-found” signal" link="GdictContext.html#GdictContext-match-found"/>
+    <keyword type="signal" name="The “strategy-found” signal" link="GdictContext.html#GdictContext-strategy-found"/>
+    <keyword type="function" name="gdict_client_context_error_quark ()" link="GdictClientContext.html#gdict-client-context-error-quark"/>
+    <keyword type="function" name="gdict_client_context_new ()" link="GdictClientContext.html#gdict-client-context-new"/>
+    <keyword type="function" name="gdict_client_context_set_hostname ()" link="GdictClientContext.html#gdict-client-context-set-hostname"/>
+    <keyword type="function" name="gdict_client_context_get_hostname ()" link="GdictClientContext.html#gdict-client-context-get-hostname"/>
+    <keyword type="function" name="gdict_client_context_set_port ()" link="GdictClientContext.html#gdict-client-context-set-port"/>
+    <keyword type="function" name="gdict_client_context_get_port ()" link="GdictClientContext.html#gdict-client-context-get-port"/>
+    <keyword type="function" name="gdict_client_context_set_client ()" link="GdictClientContext.html#gdict-client-context-set-client"/>
+    <keyword type="function" name="gdict_client_context_get_client ()" link="GdictClientContext.html#gdict-client-context-get-client"/>
+    <keyword type="macro" name="GDICT_CLIENT_CONTEXT_ERROR" link="GdictClientContext.html#GDICT-CLIENT-CONTEXT-ERROR:CAPS"/>
+    <keyword type="enum" name="enum GdictClientContextError" link="GdictClientContext.html#GdictClientContextError"/>
+    <keyword type="property" name="The “client-name” property" link="GdictClientContext.html#GdictClientContext--client-name"/>
+    <keyword type="property" name="The “hostname” property" link="GdictClientContext.html#GdictClientContext--hostname"/>
+    <keyword type="property" name="The “port” property" link="GdictClientContext.html#GdictClientContext--port"/>
+    <keyword type="property" name="The “status” property" link="GdictClientContext.html#GdictClientContext--status"/>
+    <keyword type="signal" name="The “connected” signal" link="GdictClientContext.html#GdictClientContext-connected"/>
+    <keyword type="signal" name="The “disconnected” signal" link="GdictClientContext.html#GdictClientContext-disconnected"/>
+    <keyword type="function" name="gdict_source_error_quark ()" link="GdictSource.html#gdict-source-error-quark"/>
+    <keyword type="function" name="gdict_source_new ()" link="GdictSource.html#gdict-source-new"/>
+    <keyword type="function" name="gdict_source_load_from_file ()" link="GdictSource.html#gdict-source-load-from-file" since="1.0"/>
+    <keyword type="function" name="gdict_source_load_from_data ()" link="GdictSource.html#gdict-source-load-from-data" since="1.0"/>
+    <keyword type="function" name="gdict_source_to_data ()" link="GdictSource.html#gdict-source-to-data" since="1.0"/>
+    <keyword type="function" name="gdict_source_set_name ()" link="GdictSource.html#gdict-source-set-name" since="1.0"/>
+    <keyword type="function" name="gdict_source_get_name ()" link="GdictSource.html#gdict-source-get-name" since="1.0"/>
+    <keyword type="function" name="gdict_source_set_description ()" link="GdictSource.html#gdict-source-set-description" since="1.0"/>
+    <keyword type="function" name="gdict_source_get_description ()" link="GdictSource.html#gdict-source-get-description" since="1.0"/>
+    <keyword type="function" name="gdict_source_set_database ()" link="GdictSource.html#gdict-source-set-database" since="1.0"/>
+    <keyword type="function" name="gdict_source_get_database ()" link="GdictSource.html#gdict-source-get-database" since="1.0"/>
+    <keyword type="function" name="gdict_source_set_strategy ()" link="GdictSource.html#gdict-source-set-strategy" since="1.0"/>
+    <keyword type="function" name="gdict_source_get_strategy ()" link="GdictSource.html#gdict-source-get-strategy" since="1.0"/>
+    <keyword type="function" name="gdict_source_set_transport ()" link="GdictSource.html#gdict-source-set-transport" since="1.0"/>
+    <keyword type="function" name="gdict_source_set_transportv ()" link="GdictSource.html#gdict-source-set-transportv" since="1.0"/>
+    <keyword type="function" name="gdict_source_get_transport ()" link="GdictSource.html#gdict-source-get-transport" since="1.0"/>
+    <keyword type="function" name="gdict_source_get_context ()" link="GdictSource.html#gdict-source-get-context" since="1.0"/>
+    <keyword type="function" name="gdict_source_peek_context ()" link="GdictSource.html#gdict-source-peek-context" since="1.0"/>
+    <keyword type="enum" name="enum GdictSourceTransport" link="GdictSource.html#GdictSourceTransport"/>
+    <keyword type="macro" name="GDICT_SOURCE_ERROR" link="GdictSource.html#GDICT-SOURCE-ERROR:CAPS"/>
+    <keyword type="enum" name="enum GdictSourceError" link="GdictSource.html#GdictSourceError"/>
+    <keyword type="property" name="The “context” property" link="GdictSource.html#GdictSource--context"/>
+    <keyword type="property" name="The “database” property" link="GdictSource.html#GdictSource--database"/>
+    <keyword type="property" name="The “description” property" link="GdictSource.html#GdictSource--description"/>
+    <keyword type="property" name="The “filename” property" link="GdictSource.html#GdictSource--filename"/>
+    <keyword type="property" name="The “name” property" link="GdictSource.html#GdictSource--name"/>
+    <keyword type="property" name="The “strategy” property" link="GdictSource.html#GdictSource--strategy"/>
+    <keyword type="property" name="The “transport” property" link="GdictSource.html#GdictSource--transport"/>
+    <keyword type="function" name="gdict_source_loader_new ()" link="GdictSourceLoader.html#gdict-source-loader-new" since="1.0"/>
+    <keyword type="function" name="gdict_source_loader_update ()" link="GdictSourceLoader.html#gdict-source-loader-update" since="1.0"/>
+    <keyword type="function" name="gdict_source_loader_add_search_path ()" link="GdictSourceLoader.html#gdict-source-loader-add-search-path" since="1.0"/>
+    <keyword type="function" name="gdict_source_loader_get_paths ()" link="GdictSourceLoader.html#gdict-source-loader-get-paths" since="1.0"/>
+    <keyword type="function" name="gdict_source_loader_get_names ()" link="GdictSourceLoader.html#gdict-source-loader-get-names" since="1.0"/>
+    <keyword type="function" name="gdict_source_loader_get_sources ()" link="GdictSourceLoader.html#gdict-source-loader-get-sources" since="1.0"/>
+    <keyword type="function" name="gdict_source_loader_get_source ()" link="GdictSourceLoader.html#gdict-source-loader-get-source" since="1.0"/>
+    <keyword type="function" name="gdict_source_loader_has_source ()" link="GdictSourceLoader.html#gdict-source-loader-has-source" since="0.12"/>
+    <keyword type="function" name="gdict_source_loader_remove_source ()" link="GdictSourceLoader.html#gdict-source-loader-remove-source" since="1.0"/>
+    <keyword type="property" name="The “paths” property" link="GdictSourceLoader.html#GdictSourceLoader--paths"/>
+    <keyword type="property" name="The “sources” property" link="GdictSourceLoader.html#GdictSourceLoader--sources"/>
+    <keyword type="signal" name="The “source-loaded” signal" link="GdictSourceLoader.html#GdictSourceLoader-source-loaded"/>
+    <keyword type="function" name="gdict_get_option_group ()" link="mate-dict-gdict-utils.html#gdict-get-option-group" since="0.12"/>
+    <keyword type="function" name="gdict_debug_init ()" link="mate-dict-gdict-utils.html#gdict-debug-init" since="0.12"/>
+    <keyword type="macro" name="GDICT_DEFAULT_DATABASE" link="mate-dict-gdict-utils.html#GDICT-DEFAULT-DATABASE:CAPS"/>
+    <keyword type="macro" name="GDICT_DEFAULT_STRATEGY" link="mate-dict-gdict-utils.html#GDICT-DEFAULT-STRATEGY:CAPS"/>
+    <keyword type="macro" name="GDICT_DEFAULT_FONT_NAME" link="mate-dict-gdict-utils.html#GDICT-DEFAULT-FONT-NAME:CAPS"/>
+    <keyword type="enum" name="enum GdictContextProp" link="mate-dict-gdict-utils.html#GdictContextProp"/>
+    <keyword type="enum" name="enum GdictStatusCode" link="mate-dict-gdict-utils.html#GdictStatusCode"/>
+    <keyword type="macro" name="GDICT_VERSION" link="mate-dict-gdict-version.html#GDICT-VERSION:CAPS" since="0.11"/>
+    <keyword type="macro" name="GDICT_VERSION_HEX" link="mate-dict-gdict-version.html#GDICT-VERSION-HEX:CAPS" since="0.11"/>
+    <keyword type="macro" name="GDICT_CHECK_VERSION()" link="mate-dict-gdict-version.html#GDICT-CHECK-VERSION:CAPS"/>
+    <keyword type="function" name="gdict_check_version ()" link="mate-dict-gdict-version.html#gdict-check-version"/>
+    <keyword type="macro" name="GDICT_MAJOR_VERSION" link="mate-dict-gdict-version.html#GDICT-MAJOR-VERSION:CAPS"/>
+    <keyword type="macro" name="GDICT_MINOR_VERSION" link="mate-dict-gdict-version.html#GDICT-MINOR-VERSION:CAPS"/>
+    <keyword type="macro" name="GDICT_MICRO_VERSION" link="mate-dict-gdict-version.html#GDICT-MICRO-VERSION:CAPS"/>
+    <keyword type="macro" name="GDICT_VERSION_S" link="mate-dict-gdict-version.html#GDICT-VERSION-S:CAPS" since="0.11"/>
+    <keyword type="variable" name="gdict_major" link="mate-dict-gdict-version.html#gdict-major"/>
+    <keyword type="variable" name="gdict_minor" link="mate-dict-gdict-version.html#gdict-minor"/>
+    <keyword type="variable" name="gdict_micro" link="mate-dict-gdict-version.html#gdict-micro"/>
+    <keyword type="function" name="gdict_defbox_new ()" link="GdictDefbox.html#gdict-defbox-new" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_new_with_context ()" link="GdictDefbox.html#gdict-defbox-new-with-context" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_set_context ()" link="GdictDefbox.html#gdict-defbox-set-context" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_get_context ()" link="GdictDefbox.html#gdict-defbox-get-context" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_set_database ()" link="GdictDefbox.html#gdict-defbox-set-database" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_get_database ()" link="GdictDefbox.html#gdict-defbox-get-database" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_get_word ()" link="GdictDefbox.html#gdict-defbox-get-word" since="0.12"/>
+    <keyword type="function" name="gdict_defbox_get_text ()" link="GdictDefbox.html#gdict-defbox-get-text" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_select_all ()" link="GdictDefbox.html#gdict-defbox-select-all" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_copy_to_clipboard ()" link="GdictDefbox.html#gdict-defbox-copy-to-clipboard" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_clear ()" link="GdictDefbox.html#gdict-defbox-clear" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_lookup ()" link="GdictDefbox.html#gdict-defbox-lookup" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_count_definitions ()" link="GdictDefbox.html#gdict-defbox-count-definitions" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_jump_to_definition ()" link="GdictDefbox.html#gdict-defbox-jump-to-definition" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_set_show_find ()" link="GdictDefbox.html#gdict-defbox-set-show-find" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_get_show_find ()" link="GdictDefbox.html#gdict-defbox-get-show-find" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_find_next ()" link="GdictDefbox.html#gdict-defbox-find-next" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_find_previous ()" link="GdictDefbox.html#gdict-defbox-find-previous" since="0.1"/>
+    <keyword type="function" name="gdict_defbox_set_font_name ()" link="GdictDefbox.html#gdict-defbox-set-font-name" since="0.3.0"/>
+    <keyword type="function" name="gdict_defbox_get_font_name ()" link="GdictDefbox.html#gdict-defbox-get-font-name" since="0.3"/>
+    <keyword type="function" name="gdict_defbox_get_selected_word ()" link="GdictDefbox.html#gdict-defbox-get-selected-word" since="0.12"/>
+    <keyword type="property" name="The “context” property" link="GdictDefbox.html#GdictDefbox--context"/>
+    <keyword type="property" name="The “database” property" link="GdictDefbox.html#GdictDefbox--database"/>
+    <keyword type="property" name="The “font-name” property" link="GdictDefbox.html#GdictDefbox--font-name"/>
+    <keyword type="property" name="The “word” property" link="GdictDefbox.html#GdictDefbox--word"/>
+    <keyword type="signal" name="The “find-next” signal" link="GdictDefbox.html#GdictDefbox-find-next"/>
+    <keyword type="signal" name="The “find-previous” signal" link="GdictDefbox.html#GdictDefbox-find-previous"/>
+    <keyword type="signal" name="The “hide-find” signal" link="GdictDefbox.html#GdictDefbox-hide-find"/>
+    <keyword type="signal" name="The “link-clicked” signal" link="GdictDefbox.html#GdictDefbox-link-clicked"/>
+    <keyword type="signal" name="The “show-find” signal" link="GdictDefbox.html#GdictDefbox-show-find"/>
+    <keyword type="function" name="gdict_speller_new ()" link="GdictSpeller.html#gdict-speller-new" since=""/>
+    <keyword type="function" name="gdict_speller_new_with_context ()" link="GdictSpeller.html#gdict-speller-new-with-context" since=""/>
+    <keyword type="function" name="gdict_speller_set_context ()" link="GdictSpeller.html#gdict-speller-set-context" since=""/>
+    <keyword type="function" name="gdict_speller_get_context ()" link="GdictSpeller.html#gdict-speller-get-context" since=""/>
+    <keyword type="function" name="gdict_speller_set_database ()" link="GdictSpeller.html#gdict-speller-set-database" since=""/>
+    <keyword type="function" name="gdict_speller_get_database ()" link="GdictSpeller.html#gdict-speller-get-database" since="FIXME"/>
+    <keyword type="function" name="gdict_speller_set_strategy ()" link="GdictSpeller.html#gdict-speller-set-strategy" since="FIXME"/>
+    <keyword type="function" name="gdict_speller_get_strategy ()" link="GdictSpeller.html#gdict-speller-get-strategy" since="FIXME"/>
+    <keyword type="function" name="gdict_speller_clear ()" link="GdictSpeller.html#gdict-speller-clear" since="FIXME"/>
+    <keyword type="function" name="gdict_speller_match ()" link="GdictSpeller.html#gdict-speller-match" since="FIXME"/>
+    <keyword type="function" name="gdict_speller_count_matches ()" link="GdictSpeller.html#gdict-speller-count-matches"/>
+    <keyword type="function" name="gdict_speller_get_matches ()" link="GdictSpeller.html#gdict-speller-get-matches" since="FIXME"/>
+    <keyword type="property" name="The “context” property" link="GdictSpeller.html#GdictSpeller--context"/>
+    <keyword type="property" name="The “database” property" link="GdictSpeller.html#GdictSpeller--database"/>
+    <keyword type="property" name="The “strategy” property" link="GdictSpeller.html#GdictSpeller--strategy"/>
+    <keyword type="signal" name="The “word-activated” signal" link="GdictSpeller.html#GdictSpeller-word-activated"/>
+    <keyword type="function" name="gdict_database_chooser_new ()" link="GdictDatabaseChooser.html#gdict-database-chooser-new" since="0.10"/>
+    <keyword type="function" name="gdict_database_chooser_new_with_context ()" link="GdictDatabaseChooser.html#gdict-database-chooser-new-with-context" since="0.10"/>
+    <keyword type="function" name="gdict_database_chooser_get_context ()" link="GdictDatabaseChooser.html#gdict-database-chooser-get-context" since="0.10"/>
+    <keyword type="function" name="gdict_database_chooser_set_context ()" link="GdictDatabaseChooser.html#gdict-database-chooser-set-context" since="0.10"/>
+    <keyword type="function" name="gdict_database_chooser_select_database ()" link="GdictDatabaseChooser.html#gdict-database-chooser-select-database" since="0.10"/>
+    <keyword type="function" name="gdict_database_chooser_unselect_database ()" link="GdictDatabaseChooser.html#gdict-database-chooser-unselect-database" since="0.10"/>
+    <keyword type="function" name="gdict_database_chooser_set_current_database ()" link="GdictDatabaseChooser.html#gdict-database-chooser-set-current-database" since="0.10"/>
+    <keyword type="function" name="gdict_database_chooser_get_current_database ()" link="GdictDatabaseChooser.html#gdict-database-chooser-get-current-database" since="0.10"/>
+    <keyword type="function" name="gdict_database_chooser_get_databases ()" link="GdictDatabaseChooser.html#gdict-database-chooser-get-databases" since="0.10"/>
+    <keyword type="function" name="gdict_database_chooser_count_databases ()" link="GdictDatabaseChooser.html#gdict-database-chooser-count-databases" since="0.10"/>
+    <keyword type="function" name="gdict_database_chooser_has_database ()" link="GdictDatabaseChooser.html#gdict-database-chooser-has-database" since="0.10"/>
+    <keyword type="function" name="gdict_database_chooser_refresh ()" link="GdictDatabaseChooser.html#gdict-database-chooser-refresh" since="0.10"/>
+    <keyword type="function" name="gdict_database_chooser_clear ()" link="GdictDatabaseChooser.html#gdict-database-chooser-clear" since="0.10"/>
+    <keyword type="function" name="gdict_database_chooser_add_button ()" link="GdictDatabaseChooser.html#gdict-database-chooser-add-button" since="0.10"/>
+    <keyword type="property" name="The “context” property" link="GdictDatabaseChooser.html#GdictDatabaseChooser--context"/>
+    <keyword type="property" name="The “count” property" link="GdictDatabaseChooser.html#GdictDatabaseChooser--count"/>
+    <keyword type="signal" name="The “database-activated” signal" link="GdictDatabaseChooser.html#GdictDatabaseChooser-database-activated"/>
+    <keyword type="signal" name="The “selection-changed” signal" link="GdictDatabaseChooser.html#GdictDatabaseChooser-selection-changed"/>
+    <keyword type="function" name="gdict_strategy_chooser_new ()" link="GdictStrategyChooser.html#gdict-strategy-chooser-new" since="0.9"/>
+    <keyword type="function" name="gdict_strategy_chooser_new_with_context ()" link="GdictStrategyChooser.html#gdict-strategy-chooser-new-with-context" since="0.9"/>
+    <keyword type="function" name="gdict_strategy_chooser_get_context ()" link="GdictStrategyChooser.html#gdict-strategy-chooser-get-context" since=""/>
+    <keyword type="function" name="gdict_strategy_chooser_set_context ()" link="GdictStrategyChooser.html#gdict-strategy-chooser-set-context" since="0.9"/>
+    <keyword type="function" name="gdict_strategy_chooser_select_strategy ()" link="GdictStrategyChooser.html#gdict-strategy-chooser-select-strategy" since="0.10"/>
+    <keyword type="function" name="gdict_strategy_chooser_unselect_strategy ()" link="GdictStrategyChooser.html#gdict-strategy-chooser-unselect-strategy" since="0.10"/>
+    <keyword type="function" name="gdict_strategy_chooser_set_current_strategy ()" link="GdictStrategyChooser.html#gdict-strategy-chooser-set-current-strategy" since="0.10"/>
+    <keyword type="function" name="gdict_strategy_chooser_get_current_strategy ()" link="GdictStrategyChooser.html#gdict-strategy-chooser-get-current-strategy" since="0.10"/>
+    <keyword type="function" name="gdict_strategy_chooser_get_strategies ()" link="GdictStrategyChooser.html#gdict-strategy-chooser-get-strategies" since="0.9"/>
+    <keyword type="function" name="gdict_strategy_chooser_count_strategies ()" link="GdictStrategyChooser.html#gdict-strategy-chooser-count-strategies" since=""/>
+    <keyword type="function" name="gdict_strategy_chooser_has_strategy ()" link="GdictStrategyChooser.html#gdict-strategy-chooser-has-strategy" since="0.9"/>
+    <keyword type="function" name="gdict_strategy_chooser_refresh ()" link="GdictStrategyChooser.html#gdict-strategy-chooser-refresh" since="0.10"/>
+    <keyword type="function" name="gdict_strategy_chooser_clear ()" link="GdictStrategyChooser.html#gdict-strategy-chooser-clear" since="0.10"/>
+    <keyword type="function" name="gdict_strategy_chooser_add_button ()" link="GdictStrategyChooser.html#gdict-strategy-chooser-add-button" since="0.10"/>
+    <keyword type="property" name="The “context” property" link="GdictStrategyChooser.html#GdictStrategyChooser--context"/>
+    <keyword type="signal" name="The “strategy-activated” signal" link="GdictStrategyChooser.html#GdictStrategyChooser-strategy-activated"/>
+    <keyword type="function" name="gdict_source_chooser_new ()" link="GdictSourceChooser.html#gdict-source-chooser-new" since="0.12"/>
+    <keyword type="function" name="gdict_source_chooser_new_with_loader ()" link="GdictSourceChooser.html#gdict-source-chooser-new-with-loader" since="0.12"/>
+    <keyword type="function" name="gdict_source_chooser_set_loader ()" link="GdictSourceChooser.html#gdict-source-chooser-set-loader" since="0.12"/>
+    <keyword type="function" name="gdict_source_chooser_get_loader ()" link="GdictSourceChooser.html#gdict-source-chooser-get-loader" since="0.12"/>
+    <keyword type="function" name="gdict_source_chooser_select_source ()" link="GdictSourceChooser.html#gdict-source-chooser-select-source" since="0.12"/>
+    <keyword type="function" name="gdict_source_chooser_unselect_source ()" link="GdictSourceChooser.html#gdict-source-chooser-unselect-source" since="0.12"/>
+    <keyword type="function" name="gdict_source_chooser_set_current_source ()" link="GdictSourceChooser.html#gdict-source-chooser-set-current-source" since="0.12"/>
+    <keyword type="function" name="gdict_source_chooser_get_current_source ()" link="GdictSourceChooser.html#gdict-source-chooser-get-current-source" since="0.12"/>
+    <keyword type="function" name="gdict_source_chooser_get_sources ()" link="GdictSourceChooser.html#gdict-source-chooser-get-sources" since="0.12"/>
+    <keyword type="function" name="gdict_source_chooser_count_sources ()" link="GdictSourceChooser.html#gdict-source-chooser-count-sources" since="0.12"/>
+    <keyword type="function" name="gdict_source_chooser_has_source ()" link="GdictSourceChooser.html#gdict-source-chooser-has-source" since="0.12"/>
+    <keyword type="function" name="gdict_source_chooser_refresh ()" link="GdictSourceChooser.html#gdict-source-chooser-refresh" since="0.12"/>
+    <keyword type="function" name="gdict_source_chooser_add_button ()" link="GdictSourceChooser.html#gdict-source-chooser-add-button" since="0.12"/>
+    <keyword type="property" name="The “count” property" link="GdictSourceChooser.html#GdictSourceChooser--count"/>
+    <keyword type="property" name="The “loader” property" link="GdictSourceChooser.html#GdictSourceChooser--loader"/>
+    <keyword type="signal" name="The “selection-changed” signal" link="GdictSourceChooser.html#GdictSourceChooser-selection-changed"/>
+    <keyword type="signal" name="The “source-activated” signal" link="GdictSourceChooser.html#GdictSourceChooser-source-activated"/>
+  </functions>
+</book>

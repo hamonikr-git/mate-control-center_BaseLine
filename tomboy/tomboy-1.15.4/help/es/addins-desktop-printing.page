@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-desktop-printing" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="addins#desktop-integration"/>
+    <desc>Enviar notas a una impresora.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-16" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Soporte para impresión</title>
+
+    <note style="important">
+      <p>Para imprimir en <app>Tomboy</app> es necesario tener conectada y configurada una impresora. Si no es así, consulte la <link href="help:gnome-help/printing">ayuda de impresión para GNOME</link>.</p>
+    </note>
+
+    <p>Puede enviar notas de <app>Tomboy</app> a su impresora. Este complemento está activado de manera predeterminada.</p>
+
+    <steps>
+      <title>Para imprimir una nota:</title>
+      <item>
+        <p>Abra la nota.</p>
+      </item>
+      <item>
+        <p>Desde el icono de la rueda dentada en la barra de herramientas de la nota, seleccione <gui style="menuitem">Imprimir</gui>. Alternativamente, también puede usar el atajo del teclado <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+      </item>
+    </steps>
+
+    <note style="warning">
+      <p>Si desactiva este complemento no podrá imprimir sus notas de <app>Tomboy</app>.</p>
+    </note>
+
+ </page>

@@ -1,0 +1,331 @@
+# translation of vino.HEAD.po to Georgian
+# Copyright (C) 2006 THE vino'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vino package.
+# Besik Meshveliani ბესიკ მეშველიანი <besik28@hotmail.com>
+# Vladimer Sichinava ვლადიმერ სიჭინავა <alinux@siena.linux.it>, 2006.
+# beso <besik28@hotmail.com>, 2006.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vino.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-03-29 22:52+0200\n"
+"PO-Revision-Date: 2006-04-02 03:06+0200\n"
+"Last-Translator: Vladimer Sichinava <alinux@siena.linux.it>\n"
+"Language-Team: Georgian <gnome@inet.ge>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"X-Generator: KBabel 1.11.2\n"
+
+#: ../capplet/vino-preferences.c:807
+msgid "Send this command by email"
+msgstr "გაგზავნე ეს ბრძანება ელ-ფოსტით"
+
+#: ../capplet/vino-preferences.c:842
+#, c-format
+msgid ""
+"There was an error displaying help:\n"
+"%s"
+msgstr "ვერ ვიძახებ %s დამხმარე ფაილს."
+
+#: ../capplet/vino-preferences.desktop.in.in.h:1
+msgid "Remote Desktop"
+msgstr "დაშორებული კომპიუტერი"
+
+#: ../capplet/vino-preferences.desktop.in.in.h:2
+msgid "Set your remote desktop access preferences"
+msgstr "დააყენეთ თქვენი პერსონალური პარამეტრები დაშორებული კომპიუტერისავის"
+
+#: ../capplet/vino-preferences.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../capplet/vino-preferences.glade.h:2
+msgid "        "
+msgstr "        "
+
+#: ../capplet/vino-preferences.glade.h:3
+msgid "*"
+msgstr "*"
+
+#: ../capplet/vino-preferences.glade.h:4
+msgid "<b>Security</b>"
+msgstr "<b>უსაფრთხოება</b>"
+
+#: ../capplet/vino-preferences.glade.h:5
+msgid "<b>Sharing</b>"
+msgstr "<b>შერინგი</b>"
+
+#: ../capplet/vino-preferences.glade.h:6
+msgid "A_sk you for confirmation"
+msgstr "ადასტურებთ თუ არა"
+
+#: ../capplet/vino-preferences.glade.h:7
+msgid "Allow other users to _view your desktop"
+msgstr "მიეცით უფლება სხვა მომხმარებლებს დაათვალიერონ ან მართონ თქვენი კომპიუტერი"
+
+#: ../capplet/vino-preferences.glade.h:8
+msgid "Remote Desktop Preferences"
+msgstr "დაშორებული კომპიუტერის პარამეტრები"
+
+#: ../capplet/vino-preferences.glade.h:9
+msgid "Some of these preferences are locked down"
+msgstr "ზოგიერთი პარამეტრი ბლოკირებულია"
+
+#: ../capplet/vino-preferences.glade.h:10
+msgid "Users can view your desktop using this command:"
+msgstr "მომხმარებლებს შეუძლიათ შემოვიდნენ თქვენს კომპიუტერში ამ ბრძანების გამოყენებით:"
+
+#: ../capplet/vino-preferences.glade.h:11
+msgid "When a user tries to view or control your desktop:"
+msgstr "როცა მომხმარებელი ცდილობს თქვენს კომპიუტერში შემოსვლას ან მის მართვას:"
+
+#: ../capplet/vino-preferences.glade.h:12
+msgid "_Allow other users to control your desktop"
+msgstr "ნების დართვა თქ_ვენი კომპიუტერის სხვის მიერ მართვაზე"
+
+#: ../capplet/vino-preferences.glade.h:13
+msgid "_Password:"
+msgstr "_პაროლი:"
+
+#: ../capplet/vino-preferences.glade.h:14
+msgid "_Require the user to enter this password:"
+msgstr "_საჭიროა მომხმარებლის მიერ პაროლის შეყვანა:"
+
+#: ../capplet/vino-url.c:158
+msgid "Address"
+msgstr "მისამართი"
+
+#: ../capplet/vino-url.c:159
+msgid "The address pointed to by the widget"
+msgstr "მოწყობილობის მისამართი"
+
+#: ../capplet/vino-url.c:166
+msgid "Tooltip"
+msgstr "მინიშნება"
+
+#: ../capplet/vino-url.c:167
+msgid "A tooltip for this URL"
+msgstr "მინიშნება მიმდინარე ვებ მისამართისათვის"
+
+#: ../capplet/vino-url.c:173
+msgid "URL color"
+msgstr "ვებ მისამართის ფერი"
+
+#: ../capplet/vino-url.c:174
+msgid "The color of the URL's label"
+msgstr "ვებ მისამარტის სტრიქონის ფერი"
+
+#: ../server/vino-fb.c:954
+#: ../server/vino-prompt.c:144
+#: ../server/vino-server.c:853
+msgid "Screen"
+msgstr "ეკრანი"
+
+#: ../server/vino-fb.c:955
+msgid "The screen to be monitored"
+msgstr "ეკრანი რომელიც მოწმდება"
+
+#: ../server/vino-main.c:80
+msgid "Your XServer does not support the XTest extension - remote desktop access will be view-only\n"
+msgstr "თქვენი Xსერვერს არ აქვს Xტექსტის მხარდაჭერა - ამიტომ მაშორებულ კომპიუტერში შეღწევა მხოლოდ მისი დათვალიერებით შემოიფარგლება\n"
+
+#.
+#. * Translators: translate "vino-mdns:showusername" to
+#. * "1" if "%s's remote desktop" doesn't make sense in
+#. * your language.
+#.
+#: ../server/vino-mdns.c:59
+msgid "vino-mdns:showusername"
+msgstr "vino-mdns:მიუთითე სახელი"
+
+#.
+#. * Translators: this string is used ONLY if you
+#. * translated "vino-mdns:showusername" to anything
+#. * other than "1"
+#.
+#: ../server/vino-mdns.c:71
+#, c-format
+msgid "%s's remote desktop"
+msgstr "%s-ის დაშორებული კომპიუტერი"
+
+#: ../server/vino-prompt.c:145
+msgid "The screen on which to display the prompt"
+msgstr "მოკარნახე ეკრანი"
+
+#: ../server/vino-prompt.c:390
+#, c-format
+msgid "A user on the computer '%s' is trying to remotely view or control your desktop."
+msgstr "კომპიუტერ '%s' -ის მომხმარებელი ცდილობს თქვენს კომპიუტერში შემოსვლას ან მის კონტროლს."
+
+#: ../server/vino-prompt.glade.h:1
+msgid "<big><b>Another user is trying to view your desktop.</b></big>"
+msgstr "<big><b>სხვა მომხმარებელი ცდილობს თქვენს კომპიუტერში შემოღწევას</b></big>"
+
+#: ../server/vino-prompt.glade.h:2
+msgid "A user on another computer is trying to remotely view or control your desktop."
+msgstr "სხვა კომპიუტერის მომხმარებელი ცდილობს შემოვიდეს ან გააკონტროლოს თქვენი კომპიუტერი."
+
+#: ../server/vino-prompt.glade.h:3
+msgid "Do you want to allow them to do so?"
+msgstr "გნებავთ რომ მისცეთ მას ამის უფლება?"
+
+#: ../server/vino-prompt.glade.h:4
+msgid "Question"
+msgstr "შეკითხვა"
+
+#: ../server/vino-prompt.glade.h:5
+#: ../server/vino-util.c:63
+msgid "_Allow"
+msgstr "ნების დ_ართვა"
+
+#: ../server/vino-prompt.glade.h:6
+#: ../server/vino-util.c:64
+msgid "_Refuse"
+msgstr "უა_რყოფა"
+
+#: ../server/vino-server.c:854
+msgid "The screen for which to create a VNC server"
+msgstr "VNC სერვერის შესაქმნელი ეკრანი"
+
+#: ../server/vino-server.c:861
+msgid "On Hold"
+msgstr "ლოდინი"
+
+#: ../server/vino-server.c:862
+msgid "Place all clients on hold"
+msgstr "ჩააყენეთ ყველა მომხმარებელი მოცდის რეჟიმში"
+
+#: ../server/vino-server.c:869
+msgid "Prompt enabled"
+msgstr "გაააქტიურე მოკარნახე"
+
+#: ../server/vino-server.c:870
+msgid "Prompt the user about connection attempts"
+msgstr "თხოვეთ მომხმარებელს შეეცადოს შეერთების დამყარებას"
+
+#: ../server/vino-server.c:877
+msgid "View Only"
+msgstr "მხოლოდ ხილვა"
+
+#: ../server/vino-server.c:878
+msgid "Disallow keyboard/pointer input from clients"
+msgstr "აუკრძალეთ მომხმარებელს კლავიატურა/პოინტერის გამოყენება  "
+
+#: ../server/vino-server.c:885
+msgid "Require Encryption"
+msgstr "საჭიროებს დაშიფვრას"
+
+#: ../server/vino-server.c:886
+msgid "Require clients to use encryption"
+msgstr "მოთხოვეთ მომხმარებელს, რომ მან გამოიყენოს დაშიფრვა"
+
+#: ../server/vino-server.c:893
+msgid "Authentication methods"
+msgstr "ამოცნობის მეთოდები"
+
+#: ../server/vino-server.c:894
+msgid "The authentication methods this server should allow"
+msgstr "ამ სერვერმა უნდა დაუშვას ამოცნობის მეთოდები"
+
+#: ../server/vino-server.c:902
+msgid "VNC Password"
+msgstr "VNC პაროლი"
+
+#: ../server/vino-server.c:903
+msgid "The password (base64 encoded) used to authenticate types using the VncAuth method"
+msgstr "პარილი  (base64 დაშფრული) იყენებს VncAuth მეთოდით გამოყენებულ ამოცნობის ტიპს"
+
+#: ../server/vino-server.schemas.in.h:1
+msgid "Allowed authentication methods"
+msgstr "დაუშვი ამოცნობის მეთოდი"
+
+#: ../server/vino-server.schemas.in.h:2
+msgid "E-mail address to which the remote desktop URL should be sent"
+msgstr "ელ-ფოსტა, რომელსაც უნდა გაეგზავნოს მოშორებული კომპიუტერის ვებ მისამართი"
+
+#: ../server/vino-server.schemas.in.h:3
+msgid "Enable remote desktop access"
+msgstr "დაუშვი კავშირი მოშორებულ კომპიუტერთან"
+
+#: ../server/vino-server.schemas.in.h:4
+msgid "If true, allows remote access to the desktop via the RFB protocol. Users on remote machines may then connect to the desktop using a vncviewer."
+msgstr "თუ ასეა,სეიგი შესაძლებელია მოშორებულ კომპიუტერთან კონტაქტის დამყარება RFB პროტოკოლით. მოშორებული კომპიუტერის მომხმარებლებს შეუძლიათ კავშირი დაამყარონ კომპიუტერთან vncviewer-ის გამოყენებით."
+
+#: ../server/vino-server.schemas.in.h:5
+msgid "If true, remote users accessing the desktop are not allowed access until the user on the host machine approves the connection. Recommended especially when access is not password protected."
+msgstr "თუ ასეა, ესეიგი მომხმარებლებს რომლებიც ცდილობენ დაშორებულ კომპიუტერთან კავშირის დამყარებას, ვერ დაუკავშირდება მას, სანამ host კომპიუტერის მომხმარებელი არ დართავს მათ ამის უფლებას. განსაკუთრებით რეკომენდირებულია მაშინ, თუ კავშირი არაა დაცული პაროლით."
+
+#: ../server/vino-server.schemas.in.h:6
+msgid "If true, remote users accessing the desktop are only allowed to view the desktop. Remote user's will not be able to use the mouse or keyboard."
+msgstr "თუ ასეა, ესეიგი მომხმარებლებს რომლებიც უკავშირდებიან მოსჰორებულ კომპიუტერს,ნება ეძლევათ მხოლოდ მისი დათვალიერების. მოშორებულ მომხმარებელს არ ექნება მაუსის და კლავიატურის გამოყენების საშუალება."
+
+#: ../server/vino-server.schemas.in.h:7
+msgid "If true, remote users accessing the desktop are required to be able support encryption. It is highly recommended that you use a client which supports encryption unless the intervening network is trusted."
+msgstr "თუ ასეა, ესეიგი მოშორებულ კომპიუტერთან კავშირის მსურველი მომხმარებლები ვალდებულნი არიან გამოიყენონ დაშიფვრის მხარდაჭერა. მკაცრად რეკომენდირებულია მაშინ,თუ ქსელში შემომსვლელი მომხმარებელი არ არის სანდო და რადგან თქვენ იყენებთ პროგრამა-კლიენტს რომელსაც აქვს დაშიფვრის მხარდაჭერა. "
+
+#: ../server/vino-server.schemas.in.h:8
+msgid "Lists the authentication methods with which remote users may access the desktop. There are two possible authentication methods; \"vnc\" causes the remote user to be prompted for a password (the password is specified by the vnc_password key) before connecting and \"none\" which allows any remote user to connect."
+msgstr "ახორციელებს ამოცნობის მეთოდების ჩამოთვლას, რომელთა გამოყენებითაც მოშირებულ მომხმარებლებს შეუძლიათ მიმართონ მოშორებულ კომპიუტერს. არსებობს ორი ამოცნობის მეთოდი; \"vnc\" აიძულებს მოშორებულ მომხმარებელს გამოიყენოს პაროლი (იგი წარმოადგენს ერთგვარ გასაღებს vnc სისტემისას) შეერთების წინ  და \"none\", რომელიც კავშირის საშუალებას აძლევს ნებისმიერ მოშორებულ მომხმარებელს."
+
+#: ../server/vino-server.schemas.in.h:9
+msgid "Only allow remote users to view the desktop"
+msgstr "მოშორებულ მომხმარებლებს უფლება აქვთ მხოლოდ დაათვალიერონ მოშორებული კომპიუტერი."
+
+#: ../server/vino-server.schemas.in.h:10
+msgid "Password required for \"vnc\" authentication"
+msgstr "პაროლი, რომელსაც ითხოვს  \"vnc\" ამოცნობისათვის"
+
+#: ../server/vino-server.schemas.in.h:11
+msgid "Prompt the user before completing a connection"
+msgstr "მოთხოვეთ მომხმარებელს სანამ დასრულდება შეერთება"
+
+#: ../server/vino-server.schemas.in.h:12
+msgid "Require encryption"
+msgstr "კოდირების მოთხოვნა"
+
+#: ../server/vino-server.schemas.in.h:13
+msgid "The password which the remote user will be prompted for if the \"vnc\" authentication method is used. The password specified by the key is base64 encoded."
+msgstr "თუ გამოიყენება  \"vnc\" ამომცნობის მეთოდი, მოშორებული მომხმარებელი მოწმდება პაროლის მეშვეობით.პაროლი განსაზღვრულია base64 კოდირებით დაკოდირებული გასაებით."
+
+#: ../server/vino-server.schemas.in.h:14
+msgid "This key specifies the e-mail address to which the remote desktop URL should be sent if the user clicks on the URL in the Remote Desktop preferences dialog."
+msgstr "გასაღები განსაზღვრავს ელ-ფოსტის მისამართს, რომელსაც უნდა გაეგზავნოს მოშორებული კომპიუტერის ვებ მისამართი. თუ მომხმარებელი დააჭერს ამ ვებ მისამართს მიმართავს მოშორებული კომპიუტერის პარამეტრების დიალოგურ ფანჯარას."
+
+#: ../server/vino-shell.c:76
+msgid "Remote Desktop server already running; exiting ...\n"
+msgstr "მოშორებული კომპიუტერი, რომელთანაც არსებობს კავშირი; მიმდინარეობს კავშირს შეწყვეტა ...\n"
+
+#: ../server/vino-shell.c:79
+msgid "Problem registering the remote desktop server with bonobo-activation; exiting ...\n"
+msgstr "მოშორებულ კომპიუტერს წარმოექმნა რეგისტრაციის პრობლემა bonobo-აქტივატორთან; მიმდინარეობს კავშირის შეწყვეტა ...\n"
+
+#: ../session/vino-session.c:133
+msgid "Remote desktop server died, restarting\n"
+msgstr "დაშორებული კომპიუტერის სერვერი მოკვდა, მიმდინარეობს გადატვირთვა\n"
+
+#: ../session/vino-session.c:154
+#, c-format
+msgid "Activation of %s failed: %s\n"
+msgstr "%s -ის აქტივაცია შეუძლებელია: %s\n"
+
+#: ../session/vino-session.c:160
+#, c-format
+msgid "Activation of %s failed: Unknown Error\n"
+msgstr "%s -ის აქტივაცია სეუძლებელია: მიზეზი გაურკვეველია\n"
+
+#: ../session/vino-session.c:231
+msgid "Failed to activate remote desktop server: tried too many times\n"
+msgstr "ვერ ვააქტიურებ მოშორებული კომპიუტერის სერვერს: კიდევ სცადეთ\n"
+
+#: ../session/vino-session.c:295
+msgid "Starting remote desktop server"
+msgstr "მიმდინარეობს მოშორებულ კომპიუტერის სერვერს ჩართვა"
+
+#: ../session/vino-session.c:300
+msgid "Not starting remote desktop server"
+msgstr "არ ირთვება მოშორებული კომპიუტერის სერვერი"
+

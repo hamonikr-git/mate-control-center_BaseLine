@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="create-notebook" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#notebooks"/>
+    <desc>Δημιουργία νέου σημειωματάριου στο Tomboy.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Δημιουργία νέου σημειωματαρίου</title>    
+  
+  <p>Τα σημειωματάρια σας επιτρέπουν να ομαδοποιείτε σχετιζόμενες σημειώσεις. Μπορείτε να προσθέσετε μία σημείωση σε ένα σημειωματάριο από το παράθυρο Αναζήτηση σε όλες τις σημειώσεις ή απευθείας μέσα από τη σημείωση.</p>
+  
+<steps>
+	<item>
+	<p>Κάντε κλικ στο εικονίδιο του Tomboy στον πίνακα εφαρμογών του GNOME, στη γραμμή εργασιών του Microsoft Windows, ή στο dock του Mac OS X. Θα εμφανιστεί ένα μενού.</p>
+	</item>
+	
+<!--
+<comment>Screenshots need to be updated using Clearlooks</comment>
+-->
+
+	<item>
+		<p>Επιλέξτε <guiseq><gui>Σημειωματάρια</gui><gui>Νέο σημειωματάριο</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Εισάγετε όνομα για το νέο σημειωματάριο.</p>
+	</item>
+</steps>
+
+	<p>Για να δημιουργήσετε ένα νέο σημειωματάριο από το παράθυρο διαλόγου <gui>Αναζήτηση σε όλες τις σημειώσεις</gui>:</p>
+
+<steps>
+	<item>
+		<p>Ανοίξτε το παράθυρο <gui>Αναζήτηση σε όλες τις σημειώσεις</gui> επιλέγοντάς το από το εικονίδιο του Tomboy στον πίνακα εφαρμογών του GNOME, στη γραμμή εργασιών του Microsoft Windows, ή στο dock του Mac OS X. ή κάντε κλικ στην Εύρεση από μια ανοκτή σημείωση.</p>
+	</item>
+	<item>
+		<p>Χρησιμοποιώντας το ποντίκι, κάντε δεξί κλικ στο αριστερό πλαίσιο και επιλέξτε <gui>Νέο σημειωματάριο</gui>.</p>
+	</item>
+	<item>
+		<p>Εισάγετε όνομα για το νέο σημειωματάριο.</p>
+	</item>
+</steps>
+
+	<p>Ή:</p>
+	
+<steps>
+	<item>
+		<p>Με το παράθυρο <gui>Αναζήτηση σε όλες τις σημειώσεις</gui> ανοιχτό, επιλέξτε <guiseq><gui>Αρχείο</gui><gui>Σημειωματάρια</gui><gui>Νέο σημειωματάριο</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Εισάγετε όνομα για το νέο σημειωματάριο.</p>
+	</item>
+</steps>	
+
+        
+	
+	
+</page>

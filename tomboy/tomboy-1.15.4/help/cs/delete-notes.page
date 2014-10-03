@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="delete-notes" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="create-notes"/>
+    <link type="seealso" xref="edit-notes"/>
+    <desc>Jak v aplikaci Tomboy odstranit poznámku.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="author copyright">
+      <name>Dokumentační projekt GNOME</name>
+      <years>2010</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Odstranění poznámky</title>
+
+  <p>Pokud si přejete odstranit poznámky, které již nadále nepotřebujete, můžete je z aplikace <app>Tomboy</app> vymazat.</p>
+
+  <steps>
+    <title>Pro odstranění poznámky:</title>
+    <item>
+      <p>Otevřete požadovanou poznámku.</p>
+    </item>
+    <item>
+      <p>Klikněte na ikonu <gui>Odstranit</gui> na nástrojové liště. Budete vyzváni k potvrzení smazání.</p>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Odstranění poznámky je trvalé. Jakmile je jednou poznámka smazána, nelze ji již obnovit.</p>
+  </note>
+
+</page>

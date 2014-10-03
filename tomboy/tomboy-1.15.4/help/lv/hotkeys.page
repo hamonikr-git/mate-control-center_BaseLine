@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="hotkeys" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Iestatījumi karstajiem taustiņiem un īsinājumtaustiņiem.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Karstie taustiņi</title>
+
+	<p>Karstie taustiņi ļauj tev piekļūt piezīmēm un Tomboy iespējām no jebkuras vietas, pat izmantojot citas darbvirsmas programmas. Karstie taustiņi tiek aktivizēti, nospiežot vairākus tastatūras taustiņus reizē.</p>
+	
+	<p>Tu vari aktivēt karstos taustiņus, atverot <gui>Tomboy iestatījumi</gui>, izmantojot peli, lai veiktu labo peles klikšķi uz Tomboy ikonas panelī, uzdevumu joslā vai dokā. Izvēlies <gui>Iestatījumi</gui> un tad izvēlies <gui>Karstie taustiņi</gui> cilni. Tu vari arī atvērt <gui>Tomboy Iestatījumi</gui> no <gui>Meklēt visas piezīmes</gui> izvēlnes. No izvēlnes, izvēlies <guiseq><gui>Rediģēt</gui><gui>Iestatījumi</gui></guiseq>.</p>	
+	
+	<p>Ar karstajiem taustiņiem ir iespējams aktivizēt šādas Tomboy darbības:</p>
+	
+	<list>
+	  <item><p><gui>Parādīt piezīmju izvēlni</gui>: <keyseq><key>Alt</key><key>F12</key></keyseq></p></item>
+	  <item><p><gui>Atvērt "Sākt Šeit" </gui>: <keyseq><key>Alt</key><key>F11</key></keyseq></p></item>
+	  <item><p><gui>Izveidot jaunu piezīmi</gui>: Pēc noklusējuma deaktivēts. Tu vari ievadīt taustiņu kombināciju šai funkcijai, lai izveidotu karsto taustiņu.</p></item>
+	  <item><p><gui>Atvērt "Meklēt visas piezīmes"</gui>: Pēc noklusējuma deaktivēts.Tu vari ievadīt taustiņu kombināciju šai funkcijai, lai izveidotu karsto taustiņu.</p></item>
+	</list>  
+	    
+ </page>

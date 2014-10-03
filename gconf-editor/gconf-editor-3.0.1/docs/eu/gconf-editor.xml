@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- -*- indent-tabs-mode: nil -*- -->
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.8">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "Configuration Editor">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<article id="index" lang="eu">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Konfigurazio-editorearen eskuliburua</title>       
+    <copyright> 
+      <year>2004</year>
+      <holder>Sun Microsystems</holder> 
+    </copyright><copyright><year>2011.</year><holder>Hizkuntza Politikarako Sailburuordetza (hizkpol@ej-gv.es)</holder></copyright>
+    <!-- translators: uncomment this:
+         <copyright>
+         <year>2003</year>
+         <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+         </copyright>
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>GNOME dokumentazio-proiektua</publishername> 
+    </publisher> 
+
+       <legalnotice id="legalnotice">
+         <para>Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko Free Software Foundation-ek argitaratutako GNU Dokumentazio Librearen Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe. GFDL lizentziaren kopia <ulink type="help" url="ghelp:fdl">esteka</ulink> honetan edo eskuliburu honekin batera ematen den COPYING-DOCS fitxategian aurkituko duzu.</para>
+          <para>Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, bana dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko diozu, lizentzian bertan 6. atalean azaltzen den bezala.</para>
+ 
+         <para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren edozein agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko kideak marka komertzialak direla konturatu badira, orduan izen horiek maiuskulaz idatzita egongo dira, osorik edo hasierako letra maiuskulaz jarrita.</para>
+ 
+         <para>DOKUMENTUA ETA DOKUMENTUAREN BERTSIO ALDATUAK GNU DOKUMENTAZIO LIBREAREN LIZENTZIAREN BALDINTZEN ARABERA EMATEN DIRA, ETA ONDOREN ZEHAZTEN DIRENAK ONARTZERA BEHARTZEN DUTE: <orderedlist>
+                 <listitem>
+                   <para>DOKUMENTUA "DAGOEN-DAGOENEAN" EMATEN DA, INOLAKO BERMERIK GABE, EZ ESPRESUKI ADIERAZITAKORIK ETA EZ INPLIZITURIK ERE; BESTEAK BESTE (MUGARIK GABE), EZ DA BERMATZEN DOKUMENTUA EDO BERTSIO ALDATUA AKATSIK GABEA DENIK, MERKATURATZEKO EDO XEDE JAKIN BATERAKO EGOKIA DENIK EDO ARAURIK HAUSTEN EZ DUENIK. DOKUMENTUAREN EDO DOKUMENTUAREN BERTSIO ALDATUAREN KALITATEARI, ZEHAZTASUNARI ETA PERFORMANTZIARI BURUZKO ERANTZUKIZUN OSOA ZUREA DA. DOKUMENTUREN BATEK EDO BERTSIO ALDATUREN BATEK EDOZEIN MOTATAKO AKATSIK IZANEZ GERO, ZUK (EZ HASIERAKO IDAZLEAK, EZ EGILEAK ETA EZ INONGO KOLABORATZAILEK) ZEURE GAIN HARTU BEHARKO DUZU BERRIKUSTEKO, KONPONTZEKO EDO ZUZENTZEKO BEHARREZKO ZERBITZU GUZTIEN KOSTUA. BERME-UKATZE HAU LIZENTZIA HONEN FUNTSEZKO ZATIA DA. EZ DA BAIMENIK EMATEN EZEIN DOKUMENTU EDO BERTSIO ALDATU ERABILTZEKO, BALDIN ETA EZ BADA BERME-UKATZE HAU ONARTZEN.</para>
+                 </listitem>
+                 <listitem>
+                   <para>EZINGO DA INONGO ZIRKUNSTANTZIA EDO LEGE-TEORIARIK OINARRI HARTU --EZ ERANTZUKIZUN ZIBILARI BURUZKORIK (ZABARKERIA BARNE HARTUTA) EZ KONTRATUARI BURUZKORIK, EZ BESTERIK-- DOKUMENTU HONEN EDO BERTSIO ALDATU BATEN EGILEA, HASIERAKO IDAZLEA, EDOZEIN KOLABORATZAILE EDO BANATZAILE, EDO ALDERDI HORIEN EDOZEIN HORNITZAILE BESTE PERTSONA BATEN AURREAN ERANTZULE EGITEKO, PERTSONA HORREK EDOZEIN MOTATAKO KALTE ZUZENEKO, ZEHARKAKO, BEREZI, INTZIDENTAL EDO ONDORIOZKOAK JASAN DITUELAKO, BESTEAK BESTE (MUGARIK GABE), BEZEROAK GALTZEAREN, LANA ETEN BEHARRAREN, ORDENAGAILUAK EZ IBILTZEAREN EDO GAIZKI IBILTZEAREN ONDORIOZKO KALTEAK, EDO DOKUMENTUA NAHIZ HAREN BERTSIO ALDATUAK ERABILTZETIK ONDORIOZTATZEN DIREN EDO ERABILERA HORREKIN ZERIKUSIA DUEN EDOZEIN KALTE EDO GALERA, ALDERDIARI KALTE HORIEK GERTA ZITEZKEELA ADITZERA EMAN BAZAIO ERE.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+    <!-- This file  contains link to license for the documentation (GNU FDL), and 
+         other legal stuff such as "NO WARRANTY" statement. Please do not change 
+         any of this. -->
+
+    <authorgroup>
+      <author>
+        <firstname>Sun</firstname>
+        <surname>GNOMEren dokumentazio-taldea</surname>
+        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+      </author>
+      <author>
+        <firstname>Angela</firstname>
+        <surname>Boyle</surname>
+        <affiliation>
+          <orgname>GNOME dokumentazio-proiektua</orgname>
+        </affiliation>
+      </author>
+      <editor>
+        <firstname>Shaun</firstname>
+        <surname>McCance</surname>
+        <affiliation>
+          <orgname>GNOME dokumentazio-proiektua</orgname>
+        </affiliation>
+      </editor>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+           <firstname>Latin</firstname> 
+           <surname>Translator 1</surname> 
+           <affiliation> 
+           <orgname>Latin Translation Team</orgname> 
+           <address> <email>translator@gnome.org</email> </address> 
+           </affiliation>
+           <contrib>Latin translation</contrib>
+           </othercredit>
+      -->
+    </authorgroup>
+    <abstract role="description"><para>Konfigurazio-editorea erabil daiteke aplikazioek erabiltzen dituzten eta agian Hobespenen elkarrizketen bidez eskuratu ezin daitezkeen konfigurazio-aukerak aldatzeko.</para></abstract>
+
+    <revhistory>
+      <revision>
+        <revnumber>2.8 bertsioa</revnumber>
+        <date>2004ko iraila</date>
+        <revdescription>
+          <para role="author">GNOME dokumentazio-proiektua</para>
+          <para role="publisher">GNOME dokumentazio-proiektua</para>
+          <para role="status">berrikusi gabea</para>
+        </revdescription>
+      </revision>
+      <revision> 
+        <revnumber>2.1 bertsioa</revnumber> 
+        <date>2004ko abuztua</date> 
+        <revdescription> 
+          <para role="author">Sun-eko GNOMEren dokumentazio-taldea</para>
+          <para role="publisher">GNOME dokumentazio-proiektua</para>
+        </revdescription> 
+      </revision>
+      <revision> 
+        <revnumber>2.0.1 bertsioa</revnumber> 
+        <date>2004ko urtarrila</date> 
+        <revdescription> 
+          <para role="author">Sun-eko GNOMEren dokumentazio-taldea</para>
+          <para role="publisher">GNOME dokumentazio-proiektua</para>
+        </revdescription> 
+      </revision>
+    </revhistory> 
+    <releaseinfo>Eskuliburu honetan Konfigurazio-editorearen 2.8 bertsioa azaltzen da.</releaseinfo> 
+    <legalnotice> 
+      <title>Oharra</title> 
+      <para>Konfigurazio-editorea aplikazioari buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="ghelp:gnome-feedback" type="help">GNOMEra oharrak bidaltzeko orria</ulink>n aurkituko dituzu argibideak.</para>
+      <!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+</articleinfo> 
+
+<indexterm> 
+  <primary>GConf editorea</primary> 
+</indexterm>
+
+<sect1 id="introduction">
+  <title>Sarrera</title>
+  <para>GNOME Mahaigainak eta aplikazio askok <application>GConf</application> erabiltzen dute, erabiltzailearen hobespenak eta sistema-konfigurazioaren datuak biltegiratzeko. <application>GConf</application> aplikazioak hobespenetarako biltegiratze-kokaleku zentral bat ematen du, eta, horrela, konfigurazio-kudeaketa errazten die erabiltzaile eta sistema-administratzaileei. <application>GConf</application> aplikazioari buruzko informazio gehiago aurkituko duzu <ulink url="ghelp:system-admin-guide#gconf-0">GNOME sistema-administratzailearen gidan</ulink>.</para>
+  <para><application>Konfigurazio-editoreari</application> esker, erabiltzaileek GNOME Mahaigain osorako beren hobespenak eta <application>GConf</application> erabiltzen duen edozein aplikazio alda ditzakete. Horrez gain, sistema-administratzaileek <application>Konfigurazio-editorea</application> erabil dezakete, erabiltzaile guztiei eragingo dieten ezarpen lehenetsiak eta nahitaezkoak ezartzeko.</para>
+  <para>Hobespenak gakoen hierarkia baten barruan biltegiratzen dira <application>GConf</application> aplikazioan. Gako bakoitzak balio asoziatu bat dauka, eta balio horrek hobespen horretarako zure ezarpena zehazten du. Adibidez, <literal>/apps/glines/preferences/ball_theme</literal> gakoak <application>Five or More</application> jokoan erabiltzen duzun gaia biltegiratzen du.</para>
+  <caution><para><application>Konfigurazio-editorearekin</application> zure konfigurazio-iturburua zuzenean alda dezakezu. Erabiltzaile esperientziaduna ez bazara, ez erabili <application>Konfigurazio-editorea</application> GNOME Mahaigainerako hobespenak ezartzeko. Horren ordez, erabili GNOME Mahaigaineko hobespen-tresnak. Hobespen-tresnak nola erabiltzeari buruzko informazioa nahi baduzu, ikus zure plataformarako <ulink url="ghelp:user-guide">GNOME Mahaigaineko Erabiltzailearen Gidaren</ulink> azken bertsioa.</para></caution>
+</sect1>
+
+<sect1 id="getting-started"> 
+  <title>Erabiltzen hasteko</title>
+
+  <sect2 id="to-start"> 
+    <title>Konfigurazio-editorea abiarazteko</title>
+    <para>Aukera hauek dituzu <application>Konfigurazio-editorea</application> abiarazteko:</para>
+    <variablelist>
+      <varlistentry>
+        <term><guimenu>Aplikazioak</guimenu> menua</term>
+        <listitem>
+          <para>Aukeratu <menuchoice><guisubmenu>Sistema-tresnak</guisubmenu><guimenuitem>Konfigurazio-editorea</guimenuitem></menuchoice>.</para>
+          <note><para>Banaketa batzuek menu hau ezkutatzen dute. Kasu honetan, erabili behean azaltzen den bigarren metodoa.</para></note>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Komando-lerroa</term>
+        <listitem>
+          <para>Exekutatu komando hau: <command>gconf-editor</command></para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect2>
+
+  <sect2 id="when-you-start">
+    <title>Konfigurazio-editorea erabiltzen duzunean</title>
+    <para><application>Konfigurazio-editorea</application> abiarazten duzunean, leiho hau azalduko da.</para>
+    <figure id="gconf_editor_window"> 
+      <title><application>Konfigurazio-editorea</application> leihoa</title>
+      <screenshot> 
+        <mediaobject> 
+          <imageobject>
+            <imagedata fileref="figures/gconf_editor_anno_window.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase>GConf editorearen leihoa erakusten du. Legendak: Zuhaitz-panela, Aldatze-panela, Dokumentazio-panela.</phrase>
+          </textobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <para><application>Konfigurazio-editorea</application> leihoak honako panelak ditu:</para>
+    <variablelist>
+      <varlistentry>
+        <term>Zuhaitz-panela</term>
+        <listitem><para><application>GConf</application> aplikazioan gakoen hierarkian nabigatzeko aukera ematen du. Erabili panel hau aldatze-panelean aldatu nahi dituzun gakoak bistaratzeko. Zuhaitz-panela leihoaren ezkerreko aldean dago.</para></listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Aldatze-panela</term>
+        <listitem>
+          <para>Gakoak bistaratzen ditu zuhaitz-paneleko hautatutako <application>GConf</application> kokalekuan. Erabili panel hau aldatu nahi dituzun gakoak hautatzeko eta gakoen balioak aldatzeko. Aldatze-panela leihoaren eskuineko aldeko goialdean dago.</para>
+          <para>Aldatze-paneleko gakoen ondoan dauden ikonoek gakoarentzat zein balio mota sar dezakezun adierazten dute. Adibidez, <literal>/system/http_proxy/use_http_proxy</literal> gakoaren ondoko hautamarkaren ikonoak gakoarentzat balio boolear bat (egia ala gezurra) sar dezakezula adierazten du. Ikus <xref linkend="icons"/> ikono bakoitzari buruzko informazio gehiago izateko.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Dokumentazio-panela</term>
+        <listitem><para>Unean hautatuta dagoen gakorako dokumentazioa bistaratzen du. Erabili panel hau <application>GConf</application> hobespen-gakoei buruzko informazio gehiago irakurtzeko.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Emaitzen panela (ez da erakusten)</term>
+        <listitem><para>Bilaketa baten emaitzak ikusteko edo berriki ikusitako zure gako-izenen zerrendan zehar bilatzeko aukera ematen dizu. Leihoaren gainerako zatian, panel honetan hautatu duzun edozein gakorako informazioa erakutsiko da. Emaitzen panela leihoaren behealdean agertuko da, azken gakoak zerrendatzen dituzunean edo bilaketa bat egiten duzunean.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect2>
+</sect1>
+
+<sect1 id="workwindows">
+  <title>Leihoekin lan egitea</title>
+  <sect2 id="workwindows-opennew">
+    <title>Leiho berriak irekitzea</title>
+    <para>Hiru leiho mota ireki ditzakezu <application>Konfigurazio-editorean</application>: <application>Ezarpenak</application>, <application>Lehenetsiak</application>, eta <application>Nahitaezkoak</application>. <application>Konfigurazio-editoreak</application> ezartzen dituen balioak ireki duzun leiho motaren baitan egongo dira. Leiho mota bakoitza dagokion elementuarekin irekitzeko, joan <guimenu>Fitxategia</guimenu> menura.</para>
+    <note><para><application>Lehenetsiak</application> eta <application>Nahitaezkoak</application> leihoetako ezarpenek ordenagailuaren erabiltzaile guztiei eragiten dietenez, sistema-administratzaile batek bakarrik erabil ditzake leiho mota hauek. Zure hobespenak aldatzeko, <application>Ezarpenak</application> leihoa erabili beharko zenuke.</para></note>
+    <variablelist>
+      <varlistentry>
+        <term><application>Ezarpenak</application></term>
+        <listitem><para><application>Ezarpenak</application> leihoa erabil dezakezu, zure hobespen pertsonalak aldatzeko. <application>Ezarpenak</application> leihoan egindako aldaketek zure mahaigainari bakarrik eragingo diote. Sistema-administratzaileak nahitaezko gisa jarritako ezarpenak ezin dituzu aldatu.</para></listitem>
+      </varlistentry>
+    </variablelist>
+    <variablelist>
+      <varlistentry>
+        <term><application>Lehenetsiak</application></term>
+        <listitem><para>Sistema-administratzaile bazara, <application>Lehenetsiak</application> leihoa erabil dezakezu, erabiltzaile guztientzako ezarpen lehenetsiak editatzeko. Erabiltzaile batek ez badu gako baten balioa esplizituki ezartzen, balioa ezarpen lehenetsietatik hartuko da. Erabiltzaileek ezarpen lehenetsiak gainidatz ditzakete beti.</para></listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><application>Nahitaezkoak</application></term>
+        <listitem><para>Sistema-administratzaile bazara, <application>Nahitaezkoak</application> leihoa erabil dezakezu, erabiltzaile guztientzako nahitaezko ezarpenak editatzeko. Gako batentzat nahitaezko balioa ezartzen denean, erabiltzaileek ezin dute balio hori aldatu. Hau zenbait aukera blokeatzeko erabil daiteke.</para></listitem>
+      </varlistentry>
+    </variablelist>
+  </sect2>
+
+  <sect2 id="workwindows-close">
+    <title>Ixtea eta irtetea</title>
+    <para><application>Konfigurazio-editorearen</application> leiho bat itxi dezakezu, leiho horretan <menuchoice><guimenu>Fitxategia</guimenu><guimenuitem>Itxi leihoa</guimenuitem></menuchoice> hautatuz. <application>Konfigurazio-editorearen</application> leiho guztiak ixteko eta aplikaziotik erabat irteteko, hautatu <menuchoice><guimenu>Fitxategia</guimenu><guimenuitem>Irten</guimenuitem></menuchoice> <application>Konfigurazio-editorearen</application> edozein leihotan.</para>
+  </sect2>
+</sect1>
+
+<sect1 id="workkeys">
+  <title>Gakoekin lan egitea</title>
+  <para>Gakoak balioak bilatzeko era bat dira. <application>GConf</application> aplikazioan biltegiratutako hobespen bakoitza gako bati esleitzen zaio. <application>GConf</application> erabiltzen duten aplikazioek gakoen balioak atzitzen dituzte, zein itxura eta zein portaera izango duten erabakitzeko. Aplikazio baten <guilabel>Hobespenetan</guilabel> zerbait aldatzen duzunean, <application>GConf</application>-en gako bati asoziatutako balioa aldatuko duzu.</para>
+
+  <sect2 id="copy-key">
+    <title>Gako-izen bat kopiatzea</title>
+    <para>Gako-izen bat arbelean kopiatzeko, hautatu kopiatu nahi duzun gako-izena aldatze-panelean. Aukeratu <menuchoice><guimenu>Editatu</guimenu><guimenuitem>Kopiatu gako-izena</guimenuitem></menuchoice>. Gako-izena beste edozein aplikaziotan itsats dezakezu.</para>
+  </sect2>
+  <sect2 id="list-key">
+    <title>Azken gako-izenak ikustea</title>
+    <para>Azken gako-izenak ikusteko, aukeratu <menuchoice><guimenu>Editatu</guimenu><guimenuitem>Zerrendatu azken gako-izenak</guimenuitem></menuchoice>. Ekintza honek emaitzen panela irekiko du uneko leihoaren behealdean. Emaitzen zerrendaren barruan mugi zaitezke, korritze-barrarekin edo gezi-teklekin gorantz edo beherantz korritzen. Hautatutako gako edo karpetaren informazioa leihoaren gainerako zatian azalduko da.</para>
+    <para>Azken gakoak ikustea erabilgarria da, aldatu berri duzun eta non dagoen gogoratzen ez zaren gako batera itzuli nahi baduzu.</para>
+    <!-- REMARK -->
+    <remark>Pantaila-argazki bat ondo etorriko litzateke. Hain zuzen ere, emaitzen paneleko Itxi, Kopiatu eta Garbitu botoiak azaldu beharko lirateke.</remark>
+  </sect2>
+  <sect2 id="modify-key">
+    <title>Gako baten balioa aldatzea</title>
+    <para>Gako-izen baten ondoko ikonoek gako horrek eraman dezakeen balio mota erakusten dute. Ikus <xref linkend="icons"/> ikono bakoitzari buruzko informazio gehiago izateko. Gako baten balioa aldatzeko, jarraitu urrats hauei:</para>
+    <procedure>
+      <step><para>Erabili zuhaitz-panela aldatze-panelean aldatu nahi duzun gakoa bistaratzeko.</para></step>
+      <step><para>Aldatze-panelean hautatu aldatu nahi duzun gakoa.</para></step>
+      <step>
+        <para>Osoko zenbaki baten gakoa edo kate baten gakoa aldatzeko, egin klik gakoaren <guilabel>Balioa</guilabel> zutabean. Idatzi gakoaren balio berria. Bestela, egin klik gakoan eskuineko botoiaz, eta hautatu <guimenuitem>Editatu gakoa</guimenuitem> laster-menuaren barruan.</para>
+        <para>Gako boolear baten balioa aldatzeko, egin klik gakoaren <guilabel>Balioa</guilabel> zutabean, kontrol-laukia hautatzeko edo desautatzeko. Bestela, egin klik gakoan eskuineko botoiaz, eta hautatu <guimenuitem>Editatu gakoa</guimenuitem> laster-menuaren barruan.</para>
+        <para>Zerrenda-gako baten balioa aldatzeko, egin klik gakoan eskuineko botoiaz, eta hautatu <guimenuitem>Editatu gakoa</guimenuitem> laster-menuaren barruan. <application>Editatu gakoa</application> elkarrizketak gako horri asoziatutako balioen zerrenda ematen du. Elkarrizketa hau erabil dezakezu, zerrendako edozein balio editatzeko, zerrendan balioak gehitzeko edo kentzeko, eta balio bakoitza zerrendan gora eta behera mugitzeko.</para>
+      </step>
+    </procedure>
+    <para>Baliteke sistema-administratzaileak zenbait gako blokeatu izatea, nahitaezko balioak emanez. Hautatutako gakoak nahitaezko balioen multzo bat badu, ezin izango duzu balioa editatu. Dokumentazio-panelak <guilabel>Gako hau ezin da idatzi</guilabel> etiketa bistaratuko du, gako horren balioa editatzeko baimenik ez baduzu.</para>
+  </sect2>
+</sect1>
+
+<sect1 id="finding">
+  <title>Gakoak azkar aurkitzea</title>
+  <para>Gakoak azkar aurkitzeko, <application>Konfigurazio-editoreak</application> aukera ematen dizu <application>GConf</application>-en gako-izenak bilatzeko. Horrez gain, laster-markak erabil ditzakezu, maiz atzitu behar dituzun gakoen direktorioak aurkitzeko.</para>
+
+  <sect2 id="using-bookmark">
+    <title>Laster-markak erabiltzea</title>
+    <para>Zure laster-marketan direktorio-kokaleku bat atzitzeko, aukeratu kokalekua <guimenu>Laster-markak</guimenu> menuaren barruan. Direktorio-kokalekuak gehitu edo kendu ditzakezu <guimenu>Laster-markak</guimenu> menuan.</para>
+    <para>Laster-marka bat gehitzeko, hautatu zein kokalekuri jarri nahi diozun laster-marka zuhaitz-panelean. Aukeratu <menuchoice><guimenu>Laster-markak</guimenu><guimenuitem>Gehitu laster-marka</guimenuitem></menuchoice>.</para>
+    <para>Laster-marka bat ezabatzeko, eman urrats hauek:</para>
+    <procedure>
+      <step><para>Aukeratu <menuchoice><guimenu>Laster-markak</guimenu><guimenuitem>Editatu laster-markak</guimenuitem></menuchoice>.</para></step>
+      <step><para>Hautatu laster-marka <application>Editatu laster-markak</application> elkarrizketan, eta egin klik <guibutton>Ezabatu</guibutton> botoian.</para></step>
+      <step><para>Sakatu <guibutton>Itxi</guibutton>.</para></step>
+    </procedure>
+  </sect2>
+  <sect2 id="search">
+    <title>Gakoak bilatzea</title>
+    <para>Gakoak bilatzeko, jarraitu urrats hauei:</para>
+    <procedure>
+      <step><para>Aukeratu <menuchoice><guimenu>Editatu</guimenu><guimenuitem>Aurkitu</guimenuitem></menuchoice>.</para></step>
+      <step><para>Idatzi bilatu nahi duzun gako-hitza <guilabel>Bilatu</guilabel> eremuan. Halaber, <guilabel>Bilatu gako-izenetan ere</guilabel> eta <guilabel>Bilatu gako-balioetan ere</guilabel> aukerako kontrol-laukiak hauta ditzakezu. Kontrol-lauki hauek hautatu ezean, karpeta-izenen artean bakarrik bilatuko da. Kontrol-lauki hauek hautatuz, bilaketa-parametroak zabalduko dira.</para></step>
+      <step><para>Sakatu <guibutton>Bilatu</guibutton>.</para></step>
+    </procedure>
+    <para>Bilaketaren emaitzak emaitzen panelean azalduko dira. Emaitzen zerrendan zehar mugitzeko, panel hori hautatu behar da lehenengo. Horrela, emaitzen artean mugitu ahal izango duzu, korritze-barra edo gezi-teklak erabiliz. Hautatutako gako edo karpetaren informazioa leihoaren gainerako zatian azalduko da.</para>
+    <!-- REMARK -->
+    <remark>Pantaila-argazki bat ondo etorriko litzateke. Hain zuzen ere, emaitzen paneleko Itxi, Kopiatu eta Garbitu botoiak azaldu beharko lirateke.</remark>
+  </sect2> 
+</sect1>
+
+<sect1 id="defaults-mandatory">
+  <title>Ezarpen lehenetsiak eta nahitaezkoak</title>
+  <para>Sistema-administratzaile bazara, ezarpen lehenetsiak eta nahitaezkoak ezar ditzakezu <application>GConf</application>-en, eta horrek erabiltzaile guztiei erangingo lieke. Ezarpen lehenetsiak erabiltzaileak esplizituki baliorik ezarri ez duenean erabiltzen dira, eta erabiltzaileek une oro gainidatz ditzakete. Nahitaezko ezarpenak erabiltzaile guztientzat erabiltzen dira beti, eta erabiltzaileek ezin dituzte gainidatzi.</para>
+  <para><application>Lehenetsiak</application> eta <application>Nahitaezkoak</application> leihoak erabil ditzakezu, ezarpen lehenetsiak eta nahitaezkoak editatzeko eta kentzeko. <application>Lehenetsiak</application> eta <application>Nahitaezkoak</application> leihoek jada lehenetsi edo nahitaezko gisa jarritako ezarpenak bakarrik erakutsiko dituzte. Ezin dituzu leiho hauek erabili ezarpen lehenetsi eta nahitaezko berriak sortzeko. Horren ordez, <application>Ezarpenak</application> leihora joan zaitezke, ezarpenak lehenetsi edo nahitaezko gisa jartzeko.</para>
+  <para><application>Lehenetsiak</application> leiho bat irekitzeko, aukeratu <menuchoice><guimenu>Fitxategia</guimenu><guimenuitem>Lehenetsi berrietarako leihoa</guimenuitem></menuchoice>. <application>Nahitaezkoak</application> leiho bat irekitzeko, aukeratu <menuchoice><guimenu>Fitxategia</guimenu><guimenuitem>Nahitaezko berrietarako leihoa</guimenuitem></menuchoice>.</para>
+
+  <sect2 id="creating-defaults">
+    <title>Ezarpen lehenetsiak sortzea</title>
+    <para>Ezarpen lehenetsi bat sortzeko, eman urrats hauek:</para>
+    <procedure>
+      <step><para><application>Ezarpenak</application> leihoan, erabili zuhaitz-panela, lehenetsi gisa ezarri nahi duzun gakoa bistaratzeko.</para></step>
+      <step><para>Egin klik gakoan eskuineko botoiaz, eta hautatu <guimenuitem>Ezarri lehenetsi gisa</guimenuitem> laster-menuaren barruan.</para></step>
+    </procedure>
+  </sect2>
+  <sect2 id="creating-mandatory">
+    <title>Nahitaezko ezarpenak sortzea</title>
+    <para>Nahitaezko ezarpen bat sortzeko, eman urrats hauek:</para>
+    <procedure>
+      <step><para><application>Ezarpenak</application> leihoan, erabili zuhaitz-panela, nahitaezko gisa ezarri nahi duzun gakoa bistaratzeko.</para></step>
+      <step><para>Egin klik gakoan eskuineko botoiaz, eta hautatu <guimenuitem>Ezarri nahitaezko gisa</guimenuitem> laster-menuaren barruan.</para></step>
+    </procedure>
+  </sect2>
+  <sect2 id="modifying-defaults-mandatory">
+    <title>Ezarpen lehenetsiak eta nahitaezkoak aldatzea eta kentzea</title>
+    <para><application>Lehenetsiak</application> eta <application>Nahitaezkoak</application> leihoak erabil ditzakezu, ezarpen lehenetsiak eta nahitaezkoak aldatzeko eta kentzeko. Ezarpen lehenetsi edo nahitaezko bat aldatzeko, erabili dagokion leihoa eta aldatu gakoa, <application>Ezarpenak</application> leihoan aldatuko bazenu bezala. Ikus <xref linkend="modify-key"/> gakoak aldatzeko informazio gehiago izateko.</para>
+    <para>Gako lehenetsi edo nahitaezko bat kentzeko, eman urrats hauek:</para>
+    <procedure>
+      <step><para>Ireki dagokion leihoa, eta erabili zuhaitz-panela ezarpen lehenetsi edo nahitaezkoetatik kendu nahi duzun gakoa bistaratzeko.</para></step>
+      <step><para>Egin klik gakoan eskuineko botoiaz, eta hautatu <guimenuitem>Kendu gakoa</guimenuitem> laster-menuaren barruan.</para></step>
+    </procedure>
+  </sect2>
+</sect1>
+
+<sect1 id="icons">
+  <title>Ikonoak eta gako motak</title>
+  <para>Aldatze-paneleko gakoen ondoan dauden ikonoek gakoarentzat zein balio mota sar dezakezun adierazten dute. Ondorengo zerrendak ikono posibleak eta horiek ordezkatzen dituzten balio motak erakusten ditu.</para>
+  <variablelist>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+        <imagedata fileref="figures/entry-bool.png" format="PNG"/>
+      </imageobject></inlinemediaobject> Gako boolearra</term>
+      <listitem><para>Egia ala gezurra izan daiteke. <application>Konfigurazio-editoreak</application> gako mota honetarako kontrol-lauki bat emango du .</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-number.png" format="PNG"/>
+      </imageobject></inlinemediaobject> Zenbaki-gakoa</term>
+      <listitem><para>Zenbakiak izaten ditu. Zenbaki hauek osokoak edo koma mugikorrekoak (zatikiarrak) izan daitezke.</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-string.png" format="PNG"/>
+      </imageobject></inlinemediaobject> Kate-gakoa</term>
+      <listitem><para>Edozein testu-kate izan dezake.</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-schema.png" format="PNG"/>
+      </imageobject></inlinemediaobject> Eskema-gakoa</term>
+      <listitem><para>Beste gako batzuk dokumentatzeko erabiltzen da. Gako bakoitzaren dokumentazioa gako bereizi baten bidez ematen da, orokorrean <literal>/eskemak</literal> direktorioaren barruan. Normalean erabiltzaileek eta sistema-administratzaileek ez dute zuzenean eskema-gakoekin lan egin behar izango.</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-list.png" format="PNG"/>
+      </imageobject></inlinemediaobject> Zerrenda-gakoa</term>
+      <listitem><para>Luzera arbitrarioko zerrendak. Zerrendako elementu guztiek mota berekoak eta jatorrizko mota batekoak (boolearrak, zenbakiak edo kateak) izan behar dute.</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-blank.png" format="PNG"/>
+      </imageobject></inlinemediaobject> Bikote-gakoa</term>
+      <listitem><para>Bi balio izan ditzake hain zuzen ere. Bi balioek jatorrizko mota batekoak izan behar dute, baina ez dute mota berekoak izan behar. Une honetan <application>Konfigurazio-editoreak</application> ezin du bikote-gakorik editatu.</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-blank.png" format="PNG"/>
+      </imageobject></inlinemediaobject> Hutsa</term>
+      <listitem><para><application>Konfigurazio-editoreak</application> gako mota ulertzen ez duenean erabiltzen da. Hutsa ikonoa bikote-gakoetan ere erabiltzen da une honetan.</para></listitem>
+    </varlistentry>
+  </variablelist>
+</sect1>
+</article>

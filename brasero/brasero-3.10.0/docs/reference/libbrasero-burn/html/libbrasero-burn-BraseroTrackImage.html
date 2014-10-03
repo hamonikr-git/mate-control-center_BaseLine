@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>BraseroTrackImage</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Libbrasero-burn Reference Manual">
+<link rel="up" href="ch01.html" title="API Reference for Libbrasero-burn">
+<link rel="prev" href="libbrasero-burn-BraseroTrackStreamCfg.html" title="BraseroTrackStreamCfg">
+<link rel="next" href="libbrasero-burn-BraseroTrackImageCfg.html" title="BraseroTrackImageCfg">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libbrasero-burn-BraseroTrackStreamCfg.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Libbrasero-burn Reference Manual</th>
+<td><a accesskey="n" href="libbrasero-burn-BraseroTrackImageCfg.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libbrasero-burn-BraseroTrackImage.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libbrasero-burn-BraseroTrackImage.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libbrasero-burn-BraseroTrackImage"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libbrasero-burn-BraseroTrackImage.top_of_page"></a>BraseroTrackImage</span></h2>
+<p>BraseroTrackImage</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libbrasero-burn-BraseroTrackImage.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">                    <a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage">BraseroTrackImage</a>;
+<a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="returnvalue">BraseroTrackImage</span></a> * <a class="link" href="libbrasero-burn-BraseroTrackImage.html#brasero-track-image-new" title="brasero_track_image_new ()">brasero_track_image_new</a>             (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a class="link" href="libbrasero-burn-brasero-enums.html#BraseroBurnResult" title="enum BraseroBurnResult"><span class="returnvalue">BraseroBurnResult</span></a>   <a class="link" href="libbrasero-burn-BraseroTrackImage.html#brasero-track-image-set-source" title="brasero_track_image_set_source ()">brasero_track_image_set_source</a>      (<em class="parameter"><code><a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a> *track</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *image</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *toc</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libbrasero-burn-brasero-enums.html#BraseroImageFormat" title="enum BraseroImageFormat"><span class="type">BraseroImageFormat</span></a> format</code></em>);
+<a class="link" href="libbrasero-burn-brasero-enums.html#BraseroBurnResult" title="enum BraseroBurnResult"><span class="returnvalue">BraseroBurnResult</span></a>   <a class="link" href="libbrasero-burn-BraseroTrackImage.html#brasero-track-image-set-block-num" title="brasero_track_image_set_block_num ()">brasero_track_image_set_block_num</a>   (<em class="parameter"><code><a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a> *track</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#goffset"><span class="type">goffset</span></a> blocks</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libbrasero-burn-BraseroTrackImage.html#brasero-track-image-get-source" title="brasero_track_image_get_source ()">brasero_track_image_get_source</a>      (<em class="parameter"><code><a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a> *track</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> uri</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="libbrasero-burn-BraseroTrackImage.html#brasero-track-image-get-toc-source" title="brasero_track_image_get_toc_source ()">brasero_track_image_get_toc_source</a>  (<em class="parameter"><code><a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a> *track</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> uri</code></em>);
+<a class="link" href="libbrasero-burn-brasero-enums.html#BraseroImageFormat" title="enum BraseroImageFormat"><span class="returnvalue">BraseroImageFormat</span></a>  <a class="link" href="libbrasero-burn-BraseroTrackImage.html#brasero-track-image-get-format" title="brasero_track_image_get_format ()">brasero_track_image_get_format</a>      (<em class="parameter"><code><a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a> *track</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="libbrasero-burn-BraseroTrackImage.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="libbrasero-burn-BraseroTrackImage.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="BraseroTrackImage"></a><h3>BraseroTrackImage</h3>
+<pre class="programlisting">typedef struct _BraseroTrackImage BraseroTrackImage;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="brasero-track-image-new"></a><h3>brasero_track_image_new ()</h3>
+<pre class="programlisting"><a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="returnvalue">BraseroTrackImage</span></a> * brasero_track_image_new             (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+Creates a new <a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a> object.
+</p>
+<p>
+This type of tracks is used to burn disc images.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a <a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a> object.</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="brasero-track-image-set-source"></a><h3>brasero_track_image_set_source ()</h3>
+<pre class="programlisting"><a class="link" href="libbrasero-burn-brasero-enums.html#BraseroBurnResult" title="enum BraseroBurnResult"><span class="returnvalue">BraseroBurnResult</span></a>   brasero_track_image_set_source      (<em class="parameter"><code><a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a> *track</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *image</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *toc</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="libbrasero-burn-brasero-enums.html#BraseroImageFormat" title="enum BraseroImageFormat"><span class="type">BraseroImageFormat</span></a> format</code></em>);</pre>
+<p>
+Sets the image source path (and its toc if need be)
+as well as its format.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>track</code></em> :</span></p></td>
+<td>a <a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>image</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> or NULL</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>toc</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> or NULL</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>format</code></em> :</span></p></td>
+<td>a <a class="link" href="libbrasero-burn-brasero-enums.html#BraseroImageFormat" title="enum BraseroImageFormat"><span class="type">BraseroImageFormat</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a <a class="link" href="libbrasero-burn-brasero-enums.html#BraseroBurnResult" title="enum BraseroBurnResult"><span class="type">BraseroBurnResult</span></a>. BRASERO_BURN_OK if it is successful.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="brasero-track-image-set-block-num"></a><h3>brasero_track_image_set_block_num ()</h3>
+<pre class="programlisting"><a class="link" href="libbrasero-burn-brasero-enums.html#BraseroBurnResult" title="enum BraseroBurnResult"><span class="returnvalue">BraseroBurnResult</span></a>   brasero_track_image_set_block_num   (<em class="parameter"><code><a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a> *track</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#goffset"><span class="type">goffset</span></a> blocks</code></em>);</pre>
+<p>
+Sets the image size (in sectors).
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>track</code></em> :</span></p></td>
+<td>a <a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>blocks</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#goffset"><span class="type">goffset</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a <a class="link" href="libbrasero-burn-brasero-enums.html#BraseroBurnResult" title="enum BraseroBurnResult"><span class="type">BraseroBurnResult</span></a>. BRASERO_BURN_OK if it is successful.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="brasero-track-image-get-source"></a><h3>brasero_track_image_get_source ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             brasero_track_image_get_source      (<em class="parameter"><code><a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a> *track</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> uri</code></em>);</pre>
+<p>
+This function returns the path or the URI (if <em class="parameter"><code>uri</code></em> is TRUE) of the
+source image file.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>track</code></em> :</span></p></td>
+<td>a <a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>uri</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="brasero-track-image-get-toc-source"></a><h3>brasero_track_image_get_toc_source ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             brasero_track_image_get_toc_source  (<em class="parameter"><code><a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a> *track</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> uri</code></em>);</pre>
+<p>
+This function returns the path or the URI (if <em class="parameter"><code>uri</code></em> is TRUE) of the
+source toc file.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>track</code></em> :</span></p></td>
+<td>a <a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>uri</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="brasero-track-image-get-format"></a><h3>brasero_track_image_get_format ()</h3>
+<pre class="programlisting"><a class="link" href="libbrasero-burn-brasero-enums.html#BraseroImageFormat" title="enum BraseroImageFormat"><span class="returnvalue">BraseroImageFormat</span></a>  brasero_track_image_get_format      (<em class="parameter"><code><a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a> *track</code></em>);</pre>
+<p>
+This function returns the format of the
+source image.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>track</code></em> :</span></p></td>
+<td>a <a class="link" href="libbrasero-burn-BraseroTrackImage.html#BraseroTrackImage" title="BraseroTrackImage"><span class="type">BraseroTrackImage</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a <a class="link" href="libbrasero-burn-brasero-enums.html#BraseroImageFormat" title="enum BraseroImageFormat"><span class="type">BraseroImageFormat</span></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.19</div>
+</body>
+</html>

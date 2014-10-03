@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- -*- indent-tabs-mode: nil -*- -->
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.8">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "Configuration Editor">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<article id="index" lang="zh_TW">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>組態編輯器手冊</title>       
+    <copyright> 
+      <year>2004</year>
+      <holder>昇陽電腦 (Sun Microsystems)</holder> 
+    </copyright><copyright><year>2011.</year><holder>Pin-hsien Li  (pspeter9931@gmail.com)</holder></copyright>
+    <!-- translators: uncomment this:
+         <copyright>
+         <year>2003</year>
+         <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+         </copyright>
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>GNOME 文件專案</publishername> 
+    </publisher> 
+
+       <legalnotice id="legalnotice">
+         <para>根據自由軟體基金會 (Free Software Foundation) 所發佈的 GNU 自由文件授權 (GNU Free Documentation License, GFDL) 1.1 (含) 以後版本，使用者可以複製、散佈，或修改本文件，但不得增刪章節，不得加上封面文字，亦不得加上封底文字。如要取得 GFDL 的副本，請參閱此<ulink type="help" url="ghelp:fdl">連結</ulink>，或是參閱與本手冊一同隨附的 COPYING-DOCS 檔案。</para>
+          <para>本手冊是屬於依 GFDL 授權所發佈之 GNOME 手冊集中的一部份。如果您只要單獨散佈本手冊，依據授權聲明第六節之敘述，您必須另外將授權聲明加入本手冊中。</para>
+ 
+         <para>許多公司為了突顯其產品與服務，會使用特別名稱，並亦已聲明這些名稱為其商標。當這些名稱出現在 GNOME 文件中，同時 GNOME 文件專案小組成員亦明白這些名稱為商標時， 這些名稱會以大寫字母或是首字母大寫表示。</para>
+ 
+         <para>文件以及此文件的修改版本必須遵循 GNU 自由文件許可證，進一步資訊請見： <orderedlist>
+                 <listitem>
+                   <para>文件提供是以其「原樣」呈現，不管明示或暗示，皆不具任何保證，包括 (但不限於) 文件或修正版毫無錯誤、可販售、 具特殊用途，或不侵權。關於本文件與修正版文件之品質、正確性及功用，其風險您必須自行承擔。若本文件或修正版有任何缺陷，任何必須之保養、修理及更正，應由您自行承擔，原始作者、作者或任何散佈者無須負責。本免責聲明是本授權聲明極重要與必要的一部份，因此任何文件或修正版的授權，皆須在同意本免責聲明的情況下進行；同時</para>
+                 </listitem>
+                 <listitem>
+                   <para>在任何情況或法律理論下，亦即不管是在侵權 (包括疏忽)、契約或其他情形，或是已預先告知會有下列損害之可能時，本文件或修正版的任何作者、原始作者、投稿人以及散佈者，或是任何提供單位，對於因使用本文件及修正版，或與本文件及修正版使用相關所造成的任何直接、間接、特殊、偶然或必然之損害，包括 (但不限於) 信譽受損、工作停止、電腦當機或不正常運作，或任何所有其他損害，上述人等皆不需負任何責任。</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+    <!-- This file  contains link to license for the documentation (GNU FDL), and 
+         other legal stuff such as "NO WARRANTY" statement. Please do not change 
+         any of this. -->
+
+    <authorgroup>
+      <author>
+        <firstname>昇陽 (Sun)</firstname>
+        <surname>GNOME 文件團隊</surname>
+        <affiliation><orgname>昇陽電腦 (Sun Microsystems)</orgname></affiliation>
+      </author>
+      <author>
+        <firstname>Angela</firstname>
+        <surname>Boyle</surname>
+        <affiliation>
+          <orgname>GNOME 文件專案</orgname>
+        </affiliation>
+      </author>
+      <editor>
+        <firstname>Shaun</firstname>
+        <surname>McCance</surname>
+        <affiliation>
+          <orgname>GNOME 文件專案</orgname>
+        </affiliation>
+      </editor>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+           <firstname>Latin</firstname> 
+           <surname>Translator 1</surname> 
+           <affiliation> 
+           <orgname>Latin Translation Team</orgname> 
+           <address> <email>translator@gnome.org</email> </address> 
+           </affiliation>
+           <contrib>Latin translation</contrib>
+           </othercredit>
+      -->
+    </authorgroup>
+    <abstract role="description"><para>組態編輯器可以用來更改那些不會在偏好設定中出現的程式設置選項。</para></abstract>
+
+    <revhistory>
+      <revision>
+        <revnumber>版本 2.8</revnumber>
+        <date>2004 年九月</date>
+        <revdescription>
+          <para role="author">GNOME 文件專案</para>
+          <para role="publisher">GNOME 文件專案</para>
+          <para role="status">未被審核的</para>
+        </revdescription>
+      </revision>
+      <revision> 
+        <revnumber>版本 2.1</revnumber> 
+        <date>2004 年八月</date> 
+        <revdescription> 
+          <para role="author">昇陽 GNOME 文件團隊</para>
+          <para role="publisher">GNOME 文件專案</para>
+        </revdescription> 
+      </revision>
+      <revision> 
+        <revnumber>版本 2.0.1</revnumber> 
+        <date>2004 年一月</date> 
+        <revdescription> 
+          <para role="author">昇陽 GNOME 文件團隊</para>
+          <para role="publisher">GNOME 文件專案</para>
+        </revdescription> 
+      </revision>
+    </revhistory> 
+    <releaseinfo>這個手冊描述的是「組態編輯器」2.8 版。</releaseinfo> 
+    <legalnotice> 
+      <title>意見回覆</title> 
+      <para>要回報「組態編輯器」應用程式或這本手冊的錯誤或給予建議，請依照 <ulink url="ghelp:gnome-feedback" type="help">GNOME 回饋頁面</ulink>中的指示。</para>
+      <!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+</articleinfo> 
+
+<indexterm> 
+  <primary>GConf 編輯器</primary> 
+</indexterm>
+
+<sect1 id="introduction">
+  <title>引言</title>
+  <para>GNOME 桌面環境以及許多應用程式，會使用 <application>GConf</application> 來儲存使用者的的偏好設定和系統配置資料。<application>GConf</application> 提供了一個中心位置來儲存偏好設定，為使用者和系統管理員簡化配置管理。更多有關 <application>GConf</application> 的資訊可參見<ulink url="ghelp:system-admin-guide#gconf-0"> GNOME 系統管理員指南</ulink>。</para>
+  <para><application>組態編輯器</application>允許用戶改變個人的偏好設定以調整整個 GNOME 桌面環境以及任何使用 <application>GConf</application> 的應用程式。另外，系統管理員可以使用<application>組態編輯器</application>設置預設以及強制性的設定，這些將會影響到所有使用者。</para>
+  <para>偏好設定被儲存於 <application>GConf</application> 內架構式的設定鍵中。每個設定鍵都有一個關聯的值，指定您所設定的偏好。舉例來說，設定鍵 <literal>/app/glines/preferences/ball_theme</literal> 中儲存了您在遊戲 <application>Five or More</application> 裡所使用的主題。</para>
+  <caution><para><application>組態編輯器</application>可以讓您直接修改設置源。如果您不是一個有經驗的用戶，不要使用<application>組態編輯器</application>來改變 GNOME 桌面環境的設定。反之，使用 GNOME 桌面環境的設定工具。有關如何使用設定工具的資訊，請參閱最新版本、對應您的平台的<ulink url="ghelp:user-guide"> GNOME 桌面環境使用者指南</ulink>。</para></caution>
+</sect1>
+
+<sect1 id="getting-started"> 
+  <title>開始使用</title>
+
+  <sect2 id="to-start"> 
+    <title>啟動組態編輯器</title>
+    <para>您可以照以下的方式來啟動<application>組態編輯器</application>：</para>
+    <variablelist>
+      <varlistentry>
+        <term><guimenu>應用程式</guimenu>選單</term>
+        <listitem>
+          <para>選擇<menuchoice><guisubmenu>系統工具</guisubmenu><guimenuitem>組態編輯器</guimenuitem></menuchoice>。</para>
+          <note><para>有些發行版本會隱藏這個選單。在這種情況下，使用下面所述的第二種方式。</para></note>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>指令列</term>
+        <listitem>
+          <para>執行下列指令：<command>gconf-editor</command></para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect2>
+
+  <sect2 id="when-you-start">
+    <title>當您啟動了組態編輯器</title>
+    <para>在您啟動<application>組態編輯器</application>之後，會出現下面的視窗。</para>
+    <figure id="gconf_editor_window"> 
+      <title><application>組態編輯器</application>視窗</title>
+      <screenshot> 
+        <mediaobject> 
+          <imageobject>
+            <imagedata fileref="figures/gconf_editor_anno_window.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase>顯示組態管理員 (GConf Editor) 視窗。標註了：樹狀面板、修改面板、說明面板</phrase>
+          </textobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <para><application>組態編輯器</application>視窗包含了下列的面板：</para>
+    <variablelist>
+      <varlistentry>
+        <term>樹狀面板</term>
+        <listitem><para>讓您能在 <application>GConf</application> 中瀏覽階層式的設定鍵。在這個面板下，把您想要調整的設定鍵顯示在修改面板上。樹狀面板位於視窗的左側。</para></listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>修改面板</term>
+        <listitem>
+          <para>顯示在樹狀面板中所選取的 <application>GConf</application> 位置。在這個面板下，選擇您想要修改的設定鍵並修改鍵值。修改面板位於視窗右側上方。</para>
+          <para>修改面板內，設定鍵旁邊的圖示說明了您可以為它輸入什麼型式的值。舉例來說，設定鍵<literal>/system/http_proxy/use_http_proxy</literal>旁邊的勾選標記圖示，代表您可以在此鍵輸入邏輯值(是或否)。有關每一種圖示的更多資訊，請參閱<xref linkend="icons"/>。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>說明面板</term>
+        <listitem><para>顯示目前所選設定鍵的說明。在這個面板下可獲得有關 <application>GConf</application> 設定鍵的更多資訊。</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>結果面板 (不被顯示)</term>
+        <listitem><para>讓您檢視搜尋結果，或是搜尋您最近檢視過的設定鍵名稱。剩餘的窗口將會顯示您在此面板選擇的設定鍵的相關資訊。當您列出最近的設定鍵或是執行一次搜索時，結果面板將會出現在視窗的底部。</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect2>
+</sect1>
+
+<sect1 id="workwindows">
+  <title>視窗用法</title>
+  <sect2 id="workwindows-opennew">
+    <title>開啟新的視窗</title>
+    <para>在<application>組態編輯器</application>內有三種您可以開啟的視窗：<application>設定</application>， <application>預設值</application>，以及<application>強制性設定</application>。<application>組態編輯器</application>要設定什麼值，端視您所開啟的視窗而定。您可以用<guimenu>檔案</guimenu>選單的對應選項來開啟每一種視窗。</para>
+    <note><para>因為<application>預設值</application>和<application>強制性設定</application>視窗下的設定會影響這台電腦上的所有使用者，只有系統管理員可以使用這些類型的視窗。若要更改您的偏好設定，您應該使用<application>設定</application>視窗。</para></note>
+    <variablelist>
+      <varlistentry>
+        <term><application>設定</application></term>
+        <listitem><para>您可以使用<application>設定</application>視窗以設置您的個人組態。在<application>設定</application>視窗下所作的變更將只影響您的桌面。您無法更動系統管理員已設為強制性的設定。</para></listitem>
+      </varlistentry>
+    </variablelist>
+    <variablelist>
+      <varlistentry>
+        <term><application>預設值</application></term>
+        <listitem><para>如果您是一位系統管理員，您可以使用<application>預設值</application>視窗來編輯所有使用者的預設設定。如果有一位使用者沒有明確的配置某個設定鍵的值，該值將會被預設設定給取代。使用者永遠可以用自己的值來蓋過預設值。</para></listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><application>強制性設定</application></term>
+        <listitem><para>如果您是一位系統管理員，您可以使用<application>強制性設定</application>視窗來編輯所有使用者的強制性設定。當一個設定鍵被設定了強制性的值，使用者將無法更動該值。這可以用來鎖定某些選項。</para></listitem>
+      </varlistentry>
+    </variablelist>
+  </sect2>
+
+  <sect2 id="workwindows-close">
+    <title>關閉和結束</title>
+    <para>您可以關閉一個<application>組態編輯器</application>視窗，只要在視窗內選擇<menuchoice><guimenu>檔案</guimenu><guimenuitem>關閉視窗</guimenuitem></menuchoice>。若要關閉所有<application>組態編輯器</application>視窗並徹底結束程式，在任何一個<application>組態編輯器</application>視窗內選擇<menuchoice><guimenu>檔案</guimenu><guimenuitem>結束</guimenuitem></menuchoice>。</para>
+  </sect2>
+</sect1>
+
+<sect1 id="workkeys">
+  <title>設定鍵用法</title>
+  <para>設定鍵是用來查閱鍵值的方式。每一個存放在 <application>GConf</application> 的設定組態會被分配到一個設定鍵。使用 <application>GConf</application> 的應用程式會存取這些設定鍵的值，以決定它們如何展現和動作。當您在應用程式的<guilabel>偏好設定</guilabel>中更改某個東西時，您也改變了與 <application>GConf</application> 中的設定鍵相關的值。</para>
+
+  <sect2 id="copy-key">
+    <title>複製設定鍵名稱</title>
+    <para>若要複製一個設定鍵名稱到剪貼簿，在修改面板中選擇您想要複製的設定鍵名稱。選擇<menuchoice><guimenu>編輯</guimenu><guimenuitem>複製設定鍵名稱</guimenuitem></menuchoice>。您可以將設定鍵名稱複製到其他應用程式中。</para>
+  </sect2>
+  <sect2 id="list-key">
+    <title>檢視最近的設定鍵名稱</title>
+    <para>若要檢視最近的設定鍵名稱，選擇<menuchoice><guimenu>編輯</guimenu><guimenuitem>列出最近的設定鍵</guimenuitem></menuchoice>。這個動作將在目前視窗的底部開啟結果面板。您可以藉由在滾動欄上上下滾動、或是方向鍵的方式來翻動結果。選擇的設定鍵或資料夾的相關資訊將會顯示在餘下的視窗中。</para>
+    <para>在您需要回到剛剛更動的設定鍵，卻忘記它在哪邊的時候，「檢視最近的設定鍵」會十分有用。</para>
+    <!-- REMARK -->
+    <remark>應該需要一個截圖。特別是結果面板上的關閉、複製、清除按鈕需要解釋。</remark>
+  </sect2>
+  <sect2 id="modify-key">
+    <title>更動設定鍵的值</title>
+    <para>在設定鍵名稱旁邊的圖示顯示它們可以接受何種類型的值。詳見<xref linkend="icons"/>以獲得每種圖示的更多資訊。若要更改設定鍵的鍵值，依照下列的步驟進行：</para>
+    <procedure>
+      <step><para>使用樹狀面板以讓您想要更改的設定鍵出現在修改面板中。</para></step>
+      <step><para>在修改面板中選擇要更動的設定鍵</para></step>
+      <step>
+        <para>若要改變數值鍵或字串鍵的值，點擊設定鍵的<guilabel>鍵值</guilabel>欄位。輸入設定鍵的新鍵值。您也可以在設定鍵上按下右鍵，並從跳出選單選擇<guimenuitem>編輯設定鍵</guimenuitem>。</para>
+        <para>若要改變邏輯值鍵的值，在設定鍵的<guilabel>鍵值</guilabel>欄位中點擊，選取或取消選取勾選框。您也可以在設定鍵上按下右鍵，並從跳出選單選擇<guimenuitem>編輯設定鍵</guimenuitem>。</para>
+        <para>若要改變清單鍵的值，在設定鍵上按下右鍵並從跳出選單中選擇<guimenuitem>編輯設定鍵</guimenuitem>。<application>編輯設定鍵</application>對話框提供了有關該鍵的鍵值清單。您可以在該對話框中編輯清單內各種特定的值、加入或移除清單內的值、以及將清單內的各個值往上或往下移動。</para>
+      </step>
+    </procedure>
+    <para>您的系統管理員可能會用強制性的鍵值來鎖定特定的設定鍵。若選擇的設定鍵被設定了強制性的值，您將無法編輯該鍵值。如果您不被允許編輯該鍵鍵值的話，說明面板上將會顯示<guilabel>此設定鍵無法寫入</guilabel>的標籤。</para>
+  </sect2>
+</sect1>
+
+<sect1 id="finding">
+  <title>快速尋找設定鍵</title>
+  <para>為了快速找到設定鍵，<application>組態編輯器</application>可以讓您搜索 <application>GConf</application> 內的設定鍵名稱。此外，您可以使用書籤功能以定位那些您常存取的目錄或設定鍵。</para>
+
+  <sect2 id="using-bookmark">
+    <title>使用書籤</title>
+    <para>若要從您的書籤內存取一個目錄位置，在<guimenu>書籤</guimenu>選單內選擇它。您可以在<guimenu>書籤</guimenu>選單內加入和刪除目錄位置。</para>
+    <para>若要加入書籤，在樹狀面板上選擇您想要加入書籤的位置。選擇<menuchoice><guimenu>書籤</guimenu><guimenuitem>加入書籤</guimenuitem></menuchoice>。</para>
+    <para>若要刪除一個書籤，依照下列的步驟進行：</para>
+    <procedure>
+      <step><para>選擇<menuchoice><guimenu>書籤</guimenu><guimenuitem>編輯書籤</guimenuitem></menuchoice>。</para></step>
+      <step><para>在<application>修改書籤</application>對話框內選擇書籤，接著點下<guibutton>刪除</guibutton>。</para></step>
+      <step><para>點擊<guibutton>關閉</guibutton>。</para></step>
+    </procedure>
+  </sect2>
+  <sect2 id="search">
+    <title>搜尋設定鍵</title>
+    <para>若要搜尋設定鍵，依照下列的步驟進行：</para>
+    <procedure>
+      <step><para>選擇<menuchoice><guimenu>編輯</guimenu><guimenuitem>尋找</guimenuitem></menuchoice>。</para></step>
+      <step><para>在<guilabel>搜索</guilabel>欄內輸入您想要搜尋的關鍵字。您也可以選擇額外的勾選框<guilabel>搜尋設定鍵名稱</guilabel>以及<guilabel>搜尋鍵值</guilabel>。如果沒有選擇這些勾選框，將只會搜尋資料夾名稱。選擇這些勾選框將會擴大搜索參數。</para></step>
+      <step><para>點選<guibutton>尋找</guibutton>。</para></step>
+    </procedure>
+    <para>搜尋結果將會顯示在結果面板中。若要翻動結果列表，請先選擇面板。接著您便可以用滾動欄或是方向鍵來翻動結果。選擇的設定鍵或資料夾的相關資訊將會顯示在餘下的視窗中。</para>
+    <!-- REMARK -->
+    <remark>應該需要一個截圖。特別是結果面板上的關閉、複製、清除按鈕需要解釋。</remark>
+  </sect2> 
+</sect1>
+
+<sect1 id="defaults-mandatory">
+  <title>預設值和強制性設定</title>
+  <para>如果您是一位系統管理員，您可以在 <application>GConf</application> 設置預設值和強制性設定，這些將會影響所有使用者。如果有使用者沒有明確設定鍵值，預設值將會被使用，且使用者的設定可以凌駕它們。強制性設定將會被採用至所有使用者，且使用者的設定無法凌駕它們。</para>
+  <para>您可以使用<application>預設值</application>以及<application>強制性設定</application>視窗來編輯和移除預設值和強制性設定。<application>預設值</application>以及<application>強制性設定</application>視窗將只會向您顯示那些已被設為預設值或強制性的設定。您無法使用這些視窗來建立新的預設值和強制性設定。反之，您可以從<application>設定</application>視窗來將設定說為預設值或強制性設定。</para>
+  <para>若要開啟<application>預設值</application>視窗，選擇<menuchoice><guimenu>檔案</guimenu><guimenuitem>新增修改預設值的視窗</guimenuitem></menuchoice>。若要開啟<application>強制性設定</application>視窗，選擇<menuchoice><guimenu>檔案</guimenu><guimenuitem>新增修改強制性設定的視窗</guimenuitem></menuchoice>。</para>
+
+  <sect2 id="creating-defaults">
+    <title>建立預設值設定</title>
+    <para>若要建立預設設定，依照下列的步驟進行：</para>
+    <procedure>
+      <step><para>在<application>設定</application>視窗中，使用樹狀面板以顯示您想要設置為預設值的設定值。</para></step>
+      <step><para>在設定值上點擊右鍵，並在跳出選單內選擇<guimenuitem>設定為預設值</guimenuitem>。</para></step>
+    </procedure>
+  </sect2>
+  <sect2 id="creating-mandatory">
+    <title>建立強制性設定</title>
+    <para>若要建立強制性設定，依照下列的步驟進行：</para>
+    <procedure>
+      <step><para>在<application>設定</application>視窗中，使用樹狀面板以顯示您想要設置為強制性設定的設定值。</para></step>
+      <step><para>在設定值上點擊右鍵，並在跳出選單內選擇<guimenuitem>設定為強制性鍵值</guimenuitem>。</para></step>
+    </procedure>
+  </sect2>
+  <sect2 id="modifying-defaults-mandatory">
+    <title>更動和刪除預設值以及強制性設定</title>
+    <para>您可以使用<application>預設值</application>以及<application>強制性設定</application>視窗來更動和移除預設值和強制性設定。若要更動一個預設值或強制性設定，使用適當的視窗並更動設定鍵，方式和您在<application>設定</application>視窗中所做的一樣。詳見<xref linkend="modify-key"/>以獲取更動設定鍵的更多資訊。</para>
+    <para>若要移除一個預設或強制性的設定鍵，依照下列的步驟進行：</para>
+    <procedure>
+      <step><para>在適當的視窗內，使用樹狀面板顯示您想要從預設值或強制性設定移除的設定鍵。</para></step>
+      <step><para>在設定鍵上按下右鍵，並從跳出選單中選擇<guimenuitem>清除設定鍵</guimenuitem>。</para></step>
+    </procedure>
+  </sect2>
+</sect1>
+
+<sect1 id="icons">
+  <title>圖示和設定鍵種類</title>
+  <para>修改面板中位於設定鍵旁邊的圖示，代表著您可以在設定鍵中輸入什麼類型的值。下面的列表展示了各種可能的圖示以及它們所代表的值域類型。</para>
+  <variablelist>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+        <imagedata fileref="figures/entry-bool.png" format="PNG"/>
+      </imageobject></inlinemediaobject> 邏輯值鍵</term>
+      <listitem><para>可以為是(true)或否(false)。<application>組態編輯器</application>會為這類型的設定鍵提供一個勾選框。</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-number.png" format="PNG"/>
+      </imageobject></inlinemediaobject> 數值鍵</term>
+      <listitem><para>可以儲存數值。它們可以是整數或是浮點數(有小數點)。</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-string.png" format="PNG"/>
+      </imageobject></inlinemediaobject> 字串鍵</term>
+      <listitem><para>可以儲存任何文字字串。</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-schema.png" format="PNG"/>
+      </imageobject></inlinemediaobject> 架構鍵</term>
+      <listitem><para>用來說明其他設定鍵。每個設定鍵的說明由另外的設定鍵提供，這些鍵位於<literal>/schemas</literal>目錄底下。使用者和系統管理員通常不需要直接使用架構鍵。</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-list.png" format="PNG"/>
+      </imageobject></inlinemediaobject> 清單鍵</term>
+      <listitem><para>任意長度的清單。清單內每個元素必須為同一種類型，而且為基本類型如邏輯值、數值或字串。</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-blank.png" format="PNG"/>
+      </imageobject></inlinemediaobject> 成對鍵</term>
+      <listitem><para>可以儲存兩個值。這兩個值必須為基本類型的其中一種，但它們可不需為同一種類型。目前，<application>組態編輯器</application>無法編輯成對鍵。</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-blank.png" format="PNG"/>
+      </imageobject></inlinemediaobject> 空白</term>
+      <listitem><para>當<application>組態編輯器</application>無法辨識該鍵的類型時就會使用。這個空白圖示目前也被成對鍵所使用。</para></listitem>
+    </varlistentry>
+  </variablelist>
+</sect1>
+</article>

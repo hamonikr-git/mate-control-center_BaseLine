@@ -1,0 +1,31 @@
+Index: repo/libtransmission/platform-quota.c
+===================================================================
+--- repo.orig/libtransmission/platform-quota.c	2013-08-10 00:18:17.606024533 +0200
++++ repo/libtransmission/platform-quota.c	2013-08-10 00:18:17.586024674 +0200
+@@ -18,7 +18,7 @@
+ 
+ #ifndef WIN32
+  #include <sys/types.h> /* types needed by quota.h */
+- #if defined(__FreeBSD__) || defined(__OpenBSD__)
++ #if defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__FreeBSD_kernel__)
+   #include <ufs/ufs/quota.h> /* quotactl() */
+  #elif defined (__sun)
+   #include <sys/fs/ufs_quota.h> /* quotactl */
+@@ -203,7 +203,7 @@
+   int64_t freespace;
+   int64_t spaceused;
+ 
+-#if defined(__FreeBSD__) || defined(__OpenBSD__) || defined(SYS_DARWIN)
++#if defined(__FreeBSD__) || defined(__FreeBSD_kernel__) || defined(__OpenBSD__) || defined(SYS_DARWIN)
+   if (quotactl(device, QCMD(Q_GETQUOTA, USRQUOTA), getuid(), (caddr_t) &dq) == 0)
+     {
+ #elif defined(__sun)
+@@ -235,7 +235,7 @@
+           /* No quota enabled for this user */
+           return -1;
+         }
+-#if defined(__FreeBSD__) || defined(__OpenBSD__)
++#if defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__FreeBSD_kernel__)
+       spaceused = (int64_t) dq.dqb_curblocks >> 1;
+ #elif defined(SYS_DARWIN)
+       spaceused = (int64_t) dq.dqb_curbytes;

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-desktop-bugzilla" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="addins#desktop-integration"/>
+    <desc>Zásuvný modul, který automaticky vytváří odkazy do systému bugzilla.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-16" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Odkazy do systému Bugzilla</title>
+
+  <p>Doplněk Odkazy do systému Bugzilla umožňuje přetáhnout URL Bugzilly z vašeho webového prohlížeče do poznámky <app>Tomboy</app>.</p>
+
+  <steps>
+    <item>
+        <p>Přetáhněte odkaz do systému bugzilla, který obsahuje číslo chyby, ze svého webového prohlížeče to poznámky <app>Tomboy</app>.</p>
+    </item>
+  </steps>
+
+  <p><app>Tomboy</app> zobrazí číslo chyby jako aktivní odkaz vedle ikony brouka, čímž dává najevo, že se jedná o odkaz do systému <app>Bugzilla</app>. Kliknutím na takovýto odkaz si jej můžete otevřít ve svém webovém prohlížeči.</p>
+
+</page>

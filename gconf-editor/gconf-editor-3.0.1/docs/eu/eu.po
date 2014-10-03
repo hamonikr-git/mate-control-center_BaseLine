@@ -1,0 +1,1147 @@
+# translation of gconf-editor.help.master.po to Basque
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2011.
+# Basque translation for gconf-editor.
+# Copyright (C) 2010 gconf-editor's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gconf-editor package.
+msgid ""
+msgstr ""
+"Project-Id-Version: gconf-editor.help.master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-09-02 07:41+0000\n"
+"PO-Revision-Date: 2011-04-14 17:01+0200\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+"\n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gconf-editor.xml:187(None)
+msgid ""
+"@@image: 'figures/gconf_editor_anno_window.png'; "
+"md5=e8bcda23f3fbe88915bd1850be62f9e8"
+msgstr ""
+"@@image: 'figures/gconf_editor_anno_window.png'; "
+"md5=e8bcda23f3fbe88915bd1850be62f9e8"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gconf-editor.xml:484(None)
+msgid "@@image: 'figures/entry-bool.png'; md5=2966eb7f1115df0eb45da84d5e1ec202"
+msgstr "@@image: 'figures/entry-bool.png'; md5=2966eb7f1115df0eb45da84d5e1ec202"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gconf-editor.xml:492(None)
+msgid "@@image: 'figures/entry-number.png'; md5=ed3c59de590c2f556fc88c11db5d3ce5"
+msgstr "@@image: 'figures/entry-number.png'; md5=ed3c59de590c2f556fc88c11db5d3ce5"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gconf-editor.xml:499(None)
+msgid "@@image: 'figures/entry-string.png'; md5=6e66a2292b70c4b4332af98b07c4cb5d"
+msgstr "@@image: 'figures/entry-string.png'; md5=6e66a2292b70c4b4332af98b07c4cb5d"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gconf-editor.xml:505(None)
+msgid "@@image: 'figures/entry-schema.png'; md5=6eafa713ecb0e6452e00c44c9c373dea"
+msgstr "@@image: 'figures/entry-schema.png'; md5=6eafa713ecb0e6452e00c44c9c373dea"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gconf-editor.xml:514(None)
+msgid "@@image: 'figures/entry-list.png'; md5=f11b0fcf542ccd936409c2c4a85da634"
+msgstr "@@image: 'figures/entry-list.png'; md5=f11b0fcf542ccd936409c2c4a85da634"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gconf-editor.xml:522(None)
+#: C/gconf-editor.xml:531(None)
+msgid "@@image: 'figures/entry-blank.png'; md5=ef9f97ca90eeffda318fe6b39bd3ed87"
+msgstr "@@image: 'figures/entry-blank.png'; md5=ef9f97ca90eeffda318fe6b39bd3ed87"
+
+#: C/gconf-editor.xml:22(title)
+msgid "Configuration Editor Manual"
+msgstr "Konfigurazio-editorearen eskuliburua"
+
+#: C/gconf-editor.xml:24(year)
+msgid "2004"
+msgstr "2004"
+
+#: C/gconf-editor.xml:25(holder)
+#: C/gconf-editor.xml:47(orgname)
+msgid "Sun Microsystems"
+msgstr "Sun Microsystems"
+
+#: C/gconf-editor.xml:35(publishername)
+#: C/gconf-editor.xml:53(orgname)
+#: C/gconf-editor.xml:60(orgname)
+#: C/gconf-editor.xml:83(para)
+#: C/gconf-editor.xml:84(para)
+#: C/gconf-editor.xml:93(para)
+#: C/gconf-editor.xml:101(para)
+msgid "GNOME Documentation Project"
+msgstr "GNOME dokumentazio-proiektua"
+
+#: C/gconf-editor.xml:2(para)
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or in "
+"the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko Free "
+"Software Foundation-ek argitaratutako GNU Dokumentazio Librearen "
+"Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzak "
+"betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko "
+"azaleko testurik gabe. GFDL lizentziaren kopia <ulink type=\"help\" "
+"url=\"ghelp:fdl\">esteka</ulink> honetan edo eskuliburu honekin batera ematen "
+"den COPYING-DOCS fitxategian aurkituko duzu."
+
+#: C/gconf-editor.xml:12(para)
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Eskuliburu hau GFDL lizentziarekin banatzen diren GNOME eskuliburuen "
+"bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, bana "
+"dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko diozu, "
+"lizentzian bertan 6. atalean azaltzen den bezala."
+
+#: C/gconf-editor.xml:19(para)
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen "
+"asko marka erregistratu moduan hartu behar dira. Izen horiek GNOMEren "
+"edozein agiritan agertzen direnean, eta GNOMEren Dokumentazio Proiektuko "
+"kideak marka komertzialak direla konturatu badira, orduan izen horiek "
+"maiuskulaz idatzita egongo dira, osorik edo hasierako letra maiuskulaz "
+"jarrita."
+
+#: C/gconf-editor.xml:35(para)
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"DOKUMENTUA \"DAGOEN-DAGOENEAN\" EMATEN DA, INOLAKO BERMERIK GABE, EZ ESPRESUKI "
+"ADIERAZITAKORIK ETA EZ INPLIZITURIK ERE; BESTEAK BESTE (MUGARIK GABE), EZ "
+"DA BERMATZEN DOKUMENTUA EDO BERTSIO ALDATUA AKATSIK GABEA DENIK, "
+"MERKATURATZEKO EDO XEDE JAKIN BATERAKO EGOKIA DENIK EDO ARAURIK HAUSTEN EZ "
+"DUENIK. DOKUMENTUAREN EDO DOKUMENTUAREN BERTSIO ALDATUAREN KALITATEARI, "
+"ZEHAZTASUNARI ETA PERFORMANTZIARI BURUZKO ERANTZUKIZUN OSOA ZUREA DA. "
+"DOKUMENTUREN BATEK EDO BERTSIO ALDATUREN BATEK EDOZEIN MOTATAKO AKATSIK "
+"IZANEZ GERO, ZUK (EZ HASIERAKO IDAZLEAK, EZ EGILEAK ETA EZ INONGO "
+"KOLABORATZAILEK) ZEURE GAIN HARTU BEHARKO DUZU BERRIKUSTEKO, KONPONTZEKO EDO "
+"ZUZENTZEKO BEHARREZKO ZERBITZU GUZTIEN KOSTUA. BERME-UKATZE HAU LIZENTZIA "
+"HONEN FUNTSEZKO ZATIA DA. EZ DA BAIMENIK EMATEN EZEIN DOKUMENTU EDO BERTSIO "
+"ALDATU ERABILTZEKO, BALDIN ETA EZ BADA BERME-UKATZE HAU ONARTZEN."
+
+#: C/gconf-editor.xml:55(para)
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"EZINGO DA INONGO ZIRKUNSTANTZIA EDO LEGE-TEORIARIK OINARRI HARTU --EZ "
+"ERANTZUKIZUN ZIBILARI BURUZKORIK (ZABARKERIA BARNE HARTUTA) EZ KONTRATUARI "
+"BURUZKORIK, EZ BESTERIK-- DOKUMENTU HONEN EDO BERTSIO ALDATU BATEN EGILEA, "
+"HASIERAKO IDAZLEA, EDOZEIN KOLABORATZAILE EDO BANATZAILE, EDO ALDERDI HORIEN "
+"EDOZEIN HORNITZAILE BESTE PERTSONA BATEN AURREAN ERANTZULE EGITEKO, "
+"PERTSONA HORREK EDOZEIN MOTATAKO KALTE ZUZENEKO, ZEHARKAKO, BEREZI, "
+"INTZIDENTAL EDO ONDORIOZKOAK JASAN DITUELAKO, BESTEAK BESTE (MUGARIK GABE), "
+"BEZEROAK GALTZEAREN, LANA ETEN BEHARRAREN, ORDENAGAILUAK EZ IBILTZEAREN EDO "
+"GAIZKI IBILTZEAREN ONDORIOZKO KALTEAK, EDO DOKUMENTUA NAHIZ HAREN BERTSIO "
+"ALDATUAK ERABILTZETIK ONDORIOZTATZEN DIREN EDO ERABILERA HORREKIN ZERIKUSIA "
+"DUEN EDOZEIN KALTE EDO GALERA, ALDERDIARI KALTE HORIEK GERTA ZITEZKEELA "
+"ADITZERA EMAN BAZAIO ERE."
+
+#: C/gconf-editor.xml:28(para)
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<placeholder-1/>"
+msgstr ""
+"DOKUMENTUA ETA DOKUMENTUAREN BERTSIO ALDATUAK GNU DOKUMENTAZIO LIBREAREN "
+"LIZENTZIAREN BALDINTZEN ARABERA EMATEN DIRA, ETA ONDOREN ZEHAZTEN DIRENAK "
+"ONARTZERA BEHARTZEN DUTE: <placeholder-1/>"
+
+#: C/gconf-editor.xml:45(firstname)
+msgid "Sun"
+msgstr "Sun"
+
+#: C/gconf-editor.xml:46(surname)
+msgid "GNOME Documentation Team"
+msgstr "GNOMEren dokumentazio-taldea"
+
+#: C/gconf-editor.xml:50(firstname)
+msgid "Angela"
+msgstr "Angela"
+
+#: C/gconf-editor.xml:51(surname)
+msgid "Boyle"
+msgstr "Boyle"
+
+#: C/gconf-editor.xml:57(firstname)
+msgid "Shaun"
+msgstr "Shaun"
+
+#: C/gconf-editor.xml:58(surname)
+msgid "McCance"
+msgstr "McCance"
+
+#: C/gconf-editor.xml:76(para)
+msgid ""
+"Configuration Editor can be used to change configuration options used by "
+"applications that may not be available through Preference dialogs"
+msgstr ""
+"Konfigurazio-editorea erabil daiteke aplikazioek erabiltzen dituzten eta "
+"agian Hobespenen elkarrizketen bidez eskuratu ezin daitezkeen konfigurazio-"
+"aukerak aldatzeko."
+
+#: C/gconf-editor.xml:80(revnumber)
+msgid "Version 2.8"
+msgstr "2.8 bertsioa"
+
+#: C/gconf-editor.xml:81(date)
+msgid "September 2004"
+msgstr "2004ko iraila"
+
+#: C/gconf-editor.xml:85(para)
+msgid "unreviewed"
+msgstr "berrikusi gabea"
+
+#: C/gconf-editor.xml:89(revnumber)
+msgid "Version 2.1"
+msgstr "2.1 bertsioa"
+
+#: C/gconf-editor.xml:90(date)
+msgid "August 2004"
+msgstr "2004ko abuztua"
+
+#: C/gconf-editor.xml:92(para)
+#: C/gconf-editor.xml:100(para)
+msgid "Sun GNOME Documentation Team"
+msgstr "Sun-eko GNOMEren dokumentazio-taldea"
+
+#: C/gconf-editor.xml:97(revnumber)
+msgid "Version 2.0.1"
+msgstr "2.0.1 bertsioa"
+
+#: C/gconf-editor.xml:98(date)
+msgid "January 2004"
+msgstr "2004ko urtarrila"
+
+#: C/gconf-editor.xml:105(releaseinfo)
+msgid "This manual describes version 2.8 of Configuration Editor."
+msgstr "Eskuliburu honetan Konfigurazio-editorearen 2.8 bertsioa azaltzen da."
+
+#: C/gconf-editor.xml:107(title)
+msgid "Feedback"
+msgstr "Oharra"
+
+#: C/gconf-editor.xml:108(para)
+msgid ""
+"To report a bug or make a suggestion regarding the Configuration Editor "
+"application or this manual, follow the directions in the <ulink url=\"ghelp"
+":gnome-feedback\" type=\"help\">GNOME Feedback Page</ulink>."
+msgstr ""
+"Konfigurazio-editorea aplikazioari buruzko akatsen berri emateko edo oharrak "
+"bidaltzeko, <ulink url=\"ghelp:gnome-feedback\" type=\"help\">GNOMEra oharrak "
+"bidaltzeko orria</ulink>n aurkituko dituzu argibideak."
+
+#: C/gconf-editor.xml:118(primary)
+msgid "GConf Editor"
+msgstr "GConf editorea"
+
+#: C/gconf-editor.xml:122(title)
+msgid "Introduction"
+msgstr "Sarrera"
+
+#: C/gconf-editor.xml:123(para)
+msgid ""
+"The GNOME Desktop and many applications use <application>GConf</application> "
+"to store user preferences and system configuration data. "
+"<application>GConf</application> provides a central storage location for "
+"preferences, simplifying configuration management for users and system "
+"administrators. More information about <application>GConf</application> can "
+"be found in the <ulink url=\"ghelp:system-admin-guide#gconf-0\">GNOME System "
+"Administrator's Guide</ulink>."
+msgstr ""
+"GNOME Mahaigainak eta aplikazio askok <application>GConf</application> "
+"erabiltzen dute, erabiltzailearen hobespenak eta sistema-konfigurazioaren "
+"datuak biltegiratzeko. <application>GConf</application> aplikazioak "
+"hobespenetarako biltegiratze-kokaleku zentral bat ematen du, eta, horrela, "
+"konfigurazio-kudeaketa errazten die erabiltzaile eta sistema-"
+"administratzaileei. <application>GConf</application> aplikazioari buruzko "
+"informazio gehiago aurkituko duzu <ulink url=\"ghelp:system-admin-"
+"guide#gconf-0\">GNOME sistema-administratzailearen gidan</ulink>."
+
+#: C/gconf-editor.xml:131(para)
+msgid ""
+"<application>Configuration Editor</application> allows users to modify their "
+"preferences for the entire GNOME Desktop and any applications which use "
+"<application>GConf</application>. Additionally, system administrators can "
+"use <application>Configuration Editor</application> to set default and "
+"mandatory settings which will affect all users."
+msgstr ""
+"<application>Konfigurazio-editoreari</application> esker, erabiltzaileek "
+"GNOME Mahaigain osorako beren hobespenak eta "
+"<application>GConf</application> erabiltzen duen edozein aplikazio alda "
+"ditzakete. Horrez gain, sistema-administratzaileek <application"
+">Konfigurazio-editorea</application> erabil dezakete, erabiltzaile guztiei "
+"eragingo dieten ezarpen lehenetsiak eta nahitaezkoak ezartzeko."
+
+#: C/gconf-editor.xml:136(para)
+msgid ""
+"Preferences are stored in <application>GConf</application> in a hierarchy of "
+"keys. Each key has an associated value which specifies your setting for "
+"that preference. For instance, the key "
+"<literal>/apps/glines/preferences/ball_theme</literal> stores which theme "
+"you use in the game <application>Five or More</application>."
+msgstr ""
+"Hobespenak gakoen hierarkia baten barruan biltegiratzen dira "
+"<application>GConf</application> aplikazioan. Gako bakoitzak balio asoziatu "
+"bat dauka, eta balio horrek hobespen horretarako zure ezarpena zehazten du. "
+"Adibidez, <literal>/apps/glines/preferences/ball_theme</literal> gakoak "
+"<application>Five or More</application> jokoan erabiltzen duzun gaia "
+"biltegiratzen du."
+
+#: C/gconf-editor.xml:141(para)
+msgid ""
+"<application>Configuration Editor</application> enables you to modify your "
+"configuration source directly. If you are not an experienced user, do not "
+"use <application>Configuration Editor</application> to set preferences for "
+"the GNOME Desktop. Instead, use the preference tools in the GNOME Desktop. "
+"For information about how to use preference tools, see the latest version of "
+"the <ulink url=\"ghelp:user-guide\">GNOME Desktop User Guide</ulink> for your "
+"platform."
+msgstr ""
+"<application>Konfigurazio-editorearekin</application> zure konfigurazio-"
+"iturburua zuzenean alda dezakezu. Erabiltzaile esperientziaduna ez bazara, "
+"ez erabili <application>Konfigurazio-editorea</application> GNOME "
+"Mahaigainerako hobespenak ezartzeko. Horren ordez, erabili GNOME "
+"Mahaigaineko hobespen-tresnak. Hobespen-tresnak nola erabiltzeari buruzko "
+"informazioa nahi baduzu, ikus zure plataformarako <ulink url=\"ghelp:user-"
+"guide\">GNOME Mahaigaineko Erabiltzailearen Gidaren</ulink> azken bertsioa."
+
+#: C/gconf-editor.xml:151(title)
+msgid "Getting Started"
+msgstr "Erabiltzen hasteko"
+
+#: C/gconf-editor.xml:154(title)
+msgid "To Start Configuration Editor"
+msgstr "Konfigurazio-editorea abiarazteko"
+
+#: C/gconf-editor.xml:155(para)
+msgid ""
+"You can start <application>Configuration Editor</application> in the "
+"following ways:"
+msgstr ""
+"Aukera hauek dituzu <application>Konfigurazio-editorea</application> "
+"abiarazteko:"
+
+#: C/gconf-editor.xml:159(term)
+msgid "<guimenu>Applications</guimenu> menu"
+msgstr "<guimenu>Aplikazioak</guimenu> menua"
+
+#: C/gconf-editor.xml:161(para)
+msgid ""
+"Choose <menuchoice><guisubmenu>System "
+"Tools</guisubmenu><guimenuitem>Configuration "
+"Editor</guimenuitem></menuchoice>."
+msgstr ""
+"Aukeratu <menuchoice><guisubmenu>Sistema-tresnak</guisubmenu><guimenuitem"
+">Konfigurazio-editorea</guimenuitem></menuchoice>."
+
+#: C/gconf-editor.xml:163(para)
+msgid ""
+"Some distributions hide this menu. In this case, use the second method "
+"described below."
+msgstr ""
+"Banaketa batzuek menu hau ezkutatzen dute. Kasu honetan, erabili behean "
+"azaltzen den bigarren metodoa."
+
+#: C/gconf-editor.xml:168(term)
+msgid "Command line"
+msgstr "Komando-lerroa"
+
+#: C/gconf-editor.xml:170(para)
+msgid "Execute the following command: <command>gconf-editor</command>"
+msgstr "Exekutatu komando hau: <command>gconf-editor</command>"
+
+#: C/gconf-editor.xml:178(title)
+msgid "When You Start Configuration Editor"
+msgstr "Konfigurazio-editorea erabiltzen duzunean"
+
+#: C/gconf-editor.xml:179(para)
+msgid ""
+"When you start <application>Configuration Editor</application>, the "
+"following window is displayed."
+msgstr ""
+"<application>Konfigurazio-editorea</application> abiarazten duzunean, leiho "
+"hau azalduko da."
+
+#: C/gconf-editor.xml:182(title)
+msgid "<application>Configuration Editor</application> Window"
+msgstr "<application>Konfigurazio-editorea</application> leihoa"
+
+#: C/gconf-editor.xml:190(phrase)
+msgid ""
+"Shows GConf Editor window. Callouts: Tree pane, Modification pane, "
+"Documentation pane."
+msgstr ""
+"GConf editorearen leihoa erakusten du. Legendak: Zuhaitz-panela, Aldatze-"
+"panela, Dokumentazio-panela."
+
+#: C/gconf-editor.xml:196(para)
+msgid ""
+"The <application>Configuration Editor</application> window contains the "
+"following panes:"
+msgstr ""
+"<application>Konfigurazio-editorea</application> leihoak honako panelak "
+"ditu:"
+
+#: C/gconf-editor.xml:200(term)
+msgid "Tree pane"
+msgstr "Zuhaitz-panela"
+
+#: C/gconf-editor.xml:201(para)
+msgid ""
+"Enables you to navigate the hierarchy of keys in "
+"<application>GConf</application>. Use this pane to display the keys that you "
+"want to modify in the modification pane. The tree pane is on the left side "
+"of the window."
+msgstr ""
+"<application>GConf</application> aplikazioan gakoen hierarkian nabigatzeko "
+"aukera ematen du. Erabili panel hau aldatze-panelean aldatu nahi dituzun "
+"gakoak bistaratzeko. Zuhaitz-panela leihoaren ezkerreko aldean dago."
+
+#: C/gconf-editor.xml:207(term)
+msgid "Modification pane"
+msgstr "Aldatze-panela"
+
+#: C/gconf-editor.xml:209(para)
+msgid ""
+"Displays the keys in the selected <application>GConf</application> location "
+"in the tree pane. Use this pane to select keys that you want to modify and "
+"to modify the values of keys. The modification pane is in the upper part of "
+"the right side of the window."
+msgstr ""
+"Gakoak bistaratzen ditu zuhaitz-paneleko hautatutako "
+"<application>GConf</application> kokalekuan. Erabili panel hau aldatu nahi "
+"dituzun gakoak hautatzeko eta gakoen balioak aldatzeko. Aldatze-panela "
+"leihoaren eskuineko aldeko goialdean dago."
+
+#: C/gconf-editor.xml:214(para)
+msgid ""
+"The icons beside the keys in the modification pane indicate what type of "
+"value you can enter for the key. For example, the check mark icon beside the "
+"<literal>/system/http_proxy/use_http_proxy</literal> key indicates that you "
+"can enter a Boolean value (true or false) for the key. See <xref "
+"linkend=\"icons\"/> for more information on each icon."
+msgstr ""
+"Aldatze-paneleko gakoen ondoan dauden ikonoek gakoarentzat zein balio mota "
+"sar dezakezun adierazten dute. Adibidez, "
+"<literal>/system/http_proxy/use_http_proxy</literal> gakoaren ondoko "
+"hautamarkaren ikonoak gakoarentzat balio boolear bat (egia ala gezurra) sar "
+"dezakezula adierazten du. Ikus <xref linkend=\"icons\"/> ikono bakoitzari "
+"buruzko informazio gehiago izateko."
+
+#: C/gconf-editor.xml:223(term)
+msgid "Documentation pane"
+msgstr "Dokumentazio-panela"
+
+#: C/gconf-editor.xml:224(para)
+msgid ""
+"Displays documentation for the currently selected key. Use this pane to read "
+"more information about the <application>GConf</application> preference "
+"keys."
+msgstr ""
+"Unean hautatuta dagoen gakorako dokumentazioa bistaratzen du. Erabili panel "
+"hau <application>GConf</application> hobespen-gakoei buruzko informazio "
+"gehiago irakurtzeko."
+
+#: C/gconf-editor.xml:230(term)
+msgid "Results pane (not shown)"
+msgstr "Emaitzen panela (ez da erakusten)"
+
+#: C/gconf-editor.xml:231(para)
+msgid ""
+"Enables you to view the results of a search or to search through the list of "
+"your recently viewed key names. The rest of the window will show the "
+"information for whichever key you have selected in this pane. The results "
+"pane will appear on the bottom of the window when you list the recent keys "
+"or perform a search."
+msgstr ""
+"Bilaketa baten emaitzak ikusteko edo berriki ikusitako zure gako-izenen "
+"zerrendan zehar bilatzeko aukera ematen dizu. Leihoaren gainerako zatian, "
+"panel honetan hautatu duzun edozein gakorako informazioa erakutsiko da. "
+"Emaitzen panela leihoaren behealdean agertuko da, azken gakoak zerrendatzen "
+"dituzunean edo bilaketa bat egiten duzunean."
+
+#: C/gconf-editor.xml:243(title)
+msgid "Working with Windows"
+msgstr "Leihoekin lan egitea"
+
+#: C/gconf-editor.xml:245(title)
+msgid "Opening New Windows"
+msgstr "Leiho berriak irekitzea"
+
+#: C/gconf-editor.xml:246(para)
+msgid ""
+"There are a three types of window you can open in <application>Configuration "
+"Editor</application>: <application>Settings</application>, "
+"<application>Defaults</application>, and "
+"<application>Mandatory</application>. What values <application>Configuration "
+"Editor</application> sets depends on what type of window you have open. You "
+"can open each type of window with the appropriate item under the "
+"<guimenu>File</guimenu> menu."
+msgstr ""
+"Hiru leiho mota ireki ditzakezu <application>Konfigurazio-"
+"editorean</application>: <application>Ezarpenak</application>, "
+"<application>Lehenetsiak</application>, eta "
+"<application>Nahitaezkoak</application>. <application>Konfigurazio-"
+"editoreak</application> ezartzen dituen balioak ireki duzun leiho motaren "
+"baitan egongo dira. Leiho mota bakoitza dagokion elementuarekin irekitzeko, "
+"joan <guimenu>Fitxategia</guimenu> menura."
+
+#: C/gconf-editor.xml:252(para)
+msgid ""
+"Since the settings in <application>Defaults</application> and "
+"<application>Mandatory</application> windows affect all users of the "
+"computer, only a system administrator can use these types of windows. To "
+"change your preferences, you should use the "
+"<application>Settings</application> window."
+msgstr ""
+"<application>Lehenetsiak</application> eta "
+"<application>Nahitaezkoak</application> leihoetako ezarpenek ordenagailuaren "
+"erabiltzaile guztiei eragiten dietenez, sistema-administratzaile batek "
+"bakarrik erabil ditzake leiho mota hauek. Zure hobespenak aldatzeko, "
+"<application>Ezarpenak</application> leihoa erabili beharko zenuke."
+
+#: C/gconf-editor.xml:259(application)
+msgid "Settings"
+msgstr "Ezarpenak"
+
+#: C/gconf-editor.xml:260(para)
+msgid ""
+"You can use the <application>Settings</application> window to set your "
+"personal preferences. Changes made in the "
+"<application>Settings</application> window only affect your desktop. You "
+"cannot change the settings that the system administrator has made mandatory."
+msgstr ""
+"<application>Ezarpenak</application> leihoa erabil dezakezu, zure hobespen "
+"pertsonalak aldatzeko. <application>Ezarpenak</application> leihoan egindako "
+"aldaketek zure mahaigainari bakarrik eragingo diote. Sistema-"
+"administratzaileak nahitaezko gisa jarritako ezarpenak ezin dituzu aldatu."
+
+#: C/gconf-editor.xml:269(application)
+msgid "Defaults"
+msgstr "Lehenetsiak"
+
+#: C/gconf-editor.xml:270(para)
+msgid ""
+"If you are a system administrator, you can use the "
+"<application>Defaults</application> window to edit the default settings for "
+"all users. If a user does not set the value of a key explicitly, the value "
+"will be taken from the default settings. Users can always override the "
+"default settings."
+msgstr ""
+"Sistema-administratzaile bazara, <application>Lehenetsiak</application> "
+"leihoa erabil dezakezu, erabiltzaile guztientzako ezarpen lehenetsiak "
+"editatzeko. Erabiltzaile batek ez badu gako baten balioa esplizituki "
+"ezartzen, balioa ezarpen lehenetsietatik hartuko da. Erabiltzaileek ezarpen "
+"lehenetsiak gainidatz ditzakete beti."
+
+#: C/gconf-editor.xml:277(application)
+msgid "Mandatory"
+msgstr "Nahitaezkoak"
+
+#: C/gconf-editor.xml:278(para)
+msgid ""
+"If you are a system administrator, you can use the "
+"<application>Mandatory</application> window to edit the mandatory settings "
+"for all users. When a mandatory value is set for a key, users are not able "
+"to change that value. This can be used to lock down certain options."
+msgstr ""
+"Sistema-administratzaile bazara, <application>Nahitaezkoak</application> "
+"leihoa erabil dezakezu, erabiltzaile guztientzako nahitaezko ezarpenak "
+"editatzeko. Gako batentzat nahitaezko balioa ezartzen denean, erabiltzaileek "
+"ezin dute balio hori aldatu. Hau zenbait aukera blokeatzeko erabil daiteke."
+
+#: C/gconf-editor.xml:288(title)
+msgid "Closing and Quitting"
+msgstr "Ixtea eta irtetea"
+
+#: C/gconf-editor.xml:289(para)
+msgid ""
+"You can close a <application>Configuration Editor</application> window by "
+"selecting <menuchoice><guimenu>File</guimenu><guimenuitem>Close "
+"Window</guimenuitem></menuchoice> in that window. To close all "
+"<application>Configuration Editor</application> windows and quit the "
+"application completely, select <menuchoice><guimenu>File</guimenu><guimenuit"
+"em>Quit</guimenuitem></menuchoice> in any <application>Configuration "
+"Editor</application> window."
+msgstr ""
+"<application>Konfigurazio-editorearen</application> leiho bat itxi dezakezu, "
+"leiho horretan <menuchoice><guimenu>Fitxategia</guimenu><guimenuitem>Itxi "
+"leihoa</guimenuitem></menuchoice> hautatuz. <application>Konfigurazio-"
+"editorearen</application> leiho guztiak ixteko eta aplikaziotik erabat "
+"irteteko, hautatu <menuchoice><guimenu>Fitxategia</guimenu><guimenuitem>Irte"
+"n</guimenuitem></menuchoice> <application>Konfigurazio-"
+"editorearen</application> edozein leihotan."
+
+#: C/gconf-editor.xml:299(title)
+msgid "Working with Keys"
+msgstr "Gakoekin lan egitea"
+
+#: C/gconf-editor.xml:300(para)
+msgid ""
+"Keys are a way of looking up a value. Every preference stored in "
+"<application>GConf</application> is assigned to a key. Applications which "
+"use <application>GConf</application> access the values of keys to determine "
+"how to look and behave. When you change something in the "
+"<guilabel>Preferences</guilabel> of an application, you are changing the "
+"value associated to a key in <application>GConf</application>."
+msgstr ""
+"Gakoak balioak bilatzeko era bat dira. <application>GConf</application> "
+"aplikazioan biltegiratutako hobespen bakoitza gako bati esleitzen zaio. "
+"<application>GConf</application> erabiltzen duten aplikazioek gakoen balioak "
+"atzitzen dituzte, zein itxura eta zein portaera izango duten erabakitzeko. "
+"Aplikazio baten <guilabel>Hobespenetan</guilabel> zerbait aldatzen duzunean, "
+"<application>GConf</application>-en gako bati asoziatutako balioa aldatuko "
+"duzu."
+
+#: C/gconf-editor.xml:308(title)
+msgid "Copying a Key Name"
+msgstr "Gako-izen bat kopiatzea"
+
+#: C/gconf-editor.xml:309(para)
+msgid ""
+"To copy a key name to the clipboard, select the key name you want to copy in "
+"the modification pane. Choose "
+"<menuchoice><guimenu>Edit</guimenu><guimenuitem>Copy Key "
+"Name</guimenuitem></menuchoice>. You can paste the key name into any other "
+"application."
+msgstr ""
+"Gako-izen bat arbelean kopiatzeko, hautatu kopiatu nahi duzun gako-izena "
+"aldatze-panelean. Aukeratu "
+"<menuchoice><guimenu>Editatu</guimenu><guimenuitem>Kopiatu gako-"
+"izena</guimenuitem></menuchoice>. Gako-izena beste edozein aplikaziotan "
+"itsats dezakezu."
+
+#: C/gconf-editor.xml:315(title)
+msgid "Viewing Recent Key Names"
+msgstr "Azken gako-izenak ikustea"
+
+#: C/gconf-editor.xml:316(para)
+msgid ""
+"To view recent key names, choose "
+"<menuchoice><guimenu>Edit</guimenu><guimenuitem>List Recent "
+"Keys</guimenuitem></menuchoice>. This action will open the results pane at "
+"the bottom of the current window. You can move through the results list by "
+"scrolling up and down with the scroll bar or the arrow keys. The information "
+"for the selected key or folder will appear in the rest of the window."
+msgstr ""
+"Azken gako-izenak ikusteko, aukeratu "
+"<menuchoice><guimenu>Editatu</guimenu><guimenuitem>Zerrendatu azken gako-"
+"izenak</guimenuitem></menuchoice>. Ekintza honek emaitzen panela irekiko du "
+"uneko leihoaren behealdean. Emaitzen zerrendaren barruan mugi zaitezke, "
+"korritze-barrarekin edo gezi-teklekin gorantz edo beherantz korritzen. "
+"Hautatutako gako edo karpetaren informazioa leihoaren gainerako zatian "
+"azalduko da."
+
+#: C/gconf-editor.xml:322(para)
+msgid ""
+"Viewing recent keys is useful if you need to get back to a key you just "
+"changed and don't remember where it is."
+msgstr ""
+"Azken gakoak ikustea erabilgarria da, aldatu berri duzun eta non dagoen "
+"gogoratzen ez zaren gako batera itzuli nahi baduzu."
+
+#. REMARK
+#: C/gconf-editor.xml:325(remark)
+#: C/gconf-editor.xml:407(remark)
+msgid ""
+"A screenshot may be in order. In particular, The close, copy, and clear "
+"buttons on the results pane should be explained."
+msgstr ""
+"Pantaila-argazki bat ondo etorriko litzateke. Hain zuzen ere, emaitzen "
+"paneleko Itxi, Kopiatu eta Garbitu botoiak azaldu beharko lirateke."
+
+#: C/gconf-editor.xml:329(title)
+msgid "Modifying the Value of a Key"
+msgstr "Gako baten balioa aldatzea"
+
+#: C/gconf-editor.xml:330(para)
+msgid ""
+"The icons next to the key name show what kind of value that key can take. "
+"See <xref linkend=\"icons\"/> for more information on each icon. To modify the "
+"value of a key, perform the following steps:"
+msgstr ""
+"Gako-izen baten ondoko ikonoek gako horrek eraman dezakeen balio mota "
+"erakusten dute. Ikus <xref linkend=\"icons\"/> ikono bakoitzari buruzko "
+"informazio gehiago izateko. Gako baten balioa aldatzeko, jarraitu urrats "
+"hauei:"
+
+#: C/gconf-editor.xml:334(para)
+msgid ""
+"Use the tree pane to display the key that you want to modify in the "
+"modification pane."
+msgstr ""
+"Erabili zuhaitz-panela aldatze-panelean aldatu nahi duzun gakoa "
+"bistaratzeko."
+
+#: C/gconf-editor.xml:336(para)
+msgid "Select the key to modify in the modification pane."
+msgstr "Aldatze-panelean hautatu aldatu nahi duzun gakoa."
+
+#: C/gconf-editor.xml:338(para)
+msgid ""
+"To change the value of an integer key or a string key, click in the "
+"<guilabel>Value</guilabel> column of the key. Type the new value for the "
+"key. Alternatively, right-click on the key and select <guimenuitem>Edit "
+"Key</guimenuitem> from the popup menu."
+msgstr ""
+"Osoko zenbaki baten gakoa edo kate baten gakoa aldatzeko, egin klik gakoaren "
+"<guilabel>Balioa</guilabel> zutabean. Idatzi gakoaren balio berria. "
+"Bestela, egin klik gakoan eskuineko botoiaz, eta hautatu "
+"<guimenuitem>Editatu gakoa</guimenuitem> laster-menuaren barruan."
+
+#: C/gconf-editor.xml:342(para)
+msgid ""
+"To change the value of a Boolean key, click in the "
+"<guilabel>Value</guilabel> column of the key to select or deselect the check "
+"box. Alternatively, right-click on the key and select <guimenuitem>Edit "
+"Key</guimenuitem> from the popup menu."
+msgstr ""
+"Gako boolear baten balioa aldatzeko, egin klik gakoaren "
+"<guilabel>Balioa</guilabel> zutabean, kontrol-laukia hautatzeko edo "
+"desautatzeko. Bestela, egin klik gakoan eskuineko botoiaz, eta hautatu "
+"<guimenuitem>Editatu gakoa</guimenuitem> laster-menuaren barruan."
+
+#: C/gconf-editor.xml:347(para)
+msgid ""
+"To change the value of a list key, right-click on the key and select "
+"<guimenuitem>Edit Key</guimenuitem> from the popup menu. The "
+"<application>Edit Key</application> dialog provides a list of the values "
+"associated to that key. You can use this dialog to edit each particular "
+"value in the list, add or remove values from the list, and move each value "
+"up or down in the list."
+msgstr ""
+"Zerrenda-gako baten balioa aldatzeko, egin klik gakoan eskuineko botoiaz, "
+"eta hautatu <guimenuitem>Editatu gakoa</guimenuitem> laster-menuaren "
+"barruan. <application>Editatu gakoa</application> elkarrizketak gako horri "
+"asoziatutako balioen zerrenda ematen du. Elkarrizketa hau erabil dezakezu, "
+"zerrendako edozein balio editatzeko, zerrendan balioak gehitzeko edo "
+"kentzeko, eta balio bakoitza zerrendan gora eta behera mugitzeko."
+
+#: C/gconf-editor.xml:355(para)
+msgid ""
+"Your system administrator may have locked down certain keys by providing "
+"mandatory values. If the selected key has a mandatory value set, you will "
+"not be able to edit the value. The documentation pane will display the label "
+"<guilabel>This key is not writable</guilabel> if you are not allowed to "
+"edit the value of that key."
+msgstr ""
+"Baliteke sistema-administratzaileak zenbait gako blokeatu izatea, "
+"nahitaezko balioak emanez. Hautatutako gakoak nahitaezko balioen multzo bat "
+"badu, ezin izango duzu balioa editatu. Dokumentazio-panelak <guilabel>Gako "
+"hau ezin da idatzi</guilabel> etiketa bistaratuko du, gako horren balioa "
+"editatzeko baimenik ez baduzu."
+
+#: C/gconf-editor.xml:364(title)
+msgid "Finding Keys Quickly"
+msgstr "Gakoak azkar aurkitzea"
+
+#: C/gconf-editor.xml:365(para)
+msgid ""
+"To locate keys quickly, <application>Configuration Editor</application> "
+"allows you to search the key names in <application>GConf</application>. "
+"Additionally, you can use bookmarks to find directories of keys that you "
+"need to access frequently."
+msgstr ""
+"Gakoak azkar aurkitzeko, <application>Konfigurazio-editoreak</application> "
+"aukera ematen dizu <application>GConf</application>-en gako-izenak "
+"bilatzeko. Horrez gain, laster-markak erabil ditzakezu, maiz atzitu behar "
+"dituzun gakoen direktorioak aurkitzeko."
+
+#: C/gconf-editor.xml:371(title)
+msgid "Using Bookmarks"
+msgstr "Laster-markak erabiltzea"
+
+#: C/gconf-editor.xml:372(para)
+msgid ""
+"To access a directory location in your bookmarks, choose the location from "
+"the <guimenu>Bookmarks</guimenu> menu. You can add and remove directory "
+"locations to your <guimenu>Bookmarks</guimenu> menu."
+msgstr ""
+"Zure laster-marketan direktorio-kokaleku bat atzitzeko, aukeratu kokalekua "
+"<guimenu>Laster-markak</guimenu> menuaren barruan. Direktorio-kokalekuak "
+"gehitu edo kendu ditzakezu <guimenu>Laster-markak</guimenu> menuan."
+
+#: C/gconf-editor.xml:375(para)
+msgid ""
+"To add a bookmark, select the location that you want to bookmark in the tree "
+"pane. Choose <menuchoice><guimenu>Bookmarks</guimenu><guimenuitem>Add "
+"Bookmark</guimenuitem></menuchoice>."
+msgstr ""
+"Laster-marka bat gehitzeko, hautatu zein kokalekuri jarri nahi diozun "
+"laster-marka zuhaitz-panelean. Aukeratu <menuchoice><guimenu>Laster-"
+"markak</guimenu><guimenuitem>Gehitu laster-marka</guimenuitem></menuchoice>."
+
+#: C/gconf-editor.xml:378(para)
+msgid "To delete a bookmark, perform the following steps:"
+msgstr "Laster-marka bat ezabatzeko, eman urrats hauek:"
+
+#: C/gconf-editor.xml:380(para)
+msgid ""
+"Choose <menuchoice><guimenu>Bookmarks</guimenu><guimenuitem>Edit "
+"bookmarks</guimenuitem></menuchoice>."
+msgstr ""
+"Aukeratu <menuchoice><guimenu>Laster-markak</guimenu><guimenuitem>Editatu "
+"laster-markak</guimenuitem></menuchoice>."
+
+#: C/gconf-editor.xml:382(para)
+msgid ""
+"Select the bookmark in the <application>Edit bookmarks</application> dialog, "
+"then click <guibutton>Delete</guibutton>."
+msgstr ""
+"Hautatu laster-marka <application>Editatu laster-markak</application> "
+"elkarrizketan, eta egin klik <guibutton>Ezabatu</guibutton> botoian."
+
+#: C/gconf-editor.xml:385(para)
+msgid "Click <guibutton>Close</guibutton>."
+msgstr "Sakatu <guibutton>Itxi</guibutton>."
+
+#: C/gconf-editor.xml:389(title)
+msgid "Searching for Keys"
+msgstr "Gakoak bilatzea"
+
+#: C/gconf-editor.xml:390(para)
+msgid "To search for keys, perform the following steps:"
+msgstr "Gakoak bilatzeko, jarraitu urrats hauei:"
+
+#: C/gconf-editor.xml:392(para)
+msgid ""
+"Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Find</guimenuitem></m"
+"enuchoice>."
+msgstr ""
+"Aukeratu <menuchoice><guimenu>Editatu</guimenu><guimenuitem>Aurkitu</guimenu"
+"item></menuchoice>."
+
+#: C/gconf-editor.xml:394(para)
+msgid ""
+"Enter the keyword you want to search for in the <guilabel>Search "
+"for</guilabel> field. You can also select the optional check boxes "
+"<guilabel>Search also in key names</guilabel> and <guilabel>Search also in "
+"key values</guilabel>. If these check boxes are not selected, the search "
+"will only be performed on folder names. Selecting these boxes will expand "
+"the search parameters."
+msgstr ""
+"Idatzi bilatu nahi duzun gako-hitza <guilabel>Bilatu</guilabel> eremuan. "
+"Halaber, <guilabel>Bilatu gako-izenetan ere</guilabel> eta <guilabel>Bilatu "
+"gako-balioetan ere</guilabel> aukerako kontrol-laukiak hauta ditzakezu. "
+"Kontrol-lauki hauek hautatu ezean, karpeta-izenen artean bakarrik bilatuko "
+"da. Kontrol-lauki hauek hautatuz, bilaketa-parametroak zabalduko dira."
+
+#: C/gconf-editor.xml:400(para)
+msgid "Click <guibutton>Find</guibutton>."
+msgstr "Sakatu <guibutton>Bilatu</guibutton>."
+
+#: C/gconf-editor.xml:402(para)
+msgid ""
+"The results from the search will appear in the results pane. To move through "
+"the results list, first select that pane. Then you can move through the "
+"results with the scroll bar or the arrow keys. The information for the "
+"selected key or folder will appear in the rest of the window."
+msgstr ""
+"Bilaketaren emaitzak emaitzen panelean azalduko dira. Emaitzen zerrendan "
+"zehar mugitzeko, panel hori hautatu behar da lehenengo. Horrela, emaitzen "
+"artean mugitu ahal izango duzu, korritze-barra edo gezi-teklak erabiliz. "
+"Hautatutako gako edo karpetaren informazioa leihoaren gainerako zatian "
+"azalduko da."
+
+#: C/gconf-editor.xml:413(title)
+msgid "Default and Mandatory Settings"
+msgstr "Ezarpen lehenetsiak eta nahitaezkoak"
+
+#: C/gconf-editor.xml:414(para)
+msgid ""
+"If you are a system administrator, you can set default and mandatory "
+"settings in <application>GConf</application> which will affect all users. "
+"Default settings are used when the user has not set a value explicitly, and "
+"users can always override them. Mandatory settings are always used for all "
+"users, and they cannot override them."
+msgstr ""
+"Sistema-administratzaile bazara, ezarpen lehenetsiak eta nahitaezkoak ezar "
+"ditzakezu <application>GConf</application>-en, eta horrek erabiltzaile "
+"guztiei erangingo lieke. Ezarpen lehenetsiak erabiltzaileak esplizituki "
+"baliorik ezarri ez duenean erabiltzen dira, eta erabiltzaileek une oro "
+"gainidatz ditzakete. Nahitaezko ezarpenak erabiltzaile guztientzat "
+"erabiltzen dira beti, eta erabiltzaileek ezin dituzte gainidatzi."
+
+#: C/gconf-editor.xml:419(para)
+msgid ""
+"You can use the <application>Defaults</application> and "
+"<application>Mandatory</application> windows to edit and remove default and "
+"mandatory settings. The <application>Defaults</application> and "
+"<application>Mandatory</application> windows will only show you those "
+"settings which have already been made default or mandatory. You cannot use "
+"these windows to create new default and mandatory settings. Instead, you can "
+"set settings from the <application>Settings</application> window to be "
+"default or mandatory."
+msgstr ""
+"<application>Lehenetsiak</application> eta "
+"<application>Nahitaezkoak</application> leihoak erabil ditzakezu, ezarpen "
+"lehenetsiak eta nahitaezkoak editatzeko eta kentzeko. "
+"<application>Lehenetsiak</application> eta "
+"<application>Nahitaezkoak</application> leihoek jada lehenetsi edo "
+"nahitaezko gisa jarritako ezarpenak bakarrik erakutsiko dituzte. Ezin dituzu "
+"leiho hauek erabili ezarpen lehenetsi eta nahitaezko berriak sortzeko. "
+"Horren ordez, <application>Ezarpenak</application> leihora joan zaitezke, "
+"ezarpenak lehenetsi edo nahitaezko gisa jartzeko."
+
+#: C/gconf-editor.xml:427(para)
+msgid ""
+"To open a <application>Defaults</application> window, choose "
+"<menuchoice><guimenu>File</guimenu><guimenuitem>New Defaults "
+"Window</guimenuitem></menuchoice>. To open a "
+"<application>Mandatory</application> window, choose "
+"<menuchoice><guimenu>File</guimenu><guimenuitem>New Mandatory "
+"Window</guimenuitem></menuchoice>."
+msgstr ""
+"<application>Lehenetsiak</application> leiho bat irekitzeko, aukeratu "
+"<menuchoice><guimenu>Fitxategia</guimenu><guimenuitem>Lehenetsi berrietarako "
+"leihoa</guimenuitem></menuchoice>. <application>Nahitaezkoak</application> "
+"leiho bat irekitzeko, aukeratu "
+"<menuchoice><guimenu>Fitxategia</guimenu><guimenuitem>Nahitaezko "
+"berrietarako leihoa</guimenuitem></menuchoice>."
+
+#: C/gconf-editor.xml:435(title)
+msgid "Creating Default Settings"
+msgstr "Ezarpen lehenetsiak sortzea"
+
+#: C/gconf-editor.xml:436(para)
+msgid "To create a default setting, perform the following steps:"
+msgstr "Ezarpen lehenetsi bat sortzeko, eman urrats hauek:"
+
+#: C/gconf-editor.xml:438(para)
+msgid ""
+"In the <application>Settings</application> window, use the tree pane to "
+"display the key that you want to set as default."
+msgstr ""
+"<application>Ezarpenak</application> leihoan, erabili zuhaitz-panela, "
+"lehenetsi gisa ezarri nahi duzun gakoa bistaratzeko."
+
+#: C/gconf-editor.xml:440(para)
+msgid ""
+"Right-click on the key and select <guimenuitem>Set as Default</guimenuitem> "
+"from the popup menu."
+msgstr ""
+"Egin klik gakoan eskuineko botoiaz, eta hautatu <guimenuitem>Ezarri "
+"lehenetsi gisa</guimenuitem> laster-menuaren barruan."
+
+#: C/gconf-editor.xml:445(title)
+msgid "Creating Mandatory Settings"
+msgstr "Nahitaezko ezarpenak sortzea"
+
+#: C/gconf-editor.xml:446(para)
+msgid "To create a mandatory setting, perform the following steps:"
+msgstr "Nahitaezko ezarpen bat sortzeko, eman urrats hauek:"
+
+#: C/gconf-editor.xml:448(para)
+msgid ""
+"In the <application>Settings</application> window, use the tree pane to "
+"display the key that you want to set as mandatory."
+msgstr ""
+"<application>Ezarpenak</application> leihoan, erabili zuhaitz-panela, "
+"nahitaezko gisa ezarri nahi duzun gakoa bistaratzeko."
+
+#: C/gconf-editor.xml:451(para)
+msgid ""
+"Right-click on the key and select <guimenuitem>Set as "
+"Mandatory</guimenuitem> from the popup menu."
+msgstr ""
+"Egin klik gakoan eskuineko botoiaz, eta hautatu <guimenuitem>Ezarri "
+"nahitaezko gisa</guimenuitem> laster-menuaren barruan."
+
+#: C/gconf-editor.xml:456(title)
+msgid "Modifying and Removing Default and Mandatory Settings"
+msgstr "Ezarpen lehenetsiak eta nahitaezkoak aldatzea eta kentzea"
+
+#: C/gconf-editor.xml:457(para)
+msgid ""
+"You can use the <application>Defaults</application> and "
+"<application>Mandatory</application> windows to modify and remove default "
+"and mandatory settings. To modify a default or mandatory setting, use the "
+"appropriate window and modify the key as you would for keys in the "
+"<application>Settings</application> window. See <xref linkend=\"modify-key\"/> "
+"for more information on modifying keys."
+msgstr ""
+"<application>Lehenetsiak</application> eta "
+"<application>Nahitaezkoak</application> leihoak erabil ditzakezu, ezarpen "
+"lehenetsiak eta nahitaezkoak aldatzeko eta kentzeko. Ezarpen lehenetsi edo "
+"nahitaezko bat aldatzeko, erabili dagokion leihoa eta aldatu gakoa, "
+"<application>Ezarpenak</application> leihoan aldatuko bazenu bezala. Ikus "
+"<xref linkend=\"modify-key\"/> gakoak aldatzeko informazio gehiago izateko."
+
+#: C/gconf-editor.xml:464(para)
+msgid "To remove a default or mandatory key, perform the following steps:"
+msgstr "Gako lehenetsi edo nahitaezko bat kentzeko, eman urrats hauek:"
+
+#: C/gconf-editor.xml:467(para)
+msgid ""
+"In the appropriate window, use the tree pane to display the key that you "
+"want to remove from the default or mandatory settings."
+msgstr ""
+"Ireki dagokion leihoa, eta erabili zuhaitz-panela ezarpen lehenetsi edo "
+"nahitaezkoetatik kendu nahi duzun gakoa bistaratzeko."
+
+#: C/gconf-editor.xml:470(para)
+msgid ""
+"Right-click on the key and select <guimenuitem>Unset Key</guimenuitem> from "
+"the popup menu."
+msgstr ""
+"Egin klik gakoan eskuineko botoiaz, eta hautatu <guimenuitem>Kendu "
+"gakoa</guimenuitem> laster-menuaren barruan."
+
+#: C/gconf-editor.xml:477(title)
+msgid "Icons and Key Types"
+msgstr "Ikonoak eta gako motak"
+
+#: C/gconf-editor.xml:478(para)
+msgid ""
+"The icons beside the keys in the modification pane indicate what type of "
+"value you can enter for the key. The following list shows the possible icons "
+"and what types of values they represent."
+msgstr ""
+"Aldatze-paneleko gakoen ondoan dauden ikonoek gakoarentzat zein balio mota "
+"sar dezakezun adierazten dute. Ondorengo zerrendak ikono posibleak eta "
+"horiek ordezkatzen dituzten balio motak erakusten ditu."
+
+#: C/gconf-editor.xml:483(term)
+msgid "<placeholder-1/> Boolean key"
+msgstr "<placeholder-1/> Gako boolearra"
+
+#: C/gconf-editor.xml:486(para)
+msgid ""
+"Can be either true or false. <application>Configuration Editor</application> "
+"will provide a check box for this type of key."
+msgstr ""
+"Egia ala gezurra izan daiteke. <application>Konfigurazio-"
+"editoreak</application> gako mota honetarako kontrol-lauki bat emango du ."
+
+#: C/gconf-editor.xml:491(term)
+msgid "<placeholder-1/> Number key"
+msgstr "<placeholder-1/> Zenbaki-gakoa"
+
+#: C/gconf-editor.xml:494(para)
+msgid ""
+"Can hold numbers. These can be either integer or floating point (fractional) "
+"numbers."
+msgstr ""
+"Zenbakiak izaten ditu. Zenbaki hauek osokoak edo koma mugikorrekoak "
+"(zatikiarrak) izan daitezke."
+
+#: C/gconf-editor.xml:498(term)
+msgid "<placeholder-1/> String key"
+msgstr "<placeholder-1/> Kate-gakoa"
+
+#: C/gconf-editor.xml:501(para)
+msgid "Can hold any string of text."
+msgstr "Edozein testu-kate izan dezake."
+
+#: C/gconf-editor.xml:504(term)
+msgid "<placeholder-1/> Schema key"
+msgstr "<placeholder-1/> Eskema-gakoa"
+
+#: C/gconf-editor.xml:507(para)
+msgid ""
+"Used for documenting other keys. The documentation for each key is provided "
+"by a seperate key, typically under the <literal>/schemas</literal> "
+"directory. Users and system administrators usually will not need to work "
+"with schema keys directly."
+msgstr ""
+"Beste gako batzuk dokumentatzeko erabiltzen da. Gako bakoitzaren "
+"dokumentazioa gako bereizi baten bidez ematen da, orokorrean "
+"<literal>/eskemak</literal> direktorioaren barruan. Normalean erabiltzaileek "
+"eta sistema-administratzaileek ez dute zuzenean eskema-gakoekin lan egin "
+"behar izango."
+
+#: C/gconf-editor.xml:513(term)
+msgid "<placeholder-1/> List key"
+msgstr "<placeholder-1/> Zerrenda-gakoa"
+
+#: C/gconf-editor.xml:516(para)
+msgid ""
+"Lists of arbitrary length. Each element of the list must be of the same "
+"type, and one of the primitive types of boolean, number, or string."
+msgstr ""
+"Luzera arbitrarioko zerrendak. Zerrendako elementu guztiek mota berekoak eta "
+"jatorrizko mota batekoak (boolearrak, zenbakiak edo kateak) izan behar dute."
+
+#: C/gconf-editor.xml:521(term)
+msgid "<placeholder-1/> Pair key"
+msgstr "<placeholder-1/> Bikote-gakoa"
+
+#: C/gconf-editor.xml:524(para)
+msgid ""
+"Can hold exactly two values. The two values must be one of the primitive "
+"types, but they do not have to be the same type. Currently, "
+"<application>Configuration Editor</application> is unable to edit pair keys."
+msgstr ""
+"Bi balio izan ditzake hain zuzen ere. Bi balioek jatorrizko mota batekoak "
+"izan behar dute, baina ez dute mota berekoak izan behar. Une honetan "
+"<application>Konfigurazio-editoreak</application> ezin du bikote-gakorik "
+"editatu."
+
+#: C/gconf-editor.xml:530(term)
+msgid "<placeholder-1/> Blank"
+msgstr "<placeholder-1/> Hutsa"
+
+#: C/gconf-editor.xml:533(para)
+msgid ""
+"Used when <application>Configuration Editor</application> does not "
+"understand the type of key. The blank icon is also currently used for pair "
+"keys."
+msgstr ""
+"<application>Konfigurazio-editoreak</application> gako mota ulertzen ez "
+"duenean erabiltzen da. Hutsa ikonoa bikote-gakoetan ere erabiltzen da une "
+"honetan."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/gconf-editor.xml:0(None)
+msgid "translator-credits"
+msgstr "Hizkuntza Politikarako Sailburuordetza <hizkpol@ej-gv.es>, 2011."
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+_Name=Floating MATE
+_Comment=Bubbles the MATE logo around the screen
+Exec=/usr/local/libexec/mate-screensaver/floaters /usr/local/share/pixmaps/mate-logo-white.svg
+TryExec=/usr/local/libexec/mate-screensaver/floaters
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=Screensaver;
+OnlyShowIn=MATE;

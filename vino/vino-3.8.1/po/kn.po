@@ -1,0 +1,842 @@
+# translation of vino.master.kn.po to Kannada
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Shankar Prasad <svenkate@redhat.com>, 2008, 2009, 2012, 2013.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: vino.master.kn\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=vino&keywords=I18N+L10N&component=Preferences Dialog\n"
+"POT-Creation-Date: 2013-03-13 22:48+0000\n"
+"PO-Revision-Date: 2013-03-26 17:37+0100\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
+"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: ../capplet/vino-message-box.c:55
+#, c-format
+msgid "There was an error showing the URL \"%s\""
+msgstr "URL \"%s\" ಅನ್ನು ತೋರಿಸುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ"
+
+#: ../capplet/vino-preferences.c:245
+#, c-format
+msgid ""
+"There was an error displaying help:\n"
+"%s"
+msgstr ""
+"ಸಹಾಯವನ್ನು ತೋರಿಸುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ:\n"
+"%s"
+
+#: ../capplet/vino-preferences.c:278
+msgid "Checking the connectivity of this machine..."
+msgstr "ಈ ಗಣಕದ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ..."
+
+#: ../capplet/vino-preferences.c:298
+msgid "Your desktop is only reachable over the local network."
+msgstr "ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ಕೇವಲ ಸ್ಥಳೀಯ ಜಾಲಬಂಧದಲ್ಲಿ ಮಾತ್ರ ತಲುಪಬಹುದಾಗಿದೆ."
+
+#: ../capplet/vino-preferences.c:311
+msgid " or "
+msgstr " ಅಥವ "
+
+#: ../capplet/vino-preferences.c:315
+#, c-format
+msgid "Others can access your computer using the address %s."
+msgstr "ವಿಳಾಸ %s ಅನ್ನು ಬಳಸಿಕೊಂಡು ಬೇರೆಯವರು ನಿಮ್ಮ ಗಣಕವನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳಬಹುದಾಗಿದೆ."
+
+#: ../capplet/vino-preferences.c:324
+msgid "Nobody can access your desktop."
+msgstr "ಯಾರೂ ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳಲು ಸಾಧ್ಯವಿಲ್ಲ."
+
+#: ../capplet/vino-preferences.desktop.in.in.h:1
+#: ../server/vino-server.desktop.in.in.h:1
+msgid "Desktop Sharing"
+msgstr "ಗಣಕತೆರೆಯನ್ನು ಹಂಚಿಕೊಳ್ಳುವಿಕೆ"
+
+#: ../capplet/vino-preferences.desktop.in.in.h:2
+msgid "Choose how other users can remotely view your desktop"
+msgstr ""
+"ಬೇರೆಯವರು ಹೇಗೆ ದೂರದಿಂದ ನಿಮ್ಮ ಗಣಕವನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳಬಹುದು ಎಂಬುದನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
+
+#: ../capplet/vino-preferences.ui.h:1
+msgid "Desktop Sharing Preferences"
+msgstr "ಗಣಕತೆರೆ ಹಂಚಿಕೆಯ ಆದ್ಯತೆಗಳು"
+
+#: ../capplet/vino-preferences.ui.h:2
+msgid "Sharing"
+msgstr "ಹಂಚಿಕೆ"
+
+#: ../capplet/vino-preferences.ui.h:3
+msgid "Some of these preferences are locked down"
+msgstr "ಈ ಆದ್ಯತೆಗಳಲ್ಲಿ ಕೆಲವನ್ನು ಲಾಕ್‌ ಮಾಡಲಾಗಿದೆ"
+
+#: ../capplet/vino-preferences.ui.h:4
+msgid "Allow other users to _view your desktop"
+msgstr "ಬೇರೆ ಬಳಕೆದಾರರು ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ನೋಡಲು ಅನುಮತಿಸು (_v)"
+
+#: ../capplet/vino-preferences.ui.h:5
+msgid "Your desktop will be shared"
+msgstr "ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ಹಂಚಲಾಗುತ್ತದೆ"
+
+#: ../capplet/vino-preferences.ui.h:6
+msgid "_Allow other users to control your desktop"
+msgstr "ಬೇರೆ ಬಳಕೆದಾರರು ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ನಿಯಂತ್ರಿಸುವಂತೆ ಮಾಡು(_A)"
+
+#: ../capplet/vino-preferences.ui.h:7
+msgid "Remote users are able to control your mouse and keyboard"
+msgstr "ದೂರಸ್ಥ ಬಳಕೆದಾರರು ನಿಮ್ಮ ಗಣಕತೆರೆ ಹಾಗು ಕೀಲಿಮಣೆಯನ್ನು ನಿಯಂತ್ರಿಸಬಹುದು"
+
+#: ../capplet/vino-preferences.ui.h:8
+msgid "Security"
+msgstr "ಸುರಕ್ಷತೆ"
+
+#: ../capplet/vino-preferences.ui.h:9
+msgid "_You must confirm each access to this machine"
+msgstr "ಈ ಗಣಕದ ಪ್ರತಿಯೊಂದು ನಿಲುಕಣೆಯನ್ನು ನೀವು ಖಚಿತಪಡಿಸಬೇಕು(_Y)"
+
+#: ../capplet/vino-preferences.ui.h:10
+msgid "_Require the user to enter this password:"
+msgstr "ಬಳಕೆದಾರರು ಗುಪ್ತಪದವನ್ನು ನಮೂದಿಸುವ ಅಗತ್ಯವಿದೆ(_R):"
+
+#: ../capplet/vino-preferences.ui.h:11
+msgid "Automatically _configure UPnP router to open and forward ports"
+msgstr ""
+"ಸಂಪರ್ಕಸ್ಥಾಸಗಳನ್ನು ತೆರೆಯಲು ಮತ್ತು ಫಾರ್ವಾರ್ಡ್ ಮಾಡಲು ಸ್ವಯಂಚಾಲಿತವಾಗಿ UPnP ರೌಟರ್ ಅನ್ನು ಬಳಸು "
+"(_c)"
+
+#: ../capplet/vino-preferences.ui.h:12
+msgid "The router must have the UPnP feature enabled"
+msgstr "ರೌಟರಿನಲ್ಲಿ UPnP ಸವಲತ್ತು ಶಕ್ತಗೊಂಡಿರಬೇಕು"
+
+#: ../capplet/vino-preferences.ui.h:13
+msgid "Show Notification Area Icon"
+msgstr "ಸೂಚನಾ ಸ್ಥಳದ ಚಿಹ್ನೆಯನ್ನು ತೋರಿಸು"
+
+#: ../capplet/vino-preferences.ui.h:14
+msgid "Al_ways"
+msgstr "ಯಾವಾಗಲೂ (_w)"
+
+#: ../capplet/vino-preferences.ui.h:15
+msgid "_Only when someone is connected"
+msgstr "ಯಾರಾದರೂ ಸಂಪರ್ಕಿತಗೊಂಡಿದ್ದಾಗ ಮಾತ್ರ (_O)"
+
+#: ../capplet/vino-preferences.ui.h:16
+msgid "_Never"
+msgstr "ಎಂದಿಗೂ ಬೇಡ (_N)"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:1
+msgid "Enable remote access to the desktop"
+msgstr "ಗಣಕತೆರೆಯನ್ನು ದೂರದಿಂದ ನಿಲುಕಿಸಿಕೊಳ್ಳುವುದನ್ನು ಸಕ್ರಿಯಗೊಳಿಸು"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:2
+msgid ""
+"If true, allows remote access to the desktop via the RFB protocol. Users on "
+"remote machines may then connect to the desktop using a VNC viewer."
+msgstr ""
+"true ಆದಲ್ಲಿ, RFB ಪ್ರೊಟೋಕಾಲ್ ಮೂಲಕ ದೂರದಿಂದ ಗಣಕತೆರೆಯನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳಲು "
+"ಅನುಮತಿಸುತ್ತದೆ. ದೂರಸ್ಥ ಗಣಕದಲ್ಲಿನ ಬಳಕೆದಾರರು VNC ವೀಕ್ಷಕವನ್ನು ಬಳಸಿಕೊಂಡು "
+"ಗಣಕತೆರೆಯೊಂದಿಗೆ ಸಂಪರ್ಕ ಹೊಂದಬಹುದು."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:3
+msgid "Prompt the user before completing a connection"
+msgstr "ಸಂಪರ್ಕವನ್ನು ಪೂರ್ಣಗೊಳಿಸುವ ಮೊದಲು ಬಳಕೆದಾರರಿಗೆ ತಿಳಿಸು"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:4
+msgid ""
+"If true, remote users accessing the desktop are not allowed access until the "
+"user on the host machine approves the connection. Recommended especially "
+"when access is not password protected."
+msgstr ""
+"true ಆದಲ್ಲಿ, ಅತಿಥೇಯ ಗಣಕದಲ್ಲಿನ ಬಳಕೆದಾರರು ಅನುಮತಿಸುವವರೆಗೂ ದೂರಸ್ಥ ಬಳಕೆದಾರರು "
+"ಗಣಕತೆರೆಯನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳಲು ಸಾಧ್ಯವಿರುವುದಿಲ್ಲ. ನಿಲುಕಣೆಯು ಗುಪ್ತಪದದಿಂದ "
+"ಸಂರಕ್ಷಿತಗೊಂಡಿಲ್ಲದೆ ಇರುವಾಗು ಹೀಗೆ ಮಾಡುವಂತೆ ಸಲಹೆ ಮಾಡಲಾಗುವುದು."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:5
+msgid "Only allow remote users to view the desktop"
+msgstr "ಗಣಕತೆರೆಯನ್ನು ನೋಡಲು ಕೇವಲ ದೂರಸ್ಥ ಬಳಕೆದಾರರನ್ನು ಮಾತ್ರ ಅನುಮತಿಸು"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:6
+msgid ""
+"If true, remote users accessing the desktop are only allowed to view the "
+"desktop. Remote users will not be able to use the mouse or keyboard."
+msgstr ""
+"true ಆದಲ್ಲಿ, ಗಣಕತೆರೆಯನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳುತ್ತಿರುವ ದೂರಸ್ಥ ಬಳಕೆದಾರರು ಕೇವಲ ಗಣಕತೆರೆಯನ್ನು "
+"ಮಾತ್ರವೆ ನೋಡಲು ಅನುಮತಿ ಇರುತ್ತದೆ. ದೂರಸ್ಥ ಬಳಕೆದಾರರು ಮೌಸ್‌ ಅಥವ ಕೀಲಿಮಣೆಯನ್ನು ಬಳಸಲು ಅನುಮತಿ "
+"ಇರುವುದಿಲ್ಲ."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:7
+msgid "Network interface for listening"
+msgstr "ಆಲಿಸಲು ಜಾಲಬಂಧ ಸಂಪರ್ಕಸಾಧನ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:8
+msgid ""
+"If not set, the server will listen on all network interfaces.\n"
+"\n"
+"Set this if you want to accept connections only from some specific network "
+"interface. For example, eth0, wifi0, lo and so on."
+msgstr ""
+"ಹೊಂದಿಸದೆ ಇದ್ದಲ್ಲಿ ಪೂರೈಕೆಗಣಕವು ಎಲ್ಲಾ ಸಂಪರ್ಕ ಸಾಧನಗಳನ್ನು ಆಲಿಸುತ್ತದೆ. \n"
+"\n"
+"ಕೇವಲ ನಿಶ್ಚಿತವಾದ ಜಾಲಬಂಧ ಸಂಪರ್ಕಸಾಧನದಿಂದ ಸಂಪರ್ಕಗಳನ್ನು ಅಂಗೀಕರಿಸಬೇಕಿದ್ದಲ್ಲಿ ಇದನ್ನು "
+"ಬದಲಾಯಿಸಿ. ಉದಾಹರಣೆಗೆ: eth0, wifi0, lo ಮತ್ತು ಇತ್ಯಾದಿ."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:11
+msgid "Listen on an alternative port"
+msgstr "ಒಂದು ಪರ್ಯಾಯ ಸಂಪರ್ಕಸಾಧನದಲ್ಲಿ ಆಲಿಸು"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:12
+msgid ""
+"If true, the server will listen on another port, instead of the default "
+"(5900). The port must be specified in the 'alternative-port' key."
+msgstr ""
+"true ಆದಲ್ಲಿ, ಪೂರೈಕೆಗಣಕವು ಪೂರ್ವನಿಯೋಜಿತವಾದ (5900) ಸಂಪರ್ಕಸ್ಥಾನದ ಬದಲಿಗೆ ಬೇರೊಂದರಲ್ಲಿ "
+"ಆಲಿಸುತ್ತದೆ. ಸಂಪರ್ಕಸ್ಥಾನವನ್ನು 'alternative-port'(ಪರ್ಯಾಯ ಸಂಪರ್ಕಸ್ಥಾನ) ಕೀಲಿಯಲ್ಲಿ "
+"ಸೂಚಿಸಿರಬೇಕು."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:13
+msgid "Alternative port number"
+msgstr "ಪರ್ಯಾಯವಾದ ಸಂಪರ್ಕಸ್ಥಾನಗಳ ಸಂಖ್ಯೆ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:14
+msgid ""
+"The port which the server will listen to if the 'use-alternative-port' key "
+"is set to true. Valid values are in the range of 5000 to 50000."
+msgstr ""
+"'use-alternative_port' ಕೀಲಿಯನ್ನು true ಗೆ ಹೊಂದಿಸಿದಲ್ಲಿ ಪೂರೈಕೆಗಣಕವು ಆಲಿಸುವ "
+"ಸಂಪರ್ಕಸ್ಥಾನ. ಇದರ ಮಾನ್ಯವಾದ ಮೌಲ್ಯಗಳು 5000 ಯಿಂದ 50000 ನ ಒಳಗೆ ಇರುತ್ತವೆ."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:15
+msgid "Require encryption"
+msgstr "ಗೂಢಲಿಪೀಕರಣದ ಅಗತ್ಯವಿದೆ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:16
+msgid ""
+"If true, remote users accessing the desktop are required to support "
+"encryption. It is highly recommended that you use a client which supports "
+"encryption unless the intervening network is trusted."
+msgstr ""
+"true ಆದಲ್ಲಿ, ಗಣಕತೆರೆಯನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳುವ ದೂರಸ್ಥ ಬಳಕೆದಾರರು ಗೂಢಲಿಪೀಕರಣವನ್ನು "
+"ಬೆಂಬಲಿಸವು ಅಗತ್ಯವಿರುತ್ತದೆ. ನಿಮ್ಮ ಗಣಕ ಹಾಗು ಕ್ಲೈಂಟಿನ ನಡುವಿನ ಜಾಲಬಂಧವನ್ನು ನೀವು ನಂಬದೆ "
+"ಇದ್ದ ಪಕ್ಷದಲ್ಲಿ ಗೂಢಲಿಪೀಕರಣವನ್ನು ಬೆಂಬಲಿಸುವ ಒಂದು ಕ್ಲೈಂಟನ್ನು ಬಳಸುವಂತೆ ನಾವು ಬಲವಾಗಿ ಸಲಹೆ "
+"ಮಾಡುತ್ತೇವೆ."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:17
+msgid "Allowed authentication methods"
+msgstr "ಅನುಮತಿಸಲಾದ ದೃಢೀಕರಣ ಕ್ರಮಗಳು"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:18
+msgid ""
+"Lists the authentication methods with which remote users may access the "
+"desktop.\n"
+"\n"
+"There are two possible authentication methods; \"vnc\" causes the remote "
+"user to be prompted for a password (the password is specified by the vnc-"
+"password key) before connecting and \"none\" which allows any remote user to "
+"connect."
+msgstr ""
+"ಬಳಕೆದಾರರು ಗಣಕತೆರೆಯನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳಲು ಬಳಸಬಹುದಾದ ದೃಢೀಕರಣ ವಿಧಾನವನ್ನು ಪಟ್ಟಿ "
+"ಮಾಡುತ್ತದೆ. \n"
+"\n"
+"ಸಾಧ್ಯವಿರುವ ಎರಡು ದೃಢೀಕರಣ ವಿಧಾನಗಳಿವೆ; ಸಂಪರ್ಕಿತಗೊಳ್ಳುವ ಮೊದಲು ದೂರಸ್ಥ ಬಳಕೆದಾರರು "
+"ಗುಪ್ತಪದವೊಂದನ್ನು (vnc-password ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾದ ಗುಪ್ತಪದ) ನಮೂದಿಸುವಂತೆ \"vnc\" "
+"ಕೇಳುತ್ತದೆ ಹಾಗು \"none\" ಯಾವುದೆ ದೂರಸ್ಥ ಬಳಕೆದಾರರೊಂದಿಗಿನ ಸಂಪರ್ಕವನ್ನು ಅನುಮತಿಸುತ್ತದೆ."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:21
+msgid "Password required for \"vnc\" authentication"
+msgstr "\"vnc\" ದೃಢೀಕರಣಕ್ಕಾಗಿ ಅಗತ್ಯವಿರುವ ಗುಪ್ತಪದ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:22
+msgid ""
+"The password which the remote user will be prompted for if the \"vnc\" "
+"authentication method is used. The password specified by the key is base64 "
+"encoded.\n"
+"\n"
+"The special value of 'keyring' (which is not valid base64) means that the "
+"password is stored in the GNOME keyring."
+msgstr ""
+"\"vnc\" ದೃಢೀಕರಣವನ್ನು ಬಳಸಿದಲ್ಲಿ ದೂರಸ್ಥ ಬಳಕೆದಾರರಿಗೆ ನಮೂದಿಸುವಂತೆ ಕೇಳಲಾಗುವ ಗುಪ್ತಪದ. "
+"ಕೀಲಿಯಿಂದ ಸೂಚಿಸಲಾದ ಗುಪ್ತಪದವು base64 ಎನ್‌ಕೋಡ್‌ ಆಗಿರುತ್ತದೆ. \n"
+"\n"
+"'ಕೀಲಿಗೊಂಚಲಿ'ನ ವಿಶೇಷ ಮೌಲ್ಯವೆಂದರೆ (ಇದು ಮಾನ್ಯವಾದ base64 ಆಗಿರುವುದಿಲ್ಲ) ಗುಪ್ತಪದವನ್ನು "
+"GNOME ಕೀಲಿಗೊಂಚಲಿಗಲ್ಲಿ ಉಳಿಸಲಾಗಿರುವುದಿಲ್ಲ ಎಂದರ್ಥ."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:25
+msgid "E-mail address to which the remote desktop URL should be sent"
+msgstr "ದೂರಸ್ಥ ಗಣಕತೆರೆಯ URL ಅನ್ನು ಕಳುಹಿಸಬೇಕಿರುವ ಇಮೈಲ್ ವಿಳಾಸ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:26
+msgid ""
+"This key specifies the e-mail address to which the remote desktop URL should "
+"be sent if the user clicks on the URL in the Desktop Sharing preferences "
+"dialog."
+msgstr ""
+"ಬಳಕೆದಾರರು ದೂರಸ್ಥ ಗಣಕತೆರೆ ಹಂಚಿಕೆ ಆದ್ಯತೆಗಳು ಎಂಬ ಸಂವಾದದಲ್ಲಿನ URL ಮೇಲೆ ಕ್ಲಿಕ್ಕಿಸಿದಾಗ, "
+"ದೂರಸ್ಥ ಗಣಕತೆರೆಯ URL ಅನ್ನು ಕಳುಹಿಸಬೇಕಿರುವ ವಿ-ಅಂಚೆ ವಿಳಾಸವನ್ನು ಈ ಕೀಲಿಯು ಸೂಚಿಸುತ್ತದೆ."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:27
+msgid "Lock the screen when last user disconnect"
+msgstr "ಕೊನೆಯ ಬಳಕೆದಾರರೊಂದಿಗೆ ಸಂಪರ್ಕವು ಕಡಿದ ನಂತರ ತೆರೆಯನ್ನು ಲಾಕ್ ಮಾಡು"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:28
+msgid ""
+"If true, the screen will be locked after the last remote client disconnects."
+msgstr ""
+"true ಆಗಿದ್ದಲ್ಲಿ, ಕೊನೆಯ ಕ್ಲೈಂಟ್‌ನೊಂದಿಗೆ ಸಂಪರ್ಕವು ಕಡಿದು ಹೋದ ನಂತರ ತೆರೆಯು ಲಾಕ್ ಆಗುತ್ತದೆ."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:29
+msgid "When the status icon should be shown"
+msgstr "ಯಾವಾಗ ಸ್ಥಿತಿಯ ಚಿಹ್ನೆಯನ್ನು ತೋರಿಸಬೇಕು"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:30
+msgid ""
+"This key controls the behavior of the status icon. There are three options: "
+"\"always\" - the icon will always be present; \"client\" - the icon will "
+"only be present when someone is connected (this is the default behavior); "
+"\"never\" - the icon will not be present."
+msgstr ""
+"ಈ ಕೀಲಿಯು ಸ್ಥಿತಿ ಚಿಹ್ನೆಯ ವರ್ತನೆಯನ್ನು ನಿಯಂತ್ರಿಸುತ್ತದೆ. ಇಲ್ಲಿ ಮೂರು ಆಯ್ಕೆಗಳಿವೆ: \"always"
+"\" - ಚಿಹ್ನೆಯು ಯಾವಾಗಲೂ ಇರುತ್ತದೆ; \"client\" - ಯಾರಾದರೂ ಸಂಪರ್ಕಿತಗೊಂಡಿದ್ದಲ್ಲಿ ಮಾತ್ರ "
+"ಚಿಹ್ನೆಯು ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ (ಇದು ಪೂರ್ವನಿಯೋಜಿತವಾದ ವರ್ತನೆಯಾಗಿರುತ್ತದೆ); \"never\" - "
+"ಎಂದಿಗೂ ಚಿಹ್ನೆಯನ್ನು ತೋರಿಸುವುದಿಲ್ಲ."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:31
+msgid "Whether to disable the desktop background when a user is connected"
+msgstr "ಬಳಕೆದಾರರ ಸಂಪರ್ಕಿತಗೊಂಡಾಗ ಗಣಕತೆರೆ ಹಿನ್ನಲೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಬೇಕೆ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:32
+msgid ""
+"When true, disable the desktop background and replace it with a single block "
+"of color when a user successfully connects."
+msgstr ""
+"true ಆಗಿದ್ದಲ್ಲಿ, ಗಣಕತೆರೆ ಹಿನ್ನಲೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸು ಮತ್ತು ಬಳಕೆದಾರರು ಯಶಸ್ವಿಯಾಗಿ "
+"ಮರುಸಂಪರ್ಕಿತಗೊಂಡಾಗ ಇದನ್ನು ಒಂದು ಬಣ್ಣದ ಬ್ಲಾಕ್‌ ಇಂದ ಬದಲಾಯಿಸಲಾಗುತ್ತದೆ."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:33
+msgid "Whether a UPnP router should be used to forward and open ports"
+msgstr "ಸಂಪರ್ಕಸ್ಥಾನಗಳನ್ನು ಫಾರ್ವಾರ್ಡ್ ಮಾಡಲು ಮತ್ತು ತೆರೆಯಲು UPnP ರೌಟರುಗಳಿಗೆ ಅನ್ನು ಬಳಸಬೇಕೆ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:34
+msgid ""
+"If true, request that a UPnP-capable router should forward and open the port "
+"used by Vino."
+msgstr ""
+"true ಆದಲ್ಲಿ, Vino ದಿಂದ ಬಳಸಲಾದ ಸಂಪರ್ಕಸ್ಥಾನವನ್ನು ಫಾರ್ವಾರ್ಡ್ ಮಾಡಲು ಮತ್ತು ತೆರೆಯಲು UPnP "
+"ರೌಟರುಗಳನ್ನು ಬಳಸುವಂತೆ ಮನವಿ ಮಾಡು."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:35
+msgid "Whether we should disable the XDamage extension of X.org"
+msgstr "X.org ಯ XDamage ವಿಸ್ತರಣೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಬೇಕೆ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:36
+msgid ""
+"If true, do not use the XDamage extension of X.org. This extension does not "
+"work properly on some video drivers when using 3D effects. Disabling it will "
+"make Vino work in these environments, with slower rendering as a side effect."
+msgstr ""
+"true ಆದಲ್ಲಿ, X.org ನ XDamage ವಿಸ್ತರಣೆಯನ್ನು ಬಳಸಬೇಡಿ. ಈ ವಿಸ್ತರಣೆಯು 3D ಪರಿಣಾಮಗಳನ್ನು "
+"ಬಳಸುವಾಗ ಕೆಲವು ವೀಡಿಯೊ ಕಾರ್ಡುಗಳಲ್ಲಿ ಸರಿಯಾಗಿ ಕೆಲಸ ಮಾಡುವುದಿಲ್ಲ. ಇದನ್ನು ಈ ಪರಿಸರಗಳಲ್ಲಿ "
+"ಅಶಕ್ತಗೊಳಿಸುವುದರ ಅಡ್ಡಪರಿಣಾಮವಾಗಿ Vino ನಿಧಾನಗತಿಯಲ್ಲಿ ರೆಂಡರಿನೊಂದಿಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:37
+msgid "Notify on connect"
+msgstr "ಸಂಪರ್ಕಗೊಂಡಾಗ ಸೂಚಿಸು"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:38
+msgid "If true, show a notification when a user connects to the system."
+msgstr "true ಆದಲ್ಲಿ, ಬಳಕೆದಾರನು ವ್ಯವಸ್ಥೆಗೆ ಸಂಪರ್ಕಿತಗೊಂಡಾಗ ಒಂದು ಸೂಚನೆಯನ್ನು ತೋರಿಸು."
+
+#: ../common/vino-keyring.c:54 ../tools/vino-passwd.c:54
+msgid "Remote desktop sharing password"
+msgstr "ದೂರಸ್ಥ ಗುಪ್ತಪದ ಹಂಚಿಕೊಳ್ಳುವ ಗುಪ್ತಪದ"
+
+#: ../server/smclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "ಕಡತವು ಒಂದು ಮಾನ್ಯವಾದಂತಹ .desktop ಕಡತವಾಗಿಲ್ಲ"
+
+#. translators: 'Version' is from a desktop file, and
+#. * should not be translated. '%s' would probably be a
+#. * version number.
+#: ../server/smclient/eggdesktopfile.c:191
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "ಗುರುತಿಸಲಾಗದ ಗಣಕತೆರೆ ಕಡತದ ಆವೃತ್ತಿ '%s'"
+
+#: ../server/smclient/eggdesktopfile.c:974
+#, c-format
+msgid "Starting %s"
+msgstr "%s ಅನ್ನು ಆರಂಭಿಸಲಾಗುತ್ತಿದೆ"
+
+#: ../server/smclient/eggdesktopfile.c:1116
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "ಅನ್ವಯವು ಆಜ್ಞಾ ಸಾಲಿನಲ್ಲಿ ದಸ್ತಾವೇಜುಗಳನ್ನು ಅಂಗೀಕರಿಸುವುದಿಲ್ಲ"
+
+#: ../server/smclient/eggdesktopfile.c:1184
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "ಗುರುತಿಸಲಾಗದ ಆರಂಭದ ಆಯ್ಕೆ: %d"
+
+#. translators: The 'Type=Link' string is found in a
+#. * desktop file, and should not be translated.
+#: ../server/smclient/eggdesktopfile.c:1391
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr ""
+"ದಸ್ತಾವೇಜಿನ URI ಗಳನ್ನು ಒಂದು 'Type=Link' ಗಣಕತೆರೆ ನಮೂದಿಗೆ ರವಾನಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
+
+#: ../server/smclient/eggdesktopfile.c:1412
+#, c-format
+msgid "Not a launchable item"
+msgstr "ಆರಂಭಿಸಬಹುದಾದ ಅಂಶವಾಗಿಲ್ಲ"
+
+#: ../server/smclient/eggsmclient.c:226
+msgid "Disable connection to session manager"
+msgstr "ಅಧಿವೇಶನದ ವ್ಯವಸ್ಥಾಪಕನೊಂದಿಗಿನ ಸಂಪರ್ಕವನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸು"
+
+#: ../server/smclient/eggsmclient.c:229
+msgid "Specify file containing saved configuration"
+msgstr "ಉಳಿಸಲಾದ ಸಂರಚನೆಯನ್ನು ಹೊಂದಿರುವ ಕಡತವನ್ನು ಸೂಚಿಸಿ"
+
+#: ../server/smclient/eggsmclient.c:229
+msgid "FILE"
+msgstr "FILE"
+
+#: ../server/smclient/eggsmclient.c:232
+msgid "Specify session management ID"
+msgstr "ಅಧೀವೇಶನ ವ್ಯವಸ್ಥಾಪನಾ ID ಯನ್ನು ಸೂಚಿಸಿ"
+
+#: ../server/smclient/eggsmclient.c:232
+msgid "ID"
+msgstr "ID"
+
+#: ../server/smclient/eggsmclient.c:253
+msgid "Session management options:"
+msgstr "ಅಧಿವೇಶನ ನಿರ್ವಹಣಾ ಆಯ್ಕೆಗಳು:"
+
+#: ../server/smclient/eggsmclient.c:254
+msgid "Show session management options"
+msgstr "ಅಧಿವೇಶನ ವ್ಯವಸ್ಥಾಪನಾ ಆಯ್ಕೆಗಳನ್ನು ತೋರಿಸು"
+
+#: ../server/vino-main.c:202
+msgid ""
+"Your XServer does not support the XTest extension - remote desktop access "
+"will be view-only\n"
+msgstr ""
+"XTest ವಿಸ್ತರಣೆಯವನ್ನು ನಿಮ್ಮ XServer ಬೆಂಬಲಿಸುವುದಿಲ್ಲ - ದೂರಸ್ಥ ಗಣಕತೆರೆ ನಿಲುಕಣೆಯು "
+"ಕೇವಲ ಓದಲು ಮಾತ್ರವೆ ಆಗಿರುತ್ತದೆ\n"
+
+#. Tube mode uses Telepathy's Tubes to share a user's desktop directly
+#. * with another IM contact. http://telepathy.freedesktop.org/wiki/Tubes
+#.
+#: ../server/vino-main.c:301
+msgid "Start in tube mode, for the ‘Share my Desktop’ feature"
+msgstr "‘ನನ್ನ ಗಣಕತೆರೆಯನ್ನು ಹಂಚಿಕೊ’ ಸವಲತ್ತಿಗಾಗಿ ಟ್ಯೂಬ್ ಸ್ಥಿತಿಯಲ್ಲಿ ಆರಂಭಿಸು"
+
+#: ../server/vino-main.c:307
+msgid "- VNC Server for GNOME"
+msgstr "- GNOME ಗಾಗಿನ VNC ಪೂರೈಕೆಗಣಕ"
+
+#: ../server/vino-main.c:315
+msgid ""
+"Run 'vino-server --help' to see a full list of available command line options"
+msgstr "ಲಭ್ಯವಿರುವ ಆಜ್ಞಾ ಸಾಲಿನ ಆಯ್ಕೆಗಳಿಗಾಗಿ 'vino-server --help' ಅನ್ನು ಚಲಾಯಿಸಿ"
+
+#: ../server/vino-main.c:336
+msgid "GNOME Desktop Sharing"
+msgstr "GNOME ಗಣಕತೆರೆ ಹಂಚಿಕೆ"
+
+#.
+#. * Translators: translate "vino-mdns:showusername" to
+#. * "1" if "%s's remote desktop" doesn't make sense in
+#. * your language.
+#.
+#: ../server/vino-mdns.c:62
+msgid "vino-mdns:showusername"
+msgstr "vino-mdns:showusername"
+
+#.
+#. * Translators: this string is used ONLY if you
+#. * translated "vino-mdns:showusername" to anything
+#. * other than "1"
+#.
+#: ../server/vino-mdns.c:74
+#, c-format
+msgid "%s's remote desktop on %s"
+msgstr "%s ನ ದೂರಸ್ಥ ಗಣಕತೆರೆ %s ಯಲ್ಲಿ"
+
+#: ../server/vino-prefs.c:111
+#, c-format
+msgid "Received signal %d, exiting."
+msgstr "%d ಸಂಕೇತವನ್ನು ಪಡೆಯಲಾಗಿದೆ, ನಿರ್ಗಮಿಸಲಾಗುತ್ತಿದೆ."
+
+#: ../server/vino-prompt.c:144
+msgid "Screen"
+msgstr "ತೆರೆ"
+
+#: ../server/vino-prompt.c:145
+msgid "The screen on which to display the prompt"
+msgstr "ಪ್ರಾಂಪ್ಟನ್ನು ತೋರಿಸಬೇಕಿರುವ ತೆರೆ"
+
+#: ../server/vino-prompt.c:263 ../server/vino-status-icon.c:598
+#: ../server/vino-status-tube-icon.c:389
+#, c-format
+msgid "Error initializing libnotify\n"
+msgstr "libnotify ಅನ್ನು ಆರಂಭಿಸುವಲ್ಲಿ ದೋಷ\n"
+
+#: ../server/vino-prompt.c:282
+#, c-format
+msgid ""
+"A user on the computer '%s' is trying to remotely view or control your "
+"desktop."
+msgstr ""
+"ಗಣಕ '%s' ದ ಒಬ್ಬ ಬಳಕೆದಾರರು ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ದೂರದಿಂದ ನೋಡುತ್ತಿದ್ದಾರೆ ಅಥವ "
+"ನಿಯಂತ್ರಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದಾರೆ."
+
+#: ../server/vino-prompt.c:285
+msgid "Another user is trying to view your desktop."
+msgstr "ಇನ್ನೊಬ್ಬ ಬಳಕೆದಾರನು ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು  ನೋಡಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದಾರೆ."
+
+#: ../server/vino-prompt.c:291
+#| msgid "_Refuse"
+msgid "Refuse"
+msgstr "ನಿರಾಕರಿಸು"
+
+#: ../server/vino-prompt.c:297
+msgid "Accept"
+msgstr "ಅಂಗೀಕರಿಸು"
+
+#: ../server/vino-server.c:166 ../server/vino-server.c:189
+#, c-format
+msgid "Failed to open connection to bus: %s\n"
+msgstr "ಬಸ್‌ಗೆ ಸಂಪರ್ಕವನ್ನು ತೆರೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ: %s\n"
+
+#: ../server/vino-server.desktop.in.in.h:2
+msgid "GNOME Desktop Sharing Server"
+msgstr "GNOME ಗಣಕತೆರೆ ಹಂಚಿಕಾ ಪೂರೈಕೆಗಣಕ"
+
+#: ../server/vino-server.desktop.in.in.h:3
+msgid "vnc;share;remote;"
+msgstr "vnc;ಹಂಚಿಕೆ;ದೂರಸ್ಥ;"
+
+#: ../server/vino-status-icon.c:97 ../server/vino-status-tube-icon.c:90
+msgid "Desktop sharing is enabled"
+msgstr "ಗಣಕತೆರೆಯನ್ನು ಹಂಚಿಕೊಳ್ಳುವಿಕೆಯನ್ನು ಶಕ್ತಗೊಳಿಸಲಾಗಿದೆ"
+
+#: ../server/vino-status-icon.c:105
+#, c-format
+msgid "One person is viewing your desktop"
+msgid_plural "%d people are viewing your desktop"
+msgstr[0] "ಒಬ್ಬ ವ್ಯಕ್ತಿಯು ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ನೋಡುತ್ತಿದ್ದಾರೆ"
+msgstr[1] "%d ವ್ಯಕ್ತಿಗಳು ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ನೋಡುತ್ತಿದ್ದಾರೆ"
+
+#: ../server/vino-status-icon.c:208 ../server/vino-status-tube-icon.c:172
+msgid "Error displaying preferences"
+msgstr "ಆದ್ಯತೆಗಳನ್ನು ತೋರಿಸುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ"
+
+#: ../server/vino-status-icon.c:230 ../server/vino-status-tube-icon.c:192
+msgid "Error displaying help"
+msgstr "ಸಹಾಯವನ್ನು ತೋರಿಸುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ"
+
+#: ../server/vino-status-icon.c:263
+msgid ""
+"Licensed under the GNU General Public License Version 2\n"
+"\n"
+"Vino is free software; you can redistribute it and/or\n"
+"modify it under the terms of the GNU General Public License\n"
+"as published by the Free Software Foundation; either version 2\n"
+"of the License, or (at your option) any later version.\n"
+"\n"
+"Vino is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n"
+"02110-1301, USA.\n"
+msgstr ""
+"Licensed under the GNU General Public License Version 2\n"
+"\n"
+"Vino is free software; you can redistribute it and/or\n"
+"modify it under the terms of the GNU General Public License\n"
+"as published by the Free Software Foundation; either version 2\n"
+"of the License, or (at your option) any later version.\n"
+"\n"
+"Vino is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n"
+"02110-1301, USA.\n"
+
+#. Translators comment: put your own name here to appear in the about dialog.
+#: ../server/vino-status-icon.c:278
+msgid "translator-credits"
+msgstr "ಶಂಕರ್ ಪ್ರಸಾದ್ ಎಂ. ವಿ. <svenkate@redhat.com>"
+
+#: ../server/vino-status-icon.c:284
+msgid "Share your desktop with other users"
+msgstr "ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ಇತರರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ"
+
+#: ../server/vino-status-icon.c:351 ../server/vino-status-tube-icon.c:224
+#, c-format
+msgid "Are you sure you want to disconnect '%s'?"
+msgstr "'%s' ನೊಂದಿಗಿನ ಸಂಪರ್ಕವನ್ನು ಕಡಿಯಬೇಕು ಎಂದು ನೀವು ಖಚಿತವೆ?"
+
+#: ../server/vino-status-icon.c:354
+#, c-format
+msgid "The remote user from '%s' will be disconnected. Are you sure?"
+msgstr ""
+"'%s' ಯಲ್ಲಿನ ದೂರಸ್ಥ ಬಳಕೆದಾರರೊಂದಿಗಿನ ಸಂಪರ್ಕವನ್ನು ಕಡಿದು ಹಾಕಲಾಗುತ್ತದೆ. ನೀವು ಖಚಿತವೆ?"
+
+#: ../server/vino-status-icon.c:360
+msgid "Are you sure you want to disconnect all clients?"
+msgstr "ಎಲ್ಲಾ ಕ್ಲೈಂಟ್‌ಗಳೊಂದಿಗಿನ ಸಂಪರ್ಕವನ್ನು ನೀವು ಖಚಿತವಾಗಿಯೂ ಕಡಿದು ಹಾಕಲು ಬಯಸುತ್ತೀರೆ?"
+
+#: ../server/vino-status-icon.c:362
+msgid "All remote users will be disconnected. Are you sure?"
+msgstr "ಎಲ್ಲಾ ದೂರಸ್ಥ ಬಳಕೆದಾರರೊಂದಿಗಿನ ಸಂಪರ್ಕವನ್ನು ಕಡಿದು ಹಾಕಲಾಗುತ್ತದೆ. ನೀವು ಖಚಿತವೆ?"
+
+#: ../server/vino-status-icon.c:374 ../server/vino-status-tube-icon.c:238
+msgid "Disconnect"
+msgstr "ಸಂಪರ್ಕ ಕಡಿದು ಹಾಕು"
+
+#: ../server/vino-status-icon.c:400 ../server/vino-status-tube-icon.c:263
+msgid "_Preferences"
+msgstr "ಆದ್ಯತೆಗಳು(_P)"
+
+#: ../server/vino-status-icon.c:415
+msgid "Disconnect all"
+msgstr "ಎಲ್ಲಾ ಸಂಪರ್ಕವನ್ನು ಕಡಿದು ಹಾಕು"
+
+#. Translators: %s is a hostname
+#. Translators: %s is the alias of the telepathy contact
+#: ../server/vino-status-icon.c:439 ../server/vino-status-tube-icon.c:276
+#, c-format
+msgid "Disconnect %s"
+msgstr "%s ಸಂಪರ್ಕವನ್ನು ಕಡಿದು ಹಾಕು"
+
+#: ../server/vino-status-icon.c:460 ../server/vino-status-tube-icon.c:295
+msgid "_Help"
+msgstr "ನೆರವು(_H)"
+
+#: ../server/vino-status-icon.c:468
+msgid "_About"
+msgstr "ಇದರ ಬಗ್ಗೆ(_A)"
+
+#. Translators: %s is a hostname
+#: ../server/vino-status-icon.c:619
+msgid "Another user is viewing your desktop"
+msgstr "ಬೇರೊಬ್ಬ ಬಳಕೆದಾರರು ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ನೋಡುತ್ತಿದ್ದಾರೆ"
+
+#: ../server/vino-status-icon.c:621
+#, c-format
+msgid "A user on the computer '%s' is remotely viewing your desktop."
+msgstr "ಗಣಕ '%s' ದ ಬಳಕೆದಾರರು ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ದೂರದಿಂದ ನೋಡುತ್ತಿದ್ದಾರೆ."
+
+#. Translators: %s is a hostname
+#: ../server/vino-status-icon.c:627
+msgid "Another user is controlling your desktop"
+msgstr "ಬೇರೊಬ್ಬ ಬಳಕೆದಾರರು ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ನಿಯಂತ್ರಿಸುತ್ತಿದ್ದಾರೆ"
+
+#: ../server/vino-status-icon.c:629
+#, c-format
+msgid "A user on the computer '%s' is remotely controlling your desktop."
+msgstr "ಗಣಕ '%s' ದ ಬಳಕೆದಾರರು ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ದೂರದಿಂದ ನಿಯಂತ್ರಿಸುತ್ತಿದ್ದಾರೆ."
+
+#: ../server/vino-status-icon.c:651 ../server/vino-status-tube-icon.c:423
+#, c-format
+msgid "Error while displaying notification bubble: %s\n"
+msgstr "ಸೂಚನಾ ಗುಳ್ಳೆಯನ್ನು ತೋರಿಸುವಾಗ ದೋಷವು ಉಂಟಾಗಿದೆ: %s\n"
+
+#: ../server/vino-status-tube-icon.c:227
+#, c-format
+msgid "The remote user '%s' will be disconnected. Are you sure?"
+msgstr "ದೂರಸ್ಥ ಬಳಕೆದಾರ '%s' ನೊಂದಿಗಿನ ಸಂಪರ್ಕವನ್ನು ಕಡಿದು ಹಾಕಲಾಗುತ್ತದೆ. ನೀವು ಖಚಿತವೆ?"
+
+#: ../server/vino-tube-server.c:220 ../server/vino-tube-server.c:249
+msgid "Share my desktop information"
+msgstr "ನನ್ನ ಗಣಕತೆರೆಯನ್ನು ಇತರರೊಂದಿಗೆ ಹಂಚಿಕೊ"
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:224
+#, c-format
+msgid "'%s' rejected the desktop sharing invitation."
+msgstr "ಗಣಕತೆರೆ ಹಂಚಿಕೊಳ್ಳುವ ಆಹ್ವಾನವನ್ನು '%s' ತಿರಸ್ಕರಿಸಿದ್ದಾರೆ."
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:228
+#, c-format
+msgid "'%s' disconnected"
+msgstr "'%s' ಸಂಪರ್ಕ ಕಡಿದು ಹೋಗಿದೆ"
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:255
+#, c-format
+msgid "'%s' is remotely controlling your desktop."
+msgstr "'%s' ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ದೂರದಿಂದ ನಿಯಂತ್ರಿಸುತ್ತಿದ್ದಾರೆ."
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:264
+#, c-format
+msgid "Waiting for '%s' to connect to the screen."
+msgstr "ತೆರೆಗೆ ಸಂಪರ್ಕ ಹೊಂದುವಂತೆ '%s' ಗಾಗಿ ಕಾಯಲಾಗುತ್ತಿದೆ."
+
+#: ../server/vino-util.c:89
+msgid "_Allow"
+msgstr "ಅನುಮತಿಸು(_A)"
+
+#: ../server/vino-util.c:90
+msgid "_Refuse"
+msgstr "ನಿರಾಕರಿಸು(_R)"
+
+#: ../server/vino-util.c:140
+msgid "An error has occurred:"
+msgstr "ಒಂದು ದೋಷವು ಸಂಭವಿಸಿದೆ:"
+
+#: ../tools/vino-passwd.c:108
+#, c-format
+msgid "Cancelled"
+msgstr "ರದ್ದು ಮಾಡಲಾಗಿದೆ"
+
+#: ../tools/vino-passwd.c:115
+#, c-format
+msgid ""
+"ERROR: Maximum length of password is %d character. Please, re-enter the "
+"password."
+msgid_plural ""
+"ERROR: Maximum length of password is %d characters. Please, re-enter the "
+"password."
+msgstr[0] ""
+"ದೋಷ: ಗುಪ್ತಪದದ ಗರಿಷ್ಟ ಉದ್ದವು %d ಅಕ್ಷರವಾಗಿರಬೇಕು. ದಯವಿಟ್ಟು ಗುಪ್ತಪದವನ್ನು ಮರಳಿ ನಮೂದಿಸಿ."
+msgstr[1] ""
+"ದೋಷ: ಗುಪ್ತಪದದ ಗರಿಷ್ಟ ಉದ್ದವು %d ಅಕ್ಷರಗಳಾಗಿರಬೇಕು. ದಯವಿಟ್ಟು ಗುಪ್ತಪದವನ್ನು ಮರಳಿ ನಮೂದಿಸಿ."
+
+#: ../tools/vino-passwd.c:149
+#, c-format
+msgid "Changing Vino password.\n"
+msgstr "Vino ಗುಪ್ತಪದವನ್ನು ಬದಲಾಯಿಸಲಾಗುತ್ತಿದೆ.\n"
+
+#: ../tools/vino-passwd.c:151
+msgid "Enter new Vino password: "
+msgstr "ಹೊಸ Vino ಗುಪ್ತಪದವನ್ನು ನಮೂದಿಸಿ: "
+
+#: ../tools/vino-passwd.c:154
+msgid "Retype new Vino password: "
+msgstr "ಹೊಸ Vino ಗುಪ್ತಪದವನ್ನು ಮರಳಿ ನಮೂದಿಸಿ: "
+
+#: ../tools/vino-passwd.c:160
+#, c-format
+msgid "vino-passwd: password updated successfully.\n"
+msgstr "vino-passwd: ಗುಪ್ತಪದವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗಿದೆ.\n"
+
+#: ../tools/vino-passwd.c:165
+#, c-format
+msgid "Sorry, passwords do not match.\n"
+msgstr "ಕ್ಷಮಿಸಿ ಗುಪ್ತದಗಳು ತಾಳೆಯಾಗುತ್ತಿಲ್ಲ.\n"
+
+#: ../tools/vino-passwd.c:166
+#, c-format
+msgid "vino-passwd: password unchanged.\n"
+msgstr "vino-passwd: ಗುಪ್ತಪದವನ್ನು ಬದಲಾಯಿಸಲಾಗಿದೆ.\n"
+
+#: ../tools/vino-passwd.c:182
+msgid "Show Vino version"
+msgstr "Vino ಆವೃತ್ತಿಯನ್ನು ತೋರಿಸು"
+
+#: ../tools/vino-passwd.c:191
+msgid "- Updates Vino password"
+msgstr "- Vino ಗುಪ್ತಪದದ ಅಪ್‌ಡೇಟ್‌ಗಳು"
+
+#: ../tools/vino-passwd.c:201
+msgid ""
+"Run 'vino-passwd --help' to see a full list of available command line options"
+msgstr "ಲಭ್ಯವಿರುವ ಆಜ್ಞಾ ಸಾಲಿನ ಆಯ್ಕೆಗಳಿಗಾಗಿ 'vino-passwd --help' ಅನ್ನು ಚಲಾಯಿಸಿ"
+
+#: ../tools/vino-passwd.c:208
+#, c-format
+msgid "VINO Version %s\n"
+msgstr "VINO ಆವೃತ್ತಿ %s\n"
+
+#: ../tools/vino-passwd.c:219
+#, c-format
+msgid "ERROR: You do not have enough permissions to change Vino password.\n"
+msgstr "ದೋಷ: Vino ಗುಪ್ತಪದವನ್ನು ಬದಲಾಯಿಸಲು ನಿಮಗೆ ಸಾಕಷ್ಟು ಅನುಮತಿ ಇಲ್ಲ.\n"
+
+#~ msgid "Question"
+#~ msgstr "ಸಂದೇಹ"
+
+#~ msgid ""
+#~ "A user on another computer is trying to remotely view or control your "
+#~ "desktop."
+#~ msgstr ""
+#~ "ಇನ್ನೊಂದು ಗಣಕಯಂತ್ರದಲ್ಲಿನ ಒಬ್ಬ ಬಳಕೆದಾರ ದೂರದಿಂದ ನಿಮ್ಮ ಗಣಕತೆರೆಯನ್ನು ನೋಡಲು ಅಥವ "
+#~ "ನಿಯಂತ್ರಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದಾರೆ."
+
+#~ msgid "Do you want to allow them to do so?"
+#~ msgstr "ನೀವು ಅವರೆಲ್ಲರಿಗೂ ಹಾಗೆ ಮಾಡಲು ಅನುಮತಿಸಲು ಬಯಸುತ್ತೀರೆ?"
+
+#~ msgid "_Send address by email"
+#~ msgstr "ಆಜ್ಞೆಯನ್ನು ಇಮೈಲ್ ಮೂಲಕ ಕಳುಹಿಸು(_S)"
+
+#~ msgid "_Copy address to clipboard"
+#~ msgstr "ವಿಳಾಸವನ್ನು ನಕಲುಫಲಕಕ್ಕೆ(ಕ್ಲಿಪ್‌ಬೋರ್ಡ್) ಅಂಟಿಸು(_C)"
+
+#~ msgid "Remote Desktop"
+#~ msgstr "ದೂರಸ್ಥ ಗಣಕತೆರೆ"
+
+#~ msgid "Al_ways display an icon"
+#~ msgstr "ಯಾವಾಗಲೂ ಒಂದು ಚಿಹ್ನೆಯನ್ನು ತೋರಿಸು(_w)"
+
+#~ msgid "Maximum size: 8 characters"
+#~ msgstr "ಗರಿಷ್ಟ ಗಾತ್ರ: ೮ ಅಕ್ಷರಗಳು"
+
+#~ msgid "You will be queried to allow or to refuse every incoming connection"
+#~ msgstr "ಒಳಬರುವ ಸಂಪರ್ಕಗಳನ್ನು ಅನುಮತಿಸಲು ಅಥವ ತಿರಸ್ಕರಿಸಲು ನಿಮ್ಮನ್ನು ಕೇಳಲಾಗುವುದು"
+
+#~ msgid "_Configure network automatically to accept connections"
+#~ msgstr "ಸಂಪರ್ಕವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅಂಗೀಕರಿಸುವಂತೆ ಜಾಲಬಂಧವನ್ನು ಸಂರಚಿಸು(_C)"
+
+#~ msgid "_Never display an icon"
+#~ msgstr "ಎಂದೂ ಚಿಹ್ನೆಯನ್ನು ತೋರಿಸಬೇಡ(_N)"
+
+#~ msgid "_Only display an icon when there is someone connected"
+#~ msgstr "ಯಾರಾದರೂ ಸಂಪರ್ಕಿತಗೊಂಡಿದ್ದಲ್ಲಿ ಮಾತ್ರ ಚಿಹ್ನೆಯನ್ನು ತೋರಿಸು(_O)"
+
+#~ msgid "Remote Desktop server already running; exiting ...\n"
+#~ msgstr "ದೂರಸ್ಥ ಗಣಕತೆರೆಯು ಈಗಾಗಲೆ ಚಾಲನೆಯಲ್ಲಿದೆ; ನಿರ್ಗಮಿಸಲಾಗುತ್ತಿದೆ ...\n"
+
+#~ msgid "GNOME Remote Desktop"
+#~ msgstr "GNOME ದೂರಸ್ಥ ಗಣಕತೆರೆ"
+
+#~ msgid "Enable remote desktop access"
+#~ msgstr "ದೂರಸ್ಥ ಗಣಕತೆರೆ ನಿಲುಕಣೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು"
+
+#~ msgid ""
+#~ "If true, we will use UPNP protocol to automatically forward the port used "
+#~ "by vino in the router."
+#~ msgstr ""
+#~ "true ಆದಲ್ಲಿ, ರೌಟರಿನಲ್ಲಿ vino ಇಂದ ಬಳಸಲಾದ UPNP ಪ್ರೊಟೋಕಾಲ್‌ ಅನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ "
+#~ "ಸಂಪರ್ಕಸಾಧನವನ್ನು ಫಾರ್ವಾರ್ಡ್ ಮಾಡಲು ಬಳಸಲಾಗುವದು."
+
+#~ msgid ""
+#~ "Error while communicating with GConf. Are you logged into a GNOME session?"
+#~ msgstr ""
+#~ "GConf ನೊಂದಿಗೆ ಸಂಪರ್ಕಸಾಧಿಸುವಾ ದೋಷ ಕಂಡುಬಂದಿದೆ. ನೀವು ಒಂದು GNOME ಅಧಿವೇಶನಕ್ಕೆ "
+#~ "ಪ್ರವೇಶ ಹೊಂದಿದ್ದೀರೆ?"
+
+#~ msgid "Error message:"
+#~ msgstr "ದೋಷ ಸಂದೇಶ:"

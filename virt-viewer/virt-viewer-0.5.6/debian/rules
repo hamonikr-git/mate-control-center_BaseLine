@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+DEB_CONFIGURE_EXTRA_FLAGS := --with-gtk=3.0
+ifneq (,$(findstring $(DEB_HOST_ARCH), i386 amd64))
+    DEB_CONFIGURE_EXTRA_FLAGS += --with-spice-gtk
+    HAVE_SPICE := 1
+endif
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(DEB_CONFIGURE_EXTRA_FLAGS)
+
+override_dh_auto_clean:
+	[ ! -f Makefile ] || dh_auto_clean
+
+override_dh_auto_install:
+	dh_auto_install
+	[ ! "${HAVE_SPICE}" ] || install -m0755 \
+               data/spice-xpi-client-remote-viewer \
+	       debian/virt-viewer/usr/bin/

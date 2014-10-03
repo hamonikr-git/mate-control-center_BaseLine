@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="index" xml:lang="gl">
+
+  <info>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+  </info>
+
+  <title><media type="image" src="figures/logo32.png"/> Brasero Help</title>
+
+  <section id="new-project" style="2column">
+    <title>Crear un novo proxecto</title>
+  </section>
+
+  <section id="troubleshooting" style="2column">
+    <title>Resolución de problemas</title>
+  </section>
+
+  <section id="tools" style="2column">
+    <title>Outras ferramentas</title>
+  </section>
+
+</page>

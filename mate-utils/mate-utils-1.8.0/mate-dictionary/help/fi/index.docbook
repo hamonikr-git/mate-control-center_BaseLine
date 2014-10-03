@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY app "Dictionary">
+<!ENTITY applet "Dictionary Applet">
+<!ENTITY appversion "2.14.0">
+<!ENTITY date "January 2005">
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY manrevision "1.0.0">
+]>
+<!-- This file describes the Dictionary applet and application. -->
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.mate.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified 11 April, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fi">
+<!-- please do not change the id; for translations, change language to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Sanakirjan käyttöohje</title>
+
+    <abstract role="description">
+      <para>Sanakirja mahdollistaa oikeiden määritelmien ja kirjoitusasun tarkistamisen.</para>
+    </abstract>
+    
+    <copyright lang="en">
+      <year>2005</year>
+      <holder>Emmanuele Bassi</holder>
+    </copyright>
+    
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2006</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+   
+    <publisher> 
+      <publishername>Mate dokumentointiprojekti</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software Foundationin julkaiseman GNU Free Documentation Licensen (GFDL) version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. Kopion GFDL:stä voi nähdä napsauttamalla <ulink type="help" url="help:fdl">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-nimisen tiedoston.</para>
+         <para>Tämä käyttöohje on osa Maten käyttöohjekokoelmaa, jota levitetään GFDL-lisenssin alaisena. Jos haluat levittää tätä käyttöohjetta erillään kokoelmasta, voit tehdä sen liittämällä lisenssin kopion ohjeen mukaan, kuten lisenssin luku 6 sanelee.</para>
+
+	<para>Monet nimistä, joita yhtiöt käyttävät tuotteistansa ja palveluistansa, ovat tuotemerkkejä. Maten dokumentointiprojektissa nämä nimet pyritään kirjoittamaan suuraakkosin tai isolla alkukirjaimella, sikäli kun projektin jäsenet tietävät kyseisistä tuotemerkeistä.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+
+    <authorgroup> 
+      <author role="maintainer" lang="en"> 
+	<firstname>Emmanuele</firstname> 
+	<surname>Bassi</surname> 
+	<affiliation> 
+	  <address><email>ebassi@gmail.com</email></address> 
+	</affiliation> 
+      </author> 
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+
+    </authorgroup>
+
+    <revhistory>
+      <revision lang="en"> 
+	<revnumber>Dictionary Manual V1.0.0</revnumber> 
+	<date>January 2005</date> 
+	<revdescription> 
+	  <para role="author" lang="en">Emmanuele Bassi</para>
+	  <para role="publisher" lang="en">MATE Documentation Project</para>
+	</revdescription> 
+      </revision>
+    </revhistory> 
+
+    <releaseinfo>Tämä käyttöohje kattaa Sanakirjan version 2.14.0.</releaseinfo> 
+    <legalnotice> 
+      <title>Palaute</title> 
+      <para>Ilmoittaaksesi viasta tai tehdäksesi ehdotuksen koskien Sanakirja -sovelmaa tai tätä käyttöohjetta, seuraa ohjeita <ulink url="help:mate-feedback" type="help">Mate palautesivulla</ulink>.</para>
+      
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm lang="en"> 
+    <primary>Dictionary</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="mate-dictionary-introduction"> 
+    <title>Johdanto</title>
+
+    <para><application>Sanakirja</application> -sovellus mahdollistaa sanojen ja termien haun sanakirjalähteistä</para>
+    
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->  
+  <sect1 id="mate-dictionary-getting-started">
+    <title>Aloitustoimet</title>
+    
+<!-- ============= To Start Dictionary ======================= -->
+    <sect2 id="mate-dictionary-start-application">
+      <title>Sanakirjan käynnistäminen</title>
+      
+      <para>Voit käynnistää <application>Sanakirja</application> -sovelluksen seuraavilla tavoilla:</para>
+      
+      <variablelist>
+        	<varlistentry>
+        	  <term><guimenu>Sovellukset</guimenu> -valikosta</term>
+        	  <listitem>
+        	    <para lang="en">Choose <menuchoice><guisubmenu>Accessories</guisubmenu>
+        	      <guimenuitem>Dictionary</guimenuitem></menuchoice>.
+        	    </para>
+        	  </listitem>
+        	</varlistentry>
+    	<varlistentry>
+    	  <term>Komentoriviltä</term>
+    	  <listitem>
+    	    <para>Suorita komento: <command>mate-dictionary</command></para>
+    	  </listitem>
+    	</varlistentry>
+      </variablelist>
+      
+      <para>Ensimmäisen käynnistyskerran jälkeen <application>Sanakirja</application> -ikkuna näyttää seuraavalta:</para>
+      
+      <figure id="mate-dictionary-fig">
+        <title>Sanakirja -sovelluksen ikkuna</title>
+        <screenshot> 
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-dictionary-application.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows Dictionary main window.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+    </sect2>
+
+  </sect1>
+  
+<!-- ============= Usage ===================================== -->
+  <sect1 id="mate-dictionary-usage">
+    <title>Käyttö</title>
+    
+    <sect2 id="mate-dictionary-lookup">
+      <title>Sanan etsiminen</title>
+      
+      <para>Etsiäksesi sanaa, kirjoita <guilabel>tekstikenttään</guilabel> ja paina <keycap>Enter</keycap>.</para>
+    
+      <para>Mikäli joitain määritelmiä sanalle löytyy, ilmestyy se pääikkunan ruutuun:</para>
+
+      <figure id="mate-dictionary-lookup-fig">
+        <title>Sanakirja -sovelluksen ikkuna</title>
+        <screenshot> 
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-dictionary-lookup.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows a definition inside the Dictionary main window.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+      
+      <para>Muussa tapauksessa näytetään virhesanoma, joka kertoo virheen luonteen.</para>
+    
+    </sect2>
+    
+    <sect2 id="mate-dictionary-save">
+      <title>Haun tuloksen tallentaminen</title>
+      
+      <para>Tallentaaksesi hakutuloksen, valitse <menuchoice><guimenu>Tiedosto</guimenu><guimenuitem>Tallenna kopio</guimenuitem></menuchoice>. Anna tiedostonimi <guilabel>Tallenna kopio</guilabel> valintaikkunaan ja napsauta <guibutton>Tallenna</guibutton>.</para>
+    
+    </sect2>
+    
+    <sect2 id="mate-dictionary-print">
+      <title>Haun tuloksen tulostaminen</title>
+      
+      <para>Tulostaaksesi haun tuloksen, valitse <menuchoice><guimenu>Tiedosto</guimenu><guimenuitem>Tulosta</guimenuitem></menuchoice>.</para>
+
+      <para><guilabel>Tulosta</guilabel> -valintaikkunasta voit valita haluamasi tulostimen, paperityypin ja tulostusmäärän.</para>
+
+      <para>Mikäli haluat tarkistaa, miltä tulostus näyttää, napsauta <guibutton>Esikatselu</guibutton>.</para>
+
+      <para>Tulostaaksesi haun, napsauta <guibutton>Tulosta</guibutton>.</para>
+    
+    </sect2>
+    
+    <sect2 id="mate-dictionary-find">
+      <title>Etsi teksti</title>
+
+      <figure id="mate-dictionary-find-fig">
+        <title>Sanakirja -sovelluksen ikkuna</title>
+        <screenshot> 
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-dictionary-find.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows the Dictionary Find pane inside the main window.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      
+      <para>Etsiäksesi tekstin hakutuloksesta, toimi seuraavasti:</para>
+      
+      <orderedlist>
+        <listitem><para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Find</guimenuitem> </menuchoice>
+        to display the <guilabel>Find</guilabel> pane.</para></listitem>
+        <listitem><para>Kirjoita <guilabel>Etsi</guilabel> -hekukenttään teksti, jonka haluat etsiä.</para></listitem>
+        <listitem><para>Etsiäksesi seuraavan esiintymän tekstistä, napsauta <guibutton>Seuraava</guibutton>-painiketta. Etsiäksesi edellisen esiintymän tekstistä, napsauta <guibutton>Edellinen</guibutton>.</para></listitem>
+      </orderedlist>
+    
+    </sect2>
+      
+  </sect1>
+
+<!-- ============= Preferences =============================== -->
+  <sect1 id="mate-dictionary-preferences">
+    <title>Asetukset</title>
+    
+    <para>Muuttaaksesi <application>Sanakirja</application>-sovelluksen asetuksia, napsauta <menuchoice><guimenu>Muokkaa</guimenu><guimenuitem>Asetukset</guimenuitem></menuchoice>.</para>
+
+<!-- ============= Source Tab ================================ -->
+    <sect2 id="mate-dictionary-source-tab">
+      <title>Sanakirjan lähteet</title>
+
+      <figure id="mate-dictionary-sources-fig">
+        <title>Sanakirja -sovelluksen ikkuna</title>
+        <screenshot> 
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-dictionary-preferences-source.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows the Source tab of the Preferences dialog.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <para>Sanakirjan lähteen saat muutettua valitsemalla listalta haluamasi lähteen.</para>
+    </sect2>
+    
+<!-- ============= Add Source ================================ -->
+    <sect2 id="mate-dictionary-add-source">
+      <title>Uuden lähteen asettaminen</title>
+
+      <figure id="mate-dictionary-add-source-fig">
+        <title>Sanakirja -sovelluksen ikkuna</title>
+        <screenshot> 
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-dictionary-add-source.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows the Add Source dialog.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <para>Lisätäksesi uuden sanakirjan lähteen, toimi seuraavasti:</para>
+
+      <orderedlist>
+        <listitem><para>Napsauta <guibutton>Lisää</guibutton>-painiketta</para></listitem>
+	<listitem><para>Muokkaa uuden lähteen nimi <guilabel>Kuvaus</guilabel>-kenttään</para></listitem>
+	<listitem><para>Valitse uudelle lähteelle siirtoyhteyden tyyppi <guilabel>Siirtoyhteys</guilabel> -valintalaatikosta</para></listitem>
+	<listitem><para>Muokkaa uuden lähteen määritykset</para></listitem>
+	<listitem><para>Napsauta <guibutton>Lisää</guibutton></para></listitem>
+      </orderedlist>
+
+      <para>Erilaiset siirtoyhteystyypit käyttää erilaisia määrityksiä. Seuraava lista esittää eri siirtoyhteystyyppien mahdolliset määritykset:</para>
+
+      <informaltable frame="all">
+        <tgroup cols="2" colsep="1" rowsep="1">
+	  <thead>
+	    <row valign="top">
+	      <entry><para>Siirtoyhteys</para></entry>
+	      <entry><para>Määritykset</para></entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row valign="top">
+	      <entry><para>Sanakirjapalvelin</para></entry>
+	      <entry>
+	        <para>Palvelin: Sanakirjapalvelimen osoite</para>
+		<para>Portti: Sanakirjapalvelimen portti</para>
+              </entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </informaltable>
+    
+    </sect2>
+
+<!-- ============= Remove Source ============================= -->
+    <sect2 id="mate-dictionary-remove-source">
+      <title>Lähteen poisto</title>
+      
+      <para>Poistaaksesi sanakirjan lähteen, toimi seuraavasti:</para>
+
+      <orderedlist>
+        <listitem><para>Valitse lähde, jonka haluat poistaa</para></listitem>
+	<listitem><para>Napsauta <guibutton>Poista</guibutton> -painiketta</para></listitem>
+      </orderedlist>
+
+      <warning><para>Jos poistat sanakirjan lähteen, se poistetaan lopullisesti käytettävissä olevien lähteiden listasta. Myös jotkin lähteet voivat olla määritetty kattamaan koko järjestelmän, jolloin et voi poistaa niitä, mikäli sinulla ei ole oikeita käyttöoikeuksia.</para></warning>
+      
+    </sect2>
+    
+<!-- ============= Print Tab ================================= -->
+    <sect2 id="mate-dictionary-print-tab">
+      <title>Tulostuksen asetukset</title>
+
+      <figure id="mate-dictionary-print-fig">
+        <title>Sanakirja -sovelluksen ikkuna</title>
+        <screenshot> 
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-dictionary-preferences-print.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows the Print tab inside the Preferences dialog.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <para>Jos tahdot muuttaa tulostuksessa käytettävän kirjasimen nimeä tai kokoa, toimi seuraavasti:</para>
+
+      <orderedlist>
+        <listitem><para>Napsauta <guilabel>Tulostuksen kirjaisin</guilabel> -painiketta</para></listitem>
+	<listitem><para>Valitse haluamasi kirjaisin ja sen koko</para></listitem>
+	<listitem><para>Napsauta <guibutton>OK</guibutton></para></listitem>
+      </orderedlist>
+	
+    </sect2>
+    
+  </sect1>
+
+<!-- ============= Dictionary Applet ======================== -->
+  <sect1 id="mate-dictionary-applet">
+  <title>Sanakirja -sovelma</title>
+  
+  <para><application>Sanakirja</application> -sovelluksen mukana tulee paneelissa toimiva <application>Sanakirja -sovelma</application>. Voit lisätä <application>Sanakirja</application> -sovelman paneeliin ja hakea sanoja sanakirjoista.</para>
+
+  <figure id="mate-dictionary-applet-fig">
+    <title>Sanakirja -sovelman ikkuna</title>
+    <screenshot> 
+      <mediaobject lang="en">
+        <imageobject>
+          <imagedata fileref="figures/mate-dictionary-applet.png" format="PNG"/>
+        </imageobject>
+        <textobject><phrase>Shows Dictionary Applet.</phrase></textobject> 
+      </mediaobject>
+    </screenshot>
+  </figure>
+
+
+<!-- ============= Dictionary Applet Start ================== -->
+    <sect2 id="mate-dictionary-applet-start">
+      <title>Sanakirja -sovelman käynnistäminen</title>
+    
+      <para>Lisätäksesi <application>Sanakirja</application> -sovelman paneeliin, napsauta hiiren oikealla painikkeella paneelissa ja valitse ponnahdusvalikosta <guimenuitem>Lisää paneeliin</guimenuitem>. Valitse Sanakirja -sovelma <application>Lisää paneeliin</application> -valintaikkunasta ja napsauta <guibutton>OK</guibutton>.</para>
+      
+    </sect2>
+
+<!-- ============= Dictionary Applet Start ================== -->
+    <sect2 id="mate-dictionary-applet-usage">
+      <title>Sanakirja -sovelman käyttö</title>
+      
+      <para>Hakeaksesi sanoja, kirjoita sana <guilabel>hakukenttään</guilabel> ja paina <keycap>Enter</keycap> tai napsauta hiiren oikealla painikkeella sanakirja ikonia ja valitse <guimenuitem>Etsi valittu teksti</guimenuitem>.</para>
+      
+      <para>Mikäli jotain sanan selityksiä löytyy, avautuu ikkuna, jossa on sanalle selitys:</para>
+
+      <figure id="mate-dictionary-applet-window-fig">
+        <title>Sanakirja -sovelman ikkuna</title>
+        <screenshot> 
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-dictionary-applet-window.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows Dictionary Applet main window.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+      
+      <para>Napsauta <guibutton>Tallenna</guibutton> -painiketta tallentaaksesi selityksen tekstitiedostoon. Napsauta <guibutton>Tulosta</guibutton> -painiketta tulostaaksesi selityksen. Napsauta <guibutton>Tyhjennä</guibutton> -painiketta tyhjentääksesi selityksen ruudulta.</para>
+      
+      <para>Voit piilottaa ikkunan napsauttamalla hiiren vasemmalla painikkeella sanakirja -ikonia tai painamalla <keycap>Esc</keycap> -painiketta.</para>
+
+    </sect2>
+    
+    <sect2 id="mate-dictionary-applet-preferences">
+      <title>Asetukset</title>
+      
+      <para>Muokataksesi <application>Sanakirja</application> -sovelman asetuksia, napsauta hiiren oikealla painikkeella sanakirja -ikonia ja valitse alasvetovalikosta <guimenuitem>Asetukset</guimenuitem>.</para>
+      
+      <para><guilabel>Asetukset</guilabel> -valintaikkuna on samanlainen, kuin <application>Sanakirja</application> -sovelluksen, joten löydät lisätietoja kohdasta <xref linkend="mate-dictionary-preferences"/></para>
+      
+    </sect2>
+    
+  </sect1>
+
+</article>

@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26.0">
+<!ENTITY manrevision "2.26.0">
+<!ENTITY date "April 2006">
+<!ENTITY appname "Archive Manager">
+<!ENTITY app "<application>Archive Manager</application>">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.MATE.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Εγχειρίδιο του <application>Διαχειριστή συμπιεσμένων αρχείων</application></title>
+     <abstract role="description">
+       <para>Ο Διαχειριστής συμπιεσμένων αρχείων, γνωστός και ως Engrampa, σας επιτρέπει να δημιουργείτε, να προβάλλετε, να τροποποιείτε ή να αποσυμπιέσετε ένα συμπιεσμένο αρχείο.</para>
+     </abstract>
+    <copyright lang="en">
+      <year>2009</year>
+      <holder>Paul Cutler</holder>
+    </copyright>	    
+	<copyright lang="en"> 
+      <year>2006</year> 
+      <year>2008</year>
+      <holder>Paolo Bacchilega</holder> 
+    </copyright> 
+     <copyright lang="en">
+        <year>2003</year>
+        <year>2004</year>
+        <holder>Sun Microsystems</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2003</year> 
+      <holder>Paolo Bacchilega</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2002</year> 
+      <holder>Alexander Kirillov</holder> 
+    </copyright> 
+
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Έργο τεκμηρίωσης του MATE</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+         <para>Επιτρέπεται η αντιγραφή, αναδιανομή και/η τροποποίηση αυτού του εγγράφου υπό τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή νεότερη που εκδόθηκε από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Αμετάβλητα Τμήματα, χωρίς Κείμενο Εξωφύλλου, και χωρίς Κείμενο Οπισθοφύλλου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σ' αυτό το <ulink type="help" url="help:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανέμεται με αυτό το εγχειρίδιο.</para>
+          <para>Το εγχειρίδιο αυτό είναι τμήμα της συλλογής εγχειριδίων MATE που διανέμεται υπό την άδεια GFDL. Αν επιθυμείτε να διανήμετε το παρόν εγχειρίδιο χωριστά από την συλλογή, μπορείτε να το κάνετε προσθέτοντας ένα αντίγραφο της άδειας στο εγχειρίδιο, όπως περιγράφεται στο τμήμα 6 της άδειας.</para>
+ 
+         <para>Πολλά από τα ονόματα που χρησιμοποιούνται από επιχειρήσεις για να διακρίνουν τα προϊόντα τους και τις υπηρεσίες ζητούνται σαν εμπορικά σήματα. Όπου εμφανίζονται αυτά τα ονόματα σε κάποια τεκμηρίωση του MATE, και τα μέλη του MATE Documentation Project γνωρίουν για αυτά τα εμπορικά σήματα, τότε τα ονόματα είναι με κεφαλαία γράμματα ή με αρχικά κεφαλαία γράμματα.</para>
+ 
+         <para lang="en">
+           DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+           UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+           WITH THE FURTHER UNDERSTANDING THAT:
+ 
+           <orderedlist>
+                 <listitem>
+                   <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                     WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                     IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                     THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                     A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                     RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                     OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                     MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                     YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                     CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                     SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                     OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                     LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                     VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                     EXCEPT UNDER THIS DISCLAIMER; AND
+                   </para>
+                 </listitem>
+                 <listitem>
+                   <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                        THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                        CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                        INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                        DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                        OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                        PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                        DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                        CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                        INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                        OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                        MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                        LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                        DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                        EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                        THE POSSIBILITY OF SUCH DAMAGES.
+                   </para>
+                 </listitem>
+           </orderedlist>
+         </para>
+   </legalnotice>
+  <!-- This file contains link to license for the
+   documentation (GNU FDL), and other legal stuff such as "NO
+   WARRANTY" statement. Please do not change any of this. -->
+
+    <authorgroup> 
+       <author lang="en"> 
+         <firstname>Sun </firstname>
+         <surname>MATE Documentation Team</surname>
+         <affiliation> 
+            <orgname>Sun Microsystems</orgname>
+        </affiliation>
+      </author>
+      <author lang="en"> 
+	<firstname>Paolo</firstname> 
+	<surname>Bacchilega</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+      </author> 
+      <author lang="en"> 
+	<firstname>Alexander</firstname> 
+	<surname>Kirillov</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	  <address> <email>kirillov@math.sunysb.edu</email> </address> 
+	</affiliation> 
+      </author> 
+      <author lang="en">
+        <firstname>Paul</firstname>
+        <surname>Cutler</surname>
+        <affiliation>
+          <orgname>MATE Documentation Project</orgname>
+          <address><email>pcutler@foresightlinux.org</email></address>
+        </affiliation>
+      </author>	  
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review">
+		<ulink type="techreview" url="http://bugzilla.mate.org/show_bug.cgi?id=575419"/>
+	</releaseinfo>
+
+         <revhistory>
+                <revision lang="en">
+                  <revnumber>Archive Manager Manual V2.26.0</revnumber>
+                  <date>March 2009</date>
+                  <revdescription>
+                         <para role="author" lang="en">Paul Cutler</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+				
+                <revision lang="en">
+                  <revnumber>Archive Manager Manual V2.24.0</revnumber>
+                  <date>July 2008</date>
+                  <revdescription>
+                         <para role="author" lang="en">Paolo Bacchilega</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+				
+                <revision lang="en">
+                  <revnumber>Archive Manager Manual V2.6</revnumber>
+                  <date>April 2006</date>
+                  <revdescription>
+                         <para role="author" lang="en">Paolo Bacchilega</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.5</revnumber>
+                  <date>March 2004</date>
+                  <revdescription>
+                         <para role="author" lang="en">Sun GNOME Documentation Team</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.4</revnumber>
+                  <date>February 2004</date>
+                  <revdescription>
+                         <para role="author" lang="en">Sun GNOME Documentation Team</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.3</revnumber>
+                  <date>August 2003</date>
+                  <revdescription>
+                         <para role="author" lang="en">Sun GNOME Documentation Team</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.2</revnumber>
+                  <date>June 2003</date>
+                  <revdescription>
+                         <para role="author" lang="en">Sun GNOME Documentation Team</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.1</revnumber>
+                  <date>January 2003</date>
+                  <revdescription>
+                         <para role="author" lang="en">Paolo Bacchilega</para>                         
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.0</revnumber>
+                  <date>June 2002</date>
+                  <revdescription>
+                         <para role="author" lang="en">Alexander Kirillov</para>                         
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+         </revhistory>
+
+    <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.26.0 του Διαχειριστή συμπιεσμένων αρχείων.</releaseinfo> 
+    <legalnotice> 
+        <title>Aνάδραση</title>
+        <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με τη μικροεφαρμογή <application>Sticky Notes</application> ή αυτή την τεκμηρίωση, ακολουθήστε τις οδηγίες στην <ulink url="help:mate-feedback" type="help">Ιστοσελίδα Ανάδρασης MATE </ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo> 
+  <indexterm zone="index" lang="en"> 
+    <primary>Engrampa</primary> 
+  </indexterm> 
+  <indexterm zone="index" lang="en"> 
+    <primary>engrampa</primary> 
+  </indexterm>
+  <indexterm zone="index" lang="en"> 
+    <primary>Archiving</primary> 
+  </indexterm>
+  <indexterm zone="engrampa-add-files" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Adding files to</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-delete-files" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Deleting files from</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-open" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Opening</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-view" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Viewing</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-extract" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Extracting</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-create" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Creating</secondary>
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="engrampa-intro"> 
+    <title>Εισαγωγή</title> 
+    <para>Μπορείτε να χρησιμοποιήσετε το <application>Διαχειριστή συμπιεσμένων αρχείων</application> για να δημιουργήσετε, να προβάλετε, να τροποποιήσετε, ή να αποσυμπιέσετε ένα συμπιεσμένο αρχείο. Ένα συμπιεσμένο αρχείο είναι ένα αρχείο που περιέχει άλλα αρχεία. Μπορεί να περιέχει πολλά αρχείο, φακέλους, και υποφακέλους, συνήθως υπό συμπιεσμένη μορφή.</para>
+    <para>Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> παρέχει μόνο το γραφικό περιβάλλον, και στηρίζεται σε εργαλεία γραμμής εντολών όπως τα <command>tar</command>, <command>gzip</command>, και <command>bzip2</command> για τις λειτουργίες της συμπίεσης.</para>
+    <para>Αν έχετε εγκατεστημένα στο σύστημά σας τα κατάλληλα εργαλεία γραμμής εντολών, τότε ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> υποστηρίζει τις μορφές συμπιεσμένων αρχείων που παρατίθενται στον πιο κάτω πίνακα.</para> 
+      <informaltable frame="all">
+        <tgroup cols="2" colsep="1" rowsep="1">
+          <colspec colname="COLSPEC0" colwidth="50*"/>
+          <colspec colname="COLSPEC1" colwidth="50*"/>
+          <thead>
+            <row valign="top">
+              <entry colname="COLSPEC0">
+                <para>Μορφή</para></entry>
+              <entry colname="COLSPEC1" align="left">
+                <para>Επέκταση αρχείου</para></entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">
+              <entry><para>Συμπίεση 7-Zip</para></entry>
+              <entry align="left"><para lang="en"><filename>.7z</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Συμπίεση WinAce</para></entry>
+              <entry align="left"><para lang="en"><filename>.ace</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Συμπίεση ALZip</para></entry>
+              <entry align="left"><para lang="en"><filename>.alz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Μικρή συμπίεση AIX</para></entry>
+              <entry align="left"><para lang="en"><filename>.ar</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Συμπίεση ARJ</para></entry>
+              <entry align="left"><para lang="en"><filename>.arj</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Αρχείο cabinet</para></entry>
+              <entry align="left"><para lang="en"><filename>.cab</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Συμπίεση UNIX CPIO</para></entry>
+              <entry align="left"><para lang="en"><filename>.cpio</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Πακέτο του Debian</para></entry>
+              <entry align="left"><para lang="en"><filename>.deb</filename></para></entry>
+            </row>            
+            <row valign="top">
+              <entry><para>Εικόνα δίσκου ISO-9660 </para></entry>
+              <entry align="left"><para lang="en"><filename>.iso</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Συμπίεση Java</para></entry>
+              <entry align="left"><para lang="en"><filename>.jar</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Συμπίεση Java enterprise</para></entry>
+              <entry align="left"><para lang="en"><filename>.ear</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Συμπίεση δικτύου Java</para></entry>
+              <entry align="left"><para lang="en"><filename>.war</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Συμπίεση LHA</para></entry>
+              <entry align="left"><para><filename>.lha</filename>, <filename>.lzh</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Συμπίεση WinRAR</para></entry>
+              <entry align="left"><para lang="en"><filename>.rar</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Συμπίεση βιβλίου κόμιξ RAR</para></entry>
+              <entry align="left"><para lang="en"><filename>.cbr</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Πακέτο RPM</para></entry>
+              <entry align="left"><para lang="en"><filename>.rpm</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Ασυμπίεστο αρχείο tar</para></entry>
+              <entry align="left"><para lang="en"><filename>.tar</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Αρχείο tar συμπιεσμένο με <command>bzip</command></para></entry>
+              <entry align="left"><para><filename>.tar.bz</filename> ή <filename>.tbz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Αρχείο tar συμπιεσμένο με <command>bzip2</command></para></entry>
+              <entry align="left"><para><filename>.tar.bz2</filename> ή <filename>.tbz2</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Αρχείο tar συμπιεσμένο με <command>gzip</command></para></entry>
+              <entry align="left"><para><filename>.tar.gz</filename> ή <filename>.tgz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Αρχείο tar συμπιεσμένο με <command>lzip</command></para></entry>
+              <entry align="left"><para><filename>.tar.lz</filename> ή <filename>.tlz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Αρχείο tar συμπιεσμένο με <command>lzop</command></para></entry>
+              <entry align="left"><para><filename>.tar.lzo</filename> ή <filename>.tzo</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Αρχείο tar συμπιεσμένο με <command>compress</command></para></entry>
+              <entry align="left"><para><filename>.tar.Z</filename> ή <filename>.taz</filename></para></entry>
+            </row>
+             <row valign="top">
+              <entry><para>Αρχείο tar συμπιεσμένο με <command>7zip</command></para></entry>
+              <entry align="left"><para lang="en"><filename>.tar.7z</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Συμπίεση stuffit</para></entry>
+              <entry align="left"><para><filename>.bin</filename> ή <filename>.sit</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Συμπίεση PKZIP ή WinZip</para></entry>
+              <entry align="left"><para lang="en"><filename>.zip</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Συμπίεση βιβλίου κόμιξ ZIP</para></entry>
+              <entry align="left"><para lang="en"><filename>.cbz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Συμπίεση Zoo</para></entry>
+              <entry align="left"><para lang="en"><filename>.zoo</filename></para></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    <para>Η πιο συνηθισμένη μορφή συμπιεσμένων αρχείων στα συστήματα UNIX και Linux είναι η μορφή tar, με συμπίεση <command>gzip</command> ή <command>bzip2</command>.</para>  
+    <para>Η πιο συνηθισμένη μορφή συμπιεσμένων αρχείων στα συστήματα Microsoft Windows είναι αυτά που δημιουργήθηκαν με το <application>PKZIP</application> ή το <application>WinZip</application>.</para>
+    <sect2 id="engrampa-intro-nonarchive">
+      <title>Συμπιεσμένα μοναδικά αρχεία</title> 
+      <para>Ένα συμπιεσμένο μοναδικό αρχείο είναι ένα αρχείο που δημιουργείται όταν χρησιμοποιήσετε το <command>bzip2</command>, το <command>gzip</command>, το <command>lzip</command>, το <command>lzop</command>, το <command>compress</command> ή το <command>rzip</command> για να συμπιέσετε ένα μοναδικό αρχείο. Για παράδειγμα, το <filename>file.txt.gz</filename> δημιουργείται όταν χρησιμοποιήσετε το <command>gzip</command> για να συμπιέσετε το <filename>file.txt</filename>.</para>
+      <para>Μπορείτε να χρησιμποποιήσετε το <application>Διαχειριστή συμπιεσμένων αρχείων</application> για να δημιουργήσετε, να ανοίξετε και να αποσυμπιέσετε ένα συμπιεσμένο μοναδικό αρχείο.</para> 
+    </sect2>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="engrampa-get-start">
+    <title>Ξεκινώντας</title>
+    <para>Αυτό το τμήμα παρέχει πληροφορίες για την εκκίνηση του <application>Διαχειριστή συμπιεσμένων αρχείων</application>, και περιγράφει το γραφικό περιβάλλον του <application>Διαχειριστή συμπιεσμένων αρχείων</application>.</para>
+
+<!-- ============= To Start Engrampa ============================ -->
+         <sect2 id="engrampa-to-start">
+                <title>Για να ξεκινήσετε το <application>Διαχειριστή συμπιεσμένων αρχείων</application></title>
+                <para>Μπορείτε να ξεκινήσετε το <application>Διαχειριστή συμπιεσμένων αρχείων</application> με τους εξής τρόπους:</para>
+                <variablelist>
+                <varlistentry>
+                <term>Μενού <guimenu>Εφαρμογές</guimenu></term>
+                <listitem>
+                <para>Επιλέξτε <menuchoice><guisubmenu>Βοηθήματα</guisubmenu><guimenuitem>Διαχειριστής συμπιεσμένων αρχείων</guimenuitem></menuchoice>.</para>
+                </listitem>
+                </varlistentry>
+                <varlistentry>
+                <term>Γραμμή εντολών</term>
+                <listitem>
+                <para>Εκτελέστε την εντολή: <command>engrampa</command></para>
+                </listitem>
+                </varlistentry>
+                </variablelist>
+        </sect2>
+
+         <sect2 id="engrampa-when-start">
+                <title>Όταν εκκινήσετε το <application>Διαχειριστή συμπιεσμένων αρχείων</application></title>
+                <para>Όταν εκκινήσετε το <application>Διαχειριστή συμπιεσμένων αρχείων</application>, εμφανίζεται το ακόλουθο παράθυρο:</para>
+
+                <figure id="engrampa-FIG-main-window">
+                  <title>Παράθυρο του <application>Διαχειριστή συμπιεσμένων αρχείων</application></title>
+                  <screenshot>
+                         <mediaobject lang="en">
+                                <imageobject>
+                                  <imagedata fileref="figures/engrampa_main_window.png" format="PNG"/>
+                                         </imageobject>
+                                <textobject> <phrase>Shows Engrampa main window.</phrase>
+                                </textobject>
+                        </mediaobject>
+                  </screenshot>
+                </figure>
+
+                <para>Το παράθυρο του <application>Διαχειριστή συμπιεσμένων αρχείων</application> περιέχει τα εξής στοιχεία:</para>
+                <variablelist>
+                  <varlistentry> <term>Μπάρα μενού</term>
+                         <listitem>
+                                <para>Τα μενού στη μπάρα μενού περιέχουν όλες τις εντολές που θα χρειαστείτε για να εργαστείτε με συμπιεσμένα αρχεία στο <application>Διαχειριστή συμπιεσμένων αρχείων</application>.</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Εργαλειοθήκη</term>
+                         <listitem>
+                                <para>Η εργαλειοθήκη περιέχει ένα υποσύνολο των εντολών στις οποίες έχετε πρόσβαση από τη μπάρα μενού. Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> εμφανίζει την εργαλειοθήκη εξ ορισμού. Για να την αποκρύψετε, επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>
+Εργαλειοθήκη</guimenuitem></menuchoice>. Για να την εμφανίσετε επιλέξτε ξανά <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Εργαλειοθήκη</guimenuitem></menuchoice>.</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Μπάρα φακέλων</term>
+                         <listitem>
+                                <para>Η μπάρα φακέλων σας επιτρέπει να περιηγήστε ανάμεσα στους φακέλους μέσα σε ένα συμπιεσμένο αρχείο. Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> εμφανίζει τη μπάρα φακέλων μόνο στην προβολή φακέλων. Δείτε το <xref linkend="engrampa-view-type-folder"/> για περισσότερα.</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Περιοχή προβολής</term>
+                         <listitem>
+                                <para>Η περιοχή προβολής εμφανίζει τα περιεχόμενα του συμπιεσμένου αρχείου.</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Γραμμή κατάστασης</term>
+                         <listitem>
+                                <para>Η γραμμή κατάστασης εμφανίζει πληροφορίες για την τρέχουσα λειτουργία του <application>Διαχειριστή συμπιεσμένων αρχείων</application> και πληροφορίες για το περιεχόμενο του συμπιεσμένου αρχείου. Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> εμφανίζει τη γραμμή κατάστασης εξ ορισμού. Για να την αποκρύψετε επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Γραμμή κατάστασης</guimenuitem></menuchoice>. Για να εμφανίσετε τη γραμμή κατάστασης, επιλέξτε ξανά <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Γραμμή κατάστασης</guimenuitem></menuchoice>.</para>
+                         </listitem>
+                  </varlistentry>
+                </variablelist>
+                <para>Όταν κάνετε δεξί κλικ μέσα στο παράθυρο του <application>Διαχειριστή συμπιεσμένων αρχείων</application> η εφαρμογή εμφανίζει ένα αναδυόμενο μενού. Το αναδυόμενο μενού περιέχει τις πιο συνηθισμένες εντολές περιεχομένου.</para>
+
+     <sect3 id="engrampa-bookmarks">
+        <title>Περιήγηση στο σύστημα αρχείων</title>
+        <para>Αρκετοί διάλογοι του <application>Διαχειριστή συμπιεσμένων αρχείων</application> (<guilabel>Νέο</guilabel>, <guilabel>Άνοιγμα</guilabel>, <guilabel>Αποσυμπίεση</guilabel>,...) σας επιτρέπουν να περιηγήστε στα αρχεία και τους φακέλους του υπολογιστή σας. Αναφερθείτε στον <ulink type="help" url="help:user-guide?filechooser-open">Οδηγό χρήσης επιφάνειας εργασίας</ulink> για να μάθετε περισσότερα για τη χρήση των διαλόγων περιήγησης.</para>
+        <para>Μπορείτε επίσης να αναφερθείτε στο τμήμα για τους <ulink type="help" url="help:user-guide?caja-bookmarks">Σελιδοδείκτες</ulink> του Οδηγού χρήσης επιφάνειας εργασίας για να μάθετε πώς να χρησιμοποιείτε το πλαίσιο <guilabel>Τοποθεσίες</guilabel> για να έχετε πρόσβαση στις αγαπημένες σας τοποθεσίες.</para>
+     </sect3>
+   </sect2>
+</sect1>
+
+
+
+<!-- ======= Working with archives ============= --> 
+
+<sect1 id="engrampa-working">
+      <title>Δουλεύοντας με συμπιεσμένα αρχεία</title>
+      <para>Όταν χρησιμοποιείτε το <application>Διαχειριστή συμπιεσμένων αρχείων</application> για να δουλέψετε με ένα συμπιεσμένο αρχείο, όλες οι αλλαγές αποθηκεύονται αυτόματα στο δίσκο. Για παράδειγμα, αν σβήσετε ένα αρχείο από ένα συμπιεσμένο αρχείο, ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> σβήνει το αρχείο μόλις πατήσετε <guibutton>Εντάξει</guibutton>. Αυτή η συμπεριφορά είναι διαφορετική  από εκείνη των περισσότερων εφαρμογών, οι οποίες αποθηκεύουν τις αλλαγές στο δίσκο μόνο όταν κλείσετε την εφαρμογή ή όταν επιλέξετε <guimenuitem>Αποθήκευση</guimenuitem> από το μενού.</para>
+      <para>Αν ένα συμπιεσμένο αρχείο είναι πολύ μεγάλο, ή αν έχετε ένα αργό σύστημα, μερικές λειτουργίες συμπίεσης μπορεί να διαρκέσουν αρκετά. Για να ακυρώσετε την τρέχουσα λειτουργία πατήστε το <keycap>Esc</keycap>. Εναλλακτικά, επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Διακοπή</guimenuitem></menuchoice>, ή πατήστε το κουμπί <guibutton>Διακοπή</guibutton> στην εργαλειοθήκη.</para>      
+      <para lang="en">
+        In <application>Archive Manager</application>, you can perform the same action in several ways. For example, you can open an archive in the following ways:
+                  <informaltable frame="all">
+                    <tgroup cols="2" colsep="1" rowsep="1">
+                      <colspec colname="COLSPEC0" colwidth="50*"/>
+                      <colspec colname="COLSPEC1" colwidth="50*"/>
+                      <thead>
+                        <row valign="top">
+                          <entry colname="COLSPEC0">
+                            <para lang="en">UI Component</para></entry>
+                          <entry colname="COLSPEC1" align="left"> 
+                            <para lang="en">Action</para></entry>
+                        </row>
+                      </thead>
+                      <tbody>
+                        <row valign="top">               
+                          <entry><para lang="en">Window</para></entry>
+                          <entry><para lang="en">Drag an archive into the <application>Archive Manager</application> window from another application such as a file manager.</para></entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Menubar</para></entry>
+                          <entry><para lang="en">Choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Open</guimenuitem></menuchoice>.</para>
+           <para lang="en">If you have recently opened the archive, it will be listed directly in the <menuchoice><guimenu>Archive</guimenu></menuchoice> menu.</para> 
+</entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Toolbar</para></entry>
+                          <entry><para lang="en">Click on the <guibutton>Open</guibutton> toolbar button.</para>
+           <para lang="en">If you have recently opened the archive, click on the down arrow near the <guibutton>Open</guibutton> toolbar button.</para></entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Right-click popup menu</para></entry>
+                          <entry><para lang="en">Right-click on the archive, then choose <guilabel>Open</guilabel> from the popup menu.</para></entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Shortcut keys</para></entry>
+                          <entry><para lang="en">Press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo>.</para></entry>
+                        </row>
+                      </tbody>
+                    </tgroup>
+                  </informaltable>
+      </para>
+      <para>Αυτό το εγχειρίδιο τεκμηριώνει τη λειτουργικότητα από τη μπάρα μενού.</para>
+
+    <sect2 id="engrampa-pattern">
+      <title>Κριτήρια ονομάτων αρχείων</title>
+      <para>Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> σας επιτρέπει να προσθέτετε, να αποσυμπιέζετε ή να διαγράφετε αρκετά αρχεία ταυτόχρονα. Για να εφαρμόσετε μια ενέργεια σε όλα τα αρχεία τα οποία πληρούν ένα συγκεκριμένο κριτήριο, εισάγετε το κριτήριο στο πεδίο κειμένου. Το κριτήριο μπορεί να περιέχει τους συνηθισμένους χαρακτήρες μπαλαντέρ όπως το <keycap>*</keycap> για να ταιριάσει οποιαδήποτε συμβολοσειρά, και το <keycap>?</keycap> για να ταιριάσει οποιοδήποτε μοναδικό χαρακτήρα. Μπορείτε να εισάγετε πολλαπλά κριτήρια χωρισμένα με ελληνικό ερωτηματικό. Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> θα εφαρμόσει την ενέργεια σε όλα τα αρχεία τα οποία πληρούν τουλάχιστον ένα από τα κριτήρια. Τα παραδείγματα στον ακόλουθο πίνακα δείχνουν πώς να χρησιμοποιείτε τα κριτήρια ονομάτων αρχείων για να επιλέγετε αρχεία.</para>
+      <informaltable frame="all">
+        <tgroup cols="2" colsep="1" rowsep="1">
+          <colspec colname="COLSPEC0" colwidth="50*"/>
+          <colspec colname="COLSPEC1" colwidth="50*"/>
+          <thead>
+            <row valign="top">
+              <entry colname="COLSPEC0">
+                <para>Κριτήριο</para></entry>
+              <entry colname="COLSPEC1" align="left"> 
+                <para>Αρχεία που ταιριάζουν</para></entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">               
+              <entry><para lang="en"><filename>*</filename></para></entry>
+              <entry align="left"><para>Όλα τα αρχεία</para></entry>
+            </row>
+            <row valign="top">               
+              <entry><para lang="en"><filename>*.tar*</filename></para></entry>
+              <entry align="left"><para>Όλα τα αρχεία με επέκταση <filename>tar</filename>, συμπεριλαμβανομένων εκείνων στα οποία η επέκταση <filename>tar</filename> ακολουθείται από οποιαδήποτε σειρά συμβόλων, όπως <filename>filename.tar.gz</filename></para></entry>
+            </row>
+            <row valign="top">               
+              <entry><para lang="en"><filename>*.jpg; *.jpeg</filename></para></entry>
+              <entry align="left"><para>Όλα τα αρχεία με επέκταση <filename>jpg</filename> και όλα τα αρχεία με επέκταση <filename>jpeg</filename></para></entry>
+            </row>
+            <row valign="top">               
+              <entry><para lang="en"><filename>file?.gz</filename></para></entry>
+              <entry align="left"><para>Όλα τα αρχεία με επέκταση <filename>gz</filename> που έχουν το όνομα "file" ακολουθούμενο από οποιοδήποτε μοναδικό χαρακτήρα, π.χ. <filename>file2.gz</filename>, <filename>filex.gz</filename>.</para></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </sect2>
+
+<!-- ======= To open an archive ============= --> 
+
+<sect2 id="engrampa-open">
+      <title>Για να ανοίξετε ένα συμπιεσμένο αρχείο</title>
+      <para lang="en">
+	To open an archive, perform the following steps:
+        <orderedlist>
+          <listitem>
+           <para lang="en">Choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Open</guimenuitem></menuchoice> to display the <guilabel>Open</guilabel> dialog. Alternatively press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo>, or click <guibutton>Open</guibutton> in the toolbar.</para> 
+          </listitem>
+          <listitem>
+           <para lang="en">Select the archive that you want to open.</para> 
+          </listitem>
+          <listitem>
+           <para lang="en">Click <guibutton>Open</guibutton>.</para> 
+          </listitem>
+        </orderedlist>
+      </para>
+      <para lang="en"><application>Archive Manager</application> automatically determines the archive type, and displays:
+        <itemizedlist>
+          <listitem>
+            <para lang="en">The archive name in the window titlebar</para>
+          </listitem>
+          <listitem>
+            <para lang="en">The archive contents in the display area</para>
+          </listitem>
+          <listitem>
+            <para lang="en">The number files and folders (objects) in the current location, and their size when uncompressed, in the statusbar</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>Για να ανοίξετε ένα άλλο συμπιεσμένο αρχείο, επιλέξτε ξανά <menuchoice><guimenu>Συμπεισμένο αρχείο</guimenu><guimenuitem>Άνοιγμα</guimenuitem></menuchoice>. Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> ανοίγει κάθε αρχείο σε ένα νέο παράθυρο. Δε μπορείτε να ανοίξετε ένα άλλο συμπιεσμένο αρχείο στο ίδιο παράθυρο.</para>
+      <para>Αν προσπαθήσετε να ανοίξετε ένα συμπιεσμένο αρχείο που δημιουργήθηκε σε μια μορφή την οποία δεν αναγνωρίζει ο <application>Διαχειριστής συμπιεσμένων αρχείων</application>, η εφαρμογή εμφανίζει ένα μήνυμα λάθους. Δείτε το <xref linkend="engrampa-intro"/> για μια λίστα με τις μορφές που υποστηρίζονται.</para>
+  </sect2>
+
+<!-- ======= Selecting files in an archive  ============= --> 
+    <sect2 id="engrampa-select-files">
+      <title>Για να επιλέξετε αρχεία σε ένα συμπιεσμένο αρχείο</title>
+    <para>Για να επιλέξετε όλα τα αρχεία σε ένα συμπιεσμένο αρχείο, επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Επιλογή όλων</guimenuitem></menuchoice> ή πατήστε <keycombo><keycap>Ctrl</keycap><keycap>A</keycap></keycombo>.</para>
+      <para>Για να αποεπιλέξετε όλα τα αρχεία σε ένα συμπιεσμένο αρχείο, επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Αποεπιλογή όλων</guimenuitem></menuchoice> ή πατήστε <keycombo><keycap>Shift</keycap><keycap>Ctrl</keycap><keycap>A</keycap></keycombo>.</para>
+    </sect2>
+
+  <!-- =========== Extracting Files From an Archive ==================== -->
+
+  <sect2 id="engrampa-extract"> 
+    <title>Για να αποσυμπιέσετε αρχεία από ένα συμπιεσμένο αρχείο</title> 
+    <para lang="en">
+	To extract files from an open archive, perform the following steps:
+        <orderedlist>
+        <listitem><para lang="en">
+        Select the files that you want to extract.  To select more files, press-and-hold <keycap>Ctrl</keycap> and click on the files you want to select.</para>
+        </listitem>
+        <listitem><para lang="en">
+        Choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Extract</guimenuitem></menuchoice> to display the <guilabel>Extract</guilabel> dialog.  Alternatively click <guibutton>Extract</guibutton> in the toolbar.</para>
+        </listitem>
+        <listitem><para lang="en">
+        Select the folder where <application>Archive Manager</application> extracts the files.</para>
+        </listitem>
+        <listitem><para lang="en">
+        Select the required extract options. For more information about the extract options, see <xref linkend="engrampa-extract-options"/>.</para>
+        </listitem>
+        <listitem><para lang="en">
+        Click <guibutton>Extract</guibutton>.</para>
+        <note>
+          <para lang="en">
+            If all of the files in the archive are protected by a password, and you have not specified it, <application>Archive Manager</application> asks you to enter the password.
+          </para>
+          <para lang="en">
+            If some but not all of the files in the archive are protected by a password, and you have not specified the password, <application>Archive Manager</application> does not ask for a password. However, <application>Archive Manager</application> extracts only the unprotected files.
+          </para>
+          <para lang="en">
+            For more information about passwords, see <xref linkend="engrampa-encrypt-files"/>.
+          </para>
+        </note>
+        </listitem>
+        </orderedlist>
+        </para>
+      <para>Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> επίσης παρέχει τρόπους αποσυμπίεσης αρχείων από ένα συμπιεσμένο αρχείο στον περιηγητή αρχείων, χωρίς το άνοιγμα του παραθύρου του <application>Διαχειριστή συμπιεσμένων αρχείων</application>. Δείτε το <xref linkend="engrampa-fmgr"/> για περισσότερες πληροφορίες.</para>
+    <para>Η λειτουργία Αποσυμπίεσης αποσυμπιέζει ένα <emphasis>αντίγραφο</emphasis> των επιλεγμένων αρχείων από το συμπιεσμένο αρχείο. Τα αποσυμπιεσμένα αρχεία έχουν τα ίδια δικαιώματα πρόσβασης και την ίδια ημερομηνία μετατροπής όπως τα αρχικά αρχείο που προστέθηκαν στο συμπιεσμένο αρχείο.</para>
+    <para>Η λειτουργία Αποσυμπίεσης δεν αλλάζει τα περιεχόμενα του συμπιεσμένου αρχείου. Για πληροφορίες σχετικά με τη διαγραφή αρχείων από ένα συμπιεσμένο αρχείο δείτε <xref linkend="engrampa-delete-files"/>.</para>
+  </sect2>
+    
+<!-- ======= Closing the Archive ============= --> 
+  <sect2 id="engrampa-archive-close">
+    <title>Για να κλείσετε ένα συμπιεσμένο αρχείο</title>
+    <para lang="en">To close the current archive and the current <application>Archive Manager</application> window, choose <menuchoice> <guimenu>Archive</guimenu> <guimenuitem>Close</guimenuitem> </menuchoice>, or press <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>.
+    </para>
+    <note>
+      <para>Δεν υπάρχει τρόπος να κλείσετε το τρέχον συμπιεσμένο αρχείο αλλά όχι το παράθυρο του <application>Διαχειριστή συμπιεσμένων αρχείων</application>.</para>
+    </note>
+  </sect2>
+</sect1>
+
+
+<!-- =============  Creating Archives ============================= -->
+<sect1 id="engrampa-creating"> 
+    <title>Δημιουργία συμπιεσμένων αρχείων</title> 
+    <para>Πέρα από το άνοιγμα υφιστάμενων συμπιεσμένων αρχείων, μπορείτε επίσης να δημιουργήσετε νέα συμπιεσμένα αρχεία με τον <application>Διαχειριστή συμπιεσμένων αρχείων</application>.</para>
+    <sect2 id="engrampa-create"> 
+    <title>Για να δημιουργήσετε ένα συμπιεσμένο αρχείο</title> 
+    <para lang="en">
+      To create an archive, perform the following steps:
+      <orderedlist>
+        <listitem>
+          <para lang="en">Choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>New</guimenuitem></menuchoice> to display the <guilabel>New</guilabel> dialog.  Alternatively press <keycombo><keycap>Ctrl</keycap><keycap>N</keycap></keycombo>, or click <guibutton>New</guibutton> in the toolbar.
+          </para>
+        </listitem>
+        <listitem>
+          <para lang="en">Specify the folder where <application>Archive Manager</application> places the new archive clicking on the entry in the <guilabel>Save in folder</guilabel> drop-down list. If the folder is not present in list, click on <guilabel>Browse for other folders</guilabel>, and select the folder. Alternatively, enter the path in the <guilabel>Name</guilabel> text box.
+          </para>
+        </listitem>
+        <listitem>
+          <para lang="en">Enter the name of the new archive, including the file extension, in the <guilabel>Name</guilabel> text box.  Alternatively you can specify the archive name without extension, and then select the archive type from the <guilabel>Archive type</guilabel> drop-down menu, this way the extension will be added automatically.  
+          </para>
+        </listitem>
+        <listitem><para lang="en">
+        Select the required create options clicking on <guilabel>Other Options</guilabel>. For more information about the create options, see <xref linkend="engrampa-create-options"/>.</para>
+        </listitem>
+        <listitem>
+          <para lang="en">Click <guibutton>New</guibutton>. <application>Archive Manager</application> creates an empty archive, but does not yet write the archive to disk. 
+          </para>
+        </listitem>
+        <listitem>
+          <para lang="en">Add files to the new archive as described in <xref linkend="engrampa-add-files"/>.  
+                <note>
+                  <para lang="en"><application>Archive Manager</application> writes a new archive to disk only when the archive contains at least one file. If you create a new archive and quit <application>Archive Manager</application> before you add any files to the archive, <application>Archive Manager</application> deletes the archive.
+                  </para>
+                </note>
+          </para>
+        </listitem>
+      </orderedlist>
+    </para>
+</sect2>
+
+    <!-- ======= Adding files to an archive  ============= --> 
+  <sect2 id="engrampa-add-files">
+    <title>Για να προσθέσετε αρχεία στο συμπιεσμένο αρχείο</title>
+    <para lang="en">
+      To add files to an archive, perform the following steps:
+      <orderedlist>
+         <listitem>
+           <para lang="en">Decide where in the archive you want to add the files, then open that location in the archive.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Add Files</guimenuitem></menuchoice> to display the <guilabel>Add Files</guilabel> dialog, or click <guibutton>Add Files</guibutton> in the toolbar.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Select the files that you want to add.  To select more files press-and-hold <keycap>Ctrl</keycap> and click the files.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Click <guibutton>Add</guibutton>. <application>Archive Manager</application> adds the files to the current folder in the archive.
+          </para> 
+         </listitem>
+      </orderedlist>
+    </para>
+    <para>Δε μπορείτε να προσθέσετε φακέλους στο συμπιεσμένο αρχείο με το διάλογο <guilabel>Προσθήκη αρχείων</guilabel>. Για να προσθέσετε ένα φάκελο δείτε το <xref linkend="engrampa-add-folder"/>.</para>
+    <para>Ο διάλογος <guilabel>Προσθήκη αρχείων</guilabel> παρέχει την επιλογή <guilabel>Προσθήκη μόνο αν είναι νεώτερο</guilabel>, δείτε το <xref linkend="engrampa-add-options"/> για περισσότερες πληροφορίες γι' αυτή την επιλογή.</para>
+    <para>Μπορείτε επίσης να προσθέσετε αρχεία σε ένα συμπιεσμένο αρχείο από ένα παράθυρο περιηγητή αρχείων, χωρίς να ανοίξετε ένα παράθυρο του <application>Διαχειριστή συμπιεσμένων αρχείων</application>. Δείτε το <xref linkend="engrampa-fmgr"/> για περισσότερες πληροφορίες.</para>
+    <para>Η λειτουργία Προσθήκης αρχείων προσθέτει ένα <emphasis>αντίγραφο</emphasis> των καθορισμένων αρχείων ή φακέλο στο συμπιεσμένο αρχείο. Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> δε διαγράφει τα αρχικά αρχείο, τα οποία παραμένουν χωρίς αλλαγή στο σύστημα αρχείων. Τα αντίγραφα που προστίθενται στο συμπιεσμένο αρχείο έχουν τα ίδια δικαιώματα πρόσβασης και την ίδια ημερομηνία τροποποίησης όπως τα αρχικά αρχεία.</para>
+    </sect2>
+
+<!-- ======= Adding files - Adding folder  ============= --> 
+    <sect2 id="engrampa-add-folder">
+      <title>Για να προσθέσετε ένα φάκελο στο συμπιεσμένο αρχείο</title>
+    <para lang="en">
+      To add a folder to an archive, perform the following steps:
+      <orderedlist>
+         <listitem>
+           <para lang="en">Decide where in the archive you want to add the files, then open that location in the archive.</para>
+         </listitem>
+         <listitem>
+           <para lang="en">Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Add a Folder</guimenuitem></menuchoice> to display the <guilabel>Add a Folder</guilabel> dialog.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Select the folder that you want to add.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Click <guibutton>Add</guibutton>. <application>Archive Manager</application> adds the folder to the current folder in the archive.
+          </para> 
+         </listitem>
+      </orderedlist>
+    </para>
+    <para>Ο διάλογος <guilabel>Προσθήκη φακέλου</guilabel> παρέχει μερικές προχωρημένες επιλογές. Δείτε το <xref linkend="engrampa-add-options"/> για περισσότερες πληροφορίες.</para>
+    </sect2>
+
+  <!-- ======= Converting an Archive to Another Format ============= --> 
+  <sect2 id="engrampa-convert-archive">
+    <title>Για να μετατρέψετε ένα συμπιεσμένο αρχείο σε άλλη μορφή</title>
+    <para>Για να μετατρέψετε ένα συμπιεσμένο αρχείο σε μια άλλη μορφή και να το αποθηκεύσετε σαν καινούριο αρχείο, ακολουθήστε τα εξής βήματα:</para>
+    <orderedlist>
+      <listitem>
+        <para>Ανοίξτε το αρχείο που θέλετε να μετατρέψετε.</para>
+      </listitem>
+      <listitem>
+        <para>Επιλέξτε <menuchoice><guimenu>Συμπιεσμένο αρχείο</guimenu><guimenuitem>Αποθήκευση ως</guimenuitem></menuchoice> για να εμφανίσετε το διάλογο <guilabel>Αποθήκευση</guilabel>.</para>
+      </listitem>
+      <listitem>
+        <para>Εισάγετε το νέο όνομα αρχείο στο πεδίο <guilabel>Όνομα</guilabel>.</para>
+      </listitem>
+      <listitem>
+        <para>Επιλέξτε τη νέα μορφή από την αναδιπλούμενη λίστα <guilabel>Τύπος συμπιεσμένου αρχείου</guilabel>. Εναλλακτικά, εισάγετε την επέκταση του αρχείου στο πεδίο <guilabel>Όνομα</guilabel>, και επιλέξτε <guilabel>Αυτόματη</guilabel> από την αναδιπλούμενη λίστα <guilabel>Τύπος συμπιεσμένου αρχείου</guilabel>.</para>
+      </listitem>
+      <listitem>
+        <para>Διαλέξτε τις απαιτούμενες επιλογές πατώντας στο <guilabel>Άλλες επιλογές</guilabel>. Για περισσότερες πληροφορίες για τις επιλογές δημιουργίας, δείτε το <xref linkend="engrampa-create-options"/>.</para>
+      </listitem>      
+      <listitem>
+        <para>Πατήστε <guibutton>Δημιουργία</guibutton>.</para>
+        <note>
+          <para>Αν όλα τα αρχεία στο συμπιεσμένο αρχείο προστατεύονται από κωδικό πρόσβασης, και δεν τον έχετε καθορίσει, τότε ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> σας τον ζητάει.</para>
+          <para>Αν μερικά αλλά όχι όλα τα αρχεία στο συμπιεσμένο αρχείο προστατεύονται από κωδικό πρόσβασης, και δεν τον έχετε καθορίσει, τότε ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> δε θα σας τον ζητήσει. Ωστόσο, ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> θα αντιγράψει μόνο τα μη προστατευμένα αρχεία στο νέο συμπιεσμένο αρχείο.</para>
+          <para>Για περισσότερες πληροφορίες σχετικά με τους κωδικούς πρόσβασης δείτε το <xref linkend="engrampa-encrypt-files"/>.</para>
+        </note>
+      </listitem>
+    </orderedlist>
+  </sect2>
+</sect1>
+
+<!-- ======= Operations on Archive Contents ============= --> 
+<sect1 id="engrampa-modify-contents">
+  <title>Τροποποίηση των περιεχομένων ενός συμπιεσμένου αρχείου</title>
+  <para>Μπορείτε να τροποποιήσετε τα περιεχόμενα ενός συμπιεσμένου αρχείου με διάφορους τρόπους.</para>
+
+<!-- ======= Encrypting files in an archive  ============= --> 
+    <sect2 id="engrampa-encrypt-files">
+      <title>Για να κωδικοποιήσετε αρχεία σε ένα συμπιεσμένο αρχείο</title>
+    <para>Για λόγους ασφάλειας, μπορεί να θέλετε να κωδικοποιήσετε τα αρχεία που προσθέτετε σε ένα συμπιεσμένο αρχείο.</para>
+      <para>Αν ο τύπος του συμπιεσμένου αρχείου υποστηρίζει κωδικιποίηση, μπορείτε να καθορίσετε έναν κωδικό πρόσβασης για να κωδικοποιήσετε τα αρχεία που προσθέτετε στο συμπιεσμένο αρχείο.</para>
+      <note>
+        <para>Μέχρι στιγμής, μόνο τα συμπιεσμένα αρχεία τύπου 7-Zip, ZIP, RAR και ARJ υποστηρίζουν κωδικοποίηση.</para>
+      </note>
+     <para>Για να καθορίσετε έναν κωδικό πρόσβασης για την κωδικοποίηση, ακολουθήστε τα εξής βήματα:</para>
+       <orderedlist>
+          <listitem><para lang="en">Choose <menuchoice><guimenu>Edit</guimenu> <guimenuitem>Password</guimenuitem></menuchoice> to display the <guilabel>Password</guilabel> dialog.</para></listitem> 
+<listitem><para>Εισάγετε τον κωδικό πρόσβασης στο πεδίο <guilabel>Κωδικός πρόσβασης</guilabel>.</para></listitem>
+<listitem><para>Πατήστε <guibutton>Εντάξει</guibutton>.</para></listitem>
+       </orderedlist>
+    <para>Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> χρησιμοποιεί τον κωδικό πρόσβασης για να κωδικοποιήσει τα αρχεία τα οποία προσθέτετε στο τρέχον συμπιεσμένο αρχείο, και να τα αποκωδικοποιήσει όταν τα αποσυμπιέζετε από το συμπιεσμένο αρχείο. Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> διαγράφει τον κωδικό όταν κλείσετε το συμπιεσμένο αρχείο.</para>
+      <para>Για τον τρόπο που ελέγχετε ένα συμπιεσμένο αρχείο αν περιέχει κωδικοποιημένα αρχεία, δείτε <xref linkend="engrampa-extra-info"/>.</para>
+      <note>
+      <para>Η κωδικοποίηση που παρέχεται από τα συμπιεσμένα αρχεία είναι αδύναμη και ανασφαλής. Αν η ασφάλεια είναι σημαντική για σας, χρησιμοποιήστε ένα δυνατό εργαλείο κωδικοποίησης όπως το <ulink url="http://www.gnupg.org" type="http">GNU Privacy Guard</ulink>.</para>
+      </note>
+    </sect2>
+
+<!-- ======= Renaming files in an archive  ============= --> 
+  <sect2 id="engrampa-rename-files">
+    <title>Για να μετονομάσετε ένα αρχείο μέσα σ' ένα συμπιεσμένο αρχείο</title>
+    <para>Για να μετονομάσετε ένα αρχείο μέσα σε ένα συμπιεσμένο αρχείο, ακολουθήστε τα εξής βήματα:</para>
+      <orderedlist>
+        <listitem>
+          <para>Επιλέξτε το αρχείο που θέλετε να μετονομάσετε.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Μετονομασία</guimenuitem></menuchoice>, ή πατήστε <keycombo><keycap>F2</keycap></keycombo>, για να εμφανίσετε το διάλογο <guilabel>Μετονομασία</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Εισάγετε το νέο όνομα αρχείου στο πεδίο <guilabel>Νέο όνομα αρχείου</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Πατήστε <guibutton>Μετονομασία</guibutton>.</para>
+        </listitem>
+      </orderedlist>
+  </sect2>
+
+<!-- ======= Copying files in an archive  ============= --> 
+  <sect2 id="engrampa-copy-files">
+    <title>Για να αντιγράψετε αρχεία σε ένα συμπιεσμένο αρχείο</title>
+    <para>Για να αντιγράψετε αρχεία σε ένα συμπιεσμένο αρχείο, ακολουθήστε τα εξής βήματα:</para>
+      <orderedlist>
+        <listitem>
+          <para>Επιλέξτε τα αρχεία που θέλετε να αντιγράψετε.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Αντιγραφή</guimenuitem></menuchoice>, ή πατήστε <keycombo><keycap>Ctrl</keycap><keycap>C</keycap></keycombo>.</para>
+        </listitem>
+        <listitem>
+          <para>Ανοίξτε την τοποθεσία στην οποία θέλετε να βάλετε τα αντιγραμμένα αρχεία.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Επικόλληση</guimenuitem></menuchoice>, ή πατήστε <keycombo><keycap>Ctrl</keycap><keycap>V</keycap></keycombo>.</para>
+        </listitem>
+      </orderedlist>
+  </sect2>
+
+<!-- ======= Moving files in an archive  ============= --> 
+  <sect2 id="engrampa-move-files">
+    <title>Για να μετακινήσετε αρχεία μέσα σε ένα συμπιεσμένο αρχείο</title>
+    <para>Για να μετακινήσετε αρχεία σε ένα συμπιεσμένο αρχείο, ακολουθήστε τα εξής βήματα:</para>
+      <orderedlist>
+        <listitem>
+          <para>Επιλέξτε τα αρχεία τα οποία θέλετε να μετακινήσετε.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Αποκοπή</guimenuitem></menuchoice>, ή πατήστε <keycombo><keycap>Ctrl</keycap><keycap>X</keycap></keycombo>.</para>
+        </listitem>
+        <listitem>
+          <para>Ανοίξτε την τοποθεσία στην οποία θέλετε να βάλετε τα αποκομμένα αρχεία.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Επικόλληση</guimenuitem></menuchoice>, ή πατήστε <keycombo><keycap>Ctrl</keycap><keycap>V</keycap></keycombo>.</para>
+        </listitem>
+      </orderedlist>
+  </sect2>
+
+<!-- ======= Deleting files from an archive  ============= --> 
+  <sect2 id="engrampa-delete-files">
+    <title>Για να διαγράψετε αρχεία από ένα συμπιεσμένο αρχείο.</title>
+    <para>Για να διαγράψετε αρχεία από ένα συμπιεσμένο αρχείο, ακολουθήστε τα εξής βήματα: </para>
+      <orderedlist>
+        <listitem>
+          <para>Επιλέξτε τα αρχεία τα οποία θέλετε να διαγράψετε.</para>
+        </listitem>
+        <listitem>
+          <para>Επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Διαγραφή</guimenuitem></menuchoice> ή πατήστε <keycap>Διαγραφή</keycap> για να εμφανίσετε το διάλογο <guilabel>Διαγραφή</guilabel>.</para>
+        </listitem>
+        <listitem>
+          <para>Διαλέξτε μια από τις ακόλουθες επιλογές διαγραφής:</para>
+          <variablelist>
+            <varlistentry>
+              <term lang="en"><guilabel>All files</guilabel></term>
+              <listitem>
+                <para>Όλα τα αρχεία</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term lang="en"><guilabel>Selected files</guilabel></term>
+              <listitem>
+                <para>Διαγραφή των επιλεγμένων αρχείων από το συμπιεσμένο αρχείο.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term lang="en"><guilabel>Files</guilabel></term>
+              <listitem>
+                <para>Διαγραφή από το συμπιεσμένο αρχείο όλων των αρχείων τα οποία πληρούν το καθορισμένο κριτήριο. Δείτε το <xref linkend="engrampa-pattern"/> για περισσότερες πληρφορίες σχετικά με τα κριτήρια ονομάτων αρχείων.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+        </listitem>
+        <listitem>
+          <para>Πατήστε <guibutton>Εντάξει</guibutton>.</para>
+        </listitem>
+      </orderedlist>
+  </sect2>
+
+<!-- =============  Modify a File in an Archive ==================== -->
+  <sect2 id="engrampa-modify-archive-file"> 
+    <title>Για να τροποποιήσετε ένα αρχείο σε ένα συμπιεσμένο αρχείο</title> 
+    <para lang="en">
+      To modify a file in an archive perform the following steps:
+      <orderedlist>
+      <listitem><para lang="en">Double-click the file that you want to open. Alternatively right-click the file and choose <menuchoice><guimenuitem>Open</guimenuitem></menuchoice>.</para></listitem>
+      <listitem><para lang="en">Edit the file opened in step 1, and then save your changes.</para></listitem>
+      <listitem><para lang="en"><application>Archive Manager</application> shows a confirmation dialog, asking confirmation to update the file in the archive with the changes you made.</para></listitem>
+      <listitem><para lang="en">Click on <guilabel>Update</guilabel>.</para></listitem>
+      </orderedlist>
+    </para>
+    <para>Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> χρησιμοποιεί την αντιστοιχία μεταξύ τύπων αρχείων και προγραμμάτων που έχει οριστεί στο σύστημα για να καθορίσει την κατάλληλη εφαρμογή για να ανοίξει ένα συγκεκριμένο αρχείο. Αυτές οι αντιστοιχίες μπορούν να προβληθούν και να τροποποιηθούν στην καρτέλα <guilabel>Άνοιγμα με</guilabel> στο διάλογο των ιδιοτήτων του αρχείου. Αν ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> δε μπορεί να καθορίσει μια κατάλληλη αντιστοιχία, τότε θα εμφανίσει το διάλογο <guilabel>Άνοιγμα αρχείων</guilabel> επιτρέποντάς σας να επιλέξετε εσείς μια εφαρμογή, όπως περιγράφεται πιο κάτω.</para>
+    <sect3 id="engrampa-modifiy-archive-file-custom-app">
+    <title>Για να τροποποιήσετε ένα αρχείο σε ένα συμπιεσμένο αρχείο με μια ειδική εφαρμογή</title>
+    <para lang="en">
+      You can use an application specified by you, rather than the default application, to modify a file. To use an external application to open a file:
+      <orderedlist>
+      <listitem><para lang="en">Right click the file.</para></listitem>
+      <listitem><para lang="en">Choose <menuchoice><guimenuitem>Open With...</guimenuitem></menuchoice>.</para></listitem>
+      </orderedlist>
+    </para>    
+    <para>Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> εμφανίζει το διάλογο <guilabel>Άνοιγμα αρχείων</guilabel>, στον οποίο παρατίθενται όλες οι εφαρμογές που μπορούν να ανοίξουν αρχεία του καθορισμένου τύπου. Για να επιλέξετε μία από αυτές τις εφαρμογές, κάντε διπλό κλικ στο όνομα τη εφαρμογής, ή πατήστε στο όνομα της εφαρμογής και μετά πατήστε <guibutton>Άνοιγμα</guibutton>. Εναλλακτικά, εισάγετε το όνομα της εφαρμογής στο πεδίο <guilabel>Εφαρμογή</guilabel> και μετά πατήστε <guibutton>Άνοιγμα</guibutton> για να τρέξετε την εφαρμογή της επιλογής σας.</para>
+    <para>Όταν ξεκινήσει η εφαρμογή, ακολουθήστε τη διαδικασία από το βήμα 2 όπως περιγράφεται στο <xref linkend="engrampa-modify-archive-file"/>.</para>
+    </sect3>
+  </sect2>
+</sect1>
+
+
+<!-- ======= Viewing an archive ============= --> 
+<sect1 id="engrampa-view">
+  <title>Προβολή συμπιεσμένων αρχείων</title>
+  <para>Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> σας επιτρέπει να βλέπετε ορισμένα χαρακτηριστικά ενός συμπιεσμένου αρχείου.</para>
+
+<!-- ======= Archive Properties ============= --> 
+    <sect2 id="engrampa-view-archive-properties">
+      <title>Για να προβάλατα τις ιδιότητες ενός συμπιεσμένου αρχείου</title>
+      <para lang="en">To view the properties of an archive, choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Properties</guimenuitem></menuchoice> to display the <guilabel>Properties</guilabel> dialog. The <guilabel>Properties</guilabel> dialog displays the following information about the archive:
+            <variablelist>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Name</guilabel></term>
+	        <listitem><para lang="en">The name of the archive. 
+                </para></listitem>
+	      </varlistentry>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Location</guilabel></term>
+	        <listitem><para lang="en">The position of the archive in the file system. 
+                </para></listitem>
+	      </varlistentry>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Modified on</guilabel></term>
+	        <listitem><para lang="en">The date and time at which the archive was last modified. 
+                </para></listitem>
+	      </varlistentry>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Archive size</guilabel></term>
+	        <listitem><para lang="en">The size of the archive contents when compressed.
+                </para></listitem>
+	      </varlistentry>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Content size</guilabel></term>
+	        <listitem><para lang="en">The size of the archive contents when uncompressed.  This information is also available in the statusbar.
+                </para></listitem>
+	      </varlistentry>
+
+	      <varlistentry>
+	        <term lang="en"><guilabel>Compression ratio</guilabel></term>
+	        <listitem><para lang="en">The compression ratio is a value used to describe the reduction in size of the data. For example a compression ratio of 5 means that the compressed archive is 1/5th the size of the original data. 
+                </para></listitem>
+	      </varlistentry>
+
+	      <varlistentry>
+	        <term lang="en"><guilabel>Number of files</guilabel></term>
+	        <listitem><para lang="en">The number of files in the archive. 
+                </para></listitem>
+	      </varlistentry>
+            </variablelist>
+      </para>
+    </sect2>
+ 
+
+<!-- ======= Archive Contents ============= --> 
+    <sect2 id="engrampa-view-archive-contents">
+      <title>Για να προβάλετε τα περιεχόμενα ενός συμπιεσμένου αρχείου</title>
+
+      <para lang="en"> <application>Archive Manager</application> displays the archive contents in the main window as a file list with the following columns:
+        <variablelist>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Name</guilabel></term>
+	    <listitem><para lang="en">The name of a file or folder in the archive. 
+            </para></listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Size</guilabel></term>
+	    <listitem><para lang="en">The size of the file when the file is extracted from the archive. For a folder, the <guilabel>Size</guilabel> field is blank. For information on how to display the size of the compressed file, see <xref linkend="engrampa-extra-info"/>.
+            </para></listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Type</guilabel></term>
+	    <listitem><para lang="en">The type of the file. For a folder, the value in the <guilabel>Type</guilabel> field is <literal>Folder</literal>.
+            </para></listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Date modified</guilabel></term>
+	    <listitem><para lang="en">The date on which the file was last modified. For a folder, the <guilabel>Date modified</guilabel> field is blank.
+            </para></listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Location</guilabel></term>
+	    <listitem><para lang="en">The path to the file within the archive. This column is visible only when the window is in file view, when in folder view the location of the files is displayed in the <guilabel>Location</guilabel> text box of the folderbar. For more information about view types see <xref linkend="engrampa-view-type-folder"/>.
+            </para></listitem>
+	  </varlistentry>
+        </variablelist>
+      </para>
+      <para>Αν ένα άλλο πρόγραμμα έχει τροποποιήσει το συμπιεσμένο αρχείο αφότου ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> το άνοιξε, επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Ανανέωση</guimenuitem></menuchoice> για να ξαναφορτώσετε τα περιεχόμενα του συμπιεσμένου αρχείου από το δίσκο.</para>
+      <para>Για πληροφορίες για την τροποποίηση του τρόπου που ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> εμφανίζει τα περιεχόμενα του συμπιεσμένου αρχείου, δείτε το <xref linkend="engrampa-archive-custom"/>.</para>
+      <para>Για πιο προχωρημένες λειτουριες, χρησιμοποιήστε μια εφαρμογή που είναι εγκατεστημένη στο σύστημά σας. Για περισσότερες πληροφορίες δείτε <xref linkend="engrampa-view-archive-file"/>.</para>
+    </sect2>
+
+  <!-- =============  Viewing a File in an Archive ==================== -->
+  <sect2 id="engrampa-view-archive-file"> 
+    <title>Για να προβάλετε ένα αρχείο μέσα σε ένα συμπιεσμένο αρχείο</title> 
+    <para>Για να προβάλετε ένα αρχείο σε ένα συμπιεσμένο αρχείο, ακολουθήστε τα βήματα που περιγράφονται στο <xref linkend="engrampa-modify-archive-file"/>. Αν αποθηκεύσετε το ανοικτό αρχείο, πατήστε <guilabel>Ακύρωση</guilabel> όταν ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> ζητήσει επιβεβαίωση για να ενημερώσει το αρχείο μέσα στο συμπιεσμένο αρχείο.</para>
+  </sect2>
+
+<!-- =============  Testing the Integrity of an Archive ==================== -->
+  <sect2 id="engrampa-test-archive"> 
+    <title>Για να ελέγξετε την ακεραιότητα ενός συμπιεσμένου αρχείου</title> 
+    <para lang="en">Sometimes an archive can be damaged for some reason, to check whether an archive is damaged, choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Test Integrity</guimenuitem></menuchoice>:
+            <itemizedlist>
+              <listitem>
+                <para lang="en">If the archive contains no errors, <application>Archive Manager</application> opens the <guilabel>Test Result</guilabel> dialog to list each file in the archive, and indicates that each file has status <literal>OK</literal>.
+                </para>
+              </listitem>
+              <listitem>
+                <para lang="en">If the archive contains some error, <application>Archive Manager</application> opens the <guilabel>Test Result</guilabel> dialog displaying the part of the archive contains the error.
+                </para>
+              </listitem>
+            </itemizedlist>
+    </para>
+    <para>Ένα συμπιεσμένο αρχείο μπορεί να μην είναι δυνατό να αποσυμπιεστεί, και αυτό μπορεί να επιφέρει απώλεια δεδομένων. Για αυτό το λόγο είναι καλό να ελέγχετε την ακεραιότητα του συμπιεσμένου αρχείου προτού διαγράψετε τα αρχικά αρχεία.</para>
+    <para>Αν το συμπιεσμένο αρχείο περιλαμβάνει κωδικοποιημένα αρχεία, ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> ρωτά τον κωδικό πρόσβασης του συμπιεσμένου αρχείου προτού διενεργήσει τον έλεγχο.</para>
+    <note>
+      <para>Ο έλεγχος ακεραιότητας δεν υποστηρίζεται από όλους τους τύπους συμπιεσμένων αρχείων. Στην ακόλουθη λίστα παρατίθενται οι τύποι που μπορούν να ελεγχθούν για ακεραιότητα: 7-Zip, RAR, ZIP, ACE, ARJ και Zoo.</para>
+    </note>
+    <tip>
+      <title>Συμβουλή</title>
+      <para>Για να ελέγξετε την ακεραιότητα ενός συμπιεσμένου αρχείου το οποίο δεν υποστηρίζει έλεγχο ακεραιότητας, αποσυμπιέστε όλα τα αρχεία από το συμπιεσμένο αρχείο και ελέγξτε ότι η λειτουργία ολοκληρώθηκε με επιτυχία.</para>      
+    </tip>
+  </sect2>  
+</sect1>
+    
+<!-- ======= Customizing the Archive Display ============= --> 
+<sect1 id="engrampa-archive-custom">
+  <title>Για να τροποποιήσετε την προβολή του συμπιεσμένου αρχείου</title>
+  <para>Μπορείτε να τροποποιήσετε τον τρόπου με τον οποίο ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> εμφανίζει τα περιεχόμενα του συμπιεσμένου αρχείου, ως εξής:</para>
+  <itemizedlist>
+    <listitem>
+      <para>Εναλλάξτε μεταξύ προβολής φακέλων και προβολής αρχείων. Για περισσότερες πληροφορίες δείτε <xref linkend="engrampa-view-type"/>.</para>
+    </listitem>
+    <listitem>
+      <para>Καθορίστε τη σειρά με την οποία θα εμφανίζονται τα αρχεία στη λίστα. Για περισσότερες πληροφορίες, δείτε <xref linkend="engrampa-view-sort"/>.</para>
+    </listitem> 
+    <listitem>
+      <para>Εμφάνιση επιπρόσθετων λεπτομερειών για τα περιεχόμενα του συμπιεσμένου αρχείου. Για περισσότερες πληροφορίες, δείτε <xref linkend="engrampa-extra-info"/>.</para>
+    </listitem> 
+  </itemizedlist>
+  <para>Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> ενημερώνει την προβολή αυτόματα, όταν κάνετε κάποια από τις πιο πάνω τροποποιήσεις.</para>
+
+  <sect2 id="engrampa-view-type">
+    <title>Για να ορίσετε τον τύπο προβολής</title>
+    <para>Αν το συμπιεσμένο αρχείο περιέχει φακέλους, μπορείτε να προβάλετε τα περιεχόμενα του συμπιεσμένου αρχείου είτε σε <link linkend="engrampa-view-type-folder">προβολή φακέλων</link> είτε σε <link linkend="engrampa-view-type-file">προβολή αρχείων</link>.</para>
+
+    <sect3 id="engrampa-view-type-folder">
+      <title>Προβολή φακέλων</title>
+      <para>Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> από προεπιλογή προβάλλει τα περιεχόμενα του συμπιεσμένου αρχείου σε προβολή φακέλων. Για να ορίσετε ρητά την προβολή φακέλων, επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Προβολή ως φάκελος</guimenuitem></menuchoice>.</para>
+      <para>Στην προβολή φακέλων, ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> εμφανίζει τους φάκελους με τον ίδιο τρόπο που τους εμφανίζει ένας περιηγητής αρχείων. Δηλάδη, ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> επισημαίνει τους φακέλους στην περιοχή προβολής με ένα εικονίδιο φακέλου και με το όνομα του φακέλου. Για να δείτε τα περιεχόμενα ενός φακέλου, κάντε διπλό κλικ στο όνομά του.</para>
+      <para>Η μπάρα φακέλων, την οποία ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> εμφανίζει μόνο στην προβολή φακέλων, περιέχει τα συστατικά που περιγράφονται στον ακόλουθο πίνακα.</para>
+      <informaltable frame="all">
+        <tgroup cols="2" colsep="1" rowsep="1">
+          <colspec colname="COLSPEC0" colwidth="50*"/>
+          <colspec colname="COLSPEC1" colwidth="50*"/>
+          <thead>
+            <row valign="top">
+              <entry colname="COLSPEC0">
+                <para>Συστατικό</para></entry>
+              <entry colname="COLSPEC1">
+                <para>Περιγραφή</para></entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="figures/engrampa_leftarrow.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                      <phrase>Shows icon to navigate backwards in location history list.</phrase>
+                    </textobject>
+                  </inlinemediaobject>
+                </para>
+              </entry>
+              <entry>
+                <para>Πατήστε αυτό το εικονίδιο για να περιηγηθήτε προς τα πίσω στη λίστα ιστορικού των τοποθεσιών.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="figures/engrampa_rightarrow.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                      <phrase>Shows icon to navigate forwards in location history list.</phrase>
+                    </textobject>
+                  </inlinemediaobject>
+                </para>
+              </entry>
+              <entry>
+                <para>Πατήστε αυτό το κουμπί για να περιηγηθείτε προς τα μπροστά στη λίστα ιστορικού τοποθεσιών.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="figures/engrampa_uparrow.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                      <phrase>Shows icon to navigate up one level in folder tree.</phrase>
+                    </textobject>
+                  </inlinemediaobject>
+                </para>
+              </entry>
+              <entry>
+                <para>Πατήστε αυτό το κουμπί για να περιηγηθείτε ένα επίπεδο προς τα πάνω στη δενδρική δομή των φακέλων.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="figures/engrampa_home.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                      <phrase>Shows icon to open the top-level folder in the archive.</phrase>
+                    </textobject>
+                  </inlinemediaobject>
+                </para>
+              </entry>
+              <entry>
+                <para>Πατήστε αυτό το κουμπί για να ανοίξετε το φάκελο στο ψηλότερο επίπεδο του συμπιεσμένου αρχείου.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <guilabel>Location</guilabel>
+                </para>
+              </entry>
+              <entry>
+                <para>Αυτό το πεδίο δείχνει την πλήρη διαδρομή, μέσα στο συμπιεσμένο αρχείο, του τρέχοντος φακέλου.</para>
+                <para>Για να μεταβείτε σε ένα διαφορετικό επίπεδο στη δενδρική δομή των φακέλων, πληκτρολογείστε την νέα τοποθεσία στο πεδίο <guilabel>Τοποθεσία</guilabel> και μετά πατήστε <keycap>Return</keycap>. Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> εμφανίζει τα περιεχόμενα της νέας τοποθεσίας.</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </sect3>
+
+    <sect3 id="engrampa-view-type-file">
+      <title>Προβολή αρχείων</title>
+      <para>Για να επιλέξετε την προβολή αρχείων, επιλέξτε <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Προβολή όλων των αρχείων</guimenuitem></menuchoice>.</para>
+      <para>Στην προβολή αρχείων, ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> εμφανίζει όλα τα αρχεία στο συμπιεσμένο αρχείο, συμπεριλμβανομένων των αρχείων από τους υποφακέλους, σε μια λίστα.</para>
+    </sect3>
+
+  </sect2>
+
+  <sect2 id="engrampa-view-sort">
+    <title>Για να ταξινομήσετε τη λίστα αρχείων</title>
+    <para>Μπορείτε να ταξινομήσετε τη λίστα κατά όνομα, μέγεθος, τύπο, ημερομηνία τροποποίησης, ή τοποθεσία.</para>
+    <para>Για να καθορίσετε μια σειρά ταξινόμησης, πατήστε την επικεφαλίδα της αντίστοιχης στήλης.</para>
+    <para>Για να αντιστρέψετε τη σειρά ταξινόμησης, ξαναπατήστε στην επικεφαλίδα.</para>
+    <para>Για παράδειγμα, για να ταξινομήσετε τη λίστα αρχείων κατά ημερομηνία τροποποίησης, πατήστε στην επικεφαλίδα <guilabel>Ημερομηνία τροποποίησης</guilabel>. Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> ανακατανέμει τη λίστα αρχείων ώστε να εμφανίζει τα αρχεία κατά ημερομηνία τροποποίησης, ξεκινώντας από το παλαιότερο. Για να εμφανίσετε τα πιο πρόσφατα αρχεία πρώτα, πατήστε ξανά στην επικεφαλίδα <guilabel>Ημερομηνία τροποποίησης</guilabel>.</para>
+    <para>Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> πάντα εφαρμόζει μια δευτερεύσουσα ταξινόμηση βάσει του ονόματος αρχείου. Για παράδειγμα, ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> ταξινομεί κατά όνομα όλα τα αρχεία που έχουν την ίδια ημερομηνία τροποποίησης.</para>
+  </sect2>
+
+  <sect2 id="engrampa-extra-info">
+    <title>Για να εμφανίσετε επιπρόσθετες λεπτομέρειες</title>
+      <para lang="en">To open the <guilabel>Last Output</guilabel> dialog, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Last Output</guimenuitem></menuchoice>: 
+            <itemizedlist>
+              <listitem>
+                <para lang="en">If you tested the archive in the current <application>Archive Manager</application> session, the <guilabel>Last Output</guilabel> dialog displays the results of the last test.
+                </para>
+              </listitem>
+              <listitem>
+                <para lang="en">If you did not test the archive in the current <application>Archive Manager</application> session, the <guilabel>Last Output</guilabel> dialog displays a list of all files in the archive, but does not indicate any status for the files. Instead, the <guilabel>Last Output</guilabel> dialog provides the compressed size of each file and the percentage of compression, and the date and time at which the file was last modified.
+                </para>
+              </listitem>
+            </itemizedlist>
+    </para>
+  </sect2>
+</sect1>
+
+<!-- ====== Using the File Manager Popup Menu to Manipulate an Archive ===== -->
+
+<sect1 id="engrampa-fmgr"> 
+    <title>Χρησιμοποιώντας τον Περιηγητή αρχείων για να δουλέψετε με συμπιεσμένα αρχεία</title> 
+    <para>Μπορείτε να χρησιμοποιήσετε τον περιηγητή αρχείων για να προσθέσετε αρχεία σε ένα συμπιεσμένο αρχείο, ή για να αποσυμπιέσετε αρχεία από ένα συμπιεσμένο αρχείο.</para>
+
+<!-- ======= Adding files Using File Manager Menu  ============= --> 
+    <sect2 id="engrampa-fmgr-add">
+      <title>Για να προσθέσετε αρχεία σε ένα συμπιεσμένο αρχείο με τον Περιηγητή αρχείων</title>
+           <para lang="en">You can use the file manager to add files to an archive, in the following ways:
+           <itemizedlist>
+             <listitem><para lang="en">Drag the files into a <application>Archive Manager</application> window from a file manager window.</para>
+             </listitem>
+             <listitem><para lang="en">Use the file manager popup menu to add the files to the archive.</para>
+             </listitem>
+          </itemizedlist>
+           </para>
+      <para>Για να χρησιμοποιήσετε το αναδυόμενο μενού του περιηγητή αρχείων για να προσθέσετε αρχεία σε ένα συμπιεσμένο αρχείο, ακολουθήστε τα εξής βήματα:</para>
+      <orderedlist>
+        <listitem><para>Κάντε δεξί κλικ στα αρχεία ή τους φακέλους στο παράθυρο του περιηγητή αρχείων.</para>
+        </listitem>
+        <listitem><para lang="en">Choose <guimenuitem>Create Archive</guimenuitem> from the file manager popup menu to display the <application>Archive Manager</application> <guilabel>Create Archive</guilabel> dialog.  </para>
+        </listitem>
+        <listitem><para>Εισάγετε το όνομα του συμπιεσμένου αρχείου, χωρίς την επέκταση του αρχείου, στο πεδίο <guilabel>Συμπιεσμένο αρχείο</guilabel>.</para>
+        </listitem>
+        <listitem><para>Επιλέξτε τον τύπο του συμπιεσμένου αρχείου από τη αναδιπλούμενη λίστα.</para>
+        </listitem>
+        <listitem><para>Επιλέξτε την τοποθεσία που θέλετε να αποθηκεύσετε το συμπιεσμένο αρχείο, από την αναδιπλούμενη λίστα <guilabel>Τοποθεσία</guilabel>. Αν δεν υπάρχει η τοποθεσία στη λίστα επιλέξτε <guilabel>Άλλο...</guilabel> για να την επιλέξετε από το διάλογο <guilabel>Τοποθεσία</guilabel>.</para>
+        </listitem>
+        <listitem><para>Διαλέξτε τις απαιτούμενες επιλογές πατώντας στο <guilabel>Άλλες επιλογές</guilabel>. Για περισσότερες πληροφορίες για τις επιλογές δημιουργίας, δείτε το <xref linkend="engrampa-create-options"/>.</para>
+        </listitem>
+        <listitem><para>Πατήστε <guilabel>Δημιουργία</guilabel> για να προσθέσετε τα επιλεγμένα αρχεία στο ριζικό φάκελο του καθορισμένου συμπιεσμένου αρχείου.</para>
+                 <note><para>Για να επιλέξετε κάποια από τις προχωρημένες επιλογές προσθήκης, θα πρέπει να εκκινήσετε τον <application>Διαχειριστή συμπιεσμένων αρχείων</application> όπως περιγράφεται στο <xref linkend="engrampa-to-start"/>.</para></note>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+<!-- ======= Extracting files Using File Manager Menu  ============= --> 
+  <sect2 id="engrampa-fmgr-extract">
+      <title>Για να αποσυμπιέσετε αρχεία από ένα συμπιεσμένο αρχείο χρησιμοποιώντας τον Περιηγητή αρχείων</title>
+           <para lang="en">You can use the file manager to extract files from an archive, in the following ways:
+           <itemizedlist>
+             <listitem><para lang="en">Drag the files from a <application>Archive Manager</application> window into a file manager window.</para>
+             </listitem>
+             <listitem><para lang="en">Use the file manager popup menu to extract the files from the archive.</para>
+             </listitem>
+          </itemizedlist>
+           </para>
+      <para>Για να χρησιμοποιήσετε το αναδυόμενο μενού του περιηγητή αρχείων για να αποσυμπιέσετε αρχεία από ένα συμπιεσμένο αρχείο, ακολουθήστε τα εξής βήματα: </para>
+      <orderedlist>
+        <listitem><para>Κάντε δεξί κλικ στο συμπιεσμένο αρχείο στο παράθυρο του περιηγητή αρχείων.</para>
+        </listitem>
+        <listitem><para>Επιλέξτε <guimenuitem>Αποσυμπίεση εδώ</guimenuitem> για να αποσυμπιέσετε όλα τα περιεχόμενα του συμπιεσμένου αρχείου στον κατάλογο όπου βρίσκεται το συμπιεσμένο αρχείο.</para>
+        </listitem>
+      </orderedlist>
+      <note><para>Αν το συμπιεσμένο αρχείο είναι κωδικοποιημένο, ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> θα σας ζητήσει να εισάγετε τον κωδικό προτού αποσυμπιέσει τα αρχεία.</para></note>
+    </sect2>
+
+</sect1>
+
+<!-- ======= Create Archive Advanced Options  ============= --> 
+    <sect1 id="engrampa-create-options">
+      <title>Επιλογές δημιουργίας</title>
+      <para>Όταν δημιουργείτε ένα νέο συμπιεσμένο αρχείο, ή όταν μετατρέπετε ένα υπάρχον συμπιεσμένο αρχείο σε μια άλλη μορφή, πατήστε στο <guilabel>Άλλες επιλογές</guilabel> για να ορίσετε τις ακόλουθες προχωρημένες επιλογές:</para>
+      <variablelist>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Password</guilabel></term>
+	  <listitem>
+	  <para>Πληκτρολογήστε τον κωδικό πρόσβασης που θα χρησιμοποιηθεί για να κωδικοποιηθεί το συμπιεσμένο αρχείο. Αν δεν καθοριστεί κωδικός πρόσβασης, το συμπιεσμένο αρχείο δε θα είναι κωδικοποιημένο.</para>
+	  <note>
+	    <para>Δεν υποστηρίζουν όλοι οι τύποι αρχείων κωδικοποίηση. Για περισσότερες πληροφορίες για την κωδικοποίηση αρχείων, δείτε το <xref linkend="engrampa-encrypt-files"/>.</para>
+	  </note>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>	  
+	  <term lang="en"><guilabel>Encrypt the file list too</guilabel></term>
+	  <listitem>
+	  <para>Αν επιλεγεί, ο κωδικός πρόσβασης θα ζητηθεί ακόμα και για να προβληθεί η λίστα των αρχείων που περιέχονται σε ένα συμπιεσμένο αρχείο, αλλιώς θα ζητηθεί μόνο για να αποσυμπιεστούν τα αρχεία από το συμπιεσμένο αρχείο. Αυτή η επιλογή είναι διαθέσιμη μόνο αν έχει οριστεί ένας κωδικός πρόσβασης.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>	  
+	  <term lang="en"><guilabel>Split in volumes</guilabel></term>
+	  <listitem>
+	  <para>Επιλέξτε το για να διασπάσετε το συμπιεσμένο αρχείο σε περισσότερα αρχεία με το καθορισμένο μέγεθος.</para>
+	  <note>
+	    <para>Μόνο τα συμπιεσμένα αρχεία 7-Zip και RAR υποστηρίζουν αυτό το χαρακτηριστικό.</para>
+	  </note>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect1>
+
+<!-- ======= Add Advanced Options  ============= --> 
+    <sect1 id="engrampa-add-options">
+      <title>Επιλογές προσθήκης</title>
+      <para>Οι διάλογοι <guilabel>Προσθήκη αρχείων</guilabel> και <guilabel>Προσθήκη φακέλων</guilabel> παρέχουν τις ακόλουθες επιλογές:</para>
+      <variablelist>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Add only if newer</guilabel></term>
+	  <listitem>
+            <para>Επιλέξτε το για να προσθέσετε το καθορισμένο αρχείο στο συμπιεσμένο αρχείο μόνο αν το συμπιεσμένο δεν περιέχει το καθορισμένο αρχείο, ή αν περιέχει μια προηγούμενη έκδοσή του. Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> χρησιμοποιεί την ημερομηνία τροποποίησης για να διευκρινίσει ποιό από τα αρχεία είναι το πιο πρόσφατο. Αν η έκδοση του αρχείου μέσα στο συμπιεσμένο αρχείο είναι η πιο πρόσφατη, τότε ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> δεν προσθέτει το καθορισμένο αρχείο στο συμπιεσμένο αρχείο.</para>
+	    <para>Αν δεν το επιλέξετε, τότε ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> θα προσθέσει το αρχείο στο συμπιεσμένο αρχείο και θα αντικαταστήσει το προηγούμενο περιεχόμενο του συμπιεσμένου.</para>
+	    <tip>
+	      <title>Συμβουλή</title>
+	      <para lang="en">If you use <application>Archive Manager</application> to create backups, the <guilabel>Add only if newer</guilabel> option is very useful. For example, the archive <filename>backup.tar.gz</filename> contains a week-old backup of your home folder. To update the archive to contain a current backup of your home folder, perform the following steps: 
+                    <orderedlist>
+                      <listitem>
+                        <para lang="en">
+                          Open the <filename>backup.tar.gz</filename> archive in <application>Archive Manager</application>. 
+                        </para>
+                      </listitem>
+                      <listitem>
+                        <para lang="en">
+                          Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Add</guimenuitem></menuchoice> to display the <guilabel>Add a Folder</guilabel> dialog.</para> 
+                      </listitem>
+                      <listitem>
+                        <para lang="en">
+		          Select your home folder. 
+                        </para>
+                      </listitem>
+                      <listitem>
+                        <para lang="en">
+                          Select the <guilabel>Add only if newer</guilabel> option.
+                        </para>
+                      </listitem>
+                      <listitem>
+                        <para lang="en">
+                          Click <guibutton>Add</guibutton>. 
+                        </para>
+                      </listitem>
+                    </orderedlist>
+                </para>
+                <para>Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> αυτόματα προσθέτει στο συμπιεσμένο αρχείο όλα τα αρχεία που δημιουργήσατε την τελευταία εβδομάδα, και ενημερώνει όλα τα αρχεία που τροποποιήσατε την τελευταία εβδομάδα. Ωστόσο, ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> δεν αφαιρεί από το συμπιεσμένο αρχείο τα αρχεία που διαγράψατε κατά την τελευταία εβδομάδα. Η λειτουργία ενημέρωσης του συμπιεσμένου αρχείου είναι πολύ γρηγορότερη από τη λήψη ενός πλήρους αντιγράφου ασφαλείας του προσωπικού σας φακέλου.</para>
+	  </tip>
+	</listitem>
+      </varlistentry>
+      </variablelist>
+      <sect2 id="engrampa-add-folder-options">
+      <title>Επιλογές προσθήκης στο φάκελο</title>
+      <para>Οι ακόλουθες επιλογές είναι διαθέσιμες στο διάλογο <guilabel>Προσθήκη φακέλου</guilabel> και επιτρέπουν την αυτόματη επιλογή και προσθήκη όλων των αρχείων που πληρούν ορισμένα κριτήρια:</para>
+      <variablelist>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Include files</guilabel></term>
+	  <listitem>
+            <para>Πληκτρολογήστε ένα κριτήριο ονομάτων αρχείων σ' αυτό το πεδίο για να συμπεριλάβετε αρχεία με ονόματα που πληρούν το συγκεκριμένο κριτήριο. Δείτε το <xref linkend="engrampa-pattern"/> για περισσότερες πληροφορίες σχετικά με τα κριτήρια ονομάτων αρχείων.</para>
+          </listitem>
+	</varlistentry>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Exclude files</guilabel></term>
+	  <listitem>
+            <para>Πληκτρολογήστε ένα κριτήριο ονομάτων αρχείων σ' αυτό το πεδίο για να εξαιρέσετε αρχεία με ονόματα που πληρούν το συγκεκριμένο κριτήριο. Δείτε το <xref linkend="engrampa-pattern"/> για περισσότερες πληροφορίες σχετικά με τα κριτήρια ονομάτων αρχείων.</para>
+          </listitem>
+	</varlistentry>
+        <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Exclude folders</guilabel></term>
+	  <listitem>
+            <para>Πληκτρολογήστε ένα κριτήριο ονομάτων αρχείων σ' αυτό το πεδίο για να εξαιρέσετε φακέλους με ονόματα που πληρούν το συγκεκριμένο κριτήριο. Δείτε το <xref linkend="engrampa-pattern"/> για περισσότερες πληροφορίες σχετικά με τα κριτήρια ονομάτων αρχείων.</para>
+          </listitem>
+	</varlistentry>      
+       <!-- ============= -->	
+      <varlistentry>
+	<term lang="en"><guilabel>Include subfolders</guilabel></term>
+	<listitem>
+          <para>Επιλέξτε το για να προσθέσετε όλα τα αρχεία που πληρούν τα κριτήρια, από τον τρέχοντα φάκελο και τους υποφάκελους.</para>
+          <note>
+          <para>Το όνομα του αρχείου και όχι του υποφακέλου θα πρέπει να πληρεί τα καθορισμένα κριτήρια.</para>
+          </note>
+	  <para>Αν δεν κάνετε αυτή την επιλογή, ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> θα προσθέσει τα αρχεία που ταιριάζουν από τον τρέχοντα φάκελο μόνο.</para>
+        </listitem>
+      </varlistentry>
+       <!-- ============= -->	
+     <varlistentry>
+	<term lang="en"><guilabel>Exclude folders that are symbolic links</guilabel></term>
+	  <listitem>
+            <para>Επιλέξτε το για να παραλείψετε αρχεία από φακέλους που είναι συμβολικοί σύνδεσμοι. Οι συμβολικοί σύνδεσμοι είναι δείκτες ή συντομεύσεις προς άλλους φακέλους.</para>
+	    <para>Αν δεν το επιλέξετε, ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> θα προσθέσει τα αρχεία που ταιριάζουν από τους φακέλους που είναι συμβολικά αρχεία.</para>
+          </listitem>
+	</varlistentry>
+       <!-- ============= -->
+     <varlistentry>
+	<term lang="en"><guibutton>Save Options</guibutton></term>
+	  <listitem>
+            <para>Πατήστε αυτό το κουμπί για να αποθηκεύσετε την τρέχουσα συλλογή από προχωρημένες επιλογές προσθήκης σε ένα αρχείο. Εμφανίζεται ο διάλογος <guilabel>Επιλογές αποθήκευσης</guilabel>. Εισάγετε ένα περιγραφικό όνομα αρχείου στο πεδίο <guilabel>Όνομα επιλογών</guilabel>, και μετά πατήστε <guibutton>Αποθήκευση</guibutton>.</para>
+          </listitem>
+	</varlistentry>
+       <!-- ============= -->	
+     <varlistentry>
+	<term lang="en"><guibutton>Load Options</guibutton></term>
+	  <listitem>
+            <para>Πατήστε αυτό το κουμπί για να φορτώσετε ή να διαγράψετε προηγουμένως αποθηκευμένη συλλογή από προχωρημένες επιλογές προσθήκης. Ο διάλογος <guilabel>Επιλογές φόρτωσης</guilabel> θα εμφανιστεί.</para>
+            <itemizedlist>
+              <listitem>
+                <para>Για να φορτώσετε μια συλλογή από επιλογές, επιλέξτε το αρχείο επιλογών από τη λίστα, και μετά πατήστε <guibutton>Εφαρμογή</guibutton>.</para>
+              </listitem>
+              <listitem>
+                <para>Για να σβήσετε μια συλλογή από επιλογές, επιλέξτε το αρχείο επιλογών από τη λίστα, μετά πατήστε στο <guibutton>Απομάκρυνση</guibutton>. Πατήστε <guibutton>Κλείσιμο</guibutton> για να κλείσετε το διάλογο <guilabel>Φόρτωση επιλογών</guilabel>.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+	</varlistentry>
+       <!-- ============= -->	
+     <varlistentry>
+	<term lang="en"><guibutton>Reset Options</guibutton></term>
+	  <listitem>
+            <para>Πατήστε σε αυτό το κουμπί για να επαναφέρετε την τρέχουσα συλλογή από προχωρημένες επιλογές προσθήκης στις προεπιλεγμένες ρυθμίσεις τους.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+<!-- ======= Extract Options  ============= --> 
+  <sect1 id="engrampa-extract-options">
+    <title>Επιλογές αποσυμπίεσης</title>
+      
+    <para>Ο διάλογος <guilabel>Αποσυμπίεση</guilabel> παρέχει τις εξής επιλογές, οι οποίες αποθηκεύονται όταν κλείσετε το <application>Διαχειριστή συμπιεσμένων αρχείων</application>.</para>
+      <variablelist>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Extract</guilabel></term>
+	  <listitem>
+            <para>Επιλογή των αρχείων που θα αποσυμπιεστούν:</para>
+            <variablelist>
+              <varlistentry>
+                <term lang="en"><guilabel>All files</guilabel></term>
+                <listitem>
+                  <para>Αποσυμπίεση όλων των αρχείων από το συμπιεσμένο αρχείο.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Selected files</guilabel></term>
+                <listitem>
+                  <para>Αποσυμπίεση των επιλεγμένων αρχείων από το συμπιεσμένο αρχείο.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Files</guilabel></term>
+                <listitem>
+                  <para>Αποσυμπίεση από το συμπιεσμένο αρχείο όλων των αρχείων τα οποία πληρούν ένα καθορισμένο κριτήριο. Δείτε το <xref linkend="engrampa-pattern"/> για περισσότερες πληροφορίες σχετικά με τα κριτήρια ονομάτων αρχείων.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+	  </listitem>
+	</varlistentry>
+	<!-- ============= -->	
+	<varlistentry>
+      <term lang="en"><guilabel>Actions</guilabel></term>
+        <listitem>
+          <para>Διαλέξτε τις ακόλουθες επιλογές αποσυμπίεσης:</para>	
+          <variablelist>
+	        <varlistentry>
+	          <term lang="en"><guilabel>Re-create folders</guilabel></term>
+	          <listitem><para>Επιλέξτε το για να αναδημιουργηθεί η δομή των φακέλων όταν θα αποσυμπιεστούν τα καθορισμένα αρχεία.</para> 
+                <para lang="en">For example, you specify <filename>/tmp</filename> in the <guilabel>Filename</guilabel> text box and choose to extract all files. The archive contains a subfolder called <filename>doc</filename>. 
+                <itemizedlist>
+                  <listitem><para lang="en">
+                    If you select the <guilabel>Re-create folders</guilabel> option, <application>Archive Manager</application> extracts the contents of the subfolder to <filename>/tmp/doc</filename>.
+                    </para>
+                 </listitem>
+                 <listitem><para lang="en">
+                   If you do not select the <guilabel>Re-create folders</guilabel> option, <application>Archive Manager</application> does not create any subfolders. Instead, <application>Archive Manager</application> extracts all files from the archive, including files from subfolders, to <filename>/tmp</filename>.
+                   </para>
+                 </listitem>
+               </itemizedlist>
+	           </para></listitem>
+	         </varlistentry>
+             <!-- ============= -->	
+	         <varlistentry>
+	           <term lang="en"><guilabel>Overwrite existing files</guilabel> </term>
+	           <listitem><para>Επιλέξτε το για να αντικαταστήσετε όλα τα αρχεία στο φάκελο προορισμού έχουν το ίδιο όνομα με τα καθορισμένα αρχεία.</para>
+	             <para>Αν δεν το επιλέξετε, ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> δε θα αποσυμπιέσει τα καθορισμένα αρχεία αν υπάρχει ένα αρχείο με το ίδιο όνομα στο φάκελο προορισμού.</para>
+	           </listitem>
+	         </varlistentry>
+             <!-- ============= -->	
+	         <varlistentry>
+	           <term lang="en"><guilabel>Do not extract older files</guilabel> </term>
+	           <listitem>
+	             <para>Αυτή η επιλογή έχει αποτέλεσμα μόνο όταν είναι επιλεγμένη και η <guilabel>Αντικατάσταση υπάρχοντων αρχείων</guilabel>.</para>
+	             <para>Επιλέξτε <guilabel>Να μην αποσυμπιέζονται παλιά αρχεία</guilabel> για να αποσυμπιεστεί το καθορισμένο αρχείο μόνο αν ο φάκελος προορισμού δεν περιέχει το καθορισμένο αρχείο, ή αν ο φάκελος προορισμού περιέχει μια παλιότερη έκδοση του καθορισμένου αρχείου. Ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> χρησιμοποιεί την ημερομηνία τροποποίησης για να διευκρινίσει ποιό αρχείο είναι το πιο πρόσφατο. Αν η έκδοση του αρχείου στο συμπιεσμένο αρχείο είναι παλιότερη, ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> δε θα το αποσυμπιέσει στο φάκελο προορισμού.</para>
+	             <para>Αν δεν επιλέξετε <guilabel>Να μην αποσυμπιέζονται παλιά αρχεία</guilabel> ενώ είναι επιλεγμένη η <guilabel>Αντικατάσταση υπάρχοντων αρχείων</guilabel>, τότε ο <application>Διαχειριστής συμπιεσμένων αρχείων</application> αποσυμπιέζει τα καθορισμενα αρχεία από το συμπιεσμένο αρχείο και αντικαθιστά τα προηγούμενα περιεχόμενα του φακέλου προορισμού.</para>
+	           </listitem>
+	         </varlistentry>
+	       </variablelist>
+	     </listitem>
+	   </varlistentry>
+     </variablelist>	
+  </sect1>
+
+
+</article>

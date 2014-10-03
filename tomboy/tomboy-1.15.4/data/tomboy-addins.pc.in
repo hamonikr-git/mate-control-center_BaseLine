@@ -1,0 +1,9 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+addinsdir=@libdir@/tomboy/addins
+
+Name: Tomboy Addin Library
+Description: Library providing the interfaces for Tomboy addins
+Version: @VERSION@
+Libs: -r:${libdir}/tomboy/Tomboy.exe

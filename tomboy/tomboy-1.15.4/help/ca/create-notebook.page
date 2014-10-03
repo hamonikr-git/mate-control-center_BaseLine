@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="create-notebook" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#notebooks"/>
+    <desc>Creació d'un bloc de notes nou al Tomboy.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Creació d'un bloc de notes</title>    
+  
+  <p>Els blocs de notes us permeten agrupar les notes. Podeu afegir una nota al bloc de notes des de la finestra de «Cerca totes les notes» o directament des de la mateixa nota.</p>
+  
+<steps>
+	<item>
+	<p>Si feu clic a la icona en forma de nota del Tomboy que hi ha al quadre del GNOME, a la barra de tasques del Windows o al llançador d'aplicacions del Mac OS X us apareixerà un menú.</p>
+	</item>
+	
+<!--
+<comment>Screenshots need to be updated using Clearlooks</comment>
+-->
+
+	<item>
+		<p>Seleccioneu <guiseq><gui>Bloc de notes</gui><gui>Bloc de notes nou...</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Introduïu un nom per al bloc de notes nou.</p>
+	</item>
+</steps>
+
+	<p>Per crear un bloc de notes nou des del diàleg <gui>Cerca totes les notes</gui>:</p>
+
+<steps>
+	<item>
+		<p>Obriu <gui>Cerca totes les notes</gui> des de la icona del Tomboy al quadre del GNOME, des de la barra de tasques del Microsoft Windows o des del llançador del Mac OS X o feu clic al botó Cerca des d'una nota oberta.</p>
+	</item>
+	<item>
+		<p>Si utilitzeu el ratolí feu clic amb el botó secundari al quadre de l'esquerra i trieu <gui>Bloc de notes nou...</gui>.</p>
+	</item>
+	<item>
+		<p>Introduïu un nom per al bloc de notes nou.</p>
+	</item>
+</steps>
+
+	<p>O:</p>
+	
+<steps>
+	<item>
+		<p>Si teniu obert <gui>Cerca totes les notes</gui> trieu <guiseq><gui>Fitxer</gui><gui>Blocs de notes</gui><gui>Bloc de notes nou...</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Introduïu un nom per al bloc de notes nou.</p>
+	</item>
+</steps>	
+
+        
+	
+	
+</page>

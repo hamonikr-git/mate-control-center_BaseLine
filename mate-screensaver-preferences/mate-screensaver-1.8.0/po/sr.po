@@ -1,0 +1,605 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-08 13:22+0100\n"
+"PO-Revision-Date: 2014-02-08 12:24+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Serbian (http://www.transifex.com/projects/p/MATE/language/sr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sr\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../data/mate-screensaver-preferences.desktop.in.h:1
+#: ../src/mate-screensaver.desktop.in.in.h:1
+msgid "Screensaver"
+msgstr "Чувар екрана"
+
+#: ../data/mate-screensaver-preferences.desktop.in.h:2
+msgid "Set your screensaver preferences"
+msgstr "Сопствене поставке чувара екрана"
+
+#: ../data/mate-screensaver-preferences.ui.h:1
+msgid "Screensaver Preferences"
+msgstr "Поставке чувара екрана"
+
+#: ../data/mate-screensaver-preferences.ui.h:2
+msgid "Power _Management"
+msgstr "_Управник потрошње"
+
+#: ../data/mate-screensaver-preferences.ui.h:3
+msgid "_Preview"
+msgstr "_Преглед"
+
+#: ../data/mate-screensaver-preferences.ui.h:4
+msgid "_Screensaver theme:"
+msgstr "_Теме чувара екрана:"
+
+#: ../data/mate-screensaver-preferences.ui.h:5
+msgid "Regard the computer as _idle after:"
+msgstr "Посматрај рачунар као неактиван након:"
+
+#: ../data/mate-screensaver-preferences.ui.h:6
+msgid "_Activate screensaver when computer is idle"
+msgstr "_Покрени чувара екрана када се ништа не ради"
+
+#: ../data/mate-screensaver-preferences.ui.h:7
+msgid "_Lock screen when screensaver is active"
+msgstr "_Закључај екран када чувар екрана ради"
+
+#: ../data/mate-screensaver-preferences.ui.h:8
+msgid "<b>Warning: the screen will not be locked for the root user.</b>"
+msgstr "<b>Упозорење: чувар екрана неће бити закључан за администратора.</b>"
+
+#: ../data/mate-screensaver-preferences.ui.h:9
+msgid "Screensaver Preview"
+msgstr "Преглед чувара екрана"
+
+#: ../data/mate-screensaver-preferences.ui.h:10
+msgid "<b>Screensaver preview</b>"
+msgstr "<b>Преглед чувара екрана</b>"
+
+#: ../data/mate-screensaver.directory.in.h:1
+msgid "Screensavers"
+msgstr "Чувари екрана"
+
+#: ../data/mate-screensaver.directory.in.h:2
+msgid "Screensaver themes"
+msgstr "Теме чувара екрана"
+
+#. Translators: This is the name of a desktop background image that shows
+#. outer space images.
+#. You might want to translate it into the equivalent words of your language
+#: ../data/images/cosmos/cosmos.xml.in.in.h:3
+#: ../savers/cosmos-slideshow.desktop.in.in.h:1
+msgid "Cosmos"
+msgstr "Свемир"
+
+#: ../data/lock-dialog-default.ui.h:2
+#, no-c-format
+msgid "<span size=\"xx-large\" weight=\"ultrabold\">%s</span>"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:4
+#, no-c-format
+msgid "<span size=\"large\">%s</span>"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:6
+#, no-c-format
+msgid "<span size=\"x-large\">%R</span>"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:8
+#, no-c-format
+msgid "<span size=\"small\">%U on %h</span>"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:9
+msgid "_Leave Message"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:10
+msgid "_Switch User"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:11
+msgid "_Log Out"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:12
+msgid "_Cancel"
+msgstr ""
+
+#: ../data/lock-dialog-default.ui.h:13 ../src/gs-lock-plug.c:1778
+msgid "_Unlock"
+msgstr "От_кључај"
+
+#: ../data/lock-dialog-default.ui.h:15
+#, no-c-format
+msgid "<b>Leave a message for %R:</b>"
+msgstr ""
+
+#: ../savers/cosmos-slideshow.desktop.in.in.h:2
+msgid "Display a slideshow of pictures of the cosmos"
+msgstr "Прикажи слике свемира у низу"
+
+#: ../savers/footlogo-floaters.desktop.in.in.h:1
+msgid "Floating MATE"
+msgstr ""
+
+#: ../savers/footlogo-floaters.desktop.in.in.h:2
+msgid "Bubbles the MATE logo around the screen"
+msgstr ""
+
+#: ../savers/gnomelogo-floaters.desktop.in.in.h:1
+msgid "Floating GNOME"
+msgstr ""
+
+#: ../savers/gnomelogo-floaters.desktop.in.in.h:2
+msgid "Bubbles the GNOME logo around the screen"
+msgstr ""
+
+#: ../savers/personal-slideshow.desktop.in.in.h:1
+msgid "Pictures folder"
+msgstr "Фасцикла са сликама"
+
+#: ../savers/personal-slideshow.desktop.in.in.h:2
+msgid "Display a slideshow from your Pictures folder"
+msgstr "Прикажи у низу све слике из ваше личне фасцикле"
+
+#: ../savers/popsquares.desktop.in.in.h:1
+msgid "Pop art squares"
+msgstr "Поп арт квадрати"
+
+#: ../savers/popsquares.desktop.in.in.h:2
+msgid "A pop-art-ish grid of pulsing colors."
+msgstr "Поп арт мрежа светлећих боја"
+
+#: ../savers/popsquares.c:51 ../savers/floaters.c:1252
+#, c-format
+msgid "%s. See --help for usage information.\n"
+msgstr "%s. Погледајте --help за информације о употреби.\n"
+
+#: ../savers/floaters.c:94
+msgid "Show paths that images follow"
+msgstr "Прикажи путање које слике прате"
+
+#: ../savers/floaters.c:99
+msgid "Occasionally rotate images as they move"
+msgstr "Повремено ротирај слике како се крећу"
+
+#: ../savers/floaters.c:104
+msgid "Print out frame rate and other statistics"
+msgstr "Одштампај и број оквира и осталу статистику"
+
+#: ../savers/floaters.c:109
+msgid "The maximum number of images to keep on screen"
+msgstr "Максималан број слика које треба држати на екрану"
+
+#: ../savers/floaters.c:109
+msgid "MAX_IMAGES"
+msgstr "МАХ_СЛИКА"
+
+#: ../savers/floaters.c:114
+msgid "The initial size and position of window"
+msgstr "Почетна величина и позиција прозора"
+
+#: ../savers/floaters.c:114
+msgid "WIDTHxHEIGHT+X+Y"
+msgstr "ШИРИНАxВИСИНА+X+Y"
+
+#: ../savers/floaters.c:119
+msgid "The source image to use"
+msgstr "Полазна слика која се користи"
+
+#. translators: the word "image" here
+#. * represents a command line argument
+#: ../savers/floaters.c:1246
+msgid "image - floats images around the screen"
+msgstr "слика — разбацај слике по екрану"
+
+#: ../savers/floaters.c:1261
+#, c-format
+msgid "You must specify one image.  See --help for usage information.\n"
+msgstr "Морате задати слику. Погледајте --help за информације о употреби.\n"
+
+#: ../savers/slideshow.c:55
+msgid "Location to get images from"
+msgstr "Место одакле се прикупљају слике"
+
+#: ../savers/slideshow.c:55
+msgid "PATH"
+msgstr "ПУТАЊА"
+
+#: ../savers/slideshow.c:59
+msgid "Color to use for images background"
+msgstr "Боја за позадине слика"
+
+#: ../savers/slideshow.c:59
+msgid "\"#rrggbb\""
+msgstr "„#rrggbb“"
+
+#: ../savers/slideshow.c:63
+msgid "Do not randomize pictures from location"
+msgstr "Немој пуштати насумично слике из путање"
+
+#: ../savers/slideshow.c:67
+msgid "Do not try to stretch images on screen"
+msgstr "Не развлачи слике преко целог екрана"
+
+#: ../src/copy-theme-dialog.c:219
+msgid "Copying files"
+msgstr "Умножавање датотека"
+
+#: ../src/copy-theme-dialog.c:237
+msgid "From:"
+msgstr "Са:"
+
+#: ../src/copy-theme-dialog.c:241
+msgid "To:"
+msgstr "На:"
+
+#: ../src/copy-theme-dialog.c:261
+msgid "Copying themes"
+msgstr "Умножавање тема"
+
+#: ../src/copy-theme-dialog.c:307
+msgid "Invalid screensaver theme"
+msgstr "Неисправна тема чувара екрана"
+
+#: ../src/copy-theme-dialog.c:310
+#, c-format
+msgid "%s does not appear to be a valid screensaver theme."
+msgstr "Чини се да „%s“ није исправна тема чувара екрана."
+
+#: ../src/copy-theme-dialog.c:490
+#, c-format
+msgid "Copying file: %u of %u"
+msgstr "Умножавам датотеку: %u од %u"
+
+#: ../src/mate-screensaver-command.c:64
+msgid "Causes the screensaver to exit gracefully"
+msgstr "Чини да чувар екрана буде заустављен природно"
+
+#: ../src/mate-screensaver-command.c:68
+msgid "Query the state of the screensaver"
+msgstr "Испитај стање чувара екрана"
+
+#: ../src/mate-screensaver-command.c:72
+msgid "Query the length of time the screensaver has been active"
+msgstr "Испитуј време за које је чувар екрана био активан"
+
+#: ../src/mate-screensaver-command.c:76
+msgid "Tells the running screensaver process to lock the screen immediately"
+msgstr "Говори покренутом процесу чувара екрана да одмах закључа екран"
+
+#: ../src/mate-screensaver-command.c:80
+msgid "If the screensaver is active then switch to another graphics demo"
+msgstr "Ако је чувар екрана покренут тада пређи на други графички демо"
+
+#: ../src/mate-screensaver-command.c:84
+msgid "Turn the screensaver on (blank the screen)"
+msgstr "Укључи чувара екрана (очисти екран)"
+
+#: ../src/mate-screensaver-command.c:88
+msgid "If the screensaver is active then deactivate it (un-blank the screen)"
+msgstr "Ако је чувар екрана присутан, прекини га (врати пређашњу слику на екрану)"
+
+#: ../src/mate-screensaver-command.c:92
+msgid "Poke the running screensaver to simulate user activity"
+msgstr "Позови покренути чувар екрана ради испробавања активности корисника"
+
+#: ../src/mate-screensaver-command.c:96
+msgid ""
+"Inhibit the screensaver from activating.  Command blocks while inhibit is "
+"active."
+msgstr "Забрани покретање чувара екрана. Команда блокира чувар екрана док год јеактивна."
+
+#: ../src/mate-screensaver-command.c:100
+msgid "The calling application that is inhibiting the screensaver"
+msgstr "Програм који забрањује чувар екрана"
+
+#: ../src/mate-screensaver-command.c:104
+msgid "The reason for inhibiting the screensaver"
+msgstr "Разлог забране чувара екрана"
+
+#: ../src/mate-screensaver-command.c:108 ../src/mate-screensaver-dialog.c:60
+#: ../src/mate-screensaver.c:55
+msgid "Version of this application"
+msgstr "Верзија овог програма"
+
+#: ../src/mate-screensaver-command.c:357
+#, c-format
+msgid "The screensaver is %s\n"
+msgstr "Чувар екрана је %s\n"
+
+#: ../src/mate-screensaver-command.c:357
+msgid "active"
+msgstr "присутан"
+
+#: ../src/mate-screensaver-command.c:357
+msgid "inactive"
+msgstr "угашен"
+
+#: ../src/mate-screensaver-command.c:373
+#, c-format
+msgid "The screensaver is not inhibited\n"
+msgstr "Чувар екрана је није заустављен\n"
+
+#: ../src/mate-screensaver-command.c:381
+#, c-format
+msgid "The screensaver is being inhibited by:\n"
+msgstr "Чувар екрана је онемогућен од стране:\n"
+
+#: ../src/mate-screensaver-command.c:416
+#, c-format
+msgid "The screensaver has been active for %d seconds.\n"
+msgstr "Чувар екрана је активан %d секунди.\n"
+
+#: ../src/mate-screensaver-command.c:422
+#, c-format
+msgid "The screensaver is not currently active.\n"
+msgstr "Чувар екрана је тренутно заустављен.\n"
+
+#: ../src/mate-screensaver-dialog.c:59
+msgid "Show debugging output"
+msgstr "Прикажи испис за тражење грешака"
+
+#: ../src/mate-screensaver-dialog.c:61
+msgid "Show the logout button"
+msgstr "Прикажи дугме за одјаву"
+
+#: ../src/mate-screensaver-dialog.c:62
+msgid "Command to invoke from the logout button"
+msgstr "Наредба која се позива притиском на дугме за одјаву"
+
+#: ../src/mate-screensaver-dialog.c:63
+msgid "Show the switch user button"
+msgstr "Прикажи дугме за промену корисника"
+
+#: ../src/mate-screensaver-dialog.c:64
+msgid "Message to show in the dialog"
+msgstr "Порука за приказ у прозорчету"
+
+#: ../src/mate-screensaver-dialog.c:64 ../src/mate-screensaver-dialog.c:65
+msgid "MESSAGE"
+msgstr "ПОРУКА"
+
+#: ../src/mate-screensaver-dialog.c:65
+msgid "Not used"
+msgstr "Није коришћено"
+
+#. login: is whacked always translate to Username:
+#: ../src/mate-screensaver-dialog.c:171 ../src/mate-screensaver-dialog.c:172
+#: ../src/mate-screensaver-dialog.c:173 ../src/gs-auth-pam.c:756
+msgid "Username:"
+msgstr "Корисничко име:"
+
+#: ../src/mate-screensaver-dialog.c:174 ../src/mate-screensaver-dialog.c:175
+#: ../src/gs-auth-pam.c:171
+msgid "Password:"
+msgstr "Лозинка:"
+
+#: ../src/mate-screensaver-dialog.c:176
+msgid "You are required to change your password immediately (password aged)"
+msgstr "Потребно је да одмах промените Вашу лозинку (лозинка је стара)"
+
+#: ../src/mate-screensaver-dialog.c:177
+msgid "You are required to change your password immediately (root enforced)"
+msgstr "Потребно је да одмах промените Вашу лозинку (приморан је администратор)"
+
+#: ../src/mate-screensaver-dialog.c:178
+msgid "Your account has expired; please contact your system administrator"
+msgstr "Ваш налог је истекао; потражите Вашег администратора система"
+
+#: ../src/mate-screensaver-dialog.c:179
+msgid "No password supplied"
+msgstr "Није достављена шифра"
+
+#: ../src/mate-screensaver-dialog.c:180
+msgid "Password unchanged"
+msgstr "Шифра је непромењена"
+
+#: ../src/mate-screensaver-dialog.c:181
+msgid "Can not get username"
+msgstr "Не могу да добијем корисничко име"
+
+#: ../src/mate-screensaver-dialog.c:182
+msgid "Retype new UNIX password:"
+msgstr "Поново унеси нову Јуникс лозинку:"
+
+#: ../src/mate-screensaver-dialog.c:183
+msgid "Enter new UNIX password:"
+msgstr "Унеси нову Јуникс лозинку:"
+
+#: ../src/mate-screensaver-dialog.c:184
+msgid "(current) UNIX password:"
+msgstr "(тренутна) Јуникс лозинка:"
+
+#: ../src/mate-screensaver-dialog.c:185
+msgid "Error while changing NIS password."
+msgstr "Грешка при промени НИС лозинке."
+
+#: ../src/mate-screensaver-dialog.c:186
+msgid "You must choose a longer password"
+msgstr "Морате са одаберете дужу лозинку"
+
+#: ../src/mate-screensaver-dialog.c:187
+msgid "Password has been already used. Choose another."
+msgstr "Лозинка је већ у употреби. Изаберите другу."
+
+#: ../src/mate-screensaver-dialog.c:188
+msgid "You must wait longer to change your password"
+msgstr "Морате да чекате дуже за промену Ваше шифре"
+
+#: ../src/mate-screensaver-dialog.c:189
+msgid "Sorry, passwords do not match"
+msgstr "Лозинке се не поклапају"
+
+#: ../src/mate-screensaver-dialog.c:260
+msgid "Checking..."
+msgstr "Провера..."
+
+#: ../src/mate-screensaver-dialog.c:306 ../src/gs-auth-pam.c:495
+msgid "Authentication failed."
+msgstr "Идентификација неуспела."
+
+#: ../src/mate-screensaver-preferences.c:487
+msgid "Blank screen"
+msgstr "Очисти екран"
+
+#: ../src/mate-screensaver-preferences.c:493
+msgid "Random"
+msgstr "Случајан"
+
+#: ../src/mate-screensaver-preferences.c:983
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d сат"
+msgstr[1] "%d сата"
+msgstr[2] "%d сати"
+
+#: ../src/mate-screensaver-preferences.c:986
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d минут"
+msgstr[1] "%d минута"
+msgstr[2] "%d минута"
+
+#: ../src/mate-screensaver-preferences.c:989
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d секунд"
+msgstr[1] "%d секунде"
+msgstr[2] "%d секунди"
+
+#. hour:minutes:seconds
+#: ../src/mate-screensaver-preferences.c:997
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. hour:minutes
+#. minutes:seconds
+#: ../src/mate-screensaver-preferences.c:1002
+#: ../src/mate-screensaver-preferences.c:1015
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#. hour
+#. minutes
+#. seconds
+#: ../src/mate-screensaver-preferences.c:1007
+#: ../src/mate-screensaver-preferences.c:1020
+#: ../src/mate-screensaver-preferences.c:1026
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#: ../src/mate-screensaver-preferences.c:1041
+#, c-format
+msgid "Never"
+msgstr "Никада"
+
+#: ../src/mate-screensaver-preferences.c:1622
+msgid "Could not load the main interface"
+msgstr "Не могу да учитам главно сучеље"
+
+#: ../src/mate-screensaver-preferences.c:1624
+msgid "Please make sure that the screensaver is properly installed"
+msgstr "Молим проверите да ли је чувар екрана правилно инсталиран"
+
+#: ../src/mate-screensaver.c:56
+msgid "Don't become a daemon"
+msgstr "Немој бити позадински процес"
+
+#: ../src/mate-screensaver.c:57
+msgid "Enable debugging code"
+msgstr "Омогући испис за тражење грешака"
+
+#: ../src/mate-screensaver.desktop.in.in.h:2
+msgid "Launch screen saver and locker program"
+msgstr "Покреће чувара екрана и програм за закључавање екрана"
+
+#: ../src/gs-auth-pam.c:425
+#, c-format
+msgid "Unable to establish service %s: %s\n"
+msgstr "Не могу да успоставим сервис %s: %s\n"
+
+#: ../src/gs-auth-pam.c:455
+#, c-format
+msgid "Can't set PAM_TTY=%s"
+msgstr "Не могу да поставим PAM_TTY=%s"
+
+#: ../src/gs-auth-pam.c:491
+msgid "Incorrect password."
+msgstr "Неисиправна лозинка"
+
+#: ../src/gs-auth-pam.c:511
+msgid "Not permitted to gain access at this time."
+msgstr "Приступ у ово време није дозвољен."
+
+#: ../src/gs-auth-pam.c:519
+msgid "No longer permitted to access the system."
+msgstr "Више немате дозволу за приступ систему."
+
+#: ../src/gs-listener-dbus.c:2219
+msgid "failed to register with the message bus"
+msgstr "неуспела пријава на магистралу порука"
+
+#: ../src/gs-listener-dbus.c:2230
+msgid "not connected to the message bus"
+msgstr "није повезан на магистралу порука"
+
+#: ../src/gs-listener-dbus.c:2240 ../src/gs-listener-dbus.c:2272
+msgid "screensaver already running in this session"
+msgstr "чувар екрана је већ покренут у овој сесији"
+
+#. Translators: Time format, see https://developer.gnome.org/glib/stable/glib-
+#. GDateTime.html#g-date-time-format
+#: ../src/gs-lock-plug.c:304
+msgid "%l:%M %p"
+msgstr ""
+
+#. Translators: Date format, see https://developer.gnome.org/glib/stable/glib-
+#. GDateTime.html#g-date-time-format
+#: ../src/gs-lock-plug.c:306
+msgid "%A, %B %e"
+msgstr ""
+
+#: ../src/gs-lock-plug.c:408
+msgid "Time has expired."
+msgstr "Време је истекло."
+
+#: ../src/gs-lock-plug.c:439
+msgid "You have the Caps Lock key on."
+msgstr "Притиснули сте тастер за сва велика слова."
+
+#: ../src/gs-lock-plug.c:1758
+msgid "S_witch User..."
+msgstr "Промени _корисника..."
+
+#: ../src/gs-lock-plug.c:1767
+msgid "Log _Out"
+msgstr "Одја_ва"
+
+#. To translators: This expands to USERNAME on HOSTNAME
+#: ../src/gs-lock-plug.c:1976
+msgid "%U on %h"
+msgstr "%U на %h"
+
+#: ../src/gs-lock-plug.c:1990
+msgid "_Password:"
+msgstr "_Лозинка:"

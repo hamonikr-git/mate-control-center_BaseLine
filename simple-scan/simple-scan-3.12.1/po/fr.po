@@ -1,0 +1,843 @@
+# French translation for simple-scan
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the simple-scan package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: simple-scan\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-03-04 11:26+1300\n"
+"PO-Revision-Date: 2012-09-27 21:23+0000\n"
+"Last-Translator: 65GYgzf <Unknown>\n"
+"Language-Team: French <fr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-03-04 07:59+0000\n"
+"X-Generator: Launchpad (build 16948)\n"
+
+#. Button to submit authorization dialog
+#: ../data/simple-scan.ui.h:2
+msgid "_Authorize"
+msgstr "_Autoriser"
+
+#. Label beside username entry
+#: ../data/simple-scan.ui.h:4
+msgid "_Username for resource:"
+msgstr "_Utilisateur :"
+
+#. Label beside password entry
+#: ../data/simple-scan.ui.h:6
+msgid "_Password:"
+msgstr "_Mot de passe :"
+
+#. Combo box label for text scan mode
+#: ../data/simple-scan.ui.h:8
+msgid "Text"
+msgstr "Texte"
+
+#. Combo box label for photo scan mode
+#: ../data/simple-scan.ui.h:10
+msgid "Photo"
+msgstr "Photo"
+
+#. Combo box label for scanning both sides of a page
+#: ../data/simple-scan.ui.h:12
+msgid "Front and Back"
+msgstr "Recto verso"
+
+#. Combo box label for scanning the front side of a page
+#: ../data/simple-scan.ui.h:14
+msgid "Front"
+msgstr "Recto"
+
+#. Combo box label for scanning the back side of a page
+#: ../data/simple-scan.ui.h:16
+msgid "Back"
+msgstr "Verso"
+
+#. Title of scan window
+#: ../data/simple-scan.ui.h:18 ../data/simple-scan.desktop.in.h:1
+msgid "Simple Scan"
+msgstr "Outil de numérisation Simple Scan"
+
+#. Label on document menu (contains actions for this document, e.g. save, print)
+#: ../data/simple-scan.ui.h:20
+msgid "_Document"
+msgstr "_Document"
+
+#. Scan menu item
+#: ../data/simple-scan.ui.h:22
+msgid "Sc_an"
+msgstr "Nu_mériser"
+
+#. Toolbar scan menu item to scan a single page from the scanner
+#: ../data/simple-scan.ui.h:24
+msgid "Single _Page"
+msgstr "_Page unique"
+
+#. Toolbar scan menu item to scan all pages from a document feeder
+#: ../data/simple-scan.ui.h:26
+msgid "All Pages From _Feeder"
+msgstr "Toutes les pages du _bac"
+
+#. Menu entry to stop current scan
+#: ../data/simple-scan.ui.h:28
+msgid "_Stop Scan"
+msgstr "_Arrêter la numérisation"
+
+#. Label on email menu item
+#: ../data/simple-scan.ui.h:30
+msgid "_Email"
+msgstr "_Courriel"
+
+#. Page menu (contains action for each page, e.g. delete, crop)
+#: ../data/simple-scan.ui.h:32
+msgid "_Page"
+msgstr "_Page"
+
+#. Menu item to rotate page to left (anti-clockwise)
+#: ../data/simple-scan.ui.h:34
+msgid "Rotate _Left"
+msgstr "Pivoter vers la _gauche"
+
+#. Menu item to rotate page to right (clockwise)
+#: ../data/simple-scan.ui.h:36
+msgid "Rotate _Right"
+msgstr "Pivoter vers la _droite"
+
+#. Label for page crop submenu
+#: ../data/simple-scan.ui.h:38
+msgid "_Crop"
+msgstr "Re_cadrer"
+
+#. Radio button for no crop
+#: ../data/simple-scan.ui.h:40
+msgid "_None"
+msgstr "Aucu_n"
+
+#. Radio button for cropping page to A4 size
+#: ../data/simple-scan.ui.h:42
+msgid "A_4"
+msgstr "A_4"
+
+#. Radio button for cropping page to A5 size
+#: ../data/simple-scan.ui.h:44
+msgid "A_5"
+msgstr "A_5"
+
+#. Radio button for cropping page to A6 size
+#: ../data/simple-scan.ui.h:46
+msgid "A_6"
+msgstr "A_6"
+
+#. Radio button for cropping page to US letter size
+#: ../data/simple-scan.ui.h:48
+msgid "_Letter"
+msgstr "_Letter (US)"
+
+#. Radio button for cropping to page to US legal size
+#: ../data/simple-scan.ui.h:50
+msgid "Le_gal"
+msgstr "_Legal (US)"
+
+#. Radio button for cropping page to 4x6 inch
+#: ../data/simple-scan.ui.h:52
+msgid "4×6"
+msgstr "4×6"
+
+#. Radio button for cropping to custom page size
+#: ../data/simple-scan.ui.h:54
+msgid "_Custom"
+msgstr "_Personnalisé"
+
+#. Menu item to rotate the crop area
+#: ../data/simple-scan.ui.h:56
+msgid "_Rotate Crop"
+msgstr "Pivote_r la selection"
+
+#. Menu item to move the selected page to the left
+#: ../data/simple-scan.ui.h:58
+msgid "Move Left"
+msgstr "Déplacer à gauche"
+
+#. Menu item to move the selected page to the right
+#: ../data/simple-scan.ui.h:60
+msgid "Move Right"
+msgstr "Déplacer à droite"
+
+#. Label on help menu
+#: ../data/simple-scan.ui.h:62
+msgid "_Help"
+msgstr "_Aide"
+
+#. Help|Contents menu
+#: ../data/simple-scan.ui.h:64
+msgid "_Contents"
+msgstr "_Contenus"
+
+#. Tooltip for new document button
+#: ../data/simple-scan.ui.h:66
+msgid "Start a new document"
+msgstr "Créer un nouveau document"
+
+#: ../data/simple-scan.ui.h:67
+msgid "New"
+msgstr "Nouveau"
+
+#. Tooltip for scan toolbar button
+#: ../data/simple-scan.ui.h:69
+msgid "Scan a single page from the scanner"
+msgstr "Numériser une seule page depuis le scanner"
+
+#. Label on scan toolbar item
+#: ../data/simple-scan.ui.h:71
+msgid "Scan"
+msgstr "Numériser"
+
+#. Tooltip for save toolbar button
+#: ../data/simple-scan.ui.h:73
+msgid "Save document to a file"
+msgstr "Enregistrer le document dans un fichier"
+
+#: ../data/simple-scan.ui.h:74
+msgid "Save"
+msgstr "Enregistrer"
+
+#. Tooltip for stop button
+#: ../data/simple-scan.ui.h:76
+msgid "Stop the current scan"
+msgstr "Arrêter la numérisation en cours"
+
+#: ../data/simple-scan.ui.h:77
+msgid "Stop"
+msgstr "Arrêter"
+
+#. Tooltip for rotate left (counter-clockwise) button
+#: ../data/simple-scan.ui.h:79
+msgid "Rotate the page to the left (counter-clockwise)"
+msgstr ""
+"Pivoter la page vers la gauche (sens inverse des aiguilles d'une montre)"
+
+#. Label on rotate page left (anti-clockwise) item
+#: ../data/simple-scan.ui.h:81
+msgid "Rotate Left"
+msgstr "Pivoter vers la gauche"
+
+#. Tooltip for rotate right (clockwise) button
+#: ../data/simple-scan.ui.h:83
+msgid "Rotate the page to the right (clockwise)"
+msgstr "Pivoter la page vers la droite (sens des aiguilles d'une montre)"
+
+#. Label on rotate page right (clockwise) item
+#: ../data/simple-scan.ui.h:85
+msgid "Rotate Right"
+msgstr "Pivoter vers la droite"
+
+#: ../data/simple-scan.ui.h:86
+msgid "Crop the selected page"
+msgstr "Recadrer la page sélectionnée"
+
+#: ../data/simple-scan.ui.h:87
+msgid "Crop"
+msgstr "Recadrer"
+
+#. Title of preferences dialog
+#: ../data/simple-scan.ui.h:89
+msgid "Preferences"
+msgstr "Préférences"
+
+#. Label beside scan source combo box
+#: ../data/simple-scan.ui.h:91
+msgid "Scan S_ource:"
+msgstr "S_ource de numérisation :"
+
+#. Label beside scan source combo box
+#: ../data/simple-scan.ui.h:93
+msgid "_Text Resolution:"
+msgstr "Résolution pour le _texte :"
+
+#. Label beside scan source combo box
+#: ../data/simple-scan.ui.h:95
+msgid "_Photo Resolution:"
+msgstr "Résolution pour la _photo :"
+
+#. Label beside scan side combo box
+#: ../data/simple-scan.ui.h:97
+msgid "Scan Side:"
+msgstr "Face à numériser :"
+
+#. Label beside page size combo box
+#: ../data/simple-scan.ui.h:99
+msgid "Page Size:"
+msgstr "Taille de page :"
+
+#. Label beside brightness scale
+#: ../data/simple-scan.ui.h:101
+msgid "Brightness:"
+msgstr "Luminosité :"
+
+#. Label beside contrast scale
+#: ../data/simple-scan.ui.h:103
+msgid "Contrast:"
+msgstr "Contraste :"
+
+#. Label beside quality scale
+#: ../data/simple-scan.ui.h:105
+msgid "Quality:"
+msgstr "Qualité :"
+
+#: ../data/simple-scan.desktop.in.h:2
+msgid "Scan Documents"
+msgstr "Numériser des documents"
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:1
+msgid "Device to scan from"
+msgstr "Numériser depuis"
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:2
+msgid "SANE device to acquire images from."
+msgstr "Périphérique SANE à utiliser pour l'acquisition des images."
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:3
+msgid "Type of document being scanned"
+msgstr "Nature du document qui va être numérisé"
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:4
+msgid ""
+"Type of document being scanned. This setting decides on the scan resolution, "
+"colors and post-processing."
+msgstr ""
+"Type de document numérisé. Ce réglage définit la résolution de numérisation, "
+"les couleurs et le post-traitement."
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:5
+msgid "Width of paper in tenths of a mm"
+msgstr "Largeur du papier en dixièmes de mm."
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:6
+msgid ""
+"The width of the paper in tenths of a mm (or 0 for automatic paper "
+"detection)."
+msgstr ""
+"La largeur du papier en dixièmes de mm (ou 0 pour une détection automatique "
+"du papier)."
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:7
+msgid "Height of paper in tenths of a mm"
+msgstr "Hauteur du papier en dixièmes de mm"
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:8
+msgid ""
+"The height of the paper in tenths of a mm (or 0 for automatic paper "
+"detection)."
+msgstr ""
+"La hauteur du papier en dixièmes de mm (ou 0 pour une détection automatique "
+"du papier)."
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:9
+msgid "Brightness of scan"
+msgstr "Luminosité de la numérisation"
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:10
+msgid "The brightness adjustment from -100 to 100 (0 being none)."
+msgstr "Ajustement de la luminosité de -100 à 100 (0 pour aucun)."
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:11
+msgid "Contrast of scan"
+msgstr "Contraste de la numérisation"
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:12
+msgid "The contrast adjustment from -100 to 100 (0 being none)."
+msgstr "Ajustement du contraste de -100 à 100 (0 pour aucun)."
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:13
+msgid "Resolution for text scans"
+msgstr "Résolution des numérisations de textes"
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:14
+msgid "The resolution in dots-per-inch to use when scanning text."
+msgstr ""
+"La résolution en points par pouce à utiliser lors de la numérisation de "
+"texte."
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:15
+msgid "Resolution for photo scans"
+msgstr "Résolution des numérisations de photos"
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:16
+msgid "The resolution in dots-per-inch to use when scanning photos."
+msgstr ""
+"La résolution en points par pouce à utiliser lors de la numérisation de "
+"photos."
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:17
+msgid "Page side to scan"
+msgstr "Face(s) de la page à numériser"
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:18
+msgid "The page side to scan."
+msgstr "Le côté de la page à numériser."
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:19
+msgid "Directory to save files to"
+msgstr "Dossier dans lequel les fichiers sont enregistrés"
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:20
+msgid ""
+"The directory to save files to. Defaults to the documents directory if unset."
+msgstr ""
+"Le dossier où les fichiers sont enregistrés. S'il n'est pas défini, le "
+"dossier documents sera utilisé par défaut."
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:21
+msgid "Quality value to use for JPEG compression"
+msgstr "Taux de qualité à utiliser pour la compression JPEG"
+
+#: ../data/org.gnome.SimpleScan.gschema.xml.in.h:22
+msgid "Quality value to use for JPEG compression."
+msgstr "Taux de qualité à utiliser pour la compression JPEG."
+
+#. Error displayed when no scanners to scan with
+#: ../src/scanner.vala:840
+msgid "No scanners available.  Please connect a scanner."
+msgstr ""
+"Aucun périphérique de numérisation disponible. Veuillez en connecter un."
+
+#. Error displayed when cannot connect to scanner
+#: ../src/scanner.vala:870
+msgid "Unable to connect to scanner"
+msgstr "Impossible de se connecter au scanner"
+
+#. Error display when unable to start scan
+#: ../src/scanner.vala:1219
+msgid "Unable to start scan"
+msgstr "Impossible de démarrer la numérisation"
+
+#. Error displayed when communication with scanner broken
+#: ../src/scanner.vala:1232 ../src/scanner.vala:1329
+msgid "Error communicating with scanner"
+msgstr "Erreur de communication avec le scanner"
+
+#. Help string for command line --version flag
+#: ../src/simple-scan.vala:21
+msgid "Show release version"
+msgstr "Affiche la version du logiciel"
+
+#. Help string for command line --debug flag
+#: ../src/simple-scan.vala:24
+msgid "Print debugging messages"
+msgstr "Afficher les messages de débogage"
+
+#: ../src/simple-scan.vala:26
+msgid "Fix PDF files generated with older versions of Simple Scan"
+msgstr ""
+"Corriger les fichiers PDF générés avec les anciennes versions de Simple Scan"
+
+#. Title of error dialog when scan failed
+#: ../src/simple-scan.vala:297
+msgid "Failed to scan"
+msgstr "Échec de la numérisation"
+
+#. Default filename to use when saving document (and extension will be added, e.g. .jpg)
+#: ../src/simple-scan.vala:316
+msgid "Scanned Document"
+msgstr "Document numérisé"
+
+#. Arguments and description for --help text
+#: ../src/simple-scan.vala:529
+msgid "[DEVICE...] - Scanning utility"
+msgstr "[DEVICE...] - Outil de numérisation"
+
+#. Text printed out when an unknown command-line argument provided
+#: ../src/simple-scan.vala:540
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options."
+msgstr ""
+"Exécutez « %s --help » pour voir la liste complète des options disponibles "
+"en ligne de commande."
+
+#: ../src/ui.vala:118
+msgid "Scanned Document.pdf"
+msgstr "Document.pdf numérisé"
+
+#: ../src/ui.vala:242 ../src/ui.vala:1519
+msgid "_Close"
+msgstr "_Fermer"
+
+#. Label in authorization dialog.  '%s' is replaced with the name of the resource requesting authorization
+#: ../src/ui.vala:250
+#, c-format
+msgid "Username and password required to access '%s'"
+msgstr "Nom d'utilisateur et mot de passe nécessaires pour accéder à « %s »"
+
+#. Warning displayed when no scanners are detected
+#: ../src/ui.vala:295
+msgid "No scanners detected"
+msgstr "Aucun scanner n'a été détecté."
+
+#. Hint to user on why there are no scanners detected
+#: ../src/ui.vala:297
+msgid "Please check your scanner is connected and powered on"
+msgstr "Veuillez vérifier que votre scanner est connecté et sous tension."
+
+#. Save dialog: Dialog title
+#: ../src/ui.vala:433
+msgid "Save As..."
+msgstr "Enregistrer sous…"
+
+#: ../src/ui.vala:436 ../src/ui.vala:598
+msgid "_Cancel"
+msgstr "_Annuler"
+
+#: ../src/ui.vala:437 ../src/ui.vala:599
+msgid "_Save"
+msgstr "_Sauvegarder"
+
+#. Save dialog: Filter name to show only image files
+#: ../src/ui.vala:447
+msgid "Image Files"
+msgstr "Fichiers images"
+
+#. Save dialog: Filter name to show all files
+#: ../src/ui.vala:453
+msgid "All Files"
+msgstr "Tous les fichiers"
+
+#. 
+#: ../src/ui.vala:458
+msgid "Select File _Type"
+msgstr "Sélectionnez le _type de fichier"
+
+#. Save dialog: Label for saving in PDF format
+#: ../src/ui.vala:472
+msgid "PDF (multi-page document)"
+msgstr "PDF (document multi-pages)"
+
+#. Save dialog: Label for saving in JPEG format
+#: ../src/ui.vala:478
+msgid "JPEG (compressed)"
+msgstr "JPEG (compressé)"
+
+#. Save dialog: Label for saving in PNG format
+#: ../src/ui.vala:484
+msgid "PNG (lossless)"
+msgstr "PNG (sans perte)"
+
+#. Title of error dialog when save failed
+#: ../src/ui.vala:573
+msgid "Failed to save file"
+msgstr "Impossible d'enregistrer le fichier"
+
+#. Text in dialog warning when a document is about to be lost
+#: ../src/ui.vala:596
+msgid "If you don't save, changes will be permanently lost."
+msgstr ""
+"Si vous n'enregistrez pas, les modifications seront définitivement perdues."
+
+#. Text in dialog warning when a document is about to be lost
+#: ../src/ui.vala:632
+msgid "Save current document?"
+msgstr "Enregistrer le document actuel ?"
+
+#. Button in dialog to create new document and discard unsaved document
+#: ../src/ui.vala:634
+msgid "Discard Changes"
+msgstr "Abandonner les modifications"
+
+#. Error message display when unable to save image for preview
+#: ../src/ui.vala:918
+msgid "Unable to save image for preview"
+msgstr "Impossible d'enregistrer l'image pour la prévisualiser"
+
+#. Error message display when unable to preview image
+#: ../src/ui.vala:930
+msgid "Unable to open image preview application"
+msgstr "Impossible d'ouvrir l'aperçu de l'image"
+
+#. Error message displayed when unable to launch help browser
+#: ../src/ui.vala:1201
+msgid "Unable to open help file"
+msgstr "Impossible d'ouvrir le fichier d'aide"
+
+#. The license this software is under (GPL3+)
+#: ../src/ui.vala:1222
+msgid ""
+"This program is free software: you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation, either version 3 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"Ce programme est libre, vous pouvez le redistribuer et/ou le modifier\n"
+"selon les termes de la licence publique générale (GPL) GNU publiée\n"
+"par la Free Software Foundation, dans sa version 3 ou supérieure\n"
+"(selon votre choix).\n"
+"\n"
+"Ce programme est distribué dans l'espoir d'être utile, mais\n"
+"SANS AUCUNE GARANTIE, y compris les garanties de \n"
+"COMMERCIALISATION ou d'ADAPTATION A UN BUT SPÉCIFIQUE.\n"
+"Consultez la licence publique générale GNU pour plus de détails.\n"
+"\n"
+"Vous devez avoir reçu une copie de la licence publique générale GNU\n"
+"en même temps que ce programme ; si ce n'est pas le cas, consultez\n"
+"<http://www.gnu.org/licenses/>."
+
+#. Title of about dialog
+#: ../src/ui.vala:1225
+msgid "About Simple Scan"
+msgstr "À propos de Simple Scan"
+
+#. Description of program
+#: ../src/ui.vala:1228
+msgid "Simple document scanning tool"
+msgstr "Numériser simplement vos documents"
+
+#: ../src/ui.vala:1237
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  65GYgzf https://launchpad.net/~65gygzf\n"
+"  Alexandre Franke https://launchpad.net/~afranke\n"
+"  Alexandre Pliarchopoulos https://launchpad.net/~al-pliar\n"
+"  Antoine Pernot https://launchpad.net/~antoinepernot\n"
+"  Audiger Jeremy https://launchpad.net/~tankypon\n"
+"  Bruno Patri https://launchpad.net/~bruno666-deactivatedaccount\n"
+"  Christophe Herot https://launchpad.net/~tictoc-free\n"
+"  Darknautilus https://launchpad.net/~darknautilus\n"
+"  David Bosman https://launchpad.net/~david-bosman\n"
+"  Emmanuel Sunyer https://launchpad.net/~esunyer\n"
+"  Fabien Lusseau https://launchpad.net/~fabien-beosfrance\n"
+"  Florent Thévenet https://launchpad.net/~florent-thevenet\n"
+"  François Tissandier https://launchpad.net/~baloo\n"
+"  Grégoire Seux https://launchpad.net/~kamaradclimber\n"
+"  Guillaume Lanquepin-Chesnais https://launchpad.net/~guyomel\n"
+"  Jörg BUCHMANN https://launchpad.net/~jorg-buchmann\n"
+"  Kaïs Bejaoui https://launchpad.net/~kais\n"
+"  Manuel Berrocal https://launchpad.net/~manu-berrocal\n"
+"  Nicolas Delvaux https://launchpad.net/~malizor\n"
+"  Olivier Febwin https://launchpad.net/~febcrash\n"
+"  Ozouli.SaLeH https://launchpad.net/~ouzouli\n"
+"  Pascal Maugendre https://launchpad.net/~pmaugendre\n"
+"  Paul Forget https://launchpad.net/~paul92\n"
+"  Pierre Slamich https://launchpad.net/~pierre-slamich\n"
+"  RemiJ https://launchpad.net/~remij\n"
+"  Simon THOBY https://launchpad.net/~simonthoby\n"
+"  Stanislas Michalak https://launchpad.net/~stanislas-michalak\n"
+"  Sylvie Gallet https://launchpad.net/~sylvie-gallet\n"
+"  Xavier Guillot https://launchpad.net/~valeryan-24\n"
+"  Xavier Verne https://launchpad.net/~xavier-verne\n"
+"  YannUbuntu https://launchpad.net/~yannubuntu\n"
+"  beudbeud https://launchpad.net/~beudbeud\n"
+"  blackbg https://launchpad.net/~corentin-cadiou\n"
+"  loic08 https://launchpad.net/~loic08\n"
+"  londumas https://launchpad.net/~helion331990\n"
+"  torglut https://launchpad.net/~torglut"
+
+#. Text in dialog warning when a document is about to be lost
+#: ../src/ui.vala:1259
+msgid "Save document before quitting?"
+msgstr "Enregistrer le document avant de quitter ?"
+
+#. Button in dialog to quit and discard unsaved document
+#: ../src/ui.vala:1261
+msgid "Quit without Saving"
+msgstr "Quitter sans enregistrer"
+
+#. Preferences dialog: Label for default resolution in resolution list
+#: ../src/ui.vala:1380
+#, c-format
+msgid "%d dpi (default)"
+msgstr "%d ppp (par défaut)"
+
+#. Preferences dialog: Label for minimum resolution in resolution list
+#: ../src/ui.vala:1383
+#, c-format
+msgid "%d dpi (draft)"
+msgstr "%d ppp (brouillon)"
+
+#. Preferences dialog: Label for maximum resolution in resolution list
+#: ../src/ui.vala:1386
+#, c-format
+msgid "%d dpi (high resolution)"
+msgstr "%d ppp (haute résolution)"
+
+#. Preferences dialog: Label for resolution value in resolution list (dpi = dots per inch)
+#: ../src/ui.vala:1389
+#, c-format
+msgid "%d dpi"
+msgstr "%d ppp"
+
+#. Title of dialog when cannot load required files
+#: ../src/ui.vala:1444
+msgid "Files missing"
+msgstr "Fichiers manquants"
+
+#. Description in dialog when cannot load required files
+#: ../src/ui.vala:1446
+msgid "Please check your installation"
+msgstr "Veuillez vérifier votre installation"
+
+#. Button in error infobar to open preferences dialog and change scanner
+#: ../src/ui.vala:1521
+msgid "Change _Scanner"
+msgstr "Changer de _scanner"
+
+#. Combo box value for automatic paper size
+#: ../src/ui.vala:1527
+msgid "Automatic"
+msgstr "Automatique"
+
+#: ../src/ui.vala:1577
+msgid "Darker"
+msgstr "Plus foncé"
+
+#: ../src/ui.vala:1579
+msgid "Lighter"
+msgstr "Plus clair"
+
+#: ../src/ui.vala:1587
+msgid "Less"
+msgstr "Moins"
+
+#: ../src/ui.vala:1589
+msgid "More"
+msgstr "Plus"
+
+#: ../src/ui.vala:1597
+msgid "Minimum"
+msgstr "Minimum"
+
+#: ../src/ui.vala:1599
+msgid "Maximum"
+msgstr "Maximum"
+
+#: ../src/ui.vala:1637
+msgid "Saving document..."
+msgstr "Enregistrement du document…"
+
+#: ../src/ui.vala:1787
+#, c-format
+msgid "Saving page %d out of %d"
+msgstr "Enregistrement de la page %d sur %d"
+
+#, c-format
+#~ msgid ""
+#~ "Usage:\n"
+#~ "  %s [DEVICE...] - Scanning utility"
+#~ msgstr ""
+#~ "Usage :\n"
+#~ "  %s [PÉRIPHÉRIQUE...] - utilitaire de numérisation"
+
+#, c-format
+#~ msgid ""
+#~ "GTK+ Options:\n"
+#~ "  --class=CLASS                   Program class as used by the window "
+#~ "manager\n"
+#~ "  --name=NAME                     Program name as used by the window "
+#~ "manager\n"
+#~ "  --screen=SCREEN                 X screen to use\n"
+#~ "  --sync                          Make X calls synchronous\n"
+#~ "  --gtk-module=MODULES            Load additional GTK+ modules\n"
+#~ "  --g-fatal-warnings              Make all warnings fatal"
+#~ msgstr ""
+#~ "Options GTK+ :\n"
+#~ "  --class=CLASSE Classe du programme telle qu'utilisée par le gestionnaire "
+#~ "de fenêtres\n"
+#~ "  --name=NOM Nom du programme tel qu'utilisé par le gestionnaire de "
+#~ "fenêtres\n"
+#~ "  --screen=ÉCRAN Écran X à utiliser\n"
+#~ "  --sync Rendre les appels X synchrones\n"
+#~ "  --gtk-module=MODULES Charger des modules GTK+ supplémentaires\n"
+#~ "  --g-fatal-warnings Rendre tous les avertissements fatals"
+
+#~ msgid "Window height in pixels"
+#~ msgstr "Hauteur de la fenêtre en pixels"
+
+#~ msgid "Window width in pixels"
+#~ msgstr "Largeur de la fenêtre en pixels"
+
+#~ msgid "TRUE if the application window is maximized"
+#~ msgstr "VRAI si la fenêtre de l'application est maximisée"
+
+#~ msgid ""
+#~ "The height of scanned image in pixels. This value is updated to what the "
+#~ "last scanned page was."
+#~ msgstr ""
+#~ "La hauteur de l'image numérisée en pixels. Cette valeur est mise à jour en "
+#~ "fonction de la dernière page numérisée."
+
+#~ msgid ""
+#~ "The width of scanned image in pixels. This value is updated to what the last "
+#~ "scanned page was."
+#~ msgstr ""
+#~ "La largeur de l'image numérisée en pixels. Cette valeur est mise à jour en "
+#~ "fonction de la dernière page numérisée."
+
+#~ msgid "Height of scanned image in pixels"
+#~ msgstr "Hauteur de l'image numérisée en pixels"
+
+#~ msgid "Resolution of last scanned image"
+#~ msgstr "Résolution de la dernière image numérisée"
+
+#~ msgid "Direction of scan"
+#~ msgstr "Sens de numérisation"
+
+#, c-format
+#~ msgid ""
+#~ "Help Options:\n"
+#~ "  -d, --debug                     Print debugging messages\n"
+#~ "  -v, --version                   Show release version\n"
+#~ "  -h, --help                      Show help options\n"
+#~ "  --help-all                      Show all help options\n"
+#~ "  --help-gtk                      Show GTK+ options"
+#~ msgstr ""
+#~ "Options d'aide :\n"
+#~ "  -d, --debug Affiche les messages d'erreur\n"
+#~ "  -v, --version Affiche le numéro de version\n"
+#~ "  -h, --help Affiche les options d'aide\n"
+#~ "  --help-all Affiche toutes les options d'aide\n"
+#~ "  --help-gtk Affiche les options de GTK+"
+
+#~ msgid ""
+#~ "The direction of the scanner across the scanned page. It can be one of the "
+#~ "following: 'top-to-bottom' 'bottom-to-top' 'left-to-right' 'right-to-left'"
+#~ msgstr ""
+#~ "Direction du balayage lors de la numérisation de la page. Celle-ci peut "
+#~ "être : de haut en bas ; de bas en haut ; de gauche à droite ; de droite à "
+#~ "gauche"
+
+#~ msgid "The resolution in dots-per-inch of the previously scanned image."
+#~ msgstr "La résolution de la dernière image numérisée en points par pouce."
+
+#~ msgid "Width of scanned image in pixels"
+#~ msgstr "Largeur de l'image numérisée en pixels"
+
+#~ msgid ""
+#~ "Type of document being scanned. 'text' for text documents, 'photo' for "
+#~ "photos. This setting decides on the scan resolution, colors and post-"
+#~ "processing."
+#~ msgstr ""
+#~ "Nature du document qui va être numérisé. « texte » pour les documents texte, "
+#~ "« photo » pour les photographies. Ce paramètre détermine la résolution de "
+#~ "numérisation, le nombre de couleurs et les traitements postérieurs."
+
+#~ msgid ""
+#~ "The page side to scan. It can be one of the following: 'both' 'front' 'back'"
+#~ msgstr ""
+#~ "La ou les faces de la page à numériser. Cela peut être au choix : « Recto "
+#~ "verso », « Recto » ou « Verso »"
+
+#~ msgid "The direction of the scanner across the scanned page."
+#~ msgstr "Le sens du scanner par rapport à la page numérisée."
+
+#~ msgid "4&#xD7;6"
+#~ msgstr "4&#xD7;6"

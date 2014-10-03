@@ -1,0 +1,10 @@
+02_server_sm-disable.patch
+05_use-system-miniupnpc.patch
+06_use-ubuntu-help.patch
+11_hurd_maxhostnamelen.patch
+12_app-indicators-only.patch
+nodisplay_autostart.patch
+disable_webservices_check.patch
+CVE-2013-5745.patch
+revert_use_prompt_notification.patch
+git_tls_read.patch

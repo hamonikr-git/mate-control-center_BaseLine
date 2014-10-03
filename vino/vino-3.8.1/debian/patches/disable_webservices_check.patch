@@ -1,0 +1,44 @@
+From: Mathieu Trudel-Lapierre <mathieu.trudel-lapierre@canonical.com>
+Subject: Really disable the connectivity check.
+Bug-Ubuntu: https://bugs.launchpad.net/ubuntu/+source/vino/+bug/608701
+
+This was disabled upstream due to IPv4/IPv6 reachability concerns with the
+implementation of the external webservices. However, it's not been totally
+disabled: just the message update from the check result was removed.
+
+Completely disable the connectivity check so that no traffic is sent out,
+since any such check done silently really isn't very nice.
+---
+ capplet/vino-preferences.c |    7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+Index: vino-3.8.1/capplet/vino-preferences.c
+===================================================================
+--- vino-3.8.1.orig/capplet/vino-preferences.c	2013-11-18 15:14:13.686555620 +0100
++++ vino-3.8.1/capplet/vino-preferences.c	2013-11-18 15:14:13.682555620 +0100
+@@ -382,11 +382,11 @@
+   g_signal_connect (window, "response",
+                     G_CALLBACK (vino_preferences_dialog_response), NULL);
+ 
+-  app->info = vino_connectivity_info_new (gdk_screen_get_number (gtk_window_get_screen (window)));
+ /* Remove reporting of reachability from network to workaround GNOME bug
+  * 596190.
+  * TODO: Fix the bug and remove this workaround. */
+ #if 0
++  app->info = vino_connectivity_info_new (gdk_screen_get_number (gtk_window_get_screen (window)));
+   g_signal_connect (app->info, "changed",
+                     G_CALLBACK (vino_preferences_info_changed),
+                     gtk_builder_get_object (builder, "message"));
+@@ -436,7 +436,12 @@
+ {
+   VinoPreferences *app = (VinoPreferences *) object;
+ 
++/* Remove reporting of reachability from network to workaround GNOME bug
++ * 596190.
++ * TODO: Fix the bug and remove this workaround. */
++#if 0
+   g_object_unref (app->info);
++#endif
+ 
+   G_OBJECT_CLASS (vino_preferences_parent_class)->finalize (object);
+ }

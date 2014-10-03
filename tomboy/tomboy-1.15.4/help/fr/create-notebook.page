@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="create-notebook" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#notebooks"/>
+    <desc>Créer un nouveau bloc-notes dans Tomboy.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Création d'un bloc-notes</title>    
+  
+  <p>Les blocs-notes vous permettent de regrouper les notes qui sont reliées entre elles. Vous pouvez ajouter une note dans un bloc-notes dans la fenêtre « Rechercher dans toutes les notes » ou directement depuis une note.</p>
+  
+<steps>
+	<item>
+	<p>Cliquez sur l'icône de Tomboy dans le tableau de bord de GNOME, la barre des tâches sous Microsoft Windows ou le dock sous Mac OS X. Un menu apparaît.</p>
+	</item>
+	
+<!--
+<comment>Screenshots need to be updated using Clearlooks</comment>
+-->
+
+	<item>
+		<p>Choisissez <guiseq><gui>Bloc-notes</gui><gui>Nouveau bloc-notes</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Saisissez un nom pour le nouveau bloc-notes.</p>
+	</item>
+</steps>
+
+	<p>Pour créer un nouveau bloc-notes depuis la fenêtre <gui>Rechercher dans toutes les notes</gui> :</p>
+
+<steps>
+	<item>
+		<p>Ouvrez <gui>Rechercher dans toutes les notes</gui> depuis l'icône Tomboy du tableau de bord de GNOME, de la barre des tâches de Microsoft Windows ou du dock de Mac OS X ou cliquez sur « Rechercher » dans une note ouverte.</p>
+	</item>
+	<item>
+		<p>Avec la souris, faites un clic droit dans la zone à gauche et choisissez <gui>Nouveau bloc-notes</gui>.</p>
+	</item>
+	<item>
+		<p>Saisissez un nom pour le nouveau bloc-notes.</p>
+	</item>
+</steps>
+
+	<p>ou :</p>
+	
+<steps>
+	<item>
+		<p>Avec la fenêtre <gui>Rechercher dans toutes les notes</gui> ouverte, choisissez <guiseq><gui>Fichier</gui><gui>Bloc-notes</gui><gui>Nouveau bloc-notes</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Saisissez un nom pour le nouveau bloc-notes.</p>
+	</item>
+</steps>	
+
+        
+	
+	
+</page>

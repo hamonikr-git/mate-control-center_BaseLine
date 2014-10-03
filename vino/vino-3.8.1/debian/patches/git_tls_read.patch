@@ -1,0 +1,91 @@
+From 3b38cf49321924ff2ec657a6e4db8a1932245ef9 Mon Sep 17 00:00:00 2001
+From: Daniel P. Berrange <berrange@redhat.com>
+Date: Mon, 16 Sep 2013 15:44:30 +0000
+Subject: Fix reading of TLS data to account for cached data
+
+When you ask GnuTLS to read 'n' bytes of data it is free to read many
+more than just 'n' bytes, since there is no 1-1 mapping between
+encrypted and unencrypted byte counts.
+
+The Vino I/O handle triggered when POLLIN reads one single RFB message,
+then checks if POLLIN is still set. This is broken if gnutls has
+previously read more than one RFB message worth of data.
+
+A symptom of this brokeness is that when connecting to a Vino server
+with gtk-vnc, the screen will be initially black until the user moves
+the mouse or presses a key.  Even then there will be periodic delays in
+updates if the pending data condition arises again.
+
+Fortunately GnuTLS has a function gnutls_record_check_pending which lets
+apps determine if there is any cached data read off the wire.
+
+Signed-off-by: Daniel P. Berrange <berrange@redhat.com>
+
+https://bugzilla.gnome.org/show_bug.cgi?id=703326
+---
+diff --git a/server/libvncserver/rfb/rfb.h b/server/libvncserver/rfb/rfb.h
+index 368a4cf..0de79a4 100644
+--- a/server/libvncserver/rfb/rfb.h
++++ b/server/libvncserver/rfb/rfb.h
+@@ -397,6 +397,7 @@ extern void rfbSetLocalOnly(rfbScreenInfoPtr rfbScreen, rfbBool localOnly);
+ extern void rfbCloseClient(rfbClientPtr cl);
+ extern int ReadExact(rfbClientPtr cl, char *buf, int len);
+ extern int ReadExactTimeout(rfbClientPtr cl, char *buf, int len,int timeout);
++extern int ReadPending(rfbClientPtr cl);
+ extern int WriteExact(rfbClientPtr cl, const char *buf, int len);
+ extern void rfbProcessNewConnection(rfbScreenInfoPtr rfbScreen, int insock);
+ extern void rfbCheckFds(rfbScreenInfoPtr rfbScreen,long usec);
+diff --git a/server/libvncserver/sockets.c b/server/libvncserver/sockets.c
+index bbdaf3d..746a3e5 100644
+--- a/server/libvncserver/sockets.c
++++ b/server/libvncserver/sockets.c
+@@ -457,6 +457,21 @@ int ReadExact(rfbClientPtr cl,char* buf,int len)
+ }
+ 
+ #ifdef VINO_HAVE_GNUTLS
++extern int ReadPending(rfbClientPtr cl)
++{
++    if (cl->useTLS && cl->tlsSession)
++        return gnutls_record_check_pending(cl->tlsSession);
++    else
++        return 0;
++}
++#else
++extern int ReadPending(rfbClientPtr cl)
++{
++    return 0;
++}
++#endif
++
++#ifdef VINO_HAVE_GNUTLS
+ static int
+ WriteExactOverTLS(rfbClientPtr cl, const char* buf, int len)
+ {
+diff --git a/server/vino-server.c b/server/vino-server.c
+index fc70e68..a3edf9d 100644
+--- a/server/vino-server.c
++++ b/server/vino-server.c
+@@ -445,9 +445,12 @@ vino_server_update_client_timeout (rfbClientPtr rfb_client)
+ }
+ 
+ static inline gboolean
+-more_data_pending (int fd)
++more_data_pending (rfbClientPtr rfb_client)
+ {
+-  struct pollfd pollfd = { fd, POLLIN|POLLPRI, 0 };
++  struct pollfd pollfd = { rfb_client->sock, POLLIN|POLLPRI, 0 };
++
++  if (ReadPending(rfb_client) > 0)
++      return TRUE;
+ 
+   return poll (&pollfd, 1, 0) == 1;
+ }
+@@ -462,7 +465,7 @@ vino_server_client_data_pending (GIOChannel   *source,
+ 
+   do {
+     rfbProcessClientMessage (rfb_client);
+-  } while (more_data_pending (rfb_client->sock));
++  } while (more_data_pending (rfb_client));
+   
+   return vino_server_update_client (rfb_client);
+ }

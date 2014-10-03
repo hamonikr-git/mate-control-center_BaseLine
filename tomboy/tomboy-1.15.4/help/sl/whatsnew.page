@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="new" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#new"/>
+    <revision pkgversion="2.30" version="0.1" date="2010-05-29" status="draft"/>
+    <desc>Kaj je novega v <app>Sporočilcih Tomboy</app>.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Kaj je novega v <app>Tomboy</app></title>
+
+  <p><app>Tomboy</app> vsebuje številne nove izboljšave. Tomboy bi se sedaj moral zagnati opazno hitreje zaradi izboljšav v zagonu Tomboya.</p>
+  <p>Kopiranje in lepljenje iz Tomboya v druge programe je bilo izboljšano. Sedaj ima podporo za oblikovanje pri lepljenju v programe, ki razumejo HTML kot so Evolution, OpenOffice.org in drugi programi.</p>
+  <p>
+    <app>Tomboy</app> can now synchronize your notes automatically for you
+    when you when you have synchronize enabled.
+  </p>
+
+  <p>Dodana je bila podpora za skočne sezname Microsoft Windows 7, ki vam pomaga pri dostopu do svojih sporočil in iskanju ali ustvarjanju novega sporočilca hitreje iz opravilne vrstice Windows.</p>
+
+</page>

@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MATE Dictionary Library Reference Manual: GdictSourceLoader</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="MATE Dictionary Library Reference Manual">
+<link rel="up" href="sources.html" title="Dictionary Source">
+<link rel="prev" href="GdictSource.html" title="GdictSource">
+<link rel="next" href="gdict-utils.html" title="Gdict Utilities">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#GdictSourceLoader.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#GdictSourceLoader.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties"> <span class="dim">|</span> 
+                  <a href="#GdictSourceLoader.properties" class="shortcut">Properties</a></span><span id="nav_signals"> <span class="dim">|</span> 
+                  <a href="#GdictSourceLoader.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="sources.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GdictSource.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gdict-utils.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GdictSourceLoader"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GdictSourceLoader.top_of_page"></a>GdictSourceLoader</span></h2>
+<p>GdictSourceLoader — Loader object for a set of dictionary sources</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GdictSourceLoader.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="returnvalue">GdictSourceLoader</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GdictSourceLoader.html#gdict-source-loader-new" title="gdict_source_loader_new ()">gdict_source_loader_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GdictSourceLoader.html#gdict-source-loader-update" title="gdict_source_loader_update ()">gdict_source_loader_update</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GdictSourceLoader.html#gdict-source-loader-add-search-path" title="gdict_source_loader_add_search_path ()">gdict_source_loader_add_search_path</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GdictSourceLoader.html#gdict-source-loader-get-paths" title="gdict_source_loader_get_paths ()">gdict_source_loader_get_paths</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="GdictSourceLoader.html#gdict-source-loader-get-names" title="gdict_source_loader_get_names ()">gdict_source_loader_get_names</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GdictSourceLoader.html#gdict-source-loader-get-sources" title="gdict_source_loader_get_sources ()">gdict_source_loader_get_sources</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GdictSource.html" title="GdictSource"><span class="returnvalue">GdictSource</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GdictSourceLoader.html#gdict-source-loader-get-source" title="gdict_source_loader_get_source ()">gdict_source_loader_get_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GdictSourceLoader.html#gdict-source-loader-has-source" title="gdict_source_loader_has_source ()">gdict_source_loader_has_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GdictSourceLoader.html#gdict-source-loader-remove-source" title="gdict_source_loader_remove_source ()">gdict_source_loader_remove_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GdictSourceLoader.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></td>
+<td class="property_name"><a class="link" href="GdictSourceLoader.html#GdictSourceLoader--paths" title="The “paths” property">paths</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></td>
+<td class="property_name"><a class="link" href="GdictSourceLoader.html#GdictSourceLoader--sources" title="The “sources” property">sources</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GdictSourceLoader.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GdictSourceLoader.html#GdictSourceLoader-source-loaded" title="The “source-loaded” signal">source-loaded</a></td>
+<td class="signal_flags"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GdictSourceLoader.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> GdictSourceLoader
+</pre>
+</div>
+<div class="refsect1">
+<a name="GdictSourceLoader.description"></a><h2>Description</h2>
+<p><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> allows searching for dictionary source definition
+files inside a set of paths and return a <a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a> using its name.</p>
+</div>
+<div class="refsect1">
+<a name="GdictSourceLoader.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gdict-source-loader-new"></a><h3>gdict_source_loader_new ()</h3>
+<pre class="programlisting"><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="returnvalue">GdictSourceLoader</span></a> *
+gdict_source_loader_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> object.  This object is used to search
+into a list of paths for dictionary source files.  See <a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a> for
+more informations about the format of dictionary source files.</p>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.2.5"></a><h4>Returns</h4>
+<p> a new <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> object</p>
+<p></p>
+</div>
+<p class="since">Since 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-source-loader-update"></a><h3>gdict_source_loader_update ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdict_source_loader_update (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>);</pre>
+<p>Queue an update of the sources inside <em class="parameter"><code>loader</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-source-loader-add-search-path"></a><h3>gdict_source_loader_add_search_path ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdict_source_loader_add_search_path (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>,
+                                     <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *path</code></em>);</pre>
+<p>Adds <em class="parameter"><code>path</code></em>
+ to the search paths list of <em class="parameter"><code>loader</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>loader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>path</p></td>
+<td class="parameter_description"><p>a path to be added to the search path list</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-source-loader-get-paths"></a><h3>gdict_source_loader_get_paths ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+gdict_source_loader_get_paths (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>);</pre>
+<p>Gets the list of paths used by <em class="parameter"><code>loader</code></em>
+ to search for dictionary source
+files.</p>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.5.6"></a><h4>Returns</h4>
+<p> a list containing the paths.  The returned list is owned
+by the <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> object and should never be free or modified.</p>
+<p></p>
+</div>
+<p class="since">Since 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-source-loader-get-names"></a><h3>gdict_source_loader_get_names ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+gdict_source_loader_get_names (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>,
+                               <em class="parameter"><code><span class="type">gsize</span> *length</code></em>);</pre>
+<p>Retrieves the list of dictionary source names available into the
+search paths of <em class="parameter"><code>loader</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>loader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>length</p></td>
+<td class="parameter_description"><p>return location for the number of source names, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.6.6"></a><h4>Returns</h4>
+<p> a newly allocated, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> terminated array of strings.  You
+should free the returned string array with <a href="http://library.gnome.org/devel/glib/unstable/glib-String-Utility-Functions.html#g-strfreev"><code class="function">g_strfreev()</code></a></p>
+<p></p>
+</div>
+<p class="since">Since 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-source-loader-get-sources"></a><h3>gdict_source_loader_get_sources ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *
+gdict_source_loader_get_sources (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>);</pre>
+<p>Retrieves the list of dictionary sources available into the search
+paths of <em class="parameter"><code>loader</code></em>
+, in form of <a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a> objects.</p>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>loader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.7.6"></a><h4>Returns</h4>
+<p> a list of <a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a> objects.  The returned list
+is owned by the <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> object, and should never be
+freed or modified.</p>
+<p></p>
+</div>
+<p class="since">Since 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-source-loader-get-source"></a><h3>gdict_source_loader_get_source ()</h3>
+<pre class="programlisting"><a class="link" href="GdictSource.html" title="GdictSource"><span class="returnvalue">GdictSource</span></a> *
+gdict_source_loader_get_source (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>,
+                                <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Retrieves a dictionary source using <em class="parameter"><code>name</code></em>
+.  You can use the returned
+<a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a> object to create the right <a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a> for that
+dictionary source.</p>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>loader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>a name of a dictionary source</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.8.6"></a><h4>Returns</h4>
+<p> a referenced <a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a> object.  You should de-reference
+it using <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when you finished using it.</p>
+<p></p>
+</div>
+<p class="since">Since 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-source-loader-has-source"></a><h3>gdict_source_loader_has_source ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gdict_source_loader_has_source (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>,
+                                <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source_name</code></em>);</pre>
+<p>Checks whether <em class="parameter"><code>loader</code></em>
+ has a dictionary source with name <em class="parameter"><code>source_name</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>loader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>source_name</p></td>
+<td class="parameter_description"><p>the name of a dictionary source</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.9.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the dictionary source is known</p>
+<p></p>
+</div>
+<p class="since">Since 0.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-source-loader-remove-source"></a><h3>gdict_source_loader_remove_source ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gdict_source_loader_remove_source (<em class="parameter"><code><a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader</code></em>,
+                                   <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>Removes the dictionary source <em class="parameter"><code>name</code></em>
+ from <em class="parameter"><code>loader</code></em>
+.  This function will
+also remove the dictionary source definition file bound to it.</p>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>loader</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of a dictionary source</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.4.5.8.10.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the dictionary source was successfully removed</p>
+<p></p>
+</div>
+<p class="since">Since 1.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GdictSourceLoader.other_details"></a><h2>Types and Values</h2>
+</div>
+<div class="refsect1">
+<a name="GdictSourceLoader.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GdictSourceLoader--paths"></a><h3>The <code class="literal">“paths”</code> property</h3>
+<pre class="programlisting">  “paths”                    <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></pre>
+<p>Search paths used by this object.</p>
+<p>Flags: Read</p>
+<p class="since">Since 1.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GdictSourceLoader--sources"></a><h3>The <code class="literal">“sources”</code> property</h3>
+<pre class="programlisting">  “sources”                  <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></pre>
+<p>Dictionary sources found.</p>
+<p>Flags: Read</p>
+<p class="since">Since 1.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GdictSourceLoader.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GdictSourceLoader-source-loaded"></a><h3>The <code class="literal">“source-loaded”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GdictSourceLoader.html" title="GdictSourceLoader"><span class="type">GdictSourceLoader</span></a> *loader,
+               <a class="link" href="GdictSource.html" title="GdictSource"><span class="type">GdictSource</span></a>       *source,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>           user_data)</pre>
+<p>Flags: <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+<p class="since">Since 1.0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

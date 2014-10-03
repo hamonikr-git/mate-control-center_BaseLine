@@ -1,0 +1,4 @@
+1.8.0
+
+  * Use yelp-tools instead of mate-doc-utils
+  * Bugfixes

@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY app "MATE Terminal">
+<!ENTITY appversion "2.30">
+<!ENTITY manrevision "2.9">
+<!ENTITY date "January 2010">
+]>
+<!-- =============Document Header ============================= -->
+<!-- (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  Template version: 2.0 beta
+  Template last modified Jan 2, 2002 
+    
+  -->
+<article id="index" lang="uk"> 
+  <articleinfo> 
+     <title>Довідка з MATE Terminal</title> 
+     <abstract role="description">
+       <para lang="en">
+	 The Terminal gives users the power to communicate with their system using
+text-based commands through a shell such as Bash.
+       </para>
+     </abstract>
+     <copyright lang="en"> 
+        <year>2002</year> 
+        <year>2003</year> 
+        <year>2004</year> 
+        <holder>Sun Microsystems</holder> 
+     </copyright> 
+     <copyright lang="en"> 
+        <year>2000</year> 
+        <holder>Miguel de Icaza</holder> 
+     </copyright> 
+     <copyright lang="en"> 
+        <year>2000</year> 
+        <holder>Michael Zucchi</holder> 
+     </copyright>
+     <copyright lang="en"> 
+        <year>2000</year> 
+        <holder>Alexander Kirillov</holder> 
+     </copyright>
+     <copyright lang="en"> 
+        <year>2008</year> 
+        <holder>Christian Persch</holder> 
+     </copyright>
+     <copyright lang="en">
+        <year>2009</year>
+        <year>2010</year> 
+        <holder>Paul Cutler</holder> 
+     </copyright>	 
+     <publisher> 
+        <publishername>Проект документування MATE</publishername> 
+     </publisher>    <legalnotice id="legalnotice">
+         <para>Дозволяється копіювати, розповсюджувати та/або змінювати цей документ на умовах ліцензії GNU Free Documentation License (GFDL), версії 1.1 або будь-якої старшої версії, що опублікована Free Software Foundation без інваріантних розділів, тексту титульної сторінки, та тексту фінальної сторінки. Копію GFDL можна знайти <ulink type="help" url="help:fdl">за адресою</ulink> або у файлі COPYING-DOCS, що постачається з цією довідкою.</para>
+          <para>Ця довідка є частиною збірки документації з MATE, що постачається на умовах ліцензіїGFDL. Якщо ви бажаєте розповсюджувати цю довідку окремо від збірки, можете це зробити додавши до довідки копію ліцензії, як описано у пункті 66 ліцензії.</para>
+ 
+         <para>Більшість назв, що використовуються компаніями для розповсюдження їх продуктів та послуг є торговими марками. Якщо такі назви зустрічаються у документації з MATE та учасникам проекту документування MATE відомо, що вони є торговими марками, тоді ці назви пишуться великими літерами або починаються з великої літери.</para>
+ 
+         <para lang="en">
+           DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+           UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+           WITH THE FURTHER UNDERSTANDING THAT:
+ 
+           <orderedlist>
+                 <listitem>
+                   <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                     WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                     IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                     THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                     A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                     RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                     OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                     MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                     YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                     CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                     SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                     OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                     LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                     VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                     EXCEPT UNDER THIS DISCLAIMER; AND
+                   </para>
+                 </listitem>
+                 <listitem>
+                   <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                        THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                        CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                        INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                        DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                        OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                        PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                        DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                        CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                        INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                        OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                        MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                        LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                        DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                        EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                        THE POSSIBILITY OF SUCH DAMAGES.
+                   </para>
+                 </listitem>
+           </orderedlist>
+         </para>
+   </legalnotice>
+  
+     <authorgroup> 
+        <author lang="en"> 
+          <firstname>Sun</firstname> 
+          <surname>MATE Documentation Team</surname> 
+          <affiliation> 
+             <orgname>Sun Microsystems</orgname> 
+          </affiliation> 
+        </author> 
+        <author lang="en"> 
+          <firstname>Miguel</firstname> 
+          <surname>de Icaza</surname> 
+          <affiliation> 
+             <orgname>MATE Documentation Project</orgname> 
+          </affiliation> 
+        </author> 
+        <author lang="en"> 
+          <firstname>Michael</firstname> 
+          <surname>Zucchi</surname> 
+          <affiliation> 
+             <orgname>MATE Documentation Project</orgname> 
+          </affiliation> 
+        </author> 
+        <author lang="en"> 
+          <firstname>Alexander</firstname> 
+          <surname>Kirillov</surname> 
+          <affiliation> 
+             <orgname>MATE Documentation Project</orgname> 
+          </affiliation> 
+        </author> 
+     </authorgroup> 
+     <publisher role="maintainer">
+       <publishername>Проект документування MATE</publishername>
+     </publisher>
+	<releaseinfo revision="2.30" role="review">
+    </releaseinfo>
+     <revhistory>
+	<revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.9</revnumber> 
+          <date>January 2010</date> 
+          <revdescription> 
+             <para role="author" lang="en">Paul Cutler
+		<email>pcutler@gnome.org</email> </para>
+             <para role="publisher" lang="en">MATE Documentation Project</para>
+          </revdescription> 
+        </revision> 
+	<revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.8</revnumber> 
+          <date>March 2009</date> 
+          <revdescription> 
+             <para role="author" lang="en">Paul Cutler</para>
+             <para role="publisher" lang="en">MATE Documentation Project</para>
+          </revdescription> 
+        </revision>
+	<revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.7</revnumber> 
+          <date>November 2003</date> 
+          <revdescription> 
+             <para role="author" lang="en">Sun GNOME Documentation Team</para>
+             <para role="publisher" lang="en">MATE Documentation Project</para>
+          </revdescription> 
+        </revision>
+	<revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.6</revnumber> 
+          <date>September 2003</date> 
+          <revdescription> 
+             <para role="author" lang="en">Sun GNOME Documentation Team</para>
+             <para role="publisher" lang="en">MATE Documentation Project</para>
+          </revdescription> 
+        </revision>
+	<revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.5</revnumber> 
+          <date>May 2003</date> 
+          <revdescription> 
+             <para role="author" lang="en">
+                Sun GNOME Documentation Team
+             </para>
+             <para role="publisher" lang="en">
+                MATE Documentation Project 
+             </para>
+          </revdescription> 
+        </revision>
+			<revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.4</revnumber> 
+          <date>January 2003</date> 
+          <revdescription> 
+             <para role="author" lang="en">
+                Sun GNOME Documentation Team
+             </para>
+             <para role="publisher" lang="en">
+                MATE Documentation Project 
+             </para>
+          </revdescription> 
+        </revision>
+        <revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.3</revnumber> 
+          <date>August 2002</date> 
+          <revdescription> 
+             <para role="author" lang="en">
+                Sun GNOME Documentation Team
+             </para>
+             <para role="publisher" lang="en">
+                MATE Documentation Project 
+             </para>
+          </revdescription> 
+        </revision>
+        <revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.2</revnumber> 
+          <date>August 2002</date> 
+          <revdescription> 
+             <para role="author" lang="en">
+                Sun GNOME Documentation Team
+             </para>
+             <para role="publisher" lang="en">
+                MATE Documentation Project 
+             </para>
+          </revdescription> 
+        </revision>
+        <revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.1</revnumber> 
+          <date>August 2002</date> 
+          <revdescription> 
+             <para role="author" lang="en">
+                Sun GNOME Documentation Team
+             </para>
+             <para role="publisher" lang="en">
+                MATE Documentation Project 
+             </para>
+          </revdescription> 
+        </revision>
+        <revision lang="en"> 
+          <revnumber>MATE Terminal Manual V2.0</revnumber> 
+          <date>April 2002</date> 
+          <revdescription> 
+             <para role="author" lang="en">
+                Sun GNOME Documentation Team
+             </para>
+             <para role="publisher" lang="en">
+                MATE Documentation Project 
+             </para>
+          </revdescription> 
+        </revision> 
+        <revision lang="en"> 
+          <revnumber>MATE Terminal User's Guide</revnumber> 
+          <date>May 2000</date> 
+          <revdescription> 
+             <para role="author" lang="en">
+                Miguel de Icaza, Michael Zucchi, Alexander Kirollov
+                <email>docs@gnome.org</email> 
+             </para>
+             <para role="publisher" lang="en">
+                MATE Documentation Project 
+             </para>
+          </revdescription> 
+        </revision> 
+     </revhistory> 
+     <releaseinfo lang="en"> This manual describes version 2.30 of MATE Terminal.
+        </releaseinfo> 
+     <legalnotice> 
+        <title>Зворотній зв'язок</title> 
+        <para>Щоб сповістити про помилку або внести пропозицію відносно аплету MATE Terminal або цієї довідки, дотримуйтесь інструкцій на сторінці <ulink url="help:user-guide?feedback" type="help">Сторінка зворотного зв'язку MATE</ulink>.</para>
+     </legalnotice> 
+  </articleinfo> 
+  <indexterm lang="en"> 
+     <primary>MATE Terminal</primary> 
+  </indexterm> 
+  <indexterm lang="en"> 
+     <primary>terminal application</primary> 
+  </indexterm> 
+  
+  <!-- ============= Introduction ============================== -->
+  <sect1 id="mate-terminal-introduction"> 
+     <title>Вступ</title> 
+     <para><application>MATE Terminal</application> - програма емуляції термінала, яку можна використовувати для виконання наступних дій:</para>
+     <variablelist> 
+        <varlistentry> 
+          <term>Отримання доступу до UNIX оболонки у середовищі MATE</term> 
+          <listitem> 
+             <para>Оболонка - це програма яка інтерпретує та виконує команди, які ви набираєте у командному рядку. Коли ви запускаєте <application>MATE Terminal</application>, програма запускає типову для вашого облікового запису оболонку. Ви можете у будь-який час перемикнутись на іншу оболонку.</para>
+          </listitem> 
+        </varlistentry> 
+        <varlistentry> 
+          <term>Запуск будь-яких програм, призначених для запуску у терміналах  VT102, VT220 та <application>xterm</application></term> 
+          <listitem> 
+             <para><application>MATE Terminal</application> імітує програму <application>xterm</application>, розроблену X Consortium. В свою чергу, програма xterm імітує DEC VT102 термінал та також підтримує escape-послідовності терміналу DEC VT220. Escape-послідовності - це серії символів, які починаються з символу Esc. <application>MATE Terminal</application> підтримує всі escape-послідовності, які використовуються VT102 та VT220 переміщення курсору та очистки екрану.</para>
+          </listitem> 
+        </varlistentry> 
+     </variablelist> 
+  </sect1> 
+
+  <!--=========== Getting Started ============================== -->
+  
+  <sect1 id="mate-terminal-get-started"> 
+     <title>Початок роботи</title> 
+     <para>Наступні розділи описують запуск <application>MATE Terminal</application>.</para>
+     <sect2 id="mate-terminal-to-start"> 
+        <title>Запуск MATE Terminal</title> 
+        <para><application>MATE Terminal</application> можна запустити наступними способами:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term>З меню <guimenu>Програми</guimenu></term> 
+             <listitem>
+                <para>Виберіть <menuchoice><guimenu>Стандартні</guimenu><guimenuitem>Термінал</guimenuitem></menuchoice>.</para>
+             </listitem>
+          </varlistentry> 
+          <varlistentry> 
+             <term>З командного рядка</term> 
+             <listitem> 
+                <para>Введіть наступну команду: <command>mate-terminal</command></para>
+                <para>У параметрах командного рядка ви можете змінити шлях запуску програми <application>MATE Terminal</application>. Переглянути наявні параметри командного рядка можна виконавши наступну команду: <command>mate-terminal --help</command></para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="mate-terminal-first-start"> 
+        <title>Перший запуск MATE Terminal</title> 
+        <para>При першому запуску <application>MATE Terminal</application> програма відкриває вікно терміналу з типовими параметрами. Група типових параметрів називається профілем Default. Назва профілю відображається у заголовку вікна <application>MATE Terminal</application>.</para>
+        <figure id="mate-terminal_default"> 
+          <title>Приклад Default вікна MATE Terminal</title> 
+          <screenshot> 
+             <screeninfo>типове вікно MATE Terminal</screeninfo> 
+             <mediaobject lang="en"> 
+                <imageobject>
+                  <imagedata fileref="figures/mate-terminal-default.png" format="PNG"/> 
+                </imageobject> 
+                <textobject> 
+                  <phrase>MATE Terminal default window</phrase> 
+                </textobject> 
+             </mediaobject> 
+          </screenshot> 
+        </figure> 
+        <para>Вікно терміналу відображає командний рядок, де ви можете набирати команди UNIX. Запрошення командного рядку може бути %, #, &gt;, $, або будь-яким іншим спеціальним символом. Курсор знаходиться у позиції командного рядка. Коли ви набираєте UNIX команду та натискаєте <keycap>Enter</keycap>, комп'ютер її виконує. Зазвичай, <application>MATE Terminal</application> використовує типову оболонку користувача, який запускає програму.</para>
+        <para><application>MATE Terminal</application> також встановлює наступні змінні оточення:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term lang="en"> 
+                <varname>TERM</varname></term> 
+             <listitem> 
+                <para>Типове її значення <literal>xterm</literal>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <varname>COLORTERM</varname></term> 
+             <listitem> 
+                <para>Типове її значення <literal>mate-terminal</literal></para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <varname>WINDOWID</varname></term> 
+             <listitem> 
+                <para>Типове її значення дорівнює ідентифікатору вікна X11.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+
+     <sect2 id="mate-terminal-profiles"> 
+        <title>Профілі терміналів</title> 
+        <para>Ви можете створити новий профіль та застосувати цей профіль до терміналу. Профіль дозволяє змінити характеристики програми: шрифт, колір та ефекти, поведінку прокрутки, заголовок вікна, та сумісність з іншими терміналами. Також у профілі можна вказати команду, яка буде автоматично запускатись при запуску <application>MATE Terminal</application>.</para>
+          <para lang="en">You define each terminal profile in the <guilabel>Profiles</guilabel> dialog, which you access from the <guimenu>Edit</guimenu> menu. You can define as many different profiles as you require. When you start a terminal, you can choose the profile that you want to use for the terminal. Alternatively, you can change the terminal profile while you use the terminal. To specify an initial profile for a terminal when you start the application from a command line, use the following command: </para>
+        <para lang="en">
+          <command>mate-terminal --window-with-profile=<replaceable>profilename</replaceable></command> 
+        </para>
+        <para>Назва поточного профілю відображується у заголовку вікна програми <application>MATE Terminal</application>, якщо ви не вказали інший заголовок у діалоговому вікні <guilabel>Правка профілю</guilabel>.</para>
+        <para>Докладнішу інформацію про створення та використання нових профілів терміналів дивіться у <xref linkend="mate-terminal-manage-profiles"/>.</para>
+     </sect2> 
+     <sect2 id="mate-terminal-more-windows"> 
+        <title>Робота з кількома терміналами</title> 
+        <para><application>MATE Terminal</application> підтримує вкладки, які дозволяють відкривати декілька терміналів у одному вікні. Кожен термінал відкривається у окремій вкладці. Для відображення терміналу, натисніть на відповідну вкладку. Кожен вкладений термінал у вікні є окремим породженим процесом, тому можна використовувати кожен термінал для різних задач. Ви можете застосувати окремий профіль для кожного вкладеного терміналу у вікні.</para>
+       <para>Заголовок вікна терміналу показує або назву поточного профілю, або назву визначену у поточному профілі. На <xref linkend="mate-terminal-tabbed"/> показано <application>MATE Terminal</application> вікно з чотирма вкладками. У цьому випадку, кожна з чотирьох вкладок має окремий профіль. У заголовку віка показана назва профілю активної вкладки - Профіль1.</para>
+        <figure id="mate-terminal-tabbed"> 
+          <title>Приклад вікна терміналу з вкладками</title> 
+          <screenshot> 
+             <screeninfo>типове вікно MATE Terminal</screeninfo> 
+             <mediaobject lang="en"> 
+                <imageobject>
+                  <imagedata fileref="figures/mate-terminal-tabbed.png" format="PNG"/> 
+                </imageobject> 
+                <textobject> 
+                  <phrase>MATE Terminal default window</phrase> 
+                </textobject> 
+             </mediaobject> 
+          </screenshot> 
+        </figure> 
+        <para>Докладніше про відкривання нового терміналу з вкладками дивіться у <xref linkend="mate-terminal-windows"/>.</para>
+     </sect2> 
+
+  </sect1> 
+  
+  <!--=========== Usage ============================== -->  
+
+  <sect1 id="mate-terminal-usage"> 
+     <title>Використання</title> 
+
+     <sect2 id="mate-terminal-windows"> 
+        <title>Відкривання та закривання терміналів</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Відкривання нового вікна терміналу:</term> 
+             <listitem> 
+                <para>Виберіть <menuchoice><guimenu>Файл</guimenu><guimenuitem>Закрити термінал</guimenuitem></menuchoice>.</para>
+                <para>Новий термінал успадковує від батьківського терміналу параметри програми та типову оболонку.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Закривання вікна терміналу:</term> 
+             <listitem> 
+                <para>Виберіть <menuchoice><guimenu>Файл</guimenu><guimenuitem>Закрити вікно</guimenuitem></menuchoice>.</para>
+                <para>Ця дія призводить до закривання терміналу та усіх породжених процесів, які ви запускали у терміналі. Якщо ви закриєте останнє термінальне вікно, програма <application>MATE Terminal</application> завершується.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Додавання нової вкладки з терміналом у вікно:</term> 
+             <listitem> 
+                <para lang="en">
+                  Choose <menuchoice><guimenu>File</guimenu><guisubmenu>Open Tab</guisubmenu><guimenuitem>Default</guimenuitem></menuchoice> or just <menuchoice><guimenu>File</guimenu><guimenuitem>Open Tab</guimenuitem></menuchoice> if there is no submenu.  </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Відображення терміналу у вкладці:</term> 
+             <listitem> 
+                <para>Натисніть на вкладці потрібного вам вкладеного терміналу, або виберіть вкладку у меню <guimenu>Вкладки</guimenu>.</para>
+                <para>Або ж, для переміщення між вкладками виберіть <menuchoice><guimenu>Вкладки</guimenu><guimenuitem>Наступна вкладка</guimenuitem></menuchoice> чи <menuchoice><guimenu>Вкладки</guimenu><guimenuitem>Попередня вкладка</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Закривання вкладеного терміналу:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Виберіть вкладку з терміналом, який ви хочете закрити.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Виберіть <menuchoice><guimenu>Файл</guimenu><guimenuitem>Закрити вкладку</guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="mate-terminal-manage-profiles"> 
+        <title>Керування профілями</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Додавання нового профілю:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Виберіть <menuchoice><guimenu>Файл</guimenu><guimenuitem>Створити профіль</guimenuitem></menuchoice>, з'явиться діалогове вікно <guilabel>Створення профілю</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Введіть назву нового профілю у текстовому полі <guilabel>Назва профілю</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Використовуйте розкривний список <guilabel>Базуватись на</guilabel>, щоб вибрати профіль на якому буде оснований новий профіль.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Натисніть <guibutton>Створити</guibutton>, з'явиться діалогове вікно <guilabel>Правка профілю</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Натисніть <guibutton>Закрити</guibutton>. <application>MATE Terminal</application> додасть профіль до підменю <menuchoice><guimenu>Термінал</guimenu><guisubmenu>Змінити профіль</guisubmenu></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Зміна профілю вкладеного терміналу:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Натисніть на вкладці вкладеного терміналу, профіль якого бажаєте змінити.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Виберіть <menuchoice><guimenu>Термінал</guimenu><guisubmenu>Змінити профіль</guisubmenu><guimenuitem><replaceable>назва_профілю</replaceable></guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Правка профілю:</term> 
+             <listitem> 
+                <para>Профіль можна виправити у діалоговому вікні <guilabel>Правка профілю</guilabel>. Відкрити діалогове вікно <guilabel>Правка профілю</guilabel> можна наступними способами:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Виберіть <menuchoice><guimenu>Правка</guimenu><guisubmenu>Поточний профіль</guisubmenu></menuchoice>.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para lang="en">
+                        Right-click in the terminal window, then choose <menuchoice><guimenuitem>Profiles</guimenuitem> <guimenuitem>Profile Preferences</guimenuitem></menuchoice> from the popup menu.  </para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Виберіть <menuchoice><guimenu>Правка</guimenu><guisubmenu>Профілі</guisubmenu></menuchoice>, вкажіть профіль, який ви бажаєте відредагувати, потім натисніть <guibutton>Правка</guibutton>. Інформацію про параметри, які можна змінити у профілях дивіться на <xref linkend="mate-terminal-prefs"/>.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Видалення профілю:</term> 
+             <listitem> 
+                <para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Виберіть <menuchoice><guimenu>Правка</guimenu><guimenuitem>Профілі</guimenuitem></menuchoice>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Виберіть у списку <guilabel>Профілі</guilabel> назву профілю, який ви хочете видалити, потім натисніть <guibutton>Видалити</guibutton>. З'явиться діалогове вікно <guilabel>Видалення профілю</guilabel>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Щоб підтвердити видалення натисніть <guibutton>Видалити</guibutton>.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Щоб закрити діалогове вікно <guilabel>Правка профілю</guilabel> натисніть <guibutton>Закрити</guibutton>.</para>
+                     </listitem> 
+                  </orderedlist> 
+                </para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="mate-terminal-tabs"> 
+        <title>Модифікація вікна терміналу</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Приховування панелі меню:</term> 
+             <listitem> 
+                <para>Виберіть <menuchoice><guimenu>Файл</guimenu><guimenuitem>Закрити вкладку</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Показ прихованої панелі меню:</term> 
+             <listitem> 
+                <para>Клацніть правою кнопкою миші у вікні термінала, потім у контекстному меню виберіть <guimenuitem>Показати панель меню</guimenuitem>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry><term>Відображення <application>MATE Terminal</application> у повноекранному режимі:</term>
+            <listitem>
+              <para>Виберіть <menuchoice><guimenu>Вигляд</guimenu><guimenuitem>На весь екран</guimenuitem></menuchoice>. У повноекранному режимі текст відображається у вікні, що займає весь екран. Це вікно не містить рамки чи заголовку. Для виходу з цього режиму знову виберіть <menuchoice><guimenu>Вигляд</guimenu><guimenuitem>На весь екран</guimenuitem></menuchoice>.</para>
+            </listitem>     
+          </varlistentry>
+          <varlistentry> 
+             <term>Зміна зовнішнього вигляду вікна терміналу:</term> 
+             <listitem> 
+                <para>Інформацію про параметри вікна <guilabel>Правка профілю</guilabel>, які дозволяють змінити зовнішній вигляд вікна терміналу приведено у <xref linkend="mate-terminal-prefs"/>. Наприклад, ви можете змінити колір тла, або положення панелі прокрутки.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="mate-terminal-contents"> 
+        <title>Робота з вмістом вікон терміналу</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Прокрутка попередніх команди та їх виводу:</term> 
+             <listitem> 
+                <para>Виконайте одну з наступних дій:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Використовуйте прокрутку, яка зазвичай відображається праворуч термінального вікна.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Натискайте клавіші <keycombo><keycap>Shift</keycap><keycap>Page Up</keycap></keycombo>, <keycombo><keycap>Shift</keycap><keycap>Page Down</keycap></keycombo>, <keycombo><keycap>Shift</keycap><keycap>Home</keycap></keycombo>, або <keycombo><keycap>Shift</keycap><keycap>End</keycap></keycombo>.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para lang="en">
+                  The number of lines that you can scroll back to in the terminal window is determined by the <guilabel>Scrollback</guilabel> setting in the <guilabel>Scrolling</guilabel> tabbed section of the <guilabel>Editing Profile</guilabel> dialog.  You can also scroll up or down one line at a time by pressing <keycombo><keycap>Control</keycap><keycap>Shift</keycap><keycap>Up</keycap></keycombo> or <keycombo><keycap>Control</keycap><keycap>Shift</keycap><keycap>Down</keycap></keycombo>. </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Вибір та копіювання тексту:</term> 
+             <listitem> 
+                <para>Ви можете вибрати текст будь-яким з наступних способів:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Щоб виділити символи, клацніть на першому символі, який ви хочете виділити та перетягніть мишу до останнього символу, який треба виділити.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Щоб виділити слова, двічі клацніть на першому слові, яке ви бажаєте виділити та перетягніть мишу до останнього слова, яке треба виділити.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Щоб виділити рядки, тричі клацніть на першому рядку, який ви хочете виділити та перетягніть мишу до останнього рядка, який ви бажаєте виділити.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>Всі ці дії копіюють текст між першим та останнім елементами. В усіх варіантах, <application>MATE Terminal</application> копіює вибраний текст у буфер обміну при відпусканні кнопки миші. Для явного копіювання виділеного тексту, виберіть <menuchoice><guimenu>Правка</guimenu><guimenuitem>Копіювати</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Вставка тексту у термінал:</term> 
+             <listitem> 
+                <para>Якщо ви вже скопіювали текст у буфер обміну, ви можете вставити текст у термінал одним з наступних способів:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para>Щоб вставити текст, скопійований лише виділенням, клацніть середньою кнопкою у командному рядку. Якщо ваша миша не має середньої кнопки, прочитайте у документації з X-сервера спосіб емуляції середньої кнопки миші.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para>Щоб вставити явно скопійований текст, виберіть <menuchoice><guimenu>Правка</guimenu><guimenuitem>Вставити</guimenuitem></menuchoice>.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Перетягування назви файла у вікно терміналу:</term> 
+             <listitem> 
+                <para>Можна перетягнути назву файла у термінал з іншої програми, наприклад з менеджера файлів. Термінал відобразить шлях та повну назву файлу.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term>Доступ до посилання:</term> 
+             <listitem> 
+                <para>Щоб отримати доступ до універсального локатору ресурсу (URL), який відображується у терміналі, виконайте наступні кроки:</para>
+                  <orderedlist> 
+                     <listitem> 
+                        <para>Перемістіть мишу на URL так, щоб посилання підсвітилось.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Клацніть правою кнопкою миші на URL, відкриється контекстне меню.</para>
+                     </listitem> 
+                     <listitem> 
+                        <para>Щоб відкрити URL у програмі виберіть з меню <guimenuitem>Відкрити посилання</guimenuitem>.</para>
+                     </listitem> 
+                  </orderedlist>                
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     
+     <sect2 id="mate-terminal-shortcuts"> 
+        <title>Перегляд комбінацій клавіш</title> 
+        <para>Щоб переглянути комбінації клавіш, визначені у програмі <application>MATE Terminal</application>, виберіть <menuchoice><guimenu>Правка</guimenu><guimenuitem>Комбінації клавіш</guimenuitem></menuchoice>. Вікно <guilabel>Комбінації клавіш</guilabel> містить наступні пункти:</para>
+        <variablelist> 
+          <varlistentry> 
+             <term lang="en"><guilabel>Disable all menu access keys (such as Alt+f to open File menu)</guilabel></term> 
+             <listitem> 
+                <para lang="en">
+                  Deselect this option to disable the access keys that are defined to enable you to use the keyboard instead of the mouse to select a menu item. Each access key is identified by an underlined letter on a menu or dialog option. In some cases, you must press the <keycap>Alt</keycap> key in combination with the access key to perform the action.  </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"><guilabel>Disable menu shortcut key (F10 by default)</guilabel></term> 
+             <listitem> 
+                <para lang="en">
+                  Deselect this option to disable the shortcut key that is defined to enable you to access the <application>MATE Terminal</application> menus. The default shortcut key to access the menus is <keycap>F10</keycap>.  </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"><guilabel>Shortcut Keys</guilabel></term> 
+             <listitem> 
+                <para>У розділі <guilabel>Комбінації клавіш</guilabel> перелічені комбінації клавіш, визначені для кожного пункту меню.</para>
+                <note><para>Не всі клавіші можна використовувати у комбінаціях клавіш, наприклад, не можна використовувати <keycap>Tab</keycap>.</para></note>
+             </listitem> 
+          </varlistentry>
+        </variablelist> 
+     </sect2>
+     
+	<sect2 id="mate-terminal-resize">
+	<title>Розмір тексту</title>
+	<para>Для зміни розміру тексту у вікні MATE Terminal є кілька способів:</para>
+		<itemizedlist>
+			<listitem><para>Для збільшення тексту виберіть <menuchoice><guimenu>Вигляд</guimenu><guimenuitem>Збільшити</guimenuitem></menuchoice>.</para>
+			</listitem>
+			<listitem><para>Для зменшення тексту виберіть <menuchoice><guimenu>Вигляд</guimenu><guimenuitem>Зменшити</guimenuitem></menuchoice>.</para>
+			</listitem>
+			<listitem><para>Для повернення до оригінального розміру тексту виберіть <menuchoice><guimenu>Вигляд</guimenu><guimenuitem>Звичайний розмір</guimenuitem></menuchoice>.</para>
+			</listitem>
+		</itemizedlist>
+
+	</sect2>	
+
+     <sect2 id="mate-terminal-title"> 
+        <title>Зміна заголовку вікна терміналу</title> 
+        <para>Щоб змінити заголовок поточного вікна терміналу, виконайте наступні кроки:</para>
+        <orderedlist>
+          <listitem>
+            <para>Виберіть <menuchoice><guimenu>Термінал</guimenu><guimenuitem>Встановлення заголовка</guimenuitem></menuchoice>.</para>
+          </listitem>
+          <listitem>
+            <para>Введіть новий заголовок у текстовому полі <guilabel>Заголовок</guilabel>. <application>MATE Terminal</application> негайно застосує зміни.</para>
+          </listitem>
+          <listitem>
+            <para>Щоб закрити діалогове вікно <guilabel>Правка профілю</guilabel> натисніть <guibutton>Закрити</guibutton>.</para>
+          </listitem>
+        </orderedlist>
+	</sect2>	
+
+     <sect2 id="mate-terminal-encoding"> 
+        <title>Зміна кодування символів</title> 
+        <para>Щоб змінити кодування символів виберіть <menuchoice><guimenu>Термінал</guimenu><guisubmenu>Встановити кодування символів</guisubmenu></menuchoice>, потім виберіть відповідне кодування.</para>
+
+     <sect3 id="mate-terminal-encoding-add"> 
+        <title>Зміна кодування списку кодувань символів</title> 
+        <para>Щоб змінити список кодувань, що відображаються у <guisubmenu>Встановити кодування символів</guisubmenu> меню, виконайте наступні кроки:</para>
+        <orderedlist>
+          <listitem>
+            <para>Виберіть <menuchoice><guimenu>Термінал</guimenu><guisubmenu>Встановити кодування символів</guisubmenu><guimenuitem>Додати чи видалити</guimenuitem></menuchoice>.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">To add an encoding to the <guisubmenu>Set Character Encoding</guisubmenu> menu, select the encoding in the <guilabel>Available encodings</guilabel> list box, then click the right arrow button.
+            </para>
+          </listitem>
+          <listitem>
+            <para lang="en">To remove an encoding from the <guisubmenu>Set Character Encoding</guisubmenu> menu, select the encoding in the <guilabel>Encodings shown in menu</guilabel> list box, then click the left arrow button.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Щоб закрити діалогове вікно <guilabel>Додавання або видалення кодувань терміналу</guilabel> натисніть кнопку <guibutton>Закрити</guibutton>.</para>
+          </listitem>
+        </orderedlist>
+	</sect3>	
+
+	</sect2>	
+
+     <sect2 id="mate-terminal-reset"> 
+        <title>Налагодження терміналу</title> 
+        <para>У цьому розділі приводяться деякі поради для випадків, коли у вас виникають проблеми з терміналами.</para>
+        <variablelist> 
+          <varlistentry> 
+             <term>Повторна ініціалізація стану термінала:</term> 
+             <listitem> 
+                <para>Виберіть <menuchoice><guimenu>Термінал</guimenu><guimenuitem>Скинути</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+        <variablelist> 
+          <varlistentry> 
+             <term>Повторна ініціалізація терміналу та очистка екрану:</term> 
+             <listitem> 
+                <para>Виберіть <menuchoice><guimenu>Термінал</guimenu><guimenuitem>Скинути та очистити</guimenuitem></menuchoice>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2>   
+
+  </sect1> 
+  
+  <!--=========== Preferences ============================== -->  
+
+  <sect1 id="mate-terminal-prefs"> 
+     <title>Параметри</title> 
+     <para>Для налаштовування <application>MATE Terminal</application> виберіть <menuchoice><guimenu>Правка</guimenu><guimenuitem>Поточний профіль</guimenuitem></menuchoice>. Щоб налаштувати інший профіль виберіть <menuchoice><guimenu>Правка</guimenu><guimenuitem>Профілі</guimenuitem></menuchoice>, виберіть бажаний профіль, потім натисніть <guibutton>Правка</guibutton>.</para>
+     <para>Діалогове вікно <guilabel>Правка профілю</guilabel> містить наступні вкладки з параметрами програми <application>MATE Terminal</application>:</para>
+     <itemizedlist> 
+		<listitem><para><xref linkend="mate-terminal-prefs-general"/></para>
+		</listitem>
+		<listitem><para><xref linkend="mate-terminal-prefs-title"/></para>
+		</listitem>
+		<listitem><para><xref linkend="mate-terminal-prefs-colors"/></para>
+		</listitem>
+		<listitem><para><xref linkend="mate-terminal-prefs-effects"/></para>
+		</listitem>
+		<listitem><para><xref linkend="mate-terminal-prefs-scrolling"/></para>
+		</listitem>
+		<listitem><para><xref linkend="mate-terminal-prefs-compatibility"/></para>
+		</listitem>
+	 </itemizedlist>
+
+     
+     <sect2 id="mate-terminal-prefs-general"> 
+        <title>Загальне</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Profile name</guilabel> </term> 
+             <listitem> 
+                <para>Використовуйте це текстове поле для вказування назви поточного профілю.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Use the system fixed width font</guilabel> </term>
+             <listitem> 
+                <para lang="en">
+                  Select this option to use the standard fixed width font that is specified in the <guilabel>Font</guilabel> tab of the <application>Appearance</application> preference tool.
+                </para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Font</guilabel> </term> 
+             <listitem> 
+                <para>Натисніть на цю кнопку, щоб вибрати тип та розмір шрифту терміналу. Ця кнопка доступна лише якщо не відмічений параметр <guilabel>Використовувати системний термінальний шрифт</guilabel>.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry>
+             <term lang="en"> 
+                <guilabel>Allow bold text</guilabel> </term> 
+             <listitem> 
+                <para>Цей параметр дозволяє ввімкнути у терміналі відображення жирного тексту.</para>
+             </listitem> 
+          </varlistentry>
+          <varlistentry>
+             <term lang="en"> 
+                <guilabel>Show menubar by default in new terminals</guilabel>
+                </term> 
+             <listitem> 
+                <para>Відмітьте цей параметр, щоб у нових вікнах терміналу показувалась панель меню.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Terminal bell</guilabel> </term> 
+             <listitem> 
+                <para lang="en">
+                  Select this option to enable the terminal bell.
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Select-by-word characters</guilabel> </term> 
+             <listitem> 
+                <para>У цьому полі вказуються символи або групи символів, які <application>MATE Terminal</application> вважатиме словами при виборі тексту словами. Докладнішу інформацію стосовно виділення тексту словами дивіться у <xref linkend="mate-terminal-contents"/>.</para>
+             </listitem> 
+          </varlistentry> 
+          
+        </variablelist> 
+     </sect2> 
+     <sect2 id="mate-terminal-prefs-title"> 
+        <title>Заголовок та команда</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Initial title</guilabel> </term> 
+             <listitem> 
+                <para>Це текстове поле визначає початковий заголовок терміналу для цього профілю. Нові термінали, які запускаються з поточного терміналу мають новий початковий заголовок.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>When terminal commands set their own titles</guilabel> </term>
+             <listitem> 
+                <para>Цей розкривний список використовується для вказування способу обробки динамічних заголовків, тобто, заголовків терміналів які встановлюються командами, що запускаються у терміналі.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Run command as a login shell</guilabel> </term> 
+             <listitem> 
+                <para>Відмітьте цей параметр, щоб команда, яка запускається у терміналі, запускалась як оболонка входу. Якщо команда не є оболонкою, тоді цей параметр не впливає не команду.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Update login records when command is launched</guilabel> </term> 
+             <listitem> 
+                <para lang="en">
+                  Select this option to insert a new entry in the login records when a new shell is opened. 
+                </para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Run a custom command instead of my shell</guilabel>
+                </term> 
+             <listitem> 
+                <para>Відмітьте цей параметр, щоб у терміналі запускалась інша команда, а не оболонка. Команду вкажіть у текстовому полі <guilabel>Інша команда</guilabel>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>When command exits</guilabel> </term> 
+             <listitem> 
+                <para lang="en">
+                  Use this drop-down list to specify what action to perform when the command exits. 
+                </para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="mate-terminal-prefs-colors"> 
+        <title>Кольори</title> 
+        <variablelist> 
+        <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Foreground and Background</guilabel>
+                </term> 
+             <listitem> 
+                <para lang="en">
+                  Select the <guilabel>Use colours from system theme</guilabel> option to use the colors that are specified in the MATE Desktop theme that is selected in the <guilabel>Theme</guilabel> tab of the <ulink type="help" url="help:user-guide?prefs-theme"><application>Appearance</application> preference tool</ulink>.
+                </para>
+                <para>Використовуючи список <guilabel>Вбудовані схеми</guilabel> вкажіть кольори тексту та тла терміналу. <application>MATE Terminal</application> підтримує наступні комбінації кольорів тексту та тла:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Black on light yellow</guilabel> 
+                     </para>
+                  </listitem>
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Black on white</guilabel> 
+                     </para>
+                  </listitem> 
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Gray on black</guilabel> 
+                     </para>
+                  </listitem>             
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Green on black</guilabel> 
+                     </para>
+                  </listitem>             
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>White on black</guilabel> 
+                     </para>
+                  </listitem> 
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Custom</guilabel> 
+                     </para>
+                     <para>Цей варіант дозволяє вибрати кольори, які відсутні у схемі кольорів.</para>
+                  </listitem> 
+                </itemizedlist> 
+                <para>Справжні кольори тексту та тла можуть значно відрізнятись, в залежності обраної схеми кольорів. Наприклад, якщо ви вибрали <guilabel>Білий на чорному</guilabel> та схему кольорів <guilabel>Консоль Linux</guilabel>, програма відображатиме текст та тло як світло сірий на чорному. </para>
+                <para>Натисніть на кнопку <guibutton>Колір тексту</guibutton>, з'явиться діалогове вікно <guilabel>Вибір кольору тексту термінала</guilabel>. Виберіть з палітри колір, який ви бажаєте використовувати для тексту, потім натисніть <guibutton>Гаразд</guibutton>. Кнопка <guibutton>Колір тексту</guibutton> активна лише якщо не відмічено параметр <guilabel>Використовувати кольори системної теми</guilabel>.</para>
+                <para>Натисніть на кнопку <guibutton>Колір тла</guibutton>, з'явиться діалогове вікно <guilabel>Вибір кольору тла термінала</guilabel>. Виберіть з палітри колір, який ви бажаєте використовувати для тла, потім натисніть <guibutton>Гаразд</guibutton>. Кнопка <guibutton>Колір тла</guibutton> активна лише якщо не відмічено параметр <guilabel>Використовувати кольори системної теми</guilabel>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Palette</guilabel></term> 
+             <listitem> 
+                <para>Емулятор терміналу може використовувати для виводу тексту лише 16 кольорів. Ці кольори визначаються у палітрі кольорів. Програми, що запускаються у терміналі використовують індексний номер для вказування кольору з цієї палітри.</para>
+               <para>Використовуючи розкривний список <guilabel>Вбудовані схеми</guilabel> виберіть бажану схему кольорів. <application>MATE Terminal</application> підтримує наступні схеми кольорів:</para>
+               <para>Використовуйте поле <guilabel>Палітра</guilabel>, щоб перевизначити 16 типових кольорів власної палітри кольорів. Щоб змінити колір, натисніть на відповідному кольорі, з'явиться діалогове вікно <guilabel>Елемент палітри</guilabel>. Виберіть колір, користуючись кольоровим колом чи полями зі стрілками, потім натисніть на <guibutton>Гаразд</guibutton>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     <sect2 id="mate-terminal-prefs-effects"> 
+        <title>Ефекти</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Background</guilabel> </term> 
+             <listitem> 
+                <para>Виберіть тло термінального вікна. Доступні такі параметри:</para>
+                <itemizedlist> 
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Solid color</guilabel>
+                     </para>
+                     <para lang="en">
+                        Select this option to use the background color that is specified in the <guilabel>Colors</guilabel> tabbed section as the background color for the terminal.
+                     </para>
+                  </listitem> 
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Background image</guilabel> 
+                     </para>
+                     <para>Відмітьте цей параметр, щоб використовувати у якості тла терміналу файл зображення. Використовуючи комбінований розкривний список <guilabel>Файл зображення</guilabel> вкажіть розташування та назву файла зображення. Або натисніть на кнопку <guibutton>Вибрати</guibutton>, щоб знайти та вибрати файл зображення.</para>
+                     <para>Виберіть параметр <guilabel>Зображення тла прокручується</guilabel> щоб зображення на тлі термінала прокручувалось разом з текстом. У іншому випадку, зображення на тлі залишатиметься нерухомим, а прокачуватиметься лише текст. Цей параметр доступний лише якщо вибраний параметр <guilabel>Зображення тла</guilabel>.</para>
+                  </listitem> 
+                  <listitem> 
+                     <para lang="en">
+                        <guilabel>Transparent background</guilabel> 
+                     </para>
+                     <para>Виберіть цей параметр, щоб тло термінала було прозорим.</para>
+                  </listitem> 
+                </itemizedlist> 
+             </listitem> 
+          </varlistentry>
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Shade transparent or image background</guilabel>
+                </term> 
+             <listitem> 
+                <para>Використовуйте це поле щоб затінити або проявити тло терміналу. Цей параметр доступний лише якщо вибраний параметр <guilabel>Зображення тла</guilabel> або <guilabel>Прозоре тло</guilabel>.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+     
+     <sect2 id="mate-terminal-prefs-scrolling">
+    <title>Прокрутка</title>
+     <variablelist>
+     <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Scrollbar is</guilabel> </term> 
+             <listitem> 
+                <para>Використовуючи цей розкривний список вкажіть позицію смуги прокрутки вікна терміналу.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Scrollback ... lines</guilabel> </term> 
+             <listitem> 
+                <para>Використовуйте це поле, щоб вказати кількість рядків які можна прокрутити назад користуючись панеллю прокрутки. Наприклад, якщо ви вкажете 100, ви зможете прокрутити назад 100 останніх рядків відображених у терміналі.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry>
+             <term lang="en"> 
+                <guilabel>Scroll on output</guilabel> </term> 
+             <listitem> 
+                <para>Виберіть цей параметр, щоб увімкнути прокрутку при виводі на термінал, у той час коли термінал продовжує відображати додаткову інформацію, що поступає вів команди.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Scroll on keystroke</guilabel> </term> 
+             <listitem> 
+                <para>Виберіть цей параметр, щоб при натисканні на будь-яку клавішу клавіатури вікно терміналу прокручувалось вниз до командного рядка. Це корисно якщо ви прокрутили термінал вгору та бажаєте повернутись до командного рядка.</para>
+             </listitem> 
+          </varlistentry> 
+          </variablelist>
+     </sect2>
+     
+     <sect2 id="mate-terminal-prefs-compatibility"> 
+        <title>Сумісність</title> 
+        <variablelist> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Backspace key generates</guilabel> </term> 
+             <listitem> 
+                <para>Використовуючи розкривний список виберіть дію, яку повинна виконувати клавіша <keycap>Backspace</keycap>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guilabel>Delete key generates</guilabel> </term> 
+             <listitem> 
+                <para>Використовуючи розкривний список виберіть дію, яку повинна виконувати клавіша <keycap>Delete</keycap>.</para>
+             </listitem> 
+          </varlistentry> 
+          <varlistentry> 
+             <term lang="en"> 
+                <guibutton>Reset compatibility options to defaults</guibutton> </term> 
+             <listitem> 
+                <para>Натисніть на кнопку щоб скинути параметри вкладки <guilabel>Сумісність</guilabel> на початкові значення.</para>
+             </listitem> 
+          </varlistentry> 
+        </variablelist> 
+     </sect2> 
+  </sect1> 
+</article>

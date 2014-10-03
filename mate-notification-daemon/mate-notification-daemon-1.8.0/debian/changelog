@@ -1,0 +1,23 @@
+mate-notification-daemon (1.8.0-0+qiana) qiana; urgency=low
+
+  * New upstream release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 05 Mar 2014 21:53:52 +0100
+
+mate-notification-daemon (1.7.90-1) unstable; urgency=low
+
+  * New upstream development release
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Tue, 18 Feb 2014 20:57:03 +0100
+
+mate-notification-daemon (1.7.1-1) unstable; urgency=medium
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sat, 18 Jan 2014 17:25:17 +0100
+
+mate-notification-daemon (1.7.0-1) unstable; urgency=low
+
+  * New upstream development release.
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 27 Oct 2013 13:01:14 +0100

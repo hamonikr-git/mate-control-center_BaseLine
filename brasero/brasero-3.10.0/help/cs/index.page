@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="index" xml:lang="cs">
+
+  <info>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Adrian Guniš</mal:name>
+      <mal:email>andygun696@gmail.com</mal:email>
+      <mal:years>2009, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Štěpán Šimsa</mal:name>
+      <mal:email>simsa.st@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title><media type="image" src="figures/logo32.png"/> Nápověda k aplikaci Brasero</title>
+
+  <section id="new-project" style="2column">
+    <title>Vytvořit nový projekt</title>
+  </section>
+
+  <section id="troubleshooting" style="2column">
+    <title>Řešení problémů</title>
+  </section>
+
+  <section id="tools" style="2column">
+    <title>Další nástroje</title>
+  </section>
+
+</page>

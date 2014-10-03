@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="create-notebook" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#notebooks"/>
+    <desc>Ustvari novo beležko v Tomboyu.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Ustvari beležko</title>    
+  
+  <p>Beležke vam omogočajo združitev povezanih sporočilc skupaj. Beležki lahko dodate sporočilce v oknu Iskanje vseh sporočilc ali pa neposredno v sporočilcu.</p>
+  
+<steps>
+	<item>
+	<p>Kliknite na ikono Tomboy sporočilc v pultu GNOME, opravilni vrstici v Microsoft Windows ali v sidrišču v Mac OS X. Pojavil se bo meni</p>
+	</item>
+	
+<!--
+<comment>Screenshots need to be updated using Clearlooks</comment>
+-->
+
+	<item>
+		<p>Izberite <guiseq><gui>Beležke</gui><gui>Nova beležka</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Vnesite ime za novo beležko.</p>
+	</item>
+</steps>
+
+	<p>Za ustvarjanje nove beležke iz pogovornega okna <gui>Iskanje vseh sporočilc</gui>:</p>
+
+<steps>
+	<item>
+		<p>Odprite okno <gui>Iskanje vseh sporočilc</gui> z izbiro v meniju ikone Tomboy v pultu GNOME, opravilni vrstici Microsoft Windows ali sidrišča v Mac OS X ali s klikom na Iskanje v odprtemu sporočilcu.</p>
+	</item>
+	<item>
+		<p>Z miško desno kliknite na levo polje in izberite <gui>Nova beležka</gui>.</p>
+	</item>
+	<item>
+		<p>Vnesite ime za novo beležko.</p>
+	</item>
+</steps>
+
+	<p>Ali:</p>
+	
+<steps>
+	<item>
+		<p>Ko je odprto okno <gui>Iskanje vseh sporočilc</gui>, izberite <guiseq><gui>Datoteka</gui><gui>Beležke</gui><gui>Nova beležka</gui></guiseq>.</p>
+	</item>
+	<item>
+		<p>Vnesite ime za novo beležko.</p>
+	</item>
+</steps>	
+
+        
+	
+	
+</page>

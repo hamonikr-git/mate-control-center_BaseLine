@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="new" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#new"/>
+    <revision pkgversion="2.30" version="0.1" date="2010-05-29" status="draft"/>
+    <desc>Kas jauns <app>Tomboy piezīmēs</app>.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Kas jauns <app>Tomboy</app>.</title>
+
+  <p><app>Tomboy</app> iekļauj sevī vairākus jaunus uzlabojumus. Tomboy vajadzētu startēties ievērojami ātrāk, pateicoties Tomboy uzsākšanas laika uzlabojumos.</p>
+  <p>Kopēšana un ielīmēšana no Tomboy uz citām programmām ir uzlabota, lai atbalstītu formatēšanu citās programmās, kuras saprot HTML, piemēram, Evolution, OpenOffice.org u.c.</p>
+  <p>
+    <app>Tomboy</app> can now synchronize your notes automatically for you
+    when you when you have synchronize enabled.
+  </p>
+
+  <p>Ir pievienots atbalsts Microsoft Windows 7 lēcējsarakstiem, kas palīdzēs tieši no Windows uzdevumu joslas gūt pieeju tavām piezīmēm, meklēt vai izveidot jaunas piezīmes.</p>
+
+</page>

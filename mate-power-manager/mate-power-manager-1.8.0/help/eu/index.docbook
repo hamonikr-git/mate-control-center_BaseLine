@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN" "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY GFDL SYSTEM "fdl-appendix.xml">
+<!ENTITY app "MATE Power Manager">
+<!ENTITY application "<application>&app;</application>">
+<!ENTITY appversion "2.27.3">
+<!ENTITY manrevision "2.27.3">
+]>
+<!--
+      (Do not remove this comment block.)
+  Template Maintained by the MATE Documentation Project:
+	  http://developer.mate.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="eu">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+
+  <articleinfo>
+    <title><application>MATE Energia-kudeatzailearen</application> eskuliburua</title>
+    <abstract role="description">
+      <para><application>MATE Energia-kudeatzailea</application> MATE mahaigainaren saioen daemon-a da, eta ordenagailu eramangarriaren nahiz mahaigainekoaren energia-ezarpenak kudeatzen ditu.</para>
+    </abstract>
+    <copyright lang="en">
+      <year>2006-2009</year>
+      <holder>Richard Hughes (richard@hughsie.com)</holder>
+    </copyright>
+
+  <!-- translators: uncomment this:
+
+  <copyright>
+   <year>2006</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+  -->
+
+<!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+    <publisher role="maintainer">
+      <publishername>Richard Hughes</publishername>
+    </publisher>
+
+     <legalnotice id="legalnotice">
+	<para>Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko Free Software Foundation-ek argitaratutako GNU Dokumentazio Librearen Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe. GFDL lizentziaren kopia <ulink type="help" url="help:fdl">esteka</ulink> honetan edo eskuliburu honekin batera ematen den COPYING-DOCS fitxategian aurkituko duzu.</para>
+         <para>Eskuliburu hau GFDL lizentziarekin banatzen diren MATE eskuliburuen bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, bana dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko diozu, lizentzian bertan 6. atalean azaltzen den bezala.</para>
+
+	<para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek MATEren edozein agiritan agertzen direnean, eta MATEren Dokumentazio Proiektuko kideak marka komertzialak direla konturatu badira, orduan izen horiek maiuskulaz idatzita egongo dira, osorik edo hasierako letra maiuskulaz jarrita.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+        other legal stuff such as "NO WARRANTY" statement. Please do not change
+        any of this. -->
+
+    <authorgroup>
+      <author role="maintainer" lang="en">
+        <firstname>Richard</firstname>
+        <surname>Hughes</surname>
+	<email>richard@hughsie.com</email>
+      </author>
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+        <firstname>Latin</firstname>
+        <surname>Translator 1</surname>
+        <affiliation>
+          <orgname>Latin Translation Team</orgname>
+          <address> <email>translator@gnome.org</email> </address>
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+    <revhistory>
+      <revision lang="en">
+        <revnumber>2.0</revnumber>
+        <date>2006-08-30</date>
+        <revdescription>
+          <para role="author" lang="en">Richard Hughes
+            <email>richard@hughsie.com</email>
+          </para>
+          <para role="publisher" lang="en">Richard Hughes</para>
+        </revdescription>
+      </revision>
+    </revhistory>
+
+    <legalnotice>
+      <title>Ohar-bidaltzea</title>
+      <para>MATE Energia-kudeatzailearen aplikazioari nahiz eskuliburu honi buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="http://www.mate.org/projects/mate-power-manager/" type="http"><application>Energia-kudeatzailean</application> aurkituko dituzu argibideak</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+
+  <indexterm zone="index" lang="en">
+    <primary><application>MATE Power Manager</application></primary>
+  </indexterm>
+  <indexterm zone="index" lang="en">
+    <primary>mate-power-manager</primary>
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<section id="intro">
+  <title>Sarrera</title>
+  <!-- manrevision 2.0 compatibility -->
+  <anchor id="aboutex"/>
+  <anchor id="notice"/>
+  <indexterm lang="en">
+    <primary><application>MATE Power Manager</application></primary>
+    <secondary>Manual</secondary>
+    <tertiary>mate-power-manager</tertiary>
+  </indexterm>
+
+  <para>MATE Energia-kudeatzailea <systemitem>MATE mahaigainaren</systemitem> saioen daemon-a da.</para>
+
+</section>
+
+<section id="using">
+  <title>Erabilera</title>
+  <para><application>MATE Energia-kudeatzailea</application> MATEren abioan abiarazten da normalean, baina eskuz ere abia daiteke <application>MATE Energia-kudeatzailea</application>:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Komando-lerroa</term>
+      <listitem>
+    	<para>Idatzi <command>mate-power-manager --verbose --no-daemon</command>, eta sakatu <keycap>Sartu</keycap>:</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>
+
+<section id="notify">
+  <title>Jakinarazpen-mezuak</title>
+  <para>Behin <application>MATE Energia-kudeatzailea</application> abiarazita, ondoko jakinarazpenak bistara daitezke.</para>
+
+  <section id="notify-unplugged">
+    <title>AC moldagailua deskonektatuta</title>
+    <figure>
+      <title>MATE Energia-kudeatzaileak AC moldagailua kenduta dagoenean emandako jakinarazpena</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-unplugged.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <note>
+      <para>Jakinarazpen hori desgaitzeko, aldatu <command>/apps/mate-power-manager/notify/discharging</command> MateConf gakoa.</para>
+    </note>
+  </section>
+
+  <section id="notify-fully-charged">
+    <title>Erabat kargatuta</title>
+    <figure>
+      <title>MATE Energia-kudeatzaileak ordenagailu eramangarriaren bateria erabat kargatuta dagoenean emandako jakinarazpena</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-charged.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <note>
+      <para>Jakinarazpen hori desgaitzeko, aldatu<command>/apps/mate-power-manager/notify/fully_charged</command> MateConf gakoa.</para>
+    </note>
+    <note>
+      <para>Jakinarazpena berriz emango zaizu bateria-ehunekoa % 95 baino beherago egon ondoren berriro erabat kargatzen denean. Horri esker, makina batzuek ez dituzte behin eta berriro erakusten nahi ez diren mezuak, bateria-kargaren jakinarazpena okerra bada.</para>
+    </note>
+  </section>
+
+  <section id="notify-low">
+  <title>Energia gutxi</title>
+    <para>Bateria baxu dagoenean, ondoko jakinarazpena jasoko duzu. Berehala konektatu beharko zenuke korronte alternora.</para>
+    <figure>
+      <title>MATE Energia-kudeatzaileak bateria-energia gutxi dagoenean ematen duen jakinarazpena</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-low.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <note>
+      <para>Jakinarazpen hori desgaitzeko, aldatu <command>/apps/mate-power-manager/notify/low_power</command> MateConf gakoa.</para>
+    </note>
+  </section>
+
+  <section id="notify-critical">
+  <title>Energia maila kritikoa</title>
+    <para>Ordenagailuaren energia amaitu denean, jakinarazpen hau erakutsiko da, zer egin behar den azaltzeko. Maila kritikoa dagoenean zer egin aldatzeko, erabili hobespenen tresna.</para>
+    <figure>
+      <title>MATE Energia-kudeatzaileak sistemaren energia maila kritikoa denean ematen duen jakinarazpena</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-critical.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+  </section>
+
+  <section id="notify-suspend-failure">
+  <title>Esekitze-hutsegitea</title>
+    <para>Esekitzeak huts egiten duenean ondoko abisua jasoko duzu. Normalean, uneko erabiltzaileak ez du baimenik izaten ordenagailua esekitzeko edo hibernatzeko.</para>
+    <figure>
+      <title>MATE Energia-kudeatzaileak esekitzean huts egiten duenean emandako jakinarazpena</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-suspend-problem.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <note>
+      <para>Jakinarazpen hori desgaitzeko, aldatu <command>/apps/mate-power-manager/notify/sleep_failed</command> MateConf gakoa.</para>
+    </note>
+  </section>
+</section>
+
+<section id="statistics">
+  <title>Estatistikak</title>
+  <para>Estatistiken programak aukera ematen dizu ordenagailu eramangarriaren energia-kontsumoa ikusteko.</para>
+  <note>
+    <para>Baina kendu egin da MATE Energia-kudeatzailearen aurreko bertsioetako informazio-leihotik, datu-interfazeak orain DBUS erabiltzen duelako, eta ez barne IPCa. Horrek aukera ematen die beste aplikazioei datak eskatzeko eta bistaratzeko, behar izanez gero.</para>
+  </note>
+  <figure id="statistics-graph">
+    <title>Energiaren historia bateriatik korronte alternora</title>
+    <screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="figures/gpm-stats-graph.png" format="PNG"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+  </figure>
+  <note>
+    <para>Beharrezko hardwarea eduki ezean, baliteke aukera edo grafiko batzuk ikusi ahal ez izatea. Era berean, baliteke hemen erakutsitako hardwareren bat ikustea (UPS gailuak, esate baterako), baina beste gailuen modu berean tratatzen dira.</para>
+  </note>
+
+  <section id="statistics-charge">
+    <title>Kargaren historia</title>
+    <para>Grafiko honek erakusten du lehen mailako bateria konposaturako erabilgarri dagoen kargaren ehunekoa; horrela, batera eramangarri nagusi bat eta bateria laguntzaile bat edukiz gero, batez besteko balioa bakarrik erakutsiko da. Grafikoak ez du legendarik.</para>
+  </section>
+
+  <section id="statistics-power">
+    <title>Energiaren historia</title>
+    <para>Grafiko honek lehenengo mailako bateria konposatuak erabilitako karga-energiaren historia erakusten du. Lerro honek sistemako bateriak kargatzeko erabilitako energia kopurua edo sistemak erabilitako bateria-energia adierazten ditu. Lerroa goraka joaten ikusi beharko zenuke prozesadorea lan intentsiboak egiten ari denean, eta beheraka sistema inaktibo dagoenean, edo pantaila energia aurrezteko moduan dagoenean. Legenda bat erakusten da grafikoarekin batera, datu-gertaerak jasotzen direnean.</para>
+
+    <note>
+      <para>Ordenagailuak ez dizu daturik bidaliko kargatzen edo deskargatzen ari ez bada, edo ordenagailua esekita badago. Hori hardware-mugak direla-eta gertatzen da, datuak bateria kudeatzeko txipak bakarrik bidaltzen dituelako, eta ez plaka nagusiko energia kudeatzeko txipak.</para>
+    </note>
+  </section>
+
+  <section id="statistics-time">
+    <title>Estimatutako denboraren historia</title>
+    <para>Grafiko honetan, lehenengo mailako bateria konplexuaren estimatutako kargaren historia erakusten da. Lerro honek kargatu arte behar den denbora kopurua adierazten du, edo deskargatu bitarteko denbora kopurua. Marrak proportzionalki igo beharko luke energia jaistean, eta jaitsi, energia igotzean. Legenda bat erakusten da grafikoarekin batera, datu-gertaerak jasotzen direnean.</para>
+  </section>
+</section>
+
+<section id="preferences">
+  <title>Hobespenak</title>
+
+  <para>Hobespenen leihoarekin ondokoak kontrolatuko dituzu:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>LCD pantailaren distira, bateriarekin nahiz korronte alternoarekin lan egitean</para>
+    </listitem>
+    <listitem>
+      <para>Pantaila itzaltzeko eta esekitzeko behar den inaktibotasun-denbora</para>
+    </listitem>
+    <listitem>
+      <para>Ordenagailu eramangarriaren estalkia ixtean egin beharreko ekintzak</para>
+    </listitem>
+    <listitem>
+      <para>Jakinarazpen-areako ikonoaren gidalerroa</para>
+    </listitem>
+  </itemizedlist>
+
+  <note>
+    <para>Baliteke graduatzaile edo kontrol-lauki batzuk desgaitzea, MateConf gidalerro-gakoetan ezin bada idatzi. Horrek aukera ematen die administratzaileei erabiltzaileak aukera ditzakeen ekintzak blokeatzeko.</para>
+  </note>
+
+  <section id="preferences-ac">
+    <title>Korronte alternoaren hobespenak</title>
+    <figure id="prefs-ac">
+      <title>MATE Energia-kudeatzailearen korronte alternoaren fitxa</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-prefs-ac.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+  </section>
+
+  <section id="preferences-battery">
+    <title>Bateriaren hobespenak</title>
+    <figure id="prefs-processor">
+      <title>MATE Energia-kudeatzailearen bateriaren fitxa</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-prefs-battery.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <para lang="en">
+      This allows a powerful computer to reduce the power usage when
+      idle, or when the full capabilities are not required.
+    </para>
+  </section>
+
+  <section id="preferences-general">
+    <title>Hobespen orokorrak</title>
+    <figure id="prefs-general">
+      <title>MATE Energia-kudeatzailearen Orokorra fitxa</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-prefs-general.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+  </section>
+
+  <section id="preferences-idletimes">
+    <title>Saioaren eta sistemaren inaktibotasun-denborak</title>
+    <para><command>mate-screensaver</command> saioen daemon-ak erabiltzailearen sarrera monitorizatzen du, eta, sagua mugitu ez bada edo teklarik sakatu ez bada, denbora-muga bat abiarazten du. Denbora-muga horren balioa <command>mate-screensaver-preferences</command> komandoan ezarritako baliora iristean, saio-hasiera hori 'saio inaktibo' gisa markatzen da. Orduan, <application>MATE Energia-kudeatzaileak</application> abian jartzen ditu saio inaktiboko ekintza guztiak: energia baxuko modua gaitzea, eta eramangarriaren panelaren distira jaistea, esate baterako.</para>
+
+    <figure>
+      <title>Saio inaktiboaren denbora-muga aldatzeko: <command>mate-screensaver-preferences</command></title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gs-prefs.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <para>Saioa inaktibotzat markatu bezain laster, <application>MATE Energia-kudeatzaileak</application> bere 'sistema' propioaren kronometroa abiaraziko du. Behin <command>mate-power-preferences</command> komandoan ezarritak denbora-mugara iritsita, eta PUZ karga inaktibo dagoela, inaktibotasun-ekintza egingo da (pantaila itzali, eseki edo hibernatu, normalean).</para>
+    <para>Argiago uzteko: <command>mate-power-preferences</command> komandoko graduatzaileak saioaren denbora muga + minutu 1eko balioan abiarazteko ezarrita daude, ezin baikara hasi saioa inaktibotzat markatu arte. Saio inaktiboaren denbora-muga <command>mate-screensaver-preferences</command> komandoan doituz gero, <command>mate-power-preferences</command>eko graduatzaileen hasiera horren arabera aldatuko da.</para>
+  </section>
+</section>
+
+<section id="preferences-advanced">
+  <title>Hobespen aurreratuak</title>
+
+  <section id="advanced-preferences-brightness">
+    <title>Pantailako distira leuntzea</title>
+    <note>
+      <para>Eramangarriaren panel-distiraren inaktibotasuna aldatzeko, aldatu <command>/apps/mate-power-manager/backlight/idle_brightness</command> MateConf gakoa.</para>
+    </note>
+  </section>
+
+  <section id="advanced-preferences-locking">
+    <title>Pantaila blokeatzea</title>
+    <para>Lehenespenez, <application>MATE Energia-kudeatzaileak</application> blokeatzeko eskema sinplea onartzen du. Horrek esan nahi du pantaila blokeatuko dela estalkia ixtean 'mate-screensaver'en "Blokeatu pantaila" ezarrita badago, edo sistemak esekitzeko edo hibernatzeko ekintza egingo duela.</para>
+    <para>Erabiltzaile aurreratuek blokeatzeko sistema konplexu bat erabil dezakete: eramangarriaren estalkiaren blokeo-gidalerroak alda ditzakete, esekitzeko eta hibernatzeko ekintzekin. Modu konplexua gaitzeko, MateConf gakoa desgaitu beharko duzu:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para lang="en">
+          <command>/apps/mate-power-manager/lock/use_screensaver_settings</command>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>Ondoren, gidalerroen gakoak ezar daitezke 'mate-screensaver' blokeatzea eta desblokeatzea behartzeko, ekintza bat egitean:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para lang="en">
+          <command>/apps/mate-power-manager/lock/blank_screen</command>
+        </para>
+      </listitem>
+      <listitem>
+        <para lang="en">
+          <command>/apps/mate-power-manager/lock/suspend</command>
+        </para>
+      </listitem>
+      <listitem>
+        <para lang="en">
+          <command>/apps/mate-power-manager/lock/hibernate</command>
+        </para>
+      </listitem>
+    </itemizedlist>
+
+    <note>
+      <para>Ez ikusi egingo zaio 'mate-screensaver'en blokeatzeko gidalerroari, modu sinplea birgaitu arte.</para>
+    </note>
+  </section>
+</section>
+
+<section id="applets-general">
+  <title>MATE energiaren miniaplikazioak</title>
+
+  <section id="applets-brightness">
+    <title>Distiraren miniaplikazioa</title>
+    <para>Distiraren miniaplikazioak aukera ematen dio erabiltzaileari distira aldi baterako aldatzeko, gidalerro lehenetsia aldatu gabe. Oso erabilgarria izan daiteke ordenagailu eramangarriak distirarako botoirik ez badu, erraz alda dezakezulako horrela.</para>
+    <figure>
+      <title>Distiraren miniaplikazioaren goitibeherako zerrenda.</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/applet-brightness.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <note>
+      <para>Ez duzu graduatzailerik izango, hardwarea onartzen ez bada.</para>
+    </note>
+  </section>
+
+  <section id="applets-inhibit">
+    <title>Inhibitzeko miniaplikazioa</title>
+    <para>Inhibitzeko miniaplikazioak aukera ematen dio erabiltzaileari ordenagailua automatikoki lotan jartzea inaktibo egonez gero. Beharrezkoa izaten da programa zaharrekin edo jabedunekin (VMWare, Matlab...). Egin klik ikonoan automatikoki esekitzea inhibitzeko, eta egin klik berriro eragiketa normala egiteko.</para>
+    <figure>
+      <title>Inhibitzeko miniaplikazioa inhibituta dago.</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/applet-inhibit.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <note>
+      <para>Ez erabili miniaplikazio hau MATE softwarea bakarrik erabiltzen baduzu. Arazorik izanez gero, eman erroreen berri aplikazioak Inhibit() eta UnInhibit() metodoak erabil ditzan, erabilera normalean bezala.</para>
+    </note>
+  </section>
+</section>
+
+<section id="faq">
+  <title>Maiz egiten diren galderak</title>
+  <para>Posta-zerrendetan askotan galdetzen diren kontuak:</para>
+  <section id="faq-capacity">
+    <title>Zer da bateria-ahalmena?</title>
+    <para>Ahalmena da zure bateriak biltegira dezakeen karga, fabrikatzailearen gidalerroekin alderatuta.</para>
+    <figure>
+      <title>Grafiko honek litio-ioizko bateria arrunt batek kargatzeko eta deskargatzeko ehunka zikloren ondoren duen ahalmena erakusten du.</title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="figures/gpm-cell-capacity.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+  </section>
+
+  <section id="faq-suspend-hibernate-differences">
+    <title>Zein alde dago esekitzearen eta hibernatzearen artean?</title>
+    <para>Esekitzearen eginbidea energia aurrezteko dago; egoera honetan, ordenagailuaren memoriako programa-datuak gordetzen dira, ahalik eta energia gutxiena kontsumituz. Ordenagailua esekita dagoenean, ez da lanik egingo jarduera normalari berrekin arte. Ez zaio lanari berrekingo kanpoko gertaera bat egon arte (tekla bat sakatzea....). Normalean segundo batzuk igarotzen dira esekita dagoen ordenagailua berriz lanean has dadin.</para>
+    <caution>
+      <para>Hala ere, kopurua txikia izanda ere, energia erabiltzen ari da, eta, beraz, ez da gomendatzen bateria baxu dagoenerako. Mahaigaineko ordenagailua desentxufatzen baduzu, edo ordenagailu eramangarriaren bateriaren energia agortzen bazaizu, egindako lana galdu egingo duzu.</para>
+    </caution>
+    <para>Hibernatzeko egoerak ordenagailuaren egoera osoa gordetzen du disko gogorrean, eta itzali egiten du energia; ordenagailua itzalita dagoela ematen du. Ez zaio lanari berrekingo kanpoko gertaera bat egon arte (tekla bat sakatzea....). Hau da energia gutxien kontsumitzen den egoera. Mahaigaineko ordenagailua desentxufatzen baduzu, edo ordenagailu eramangarriaren bateriaren energia agortzen bazaizu, egindako lana ez da galduko. Minutu bat edo gehiago iraun dezake ordenagailua hibernatzeko eta esnatzeko prozesuak.</para>
+  </section>
+
+  <section id="faq-dpms-broken-monitor">
+    <title>Pantaila hondatuta daukat, eta DPMS standby (egonean) eta off (desaktibatuta) egoerak 'no-signal' gisa hartzen ditu, eta pantaila piztuta dago beti.</title>
+    <para>Aldatu behar duzu <application>MATE Energia-kudeatzaileak</application> erabilitako DPMS esekitzeko modua. Ireki <command>mateconf-editor</command>, eta aldatu <literal>/apps/mate-power-manager/backlight/dpms_method_ac</literal> eta <literal>/apps/mate-power-manager/backlight/dpms_method_battery</literal> gakoak funtzionatzen duten moduetako batera, esate baterako, standby (egonean), suspend (esekitzea) edo off (desaktibatuta).</para>
+  </section>
+
+  <section id="faq-discharge-time-wrong">
+    <title>Nire deskarga-denbora okerra da beti, bateriaren akats bat dela-eta; zer egin dezaket?</title>
+    <para>MATE Energia-kudeatzailearen karga-ehunekoa gidalerro-datu gisa erabil dezakezu. Ireki <command>mateconf-editor</command>, eta aldatu <command>/apps/mate-power-manager/use_time_for_policy</command> gakoa faltsura. Erraza da: <command> mateconftool-2 --set --type bool /apps/mate-power-manager/general/use_time_for_policy false </command></para>
+    <para>Horrela, gidalerroen ekintzek ondo funtzionatuko dute zuretzat, baina, jakina, gelditzen den denbora okerra izango da oraindik ere.</para>
+  </section>
+
+  <section id="faq-inhibit">
+    <title>Nola lortuko dut nire aplikazioak ordenagailua automatikoki esekitzea geldiaraztea?</title>
+    <para lang="en">
+      If your application is doing a long operation, you might want to
+      disable the ability to suspend for a little while.
+      You should use mate-session if you really don't want the user to be
+      able to suspend, or for the computer to save power by hibernating
+      or suspending.
+    </para>
+  </section>
+
+  <section id="faq-acpi-delay">
+    <title>ACPI exekutatzen ari naiz. Zergatik hartzen dute hainbeste denbora gertaerek (KA moldagailua kentzeak, esate baterako) erregistratzeko?</title>
+    <para>Pare bat gauza egon daitezke arazoaren muinean.</para>
+    <itemizedlist>
+      <listitem>
+        <para>Agian HAL ez da exekutatzen ari ACPI gertaera kapturatzen duen gehigarria.</para>
+      </listitem>
+      <listitem>
+        <para>Baliteke BIOSa gaizki ibiltzea, eta konponketa bat behar izatea. Bidali berri-emate bat.</para>
+      </listitem>
+    </itemizedlist>
+    <para>Lehenengo kasuan, saiatu exekutatzen ari diren HAL prozesuak aurkitzen: <command>ps -eaf | grep hal</command></para>
+    <para>Eta <command>hald-addon-acpi</command> komandoa. Exekutatzen ari ez bada, ziurtatu HAL exekutatzen ari dela  <command>haldaemon</command> abioko scriptaren <command>--retain-privileges</command> aukeran. Beste aukera bat da acpid erabiltzea, nukleoko proc fitxategiaren ordez.</para>
+  </section>
+
+</section>
+
+<section id="about">
+  <title>Honi buruz</title>
+  <para lang="en">
+    MATE Power Manager was written by Richard Hughes <email>richard@hughsie.com</email>.
+    To find more information about MATE Power Manager, please visit the
+    <ulink url="http://www.mate.org/projects/mate-power-manager" type="http">
+    <application>MATE Power Manager</application> web page</ulink>.
+  </para>
+  <para lang="en">
+    To report a bug or make a suggestion regarding this application or
+    this manual, follow the directions at the
+    <ulink url="http://www.mate.org/projects/mate-power-manager/bugs.html" type="http">
+    <application>MATE Power Manager</application> Bug Page</ulink>.
+  </para>
+  <para>Programa hau Free Software Foundation-ek argitaratutako GNU Lizentzia Publiko Orokorraren 2. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako baldintzen arabera banatzen da. Lizentzia horren kopia <ulink url="mate-power-manager:gpl" type="help">esteka</ulink>honetan, edo programa honen iturburu-kodean sartutako COPYING fitxategian aurkituko duzu.</para>
+</section>
+
+</article>

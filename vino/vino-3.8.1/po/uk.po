@@ -1,0 +1,847 @@
+# Ukrainian translation to vino.
+# Copyright (C) Free Software Foundation
+# This file is distributed under the same license as the vino package.
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2004-2009
+# Korostil Daniel <ted.korostiled@gmail.com>, 2011, 2012.
+# Re. <ted.korostiled@gmail.com>, 2012.
+# Daniel Korostil <ted.korostiled@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: vino\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-27 19:30+0200\n"
+"PO-Revision-Date: 2013-03-27 15:29+0300\n"
+"Last-Translator: Daniel Korostil <ted.korostiled@gmail.com>\n"
+"Language-Team: linux.org.ua\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Virtaal 0.7.1\n"
+
+#: ../capplet/vino-message-box.c:55
+#, c-format
+msgid "There was an error showing the URL \"%s\""
+msgstr "Помилка при показі посилання «%s»"
+
+#: ../capplet/vino-preferences.c:245
+#, c-format
+msgid ""
+"There was an error displaying help:\n"
+"%s"
+msgstr ""
+"Помилка показу довідки:\n"
+"%s"
+
+#: ../capplet/vino-preferences.c:278
+msgid "Checking the connectivity of this machine..."
+msgstr "Перевірка зв'язку з цим комп'ютером…"
+
+#: ../capplet/vino-preferences.c:298
+msgid "Your desktop is only reachable over the local network."
+msgstr "Ваша стільниця доступна лише з локальної мережі."
+
+#: ../capplet/vino-preferences.c:311
+msgid " or "
+msgstr " або "
+
+#: ../capplet/vino-preferences.c:315
+#, c-format
+msgid "Others can access your computer using the address %s."
+msgstr "Інші можуть отримати доступ до комп'ютера, скориставшись адресою %s."
+
+#: ../capplet/vino-preferences.c:324
+msgid "Nobody can access your desktop."
+msgstr "Ніхто не може отримати доступу до комп'ютера."
+
+#: ../capplet/vino-preferences.desktop.in.in.h:1
+#: ../server/vino-server.desktop.in.in.h:1
+msgid "Desktop Sharing"
+msgstr "Cпільне користування стільницею "
+
+#: ../capplet/vino-preferences.desktop.in.in.h:2
+msgid "Choose how other users can remotely view your desktop"
+msgstr "Виберіть спосіб віддаленого перегляду вашої стільниці"
+
+#: ../capplet/vino-preferences.ui.h:1
+msgid "Desktop Sharing Preferences"
+msgstr "Налаштування спільно використання віддаленої стільниці"
+
+#: ../capplet/vino-preferences.ui.h:2
+msgid "Sharing"
+msgstr "Спільне користування"
+
+#: ../capplet/vino-preferences.ui.h:3
+msgid "Some of these preferences are locked down"
+msgstr "Деякі з цих налаштувань заблоковано"
+
+#: ../capplet/vino-preferences.ui.h:4
+msgid "Allow other users to _view your desktop"
+msgstr "Дозволити іншим користувачам пере_глядати вашу стільницю"
+
+#: ../capplet/vino-preferences.ui.h:5
+msgid "Your desktop will be shared"
+msgstr "Ваша стільниця буде спільною"
+
+#: ../capplet/vino-preferences.ui.h:6
+msgid "_Allow other users to control your desktop"
+msgstr "Дозво_лити іншим користувачам контролювати вашу стільницю"
+
+#: ../capplet/vino-preferences.ui.h:7
+msgid "Remote users are able to control your mouse and keyboard"
+msgstr "Дозволити віддаленим користувачам контролювати клавіатурою та мишею"
+
+#: ../capplet/vino-preferences.ui.h:8
+msgid "Security"
+msgstr "Безпека"
+
+#: ../capplet/vino-preferences.ui.h:9
+msgid "_You must confirm each access to this machine"
+msgstr "_Підтверджувати особисто кожне з'єднання до цього комп'ютера"
+
+#: ../capplet/vino-preferences.ui.h:10
+msgid "_Require the user to enter this password:"
+msgstr "_Вимагати цей пароль від користувача:"
+
+#: ../capplet/vino-preferences.ui.h:11
+msgid "Automatically _configure UPnP router to open and forward ports"
+msgstr ""
+"Автоматично _налаштувати маршрутизатор UPnP, щоб відкрити переспрямовані "
+"порти"
+
+#: ../capplet/vino-preferences.ui.h:12
+msgid "The router must have the UPnP feature enabled"
+msgstr "У маршрутизаторі треба увімкнути функцію UPnP"
+
+#: ../capplet/vino-preferences.ui.h:13
+msgid "Show Notification Area Icon"
+msgstr "Показувати піктограму ділянки сповіщення"
+
+#: ../capplet/vino-preferences.ui.h:14
+msgid "Al_ways"
+msgstr "_Завжди"
+
+#: ../capplet/vino-preferences.ui.h:15
+msgid "_Only when someone is connected"
+msgstr "_Лише, коли хтось під'єднаний"
+
+#: ../capplet/vino-preferences.ui.h:16
+msgid "_Never"
+msgstr "_Ніколи"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:1
+msgid "Enable remote access to the desktop"
+msgstr "Увімкнути віддалений доступ до стільниці"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:2
+msgid ""
+"If true, allows remote access to the desktop via the RFB protocol. Users on "
+"remote machines may then connect to the desktop using a VNC viewer."
+msgstr ""
+"Якщо це позначено, дозволяє віддалено досягати стільниці через протокол RFB. "
+"Користувачі на віддалених машинах можуть з'єднуватись до стільниці через "
+"переглядач VNC."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:3
+msgid "Prompt the user before completing a connection"
+msgstr "Питати користувача перед завершенням з'єднання"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:4
+msgid ""
+"If true, remote users accessing the desktop are not allowed access until the "
+"user on the host machine approves the connection. Recommended especially "
+"when access is not password protected."
+msgstr ""
+"Якщо ввімкнено, віддалений доступ до стільниці буде заборонено, доки "
+"користувач головної машини не схвалить з'єднання. Особливо рекомендується "
+"при безпарольному з'єднанні."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:5
+msgid "Only allow remote users to view the desktop"
+msgstr "Віддаленим користувачам дозволено лише перегляд стільниці"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:6
+msgid ""
+"If true, remote users accessing the desktop are only allowed to view the "
+"desktop. Remote users will not be able to use the mouse or keyboard."
+msgstr ""
+"Якщо увімкнено, віддалений доступ до стільниці дозволено лише для перегляду. "
+"Віддалені користувачі не зможуть використовувати клавіатуру та мишу."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:7
+msgid "Network interface for listening"
+msgstr "Мережний інтерфейс для очікування"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:8
+msgid ""
+"If not set, the server will listen on all network interfaces.\n"
+"\n"
+"Set this if you want to accept connections only from some specific network "
+"interface. For example, eth0, wifi0, lo and so on."
+msgstr ""
+"Якщо не встановлено, сервер буде очікувати з'єднання на всіх мережевих "
+"інтерфейсах.\n"
+"\n"
+"Встановіть цей параметр, якщо бажаєте приймати з'єднання лише від певного "
+"мережевого інтерфейсу. Наприклад, eth0, wifi0, lo, тощо."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:11
+msgid "Listen on an alternative port"
+msgstr "Очікувати на альтернативний порт"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:12
+msgid ""
+"If true, the server will listen on another port, instead of the default "
+"(5900). The port must be specified in the 'alternative-port' key."
+msgstr ""
+"Якщо позначено, сервер буде очікувати на інший порт, замість типового "
+"(5900). Порт потрібно вказати у ключі «alternative-port»."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:13
+msgid "Alternative port number"
+msgstr "Альтернативний номер порту"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:14
+msgid ""
+"The port which the server will listen to if the 'use-alternative-port' key "
+"is set to true. Valid values are in the range of 5000 to 50000."
+msgstr ""
+"Порт, який сервер очікуватиме, якщо встановлено ключ «use-alternative-port». "
+"Допустимі значення у діапазоні від 5000 до 50000."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:15
+msgid "Require encryption"
+msgstr "Вимагати шифрування"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:16
+msgid ""
+"If true, remote users accessing the desktop are required to support "
+"encryption. It is highly recommended that you use a client which supports "
+"encryption unless the intervening network is trusted."
+msgstr ""
+"Якщо увімкнено, віддалений доступ до робочого столу дозволяється лише при "
+"використанні шифрування. Наполегливо рекомендується, щоб ви використовували "
+"програми, які підтримують шифрування, крім випадку коли доступ відбувається "
+"через захищену мережу."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:17
+msgid "Allowed authentication methods"
+msgstr "Дозволені способи автентифікації"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:18
+msgid ""
+"Lists the authentication methods with which remote users may access the "
+"desktop.\n"
+"\n"
+"There are two possible authentication methods; \"vnc\" causes the remote "
+"user to be prompted for a password (the password is specified by the vnc-"
+"password key) before connecting and \"none\" which allows any remote user to "
+"connect."
+msgstr ""
+"Перелік способів автентифікації, з якими віддалені користувачі можуть "
+"одержати доступ до стільниці.\n"
+"\n"
+"Є два можливі способи автентифікації; «vnc» змушує віддаленого користувача "
+"перед з'єднанням вводити пароль (пароль визначається ключем vnc-password) та "
+"«none», який дозволяє під'єднуватись будь-якому користувачу."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:21
+msgid "Password required for \"vnc\" authentication"
+msgstr "Пароль, потрібний для автентифікації «vnc»"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:22
+msgid ""
+"The password which the remote user will be prompted for if the \"vnc\" "
+"authentication method is used. The password specified by the key is base64 "
+"encoded.\n"
+"\n"
+"The special value of 'keyring' (which is not valid base64) means that the "
+"password is stored in the GNOME keyring."
+msgstr ""
+"Пароль, який буде вимагатись у віддаленого користувача за використання "
+"способу автентифікації «vnc». Пароль вказується у системі кодуванні base64.\n"
+"\n"
+"Спеціальне значення «keyring» (яке недоступне для base64) означає, що пароль "
+"зберігається у сховищі ключів GNOME."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:25
+msgid "E-mail address to which the remote desktop URL should be sent"
+msgstr ""
+"Електронна адреса, на яку слід відправляти посилання віддаленої стільниці"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:26
+msgid ""
+"This key specifies the e-mail address to which the remote desktop URL should "
+"be sent if the user clicks on the URL in the Desktop Sharing preferences "
+"dialog."
+msgstr ""
+"Цей ключ визначає адресу електронної пошти, на яку потрібно надіслати URL, "
+"якщо користувач клацає на URL у вікні налаштування віддаленого спільно "
+"використання стільниці."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:27
+msgid "Lock the screen when last user disconnect"
+msgstr "Блокувати екран після від'єднання останнього користувача"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:28
+msgid ""
+"If true, the screen will be locked after the last remote client disconnects."
+msgstr ""
+"Якщо увімкнено, екран блокуватиметься після вимкнення останнього віддаленого "
+"клієнта."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:29
+msgid "When the status icon should be shown"
+msgstr "Коли слід показувати піктограму стану"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:30
+msgid ""
+"This key controls the behavior of the status icon. There are three options: "
+"\"always\" - the icon will always be present; \"client\" - the icon will "
+"only be present when someone is connected (this is the default behavior); "
+"\"never\" - the icon will not be present."
+msgstr ""
+"Цей ключ відповідає за показ піктограми стану. Доступно три стани: «always» "
+"— показувати піктограму постійно; «client» — показувати піктограму, якщо є "
+"наявні з'єднання з кимось (це типова поведінка); «never» — ніколи не "
+"показувати."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:31
+msgid "Whether to disable the desktop background when a user is connected"
+msgstr "Чи вмикати тло стільниці, коли користувача під'єднано"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:32
+msgid ""
+"When true, disable the desktop background and replace it with a single block "
+"of color when a user successfully connects."
+msgstr ""
+"Якщо встановлено, вимкнено тло стільниці й замінено на один блок кольору, "
+"якщо користувача успішно під'єднано."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:33
+msgid "Whether a UPnP router should be used to forward and open ports"
+msgstr ""
+"Чи слід використовувати маршрутизатори UPnP для перенаправлення і відкриття "
+"портів"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:34
+msgid ""
+"If true, request that a UPnP-capable router should forward and open the port "
+"used by Vino."
+msgstr ""
+"Якщо вказано, чи маршрутизатор сумісний з UPnP має перенаправляти і "
+"відкривати порти через Vino."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:35
+msgid "Whether we should disable the XDamage extension of X.org"
+msgstr "Чи варто вимкнути розширення XDamage у X.org"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:36
+msgid ""
+"If true, do not use the XDamage extension of X.org. This extension does not "
+"work properly on some video drivers when using 3D effects. Disabling it will "
+"make Vino work in these environments, with slower rendering as a side effect."
+msgstr ""
+"Якщо встановлено, не буде використовуватись розширення XDamage у X.org. Це "
+"розширення не працює коректно на деяких відеодрайверах, якщо використовувати "
+"просторові ефекти. Його вимкнення дасть змогу Vino працювати з цими "
+"розширеннями, проте повільніше."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:37
+msgid "Notify on connect"
+msgstr "Сповістити на з'єднанні"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:38
+msgid "If true, show a notification when a user connects to the system."
+msgstr ""
+"Якщо зазначено, показує сповіщенння, коли користувач під'єднався до системи."
+
+#: ../common/vino-keyring.c:54 ../tools/vino-passwd.c:54
+msgid "Remote desktop sharing password"
+msgstr "Пароль до оприлюднення віддаленої стільниці"
+
+#: ../server/smclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Файл не є коректним файлом .desktop"
+
+#. translators: 'Version' is from a desktop file, and
+#. * should not be translated. '%s' would probably be a
+#. * version number.
+#: ../server/smclient/eggdesktopfile.c:191
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Не розпізнано версію файла стільниці «%s»"
+
+#: ../server/smclient/eggdesktopfile.c:974
+#, c-format
+msgid "Starting %s"
+msgstr "Запускається %s"
+
+#: ../server/smclient/eggdesktopfile.c:1116
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "Програма не підтримує прийняття документів у командному рядку"
+
+#: ../server/smclient/eggdesktopfile.c:1184
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Не розпізнано параметр запуску: %d"
+
+#. translators: The 'Type=Link' string is found in a
+#. * desktop file, and should not be translated.
+#: ../server/smclient/eggdesktopfile.c:1391
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr ""
+"Не вдалось передати посилання документу до запису стільниці 'Type=Link'"
+
+#: ../server/smclient/eggdesktopfile.c:1412
+#, c-format
+msgid "Not a launchable item"
+msgstr "Пункт без можливості запуску"
+
+#: ../server/smclient/eggsmclient.c:226
+msgid "Disable connection to session manager"
+msgstr "Вимкнути з'єднання з менеджером сеансів"
+
+#: ../server/smclient/eggsmclient.c:229
+msgid "Specify file containing saved configuration"
+msgstr "Вказати файл, що містить збережені налаштування"
+
+#: ../server/smclient/eggsmclient.c:229
+msgid "FILE"
+msgstr "ФАЙЛ"
+
+#: ../server/smclient/eggsmclient.c:232
+msgid "Specify session management ID"
+msgstr "Вказати ідентифікатор керування сеансами"
+
+#: ../server/smclient/eggsmclient.c:232
+msgid "ID"
+msgstr "Ідентифікатор"
+
+#: ../server/smclient/eggsmclient.c:253
+msgid "Session management options:"
+msgstr "Параметри керування сеансами:"
+
+#: ../server/smclient/eggsmclient.c:254
+msgid "Show session management options"
+msgstr "Показати параметри керування сеансами"
+
+#: ../server/vino-main.c:202
+msgid ""
+"Your XServer does not support the XTest extension - remote desktop access "
+"will be view-only\n"
+msgstr ""
+"Ваш XServer не підтримує розширення XTest — режим доступу до віддаленої "
+"стільниці буде лише для перегляду\n"
+
+#. Tube mode uses Telepathy's Tubes to share a user's desktop directly
+#. * with another IM contact. http://telepathy.freedesktop.org/wiki/Tubes
+#.
+#: ../server/vino-main.c:301
+msgid "Start in tube mode, for the ‘Share my Desktop’ feature"
+msgstr "Запустити в режимі тунелю, для «Оприлюднити мою стільницю»."
+
+#: ../server/vino-main.c:307
+msgid "- VNC Server for GNOME"
+msgstr "— сервер VNC для GNOME"
+
+#: ../server/vino-main.c:315
+msgid ""
+"Run 'vino-server --help' to see a full list of available command line options"
+msgstr ""
+"Запустіть 'vino-server  --help' для перегляду повного списку можливих "
+"параметрів"
+
+#: ../server/vino-main.c:336
+msgid "GNOME Desktop Sharing"
+msgstr "Спільне використання стільниці для GNOME"
+
+#.
+#. * Translators: translate "vino-mdns:showusername" to
+#. * "1" if "%s's remote desktop" doesn't make sense in
+#. * your language.
+#.
+#: ../server/vino-mdns.c:62
+msgid "vino-mdns:showusername"
+msgstr "0"
+
+#.
+#. * Translators: this string is used ONLY if you
+#. * translated "vino-mdns:showusername" to anything
+#. * other than "1"
+#.
+#: ../server/vino-mdns.c:74
+#, c-format
+msgid "%s's remote desktop on %s"
+msgstr "Віддалена стільниця користувача %s на %s"
+
+#: ../server/vino-prefs.c:111
+#, c-format
+msgid "Received signal %d, exiting."
+msgstr "Отримано сигнал %d, вихід."
+
+#: ../server/vino-prompt.c:144
+msgid "Screen"
+msgstr "Екран"
+
+#: ../server/vino-prompt.c:145
+msgid "The screen on which to display the prompt"
+msgstr "Екран, на якому показується запрошення"
+
+#: ../server/vino-prompt.c:263 ../server/vino-status-icon.c:598
+#: ../server/vino-status-tube-icon.c:389
+#, c-format
+msgid "Error initializing libnotify\n"
+msgstr "Помилка запуску libnotify\n"
+
+#: ../server/vino-prompt.c:282
+#, c-format
+msgid ""
+"A user on the computer '%s' is trying to remotely view or control your "
+"desktop."
+msgstr ""
+"Користувач на комп'ютері «%s» намагається віддалено переглянути та "
+"вконтролювати вашу стільницю."
+
+#: ../server/vino-prompt.c:285
+msgid "Another user is trying to view your desktop."
+msgstr "Інший користувач намагається переглянути вашу стільницю."
+
+#: ../server/vino-prompt.c:291
+msgid "Refuse"
+msgstr "Відмовити"
+
+#: ../server/vino-prompt.c:297
+msgid "Accept"
+msgstr "Дозволити"
+
+#: ../server/vino-server.c:166 ../server/vino-server.c:189
+#, c-format
+msgid "Failed to open connection to bus: %s\n"
+msgstr "Не вдалось відкрити з'єднання з шиною: %s\n"
+
+#: ../server/vino-server.desktop.in.in.h:2
+msgid "GNOME Desktop Sharing Server"
+msgstr "Сервер спільного використання стільниці для GNOME"
+
+#: ../server/vino-server.desktop.in.in.h:3
+msgid "vnc;share;remote;"
+msgstr "vnc;спільний;віддалений;"
+
+#: ../server/vino-status-icon.c:97 ../server/vino-status-tube-icon.c:90
+msgid "Desktop sharing is enabled"
+msgstr "Увімкнено спільне користування стільницею "
+
+#: ../server/vino-status-icon.c:105
+#, c-format
+msgid "One person is viewing your desktop"
+msgid_plural "%d people are viewing your desktop"
+msgstr[0] "%d особа переглядає вашу стільницю"
+msgstr[1] "%d особи переглядають вашу стільницю"
+msgstr[2] "%d осіб переглядають вашу стільницю"
+
+#: ../server/vino-status-icon.c:208 ../server/vino-status-tube-icon.c:172
+msgid "Error displaying preferences"
+msgstr "Помилка при показі налаштувань"
+
+#: ../server/vino-status-icon.c:230 ../server/vino-status-tube-icon.c:192
+msgid "Error displaying help"
+msgstr "Помилка при показі довідки"
+
+#: ../server/vino-status-icon.c:263
+msgid ""
+"Licensed under the GNU General Public License Version 2\n"
+"\n"
+"Vino is free software; you can redistribute it and/or\n"
+"modify it under the terms of the GNU General Public License\n"
+"as published by the Free Software Foundation; either version 2\n"
+"of the License, or (at your option) any later version.\n"
+"\n"
+"Vino is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n"
+"02110-1301, USA.\n"
+msgstr ""
+"Ліцензується на умовах General Public License версії 2\n"
+"\n"
+"Vino є вільною програмою; ви можете розповсюджувати її й/або змінювати її на "
+"умовах ліцензії GNU General Public License, яку опублікували Free Software "
+"Foundation; версії 2 цієї ліцензії або (на ваш розсуд) будь-якою старшою "
+"версією.\n"
+"Vino постачається зі сподіванням, що буде корисним, але БЕЗ БУДЬ-ЯКИХ "
+"ГАРАНТІЙ; навіть без неявної гарантії ПРИДАТНОСТІ ДО ПРОДАЖУ чи "
+"ВІДПОВІДНОСТІ ПЕВНІЙ МЕТІ.  Докладніше дивіться GNU General Public License.\n"
+"Ви мали б отримати копію ліцензії GNU General Public License разом з "
+"програмою, якщо це не так напишіть Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n"
+"02110-1301, USA.\n"
+
+#. Translators comment: put your own name here to appear in the about dialog.
+#: ../server/vino-status-icon.c:278
+msgid "translator-credits"
+msgstr ""
+"Максим Дзюманенко <dziumanenko@gmail.com>\n"
+"Коростіль Данило <ted.korostiled@gmail.com>"
+
+#: ../server/vino-status-icon.c:284
+msgid "Share your desktop with other users"
+msgstr "Оприлюднити вашу стільницю іншим користувачам"
+
+#: ../server/vino-status-icon.c:351 ../server/vino-status-tube-icon.c:224
+#, c-format
+msgid "Are you sure you want to disconnect '%s'?"
+msgstr "Від'єднати «%s»?"
+
+#: ../server/vino-status-icon.c:354
+#, c-format
+msgid "The remote user from '%s' will be disconnected. Are you sure?"
+msgstr "Віддаленого користувача з «%s» буде від'єднано. Впевнені?"
+
+#: ../server/vino-status-icon.c:360
+msgid "Are you sure you want to disconnect all clients?"
+msgstr "Від'єднати усіх клієнтів?"
+
+#: ../server/vino-status-icon.c:362
+msgid "All remote users will be disconnected. Are you sure?"
+msgstr "Усіх віддалених користувачів буде від'єднано. Впевнені?"
+
+#: ../server/vino-status-icon.c:374 ../server/vino-status-tube-icon.c:238
+msgid "Disconnect"
+msgstr "Від'єднати"
+
+#: ../server/vino-status-icon.c:400 ../server/vino-status-tube-icon.c:263
+msgid "_Preferences"
+msgstr "_Налаштування"
+
+#: ../server/vino-status-icon.c:415
+msgid "Disconnect all"
+msgstr "Від'єднати всіх"
+
+#. Translators: %s is a hostname
+#. Translators: %s is the alias of the telepathy contact
+#: ../server/vino-status-icon.c:439 ../server/vino-status-tube-icon.c:276
+#, c-format
+msgid "Disconnect %s"
+msgstr "Від'єднати %s"
+
+#: ../server/vino-status-icon.c:460 ../server/vino-status-tube-icon.c:295
+msgid "_Help"
+msgstr "_Довідка"
+
+#: ../server/vino-status-icon.c:468
+msgid "_About"
+msgstr "_Про програму"
+
+#. Translators: %s is a hostname
+#: ../server/vino-status-icon.c:619
+msgid "Another user is viewing your desktop"
+msgstr "Інший користувач переглядає вашу стільницю"
+
+#: ../server/vino-status-icon.c:621
+#, c-format
+msgid "A user on the computer '%s' is remotely viewing your desktop."
+msgstr "Користувач на комп'ютері «%s» віддалено переглядає вашу стільницю."
+
+#. Translators: %s is a hostname
+#: ../server/vino-status-icon.c:627
+msgid "Another user is controlling your desktop"
+msgstr "Інший користувач контролює вашу стільницю"
+
+#: ../server/vino-status-icon.c:629
+#, c-format
+msgid "A user on the computer '%s' is remotely controlling your desktop."
+msgstr "Користувач на комп'ютері «%s» віддалено контролює вашу стільницю."
+
+#: ../server/vino-status-icon.c:651 ../server/vino-status-tube-icon.c:423
+#, c-format
+msgid "Error while displaying notification bubble: %s\n"
+msgstr "Помилка при показі діаграми сповіщення: %s\n"
+
+#: ../server/vino-status-tube-icon.c:227
+#, c-format
+msgid "The remote user '%s' will be disconnected. Are you sure?"
+msgstr "Віддаленого користувача «%s» буде від'єднано. Впевнені?"
+
+#: ../server/vino-tube-server.c:220 ../server/vino-tube-server.c:249
+msgid "Share my desktop information"
+msgstr "Оприлюднити мою інформацію про стільницю"
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:224
+#, c-format
+msgid "'%s' rejected the desktop sharing invitation."
+msgstr "«%s» відмовив у запрошенні спільного користування стільницею."
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:228
+#, c-format
+msgid "'%s' disconnected"
+msgstr "«%s» вимкнено"
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:255
+#, c-format
+msgid "'%s' is remotely controlling your desktop."
+msgstr "«%s» віддалено контролює вашу стільницю."
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:264
+#, c-format
+msgid "Waiting for '%s' to connect to the screen."
+msgstr "Очікування «%s» для з'єднання з екраном."
+
+#: ../server/vino-util.c:89
+msgid "_Allow"
+msgstr "_Дозволити"
+
+#: ../server/vino-util.c:90
+msgid "_Refuse"
+msgstr "_Відмовити"
+
+#: ../server/vino-util.c:140
+msgid "An error has occurred:"
+msgstr "Трапилась помилка:"
+
+#: ../tools/vino-passwd.c:108
+#, c-format
+msgid "Cancelled"
+msgstr "Скасовано"
+
+#: ../tools/vino-passwd.c:115
+#, c-format
+msgid ""
+"ERROR: Maximum length of password is %d character. Please, re-enter the "
+"password."
+msgid_plural ""
+"ERROR: Maximum length of password is %d characters. Please, re-enter the "
+"password."
+msgstr[0] ""
+"ПОМИЛКА: Максимальна довжина паролю %d символ. Введіть інший пароль."
+msgstr[1] ""
+"ПОМИЛКА: Максимальна довжина паролю %d символи. Введіть інший пароль."
+msgstr[2] ""
+"ПОМИЛКА: Максимальна довжина паролю %d символів. Введіть інший пароль."
+
+#: ../tools/vino-passwd.c:149
+#, c-format
+msgid "Changing Vino password.\n"
+msgstr "Зміна паролю Vino.\n"
+
+#: ../tools/vino-passwd.c:151
+msgid "Enter new Vino password: "
+msgstr "Введіть новий пароль Vino: "
+
+#: ../tools/vino-passwd.c:154
+msgid "Retype new Vino password: "
+msgstr "Повторно введіть пароль Vino: "
+
+#: ../tools/vino-passwd.c:160
+#, c-format
+msgid "vino-passwd: password updated successfully.\n"
+msgstr "vino-passwd: пароль успішно оновлено.\n"
+
+#: ../tools/vino-passwd.c:165
+#, c-format
+msgid "Sorry, passwords do not match.\n"
+msgstr "Даруйте, але паролі не збігаються.\n"
+
+#: ../tools/vino-passwd.c:166
+#, c-format
+msgid "vino-passwd: password unchanged.\n"
+msgstr "vino-passwd: пароль не змінено.\n"
+
+#: ../tools/vino-passwd.c:182
+msgid "Show Vino version"
+msgstr "Показати версію Vino"
+
+#: ../tools/vino-passwd.c:191
+msgid "- Updates Vino password"
+msgstr "— оновлення паролю Vino"
+
+#: ../tools/vino-passwd.c:201
+msgid ""
+"Run 'vino-passwd --help' to see a full list of available command line options"
+msgstr "Запустіть 'vino-passwd --help' для перегляду повного списку параметрів"
+
+#: ../tools/vino-passwd.c:208
+#, c-format
+msgid "VINO Version %s\n"
+msgstr "VINO версія %s\n"
+
+#: ../tools/vino-passwd.c:219
+#, c-format
+msgid "ERROR: You do not have enough permissions to change Vino password.\n"
+msgstr "ПОМИЛКА: немає достатньо прав для зміни паролю Vino.\n"
+
+#~ msgid ""
+#~ "If true, we will use UPNP protocol to automatically forward the port used "
+#~ "by vino in the router."
+#~ msgstr ""
+#~ "Якщо встановлено, буде використовуватись протокол UPNP для автоматичного "
+#~ "налаштування портів маршрутизатора, що використовує vino."
+
+#~ msgid "Question"
+#~ msgstr "Запитання"
+
+#~ msgid ""
+#~ "A user on another computer is trying to remotely view or control your "
+#~ "desktop."
+#~ msgstr ""
+#~ "Користувач з іншого комп'ютера намагається віддалено переглянути та "
+#~ "вконтролювати вашу стільницю."
+
+#~ msgid "Do you want to allow them to do so?"
+#~ msgstr "Дозволити це йому?"
+
+#~ msgid "Remote Desktop"
+#~ msgstr "Віддалена стільниця"
+
+#~ msgid "Enable remote desktop access"
+#~ msgstr "Увімкнути віддалений доступ до стільниці"
+
+#~ msgid "Al_ways display an icon"
+#~ msgstr "Зав_жди показувати піктограму"
+
+#~ msgid "_Configure network automatically to accept connections"
+#~ msgstr "_Налаштувати мережу автоматично для прийняття з'єднань"
+
+#~ msgid "_Never display an icon"
+#~ msgstr "_Ніколи не показувати піктограму"
+
+#~ msgid "_Only display an icon when there is someone connected"
+#~ msgstr "_Показувати значок, лише якщо хтось під'єднаний"
+
+#~ msgid "GNOME Remote Desktop"
+#~ msgstr "Віддалена стільниця GNOME"
+
+#~ msgid "Maximum size: 8 characters"
+#~ msgstr "Максимальний розмір: 8 символів"
+
+#~ msgid "You will be queried to allow or to refuse every incoming connection"
+#~ msgstr "У вас буде запитано дозвіл або відмову на вхідні з'єднання"
+
+#~ msgid "Remote Desktop server already running; exiting ...\n"
+#~ msgstr "Сервер віддаленої стільниці вже запущено; вихід …\n"
+
+#~ msgid ""
+#~ "Error while communicating with GConf. Are you logged into a GNOME session?"
+#~ msgstr "Помилка під час зв'язку з GConf. Ви увійшли у сеанс GNOME?"
+
+#~ msgid "Error message:"
+#~ msgstr "Повідомлення про помилку:"
+
+#~ msgid "_Send address by email"
+#~ msgstr "_Надіслати цю команду ел.поштою"
+
+#~ msgid "_Copy address to clipboard"
+#~ msgstr "_Копіювати адресу у буфер обміну"

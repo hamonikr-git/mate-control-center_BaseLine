@@ -1,0 +1,6 @@
+# Debian patches for gnome-disk-utility
+dont-use-libdvdread.patch
+git_xid_check.patch
+git_xid_working.patch
+git_header_update.patch
+window-height-700px

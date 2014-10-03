@@ -1,0 +1,31 @@
+debian/*.xpm                            usr/share/pixmaps/
+debian/locale.conf                      etc/mdm
+debian/Xsession                         etc/mdm
+debian/insserv.conf.d			etc
+debian/tmp/etc/dm
+debian/tmp/etc/mdm/Init
+debian/tmp/etc/mdm/SuperInit
+debian/tmp/etc/mdm/PreSession
+debian/tmp/etc/mdm/PostSession
+debian/tmp/etc/mdm/mdm.conf
+debian/tmp/etc/mdm/XKeepsCrashing
+debian/tmp/etc/mdm/PostLogin
+debian/tmp/etc/mdm/modules
+debian/tmp/usr/bin
+debian/tmp/usr/lib/mdm
+debian/tmp/usr/lib/gtk-2.0/modules/*.so
+debian/tmp/usr/sbin/mdmsetup
+debian/tmp/usr/sbin/mdm-binary
+debian/tmp/usr/share/mdm/applications
+debian/tmp/usr/share/mdm/themes
+debian/tmp/usr/share/mdm/defaults.conf
+debian/tmp/usr/share/mdm/BuiltInSessions
+debian/tmp/usr/share/mdm/*.glade
+debian/tmp/usr/share/mdm/locale
+debian/tmp/usr/share/mdm/recovery
+debian/tmp/usr/share/gnome/help/mdm
+debian/tmp/usr/share/icons/hicolor
+debian/tmp/usr/share/locale
+debian/tmp/usr/share/man
+debian/tmp/usr/share/omf/mdm
+debian/tmp/usr/share/pixmaps

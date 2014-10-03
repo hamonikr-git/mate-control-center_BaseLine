@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-formatting-fixed-width" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="addins#formatting"/>
+    <desc>Complemento para establecer una tipografía de anchura fija en las notas.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-16" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Anchura fija</title>
+
+  <p>El complemento de anchura fija configura el texto de sus notas de <app>Tomboy</app> para que tenga una anchura fija. Este complemento está desactivado de manera predeterminada.</p>
+
+  <steps>
+    <title>Para usar una tipografía de anchura fija en sus notas de <app>Tomboy</app>:</title>
+    <item>
+      <p><link xref="addins">Active</link> el complemento de anchura fija.</p>
+    </item>
+    <item>
+      <p>Seleccione el texto que quiere en una nota de <app>Tomboy</app>.</p>
+    </item>
+    <item>
+      <p>Desde el icono <gui style="button">Texto</gui> en la barra de herramientas de la nota, seleccione <gui style="menuitem">Anchura fija</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Para establecer rápidamente una tipografía de anchura fija en cualquier texto seleccionado, pulse <keyseq><key>Ctrl</key><key>T</key></keyseq>.</p>
+  </note>
+
+</page>

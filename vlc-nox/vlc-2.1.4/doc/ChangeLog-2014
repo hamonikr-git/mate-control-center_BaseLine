@@ -1,0 +1,970 @@
+commit 2a072befdecc7fb6e43e24b863c36767ea335ae6
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Fri Feb 21 15:20:24 2014 +0100
+
+    Update NEWS
+
+commit 05da69857b4787ea0d4f7c8ae8eed73affcb3098
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Fri Feb 21 15:02:04 2014 +0100
+
+    Contribs: update FFMpeg and libav Hashes
+    
+    Fixes the HuffYuv regression on FFmpeg and MXF on libav
+
+commit abd583db4ed9eee2efd11601056caf20a0dc1f27
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Fri Feb 21 15:01:12 2014 +0100
+
+    Update NEWS
+
+commit 4c90d3358db73900e806a5f35783428d65cf9d59
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Fri Feb 21 14:50:16 2014 +0100
+
+    macosx/about: fix layout issue and simply code (close #10746)
+    
+    (cherry picked from commit fe0ec6a107aeb945f2312317c06e955111b21bd4)
+
+commit c7b43264353583cc56e3ea8b55aee25d0df4ecf3
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Fri Feb 21 14:28:48 2014 +0100
+
+    vout_macosx: remove misleading user-facing error message about Quartz Extreme being unavailable (close #9777)
+    
+    While it is strongly desirable to be present, the API behavior or the driver quality seem to have changed on OS X 10.9, so this alert is triggered way to often while video is actually being displayed just fine.
+    
+    Log message is retained for debugging purposes.
+    
+    (cherry picked from commit 7f16c15065e1cf28e34d94b0d491c2955f839ef9)
+
+commit 11b5098cf9993106f01b9270cd057dcb32fcb250
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Tue Feb 18 20:19:16 2014 +0100
+
+    macosx: remove 'vout' option from simple prefs since it is clearly an advanced option this OS, which can break the setup way too easily
+    
+    Manual backport of 3f8f214ac2b22c9b6f3de2f3adab989fa9a5a970
+
+commit 3bde20b52de75861c3c200e4d55b93dad1d6a6b1
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Tue Feb 18 15:29:01 2014 +0100
+
+    dvdread/dvdnav: fix linking with correctly compiled libraries
+
+commit fb1ccab1e3e54839ca5e08afb13c631addfb5216
+Author: Rémi Denis-Courmont <remi@remlab.net>
+Date:   Fri Feb 14 19:29:51 2014 +0200
+
+    Linux: update default optical disk paths
+    
+    (cherry picked from commit 98b613b11cb0465e7dce13a803dcabb182fd2b2c)
+
+commit 39d9f1f628594c35b365e1013b8c313af31ebf5c
+Author: Felix Abecassis <felix.abecassis@gmail.com>
+Date:   Thu Feb 13 10:19:05 2014 +0100
+
+    Direct3D: do not leak textures when recycling them
+    
+    If several textures from the cache (i.e. used during the previous
+    call) are matching we invalidate all of them but only keep the last
+    one. We therefore lose all references to the other ones.
+    
+    Close #10248
+    
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+    (cherry picked from commit e25184612eee912c8ef329cf1ad7a0a2b76d96ba)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 67e390d56379cac43ede7ea633614b8473ec5b0c
+Author: Felix Abecassis <felix.abecassis@gmail.com>
+Date:   Tue Feb 11 16:20:06 2014 +0100
+
+    Win32: return a failure when a CHANGE_DISPLAY_SIZE event is forced
+    
+    See x11.c for rationale.
+    
+    Close #9273
+    
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+    (cherry picked from commit ad58279cf86051a108589eeea6520f69243c1fb8)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit c8b3189f1ed316d6e63851cc08edbd3078af0ce4
+Author: Francois Cartegnie <fcvlcdev@free.fr>
+Date:   Sat Nov 16 00:12:47 2013 +0900
+
+    demux: asf: fix multiple compressed payload regression (fix #9846)
+    
+    Regression introduced by 6eddafe741954803ec2928d26fb7566bd07a3601
+
+commit 40d5cdb342e4afde07cb730b7c5e221841a79425
+Author: Francois Cartegnie <fcvlcdev@free.fr>
+Date:   Tue Nov 26 15:40:33 2013 +0100
+
+    demux: asf: ignore empty sub-payloads (fix #9990)
+
+commit 127bc9cc81488c402b7253cdcf85f556f1d353d8
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Sat Feb 8 15:48:54 2014 +0100
+
+    Contribs: update libpng to 1.6.8
+    
+    See CVE-2013-6954
+    
+    (cherry picked from commit 4e62c1faae876d142a3430eb243df63033f6785e)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 85aca9192006509c3d5ddfd110c57c83882d6684
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Wed Feb 5 15:37:07 2014 +0100
+
+    iOS: don't deploy xcrun as for Intel builds as this isn't needed
+    
+    (cherry picked from commit 72013a5b4f565e8fbfe83369a4bfa76d0026fc1a)
+
+commit cbc2f85c2c6a37102c2ba4793d4a77963f1d8252
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Wed Feb 5 15:12:37 2014 +0100
+
+    contrib/avcodec: unconditionally enable pic on iOS (close #10532, close #10531)
+    
+    (cherry picked from commit fc45d0b90fb85160d2d1af8302b70fcfe135a59d)
+
+commit 6d0b1712901e0858bdf958c49dea22c5b8c56b30
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Mon Feb 3 18:26:45 2014 +0100
+
+    Prepare VLC 2.1.4
+
+commit c5f61c90318df9a500dd16ff80c5f00fed257c51
+Author: David Fuhrmann <david.fuhrmann@googlemail.com>
+Date:   Sun Feb 2 15:45:26 2014 +0100
+
+    contrib: ffmpeg: remove libav vda patch
+    
+    This is broken with the ffmpeg, with is used for now.
+
+commit 38820b3cb1dbb7f2455f59416ab4ac2da199ec85
+Author: David Fuhrmann <david.fuhrmann@googlemail.com>
+Date:   Sun Feb 2 15:40:57 2014 +0100
+
+    vda: use the ffmpeg api to avoid memleaks.
+    
+    This will not compile with libav. Libav needs to be fixed before we can
+    support it again here.
+
+commit a117767ae0cc092917202214ab4ddf41b5756977
+Author: Rémi Denis-Courmont <remi@remlab.net>
+Date:   Sat Feb 1 18:27:05 2014 +0200
+
+    fr: fix translation (closes #10538)
+
+commit 75c3652601e5f9603361d775ce3bcab3e009afd6
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Fri Jan 31 13:32:15 2014 +0100
+
+    contrib/sparkle: fix compilation on Snow Leopard
+    
+    No functional changes
+    
+    Manual backport of 9f4a5e4dbd0fc47622161d2c2a7ef15cf6812cec
+
+commit e6a71cc4ecf377574fb2cf2210a4a1588f2e114e
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Wed Jan 29 20:16:22 2014 +0100
+
+    Make update-po
+
+commit c3a733c84a31ceb373f182a26a635632935ebdec
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Wed Jan 29 20:13:20 2014 +0100
+
+    Update NEWS
+
+commit 269d4f3d1ee1e03a7dd05ac943ed42c7e249a562
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Wed Jan 29 19:59:20 2014 +0100
+
+    Win32: workaround awesome Windows key design
+    
+    Multimedia Keys, on Windows, generate both WM_APPCOMMAND and WM_KEYDOWN,
+    even if you accept the first, because that makes so much sense.
+    But some remotes only generate the APPCOMMAND ones, of course...
+    
+    Therefore, Qt will get the messages twice and do play/pause.
+    This is not the correct fix, I'm afraid, but this will do until someone
+    redoes the configuration of the options and fixes the APPCOMMAND
+    handling with a correct MCE remote. This will do it for now...
+    
+    Close #9521
+    
+    (cherry picked from commit e8668774da18804c7ab22b9cf62d119423495afc)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 8e2c9c8cc496042bbe480510836e6a84b465c5c9
+Author: Felix Abecassis <felix.abecassis@gmail.com>
+Date:   Tue Jan 28 10:56:46 2014 +0100
+
+    hotkeys: fullscreen state of the vout should have precedence over fullscreen state of the playlist
+    
+    Double clicking to toggle to fullscreen mode does not trigger this code
+    path since 7b8083d228. The state of the playlist was therefore not in
+    sync with the vout. Pressing the fullscreen hotkey caused the state of
+    the playlist to be used to set the state of the vout, thus causing the bug.
+    
+    Close #10433.
+    
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+    (cherry picked from commit 9f7bfd93e3a749a2912adda6380370310cd4dffa)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit cebfcfdbd1f447994994f0d64ddf1721b4bb65d8
+Author: Rémi Denis-Courmont <remi@remlab.net>
+Date:   Tue Jan 28 18:23:56 2014 +0200
+
+    transform: fix off-by-one (fixes #10505)
+    
+    (cherry picked from commit 4e0920ce35fe50c437fdc0a31f3b46a1dfa13016)
+
+commit f35631d406dea3392c9bda2bae4a878096f60c3f
+Author: Rémi Denis-Courmont <remi@remlab.net>
+Date:   Mon Jan 27 18:25:04 2014 +0200
+
+    DVB (old): fix memory leak
+    
+    (cherry picked from commit ed9993ea0f46b778daf24c89cbb6607197c15ebe)
+
+commit 63f96a11001064ea42b5a782ce70dfc1671a7e2d
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Mon Jan 27 18:33:51 2014 +0100
+
+    darwin/dirs: fix plugin lookup with the NPAPI plugin
+    
+    (cherry picked from commit 50bf597dcf5fd810b4c2babbbbd7e24d328ae07b)
+
+commit 489adeaa7654e86d5a366a8dfa2f4629a056c043
+Author: Francois Cartegnie <fcvlcdev@free.fr>
+Date:   Wed Nov 27 14:17:24 2013 +0100
+
+    demux: asf: add packet values check.
+    
+    div by zero in many places
+    
+    (cherry picked from commit 98787d0843612271e99d62bee0dfd8197f0cf404)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 5a5333a65bfdb9eaebad6850b5989a1c846fb269
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Sun Jan 26 19:01:12 2014 +0100
+
+    Revert "Qt: remove SPDIF option"
+    
+    This reverts commit 8f974e5c15cee39c4908d560556d0fabf2cb3f91.
+    
+    Conflicts:
+    	modules/gui/qt4/components/simple_preferences.cpp
+
+commit 4f9b663d767ed30872e48ef8190a7885f5779683
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Sun Jan 26 15:11:04 2014 +0100
+
+    Contribs: update FFmpeg and libav hashes
+    
+    Notably for mpeg2 speed and resiliance
+
+commit 592b3f5467edd238bd7331b38c6730a257b4656c
+Author: Rémi Duraffort <ivoire@videolan.org>
+Date:   Thu Jan 23 19:33:35 2014 +0100
+
+    qt4: fix seek support in VLM
+    
+    clang was giving a warning about the addition of a const char* with an integer.
+    
+    (cherry picked from commit 379eb7663f612d598e0e50ddba9b7d7a3201cd9d)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit d844caecfdf7ef48cf391dac0d8a2859d3d1f9d6
+Author: Sam Malone <samicemalone@gmail.com>
+Date:   Fri Jan 24 09:24:42 2014 +0000
+
+    lua: http: fix artwork not being displayed on windows.
+    
+    Close #7607
+    
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+    (cherry picked from commit b729c33b249e1eaf79cb2071668a05a0368101f2)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit a365ac25fbe216c99321be24e63aab99f2f37602
+Author: Felix Abecassis <felix.abecassis@gmail.com>
+Date:   Fri Jan 24 19:14:53 2014 +0100
+
+    Win32: correctly use option "disable-screensaver"
+    
+    Close #10366.
+    
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+    (cherry picked from commit d38e0f861f5b7e38f52bb54b55062cfa93b28eb2)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+    
+    Conflicts:
+    	modules/video_output/msw/common.c
+
+commit d25f9b77ef06f5ca743f8ce9e940a581e13a65e8
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Sat Jan 25 20:09:16 2014 +0100
+
+    audiounit_ios: fix audio unit handling in pause state (close #10480)
+    
+    (cherry picked from commit bfa8edd879c2af197092e867f32ce1a202932fe9)
+
+commit 62f98a98a97efb257f3f70eff5532ae1b188b4d6
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Fri Jan 24 15:17:11 2014 +0100
+
+    Contribs: update vorbis to 1.3.4
+    
+    "The primary feature of this release is reduced static data size in
+     libvorbisenc."
+    "No functional changes, but the encoder lib is now a shade over 25% the
+     size it was in the 1.3.3 release."
+    
+    Before: libvorbis_plugin.dll: 1.7MB
+    After:  libvorbis_plugin.dll: 717kB
+    (cherry picked from commit a9712eb1304a85a05e203b2c30a68fb304172c63)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit a2b505c623ebb94f3c605b61e42c474f3f196d00
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Fri Jan 24 11:40:04 2014 +0100
+
+    Contrib: update live555
+    
+    Close #10406
+    
+    (cherry picked from commit 31d3613053eccfdd54e6eb56153d14143957297a)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 88394fd0b8a75b34cf760b43106309f887e73c00
+Author: Rémi Denis-Courmont <remi@remlab.net>
+Date:   Fri Jan 24 07:07:55 2014 +0200
+
+    record: fix sout-access-file syntax (fixes #10473)
+    
+    (cherry picked from commit af24f1e83c9aed71f2104b7698e34399539f4f27)
+
+commit 8c9d009d986658348a17b945b1c8605027adeab9
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Thu Oct 3 18:26:05 2013 +0200
+
+    contrib/ffmpeg: don't specifiy arch flag twice for Darwin platforms
+    
+    (cherry picked from commit f1278f3f2a15a77df5bfc99f6b4307dbfce2f2eb)
+
+commit 9e02d1b384c989a9c9a38b6d542645ba96e84a15
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Wed Jan 22 13:42:36 2014 +0100
+
+    contrib/avcodec: remove remnant
+    
+    (cherry picked from commit ba2d5efe17fd664fb3cd356a09782db31a42ee79)
+
+commit 4fe7ccae8d38485cfb660cbed13c731e8d57278e
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Wed Jan 15 15:13:03 2014 +0100
+
+    extras/tools: update gas-pp
+    
+    (cherry picked from commit a8a64471140ba115c0059363c9c9bc0f76debdc2)
+
+commit 19cdaf30d03e5430e1fc1c1ea489bb59ac50cd8f
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Wed Jan 22 02:32:01 2014 +0100
+
+    contrib/ios: simplify arch handling
+    
+    (cherry picked from commit bf235ea880cc812c5ff053b91a218d03261434c5)
+
+commit 2e2efcd67bcdb78cff055da99162600e447c87a9
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Thu Jan 23 13:21:13 2014 +0100
+
+    extras/ios: modernize build script
+    
+    Manual backport of 0eb37e84935763d7055eb08a3d28fb1b5231ae0a
+
+commit 576d926e96e73e5bfae1396fe5f1438d20e6c068
+Author: Felix Paul Kühne <fkuehne@videolan.org>
+Date:   Fri Nov 29 19:29:19 2013 +0100
+
+    contrib/modplug: download from ganesh instead of SF since this is way more reliable
+    
+    (cherry picked from commit 4d794d1e082adcede425687a5166e2713b4d3c45)
+
+commit e19255726f60b8c00da0db934b7a27db9a9cb5ba
+Author: Felix Abecassis <felix.abecassis@gmail.com>
+Date:   Mon Jan 20 16:30:13 2014 +0100
+
+    DirectDraw: use ANSI version for callbacks enumeration
+    
+    DirectDrawEnumerateExW does not work, use DirectDrawEnumerateExA instead.
+    
+    Fix #10189, #10307 and many other
+    
+    (cherry picked from commit fd35fe041b3e59722476f4a1e07d8c14cb4a301e)
+    (cherry picked from commit 77c6cbf165d9f460e22674c8738d75d84e8a0fc3)
+    (cherry picked from commit 69894cdbca87f5861a8835c82436f1a5dc6badb1)
+    
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 1e62e4d15a72e65d54ce69245a3ea50d459682d3
+Author: Felix Abecassis <felix.abecassis@gmail.com>
+Date:   Tue Jan 21 11:30:12 2014 +0100
+
+    Direct3D: add a new state handling when the device is lost but cannot be reset yet.
+    
+    In this state, do not call Direct3D functions and exit the "Display"
+    and "Prepare" functions early.
+    
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+    (cherry picked from commit 7cbbe5646819afbf3f5618d5827e6c066dd5a04f)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 6901782de9096ba71c6a6c39489b59d12a147eb4
+Author: Felix Abecassis <felix.abecassis@gmail.com>
+Date:   Tue Jan 21 11:30:11 2014 +0100
+
+    Direct3D: fix typo.
+    
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+    (cherry picked from commit 3b7529dcbabd43745c40ab0590e6c8b470d086f0)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 13cb6cd1dfdf08b6fa7ae93a66ba4fd9738800d6
+Author: Julien 'Lta' BALLET <contact@lta.io>
+Date:   Tue Jan 21 11:11:09 2014 +0100
+
+    Fix a segfault in LUA Service Discovery, when stack wasn't a clean state after the first iteration of the FillDescriptor loop
+    
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+    (cherry picked from commit 294c97cd9d95d81465c0e1b2b319428301f3d4aa)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 213b460e710117930aee7e19ba795c7810fed9c5
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Sun Jan 19 19:32:26 2014 +0100
+
+    NEWS: mention teletext fix on Windows
+
+commit f2609e855d12e70bddbb221e42c0485f45899c77
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Sun Jan 19 19:29:55 2014 +0100
+
+    Revert "Pass the value by pointer (cid #1049514)"
+    
+    This reverts commit bec3a2b0e39be32b2d7c7894d871c3a1f1e7c4e5.
+    
+    This broke zvbi decoding on Windows
+    
+    Close #9523
+
+commit 19d3ab2cccccabe0256f76cfae0542bcc461d710
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Sun Jan 19 18:59:00 2014 +0100
+
+    Qt: fix folder opening of DVD and BD on Windows
+    
+    Close #6328
+    
+    (cherry picked from commit b502075972e0cfbea51dd21aaf72b09ba671c501)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 91f651464697e012d30608bd988a64254e0544fe
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Sun Jan 19 17:50:35 2014 +0100
+
+    Contribs: update libav and FFmpeg hashes for release
+
+commit 63eb71e07fa91066b13c24f9d57cd7b61d534eba
+Author: Rémi Duraffort <ivoire@videolan.org>
+Date:   Tue Dec 31 18:38:38 2013 +0100
+
+    xdg: fix infinite loop if the file is invalid
+    
+    (cherry picked from commit b1d4cd1999dc7739e062406d90d2db6b2cdb394e)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 6ed4796b47ea3d7a83acca0c039fde4eb8f55d4d
+Author: Wieland Hoffmann <themineo@gmail.com>
+Date:   Sat Jan 11 14:10:16 2014 +0000
+
+    playlist: Recurse on ITEM_TYPE_NODE when calculating the duration
+    
+    When adding an item X whose underlying input_item_t's i_type is
+    ITEM_TYPE_NODE (like a folder), we need to call playlist_GetNodeDuration
+    on X again for the duration of X to be the sum of the durations of X's
+    children.
+    
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+    (cherry picked from commit 8eae542ad94652396035ee70920ca2ab107033ed)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 802a41442ef8b5bbe13163b1c22cd7815eb2a621
+Author: Rafaël Carré <funman@videolan.org>
+Date:   Mon Jan 13 16:52:04 2014 +0100
+
+    contrib: taglib: fetch patch from https://github.com/taglib/taglib/pull/309
+    
+    Closes: #10227
+    (cherry picked from commit c50c436760afcb4c16456f6002a1d75d36c1a313)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 5cc747e80b2e45f73533cf561244c481f2518d0c
+Author: Wieland Hoffmann <themineo@gmail.com>
+Date:   Sun Jan 12 23:04:09 2014 +0100
+
+    musicbrainz.lua: Use MBIDs from files, if they exist
+    
+    If the MBID of the album is already in the `meta` table, use it to query
+    the MusicBrainz web service, instead of doing extra requests to the
+    search server.
+    
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+    (cherry picked from commit 30cd5db56a0002cb9d6e080022e22d28cac0ec3b)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 487657c96a3ec921e552d093c6d9bfe4a311932f
+Author: Wieland Hoffmann <themineo@gmail.com>
+Date:   Sun Jan 12 23:04:08 2014 +0100
+
+    musicbrainz.lua: Support coverartarchive.org
+    
+    If the Cover Art Archive has artwork for this album, use the 500x500px
+    version of it.
+    
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+    (cherry picked from commit ab7c22aaa17e2b314f8c2f76370edccac07fca58)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit b639c41868b55be7a0794b7d495cedc653fcb0cc
+Author: Wieland Hoffmann <themineo@gmail.com>
+Date:   Sun Jan 12 23:04:07 2014 +0100
+
+    musicbrainz.lua: Use get_releaseid even if the album title is known
+    
+    This renames `try_release` to `get_releaseid` and uses it to find the
+    MusicBrainz Identifier. That MBID is later used in the query passed to
+    try_query.
+    
+    Not using the ASIN returned from the search server in the get_releaseid
+    call means one additional request is performed in the case that both the
+    artist and the album name are already known.
+    
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+    (cherry picked from commit f18236eee239fa8b57641ba82f20576ab244202f)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 1989c453c8fba454daf6f41c0c4c5cd50ab26dd2
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Sun Jan 19 00:41:49 2014 +0100
+
+    Update NEWS for 2.1.3
+
+commit ebe0396ef8a018b636af5fa2b96ad88e2352c5dd
+Author: Christoph Miebach <christoph.miebach@web.de>
+Date:   Sun Jan 19 00:22:45 2014 +0100
+
+    Update NEWS for translations
+
+commit cfbfa3748e416233180d5931e3d3bac0a0eb7179
+Author: Dean Lee <xslidian@gmail.com>
+Date:   Sat Jan 18 23:57:55 2014 +0100
+
+    l10n: Simplified Chinese update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit a33e8e26c6143d11b6c9361670084c3f03b69fc1
+Author: Andriy Bandura <andriykopanytsia@gmail.com>
+Date:   Sat Jan 18 23:52:30 2014 +0100
+
+    l10n: Ukrainian update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit b85ff9b36c384f3b1a6fbf859244389b688b7fc5
+Author: Kaya Zeren <kayazeren@gmail.com>
+Date:   Sat Jan 18 23:50:33 2014 +0100
+
+    l10n: Turkish update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 83b456c35ce21e51d79175adfaec2071a9de039c
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 23:48:47 2014 +0100
+
+    l10n: Thai update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit d16f786a38ff3518ae0eb38aaebbdf087b127061
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 23:46:36 2014 +0100
+
+    l10n: Telugu update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 83dd7115da888d6dea91dc04cf21c54e06481f22
+Author: A. Regnander <anton_r_3 at hotmail.com>
+Date:   Sat Jan 18 23:43:41 2014 +0100
+
+    l10n: Swedish update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 85878a9fdcacd26d140c6b5582fff4be892455c9
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 23:40:34 2014 +0100
+
+    l10n: Slovenian update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 7028b696312670de353546da7dd465a3006c275c
+Author: Marián Hikaník <mhikanik@users.sourceforge.net>
+Date:   Sat Jan 18 23:38:28 2014 +0100
+
+    l10n: Slovak update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 0391f2bbbc5e6459a24a68131eb334d9c86aa87c
+Author: Pasindu Kavinda <pkavinda@gmail.com>
+Date:   Sat Jan 18 23:37:35 2014 +0100
+
+    l10n: Sinhala update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 23c34944641cfc5f68d677065d8bf4e4bdf0a771
+Author: Alexander Lakhin <exclusion@gmail.com>
+Date:   Sat Jan 18 23:36:27 2014 +0100
+
+    l10n: Russian update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit e4830b010616bb456fc39529cbb7165ea231739d
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 23:35:19 2014 +0100
+
+    l10n: Romanian update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit b66e58ef324b3f60730325f16f59674981aff442
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 23:31:11 2014 +0100
+
+    l10n: Portuguese update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 04411bba5705261f92b36d9ae0380a467be1001f
+Author: Sidney Doria <ssdoria@gmail.com>
+Date:   Sat Jan 18 23:29:42 2014 +0100
+
+    l10n: Brazilian Portuguese update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 222c88789ebf817630a35db682effb94b143ea38
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 23:25:30 2014 +0100
+
+    l10n: Polish update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 0065914acb32e037a53848b8bc5599a0f40c8b90
+Author: Thomas De Rocker <thomasderocker@hotmail.com>
+Date:   Sat Jan 18 23:23:26 2014 +0100
+
+    l10n: Dutch update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit ed337acea58ccc77950150b3ca14aeda54a61f30
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 23:22:04 2014 +0100
+
+    l10n: Nepali update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 380c6f957d334a991c003f53077af18902e0576a
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 23:18:43 2014 +0100
+
+    l10n: Norwegian Bokmål update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 377d0befbd13179803323c1be24786e95f905321
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 23:13:51 2014 +0100
+
+    l10n: Malay update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 51042e79f8751e4ed6b1a0046790a7bc70955ab1
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 23:09:02 2014 +0100
+
+    l10n: Korean update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 8dae315fd4ba6fb204fcab763f04566f0d50497f
+Author: Fumio Nakayama <fumio.n6a@gmail.com>
+Date:   Sat Jan 18 23:03:08 2014 +0100
+
+    l10n: Japanese update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 801a491c096335a640a2957bb8efbf659edab707
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 22:58:37 2014 +0100
+
+    l10n: Italian update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit ab90d3a91a552f1fece7408de081b6285ac46bef
+Author: Gabor Kelemen <kelemeng at gnome dot hu>
+Date:   Sat Jan 18 22:54:05 2014 +0100
+
+    l10n: Hungarian update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 2f12cb427d0acb5c06be43c6c9bc075875489f96
+Author: Yaron Shahrabani <sh.yaron@gmail.com>
+Date:   Sat Jan 18 22:51:41 2014 +0100
+
+    l10n: Hebrew update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 4b4ebfef44b5b7ddab0ed01d8c40d7454420198b
+Author: Gonçalo Cordeiro <gzcordeiro@gmail.com>
+Date:   Sat Jan 18 22:50:20 2014 +0100
+
+    l10n: Galician update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 57ea97ebca0ad9ec54b4315c98a0d77d5598556d
+Author: Michael Bauer <fios@akerbeltz.org>
+Date:   Sat Jan 18 22:49:18 2014 +0100
+
+    l10n: Scottish Gaelic update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit b1194bd906fff8db3ab3ab04d72db55b185ab71f
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 22:48:27 2014 +0100
+
+    l10n: French update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit a66b30b97a6d66ad67bd96b9db0300c9ee084601
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 22:43:25 2014 +0100
+
+    l10n: Finnish update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 83d25cc6578d6e4389f51cef1ae768742e60ec81
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 22:36:17 2014 +0100
+
+    l10n: Basque update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 5ed1d343ff0b23d0b2a80ba9b7be245e79de7782
+Author: David González <pico.dev@gmail.com>
+Date:   Sat Jan 18 22:33:55 2014 +0100
+
+    l10n: Spanish update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit d59620a8740674ddf3c41bc9f4e61a2a7ca7ab73
+Author: Savvas Nesseris <modernphilosopher82-2011@yahoo.com>
+Date:   Sat Jan 18 22:32:10 2014 +0100
+
+    l10n: Modern Greek update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit dc4e13d36018d707abb8dc7e622b6aa1a238270d
+Author: Michał Trzebiatowski <hippie_1968@hotmail.com>
+Date:   Sat Jan 18 22:31:15 2014 +0100
+
+    l10n: German update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 0ae686a1b22e7d056244f36d3765c6227ad3f851
+Author: Aputsiaĸ Niels Janussen <aj@isit.gl>
+Date:   Sat Jan 18 22:27:59 2014 +0100
+
+    l10n: Danish update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit ffd5647824b15889692a7b4e690761c646d5ff99
+Author: Tomáš Chvátal <tomas.chvatal@gmail.com>
+Date:   Sat Jan 18 22:26:24 2014 +0100
+
+    l10n: Czech update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit 111b4406f5bdb0f327b99e6c0dc1dce6e2073e3c
+Author: Pau Iranzo <paugnu@gmail.com>
+Date:   Sat Jan 18 22:18:11 2014 +0100
+
+    l10n: Catalan update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit be41c2ac98627ba1886dfa12a70798dc39b1bcc9
+Author: VideoLAN <videolan@videolan.org>
+Date:   Sat Jan 18 22:16:00 2014 +0100
+
+    l10n: Bulgarian update
+    
+    Signed-off-by: Christoph Miebach <christoph.miebach@web.de>
+
+commit fd311785f2b64404fa312345b9d4415a65ecc257
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Fri Jan 17 17:36:31 2014 +0100
+
+    Qt: fix audio menu crash
+    
+    Close #9674
+    
+    (cherry picked from commit 987d6cf967cc70752493428496a16d4c62c56044)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 0a7afe0d725916a3ba09a1c8141b80614fa76953
+Author: Rafaël Carré <funman@videolan.org>
+Date:   Tue Jan 14 14:43:23 2014 +0100
+
+    nsis danish translation: fix quoting
+    
+    (cherry picked from commit a07e33cdf1e747be8c50d692ab5c8b28d687ced9)
+    Signed-off-by: Rafaël Carré <funman@videolan.org>
+
+commit 47f740e7e0da787f44a0ec7d56985505e0c1a4aa
+Author: Christoph Miebach <christoph.miebach@web.de>
+Date:   Sun Jan 12 23:46:48 2014 +0100
+
+    l10n: Updating and adding installer files
+
+commit 766f872048947465c77b7f479e8dfb025fd1d486
+Author: Rémi Denis-Courmont <remi@remlab.net>
+Date:   Thu Jan 9 21:04:36 2014 +0200
+
+    vlc_readdir: fix integer overflow on error
+    
+    (cherry picked from commit 3dfba47808176d1c032e34166028843a4317567c)
+
+commit e0127a91bbb39f2f451d4cee6db575909e571563
+Author: Tristan Matthews <le.businessman@gmail.com>
+Date:   Thu Jan 9 01:28:47 2014 -0500
+
+    opus: always sync i_buffer with i_nb_samples (fixes #10135)
+    
+    Specifically, the crash at the end of playback was happening when end trim was
+    not being subtracted from i_buffer.
+    
+    (cherry picked from commit f88f91467700484a65d6c5abf0a71cfc4a209320)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 80c2f119ca2e8fdb698f9693f483086938a76897
+Author: Francois Cartegnie <fcvlcdev@free.fr>
+Date:   Mon Jan 6 23:43:59 2014 +0100
+
+    demux: wav: stay within riff chunk boundaries (fix #10323)
+    
+    (cherry picked from commit 9f0a91cb7e562fcfb72046b38a5f986c0e1bc0e3)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 88dd7b2bbdade1fbd3fc1a6e19f2ae7be8dd0ed2
+Author: Rémi Denis-Courmont <remi@remlab.net>
+Date:   Sun Jan 5 15:51:09 2014 +0200
+
+    v4l2: fix frequency conversion from Hz (fixes #10309)
+    
+    (cherry picked from commit c1677c6920a0a2bee3300faafe9bd068825df16a)
+
+commit 33512259e6641083ae54bf311f6f41efc4ba88cb
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Mon Dec 30 19:20:03 2013 +0100
+
+    Qt: fix possible double-free on quit with simple volume widget
+    
+    (cherry picked from commit ffd82479f6e3282bd9c8635ee775cd3a9094f176)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 3169c3f43d85bda8397b0ae080c6410bb20c03be
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Fri Jan 3 12:49:22 2014 +0100
+
+    Contribs: dvdread, use the correct libdvdcss option
+    
+    (cherry picked from commit b961d236a3fdf985a465b1fe9f1aeff08c509cb9)
+    Signed-off-by: Jean-Baptiste Kempf <jb@videolan.org>
+
+commit 25a07cacc3d84a8016afb4b1325f97827a5c1b40
+Author: Rémi Denis-Courmont <remi@remlab.net>
+Date:   Fri Jan 3 23:48:08 2014 +0200
+
+    configure: fix check for libnsl
+    
+    Pointed-out-by: Jon Tibble <meths@btinternet.com>
+    (cherry picked from commit 67531a989304442223d33da611b071083a4810bc)
+
+commit a74fb329444af2e10a5c589fcb7eff89d7bce24c
+Author: Rémi Denis-Courmont <remi@remlab.net>
+Date:   Thu Jan 2 19:33:06 2014 +0200
+
+    dtv: fix DVB-T2 tuning
+    
+    (cherry picked from commit d2b076e1beacffac1b43b63f1d175ecebe0a1325)
+
+commit c9c0b64862475253b863ee63381fd245287f38ce
+Author: Jean-Baptiste Kempf <jb@videolan.org>
+Date:   Wed Jan 1 11:31:17 2014 +0100
+
+    Happy New Year 2014!
+
+commit 7e69bdda0daca242c4e63e57c3d5af4c0e570b6a
+Author: Denis Charmet <typx@dinauz.org>
+Date:   Wed Jan 1 22:35:36 2014 +0100
+
+    Remove faulty return when vobsub doesn't define a size.
+    
+    Close #10111

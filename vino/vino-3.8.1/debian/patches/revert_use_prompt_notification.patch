@@ -1,0 +1,391 @@
+Index: vino-3.8.1/Makefile.am
+===================================================================
+--- vino-3.8.1.orig/Makefile.am	2013-11-18 15:14:13.738555618 +0100
++++ vino-3.8.1/Makefile.am	2013-11-18 15:14:13.734555618 +0100
+@@ -274,7 +274,8 @@
+ uidir = $(pkgdatadir)
+ dist_ui_DATA = \
+ 	capplet/vino-preferences.ui \
+-	capplet/webservices
++	capplet/webservices \
++	server/vino-prompt.ui
+ 
+ autostartdir = $(sysconfdir)/xdg/autostart
+ autostart_in_files = server/vino-server.desktop.in
+Index: vino-3.8.1/server/vino-prompt.c
+===================================================================
+--- vino-3.8.1.orig/server/vino-prompt.c	2013-11-18 15:14:13.738555618 +0100
++++ vino-3.8.1/server/vino-prompt.c	2013-11-18 15:14:13.734555618 +0100
+@@ -25,17 +25,18 @@
+ #include "vino-prompt.h"
+ 
+ #include <gtk/gtk.h>
+-#include <libnotify/notify.h>
+ #include "vino-util.h"
+ #include "vino-enums.h"
+ #include "vino-marshal.h"
+ 
+ struct _VinoPromptPrivate
+ {
+-  GdkScreen          *screen;
+-  NotifyNotification *notification;
+-  rfbClientPtr        current_client;
+-  GSList             *pending_clients;
++  GdkScreen     *screen;
++  GtkWidget     *dialog;
++  GtkWidget     *sharing_icon;
++  GtkWidget     *host_label;
++  rfbClientPtr   current_client;
++  GSList        *pending_clients;
+ };
+ 
+ enum
+@@ -58,14 +59,6 @@
+ G_DEFINE_TYPE (VinoPrompt, vino_prompt, G_TYPE_OBJECT);
+ 
+ static void
+-clear_notification (VinoPrompt *prompt)
+-{
+-  if (prompt->priv->notification)
+-    notify_notification_close (prompt->priv->notification, NULL);
+-  g_clear_object (&prompt->priv->notification);
+-}
+-
+-static void
+ vino_prompt_finalize (GObject *object)
+ {
+   VinoPrompt *prompt = VINO_PROMPT (object);
+@@ -73,7 +66,11 @@
+   g_slist_free (prompt->priv->pending_clients);
+   prompt->priv->pending_clients = NULL;
+ 
+-  clear_notification (prompt);
++  if (prompt->priv->dialog)
++    gtk_widget_destroy (prompt->priv->dialog);
++  prompt->priv->dialog = NULL;
++  prompt->priv->sharing_icon = NULL;
++  prompt->priv->host_label = NULL;
+ 
+   g_free (prompt->priv);
+   prompt->priv = NULL;
+@@ -225,27 +222,36 @@
+ }
+ 
+ static void
+-vino_prompt_handle_response (NotifyNotification *notification,
+-			     char               *response,
+-			     gpointer            user_data)
++vino_prompt_handle_dialog_response (VinoPrompt *prompt,
++				    int         response,
++				    GtkDialog  *dialog)
+ {
+-  VinoPrompt *prompt = user_data;
+   rfbClientPtr rfb_client;
+   int          prompt_response = VINO_RESPONSE_INVALID;
+ 
+   dprintf (PROMPT, "Got a response for client %p: %s\n",
+ 	   prompt->priv->current_client,
+-	   response);
++	   response == GTK_RESPONSE_ACCEPT ? "accept" :
++	   response == GTK_RESPONSE_REJECT ? "reject" : "unknown");
+ 
+-  if (g_strcmp0 (response, "accept") == 0)
+-    prompt_response = VINO_RESPONSE_ACCEPT;
+-  else
+-    prompt_response = VINO_RESPONSE_REJECT;
++  switch (response)
++    {
++    case GTK_RESPONSE_ACCEPT:
++      prompt_response = VINO_RESPONSE_ACCEPT;
++      break;
++    case GTK_RESPONSE_REJECT:
++    default:
++      prompt_response = VINO_RESPONSE_REJECT;
++      break;
++    }
+ 
+   rfb_client = prompt->priv->current_client;
+   prompt->priv->current_client = NULL;
+ 
+-  clear_notification (prompt);
++  prompt->priv->dialog = NULL;
++  prompt->priv->sharing_icon = NULL;
++  prompt->priv->host_label = NULL;
++  gtk_widget_destroy (GTK_WIDGET (dialog));
+ 
+   if (rfb_client != NULL)
+     {
+@@ -255,16 +261,67 @@
+   vino_prompt_process_pending_clients (prompt);
+ }
+ 
++static void
++vino_prompt_setup_icons (VinoPrompt *prompt,
++			 GtkBuilder *builder)
++{
++#define ICON_SIZE_STANDARD 48
++
++  prompt->priv->sharing_icon = GTK_WIDGET (gtk_builder_get_object (builder,
++                                                                   "sharing_icon"));
++  g_assert (prompt->priv->sharing_icon != NULL);
++
++  gtk_window_set_icon_name (GTK_WINDOW (prompt->priv->dialog),
++			    "preferences-desktop-remote-desktop");
++  gtk_image_set_from_icon_name (GTK_IMAGE (prompt->priv->sharing_icon),
++				"preferences-desktop-remote-desktop", GTK_ICON_SIZE_DIALOG);
++
++#undef ICON_SIZE_STANDARD
++}
++
+ static gboolean
+ vino_prompt_setup_dialog (VinoPrompt *prompt)
+ {
+-  if (!notify_is_initted () &&  !notify_init (g_get_application_name ()))
+-    {
+-      g_printerr (_("Error initializing libnotify\n"));
+-      return FALSE;
+-    }
++#define VINO_UI_FILE "vino-prompt.ui"
++
++  GtkBuilder *builder;
++  const char *ui_file;
++  GtkWidget  *help_button;
++  GError     *error = NULL;
++
++  if (g_file_test (VINO_UI_FILE, G_FILE_TEST_EXISTS))
++    ui_file = VINO_UI_FILE;
++  else
++    ui_file = VINO_UIDIR "/" VINO_UI_FILE;
++
++  builder = gtk_builder_new ();
++  if (!gtk_builder_add_from_file (builder, ui_file, &error))
++  {
++    g_warning ("Unable to locate ui file '%s'", ui_file);
++    g_error_free (error);
++    return FALSE;
++  }
++
++  prompt->priv->dialog = GTK_WIDGET (gtk_builder_get_object (builder, "vino_dialog"));
++  g_assert (prompt->priv->dialog != NULL);
++
++  g_signal_connect_swapped (prompt->priv->dialog, "response",
++			    G_CALLBACK (vino_prompt_handle_dialog_response), prompt);
++
++  vino_prompt_setup_icons (prompt, builder);
++
++  prompt->priv->host_label = GTK_WIDGET (gtk_builder_get_object (builder, "host_label"));
++  g_assert (prompt->priv->host_label != NULL);
++
++  help_button = GTK_WIDGET (gtk_builder_get_object (builder, "help_button"));
++  g_assert (help_button != NULL);
++  gtk_widget_hide (help_button);
++
++  g_object_unref (builder);
+ 
+   return TRUE;
++
++#undef VINO_UI_FILE
+ }
+ 
+ static gboolean
+@@ -274,7 +331,13 @@
+   char *host_label;
+ 
+   if (prompt->priv->current_client)
+-    return prompt->priv->current_client == rfb_client;
++    {
++      g_assert (prompt->priv->dialog);
++      gtk_window_present (GTK_WINDOW (prompt->priv->dialog));
++      return prompt->priv->current_client == rfb_client;
++    }
++
++  g_assert (prompt->priv->dialog == NULL);
+ 
+   if (!vino_prompt_setup_dialog (prompt))
+     return FALSE;
+@@ -282,28 +345,13 @@
+   host_label = g_strdup_printf (_("A user on the computer '%s' is trying to remotely view or control your desktop."),
+ 				rfb_client->host);
+ 
+-  prompt->priv->notification = notify_notification_new (_("Another user is trying to view your desktop."),
+-							host_label,
+-							"preferences-desktop-remote-desktop");
+-  notify_notification_set_hint_string (prompt->priv->notification, "desktop-entry", "vino-server");
+-  notify_notification_add_action (prompt->priv->notification,
+-				  "refuse",
+-				  _("Refuse"),
+-				  vino_prompt_handle_response,
+-				  prompt,
+-				  NULL);
+-  notify_notification_add_action (prompt->priv->notification,
+-				  "accept",
+-				  _("Accept"),
+-				  vino_prompt_handle_response,
+-				  prompt,
+-				  NULL);
++  gtk_label_set_text (GTK_LABEL (prompt->priv->host_label), host_label);
+ 
+   g_free (host_label);
+ 
+   prompt->priv->current_client = rfb_client;
+ 
+-  notify_notification_show (prompt->priv->notification, NULL);
++  gtk_widget_show_all (prompt->priv->dialog);
+ 
+   dprintf (PROMPT, "Prompting for client %p\n", rfb_client);
+ 
+@@ -335,7 +383,11 @@
+ 
+   if (prompt->priv->current_client == rfb_client)
+     {
+-      clear_notification (prompt);
++      g_assert (prompt->priv->dialog != NULL);
++
++      gtk_widget_destroy (prompt->priv->dialog);
++      prompt->priv->dialog = NULL;
++      prompt->priv->current_client = NULL;
+     }
+   else
+     {
+Index: vino-3.8.1/server/vino-prompt.ui
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ vino-3.8.1/server/vino-prompt.ui	2013-11-18 15:14:13.734555618 +0100
+@@ -0,0 +1,137 @@
++<?xml version="1.0"?>
++<!--*- mode: xml -*-->
++<interface>
++  <requires lib="gtk+" version="2.16"/>
++  <object class="GtkDialog" id="vino_dialog">
++    <property name="border_width">5</property>
++    <property name="title" translatable="yes">Question</property>
++    <property name="resizable">False</property>
++    <property name="type_hint">GDK_WINDOW_TYPE_HINT_NORMAL</property>
++    <child internal-child="vbox">
++      <object class="GtkBox" id="dialog-vbox1">
++        <property name="visible">True</property>
++        <property name="orientation">vertical</property>
++        <child>
++          <object class="GtkBox" id="hbox30">
++            <property name="visible">True</property>
++            <property name="orientation">horizontal</property>
++            <property name="border_width">12</property>
++            <property name="spacing">12</property>
++            <child>
++              <object class="GtkImage" id="sharing_icon">
++                <property name="visible">True</property>
++                <property name="yalign">0</property>
++                <property name="stock">gtk-missing-image</property>
++              </object>
++            </child>
++            <child>
++              <object class="GtkBox" id="vbox34">
++                <property name="visible">True</property>
++                <property name="orientation">vertical</property>
++                <property name="spacing">6</property>
++                <child>
++                  <object class="GtkLabel" id="warning_label">
++                    <property name="visible">True</property>
++                    <property name="xalign">0</property>
++                    <property name="label" translatable="yes">Another user is trying to view your desktop.</property>
++                    <attributes>
++                      <attribute name="weight" value="bold"/>
++                      <attribute name="scale" value="1.2"/>
++                    </attributes>
++                    <property name="wrap">True</property>
++                  </object>
++                  <packing>
++                    <property name="expand">False</property>
++                    <property name="fill">False</property>
++                  </packing>
++                </child>
++                <child>
++                  <object class="GtkLabel" id="host_label">
++                    <property name="visible">True</property>
++                    <property name="xalign">0</property>
++                    <property name="label" translatable="yes">A user on another computer is trying to remotely view or control your desktop.</property>
++                    <property name="wrap">True</property>
++                  </object>
++                  <packing>
++                    <property name="expand">False</property>
++                    <property name="fill">False</property>
++                    <property name="position">1</property>
++                  </packing>
++                </child>
++                <child>
++                  <object class="GtkLabel" id="question_label">
++                    <property name="visible">True</property>
++                    <property name="xalign">0</property>
++                    <property name="label" translatable="yes">Do you want to allow them to do so?</property>
++                    <property name="wrap">True</property>
++                  </object>
++                  <packing>
++                    <property name="expand">False</property>
++                    <property name="fill">False</property>
++                    <property name="position">2</property>
++                  </packing>
++                </child>
++              </object>
++              <packing>
++                <property name="position">1</property>
++              </packing>
++            </child>
++          </object>
++          <packing>
++            <property name="position">1</property>
++          </packing>
++        </child>
++        <child internal-child="action_area">
++          <object class="GtkHButtonBox" id="hbuttonbox1">
++            <property name="visible">True</property>
++            <property name="layout_style">GTK_BUTTONBOX_END</property>
++            <child>
++              <object class="GtkButton" id="help_button">
++                <property name="can_focus">True</property>
++                <property name="can_default">True</property>
++                <property name="no_show_all">True</property>
++                <property name="label">gtk-help</property>
++                <property name="use_stock">True</property>
++              </object>
++            </child>
++            <child>
++              <object class="GtkButton" id="refuse_button">
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="has_focus">True</property>
++                <property name="can_default">True</property>
++                <property name="has_default">True</property>
++                <property name="label" translatable="yes">_Refuse</property>
++                <property name="use_underline">True</property>
++              </object>
++              <packing>
++                <property name="position">1</property>
++              </packing>
++            </child>
++            <child>
++              <object class="GtkButton" id="allow_button">
++                <property name="visible">True</property>
++                <property name="can_focus">True</property>
++                <property name="can_default">True</property>
++                <property name="label" translatable="yes">_Allow</property>
++                <property name="use_underline">True</property>
++              </object>
++              <packing>
++                <property name="position">2</property>
++              </packing>
++            </child>
++          </object>
++          <packing>
++            <property name="expand">False</property>
++            <property name="pack_type">GTK_PACK_END</property>
++          </packing>
++        </child>
++      </object>
++    </child>
++    <action-widgets>
++      <action-widget response="-11">help_button</action-widget>
++      <action-widget response="-2">refuse_button</action-widget>
++      <action-widget response="-3">allow_button</action-widget>
++    </action-widgets>
++  </object>
++</interface>

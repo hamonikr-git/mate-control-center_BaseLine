@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MATE Dictionary Library Reference Manual: GdictStrategyChooser</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="MATE Dictionary Library Reference Manual">
+<link rel="up" href="ch06.html" title="Advanced widgets">
+<link rel="prev" href="GdictDatabaseChooser.html" title="GdictDatabaseChooser">
+<link rel="next" href="GdictSourceChooser.html" title="GdictSourceChooser">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#GdictStrategyChooser.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#GdictStrategyChooser.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties"> <span class="dim">|</span> 
+                  <a href="#GdictStrategyChooser.properties" class="shortcut">Properties</a></span><span id="nav_signals"> <span class="dim">|</span> 
+                  <a href="#GdictStrategyChooser.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch06.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GdictDatabaseChooser.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GdictSourceChooser.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GdictStrategyChooser"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GdictStrategyChooser.top_of_page"></a>GdictStrategyChooser</span></h2>
+<p>GdictStrategyChooser — Display a list of matching strategies</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GdictStrategyChooser.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/gtk3/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-new" title="gdict_strategy_chooser_new ()">gdict_strategy_chooser_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/gtk3/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-new-with-context" title="gdict_strategy_chooser_new_with_context ()">gdict_strategy_chooser_new_with_context</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GdictContext.html" title="GdictContext"><span class="returnvalue">GdictContext</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-get-context" title="gdict_strategy_chooser_get_context ()">gdict_strategy_chooser_get_context</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-set-context" title="gdict_strategy_chooser_set_context ()">gdict_strategy_chooser_set_context</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-select-strategy" title="gdict_strategy_chooser_select_strategy ()">gdict_strategy_chooser_select_strategy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-unselect-strategy" title="gdict_strategy_chooser_unselect_strategy ()">gdict_strategy_chooser_unselect_strategy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-set-current-strategy" title="gdict_strategy_chooser_set_current_strategy ()">gdict_strategy_chooser_set_current_strategy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-get-current-strategy" title="gdict_strategy_chooser_get_current_strategy ()">gdict_strategy_chooser_get_current_strategy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+</td>
+<td class="function_name">
+<a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-get-strategies" title="gdict_strategy_chooser_get_strategies ()">gdict_strategy_chooser_get_strategies</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-count-strategies" title="gdict_strategy_chooser_count_strategies ()">gdict_strategy_chooser_count_strategies</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-has-strategy" title="gdict_strategy_chooser_has_strategy ()">gdict_strategy_chooser_has_strategy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-refresh" title="gdict_strategy_chooser_refresh ()">gdict_strategy_chooser_refresh</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-clear" title="gdict_strategy_chooser_clear ()">gdict_strategy_chooser_clear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/gtk3/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-add-button" title="gdict_strategy_chooser_add_button ()">gdict_strategy_chooser_add_button</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GdictStrategyChooser.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a> *</td>
+<td class="property_name"><a class="link" href="GdictStrategyChooser.html#GdictStrategyChooser--context" title="The “context” property">context</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GdictStrategyChooser.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GdictStrategyChooser.html#GdictStrategyChooser-strategy-activated" title="The “strategy-activated” signal">strategy-activated</a></td>
+<td class="signal_flags"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GdictStrategyChooser.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://library.gnome.org/devel/gtk3/GtkObject.html">GtkObject</a>
+            <span class="lineart">╰──</span> <a href="http://library.gnome.org/devel/gtk3/GtkWidget.html">GtkWidget</a>
+                <span class="lineart">╰──</span> <a href="http://library.gnome.org/devel/gtk3/GtkContainer.html">GtkContainer</a>
+                    <span class="lineart">╰──</span> <a href="http://library.gnome.org/devel/gtk3/GtkBox.html">GtkBox</a>
+                        <span class="lineart">╰──</span> <a href="http://library.gnome.org/devel/gtk3/GtkVBox.html">GtkVBox</a>
+                            <span class="lineart">╰──</span> GdictStrategyChooser
+</pre>
+</div>
+<div class="refsect1">
+<a name="GdictStrategyChooser.description"></a><h2>Description</h2>
+<p>Each <a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a> allows matching a word using a specific "matching
+strategy". The <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> widget queries a <a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a> and
+displays the list of available matching strategies.</p>
+</div>
+<div class="refsect1">
+<a name="GdictStrategyChooser.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gdict-strategy-chooser-new"></a><h3>gdict_strategy_chooser_new ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gtk3/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+gdict_strategy_chooser_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a>. Use this widget to show a list
+of matching strategies available on a dictionary source represented
+by a <a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a>, set with <a class="link" href="GdictStrategyChooser.html#gdict-strategy-chooser-set-context" title="gdict_strategy_chooser_set_context ()"><code class="function">gdict_strategy_chooser_set_context()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.2.5"></a><h4>Returns</h4>
+<p> the newly created <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> widget</p>
+<p></p>
+</div>
+<p class="since">Since 0.9</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-strategy-chooser-new-with-context"></a><h3>gdict_strategy_chooser_new_with_context ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gtk3/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+gdict_strategy_chooser_new_with_context
+                               (<em class="parameter"><code><a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a> *context</code></em>);</pre>
+<p>Creates a new <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> widget, using <em class="parameter"><code>context</code></em>
+ as the
+representation of a dictionary source.</p>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.3.6"></a><h4>Returns</h4>
+<p> the newly created <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> widget</p>
+<p></p>
+</div>
+<p class="since">Since 0.9</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-strategy-chooser-get-context"></a><h3>gdict_strategy_chooser_get_context ()</h3>
+<pre class="programlisting"><a class="link" href="GdictContext.html" title="GdictContext"><span class="returnvalue">GdictContext</span></a> *
+gdict_strategy_chooser_get_context (<em class="parameter"><code><a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> *chooser</code></em>);</pre>
+<p>Retrieves the <a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a> used by <em class="parameter"><code>chooser</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.4.6"></a><h4>Returns</h4>
+<p> a <a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a></p>
+<p></p>
+</div>
+<p class="since">Since </p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-strategy-chooser-set-context"></a><h3>gdict_strategy_chooser_set_context ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdict_strategy_chooser_set_context (<em class="parameter"><code><a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> *chooser</code></em>,
+                                    <em class="parameter"><code><a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a> *context</code></em>);</pre>
+<p>Sets the <a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a> to be used by <em class="parameter"><code>chooser</code></em>
+ to retrieve the
+list of matching strategies.</p>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>context</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to unset the context</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 0.9</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-strategy-chooser-select-strategy"></a><h3>gdict_strategy_chooser_select_strategy ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gdict_strategy_chooser_select_strategy
+                               (<em class="parameter"><code><a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> *chooser</code></em>,
+                                <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *strat_name</code></em>);</pre>
+<p>Selects <em class="parameter"><code>strat_name</code></em>
+, if available.</p>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strat_name</p></td>
+<td class="parameter_description"><p>the name of the strategy to select</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.6.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the matching strategy was found and selected</p>
+<p></p>
+</div>
+<p class="since">Since 0.10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-strategy-chooser-unselect-strategy"></a><h3>gdict_strategy_chooser_unselect_strategy ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gdict_strategy_chooser_unselect_strategy
+                               (<em class="parameter"><code><a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> *chooser</code></em>,
+                                <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *strat_name</code></em>);</pre>
+<p>Unselects <em class="parameter"><code>strat_name</code></em>
+ from the list.</p>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strat_name</p></td>
+<td class="parameter_description"><p>the name of the strategy to unselect</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.7.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the matching strategy was found and successfully
+unselected</p>
+<p></p>
+</div>
+<p class="since">Since 0.10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-strategy-chooser-set-current-strategy"></a><h3>gdict_strategy_chooser_set_current_strategy ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gdict_strategy_chooser_set_current_strategy
+                               (<em class="parameter"><code><a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> *chooser</code></em>,
+                                <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *strat_name</code></em>);</pre>
+<p>Sets <em class="parameter"><code>strat_name</code></em>
+ as the current matching strategy.</p>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strat_name</p></td>
+<td class="parameter_description"><p>the name of the matching strategy</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.8.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the matching strategy was found</p>
+<p></p>
+</div>
+<p class="since">Since 0.10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-strategy-chooser-get-current-strategy"></a><h3>gdict_strategy_chooser_get_current_strategy ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gdict_strategy_chooser_get_current_strategy
+                               (<em class="parameter"><code><a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> *chooser</code></em>);</pre>
+<p>Retrieves the current matching strategy.</p>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.9.6"></a><h4>Returns</h4>
+<p> a newly allocated string containing the name of
+the current matching strategy</p>
+<p></p>
+</div>
+<p class="since">Since 0.10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-strategy-chooser-get-strategies"></a><h3>gdict_strategy_chooser_get_strategies ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> **
+gdict_strategy_chooser_get_strategies (<em class="parameter"><code><a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> *chooser</code></em>,
+                                       <em class="parameter"><code><span class="type">gsize</span> *length</code></em>);</pre>
+<p>Retrieves the list of matching strategies available.</p>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>length</p></td>
+<td class="parameter_description"><p>return location for the length of the returned string list</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.10.6"></a><h4>Returns</h4>
+<p> a string vector containing the names of the matching
+strategies. Use <a href="http://library.gnome.org/devel/glib/unstable/glib-String-Utility-Functions.html#g-strfreev"><code class="function">g_strfreev()</code></a> to deallocate the memory when done</p>
+<p></p>
+</div>
+<p class="since">Since 0.9</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-strategy-chooser-count-strategies"></a><h3>gdict_strategy_chooser_count_strategies ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gdict_strategy_chooser_count_strategies
+                               (<em class="parameter"><code><a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> *chooser</code></em>);</pre>
+<p>Returns the number of strategies found.</p>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.11.6"></a><h4>Returns</h4>
+<p> the number of strategies or -1 if case of error</p>
+<p></p>
+</div>
+<p class="since">Since </p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-strategy-chooser-has-strategy"></a><h3>gdict_strategy_chooser_has_strategy ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gdict_strategy_chooser_has_strategy (<em class="parameter"><code><a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> *chooser</code></em>,
+                                     <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *strategy</code></em>);</pre>
+<p>Checks whether <em class="parameter"><code>strategy</code></em>
+ is available in the list of matching
+strategies displayed by <em class="parameter"><code>chooser</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>strategy</p></td>
+<td class="parameter_description"><p>a strategy name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.12.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the strategy was found, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+<p class="since">Since 0.9</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-strategy-chooser-refresh"></a><h3>gdict_strategy_chooser_refresh ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdict_strategy_chooser_refresh (<em class="parameter"><code><a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> *chooser</code></em>);</pre>
+<p>Reloads the list of available strategies.</p>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since 0.10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-strategy-chooser-clear"></a><h3>gdict_strategy_chooser_clear ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdict_strategy_chooser_clear (<em class="parameter"><code><a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> *chooser</code></em>);</pre>
+<p>Clears <em class="parameter"><code>chooser</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since 0.10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdict-strategy-chooser-add-button"></a><h3>gdict_strategy_chooser_add_button ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gtk3/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+gdict_strategy_chooser_add_button (<em class="parameter"><code><a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> *chooser</code></em>,
+                                   <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *button_text</code></em>);</pre>
+<p>Creates a new button and packs it into the <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a>
+"action area".</p>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>chooser</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>button_text</p></td>
+<td class="parameter_description"><p>text of the button (can be a stock id)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.4.3.8.15.6"></a><h4>Returns</h4>
+<p> the packed <a href="http://library.gnome.org/devel/gtk3/GtkButton.html"><span class="type">GtkButton</span></a></p>
+<p></p>
+</div>
+<p class="since">Since 0.10</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GdictStrategyChooser.other_details"></a><h2>Types and Values</h2>
+</div>
+<div class="refsect1">
+<a name="GdictStrategyChooser.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GdictStrategyChooser--context"></a><h3>The <code class="literal">“context”</code> property</h3>
+<pre class="programlisting">  “context”                  <a class="link" href="GdictContext.html" title="GdictContext"><span class="type">GdictContext</span></a> *</pre>
+<p>The GdictContext object used to get the list of strategies.</p>
+<p>Flags: Read / Write / Construct</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GdictStrategyChooser.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GdictStrategyChooser-strategy-activated"></a><h3>The <code class="literal">“strategy-activated”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GdictStrategyChooser.html" title="GdictStrategyChooser"><span class="type">GdictStrategyChooser</span></a> *chooser,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>                *name,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>                *description,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>              user_data)</pre>
+<p>Flags: <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

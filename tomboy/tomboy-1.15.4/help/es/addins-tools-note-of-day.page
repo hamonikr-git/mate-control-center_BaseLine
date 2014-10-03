@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-tools" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="addins#tools"/>
+    <desc>Crear notas automáticamente para cada día.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-16" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Nota del día</title>
+
+  <p>Puede crear notas para cada día automáticamente. Estas notas incluyen un texto con información sobre la fecha y la hora del día. Ejemplo: <em>Hoy: miércoles 9 de octubre de 2013</em>. Este complemento está desactivado de manera predeterminada.</p>
+
+  <steps>
+    <title>Para abrir la nota del día:</title>
+    <item>
+      <p>Pulse en el icono de <app>Tomboy</app> en la bandeja de mensajes.</p>
+    </item>
+    <item>
+      <p>En la lista de notas, selecciona una nota con la fecha actual.</p>
+    </item>
+  </steps>
+
+	<note style="tip">
+    <p>La nota añadirá filas para <em>Tareas</em> y <em>Cita</em> automáticamente.</p>
+  </note>
+
+</page>

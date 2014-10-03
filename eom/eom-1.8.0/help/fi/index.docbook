@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "February 2007">
+<!ENTITY app "<application>Image Viewer</application>">
+<!ENTITY appname "Image Viewer">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fi">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Kuvakatselimen käyttöohje</title>
+    
+    <copyright lang="en"> 
+      <year>2006</year> 
+      <year>2007</year>
+      <holder>MATE Documentation Project</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2002</year> 
+      <year>2003</year> 
+      <year>2004</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>Eliot Landrum</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>The Free Software Foundation</holder> 
+    </copyright>	 
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Mate dokumentointiprojekti</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+         <para>Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software Foundationin julkaiseman GNU Free Documentation Licensen (GFDL) version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. Kopion GFDL:stä voi nähdä napsauttamalla <ulink type="help" url="help:fdl">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-nimisen tiedoston.</para>
+          <para>Tämä käyttöohje on osa Maten käyttöohjekokoelmaa, jota levitetään GFDL-lisenssin alaisena. Jos haluat levittää tätä käyttöohjetta erillään kokoelmasta, voit tehdä sen liittämällä lisenssin kopion ohjeen mukaan, kuten lisenssin luku 6 sanelee.</para>
+ 
+         <para>Monet nimistä, joita yhtiöt käyttävät tuotteistansa ja palveluistansa, ovat tuotemerkkejä. Maten dokumentointiprojektissa nämä nimet pyritään kirjoittamaan suuraakkosin tai isolla alkukirjaimella, sikäli kun projektin jäsenet tietävät kyseisistä tuotemerkeistä.</para>
+ 
+         <para lang="en">
+           DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+           UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+           WITH THE FURTHER UNDERSTANDING THAT:
+ 
+           <orderedlist>
+                 <listitem>
+                   <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                     WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                     IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                     THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                     A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                     RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                     OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                     MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                     YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                     CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                     SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                     OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                     LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                     VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                     EXCEPT UNDER THIS DISCLAIMER; AND
+                   </para>
+                 </listitem>
+                 <listitem>
+                   <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                        THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                        CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                        INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                        DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                        OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                        PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                        DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                        CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                        INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                        OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                        MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                        LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                        DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                        EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                        THE POSSIBILITY OF SUCH DAMAGES.
+                   </para>
+                 </listitem>
+           </orderedlist>
+         </para>
+   </legalnotice>
+ 
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+   <authorgroup>
+   <author lang="en"> 
+	<firstname>Jens</firstname> 
+	<surname>Finke</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Angela</firstname> 
+	<surname>Boyle</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Stuart</firstname> 
+	<surname>Ellis</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Sun</firstname> 
+	<surname>MATE Documentation Team</surname> 
+	<affiliation> 
+	  <orgname>Sun Microsystems</orgname>  
+	</affiliation> 
+   </author> 
+   <author lang="en"> 
+	<firstname>Eliot</firstname> 
+	<surname>Landrum</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+   </author> 
+   <author lang="en"> 
+	<firstname>Federico</firstname> 
+	<surname>Mena Quintero</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+   </author>	
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <email>translator@gnome.org</email> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+ 
+    <revhistory>
+    <revision lang="en"> 
+		<revnumber>Image Viewer Manual V2.8</revnumber> 
+		<date>February 2007</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">MATE Documentation Project</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en">
+		<revnumber>Image Viewer Manual V2.7</revnumber>
+		<date>February 2004</date>
+		<revdescription>
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription>
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.6</revnumber> 
+		<date>November 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.5</revnumber> 
+		<date>September 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.4</revnumber> 
+		<date>January 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.3</revnumber> 
+		<date>October 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.2</revnumber> 
+		<date>August 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.1</revnumber> 
+		<date>July 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.0</revnumber> 
+		<date>May 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en"> 
+		<revnumber>Eye of MATE User's Guide</revnumber> 
+		<date>2000</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Eliot Landrum 
+	    		  <email>eliot@landrum.cx</email>
+	  		</para>
+	  		<para role="author" lang="en">Federico Mena Quintero 
+	    		  <email>federico@gnu.org</email>
+	  		</para>	  
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+    <releaseinfo>Tämä käyttöohje kattaa Kuvakatselimen version 2.18</releaseinfo> 
+    <legalnotice> 
+      <title>Palaute</title> 
+      <para>Voit ilmoittaa vioista tai tehdä ehdotuksia koskien Kuvakatselin-sovellusta tai tätä käyttöohjetta, seuraamalla ohjeita <ulink url="help:user-guide?feedback-bugs" type="help">Maten palautesivuilta</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+    <abstract role="description">
+      <para>Käyttöohje Maten silmä -kuvakatselimeen.</para>
+    </abstract>
+
+  </articleinfo> 
+
+  <indexterm lang="en">
+    <primary>Eye of MATE</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+<sect1 id="eom-introduction">
+  <title>Johdanto</title>
+  <para><application>Maten silmä -kuvakatselin</application> mahdollistaa niin yksittäisten kuvien, kuin kuvakokoelmien katselun.</para>
+
+  <sect2 id="eom-tostartapp">
+    <title>Kuvakatselimen käynnistys</title>
+    <para>Voit käynnistää <application>Kuvakatselimen</application> seuraavilla tavoilla:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Avaamalla kuvatiedoston <application>Nautiluksessa</application>.</para>
+      </listitem>
+      <listitem>
+	<para lang="en">Choose <menuchoice><guimenu>Graphics</guimenu>
+	<guimenuitem>Image Viewer</guimenuitem></menuchoice>
+	from the <guimenu>Applications</guimenu> menu.</para>
+      </listitem>
+      <listitem>
+	<para>Suorita komento <command>eom</command> terminaalista, kuten <application>mate-terminal</application> tai <application>Suorita sovellus</application> -valintaikkunasta.</para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
+
+  <sect2 id="eom-closeapp">
+    <title>Kuvakatselimen sulkeminen</title>
+    <para lang="en">To close the current <application>Image Viewer</application> window choose <menuchoice><guimenu>File</guimenu>
+    <guimenuitem>Close</guimenuitem></menuchoice>, or press
+    <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>.</para>
+  </sect2>
+
+  <sect2 id="eom-filetypes">
+    <title>Tuetut tiedostomuodot</title>
+    <para><application>Kuvakatselin</application> tukee monia kuvien tiedostotyyppejä. Seuraavia kuvamuotoja voidaan avata:</para>
+		<itemizedlist>
+			<listitem><para>ANI - Animation</para>
+			</listitem>
+			<listitem><para>BMP - Windows Bitmap</para>
+			</listitem>
+			<listitem><para>GIF - Graphics Interchange Format</para>
+			</listitem>
+			<listitem><para>ICO - Windows Icon</para>
+			</listitem>
+			<listitem><para>JPEG - Joint Photographic Experts Group</para>
+			</listitem>
+			<listitem><para>PCX - PC Paintbrush</para>
+			</listitem>
+			<listitem><para>PNG - Portable Network Graphics</para>
+			</listitem>
+			<listitem><para>PNM - Portable Anymap from the PPM Toolkit</para>
+			</listitem>
+			<listitem><para>RAS - Sun Raster</para>
+			</listitem>
+			<listitem><para>SVG - Scalable Vector Graphics</para>
+			</listitem>
+			<listitem><para>TGA - Targa</para>
+			</listitem>
+			<listitem><para>TIFF - Tagged Image File Format</para>
+			</listitem>
+			<listitem><para>WBMP - Wireless Bitmap</para>
+			</listitem>
+			<listitem><para>XBM - X Bitmap</para>
+			</listitem>
+			<listitem><para>XPM - X Pixmap</para>
+			</listitem>
+		</itemizedlist>
+
+  <para><application>Kuvankatselin</application> tukee seuraavia tiedostojen tallentamismuotoja:</para>
+		<itemizedlist>
+			<listitem><para>BMP - Windows Bitmap</para>
+			</listitem>
+			<listitem><para>ICO - Windows Icon</para>
+			</listitem>
+			<listitem><para>JPEG - Joint Photographic Experts Group</para>
+			</listitem>
+			<listitem><para>PNG - Portable Network Graphics</para>
+			</listitem>
+		</itemizedlist>
+		<para><application>Kuvakatselin</application> voi kyetä avaamaan ja tallentamaan muitakin kuvamuotoja, riippuen järjestelmäsi konfiguraatiosta ja muista asennetuista ohjelmista.</para>
+  </sect2>
+
+  <sect2 id="eom-features">
+    <title>Kuvakatselimen ominaisuudet</title>
+    <para><application>Kuvakatselimessa</application> on monia ominaisuuksia, jotka auttavat sinua kuvien katselussa. Voit lähentää ja loitontaa kuvaa tai katsella kuvaa kokoruututilassa. Riippumatta suurennoksen tasosta, <application>Kuvakatselin</application> käyttää pienen määrän muistia. Voit myös kääntää ja peilata katseltavan kuvan.</para>
+
+    <para>Kokoelmanäkymä mahdollistaa isojen kuvakokoelmien katselun ja muokkaamisen. Kokoelmanäkymässä kuville tehtävät toimenpiteet voidaan kohdentaa kaikkiin valittuihin kuviin kerralla.</para>
+
+    <para><application>Kuvakatselimessa</application> on erityistuki digitaalikameroiden kuville ja se näyttää kuviin tallennetut EXIF-metatiedot. Tämä toiminto vaatii toimiakseen, että järjestelmääsi on asennettu <systemitem class="library">libexif</systemitem>-kirjasto. Kaikki JPEG-kuviin tehtävät muutokset ovat häviöttömiä. Tämä tarkoittaa, että JPEG-kuvia, jotka ovat kierretty tai peilattu, ei pakata tallennettaessa. Tämän kaiken rinnalla, kaikki käytettävissä olevat metatiedot (kuten EXIF) säilytetään ja päivitetään sen mukaisesti.</para>
+  </sect2>
+</sect1>
+
+<!--============== When You Start ===========-->
+<sect1 id="eom-whenyoustart">
+  <title>Aloitustoimet</title>
+  <para>Kun käynnistät <application>Kuvakatselimen</application>, avautuu seuraavanlainen ikkuna:</para>
+  <figure id="mainwindow-fig">
+		<title>Kuvakatselimen aloitusikkuna</title>
+		<screenshot>
+		  <mediaobject lang="en">
+		    <imageobject>
+		      <imagedata fileref="figures/eom_start_window.png" format="PNG"/>
+		    </imageobject>
+		    <textobject>
+		      <phrase>Shows <application>Image Viewer</application> main window. Contains titlebar, menubar, toolbar, and display area. Menubar contains File, Edit, View, and Help menus.</phrase>
+		    </textobject>
+		  </mediaobject>
+		</screenshot>
+  </figure>
+  <para><application>Kuvakatselimen</application> ikkuna sisältää seuraavat elementit:</para>
+  <variablelist>
+	<varlistentry>
+  	  <term>Valikkopalkki</term>
+ 	  <listitem>
+	    <para>Valikkopalkin valikot sisältävät kaikki komennot, joita tarvitset kuvien työstämiseen <application>Kuvakatselimessa</application>.</para>
+	  </listitem>
+ 	</varlistentry>
+	<varlistentry>
+	  <term>Työkalupalkki</term>
+	  <listitem>
+	    <para>Työkalupalkki sisältää osajoukon niistä komennoista, joita voit käyttää valikkopalkista. Valikon saat näkyville tai piilotettua, valitsemalla valikosta <menuchoice><guimenu>Katsele</guimenu><guimenuitem>Työkalupalkki</guimenuitem></menuchoice>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Näyttöalue</term>
+	  <listitem>
+ 	    <para>Näyttöalueella näytetään kuvatiedosto.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Tilarivi</term>
+	  <listitem>
+	    <para>Tilarivi antaa kuvaan liittyviä lisätietoja. Tilarivin saat näkyville tai piilotettua, valitsemalla valikosta <menuchoice><guimenu>Katsele</guimenu><guimenuitem>Tilarivi</guimenuitem></menuchoice>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Kuvakokelma</term>
+	  <listitem>
+	    <para>Kuvakokoelma näyttää kaikki sen hetkisessä työskentelyhakemistossa olevat tuetut kuvat. Kuvakokoelma näkyy, kun kuva on ladattu. Kuvakokoelman saat näkyviin tai piilotettua, valitsemalla valikosta <menuchoice><guimenu>Katsele</guimenu><guimenuitem>Kuvakokoelma</guimenuitem></menuchoice> tai painamalla <keycap>F9</keycap>-näppäintä.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Kuvan tiedot -paneeli</term>
+	  <listitem>
+	    <para>Kuvan tiedot -paneelissa näytetään tietoja nykyisestä kuvasta, kuten EXIF-metatiedot (mikäli saatavissa). Paneeli näytetään, kun kuva on ladattu. Kuvan tiedot -paneelin saat näkyviin tai piilotettua, valitsemalla valikosta <menuchoice><guimenu>Katsele</guimenu><guimenuitem>Kuvan tiedot</guimenuitem></menuchoice> tai painamalla <keycombo><keycap>Ctrl</keycap><keycap>I</keycap></keycombo>.</para>
+	  </listitem>
+	</varlistentry>
+  </variablelist>
+  <para>Useimmat <application>Kuvakatselimen</application> toiminnot voidaan suorittaa monella tavalla. Esimerkiksi, tiedoston voit avata seuraavilla tavoilla:</para>
+  <itemizedlist>
+    <listitem><para>Raahaa kuva <application>Kuvakatselimen</application> ikkunaan toisesta sovelluksesta tai ikkunasta.</para></listitem>
+    <listitem><para>Kaksoisnapsauta kuvaa tiedostojenhallinnassa tai toisessa sovelluksessa.</para></listitem>
+    <listitem><para lang="en">Choose <menuchoice><guimenu>File</guimenu>
+    <guimenuitem>Open</guimenuitem></menuchoice> and select an image file
+    in the <application>Load Image</application> dialog.</para></listitem>
+    <listitem><para lang="en">Press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap>
+    </keycombo> and select an image file in the <application>Load
+    Image</application> dialog.</para></listitem>
+  </itemizedlist>
+</sect1>
+
+
+<!-- ============= Viewing Images ============================== -->
+<sect1 id="eom-view">
+	<title>Kuvien katselu</title>
+
+	<!--=========== To Open an Image ============================= -->
+	<sect2 id="eom-open-image">
+		<title>Kuvan avaaminen</title>
+                <para>Kuvan avaaminen tapahtuu seuraavasti:</para>
+                <orderedlist>
+                  <listitem>
+                    <para lang="en">
+                      Choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice>, or press <keycombo> <keycap>Ctrl</keycap><keycap>O</keycap> </keycombo>.  </para>
+                  </listitem>
+                  <listitem>
+                    <para>Valitse <guilabel>Lataa kuva</guilabel> -valintaikkunasta avattava tiedosto.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Napsauta <guibutton>Avaa</guibutton>. <application>Kuvakatselin</application> näyttää kuvan nimen ikkunan otsikkopalkissa.</para>
+                  </listitem>
+                </orderedlist>
+                <para lang="en"> 
+	          To open another image, choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice> again. <application>Image Viewer</application> opens each image in a new window.
+                </para>
+	</sect2>
+
+	<!--=========== To View the Images in a Directory ==================== -->
+	<sect2 id="eom-open-folder">
+		<title>Kansion kuvien katselu</title>
+		<para>Kansiossa olevia kaikkia kuvia voit katsella seuraavalla tavalla:</para>
+                <orderedlist>
+                  <listitem>
+                    <para lang="en">
+                      Open one of the images in the folder (see <xref linkend="eom-open-image"/>).  </para>
+                  </listitem>
+                  <listitem>
+                    <para>Avaa kuvakokoelma valitsemalla <menuchoice><guimenu>Katsele</guimenu><guimenuitem>Kuvakokoelma</guimenuitem></menuchoice> tai painamalla <keycap>F9</keycap>.</para>
+                  </listitem>
+		</orderedlist>
+	     <para>Kokoelmassa näkyy kaikki kansiosta löytyvät tuetut kuvat. Voit selata kuvia napsauttamalla kokoelmassa olevaa kuvaa, valitsemalla sopivan valinnan <guimenu>Siirry</guimenu>-valikosta tai painamalla <keycombo><keycap>Alt</keycap><keycap>Vasen</keycap></keycombo> tai <keycombo><keycap>Alt</keycap><keycap>Oikea</keycap></keycombo>.</para>
+             <para lang="en">To view all of the images in the directory fullscreen, choose <menuchoice> <guimenu>View</guimenu><guimenuitem>Full Screen</guimenuitem> </menuchoice> or press <keycap>F11</keycap>. To view them as a slide show, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Slideshow</guimenuitem></menuchoice> or press <keycap>F5</keycap>. To return to the collection view, press the <keycap>Esc</keycap> key, or <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>. For more information about how to customize the slide show, see <xref linkend="eom-prefs-slideshow"/>.
+                    </para>
+	</sect2>
+
+	<!--============ To Scroll an Image ======================= -->
+	<sect2 id="eom-scroll-image">
+		<title>Kuvan vierittäminen</title>
+		<para>Jos kuva on suurempi, kuin kuvakatselimen ikkuna tai kokoruututilan näkymä, voit vierittää kuvaa seuraavilla tavoilla:</para>
+		<itemizedlist>
+			<listitem><para>Käytä näppäimistön nuolinäppäimiä</para>
+			</listitem>
+			<listitem><para>Vedä kuvaa siirtääksesi sitä ikkunassa (Vedä kuvaa eri suuntaan, kuin suuntaan johonka haluat kuvaa vierittää: alaspäin vieritettäessä, vedä kuvaa ikkunassa ylöspäin).</para>
+			</listitem>
+			<listitem><para>Käytä ikkunan vierityspalkkeja.</para>
+			</listitem>
+		</itemizedlist>
+	</sect2>
+
+	<!--=========== To Zoom In and Out ==================== -->
+	<sect2 id="eom-zoom">
+		<title>Suurennus</title>
+		<para>Voit suurentaa sisään tai ulos kuvaa seuraavilla tavoilla:</para>
+			<itemizedlist>
+				<listitem><para>Käytä hiiresi <mousebutton>vieritysrullaa</mousebutton>. Alaspäin vierittäminen loitontaa kuvaa; ylöspäin vierittäminen lähentää kuvaa.</para></listitem>
+ 			  <listitem><para>Valitse <menuchoice><guimenu>Katsele</guimenu><guimenuitem>Lähennä</guimenuitem></menuchoice> tai <menuchoice><guimenu>Katsele</guimenu><guimenuitem>Loitonna</guimenuitem></menuchoice>. Kuvan saat palautettua normaaliin kokoon valitsemalla <menuchoice><guimenu>Katsele</guimenu><guimenuitem>Normaalikoko</guimenuitem></menuchoice>. Voit myös sovittaa kuvan ikkunaan valitsemalla <menuchoice><guimenu>Katsele</guimenu><guimenuitem>Paras sovitus</guimenuitem></menuchoice>.</para></listitem>				
+ 				<listitem><para>Käytä työkalupalkin suurennospainikkeita. <guilabel>Normaali</guilabel>-painike palauttaa kuvan sen oikeaan skaalaamattomaan kokoon. <guilabel>Sovita</guilabel>-painikkeella kuva sovitetaan ikkunaan, mikäli se on liian suuri.</para></listitem>
+
+				<listitem><para lang="en">Use the keyboard. To zoom in, <keycombo> <keycap>Ctrl</keycap><keycap>+</keycap> </keycombo> or <keycap>+</keycap>. To zoom out, <keycombo> <keycap>Ctrl</keycap><keycap>-</keycap> </keycombo> or <keycap>-</keycap>. To go back to the normal size, <keycombo> <keycap>Ctrl</keycap><keycap>0</keycap> </keycombo> or <keycap>1</keycap>. To scale the image to fit the window, press <keycap>F</keycap>.</para></listitem>
+			</itemizedlist>
+			<para>Kun kuva on suurennettu parhaalla sovituksella ikkunaan, ikkunan koon muuttaminen muuttaa suurennoksen tasoa, jolloin kuva edelleen sopii ikkunaan.</para>
+	</sect2>
+
+	<!--=========== To View Image Fullscreen ==================== -->
+	<sect2 id="eom-fullscreen">
+		<title>Kuvan katselu kokoruututilassa/diaesityksenä</title>
+		<para>Näyttääksesi kuvat koko ruudulla, valitse <menuchoice><guimenu>Katsele</guimenu><guimenuitem>Kokoruutu</guimenuitem></menuchoice>.</para>
+		<para>Paneeleita, ikkunan kehyksiä tai valikkopalkkeja ei näytetä, kun kuvia näytetään kyseisessä näkymässä. Takaisin normaaliin näkymään pääset painamalla <keycap>Esc</keycap>-näppäintä, <keycap>F11</keycap>-näppäintä tai <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>-näppäinyhdistelmää.</para>
+		<para>Voit suurentaa tai vierittää kuvaa samalla tavalla, kuin kuva olisi ikkunassa, käyttäen hiirtä tai näppäimistöä.</para>
+		<para>Jos sinulla on useita kuvia kuvakokoelmassa, voit painaa <keycap>Välilyönti</keycap>-näppäintä tai käyttää oikealle/alas-nuolinäppäintä siirtyäksesi seuraavaan kuvaan. Edelliseen kuvaan pääset painamalla <keycap>Askelpalautin</keycap>-painiketta tai käyttäen vasemmalle/ylös-nuolinäppäintä.</para>
+	<para>Tässä tapauksessa voit käyttää myös diaesitystilaa, jolloin <application>Kuvakatselin</application> vaihtaa automaattisesti seuraavaan kuvakokoelman kuvaan. Diaesitys käynnistyy valitsemalla <menuchoice><guimenu>Katsele</guimenu><guimenuitem>Diaesitys</guimenuitem></menuchoice> tai painamalla <keycap>F5</keycap>-näppäintä. Diaesitys voidaan pysäyttää/jatkaa painamalla <keycap>P</keycap>-näppäintä. Diaesitys pysähtyy painamalla <keycap>Esc</keycap>-painiketta, <keycap>F5</keycap>-painiketta tai <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>-näppäinyhdistelmää. Lisätietoja diaesityksen muokkaamisesta löydät käyttöohjeen kohdasta <xref linkend="eom-prefs-slideshow"/>.</para>
+	</sect2>
+</sect1>
+
+
+<!-- ============= Manipulating Images ============================== -->
+<sect1 id="eom-manipulate">
+	<title>Kuvien muokkaaminen</title>
+
+	<para>Kaikki kuvien muutokset tehdään samalla kerralla kaikille valituille kuville. Muutokset tapahtuvat muistiin ja muutokset alkuperäisiin tiedostoihin tehdään vasta tallennettaessa (katso <xref linkend="eom-save-image"/>).</para>
+
+	<!--============ To Flip an Image ======================= -->
+	<sect2 id="eom-flip">
+		<title>Kuvan peilaus</title>
+		<para lang="en">To flip an image along the horizontal axis of the image, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Flip Horizontal</guimenuitem>
+		</menuchoice>.</para>
+		<para lang="en">To flip an image along the vertical axis of the image, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Flip Vertical</guimenuitem>
+		</menuchoice>.</para>
+	</sect2>
+
+	<!--============ To Rotate an Image ======================= -->
+	<sect2 id="eom-rotate">
+		<title>Kuvan kiertäminen</title>
+		<para lang="en">To rotate an image 90 degrees in a clockwise direction, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Rotate Clockwise</guimenuitem>
+		</menuchoice>.</para>
+		<para lang="en">To rotate an image 90 degrees in an anticlockwise direction, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Rotate Counter Clockwise</guimenuitem>
+		</menuchoice>.</para>
+	</sect2>
+
+	<!--============ To Undo an Action ======================= -->
+	<sect2 id="eom-undo">
+		<title>Muutoksen kumoaminen</title>
+		<para lang="en">To undo a flip or rotate action, choose 
+		<menuchoice>
+		<guimenu>Edit</guimenu>
+		<guimenuitem>Undo</guimenuitem>
+		</menuchoice> or press 
+		<keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>
+		.</para>
+	</sect2>
+
+	<!--============ To Delete An Image ======================== -->
+	<sect2 id="eom-delete-image">
+		<title>Kuvan poistaminen</title>
+		<para lang="en">To move an image to the Trash, choose
+			<menuchoice>
+			<guimenu>Edit</guimenu>
+			<guimenuitem>Move to Trash</guimenuitem>
+			</menuchoice>.
+			This moves the file to the Trash folder. Multiple images can also be moved to the trash in the same way: select them all first.</para>
+	    <para>Voit palauttaa kuvan roskakorista avaamalla roskakori-kansion <application>Caja</application>-tiedostonhallinnassa ja siirtämällä kuvan toiseen kansioon. Poista kuva lopullisesti tyhjentämällä roskakori. Lisätietoja roskakorin käytöstä löydät roskakorin <ulink type="help" url="help:user-guide?caja-trash">käyttöohjeesta</ulink>.</para>
+				
+			<note><para>Voit käyttää myös <keycap>Del</keycap>-näppäintä siirtääksesi kuvan roskakoriin. Kuvan siirto roskakoriin pyydetään varmistamaan.</para></note>
+			
+	</sect2>
+</sect1> 
+
+<!-- ============= Saving Images ============================== -->
+<sect1 id="eom-save-rename">
+	<title>Kuvien tallentaminen</title>
+
+	<para><application>Kuvakatselin</application> yrittää aina valita tallennusmetodin, joka vaikuttaa vähiten kuvan informaatioon. Esimerkiksi, jos muuttumaton kuva tallennetaan eri nimellä samassa muodossa, tiedosto vain yksinkertaisesti kopioidaan. Mikäli <systemitem class="library">libjpeg</systemitem>-kirjasto on järjestelmässä käytettävissä, kaikki JPEG-kuvien muutokset suoritetaan menettämättä kuvainformaatiota.</para>
+
+<!--============ To Save an Image ======================= -->
+	<sect2 id="eom-save-image">
+		<title>Kuvan tallentaminen</title>
+		<para lang="en">To save an image, choose 
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save</guimenuitem>
+			</menuchoice>.
+		The image will be saved under the same name and file type. Therefore, unmodified images needn't be saved.</para>
+	</sect2>
+
+	<!--============ To Save As an Image ======================= -->
+	<sect2 id="eom-save-as-image">
+		<title>Kuvan tallentaminen toisella nimellä</title>
+		<para lang="en">To save an image under a different name, or convert it to a different file type, choose
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save As</guimenuitem>
+			</menuchoice>.</para>
+		<para>Määritä tiedostonimi <guilabel>Nimi</guilabel>-kenttään <guilabel>Tallenna kuva</guilabel> -valintaikkunassa ja napsauta <guibutton>Tallenna</guibutton>. Kuva tallennetaan nykyiseen hakemistoon oletuksena. <application>Kuvakatselin</application> yrittää selvittää tiedostotyypin annetun tiedostopäätteen perusteella. Mikäli kuva pitäisi tallentaa toiseen kansioon tai tiedostotyypin tunnistus epäonnistuu, napsauta <guilabel>Selaa muita kansioita</guilabel>- valintaa laajentaaksesi valintaikkunan.</para>
+		<para>Voit tallentaa useita kuvia kerralla: katso lisätietoja seuraavasta kappaleesta.</para>
+	</sect2>    
+
+	<!--============ To Save As an Image ======================= -->
+	<sect2 id="eom-save-as-multiple">
+		<title>Useiden kuvien tallentaminen</title>
+		<para>Useamman kuvan tallentaminen kerralla mahdollistaa useiden kuvien tallentamisen eri muotoon tai antamaan tiedostoille yhteneväiset tiedostonimet.</para>
+		<para lang="en">To save multiple images, select the images and choose 
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save As</guimenuitem>
+			</menuchoice>. 		
+		The following window is displayed:</para>
+  		<figure id="saveas-dialog-fig">
+			<title>Useiden kuvien tallennusikkuna</title>
+			<screenshot>
+			  <mediaobject lang="en">
+			    <imageobject>
+			      <imagedata fileref="figures/eom_save_as_window.png" format="PNG"/>
+			    </imageobject>
+			    <textobject>
+			      <phrase>Shows Eye of MATE <guilabel>Save As</guilabel> dialog when saving multiple images.</phrase>
+			    </textobject>
+			  </mediaobject>
+			</screenshot>
+  		</figure>
+		<para>Kuvien tallennuskansio määritellään <guilabel>Kohdekansio</guilabel>-pudotusvalikon laatikkoon. Aluksi kansio on asetettu nykyiseen kansioon. Valitse <guilabel>Muu...</guilabel> -pudotusvalikon listasta avataksesi normaalin kansion avausikkunan tiedostojärjestelmän selaamiseksi. Kuvien tiedostonimen muoto määritellään <guilabel>Tiedostonimen muoto</guilabel> -tekstikenttään. Tiedostonimen muoto koostuu yksinkertaisista merkeistä ja erikoismuotoilukoodista. Voit käyttää seuraavia muotoilukoodeja:</para>
+		<itemizedlist>
+			<listitem><para><guilabel>Tiedostonimi (%f)</guilabel> - Alkuperäinen tiedostonimi ilman tiedostopäätettä.</para>
+			</listitem>
+			<listitem><para><guilabel>Laskuri (%n)</guilabel> - Automaattisesti kasvava luku (aloittaa laskurille määritellystä alkuarvosta).</para>
+			</listitem>			
+		</itemizedlist>	
+		<para>Kaikki muut merkit, paitsi nämä muotoilukoodit tulkitaan normaaliksi tekstiksi.</para>
+		<para>Kuvamuoto määritellään tiedostonimen muodon jälkeen olevasta pudotusvalikosta. Valitse käytettävä kuvamuoto tai käytä <guilabel>samassa muodossa</guilabel> -valintaa määrittääksesi saman tiedostotyypin, kuin alkuperäisissä tiedostoissa on käytetty.</para>
+	
+		<para><guilabel>Asetukset</guilabel>-osiossa voidaan määrittää tiedostonimestä vaihdettavaksi kaikki välilyönnit alaviivoiksi, mikäli <guilabel>Vaihda välilyönnit alaviivoiksi</guilabel> -valinta on valittuna. <guilabel>Aloita laskuri kohdasta</guilabel> -numerokenttään määritellään luku, josta laskenta aloitetaan käytettäessä %n-muotoilukoodia tiedostonimen muotoa määritettäessä.</para>
+		<para><guilabel>Tiedostonimen esikatselu</guilabel> -osiossa valintaikkuna näyttää määriteltyjen asetusten perusteella esimerkin valittujen kuvien tiedostonimestä.</para>
+	</sect2>
+
+
+
+</sect1>
+
+<sect1 id="eom-print">
+	<title>Kuvien tulostus</title>
+	<sect2 id="eom-print-pagesettings">
+		<title>Sivun asetuksien määrittäminen</title>
+		<para>Ennen tulostamista on määritettävä tulostukseen käytettävät sivujen asetukset. Tehdäksesi asetukset, valitse <menuchoice><guimenu>Tiedosto</guimenu><guimenuitem>Sivun asetukset</guimenuitem></menuchoice>.</para>
+		<para><guilabel>Sivun asetukset</guilabel> -valintaikkunassa voit valita paperin koon ja suunnan. Mikäli on mahdollista, voit määrittää myös tulostimen käyttämät marginaalit.</para>
+	</sect2>
+
+	<sect2 id="eom-print-image">
+		<title>Kuvan tulostaminen</title>
+		<para>Kuvan tulostaminen tapahtuu seuraavasti:</para>
+		<orderedlist>
+			<listitem>
+				<para>Valitse <menuchoice><guimenu>Tiedosto</guimenu><guimenuitem>Tulosta</guimenuitem></menuchoice></para>
+			</listitem>
+			<listitem>
+				<para>Valitse käytettävä tulostin listasta <guilabel>Tulosta</guilabel> -valintaikkunassa.</para>
+			</listitem>
+			<listitem>
+				<para>Napsauta <guilabel>Tulosta</guilabel>. Jolloin <application>Kuvakatselin</application> aloittaa tulostamisen.</para>
+			</listitem>
+		</orderedlist>
+		<para>Kuvat, jotka ovat liian suuria sivuille, skaalataan automaattisesti sivulle sopivaksi. Kuvat, jotka ovat sivun kokoa pienempiä keskitetään sivulle.</para>
+		<important>
+			<para>Huomioi, että <application>Kuvakatselin</application> tällä hetkellä päivittää tilaansa hitaasti tulostettaessa. Tulostuksen ajan käyttöliittymä saattaa ajoittain olla lyhyitä aikoja vastaamatta.</para>
+		</important>
+	</sect2>
+
+	<sect2 id="eom-print-settings">
+		<title>Kuvan asettelu sivulla</title>
+		<para>Et välttämättä halua kuvaasi keskitettävän tai skaalattavan pienemmäksi. Estääksesi tämän, avaa <guilabel>Tulosta</guilabel>-valintaikkuna (katso <xref linkend="eom-print-image"/>) ja valitse <guilabel>Kuvan asetukset</guilabel> -välilehti. Välilehdeltä voit määrittää seuraavat asetukset:</para>
+		<itemizedlist>
+			<listitem>
+				<para><guilabel>Sijainti</guilabel>-osiossa voit määrittää kuvan sijainnin sivulla.</para>
+			</listitem>
+			<listitem>
+				<para>Voit määrittää kuvan sijainnin sivulla myös raahaamalla kuvaa sivun <guilabel>Esikatselu</guilabel>-alueella.</para>
+			</listitem>
+			<listitem>
+				<para><guilabel>Koko</guilabel>-osion asetuksissa voit määrittää kuvan mieleisesi kuvan skaalauksen. Skaalausta rajoittaa joko kuvan koko tai paperin koko, riippuen siitä kumpi ehto täyttyy ensin.</para>
+			</listitem>
+			<listitem>
+				<para><guilabel>Yksikkö</guilabel>-valinnalla voit vaihtaa <guilabel>Kuvan asetukset</guilabel>-välilehdellä käytettävää yksikköä. Kun muutat tätä asetusta, muut kenttien arvot muunnetaan valinnan mukaisiksi.</para>
+			</listitem>
+		</itemizedlist>
+	</sect2>
+		
+</sect1>
+<sect1 id="eom-toolbareditor">
+	<title>Työkalupalkin yksilöinti</title>
+	<para>Kuvakatselimen oletustyökalupalkki sisältää vain peruspainikkeet, jotta palkki olisi yksinkertainen. Voit kuitenkin muokata työkalupalkin haluamaasi muotoon.</para>
+	<sect2 id="eom-toolbareditor-use">
+		<title>Työkalupalkin muokkaus</title>
+		<para>Mikäli haluat muokata työkalupalkkia, täytyy sinun avata työkalupalkin muokkain valitsemalla <menuchoice><guimenu>Muokkaa</guimenu><guimenuitem>Työkalupalkki</guimenuitem></menuchoice>. Seuraavanlainen ikkuna avautuu:</para>
+		<figure id="toolbar-editor-fig">
+			<title>Työkalupalkin muokkausikkuna</title>
+			<screenshot>
+				<mediaobject lang="en">
+					<imageobject>
+						<imagedata fileref="figures/eom_toolbar_editor_window.png" format="PNG"/>
+					</imageobject>
+					<textobject>
+						<phrase>Shows Eye of MATE toolbar editor window.</phrase>
+					</textobject>
+				</mediaobject>
+			</screenshot>
+		</figure>
+		<para>Se sisältää painikkeet, jotka eivät ole asetettu työkalupalkkiin, sekä erottimen. Voit nyt muokata työkalupalkkia:</para>
+		<itemizedlist>
+			<listitem>
+				<para>Voit lisätä uusia painikkeita työkalupalkkiin raahaamalla ne työkalupalkin muokkaimesta työkalupalkkiin.</para>
+			</listitem>
+			<listitem>
+				<para>Työkalupalkin painikkeet poistetaan raahaamalla ne työkalupalkista työkalun muokkaimeen.</para>
+			</listitem>
+			<listitem>
+				<para>Voit järjestellä työkalupalkin painikkeita raahaamalla ne niiden uuteen paikkaan työkalupalkissa.</para>
+			</listitem>
+		</itemizedlist>
+		<para>Kun olet lopettanut työkalupalkin muokkaamisen, napsauta <guibutton>Sulje</guibutton>-painiketta työkalupalkin muokkausikkunassa. Tällöin työkalupalkin muokkain suljetaan ja tekemäsi muutokset aktivoidaan.</para>
+		</sect2>
+		<sect2 id="eom-toolbareditor-reset">
+			<title>Työkalupalkin palautus</title>
+			<para>Voit kumota työpalkkiisi tekemät muutokset ja palauttaa alkuperäisen asettelun toimimalla seuraavasti:</para>
+			<orderedlist>
+				<listitem>
+					<para>Avaa työkalupalkin muokkain (katso <xref linkend="eom-toolbareditor-use"/>).</para>
+				</listitem>
+				<listitem>
+					<para>Napsauta <guibutton>Palauta oletus</guibutton> -painiketta.</para>
+				</listitem>
+				<listitem>
+					<para>Sulje työkalupalkin muokkain napsauttamalla <guibutton>Sulje</guibutton>-painiketta. Nyt työkalupalkki on palautettu oletusasetteluun.</para>
+				</listitem>
+			</orderedlist>
+		</sect2>
+</sect1>
+<sect1 id="eom-prefs">
+	<title>Asetukset</title>
+	<para>Asetuksia voidaan muuttaa valitsemalla <menuchoice><guimenu>Muokkaa</guimenu><guimenuitem>Asetukset</guimenuitem></menuchoice>. Voit muuttaa kuvankatselun ja diaesityksen asetuksia. Muutokset vaikuttavat kaikkiin avoimiin ikkunoihin välittömästi.</para>
+
+	<!--============ Image View ======================= -->
+  <sect2 id="eom-prefs-image">
+         <title>Kuvanäkymä</title>
+	<variablelist>
+	<varlistentry>
+		<term lang="en"><guilabel>Image Enhancements</guilabel></term>
+		<listitem>
+		<para>Valitse <guilabel>Pehmennä kuvat suurennettaessa</guilabel> -asetus aktivoidaksesi kuvan pehmennyksen, kun muutat kuvan suurennoskerrointa. Valitsemalla tämän valinnan, kuviasi pehmennetään <application>Kuvakatselimella</application> katseltaessa paremman kuvanlaadun takaamiseksi.</para>
+                <para>Mikäli valitset <guilabel>Automaattinen asento</guilabel> -valinnan, kuvasi kierretään automaattisesti metatietojen perusteella. Esimerkiksi pystykuvat käännetään automaattisesti pystyasentoon. Huomaa, että tämä toiminto vaatii kuvaan oikein asetetut asentomerkinnät ja ne eivät toimi kaikissa kuvissa. Kiertoa ei tallenneta ennen kuin tallennat kierretyn kuvan (katso <xref linkend="eom-save-rename"/>).</para>
+		</listitem>
+	</varlistentry>
+
+	<varlistentry>
+		<term lang="en"><guilabel>Transparent Parts</guilabel></term>
+		<listitem>
+		<para>Valitse yksi seuraavista valinnoista määrittääksesi, kuinka <application>Kuvakatselin</application> näyttää kuvan läpinäkyvät osat:</para>
+		<itemizedlist>
+			<listitem><para lang="en"><guilabel>As check pattern</guilabel> </para>
+			<para>Näyttää mitkä tahansa läpinäkyvät osat kuvasta ruudukkokuviolla.</para>
+			</listitem>
+			<listitem><para lang="en"><guilabel>As custom color</guilabel> </para>
+			<para>Näyttää kaikki kuvan läpinäkyvät osat määrittelemälläsi yhtenäisellä värillä. Napsauta värinvalintapainiketta määrittääksesi värin.</para>
+			</listitem>
+			<listitem><para lang="en"><guimenuitem>As background</guimenuitem> </para>
+			<para>Näyttää minkä tahansa läpinäkyvän osan kuvasta <application>Kuvakatselin</application>-sovelluksen taustavärinä.</para>
+			</listitem>
+		</itemizedlist>
+		</listitem>
+	</varlistentry>		
+	</variablelist>
+  </sect2>
+		
+	<!--============ Slide Show ==================-->                                                                                               
+  <sect2 id="eom-prefs-slideshow">
+         <title>Diaesitys</title>
+	<variablelist>
+	<varlistentry>
+		<term lang="en"><guilabel>Image Zoom</guilabel></term>
+		<listitem>
+		<para>Valitse <guilabel>Laajenna kuvat ruudun kokoiseksi</guilabel> -valinta suurentaaksesi kuvat ruutuun sopiviksi diaesityksen aikana. Mikäli et valitse tätä vaihtoehtoa, ruutua pienempiä kuvia ei suurenneta ruutuun sopiviksi.</para>
+		</listitem>
+	</varlistentry>
+	<varlistentry>
+		<term lang="en"><guilabel>Sequence</guilabel></term>
+		<listitem>
+		<para>Valitse <guilabel>Kiertävä esitys</guilabel> -valinta määrittääksesi listassa olevien kuvien loputtoman kierron diaesityksen aikana. Mikäli et valitse tätä vaihtoehtoa, diaesitys palaa kokoelmanäkymään viimeisen kuvan näyttämisen jälkeen.</para>
+		<para>Määritä <guilabel>Vaihda kuvaa viiveellä... sekuntia</guilabel> -numerokentän avulla, kuinka pitkään jokaista kuvaa näytetään diaesityksen aikana. Jos valitset tämän arvon nollaksi, automaattinen siirtyminen on pois päältä ja voit selata vain käsikäyttöisesti kuvia (katso <xref linkend="eom-fullscreen"/>).</para>
+		</listitem>
+	</varlistentry>		
+	</variablelist>
+  </sect2>
+</sect1>
+</article>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="search" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="create-notebook"/>
+    <desc>Cerqueu a les notes.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+        <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Cerqueu les notes</title>
+
+
+	<p>Cerqueu una paraula o una frase a qualsevol de les notes amb l'eina de cerca. Feu clic amb el botó secundari a la icona del quadre o premeu la icona <gui>Cerca</gui> a la barra de tasques d'una nota per mostrar el diàleg «Cerca totes les notes».</p>
+	<p>Introduïu un terme al diàleg de <gui>Cerca</gui> i premeu la <key>Tecla de retorn</key>, es llistaran totes les notes que continguin el terme que heu cercat.</p>
+	<p>Si heu organitzat les notes en blocs de notes, també podeu cercar termes en un bloc de notes determinat si seleccioneu el bloc de notes i introduïu els criteris de cerca que desitgeu.</p>
+
+ </page>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync-notes" xml:lang="zh_CN">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <desc>与其他计算机同步便笺。</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>同步您的便笺</title>
+
+ <section id="sync">
+
+	<title>手动同步便笺</title>
+	
+	<p>You can synchronize your notes one of three ways:</p>
+	
+	<list type="numbered">
+	  <item><p>在一个便笺里点 <gui>工具</gui> 图标，然后选择 <gui>同步便笺</gui>。</p></item>
+	  <item><p>在 <gui>搜索全部便笺</gui> 对话框里，选择 <guiseq><gui>工具</gui><gui>同步便笺</gui></guiseq>。</p></item>
+	  <item><p>在您的面板、任务栏、浮动面板的阿帖便笺图标上点右键，然后选 <gui>同步全部便笺</gui>。</p></item>
+	</list>
+
+ </section>
+ 
+ <section id="autosync">
+ 
+ 	<title>自动同步便笺</title>
+ 	
+	<p>Tomboy can automatically synchronize your notes for you in the
+	background.It is recommended that you configure how you handle note
+	conflicts before enabling syncing automatically. You can learn about
+	handling note conflicts in the <link xref="sync-setup#conflict"/>
+	page.</p>
+
+ 	<p>You can enable synchronize by opening <gui>Tomboy Preferences</gui> by 
+	using your mouse to right click on the Tomboy icon in your panel,
+	taskbar or dock and choose <gui>Preferences</gui> and then select
+	the <gui>Synchronization</gui> tab.  You can also open <gui> Tomboy
+	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
+	the menu choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
+	</guiseq>.
+	</p>
+	
+	<p>要启用同步功能，在同步标签的底部，选中 <gui>每隔多少分钟在后台自动同步</gui> 复选框。</p>
+	
+	<p>Tomboy's default option is to autosync every 10 minutes.  To change
+	how often Tomboy should synchronize enter the number of minutes in the
+	dialog or use your mouse to move the time up or down.</p>
+	
+	<p>要禁用自动同步，不选中 <gui>每隔多少分钟在后台自动同步</gui> 复选框。</p>
+	
+  </section>
+
+ </page>

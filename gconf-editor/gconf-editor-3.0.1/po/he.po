@@ -1,0 +1,466 @@
+# translation of gconf-editor.HEAD.he.po to Hebrew
+# translation of gconf-editor.gnome-2-0.po to Hebrew
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER
+# Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2002,2003
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gconf-editor.HEAD.he\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-10-25 16:06+0200\n"
+"PO-Revision-Date: 2010-10-25 16:17+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <he@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/gconf-editor.desktop.in.in.h:1 ../src/gconf-editor-window.c:393
+#: ../src/gconf-editor-window.c:395 ../src/gconf-editor-window.c:873
+#: ../src/gconf-editor-window.c:1372
+msgid "Configuration Editor"
+msgstr "עורך ההגדרות"
+
+#: ../data/gconf-editor.desktop.in.in.h:2
+msgid "Directly edit your entire configuration database"
+msgstr "עריכת מסד הנתונים של כל ההגדרות שלך ישירות"
+
+#: ../data/gconf-editor.schemas.in.h:1
+msgid "Bookmarks"
+msgstr "Bookmarks"
+
+#: ../data/gconf-editor.schemas.in.h:2
+msgid "gconf-editor folder bookmarks"
+msgstr "gconf-editor folder bookmarks"
+
+#: ../src/gconf-bookmarks-dialog.c:205
+msgid "Edit Bookmarks"
+msgstr "עריכת הסימניות"
+
+#: ../src/gconf-cell-renderer.c:144 ../src/gconf-cell-renderer.c:343
+msgid "<no value>"
+msgstr "<אין ערך>"
+
+#: ../src/gconf-editor-window.c:359
+#, c-format
+msgid "Couldn't display help: %s"
+msgstr "לא ניתן להציג את העזרה: %s"
+
+#: ../src/gconf-editor-window.c:399
+msgid "An editor for the GConf configuration system."
+msgstr "עורך למערכת ההגדרות של GConf."
+
+#: ../src/gconf-editor-window.c:402
+msgid "translator-credits"
+msgstr "יאיר הרשקוביץ <yairhr@gmail.com>/nירון שהרבני <sh.yaron@gmail.com>"
+
+#: ../src/gconf-editor-window.c:429
+#, c-format
+msgid ""
+"Couldn't unset key. Error was:\n"
+"%s"
+msgstr ""
+"לא ניתן לנטרל את המפתח. השגיאה הייתה:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:454
+#, c-format
+msgid ""
+"Could not create key. The error is:\n"
+"%s"
+msgstr ""
+"לא ניתן ליצור את המפתח. השגיאה היא:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:536
+#, c-format
+msgid ""
+"Could not change key value. Error message:\n"
+"%s"
+msgstr "לא ניתן לשנות את ערך המפתח. הודעת השגיאה: %s"
+
+#: ../src/gconf-editor-window.c:568
+msgid ""
+"Currently pairs and schemas can't be edited. This will be changed in a later "
+"version."
+msgstr ""
+"כרגע, צמדים וסכימות אינם ניתנים לעריכה. מצב זה ישתנה בגרסה מאוחרת יותר."
+
+#: ../src/gconf-editor-window.c:648
+#, c-format
+msgid ""
+"Could not set value. Error was:\n"
+"%s"
+msgstr ""
+"לא ניתן להגדיר את הערך. השגיאה הייתה:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:684 ../src/gconf-editor-window.c:728
+#, c-format
+msgid ""
+"Could not sync value. Error was:\n"
+"%s"
+msgstr ""
+"לא ניתן לסנכרן את הערך. השגיאה הייתה:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:740
+msgid "_File"
+msgstr "_קובץ"
+
+#: ../src/gconf-editor-window.c:741
+msgid "_Edit"
+msgstr "ע_ריכה"
+
+#: ../src/gconf-editor-window.c:742
+msgid "_Search"
+msgstr "_חיפוש"
+
+#: ../src/gconf-editor-window.c:743
+msgid "_Bookmarks"
+msgstr "_סימניות"
+
+#: ../src/gconf-editor-window.c:744
+msgid "_Help"
+msgstr "ע_זרה"
+
+#: ../src/gconf-editor-window.c:746
+msgid "New _Settings Window"
+msgstr "חלון ה_גדרות חדש"
+
+#: ../src/gconf-editor-window.c:747
+msgid "Open a new Configuration Editor window editing current settings"
+msgstr "פתיחת חלון עורך הגדרות חדש ועריכת ההגדרות הנוכחיות"
+
+#: ../src/gconf-editor-window.c:749
+msgid "New _Defaults Window"
+msgstr "חלון _בררות מחדל חדש"
+
+#: ../src/gconf-editor-window.c:750
+msgid "Open a new Configuration Editor window editing system default settings"
+msgstr "פתיחת חלון עורך הגדרות חדש ועריכת הגדרות בררת המחדל"
+
+#: ../src/gconf-editor-window.c:752
+msgid "New _Mandatory Window"
+msgstr "חלון ה_כרחיות חדש"
+
+#: ../src/gconf-editor-window.c:753
+msgid ""
+"Open a new Configuration Editor window editing system mandatory settings"
+msgstr "פתיחת חלון עורך הגדרות חדש ועריכת ההגדרות ההכרחיות"
+
+#: ../src/gconf-editor-window.c:755
+msgid "_Close Window"
+msgstr "_סגירת החלון"
+
+#: ../src/gconf-editor-window.c:755
+msgid "Close this window"
+msgstr "סגירת חלון זה"
+
+#: ../src/gconf-editor-window.c:757
+msgid "_Quit"
+msgstr "י_ציאה"
+
+#: ../src/gconf-editor-window.c:757
+msgid "Quit the Configuration Editor"
+msgstr "יציאה מעורך ההגדרות"
+
+#: ../src/gconf-editor-window.c:760
+msgid "_Copy Key Name"
+msgstr "ה_עתקת שם המפתח"
+
+#: ../src/gconf-editor-window.c:760
+msgid "Copy the name of the selected key"
+msgstr "העתקת שם המפתח הנבחר"
+
+#: ../src/gconf-editor-window.c:762
+msgid "_Find..."
+msgstr "_חיפוש..."
+
+#: ../src/gconf-editor-window.c:762
+msgid "Find patterns in keys and values"
+msgstr "חיפוש תבניות במפתחות ובערכים"
+
+#: ../src/gconf-editor-window.c:764
+msgid "_List Recent Keys"
+msgstr "_רשימת מפתחות אחרונים"
+
+#: ../src/gconf-editor-window.c:764
+msgid "Show recently modified keys"
+msgstr "הצגת המפתחות שנערכו לאחרונה"
+
+#: ../src/gconf-editor-window.c:767
+msgid "_Add Bookmark"
+msgstr "הוספת _סימנייה"
+
+#: ../src/gconf-editor-window.c:767
+msgid "Add a bookmark to the selected directory"
+msgstr "הוספת סימנייה לספרייה הנבחרת"
+
+#: ../src/gconf-editor-window.c:769
+msgid "_Edit Bookmarks"
+msgstr "ע_ריכת הסימניות"
+
+#: ../src/gconf-editor-window.c:769
+msgid "Edit the bookmarks"
+msgstr "עריכת הסימניות"
+
+#: ../src/gconf-editor-window.c:772
+msgid "_Contents"
+msgstr "_תוכן"
+
+#: ../src/gconf-editor-window.c:772
+msgid "Open the help contents for the Configuration Editor"
+msgstr "פתיחת תוכן העזרה של עורך ההגדרות"
+
+#: ../src/gconf-editor-window.c:774
+msgid "_About"
+msgstr "על _אודות"
+
+#: ../src/gconf-editor-window.c:774
+msgid "Show the about dialog for the Configuration Editor"
+msgstr "הצגת תיבת האודות עבור עורך ההגדרות"
+
+#: ../src/gconf-editor-window.c:777
+msgid "_New Key..."
+msgstr "מפתח _חדש..."
+
+#: ../src/gconf-editor-window.c:777
+msgid "Create a new key"
+msgstr "יצירת מפתח חדש"
+
+#: ../src/gconf-editor-window.c:779
+msgid "_Edit Key..."
+msgstr "_עריכת מפתח..."
+
+#: ../src/gconf-editor-window.c:779
+msgid "Edit the selected key"
+msgstr "עריכת המפתח הנבחר"
+
+#: ../src/gconf-editor-window.c:781
+msgid "_Unset Key"
+msgstr "_נטרול מפתח"
+
+#: ../src/gconf-editor-window.c:781
+msgid "Unset the selected key"
+msgstr "נטרול המפתח הנבחר"
+
+#: ../src/gconf-editor-window.c:783
+msgid "Set as _Default"
+msgstr "הגדרה כ_בררת מחדל"
+
+#: ../src/gconf-editor-window.c:783
+msgid "Set the selected key to be the default"
+msgstr "הגדרת המפתח הנבחר לערך בררת המחדל"
+
+#: ../src/gconf-editor-window.c:785
+msgid "Set as _Mandatory"
+msgstr "הגדרה כה_כרחי"
+
+#: ../src/gconf-editor-window.c:785
+msgid "Set the selected key to the mandatory"
+msgstr "הגדרת המפתח הנבחרי כהכרחי"
+
+#: ../src/gconf-editor-window.c:867
+msgid "Configuration Editor (Default settings)"
+msgstr "עורך ההגדרות (הגדרות בררת מחדל)"
+
+#: ../src/gconf-editor-window.c:870 ../src/gconf-editor-window.c:1369
+msgid "Configuration Editor (Mandatory settings)"
+msgstr "עורך ההגדרות (הגדרות הכרחיות)"
+
+#: ../src/gconf-editor-window.c:1115 ../src/gconf-editor-window.c:1116
+#: ../src/gconf-editor-window.c:1117 ../src/gconf-editor-window.c:1118
+#: ../src/gconf-editor-window.c:1147 ../src/gconf-editor-window.c:1155
+#: ../src/gconf-editor-window.c:1164 ../src/gconf-editor-window.c:1715
+#: ../src/gconf-editor-window.c:1727 ../src/gconf-editor-window.c:1739
+#: ../src/gconf-editor-window.c:1754
+msgid "(None)"
+msgstr "(אין)"
+
+#: ../src/gconf-editor-window.c:1328 ../src/gconf-editor-window.c:1338
+#, c-format
+msgid ""
+"Cannot create GConf engine. Error was:\n"
+"%s"
+msgstr ""
+"לא ניתן ליצור מנוע GConf. השגיאה הייתה:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:1366
+msgid "Configuration Editor (Defaults settings)"
+msgstr "עורך ההגדרות (הגדרות בררת מחדל)"
+
+#: ../src/gconf-editor-window.c:1611
+msgid "Name"
+msgstr "שם"
+
+#: ../src/gconf-editor-window.c:1635
+msgid "Value"
+msgstr "ערך"
+
+#: ../src/gconf-editor-window.c:1662
+msgid "Key Documentation"
+msgstr "תיעוד המפתח"
+
+#: ../src/gconf-editor-window.c:1691 ../src/gconf-key-editor.c:614
+msgid "This key is not writable"
+msgstr "המפתח אינו ניתן לכתיבה"
+
+#: ../src/gconf-editor-window.c:1704
+msgid "This key has no schema"
+msgstr "למפתח זה אין סכימה"
+
+#: ../src/gconf-editor-window.c:1709
+msgid "Key name:"
+msgstr "שם המפתח:"
+
+#: ../src/gconf-editor-window.c:1722
+msgid "Key owner:"
+msgstr "בעל המפתח:"
+
+#: ../src/gconf-editor-window.c:1734
+msgid "Short description:"
+msgstr "תיאור קצר:"
+
+#: ../src/gconf-editor-window.c:1747
+msgid "Long description:"
+msgstr "תיאור מלא:"
+
+#: ../src/gconf-key-editor.c:87
+msgid "T_rue"
+msgstr "_נכון"
+
+#: ../src/gconf-key-editor.c:90 ../src/gconf-key-editor.c:247
+#: ../src/gconf-key-editor.c:355 ../src/gconf-key-editor.c:645
+msgid "_False"
+msgstr "_לא נכון"
+
+#. These have to be ordered so the EDIT_ enum matches the
+#. * menu indices
+#.
+#. These have to be ordered so the EDIT_ enum matches the
+#. * combobox indices
+#.
+#: ../src/gconf-key-editor.c:125 ../src/gconf-key-editor.c:155
+msgid "Integer"
+msgstr "מספר שלם"
+
+#: ../src/gconf-key-editor.c:126 ../src/gconf-key-editor.c:156
+msgid "Boolean"
+msgstr "בוליאני"
+
+#: ../src/gconf-key-editor.c:127 ../src/gconf-key-editor.c:157
+msgid "String"
+msgstr "מחרוזת"
+
+#. Translators: this refers to "Floating point":
+#. * see http://en.wikipedia.org/wiki/Floating_point
+#.
+#: ../src/gconf-key-editor.c:131
+msgid "Float"
+msgstr "נקודה צפה"
+
+#: ../src/gconf-key-editor.c:132
+msgid "List"
+msgstr "רשימה"
+
+#: ../src/gconf-key-editor.c:220
+msgid "Add New List Entry"
+msgstr "הוספת רשומה חדשה לרשימה"
+
+#: ../src/gconf-key-editor.c:238
+msgid "_New list value:"
+msgstr "ר_שומה חדשה לרשימה:"
+
+#: ../src/gconf-key-editor.c:325
+msgid "Edit List Entry"
+msgstr "עריכת רשומה ברשימה"
+
+#: ../src/gconf-key-editor.c:343
+msgid "_Edit list value:"
+msgstr "ע_ריכת רשומה ברשימה:"
+
+#: ../src/gconf-key-editor.c:566
+msgid "Path:"
+msgstr "נתיב:"
+
+#: ../src/gconf-key-editor.c:577
+msgid "_Name:"
+msgstr "_שם:"
+
+#: ../src/gconf-key-editor.c:589
+msgid "_Type:"
+msgstr "_סוג:"
+
+#: ../src/gconf-key-editor.c:626 ../src/gconf-key-editor.c:644
+#: ../src/gconf-key-editor.c:663 ../src/gconf-key-editor.c:680
+msgid "_Value:"
+msgstr "_ערך:"
+
+#: ../src/gconf-key-editor.c:702
+msgid "List _type:"
+msgstr "_סוג הרשימה:"
+
+#: ../src/gconf-key-editor.c:710
+msgid "_Values:"
+msgstr "ע_רכים:"
+
+#: ../src/gconf-key-editor.c:812
+msgid "New Key"
+msgstr "מפתח חדש"
+
+#: ../src/gconf-key-editor.c:816
+msgid "Edit Key"
+msgstr "עריכת מפתח"
+
+#: ../src/gconf-search-dialog.c:60
+msgid "Pattern not found"
+msgstr "התבנית לא נמצאה"
+
+#: ../src/gconf-search-dialog.c:142
+msgid "Find"
+msgstr "חיפוש"
+
+#: ../src/gconf-search-dialog.c:144
+msgid "_Search for: "
+msgstr "_חיפוש: "
+
+#: ../src/gconf-search-dialog.c:165
+msgid "Search also in key _names"
+msgstr "חיפוש גם בשמות המ_פתחות"
+
+#: ../src/gconf-search-dialog.c:168
+msgid "Search also in key _values"
+msgstr "חיפוש גם ב_ערכי המפתחות"
+
+#: ../src/gedit-output-window.c:347
+msgid "Close the output window"
+msgstr "סגירת חלון הפלט"
+
+#: ../src/gedit-output-window.c:382
+msgid "Copy selected lines"
+msgstr "העתקת השורות הנבחרות"
+
+#: ../src/gedit-output-window.c:399
+msgid "Clear the output window"
+msgstr "ניקוי חלון הפלט"
+
+#: ../src/gedit-output-window.c:438
+msgid "Output Lines"
+msgstr "שורות פלט"
+
+#: ../src/main.c:69
+msgid "[KEY]"
+msgstr "[KEY]"
+
+#: ../src/main.c:77
+msgid "- Directly edit your entire configuration database"
+msgstr "- Directly edit your entire configuration database"
+
+#~ msgid "Type"
+#~ msgstr "סוג"
+
+#~ msgid "The Configuration Editor window type."
+#~ msgstr "סוג החלון עבור עורך הגדרות"

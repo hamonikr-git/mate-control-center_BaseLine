@@ -1,0 +1,16 @@
+hexchat (2.9.6.1-2) unstable; urgency=low
+
+  * Now using dh-autoreconf instead of autotools-dev (Closes: #739630)
+  * Added gvfs-bin as Recommends so default url handlers work 
+    (Closes: #740006)
+  * Added unifont as Suggests for unicode symbol support
+  * Included png,svg icons in package 
+
+ -- Jesse Rhodes <drubo@drubo.net>  Tue, 25 Feb 2014 16:45:42 -0700
+
+hexchat (2.9.6.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #702075)
+
+ -- Jesse Rhodes <drubo@drubo.net>  Mon, 03 Feb 2014 19:09:17 -0700
+

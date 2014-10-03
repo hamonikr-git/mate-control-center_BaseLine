@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync-setup" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <desc>A Tomboy beállítása jegyzetek szinkronizálására.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <credit type="author copyright">
+      <name>GNOME dokumentációs projekt</name>
+      <years>2010-2012</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Szinkronizálás beállítása</title>
+
+ <section id="enablesync">
+
+	<title>Szinkronizálás engedélyezése</title>
+	
+	<p>A <app>Tomboy</app> képes jegyzeteinek szinkronizálására több számítógép között. Ez lehetővé teszi a jegyzetek biztonsági másolatának másik számítógépen tartását, vagy a jegyzetek megosztását több számítógép között, hogy mindig elérhesse azokat.</p>
+	
+	<p>You can enable synchronize by opening <gui>Tomboy Preferences</gui>
+	by using your mouse to right click on the Tomboy icon in your panel,
+	taskbar or dock and choose <gui>Preferences</gui> and then select
+	the <gui>Synchronization</gui> tab.  You can also open <gui> Tomboy
+	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
+	the menu choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
+	</guiseq>.
+	</p>
+
+ </section>
+
+ <section id="conflict">
+
+	<title>Jegyzetütközés kezelése</title>
+	
+	<p>Beállíthatja a Tomboy alapértelmezett viselkedését ütköző jegyzetek felfedezése esetén. Ez akkor történhet meg, ha jegyzeteit nem szinkronizálja rendszeresen.</p>
+	
+	<p>A <gui>Beállítások</gui> ablakban nyomja meg a <gui>Speciális</gui> gombot. Három lehetőség közül választhatja ki az ütközések kezelésének alapértelmezett módját:</p>
+	
+	<list>
+		<item><p><gui>Mindig kérdezzen.</gui> Ez az alapbeállítás; ha a Tomboy ütközést észlel, mindig rákérdez, hogy átnevezi-e a helyi jegyzetet, vagy felülírja a helyi jegyzetet a kiszolgáló által tárolttal.</p></item>
+		<item><p><gui>Nevezze át a helyi jegyzetet.</gui> Ha ezt választja, akkor a Tomboy automatikusan lecseréli a jegyzetet a távoli számítógépről származó másolattal, és átnevezi a helyi jegyzetet, hogy ne veszítse el a jegyzet információit.</p>
+		</item>
+		
+		<item><p><gui>Replace my local note with the server's update.</gui>
+  		If you have selected this option, when you synchronize, 
+		Tomboy will overwrite and replace your note stored on your
+		computer with a copy from the remote computer.</p>
+		
+		<note style="warning">
+		<p>A jegyzet automatikus felülírása végleges. A helyi jegyzetet lecseréli a távoli gépen lévő másolat, és a szinkronizálás előtt rajta lévő összes információ elvész.</p>
+		</note>
+                </item>
+		
+	</list>
+		
+
+ </section> 
+ 
+  <section id="webdav">
+
+	<title>WebDavot használó szinkronizálás beállítása</title>
+	
+	<p>A jegyzetek WebDAV kiszolgálóval való szinkronizálásához telepíteni kell a wdfs FUSE fájlrendszert. A FUSE beállításához nézze meg operációs rendszere dokumentációját. A GNOME kulcstartónak is telepítve kell lennie.</p>
+	
+	<p>Válassza a <gui>Szolgáltatás</gui> legördülő lista <gui>WebDAV</gui> pontját. Adja meg a kiszolgáló kapcsolatinformációit, és nyomja meg a <gui>Mentés</gui> gombot. Ezzel be is fejezte a jegyzetek szinkronizálásának előkészítését.</p>
+
+ </section>
+ 
+  <section id="ssh">
+
+	<title>SSH-t használó szinkronizálás beállítása</title>
+	
+	<p>In order to synchronize your notes with an SSH server, you will need
+      	the FUSE file system, also called <app>sshfs</app> installed.  Follow the
+      	documentation for your operating system to set up FUSE for your user.  
+      	You will also need an SSH key for your SSH server account that can be
+	provided by the <app>Seahorse</app> application, which is also known as 
+      	<app>Passwords and Encryption Keys</app>.
+	</p>
+	
+	<p>A több számítógép között szinkronizálandó jegyzetek tárolására javasolt egy harmadik számítógép vagy kiszolgáló használata távoli számítógépként.</p>
+
+	<p>Open <app>Passwords and Encryption Keys</app> by choosing 
+	<guiseq><gui>Applications</gui><gui>Accessories</gui>
+	<gui>Passwords and Encryption Keys</gui></guiseq>.  
+	Click on your key, and from the menu choose <guiseq><gui>Remote</gui>
+	<gui>Configure Key for Secure Shell</gui></guiseq>  
+	and enter the domain name or IP address of the computer you want to 
+	synchronize to in <gui>Computer Name</gui>.  Enter the username of the 
+	remote computer in <gui>Login Name:</gui> and press <gui>Set Up</gui>. 
+	When prompted, enter the password and setting up your key will 
+	be completed.
+	</p>
+	
+	<p>A Tomboyban válassza a <gui>Szolgáltatás</gui> legördülő lista <gui>SSH</gui> elemét. Adja meg a kiszolgáló kapcsolatinformációit, és nyomja meg a <gui>Mentés</gui> gombot. A <gui>Mappaútvonal</gui> elhagyható, és egy üres mappára kell mutatnia. Ezzel be is fejezte a jegyzetek szinkronizálásának előkészítését.</p>
+
+ </section>
+
+ <section id="local">
+
+	<title>Helyi mappába való szinkronizálás beállítása</title>
+	
+	<p>Jegyzeteit szinkronizálhatja helyi mappába is, ha az a mappa elérhető más rendszereken, vagy egy távoli kiszolgáló helyi csatolási pontja.</p>
+
+	<p>A <gui>Szolgáltatás</gui> legördülő listából válassza a Helyi mappa elemet. Válassza ki a szinkronizáláshoz használandó <gui>Mappaútvonalat</gui>, és nyomja meg a <gui>Mentés</gui> gombot. Ezzel be is fejezte a jegyzetek szinkronizálásának előkészítését.</p>
+
+ </section>
+ 
+ </page>

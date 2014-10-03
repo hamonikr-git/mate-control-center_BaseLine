@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="edit-notes" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="create-notes"/>
+    <link type="seealso" xref="delete-notes"/>
+    <desc>Editar e formatar as súas notas.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Editar notas</title>    
+  
+		<p>Notas de Tomboy permítelle formatar o texto dentro dunha nota de diferentes formas, incluíndo desfacer e refacer, negriña, itálicas, subliñado e moito máis.</p>
+		
+   <section id="redo-undo">
+	
+	<title>Desfacer e refacer</title>
+	
+		<p>Para desfacer a última acción, incluíndo a escritura dunha palabra ou o formatado de texto, prema a icona <gui>Texto</gui> na barra de ferramentas e elixa <gui>Desfacer</gui>.</p>
+
+		<p>Se quere refacer unha palabra ou texto logo de Desfacerla, prema a icona <gui>Texto</gui> na barra de ferramentas e seleccione <gui>Refacer</gui>.</p>
+	
+  </section>
+	 
+  <section id="text-format">
+	
+	<title>Formatar texto</title>
+	
+		<p>Pode formatar o texto das súas notas de diferentes maneiras, incluíndo subliñado de palabras, texto en negriña ou en cursiva, resaltado de palabras ou frases ou riscado de texto.</p>
+  </section>
+	 
+  <section id="text-size">
+	
+	<title>Cambiar o tamaño do texto</title>
+	
+		<p>Vostede pode cambiar o tamaño do texto das súas notas de dúas formas.</p>
+		<p>Seleccione o texto que quere facer máis grande ou máis pequeno e prema <keyseq><key>Ctrl</key><key>+</key></keyseq> para facelo máis grande ou <keyseq><key>Ctrl</key><key>-</key></keyseq> para facelo máis pequeno.</p>
+		<p>De forma alternativa, pode premer a icona <gui>Texto</gui> na barra de ferramentas e elixir un dos catro tamaños predefinidos, incluíndo pequeno, normal, grande e enorme.</p>
+	
+  </section>
+	 
+  <section id="bullets">
+	
+	<title>Formatar viñetas</title>
+	
+		<p>As viñetas pódense crear usando o teclado ou a icona <gui>Texto</gui> da barra de ferramentas.</p>
+		<p>Para crear unha viñeta manualmente, prema a tecla asterisco<key>*</key> e escriba o texto. Despois de premer Intro, Tomboy convertirá automaticamente unha liña que comece por un asterisco nunha viñeta, e a seguinte liña autoformatarase tamén como unha viñeta. Se quere crear unha subviñeta, prema <key>Tab</key> inmediatamente despois de premer <key>Intro</key>.</p>
+		<p>Tamén pode resaltar unha liña en concreto, elixir a icona <gui>Texto</gui> na barra de ferramentas e marcar a casilla <gui>Viñetas</gui>  para engadir viñetas a unha liña en concreto.</p>
+
+	
+  </section>
+</page>

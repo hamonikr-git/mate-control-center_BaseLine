@@ -1,0 +1,2411 @@
+# Uyghur translation for tomboy.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Gheyret Kenji<gheyret@yahoo.com>,2010.
+# Sahran <sahran.ug@gmail.com>, 2010.
+# Zeper <zeper@msn.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tomboy\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=tomboy&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-09-05 17:55+0000\n"
+"PO-Revision-Date: 2012-02-18 16:10+0900\n"
+"Last-Translator: Gheyret Kenji<gheyret@yahoo.com>\n"
+"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../data/GNOME_TomboyApplet.server.in.in.h:1
+msgid "Accessories"
+msgstr "قوشۇمچە"
+
+#: ../data/GNOME_TomboyApplet.server.in.in.h:2
+msgid "Simple and easy to use note-taking"
+msgstr "ئاددىي ۋە ئوڭاي ئىزاھ يېزىش"
+
+#: ../data/GNOME_TomboyApplet.server.in.in.h:3
+msgid "Tomboy Applet Factory"
+msgstr "Tomboy قوللانچاق زاۋۇتى"
+
+#: ../data/GNOME_TomboyApplet.server.in.in.h:4 ../data/tomboy.desktop.in.h:3
+#: ../Tomboy/Tray.cs:579
+msgid "Tomboy Notes"
+msgstr "Tomboy ئىزاھلىرى"
+
+#: ../data/GNOME_TomboyApplet.xml.h:1 ../Tomboy/ActionManager.cs:179
+#: ../Tomboy/Tray.cs:274
+msgid "S_ynchronize Notes"
+msgstr "ئىزاھلارنى قەدەمداشلاش(_Y)"
+
+#: ../data/GNOME_TomboyApplet.xml.h:2 ../Tomboy/ActionManager.cs:164
+msgid "_About"
+msgstr "ھەققىدە(_A)"
+
+#: ../data/GNOME_TomboyApplet.xml.h:3 ../Tomboy/ActionManager.cs:157
+#: ../Tomboy/Tray.cs:288
+msgid "_Help"
+msgstr "ياردەم(_H)"
+
+#: ../data/GNOME_TomboyApplet.xml.h:4 ../Tomboy/ActionManager.cs:153
+#: ../Tomboy/Tray.cs:283
+msgid "_Preferences"
+msgstr "مايىللىق(_P)"
+
+#: ../data/tomboy.desktop.in.h:1
+msgid "Note-taker"
+msgstr "ئىزاھ يازغۇ"
+
+#: ../data/tomboy.desktop.in.h:2
+msgid "Take notes, link ideas, and stay organized"
+msgstr "ئىزاھلارنى يازىدۇ، ئوي-پىكىرلەرنى ئۇلايدۇ ۋە ئۇلارنى تەرتىپلىك قىلىدۇ"
+
+#: ../data/tomboy.schemas.in.h:1
+msgid "Accept SSL Certificates"
+msgstr "SSL ئىسپاتنامىسىنى قوبۇل قىلىش"
+
+#: ../data/tomboy.schemas.in.h:2
+msgid "Automatic Background Synchronization Timeout"
+msgstr "ئارقا تەرەپتە ئاپتوماتىك قەدەمداشلاش مۆھلىتى"
+
+#: ../data/tomboy.schemas.in.h:3
+msgid "Create a new Note"
+msgstr "يېڭى ئىزاھ قۇرىدۇ"
+
+#: ../data/tomboy.schemas.in.h:4
+msgid "Custom Font Face"
+msgstr "ئىختىيارىي خەت نۇسخىسى"
+
+#: ../data/tomboy.schemas.in.h:5
+#| msgid "Determines X coordinate of Search window; stored on Tomboy exit."
+msgid ""
+"Determines X coordinate of \"Search All Notes\" window; stored on Tomboy "
+"exit."
+msgstr "«بارلىق ئىزاھلارنى ئىزدەش» كۆزنىكىنىڭ X ئوقىدىكى كوئوردېناتى؛ Tomboy ئاخىرلاشقاندا ساقلىنىدۇ."
+
+#: ../data/tomboy.schemas.in.h:6
+#| msgid "Determines Y coordinate of Search window; stored on Tomboy exit."
+msgid ""
+"Determines Y coordinate of \"Search All Notes\" window; stored on Tomboy "
+"exit."
+msgstr "«بارلىق ئىزاھلارنى ئىزدەش» كۆزنىكىنىڭ Y ئوقىدىكى كوئوردېناتى؛ Tomboy ئاخىرلاشقاندا ساقلىنىدۇ."
+
+#: ../data/tomboy.schemas.in.h:7
+#| msgid "Determines pixel height of Search window; stored on Tomboy exit."
+msgid ""
+"Determines pixel height of \"Search All Notes\" window; stored on Tomboy "
+"exit."
+msgstr "«بارلىق ئىزاھلارنى ئىزدەش» كۆزنىكىنىڭ ئېگىزلىكى؛ Tomboy ئاخىرلاشقاندا ساقلىنىدۇ."
+
+#: ../data/tomboy.schemas.in.h:8
+#| msgid "Determines pixel width of Search window; stored on Tomboy exit."
+msgid ""
+"Determines pixel width of \"Search All Notes\" window; stored on Tomboy exit."
+msgstr "«بارلىق ئىزاھلارنى ئىزدەش» كۆزنىكىنىڭ كەڭلىكى؛ Tomboy ئاخىرلاشقاندا ساقلىنىدۇ."
+
+#: ../data/tomboy.schemas.in.h:9
+msgid "Enable Middle-Click Paste On Icon."
+msgstr "ئوتتۇرا توپچا چېكىلسە چاپلايدىغان بولسۇن."
+
+#: ../data/tomboy.schemas.in.h:10
+msgid "Enable Tray Icon"
+msgstr "قونداق سىنبەلگىسىنى قوزغات"
+
+#: ../data/tomboy.schemas.in.h:11
+msgid "Enable WikiWord highlighting"
+msgstr "WikiWord يورۇتۇشنى قوزغات"
+
+#: ../data/tomboy.schemas.in.h:12
+#| msgid "Enable Auto bulleted lists."
+msgid "Enable automatic bulleted lists."
+msgstr "ئاپتوماتىك بەلگە قويۇلىدىغان تىزىمنى ئىناۋەتلىك قىلىدۇ."
+
+#: ../data/tomboy.schemas.in.h:13
+msgid "Enable closing notes with escape."
+msgstr "Esc  كۇنۇپكىسىدا ئىزاھلارنى تاقىسۇن."
+
+#: ../data/tomboy.schemas.in.h:14
+msgid "Enable custom font"
+msgstr "ئىختىيارىي خەت نۇسخىسىنى ئىشلەتسۇن"
+
+#: ../data/tomboy.schemas.in.h:15
+msgid "Enable global keybindings"
+msgstr "ئومۇمىي دائىرىلىك كۇنۇپكا بېغىنى ئىناۋەتلىك قىل"
+
+#: ../data/tomboy.schemas.in.h:16
+msgid "Enable spellchecking"
+msgstr "ئىملا تەكشۈرۈشنى ئىشلەتسۇن"
+
+#: ../data/tomboy.schemas.in.h:17
+msgid "Enable startup notes"
+msgstr "قوزغالغان ھامان ئىزاھ ئاچسۇن"
+
+#: ../data/tomboy.schemas.in.h:18
+msgid "Enable the Delete Note confirmation dialog"
+msgstr "«ئىزاھ ئۆچۈرۈش» سۆزلەشكۈسىنى ئىشلەتسۇن"
+
+#: ../data/tomboy.schemas.in.h:19
+msgid ""
+"Enable this option if you want bulleted lists to be automatic when you place "
+"- or * at the beginning of a line."
+msgstr "بۇ تاللانما TRUE بولسا، قۇرنىڭ بېشىغا - ياكى * قويۇلسا، ئاپتوماتىك بەلگە قويۇلىدىغان تىزىم ھالىتىگە ئۆزگىرىدۇ."
+
+#: ../data/tomboy.schemas.in.h:20
+msgid ""
+"Enable this option if you want to be able to middle-click the Tomboy icon to "
+"paste timestamped content into the Start Here note."
+msgstr "Tomboy سىنبەلگىسىنى چاشقىنەكنىڭ ئوتتۇرا توپچىسىدا چېكىپ «باشلاش» تىكى ئىزاھقا ۋاقىتنى چاپلىماقچى بولسىڭىز بۇنى ئىشلىتىڭ."
+
+#: ../data/tomboy.schemas.in.h:21
+msgid ""
+"Enable this option to highlight words ThatLookLikeThis. Clicking the word "
+"will create a note with that name."
+msgstr "«ThatLookLikeThis» دېگەندەك سۆزلەرنى يورۇتۇش ئۈچۈن بۇنى ئىشلىتىڭ. بۇ سۆزنى چەكسە شۇنى ئات قىلىپ بىر ئىزاھ قۇرغىلى بولىدۇ."
+
+#: ../data/tomboy.schemas.in.h:22
+msgid "FUSE Mounting Timeout (ms)"
+msgstr "FUSE ئېگەرلەش مۆھلىتى(ms)"
+
+#: ../data/tomboy.schemas.in.h:23
+msgid "HTML Export All Linked Notes"
+msgstr "بارلىق ئۇلانمىلىق ئىزاھلارنى HTML غا ئېكسپورت"
+
+#: ../data/tomboy.schemas.in.h:24
+msgid "HTML Export Linked Notes"
+msgstr "ئۇلانمىلىق ئىزاھلارنى HTML غا ئېكسپورت"
+
+#: ../data/tomboy.schemas.in.h:25
+msgid ""
+"If disabled, the \"Delete Note\" confirmation dialog will be suppressed."
+msgstr "ئەگەر ئىشلىتىلمىسە، «ئىزاھ ئۆچۈرۈش» سۆزلەشكۈسى كۆرسىتىلمەيدۇ."
+
+#: ../data/tomboy.schemas.in.h:26
+msgid ""
+"If enable_custom_font is true, the font name set here will be used as the "
+"font when displaying notes."
+msgstr "enable_custom_font نى true قىلسا، بۇ يەردە بېكىتىلگەن خەت نۇسخىسى ئىزاھلارنى كۆرسىتىشتە ئىشلىتىلىدۇ."
+
+#: ../data/tomboy.schemas.in.h:27
+msgid ""
+"If enabled, all notes that were open when Tomboy quit will automatically be "
+"reopened at startup."
+msgstr "ئەگەر ئىشلىتىلسە، Tomboy ئاخىرلىشىدىغان چاغدا ئېچىلغان بارلىق ئىزاھلار، Tomboy قايتا قوزغالغاندا ئېچىلىدۇ."
+
+#: ../data/tomboy.schemas.in.h:28
+msgid "If enabled, an opened note can be closed by hitting the escape key."
+msgstr "ئەگەر ئىشلىتىلسە، ئېچىلغان ئىزاھ «Esc» كۇنۇپكىسى چېكىلگەن ھامان يېپىلىدۇ."
+
+#: ../data/tomboy.schemas.in.h:29
+msgid ""
+"If true, Tomboy's tray icon will be displayed in the notification area. "
+"Disabling this may be useful when another application is providing the "
+"functionality of the tray icon."
+msgstr "ئەگەر ئىشلىتىلسە، Tomboy نىڭ سىنبەلگىسى ئۇقتۇرۇش رايونىدا كۆرسىتىلىدۇ. ئىشلەتمىگەندە باشقا پروگراممىلارنىڭ قونداق سىنبەلگىسىنى كۆرسىتىش قۇلاي بولىدۇ."
+
+#: ../data/tomboy.schemas.in.h:30
+msgid ""
+"If true, misspellings will be underlined in red, and correct spelling "
+"suggestions shown in the right-click menu."
+msgstr "ئەگەر ئىشلىتىلسە، ئىملاسى خاتا سۆزلەرنىڭ ئاستىغا قىزىق سىزىق سىزىلىدۇ، ھەمدە توغرا سۆزلەر چاشقىنەك ئوڭ كۇنۇپكىسى چېكىلگەندە چىقىدىغان تىزىملىكتە كۆرسىتىلىدۇ."
+
+#: ../data/tomboy.schemas.in.h:31
+msgid ""
+"If true, the desktop-global keybindings set in /apps/tomboy/"
+"global_keybindings will be enabled, allowing for useful Tomboy actions to be "
+"available from any application."
+msgstr "true قىلىنسا، /apps/tomboy/global_keybindings نىڭدىكى  desktop-global كۇنۇپكا بېغى ئىناۋەتلىك بولۇپ، باشقا پروگراممىلار ئارقىلىق Tomboy دا مەشغۇلات قىلىشقا بولىدۇ."
+
+#: ../data/tomboy.schemas.in.h:32
+msgid ""
+"If true, the font name set in custom_font_face will be used as the font when "
+"displaying notes. Otherwise the desktop default font will be used."
+msgstr "ئەگەر ئىشلىتىلسە، custom_font_face غا بېكىتىلگەن خەت نۇسخىسى ئىزاھلارنى كۆرسىتىش ئۈچۈن ئىشلىتىلىدۇ. بولمىسا ئۈستەلئۈستى خەت نۇسخىسى ئىشلىتىلىدۇ."
+
+#: ../data/tomboy.schemas.in.h:33
+msgid ""
+"Indicates that the Sticky Note Importer plugin has not been run, so it "
+"should run automatically the next time Tomboy starts."
+msgstr "«Sticky ئىزاھ ئىمپورت قىلغۇچ» قىستۇرمىسىنىڭ تېخى ئىجرا بولمىغانلىقىنى كۆرسىتىدۇ، شۇڭا، ئۇ كېيىنكى قېتىم Tomboy ئىجرا قىلىنغاندا ئاپتوماتىك ئىجرا بولۇشى كېرەك."
+
+#: ../data/tomboy.schemas.in.h:34
+msgid ""
+"Integer determining the minimum number of notes to show in the Tomboy note "
+"menu."
+msgstr "Tomboy ئىزاھنىڭ تىزىملىكىدە كۆرسىتىلىدىغان ئىزاھلارنىڭ ئەڭ كىچىك سانىنى بەلگىلەيدۇ."
+
+#: ../data/tomboy.schemas.in.h:35
+msgid ""
+"Integer value indicating how frequently to perform a background sync of your "
+"notes (when sync is configured). Any value less than 1 indicates that "
+"autosync is disabled. The lowest acceptable positive value is 5. Value is in "
+"minutes."
+msgstr "بۇ، ئىزاھنى ئارقا تەرەپتە قانچىلىك ۋاقىتتا بىر قېتىم قەدەمداشلايدىغاننى بەلگىلەيدىغان قىممەت(پۈتۈن سان) بولۇپ، بىردىن كىچىك بولسا ئاپتوماتىك قەدەمداشلاش چەكلىنىدۇ. ئەڭ كىچىك قىممەت 5 بولۇپ، بىرلىكى مىنۇت."
+
+#: ../data/tomboy.schemas.in.h:36
+msgid ""
+"Integer value indicating if there is a preference to always perform a "
+"specific behavior when a conflict is detected, instead of prompting the "
+"user. The values map to an internal enumeration. 0 indicates that the user "
+"wishes to be prompted when a conflict occurs, so that they may handle each "
+"conflict situation on a case-by-case basis."
+msgstr "بۇ، ئىزاھنىڭ مەزمۇنىدا توقۇنۇش يۈز بەرگەندە قوللىنىدىغان چارىنى ئىپادىلەيدىغان قىممەت(پۈتۈن سان) بولۇپ، 0 بولسا توقۇنۇش يۈز بەرگەندە، ئىشلەتكۈچى بىلەن ئالاقە قىلىشنى بىلدۈرىدۇ."
+
+#: ../data/tomboy.schemas.in.h:37
+msgid ""
+"Integer value indicating if there is a preference to always perform a "
+"specific link updating behavior when a note is renamed, instead of prompting "
+"the user. The values map to an internal enumeration. 0 indicates that the "
+"user wishes to be prompted when renaming a note may impact links that exist "
+"in other notes. 1 indicates that links should automatically be removed. 2 "
+"indicates that link text should be updated to the new note name so that it "
+"will continue linking to the renamed note."
+msgstr "بۇ، ئىزاھنىڭ ئاتى ئۆزگەرتىلگەندە، ئىشلەتكۈچىگە كۆرسەتمە چىقارمايلا، كۆرسىتىلگەن ئۇلانمىنى يېڭىلاشنى ئېلىپ بېرىشنى ئىپادىلەيدىغان قىممەت(پۈتۈن سان). 0 بولسا ئىزاھنىڭ ئاتى ئۆزگەرگەندە باشقا ئىزاھنىڭ ئىچىدىكى ئۇلانمىغا تەسىر يەتكۈزۈپ قالسا، ئىشلەتكۈچىگە كۆرسەتمە چىقىرىدۇ. 2 بولسا كۆرسەتمە چىقارمايلا ھەممىنى ئاپتوماتىك قىلىدۇ."
+
+#: ../data/tomboy.schemas.in.h:38
+msgid "Last Directory used in HTML Export"
+msgstr "«HTML ئېكسپورت قىلىش» تا ئىشلىتىلگەن ئەڭ ئاخىرقى مۇندەرىجە"
+
+#: ../data/tomboy.schemas.in.h:39
+msgid "Link Updating Behavior on Note Rename"
+msgstr "ئىزاھنىڭ ئاتى ئۆزگەرتىلگەن چاغدىكى ئۇلانما يېڭىلاش مەشغۇلاتى"
+
+#: ../data/tomboy.schemas.in.h:40
+msgid "List of pinned notes."
+msgstr "pinned ئىزاھنىڭ تىزىمى."
+
+#: ../data/tomboy.schemas.in.h:41
+msgid ""
+"Maximum characters of note title to show in the Tomboy tray or panel applet "
+"note menu."
+msgstr "Tomboy نىڭ قوندىقى ياكى تاختاي قوللانچىقىنىڭ تىزىملىكىدە كۆرسىتىلىدىغان ئىزاھنىڭ ماۋزۇسىنىڭ ئەڭ چوڭ ئۇزۇنلۇقى(ھەرپ)"
+
+#: ../data/tomboy.schemas.in.h:42
+msgid "Maximum note title length to show in tray menu."
+msgstr "ئىزاھنىڭ قونداق تىزىملىكتە كۆرسىتىلىدىغان ماۋزۇسىنىڭ ئەڭ چوڭ ئۇزۇنلۇقى."
+
+#: ../data/tomboy.schemas.in.h:43
+msgid "Minimum number of notes to show in menu"
+msgstr "ئىزاھنىڭ قونداق تىزىملىكتە كۆرسىتىلىدىغان ماۋزۇسىنىڭ ئەڭ كىچىك ئۇزۇنلۇقى."
+
+#: ../data/tomboy.schemas.in.h:44
+msgid "Note Synchronization Conflict Saved Behavior"
+msgstr "ئىزاھنى قەدەمداشلىغاندا چىققان توقۇنۇشنى بىر تەرەپ قىلىش چارىسى"
+
+#: ../data/tomboy.schemas.in.h:45
+msgid "Open Recent Changes"
+msgstr "يېقىنقى ئۆزگىرىشلەرنى ئېچىش"
+
+#: ../data/tomboy.schemas.in.h:46
+msgid "Open Search Dialog"
+msgstr "ئىزدەش سۆزلەشكۈسىنى ئېچىش"
+
+#: ../data/tomboy.schemas.in.h:47
+msgid "Open Start Here"
+msgstr "«باشلاش» نى ئېچىش"
+
+#: ../data/tomboy.schemas.in.h:48
+msgid "Path on SSH server to Tomboy synchronization directory (optional)."
+msgstr "SSH مۇلازىمېتىرىدىكى Tomboy نى قەدەمداشلايدىغان مۇندەرىجە(ئىختىيارى)."
+
+#: ../data/tomboy.schemas.in.h:49
+msgid ""
+"Path to the synchronization server when using the filesystem synchronization "
+"service addin."
+msgstr "ھۆججەت سىستېمىسىنى قەدەمداشلاش مۇلازىمىتىدە ئىشلىتىلىدىغان مۇلازىمېتىرنىڭ يولى."
+
+#: ../data/tomboy.schemas.in.h:50
+msgid "SSHFS Remote Synchronization Folder"
+msgstr "SSHFS دە ئىشلىتىلىدىغان يىراقتىكى قەدەمداشلاش قىسقۇچى"
+
+#: ../data/tomboy.schemas.in.h:51
+msgid "SSHFS Remote Synchronization User Name"
+msgstr "SSHFS دە ئىشلىتىلىدىغان يىراقتىكى قەدەمداشلاش ئىشلەتكۈچى ئاتى"
+
+#: ../data/tomboy.schemas.in.h:52
+msgid "SSHFS Synchronization Server Port"
+msgstr "SSHFS دە ئىشلىتىلىدىغان يىراقتىكى قەدەمداشلاش مۇلازىمېتىر ئېغىزى"
+
+#: ../data/tomboy.schemas.in.h:53
+msgid "SSHFS Synchronization Server URL"
+msgstr "SSHFS دە ئىشلىتىلىدىغان يىراقتىكى قەدەمداشلاش مۇلازىمېتىر URL سى"
+
+#: ../data/tomboy.schemas.in.h:54
+#| msgid "Saved height of Search window"
+msgid "Saved height of \"Search All Notes\" window"
+msgstr "«بارلىق ئىزاھلارنى ئىزدەش» كۆزنىكىنىڭ ساقلانغان ئېگىزلىكى"
+
+#: ../data/tomboy.schemas.in.h:55
+#| msgid "Saved horizontal position of Search window"
+msgid "Saved horizontal position of \"Search All Notes\" window"
+msgstr "«بارلىق ئىزاھلارنى ئىزدەش» كۆزنىكىنىڭ توغرا يۆنىلىشتىكى ساقلانغان ئورنى"
+
+#: ../data/tomboy.schemas.in.h:56
+#| msgid "Saved vertical position of Search window"
+msgid "Saved vertical position of \"Search All Notes\" window"
+msgstr "«بارلىق ئىزاھلارنى ئىزدەش» كۆزنىكىنىڭ تىك يۆنىلىشتىكى ساقلانغان ئورنى"
+
+#: ../data/tomboy.schemas.in.h:57
+#| msgid "Saved width of Search window"
+msgid "Saved width of \"Search All Notes\" window"
+msgstr "«بارلىق ئىزاھلارنى ئىزدەش» كۆزنىكىنىڭ ساقلانغان كەڭلىكى"
+
+#: ../data/tomboy.schemas.in.h:58
+msgid "Selected Synchronization Service Addin"
+msgstr "تاللانغان قەدەمداشلاش مۇلازىمىتى قىستۇرمىسى"
+
+#: ../data/tomboy.schemas.in.h:59
+msgid "Set to TRUE to activate"
+msgstr "ئاكتىپلاش ئۈچۈن TRUE قىلىپ بېكىتىڭ"
+
+#: ../data/tomboy.schemas.in.h:60
+msgid "Show applet menu"
+msgstr "قوللانچاق تىزىملىكىنى كۆرسىتىش"
+
+#: ../data/tomboy.schemas.in.h:61
+msgid "Start Here Note"
+msgstr "«باشلاش» ئىزاھاتى"
+
+#: ../data/tomboy.schemas.in.h:62
+msgid "Sticky Note Importer First Run"
+msgstr "«Sticky ئىزاھ ئىمپورت قىلغۇچ» دەسلەپتە ئىجرا بولسۇن"
+
+#: ../data/tomboy.schemas.in.h:63
+msgid "Synchronization Client ID"
+msgstr "قەدەمداشلاش خېرىدارىنىڭ كىملىكى(ID)"
+
+#: ../data/tomboy.schemas.in.h:64
+msgid "Synchronization Local Server Path"
+msgstr "قەدەمداشلاش يەرلىك مۇلازىمەت يولى"
+
+#: ../data/tomboy.schemas.in.h:65
+msgid "The date format that is used for the timestamp."
+msgstr "ئىشلىتىلىدىغان چېسلا فورماتى."
+
+#: ../data/tomboy.schemas.in.h:66
+msgid ""
+"The global keybinding for creating and displaying a new Note. The format "
+"looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The "
+"parser is fairly liberal and allows lower or upper case, and also "
+"abbreviations such as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the "
+"option to the special string \"disabled\", then there will be no keybinding "
+"for this action."
+msgstr "يېڭى ئىزاھ قۇرۇش ۋە كۆرسىتىشنىڭ ئومۇمىي كۇنۇپكا بېغى(ئومۇمىي تېزلەتمىسى). فورماتى  \"&lt;Control&gt;a\" ياكى \"&lt;Shift&gt;&lt;Alt&gt;F1\". تەھلىل قىلغۇچ ناھايىتى ياخشى بولۇپ، چوڭ/كىچىك يېزىلسىمۇ بولۇۋېرىدۇ، ھەم \"&lt;Ctl&gt;\" ۋە \"&lt;Ctrl&gt;\" دەك قىسقارتىلسىمۇ تونۇۋېرىدۇ. \"disabled\" دېگەن ئالاھىدە تاللانمىنى ئىشلەتسىڭىز، بۇ مەشغۇلاتنىڭ كۇنۇپكا بېغى(تېزلەتمىسى) يوق بولىدۇ."
+
+#: ../data/tomboy.schemas.in.h:67
+msgid ""
+"The global keybinding for opening the \"Start Here\" note. The format looks "
+"like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
+"fairly liberal and allows lower or upper case, and also abbreviations such "
+"as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
+"special string \"disabled\", then there will be no keybinding for this "
+"action."
+msgstr "«باشلاش» نىڭ ئومۇمىي كۇنۇپكا بېغى(ئومۇمىي تېزلەتمىسى). فورماتى \"&lt;Control&gt;a\" ياكى \"&lt;Shift&gt;&lt;Alt&gt;F1\". تەھلىل قىلغۇچ ناھايىتى ياخشى بولۇپ، چوڭ/كىچىك يېزىلسىمۇ بولۇۋېرىدۇ، ھەم \"&lt;Ctl&gt;\" ۋە \"&lt;Ctrl&gt;\" دەك قىسقارتىلسىمۇ تونۇۋېرىدۇ. \"disabled\" دېگەن ئالاھىدە تاللانمىنى ئىشلەتسىڭىز، بۇ مەشغۇلاتنىڭ كۇنۇپكا بېغى(تېزلەتمىسى) يوق بولىدۇ."
+
+#: ../data/tomboy.schemas.in.h:68
+msgid ""
+"The global keybinding for opening the Note Search dialog. The format looks "
+"like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
+"fairly liberal and allows lower or upper case, and also abbreviations such "
+"as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
+"special string \"disabled\", then there will be no keybinding for this "
+"action."
+msgstr "«ئىزاھ ئىزدەش» سۆزلەشكۈسىنىڭ ئومۇمىي كۇنۇپكا بېغى(ئومۇمىي تېزلەتمىسى). فورماتى \"&lt;Control&gt;a\" ياكى \"&lt;Shift&gt;&lt;Alt&gt;F1\". تەھلىل قىلغۇچ ناھايىتى ياخشى بولۇپ، چوڭ/كىچىك يېزىلسىمۇ بولۇۋېرىدۇ، ھەم \"&lt;Ctl&gt;\" ۋە \"&lt;Ctrl&gt;\" دەك قىسقارتىلسىمۇ تونۇۋېرىدۇ. \"disabled\" دېگەن ئالاھىدە تاللانمىنى ئىشلەتسىڭىز، بۇ مەشغۇلاتنىڭ كۇنۇپكا بېغى(تېزلەتمىسى) يوق بولىدۇ."
+
+#: ../data/tomboy.schemas.in.h:69
+msgid ""
+"The global keybinding for opening the Recent Changes dialog. The format "
+"looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The "
+"parser is fairly liberal and allows lower or upper case, and also "
+"abbreviations such as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the "
+"option to the special string \"disabled\", then there will be no keybinding "
+"for this action."
+msgstr "«يېقىنقى ئۆزگىرىشلەر» سۆزلەشكۈسىنىڭ ئومۇمىي كۇنۇپكا بېغى(ئومۇمىي تېزلەتمىسى). فورماتى \"&lt;Control&gt;a\" ياكى \"&lt;Shift&gt;&lt;Alt&gt;F1\". تەھلىل قىلغۇچ ناھايىتى ياخشى بولۇپ، چوڭ/كىچىك يېزىلسىمۇ بولۇۋېرىدۇ، ھەم \"&lt;Ctl&gt;\" ۋە \"&lt;Ctrl&gt;\" دەك قىسقارتىلسىمۇ تونۇۋېرىدۇ. \"disabled\" دېگەن ئالاھىدە تاللانمىنى ئىشلەتسىڭىز، بۇ مەشغۇلاتنىڭ كۇنۇپكا بېغى(تېزلەتمىسى) يوق بولىدۇ."
+
+#: ../data/tomboy.schemas.in.h:70
+msgid ""
+"The global keybinding for showing the Tomboy applet's menu. The format looks "
+"like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
+"fairly liberal and allows lower or upper case, and also abbreviations such "
+"as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
+"special string \"disabled\", then there will be no keybinding for this "
+"action."
+msgstr "«Tomboy قوللانچىقى» تىزىملىكىنىڭ ئومۇمىي كۇنۇپكا بېغى(ئومۇمىي تېزلەتمىسى). فورماتى \"&lt;Control&gt;a\" ياكى \"&lt;Shift&gt;&lt;Alt&gt;F1\". تەھلىل قىلغۇچ ناھايىتى ياخشى بولۇپ، چوڭ/كىچىك يېزىلسىمۇ بولۇۋېرىدۇ، ھەم \"&lt;Ctl&gt;\" ۋە \"&lt;Ctrl&gt;\" دەك قىسقارتىلسىمۇ تونۇۋېرىدۇ. \"disabled\" دېگەن ئالاھىدە تاللانمىنى ئىشلەتسىڭىز، بۇ مەشغۇلاتنىڭ كۇنۇپكا بېغى(تېزلەتمىسى) يوق بولىدۇ."
+
+#: ../data/tomboy.schemas.in.h:71
+msgid "The handler for \"note://\" URLs"
+msgstr "\"note://\" URLs نى بىر تەرەپ قىلىدىغان پروگرامما"
+
+#: ../data/tomboy.schemas.in.h:72
+msgid ""
+"The last directory a note was exported to using the Export To HTML plugin."
+msgstr "«HTML غا ئېكسپورت قىل» قىستۇرمىسىدا ئېكسپورت قىلىشتا ئىشلىتىلگەن ئەڭ ئاخىرقى مۇندەرىجە."
+
+#: ../data/tomboy.schemas.in.h:73
+msgid ""
+"The last setting for the 'Export linked notes' checkbox in the Export to "
+"HTML plugin."
+msgstr "«HTML غا ئېكسپورت قىل» قىستۇرمىسىنىڭ «ئىزاھلارنى ئېكسپورت قىلسۇن» دېگەن تاللاش كۆزنەكچىسىنىڭ ئەڭ ئاخىرقى ھالىتى."
+
+#: ../data/tomboy.schemas.in.h:74
+msgid ""
+"The last setting for the 'Include all other linked notes' checkbox in the "
+"Export to HTML plugin. This setting is used in conjunction with the 'HTML "
+"Export Linked Notes' setting and is used to specify whether all notes (found "
+"recursively) should be included during an export to HTML."
+msgstr "«HTML غا ئېكسپورت قىل» قىستۇرمىسىنىڭ «باشقا بارلىق ئۇلانغان ئىزاھلارنى ئوز ئىچىگە ئالسۇن» دېگەن تاللاش كۆزنەكچىسىنىڭ ئەڭ ئاخىرقى ھالىتى. بۇ تەڭشەك «ئۇلانمىلىق ئىزاھلارنى HTML غا ئېكسپورت قىل» بىلەن دېگەن تاللانما بىلەن ھەمدەمدە بولۇپ، چوڭقۇرلار ئىزدەپ تاپقان بارلىق ئىزاھلارنى HTML غا ئېكسپورت قىلامدۇ قىلمامدۇ بەلگىلەش ئۈچۈن ئىشلىتىلىدۇ."
+
+#: ../data/tomboy.schemas.in.h:75
+msgid ""
+"The note URI of the note that should be considered the \"Start Here\" note, "
+"which is always placed at the bottom of the Tomboy note menu and also "
+"accessible by hotkey."
+msgstr "«باشلاش» ئىزاھىنىڭ URI، بولۇپ ھەمىشە Tomboy ئىزاھ تىزىملىكىنىڭ ئەڭ ئاستىغا ئورۇنلاشتۇرۇلىدۇ ھەم تېزلەتمە كۇنۇپكا ئارقىلىق زىيارەت قىلغىلى بولىدۇ."
+
+#: ../data/tomboy.schemas.in.h:76
+msgid ""
+"The port to use when connecting to the synchronization server via SSH. Set "
+"to -1 or less if default SSH port settings should be used instead."
+msgstr "SSH ئارقىلىق قەدەمداشلاش مۇلازىمېتىرىغا باغلىنىشتا ئىشلىتىلىدىغان ئېغىز. كۆڭۈلدىكى SSH ئېغىزىنى ئىشلەتمەكچى بولسىڭىز -1 ياكى ئۇنىڭدىنمۇ كىچىك قىممەتنى بەلگىلەڭ."
+
+#: ../data/tomboy.schemas.in.h:77
+msgid ""
+"Time (in milliseconds) Tomboy should wait for a response when using FUSE to "
+"mount a sync share."
+msgstr "FUSE ئىشلىتىپ ھەمبەھىر ئىزاھنى ئېگەرلەشتە، Tomboy نىڭ ساقلاپ تۇرۇش ۋاقتى(مىللىسېكۇنت)."
+
+#: ../data/tomboy.schemas.in.h:78
+msgid "Timestamp format"
+msgstr "ۋاقىت"
+
+#: ../data/tomboy.schemas.in.h:79
+msgid "URL of SSH server containing Tomboy synchronization directory."
+msgstr "SSH مۇلازىمېتىرىنىڭ URL ئادرېسى(Tomboy قەدەمداشلاش مۇندەرىجىسىنىمۇ ئوز ئىچىگە ئالغان)."
+
+#: ../data/tomboy.schemas.in.h:80
+msgid ""
+"Unique identifier for the currently configured note synchronization service "
+"addin."
+msgstr "نۆۋەتتە سەپلەنگەن ئىزاھ قەدەمداشلاش مۇلازىمەت قىستۇرمىسىنىڭ بىردىنبىر كىملىكى(identifier)"
+
+#: ../data/tomboy.schemas.in.h:81
+msgid ""
+"Unique identifier for this Tomboy client, used when communicating with a "
+"sychronization server."
+msgstr "Tomboy client نىڭ بىردىنبىر كىملىكى(بۇ قەدەمداشلاش مۇلازىمىتى بىلەن ئالاقە قىلغاندا ئىشلىتىلىدۇ)."
+
+#: ../data/tomboy.schemas.in.h:82
+msgid ""
+"Use wdfs option \"-ac\" to accept SSL certificates without prompting the "
+"user."
+msgstr "ئىشلەتكۈچىنى ئارىلاشتۇرمايلا SSL ئىسپاتنامىسىنى قوبۇل قىلىش ئۈچۈن ئىشلىتىدىغان \"-ac\" تاللانمىسىنى ئىشلىتىدۇ."
+
+#: ../data/tomboy.schemas.in.h:83
+msgid "User name to use when connecting to the synchronization server via SSH."
+msgstr "SSH ئارقىلىق قەدەمداشلاش مۇلازىمېتىرىغا باغلىنىشتا ئىشلىتىلىدىغان ئىشلەتكۈچى ئاتى."
+
+#: ../data/tomboy.schemas.in.h:84
+msgid ""
+"Whitespace-separated list of note URIs for notes that should always appear "
+"in the Tomboy note menu."
+msgstr "بوشلۇق بىلەن ئايرىلغان ئىزاھلارنىڭ URI نىڭ تىزىمىنى Tomboy ئىزاھ تىزىملىكىدە ھەمىشە كۆرسىتىدۇ."
+
+#: ../Tomboy/ActionManager.cs:127
+msgid "_File"
+msgstr "ھۆججەت(_F)"
+
+#: ../Tomboy/ActionManager.cs:130
+msgid "_New"
+msgstr "يېڭى(_N)"
+
+#: ../Tomboy/ActionManager.cs:131 ../Tomboy/ActionManager.cs:172
+msgid "Create a new note"
+msgstr "يېڭى ئىزاھ قۇرىدۇ"
+
+#: ../Tomboy/ActionManager.cs:134
+msgid "_Open..."
+msgstr "ئاچ(_O)…"
+
+#: ../Tomboy/ActionManager.cs:135
+msgid "Open the selected note"
+msgstr "تاللانغان ئىزاھنى ئاچىدۇ"
+
+#: ../Tomboy/ActionManager.cs:138
+msgid "_Delete"
+msgstr "ئۆچۈر(_D)"
+
+#: ../Tomboy/ActionManager.cs:139
+msgid "Delete the selected note"
+msgstr "تاللانغان ئىزاھنى ئۆچۈرىدۇ"
+
+#: ../Tomboy/ActionManager.cs:142 ../Tomboy/NoteWindow.cs:411
+msgid "_Close"
+msgstr "ياپ(_C)"
+
+#: ../Tomboy/ActionManager.cs:143
+msgid "Close this window"
+msgstr "بۇ كۆزنەكنى ياپ"
+
+#: ../Tomboy/ActionManager.cs:146 ../Tomboy/Tray.cs:300
+msgid "_Quit"
+msgstr "چېكىن(_Q)"
+
+#: ../Tomboy/ActionManager.cs:147
+msgid "Quit Tomboy"
+msgstr "Tomboy نى ئاخىرلاشتۇرىدۇ"
+
+#: ../Tomboy/ActionManager.cs:150
+msgid "_Edit"
+msgstr "تەھرىر(_E)"
+
+#: ../Tomboy/ActionManager.cs:154 ../Tomboy/PreferencesDialog.cs:65
+msgid "Tomboy Preferences"
+msgstr "Tomboy تەڭشەكلىرى"
+
+#: ../Tomboy/ActionManager.cs:160
+msgid "_Contents"
+msgstr "مەزمۇنلار(_C)"
+
+#: ../Tomboy/ActionManager.cs:161
+msgid "Tomboy Help"
+msgstr "Tomboy ياردىمى"
+
+#: ../Tomboy/ActionManager.cs:165 ../Tomboy/MacApplication.cs:233
+msgid "About Tomboy"
+msgstr "Tomboy ھەققىدە"
+
+#: ../Tomboy/ActionManager.cs:168
+msgid "TrayIcon"
+msgstr "قونداق سىنبەلگىسى"
+
+#: ../Tomboy/ActionManager.cs:171
+msgid "Create _New Note"
+msgstr "يېڭى ئىزاھ قۇر(_N)"
+
+#: ../Tomboy/ActionManager.cs:175 ../Tomboy/NoteWindow.cs:354
+msgid "_Search All Notes"
+msgstr "ھەممە ئىزاھلارنى ئىزدە(_S)"
+
+#: ../Tomboy/ActionManager.cs:176
+msgid "Open the Search All Notes window"
+msgstr "«ھەممە ئىزاھنى ئىزدە» كۆزنىكىنى ئاچىدۇ"
+
+#: ../Tomboy/ActionManager.cs:180
+msgid "Start synchronizing notes"
+msgstr "ئىزاھلارنى قەدەمداشلاشنى باشلايدۇ"
+
+#. Addin's tab caption
+#: ../Tomboy/Addins/AdvancedPreferences/AdvancedPreferencesAddin.cs:38
+#| msgid "Ad_vanced"
+msgid "Advanced"
+msgstr "ئالىي"
+
+#. Menu Note Count option
+#: ../Tomboy/Addins/AdvancedPreferences/AdvancedPreferencesAddin.cs:56
+#| msgid "Minimum number of notes to show in menu"
+msgid "Minimum number of notes to show in Recent list (maximum 18)"
+msgstr "يېقىنقى تىزىمىدا كۆرۈنىدىغان ئىزاھلارنىڭ ئەڭ كىچىك سانى(ئەڭ چوڭ قىممىتى 18)"
+
+#: ../Tomboy/Addins/Backlinks/BacklinksNoteAddin.cs:38
+msgid "What links here?"
+msgstr "بۇ يەرگە نېمە ئۇلىنىدۇ؟"
+
+#. This is a disabled placeholder item for an empty menu
+#: ../Tomboy/Addins/Backlinks/BacklinksNoteAddin.cs:85
+msgid "(none)"
+msgstr "(يوق)"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:23
+msgid ""
+"You can use any bugzilla just by dragging links into notes.  If you want a "
+"special icon for certain hosts, add them here."
+msgstr "ئىزاھ ئىچىگە ئۇلانمىلارنى سۆرەپ كېلىش ئارقىلىقلا bugzilla نى ئىشلىتەلەيسىز. ئالاھىدە مۇلازىمېتىرلار ئۈچۈن ئالاھىدە سىنبەلگە ئىشلىتىشنى ئىستىسىڭىز بۇ يەرگە قوشۇڭ."
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:41
+msgid "Host Name"
+msgstr "باش ماشىنا ئاتى"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:58
+msgid "Icon"
+msgstr "سىنبەلگە"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:176
+msgid "Select an icon..."
+msgstr "سىنبەلگە تاللايدۇ..."
+
+#. Extra Widget
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:191
+msgid "_Host name:"
+msgstr "باش ماشىنا ئاتى(_H):"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:220
+msgid "No host name specified"
+msgstr "باش ماشىنا ئاتى بەلگىلەنمىگەن"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:221
+msgid "You must specify the Bugzilla host name to use with this icon."
+msgstr "بۇ سىنبەلگىنى ئىشلىتىش ئۈچۈن Bugzilla باش ماشىنا ئاتىنى بەلگىلىشىڭىز زۆرۈر."
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:247
+msgid "Error saving icon"
+msgstr "سىنبەلگە ساقلاۋاتقاندا خاتالىق كۆرۈلدى"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:248
+msgid "Could not save the icon file."
+msgstr "سىنبەلگە ھۆججىتىنى ساقلىيالمىدى"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:302
+msgid "Really remove this icon?"
+msgstr "راستلا بۇ سىنبەلگىنى چىقىرىۋېتەمدۇ؟"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:303
+msgid "If you remove an icon it is permanently lost."
+msgstr "ئەگەر سىنبەلگىنى چىقىرىۋەتسىڭىز، ئۇ مەڭگۈلۈككە يوقىلىدۇ."
+
+#: ../Tomboy/Addins/Evolution/EvolutionNoteAddin.cs:273
+msgid "Cannot open email"
+msgstr "ئېلخەتنى ئاچقىلى بولمىدى"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlApplicationAddin.cs:59
+msgid "HTML"
+msgstr "HTML"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:13
+msgid "Destination for HTML Export"
+msgstr "HTML ئېكسپورت قىلىشنىڭ مەنزىلى"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:23
+msgid "Export linked notes"
+msgstr "ئۇلانغان ئىزاھلارنى ئېكسپورت قىل"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:28
+msgid "Include all other linked notes"
+msgstr "باشقا ئۇلانغان ئىزاھلارنىمۇ ئوز ئىچىگە ئالىدۇ"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:67
+msgid "Export to HTML"
+msgstr "HTML غا ئېكسپورت قىل"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:115
+#, csharp-format
+msgid "Your note was exported to \"{0}\"."
+msgstr "ئىزاھىڭىز \"{0}\" غا ئېكسپورت قىلىندى."
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:126
+msgid "Note exported successfully"
+msgstr "ئىزاھ مۇۋەپپەقىيەتلىك ئېكسپورت قىلىندى"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:132
+#: ../Tomboy/ExportAllApplicationAddin.cs:195
+#: ../Tomboy/ExportAllApplicationAddin.cs:273
+msgid "Access denied."
+msgstr "زىيارەت رەت قىلىندى."
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:134
+#: ../Tomboy/ExportAllApplicationAddin.cs:200
+#: ../Tomboy/ExportAllApplicationAddin.cs:278
+msgid "Folder does not exist."
+msgstr "قىسقۇچ مەۋجۇت ئەمەس."
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:149
+#, csharp-format
+msgid "Could not save the file \"{0}\""
+msgstr "ھۆججەت \"{0}\" نى ساقلىيالمىدى"
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:93
+msgid "_Folder Path:"
+msgstr "قىسقۇچ يولى(_F):"
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:100
+msgid "Select Synchronization Folder..."
+msgstr "قەدەمداشلاش قىسقۇچىنى تاللاش..."
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:127
+msgid "Folder path field is empty."
+msgstr "قىسقۇچ خەت بۆلىكى قۇرۇق."
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:136
+msgid ""
+"Specified folder path does not exist, and Tomboy was unable to create it."
+msgstr "بەلگىلەنگەن يوق مەۋجۇت ئەمەس. شۇڭا Tomboy ئۇنى قۇرالمىدى."
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:214
+msgid "Local Folder"
+msgstr "يەرلىك قىسقۇچ"
+
+#: ../Tomboy/Addins/FixedWidth/FixedWidthMenuItem.cs:13
+msgid "Fixed Wid_th"
+msgstr "مۇقىم كەڭلىك(_T)"
+
+#: ../Tomboy/Addins/GalagoPresence/GalagoPresenceNoteAddin.cs:244
+#, csharp-format
+msgid "Cannot contact '{0}'"
+msgstr "'{0}' بىلەن ئالاقە قىلالمىدى"
+
+#: ../Tomboy/Addins/GalagoPresence/GalagoPresenceNoteAddin.cs:247
+#, csharp-format
+msgid "Error running gaim-remote: {0}"
+msgstr "gaim-remote نى ئىجرا قىلىۋاتقاندا خاتالىق كۆرۈلدى: {0}"
+
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampNoteAddin.cs:29
+msgid "Insert Timestamp"
+msgstr "ۋاقىت(Timestamp) قىستۇرۇش"
+
+#. initial newline
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:29
+#: ../Tomboy/Applet.cs:223 ../Tomboy/Preferences.cs:154
+msgid "dddd, MMMM d, h:mm tt"
+msgstr "dddd، MMMM d، h:mm tt"
+
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:54
+msgid "Choose one of the predefined formats or use your own."
+msgstr "ئالدىن بەلگىلەنگەن فورماتنى تاللاڭ ياكى ئۆزىڭىزنىڭكىنى ئىشلىتىڭ."
+
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:62
+msgid "Use _Selected Format"
+msgstr "تاللانغان فورماتنى ئىشلەت(_S)"
+
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:87
+msgid "_Use Custom Format"
+msgstr "ئىختىيارىي فورماتنى ئىشلەت(_U)"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:10
+msgid "Today: Template"
+msgstr "بۈگۈن: قېلىپ"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:12
+msgid "Today: "
+msgstr "بۈگۈن: "
+
+#. Format: "Today: Friday, July 01 2005"
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:17
+msgid "dddd, MMMM d yyyy"
+msgstr "dddd، MMMM d yyyy"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:43
+msgid "Tasks"
+msgstr "ۋەزىپىلەر"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:44
+msgid "Appointments"
+msgstr "ئۇچرىشىشلار"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDayPreferences.cs:16
+#| msgid ""
+#| "Change the <span weight=\"bold\">Today: Template</span> note to customize "
+#| "the text that new Today notes have."
+msgid ""
+"Change the <b>Today: Template</b> note to customize the text that new Today "
+"notes have."
+msgstr "يېڭى بۈگۈنكى ئىزاھتا كۆرسىتىلىدىغان تېكىستنى ئۆزلەشتۈرۈش ئۈچۈن <span weight=\"bold\">بۈگۈن: قېلىپ</span>نى ئۆزگەرتسە بولىدۇ."
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDayPreferences.cs:24
+msgid "_Open Today: Template"
+msgstr "بۈگۈن: قېلىپ نى ئاچ(_O)"
+
+#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:52
+msgid "Print"
+msgstr "باس"
+
+#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:82
+msgid "Error printing note"
+msgstr "ئىزاھنى بېسىۋاتقاندا خاتالىق كۆرۈلدى"
+
+#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:223
+#, csharp-format
+msgid "Page {0} of {1}"
+msgstr "بەت {0} / {1}"
+
+#. Translators: Explanation of the date and time format specifications can be found here:
+#. * http://msdn.microsoft.com/en-us/library/system.globalization.datetimeformatinfo.aspx
+#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:242
+msgid "dddd MM/dd/yyyy, hh:mm:ss tt"
+msgstr "dddd MM/dd/yyyy، hh:mm:ss tt"
+
+#. Adding menu item when note is opened and window created
+#: ../Tomboy/Addins/RemoveBrokenLinks/RemoveBrokenLinksAddin.cs:32
+#| msgid "Never rename links"
+msgid "Remove broken links"
+msgstr "بۇزۇلغان ئۇلانمىلارنى چىقىرىۋېتىش"
+
+#: ../Tomboy/Addins/Sketching/SketchingNoteAddin.cs:19
+msgid "Add a sketch"
+msgstr "قىستۇرما رەسىم قوشىدۇ"
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:48
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:59
+msgid "Se_rver:"
+msgstr "مۇلازىمېتىر(_R):"
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:52
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:61
+msgid "User_name:"
+msgstr "ئىشلەتكۈچى ئاتى(_N):"
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:56
+msgid "_Folder Path (optional):"
+msgstr "قىسقۇچ يولى(ئىختىيار)(_F):"
+
+#. Text for label describing setup required for SSH sync addin to work
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:59
+msgid ""
+"SSH synchronization requires an existing SSH key for this server and user, "
+"added to a running SSH daemon."
+msgstr "SSH قەدەمداشلاش ئۈچۈن، ئالدىن ئالا ئىشلەتكۈچى ۋە بۇ ئىشلەتكۈچى ئىشلىتىدىغان SSH ئاچقۇچىنى، SSH تۇرشاۋۇل(daemon) غا قوشۇش زۆرۈردۇر."
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:83
+msgid "Server or username field is empty."
+msgstr "مۇلازىمېتىر ياكى ئىشلەتكۈچى ئاتى قۇرۇق."
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:143
+msgid "SSH"
+msgstr "SSH"
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:192
+msgid ""
+"Timeout connecting to server. Please ensure that your SSH key has been added "
+"to a running SSH daemon."
+msgstr "مۇلازىمېتىرغا باغلىنىش مۆھلەتتىن ئېشىپ كەتتى. SSH ئاچقۇچى ئىجرا بولۇۋاتقان SSH daemon غا قوشۇلغانمۇ تەكشۈرۈڭ."
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:50
+msgid "Import from Sticky Notes"
+msgstr "Sticky ئىزاھتىن ئىمپورت قىلىش"
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:133
+msgid "No Sticky Notes found"
+msgstr "Sticky ئىزاھ تېپىلمىدى"
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:134
+#, csharp-format
+msgid "No suitable Sticky Notes file was found at \"{0}\"."
+msgstr "\"{0}\" دىن مۇۋاپىق Sticky ئىزاھ ھۆججىتى تېپىلمىدى."
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:143
+msgid "Sticky Notes import completed"
+msgstr "Sticky ئىزاھنى ئىمپورت قىلىش تاماملاندى"
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:144
+#, csharp-format
+#| msgid "<b>{0}</b> of <b>{1}</b> Sticky Notes were successfully imported."
+msgid "<b>{0}</b> of <b>{1}</b> Sticky Note was successfully imported."
+msgid_plural ""
+"<b>{0}</b> of <b>{1}</b> Sticky Notes were successfully imported."
+msgstr[0] "<b>{0}</b> of <b>{1}</b>Sticky ئىزاھ مۇۋەپپەقىيەتلىك ئىمپورت قىلىندى."
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:159
+msgid "Untitled"
+msgstr "ماۋزۇسىز"
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:188
+msgid "Sticky Note: "
+msgstr "Sticky ئىزاھ: "
+
+#: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:62
+msgid "Tasque"
+msgstr "Tasque"
+
+#. Note to translators: "All" here must match up with the "All"
+#. category translation in Tasque for this to work properly.  "All"
+#. is used here to allow Tasque to decide which default category
+#. will be used to create the new task.
+#: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:86
+msgid "All"
+msgstr "ھەممىسى"
+
+#: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:145
+msgid "--- Tasque is not running ---"
+msgstr "--- Tasque ئىجرا قىلىنمىغان ---"
+
+#: ../Tomboy/Addins/Underline/UnderlineMenuItem.cs:12
+msgid "_Underline"
+msgstr "ئاستى سىزىق(_U)"
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:56
+msgid "_URL:"
+msgstr "_URL:"
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:67
+msgid "_Password:"
+msgstr "ئىم(_P):"
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:80
+msgid "URL, username, or password field is empty."
+msgstr "URL، ئىشلەتكۈچى ئاتى ياكى ئىم قۇرۇق."
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:133
+msgid "WebDAV"
+msgstr "WebDAV"
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:192
+msgid ""
+"There was an error connecting to the server.  This may be caused by using an "
+"incorrect user name and/or password."
+msgstr "مۇلازىمېتىرغا باغلىنىشتا خاتالىق كۆرۈلدى. سەۋەبى ئىشلەتكۈچى ئاتى ياكى ئىم خاتا"
+
+#. TODO: If the above fails (no keyring daemon), save all but password
+#. to GConf, and notify user.
+#. Save configuration into GConf
+#. Preferences.Set ("/apps/tomboy/sync_wdfs_url", url ?? string.Empty);
+#. Preferences.Set ("/apps/tomboy/sync_wdfs_username", username ?? string.Empty);
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:268
+msgid ""
+"Saving configuration to the GNOME keyring failed with the following message:"
+msgstr "GNOME keyring غا سەپلىمىلەرنى ساقلاش مەغلۇپ بولدى. چىققان ئۈچۈن تۆۋەندىكىدەك:"
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:66
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:97
+msgid "Connect to Server"
+msgstr "مۇلازىمېتىرغا باغلا"
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:68
+msgid "Connected"
+msgstr "باغلاندى"
+
+#. Translators: The web service supporting Tomboy WebSync is not responding as expected
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:126
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:157
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:171
+msgid "Server not responding. Try again later."
+msgstr "مۇلازىمېتىردىن جاۋاب يوق. كېيىن قايتا سىناڭ."
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:202
+msgid "Authorization Failed, Try Again"
+msgstr "سالاھىيەت تەكشۈرۈش مەغلۇپ بولدى، قايتا سىناڭ"
+
+#. Translators: Title of web page presented to user after they authorized Tomboy for sync
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:211
+msgid "Tomboy Web Authorization Successful"
+msgstr "Tomboy تور سالاھىيەت تەكشۈرۈشى مۇۋەپپەقىيەتلىك بولدى"
+
+#. Translators: Body of web page presented to user after they authorized Tomboy for sync
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:213
+msgid ""
+"Please return to the Tomboy Preferences window and press Save to start "
+"synchronizing."
+msgstr "Tomboy تەڭشەكلىرى كۆزنىكىگە قايتىپ «ساقلا» نى چەكسىڭىز، قەدەمداشلاش باشلىنىدۇ."
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:222
+msgid "Connected. Press Save to start synchronizing"
+msgstr "باغلاندى. «ساقلا» نى چەكسىڭىز، قەدەمداشلاش باشلىنىدۇ"
+
+#. Translators: The user must take action in their web browser to continue the authorization process
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:228
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:240
+msgid "Authorizing in browser (Press to reset connection)"
+msgstr "توركۆرگۈدە دەلىللەش(چېكىلسە باغلىنىش ئەسلىگە قايتىدۇ)"
+
+#. Translators: Sometimes a user's default browser is not set, so we recommend setting it and trying again
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:236
+msgid "Set the default browser and try again"
+msgstr "كۆڭۈلدىكى توركۆرگۈنى بەلگىلەپ قايتا سىناڭ"
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncServiceAddin.cs:70
+msgid "Tomboy Web"
+msgstr "Tomboy تورى"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:53
+#, csharp-format
+#| msgid "HTML Export All Linked Notes"
+msgid "Export All Notes to {0}"
+msgstr "بارلىق ئىزاھلارنى {0} نىڭغا ئېكسپورت قىلىدۇ"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:54
+#, csharp-format
+#| msgid "Start synchronizing notes"
+msgid "Start exporting notes to {0}"
+msgstr "ئىزاھلارنى {0} نىڭغا ئېكسپورت قىلىشنى باشلايدۇ"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:58
+#, csharp-format
+#| msgid "Delete the selected notebook"
+msgid "Export selected notebook to {0}"
+msgstr "تاللانغان دەپتەرنى {0} غا ئېكسپورت قىلىدۇ"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:59
+#, csharp-format
+msgid "Start exporting notebook to {0}"
+msgstr "دەپتەرنى {0} نىڭغا ئېكسپورت قىلىشنى باشلايدۇ"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:65
+#: ../Tomboy/Synchronization/SyncManager.cs:161
+msgid "_Tools"
+msgstr "قوراللار(_T)"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:68
+#| msgid "Export to HTML"
+msgid "Export"
+msgstr "چىقار"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:69
+#| msgid "Export linked notes"
+msgid "Export your notes."
+msgstr "ئىزاھلارنى ئېكسپورت قىلىدۇ."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:72
+#, csharp-format
+#| msgid "HTML Export All Linked Notes"
+msgid "Export All Notes To {0}"
+msgstr "بارلىق ئىزاھلارنى {0} نىڭغا ئېكسپورت قىلىش"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:77
+#, csharp-format
+msgid "Export Selected Notebook To {0}"
+msgstr "تاللانغان دەپتەرنى {0} غا ئېكسپورت قىلىش"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:153
+#, csharp-format
+#| msgid "All Notes"
+msgid "All Notes {0} Export"
+msgstr "بارلىق ئىزاھ {0} لارنى ئېكسپورت قىلىش"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:193
+#: ../Tomboy/ExportAllApplicationAddin.cs:271
+#| msgid "Could not read testfile."
+msgid "Could not export, access denied."
+msgstr "ئېكسپورت قىلغىلى بولمىدى، زىيارەت رەت قىلىندى."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:198
+#: ../Tomboy/ExportAllApplicationAddin.cs:276
+#| msgid "Folder does not exist."
+msgid "Could not export, folder does not exist."
+msgstr "ئېكسپورت قىلغىلى بولمىدى، قىسقۇچ مەۋجۇت ئەمەس."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:203
+#: ../Tomboy/ExportAllApplicationAddin.cs:281
+#, csharp-format
+#| msgid "Your note was exported to \"{0}\"."
+msgid "Could not export: {0}"
+msgstr "ئېكسپورت قىلغىلى بولمىدى: {0}"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:205
+#: ../Tomboy/ExportAllApplicationAddin.cs:283
+msgid "Unknown error."
+msgstr "نامەلۇم خاتالىق."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:236
+#: ../Tomboy/Notebooks/Notebook.cs:237
+msgid "Unfiled Notes"
+msgstr "رەتلەنمىگەن ئىزاھلار"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:389
+#, csharp-format
+#| msgid "Your note was exported to \"{0}\"."
+msgid "Your notes were exported to \"{0}\"."
+msgstr "ئىزاھلار «{0}» غا ئېكسپورت قىلىندى."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:398
+#| msgid "Note exported successfully"
+msgid "Notes exported successfully"
+msgstr "ئىزاھلار مۇۋەپپەقىيەتلىك ئېكسپورت قىلىندى"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:421
+#, csharp-format
+#| msgid "Could not save the file \"{0}\""
+msgid "Could not save the files in \"{0}\""
+msgstr "ھۆججەتلەرنى «{0}» غا ساقلىغىلى بولمىدى"
+
+#. Translators: {0} is the export type, e.g. HTML
+#: ../Tomboy/ExportAllApplicationAddin.cs:507
+#, csharp-format
+#| msgid "Destination for HTML Export"
+msgid "Create destination folder for {0} export"
+msgstr "ئېكسپورت قىلىش ئۈچۈن ئىشلىتىلىدىغان مۇندەرىجە {0} نى قۇرۇش"
+
+#: ../Tomboy/JumpListManager.cs:96 ../Tomboy/RecentChanges.cs:85
+msgid "Search All Notes"
+msgstr "بارلىق ئىزاھلارنى ئىزدەش"
+
+#. IShellLink new_notebook = CreateShellLink("New Notebook", topmboy_path, "--new-notebook",
+#. icons_path, (int)TomboyIcons.NewNotebook);
+#. if (new_notebook != null)
+#. object_collection.AddObject(new_notebook);
+#: ../Tomboy/JumpListManager.cs:106
+msgid "Create New Note"
+msgstr "يېڭى ئىزاھ قۇرۇش"
+
+#: ../Tomboy/JumpListManager.cs:136
+#, csharp-format
+msgid "{0} (new)"
+msgstr "{0} (يېڭى)"
+
+#: ../Tomboy/JumpListManager.cs:158
+msgid "Recent Notes"
+msgstr "يېقىنقى ئىزاھلار"
+
+#. Translators: This is the name of "Window" menu in the Mac menubar
+#: ../Tomboy/MacApplication.cs:215
+msgid "_Window"
+msgstr "كۆزنەك(_W)"
+
+#: ../Tomboy/MacApplication.cs:234
+msgid "Preferences..."
+msgstr "مايىللىق…"
+
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:24
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:53
+msgid "Create a new notebook"
+msgstr "يېڭى دەپتەر قۇرىدۇ"
+
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:25
+msgid "Type the name of the notebook you'd like to create."
+msgstr "قۇرماقچى بولغان دەپتەرنىڭ ئاتىنى كىرگۈزۈڭ."
+
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:31
+msgid "N_otebook name:"
+msgstr "دەپتەر ئاتى(_o):"
+
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:45
+msgid "Name already taken"
+msgstr "بۇ ئات ئىشلىتىلىپ بولغان"
+
+#. Translation note: This is the Create button in the Create
+#. New Note Dialog.
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:59
+msgid "C_reate"
+msgstr "قۇر(_R)"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:48
+msgid "Note_books"
+msgstr "دەپتەرلەر(_B)"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:49
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:69
+msgid "Create a new note in a notebook"
+msgstr "دەپتەرگە يېڭىدىن ئىزاھ قۇرىدۇ"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:52
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:223
+msgid "New Note_book..."
+msgstr "يېڭى دەپتەر(_B)…"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:56
+msgid "_New Note"
+msgstr "يېڭى ئىزاھ(_N)"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:57
+msgid "Create a new note in this notebook"
+msgstr "بۇ دەپتەرگە يېڭىدىن ئىزاھ قۇرىدۇ"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:60
+msgid "_Open Template Note"
+msgstr "قېلىپ ئىزاھنى ئاچ(_O)"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:61
+msgid "Open this notebook's template note"
+msgstr "بۇ دەپتەرنىڭ قېلىپ ئىزاھىنى ئاچىدۇ"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:64
+msgid "Delete Note_book"
+msgstr "دەپتەرنى ئۆچۈر(_B)"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:65
+msgid "Delete the selected notebook"
+msgstr "تاللانغان دەپتەرنى ئۆچۈرىدۇ"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:68
+#: ../Tomboy/RecentChanges.cs:276
+msgid "Notebooks"
+msgstr "دەپتەرلەر"
+
+#. The templateNoteTite should show the name of the
+#. notebook.  For example, if the name of the notebooks
+#. "Meetings", the templateNoteTitle should be "Meetings
+#. Notebook Template".  Translators should place the
+#. name of the notebook accordingly using "{0}".
+#. TODO: Figure out how to make this note for
+#. translators appear properly.
+#: ../Tomboy/Notebooks/Notebook.cs:79
+#, csharp-format
+msgid "{0} Notebook Template"
+msgstr "{0} دەپتەر قېلىپى"
+
+#: ../Tomboy/Notebooks/Notebook.cs:153
+#| msgid "_New Note"
+msgid "New Note"
+msgstr "يېڭى ئىزاھ"
+
+#: ../Tomboy/Notebooks/Notebook.cs:205
+msgid "All Notes"
+msgstr "بارلىق ئىزاھلار"
+
+#: ../Tomboy/Notebooks/NotebookManager.cs:367
+msgid "Really delete this notebook?"
+msgstr "بۇ دەپتەرنى راستلا ئۆچۈرەمسىز؟"
+
+#: ../Tomboy/Notebooks/NotebookManager.cs:369
+msgid ""
+"The notes that belong to this notebook will not be deleted, but they will no "
+"longer be associated with this notebook.  This action cannot be undone."
+msgstr "بۇ دەپتەردىكى ئىزاھلار ئۆچۈرۈلمەيدۇ، بىراق ئۇلارنىڭ دەپتەر بىلەن بولغان مۇناسىۋىتى يوق بولىدۇ. بۇ مەشغۇلاتتىن يېنىۋالغىلى بولمايدۇ."
+
+#: ../Tomboy/Notebooks/NotebookMenuItem.cs:14
+msgid "No notebook"
+msgstr "دەپتەر يوق"
+
+#. Translators should preserve the "{0}" in the following
+#. string.  After being formatted for a notebook named,
+#. "Meetings", for example, the resultant string would be:
+#. New "Meetings" Note
+#: ../Tomboy/Notebooks/NotebookNewNoteMenuItem.cs:27
+#, csharp-format
+msgid "New \"{0}\" Note"
+msgstr "يېڭى \"{0}\" ئىزاھ"
+
+#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:56
+msgid "Place this note into a notebook"
+msgstr "بۇ ئىزاھنى دەپتەرگە سېلىڭ"
+
+#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:148
+msgid "Notebook"
+msgstr "دەپتەر"
+
+#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:177
+msgid "_New notebook..."
+msgstr "يېڭى دەپتەر(_N)…"
+
+#: ../Tomboy/Note.cs:515 ../Tomboy/NoteManager.cs:475
+#, csharp-format
+msgid "New Note {0}"
+msgstr "يېڭى ئىزاھ {0}"
+
+#: ../Tomboy/Note.cs:1607
+#, csharp-format
+#| msgid "Really delete this {0} note?"
+#| msgid_plural "Really delete these {0} notes?"
+msgid "Really delete \"{0}\"?"
+msgstr "راستلا «{0}» نى ئۆچۈرسۇنمۇ؟"
+
+#: ../Tomboy/Note.cs:1610
+#, csharp-format
+msgid "Really delete this {0} note?"
+msgid_plural "Really delete these {0} notes?"
+msgstr[0] "بۇ {0} ئىزاھلارنى راستلا ئۆچۈرەمسىز؟"
+
+#: ../Tomboy/Note.cs:1621
+msgid "If you delete a note it is permanently lost."
+msgstr "بۇنى ئىزاھنى ئۆچۈرسىڭىز ئۇ مەڭگۈلۈككە يوقىلىدۇ."
+
+#: ../Tomboy/Note.cs:1655
+#, csharp-format
+msgid ""
+"An error occurred while saving your notes. Please check that you have "
+"sufficient disk space, and that you have appropriate rights on {0}. Error "
+"details can be found in {1}."
+msgstr "ئىزاھلارنى ساقلاۋاتقاندا خاتالىق كۆرۈلدى. دىسكىدا يېتەرلىك بوشلۇق بارمۇ، {0} دا ھوقۇقىڭىز بارمۇ تەكشۈرۈڭ. خاتالىق تەپسىلاتى {1} دە بار."
+
+#: ../Tomboy/Note.cs:1671
+msgid "Error saving note data."
+msgstr "ئىزاھ سانلىق-مەلۇماتىنى ساقلاشتا خاتالىق كۆرۈلدى:"
+
+#. New Note Template
+#. Translators: This is 'New Note' Template, not New 'Note Template'
+#: ../Tomboy/NoteManager.cs:21 ../Tomboy/PreferencesDialog.cs:257
+msgid "New Note Template"
+msgstr "يېڭى ئىزاھ قېلىپى"
+
+#. Create migration notification note
+#. Translators: The title of the data migration note
+#: ../Tomboy/NoteManager.cs:147
+msgid "Your Notes Have Moved!"
+msgstr "ئىزاھلىرىڭىز يۆتكەلگەن!"
+
+#. Translators: The contents (not including the title) of the data migration note. {0}, {1}, {2}, {3}, and {4} are replaced by directory paths and should not be changed
+#: ../Tomboy/NoteManager.cs:160
+#, csharp-format
+msgid ""
+"In the latest version of Tomboy, your note files have moved.  You have "
+"probably never cared where your notes are stored, and if you still don't "
+"care, please go ahead and <bold>delete this note</bold>.  :-)\n"
+"\n"
+"Your old note directory is still safe and sound at <link:url>{0}</link:"
+"url> . If you go back to an older version of Tomboy, it will look for notes "
+"there.\n"
+"\n"
+"But we've copied your notes and configuration info into new directories, "
+"which will be used from now on:\n"
+"\n"
+"<list><list-item dir=\"ltr\">Notes can now be found at <link:url>{1}</link:"
+"url>\n"
+"</list-item><list-item dir=\"ltr\">Configuration is at <link:url>{2}</link:"
+"url>\n"
+"</list-item><list-item dir=\"ltr\">You can install add-ins at <link:url>{3}</"
+"link:url>\n"
+"</list-item><list-item dir=\"ltr\">Log files can be found at <link:url>{4}</"
+"link:url></list-item></list>\n"
+"\n"
+"Ciao!"
+msgstr "Tomboy نىڭ ئەڭ يېڭى نەشرىدە، ئىزاھلىرىڭىز يۆتكىۋېتىلدى. ھازىرغىچە ئىزاھلىرىڭىزنىڭ قەيەردە ساقلانغانلىقىغا ئانچە دىققەت قىلىپ كەتمىگەن بولغىيتتىڭىز، بۇنىڭدىن كېيىنمۇ شۇنداق قىلسىڭىز، <bold>بۇ ئىزاھنى ئۆچۈر</bold> نى تاللاڭ:-)\n"
+"\n"
+"سىزنىڭ كونا ئىزاھ مۇندەرىجىڭىز بۇ يەردە <link:url>{0}</link:url> يەنىلا بىخەتەر. ئەگەر Tomboy نىڭ كونا نەشرىنى قايتا ئىشلەتسىڭىز، ئىزاھلارنى يۇقىرىقى يەردىن تاپالايدۇ.\n"
+"\n"
+"بىراق ئىزاھلىرىڭىز ۋە سەپلىمىلىرىڭىزنى يېڭى مۇندەرىجىلەرگە كۆچۈرۈۋالدۇق، شۇڭا ھازىردىن باشلاپ مۇشۇلار ئىشلىتىلىدۇ\n"
+"\n"
+"<list><list-item dir=\"ltr\">ئىزاھلارنىڭ ئورنى <link:url>{1}</link:url>\n"
+"</list-item><list-item dir=\"ltr\">سەپلىمىلەرنىڭ ئورنى <link:url>{2}</link:url>\n"
+"</list-item><list-item dir=\"ltr\">قوشۇلمىلارنى <link:url>{3}</link:url> دىن ئورنىتالايسىز\n"
+"</list-item><list-item dir=\"ltr\">خاتىرىلەرنىڭ ئورنى <link:url>{4}</link:url></list-item></list>\n"
+"\n"
+"قېنى…!"
+
+#: ../Tomboy/NoteManager.cs:265
+msgid ""
+"<note-content>Start Here\n"
+"\n"
+"<bold>Welcome to Tomboy!</bold>\n"
+"\n"
+"Use this \"Start Here\" note to begin organizing your ideas and thoughts.\n"
+"\n"
+"You can create new notes to hold your ideas by selecting the \"Create New "
+"Note\" item from the Tomboy Notes menu in your GNOME Panel. Your note will "
+"be saved automatically.\n"
+"\n"
+"Then organize the notes you create by linking related notes and ideas "
+"together!\n"
+"\n"
+"We've created a note called <link:internal>Using Links in Tomboy</link:"
+"internal>.  Notice how each time we type <link:internal>Using Links in "
+"Tomboy</link:internal> it automatically gets underlined?  Click on the link "
+"to open the note.</note-content>"
+msgstr "<note-content>باشلاش\n"
+"\n"
+"<bold>Tomboy غا مەرھابا!</bold>\n"
+"\n"
+"«باشلاش» ئىزاھى ئارقىلىق ئويلىغان ھەرقانداق نەرسىڭىزنى يېزىپ قويسىڭىز بولىدۇ.\n"
+"\n"
+"GNOME تاختىيىدىكى Tomboy ئىزاھ تىزىملىكىدىن «يېڭى ئىزاھ قۇرۇش» نى تاللاپ يېڭى ئىزاھ يازالايسىز، يازغانلىرىڭىز ئاپتوماتىك ساقلىنىدۇ.\n"
+"\n"
+"ئوي-پىكىرلىرىڭىز يېزىلغان ئىزاھلارنى گۇرۇپپىلاپ ئۇلارنى بىر ئۇلانما ئارقىلىق بىرلەشتۈرەلەيسىز.!\n"
+"\n"
+"بۇ نەشرىدە <link:internal>Tomboy دا ئۇلانمىلارنى ئىشلىتىش</link:internal> دېگەن ئىزاھ يېڭىدىن قوشۇلدى. ھەر قېتىم <link:internal>Tomboy دا ئۇلانمىلارنى ئىشلىتىش</link:internal> نى كىرگۈزگەن چاغدا ئاستىغا سىزىق سىزىلغانلىقىغا دىققەت قىلدىڭىزمىكىن، ئۇلانمىنى چېكىپ ئىزاھنى ئېچىپ بېقىڭ. </note-content>"
+
+#: ../Tomboy/NoteManager.cs:284
+msgid ""
+"<note-content>Using Links in Tomboy\n"
+"\n"
+"Notes in Tomboy can be linked together by highlighting text in the current "
+"note and clicking the <bold>Link</bold> button above in the toolbar.  Doing "
+"so will create a new note and also underline the note's title in the current "
+"note.\n"
+"\n"
+"Changing the title of a note will update links present in other notes.  This "
+"prevents broken links from occurring when a note is renamed.\n"
+"\n"
+"Also, if you type the name of another note in your current note, it will "
+"automatically be linked for you.</note-content>"
+msgstr "<note-content>Tomboy دا ئۇلانمىلارنى ئىشلىتىش\n"
+"\n"
+"Tomboy دا ئىزاھلارنىڭ ئىچىدىكى يورۇتۇلغان تېكىستلەرنى بىراقلا ئۇلانمىغا ئايلاندۇرۇپ، ئۇلارنى قورال بالدىقىدىكى <bold>ئۇلانما</bold> ئارقىلىق زىيارەت قىلىشقا بولىدۇ. بۇ يەردە يېڭى ئىزاھ ياسىغاندا، ئۇنىڭ ماۋزۇسىنىڭ ئاستىغا سىزىق سىزىلىدۇ.\n"
+"\n"
+"ئىزاھنىڭ ماۋزۇسى ئۆزگەرسە، باشقا ئىزاھ ئىچىدىكى بارلىق ئۇلانمىلىرىمۇ ئۆزگىرىدۇ. شۇنداق بولغاچقا ئىزاھنىڭ ماۋزۇسى ئۆزگەرسىمۇ ئۇنىڭ ئۇلانمىلىرى ئۈزۈلۈپ كەتمەيدۇ.\n"
+"\n"
+"يەنە، ھازىرقى ئىزاھ ئىچىگە باشقا ئىزاھنىڭ ئاتىنى كىرگۈزسىڭىزمۇ، ئاپتوماتىك ئۇلانما ھاسىل بولىدۇ.</note-content>"
+
+#. Attempt to find an existing Start Here note
+#: ../Tomboy/NoteManager.cs:299 ../Tomboy/NoteManager.cs:395
+msgid "Start Here"
+msgstr "«باشلاش»"
+
+#: ../Tomboy/NoteManager.cs:304
+msgid "Using Links in Tomboy"
+msgstr "Tomboy دا ئۇلانمىلارنى ئىشلىتىلسۇن"
+
+#. Use a simple "Describe..." body and highlight
+#. it so it can be easily overwritten
+#: ../Tomboy/NoteManager.cs:543 ../Tomboy/NoteManager.cs:646
+msgid "Describe your new note here."
+msgstr "يېڭى ئىزاھنى بۇ يەردە بايان قىلىڭ."
+
+#: ../Tomboy/NoteRenameDialog.cs:50
+msgid "Rename Note Links?"
+msgstr "ئىزاھ ئۇلانمىلىرىنىڭ ئاتى ئۆزگەرتىلسۇنمۇ؟"
+
+#: ../Tomboy/NoteRenameDialog.cs:56
+msgid "_Rename Links"
+msgstr "ئۇلانمىلارنىڭ ئاتىنى ئۆزگەرتىش(_R)"
+
+#: ../Tomboy/NoteRenameDialog.cs:59
+msgid "_Don't Rename Links"
+msgstr "ئۇلانمىلارنىڭ ئاتىنى ئۆزگەرتمە(_D)"
+
+#: ../Tomboy/NoteRenameDialog.cs:67
+#, csharp-format
+msgid ""
+"Rename links in other notes from \"<span underline=\"single\">{0}</span>\" "
+"to \"<span underline=\"single\">{1}</span>\"?\n"
+"\n"
+"If you do not rename the links, they will no longer link to anything."
+msgstr "باشقا ئىزاھ ئىچىدىكى ئۇلانمىلارنى \"<span underline=\"single\">{0}</span>\" دىن \"<span underline=\"single\">{1}</span>\"  غا ئۆزگەرتسۇنمۇ؟\n"
+"\n"
+"ئۆزگەرتمىسىڭىز، بۇ ئۇلانما ھېچقانداق يەرگە ئۇلانمايدۇ."
+
+#: ../Tomboy/NoteRenameDialog.cs:83
+msgid "Rename Links"
+msgstr "ئۇلانما ئاتىنى ئۆزگەرتىش"
+
+#: ../Tomboy/NoteRenameDialog.cs:95
+#: ../Tomboy/Synchronization/SyncDialog.cs:119
+msgid "Note Title"
+msgstr "ئىزاھ ماۋزۇسى"
+
+#. Translators: This button causes all notes in the list to be selected
+#: ../Tomboy/NoteRenameDialog.cs:118
+msgid "Select All"
+msgstr "ھەممىنى تاللا"
+
+#. Translators: This button causes all notes in the list to be unselected
+#: ../Tomboy/NoteRenameDialog.cs:127
+msgid "Select None"
+msgstr "ھەممىنى تاللىما"
+
+#: ../Tomboy/NoteRenameDialog.cs:144
+msgid "Ad_vanced"
+msgstr "ئالىي(_V)"
+
+#: ../Tomboy/NoteRenameDialog.cs:147
+msgid "Always show this _window"
+msgstr "بۇ كۆزنەكنى ھەمىشە كۆرسەت(_W)"
+
+#: ../Tomboy/NoteRenameDialog.cs:155
+msgid "Never rename _links"
+msgstr "ئۇلانمىلارنىڭ ئاتى قەتئىي ئۆزگەرتىلمىسۇن(_L)"
+
+#: ../Tomboy/NoteRenameDialog.cs:163
+msgid "Alwa_ys rename links"
+msgstr "ئۇلانمىلار ئاتى ھەمىشە ئۆزگەرتىلسۇن(_Y)"
+
+#: ../Tomboy/NoteWindow.cs:59
+msgid "Find in This Note"
+msgstr "بۇ ئىزاھتىن تېپىش"
+
+#: ../Tomboy/NoteWindow.cs:366
+msgid "_Link to New Note"
+msgstr "يېڭى ئىزاھقا ئۇلا(_L)"
+
+#: ../Tomboy/NoteWindow.cs:378
+msgid "Te_xt"
+msgstr "تېكىست(_X)"
+
+#: ../Tomboy/NoteWindow.cs:386
+msgid "_Find in This Note"
+msgstr "بۇ ئىزاھتىن تاپ(_F)"
+
+#: ../Tomboy/NoteWindow.cs:401
+msgid "Clos_e All Notes"
+msgstr "ھەممە ئىزاھلارنى ياپ(_E)"
+
+#: ../Tomboy/NoteWindow.cs:441
+msgid "Search"
+msgstr "ئىزدە"
+
+#. TODO: If we ever add a way to customize internal keybindings, this will need to change
+#: ../Tomboy/NoteWindow.cs:445
+#| msgid "Search All Notes"
+msgid "Search your notes"
+msgstr "ئىزاھلارنى ئىزدەيدۇ"
+
+#: ../Tomboy/NoteWindow.cs:457
+msgid "Link"
+msgstr "ئۇلانما"
+
+#: ../Tomboy/NoteWindow.cs:464
+#| msgid "Link selected text to a new note (Ctrl-L)"
+msgid "Link selected text to a new note"
+msgstr "تاللانغان تېكىستنى يېڭى ئىزاھقا ئۇلايدۇ"
+
+#: ../Tomboy/NoteWindow.cs:477
+msgid "_Text"
+msgstr "تېكىست(_T)"
+
+#: ../Tomboy/NoteWindow.cs:482
+msgid "Set properties of text"
+msgstr "تېكىستنىڭ خاسلىقىنى بەلگىلەيدۇ"
+
+#: ../Tomboy/NoteWindow.cs:487
+msgid "T_ools"
+msgstr "قورال(_O)"
+
+#: ../Tomboy/NoteWindow.cs:491
+msgid "Use tools on this note"
+msgstr "بۇ ئىزاھلاردا قورال ئىشلىتىدۇ"
+
+#: ../Tomboy/NoteWindow.cs:499
+msgid "Delete this note"
+msgstr "بۇ ئىزاھنى ئۆچۈرىدۇ"
+
+#: ../Tomboy/NoteWindow.cs:507 ../Tomboy/Synchronization/SyncManager.cs:163
+msgid "Synchronize Notes"
+msgstr "ئىزاھلارنى قەدەمداشلاش"
+
+#: ../Tomboy/NoteWindow.cs:565
+msgid ""
+"This note is a template note. It determines the default content of regular "
+"notes, and will not show up in the note menu or search window."
+msgstr "بۇ بىر قېلىپ ئىزاھاتى. بۇ نورمال ئىزاھنىڭ كۆڭۈلدىكى مەزمۇنىنى بەلگىلەيدۇ، بىراق ئىزاھ تىزىملىكى ياكى ئىزدەش كۆزنىكىدە كۆرسىتىلمەيدۇ."
+
+#: ../Tomboy/NoteWindow.cs:571
+#| msgid "Connect to Server"
+msgid "Convert to regular note"
+msgstr "نورمال ئىزاھقا ئايلاندۇرىدۇ"
+
+#: ../Tomboy/NoteWindow.cs:576
+msgid "Save Si_ze"
+msgstr "چوڭلۇقىنى ساقلا(_Z)"
+
+#: ../Tomboy/NoteWindow.cs:585
+#| msgid "Select None"
+msgid "Save Se_lection"
+msgstr "تاللانغاننى ساقلا(_L)"
+
+#: ../Tomboy/NoteWindow.cs:594
+#| msgid "Note Title"
+msgid "Save _Title"
+msgstr "ماۋزۇنى ساقلا(_T)"
+
+#: ../Tomboy/NoteWindow.cs:639
+msgid "_Find..."
+msgstr "ئىزدە(_F)…"
+
+#: ../Tomboy/NoteWindow.cs:650
+msgid "Find _Next"
+msgstr "كېيىنكىسىنى ئىزدە(_N)"
+
+#: ../Tomboy/NoteWindow.cs:663
+msgid "Find _Previous"
+msgstr "ئالدىنقىنى ئىزدە(_P)"
+
+#: ../Tomboy/NoteWindow.cs:751
+msgid "Cannot create note"
+msgstr "ئىزاھ قۇرغىلى بولمىدى"
+
+#: ../Tomboy/NoteWindow.cs:832
+msgid "_Find:"
+msgstr "ئىزدە(_F):"
+
+#: ../Tomboy/NoteWindow.cs:843
+msgid "_Previous"
+msgstr "ئالدىنقى(_P)"
+
+#: ../Tomboy/NoteWindow.cs:852
+msgid "_Next"
+msgstr "كېيىنكى(_N)"
+
+#: ../Tomboy/NoteWindow.cs:1335
+msgid "_Bold"
+msgstr "توم(_B)"
+
+#: ../Tomboy/NoteWindow.cs:1347
+msgid "_Italic"
+msgstr "يانتۇ(_I)"
+
+#: ../Tomboy/NoteWindow.cs:1359
+msgid "_Strikeout"
+msgstr "ئۆچۈرۈش سىزىقى(_S)"
+
+#: ../Tomboy/NoteWindow.cs:1371
+msgid "_Highlight"
+msgstr "يورۇتۇش(_H)"
+
+#: ../Tomboy/NoteWindow.cs:1384
+msgid "Font Size"
+msgstr "خەت چوڭلۇقى"
+
+#: ../Tomboy/NoteWindow.cs:1387
+msgid "_Normal"
+msgstr "نورمال(_N)"
+
+#: ../Tomboy/NoteWindow.cs:1404
+msgid "Hu_ge"
+msgstr "بەك چوڭ(_G)"
+
+#: ../Tomboy/NoteWindow.cs:1412
+msgid "_Large"
+msgstr "چوڭ(_L)"
+
+#: ../Tomboy/NoteWindow.cs:1420
+msgid "S_mall"
+msgstr "كىچىك(_M)"
+
+#: ../Tomboy/NoteWindow.cs:1429
+msgid "Increase Font Size"
+msgstr "خەت چوڭلۇقىنى چوڭايتىش"
+
+#: ../Tomboy/NoteWindow.cs:1447
+msgid "Decrease Font Size"
+msgstr "خەت چوڭلۇقىنى كىچىكلىتىش"
+
+#: ../Tomboy/NoteWindow.cs:1467
+msgid "Bullets"
+msgstr "Bullets"
+
+#: ../Tomboy/PreferencesDialog.cs:81
+msgid "Editing"
+msgstr "تەھرىرلەۋاتىدۇ"
+
+#: ../Tomboy/PreferencesDialog.cs:84
+msgid "Hotkeys"
+msgstr "تېزلەتمە كۇنۇپكىلار"
+
+#: ../Tomboy/PreferencesDialog.cs:86
+msgid "Synchronization"
+msgstr "قەدەمداشلاش"
+
+#: ../Tomboy/PreferencesDialog.cs:88
+msgid "Add-ins"
+msgstr "قىستۇرمىلار"
+
+#: ../Tomboy/PreferencesDialog.cs:174
+msgid "_Spell check while typing"
+msgstr "كىرگۈزۈۋاتقاندا ئىملاسى تەكشۈرۈلسۇن(_S)"
+
+#: ../Tomboy/PreferencesDialog.cs:183
+msgid ""
+"Misspellings will be underlined in red, with correct spelling suggestions "
+"shown in the context menu."
+msgstr "ئىملاسى خاتالىرىنىڭ ئاستىغا قىزىل سىزىق سىزىلىدۇ، ماس نامزاتلار مەزمۇن تىزىملىكىدە كۆرسىتىلىدۇ."
+
+#. WikiWords...
+#: ../Tomboy/PreferencesDialog.cs:194
+msgid "Highlight _WikiWords"
+msgstr "_WikiWords  يورۇتۇلسۇن"
+
+#: ../Tomboy/PreferencesDialog.cs:202
+msgid ""
+"Enable this option to highlight words <b>ThatLookLikeThis</b>. Clicking the "
+"word will create a note with that name."
+msgstr "«ThatLookLikeThis» دېگەن سۆزنى يورۇتۇش ئۈچۈن بۇنى ئىشلىتىڭ. بۇ سۆزنى چەكسە شۇنى ئات قىلىپ بىر ئىزاھ قۇرغىلى بولىدۇ."
+
+#. Auto bulleted list
+#: ../Tomboy/PreferencesDialog.cs:209
+msgid "Enable auto-_bulleted lists"
+msgstr "ئاپتوماتىك بەلگە قويۇلىدىغان تىزىمى ئىناۋەتلىك قىل"
+
+#: ../Tomboy/PreferencesDialog.cs:218
+msgid "Use custom _font"
+msgstr "ئىختىيارى خەت نۇسخىسى ئىشلىتىلسۇن(_F)"
+
+#: ../Tomboy/PreferencesDialog.cs:236
+msgid "When renaming a linked note: "
+msgstr "ئۇلانمىلىق ئىزاھنىڭ ئاتى ئۆزگەرتىلگەندە: "
+
+#: ../Tomboy/PreferencesDialog.cs:239
+msgid "Ask me what to do"
+msgstr "قانداق قىلىشنى مەندىن سورا"
+
+#: ../Tomboy/PreferencesDialog.cs:240
+msgid "Never rename links"
+msgstr "ئۇلانما ئاتىنى زادى ئۆزگەرتمە"
+
+#: ../Tomboy/PreferencesDialog.cs:241
+msgid "Always rename links"
+msgstr "ئۇلانمىنى ئاتىنى ھەمىشە ئۆزگەرت"
+
+#: ../Tomboy/PreferencesDialog.cs:261
+msgid ""
+"Use the new note template to specify the text that should be used when "
+"creating a new note."
+msgstr "ئىزاھ قېلىپى ئىشلىتىپ، يېڭى ئىزاھ قۇرغاندا قېلىپتىكى تېكىستنى ئىشلەتكىلى بولىدۇ."
+
+#: ../Tomboy/PreferencesDialog.cs:270
+msgid "Open New Note Template"
+msgstr "يېڭى ئىزاھ قېلىپىنى ئېچىش"
+
+#. Hotkeys...
+#: ../Tomboy/PreferencesDialog.cs:327
+msgid "Listen for _Hotkeys"
+msgstr "تېزلەتمىلەر(Hotkeys)نى تىڭشا(_H)"
+
+#: ../Tomboy/PreferencesDialog.cs:336
+msgid ""
+"Hotkeys allow you to quickly access your notes from anywhere with a "
+"keypress. Example Hotkeys: <b>&lt;Control&gt;&lt;Shift&gt;F11</b>, <b>&lt;"
+"Alt&gt;N</b>"
+msgstr "تېزلەتمىلەر ئىزاھلىرىڭىزنى ھەممە يەردە تېزلا زىيارەت قىلىشىڭىزغا ئىمكانىيەت يارىدۇ. تېزلەتمىلەرنىڭ مىساللىرى: <b>&lt;Control&gt;&lt;Shift&gt;F11</b>، <b>&lt;Alt&gt;N</b>"
+
+#. Show notes menu keybinding...
+#: ../Tomboy/PreferencesDialog.cs:356
+msgid "Show notes _menu"
+msgstr "ئىزاھلار تىزىملىكىنى كۆرسەت(_M)"
+
+#. Open Start Here keybinding...
+#: ../Tomboy/PreferencesDialog.cs:373
+msgid "Open \"_Start Here\""
+msgstr "«باشلاش» نى ئاچ(_S)"
+
+#. Create new note keybinding...
+#: ../Tomboy/PreferencesDialog.cs:390
+msgid "Create _new note"
+msgstr "يېڭى ئىزاھ قۇر(_N)"
+
+#. Open Search All Notes window keybinding...
+#: ../Tomboy/PreferencesDialog.cs:407
+msgid "Open \"Search _All Notes\""
+msgstr "«ھەممە ئىزاھنى ئىزدە» نى ئاچ(_A)"
+
+#: ../Tomboy/PreferencesDialog.cs:434
+msgid "Ser_vice:"
+msgstr "مۇلازىمەت(_V):"
+
+#: ../Tomboy/PreferencesDialog.cs:487 ../Tomboy/PreferencesDialog.cs:1106
+msgid "Not configurable"
+msgstr "سەپلەنمەيدۇ"
+
+#: ../Tomboy/PreferencesDialog.cs:513
+msgid "Automaticall_y Sync in Background Every"
+msgstr "ئارقا تەرەپتە ئاپتوماتىك قەدەمداشلاش ۋاقىت ئارىلىقى"
+
+#. Translators: See above comment for details on
+#. this string.
+#: ../Tomboy/PreferencesDialog.cs:519
+msgid "Minutes"
+msgstr "مىنۇت"
+
+#. "Advanced..." button to bring up extra sync config dialog
+#: ../Tomboy/PreferencesDialog.cs:541
+msgid "_Advanced..."
+msgstr "ئالىي تەڭشەك(_A)..."
+
+#: ../Tomboy/PreferencesDialog.cs:602
+msgid "The following add-ins are installed"
+msgstr "تۆۋەندىكى قىستۇرمىلار ئورنىتىلغان"
+
+#: ../Tomboy/PreferencesDialog.cs:623
+msgid "Get More Add-Ins..."
+msgstr "تېخى كوپ قىستۇرمىلارنى قوشۇش…"
+
+#: ../Tomboy/PreferencesDialog.cs:641
+msgid "_Enable"
+msgstr "قوزغات(_E)"
+
+#: ../Tomboy/PreferencesDialog.cs:647
+msgid "_Disable"
+msgstr "چەكلە(_D)"
+
+#: ../Tomboy/PreferencesDialog.cs:778
+msgid "Not Implemented"
+msgstr "ئەمەلگە ئاشۇرۇلمىغان"
+
+#: ../Tomboy/PreferencesDialog.cs:792
+#, csharp-format
+msgid "{0} Preferences"
+msgstr "{0}  مايىللىقى"
+
+#: ../Tomboy/PreferencesDialog.cs:931
+msgid "Choose Note Font"
+msgstr "ئىزاھ خەت نۇسخىسىنى تاللاش"
+
+#: ../Tomboy/PreferencesDialog.cs:975
+msgid "Other Synchronization Options"
+msgstr "باشقا قەدەمداشلاش تاللانمىلىرى"
+
+#: ../Tomboy/PreferencesDialog.cs:981
+msgid ""
+"When a conflict is detected between a local note and a note on the "
+"configured synchronization server:"
+msgstr "يەرلىك ئىزاھ بىلەن سەپلەنگەن مۇلازىمېتىردىكى ئىزاھ ئارىسىدا توقۇنۇش كۆرۈلسە:"
+
+#: ../Tomboy/PreferencesDialog.cs:988
+msgid "Always ask me what to do."
+msgstr "نېمە قىلىش كېرەكلىكىنى مەندىن دائىم سورا."
+
+#: ../Tomboy/PreferencesDialog.cs:992
+msgid "Rename my local note."
+msgstr "يەرلىك ئىزاھ ئاتىنى ئۆزگەرت."
+
+#: ../Tomboy/PreferencesDialog.cs:996
+msgid "Replace my local note with the server's update."
+msgstr "مۇلازىمېتىردىكى يېڭىلانمىنى كومپيۇتېردىكىسىگە ئالماشتۇر."
+
+#: ../Tomboy/PreferencesDialog.cs:1142
+#| msgid "WARNING: Are you sure?"
+msgid "Are you sure?"
+msgstr "راستمۇ؟"
+
+#: ../Tomboy/PreferencesDialog.cs:1144
+msgid ""
+"Clearing your synchronization settings is not recommended.  You may be "
+"forced to synchronize all of your notes again when you save new settings."
+msgstr "قەدەمداشلاش تەڭشىكىنى تازىلاش تەۋسىيە قىلىنىدۇ. يېڭى تەڭشەكلەرنى ساقلاپ بولغاندا، ئىزاھلىرىڭىزنى قايتا قەدەمداشلاڭ."
+
+#: ../Tomboy/PreferencesDialog.cs:1157
+msgid "Resetting Synchronization Settings"
+msgstr "قەدەمداشلاش تەڭشەكلىرىنى ئەسلىگە قايتۇر"
+
+#: ../Tomboy/PreferencesDialog.cs:1159
+#| msgid ""
+#| "You have disabled the configured synchronization service.  Your "
+#| "synchronization settings will now be cleared.  You may be forced to "
+#| "synchronize all of your notes again when you save new settings"
+msgid ""
+"You have disabled the configured synchronization service.  Your "
+"synchronization settings will now be cleared.  You may be forced to "
+"synchronize all of your notes again when you save new settings."
+msgstr "سەپلەنگەن قەدەمداشلاش مۇلازىمىتى ئىناۋەتسىز قىلىندى. قەدەمداشلاش تەڭشەكلىرى يۇيۇلۇپ كېتىدۇ. يېڭى تەڭشەكنى ساقلىغان ۋاقىتتا، بارلىق ئىزاھلارنى مەجبۇرىي قەدەمداشلىسىڭىز بولىدۇ."
+
+#: ../Tomboy/PreferencesDialog.cs:1237
+msgid "Connection successful"
+msgstr "باغلىنىش مۇۋەپپەقىيەتلىك بولدى"
+
+#: ../Tomboy/PreferencesDialog.cs:1239
+msgid ""
+"Tomboy is ready to synchronize your notes. Would you like to synchronize "
+"them now?"
+msgstr "Tomboy ئىزاھلىرىڭىزنى قەدەمداشلاشقا تەييار بولدى. ھازىرلا قەدەمداشلامسىز؟"
+
+#: ../Tomboy/PreferencesDialog.cs:1262
+#, csharp-format
+#| msgid ""
+#| "Sorry, but something went wrong.  Please check your information and try "
+#| "again.  The {0} might be useful too."
+msgid ""
+"Please check your information and try again.  The log file {0} may contain "
+"more information about the error."
+msgstr "كىرگۈزگەن ئۇچۇرلارنى تەكشۈرۈپ قايتا سىناڭ. خاتىرە ھۆججەت {0} تەركىبىدە خاتالىق ھەققىدە كۆپرەك ئۇچۇرلار بولۇشى مۇمكىن."
+
+#: ../Tomboy/PreferencesDialog.cs:1274
+#| msgid "Error connecting :("
+msgid "Error connecting"
+msgstr "باغلىنىشتا خاتالىق كۆرۈلدى"
+
+#: ../Tomboy/PreferencesDialog.cs:1357
+msgid "Version:"
+msgstr "نەشرى:"
+
+#: ../Tomboy/PreferencesDialog.cs:1364
+msgid "Author:"
+msgstr "ئاپتور:"
+
+#: ../Tomboy/PreferencesDialog.cs:1371
+msgid "Copyright:"
+msgstr "نەشر ھوقۇقى:"
+
+#: ../Tomboy/PreferencesDialog.cs:1377
+msgid "Add-in Dependencies:"
+msgstr "قىستۇرما زۆرۈرىيەتلىرى:"
+
+#: ../Tomboy/RecentChanges.cs:100
+msgid "_Search:"
+msgstr "ئىزدە(_S):"
+
+#: ../Tomboy/RecentChanges.cs:350
+msgid "Note"
+msgstr "ئىزاھات"
+
+#: ../Tomboy/RecentChanges.cs:373
+msgid "Last Changed"
+msgstr "ئاخىرقى ئۆزگەرتىلگەن"
+
+#: ../Tomboy/RecentChanges.cs:512
+msgid "Matches"
+msgstr "تېپىلغانلىرى"
+
+#: ../Tomboy/RecentChanges.cs:563
+#| msgid "{0} match"
+#| msgid_plural "{0} matches"
+msgid "Title match"
+msgstr "ماۋزۇغا ماسلاشتۇرۇش"
+
+#: ../Tomboy/RecentChanges.cs:566
+#, csharp-format
+msgid "{0} match"
+msgid_plural "{0} matches"
+msgstr[0] "{0} تېپىلدى"
+
+#: ../Tomboy/RecentChanges.cs:580
+#, csharp-format
+msgid "Total: {0} note"
+msgid_plural "Total: {0} notes"
+msgstr[0] "جەمئىي: {0} ئىزاھ"
+
+#: ../Tomboy/RecentChanges.cs:591
+#, csharp-format
+msgid "Matches: {0} note"
+msgid_plural "Matches: {0} notes"
+msgstr[0] "تېپىلغانلىرى: {0} ئىزاھ"
+
+#: ../Tomboy/RecentChanges.cs:603
+msgid ""
+"No results found in the selected notebook.\n"
+"Click here to search across all notes."
+msgstr "تاللانغان دەپتەردىن تېپىلمىدى.\n"
+"بۇ يەر چېكىلسە بارلىق دەپتەردىن ئىزدەيدۇ."
+
+#: ../Tomboy/RecentChanges.cs:609
+msgid "Click here to search across all notebooks"
+msgstr "بارلىق دەپتەردىن ئىزدەش ئۈچۈن بۇ يەرنى چېكىڭ"
+
+#: ../Tomboy/RecentChanges.cs:775
+msgid "Notes"
+msgstr "ئىزاھ"
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:94
+#, csharp-format
+msgid ""
+"This synchronization addin is not supported on your computer. Please make "
+"sure you have FUSE and {0} correctly installed and configured"
+msgstr "بۇ قەدەمداشلاش قىستۇرمىسىنى كومپيۇتېرىڭىزدا ئىشلەتكىلى بولمايدىكەن. FUSE ۋە {0} ئورنىتىلىپ توغرا تەڭشەلگەنمۇ تەكشۈرۈڭ"
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:129
+msgid "Could not read testfile."
+msgstr "سىناق ھۆججىتىنى ئوقۇيالمىدى."
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:132
+msgid "Write test failed."
+msgstr "يېزىش سىنىقى مەغلۇپ بولدى."
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:176
+msgid "Timeout connecting to server."
+msgstr "مۇلازىمېتىرغا باغلىنىۋاتقاندا (ۋاقىت)مۆھلەتتىن ئېشىپ كەتتى."
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:184
+msgid "Error connecting to server."
+msgstr "مۇلازىمېتىرغا باغلىنىۋاتقاندا خاتالىق كۆرۈلدى."
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:198
+msgid "FUSE could not be enabled."
+msgstr "FUSE نى قوزغاتقىلى بولمىدى."
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:233
+msgid "An error ocurred while connecting to the specified server:"
+msgstr "بەلگىلەنگەن مۇلازىمېتىرغا باغلىنىۋاتقاندا خاتالىق يۈز بەردى:"
+
+#. Expander containing TreeView
+#: ../Tomboy/Synchronization/SyncDialog.cs:89
+msgid "Details"
+msgstr "تەپسىلاتى"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:126
+msgid "Status"
+msgstr "ھالىتى"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:236
+msgid "Acquiring sync lock..."
+msgstr "قەدەمداشلاش قۇلۇپىنى ئېلىۋاتىدۇ…"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:239
+msgid "Committing changes..."
+msgstr "ئۆزگىرىشلەرنى تاپشۇرۇۋاتىدۇ..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:242
+msgid "Synchronizing Notes"
+msgstr "ئىزاھلارنى قەدەمداشلاش"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:243
+msgid "Synchronizing your notes..."
+msgstr "ئىزاھلىرىڭىزنى قەدەمداشلايدۇ…"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:244
+msgid "This may take a while, kick back and enjoy!"
+msgstr "ئازراق ۋاقىت كېتىدۇ، بىردەم باشقا ئىشلارنى قىلىپ تۇرۇڭ!"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:246
+msgid "Connecting to the server..."
+msgstr "مۇلازىمېتىرغا باغلىنىۋاتىدۇ…"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:252
+msgid "Deleting notes off of the server..."
+msgstr "مۇلازىمېتىردىن ئىزاھلارنى ئۆچۈرۈۋاتىدۇ…"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:256
+msgid "Downloading new/updated notes..."
+msgstr "يېڭى/يېڭىلانغان ئىزاھلارنى چۈشۈرۈۋاتىدۇ..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:268
+msgid "Server Locked"
+msgstr "مۇلازىمېتىر قۇلۇپلانغان"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:269
+msgid "Server is locked"
+msgstr "مۇلازىمېتىر قۇلۇپلانغان"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:270
+msgid ""
+"One of your other computers is currently synchronizing.  Please wait 2 "
+"minutes and try again."
+msgstr "سىز باشقا بىر كومپيۇتېرىڭىز قەدەمداشلاش مەشغۇلاتى قىلىۋېتىپتۇ. 2 مىنۇت ساقلاپ قايتا سىناڭ."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:274
+msgid "Preparing to download updates from server..."
+msgstr "مۇلازىمېتىردىن يېڭىلانمىلارنى چۈشۈرۈشكە تەييارلىنىۋاتىدۇ…"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:277
+msgid "Preparing to upload updates to server..."
+msgstr "مۇلازىمېتىرغا يېڭىلانمىلارنى يۈكلەشكە تەييارلىنىۋاتىدۇ…"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:280
+msgid "Uploading notes to server..."
+msgstr "ئىزاھلارنى مۇلازىمېتىرغا يۈكلەۋاتىدۇ…"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:283
+msgid "Synchronization Failed"
+msgstr "قەدەمداشلاش مەغلۇپ بولدى"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:284
+msgid "Failed to synchronize"
+msgstr "قەدەمداشلاش مەغلۇپ بولدى"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:285
+msgid "Could not synchronize notes.  Check the details below and try again."
+msgstr "ئىزاھلارنى قەدەمداشلىغىلى بولمىدى. تۆۋەندىكى تەپسىلاتنى كۆرۈپ قايتا سىناڭ."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:291
+msgid "Synchronization Complete"
+msgstr "قەدەمداشلاش تامام"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:292
+msgid "Synchronization is complete"
+msgstr "قەدەمداشلاش تاماملاندى"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:294
+#, csharp-format
+msgid "{0} note updated."
+msgid_plural "{0} notes updated."
+msgstr[0] "{0} ئىزاھ يېڭىلاندى."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:299
+msgid "Your notes are now up to date."
+msgstr "ئىزاھلىرىڭىز ئەڭ يېڭى ھالەتتە."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:303
+msgid "Synchronization Canceled"
+msgstr "قەدەمداشلاش ئەمەلدىن قالدۇرۇلدى"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:304
+msgid "Synchronization was canceled"
+msgstr "قەدەمداشلاش ئەمەلدىن قالدۇرۇلدى"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:305
+msgid "You canceled the synchronization.  You may close the window now."
+msgstr "قەدەمداشلاش ئەمەلدىن قالدۇرۇلدى. بۇ كۆزنەكنى ئەمدى ئېتىۋەتسىڭىز بولىدۇ."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:309
+msgid "Synchronization Not Configured"
+msgstr "قەدەمداشلاش سەپلەنمىگەن"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:310
+msgid "Synchronization is not configured"
+msgstr "قەدەمداشلاش سەپلەنمىگەن"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:311
+msgid "Please configure synchronization in the preferences dialog."
+msgstr "قەدەمداشلاشنى مايىللىق سۆزلەشكۈسىدە سەپلەڭ."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:315
+msgid "Synchronization Service Error"
+msgstr "قەدەمداشلاش ئەمەلدىن قالدۇرۇلدى مۇلازىمىتى خاتا"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:316
+msgid "Service error"
+msgstr "مۇلازىمەت خاتالىقى"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:317
+msgid "Error connecting to the synchronization service.  Please try again."
+msgstr "قەدەمداشلاش مۇلازىمىتىگە باغلىنىۋاتقاندا خاتالىق كۆرۈلدى. قايتا سىناڭ."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:334
+msgid "Deleted locally"
+msgstr "يەرلىكتىن ئۆچۈرۈلدى"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:337
+msgid "Deleted from server"
+msgstr "مۇلازىمەتتىن ئۆچۈرۈلدى"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:340
+msgid "Updated"
+msgstr "يېڭىلاندى"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:343
+msgid "Added"
+msgstr "قوشۇلدى"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:346
+msgid "Uploaded changes to server"
+msgstr "مۇلازىمېتىرغا يۈكلەنگەن ئۆزگىرىشلەر"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:349
+msgid "Uploaded new note to server"
+msgstr "مۇلازىمېتىرغا يۈكلەنگەن يېڭى ئىزاھ"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:496
+msgid "Note Conflict"
+msgstr "ئىزاھ توقۇنۇشى"
+
+#. Suggest renaming note by appending " (old)" to the existing title
+#: ../Tomboy/Synchronization/SyncDialog.cs:502
+msgid " (old)"
+msgstr " (كونا)"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:541
+msgid "Rename local note:"
+msgstr "يەرلىكتىكى ئىزاھ ئاتىنى ئۆزگەرتىش:"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:547
+msgid "Update links in referencing notes"
+msgstr "پايدىلىنىۋاتقان ئىزاھتىكى ئۇلانمىنى يېڭىلاش"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:554
+msgid "Overwrite local note"
+msgstr "يەرلىكتىكى ئىزاھنى قاپلاش"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:558
+msgid "Always perform this action"
+msgstr "بۇ مەشغۇلاتنى دائىم قىل"
+
+#. Set initial dialog text
+#: ../Tomboy/Synchronization/SyncDialog.cs:564
+msgid "Note conflict detected"
+msgstr "ئىزاھ توقۇنۇشى بايقالدى"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:565
+#, csharp-format
+msgid ""
+"The server version of \"{0}\" conflicts with your local note.  What do you "
+"want to do with your local note?"
+msgstr "نەشرى \"{0}\" بولغان مۇلازىمېتىر يەرلىك ئىزاھ بىلەن توقۇنۇشۇپ قالدى. يەرلىك ئىزاھنى قانداق قىلىسىز؟"
+
+#: ../Tomboy/Synchronization/SyncUtils.cs:119
+#: ../Tomboy/Synchronization/SyncUtils.cs:163
+msgid "Could not enable FUSE"
+msgstr "FUSE نى ئىناۋەتلىك قىلالمىدى"
+
+#: ../Tomboy/Synchronization/SyncUtils.cs:120
+#: ../Tomboy/Synchronization/SyncUtils.cs:164
+msgid ""
+"The FUSE module could not be loaded. Please check that it is installed "
+"properly and try again."
+msgstr "FUSE بۆلىكىنى ئوقۇيالمىدى. ئۇ توغرا ئورنىتىلغانمۇ تەكشۈرۈڭ ئاندىن قايتا سىناڭ."
+
+#: ../Tomboy/Synchronization/SyncUtils.cs:135
+msgid "Enable FUSE?"
+msgstr "FUSE نى قوزغاتسۇنمۇ؟"
+
+#. TODO: This message isn't entirely accurate.
+#. We should fix it.
+#: ../Tomboy/Synchronization/SyncUtils.cs:139
+msgid ""
+"The synchronization you've chosen requires the FUSE module to be loaded.\n"
+"\n"
+"To avoid getting this prompt in the future, you should load FUSE at "
+"startup.  Add \"modprobe fuse\" to /etc/init.d/boot.local or \"fuse\" to /"
+"etc/modules."
+msgstr "تاللىغان قەدەمداشلاشنى ئىشلىتىش ئۈچۈن، FUSE بۆلىكى يۈكلىنىشى كېرەك.\n"
+"\n"
+"FUSE نى سىستېما قوزغالغان چاغدا يۈكلىنىدىغان قىلىپ قويسىڭىز، بۇنداق ئۇچۇر چىقمايدۇ. بۇنى قىلىش ئۈچۈن /etc/init.d/boot.local نىڭ ئىچىگە «modprobe fuse» نى يېزىپ قويۇڭ ياكى /etc/modules نىڭ ئىچىگە «fuse» دەپ يېزىپ قويۇڭ."
+
+#: ../Tomboy/Tomboy.cs:251
+msgid "Cannot create new note"
+msgstr "يېڭى ئىزاھ قۇرالمىدى"
+
+#: ../Tomboy/Tomboy.cs:317
+msgid "Primary Development:"
+msgstr "دەسلەپكى ئىجادىيەت:"
+
+#: ../Tomboy/Tomboy.cs:330
+msgid "Contributors:"
+msgstr "تۆھپىكارلار:"
+
+#: ../Tomboy/Tomboy.cs:415
+msgid "translator-credits"
+msgstr "Gheyret Kenji <gheyret@gmail.com>\n"
+"Sahran<sahran@live.com>"
+
+#: ../Tomboy/Tomboy.cs:424
+#| msgid ""
+#| "Copyright © 2004-2007 Alex Graveley\n"
+#| "Copyright © 2004-2010 Others\n"
+msgid ""
+"Copyright © 2004-2007 Alex Graveley\n"
+"Copyright © 2004-2011 Others\n"
+msgstr "نەشر ھوقۇقى © 2004-2007 Alex Graveley غا تەۋە\n"
+"نەشر ھوقۇقى © 2004-2007 باشقىلارغا تەۋە\n"
+
+#: ../Tomboy/Tomboy.cs:426
+msgid "A simple and easy to use desktop note-taking application."
+msgstr "ئاددىي ۋە ئىشلىتىش ئوڭاي بولغان ئۈستەلئۈستى ئىزاھ يېزىش پروگراممىسى"
+
+#: ../Tomboy/Tomboy.cs:436
+msgid "Homepage"
+msgstr "باش بەت"
+
+#: ../Tomboy/Tomboy.cs:554
+#| msgid ""
+#| "Tomboy: A simple, easy to use desktop note-taking application.\n"
+#| "Copyright (C) 2004-2006 Alex Graveley <alex@beatniksoftware.com>\n"
+#| "\n"
+msgid ""
+"Tomboy: A simple, easy to use desktop note-taking application.\n"
+"Copyright © 2004-2007 Alex Graveley\n"
+"<alex@beatniksoftware.com>\n"
+"\n"
+"Copyright © 2004-2011 Others\n"
+msgstr "تومبوي(Tomboy): ئۈستەلئۈستىدىكى ئاددىي ئىزاھ يېزىش پروگراممىسى.\n"
+"نەشر ھوقۇقى © 2004-2007 Alex Graveley غا تەۋە\n"
+"<alex@beatniksoftware.com>\n"
+"\n"
+"نەشر ھوقۇقى © 2004-2011 باشقىلارغىمۇ تەۋە\n"
+
+#: ../Tomboy/Tomboy.cs:568
+msgid ""
+"Usage:\n"
+"  --version\t\t\tPrint version information.\n"
+"  --help\t\t\tPrint this usage message.\n"
+"  --note-path [path]\t\tLoad/store note data in this directory.\n"
+"  --search [text]\t\tOpen the search all notes window with the search text.\n"
+msgstr "ئىشلىتىش ئۇسۇلى:\n"
+"  --version\t\t\tنەشر ئۇچۇرىنى چىقىرىدۇ.\n"
+"  --help\t\t\tئىشلىتىش ئۇچۇرىنى چىقىرىدۇ.\n"
+"  --note-path [path]\t\tبۇ مۇندەرىجىدىكى سانلىق-مەلۇماتلارنى ئوقۇيدۇ/ساقلايدۇ.\n"
+"  --search [text]\t\tھەممە ئىزاھتىن ئىزدەش كۆزنىكىنى كۆرسىتىدۇ(ئىزدەيدىغان تېكىستنىمۇ).\n"
+
+#: ../Tomboy/Tomboy.cs:578
+msgid ""
+"  --new-note\t\t\tCreate and display a new note.\n"
+"  --new-note [title]\t\tCreate and display a new note, with a title.\n"
+"  --open-note [title/url]\tDisplay the existing note matching title.\n"
+"  --start-here\t\t\tDisplay the 'Start Here' note.\n"
+"  --highlight-search [text]\tSearch and highlight text in the opened note.\n"
+msgstr "  --new-note\t\t\tيېڭى ئىزاھ قۇرىدۇ ۋە كۆرسىتىدۇ.\n"
+"  --new-note [title]\t\tماۋزۇلۇق يېڭى ئىزاھ قۇرىدۇ ۋە كۆرسىتىدۇ.\n"
+"  --open-note [title/url]\tماۋزۇسى ماس كەلگەن ئىزاھنى كۆرسىتىدۇ.\n"
+"  --start-here\t\t\t«باشلاش» ئىزاھىنى كۆرسىتىدۇ.\n"
+"  --highlight-search [text]\tئېچىلغان ئىزاھتىكى تېكىستنى ئىزدەيدۇ ياكى يورۇتىدۇ.\n"
+
+#: ../Tomboy/Tomboy.cs:592
+#, csharp-format
+msgid "Version {0}"
+msgstr "نەشرى {0}"
+
+#: ../Tomboy/Tray.cs:68
+msgid " (new)"
+msgstr " (يېڭى)"
+
+#: ../Tomboy/Tray.cs:293
+msgid "_About Tomboy"
+msgstr "Tomboy ھەققىدە(_A)"
+
+#: ../Tomboy/Utils.cs:189
+msgid ""
+"The \"Tomboy Notes Manual\" could not be found.  Please verify that your "
+"installation has been completed successfully."
+msgstr "«Tomboy ئىزاھ قوللانمىسى» تېپىلمىدى. توغرا ئورنىتىلغانمۇ تەكشۈرۈڭ."
+
+#: ../Tomboy/Utils.cs:198
+msgid "Help not found"
+msgstr "ياردەم تېپىلمىدى"
+
+#: ../Tomboy/Utils.cs:214
+msgid "Cannot open location"
+msgstr "ئورۇننى ئاچقىلى بولمىدى"
+
+#: ../Tomboy/Utils.cs:236
+#, csharp-format
+msgid "Today, {0}"
+msgstr "بۈگۈن، {0}"
+
+#: ../Tomboy/Utils.cs:238
+msgid "Today"
+msgstr "بۈگۈن"
+
+#: ../Tomboy/Utils.cs:242
+#, csharp-format
+msgid "Yesterday, {0}"
+msgstr "تۈنۈگۈن، {0}"
+
+#: ../Tomboy/Utils.cs:244
+msgid "Yesterday"
+msgstr "تۈنۈگۈن"
+
+#: ../Tomboy/Utils.cs:249
+#, csharp-format
+msgid "{0} day ago, {1}"
+msgid_plural "{0} days ago, {1}"
+msgstr[0] "{0} كۈن بۇرۇن، {1}"
+
+#: ../Tomboy/Utils.cs:253
+#, csharp-format
+msgid "{0} day ago"
+msgid_plural "{0} days ago"
+msgstr[0] "{0} كۈن بۇرۇن"
+
+#: ../Tomboy/Utils.cs:259
+#, csharp-format
+msgid "Tomorrow, {0}"
+msgstr "ئەتە، {0}"
+
+#: ../Tomboy/Utils.cs:261
+msgid "Tomorrow"
+msgstr "ئەتە"
+
+#: ../Tomboy/Utils.cs:266
+#, csharp-format
+msgid "In {0} day, {1}"
+msgid_plural "In {0} days, {1}"
+msgstr[0] "{0} كۈن ئىچىدە، {1}"
+
+#: ../Tomboy/Utils.cs:270
+#, csharp-format
+msgid "In {0} day"
+msgid_plural "In {0} days"
+msgstr[0] "{0} كۈن ئىچىدە"
+
+#: ../Tomboy/Utils.cs:275
+msgid "MMMM d, h:mm tt"
+msgstr "MMMM d، h:mm tt"
+
+#: ../Tomboy/Utils.cs:276
+msgid "MMMM d"
+msgstr "MMMM d"
+
+#: ../Tomboy/Utils.cs:278
+msgid "No Date"
+msgstr "چېسلا يوق"
+
+#: ../Tomboy/Utils.cs:281
+msgid "MMMM d yyyy, h:mm tt"
+msgstr "MMMM d yyyy، h:mm tt"
+
+#: ../Tomboy/Utils.cs:282
+msgid "MMMM d yyyy"
+msgstr "MMMM d yyyy"
+
+#: ../Tomboy/Watchers.cs:155
+#, csharp-format
+msgid "(Untitled {0})"
+msgstr "(ماۋزۇسىز{0})"
+
+#: ../Tomboy/Watchers.cs:189
+#, csharp-format
+msgid ""
+"A note with the title <b>{0}</b> already exists. Please choose another name "
+"for this note before continuing."
+msgstr "<b>{0}</b> ماۋزۇلۇق ئىزاھ بار. بۇ ئىزاھقا باشقا ئات بېكىتىڭ."
+
+#: ../Tomboy/Watchers.cs:204
+msgid "Note title taken"
+msgstr "ئىزاھ ئاتى ئىشلىتىلىپ بولغان"
+
+#: ../Tomboy/Watchers.cs:587
+msgid "_Copy Link Address"
+msgstr "ئۇلانما ئاتىنى كۆچۈر(_C)"
+
+#: ../Tomboy/Watchers.cs:592
+msgid "_Open Link"
+msgstr "ئۇلانما ئاچ(_O)"
+
+#~ msgid "HTML Export Last Directory"
+#~ msgstr "ئەڭ ئاخىرقى مۇندەرىجىنى HTML غا ئېكسپورت"
+
+#~ msgid "SSH (sshfs FUSE)"
+#~ msgstr "SSH (sshfs FUSE)"
+
+#~ msgid "WebDAV (wdfs FUSE)"
+#~ msgstr "WebDAV (wdfs FUSE)"
+
+#~ msgid "Really delete this note?"
+#~ msgstr "بۇ ئىزاھنى راستلا ئۆچۈرەمسىز؟"
+
+#~ msgid "Search your notes (Ctrl-Shift-F)"
+#~ msgstr "ئىزاھ ئىزدەش (Ctrl-Shift-F)"
+
+#~ msgid "Success! You're connected!"
+#~ msgstr "مۇبارەك! باغلاندىڭىز!"

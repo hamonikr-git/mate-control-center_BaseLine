@@ -1,0 +1,610 @@
+# Translation of gconf-editor to Persian.
+# Copyright (C) 2002, 2005 Sharif FarsiWeb, Inc.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# Copyright (C) Iranian Free Software Users Group (IFSUG.org)translation team, 2010.
+# Roozbeh Pournader <roozbeh@farsiweb.info>, 2002, 2005.
+# Hedayat Vatankhah <hedavat@hotpop.com>, 2005.
+# Hamed Malek <hamed@farsiweb.info>, 2005.
+# Arash Mousavi <mousavi.arash@gmail.com>, 2010.
+# Mahyar Moghimi <mahyar.moqimi@gmail.com>, 2010.
+# Mostafa Mostafa <lashar@fedoraproject.org> , 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gconf-editor HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gconf-"
+"editor&component=general\n"
+"POT-Creation-Date: 2010-10-26 17:25+0000\n"
+"PO-Revision-Date: 2010-10-29 19:02+0330\n"
+"Last-Translator: Mostafa <lashar@fedoraproject.org>\n"
+"Language-Team: Persian <translate@ifsug.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Persian\n"
+"X-Poedit-Country: IRAN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../data/gconf-editor.desktop.in.in.h:1 ../src/gconf-editor-window.c:393
+#: ../src/gconf-editor-window.c:395 ../src/gconf-editor-window.c:873
+#: ../src/gconf-editor-window.c:1372
+msgid "Configuration Editor"
+msgstr "ویراستار پیکربندی"
+
+#: ../data/gconf-editor.desktop.in.in.h:2
+msgid "Directly edit your entire configuration database"
+msgstr "ویرایش مستقیم کل پایگاه‌داده‌ی پیکربندی"
+
+#: ../data/gconf-editor.schemas.in.h:1
+msgid "Bookmarks"
+msgstr "چوب‌الف‌ها"
+
+#: ../data/gconf-editor.schemas.in.h:2
+msgid "gconf-editor folder bookmarks"
+msgstr "چوب الف های پوشه‌ی gconf-editor"
+
+#: ../src/gconf-bookmarks-dialog.c:205
+msgid "Edit Bookmarks"
+msgstr "ویرایش چوب‌الف‌ها"
+
+#: ../src/gconf-cell-renderer.c:144 ../src/gconf-cell-renderer.c:343
+msgid "<no value>"
+msgstr "<بدون مقدار>"
+
+#: ../src/gconf-editor-window.c:359
+#, c-format
+msgid "Couldn't display help: %s"
+msgstr "نمی‌توان راهنما را نمایش داد:  %s"
+
+#: ../src/gconf-editor-window.c:399
+msgid "An editor for the GConf configuration system."
+msgstr "ویراستاری برای سیستم پیکربندی GConf."
+
+#: ../src/gconf-editor-window.c:402
+msgid "translator-credits"
+msgstr ""
+"روزبه پورنادر <roozbeh@farsiweb.info>\n"
+"هدایت وطن‌خواه <hedavat@hotpop.com>\n"
+"مصطفی دانشور <lashar@fedoraproject.org>\n"
+"حامد ملک <hamed@farsiweb.info>"
+
+#: ../src/gconf-editor-window.c:429
+#, c-format
+msgid ""
+"Couldn't unset key. Error was:\n"
+"%s"
+msgstr ""
+"نمی‌توان کلید را خاموش کرد. خطا عبارت بود از:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:454
+#, c-format
+msgid ""
+"Could not create key. The error is:\n"
+"%s"
+msgstr ""
+"نمی‌توان کلید ایجاد کرد. خطا عبارت است از:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:536
+#, c-format
+msgid ""
+"Could not change key value. Error message:\n"
+"%s"
+msgstr ""
+"نمی‌توان مقدار کلید را تغییر داد. پیغام خطا:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:568
+msgid ""
+"Currently pairs and schemas can't be edited. This will be changed in a later "
+"version."
+msgstr ""
+"در حال حاضر نمی‌توان زوج‌ها و شماها را ویرایش کرد. این وضع در نسخه‌های بعدی "
+"تغییر خواهد کرد."
+
+#: ../src/gconf-editor-window.c:648
+#, c-format
+msgid ""
+"Could not set value. Error was:\n"
+"%s"
+msgstr ""
+"نمی‌توان مقدار را همگام کرد. خطا عبارت بود از:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:684 ../src/gconf-editor-window.c:728
+#, c-format
+msgid ""
+"Could not sync value. Error was:\n"
+"%s"
+msgstr ""
+"نمی‌توان مقدار را همگام کرد. خطا عبارت بود از:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:740
+msgid "_File"
+msgstr "_پرونده"
+
+#: ../src/gconf-editor-window.c:741
+msgid "_Edit"
+msgstr "_ویرایش"
+
+#: ../src/gconf-editor-window.c:742
+msgid "_Search"
+msgstr "_جستجو"
+
+#: ../src/gconf-editor-window.c:743
+msgid "_Bookmarks"
+msgstr "_چوب‌الف‌ها"
+
+#: ../src/gconf-editor-window.c:744
+msgid "_Help"
+msgstr "_راهنما"
+
+#: ../src/gconf-editor-window.c:746
+msgid "New _Settings Window"
+msgstr "پنجره‌ی _تنظیمات جدید"
+
+#: ../src/gconf-editor-window.c:747
+msgid "Open a new Configuration Editor window editing current settings"
+msgstr "بازکردن یک پنجره‌ی ویرایشگر پیکربندی جدید برای ویرایش تنظیمات فعلی"
+
+#: ../src/gconf-editor-window.c:749
+msgid "New _Defaults Window"
+msgstr "پنجره‌ی _پیش‌فرض‌های جدید"
+
+#: ../src/gconf-editor-window.c:750
+msgid "Open a new Configuration Editor window editing system default settings"
+msgstr ""
+"بازکردن یک پنجره‌ی ویرایشگر پیکربندی جدید برای ویرایش تنظیمات پیش‌فرض سیستم"
+
+#: ../src/gconf-editor-window.c:752
+msgid "New _Mandatory Window"
+msgstr "پنجره‌ی ا_جباری جدید"
+
+#: ../src/gconf-editor-window.c:753
+msgid ""
+"Open a new Configuration Editor window editing system mandatory settings"
+msgstr ""
+"بازکردن یک پنجره‌ی ویرایشگر پیکربندی جدید برای ویرایش تنظیمات اجباری سیستم"
+
+#: ../src/gconf-editor-window.c:755
+msgid "_Close Window"
+msgstr "_بستن پنجره"
+
+#: ../src/gconf-editor-window.c:755
+msgid "Close this window"
+msgstr "بستن این پنجره"
+
+#: ../src/gconf-editor-window.c:757
+msgid "_Quit"
+msgstr "_ترک"
+
+#: ../src/gconf-editor-window.c:757
+msgid "Quit the Configuration Editor"
+msgstr "ترک ویراستار پیکربندی"
+
+#: ../src/gconf-editor-window.c:760
+msgid "_Copy Key Name"
+msgstr "_نسخه‌برداری از نام کلید"
+
+#: ../src/gconf-editor-window.c:760
+msgid "Copy the name of the selected key"
+msgstr "نسخه‌برداری نام کلید انتخاب شده"
+
+#: ../src/gconf-editor-window.c:762
+msgid "_Find..."
+msgstr "_یافتن..."
+
+#: ../src/gconf-editor-window.c:762
+msgid "Find patterns in keys and values"
+msgstr "یافتن الگوها در کلیدها و مقادیر"
+
+#: ../src/gconf-editor-window.c:764
+msgid "_List Recent Keys"
+msgstr "فهرست کلیدهای اخیر"
+
+#: ../src/gconf-editor-window.c:764
+msgid "Show recently modified keys"
+msgstr "نمایش کلیدهای تغییر یافته‌ی اخیر"
+
+#: ../src/gconf-editor-window.c:767
+msgid "_Add Bookmark"
+msgstr "ا_فزودن چوب الف "
+
+#: ../src/gconf-editor-window.c:767
+msgid "Add a bookmark to the selected directory"
+msgstr "افزودن چوب الف به شاخه‌ی انتخاب شده"
+
+#: ../src/gconf-editor-window.c:769
+msgid "_Edit Bookmarks"
+msgstr "_ویرایش چوب‌الف‌ها"
+
+#: ../src/gconf-editor-window.c:769
+msgid "Edit the bookmarks"
+msgstr "ویرایش چوب‌الف‌ها"
+
+#: ../src/gconf-editor-window.c:772
+msgid "_Contents"
+msgstr "_محتویات"
+
+#: ../src/gconf-editor-window.c:772
+msgid "Open the help contents for the Configuration Editor"
+msgstr "بازکردن محتویات راهنمای ویرایشگر پیکربندی"
+
+#: ../src/gconf-editor-window.c:774
+msgid "_About"
+msgstr "_درباره"
+
+#: ../src/gconf-editor-window.c:774
+msgid "Show the about dialog for the Configuration Editor"
+msgstr "نمایش محاوره‌ی درباره‌ی ویرایشگر پیکربندی"
+
+#: ../src/gconf-editor-window.c:777
+msgid "_New Key..."
+msgstr "_کلید جدید..."
+
+#: ../src/gconf-editor-window.c:777
+msgid "Create a new key"
+msgstr "ایجاد کلید جدید"
+
+#: ../src/gconf-editor-window.c:779
+msgid "_Edit Key..."
+msgstr "_ویرایش کلید..."
+
+#: ../src/gconf-editor-window.c:779
+msgid "Edit the selected key"
+msgstr "ویرایش کلید انتخاب شده"
+
+#: ../src/gconf-editor-window.c:781
+msgid "_Unset Key"
+msgstr "_خاموش کردن کلید"
+
+#: ../src/gconf-editor-window.c:781
+msgid "Unset the selected key"
+msgstr "خاموش کردن کلید انتخاب شده"
+
+#: ../src/gconf-editor-window.c:783
+msgid "Set as _Default"
+msgstr "تنظیم به عنوان _پیش‌فرض"
+
+#: ../src/gconf-editor-window.c:783
+msgid "Set the selected key to be the default"
+msgstr "تنظیم کلید انتخاب شده به پیش‌فرض"
+
+#: ../src/gconf-editor-window.c:785
+msgid "Set as _Mandatory"
+msgstr "تنظیم به عنوان ا_جباری"
+
+#: ../src/gconf-editor-window.c:785
+msgid "Set the selected key to the mandatory"
+msgstr "تنظیم کلید انتخاب شده به اجباری"
+
+#: ../src/gconf-editor-window.c:867
+msgid "Configuration Editor (Default settings)"
+msgstr "ویراستار پیکربندی (تنظیمات پیش‌فرض)‏"
+
+#: ../src/gconf-editor-window.c:870 ../src/gconf-editor-window.c:1369
+msgid "Configuration Editor (Mandatory settings)"
+msgstr "ویراستار پیکربندی (تنظیمات اجباری)‏"
+
+#: ../src/gconf-editor-window.c:1115 ../src/gconf-editor-window.c:1116
+#: ../src/gconf-editor-window.c:1117 ../src/gconf-editor-window.c:1118
+#: ../src/gconf-editor-window.c:1147 ../src/gconf-editor-window.c:1155
+#: ../src/gconf-editor-window.c:1164 ../src/gconf-editor-window.c:1715
+#: ../src/gconf-editor-window.c:1727 ../src/gconf-editor-window.c:1739
+#: ../src/gconf-editor-window.c:1754
+msgid "(None)"
+msgstr "(هیچ‌کدام)"
+
+#: ../src/gconf-editor-window.c:1328 ../src/gconf-editor-window.c:1338
+#, c-format
+msgid ""
+"Cannot create GConf engine. Error was:\n"
+"%s"
+msgstr ""
+"نمی‌توان موتور GConf را ایجاد کرد. خطا عبارت است از:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:1366
+msgid "Configuration Editor (Defaults settings)"
+msgstr "ویراستار پیکربندی (تنظیمات پیش‌فرض)‏"
+
+#: ../src/gconf-editor-window.c:1611
+msgid "Name"
+msgstr "نام"
+
+#: ../src/gconf-editor-window.c:1635
+msgid "Value"
+msgstr "مقدار"
+
+#: ../src/gconf-editor-window.c:1662
+msgid "Key Documentation"
+msgstr "مستندات کلید"
+
+#: ../src/gconf-editor-window.c:1691 ../src/gconf-key-editor.c:614
+msgid "This key is not writable"
+msgstr "این کلید قابل نوشتن نیست"
+
+#: ../src/gconf-editor-window.c:1704
+msgid "This key has no schema"
+msgstr "این کلید شمایی ندارد"
+
+#: ../src/gconf-editor-window.c:1709
+msgid "Key name:"
+msgstr "نام کلید:"
+
+#: ../src/gconf-editor-window.c:1722
+msgid "Key owner:"
+msgstr "مالک کلید:"
+
+#: ../src/gconf-editor-window.c:1734
+msgid "Short description:"
+msgstr "شرح کوتاه:"
+
+#: ../src/gconf-editor-window.c:1747
+msgid "Long description:"
+msgstr "شرح بلند:"
+
+#: ../src/gconf-key-editor.c:87
+msgid "T_rue"
+msgstr "_درست"
+
+#: ../src/gconf-key-editor.c:90 ../src/gconf-key-editor.c:247
+#: ../src/gconf-key-editor.c:355 ../src/gconf-key-editor.c:645
+msgid "_False"
+msgstr "_نادرست"
+
+#. These have to be ordered so the EDIT_ enum matches the
+#. * menu indices
+#.
+#. These have to be ordered so the EDIT_ enum matches the
+#. * combobox indices
+#.
+#: ../src/gconf-key-editor.c:125 ../src/gconf-key-editor.c:155
+msgid "Integer"
+msgstr "عدد صحیح"
+
+#: ../src/gconf-key-editor.c:126 ../src/gconf-key-editor.c:156
+msgid "Boolean"
+msgstr "بولی"
+
+#: ../src/gconf-key-editor.c:127 ../src/gconf-key-editor.c:157
+msgid "String"
+msgstr "رشته"
+
+#. Translators: this refers to "Floating point":
+#. * see http://en.wikipedia.org/wiki/Floating_point
+#.
+#: ../src/gconf-key-editor.c:131
+msgid "Float"
+msgstr "ممیز شناور"
+
+#: ../src/gconf-key-editor.c:132
+msgid "List"
+msgstr "فهرست"
+
+#: ../src/gconf-key-editor.c:220
+msgid "Add New List Entry"
+msgstr "افزودن مدخل فهرست جدید"
+
+#: ../src/gconf-key-editor.c:238
+msgid "_New list value:"
+msgstr "مقدار فهرست _جدید:"
+
+#: ../src/gconf-key-editor.c:325
+msgid "Edit List Entry"
+msgstr "ویرایش مدخل فهرست"
+
+#: ../src/gconf-key-editor.c:343
+msgid "_Edit list value:"
+msgstr "_ویرایش مقدار فهرست:"
+
+#: ../src/gconf-key-editor.c:566
+msgid "Path:"
+msgstr "مسیر:"
+
+#: ../src/gconf-key-editor.c:577
+msgid "_Name:"
+msgstr "_نام:"
+
+#: ../src/gconf-key-editor.c:589
+msgid "_Type:"
+msgstr "ن_وع:"
+
+#: ../src/gconf-key-editor.c:626 ../src/gconf-key-editor.c:644
+#: ../src/gconf-key-editor.c:663 ../src/gconf-key-editor.c:680
+msgid "_Value:"
+msgstr "_مقدار:"
+
+#: ../src/gconf-key-editor.c:702
+msgid "List _type:"
+msgstr "_نوع فهرست:"
+
+#: ../src/gconf-key-editor.c:710
+msgid "_Values:"
+msgstr "_مقادیر:"
+
+#: ../src/gconf-key-editor.c:812
+msgid "New Key"
+msgstr "کلید جدید"
+
+#: ../src/gconf-key-editor.c:816
+msgid "Edit Key"
+msgstr "ویرایش کلید"
+
+#: ../src/gconf-search-dialog.c:60
+msgid "Pattern not found"
+msgstr "الگو پیدا نشد"
+
+#: ../src/gconf-search-dialog.c:142
+msgid "Find"
+msgstr "یافتن"
+
+#: ../src/gconf-search-dialog.c:144
+msgid "_Search for: "
+msgstr "_جستجو به دنبال: "
+
+#: ../src/gconf-search-dialog.c:165
+msgid "Search also in key _names"
+msgstr "در نام کلیدها هم جستجو شود"
+
+#: ../src/gconf-search-dialog.c:168
+msgid "Search also in key _values"
+msgstr "در مقادیر کلیدها هم جستجو شود"
+
+#: ../src/gedit-output-window.c:347
+msgid "Close the output window"
+msgstr "بستن پنجره‌ی خروجی"
+
+#: ../src/gedit-output-window.c:382
+msgid "Copy selected lines"
+msgstr "نسخه‌برداری از سطرهای انتخاب‌شده"
+
+#: ../src/gedit-output-window.c:399
+msgid "Clear the output window"
+msgstr "پاک کردن  پنجره‌ی خروجی"
+
+#: ../src/gedit-output-window.c:438
+msgid "Output Lines"
+msgstr "سطرهای خروجی"
+
+#: ../src/main.c:69
+msgid "[KEY]"
+msgstr "[کلید]"
+
+#: ../src/main.c:77
+msgid "- Directly edit your entire configuration database"
+msgstr "- ویرایش مستقیم کل پایگاه‌داده‌ی پیکربندی"
+
+#~ msgid "Configuration Editor (Default Settings)"
+#~ msgstr "ویراستار پیکربندی (تنظیمات پیش‌فرض)‏"
+
+#~ msgid "Configuration Editor (Mandatory Settings)"
+#~ msgstr "ویراستار پیکربندی (تنظیمات اجباری)‏"
+
+#~ msgid "Type"
+#~ msgstr "نوع"
+
+#~ msgid "The Configuration Editor window type."
+#~ msgstr "نوع پنجره‌ی ویراستار پیکربندی."
+
+#~ msgid "Invalid key \"%s\": %s"
+#~ msgstr "کلید نامعتبر «%s»: %s"
+
+#~ msgid "GConf-Editor"
+#~ msgstr "ویراستار GConf"
+
+#, fuzzy
+#~ msgid "Quit the gconf editor"
+#~ msgstr "ویراستار GConf"
+
+#~ msgid "GConf editor"
+#~ msgstr "ویراستار GConf"
+
+#~ msgid "GConf editor - %s"
+#~ msgstr "ویراستار GConf - %s"
+
+#~ msgid "Key Name:"
+#~ msgstr "نام کلید:"
+
+#~ msgid "Key path:"
+#~ msgstr "مسیر کلید:"
+
+#~ msgid "Key _value:"
+#~ msgstr "مقدار کلید:"
+
+#~ msgid "About GConf-Editor"
+#~ msgstr "درباره‌ی ویراستار GConf"
+
+#, fuzzy
+#~ msgid "/File/tearoff1"
+#~ msgstr "/پرونده/sep1"
+
+#~ msgid "/File/_New window"
+#~ msgstr "/پرونده/پنجره‌ی جدید"
+
+#~ msgid "/File/sep1"
+#~ msgstr "/پرونده/sep1"
+
+#, fuzzy
+#~ msgid "/Bookmarks/tearoff3"
+#~ msgstr "/چوب‌الف‌ها"
+
+#~ msgid "/Bookmarks/_Add bookmark"
+#~ msgstr "/چوب‌الف‌ها/افزودن چوب‌الف"
+
+#~ msgid "/Bookmarks/_Edit bookmarks..."
+#~ msgstr "/چوب‌الف‌ها/ویرایش چوب‌الف‌ها..."
+
+#~ msgid "/Help/_About..."
+#~ msgstr "راهنما/درباره‌‌ی..."
+
+#, fuzzy
+#~ msgid "/File/New window"
+#~ msgstr "/پرونده/پنجره‌ی جدید"
+
+#, fuzzy
+#~ msgid "/File/Quit"
+#~ msgstr "پرونده/خروج"
+
+#, fuzzy
+#~ msgid "/Edit/Copy key name"
+#~ msgstr "/ویرایش/نسخه‌برداری از نام کلید"
+
+#, fuzzy
+#~ msgid "/Help/About..."
+#~ msgstr "راهنما/درباره‌‌ی..."
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not get schema location. Error was:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "نمی‌توان کلید را خاموش کرد. خطا عبارت بود از:\n"
+#~ "%s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not get schema. Error was:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "نمی‌توان کلید را خاموش کرد. خطا عبارت بود از:\n"
+#~ "%s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not set schema. Error was:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "نمی‌توان کلید را خاموش کرد. خطا عبارت بود از:\n"
+#~ "%s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Could not associate schema. Error was:\n"
+#~ "%s"
+#~ msgstr ""
+#~ "نمی‌توان کلید را خاموش کرد. خطا عبارت بود از:\n"
+#~ "%s"
+
+#~ msgid "/sep1"
+#~ msgstr "/sep1"
+
+#, fuzzy
+#~ msgid "/sep2"
+#~ msgstr "/sep1"
+
+#, fuzzy
+#~ msgid "/New key..."
+#~ msgstr "/کلید جدید..."
+
+#, fuzzy
+#~ msgid "/Unset key"
+#~ msgstr "/خاموش کردن کلید"
+
+#~ msgid "_Show this dialog again"
+#~ msgstr "نمایش مجدد این محاوره"
+
+#~ msgid "Copyright (C) Anders Carlsson 2001, 2002"
+#~ msgstr "Copyright (C) Anders Carlsson 2001, 2002"

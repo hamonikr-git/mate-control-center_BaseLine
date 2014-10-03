@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="edit-prefs" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Možnosti urejanja sporočilc</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Možnosti sporočilc</title>
+ 
+ 	<p>You can change the default settings when typing notes
+ 	in Tomboy.  To change your note settings, open
+ 	 <gui>Tomboy Preferences</gui> by 
+	using your mouse to right click on the Tomboy icon in your panel,
+	taskbar or dock, and choose <gui>Preferences</gui> and  select
+	the <gui>Editing</gui> tab.  You can also open <gui> Tomboy
+	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
+	the menu, choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
+	</guiseq>.
+	</p>
+ 
+ <section id="spellcheck">
+   <title>Preverjanje črkovanja</title>
+   <p>Tomboy lahko med vašim tipkanjem sporočilca preveri njegovo črkovanje. Preverjanje črkovanja je privzeto omogočeno, zato bo Tomboy podčrtal vse napačno črkovane besede. Predloge črkovanja lahko vidite z desnim klikom na napačno črkovano besedo.  </p>
+   
+   <p>Za onemogočenje samodejnega preverjanja črkovanja uporabite svojo miško ali preslednico za odstranitev izbire <gui>Preverjaj črkovanje med tipkanjem</gui> v zavihku <gui>Urejanje</gui> možnosti Tomboy.</p>
+   
+ </section>
+
+ <section id="wikiwords">
+   <title>BesedeWiki</title>
+   <p>Tomboy lahko poudari besede, ki so <gui>VidetiTakole</gui>. V primeru pisanja več besed z velikimi črkami brez presledkov, bo Tomboy poudaril besedil in iz nje naredil povezavo. Podobno deluje wiki. Klik na povezavo bo ustvaril novo sporočilce z BesedamiWiki kot naslov sporočilca.</p>
+   
+   <p>BesedeWiki so privzeto onemogočene. Za njihovo omogočitev z miško ali preslednico omogočite <gui>Poudari BesedeWiki</gui> v zavihku <gui>Urejanje</gui> možnosti Tomboy.</p>
+   
+ </section>
+
+ <section id="bullets">
+   <title>Samodejni neoštevilčeni seznami</title>
+   <p>Tomboy lahko samodejno ustvari neoštevilčene sezname. Ta možnost je privzeto omogočena. Ko urejate svoje sporočilce, pritisnite <key>*</key>, napišite besedilo in pritisnite <key>Vnosno tipko</key>. To bo samodejno ustvarilo neoštevilčen seznam. Po pritisku <key>Vnosne tipke</key> se bo s seznamsko točko začela tudi naslednja vrstica.</p>
+   
+   <p>Za onemogočenje samodejnih neoštevilčenih seznamov z miško ali preslednico odstranite oznako <gui>Omogoči samodejne neoštevilčene sezname</gui> v zavihku <gui>Urejanje</gui> v možnostih Tomboy.</p>
+   
+ </section>
+
+ <section id="customfont">
+   <title>Pisave po meri</title>
+   <p>V Tomboyu lahko uporabite pisavo ali velikost pisave, ki je drugačne od privzete pisave vašega namizja. Ta zmožnost je privzeto onemogočena.</p>
+   
+   <p>Za omogočitev drugačne pisave uporabite svojo miško ali preslednico za izbiro <gui>Uporabi pisavo po meri</gui> v zavihku <gui>Urejanje</gui> v možnostih Tomboy. </p>
+
+   <p>Nato pritisnite gumb pisave in pojavilo se bo pogovorno okno, ki vam bo omogočilo izbiro pisave, ki jo želite uporabiti, slog kot je krepko ali ležeče ali velikost pisave. Pritisnite <key>V redu</key> za shranjevanje svoje izbire.</p>
+   
+ </section>
+
+ <section id="renamelinks">
+ 
+   <title>Preimenovanje povezanih sporočilc</title>
+   <p>Tomboy samodejno ustvari povezave med sporočilci medtem ko pišete naslov shranjenega sporočilca v vaše trenutno sporočilce. V primeru, da poskusite preimenovati sporočilce do katerega se povezujejo druga sporočilca v Tomboyu, lahko izberete njegovo privzeto obnašanje ob zaznavanju spremembe. Vaše možnosti vključujejo:</p>
+   
+   <list>
+     <item><p><gui>Vprašaj me kaj na storim</gui>: Tomboy vas bo pozval vsakič, ko zazna spremembo ene od spodnjih možnosti.</p></item>
+     <item><p><gui>Nikoli ne preimenuj povezav</gui>: Tomboy bo pustil druga sporočilca takšna kot so in odstranil povezave na preimenovano sporočilce.</p></item>
+     <item><p><gui>Vedno preimenuj povezave</gui>: Tomboy bo samodejno vse povezave v drugih sporočilcih preimenoval v sporočilce, ki ste ga preimenovali. </p></item>
+   </list>
+   
+   <p>V spustnem meniju desno od <gui>Ob preimenovanju povezanega sporočilca:</gui> v zavihku <gui>Urejanje</gui> v možnostih Tomboy izberite eno od zgornjih možnosti.</p>
+   
+ </section>
+
+<section id="newnotetemplate">
+  <title>Ustvarjanje predloge novega sporočilca</title>
+  <p>Ustvarite lahko novo predlogo, ki je prikazana vsakič, ko ustvarite novo sporočilce.</p>
+  
+  <p>Pritisnite gumb <gui>Odpri novo predlogo sporočilca</gui> v zavihku <gui>Urejanje</gui> v možnostih Tomboy. Prikazana bo nova predloga, ki je videti podobna sporočilcu Tomboy. V sporočilcu zamenjajte besedilo <gui>Tukaj opišite svoje novo sporočilce</gui> z besedilom, ki naj bo nova predloga. Zaprite sporočilce za končanje ustvarjanja nove predloge. Vsakič, ko ustvarite novo sporočilce, bo bila ta predloga prikazana v novem sporočilcu. </p>
+   
+</section>
+
+ </page>

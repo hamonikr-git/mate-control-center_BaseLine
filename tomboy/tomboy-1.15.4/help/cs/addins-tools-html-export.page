@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-tools-html-export" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="addins#tools"/>
+    <desc>Jak exportovat poznámky do HTML</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-16" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Export do HTML</title>
+
+  <p>Jednotlivé poznámky <app>Tomboy</app> můžete exportovat jako stránky HTML za pomoci doplňku <gui>Export do HTML</gui>. Tento doplněk je ve výchozím stavu povolen.</p>
+
+  <steps>
+    <title>Když chcete poznámku exportovat do HTML:</title>
+    <item>
+      <p>Pod ikonou ozubených kol v nástrojové liště poznámky vyberte <gui style="menuitem">Export do HTML</gui>.</p>
+    </item>
+    <item>
+      <p>Vyhledejte a vyberte složku, do které chcete poznámku uložit. Pokud chcete soubor HTML nazvat jinak, než se nazývá poznámka, můžete tak učinit.</p>
+    </item>
+    <item>
+      <p>Zmáčkněte <gui style="button">Uložit</gui>.</p>
+    </item>
+  </steps>
+
+   <p>Poznámka pak bude uložena jako soubor HTML a otevřena ve vašem výchozím webovém prohlížeči.</p>
+
+</page>

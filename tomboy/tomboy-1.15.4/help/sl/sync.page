@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync-notes" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <desc>Uskladite svoja sporočilca Tomboy z drugimi računalniki.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Uskladite svoja sporočilca</title>
+
+ <section id="sync">
+
+	<title>Ročno usklajevanje sporočilc</title>
+	
+	<p>You can synchronize your notes one of three ways:</p>
+	
+	<list type="numbered">
+	  <item><p>Iz kateregakoli sporočilca lahko kliknete ikono <gui>Orodja</gui> in izberete <gui>Uskladi sporočilca</gui>.</p></item>
+	  <item><p>V pogovornem oknu <gui>Iskanje vseh sporočilc</gui> izberite <guiseq><gui>Orodja</gui><gui>Uskladi sporočilca</gui></guiseq></p></item>
+	  <item><p>Z miško desno kliknite na ikono Tomboy v vašem pultu, opravilni vrstici ali sidrišču <gui>Uskladi vsa sporočilca</gui>.</p></item>
+	</list>
+
+ </section>
+ 
+ <section id="autosync">
+ 
+ 	<title>Samodejno usklajevanje vaših sporočilc</title>
+ 	
+	<p>Tomboy can automatically synchronize your notes for you in the
+	background.It is recommended that you configure how you handle note
+	conflicts before enabling syncing automatically. You can learn about
+	handling note conflicts in the <link xref="sync-setup#conflict"/>
+	page.</p>
+
+ 	<p>You can enable synchronize by opening <gui>Tomboy Preferences</gui> by 
+	using your mouse to right click on the Tomboy icon in your panel,
+	taskbar or dock and choose <gui>Preferences</gui> and then select
+	the <gui>Synchronization</gui> tab.  You can also open <gui> Tomboy
+	Preferences</gui> from the <gui>Search All Notes</gui> dialog. From
+	the menu choose <guiseq><gui>Edit</gui><gui>Preferences</gui>
+	</guiseq>.
+	</p>
+	
+	<p>Za omogočitev samodejnega usklajevanja izberite polje <gui>Samodejno uskladi v ozadju vsakih x minut</gui> na dnu zavihka usklajevanje.</p>
+	
+	<p>Tomboy's default option is to autosync every 10 minutes.  To change
+	how often Tomboy should synchronize enter the number of minutes in the
+	dialog or use your mouse to move the time up or down.</p>
+	
+	<p>Za onemogočenje samodejnega usklajevanja odstranite izbiro polje <gui>Samodejno uskladi v ozadju vsakih x minut</gui>.</p>
+	
+  </section>
+
+ </page>

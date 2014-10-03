@@ -1,0 +1,13 @@
+# List of source files containing translatable strings.
+# Please keep this list in alphabetic order.
+
+data/gconf-editor.desktop.in.in
+data/gconf-editor.schemas.in
+src/gconf-bookmarks-dialog.c
+src/gconf-cell-renderer.c
+src/gconf-editor-application.c
+src/gconf-editor-window.c
+src/gconf-key-editor.c
+src/gconf-search-dialog.c
+src/gedit-output-window.c
+src/main.c

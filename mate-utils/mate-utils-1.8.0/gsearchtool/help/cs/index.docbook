@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "March 2009">
+<!ENTITY app "Search for Files">
+<!ENTITY ug "MATE Desktop User Guide">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.mate.org/projects/gdp 
+  Template version: 2.0 beta
+  Template last modified Jan 25, 2005  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Příručka k aplikaci Hledat soubory</title>
+
+    <abstract role="description">
+      <para>Aplikace Hledat soubory vyhledá ve vašem počítači soubory, složky a dokumenty.</para>
+    </abstract>
+
+    <copyright lang="en"> 
+      <year>2005</year> 
+      <holder>Dennis Cranston</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2002</year> 
+      <year>2003</year> 
+      <year>2004</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>Alexander Kirillov</holder> 
+    </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+    <publisher> 
+      <publishername>Dokumentační projekt MATE</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="help:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+         <para>Tato příručka je součástí kolekce příruček MATE, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+
+	<para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu MATE jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+
+    <authorgroup> 
+      <author role="maintainer" lang="en"> 
+	<firstname>Dennis</firstname> 
+	<surname>Cranston</surname> 
+	<affiliation> 
+	  <orgname>Search for Files Maintainer</orgname> 
+	  <address lang="en">dennis_cranston@yahoo.com</address> 
+	</affiliation> 
+      </author> 
+      <author lang="en"> 
+	<firstname>Sun</firstname> 
+	<surname>MATE Documentation Team</surname> 
+	<affiliation> 
+	  <orgname>Sun Microsystems</orgname> 
+	  <address/> 
+	</affiliation> 
+      </author> 
+      <author lang="en"> 
+	<firstname>Alexander</firstname> 
+	<surname>Kirillov</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	  <address> <email>kirillov@math.sunysb.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+ <revhistory>
+ <!-- <revision> 
+	<revnumber>&app; Manual V&manrevision;</revnumber> 
+	<date>&date;</date> 
+	<revdescription> 
+	  <para role="author">Sun GNOME Documentation Team</para>
+	  <para role="publisher">MATE Documentation Project</para>
+	</revdescription> 
+ </revision>
+-->
+   <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.7</revnumber> 
+			<date>June 2005</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Joachim Noreiko
+				<email>jnoreiko@yahoo.com</email>
+			</para>
+	  		<para role="publisher" lang="en">Search for Files Maintainer</para>
+			</revdescription> 
+  </revision>
+  <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.6</revnumber> 
+			<date>January 2005</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Dennis Cranston
+				<email>dennis_cranston@yahoo.com</email>
+			</para>
+	  		<para role="publisher" lang="en">Search for Files Maintainer</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.4</revnumber> 
+			<date>February 2004</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.3</revnumber> 
+			<date>September 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Filesl Manual V2.2</revnumber> 
+			<date>August 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.1</revnumber> 
+			<date>July 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.0</revnumber> 
+			<date>May 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+	<revnumber>Search for Files Manual</revnumber> 
+	<date>2000</date> 
+	<revdescription> 
+	  <para role="author" lang="en">Alexander Kirillov
+	    <email>kirillov@math.sunysb.edu</email>
+	  </para>
+	  <para role="publisher" lang="en">MATE Documentation Project</para>
+	</revdescription> 
+ </revision> 
+ </revhistory> 
+
+    <releaseinfo>Tato příručka popisuje aplikaci Hledat soubory ve verzi 2.26.</releaseinfo> 
+    <legalnotice> 
+      <title>Ohlasy</title> 
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci Hledat soubory nebo této příručce, postupujte dle instrukcí na stránce <ulink url="help:mate-feedback" type="help">Stránka s ohlasy na MATE</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm lang="en"> 
+    <primary>Search Tool</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="gsearchtool-introduction"> 
+    <title>Úvod</title> 
+    <para>Aplikace <application>Hledat soubory</application> vám umožňuje vyhledávat soubory ve vašem systému. Základní hledání provedete prostým zadáním názvu či části názvu souboru s nebo bez divokých znaků. Pro zpřesnění hledání můžete zadat doplňující podmínky.</para>
+    <para>Aplikace <application>Hledat soubory</application> využívá UNIXové příkazy <command>find</command>, <command>grep</command> a <command>locate</command>. Pokud provádíte základní hledávání, aplikace <application>Hledat soubory</application> standardně nejdříve použije příkaz <command>locate</command> a po té příkaz <command>find</command>, který je pomalejší ale důkladnější.</para>
+    <para>Citlivost na velikost písmen při hledání závisí na vašem operačním systému. Například v Linuxu příkazy <command>find</command>, <command>grep</command> a <command>locate</command> podporují přepínač <literal>-i</literal>, díky čemuž se všechna hledání provádí bez ohledu na velikost písmen.</para>
+  </sect1>
+
+  <sect1 id="gsearchtool-getting-started">
+    <title>Začínáme</title> 
+
+    <para>Aplikaci <application>Hledat soubory</application> můžete spustit těmito způsoby:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Z <guimenu>panelu nabídek</guimenu> na panelu</term>
+    		<listitem>
+    		<para>Zvolte <menuchoice><guisubmenu>Místa</guisubmenu><guimenuitem>Hledat soubory</guimenuitem></menuchoice></para>
+    		</listitem>
+    	</varlistentry>
+   	<varlistentry>
+    		<term>Z <guimenu>hlavní nabídky</guimenu> na panelu</term>
+    		<listitem>
+    		<para>Zvolte <menuchoice><guimenuitem>Hledat soubory</guimenuitem></menuchoice></para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Z příkazové řádky</term>
+    		<listitem>
+    		<para>Spusťte následující příkaz: <command>mate-search-tool</command></para>
+    		<para> 		 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+
+    <para>Po spuštění aplikace <application>Hledat soubory</application> se zobrazí následující okno.</para>
+
+    <!-- ==== Figure ==== -->
+      <figure id="mainwindow-fig"> 
+	<title>Okno aplikace Hledat soubory</title> 
+	<screenshot> 
+	  <mediaobject lang="en"> 
+	    <imageobject><imagedata fileref="figures/mate-search-tool_window.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Shows Search for Files main window. </phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="gsearchtool-usage"> 
+    <title>Použití</title>
+
+    <sect2 id="gsearchtool-simple">
+    <title>Provádění základního hledání</title>
+    
+    <para>Základní vyhledání souboru v systému provedete pomocí těchto kroků:</para>
+    <orderedlist>
+    <listitem><para>Zadejte hledaný text do pole <guilabel>Název obsahuje</guilabel>. Textem může být název souboru nebo část názvu souboru, s nebo bez divokých znaků, tak jak to ukazuje následující tabulka:</para>
+
+      <informaltable frame="all">
+        <tgroup cols="3" colsep="1" rowsep="1">
+          <colspec colname="COLSPEC0" colwidth="33*"/>
+          <colspec colname="COLSPEC1" colwidth="33*"/>
+          <colspec colname="COLSPEC2" colwidth="34*"/>
+          <thead>
+            <row valign="top">
+              <entry colname="COLSPEC0">
+                <para>Text v Název obsahuje</para></entry>
+              <entry colname="COLSPEC1">
+                <para>Příklad</para></entry>
+              <entry colname="COLSPEC2">
+                <para>Výsledek</para></entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">
+              <entry>
+                <para>Celý nebo částečný název</para>
+              </entry>
+              <entry>
+                <para lang="en"><userinput>myfile.txt</userinput>
+                </para>
+              </entry>
+              <entry>
+                <para>Aplikace <application>Hledat soubory</application> vyhledá všechny soubory, které v názvu obsahují text <userinput>mujsoubor.txt</userinput></para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para>Částečný název v kombinaci s divokými znaky (*, [, ])</para>
+              </entry>
+              <entry>
+                <para lang="en"><userinput>*.[ch]</userinput>
+                </para>
+              </entry>
+              <entry>
+                <para>Aplikace <application>Hledat soubory</application> vyhledá všechny soubory, které mají příponu <userinput>.c</userinput> nebo <userinput>.h</userinput>.</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </listitem>
+    <listitem><para>V poli <guilabel>Hledat ve složce</guilabel> vyberte složku nebo zařízení, ve kterých chcete, aby aplikace <application>Hledat soubory</application> vyhledávání začala.</para></listitem>
+    <listitem><para>Klikněte na <guibutton>Hledat</guibutton> a vyhledání se provede.</para>
+    </listitem>
+    </orderedlist>
+    <para>Aplikace <application>Hledat soubory</application> hledá ve složce, kterou jste určili a v jejích podsložkách. Výsledky hledání se zobrazí v seznamu <guilabel>Výsledky hledání</guilabel>. Pokud se nenajde ani jeden soubor odpovídající zadaným kritériím, zobrazí aplikace v seznamu <guilabel>Výsledky hledání</guilabel> zprávu „Nenalezeny žádné soubory“.</para>
+    <para>Standardně aplikace <application>Hledat soubory</application> provede rychlé vyhledání pomocí příkazu <command>locate</command> a po něm následuje druhé důkladnější hledávání pomocí příkazu <command>find</command>. Příkaz <command>locate</command> je rychlejší, protože používá databázi s informacemi o souborech. Pokud je databáze více jak týden stará, varuje vás aplikace <application>Hledat soubory</application>, že výsledky hledání mohou být zastaralé a nabídne vám rychlé hledání zakázat. Jestliže chcete databázi aktualizovat, spusťte jako uživatel root příkaz <command>updatedb</command>.</para>
+  </sect2>
+    
+    <sect2 id="gsearchtool-advanced">
+    <title>Doplnění podmínek hledání</title>
+    <para>Pro vyhledání souboru v systému můžete přidat doplňující podmínky. Pokud tak chcete učinit, postupujte podle následujících kroků:</para>
+  	<orderedlist>
+    		<listitem><para>Klikněte na text <guilabel>Vybrat další možnosti</guilabel>.</para></listitem>
+    		<listitem><para>Klikněte na rozbalovací seznam <guilabel>Dostupné možnosti</guilabel>.</para></listitem>
+    		<listitem><para>Vyberte si vyhledávací podmínku, kterou chcete použít.</para></listitem>
+    		<listitem><para>Klikněte na tlačítko <guibutton>Přidat</guibutton>.</para></listitem>
+    		<listitem><para>Zadejte případné požadované informace pro vyhledávací podmínku, tak jak popisuje <xref linkend="tbl-search-rules"/>.</para></listitem>
+    		<listitem><para>Opakujte předchozí kroky pro každou podmínku vyhledávání, kterou chcete použít.</para></listitem>
+    	</orderedlist>	
+    	<para>Pokud chcete vyhledávací podmínku ze současného vyhledávání odstranit, klikněte na tlačítko <guibutton>Odstranit</guibutton> vedle podmínky.</para>
+    	<para>Pokud chcete vyhledávací podmínky zakázat pro současné vyhledávání, klikněte na text <guilabel>Vybrat další možnosti</guilabel>.</para>
+    
+    <table id="tbl-search-rules" frame="topbot">
+    <title>Možnosti hledání</title> 
+		  <tgroup cols="2" colsep="1" rowsep="1">
+			 <colspec colname="COLSPEC0" colwidth="33*"/>
+			 <colspec colname="COLSPEC1" colwidth="33*"/>
+			 <thead> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Název volby</para></entry> 
+				  <entry> 
+					 <para>Popis</para></entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Obsahuje text</para></entry> 
+				  <entry> 
+					 <para>Hledat soubory typu prostý text, které obsahují zadaný text.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Datum úpravy méně než</para></entry> 
+				  <entry> 
+					 <para>Hledat soubory, které byly změněné před zadaným počtem dní.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Datum úpravy více než</para></entry> 
+				  <entry> 
+					 <para>Hledat soubory, které byly změněné během zadaného počtu posledních dní.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Velikost alespoň</para></entry> 
+				  <entry> 
+					 <para>Hledat soubory, jejichž velikost je rovna nebo větší než zadaná velikost v kilobajtech.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Velikost nejvíce</para></entry> 
+				  <entry> 
+					 <para>Hledat soubory, jejichž velikost je menší nebo rovna zadané velikosti v kilobajtech.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Soubor je prázdný</para></entry> 
+				  <entry> 
+					 <para>Hledat prázdné soubory.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Vlastněno uživatelem</para></entry> 
+				  <entry> 
+					 <para>Hledat soubory, které vlastní zadaný uživatel. Do textového pole uveďte jméno onoho uživatele.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Vlastněno skupinou</para></entry> 
+				  <entry> 
+					 <para>Hledat soubory, které vlastní zadaná skupina. Do textového pole uveďte jméno oné skupiny.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Vlastníka nelze rozpoznat</para></entry> 
+				  <entry> 
+					 <para>Hledat soubory, které vlastní uživatel nebo skupina, které systém nezná.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Název neobsahuje</para></entry> 
+				  <entry> 
+					 <para>Hledat soubory, jejichž název neobsahuje zadaný řetězec. Do textového pole zadejte celý název souboru nebo část názvu souboru s divokými znaky. Použijte * jako náhradu sekvence znaků a ? jako náhradu jednoho znaku. Hledání je citlivé na velikost písmen.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Název odpovídá regulárnímu výrazu</para></entry> 
+				  <entry> 
+					 <para>Hledat soubory, které ve svém názvu nebo cestě složkami obsahují zadaný regulární výraz. Regulární výraz zadejte do textového pole.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Zobrazovat skryté a záložní soubory</para></entry> 
+				  <entry> 
+					 <para>Do hledání zahrnout skryté a záložní soubory.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Sledovat symbolické odkazy</para></entry> 
+				  <entry> 
+					 <para>Při hledání následovat symbolické odkazy.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Zahrnou jiné souborové systémy</para></entry> 
+				  <entry> 
+					 <para>Hledat ve složkách, které jsou na stejném souborovém systému jako počáteční složka.</para></entry>  
+				</row> 
+				 				
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+    
+    </sect2>
+
+    <sect2 id="gsearchtool-stop">
+    <title>Zastavení vyhledávání</title>
+    <para>Kliknutím na tlačítko <guibutton>Zastavit</guibutton> přerušíte hledání dřív, než jej aplikace <application>Hledat soubory</application> dokončí.</para>
+    </sect2>
+    
+    <sect2 id="gsearchtool-view">
+    <title>Otevření zobrazeného souboru</title>
+    <para>Pokud chcete soubor uvedený v seznamu <guilabel>Výsledky hledání</guilabel> otevřít, můžete to provést následovně:</para>
+    <itemizedlist>
+    <listitem><para>Klikněte na soubor pravým tlačítkem a zvolte <guimenuitem>Otevřít</guimenuitem>.</para></listitem>
+     <listitem><para>Klikněte na soubor dvojitě.</para></listitem>
+    </itemizedlist>
+    <para>Pokud chcete otevřít složku, která obsahuje soubor uvedený v seznamu <guilabel>Výsledky hledání</guilabel>, klikněte na soubor pravým tlačítkem a zvolte <guimenuitem>Otevřít složku</guimenuitem>.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-delete">
+    <title>Smazání zobrazeného souboru</title>
+    <para>Když chcete soubor uvedený v seznamu <guilabel>Výsledky hledání</guilabel> smazat, klikněte na něj pravým tlačítkem a zvolte <guimenuitem>Přesunout do koše</guimenuitem>.</para>
+    </sect2>
+    
+    <!--
+    <sect2 id="gsearchtool-search-command">
+    <title>To View the Search Command Used by &app;</title>
+    <para>To view the command that <application>&app;</application> used to perform the previous search, choose <menuchoice><guimenu>Search</guimenu><guimenuitem>Show Command</guimenuitem></menuchoice>. The <guilabel>Search Command Line</guilabel> displays the command. </para>
+    </sect2>
+    -->
+    
+    <sect2 id="gsearchtool-savetofile">
+    <title>Uložení výsledků hledání</title>
+    <para>Jestliže si chcete výsledky posledního hledání v aplikaci <application>Hledat soubory</application> uložit, klikněte pravým tlačítkem na seznam <guilabel>Výsledky hledání</guilabel> a zvolte <guimenuitem>Uložit výsledky jako</guimenuitem>. Zadejte název souboru, do kterého chcete výsledky uložit, a klikněte na Uložit.</para>
+    </sect2>
+ 
+  </sect1>
+
+<!-- ============= Settings ============================== -->
+
+  <sect1 id="gsearchtool-settings-gsettings-keys">
+    <title>Nastavení</title> 
+
+    <para lang="en"><application>Search for Files</application> provides gsettings keys to modify some of its behavior.  The gsettings values can be changed by starting the <application>Configuration Editor</application> in the following ways:
+    </para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Nabídka <guimenu>Aplikace</guimenu></term>
+    		<listitem>
+    		<para lang="en">Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>dconf Editor</guimenuitem></menuchoice>. </para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Příkazový řádek</term>
+    		<listitem>
+    		<para lang="en">Execute the following command: <command>dconf-editor</command></para> 
+    		</listitem>
+    	</varlistentry>	
+    </variablelist>
+    
+    <sect2 id="gsearchtool-disablequicksearch">
+    <title>Zakázání rychlého hledání</title>
+    <para lang="en">Key name: org.mate.search-tool.disable-quick-search</para>
+    <para>Výchozí hodnota: false (ne)</para>
+    <para>Aplikace <application>Hledat soubory</application> urychluje hledání názvů souborů pomocí příkazu <command>locate</command>. Příkaz <command>locate</command> poskytuje bezpečný způsob indexace a rychlého hledání názvů souborů. Jelikož však příkaz <command>locate</command> závisí na indexovém souboru, nemusí být seznam <guilabel>Výsledků hledání</guilabel> vždy aktuální.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-disablesecondscan">
+    <title>Zakázání druhého průchodu rychlého vyhledávání</title>
+    <para lang="en">Key name: org.mate.search-tool.disable-quick-search-second-scan</para>
+    <para>Výchozí hodnota: false (ne)</para>
+    <para>Po dokončení rychlého hledání provádí aplikace <application>Hledat soubory</application> důkladné hledání pomocí příkazu <command>find</command>. Účelem tohoto druhého průchodu je najít soubory, které nejsou zaindexované. Soubory, které odpovídají zadaným kritériím, se doplní do seznamu <guilabel>Výsledků hledání</guilabel>, tak aby byl aktuální.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-quicksearchexclude">
+    <title>Vynechání cest při rychlém vyhledávání</title>
+    <para lang="en">Key name: org.mate.search-tool.quick-search-excluded-paths</para>
+    <para>Výchozí hodnoty: [/mnt/*,/media/*,/dev/*,/tmp/*,/proc/*,/var/*]</para>
+    <para>Aplikace <application>Hledat soubory</application> nebude provádět rychlé hledání v cestách definovaných v tomto klíči. Vyhledání souborů v definovaných cestách použije příkaz <command>find</command>. Jsou podporované divoké znaky „*“ a „?“.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-secondscanexclude">
+    <title>Vynechání cest při druhém průchodu rychlého vyhledávání</title>
+    <para lang="en">Key name: org.mate.search-tool.quick-search-second-scan-excluded-paths</para>
+    <para>Výchozí hodnoty: [/]</para>
+    <para>Aplikace <application>Hledat soubory</application> nebude provádět hledání v druhém průchodu po rychlém prohledání cest definovaných tímto klíčem. Rychlé hledání v definovaných cestách nebude následováno důkladným hledáním pomocí příkazu <command>find</command>. Jsou podporované divoké znaky „*“ a „?“.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-showoptions">
+    <title>Zobrazit další možnosti</title>
+    <para lang="en">Key name: org.mate.search-tool.show-additional-options</para>
+    <para>Výchozí hodnota: false (ne)</para>
+    <para>Tento klíč určuje, zda bude oddíl <guilabel>Vybrat další možnosti</guilabel> po spuštění aplikace <application>Vyhledat soubory</application> rozbalený.</para>
+    </sect2>
+    
+  </sect1>
+
+</article>

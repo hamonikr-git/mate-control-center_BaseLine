@@ -1,0 +1,476 @@
+# translation of gconf-editor.HEAD.po to Kurdish
+# Kurdish translation for gconf-editor
+# Copyright (c) (c) 2005 Canonical Ltd, and Rosetta Contributors 2005
+# This file is distributed under the same license as the gconf-editor package.
+# Erdal Ronahi <erdal.ronahi@gmail.com>, 2005.
+# OMER ENSARİ <oensari@gmail.com>, 2010.
+# Erdal Ronahî <erdal dot ronahi at gmail dot com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: gconf-editor.HEAD\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gconf-"
+"editor&component=general\n"
+"POT-Creation-Date: 2009-04-17 16:09+0000\n"
+"PO-Revision-Date: 2010-10-26 19:22+0200\n"
+"Last-Translator: Erdal Ronahî <erdal dot ronahi at gmail dot com>\n"
+"Language-Team: Kurdish Team http://pckurd.net\n"
+"Language: ku\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.6.1\n"
+"X-Rosetta-Version: 0.1\n"
+
+#: ../data/gconf-editor.desktop.in.in.h:1 ../src/gconf-editor-window.c:393
+#: ../src/gconf-editor-window.c:395 ../src/gconf-editor-window.c:880
+#: ../src/gconf-editor-window.c:1377
+msgid "Configuration Editor"
+msgstr "Edîtorê mîhengan"
+
+#: ../data/gconf-editor.desktop.in.in.h:2
+msgid "Directly edit your entire configuration database"
+msgstr "Rasterast hemû naveroka danegeha veavakirinê sererast bike"
+
+#: ../data/gconf-editor.schemas.in.h:1
+msgid "Bookmarks"
+msgstr "Bijare"
+
+#: ../data/gconf-editor.schemas.in.h:2
+msgid "gconf-editor folder bookmarks"
+msgstr "gconf-editor peldanka bijareyan"
+
+#: ../src/gconf-bookmarks-dialog.c:202
+msgid "Edit Bookmarks"
+msgstr "Bijareyan Biguherîne"
+
+#: ../src/gconf-cell-renderer.c:144 ../src/gconf-cell-renderer.c:341
+msgid "<no value>"
+msgstr "<nirx tune>"
+
+#: ../src/gconf-editor-window.c:359
+#, c-format
+msgid "Couldn't display help: %s"
+msgstr "Nikare alîkarî nîşan bide: %s"
+
+#: ../src/gconf-editor-window.c:399
+msgid "An editor for the GConf configuration system."
+msgstr "Edîtorek ji bo pergala veavakirina GConf."
+
+#: ../src/gconf-editor-window.c:402
+#| msgid "translator_credits"
+msgid "translator-credits"
+msgstr "spasiyên_wergêran"
+
+#: ../src/gconf-editor-window.c:429
+#, c-format
+msgid ""
+"Couldn't unset key. Error was:\n"
+"%s"
+msgstr ""
+"Nikare miftê rake. Çewtî:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:454
+#, c-format
+msgid ""
+"Could not create key. The error is:\n"
+"%s"
+msgstr ""
+"Nikare mifte biafirîne. Çewtî:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:536
+#, c-format
+msgid ""
+"Could not change key value. Error message:\n"
+"%s"
+msgstr ""
+"Nikare nirxa miftê biguherîne. Peyama çewtiyê:\n"
+"%s "
+
+#: ../src/gconf-editor-window.c:568
+msgid ""
+"Currently pairs and schemas can't be edited. This will be changed in a later "
+"version."
+msgstr "Niha cot û şema nayên guherîn. Ev dê guhertoyekî pêş de were guherîn."
+
+#: ../src/gconf-editor-window.c:647
+#, c-format
+msgid ""
+"Could not set value. Error was:\n"
+"%s"
+msgstr ""
+"Nikare nirx ava bike. Çewtî:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:685 ../src/gconf-editor-window.c:733
+#, c-format
+msgid ""
+"Could not sync value. Error was:\n"
+"%s"
+msgstr ""
+"Nikare nirx hevdemî bike. Çewtî:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:747
+msgid "_File"
+msgstr "_Pel"
+
+#: ../src/gconf-editor-window.c:748
+msgid "_Edit"
+msgstr "_Guherandin"
+
+#: ../src/gconf-editor-window.c:749
+msgid "_Search"
+msgstr "_Lêgerîn"
+
+#: ../src/gconf-editor-window.c:750
+msgid "_Bookmarks"
+msgstr "_Bijare"
+
+#: ../src/gconf-editor-window.c:751
+msgid "_Help"
+msgstr "_Alîkarî"
+
+#: ../src/gconf-editor-window.c:753
+msgid "New _Settings Window"
+msgstr "Paceya nû ya _mîhengan"
+
+#: ../src/gconf-editor-window.c:754
+msgid "Open a new Configuration Editor window editing current settings"
+msgstr "Paceyekî nû ya Edîtorê Mîhengan yê mîhegê heyî diguherîne vedike"
+
+#: ../src/gconf-editor-window.c:756
+msgid "New _Defaults Window"
+msgstr "Paceya nû ya _standardan"
+
+#: ../src/gconf-editor-window.c:757
+msgid "Open a new Configuration Editor window editing system default settings"
+msgstr ""
+"Paceyekî nû ya Edîtorê Mîhengan yê mîhegê standard yên pergalê diguherîne "
+"vedike"
+
+#: ../src/gconf-editor-window.c:759
+msgid "New _Mandatory Window"
+msgstr "Paceya nû ya _pêwistan"
+
+#: ../src/gconf-editor-window.c:760
+msgid ""
+"Open a new Configuration Editor window editing system mandatory settings"
+msgstr ""
+"Paceyekî nû ya Edîtorê Mîhengan yê mîhegên pêwist yên pergalê diguherîne "
+"vedike"
+
+#: ../src/gconf-editor-window.c:762
+msgid "_Close Window"
+msgstr "_Paceyê Bigire"
+
+#: ../src/gconf-editor-window.c:762
+msgid "Close this window"
+msgstr "Vê paceyê digire"
+
+#: ../src/gconf-editor-window.c:764
+msgid "_Quit"
+msgstr "_Derkeve"
+
+#: ../src/gconf-editor-window.c:764
+msgid "Quit the Configuration Editor"
+msgstr "Ji Edîtorê Mîhengan derdikeve"
+
+#: ../src/gconf-editor-window.c:767
+msgid "_Copy Key Name"
+msgstr "Navê mifte _kopî bike"
+
+#: ../src/gconf-editor-window.c:767
+msgid "Copy the name of the selected key"
+msgstr "Navê mifta hilbijartî kopî dike"
+
+#: ../src/gconf-editor-window.c:769
+msgid "_Find..."
+msgstr "_Bibîne..."
+
+#: ../src/gconf-editor-window.c:769
+msgid "Find patterns in keys and values"
+msgstr "Di mifte û nirxan de nîgaran dibîne"
+
+#: ../src/gconf-editor-window.c:771
+msgid "_List Recent Keys"
+msgstr "Mifteyên rojane _lîste bike"
+
+#: ../src/gconf-editor-window.c:771
+msgid "Show recently modified keys"
+msgstr "Mifteyên nûve hatine guhartin nîşan dide"
+
+#: ../src/gconf-editor-window.c:774
+msgid "_Add Bookmark"
+msgstr "Bijare lê _zêde bike"
+
+#: ../src/gconf-editor-window.c:774
+msgid "Add a bookmark to the selected directory"
+msgstr "Li pelrêça hilbijartî bijareyekî zêde dike"
+
+#: ../src/gconf-editor-window.c:776
+msgid "_Edit Bookmarks"
+msgstr "Bijareyan bi_guherîne"
+
+#: ../src/gconf-editor-window.c:776
+msgid "Edit the bookmarks"
+msgstr "Bijareyan diguherîne"
+
+#: ../src/gconf-editor-window.c:779
+msgid "_Contents"
+msgstr "_Naverok"
+
+#: ../src/gconf-editor-window.c:779
+msgid "Open the help contents for the Configuration Editor"
+msgstr "Naveroka alîkarî ya Edîtorê Mîhengan vedike"
+
+#: ../src/gconf-editor-window.c:781
+msgid "_About"
+msgstr "_Der barê"
+
+#: ../src/gconf-editor-window.c:781
+msgid "Show the about dialog for the Configuration Editor"
+msgstr "Paceya der barê Edîtorê Mîhengan de nîşan dide"
+
+#: ../src/gconf-editor-window.c:784
+msgid "_New Key..."
+msgstr "Mifta _nû..."
+
+#: ../src/gconf-editor-window.c:784
+msgid "Create a new key"
+msgstr "Mifta nû diafirîne"
+
+#: ../src/gconf-editor-window.c:786
+msgid "_Edit Key..."
+msgstr "Mifte bi_guherîne..."
+
+#: ../src/gconf-editor-window.c:786
+msgid "Edit the selected key"
+msgstr "Mifta hilbijartî diguherîne"
+
+#: ../src/gconf-editor-window.c:788
+msgid "_Unset Key"
+msgstr "Miftê _rake"
+
+#: ../src/gconf-editor-window.c:788
+msgid "Unset the selected key"
+msgstr "Mifta hilbijartî radike"
+
+#: ../src/gconf-editor-window.c:790
+msgid "Set as _Default"
+msgstr "Wek _standard ava bike"
+
+#: ../src/gconf-editor-window.c:790
+msgid "Set the selected key to be the default"
+msgstr "Mifta hilbijartî wek standard ava dike"
+
+#: ../src/gconf-editor-window.c:792
+msgid "Set as _Mandatory"
+msgstr "Wek _pêwist ava bike"
+
+#: ../src/gconf-editor-window.c:792
+msgid "Set the selected key to the mandatory"
+msgstr "Mifta hilbijartî wek pêwist ava dike"
+
+#: ../src/gconf-editor-window.c:874
+#| msgid "Configuration Editor"
+msgid "Configuration Editor (Default settings)"
+msgstr "Edîtorê Mîhengan (Mîhengên standard)"
+
+#: ../src/gconf-editor-window.c:877 ../src/gconf-editor-window.c:1374
+msgid "Configuration Editor (Mandatory settings)"
+msgstr "Edîtorê Mîhengan (Mîhengên pêwist)"
+
+#: ../src/gconf-editor-window.c:1123 ../src/gconf-editor-window.c:1124
+#: ../src/gconf-editor-window.c:1125 ../src/gconf-editor-window.c:1126
+#: ../src/gconf-editor-window.c:1155 ../src/gconf-editor-window.c:1163
+#: ../src/gconf-editor-window.c:1172 ../src/gconf-editor-window.c:1726
+#: ../src/gconf-editor-window.c:1738 ../src/gconf-editor-window.c:1750
+#: ../src/gconf-editor-window.c:1765
+msgid "(None)"
+msgstr "(Tune)"
+
+#: ../src/gconf-editor-window.c:1333 ../src/gconf-editor-window.c:1343
+#, c-format
+msgid ""
+"Cannot create GConf engine. Error was:\n"
+"%s"
+msgstr ""
+"Nikare motora GConf biafirîne. Çewtî:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:1371
+msgid "Configuration Editor (Defaults settings)"
+msgstr "Edîtorê Mîhengan (Mîhengên standardan)"
+
+#: ../src/gconf-editor-window.c:1622
+msgid "Name"
+msgstr "Nav"
+
+#: ../src/gconf-editor-window.c:1646
+msgid "Value"
+msgstr "Nirx"
+
+#: ../src/gconf-editor-window.c:1673
+msgid "Key Documentation"
+msgstr "Belgenamekirina miftê"
+
+#: ../src/gconf-editor-window.c:1702 ../src/gconf-key-editor.c:606
+msgid "This key is not writable"
+msgstr "Ev mifte nayê nivîsîn"
+
+#: ../src/gconf-editor-window.c:1715
+msgid "This key has no schema"
+msgstr "Şemaya vê miftê tune"
+
+#: ../src/gconf-editor-window.c:1720
+msgid "Key name:"
+msgstr "Navê miftê:"
+
+#: ../src/gconf-editor-window.c:1733
+msgid "Key owner:"
+msgstr "Xwediyê miftê:"
+
+#: ../src/gconf-editor-window.c:1745
+msgid "Short description:"
+msgstr "Daxuyaniya kurt:"
+
+#: ../src/gconf-editor-window.c:1758
+msgid "Long description:"
+msgstr "Daxuyaniya dirêj:"
+
+#: ../src/gconf-key-editor.c:87
+msgid "T_rue"
+msgstr "_Rast"
+
+#: ../src/gconf-key-editor.c:90 ../src/gconf-key-editor.c:244
+#: ../src/gconf-key-editor.c:349 ../src/gconf-key-editor.c:637
+msgid "_False"
+msgstr "_Şaş"
+
+#. These have to be ordered so the EDIT_ enum matches the
+#. * menu indices
+#.
+#. These have to be ordered so the EDIT_ enum matches the
+#. * combobox indices
+#.
+#: ../src/gconf-key-editor.c:125 ../src/gconf-key-editor.c:155
+msgid "Integer"
+msgstr "Hejmara tam"
+
+#: ../src/gconf-key-editor.c:126 ../src/gconf-key-editor.c:156
+msgid "Boolean"
+msgstr "Mantiqî"
+
+#: ../src/gconf-key-editor.c:127 ../src/gconf-key-editor.c:157
+msgid "String"
+msgstr "Rêzik"
+
+#. Translators: this refers to "Floating point":
+#. * see http://en.wikipedia.org/wiki/Floating_point
+#.
+#: ../src/gconf-key-editor.c:131
+msgid "Float"
+msgstr "Hejmara rastîn"
+
+#: ../src/gconf-key-editor.c:132
+msgid "List"
+msgstr "Lîste"
+
+#: ../src/gconf-key-editor.c:219
+msgid "Add New List Entry"
+msgstr "Li lîstê têketinekî nû zêde bike"
+
+#: ../src/gconf-key-editor.c:235
+msgid "_New list value:"
+msgstr "Nirxa lîstê ya _nû:"
+
+#: ../src/gconf-key-editor.c:321
+msgid "Edit List Entry"
+msgstr "Têketina lîstê biguherîne"
+
+#: ../src/gconf-key-editor.c:337
+msgid "_Edit list value:"
+msgstr "Nirxa lîstê bi_guherîne:"
+
+#: ../src/gconf-key-editor.c:558
+msgid "Path:"
+msgstr "Rê:"
+
+#: ../src/gconf-key-editor.c:569
+msgid "_Name:"
+msgstr "_Nav:"
+
+#: ../src/gconf-key-editor.c:581
+msgid "_Type:"
+msgstr "_Cure:"
+
+#: ../src/gconf-key-editor.c:618 ../src/gconf-key-editor.c:636
+#: ../src/gconf-key-editor.c:655 ../src/gconf-key-editor.c:672
+msgid "_Value:"
+msgstr "_Nirx:"
+
+#: ../src/gconf-key-editor.c:694
+msgid "List _type:"
+msgstr "Cureyê _lîsteyê:"
+
+#: ../src/gconf-key-editor.c:702
+msgid "_Values:"
+msgstr "_Nirx:"
+
+#: ../src/gconf-key-editor.c:804
+msgid "New Key"
+msgstr "Mifta nû"
+
+#: ../src/gconf-key-editor.c:808
+msgid "Edit Key"
+msgstr "Mifte biguherîne"
+
+#: ../src/gconf-search-dialog.c:60
+msgid "Pattern not found"
+msgstr "Nîgar nehat dîtin"
+
+#: ../src/gconf-search-dialog.c:142
+msgid "Find"
+msgstr "Bibîne"
+
+#: ../src/gconf-search-dialog.c:144
+msgid "_Search for: "
+msgstr "Lê_gerîn:"
+
+#: ../src/gconf-search-dialog.c:165
+msgid "Search also in key _names"
+msgstr "Di _navên mifteyan de jî lêgere"
+
+#: ../src/gconf-search-dialog.c:168
+msgid "Search also in key _values"
+msgstr "Di nir_xên mifteyan de jî lêgere"
+
+#: ../src/gedit-output-window.c:347
+msgid "Close the output window"
+msgstr "Paceya deranê bigire"
+
+#: ../src/gedit-output-window.c:382
+msgid "Copy selected lines"
+msgstr "Rêzên hilbijartî kopî bike"
+
+#: ../src/gedit-output-window.c:399
+msgid "Clear the output window"
+msgstr "Paceya deranê paqij bike"
+
+#: ../src/gedit-output-window.c:438
+msgid "Output Lines"
+msgstr "Rêzên deranê"
+
+#: ../src/main.c:69
+msgid "[KEY]"
+msgstr "[MIFTE]"
+
+#: ../src/main.c:77
+msgid "- Directly edit your entire configuration database"
+msgstr "- Rasterast hemû naveroka danegeha veavakirinê sererast bike"
+
+#~ msgid "Type"
+#~ msgstr "Cure"

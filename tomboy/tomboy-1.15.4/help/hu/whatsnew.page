@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="new" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#new"/>
+    <revision pkgversion="2.30" version="0.1" date="2010-05-29" status="draft"/>
+    <desc>A <app>Tomboy jegyzettömb</app> újdonságai.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>A <app>Tomboy</app> újdonságai</title>
+
+  <p>A <app>Tomboy</app> számos új fejlesztést tartalmaz. A Tomboy észrevehetően gyorsabban indul az indítási időt érintő fejlesztéseknek köszönhetően.</p>
+  <p>A másolás és beillesztés a Tomboyból más alkalmazásokba immár támogatja a formázást más, HTML-t értő alkalmazásokba, mint például az Evolution, OpenOffice.org és mások.</p>
+  <p>
+    <app>Tomboy</app> can now synchronize your notes automatically for you
+    when you when you have synchronize enabled.
+  </p>
+
+  <p>A Microsoft Windows 7 Jump listek támogatása segítségével gyorsabban, közvetlenül a Windows tálcáról érheti el jegyzeteit, kereshet vagy hozhat létre új jegyzeteket.</p>
+
+</page>

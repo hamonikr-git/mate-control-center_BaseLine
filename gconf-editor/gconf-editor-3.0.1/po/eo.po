@@ -1,0 +1,473 @@
+# Esperanto translation for gconf-editor
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the gconf-editor package.
+# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gconf-editor\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gconf-"
+"editor&component=general\n"
+"POT-Creation-Date: 2011-01-26 23:24+0000\n"
+"PO-Revision-Date: 2011-01-28 19:17+0100\n"
+"Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
+"Language-Team: Esperanto <ubuntu-l10n-eo@lists.launchpad.net>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-01-28 04:02+0000\n"
+"X-Generator: Launchpad (build 12274)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../data/gconf-editor.desktop.in.in.h:1 ../src/gconf-editor-window.c:393
+#: ../src/gconf-editor-window.c:395 ../src/gconf-editor-window.c:873
+#: ../src/gconf-editor-window.c:1372
+msgid "Configuration Editor"
+msgstr "Agordoredaktilo"
+
+#: ../data/gconf-editor.desktop.in.in.h:2
+msgid "Directly edit your entire configuration database"
+msgstr "Rekte redakti vian tutan agordodatumbazon"
+
+#: ../data/gconf-editor.schemas.in.h:1
+msgid "Bookmarks"
+msgstr "Legosignoj"
+
+#: ../data/gconf-editor.schemas.in.h:2
+msgid "gconf-editor folder bookmarks"
+msgstr "Dosierujaj legosignoj de gconf-redaktilo"
+
+#: ../src/gconf-bookmarks-dialog.c:205
+msgid "Edit Bookmarks"
+msgstr "Redakti legosignojn"
+
+#: ../src/gconf-cell-renderer.c:144 ../src/gconf-cell-renderer.c:343
+msgid "<no value>"
+msgstr "<neniu valoro>"
+
+#: ../src/gconf-editor-window.c:359
+#, c-format
+msgid "Couldn't display help: %s"
+msgstr "Ne eblis montri helpon: %s"
+
+#: ../src/gconf-editor-window.c:399
+msgid "An editor for the GConf configuration system."
+msgstr "Redaktilo por la GConf-agordsistemo."
+
+#: ../src/gconf-editor-window.c:402
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Kristjan SCHMIDT https://launchpad.net/~kristjan-eo\n"
+"  Michael MORONI https://launchpad.net/~haikara90\n"
+"  Patrick (Petriko) Oudejans https://launchpad.net/~patrickoudejans"
+
+#: ../src/gconf-editor-window.c:429
+#, c-format
+msgid ""
+"Couldn't unset key. Error was:\n"
+"%s"
+msgstr ""
+"Ne eblis elŝalti ŝlosilon. Eraro estis:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:454
+#, c-format
+msgid ""
+"Could not create key. The error is:\n"
+"%s"
+msgstr ""
+"Ne eblis krei ŝlosilon. La eraro estas:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:536
+#, c-format
+msgid ""
+"Could not change key value. Error message:\n"
+"%s"
+msgstr ""
+"Ne eblis ŝanĝi ŝlosilvaloron. Erarmesaĝo:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:568
+msgid ""
+"Currently pairs and schemas can't be edited. This will be changed in a later "
+"version."
+msgstr ""
+"Aktuale ne eblas redakti nek parojn nek skemojn. Tio ŝanĝiĝos en venonta "
+"versio."
+
+#: ../src/gconf-editor-window.c:648
+#, c-format
+msgid ""
+"Could not set value. Error was:\n"
+"%s"
+msgstr ""
+"Ne eblis agordi valoron. Eraro estis:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:684 ../src/gconf-editor-window.c:728
+#, c-format
+msgid ""
+"Could not sync value. Error was:\n"
+"%s"
+msgstr ""
+"Ne eblis sinkronigi valoron. Eraro estis:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:740
+msgid "_File"
+msgstr "_Dosiero"
+
+#: ../src/gconf-editor-window.c:741
+msgid "_Edit"
+msgstr "R_edakti"
+
+#: ../src/gconf-editor-window.c:742
+msgid "_Search"
+msgstr "_Serĉi"
+
+#: ../src/gconf-editor-window.c:743
+msgid "_Bookmarks"
+msgstr "_Legosignoj"
+
+#: ../src/gconf-editor-window.c:744
+msgid "_Help"
+msgstr "_Helpo"
+
+#: ../src/gconf-editor-window.c:746
+msgid "New _Settings Window"
+msgstr "Nova _agordfenestro"
+
+#: ../src/gconf-editor-window.c:747
+msgid "Open a new Configuration Editor window editing current settings"
+msgstr "Malfermi novan redaktil-fenestron pri la aktualaj agordoj"
+
+#: ../src/gconf-editor-window.c:749
+msgid "New _Defaults Window"
+msgstr "Nova _defaŭltofenestro"
+
+#: ../src/gconf-editor-window.c:750
+msgid "Open a new Configuration Editor window editing system default settings"
+msgstr ""
+"Malfermi novan redaktil-fenestron por redakti la sistemajn defaŭltagordojn"
+
+#: ../src/gconf-editor-window.c:752
+msgid "New _Mandatory Window"
+msgstr "Nova _nepraĵ-fenestro"
+
+#: ../src/gconf-editor-window.c:753
+msgid ""
+"Open a new Configuration Editor window editing system mandatory settings"
+msgstr ""
+"Malfermi novan redaktil-fenestron por redakti la sistemajn nepraĵagordojn"
+
+#: ../src/gconf-editor-window.c:755
+msgid "_Close Window"
+msgstr "_Fermi fenestron"
+
+#: ../src/gconf-editor-window.c:755
+msgid "Close this window"
+msgstr "Fermi ĉi tiun fenestron"
+
+#: ../src/gconf-editor-window.c:757
+msgid "_Quit"
+msgstr "Ĉ_esi"
+
+#: ../src/gconf-editor-window.c:757
+msgid "Quit the Configuration Editor"
+msgstr "Ĉesi la agordoredaktilon"
+
+#: ../src/gconf-editor-window.c:760
+msgid "_Copy Key Name"
+msgstr "_Kopii ŝlosilnomon"
+
+#: ../src/gconf-editor-window.c:760
+msgid "Copy the name of the selected key"
+msgstr "Kopii la nomon de la elektita ŝlosilo"
+
+#: ../src/gconf-editor-window.c:762
+msgid "_Find..."
+msgstr "_Serĉi..."
+
+#: ../src/gconf-editor-window.c:762
+msgid "Find patterns in keys and values"
+msgstr "Serĉi ŝablonojn en ŝlosiloj kaj valoroj"
+
+#: ../src/gconf-editor-window.c:764
+msgid "_List Recent Keys"
+msgstr "_Listigi lastatempajn ŝlosilojn"
+
+#: ../src/gconf-editor-window.c:764
+msgid "Show recently modified keys"
+msgstr "_Listigi ŝlosilojn lastatempe modifitajn"
+
+#: ../src/gconf-editor-window.c:767
+msgid "_Add Bookmark"
+msgstr "_Aldoni legosignon"
+
+#: ../src/gconf-editor-window.c:767
+msgid "Add a bookmark to the selected directory"
+msgstr "Aldoni legosignon al la elektita dosierujo"
+
+#: ../src/gconf-editor-window.c:769
+msgid "_Edit Bookmarks"
+msgstr "_Redakti legosignojn"
+
+#: ../src/gconf-editor-window.c:769
+msgid "Edit the bookmarks"
+msgstr "Redakti la legosignojn"
+
+#: ../src/gconf-editor-window.c:772
+msgid "_Contents"
+msgstr "_Enhavo"
+
+#: ../src/gconf-editor-window.c:772
+msgid "Open the help contents for the Configuration Editor"
+msgstr "Malfermi helpenhavon por la agordoredaktilo"
+
+#: ../src/gconf-editor-window.c:774
+msgid "_About"
+msgstr "_Pri"
+
+#: ../src/gconf-editor-window.c:774
+msgid "Show the about dialog for the Configuration Editor"
+msgstr "Montri la Pri-dialogon de la agordoredaktilo"
+
+#: ../src/gconf-editor-window.c:777
+msgid "_New Key..."
+msgstr "_Nova ŝlosilo..."
+
+#: ../src/gconf-editor-window.c:777
+msgid "Create a new key"
+msgstr "Krei novan ŝlosilon"
+
+#: ../src/gconf-editor-window.c:779
+msgid "_Edit Key..."
+msgstr "_Redakti ŝlosilon..."
+
+#: ../src/gconf-editor-window.c:779
+msgid "Edit the selected key"
+msgstr "Redakti la elektitan ŝlosilon"
+
+#: ../src/gconf-editor-window.c:781
+msgid "_Unset Key"
+msgstr "_Elŝalti ŝlosilon"
+
+#: ../src/gconf-editor-window.c:781
+msgid "Unset the selected key"
+msgstr "Elŝalti la elektitan ŝlosilon"
+
+#: ../src/gconf-editor-window.c:783
+msgid "Set as _Default"
+msgstr "Ŝalti al ‘_defaŭlto’"
+
+#: ../src/gconf-editor-window.c:783
+msgid "Set the selected key to be the default"
+msgstr "Ŝalti la elektitan ŝlosilon al ‘defaŭlto’"
+
+#: ../src/gconf-editor-window.c:785
+msgid "Set as _Mandatory"
+msgstr "Ŝalti al ‘_nepraĵo’"
+
+#: ../src/gconf-editor-window.c:785
+msgid "Set the selected key to the mandatory"
+msgstr "Ŝalti elektitan ŝlosilon al ‘nepraĵo’"
+
+#: ../src/gconf-editor-window.c:867
+msgid "Configuration Editor (Default settings)"
+msgstr "Agordoredaktilo (defaŭltaj agordoj)"
+
+#: ../src/gconf-editor-window.c:870 ../src/gconf-editor-window.c:1369
+msgid "Configuration Editor (Mandatory settings)"
+msgstr "Agordoredaktilo (nepraj agordoj)"
+
+#: ../src/gconf-editor-window.c:1115 ../src/gconf-editor-window.c:1116
+#: ../src/gconf-editor-window.c:1117 ../src/gconf-editor-window.c:1118
+#: ../src/gconf-editor-window.c:1147 ../src/gconf-editor-window.c:1155
+#: ../src/gconf-editor-window.c:1164 ../src/gconf-editor-window.c:1715
+#: ../src/gconf-editor-window.c:1727 ../src/gconf-editor-window.c:1739
+#: ../src/gconf-editor-window.c:1754
+msgid "(None)"
+msgstr "(Neniu)"
+
+#: ../src/gconf-editor-window.c:1328 ../src/gconf-editor-window.c:1338
+#, c-format
+msgid ""
+"Cannot create GConf engine. Error was:\n"
+"%s"
+msgstr ""
+"Ne eblas krei GConf-modulon. Eraro estis:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:1366
+msgid "Configuration Editor (Defaults settings)"
+msgstr "Agordoredaktilo (defaŭltaj agordoj)"
+
+#: ../src/gconf-editor-window.c:1611
+msgid "Name"
+msgstr "Nomo"
+
+#: ../src/gconf-editor-window.c:1635
+msgid "Value"
+msgstr "Valoro"
+
+#: ../src/gconf-editor-window.c:1662
+msgid "Key Documentation"
+msgstr "Ŝlosil-dokumentaro"
+
+#: ../src/gconf-editor-window.c:1691 ../src/gconf-key-editor.c:614
+msgid "This key is not writable"
+msgstr "Tiu ŝlosilo ne estas skribebla"
+
+#: ../src/gconf-editor-window.c:1704
+msgid "This key has no schema"
+msgstr "Tiu ŝlosilo ne havas skemon"
+
+#: ../src/gconf-editor-window.c:1709
+msgid "Key name:"
+msgstr "Ŝlosilnomo:"
+
+#: ../src/gconf-editor-window.c:1722
+msgid "Key owner:"
+msgstr "Ŝlosilposedanto:"
+
+#: ../src/gconf-editor-window.c:1734
+msgid "Short description:"
+msgstr "Mallonga priskribo:"
+
+#: ../src/gconf-editor-window.c:1747
+msgid "Long description:"
+msgstr "Longa priskribo:"
+
+#: ../src/gconf-key-editor.c:87
+msgid "T_rue"
+msgstr "Ve_ra"
+
+#: ../src/gconf-key-editor.c:90 ../src/gconf-key-editor.c:247
+#: ../src/gconf-key-editor.c:355 ../src/gconf-key-editor.c:645
+msgid "_False"
+msgstr "_Falsa"
+
+#. These have to be ordered so the EDIT_ enum matches the
+#. * menu indices
+#.
+#. These have to be ordered so the EDIT_ enum matches the
+#. * combobox indices
+#.
+#: ../src/gconf-key-editor.c:125 ../src/gconf-key-editor.c:155
+msgid "Integer"
+msgstr "Entjero"
+
+#: ../src/gconf-key-editor.c:126 ../src/gconf-key-editor.c:156
+msgid "Boolean"
+msgstr "Buleo"
+
+#: ../src/gconf-key-editor.c:127 ../src/gconf-key-editor.c:157
+msgid "String"
+msgstr "Signoĉeno"
+
+#. Translators: this refers to "Floating point":
+#. * see http://en.wikipedia.org/wiki/Floating_point
+#.
+#: ../src/gconf-key-editor.c:131
+msgid "Float"
+msgstr "Glitkomo"
+
+#: ../src/gconf-key-editor.c:132
+msgid "List"
+msgstr "Listo"
+
+#: ../src/gconf-key-editor.c:220
+msgid "Add New List Entry"
+msgstr "Aldoni novan listenigon"
+
+#: ../src/gconf-key-editor.c:238
+msgid "_New list value:"
+msgstr "_Nova listvaloro:"
+
+#: ../src/gconf-key-editor.c:325
+msgid "Edit List Entry"
+msgstr "Redakti listenigon"
+
+#: ../src/gconf-key-editor.c:343
+msgid "_Edit list value:"
+msgstr "_Redakti listvaloron:"
+
+#: ../src/gconf-key-editor.c:566
+msgid "Path:"
+msgstr "Vojo:"
+
+#: ../src/gconf-key-editor.c:577
+msgid "_Name:"
+msgstr "_Nomo:"
+
+#: ../src/gconf-key-editor.c:589
+msgid "_Type:"
+msgstr "_Tipo:"
+
+#: ../src/gconf-key-editor.c:626 ../src/gconf-key-editor.c:644
+#: ../src/gconf-key-editor.c:663 ../src/gconf-key-editor.c:680
+msgid "_Value:"
+msgstr "_Valoro:"
+
+#: ../src/gconf-key-editor.c:702
+msgid "List _type:"
+msgstr "List_tipo:"
+
+#: ../src/gconf-key-editor.c:710
+msgid "_Values:"
+msgstr "_Valoroj:"
+
+#: ../src/gconf-key-editor.c:812
+msgid "New Key"
+msgstr "Nova ŝlosilo"
+
+#: ../src/gconf-key-editor.c:816
+msgid "Edit Key"
+msgstr "Redakti ŝlosilon"
+
+#: ../src/gconf-search-dialog.c:60
+msgid "Pattern not found"
+msgstr "Ne trovis ŝablonon"
+
+#: ../src/gconf-search-dialog.c:142
+msgid "Find"
+msgstr "Serĉi"
+
+#: ../src/gconf-search-dialog.c:144
+msgid "_Search for: "
+msgstr "_Serĉi: "
+
+#: ../src/gconf-search-dialog.c:165
+msgid "Search also in key _names"
+msgstr "Serĉi ankaŭ en ŝlosil_nomoj"
+
+#: ../src/gconf-search-dialog.c:168
+msgid "Search also in key _values"
+msgstr "Serĉi ankaŭ en ŝlosil_valoroj"
+
+#: ../src/gedit-output-window.c:347
+msgid "Close the output window"
+msgstr "Fermi la elig-fenestron"
+
+#: ../src/gedit-output-window.c:382
+msgid "Copy selected lines"
+msgstr "Kopii la elektitajn liniojn"
+
+#: ../src/gedit-output-window.c:399
+msgid "Clear the output window"
+msgstr "Vakigi la elig-fenestron"
+
+#: ../src/gedit-output-window.c:438
+msgid "Output Lines"
+msgstr "Elig-linioj"
+
+#: ../src/main.c:69
+msgid "[KEY]"
+msgstr "[ŜLOSILO]"
+
+#: ../src/main.c:77
+msgid "- Directly edit your entire configuration database"
+msgstr "- Rekte redakti vian tutan agordodatumbazon"

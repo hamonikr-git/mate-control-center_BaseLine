@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "February 2007">
+<!ENTITY app "<application>Image Viewer</application>">
+<!ENTITY appname "Image Viewer">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="pt-BR">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Manual do Visualizador de Imagens</title>
+    
+    <copyright lang="en"> 
+      <year>2006</year> 
+      <year>2007</year>
+      <holder>MATE Documentation Project</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2002</year> 
+      <year>2003</year> 
+      <year>2004</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>Eliot Landrum</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>The Free Software Foundation</holder> 
+    </copyright>	 
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Projeto de Documentação do MATE</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+         <para>Permissão concedida para copiar, distribuir e/ou modificar este documento dentro dos termos da GNU Free Documentation License (GFDL), Versão 1.1 ou qualquer versão superior publicada pela Free Software Foundation sem nenhuma seção imutável, texto de capa e contracapa. Você pode achar uma cópia do GFDL neste <ulink type="help" url="help:fdl">link</ulink> ou no arquivo COPYING-DOCS distribuído com este manual.</para>
+          <para>Este manual é parte da coleção dos manuais do MATE, distribuídos pela GFDL. Se você quiser distribuir este manual separadamente da coleção, você pode fazê-lo ao adicionar uma cópia da licença ao manual, como descrito na seção 6 da licença.</para>
+ 
+         <para>Muitos dos nomes usados por empresas para distinguir seus produtos e serviços são marcas registradas. Quando esses nomes aparecem em qualquer documentação MATE e os membros do Projeto de Documentação do MATE estão cientes dessas marcas registradas, os nomes aparecem em letras maiúsculas ou com iniciais em maiúsculas.</para>
+ 
+         <para lang="en">
+           DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+           UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+           WITH THE FURTHER UNDERSTANDING THAT:
+ 
+           <orderedlist>
+                 <listitem>
+                   <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                     WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                     IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                     THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                     A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                     RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                     OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                     MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                     YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                     CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                     SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                     OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                     LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                     VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                     EXCEPT UNDER THIS DISCLAIMER; AND
+                   </para>
+                 </listitem>
+                 <listitem>
+                   <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                        THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                        CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                        INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                        DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                        OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                        PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                        DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                        CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                        INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                        OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                        MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                        LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                        DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                        EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                        THE POSSIBILITY OF SUCH DAMAGES.
+                   </para>
+                 </listitem>
+           </orderedlist>
+         </para>
+   </legalnotice>
+ 
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+   <authorgroup>
+   <author lang="en"> 
+	<firstname>Jens</firstname> 
+	<surname>Finke</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Angela</firstname> 
+	<surname>Boyle</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Stuart</firstname> 
+	<surname>Ellis</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Sun</firstname> 
+	<surname>MATE Documentation Team</surname> 
+	<affiliation> 
+	  <orgname>Sun Microsystems</orgname>  
+	</affiliation> 
+   </author> 
+   <author lang="en"> 
+	<firstname>Eliot</firstname> 
+	<surname>Landrum</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+   </author> 
+   <author lang="en"> 
+	<firstname>Federico</firstname> 
+	<surname>Mena Quintero</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+   </author>	
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <email>translator@gnome.org</email> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+ 
+    <revhistory>
+    <revision lang="en"> 
+		<revnumber>Image Viewer Manual V2.8</revnumber> 
+		<date>February 2007</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">MATE Documentation Project</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en">
+		<revnumber>Image Viewer Manual V2.7</revnumber>
+		<date>February 2004</date>
+		<revdescription>
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription>
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.6</revnumber> 
+		<date>November 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.5</revnumber> 
+		<date>September 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.4</revnumber> 
+		<date>January 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.3</revnumber> 
+		<date>October 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.2</revnumber> 
+		<date>August 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.1</revnumber> 
+		<date>July 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.0</revnumber> 
+		<date>May 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en"> 
+		<revnumber>Eye of MATE User's Guide</revnumber> 
+		<date>2000</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Eliot Landrum 
+	    		  <email>eliot@landrum.cx</email>
+	  		</para>
+	  		<para role="author" lang="en">Federico Mena Quintero 
+	    		  <email>federico@gnu.org</email>
+	  		</para>	  
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+    <releaseinfo>Este manual descreve a versão 2.18 do Visualizador de Imagens.</releaseinfo> 
+    <legalnotice> 
+      <title>Comentários</title> 
+      <para>Para relatar um erro ou fazer um sugestão a respeito do aplicativo Visualizador de Imagens ou desse manual, siga as orientações da <ulink url="help:user-guide?feedback-bugs" type="help">Página de Comentários do MATE</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+    <abstract role="description">
+      <para>Manual do Usuário do <application>Visualizador de Imagens </application>.</para>
+    </abstract>
+
+  </articleinfo> 
+
+  <indexterm lang="en">
+    <primary>Eye of MATE</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+<sect1 id="eom-introduction">
+  <title>Introdução</title>
+  <para>O <application>Visualizador de Imagens</application> (Eye of MATE) permite a você visualizar tanto um único arquivo de imagem quanto grandes coleções de imagens.</para>
+
+  <sect2 id="eom-tostartapp">
+    <title>Iniciando o Visualizador de Imagens</title>
+    <para>Você pode iniciar o <application>Visualizador de Imagens</application> das seguintes formas:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Abrir um arquivo de imagem através do <application>Caja</application>.</para>
+      </listitem>
+      <listitem>
+	<para lang="en">Choose <menuchoice><guimenu>Graphics</guimenu>
+	<guimenuitem>Image Viewer</guimenuitem></menuchoice>
+	from the <guimenu>Applications</guimenu> menu.</para>
+      </listitem>
+      <listitem>
+	<para>Executar o comando <command>eom</command> na linha de comando de um terminal como o <application>mate-terminal</application>, ou através do diálogo de <application>Executar Aplicação</application>.</para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
+
+  <sect2 id="eom-closeapp">
+    <title>Fechando o Visualizador de Imagens</title>
+    <para lang="en">To close the current <application>Image Viewer</application> window choose <menuchoice><guimenu>File</guimenu>
+    <guimenuitem>Close</guimenuitem></menuchoice>, or press
+    <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>.</para>
+  </sect2>
+
+  <sect2 id="eom-filetypes">
+    <title>Tipos de Arquivos com Suporte</title>
+    <para>O <application>Visualizador de Imagens</application> é compatível vários formatos de arquivos. Os seguintes formatos de imagem podem ser abertos:</para>
+		<itemizedlist>
+			<listitem><para>ANI - Animação</para>
+			</listitem>
+			<listitem><para>BMP - Bitmap do Windows</para>
+			</listitem>
+			<listitem><para>GIF - Formato de Intercâmbio de Gráficos</para>
+			</listitem>
+			<listitem><para>ICO - Ícone do Windows</para>
+			</listitem>
+			<listitem><para>JPEG - Joint Photographic Experts Group</para>
+			</listitem>
+			<listitem><para>PCX - PC Paintbrush</para>
+			</listitem>
+			<listitem><para>PNG - Portable Network Graphics</para>
+			</listitem>
+			<listitem><para>PNM - Portable Anymap from the PPM Toolkit</para>
+			</listitem>
+			<listitem><para>RAS - Sun Raster</para>
+			</listitem>
+			<listitem><para>SVG - Gráficos Vetoriais Escaláveis</para>
+			</listitem>
+			<listitem><para>TGA - Targa</para>
+			</listitem>
+			<listitem><para>TIFF - Tagged Image File Format</para>
+			</listitem>
+			<listitem><para>WBMP - Wireless Bitmap</para>
+			</listitem>
+			<listitem><para>XBM - Bitmap do X</para>
+			</listitem>
+			<listitem><para>XPM - Bitmap do X</para>
+			</listitem>
+		</itemizedlist>
+
+  <para>O <application>Visualizador de Imagens</application> tem suporte aos seguintes formatos para salvar:</para>
+		<itemizedlist>
+			<listitem><para>BMP - Bitmap do Windows</para>
+			</listitem>
+			<listitem><para>ICO - Ícone do Windows</para>
+			</listitem>
+			<listitem><para>JPEG - Joint Photographic Experts Group</para>
+			</listitem>
+			<listitem><para>PNG - Portable Network Graphics</para>
+			</listitem>
+		</itemizedlist>
+		<para>O <application>Visualizador de Imagens</application> pode ser capaz de abrir ou salvar outros formatos de imagem, dependendo da sua configuração do sistema e outros aplicativos instalados.</para>
+  </sect2>
+
+  <sect2 id="eom-features">
+    <title>Recursos do Visualizador de Imagens</title>
+    <para>O <application>Visualizador de Imagens</application> possui uma variedade de recursos para ajudar você a visualizar suas imagens. Você pode ampliar ou reduzir uma imagem, ou mesmo exibi-la em tela cheia. Independente do nível de zoom, o <application>Visualizador de Imagens</application> usa pouca memória. Você também pode girar e virar a imagem sendo visualizada.</para>
+
+    <para>O modo de coleção permite a você visualizar e editar grandes coleções de imagens. As operações do menu Imagem podem ser aplicadas de uma só vez a todas imagens selecionadas.</para>
+
+    <para>O <application>Visualizador de Imagens</application> possui uma compatibilidade especial com fotos de câmeras digitais e mostra os metadados EXIF gravados na imagem. Esse recurso requer que a biblioteca <systemitem class="library">libexif</systemitem> esteja instalada em seu sistema. Todas as modificações em imagens JPEG são realizadas sem perda de qualidade. Isso quer dizer que salvar imagens JPEG giradas ou viradas não altera a compressão da imagem. Além disso, todos os metadados disponíveis (como EXIF) serão preservados e atualizados de acordo.</para>
+  </sect2>
+</sect1>
+
+<!--============== When You Start ===========-->
+<sect1 id="eom-whenyoustart">
+  <title>Iniciando</title>
+  <para>Quando você inicia o <application>Visualizador de Imagens</application>, a seguinte janela é apresentada:</para>
+  <figure id="mainwindow-fig">
+		<title>Janela Inicial do Visualizador de Imagens</title>
+		<screenshot>
+		  <mediaobject lang="en">
+		    <imageobject>
+		      <imagedata fileref="figures/eom_start_window.png" format="PNG"/>
+		    </imageobject>
+		    <textobject>
+		      <phrase>Shows <application>Image Viewer</application> main window. Contains titlebar, menubar, toolbar, and display area. Menubar contains File, Edit, View, and Help menus.</phrase>
+		    </textobject>
+		  </mediaobject>
+		</screenshot>
+  </figure>
+  <para>A janela do <application>Visualizador de Imagens</application> contém os seguintes elementos:</para>
+  <variablelist>
+	<varlistentry>
+  	  <term>Barra de Menus</term>
+ 	  <listitem>
+	    <para>Os menus na barra de menus contêm todos os comandos de que você precisa para manipular as imagens no <application>Visualizador de Imagens</application>.</para>
+	  </listitem>
+ 	</varlistentry>
+	<varlistentry>
+	  <term>Barra de Ferramentas</term>
+	  <listitem>
+	    <para>A barra de ferramentas contém uma parte dos comandos da barra de menus. Para mostrar ou esconder a barra de ferramentas, siga para o menu <menuchoice><guimenu>Ver</guimenu><guimenuitem>Barra de Ferramentas</guimenuitem></menuchoice>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Área de Exibição</term>
+	  <listitem>
+ 	    <para>A área de exibição mostra o arquivo de imagem.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Barra de Status</term>
+	  <listitem>
+	    <para>A barra de status fornece informações sobre a imagem. Para mostrar ou esconder a barra de status, siga o menu <menuchoice><guimenu>Ver</guimenu><guimenuitem>Barra de Status</guimenuitem></menuchoice>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Coleção de Imagens</term>
+	  <listitem>
+	    <para>A coleção de imagens mostra todas as imagens com suporte existentes no diretório atual. No modo de coleção de imagens, a imagem atualmente selecionada é apresentada e as outras do diretório são mostradas em miniaturas. Para mostrar ou esconder a coleção, siga o menu <menuchoice><guimenu>Ver</guimenu><guimenuitem>Coleção de Imagens</guimenuitem></menuchoice> ou pressione a tecla <keycap>F9</keycap>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Painel de Informações da Imagem</term>
+	  <listitem>
+	    <para>O painel de informação da imagem mostra informações adicionais sobre a imagem atual, por exemplo, os metadados EXIF (se disponíveis). Tais informações são apresentadas após o carregamento da imagem. Para mostrar ou esconder o painel de informação da imagem, siga o menu <menuchoice><guimenu>Ver</guimenu><guimenuitem>Informações de Imagens</guimenuitem></menuchoice> ou pressione <keycombo><keycap>Ctrl</keycap><keycap>I</keycap></keycombo>.</para>
+	  </listitem>
+	</varlistentry>
+  </variablelist>
+  <para>A maioria das ações no <application>Visualizador de Imagens</application> podem ser executadas de muitas formas diferentes. Por exemplo, você pode abrir um arquivo das seguintes formas:</para>
+  <itemizedlist>
+    <listitem><para>Arraste um arquivo de imagem a partir de outra aplicação ou janela e solte na janela do <application>Visualizador de Imagens</application>.</para></listitem>
+    <listitem><para>Dê um clique duplo no arquivo de uma imagem dentro do navegador de arquivos ou outra aplicação.</para></listitem>
+    <listitem><para lang="en">Choose <menuchoice><guimenu>File</guimenu>
+    <guimenuitem>Open</guimenuitem></menuchoice> and select an image file
+    in the <application>Load Image</application> dialog.</para></listitem>
+    <listitem><para lang="en">Press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap>
+    </keycombo> and select an image file in the <application>Load
+    Image</application> dialog.</para></listitem>
+  </itemizedlist>
+</sect1>
+
+
+<!-- ============= Viewing Images ============================== -->
+<sect1 id="eom-view">
+	<title>Visualizando as Imagens</title>
+
+	<!--=========== To Open an Image ============================= -->
+	<sect2 id="eom-open-image">
+		<title>Abrindo uma Imagem</title>
+                <para>Para abrir uma imagem, siga os seguintes passos:</para>
+                <orderedlist>
+                  <listitem>
+                    <para lang="en">
+                      Choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice>, or press <keycombo> <keycap>Ctrl</keycap><keycap>O</keycap> </keycombo>.  </para>
+                  </listitem>
+                  <listitem>
+                    <para>No diálogo <guilabel>Carregar Imagem</guilabel>, selecione o arquivo que você quer abrir.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Clique no botão <guibutton>Abrir</guibutton>. O <application>Visualizador de Imagens</application> mostrará o nome do arquivo de imagem na barra de título da janela.</para>
+                  </listitem>
+                </orderedlist>
+                <para lang="en"> 
+	          To open another image, choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice> again. <application>Image Viewer</application> opens each image in a new window.
+                </para>
+	</sect2>
+
+	<!--=========== To View the Images in a Directory ==================== -->
+	<sect2 id="eom-open-folder">
+		<title>Visualizando as Imagens de uma Pasta</title>
+		<para>Para visualizar todas as imagens de uma pasta, siga os seguintes passos:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Abra uma das imagens de uma pasta (veja a <xref linkend="eom-open-image"/>).</para>
+                  </listitem>
+                  <listitem>
+                    <para>Abra uma Coleção de Imagens seguindo o menu <menuchoice><guimenu>Ver</guimenu><guimenuitem>Coleção de Imagens</guimenuitem></menuchoice> ou pressionando a tecla <keycap>F9</keycap>.</para>
+                  </listitem>
+		</orderedlist>
+	     <para>A Coleção de Imagens mostra miniaturas de todas as imagens com suporte contidas na pasta. Você pode visualizar as imagens clicando em uma imagem da coleção, escolhendo a opção adequada no menu <guimenu>Ir</guimenu>, ou pressionando <keycombo><keycap>Alt</keycap><keycap>Esquerda</keycap></keycombo> ou <keycombo><keycap>Alt</keycap><keycap>Direita</keycap></keycombo>.</para>
+             <para lang="en">To view all of the images in the directory fullscreen, choose <menuchoice> <guimenu>View</guimenu><guimenuitem>Full Screen</guimenuitem> </menuchoice> or press <keycap>F11</keycap>. To view them as a slide show, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Slideshow</guimenuitem></menuchoice> or press <keycap>F5</keycap>. To return to the collection view, press the <keycap>Esc</keycap> key, or <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>. For more information about how to customize the slide show, see <xref linkend="eom-prefs-slideshow"/>.
+                    </para>
+	</sect2>
+
+	<!--============ To Scroll an Image ======================= -->
+	<sect2 id="eom-scroll-image">
+		<title>Rolando uma Imagem</title>
+		<para>Para rolar uma imagem que maior que a janela, ou na tela cheia, você pode usar os seguintes métodos:</para>
+		<itemizedlist>
+			<listitem><para>Use as teclas de direção no teclado.</para>
+			</listitem>
+			<listitem><para>Arraste a imagem para movê-la pela janela. (Isso significa que você arrasta a imagem na direção oposta a qual você quer rolar: para rolar para baixo a imagem, arraste-a para cima.)</para>
+			</listitem>
+			<listitem><para>Use as barras de rolagem na janela.</para>
+			</listitem>
+		</itemizedlist>
+	</sect2>
+
+	<!--=========== To Zoom In and Out ==================== -->
+	<sect2 id="eom-zoom">
+		<title>Ampliando ou reduzindo</title>
+		<para>Você pode ampliar ou reduzir uma imagem das seguintes formas:</para>
+			<itemizedlist>
+				<listitem><para>Use a <mousebutton>roda do mouse</mousebutton>. Girar para baixo diminui o zoom; girar para cima aumenta.</para></listitem>
+ 			  <listitem><para>Seguindo ao menu <menuchoice><guimenu>Ver</guimenu><guimenuitem>Ampliar</guimenuitem></menuchoice> ou <menuchoice><guimenu>Ver</guimenu><guimenuitem>Reduzir</guimenuitem></menuchoice>. Para restaurar a imagem ao tamanho original, siga o menu <menuchoice><guimenu>Ver</guimenu><guimenuitem>Tamanho Normal</guimenuitem></menuchoice>. Para fazer a imagem se ajustar na janela, siga o menu <menuchoice><guimenu>Ver</guimenu><guimenuitem>Melhor Ajuste</guimenuitem></menuchoice>.</para></listitem>				
+ 				<listitem><para>Usar os botões de zoom na Barra de Ferramentas. <guilabel>Normal</guilabel> restaura a figura a seu tamanho original. <guilabel>Ajustar</guilabel> redimensiona a imagem para ajustá-la na janela se a imagem for muito grande.</para></listitem>
+
+				<listitem><para lang="en">Use the keyboard. To zoom in, <keycombo> <keycap>Ctrl</keycap><keycap>+</keycap> </keycombo> or <keycap>+</keycap>. To zoom out, <keycombo> <keycap>Ctrl</keycap><keycap>-</keycap> </keycombo> or <keycap>-</keycap>. To go back to the normal size, <keycombo> <keycap>Ctrl</keycap><keycap>0</keycap> </keycombo> or <keycap>1</keycap>. To scale the image to fit the window, press <keycap>F</keycap>.</para></listitem>
+			</itemizedlist>
+			<para>Quando uma imagem estiver ajustado à janela, redimensionar a janela fará o nível de zoom ser alterado de forma que a imagem continue ajustada à janela.</para>
+	</sect2>
+
+	<!--=========== To View Image Fullscreen ==================== -->
+	<sect2 id="eom-fullscreen">
+		<title>Vendo uma Imagem em Tela Cheia/Apresentação de Slides</title>
+		<para>Para mostrar uma imagem usando a tela inteira, siga o menu <menuchoice><guimenu>Ver</guimenu><guimenuitem>Tela Cheia</guimenuitem></menuchoice>.</para>
+		<para>Nenhum painel, painel ou barra de menu é visível quando uma imagem é mostrada em tela cheia. Para retornar ao modo normal, pressione a tecla <keycap>Esc</keycap>, ou <keycap>F11</keycap>, ou <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>.</para>
+		<para>Você pode ampliar/reduzir ou rolar a imagem da mesma forma quando ela é mostrada em uma janela, usando o mouse ou o teclado.</para>
+		<para>Se você tiver muitos arquivos em sua coleção, você pode pressionar <keycap>Espaço</keycap> ou usar as teclas de direita/baixo para avançar para a próxima imagem. A imagem anterior pode ser recuperada pressionando <keycap>Backspace</keycap> ou usando as teclas de esquerda/cima.</para>
+	<para>Neste caso você pode usar o modo de Apresentação de Slides, onde o <application>Visualizador de Imagens</application> automaticamente mostra a próxima imagem em sua coleção. Você pode iniciar uma apresentação de slides seguindo o menu <menuchoice><guimenu>Ver</guimenu><guimenuitem>Apresentação de Slides</guimenuitem></menuchoice> ou pressionando a tecla <keycap>F5</keycap>. A apresentação de slides pode ser pausada ou continuada pressionando a tecla <keycap>P</keycap>. Para cancelar a apresentação de slides, pressione a tecla <keycap>Esc</keycap> ou <keycap>F5</keycap>, ou <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>. Para mais informações sobre como personalizar a apresentação de slides, veja a <xref linkend="eom-prefs-slideshow"/>.</para>
+	</sect2>
+</sect1>
+
+
+<!-- ============= Manipulating Images ============================== -->
+<sect1 id="eom-manipulate">
+	<title>Manipulando Imagens</title>
+
+	<para>Todas as manipulações de imagem são aplicadas a todas imagens selecionadas. As modificações são feitas na memória e alteram os arquivos originais no disco apenas quando as imagens são salvas pelo usuário (veja a <xref linkend="eom-save-image"/>).</para>
+
+	<!--============ To Flip an Image ======================= -->
+	<sect2 id="eom-flip">
+		<title>Virando uma Imagem</title>
+		<para lang="en">To flip an image along the horizontal axis of the image, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Flip Horizontal</guimenuitem>
+		</menuchoice>.</para>
+		<para lang="en">To flip an image along the vertical axis of the image, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Flip Vertical</guimenuitem>
+		</menuchoice>.</para>
+	</sect2>
+
+	<!--============ To Rotate an Image ======================= -->
+	<sect2 id="eom-rotate">
+		<title>Girando uma Imagem</title>
+		<para lang="en">To rotate an image 90 degrees in a clockwise direction, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Rotate Clockwise</guimenuitem>
+		</menuchoice>.</para>
+		<para lang="en">To rotate an image 90 degrees in an anticlockwise direction, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Rotate Counter Clockwise</guimenuitem>
+		</menuchoice>.</para>
+	</sect2>
+
+	<!--============ To Undo an Action ======================= -->
+	<sect2 id="eom-undo">
+		<title>Desfazendo uma Ação</title>
+		<para lang="en">To undo a flip or rotate action, choose 
+		<menuchoice>
+		<guimenu>Edit</guimenu>
+		<guimenuitem>Undo</guimenuitem>
+		</menuchoice> or press 
+		<keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>
+		.</para>
+	</sect2>
+
+	<!--============ To Delete An Image ======================== -->
+	<sect2 id="eom-delete-image">
+		<title>Apagando uma Imagem</title>
+		<para lang="en">To move an image to the Trash, choose
+			<menuchoice>
+			<guimenu>Edit</guimenu>
+			<guimenuitem>Move to Trash</guimenuitem>
+			</menuchoice>.
+			This moves the file to the Trash folder. Multiple images can also be moved to the trash in the same way: select them all first.</para>
+	    <para>Para restaurar uma imagem da Lixeira, abra a pasta Lixeira no gerenciador de arquivos <application>Caja</application> e mova os arquivos das imagens para outra pasta. Para excluir permanentemente, esvazie a Lixeira. Para saber mais sobre como usar a Lixeira, veja o <ulink type="help" url="help:user-guide?caja-trash">Guia do Usuário</ulink>.</para>
+				
+			<note><para>Você também pode usar a tecla <keycap>Del</keycap> para mover uma imagem para a Lixeira. Neste caso, você precisará confirmar sua ação.</para></note>
+			
+	</sect2>
+</sect1> 
+
+<!-- ============= Saving Images ============================== -->
+<sect1 id="eom-save-rename">
+	<title>Salvando Imagens</title>
+
+	<para>O <application>Visualizador de Imagens</application> sempre tenta escolher uma forma de salvar a imagem que traga menos impacto aos dados da imagem. Por exemplo, caso uma imagem não modificada seja salva com um nome diferente no mesmo formato, o arquivo será simplesmente copiado. Caso a biblioteca <systemitem class="library">libjpeg</systemitem> esteja disponível no sistema todas as modificações sobre uma imagem JPEG são feitas sem perda de informações.</para>
+
+<!--============ To Save an Image ======================= -->
+	<sect2 id="eom-save-image">
+		<title>Salvando uma Imagem</title>
+		<para lang="en">To save an image, choose 
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save</guimenuitem>
+			</menuchoice>.
+		The image will be saved under the same name and file type. Therefore, unmodified images needn't be saved.</para>
+	</sect2>
+
+	<!--============ To Save As an Image ======================= -->
+	<sect2 id="eom-save-as-image">
+		<title>Salvando uma Imagem com um Nome Diferente</title>
+		<para lang="en">To save an image under a different name, or convert it to a different file type, choose
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save As</guimenuitem>
+			</menuchoice>.</para>
+		<para>Especifique o nome do arquivo no campo <guilabel>Nome</guilabel> no diálogo <guilabel>Salvar Imagem</guilabel>, então clique no botão <guibutton>Salvar</guibutton>. O arquivo será salvo na pasta atual por padrão. O <application>Visualizador de Imagens</application> tenta determinar o formato do arquivo a partir do sufixo do nome (extensão). Caso deseje salvar a imagem em outra pasta ou se a detecção do formato pelo nome falhar, clique em <guilabel>Navegar em outras pastas</guilabel>. Isso permite a navegação de pastas e a especificação do formato do arquivo.</para>
+		<para>Você pode salvar múltiplas imagem de vez: veja a próxima seção.</para>
+	</sect2>    
+
+	<!--============ To Save As an Image ======================= -->
+	<sect2 id="eom-save-as-multiple">
+		<title>Salvando Múltiplas Imagens</title>
+		<para>Ao salvar múltiplas imagens de uma única vez é possível converter muitas imagens para um formato diferente, ou atribuir nomes semelhantes.</para>
+		<para lang="en">To save multiple images, select the images and choose 
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save As</guimenuitem>
+			</menuchoice>. 		
+		The following window is displayed:</para>
+  		<figure id="saveas-dialog-fig">
+			<title>Janela de Salvar como para múltiplas imagens</title>
+			<screenshot>
+			  <mediaobject lang="en">
+			    <imageobject>
+			      <imagedata fileref="figures/eom_save_as_window.png" format="PNG"/>
+			    </imageobject>
+			    <textobject>
+			      <phrase>Shows Eye of MATE <guilabel>Save As</guilabel> dialog when saving multiple images.</phrase>
+			    </textobject>
+			  </mediaobject>
+			</screenshot>
+  		</figure>
+		<para lang="en">The folder in which the images will be saved is specified by the <guilabel>Destination folder</guilabel> drop-down box. Initially the folder is set to the current folder. Select <guilabel>Other...</guilabel> from the drop-down list to open a standard open folder dialog for browsing the filesystem. The resulting filename for each image is specified by <guilabel>Filename format</guilabel>. The filename schema is constructed by simple
+		characters and special tags. The following special tags are available: </para>
+		<itemizedlist>
+			<listitem><para><guilabel>Nome do arquivo (%f)</guilabel> - Nome do arquivo original sem o sufixo do formato.</para>
+			</listitem>
+			<listitem><para><guilabel>Contador (%n)</guilabel> - Número incrementado automaticamente (começa com um valor específico).</para>
+			</listitem>			
+		</itemizedlist>	
+		<para>Qualquer coisa exceto as variáveis especiais são consideradas texto normal.</para>
+		<para lang="en">The image format is determined by the drop-down box after the schema definition. Select a specific image format or use the 
+		<guilabel>as is</guilabel> option to state that the same format as the original file should be used.</para>
+	
+		<para lang="en">The <guilabel>Options</guilabel> section allows to remove all space characters by underscores in the resulting filename if <guilabel>Replace spaces with underscores</guilabel> is checked. The <guilabel>Start counter at</guilabel> spin box determines at which number the counter starts if you use the %n tag for the file format specification.</para>
+		<para>A seção <guilabel>Visualização do Nome de Arquivo</guilabel> mostra o nome de arquivo resultante de acordo com as configurações feitas acima para as imagens selecionadas.</para>
+	</sect2>
+
+
+
+</sect1>
+
+<sect1 id="eom-print">
+	<title>Imprimindo Imagens</title>
+	<sect2 id="eom-print-pagesettings">
+		<title>Configurando a Impressão</title>
+		<para>Antes de imprimir você precisa ajustar as configurações de página. Para fazer isso siga o menu <menuchoice><guimenu>Arquivo</guimenu><guimenuitem>Configurações de Impressão</guimenuitem></menuchoice>.</para>
+		<para>No diálogo de <guilabel>Configurações de Impressão</guilabel> você pode escolher o tamanho do papel e a orientação. Se possível também selecione os tamanhos das bordas para ajustar melhor a sua impressora.</para>
+	</sect2>
+
+	<sect2 id="eom-print-image">
+		<title>Imprimindo uma Imagem</title>
+		<para>Para imprimir uma imagem, siga os seguintes passos:</para>
+		<orderedlist>
+			<listitem>
+				<para>Selecione <menuchoice><guimenu>Arquivo</guimenu><guimenuitem>Imprimir</guimenuitem></menuchoice></para>
+			</listitem>
+			<listitem>
+				<para>No diálogo <guilabel>Imprimir</guilabel>, selecione a impressora que você quer usar para imprimir.</para>
+			</listitem>
+			<listitem>
+				<para>Ao clicar em <guilabel>Imprimir</guilabel>. O <application>Visualizador de Imagens</application> inicia o procedimento de impressão.</para>
+			</listitem>
+		</orderedlist>
+		<para>As imagens que são muito grandes para a página são automaticamente escalonadas para se ajustar à página. As imagens que são menores que a página serão centralizadas automaticamente.</para>
+		<important>
+			<para>Por favor, observe que o <application>Visualizador de Imagens</application> ainda não dispõe de relatório de progresso de impressão. Até lá, a aplicação pode deixar de responder por um curto período de tempo.</para>
+		</important>
+	</sect2>
+
+	<sect2 id="eom-print-settings">
+		<title>Disposição de uma Imagem na Página</title>
+		<para>Talvez você não queira que sua imagem seja centralizada ou escalonada automaticamente. Para alterar o comportamento siga até o diálogo <guilabel>Imprimir</guilabel> (veja a <xref linkend="eom-print-image"/>) e então selecione a seção de <guilabel>Configurações da Imagem</guilabel> que oferece as seguintes opções:</para>
+		<itemizedlist>
+			<listitem>
+				<para>As opções na seção de <guilabel>Posição</guilabel> lhe permite alterar a posição das imagens na página.</para>
+			</listitem>
+			<listitem>
+				<para>É possível posicionar a imagem na página por arrastá-la no campo <guilabel>Visualizar</guilabel>.</para>
+			</listitem>
+			<listitem>
+				<para>As opções na seção de <guilabel>Tamanho</guilabel> lhe permite escalonar a imagem de acordo com sua preferência. O escalonamento é limitado ou pelo tamanho da imagem ou pelo tamanho da página, dependendo de qual condição é satisfeita primeiro.</para>
+			</listitem>
+			<listitem>
+				<para>A opção de <guilabel>Unidade</guilabel> permite a você alterar a unidade métrica que é usada pelas opções na seção <guilabel>Configurações da Imagem</guilabel>. Quando você altera esta opção os valores dos outros campos são convertidos automaticamente.</para>
+			</listitem>
+		</itemizedlist>
+	</sect2>
+		
+</sect1>
+<sect1 id="eom-toolbareditor">
+	<title>Personalizando a barra de ferramentas</title>
+	<para>A barra de ferramentas padrão do Visualizador de Imagens contém somente um conjunto básico de itens para mantê-la simples. Se você preferir um conjunto diferente, você pode modificar a barra de ferramentas.</para>
+	<sect2 id="eom-toolbareditor-use">
+		<title>Modificando a barra de ferramentas</title>
+		<para>Se você quiser modificar a barra de ferramentas você precisa abrir o editor de barra de ferramentar indo em <menuchoice><guimenu>Editar</guimenu><guimenuitem>Barra de ferramentas</guimenuitem></menuchoice>. A seguinte janela irá aparecer:</para>
+		<figure id="toolbar-editor-fig">
+			<title>A janela de edição da barra de ferramentas</title>
+			<screenshot>
+				<mediaobject lang="en">
+					<imageobject>
+						<imagedata fileref="figures/eom_toolbar_editor_window.png" format="PNG"/>
+					</imageobject>
+					<textobject>
+						<phrase>Shows Eye of MATE toolbar editor window.</phrase>
+					</textobject>
+				</mediaobject>
+			</screenshot>
+		</figure>
+		<para>Contém os itens que não estão na barra de ferramentas e o separador. Você pode agora editar a barra de ferramentas:</para>
+		<itemizedlist>
+			<listitem>
+				<para>Para adicionar novos itens à barra de ferramentas, arraste-os do editor para a barra de ferramentas.</para>
+			</listitem>
+			<listitem>
+				<para>Para remover itens da barra de ferramentas, arraste-os da barra de ferramentas para o editor.</para>
+			</listitem>
+			<listitem>
+				<para>Para rearranjar itens na barra de ferramentas, arraste-os para sua nova posição na barra.</para>
+			</listitem>
+		</itemizedlist>
+		<para>Quando você tiver terminado de editar a barra de ferramentas, clique no botão <guibutton>Fechar</guibutton> na janela de edição da barra de ferramentas. Isso irá fechar o editor e tornará sua barra de ferramentas ativa.</para>
+		</sect2>
+		<sect2 id="eom-toolbareditor-reset">
+			<title>Redefinindo a barra de ferramentas</title>
+			<para>Para reverter suas mudanças para a barra de ferramentas e retornar para a disposição padrão, siga os seguintes passos:</para>
+			<orderedlist>
+				<listitem>
+					<para>Abra o editor de barra de ferramentas (veja a <xref linkend="eom-toolbareditor-use"/>).</para>
+				</listitem>
+				<listitem>
+					<para>Clique no botão <guibutton>Redefinir para o padrão</guibutton>.</para>
+				</listitem>
+				<listitem>
+					<para>Clique no botão <guibutton>Fechar</guibutton> para fechar o editor da barra de ferramentas. A barra de ferramentas terá sido redefinida para seu padrão.</para>
+				</listitem>
+			</orderedlist>
+		</sect2>
+</sect1>
+<sect1 id="eom-prefs">
+	<title>Preferências</title>
+	<para>As Preferências podem ser alteradas seguindo o menu <menuchoice><guimenu>Editar</guimenu><guimenuitem>Preferências</guimenuitem></menuchoice>. Você será capaz de alterar as opções para a visão de imagem e apresentação de slides. As alterações serão aplicadas a todas as janelas abertas instantaneamente.</para>
+
+	<!--============ Image View ======================= -->
+  <sect2 id="eom-prefs-image">
+         <title>Visualização de Imagem</title>
+	<variablelist>
+	<varlistentry>
+		<term lang="en"><guilabel>Image Enhancements</guilabel></term>
+		<listitem>
+		<para>Selecione a opção de <guilabel>Suavizar imagem ao fazer zoom</guilabel> para permitir a suavização quando você altera a taxa de zoom. Caso você selecione esta opção, suas imagens serão suavizadas para a qualidade da visão enquanto você estiver usando o <application>Visualizador de Imagens</application>.</para>
+                <para>Caso você selecione a opção de <guilabel>Orientação automática</guilabel>, suas imagens serão giradas automaticamente de acordo com seus metadados. Por exemplo, os retratos serão automaticamente girados para cima e direita. Observe que esta função requer um conjunto correto de informações na seção de metadados da imagem e pode não funcionar com todas as imagens. O giro não será salvo até que você salve a imagem manualmente (veja a <xref linkend="eom-save-rename"/>).</para>
+		</listitem>
+	</varlistentry>
+
+	<varlistentry>
+		<term lang="en"><guilabel>Transparent Parts</guilabel></term>
+		<listitem>
+		<para>Selecione uma das seguintes opções para determinar como o <application>Visualizador de Imagens</application> mostra as partes transparentes de uma imagem:</para>
+		<itemizedlist>
+			<listitem><para lang="en"><guilabel>As check pattern</guilabel> </para>
+			<para>Mostra qualquer parte transparente da imagem como um padrão quadriculado.</para>
+			</listitem>
+			<listitem><para lang="en"><guilabel>As custom color</guilabel> </para>
+			<para>Mostra qualquer parte transparente da imagem com uma cor sólida que você defina. Clique no botão seletor de cores para escolher uma.</para>
+			</listitem>
+			<listitem><para lang="en"><guimenuitem>As background</guimenuitem> </para>
+			<para>Mostra qualquer parte transparente da imagem na cor de fundo de tela do <application>Visualizador de Imagens</application>.</para>
+			</listitem>
+		</itemizedlist>
+		</listitem>
+	</varlistentry>		
+	</variablelist>
+  </sect2>
+		
+	<!--============ Slide Show ==================-->                                                                                               
+  <sect2 id="eom-prefs-slideshow">
+         <title>Apresentação de Slides</title>
+	<variablelist>
+	<varlistentry>
+		<term lang="en"><guilabel>Image Zoom</guilabel></term>
+		<listitem>
+		<para>Selecione a opção <guilabel>Ajustar imagens à tela</guilabel> para redimensionar todas as imagens de forma a ajustá-las na tela durante a apresentação de slides. Caso você não selecione esta opção, as imagens menores que o tamanho da tela não serão redimensionadas para se ajustar à tela.</para>
+		</listitem>
+	</varlistentry>
+	<varlistentry>
+		<term lang="en"><guilabel>Sequence</guilabel></term>
+		<listitem>
+		<para>Selecione a opção <guilabel>Repetir a seqüência</guilabel> para repetir indefinidamente a lista de imagens durante a apresentação de imagens. Caso você não selecione esta opção, a apresentação de slides volta ao modo de Coleção depois da última imagem ter sido apresentada.</para>
+		<para>Use o campo <guilabel>Trocar imagem após ... segundos</guilabel> para definir durante quanto tempo cada imagem é mostrada durante a apresentação de slides. Caso você mantenha este valor em zero, a função de avanço automático será desabilitada e apenas a navegação manual estará disponível (veja a <xref linkend="eom-fullscreen"/>).</para>
+		</listitem>
+	</varlistentry>		
+	</variablelist>
+  </sect2>
+</sect1>
+</article>

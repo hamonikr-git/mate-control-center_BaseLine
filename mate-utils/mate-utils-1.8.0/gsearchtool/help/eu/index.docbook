@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "March 2009">
+<!ENTITY app "Search for Files">
+<!ENTITY ug "MATE Desktop User Guide">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.mate.org/projects/gdp 
+  Template version: 2.0 beta
+  Template last modified Jan 25, 2005  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="eu">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Fitxategi-bilaketaren eskuliburua</title>
+
+    <abstract role="description">
+      <para>Ordenagailuan fitxategiak, karpetak eta dokumentuak bilatzeko bilaketa-tresna.</para>
+    </abstract>
+
+    <copyright lang="en"> 
+      <year>2005</year> 
+      <holder>Dennis Cranston</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2002</year> 
+      <year>2003</year> 
+      <year>2004</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>Alexander Kirillov</holder> 
+    </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+    <publisher> 
+      <publishername>MATEren dokumentazio-proiektua</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Baimena ematen da dokumentu hau kopiatu, banatu eta/edo aldatzeko Free Software Foundation-ek argitaratutako GNU Dokumentazio Librearen Lizentziaren 1.1. bertsioan edo berriago batean ezarritako baldintzak betetzen badira; Atal Aldaezinik, Aurreko azaleko testurik eta Atzeko azaleko testurik gabe. GFDL lizentziaren kopia <ulink type="help" url="help:fdl">esteka honetan</ulink> edo eskuliburu honekin batera ematen den COPYING-DOCS fitxategian aurkituko duzu.</para>
+         <para>Eskuliburu hau GFDL lizentziarekin banatzen diren MATE eskuliburuen bildumakoa da. Eskuliburu hau bildumatik bereizita banatu nahi baduzu, bana dezakezu, baina eskuliburuari lizentziaren kopia bat gehitu beharko diozu, lizentzian bertan 6. atalean azaltzen den bezala.</para>
+
+	<para>Enpresek euren produktu eta zerbitzuak bereizteko erabiltzen dituzten izen asko marka erregistratu moduan hartu behar dira. Izen horiek MATEren edozein agiritan agertzen direnean, eta MATEren Dokumentazio Proiektuko kideak marka komertzialak direla konturatu badira, orduan izen horiek maiuskulaz idatzita egongo dira, osorik edo hasierako letra maiuskulaz jarrita.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+
+    <authorgroup> 
+      <author role="maintainer" lang="en"> 
+	<firstname>Dennis</firstname> 
+	<surname>Cranston</surname> 
+	<affiliation> 
+	  <orgname>Search for Files Maintainer</orgname> 
+	  <address lang="en">dennis_cranston@yahoo.com</address> 
+	</affiliation> 
+      </author> 
+      <author lang="en"> 
+	<firstname>Sun</firstname> 
+	<surname>MATE Documentation Team</surname> 
+	<affiliation> 
+	  <orgname>Sun Microsystems</orgname> 
+	  <address/> 
+	</affiliation> 
+      </author> 
+      <author lang="en"> 
+	<firstname>Alexander</firstname> 
+	<surname>Kirillov</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	  <address> <email>kirillov@math.sunysb.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+ <revhistory>
+ <!-- <revision> 
+	<revnumber>&app; Manual V&manrevision;</revnumber> 
+	<date>&date;</date> 
+	<revdescription> 
+	  <para role="author">Sun GNOME Documentation Team</para>
+	  <para role="publisher">MATE Documentation Project</para>
+	</revdescription> 
+ </revision>
+-->
+   <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.7</revnumber> 
+			<date>June 2005</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Joachim Noreiko
+				<email>jnoreiko@yahoo.com</email>
+			</para>
+	  		<para role="publisher" lang="en">Search for Files Maintainer</para>
+			</revdescription> 
+  </revision>
+  <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.6</revnumber> 
+			<date>January 2005</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Dennis Cranston
+				<email>dennis_cranston@yahoo.com</email>
+			</para>
+	  		<para role="publisher" lang="en">Search for Files Maintainer</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.4</revnumber> 
+			<date>February 2004</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.3</revnumber> 
+			<date>September 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Filesl Manual V2.2</revnumber> 
+			<date>August 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.1</revnumber> 
+			<date>July 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.0</revnumber> 
+			<date>May 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+	<revnumber>Search for Files Manual</revnumber> 
+	<date>2000</date> 
+	<revdescription> 
+	  <para role="author" lang="en">Alexander Kirillov
+	    <email>kirillov@math.sunysb.edu</email>
+	  </para>
+	  <para role="publisher" lang="en">MATE Documentation Project</para>
+	</revdescription> 
+ </revision> 
+ </revhistory> 
+
+    <releaseinfo lang="en">This manual describes version 2.26 of Search for Files.
+    </releaseinfo> 
+    <legalnotice> 
+      <title>Ohar-bidaltzea</title> 
+      <para>Fitxategi-bilaketa aplikazioari buruzko akatsen berri emateko edo oharrak bidaltzeko, <ulink url="help:mate-feedback" type="help">MATEra oharrak bidaltzeko orria</ulink>n aurkituko dituzu argibideak.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm lang="en"> 
+    <primary>Search Tool</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="gsearchtool-introduction"> 
+    <title>Sarrera</title> 
+    <para><application>Fitxategi-bilaketa</application> aplikazioaren bidez fitxategiak bila ditzakezu sisteman. Oinarrizko bilaketa egiteko, fitxategi-izena edo fitxategi-izenaren zati bat idatz dezakezu, komodinekin ala gabe. Bilaketa hobetzeko, beste bilaketa-aukera batzuk aplika ditzakezu.</para>
+    <para><application>Fitxategi-bilaketa</application>k <command>find</command>, <command>grep</command> eta <command>locate</command> UNIX komandoak erabiltzen ditu. Lehenespenez, <command>locate</command> komandoa erabiltzen du lehenengo <application>Fitxategi-bilaketa</application>k oinarrizko bilaketa egiterakoan, eta gero <command>find</command> komandoa, motelagoa, baina zehatzagoa.</para>
+    <para>Bilaketan maiuskulak eta minuskulak bereiztea ala ez bereiztea sistema-eragilearen baitan dago. Esate baterako, Linux-en, <command>find</command>, <command>grep</command> eta <command>locate</command> komandoek <literal>-i</literal> aukera onartzen dute; beraz, bilaketetan ez dira maiuskulak eta minuskulak bereizten.</para>
+  </sect1>
+
+  <sect1 id="gsearchtool-getting-started">
+    <title>Erabiltzen hastea</title> 
+
+    <para>Aukera hauek dituzu <application>Fitxategi-bilaketa</application> abiarazteko:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Paneleko <guimenu>Menu-barra</guimenu>n</term>
+    		<listitem>
+    		<para>Aukeratu <menuchoice><guisubmenu>Lekuak</guisubmenu><guimenuitem>Fitxategi-bilaketa...</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+   	<varlistentry>
+    		<term>Paneleko <guimenu>Menu nagusia</guimenu>n</term>
+    		<listitem>
+    		<para>Aukeratu <menuchoice><guimenuitem>Fitxategi-bilaketa...</guimenuitem></menuchoice>.</para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Komando-lerroan</term>
+    		<listitem>
+    		<para>Exekutatu komando hau: <command>mate-search-tool</command></para>
+    		<para> 		 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+
+    <para><application>Fitxategi-bilaketa</application> abiaraztean, leiho hau bistaratzen da.</para>
+
+    <!-- ==== Figure ==== -->
+      <figure id="mainwindow-fig"> 
+	<title>Fitxategi-bilaketaren leihoa</title> 
+	<screenshot> 
+	  <mediaobject lang="en"> 
+	    <imageobject><imagedata fileref="figures/mate-search-tool_window.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Shows Search for Files main window. </phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="gsearchtool-usage"> 
+    <title>Erabilera</title>
+
+    <sect2 id="gsearchtool-simple">
+    <title>Oinarrizko bilaketa bat egitea</title>
+    
+    <para>Oinarrizko bilaketa eginez fitxategi bat sisteman bilatzeko, jarraitu urrats hauei:</para>
+    <orderedlist>
+    <listitem><para>Sartu bilaketa-testua <guilabel>Izenak hau dauka</guilabel> eremuan. Fitxategi-izena edo fitxategi-izenaren zati bat izan daiteke bilaketa-testua , komodinekin edo gabe, taula honetan erakusten den bezala:</para>
+
+      <informaltable frame="all">
+        <tgroup cols="3" colsep="1" rowsep="1">
+          <colspec colname="COLSPEC0" colwidth="33*"/>
+          <colspec colname="COLSPEC1" colwidth="33*"/>
+          <colspec colname="COLSPEC2" colwidth="34*"/>
+          <thead>
+            <row valign="top">
+              <entry colname="COLSPEC0">
+                <para>Izenak testu hau dauka</para></entry>
+              <entry colname="COLSPEC1">
+                <para>Adibidea</para></entry>
+              <entry colname="COLSPEC2">
+                <para>Emaitza</para></entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">
+              <entry>
+                <para>Fitxategi-izena edo izenaren zati bat</para>
+              </entry>
+              <entry>
+                <para lang="en"><userinput>myfile.txt</userinput>
+                </para>
+              </entry>
+              <entry>
+                <para>Fitxategi-izenean <userinput>nirefitxategia.txt</userinput>testua duten fitxategi guztiak bilatzen ditu <application>Fitxategi-bilaketa</application>k.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para>Fitxategi-izenaren zati bat (*, [, ]) komodinekin konbinatuta</para>
+              </entry>
+              <entry>
+                <para lang="en"><userinput>*.[ch]</userinput>
+                </para>
+              </entry>
+              <entry>
+                <para><application>Fitxategi-bilaketa</application> aplikazioak <userinput>.c</userinput> edo <userinput>.h</userinput> luzapena duten fitxategi guztiak bilatzen ditu.</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </listitem>
+    <listitem><para><guilabel>Begiratu karpetan</guilabel> eremuan, hautatu zein karpeta edo gailutatik nahi duzun <application>Fitxategi-bilaketa</application> aplikazioak bilaketa hastea.</para></listitem>
+    <listitem><para>Egin klik <guibutton>Bilatu</guibutton> botoian bilaketa hasteko.</para>
+    </listitem>
+    </orderedlist>
+    <para>Zehaztutako direktorioan eta direktorio horren azpidirektorioetan bilatzen du <application>Fitxategi-bilaketa</application>k. <application>Fitxategi-bilaketa</application>k bilaketaren emaitzak <guilabel>Bilaketaren emaitza</guilabel> zerrenda-koadroan bistaratzen ditu. <application>Fitxategi-bilaketa</application>k ez badu bilaketa-irizpideekin bat datorren fitxategirik aurkitzen, aplikazioak mezu hau bistaratzen du <guilabel>Bilaketaren emaitza</guilabel> zerrenda-koadroan: "Ez da fitxategirik aurkitu".</para>
+    <para>Lehenespenez, <application>Fitxategi-bilaketa</application> aplikazioak bilaketa bizkor bat egiten du <command>locate</command> komandoa erabiliz, eta ondoren bilaketa zehatzagoa egiten du <command>find</command> komandoa erabiliz. <command>locate</command> komandoa bizkorragoa da, fitxategiei buruzko informazioa duen datu-base bat erabiltzen duelako. Datu-base horrek aste bete baino gehiago badu, bilaketaren emaitzak zaharkituak egon daitezkeela jakinaraziko dizu <application>Fitxategi-bilaketa</application>k, eta bilaketa bizkorra desgaitzeko aukera emango dizu. Datu-basea eguneratzeko, exekutatu <command>updatedb</command> komandoa root erabiltzaile moduan.</para>
+  </sect2>
+    
+    <sect2 id="gsearchtool-advanced">
+    <title>Bilaketa-aukerak gehitzea</title>
+    <para>Beste aukera batzuk gehi ditzakezu sisteman fitxategiak bilatzeko. Bilaketa-aukerak gehitzeko, egin urrats hauek:</para>
+  	<orderedlist>
+    		<listitem><para>Egin klik <guilabel>Hautatu aukera gehiago</guilabel> testuan.</para></listitem>
+    		<listitem><para>Egin klik <guilabel>Aukerak</guilabel> goitibeherako zerrendan.</para></listitem>
+    		<listitem><para>Hautatu aplikatu nahi duzun bilaketa-aukera.</para></listitem>
+    		<listitem><para>Sakatu <guibutton>Gehitu</guibutton>.</para></listitem>
+    		<listitem><para>Zehaztu bilaketa-aukeran eskatzen den informazioa, <xref linkend="tbl-search-rules"/>-n azaltzen den moduan.</para></listitem>
+    		<listitem><para>Errepikatu goiko urratsak aplikatu nahi duzun bilaketa-aukera bakoitzean.</para></listitem>
+    	</orderedlist>	
+    	<para>Bilaketa-aukera bat uneko bilaketatik kentzeko, egin klik <guibutton>Kendu</guibutton> botoian.</para>
+    	<para>Uneko bilaketan bilaketa-aukera bat desaktibatzeko, egin klik <guilabel>Hautatu aukera gehiago</guilabel> testuan.</para>
+    
+    <table id="tbl-search-rules" frame="topbot">
+    <title>Bilaketa-aukerak</title> 
+		  <tgroup cols="2" colsep="1" rowsep="1">
+			 <colspec colname="COLSPEC0" colwidth="33*"/>
+			 <colspec colname="COLSPEC1" colwidth="33*"/>
+			 <thead> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Aukeraren izena</para></entry> 
+				  <entry> 
+					 <para>Azalpena</para></entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Testu hau du</para></entry> 
+				  <entry> 
+					 <para>Zehaztutako testua daukaten testu arrunteko fitxategiak bilatzen ditu.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Aldaketa-data hau baino zaharragoa da:</para></entry> 
+				  <entry> 
+					 <para>Adierazitako egunak baino lehenago aldatutako fitxategiak bilatzen ditu.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Aldaketa-data hau baino berriagoa da:</para></entry> 
+				  <entry> 
+					 <para>Adierazitako egunak baino geroago aldatutako fitxategiak bilatzen ditu.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Gutxieneko tamaina</para></entry> 
+				  <entry> 
+					 <para>Adierazitako tamainakoak edo handiagoak diren fitxategiak bilatzen ditu.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Gehienezko tamaina</para></entry> 
+				  <entry> 
+					 <para>Adierazitako tamainakoak edo txikiagoak diren fitxategiak bilatzen ditu.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Fitxategia hutsik dago</para></entry> 
+				  <entry> 
+					 <para>Fitxategi hutsak bilatzen ditu.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Erabiltzaile honena</para></entry> 
+				  <entry> 
+					 <para>Zehaztutako erabiltzailearen fitxategiak bilatzen ditu. Idatzi erabiltzailearen izena testu-koadroan.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Talde honena</para></entry> 
+				  <entry> 
+					 <para>Zehaztutako taldearen fitxategiak bilatzen ditu. Idatzi taldearen izena testu-koadroan.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Jabea ezezaguna da</para></entry> 
+				  <entry> 
+					 <para>Sistemak ezagutzen ez dituen erabiltzaileen edo taldeen fitxategiak bilatzen ditu.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Izenak ez dauka hau</para></entry> 
+				  <entry> 
+					 <para>Sartu duzun katea ez duten fitxategi-izenak bilatzen ditu. Sartu fitxategi-izen osoa edo fitxategi-izenaren zati bat, komodinekin, emandako eremuan. Erabili *, karaktere-sekuentzia bat adierazteko. Erabili ?, karaktere bat adierazteko. Bilaketa egitean maiuskulak eta minuskulak bereizten dira.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Izena bat dator adierazpen erregular honekin</para></entry> 
+				  <entry> 
+					 <para>Zehaztutako adierazpen erregularra direktorioaren bide-izenean edo fitxategi-izenean duten fitxategiak bilatzen ditu. Idatzi adierazpen erregularra emandako testu-koadroan.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Erakutsi ezkutuko fitxategiak eta babeskopia-fitxategiak</para></entry> 
+				  <entry> 
+					 <para>Fitxategiak bilatzean ezkutuko fitxategiak eta babeskopia-fitxategiak kontuan hartzen ditu.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Jarraitu esteka sinbolikoei</para></entry> 
+				  <entry> 
+					 <para>Fitxategiak bilatzean esteka sinbolikoei jarraitzen die.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para lang="en">Exclude other filesystems</para></entry> 
+				  <entry> 
+					 <para lang="en">Search in directories that are in the same filesystem as the start directory.</para></entry>  
+				</row> 
+				 				
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+    
+    </sect2>
+
+    <sect2 id="gsearchtool-stop">
+    <title>Bilaketa bat gelditzeko</title>
+    <para>Egin klik <guibutton>Gelditu</guibutton> botoian, <application>Fitxategi-bilaketa</application>k bilaketa amaitu baino lehenago bilaketa gelditzeko.</para>
+    </sect2>
+    
+    <sect2 id="gsearchtool-view">
+    <title>Bistaratutako fitxategi bat irekitzea</title>
+    <para><guilabel>Bilaketaren emaitzak</guilabel> zerrenda-koadroan bistaratutako fitxategi bat irekitzeko, aukera hauek dituzu:</para>
+    <itemizedlist>
+    <listitem><para>Egin klik eskuineko botoiaz fitxategian, eta aukeratu <guimenuitem>Ireki</guimenuitem>.</para></listitem>
+     <listitem><para>Egin klik bikoitza fitxategian.</para></listitem>
+    </itemizedlist>
+    <para><guilabel>Bilaketaren emaitzak</guilabel> zerrenda-koadroan bistaratutako fitxategi bat duen karpeta irekitzeko, egin klik eskuineko botoiaz fitxategian eta aukeratu <guimenuitem>Ireki karpeta</guimenuitem>.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-delete">
+    <title>Bistaratutako fitxategi bat ezabatzea</title>
+    <para><guilabel>Bilaketaren emaitzak</guilabel> zerrenda-koadroan bistaratutako fitxategi bat ezabatzeko, egin klik eskuineko botoiaz fitxategian eta aukeratu <guimenuitem>Bota zakarrontzira</guimenuitem>.</para>
+    </sect2>
+    
+    <!--
+    <sect2 id="gsearchtool-search-command">
+    <title>To View the Search Command Used by &app;</title>
+    <para>To view the command that <application>&app;</application> used to perform the previous search, choose <menuchoice><guimenu>Search</guimenu><guimenuitem>Show Command</guimenuitem></menuchoice>. The <guilabel>Search Command Line</guilabel> displays the command. </para>
+    </sect2>
+    -->
+    
+    <sect2 id="gsearchtool-savetofile">
+    <title>Bilaketaren emaitzak gordetzea</title>
+    <para><application>Fitxategi-bilaketak</application> aplikazioan egindako azken bilaketaren emaitzak gordetzeko, egin klik eskuineko botoiaz <guilabel>Bilaketaren emaitzak</guilabel> zerrendan eta aukeratu <guimenuitem>Gorde emaitzak honela</guimenuitem>. Idatzi emaitzak gordetzeko fitxategiaren izena eta egin klik Gorde botoian.</para>
+    </sect2>
+ 
+  </sect1>
+
+<!-- ============= Settings ============================== -->
+
+  <sect1 id="gsearchtool-settings-gsettings-keys">
+    <title>Ezarpenak</title> 
+
+    <para lang="en"><application>Search for Files</application> provides gsettings keys to modify some of its behavior.  The gsettings values can be changed by starting the <application>Configuration Editor</application> in the following ways:
+    </para> 
+    <variablelist>
+    	<varlistentry>
+    		<term><guimenu>Aplikazioak</guimenu> menua</term>
+    		<listitem>
+    		<para lang="en">Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>dconf Editor</guimenuitem></menuchoice>. </para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Komando-lerroa</term>
+    		<listitem>
+    		<para lang="en">Execute the following command: <command>dconf-editor</command></para> 
+    		</listitem>
+    	</varlistentry>	
+    </variablelist>
+    
+    <sect2 id="gsearchtool-disablequicksearch">
+    <title>Bilaketa bizkorra desaktibatu</title>
+    <para lang="en">Key name: org.mate.search-tool.disable-quick-search</para>
+    <para>Balio lehenetsia: faltsua</para>
+    <para><application>Fitxategi-bilaketa</application> aplikazioak fitxategi-izenen bilaketak bizkortu egiten ditu <command>locate</command> komandoa erabiliz. <command>locate</command> komandoak fitxategi-izenak indexatzeko eta bizkor bilatzeko modu segurua ematen du. <command>locate</command> komandoa fitxategi-indize batean oinarritzen denez, <guilabel>Bilaketaren emaitzak</guilabel> zerrenda ez da beti eguneratua egongo.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-disablesecondscan">
+    <title>Bilaketa bizkorraren bigarren bilaketa desaktibatzea</title>
+    <para lang="en">Key name: org.mate.search-tool.disable-quick-search-second-scan</para>
+    <para>Balio lehenetsia: faltsua</para>
+    <para>Bilaketa bizkorra osatu ondoren, <application>Fitxategi-bilaketa</application>k bilaketa zehatz bat egingo du <command>find</command> komandoa erabiliz. Bigarren bilaketa hori indexatu ez diren fitxategiak aurkitzeko da. Bilaketa-irizpideak betetzen dituzten fitxategiak <guilabel>Bilaketaren emaitzak</guilabel> zerrendari gehitzen zaizkio eta zerrenda eguneratua mantentzen da.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-quicksearchexclude">
+    <title>Bilaketa bizkorretik kanpo dauden bide-izenak</title>
+    <para lang="en">Key name: org.mate.search-tool.quick-search-excluded-paths</para>
+    <para>Balio lehenetsiak: [/mnt/*,/media/*,/dev/*,/tmp/*,/proc/*,/var/*]</para>
+    <para><application>Fitxategi-bilaketa</application>k ez ditu bilaketa bizkorrak egingo gako horiekin zehaztutako bide-izenetan. Zehaztutako bide-izenetan fitxategi-izenak bilatzeko <command>find</command> komandoa erabiliko da. '*' eta '?' komodinak onartzen dira.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-secondscanexclude">
+    <title>Bilaketa bizkorraren bigarren bilaketatik kanpo daude bide-izenak</title>
+    <para lang="en">Key name: org.mate.search-tool.quick-search-second-scan-excluded-paths</para>
+    <para>Balio lehenetsiak: [/]</para>
+    <para><application>Fitxategi-bilaketa</application>k ez du bigarren bilaketa bizkorra egingo gako horiekin zehaztutako bide-izenetan. Zehaztutako bide-izenetan bilaketa bizkorra egin ondoren ez da <command>find</command> komandoa erabiliz bilaketa zehatzagoa egingo. '*' eta '?' komodinak onartzen dira.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-showoptions">
+    <title>Aukera gehigarriak erakustea</title>
+    <para lang="en">Key name: org.mate.search-tool.show-additional-options</para>
+    <para>Balio lehenetsia: faltsua</para>
+    <para>Gako horrek zehazten du <guilabel>Hautatu aukera gehiago</guilabel> atala zabalduta dagoen ala ez <application>Fitxategi-bilaketa</application> abiaraztean.</para>
+    </sect2>
+    
+  </sect1>
+
+</article>

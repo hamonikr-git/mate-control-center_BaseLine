@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Caja Extension Reference Manual: CajaMenuItem</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Caja Extension Reference Manual">
+<link rel="up" href="ch01.html" title="Extension Interfaces">
+<link rel="prev" href="libcaja-extension-caja-menu-provider.html" title="caja-menu-provider">
+<link rel="next" href="libcaja-extension-caja-property-page-provider.html" title="caja-property-page-provider">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#libcaja-extension-caja-menu.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#libcaja-extension-caja-menu.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties"> <span class="dim">|</span> 
+                  <a href="#libcaja-extension-caja-menu.properties" class="shortcut">Properties</a></span><span id="nav_signals"> <span class="dim">|</span> 
+                  <a href="#libcaja-extension-caja-menu.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libcaja-extension-caja-menu-provider.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libcaja-extension-caja-property-page-provider.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libcaja-extension-caja-menu"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libcaja-extension-caja-menu.top_of_page"></a>CajaMenuItem</span></h2>
+<p>CajaMenuItem</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libcaja-extension-caja-menu.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libcaja-extension-caja-menu.html#CAJA-TYPE-MENU-ITEM:CAPS" title="CAJA_TYPE_MENU_ITEM">CAJA_TYPE_MENU_ITEM</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libcaja-extension-caja-menu.html#CAJA-MENU-ITEM:CAPS" title="CAJA_MENU_ITEM()">CAJA_MENU_ITEM</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libcaja-extension-caja-menu.html#CAJA-MENU-ITEM-CLASS:CAPS" title="CAJA_MENU_ITEM_CLASS()">CAJA_MENU_ITEM_CLASS</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libcaja-extension-caja-menu.html#CAJA-MENU-IS-ITEM:CAPS" title="CAJA_MENU_IS_ITEM()">CAJA_MENU_IS_ITEM</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libcaja-extension-caja-menu.html#CAJA-MENU-IS-ITEM-CLASS:CAPS" title="CAJA_MENU_IS_ITEM_CLASS()">CAJA_MENU_IS_ITEM_CLASS</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="libcaja-extension-caja-menu.html#CAJA-MENU-ITEM-GET-CLASS:CAPS" title="CAJA_MENU_ITEM_GET_CLASS()">CAJA_MENU_ITEM_GET_CLASS</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libcaja-extension-caja-menu.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="libcaja-extension-caja-menu.html#CajaMenuItem--icon" title="The “icon” property">icon</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="libcaja-extension-caja-menu.html#CajaMenuItem--label" title="The “label” property">label</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="libcaja-extension-caja-menu.html#CajaMenu"><span class="type">CajaMenu</span></a> *</td>
+<td class="property_name"><a class="link" href="libcaja-extension-caja-menu.html#CajaMenuItem--menu" title="The “menu” property">menu</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="libcaja-extension-caja-menu.html#CajaMenuItem--name" title="The “name” property">name</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="libcaja-extension-caja-menu.html#CajaMenuItem--priority" title="The “priority” property">priority</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="libcaja-extension-caja-menu.html#CajaMenuItem--sensitive" title="The “sensitive” property">sensitive</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="libcaja-extension-caja-menu.html#CajaMenuItem--tip" title="The “tip” property">tip</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libcaja-extension-caja-menu.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="libcaja-extension-caja-menu.html#CajaMenuItem-activate" title="The “activate” signal">activate</a></td>
+<td class="signal_flags">Run Last</td>
+</tr></tbody>
+</table></div>
+</div>
+<a name="CajaMenu"></a><a name="CajaMenuItem"></a><div class="refsect1">
+<a name="libcaja-extension-caja-menu.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libcaja-extension-caja-menu.html#CajaMenuPrivate" title="CajaMenuPrivate">CajaMenuPrivate</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libcaja-extension-caja-menu.html#CajaMenuItemDetails" title="CajaMenuItemDetails">CajaMenuItemDetails</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libcaja-extension-caja-menu.html#CajaMenu-struct" title="CajaMenu">CajaMenu</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libcaja-extension-caja-menu.html#CajaMenuItem-struct" title="CajaMenuItem">CajaMenuItem</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libcaja-extension-caja-menu.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">├──</span> CajaMenu
+    <span class="lineart">╰──</span> CajaMenuItem
+</pre>
+</div>
+<div class="refsect1">
+<a name="libcaja-extension-caja-menu.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="libcaja-extension-caja-menu.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="CAJA-TYPE-MENU-ITEM:CAPS"></a><h3>CAJA_TYPE_MENU_ITEM</h3>
+<pre class="programlisting">#define CAJA_TYPE_MENU_ITEM            (caja_menu_item_get_type())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CAJA-MENU-ITEM:CAPS"></a><h3>CAJA_MENU_ITEM()</h3>
+<pre class="programlisting">#define CAJA_MENU_ITEM(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), CAJA_TYPE_MENU_ITEM, CajaMenuItem))
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CAJA-MENU-ITEM-CLASS:CAPS"></a><h3>CAJA_MENU_ITEM_CLASS()</h3>
+<pre class="programlisting">#define CAJA_MENU_ITEM_CLASS(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass), CAJA_TYPE_MENU_ITEM, CajaMenuItemClass))
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CAJA-MENU-IS-ITEM:CAPS"></a><h3>CAJA_MENU_IS_ITEM()</h3>
+<pre class="programlisting">#define CAJA_MENU_IS_ITEM(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), CAJA_TYPE_MENU_ITEM))
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CAJA-MENU-IS-ITEM-CLASS:CAPS"></a><h3>CAJA_MENU_IS_ITEM_CLASS()</h3>
+<pre class="programlisting">#define CAJA_MENU_IS_ITEM_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((obj), CAJA_TYPE_MENU_ITEM))
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CAJA-MENU-ITEM-GET-CLASS:CAPS"></a><h3>CAJA_MENU_ITEM_GET_CLASS()</h3>
+<pre class="programlisting">#define CAJA_MENU_ITEM_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS((obj), CAJA_TYPE_MENU_ITEM, CajaMenuItemClass))
+</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libcaja-extension-caja-menu.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="CajaMenuPrivate"></a><h3>CajaMenuPrivate</h3>
+<pre class="programlisting">typedef struct _CajaMenuPrivate CajaMenuPrivate;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CajaMenuItemDetails"></a><h3>CajaMenuItemDetails</h3>
+<pre class="programlisting">typedef struct _CajaMenuItemDetails CajaMenuItemDetails;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CajaMenu-struct"></a><h3>CajaMenu</h3>
+<pre class="programlisting">typedef struct _CajaMenu CajaMenu;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CajaMenuItem-struct"></a><h3>CajaMenuItem</h3>
+<pre class="programlisting">typedef struct _CajaMenuItem CajaMenuItem;</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libcaja-extension-caja-menu.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="CajaMenuItem--icon"></a><h3>The <code class="literal">“icon”</code> property</h3>
+<pre class="programlisting">  “icon”                     <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Name of the icon to display in the menu item.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CajaMenuItem--label"></a><h3>The <code class="literal">“label”</code> property</h3>
+<pre class="programlisting">  “label”                    <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Label to display to the user.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CajaMenuItem--menu"></a><h3>The <code class="literal">“menu”</code> property</h3>
+<pre class="programlisting">  “menu”                     <a class="link" href="libcaja-extension-caja-menu.html#CajaMenu"><span class="type">CajaMenu</span></a> *</pre>
+<p>The menu belonging to this item. May be null.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CajaMenuItem--name"></a><h3>The <code class="literal">“name”</code> property</h3>
+<pre class="programlisting">  “name”                     <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Name of the item.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CajaMenuItem--priority"></a><h3>The <code class="literal">“priority”</code> property</h3>
+<pre class="programlisting">  “priority”                 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Show priority text in toolbars.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CajaMenuItem--sensitive"></a><h3>The <code class="literal">“sensitive”</code> property</h3>
+<pre class="programlisting">  “sensitive”                <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the menu item is sensitive.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CajaMenuItem--tip"></a><h3>The <code class="literal">“tip”</code> property</h3>
+<pre class="programlisting">  “tip”                      <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Tooltip for the menu item.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="libcaja-extension-caja-menu.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="CajaMenuItem-activate"></a><h3>The <code class="literal">“activate”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="libcaja-extension-caja-menu.html#CajaMenuItem"><span class="type">CajaMenuItem</span></a> *cajamenuitem,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.2.2.9.14.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>cajamenuitem</p></td>
+<td class="parameter_description"><p>the object which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

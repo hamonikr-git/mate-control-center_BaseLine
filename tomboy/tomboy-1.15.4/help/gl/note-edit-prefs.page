@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="edit-prefs" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Preferencias de edición de notas.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Preferencias das notas</title>
+ 
+ 	<p>Pode cambiar as configuracións predefinidas ao escribir as notas no Tomboy. Para cambiar as súas configuracións de notas abra as <gui>Preferencias de Tomboy</gui> usando o seu rato co botón dereito sobre a icona de Tomboy no seu panel, barra de tarefas ou doca e seleccione <gui>Preferencias</gui> e seleccione a lapela <gui>Teclas rápidas</gui>. Tamén pode abrir <gui>Preferencias de Tomboy</gui> desde o diálogo <gui>Buscar en todas as notas</gui>. Desde o menú, seleccione <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>.</p>
+ 
+ <section id="spellcheck">
+   <title>Revisión ortográfica</title>
+   <p>Tomboy pode verificar a ortografía das súas palabras mentres escribe nunha nota. A verificación ortográfica está activada de forma predefinida e Tomboy subliñará calquera palabra mal escrita. Vostede pode ver as suxestións ortográficas usando o seu botón dereito do seu rado sobre a palabra incorrecta.</p>
+   
+   <p>Para desactivar a verificación ortográfica use o seu rato ou a barra de espazo para desmarcar <gui>Verificar a ortografía mentres se escribe</gui> no separador de <gui>Edición</gui> das Preferencias de Tomboy.</p>
+   
+ </section>
+
+ <section id="wikiwords">
+   <title>PalabrasWiki</title>
+   <p>Tomboy pode resaltar palabras que <gui>SemellanComoIsto</gui>. Ao poñer en maiúsculas varias palabras xuntas sen usar espazos, de forma similar a como funcionan os Wikis, Tomboy resaltará a palabra e converteraa nunha ligazón. Se preme na ligazón crearase unha nova nota coa PalabraWiki como o seu título de nota.</p>
+   
+   <p>PalabrasWiki está desactivado por omisión. Para activalo use o seu rato ou barra espaciadora para activar a caixa para activar <gui>Resaltar as PalabrasWiki</gui> no separador <gui>Edición</gui> das Preferencias do Tomboy.</p>
+   
+ </section>
+
+ <section id="bullets">
+   <title>Listas automáticas</title>
+   <p>Tomboy pode crear listas de viñetas automaticamente. Esta opción está activada de maneira predeterminada cando está editando unha nota. Escribindo <key>*</key> seguido do texto e premendo <key>Intro</key>, crearase automaticamente unha lista con viñetas. Despois de premer <key>Intro</key>, a seguinte liña tamén empezará con unha viñeta.</p>
+   
+   <p>Para desactivar a lista de viñetas automáticas, use o rato ou a barra espaciadora para desmarcar <gui>Activar lista de viñetas automáticas</gui> na lapela <gui>Editando</gui> das preferenzas de Tomboy.</p>
+   
+ </section>
+
+ <section id="customfont">
+   <title>Tipos de fonte personalizadas</title>
+   <p>Pode elixir usar unha tipografía ou tamaño de tipografía en Tomboy diferente da tipografía predeterminada do seu escritorio. Esta característica está desactivada de maneira predeterminada.</p>
+   
+   <p>Para activar un tipo de letra diferente, use o seu rato ou a barra espaciadora para marcar <gui>Usar tipo de letra personalizado</gui> na lapela <gui>Editarndo</gui> das Preferencias de Tomboy.</p>
+
+   <p>Pode premer o botón de tipo de letra e aparecerá un cadro de diálogo de tipos de letra, permitíndolle elixir que tipo de letra quere usar, o estilo, tal como negriña ou cursiva, e o tamaño do tipo de letra. Prema <key>Aceptar</key> para gardar a súa selección.</p>
+   
+ </section>
+
+ <section id="renamelinks">
+ 
+   <title>Renomear notas ligadas</title>
+   <p>Tomboy crea automaticamente ligazóns entre as notas cando escribe o título dunha nota na súa nota actual. Se tenta renomear unha nota ligada a outras notas en Tomboy, pode seleccionar o comportamento predeterminado de que Tomboy debería usar ao detectar o cambio. As súas opcións inclúen:</p>
+   
+   <list>
+     <item><p><gui>Preguntarme que facer</gui>: Tomboy preguntaralle cada vez que detecte un cambio nalgunha das seguintes opcións:</p></item>
+     <item><p><gui>Non renomear nunca ligazóns</gui>: Tomboy deixará as outras notas como están e desligaráas.</p></item>
+     <item><p><gui>Sempre renomear as ligazóns</gui>: Tomboy renomeará automaticamente todas as ligazóns doutras notas que apunten á nota que renomeou.</p></item>
+   </list>
+   
+   <p>Elixa unha das opcións desde a lista despregábel á dereita <gui>Ao renomear unha nota ligada:</gui> na lapela <gui>Editando</gui> das Preferencias de Tomboy.</p>
+   
+ </section>
+
+<section id="newnotetemplate">
+  <title>Crear un modelo de nota nova</title>
+  <p>Pode crear un novo modelo que se mostrará cada vez que crea unha nova nota.</p>
+  
+  <p>Prema o botón <gui>Abrir un novo modelo de nota</gui> na lapela <gui>Editando</gui> das Preferencias de Tomboy. Un novo modelo mostrarase que semella similar a unha Nota de Tomboy. Substitúa o texto <gui>Describa a súa nota aquí.</gui> na nota co texto que debería ser un novo modelo. Peche a nota para completar a creación do novo modelo. Cada vez que cree unha nova nota dito modelo mostrarase na mesma.</p>
+   
+</section>
+
+ </page>

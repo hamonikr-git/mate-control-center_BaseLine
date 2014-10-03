@@ -1,0 +1,481 @@
+# Italian translation of GConf-Editor.
+# Copyright (C) 2002-2009 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gconf-editor package.
+# Pier Luigi Fiorini <plfiorini@supereva.it>, 2002.
+# Alessio Frusciante <algol@firenze.linux.it>, 2003-2006.
+# Luca Ferretti <elle.uca@libero.it>, 2006-2008.
+# Milo Casagrande <milo@ubuntu.com>, 2009
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gconf-editor\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-02-28 13:39-0500\n"
+"PO-Revision-Date: 2009-02-28 19:35+0100\n"
+"Last-Translator: Milo Casagrande <milo@ubuntu.com>\n"
+"Language-Team: Italiano <tp@lists.linux.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/gconf-editor.desktop.in.in.h:1 ../src/gconf-editor-window.c:393
+#: ../src/gconf-editor-window.c:395 ../src/gconf-editor-window.c:880
+#: ../src/gconf-editor-window.c:1377
+msgid "Configuration Editor"
+msgstr "Editor di configurazione"
+
+#: ../data/gconf-editor.desktop.in.in.h:2
+msgid "Directly edit your entire configuration database"
+msgstr "Modifica direttamente l'intero database di configurazione"
+
+#: ../data/gconf-editor.schemas.in.h:1
+msgid "Bookmarks"
+msgstr "Segnalibri"
+
+#: ../data/gconf-editor.schemas.in.h:2
+msgid "gconf-editor folder bookmarks"
+msgstr "Segnalibri per cartelle in gconf-editor"
+
+#: ../src/gconf-bookmarks-dialog.c:202
+msgid "Edit Bookmarks"
+msgstr "Modifica segnalibri"
+
+#: ../src/gconf-cell-renderer.c:144 ../src/gconf-cell-renderer.c:341
+msgid "<no value>"
+msgstr "<nessun valore>"
+
+# empiricamente il %s comincia per maiuscola
+#: ../src/gconf-editor-window.c:359
+#, c-format
+msgid "Couldn't display help: %s"
+msgstr "Impossibile visualizzare il manuale. %s"
+
+#: ../src/gconf-editor-window.c:399
+msgid "An editor for the GConf configuration system."
+msgstr "Un editor per il sistema di configurazione GConf."
+
+#: ../src/gconf-editor-window.c:402
+msgid "translator-credits"
+msgstr ""
+"Milo Casagrande <milo@ubuntu.com>\n"
+"Luca Ferretti <elle.uca@libero.it>\n"
+"Alessio Frusciante <algol@firenze.linux.it>"
+
+#: ../src/gconf-editor-window.c:429
+#, c-format
+msgid ""
+"Couldn't unset key. Error was:\n"
+"%s"
+msgstr ""
+"Impossibile azzerare la chiave. L'errore è stato:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:454
+#, c-format
+msgid ""
+"Could not create key. The error is:\n"
+"%s"
+msgstr ""
+"Impossibile creare la chiave. L'errore è:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:536
+#, c-format
+msgid ""
+"Could not change key value. Error message:\n"
+"%s"
+msgstr ""
+"Impossibile cambiare il valore della chiave. Messaggio d'errore:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:568
+msgid ""
+"Currently pairs and schemas can't be edited. This will be changed in a later "
+"version."
+msgstr ""
+"Attualmente non è possibile modificare le coppie e gli schema. Ciò cambierà "
+"in una versione futura."
+
+#: ../src/gconf-editor-window.c:647
+#, c-format
+msgid ""
+"Could not set value. Error was:\n"
+"%s"
+msgstr ""
+"Impossibile impostare il valore. L'errore è stato:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:685 ../src/gconf-editor-window.c:733
+#, c-format
+msgid ""
+"Could not sync value. Error was:\n"
+"%s"
+msgstr ""
+"Impossibile sincronizzare il valore. L'errore è stato:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:747
+msgid "_File"
+msgstr "_File"
+
+#: ../src/gconf-editor-window.c:748
+msgid "_Edit"
+msgstr "_Modifica"
+
+#: ../src/gconf-editor-window.c:749
+msgid "_Search"
+msgstr "_Cerca"
+
+#: ../src/gconf-editor-window.c:750
+msgid "_Bookmarks"
+msgstr "S_egnalibri"
+
+#: ../src/gconf-editor-window.c:751
+msgid "_Help"
+msgstr "A_iuto"
+
+#: ../src/gconf-editor-window.c:753
+msgid "New _Settings Window"
+msgstr "_Nuova finestra impostazioni"
+
+#: ../src/gconf-editor-window.c:754
+msgid "Open a new Configuration Editor window editing current settings"
+msgstr ""
+"Apre una nuova finestra dell'editor di configurazione per modificare le "
+"impostazioni attuali"
+
+#: ../src/gconf-editor-window.c:756
+msgid "New _Defaults Window"
+msgstr "Nuova finestra _predefinite"
+
+#: ../src/gconf-editor-window.c:757
+msgid "Open a new Configuration Editor window editing system default settings"
+msgstr ""
+"Apre una nuova finestra dell'editor di configurazione per modificare le "
+"impostazioni predefinite del sistema"
+
+#: ../src/gconf-editor-window.c:759
+msgid "New _Mandatory Window"
+msgstr "Nuova finestra _vincolanti"
+
+#: ../src/gconf-editor-window.c:760
+msgid ""
+"Open a new Configuration Editor window editing system mandatory settings"
+msgstr ""
+"Apre una nuova finestra dell'editor di configurazione per modificare le "
+"impostazioni vincolanti del sistema"
+
+#: ../src/gconf-editor-window.c:762
+msgid "_Close Window"
+msgstr "_Chiudi finestra"
+
+#: ../src/gconf-editor-window.c:762
+msgid "Close this window"
+msgstr "Chiude questa finestra"
+
+#: ../src/gconf-editor-window.c:764
+msgid "_Quit"
+msgstr "_Esci"
+
+#: ../src/gconf-editor-window.c:764
+msgid "Quit the Configuration Editor"
+msgstr "Esce dall'editor di configurazione"
+
+#: ../src/gconf-editor-window.c:767
+msgid "_Copy Key Name"
+msgstr "_Copia nome chiave"
+
+#: ../src/gconf-editor-window.c:767
+msgid "Copy the name of the selected key"
+msgstr "Copia il nome della chiave selezionata"
+
+#: ../src/gconf-editor-window.c:769
+msgid "_Find..."
+msgstr "Tr_ova..."
+
+#: ../src/gconf-editor-window.c:769
+msgid "Find patterns in keys and values"
+msgstr "Trova modelli nelle chiavi e nei valori"
+
+#: ../src/gconf-editor-window.c:771
+msgid "_List Recent Keys"
+msgstr "_Elenca chiavi recenti"
+
+#: ../src/gconf-editor-window.c:771
+msgid "Show recently modified keys"
+msgstr "Mostra le chiavi modificate di recente"
+
+#: ../src/gconf-editor-window.c:774
+msgid "_Add Bookmark"
+msgstr "A_ggiungi segnalibro"
+
+#: ../src/gconf-editor-window.c:774
+msgid "Add a bookmark to the selected directory"
+msgstr "Aggiunge un segnalibro alla directory selezionata"
+
+#: ../src/gconf-editor-window.c:776
+msgid "_Edit Bookmarks"
+msgstr "_Modifica segnalibri"
+
+#: ../src/gconf-editor-window.c:776
+msgid "Edit the bookmarks"
+msgstr "Modifica i segnalibri"
+
+#: ../src/gconf-editor-window.c:779
+msgid "_Contents"
+msgstr "_Sommario"
+
+#: ../src/gconf-editor-window.c:779
+msgid "Open the help contents for the Configuration Editor"
+msgstr "Apre il sommario dell'aiuto dell'editor di configurazione"
+
+#: ../src/gconf-editor-window.c:781
+msgid "_About"
+msgstr "I_nformazioni"
+
+#: ../src/gconf-editor-window.c:781
+msgid "Show the about dialog for the Configuration Editor"
+msgstr "Mostra il dialogo di informazioni sull'editor di configurazione"
+
+#: ../src/gconf-editor-window.c:784
+msgid "_New Key..."
+msgstr "_Nuova chiave..."
+
+#: ../src/gconf-editor-window.c:784
+msgid "Create a new key"
+msgstr "Crea una nuova chiave"
+
+#: ../src/gconf-editor-window.c:786
+msgid "_Edit Key..."
+msgstr "_Modifica chiave..."
+
+#: ../src/gconf-editor-window.c:786
+msgid "Edit the selected key"
+msgstr "Modifica la chiave selezionata"
+
+#: ../src/gconf-editor-window.c:788
+msgid "_Unset Key"
+msgstr "_Azzera chiave"
+
+#: ../src/gconf-editor-window.c:788
+msgid "Unset the selected key"
+msgstr "Azzera la chiave selezionata"
+
+#: ../src/gconf-editor-window.c:790
+msgid "Set as _Default"
+msgstr "Imposta come _predefinita"
+
+#: ../src/gconf-editor-window.c:790
+msgid "Set the selected key to be the default"
+msgstr "Imposta la chiave selezionata come predefinita"
+
+#: ../src/gconf-editor-window.c:792
+msgid "Set as _Mandatory"
+msgstr "Imposta come _vincolante"
+
+#: ../src/gconf-editor-window.c:792
+msgid "Set the selected key to the mandatory"
+msgstr "Imposta la chiave selezionata come vincolante"
+
+#: ../src/gconf-editor-window.c:874
+msgid "Configuration Editor (Default settings)"
+msgstr "Editor di configurazione (impostazioni predefinite)"
+
+#: ../src/gconf-editor-window.c:877 ../src/gconf-editor-window.c:1374
+msgid "Configuration Editor (Mandatory settings)"
+msgstr "Editor di configurazione (impostazioni vincolanti)"
+
+#: ../src/gconf-editor-window.c:1123 ../src/gconf-editor-window.c:1124
+#: ../src/gconf-editor-window.c:1125 ../src/gconf-editor-window.c:1126
+#: ../src/gconf-editor-window.c:1155 ../src/gconf-editor-window.c:1163
+#: ../src/gconf-editor-window.c:1172 ../src/gconf-editor-window.c:1726
+#: ../src/gconf-editor-window.c:1738 ../src/gconf-editor-window.c:1750
+#: ../src/gconf-editor-window.c:1765
+msgid "(None)"
+msgstr "(nessuno)"
+
+#: ../src/gconf-editor-window.c:1333 ../src/gconf-editor-window.c:1343
+#, c-format
+msgid ""
+"Cannot create GConf engine. Error was:\n"
+"%s"
+msgstr ""
+"Impossibile creare il motore di GConf. L'errore è stato:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:1371
+msgid "Configuration Editor (Defaults settings)"
+msgstr "Editor di configurazione (impostazioni predefinite)"
+
+#: ../src/gconf-editor-window.c:1622
+msgid "Name"
+msgstr "Nome"
+
+#: ../src/gconf-editor-window.c:1646
+msgid "Value"
+msgstr "Valore"
+
+#: ../src/gconf-editor-window.c:1673
+msgid "Key Documentation"
+msgstr "Documentazione della chiave"
+
+#: ../src/gconf-editor-window.c:1702 ../src/gconf-key-editor.c:606
+msgid "This key is not writable"
+msgstr "Questa chiave non è scrivibile"
+
+#: ../src/gconf-editor-window.c:1715
+msgid "This key has no schema"
+msgstr "Questa chiave non ha uno schema"
+
+#: ../src/gconf-editor-window.c:1720
+msgid "Key name:"
+msgstr "Nome della chiave:"
+
+#: ../src/gconf-editor-window.c:1733
+msgid "Key owner:"
+msgstr "Proprietario della chiave:"
+
+#: ../src/gconf-editor-window.c:1745
+msgid "Short description:"
+msgstr "Descrizione breve:"
+
+#: ../src/gconf-editor-window.c:1758
+msgid "Long description:"
+msgstr "Descrizione lunga:"
+
+#: ../src/gconf-key-editor.c:87
+msgid "T_rue"
+msgstr "Ve_ro"
+
+#: ../src/gconf-key-editor.c:90 ../src/gconf-key-editor.c:244
+#: ../src/gconf-key-editor.c:349 ../src/gconf-key-editor.c:637
+msgid "_False"
+msgstr "_Falso"
+
+#. These have to be ordered so the EDIT_ enum matches the
+#. * menu indices
+#.
+#. These have to be ordered so the EDIT_ enum matches the
+#. * combobox indices
+#.
+#: ../src/gconf-key-editor.c:125 ../src/gconf-key-editor.c:155
+msgid "Integer"
+msgstr "Intero"
+
+#: ../src/gconf-key-editor.c:126 ../src/gconf-key-editor.c:156
+msgid "Boolean"
+msgstr "Booleano"
+
+#: ../src/gconf-key-editor.c:127 ../src/gconf-key-editor.c:157
+msgid "String"
+msgstr "Stringa"
+
+#. Translators: this refers to "Floating point":
+#. * see http://en.wikipedia.org/wiki/Floating_point
+#.
+#: ../src/gconf-key-editor.c:131
+msgid "Float"
+msgstr "Float"
+
+#: ../src/gconf-key-editor.c:132
+msgid "List"
+msgstr "Lista"
+
+#: ../src/gconf-key-editor.c:219
+msgid "Add New List Entry"
+msgstr "Aggiungi nuova voce alla lista"
+
+#: ../src/gconf-key-editor.c:235
+msgid "_New list value:"
+msgstr "_Nuovo valore della lista:"
+
+#: ../src/gconf-key-editor.c:321
+msgid "Edit List Entry"
+msgstr "Modifica voce della lista"
+
+#: ../src/gconf-key-editor.c:337
+msgid "_Edit list value:"
+msgstr "_Modifica valore della lista:"
+
+#: ../src/gconf-key-editor.c:558
+msgid "Path:"
+msgstr "Percorso:"
+
+#: ../src/gconf-key-editor.c:569
+msgid "_Name:"
+msgstr "_Nome:"
+
+#: ../src/gconf-key-editor.c:581
+msgid "_Type:"
+msgstr "_Tipo:"
+
+#: ../src/gconf-key-editor.c:618 ../src/gconf-key-editor.c:636
+#: ../src/gconf-key-editor.c:655 ../src/gconf-key-editor.c:672
+msgid "_Value:"
+msgstr "_Valore:"
+
+#: ../src/gconf-key-editor.c:694
+msgid "List _type:"
+msgstr "_Tipo di lista:"
+
+#: ../src/gconf-key-editor.c:702
+msgid "_Values:"
+msgstr "_Valori:"
+
+#: ../src/gconf-key-editor.c:804
+msgid "New Key"
+msgstr "Nuova chiave"
+
+#: ../src/gconf-key-editor.c:808
+msgid "Edit Key"
+msgstr "Modifica chiave"
+
+#: ../src/gconf-search-dialog.c:60
+msgid "Pattern not found"
+msgstr "Modello non trovato"
+
+#: ../src/gconf-search-dialog.c:142
+msgid "Find"
+msgstr "Trova"
+
+#: ../src/gconf-search-dialog.c:144
+msgid "_Search for: "
+msgstr "C_erca:"
+
+#: ../src/gconf-search-dialog.c:165
+msgid "Search also in key _names"
+msgstr "Cerca anche nei _nomi delle chiavi"
+
+#: ../src/gconf-search-dialog.c:168
+msgid "Search also in key _values"
+msgstr "Cerca anche nei _valori delle chiavi"
+
+#: ../src/gedit-output-window.c:347
+msgid "Close the output window"
+msgstr "Chiude la finestra di output"
+
+#: ../src/gedit-output-window.c:382
+msgid "Copy selected lines"
+msgstr "Copia le righe selezionate"
+
+#: ../src/gedit-output-window.c:399
+msgid "Clear the output window"
+msgstr "Pulisce la finestra di output"
+
+#: ../src/gedit-output-window.c:438
+msgid "Output Lines"
+msgstr "Righe di output"
+
+#: ../src/main.c:69
+msgid "[KEY]"
+msgstr "[CHIAVE]"
+
+#: ../src/main.c:77
+msgid "- Directly edit your entire configuration database"
+msgstr "- Modifica direttamente l'intero database di configurazione"
+
+#~ msgid "Type"
+#~ msgstr "Tipo"
+
+#~ msgid "The Configuration Editor window type."
+#~ msgstr "Il tipo di finestra dell'editor della configurazione."

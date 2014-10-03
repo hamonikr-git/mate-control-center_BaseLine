@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.15">
+<!ENTITY manrevision "1.0">
+<!ENTITY date "April 2006">
+<!ENTITY app "Disk Usage Analyzer">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.mate.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Εγχειρίδιο της Ανάλυσης χρήσης δίσκου</title>
+
+    <abstract role="description">
+      <para>Η Ανάλυση χρήσης δίσκου είναι ένα πρόγραμμα με γραφικά και μενού, το οποίο μπορείτε να χρησιμοποιήσετε για να παρακολουθείτε τη χρήση των δίσκων σας και τη δομή των φακέλων.</para>
+    </abstract>
+
+    <copyright lang="en"> 
+      <year>2006</year> 
+      <holder>Fabio Marzocca</holder> 
+    </copyright> 
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+    <publisher> 
+      <publishername>Έργο τεκμηρίωσης του MATE</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Επιτρέπεται η αντιγραφή, αναδιανομή και/ή η τροποποίηση αυτού του εγγράφου υπό τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), έκδοση 1.1 ή νεότερη που εκδόθηκε από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Αμετάβλητα Τμήματα, χωρίς Κείμενο Εξωφύλλου, και χωρίς Κείμενο Οπισθοφύλλου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σ' <ulink type="help" url="help:fdl">αυτό το σύνδεσμο</ulink> ή στο αρχείο COPYING DOCS που διανέμεται με αυτό το εγχειδίδιο.</para>
+         <para>Αυτό το εγχειρίδιο είναι μέρος μιας συλλογής από εγχειρίδια του MATE που διανέμονται υπό την GFDL. Αν θέλετε να διανείμετε αυτό το εγχειρίδιο ξεχωριστά από τη συλλογή, μπορείτε να το κάνετε προσθέτοντας σ' αυτό ένα αντίγραφο της άδειας, όπως περιγράφεται στο τμήμα 6 της άδειας.</para>
+
+	<para>Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρείες για να διακρίνουν τα προϊόντα και τις υπηρεσίες τους είναι κατατεθέντα σήματα. Όπου εμφανίζονται τέτοια ονόματα σε οποιαδήποτε τεκμηρίωση του MATE. και τα μέλη του Έργου Τεκμηρίωσης του MATE το γνωρίζουν, τότε αυτά τα ονόματα γράφονται με κεφαλαία γράμματα ή ξεκινούν με κεφαλαίο γράμμα.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+
+   <authorgroup> 
+   <author lang="en"> 
+		<firstname>Fabio</firstname> 
+		<surname>Marzocca</surname> 
+		<affiliation> 
+	  	<orgname>MATE Documentation Project</orgname> 
+	  	<address> <email>thesaltydog@gmail.com</email> </address> 
+		</affiliation> 
+   </author> 
+
+   <author role="maintainer" lang="en">
+   	<firstname>Fabio</firstname>
+	<surname>Marzocca</surname>
+	<affiliation>
+	  <address><email>thesaltydog@gmail.com</email></address>
+	</affiliation>
+   </author>
+      
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+   <othercredit role="translator">
+		<firstname>Latin</firstname> 
+		<surname>Translator 1</surname> 
+		<affiliation> 
+	  	<orgname>Latin Translation Team</orgname> 
+	  	<address> <email>translator@gnome.org</email> </address> 
+		</affiliation>
+		<contrib>Latin translation</contrib>
+   </othercredit>
+-->
+    </authorgroup>
+
+	<releaseinfo revision="2.30" role="review">
+	</releaseinfo>
+
+    <revhistory>
+      <revision lang="en"> 
+		<revnumber>Disk Usage Analyzer Manual 1.0</revnumber> 
+		<date>April 2006</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Emmanuele Bassi
+	    		<email>ebassi@gmail.com</email>
+	  		</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+      </revision>
+    </revhistory> 
+
+    <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.15 της Ανάλυσης χρήσης δίσκου.</releaseinfo> 
+    
+    <legalnotice> 
+      <title>Ανάδραση</title> 
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μια εισήγηση σχετικά με την εφαρμογή Ανάλυση χρήσης δίσκου ή με αυτό το εγχειρίδιο, ακολουθήστε τις οδηγίες στη <ulink url="help:mate-feedback" type="help">Σελίδα ανάδρασης του MATE</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm lang="en"> 
+    <primary>Disk Usage Analyser</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="baobab-introduction"> 
+    <title>Εισαγωγή</title> 
+
+      <para>Η <application>Ανάλυση χρήσης δίσκου</application> είναι μια εφαρμογή με γραφικά καθοδηγούμενη απο επιλογές, για την ανάλύση χρήσης των δίσκων στο περιβάλλον MATE. H <application>Ανάλυση χρήσης δίσκου</application> μπορεί εύκολα να σαρώσει είτε ένα σύστημα αρχείων δενδρικής μορφής, ή κάποιο συγκεκριμένο απαιτούμενο κλάδο καταλόγου (τοπικό ή απομακρυσμένο).</para>
+       <para>Επίσης ανιχνεύει αυτόματα σε πραγματικό χρόνο οποιεσδήποτε αλλαγές γίνονται στον αρχικό σας κατάλογο όπως και σε κάθε συσκευή, προσαρτημένη η μη. Η <application>Ανάλυση χρήσης δίσκου</application> ακόμα παρέχει μια πλήρως γραφική δενδρική χαρτογράφηση για κάθε επιλεγμένο φάκελο.</para>
+
+  </sect1>
+
+<!-- ================ Getting Started ================================ -->
+	<sect1 id="baobab-getting-started">
+	<title>Ξεκινώντας</title>
+
+    <para>Η <application>Ανάλυση χρήσης δίσκου</application> μπορεί να ξεκινήσει με τους εξής τρεις τρόπους:</para>
+	 <itemizedlist>
+    <listitem><para>από το μενού <menuchoice><guimenu>Εφαρμογές</guimenu><guimenuitem>Βοηθήματα</guimenuitem></menuchoice></para>
+    		</listitem>
+    <listitem><para>από ένα παράθυρο τερματικού</para>
+    		</listitem>
+    <listitem><para>από το "Άνοιγμα ε..." του Ναυτίλου</para>
+    		</listitem>
+    </itemizedlist> 
+
+
+<para>Αν θέλετε να ξεκινήσετε την <application>Ανάλυση χρήσης δίσκου</application> από ένα παράθυρο τερματικού, απλά πληκτρολογήστε:</para> 
+  
+<para><command>baobab &lt;πλήρης_διαδρομή_προς_έναν_κατάλογο&gt;</command>, και μετά πατήστε <keycap>Return</keycap>.</para>  
+<para/> 
+	<para>Αν εκκινηθεί από το μενού του MATE, η <application>Ανάλυση χρήσης δίσκου</application> ξεκινά και παραμένει σε κατάσταση αναμονής, περιμένοντας για κάποια ενέργεια του χρήστη.</para> 
+    <para>Όταν ξεκινάτε την <application>Ανάλυση χρήσης δίσκου</application> από το μενού του MATE, εμφανίζεται το ακόλουθο παράθυρο.</para>
+
+    <!-- ==== Figure ==== -->
+      <figure id="baobab-fig"> 
+	<title>Το παράθυρο της <application>Ανάλυσης χρήσης δίσκου</application></title> 
+	<screenshot> 
+	  <mediaobject lang="en"> 
+	    <imageobject>
+	    <imagedata fileref="figures/baobab_window.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Shows Disk Usage Analyzer main window. Contains menubar, display area, scrollbars, and statusbar. </phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+
+<para>Ο χρήστες τότε μπορεί:</para>
+	<itemizedlist>
+    <listitem><para>να ξεκινήσει μια σάρωση όλου του συστήματος αρχείων</para>
+    		</listitem>
+    <listitem><para>να επιλέξει ένα συγκεκριμένο τοπικό κλάδο καταλόγων για σάρωση</para>
+    		</listitem>
+    <listitem><para>να επιλέξει έναν απομακρυσμένο εξυπηρετητή και φάκελο για σάρωση</para>
+    		</listitem>
+    <listitem><para>να αλλάξει τις προτιμήσεις</para>
+    		</listitem>
+	</itemizedlist>
+
+
+</sect1>
+
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="baobab-usage"> 
+    <title>Χρήση</title>
+
+    <sect2 id="baobab-fullscan">
+      <title>Πλήρης σάρωση συστήματος αρχείων</title>
+        <para>Για να ξεκινήσετε μια πλήρη σάρωση του συστήματος αρχείων επιλέξτε από το μενού <menuchoice><guimenu>Αναλυτής</guimenu><guimenuitem>Σάρωση συστήματος αρχείων</guimenuitem></menuchoice>, ή πατήστε το κουμπί <guibutton>Σάρωση συστήματος αρχείων</guibutton> στη μπάρα εργαλείων.</para>
+
+	<para>Όταν τελειώσει η διαδικασία σάρωσης, θα έχετε το πλήρες δέντρο του συστήματος αρχείων σας, όπως αυτό στην επόμενη Εικόνα.</para>    
+
+    <!-- ==== Figure ==== -->
+      <figure id="baobab-fullscan-fig"> 
+	<title>Πλήρης σάρωση συστήματος αρχείων στην Ανάλυση χρήσης δίσκου</title> 
+	<screenshot> 
+	  <mediaobject lang="en"> 
+	    <imageobject>
+	    <imagedata fileref="figures/baobab_fullscan.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Shows Disk Usage Analyzer full filesystem scan window. Contains menubar, display area, scrollbars, and statusbar. </phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+    
+    	<note><para>Όταν τρέξετε μια πλήρη σάρωση του συστήματος αρχείων, η <application>Ανάλυση χρήσης δίσκου</application> θα αρχίσει να σχεδιάζει το δέντρο μόλις το νήμα αρχίσει να σαρώνει το σύστημα αρχείων. Αν κάποια μεγάλη κατάτμηση είναι προσαρτημένη στο σύστημα αρχείων τότε κι εκείνη θα σαρωθεί.</para></note>
+    
+    <para>Η <application>Ανάλυση χρήσης δίσκου</application> θα εμφανίζει τα μεγέθη στο δέντρο καταλόγων ως κατανεμημένο χώρο. Αυτό σημαίνει ότι τα εμφανιζόμενα μεγέθη αναφέρονται σε πραγματική χρήση του δίσκου και όχι στο φαινομενικό μέγεθος του καταλόγου. Αν θέλετε να δείτε το φαινομενικό μέγεθος αρχείων, αποεπιλέξτε το <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Εκχωρημένος χώρος</guimenuitem></menuchoice> .</para>
+    
+    <warning><para>Η <application>Ανάλυση χρήσης δίσκου</application> δε θα μετρήσει τον κατάλογο proc, ούτε και κανένα μέγεθος αρχείου που δε σχετίζεται με κάποιο "πραγματικό" αρχείο, οπότε συμβολικοί σύνδεσμοι, μπλοκ χαρακτήρων, μπλοκ συσκευών δε θα αποτελούν μέρος του μεγέθους του καταλόγου.</para></warning>
+   
+    <para>Οι συνδέσεις υλικού αντιμετωπίζονται με διαφορετικό τρόπο: η πρώτη σύνδεση υλικού αριθμείτε σαν κανονικό αρχείο, ενώ οι επόμενες συνδέσεις στην ίδιο κομβική συσκευή δεν αριθμούνται στο σύνολο, αλλά επισημαίνονται στη δεξιά στήλη του παραθύρου.</para>
+        </sect2>
+	
+	<sect2 id="baobab-folderscan">
+      <title>Σάρωση ενός καταλόγου</title>
+
+    <para>Για να ξεκινήσετε τη σάρωση ενός μόνο φακέλου επιλέξτε <menuchoice><guimenu>Αναλυτής</guimenu><guimenuitem>Σάρωση φακέλου...</guimenuitem></menuchoice> από το μενού, ή πατήστε στο κουμπί <guibutton>Σάρωση φακέλου</guibutton> στη γραμμή εργαλείων.</para>
+
+	</sect2>
+
+	<sect2 id="baobab-remotescan">
+      <title>Απομακρυσμένη σάρωση</title>
+      
+      <para>Αν χρειάζεται να σαρώσετε τον κατάλογο ενός απομακρυσμένου εξυπηρετητή, απλά πατήστε στο κουμπί <guibutton>Σάρωση απομακρυσμένου φακέλου</guibutton> στη μπάρα εργαλείων, ή επιλέξτε <menuchoice><guimenu>Αναλυτής</guimenu><guimenuitem>Σάρωση απομακρυσμένου φακέλου</guimenuitem></menuchoice> από το μενού και θα πάρετε τον ακόλουθο διάλογο. Η <application>Ανάλυση χρήσης δίσκου</application> μπορεί να συνδεθεί σε εξυπηρετητές μέσω ssh, ftp, smb, http και https.</para>
+ 
+     <!-- ==== Figure ==== -->
+      <figure id="baobab-remote-fig"> 
+        <title>Σάρωση απομακρυσμένου φακέλου στην Ανάλυση χρήσης δίσκου</title> 
+		<screenshot> 
+	 	 <mediaobject lang="en"> 
+	  	  <imageobject>
+	   	 <imagedata fileref="figures/baobab_remote.png" format="PNG"/> 
+	   	 </imageobject>
+	   	 <textobject> 
+	    	  <phrase>Shows Disk Usage Analyzer remote folder dialog window. </phrase> 
+	   	 </textobject> 
+	 	 </mediaobject> 
+		</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+   
+	</sect2> 
+
+  </sect1>
+
+
+<!-- ============= Preferences =============================== -->
+  <sect1 id="baobab-preferences">
+    <title>Προτιμήσεις</title>
+    
+    <para>Για να αλλάξετε τις προτιμήσεις της <application>Ανάλυσης χρήσης δίσκου</application> επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Προτιμήσεις</guimenuitem></menuchoice>.</para>
+ 
+   <!-- ==== Figure ==== -->
+      <figure id="baobab-preferences-fig"> 
+      	<title>Παράθυρο προτιμήσεων της Ανάλυσης χρήσης δίσκου</title> 
+	<screenshot> 
+	  <mediaobject lang="en"> 
+	    <imageobject>
+	    <imagedata fileref="figures/baobab_prefs.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Preferences window </phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+  
+  <sect2 id="baobab-scan-preferences">
+      <title>Επιλέξτε τις συσκευές που θα σαρωθούν</title>
+  <para>Στο πρώτο μέρος του παραθύρου Προτιμήσεων, εμφανίζονται όλες οι προσαρτημένες συσκευές που ανιχνεύθηκαν. Πατήστε στο κουτάκι επιλογής για να συμπεριλάβετε ή να εξαιρέσετε την κατάτμηση από τη λειτουργία σάρωσης του συστήματος αρχείων.</para>
+  <note><para>Η συσκευή που είναι προσαρτημένη στο "/" δε μπορεί να εξαιρεθεί από τη σάρωση.</para></note>
+  </sect2>
+ 
+   <sect2 id="baobab-monitor-preferences">
+      <title>Ενεργοποίηση παρακολούθησης αρχικού καταλόγου</title>
+      <para>Αν επιλέξτε αυτή τη ρύθμιση, η <application>Ανάλυση χρήσης δίσκου</application> θα παρακολουθεί συνεχώς όλες τις εξωτερικές αλλαγές στον αρχικό κατάλογο και θα προειδοποιεί το χρήστη όταν προστίθεται ή αφαιρείται ένα αρχείο.</para>  
+   </sect2>  
+	</sect1>
+<!-- ================ Treemaps ================================ -->
+
+  <sect1 id="baobab-treemaps"> 
+  <title>Δενδροειδή διαγράμματα</title>
+
+    <para>Η ιδέα των <guilabel>Δενδροειδών διαγραμμάτων</guilabel> αναπτύχθηκε από τον Ben Shneiderman στη δεκαετία του '90. Διαβάστε το <ulink type="http" url="http://www.cs.umd.edu/hcil/treemap-history/index.shtml">όραμά του για τα δενδροειδή διαγράμματα</ulink>.</para>
+    
+       <!-- ==== Figure ==== -->
+      <figure id="baobab-treemap-fig"> 
+        <title>Το παράθυρο δενδροειδών διαγραμμάτων της Ανάλυσης χρήσης δίσκων.</title>
+	<screenshot> 
+	  <mediaobject lang="en"> 
+	    <imageobject>
+	    <imagedata fileref="figures/baobab_treemaps.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Treemap's theory. Shows 2 treemap diagrams </phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+  
+    
+    <para>Η εικόνα δείχνει ένα παράδειγμα της θεωρίας των δενδροειδών διαγραμμάτων. Κάθε κόμβος (όπως φαίνεται στο δενδροειδές διάγραμμα) έχει ένα όνομα (ένα γράμμα) και ένα σχετιζόμενο μέγεθος (έναν αριθμό). Το μέγεθος των φύλλων μπορεί να αναπαριστά για παράδειγμα το μέγεθος των αρχείων, το μέγεθος των κόμβων που δεν είναι φύλλα είναι το άθροισμα των μεγεθών των θυγατρικών του.</para> 
+    
+    <para>Το δενδροειδές διάγραμμα δημιουργείται με την επαναλαμβανόμενη διαίρεση του αρχικού ορθογωνίου. Το μέγεθος κάθε υπο-ορθογωνίου αντιστοιχεί στι μέγεθος του κόμβου. Η κατεύθυνση της διαίρεσης εναλλάσσεται ανά επίπεδο: η πρώτη οριζόντια, η επόμενη κάθετα, κ.ο.κ. Ως αποτέλεσμα, το αρχικό ορθογώνιο χωρίζεται σε μικρότερα ορθογώνια, ώστε το μέγεθος του καθενός να δείχνει το μέγεθος του φύλλου. Η δομή του δένδρου φαίνεται επίσης στο δενδροειδές διάγραμμα, ως αποτέλεσμα της κατασκευής του. Χρώματα και σημειώσεις μπορούν να χρησιμοποιηθούν για να δώσουν επιπλέον πληροφορίες για τα φύλλα.</para>
+
+	<note><para>Τα δενδροειδή διαγράμματα είναι πολύ αποτελεσματικά όταν το σημαντικότερο χαρακτηριστικό που θέλουμε να δείξουμε είναι το μέγεθος.</para></note>
+  </sect1>
+  <!-- ================ Ringschart ================================ -->
+
+  <sect1 id="baobab-ringschart"> 
+  <title>Διάγραμμα δακτυλίων</title>
+
+    <para>Το <guilabel>Γράφημα δακτυλίου</guilabel> είναι μία γραφική αναπαράσταση της χρήσης του δίσκου από ένα συγκεκριμένο φάκελο. Κατά την εκκίνηση της εφαρμογής, υπάρχει ειδοποίηση για την χρήση του συστήματος αρχείων όπως φαίνεται στις επόμενη εικόνα:</para>
+
+    <!-- ==== Figure ==== -->
+    <figure id="baobab-filesystem_scan"> 
+      <title>Η Ανάλυση χρήσης δίσκου εμφανίζει ένα διάγραμμα δακτυλίων με τη χρήση του συστήματος αρχείων</title>
+      <screenshot> 
+	<mediaobject lang="en"> 
+	  <imageobject>
+	    <imagedata fileref="figures/baobab_ringschart1.png" format="PNG"/> 
+	  </imageobject>
+	  <textobject> 
+	    <phrase>After launching the application, it is showed the
+	    file system usage. Graphical representation on the right. </phrase> 
+	  </textobject> 
+	</mediaobject> 
+      </screenshot> 
+    </figure>
+    <!-- ==== End of Figure ==== -->
+
+    <para>Όταν ξεκινήσει η σάρωση του φακέλου, δημιουργείτε το δένδρο των υποφακέλων και τοποθετείται στην αριστερή πλευρά. Κάθε γραμμή περιέχει πληροφορία για το όνομα, πόσο χώρο πιάνει (επί της εκατό και μέγεθος σε KB, MB ή GB ) και ο αριθμός των στοιχείων (προσθέτοντας αρχεία και καταλόγους). Όταν τελειώσει αυτή η διαδικασία, το <guilabel>Γράφημα δακτυλίου</guilabel> σχεδιάζετε στην δεξιά πλευρά. Αν σταματήσει πριν ολοκληρωθεί, μόνο μερική αναπαράσταση θα πραγματοποιηθεί στους καταλόγους για τους οποίους υπολογίστηκε η χρήση.</para>
+
+
+    <!-- ==== Figure ==== -->
+    <figure id="baobab-folder_scan"> 
+      <title>Η Ανάλυση χρήσης δίσκου εμφανίζει ένα διάγραμμα δακτυλίων με τη χρήση ενός φακέλου</title>
+      <screenshot> 
+	<mediaobject lang="en"> 
+	  <imageobject>
+	    <imagedata fileref="figures/baobab_ringschart2.png" format="PNG"/> 
+	  </imageobject>
+	  <textobject> 
+	    <phrase>After scanning a folder. </phrase> 
+	  </textobject> 
+	</mediaobject> 
+      </screenshot> 
+    </figure>
+    <!-- ==== End of Figure ==== -->
+    
+    <para>Το <guilabel>Γράφημα δακτυλίου</guilabel> συγκροτείτε από μία ομοείδεια ένθετων δακτυλίων γύρω από ένα κεντρικό κύκλο. Ο κύκλος συμβολίζει το ριζικό φάκελο του τμηματικού δένδρου(που είναι, ο επιλεγμένος φάκελος για σάρωση από τον χρήστη). Κάθε δακτύλιος αναπαριστά εάν επίπεδο στο τμηματικό δένδρο έτσι οι υποφάκελοι του ριζικού φακέλου θα αναπαρασταθούν στο πρώτο δακτύλιο και τα βαθύτερα επίπεδα  στο δένδρο αντιστοιχούν σε εξωτερικούς δακτυλίους του γραφήματος. Κάθε φάκελος αναπαριστάτε από ένα τομέα του δακτυλίου, η γωνία του είναι ανάλογη στο μέγεθος των περιεχομένων του φακέλου, και χρωματίζεται με διαφορετικό χρώμα για εύκολη απεικόνιση. Μέχρι πέντε επίπεδα μπορούν να σχεδιαστούν· στην περίπτωση που ο φάκελος είναι ο τελευταίος στο πέμπτο επίπεδο εμπεριέχοντας ακόμη παραπάνω υποφακέλους, αυτή η κατάσταση θα σχετιστεί με την παρουσία μίας μαύρης καμπύλης κοντά στην άκρη του τομέα του δακτυλίου αυτού του φακέλου. Όταν επιλεχτεί ένας φάκελος χωρίς άλλους υποφακέλους να είναι ο ριζικός το τμηματικού δένδρου, μόνο ο εσωτερικός κύκλος θα σχεδιαστεί. Όταν ο δείκτης του ποντίκι καταδείξει ένα από τους φακέλους στο γράφημα, θα επισημανθεί και θα εμφανιστεί ένα συμβουλευτικό πινακίδιο με πληροφορία για το όνομα του και το μέγεθος. Αν υπάρχουν υποφάκελοι, μικρά φαιά συμβουλευτικά πινακίδια θα εμφανιστούν, προσδιορίζοντας το όνομα τους. Υπάρχει η πιθανότητα να μην εμφανιστούν όλα τα ονόματα των υποφακέλων, για αποφυγή επικαλύψεων.</para>
+
+    <para>Μπορείτε να μεταβείτε πάνω και κάτω στις γραμμές του καταλόγου (επιλεκτικά επεκτείνοντας τους με τους υποφακέλους), η γραφική αναπαράσταση θα αλλάξει με τη χρήση του επιλεγμένου φακέλου ως ριζικού του τμηματικού δένδρου που θα αναπαρασταθεί. Οι μεταβάσεις στους φακέλους επίσης μπορούν να γίνουν από το  <guilabel>χάρτη δακτυλίου</guilabel>. Αν κάνετε κλικ με το αριστερό κουμπί του ποντικιού σας μέσα στο φάκελο, θα μετακινηθείτε βαθύτερα με το να ρυθμίσετε το ριζικό γραφικό του φακέλου. Αν πατήσετε το μεσαίο κουμπί (δεν πειράζει η περιοχή εφόσον κάνουμε κλικ μέσα στο πλαίσιο του <guilabel>χάρτη δακτυλίου</guilabel>) θα λάβετε την αντίθετη συμπεριφορά, πηγαίνοντας πίσω ένα βήμα στην ιεραρχία.</para>
+
+    <para>Το επί της εκατό ποσοστό της καλυπτόμενης ακτίνας από τους γονείς που χρησιμοποιείται από ένα δεδομένο φάκελο είναι απευθείας ανάλογο στη σχέση μεταξύ του μεγέθους του και των γονέων του. Είναι εύκολο να καταλάβουμε ότι το μέγεθος ενός φακέλου είναι ίσο ή μικρότερο από αυτό των γονέων του. Αν και μόνο κατάλογοι φαίνονται στην γραφική αναπαράσταση, αρχεία λαμβάνονται υπόψη για τον υπολογισμό του χώρου που κατέχετε από τους φακέλους.</para>
+  </sect1>
+</article>

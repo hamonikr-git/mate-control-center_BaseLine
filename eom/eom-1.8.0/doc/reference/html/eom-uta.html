@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Eye of MATE Reference Manual: uta</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Eye of MATE Reference Manual">
+<link rel="up" href="ch06.html" title="Utilities">
+<link rel="prev" href="eom-zoom.html" title="zoom">
+<link rel="next" href="ch07.html" title="Asynchronous jobs">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#eom-uta.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#eom-uta.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch06.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="eom-zoom.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ch07.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="eom-uta"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="eom-uta.top_of_page"></a>uta</span></h2>
+<p>uta</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="eom-uta.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">EomUta</span> *
+</td>
+<td class="function_name">
+<a class="link" href="eom-uta.html#uta-ensure-size" title="uta_ensure_size ()">uta_ensure_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">EomUta</span> *
+</td>
+<td class="function_name">
+<a class="link" href="eom-uta.html#uta-add-rect" title="uta_add_rect ()">uta_add_rect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="eom-uta.html#uta-remove-rect" title="uta_remove_rect ()">uta_remove_rect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="eom-uta.html#uta-find-first-glom-rect" title="uta_find_first_glom_rect ()">uta_find_first_glom_rect</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="eom-uta.html#uta-copy-area" title="uta_copy_area ()">uta_copy_area</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="eom-uta.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">
+</pre>
+</div>
+<div class="refsect1">
+<a name="eom-uta.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="eom-uta.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="uta-ensure-size"></a><h3>uta_ensure_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">EomUta</span> *
+uta_ensure_size (<em class="parameter"><code><span class="type">EomUta</span> *uta</code></em>,
+                 <em class="parameter"><code><span class="type">int</span> x1</code></em>,
+                 <em class="parameter"><code><span class="type">int</span> y1</code></em>,
+                 <em class="parameter"><code><span class="type">int</span> x2</code></em>,
+                 <em class="parameter"><code><span class="type">int</span> y2</code></em>);</pre>
+<p>Ensures that the size of a microtile array is big enough to fit the specified
+microtile coordinates.  If it is not big enough, the specified <em class="parameter"><code>uta</code></em>
+ will be
+freed and a new one will be returned.  Otherwise, the original <em class="parameter"><code>uta</code></em>
+ will be
+returned.  If a new microtile array needs to be created, this function will
+copy the <em class="parameter"><code>uta</code></em>
+'s contents to the new array.</p>
+<p>Note that the specified coordinates must have already been scaled down by the
+ART_UTILE_SHIFT factor.</p>
+<div class="refsect3">
+<a name="id-1.7.8.6.2.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>uta</p></td>
+<td class="parameter_description"><p>A microtile array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x1</p></td>
+<td class="parameter_description"><p>Left microtile coordinate that must fit in new array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y1</p></td>
+<td class="parameter_description"><p>Top microtile coordinate that must fit in new array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x2</p></td>
+<td class="parameter_description"><p>Right microtile coordinate that must fit in new array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y2</p></td>
+<td class="parameter_description"><p>Bottom microtile coordinate that must fit in new array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.7.8.6.2.7"></a><h4>Returns</h4>
+<p> The same value as <em class="parameter"><code>uta</code></em>
+if the original microtile array was
+big enough to fit the specified microtile coordinates, or a new array if
+it needed to be grown.  In the second case, the original <em class="parameter"><code>uta</code></em>
+will be
+freed automatically.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="uta-add-rect"></a><h3>uta_add_rect ()</h3>
+<pre class="programlisting"><span class="returnvalue">EomUta</span> *
+uta_add_rect (<em class="parameter"><code><span class="type">EomUta</span> *uta</code></em>,
+              <em class="parameter"><code><span class="type">int</span> x1</code></em>,
+              <em class="parameter"><code><span class="type">int</span> y1</code></em>,
+              <em class="parameter"><code><span class="type">int</span> x2</code></em>,
+              <em class="parameter"><code><span class="type">int</span> y2</code></em>);</pre>
+<p>Adds the specified rectangle to a microtile array.  The array is
+grown to fit the rectangle if necessary.</p>
+<div class="refsect3">
+<a name="id-1.7.8.6.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>uta</p></td>
+<td class="parameter_description"><p>A microtile array, or NULL if a new array should be created.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x1</p></td>
+<td class="parameter_description"><p>Left coordinate of rectangle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y1</p></td>
+<td class="parameter_description"><p>Top coordinate of rectangle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x2</p></td>
+<td class="parameter_description"><p>Right coordinate of rectangle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y2</p></td>
+<td class="parameter_description"><p>Bottom coordinate of rectangle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.7.8.6.3.6"></a><h4>Returns</h4>
+<p> The original <em class="parameter"><code>uta</code></em>
+, or a new microtile array if the original one
+needed to be grown to fit the specified rectangle.  In the second case, the
+original <em class="parameter"><code>uta</code></em>
+will be freed automatically.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="uta-remove-rect"></a><h3>uta_remove_rect ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+uta_remove_rect (<em class="parameter"><code><span class="type">EomUta</span> *uta</code></em>,
+                 <em class="parameter"><code><span class="type">int</span> x1</code></em>,
+                 <em class="parameter"><code><span class="type">int</span> y1</code></em>,
+                 <em class="parameter"><code><span class="type">int</span> x2</code></em>,
+                 <em class="parameter"><code><span class="type">int</span> y2</code></em>);</pre>
+<p>Removes a rectangular region from the specified microtile array.  Due to the
+way microtile arrays represent regions, the tiles at the edge of the
+rectangle may not be clipped exactly.</p>
+<div class="refsect3">
+<a name="id-1.7.8.6.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>uta</p></td>
+<td class="parameter_description"><p>A microtile array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x1</p></td>
+<td class="parameter_description"><p>Left coordinate of rectangle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y1</p></td>
+<td class="parameter_description"><p>Top coordinate of rectangle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x2</p></td>
+<td class="parameter_description"><p>Right coordinate of rectangle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y2</p></td>
+<td class="parameter_description"><p>Bottom coordinate of rectangle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="uta-find-first-glom-rect"></a><h3>uta_find_first_glom_rect ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+uta_find_first_glom_rect (<em class="parameter"><code><span class="type">EomUta</span> *uta</code></em>,
+                          <em class="parameter"><code><span class="type">EomIRect</span> *rect</code></em>,
+                          <em class="parameter"><code><span class="type">int</span> max_width</code></em>,
+                          <em class="parameter"><code><span class="type">int</span> max_height</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="uta-copy-area"></a><h3>uta_copy_area ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+uta_copy_area (<em class="parameter"><code><span class="type">EomUta</span> *uta</code></em>,
+               <em class="parameter"><code><span class="type">int</span> src_x</code></em>,
+               <em class="parameter"><code><span class="type">int</span> src_y</code></em>,
+               <em class="parameter"><code><span class="type">int</span> dest_x</code></em>,
+               <em class="parameter"><code><span class="type">int</span> dest_y</code></em>,
+               <em class="parameter"><code><span class="type">int</span> width</code></em>,
+               <em class="parameter"><code><span class="type">int</span> height</code></em>);</pre>
+<p>Copies a rectangular region within a microtile array.  The array will not be
+expanded if the destination area does not fit within it; rather only the area
+that fits will be copied.  The source rectangle must be completely contained
+within the microtile array.</p>
+<div class="refsect3">
+<a name="id-1.7.8.6.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>uta</p></td>
+<td class="parameter_description"><p>A microtile array.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src_x</p></td>
+<td class="parameter_description"><p>Left coordinate of source rectangle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>src_y</p></td>
+<td class="parameter_description"><p>Top coordinate of source rectangle.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_x</p></td>
+<td class="parameter_description"><p>Left coordinate of destination.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dest_y</p></td>
+<td class="parameter_description"><p>Top coordinate of destination.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>Width of region to copy.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>Height of region to copy.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="eom-uta.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

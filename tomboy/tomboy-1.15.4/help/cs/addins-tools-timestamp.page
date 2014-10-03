@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-tools-timestamp" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="addins#tools"/>
+    <desc>Jak vložit datum a čas do své poznámky.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-06" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+  <title>Vkládání časového razítka</title>
+
+  <p>Doplněk <gui>Vložit časové razítko</gui> umožňuje vkládat do vašich poznámek datum a čas. Ve výchozím stavu je tento doplněk zakázán.</p>
+
+  <steps>
+    <title>Když chcete použít doplněk <gui>Vložit časové razítko</gui>:</title>
+    <item>
+      <p>Pod ikonou ozubených kol na nástrojové liště vyberte <gui style="menuitem">Vložit časové razítko</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Rychlým způsobem, jako do poznámky vložit časové razítko, je zmáčknout <keyseq><key>Ctrl</key><key>D</key></keyseq>.</p>
+  </note>
+
+</page>

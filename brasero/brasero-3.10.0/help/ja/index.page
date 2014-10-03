@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="index" xml:lang="ja">
+
+  <info>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Akira Tanaka</mal:name>
+      <mal:email>root.167d36d4acb91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title><media type="image" src="figures/logo32.png"/> Braseroのヘルプ</title>
+
+  <section id="new-project" style="2column">
+    <title>新しいプロジェクトを作成する</title>
+  </section>
+
+  <section id="troubleshooting" style="2column">
+    <title>トラブルシューティング</title>
+  </section>
+
+  <section id="tools" style="2column">
+    <title>その他のツール</title>
+  </section>
+
+</page>

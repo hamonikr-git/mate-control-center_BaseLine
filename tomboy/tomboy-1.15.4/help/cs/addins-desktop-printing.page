@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-desktop-printing" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="addins#desktop-integration"/>
+    <desc>Jak poslat poznámku k tisku.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-16" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Podpora tisku</title>
+
+    <note style="important">
+      <p>Abyste mohli z poznámek <app>Tomboy</app> tisknout, musíte mít připojenou a správně nastavenou tiskárnu. Pokud tak nemáte, podívejte se prosím <link href="help:gnome-help/printing">do nápovědy k tisku v GNOME</link>.</p>
+    </note>
+
+    <p>Své poznámky <app>Tomboy</app> můžete tisknout na své tiskárně. Tento doplněk je ve výchozím stavu povolen.</p>
+
+    <steps>
+      <title>Když chcete poznámku vytisknout:</title>
+      <item>
+        <p>Otevřete požadovanou poznámku.</p>
+      </item>
+      <item>
+        <p>Pod ikonou ozubených kol na nástrojové liště vyberte <gui style="menuitem">Vytisknout</gui>. Případně můžete použít klávesovou zkratku <keyseq><key>Ctrl</key><key>P</key></keyseq>.</p>
+      </item>
+    </steps>
+
+    <note style="warning">
+      <p>V případě, že tento doplněk zakážete, nebude možné poznámky <app>Tomboy</app> tisknout.</p>
+    </note>
+
+ </page>

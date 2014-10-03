@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="pin-notes" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="addins-preferences"/>
+    <desc>Acceder a las notas de <app>Tomboy</app> desde la bandeja de mensajes.</desc>
+    <revision pkgversion="3.10" version="0.1" date="2013-10-10" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Pinchar una nota</title>
+
+  <p>La lista de notas recientes de <app>Tomboy</app> se muestra cuando pulsa en el <link xref="">icono de la bandeja de mensajes</link>. Esta lista lista está limitada a 20 notas. Si tiene más de 20 notas y quiere abrir una nota que no está en la lista de notas recientes, deberá <link xref="search">buscar en todas las notas</link>.</p>
+
+  <p>Para acceder rápidamente a las notas menos usadas, puede<em>pincharlas</em> en la lista de notas recientes.</p>
+
+  <steps>
+    <title>Para pinchar una nota:</title>
+    <item>
+      <p>Pulse en el icono de <app>Tomboy</app> en la bandeja de mensajes.</p>
+    </item>
+    <item>
+      <p>En la lista de notas recientes, pulse en el icono de la chincheta gris a la derecha de la nota que quiere pinchar. El icono se volverá de color verde.</p>
+    </item>
+  </steps>
+
+  <p>Una nota con una chincheta verde indica que esa nota se ha <em>pinchado</em> en la lista.</p>
+
+  <note style="tip">
+    <p>Para quitar una nota <em>pinchada</em> de la lista de notas recientes, pulse sobre el icono de la chincheta verde.</p>
+  </note>
+
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-formatting-underline" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="addins#formatting"/>
+    <desc>Complemento para subrayar texto en una nota.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-16" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Complemento de subrayado</title>
+
+  <p>El complemento de subrayado le permite subrayar un texto específico en su nota. Este complemento está desactivado de manera predeterminada.</p>
+
+  <steps>
+    <title>Para usar el complemento de subrayado:</title>
+    <item>
+      <p><link xref="addins">Active</link> el complemento de subrayado.</p>
+    </item>
+    <item>
+      <p>Seleccione el texto que quiere</p>
+    </item>
+    <item>
+      <p>Desde el icono <gui style="button">Texto</gui> en una nota, seleccione <gui style="menuitem">Subrayar</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Para subrayar rápidamente cualquier texto seleccionado, pulse <keyseq><key>Ctrl</key><key>U</key></keyseq>.</p>
+  </note>
+
+</page>

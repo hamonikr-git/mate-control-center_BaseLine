@@ -1,0 +1,396 @@
+AC_INIT(tomboy, 1.15.4)
+AC_CONFIG_SRCDIR(Tomboy/Tomboy.cs)
+AM_INIT_AUTOMAKE([dist-xz foreign no-dist-gzip tar-ustar])
+AM_MAINTAINER_MODE
+
+GNOME_COMMON_INIT
+GNOME_DOC_INIT([0.17.3])
+
+AM_CONFIG_HEADER(config.h)
+
+AC_PROG_INSTALL
+IT_PROG_INTLTOOL([0.35])
+AC_PROG_CC
+AC_ISC_POSIX
+AC_HEADER_STDC
+
+AM_DISABLE_STATIC
+AM_PROG_LIBTOOL
+
+#
+# Setup GETTEXT
+#
+
+GETTEXT_PACKAGE=tomboy
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Gettext package])
+AM_GLIB_GNU_GETTEXT
+
+#
+# Find gconftool-2
+#
+AC_PATH_PROG(GCONFTOOL, gconftool-2)
+AM_GCONF_SOURCE_2
+
+#
+# Find mcs
+#
+AC_PATH_PROG(GMCS, dmcs)
+if test "x$GMCS" = "x" ; then
+	AC_PATH_PROG(GMCS, gmcs)
+fi
+if test "x$GMCS" = "x" ; then
+	AC_MSG_ERROR([Can't find "dmcs" or "gmcs" in your PATH])
+fi
+
+#
+# Check Mono version
+#
+MONO_MINIMUM_VERSION=1.9.1
+PKG_CHECK_MODULES(MONO, mono >= $MONO_MINIMUM_VERSION)
+
+#
+# Gdk and Atk are needed for libtrayicon
+#
+GDK20_MINIMUM_VERSION=2.6.0
+GTK20_MINIMUM_VERSION=2.14.0
+ATK_MINIMUM_VERSION=1.2.4
+
+PKG_CHECK_MODULES(LIBTOMBOY, 
+		  gdk-2.0 >= $GDK20_MINIMUM_VERSION
+		  gtk+-2.0 >= $GTK20_MINIMUM_VERSION
+		  atk >= $ATK_MINIMUM_VERSION)
+AC_SUBST(LIBTOMBOY_CFLAGS)
+AC_SUBST(LIBTOMBOY_LIBS)
+
+if pkg-config --atleast-version=2.16 gtk+-2.0; then
+	HAS_GTK_2_16=yes
+fi
+AM_CONDITIONAL(HAS_GTK_2_16, test "x$HAS_GTK_2_16" = "xyes")
+
+if pkg-config --atleast-version=2.19.7 gtk+-2.0; then
+	HAS_GTK_2_20=yes
+fi
+AM_CONDITIONAL(HAS_GTK_2_20, test "x$HAS_GTK_2_20" = "xyes")
+
+#
+# Use pkg-config to check for the panel applet server directory if
+# specified by --enable-panelapplet-srvdir-check.
+#
+AC_ARG_ENABLE(panelapplet-srvdir-check,
+	      [  --enable-panelapplet-srvdir-check[[=no/yes]]    query for panel applet server dir [[default: yes]]],
+	      [case "$enableval" in
+	      	yes) ENABLE_PANELAPPLET_SRVDIR_CHECK=yes ;;
+	      	no)  ENABLE_PANELAPPLET_SRVDIR_CHECK=no ;;
+	      	*)   AC_MSG_ERROR(bad value ${enableval} for --enable-panelapplet-srvdir-check) ;;
+	      esac],
+	      [ENABLE_PANELAPPLET_SRVDIR_CHECK=yes])
+AM_CONDITIONAL(ENABLE_PANELAPPLET_SRVDIR_CHECK, test "$ENABLE_PANELAPPLET_SRVDIR_CHECK" = "yes")
+
+if test "$ENABLE_PANELAPPLET_SRVDIR_CHECK" = "yes" ; then
+#
+# If libpanelapplet available, use it to find .server install location.
+#
+if test "x$prefix" = "x$ac_default_prefix"; then
+   PANELAPPLET_LIBDIR=`$PKG_CONFIG --variable=libdir libpanelapplet-2.0`
+fi
+if test "x$PANELAPPLET_LIBDIR" != "x"; then
+   PANELAPPLET_SERVER_DIR="$PANELAPPLET_LIBDIR/bonobo/servers"
+fi
+fi
+# Set PANELAPPLET_SERVER_DIR default if it's not already set
+if test "x$PANELAPPLET_SERVER_DIR" = "x" ; then
+	PANELAPPLET_SERVER_DIR="$libdir/bonobo/servers"
+fi
+AC_SUBST(PANELAPPLET_SERVER_DIR)
+
+#
+# Check for recent GtkSpell here.  Prior versions require bug workarounds.
+# http://gtkspell.sourceforge.net/
+#
+PKG_CHECK_MODULES(GTKSPELL, gtkspell-2.0 >= 2.0.9, FIXED_GTKSPELL="yes", FIXED_GTKSPELL="no")
+AM_CONDITIONAL(FIXED_GTKSPELL, test "$FIXED_GTKSPELL" = "yes")
+
+#
+# Check if we should update the mime database
+#
+
+AC_PATH_PROG(UPDATE_MIME_DATABASE, update-mime-database, no)
+
+AC_ARG_ENABLE(update-mimedb,
+   AC_HELP_STRING([--disable-update-mimedb],
+                   [disable the update-mime-database after install [default=no]]),,
+    enable_update_mimedb=yes)
+AM_CONDITIONAL(ENABLE_UPDATE_MIMEDB, (test x$enable_update_mimedb = xyes) && (test x$UPDATE_MIME_DATABASE != xno))
+
+#
+# Check for Mac/Windows/GNOME Support
+#
+AC_ARG_ENABLE(windows, 
+	      [  --enable-windows[[=no/yes]]    compile with Windows support [[default: no]]],
+	      ENABLE_WIN="$enableval", ENABLE_WIN="no")
+AM_CONDITIONAL(ENABLE_WIN, test "x$ENABLE_WIN" = "xyes")
+
+AC_ARG_ENABLE(osx, 
+	      [  --enable-osx[[=no/yes]]    compile with Mac OS X support [[default: no]]],
+	      ENABLE_OSX="$enableval", ENABLE_OSX="no")
+AM_CONDITIONAL(ENABLE_OSX, test "x$ENABLE_OSX" = "xyes")
+
+AC_ARG_ENABLE(gnome, 
+	      [  --enable-gnome[[=no/yes]]    compile with GNOME support [[default: yes]]],
+	      ENABLE_GNOME="$enableval")
+
+if ((test "x$ENABLE_GNOME" = "xyes") && (test "x$ENABLE_WIN" = "xyes")) || ((test "x$ENABLE_GNOME" = "xyes") && (test "x$ENABLE_OSX" = "xyes")) || ((test "x$ENABLE_OSX" = "xyes") && (test "x$ENABLE_WIN" = "xyes")) ; then
+	AC_MSG_ERROR([--enable-gnome, --enable-windows, and --enable-osx are mutually exclusive])
+fi
+
+if (test "x$ENABLE_WIN" = "xno") && (test "x$ENABLE_OSX" = "xno") ; then
+	ENABLE_GNOME="yes"
+else
+	ENABLE_GNOME="no"
+fi
+AM_CONDITIONAL(ENABLE_GNOME, test "x$ENABLE_GNOME" != "xno")
+
+#
+# Check for GNOME Panel Support
+#
+AC_ARG_ENABLE(panel-applet,
+	      [  --enable-panel-applet[[=no/yes]]    compile with GNOME Panel support [[default: no]]],
+	      ENABLE_PANEL_APPLET="$enableval", ENABLE_PANEL_APPLET="no")
+AM_CONDITIONAL(ENABLE_PANEL_APPLET, test "x$ENABLE_PANEL_APPLET" = "xyes")
+
+#
+# Use DBus to export our remote control if available.
+#
+
+AC_ARG_WITH(dbus_service_dir, [  --with-dbus-service-dir=DIR            Where to install Tomboys DBus service file.])
+AM_CONDITIONAL(WITH_DBUS_SERVICE_DIR, test "x$with_dbus_service_dir" != "x")
+if test "x$with_dbus_service_dir" != "x"; then
+	DBUS_SERVICE_DIR=$with_dbus_service_dir
+else
+	DBUS_SERVICE_DIR=${datadir}/dbus-1/services
+fi
+AC_SUBST(DBUS_SERVICE_DIR)
+
+#
+# Check for dbus-sharp
+#
+PKG_CHECK_MODULES(DBUS, dbus-sharp-1.0 >= 0.4 dbus-sharp-glib-1.0 >= 0.3)
+AC_SUBST(DBUS_LIBS)
+
+#
+# Check for Mono.Addins
+#
+PKG_CHECK_MODULES(MONO_ADDINS, mono-addins >= 0.3 \
+	mono-addins-gui >= 0.3 \
+	mono-addins-setup >= 0.3)
+
+#
+# Tomboy.exe needs Gtk# Gnome# GConf#
+#
+GTKSHARP2_MINIMUM_VERSION=2.10.1
+GNOMESHARP_MINIMUM_VERSION=2.24
+if test "x$ENABLE_GNOME" != "xno"; then
+	if test "x$ENABLE_PANEL_APPLET" != "xno"; then
+		PKG_CHECK_MODULES(GNOME,
+				  gnome-sharp-2.0 >= $GNOMESHARP_MINIMUM_VERSION
+				  gconf-sharp-2.0
+				  gnome-panel-sharp-2.24)
+	else
+		PKG_CHECK_MODULES(GNOME,
+				  gconf-sharp-2.0)
+	fi
+fi
+AC_SUBST(GNOME_LIBS)
+
+PKG_CHECK_MODULES(GTKSHARP,
+		  gtk-sharp-2.0 >= $GTKSHARP2_MINIMUM_VERSION)
+AC_SUBST(GTKSHARP_LIBS)
+
+#
+# Printing at least needs Mono.Cairo
+#
+required_assemblies="Mono.Cairo"
+
+#
+# This check stolen from banshee/build/m4/shamrock/mono.m4, because pkg-config
+# seems to find the wrong Mono.Cairo (1.0).
+#
+for asm in $required_assemblies
+do
+	AC_MSG_CHECKING([for Mono 2.0 GAC for $asm.dll])
+	if test \
+		-e "$($PKG_CONFIG --variable=libdir mono)/mono/2.0/$asm.dll" -o \
+		-e "$($PKG_CONFIG --variable=prefix mono)/lib/mono/2.0/$asm.dll"; \
+		then \
+		AC_MSG_RESULT([found])
+	else
+		AC_MSG_RESULT([not found])
+		AC_MSG_ERROR([missing reqired Mono 2.0 assembly: $asm.dll])
+	fi
+done
+
+
+#
+# Evolution.dll needs GMime#
+#
+if test "x$ENABLE_GNOME" != "xno"; then
+	PKG_CHECK_MODULES(EVOLUTION, gmime-sharp-2.6, ENABLE_EVOLUTION="yes", ENABLE_EVOLUTION="no")
+else
+	ENABLE_EVOLUTION=no
+fi
+AC_ARG_ENABLE(evolution, 
+	      [  --enable-evolution[[=no/yes]]  compile evolution addin [[default: yes]]],
+	      ENABLE_EVOLUTION="$enableval")
+AM_CONDITIONAL(ENABLE_EVOLUTION, test "$ENABLE_EVOLUTION" = "yes")
+AC_SUBST(EVOLUTION_LIBS)
+
+#
+# Sketching.dll is very sketchy; for now disable by default
+#
+AC_ARG_ENABLE(sketching,
+              [  --enable-sketching[[=no/yes]]  compile sketching addin [[default: no]]],
+              ENABLE_SKETCHING="$enableval", ENABLE_SKETCHING="no")
+AM_CONDITIONAL(ENABLE_SKETCHING, test "$ENABLE_SKETCHING" = "yes")
+
+#
+# GalagoPresence.dll needs Galago#
+#
+PKG_CHECK_MODULES(GALAGO, galago-sharp >= 0.5.0, ENABLE_GALAGO="yes", ENABLE_GALAGO="no")
+if test "x$ENABLE_GNOME" = "xno" ; then
+	ENABLE_GALAGO=no
+fi
+AC_ARG_ENABLE(galago, 
+	      [  --enable-galago[[=no/yes]]  compile galago addin [[default: yes]]],
+	      ENABLE_GALAGO="$enableval")
+AM_CONDITIONAL(ENABLE_GALAGO, test "$ENABLE_GALAGO" = "yes")
+AC_SUBST(GALAGO_LIBS)
+
+#
+# NUnit required for (optional) unit tests
+# 
+# Added optional arg support. Default now is no NUNIT support instead of yes.
+# bgo #647591
+# 
+#
+AC_ARG_ENABLE(tests,
+	      [  --enable-tests[[=no/yes]]  compile with unit tests [[default: no]]],
+	      [ENABLE_NUNIT="$enableval"],
+          [ENABLE_NUNIT="no"]
+	      )
+	      
+if test "x$ENABLE_NUNIT" = "xyes" ; then
+	PKG_CHECK_MODULES(NUNIT, mono-nunit, HAVE_NUNIT="yes", HAVE_NUNIT="no")
+	AC_PATH_PROG(NUNIT, nunit-console)
+fi
+AM_CONDITIONAL(HAVE_NUNIT, test "x$HAVE_NUNIT" = "xyes")
+AC_SUBST(NUNIT_LIBS)
+	
+
+#
+# Check for X11 libraries
+#
+
+ac_cflags_save="$CFLAGS"
+ac_cppflags_save="$CPPFLAGS"
+AC_PATH_XTRA
+CFLAGS="$CFLAGS $X_CFLAGS"
+CPPFLAGS="$CPPFLAGS $X_CFLAGS"
+
+dnl now try to find the HEADER
+AC_CHECK_HEADER(X11/Xlib.h, HAVE_X="yes", HAVE_X="no")
+
+if test "x$HAVE_X" = "xno"
+then
+  AC_MSG_ERROR([cannot find X11 development files])
+else
+  dnl this is much more than we want
+  X_LIBS="$X_LIBS $X_PRE_LIBS $X_EXTRA_LIBS"
+  dnl AC_PATH_XTRA only defines the path needed to find the X libs,
+  dnl it does not add the libs; therefore we add them here
+  X_LIBS="$X_LIBS -lX11"
+  AC_SUBST(X_CFLAGS)
+  AC_SUBST(X_LIBS)
+fi
+AC_SUBST(HAVE_X)
+  
+CFLAGS="$ac_cflags_save"
+CPPFLAGS="$ac_cppflags_save"
+
+#
+# Replace xgettext by our PluginInfo aware wrapper script
+#
+XGETTEXT_XCOMMENT=`echo 'Test("1")' |\
+       xgettext -L C\# -k'Test:1,"XCOMMENT"' -o- - |\
+       grep XCOMMENT`
+
+# Test to see if comments are supported in xgettext
+# (known to work in 0.15 but not in 0.14.5)
+if test "x#. XCOMMENT" = "x${XGETTEXT_XCOMMENT}"; then
+       XGETTEXT_PLUGIN_NAME=',"Plugin Name"'
+       XGETTEXT_PLUGIN_DESC=',"Plugin Description"'
+else
+       XGETTEXT_PLUGIN_NAME=
+       XGETTEXT_PLUGIN_DESC=
+fi
+
+AC_SUBST(XGETTEXT_PLUGIN_NAME)
+AC_SUBST(XGETTEXT_PLUGIN_DESC)
+
+INTLTOOL_UPDATE="XGETTEXT=\$(top_builddir)/pot-update $INTLTOOL_UPDATE"
+AC_CONFIG_FILES([pot-update], [chmod +x pot-update])
+
+AC_OUTPUT([
+Makefile
+tomboy.spec
+data/Makefile
+data/tomboy-addins.pc
+data/icons/Makefile
+help/Makefile
+libtomboy/Makefile
+Tomboy/Makefile
+Tomboy/Addins/Makefile
+Tomboy/Addins/Backlinks/Makefile
+Tomboy/Addins/Bugzilla/Makefile
+Tomboy/Addins/Evolution/Makefile
+Tomboy/Addins/ExportToHtml/Makefile
+Tomboy/Addins/FileSystemSyncService/Makefile
+Tomboy/Addins/FixedWidth/Makefile
+Tomboy/Addins/GalagoPresence/Makefile
+Tomboy/Addins/InsertTimestamp/Makefile
+Tomboy/Addins/NoteOfTheDay/Makefile
+Tomboy/Addins/PrintNotes/Makefile
+Tomboy/Addins/RemoveBrokenLinks/Makefile
+Tomboy/Addins/Sketching/Makefile
+Tomboy/Addins/SshSyncService/Makefile
+Tomboy/Addins/StickyNoteImport/Makefile
+Tomboy/Addins/Tasque/Makefile
+Tomboy/Addins/Underline/Makefile
+Tomboy/Addins/WebDavSyncService/Makefile
+Tomboy/Addins/WebSyncService/Makefile
+Tomboy/Addins/NoteDirectoryWatcher/Makefile
+Tomboy/Addins/AdvancedPreferences/Makefile
+test/Makefile
+po/Makefile.in
+])
+
+echo "
+${PACKAGE}-${VERSION}
+
+    Install Prefix:             ${prefix}
+
+    GNOME Support:              ${ENABLE_GNOME}
+    Mac OS X Support:           ${ENABLE_OSX}
+    Windows Support:            ${ENABLE_WIN}
+    UNIT Test Support:          ${ENABLE_NUNIT}
+
+    D-Bus Support:              ${ENABLE_DBUS}
+
+    GNOME Panel Applet Support: ${ENABLE_PANEL_APPLET}
+
+    Evolution Add-in:           ${ENABLE_EVOLUTION}
+    Galago Add-in:              ${ENABLE_GALAGO}
+    Sketching Add-in:           ${ENABLE_SKETCHING}
+"
+
+

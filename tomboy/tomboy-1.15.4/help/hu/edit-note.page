@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="edit-notes" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="create-notes"/>
+    <link type="seealso" xref="delete-notes"/>
+    <desc>Jegyzetek szerkesztése és formázása.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Jegyzetek szerkesztése</title>    
+  
+		<p>A Tomboy jegyzettömb lehetővé teszi a jegyzet szövegének különböző formázását, beleértve a visszavonást és ismételt végrehajtást, a félkövér, dőlt vagy aláhúzott szöveg használatát, és sok mást.</p>
+		
+   <section id="redo-undo">
+	
+	<title>Visszavonás és ismételt végrehajtás</title>
+	
+		<p>Az utolsó művelet, például egy szó beírásának vagy szövegformázás visszavonásához, nyomja meg az eszköztár <gui>Szöveg</gui> gombját, és válassza a <gui>Visszavonás</gui> pontot.</p>
+
+		<p>Nyomja meg az eszköztár <gui>Szöveg</gui> gombját, és válassza az <gui>Újra</gui> pontot egy szó vagy szöveg visszaállításához a Visszavonás használata után.</p>
+	
+  </section>
+	 
+  <section id="text-format">
+	
+	<title>Szöveg formázása</title>
+	
+		<p>A jegyzetei szövegét számos módon formázhatja, beleértve szavak alá- vagy áthúzását, szöveg félkövérré vagy dőltté tételét, szavak vagy mondatok kiemelését.</p>
+  </section>
+	 
+  <section id="text-size">
+	
+	<title>A szövegméret módosítása</title>
+	
+		<p>A szöveg betűméretét kétféleképpen módosíthatja.</p>
+		<p>Jelölje ki a nagyobbá vagy kisebbé tenni kívánt szöveget, és nyomja meg a <keyseq><key>Ctrl</key><key>+</key></keyseq> kombinációt a nagyobbá, vagy a <keyseq><key>Ctrl</key><key>-</key></keyseq> kombinációt a kisebbé tételéhez.</p>
+		<p>Az eszköztár <gui>Szöveg</gui> gombjára kattintva négy előre beállított méret közül választhat: kicsi, normál, nagy, óriási.</p>
+	
+  </section>
+	 
+  <section id="bullets">
+	
+	<title>Felsorolásjelek formázása</title>
+	
+		<p>Felsorolásjelek hozhatók létre a billentyűzet, vagy az eszköztár <gui>Szöveg</gui> ikonja segítségével.</p>
+		<p>Felsorolásjel kézi létrehozásához írja be a <key>*</key> jelet, majd a szöveget. Az Enter megnyomása után a Tomboy automatikusan felsorolássá alakítja a csillaggal kezdődő sort, és a következő sor is automatikusan felsorolásként lesz formázva. Ha alpontot kíván létrehozni, akkor az <key>Enter</key> megnyomása után azonnal nyomja meg a <key>Tab</key> billentyűt.</p>
+		<p>Ki is emelhet egy adott sort, és az eszköztár <gui>Szöveg</gui> ikonjára kattintva a <gui>Felsorolás</gui> pont kiválasztásával az adott sort felsorolásjelessé alakíthatja.</p>
+
+	
+  </section>
+</page>

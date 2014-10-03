@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "March 2009">
+<!ENTITY app "Search for Files">
+<!ENTITY ug "MATE Desktop User Guide">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.mate.org/projects/gdp 
+  Template version: 2.0 beta
+  Template last modified Jan 25, 2005  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Οδηγός χρήσης «Αναζήτησης αρχείων»</title>
+
+    <abstract role="description">
+      <para>Ένα εργαλείο αναζήτησης για την εύρεση αρχείων, φακέλων και εγγράφων στον υπολογιστή σας.</para>
+    </abstract>
+
+    <copyright lang="en"> 
+      <year>2005</year> 
+      <holder>Dennis Cranston</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2002</year> 
+      <year>2003</year> 
+      <year>2004</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>Alexander Kirillov</holder> 
+    </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+    <publisher> 
+      <publishername>Έργο τεκμηρίωσης MATE</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σε αυτόν τον <ulink type="help" url="help:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε με αυτόν τον οδηγό.</para>
+         <para>Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του MATE όπως διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 της άδειας.</para>
+
+	<para>Πολλές από τις ονομασίες που χρησιμοποιούνται από εταιρείες για τη διαφοροποίηση των προϊόντων και υπηρεσιών τους έχουν καταχωρηθεί ως εμπορικά σήματα. Οπουδήποτε στην τεκμηρίωση του MATE εμφανίζονται αυτές οι ονομασίες, και εφόσον τα μέλη του Έργου τεκμηρίωσης του MATE έχουν λάβει γνώση αυτών των εμπορικών σημάτων, οι ονομασίες αυτές θα γράφονται με κεφαλαίους χαρακτήρες ή με κεφαλαίους τους αρχικούς χαρακτήρες.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+
+    <authorgroup> 
+      <author role="maintainer" lang="en"> 
+	<firstname>Dennis</firstname> 
+	<surname>Cranston</surname> 
+	<affiliation> 
+	  <orgname>Search for Files Maintainer</orgname> 
+	  <address lang="en">dennis_cranston@yahoo.com</address> 
+	</affiliation> 
+      </author> 
+      <author lang="en"> 
+	<firstname>Sun</firstname> 
+	<surname>MATE Documentation Team</surname> 
+	<affiliation> 
+	  <orgname>Sun Microsystems</orgname> 
+	  <address/> 
+	</affiliation> 
+      </author> 
+      <author lang="en"> 
+	<firstname>Alexander</firstname> 
+	<surname>Kirillov</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	  <address> <email>kirillov@math.sunysb.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+ <revhistory>
+ <!-- <revision> 
+	<revnumber>&app; Manual V&manrevision;</revnumber> 
+	<date>&date;</date> 
+	<revdescription> 
+	  <para role="author">Sun GNOME Documentation Team</para>
+	  <para role="publisher">MATE Documentation Project</para>
+	</revdescription> 
+ </revision>
+-->
+   <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.7</revnumber> 
+			<date>June 2005</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Joachim Noreiko
+				<email>jnoreiko@yahoo.com</email>
+			</para>
+	  		<para role="publisher" lang="en">Search for Files Maintainer</para>
+			</revdescription> 
+  </revision>
+  <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.6</revnumber> 
+			<date>January 2005</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Dennis Cranston
+				<email>dennis_cranston@yahoo.com</email>
+			</para>
+	  		<para role="publisher" lang="en">Search for Files Maintainer</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.4</revnumber> 
+			<date>February 2004</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.3</revnumber> 
+			<date>September 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Filesl Manual V2.2</revnumber> 
+			<date>August 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.1</revnumber> 
+			<date>July 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.0</revnumber> 
+			<date>May 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+	<revnumber>Search for Files Manual</revnumber> 
+	<date>2000</date> 
+	<revdescription> 
+	  <para role="author" lang="en">Alexander Kirillov
+	    <email>kirillov@math.sunysb.edu</email>
+	  </para>
+	  <para role="publisher" lang="en">MATE Documentation Project</para>
+	</revdescription> 
+ </revision> 
+ </revhistory> 
+
+    <releaseinfo>Αυτός ο οδηγός περιγράφει την έκδοση 2.26 της «Αναζήτησης αρχείων».</releaseinfo> 
+    <legalnotice> 
+      <title>Ανάδραση</title> 
+      <para>Για να αναφέρετε κάποιο σφάλμα ή να κάνετε υποδείξεις που αφορούν την εφαρμογή «Αναζήτηση αρχείων» ή αυτό το εγχειρίδιο, ακολουθήστε τις οδηγίες στην σελίδα <ulink url="help:mate-feedback" type="help">MATE Feedback Page</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm lang="en"> 
+    <primary>Search Tool</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="gsearchtool-introduction"> 
+    <title>Εισαγωγή</title> 
+    <para>Η εφαρμογή <application>Αναζήτηση αρχείων</application> σας επιτρέπει να αναζητείτε αρχεία στο σύστημα σας. Για να εκτελέσετε βασική αναζήτηση, μπορείτε να πληκτρολογήσετε το όνομα του αρχείου ολόκληρο ή εν μέρει, με ή χωρίς χαρακτήρες μπαλαντέρ (wildcards). Για να βελτιώσετε την αναζήτηση, μπορείτε να εφαρμόσετε πρόσθετα κριτήρια.</para>
+    <para>Η <application>Αναζήτηση αρχείων</application> χρησιμοποιεί τις εντολές UNIX <command>find</command>, <command>grep</command> και <command>locate</command>. Από προεπιλογή, όταν η <application>Αναζήτηση αρχείων</application> εκτελεί αναζήτηση πρώτα χρησιμοποιεί την εντολή <command>locate</command> και στην συνέχεια κάνει χρήση της πιο αργής αλλά και πιο λεπτομερούς εντολής <command>find</command>.</para>
+    <para>Το ευαίσθητο ή όχι στα κεφαλαία-μικρά της γραμματοσειράς εξαρτάται από το λειτουργικό σύστημα σας. Για παράδειγμα, στο Linux, οι εντολές <command>find</command>, <command>grep</command> και <command>locate</command> υποστηρίζουν την επιλογή <literal>-i</literal>, έτσι όλες οι αναζητήσεις δεν είναι ευαίσθητες στα κεφαλαία-μικρά της γραμματοσειράς.</para>
+  </sect1>
+
+  <sect1 id="gsearchtool-getting-started">
+    <title>Ξεκινώντας</title> 
+
+    <para>Μπορείτε να εκκινήσετε την εφαρμογή <application>Αναζήτηση αρχείων</application> με τους εξής τρόπους:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Από την <guimenu>Εργαλειοθήκη μενού</guimenu> στον πίνακα εφαρμογών</term>
+    		<listitem>
+    		<para>Επιλέξτε <menuchoice><guisubmenu>Τοποθεσίες</guisubmenu><guimenuitem>Αναζήτηση για αρχεία...</guimenuitem></menuchoice></para>
+    		</listitem>
+    	</varlistentry>
+   	<varlistentry>
+    		<term>Από το <guimenu>Κύριο μενού</guimenu> στον πίνακα εφαρμογών</term>
+    		<listitem>
+    		<para>Επιλέξτε <menuchoice><guimenuitem>Αναζήτηση για αρχεία...</guimenuitem></menuchoice></para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Από την γραμμή εντολών</term>
+    		<listitem>
+    		<para>Εκτελέστε την εξής εντολή: <command>mate-search-tool</command></para>
+    		<para> 		 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+
+    <para>Όταν εκκινείται η <application>Αναζήτηση αρχείων</application>, προβάλλεται το παρακάτω παράθυρο.</para>
+
+    <!-- ==== Figure ==== -->
+      <figure id="mainwindow-fig"> 
+	<title>Παράθυρο «Αναζήτησης αρχείων»</title> 
+	<screenshot> 
+	  <mediaobject lang="en"> 
+	    <imageobject><imagedata fileref="figures/mate-search-tool_window.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Shows Search for Files main window. </phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="gsearchtool-usage"> 
+    <title>Χρήση</title>
+
+    <sect2 id="gsearchtool-simple">
+    <title>Εκτέλεση βασικής αναζήτησης</title>
+    
+    <para>Για να κάνετε βασική αναζήτηση για ένα αρχείο στο σύστημα, εκτελέστε τις παρακάτω ενέργειες:</para>
+    <orderedlist>
+    <listitem><para>Εισάγετε το κείμενο αναζήτησης στο πεδίο <guilabel>Όνομα περιέχει</guilabel>. Το κείμενο αναζήτησης μπορεί να είναι ένα όνομα αρχείου ολόκληρο ή όχι, με ή χωρίς χαρακτήρες μπαλαντέρ, όπως στον παρακάτω πίνακα:</para>
+
+      <informaltable frame="all">
+        <tgroup cols="3" colsep="1" rowsep="1">
+          <colspec colname="COLSPEC0" colwidth="33*"/>
+          <colspec colname="COLSPEC1" colwidth="33*"/>
+          <colspec colname="COLSPEC2" colwidth="34*"/>
+          <thead>
+            <row valign="top">
+              <entry colname="COLSPEC0">
+                <para>Κείμενο πεδίου Όνομα περιέχει</para></entry>
+              <entry colname="COLSPEC1">
+                <para>Παράδειγμα</para></entry>
+              <entry colname="COLSPEC2">
+                <para>Αποτέλεσμα</para></entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">
+              <entry>
+                <para>Πλήρες ή μερικό όνομα αρχείου</para>
+              </entry>
+              <entry>
+                <para lang="en"><userinput>myfile.txt</userinput>
+                </para>
+              </entry>
+              <entry>
+                <para>Η <application>Αναζήτηση αρχείων</application> ψάχνει για όλα αρχεία που έχουν το κείμενο <userinput>myfile.txt</userinput> στο όνομα τους.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para>Μερικό όνομα αρχείου συνδυασμένο με χαρακτήρες μπαλαντέρ (*, [, ])</para>
+              </entry>
+              <entry>
+                <para lang="en"><userinput>*.[ch]</userinput>
+                </para>
+              </entry>
+              <entry>
+                <para>Η <application>Αναζήτηση αρχείων</application> ψάχνει για όλα τα αρχεία που έχουν επέκταση <userinput>.c</userinput> ή <userinput>.h</userinput>.</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </listitem>
+    <listitem><para>Στο πεδίο <guilabel>Αναζήτηση στο φάκελο</guilabel>, επιλέξτε τον φάκελο ή την συσκευή από όπου θέλετε να αρχίσει την έρευνα η <application> Αναζήτηση αρχείων</application>.</para></listitem>
+    <listitem><para>Με αριστερό κλικ στο πλήκτρο <guibutton>Εύρεση</guibutton> εκτελείται η αναζήτηση.</para>
+    </listitem>
+    </orderedlist>
+    <para>Η <application>Αναζήτηση αρχείων</application> ερευνά τον φάκελο που προσδιορίσατε και τους υποφακέλους του. Η <application>Αναζήτηση αρχείων</application> προβάλλει το αποτέλεσμα της έρευνας στο πλαίσιο λίστας <guilabel>Αποτελέσματα αναζήτησης</guilabel>. Αν η <application>Αναζήτηση αρχείων</application> δεν βρει αρχεία που πληρούν τα κριτήρια αναζήτησης, η εφαρμογή προβάλλει το μήνυμα "Δεν βρέθηκαν αρχεία" στο πλαίσιο λίστας <guilabel>Αποτελέσματα αναζήτησης</guilabel>.</para>
+    <para>Από προεπιλογή η <application>Αναζήτηση αρχείων</application> θα εκτελέσει γρήγορη έρευνα χρησιμοποιώντας την εντολή <command>locate</command> που ακολουθείται από μία πιο λεπτομερή με χρήση της εντολής <command>find</command>. Η εντολή <command>locate</command> είναι γρηγορότερη επειδή χρησιμοποιεί μία βάση δεδομένων με πληροφορίες για τα αρχεία. Αν αυτή η βάση δεδομένων είναι παλιότερη από μία εβδομάδα, η <application>Αναζήτηση αρχείων</application> ενδέχεται να σας προειδοποιήσει ότι τα αποτελέσματα αναζήτησης μπορεί να είναι παρωχημένα και να σας δώσει την επιλογή να απενεργοποιήσετε την γρήγορη αναζήτηση. Για να ενημερώσετε την βάση δεδομένων, εκτελέστε την εντολή <command>updatedb</command> σαν υπερχρήστης (root).</para>
+  </sect2>
+    
+    <sect2 id="gsearchtool-advanced">
+    <title>Προσθήκη κριτηρίων αναζήτησης</title>
+    <para>Μπορείτε να προσθέσετε κριτήρια αναζήτησης για ένα αρχείο στο σύστημα. Για να προσθέσετε κριτήρια αναζήτησης, εκτελέστε τις εξής ενέργειες:</para>
+  	<orderedlist>
+    		<listitem><para>Κάντε κλικ στο κείμενο <guilabel>Περισσότερες επιλογές</guilabel>.</para></listitem>
+    		<listitem><para>Κάντε κλικ στην αναπτυσσόμενη λίστα <guilabel>Διαθέσιμες επιλογές</guilabel>.</para></listitem>
+    		<listitem><para>Επιλέξτε το κριτήριο αναζήτησης που θέλετε να εφαρμόσετε.</para></listitem>
+    		<listitem><para>Κάντε κλικ στο πλήκτρο <guibutton>Προσθήκη</guibutton>.</para></listitem>
+    		<listitem><para>Ορίστε τις αναγκαίες πληροφορίες για το κριτήριο αναζήτησης, όπως περιγράφεται στο <xref linkend="tbl-search-rules"/>.</para></listitem>
+    		<listitem><para>Επαναλάβετε τις παραπάνω ενέργειες για κάθε κριτήριο αναζήτησης που θέλετε να εφαρμόσετε.</para></listitem>
+    	</orderedlist>	
+    	<para>Για να αφαιρέσετε ένα κριτήριο αναζήτησης από την τρέχουσα έρευνα, κάντε κλικ στο πλήκτρο <guibutton>Αφαίρεση</guibutton> δίπλα στην επιλογή.</para>
+    	<para>Για να απενεργοποιήσετε τα κριτήρια αναζήτησης από την τρέχουσα έρευνα, κάντε κλικ στο κείμενο <guilabel>Περισσότερα κριτήρια αναζήτησης</guilabel>.</para>
+    
+    <table id="tbl-search-rules" frame="topbot">
+    <title>Κριτήρια αναζήτησης</title> 
+		  <tgroup cols="2" colsep="1" rowsep="1">
+			 <colspec colname="COLSPEC0" colwidth="33*"/>
+			 <colspec colname="COLSPEC1" colwidth="33*"/>
+			 <thead> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Όνομα κριτηρίου</para></entry> 
+				  <entry> 
+					 <para>Περιγραφή</para></entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Περιέχει το κείμενο</para></entry> 
+				  <entry> 
+					 <para>Αναζήτηση για αρχεία κειμένου που περιέχουν το καθορισμένο κείμενο.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Ημερομηνία τροποποίησης μικρότερη από</para></entry> 
+				  <entry> 
+					 <para>Αναζήτηση για αρχεία που τροποποιήθηκαν νωρίτερα από την προσδιορισμένη σε ημέρες περίοδο.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Ημερομηνία τροποποίησης μεγαλύτερη από</para></entry> 
+				  <entry> 
+					 <para>Αναζήτηση για αρχεία που τροποποιήθηκαν παλαιότερα από την προσδιορισμένη σε ημέρες περίοδο.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Μέγεθος τουλάχιστον</para></entry> 
+				  <entry> 
+					 <para>Αναζήτηση για αρχεία με μέγεθος σε kilobytes ίσο ή μεγαλύτερο από το προσδιορισμένο.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Μέγεθος το μέγιστο</para></entry> 
+				  <entry> 
+					 <para>Αναζήτηση για αρχεία με μέγεθος σε kilobytes μικρότερο ή ίσο από το προσδιορισμένο.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Το αρχείο είναι κενό</para></entry> 
+				  <entry> 
+					 <para>Αναζήτηση για κενά αρχεία.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Ανήκει σε χρήστη</para></entry> 
+				  <entry> 
+					 <para>Αναζήτηση για αρχεία που ανήκουν στον καθορισμένο χρήστη. Πληκτρολογήστε το όνομα χρήστη στο πεδίο εισαγωγής που παρέχεται.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Ανήκει σε ομάδα</para></entry> 
+				  <entry> 
+					 <para>Αναζήτηση για αρχεία που ανήκουν στην καθορισμένη ομάδα. Πληκτρολογήστε το όνομα της ομάδας στο πεδίο εισαγωγής που παρέχεται.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Μη αναγνωρίσιμος ιδιοκτήτης</para></entry> 
+				  <entry> 
+					 <para>Αναζήτηση για αρχεία που ανήκουν σε χρήστη ή ομάδα που είναι άγνωστοι στο σύστημα.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Το όνομα δεν περιέχει</para></entry> 
+				  <entry> 
+					 <para>Αναζήτηση για ονόματα αρχείων που δεν περιέχουν το αλφαριθμητικό που εισάγετε. Εισάγετε ένα πλήρες ή μερικό όνομα αρχείου με χαρακτήρες μπαλαντέρ στο παρεχόμενο πεδίο. Χρησιμοποιήστε * για να δηλώσετε μία ακολουθία χαρακτήρων. Χρησιμοποιήστε ? για να δηλώσετε έναν μοναδικό χαρακτήρα. Η αναζήτηση είναι ευαίσθητη στα κεφαλαία-μικρά της γραμματοσειράς.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Ταίριασμα κανονικής έκφρασης</para></entry> 
+				  <entry> 
+					 <para>Αναζήτηση για αρχεία που περιέχουν την προσδιορισμένη κανονική έκφραση στην διαδρομή φακέλου ή στο όνομα αρχείου τους. Πληκτρολογήστε την κανονική έκφραση στο πεδίο εισαγωγής που παρέχεται.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Εμφάνιση κρυφών αρχείων και αρχείων ασφαλείας</para></entry> 
+				  <entry> 
+					 <para>Περιλαμβάνει κρυφά αρχεία και αρχεία ασφαλείας στην αναζήτηση.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Ακολούθηση συμβολικών συνδέσμων</para></entry> 
+				  <entry> 
+					 <para>Ακολουθεί συμβολικούς δεσμούς κατά την αναζήτηση.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Να μη συμπεριλαμβάνει άλλα συστήματα αρχείων</para></entry> 
+				  <entry> 
+					 <para>Αναζήτηση σε φακέλους που είναι στο ίδιο σύστημα αρχείων με τον φάκελο εκκίνησης.</para></entry>  
+				</row> 
+				 				
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+    
+    </sect2>
+
+    <sect2 id="gsearchtool-stop">
+    <title>Διακοπή αναζήτησης</title>
+    <para>Για διακόψετε μία αναζήτηση κάντε κλικ στο πλήκτρο <guibutton>Κλείσιμο</guibutton> πριν η <application>Αναζήτηση αρχείων</application> ολοκληρώσει την έρευνα.</para>
+    </sect2>
+    
+    <sect2 id="gsearchtool-view">
+    <title>Άνοιγμα προβαλλόμενου αρχείου</title>
+    <para>Για να ανοίξετε ένα αρχείο που προβάλλεται στο πλαίσιο λίστας <guilabel>Αποτελέσματα αναζήτησης</guilabel>, εκτελέστε μία από τις εξής ενέργειες:</para>
+    <itemizedlist>
+    <listitem><para>Κάντε δεξί κλικ στο αρχείο και επιλέξτε <guimenuitem>Άνοιγμα</guimenuitem>.</para></listitem>
+     <listitem><para>Διπλό κλικ στο αρχείο.</para></listitem>
+    </itemizedlist>
+    <para>Για να ανοίξετε τον φάκελο που περιέχει το αρχείο που προβάλλεται στο πλαίσιο λίστας <guilabel>Αποτελέσματα αναζήτησης</guilabel>, κάντε δεξί κλικ στο αρχείο και επιλέξτε <guimenuitem>Άνοιγμα Φακέλου</guimenuitem>.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-delete">
+    <title>Διαγραφή προβαλλόμενου αρχείου</title>
+    <para>Για να διαγράψετε ένα αρχείο που προβάλλεται στο πλαίσιο λίστας <guilabel>Αποτελέσματα αναζήτησης</guilabel>, κάντε δεξί κλικ στο αρχείο και επιλέξτε <guimenuitem>Μετακίνηση στα απορρίμματα</guimenuitem>.</para>
+    </sect2>
+    
+    <!--
+    <sect2 id="gsearchtool-search-command">
+    <title>To View the Search Command Used by &app;</title>
+    <para>To view the command that <application>&app;</application> used to perform the previous search, choose <menuchoice><guimenu>Search</guimenu><guimenuitem>Show Command</guimenuitem></menuchoice>. The <guilabel>Search Command Line</guilabel> displays the command. </para>
+    </sect2>
+    -->
+    
+    <sect2 id="gsearchtool-savetofile">
+    <title>Αποθήκευση αποτελεσμάτων αναζήτησης</title>
+    <para>Για να αποθηκεύσετε τα αποτελέσματα της τελευταίας αναζήτησης που πραγματοποιήσατε με την <application>Αναζήτηση αρχείων</application>, κάντε δεξί κλικ στο πλαίσιο λίστας <guilabel>Αποτελέσματα αναζήτησης</guilabel> και επιλέξτε <guimenuitem>Αποθήκευση αποτελεσμάτων ως...</guimenuitem>. Εισάγετε το όνομα του αρχείου στο οποίο θέλετε να αποθηκεύσετε τα αποτελέσματα και πατήστε «Αποθήκευση».</para>
+    </sect2>
+ 
+  </sect1>
+
+<!-- ============= Settings ============================== -->
+
+  <sect1 id="gsearchtool-settings-gsettings-keys">
+    <title>Ρυθμίσεις</title> 
+
+    <para lang="en"><application>Search for Files</application> provides gsettings keys to modify some of its behavior.  The gsettings values can be changed by starting the <application>Configuration Editor</application> in the following ways:
+    </para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Μενού <guimenu>Εφαρμογές</guimenu></term>
+    		<listitem>
+    		<para lang="en">Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>dconf Editor</guimenuitem></menuchoice>. </para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Γραμμή εντολών</term>
+    		<listitem>
+    		<para lang="en">Execute the following command: <command>dconf-editor</command></para> 
+    		</listitem>
+    	</varlistentry>	
+    </variablelist>
+    
+    <sect2 id="gsearchtool-disablequicksearch">
+    <title>Απενεργοποίηση γρήγορης αναζήτησης</title>
+    <para lang="en">Key name: org.mate.search-tool.disable-quick-search</para>
+    <para>Προεπιλεγμένη τιμή: false</para>
+    <para>Η <application>Αναζήτηση αρχείων</application> επιταχύνει την έρευνα για ονόματα αρχείων χρησιμοποιώντας την εντολή <command>locate</command>. Το <command>locate</command> δίνει έναν σίγουρο τρόπο ευρετηρίασης και γρήγορης έρευνας για ονόματα αρχείων. Επειδή το <command>locate</command> βασίζεται σε ένα αρχείο ευρετηρίου, η λίστα <guilabel>Αποτελέσματα αναζήτησης</guilabel> μπορεί να μην είναι πάντοτε ενημερωμένη.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-disablesecondscan">
+    <title>Απενεργοποίηση δευτερεύουσας σάρωσης γρήγορης αναζήτησης</title>
+    <para lang="en">Key name: org.mate.search-tool.disable-quick-search-second-scan</para>
+    <para>Προεπιλεγμένη τιμή: false</para>
+    <para>Μετά την ολοκλήρωση της γρήγορης αναζήτησης, η <application>Αναζήτηση αρχείων</application> θα εκτελέσει μία λεπτομερέστερη αναζήτηση χρησιμοποιώντας την εντολή <command>find</command>. Σκοπός της δεύτερης σάρωσης είναι να βρεθούν αρχεία που δεν έχουν ευρετηριασθεί. Τα αρχεία που πληρούν τα κριτήρια αναζήτησης προστίθενται στην λίστα <guilabel>Αποτελέσματα αναζήτησης</guilabel> κρατώντας την ενημερωμένη.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-quicksearchexclude">
+    <title>Αποκλεισμένες διαδρομές για την γρήγορη αναζήτηση</title>
+    <para lang="en">Key name: org.mate.search-tool.quick-search-excluded-paths</para>
+    <para>Προεπιλεγμένες τιμές: [/mnt/*,/media/*,/dev/*,/tmp/*,/proc/*,/var/*]</para>
+    <para>Η <application>Αναζήτηση αρχείων</application> δεν θα εκτελέσει γρήγορη αναζήτηση για διαδρομές που καθορίζονται από αυτό το κλειδί. Αναζητήσεις αρχείων στις ορισμένες διαδρομές θα χρησιμοποιήσουν την εντολή <command>find</command>. Οι χαρακτήρες μπαλαντέρ '*' και '?' υποστηρίζονται.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-secondscanexclude">
+    <title>Αποκλεισμένες διαδρομές δευτερεύουσας σάρωσης της γρήγορης αναζήτησης</title>
+    <para lang="en">Key name: org.mate.search-tool.quick-search-second-scan-excluded-paths</para>
+    <para>Προεπιλεγμένη τιμή: [/]</para>
+    <para>Η <application>Αναζήτηση αρχείων</application> δεν θα εκτελέσει δεύτερη σάρωση μετά από μία γρήγορη αναζήτηση για τις διαδρομές που ορίζονται από αυτό το κλειδί. Οι γρήγορες αναζητήσεις στις προσδιορισμένες διαδρομές δεν ακολουθούνται από λεπτομερέστερη έρευνα με χρήση της εντολής <command>find</command>. Οι χαρακτήρες μπαλαντέρ '*' και '?' υποστηρίζονται.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-showoptions">
+    <title>Εμφάνιση πρόσθετων επιλογών</title>
+    <para lang="en">Key name: org.mate.search-tool.show-additional-options</para>
+    <para>Προεπιλεγμένη τιμή: false</para>
+    <para>Αυτό το κλειδί καθορίζει αν η ενότητα <guilabel>Περισσότερα κριτήρια αναζήτησης</guilabel> θα αναπτύσσεται όταν εκκινείται η <application>Αναζήτηση αρχείων</application>.</para>
+    </sect2>
+    
+  </sect1>
+
+</article>

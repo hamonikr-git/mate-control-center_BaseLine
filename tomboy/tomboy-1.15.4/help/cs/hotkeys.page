@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="hotkeys" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Předvolby pro horké klávesy a klávesové zkratky.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Klávesové zkratky</title>
+
+	<p>Klávesové zkratky vám umožní přistupovat ke svým poznámkám a funkcím Tomboy odkudkoliv, i když používáte ve svém pracovním prostředí jiné aplikace . Klávesové zkratky jsou aktivovány zmáčknutím více kláves na vaší klávesnici dohromady.</p>
+	
+	<p>Klávesové zkratky můžete povolit otevřením <gui>Předvoleb Tomboy</gui>, kliknutím pravým tlačítkem myši na ikonu Tomboy na svém panelu, na pruhu úloh nebo v doku, zvolením <gui>Předvolby</gui> a následným výběrem <gui>Klávesové zkratky</gui>. <gui>Předvolby Tomboy</gui> můžete otevřít také z dialogového okna <gui>Hledat ve všech poznámkách</gui>. V nabídce zvolte <guiseq><gui>Upravit</gui><gui>Předvolby</gui></guiseq>.</p>	
+	
+	<p>Akce, které jsou v aplikaci Tomboy přístupné přes klávesové zkratky:</p>
+	
+	<list>
+	  <item><p><gui>Zobrazit nabídku poznámek</gui>: <keyseq><key>Alt</key><key>F12</key></keyseq></p></item>
+	  <item><p><gui>Otevřít „Začněte zde“</gui>: <keyseq><key>Alt</key><key>F11</key></keyseq></p></item>
+	  <item><p><gui>Vytvořit novou poznámku</gui>: Ve výchozím stavu vypnuto. Můžete si klávesovou zkratku vytvořit zadáním sekvence kláves.</p></item>
+	  <item><p><gui>Otevřít „Hledat ve všech poznámkách“</gui>: Ve výchozím stavu vypnuto. Můžete si klávesovou zkratku vytvořit zadáním sekvence kláves.</p></item>
+	</list>  
+	    
+ </page>

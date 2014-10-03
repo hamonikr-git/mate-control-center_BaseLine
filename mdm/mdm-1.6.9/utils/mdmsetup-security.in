@@ -1,0 +1,5 @@
+USER=root
+PROGRAM=@sbindir@/mdmsetup
+SESSION=true
+FALLBACK=false
+

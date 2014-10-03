@@ -1,0 +1,17 @@
+[Desktop Entry]
+_Name=Atril Document Viewer
+_GenericName=Document Viewer
+_Comment=View multi-page documents
+TryExec=atril
+Exec=atril %U
+StartupNotify=true
+Terminal=false
+Type=Application
+Icon=atril
+X-MATE-DocPath=
+X-MATE-Bugzilla-Bugzilla=MATE
+X-MATE-Bugzilla-Product=atril
+X-MATE-Bugzilla-Component=BugBuddyBugs
+X-MATE-Bugzilla-Version=@VERSION@
+Categories=GTK;Office;Viewer;
+MimeType=@ATRIL_MIME_TYPES@

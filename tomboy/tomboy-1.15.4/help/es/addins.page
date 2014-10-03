@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="guide" style="2column" id="addins" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Añadir funcionalidad adicional a Tomboy.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-02" status="draft"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Complementos de Tomboy</title>
+
+  <p>Los <gui>Complementos</gui> de <app>Tomboy</app> amplían su funcionalidad con características que no están disponibles de manera predeterminada.</p>
+
+  <steps>
+    <title>Para activar un complemento:</title>
+    <item>
+      <p>Seleccione <guiseq><gui style="menu">Editar</gui><gui style="menuitem">Preferencias</gui><gui style="tab">Complementos</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Pulse en <gui>+</gui> para expandir la categoría del complemento.</p>
+    </item>
+    <item>
+      <p>Seleccione el complemento que quiere activar.</p>
+    </item>
+    <item>
+      <p>Pulse <gui style="button">Activar</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Para descargar más complementos de Internet, vaya a la pestaña <gui style="tab">Complementos</gui> de la ventana <gui>Preferencias de <app>Tomboy</app></gui> y pulse en <gui style="button">Obtener más complementos…</gui>.</p>
+  </note>
+
+  <section id="preferences" style="2column">
+    <title>Preferencias</title>
+  </section>
+
+  <section id="tools" style="2column">
+    <title>Herramientas</title>
+  </section>
+
+  <section id="desktop-integration" style="2column">
+    <title>Integración con el escritorio</title>
+  </section>
+
+  <section id="sync" style="2column">
+    <title>Sincronización</title>
+    <p>Los complementos de sincronización le permiten elegir diferentes métodos y lugares para sincronizar sus notas Tomboy.</p>
+  </section>
+
+  <section id="formatting" style="2column">
+    <title>Formateado</title>
+  </section>
+</page>

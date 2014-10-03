@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="introduction" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <desc>Introducció a les <app>Notes del Tomboy</app>.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Introducció</title>
+
+  <p>El <app>Tomboy</app> és una aplicació per prendre notes a l'escriptori GNOME, al Microsoft Windows i al Mac OS X. El <app>Tomboy</app> és fàcil d'utilitzar i us ajudarà a organitzar les vostres idees i la informació amb què treballeu cada dia.</p>
+  <p>El <app>Tomboy</app> inclou funcions que us ajudaran a organitzar la informació i a recordar-la millor, també permet enllaçar les vostres notes entre elles per cercar la informació i ordenar-la més fàcilment. Facilita l'organització de les notes en blocs de notes per agrupar-les amb més comoditat.</p>
+  <p>
+    You can also synchronize your notes across multiple computers, making it
+    easy to take your notes with you wherever you are.
+  </p>
+
+  <figure>
+    <title>Finestra del <gui>Notes del Tomboy</gui></title>
+    <desc>Finestra principal de les <app>Notes del Tomboy</app></desc>
+    <media type="image" src="figures/tomboy.png" mime="image/png" style="right">
+      <p>Nota per defecte del <app>Tomboy</app>.</p>
+    </media>
+  </figure>
+
+</page>

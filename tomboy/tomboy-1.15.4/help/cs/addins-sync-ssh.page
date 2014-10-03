@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-sync-ssh" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="addins#sync"/>
+    <desc>Jak synchronizovat své poznámky do jiného počítače skrz SSH.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2010-08-01" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Služba synchronizace přes SSH</title>
+
+  <p>Doplněk pro synchronizaci do služby SSH vám umožňuje synchronizovat své poznámky s jiným počítačem pomocí protokolu SSH. Ve výchozím stavu je tento doplněk zakázán.</p>
+
+  <p>Aby šlo používat tento doplněk, musíte mít nainstalován balíček <em>sshfs</em> pro svoji linuxovoou distribuci. Nápověda, jak nastavit SSH, ale přesahuje rámec tohoto dokumentu.</p>
+
+</page>

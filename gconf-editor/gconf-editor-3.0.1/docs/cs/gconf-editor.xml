@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- -*- indent-tabs-mode: nil -*- -->
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.8">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "September 2004">
+<!ENTITY app "Configuration Editor">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+-->
+<article id="index" lang="cs">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Příručka k Editoru nastavení </title>       
+    <copyright> 
+      <year>2004</year>
+      <holder>Sun Microsystems</holder> 
+    </copyright><copyright><year>2009.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright>
+    <!-- translators: uncomment this:
+         <copyright>
+         <year>2003</year>
+         <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+         </copyright>
+    -->
+
+    <publisher role="maintainer"> 
+      <publishername>Dokumentační projekt GNOME</publishername> 
+    </publisher> 
+
+       <legalnotice id="legalnotice">
+         <para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type="help" url="ghelp:fdl">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+          <para>Tato příručka je součástí kolekce příruček GNOME, distribuovaných pod licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, musíte přiložit kopii licence dle popisu v sekci 6 dané licence.</para>
+ 
+         <para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+ 
+         <para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+                 <listitem>
+                   <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+                 </listitem>
+                 <listitem>
+                   <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+                 </listitem>
+           </orderedlist></para>
+   </legalnotice>
+ 
+    <!-- This file  contains link to license for the documentation (GNU FDL), and 
+         other legal stuff such as "NO WARRANTY" statement. Please do not change 
+         any of this. -->
+
+    <authorgroup>
+      <author>
+        <firstname>Sun</firstname>
+        <surname>Dokumentační tým GNOME</surname>
+        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+      </author>
+      <author>
+        <firstname>Angela</firstname>
+        <surname>Boyle</surname>
+        <affiliation>
+          <orgname>Dokumentační projekt GNOME</orgname>
+        </affiliation>
+      </author>
+      <editor>
+        <firstname>Shaun</firstname>
+        <surname>McCance</surname>
+        <affiliation>
+          <orgname>Dokumentační projekt GNOME</orgname>
+        </affiliation>
+      </editor>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+           <firstname>Latin</firstname> 
+           <surname>Translator 1</surname> 
+           <affiliation> 
+           <orgname>Latin Translation Team</orgname> 
+           <address> <email>translator@gnome.org</email> </address> 
+           </affiliation>
+           <contrib>Latin translation</contrib>
+           </othercredit>
+      -->
+    </authorgroup>
+    <abstract role="description"><para>Editor nastavení můžete použít ke změnám voleb nastavení, které používají aplikace, ale nenabízí k nim přístup ze svého dialogového okna předvoleb.</para></abstract>
+
+    <revhistory>
+      <revision>
+        <revnumber>Verze 2.8</revnumber>
+        <date>Září 2004</date>
+        <revdescription>
+          <para role="author">Dokumentační projekt GNOME</para>
+          <para role="publisher">Dokumentační projekt GNOME</para>
+          <para role="status">nerevidováno</para>
+        </revdescription>
+      </revision>
+      <revision> 
+        <revnumber>Verze 2.1</revnumber> 
+        <date>Srpen 2004</date> 
+        <revdescription> 
+          <para role="author">Dokumentační tým GNOME firmy Sun</para>
+          <para role="publisher">Dokumentační projekt GNOME</para>
+        </revdescription> 
+      </revision>
+      <revision> 
+        <revnumber>Verze 2.0.1</revnumber> 
+        <date>Leden 2004</date> 
+        <revdescription> 
+          <para role="author">Dokumentační tým GNOME firmy Sun</para>
+          <para role="publisher">Dokumentační projekt GNOME</para>
+        </revdescription> 
+      </revision>
+    </revhistory> 
+    <releaseinfo>Tato příručka popisuje Editor nastavení ve verzi 2.8</releaseinfo> 
+    <legalnotice> 
+      <title>Ohlasy</title> 
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k Editoru nastavení nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:gnome-feedback" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+      <!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+</articleinfo> 
+
+<indexterm> 
+  <primary>Editor GConf</primary> 
+</indexterm>
+
+<sect1 id="introduction">
+  <title>Úvod</title>
+  <para>Pracovní prostředí GNOME a mnoho aplikací používá <application>GConf</application> k ukládání uživatelských předvoleb a údajů systémového nastavení. <application>GConf</application> poskytuje centrální úložné místo pro předvolby a zjednodušení správy nastavení pro uživatele a správce systému. Více informací o <application>GConf</application> můžete najít v <ulink url="ghelp:system-admin-guide#gconf-0">Příručce správce systému GNOME</ulink>.</para>
+  <para><application>Editor nastavení</application> umožňuje uživatelům měnit své předvolby pro celé pracovní prostředí GNOME a některé aplikace, které využívají <application>GConf</application>. Správci systému mohou navíc použít <application>Editor nastavení</application> k určení výchozích a povinných nastavení, která se dotknou všech uživatelů.</para>
+  <para>Předvolby se v <application>GConf</application> ukládají v hierarchii klíčů. Každý klíč má přiřazenou hodnotu, která představuje vaše nastavení předvolby. Například klíč <literal>/apps/glines/preferences/ball_theme</literal> uchovává informaci, jaký vzhled používáte ve hře <application>Pět nebo víc</application>.</para>
+  <caution><para><application>Editor nastavení</application> vám dovoluje měnit přímo své zdroje nastavení. Pokud nejste zkušený uživatel, nepoužívejte <application>Editor nastavení</application> k úpravám předvoleb pro pracovní prostředí GNOME. Místo toho použijte nástroje pro předvolby v pracovním prostředí GNOME. O tom, jak použít tyto nástroje, se dočtete v poslední verzi <ulink url="ghelp:user-guide">Příručky pro pracovní prostředí GNOME</ulink> pro vaši platformu.</para></caution>
+</sect1>
+
+<sect1 id="getting-started"> 
+  <title>Začínáme</title>
+
+  <sect2 id="to-start"> 
+    <title>Spuštění Editoru nastavení</title>
+    <para><application>Editor nastavení</application> můžete spustit následujícími způsoby:</para>
+    <variablelist>
+      <varlistentry>
+        <term>Nabídka <guimenu>Aplikace</guimenu></term>
+        <listitem>
+          <para>Zvolte <menuchoice><guisubmenu>Systémové nástroje</guisubmenu><guimenuitem>Editor nastavení</guimenuitem></menuchoice>.</para>
+          <note><para>Některé distribuce tuto nabídku skrývají. V takovém případě použijte druhý postup popsaný níže.</para></note>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Příkazový řádek</term>
+        <listitem>
+          <para>Spusťte následující příkaz: <command>gconf-editor</command></para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect2>
+
+  <sect2 id="when-you-start">
+    <title>Když spustíte Editor nastavení</title>
+    <para>Když spustíte aplikaci <application>Editor nastavení</application>, zobrazí se následující okno.</para>
+    <figure id="gconf_editor_window"> 
+      <title>Okno <application>Editoru nastavení</application></title>
+      <screenshot> 
+        <mediaobject> 
+          <imageobject>
+            <imagedata fileref="figures/gconf_editor_anno_window.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase>Ukazuje okno Editoru GConf. Popis obrázku: panel se stromem, panel úprav, panel dokumentace.</phrase>
+          </textobject>
+        </mediaobject>
+      </screenshot>
+    </figure>
+    <para>Okno <application>Editoru nastavení</application> obsahuje následující panely:</para>
+    <variablelist>
+      <varlistentry>
+        <term>Panel se stromem</term>
+        <listitem><para>Umožňuje vám procházet hierarchii klíčů v <application>GConf</application>. Tento panel použijte k zobrazení klíčů, které chcete změnit, v panelu úprav. Panel se stromem se nachází v levé části okna.</para></listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Panel úprav</term>
+        <listitem>
+          <para>Zobrazuje klíče pro umístění <application>GConf</application> vybrané v panelu se stromem. Tento panel použijte pro výběr klíčů, které chcete změnit nebo u nichž chcete změnit hodnoty. Panel úprav se nachází v pravé horní části okna.</para>
+          <para>Ikona po straně každého klíče v panelu úprav označuje, jaký typ hodnoty můžete do klíče zadat. Například ikona zaškrtávacího pole po straně klíče <literal>/system/http_proxy/use_http_proxy</literal> označuje, že můžete do klíče zadávat pravdivostní hodnoty (pravda nebo nepravda). <xref linkend="icons"/> vysvětluje, co která ikona znamená.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Panel dokumentace</term>
+        <listitem><para>Zobrazuje dokumentaci pro aktuálně vybraný klíč. V tomto panelu se dočtete další informace o klíčích předvoleb <application>GConf</application>.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Panel výsledků (není zobrazený)</term>
+        <listitem><para>Díky němu si můžete prohlížet výsledky vyhledávání a nebo procházet seznam názvů nedávno zobrazených klíčů. Ve zbytku okna se budou ukazovat údaje pro klíč, který máte v tomto panelu zrovna vybraný. Panel výsledků se objeví v dolní části okna, když si necháte vypsat nedávné klíče nebo provedete vyhledání.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect2>
+</sect1>
+
+<sect1 id="workwindows">
+  <title>Práce s okny</title>
+  <sect2 id="workwindows-opennew">
+    <title>Otevírání nových oken</title>
+    <para>V <application>Editoru nastavení</application> můžete otevřít tři typy oken: <application>Nastavení</application>, <application>Výchozí nastavení</application> a <application>Povinná nastavení</application>. Které z hodnot v <application>Editoru nastavení</application> zrovna nastavujete závisí na typu okna, které máte otevřené. Každý z typů oken můžete otevřít příslušnou položkou v nabídce <guimenu>Soubor</guimenu>.</para>
+    <note><para>Vzhledem k tomu, že nastavení v oknech <application>Výchozí nastavení</application> a <application>Povinná nastavení</application> ovlivní všechny uživatele počítače, může tento typ oken používat pouze správce systému. K nastavení svých předvoleb byste měli použít okno <application>Nastavení</application>.</para></note>
+    <variablelist>
+      <varlistentry>
+        <term><application>Nastavení</application></term>
+        <listitem><para>Okno <application>Nastavení</application> můžete použít k nastavení svých osobních předvoleb. Změny v okně <application>Nastavení</application> ovlivní pouze vaše pracovní prostředí. Nastavení, která správce systému určil jako povinná, nemůžete měnit.</para></listitem>
+      </varlistentry>
+    </variablelist>
+    <variablelist>
+      <varlistentry>
+        <term><application>Výchozí</application></term>
+        <listitem><para>Pokud jste správcem systému, můžete použít okno <application>Výchozí nastavení</application> k úpravám výchozích nastavení pro uživatele. V případě, že uživatel nemá hodnotu daného klíče přímo nastavenou, použije se hodnota z výchozího nastavení. Uživatel může tuto hodnotu kdykoliv přepsat.</para></listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><application>Povinné</application></term>
+        <listitem><para>Pokud jste správcem systému, můžete použít okno <application>Povinná nastavení</application> k úpravám povinných nastavení pro uživatel. Pokud je pro hodnotu daného klíče nastavená povinná hodnota, uživatel nebude moci tuto hodnotu změnit. To se používá u některých voleb k zamknutí jejich hodnot.</para></listitem>
+      </varlistentry>
+    </variablelist>
+  </sect2>
+
+  <sect2 id="workwindows-close">
+    <title>Zavírání a ukončování</title>
+    <para>Okno <application>Editoru nastavení</application> můžete zavřít zvolením <menuchoice><guimenu>Soubor</guimenu><guimenuitem>Zavřít okno</guimenuitem></menuchoice> v onom okně. Pokud chcete zavřít všechna okna <application>Editoru nastavení</application> a aplikaci úplně ukončit, zvolte <menuchoice><guimenu>Soubor</guimenu><guimenuitem>Ukončit</guimenuitem></menuchoice> v kterémkoliv okně <application>Editoru nastavení</application>.</para>
+  </sect2>
+</sect1>
+
+<sect1 id="workkeys">
+  <title>Práce s klíči</title>
+  <para>Klíče jsou způsob jak určit hodnotu. Všechny předvolby uložené v <application>GConf</application> jsou přiřazené do klíčů. Aplikace, které používají <application>GConf</application>, přistupují k hodnotám přes klíče, které určují jak hodnotu najít a jak s ní zacházet. Pokud změníte něco v <guilabel>Předvolbách</guilabel> aplikace, změníte tím hodnotu přidruženou ke klíči v <application>GConf</application>.</para>
+
+  <sect2 id="copy-key">
+    <title>Kopírování názvu klíče</title>
+    <para>Pokud si chcete zkopírovat název klíče do schránky, vyberte v panelu úprav klíč, jehož název chcete kopírovat. Zvolte <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Kopírovat název klíče</guimenuitem></menuchoice>. Nyní můžete vložit název klíče do nějaké jiné aplikace.</para>
+  </sect2>
+  <sect2 id="list-key">
+    <title>Prohlížení názvů nedávných klíčů</title>
+    <para>Nedávné klíče si můžete prohlížet po zvolení <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Vypsat nedávné klíče</guimenuitem></menuchoice>. Tím se v dolní části aktuálního okna otevře panel výsledků. Seznam můžete procházet pomocí posuvníků nebo klávesových šipek. Ve zbývající části okna se pro vybraný klíč budou zobrazovat odpovídající údaje.</para>
+    <para>Prohlížení nedávných klíčů je užitečná funkce v situaci, kdy se potřebujete vrátit ke klíči, se kterým jste před chvílí pracovali a nemůžete si vzpomenou, kde se nacházel.</para>
+    <!-- REMARK -->
+    <remark>Hodil by se snímek obrazovky. A bylo by dobré vysvětlit tlačítka Zavřít, Kopírovat a Smazat v panelu výsledků.</remark>
+  </sect2>
+  <sect2 id="modify-key">
+    <title>Změna hodnoty klíče</title>
+    <para>Ikona vedle názvu klíče ukazuje, jakých hodnot může klíč nabývat. <xref linkend="icons"/> uvádí ke každé ikoně přesnější popis. Pokud chcete hodnotu klíče změnit, proveďte následující kroky:</para>
+    <procedure>
+      <step><para>Použijte panel se stromem k zobrazení klíče, který chcete měnit, v panelu úprav.</para></step>
+      <step><para>V panelu úprav vyberte klíč, který chcete změnit.</para></step>
+      <step>
+        <para>Hodnotu číselného nebo textového klíče změníte kliknutím do sloupce <guilabel>Hodnota</guilabel> v řádku daného klíče a zadáním nové hodnoty. Jinou možností je kliknout na klíč pravým tlačítkem a zvolit ve vyskakovací nabídce <guimenuitem>Upravit klíč</guimenuitem>.</para>
+        <para>Hodnotu pravdivostního klíče změníte kliknutím do sloupce <guilabel>Hodnota</guilabel> v řádku daného klíče, čímž se označí nebo odznačí zaškrtávací pole. Jinou možností je kliknout na klíč pravým tlačítkem a zvolit ve vyskakovací nabídce <guimenuitem>Upravit klíč</guimenuitem>.</para>
+        <para>Když chcete změnit hodnotu klíče se seznamem, klikněte pravým tlačítkem  na klíč a zvolte ve vyskakovací nabídce <guimenuitem>Upravit klíč</guimenuitem>. V dialogu <application>Upravit klíč</application> máte k dispozici seznam hodnot patřících danému klíči. V dialogu můžete upravovat jednotlivé hodnoty seznamu, přidávat nebo odebírat hodnoty seznamu a přesouvat hodnoty v seznamu nahoru a dolů.</para>
+      </step>
+    </procedure>
+    <para>Váš správce systému může některé klíče uzamknout zadáním povinné hodnoty. Pokud má vybraný klíč přiřazenou povinnou hodnotu, nebudete moci hodnotu upravit. V takovém případě se v panelu s dokumentací zobrazí údaj <guilabel>Do tohoto klíče nelez zapisovat</guilabel></para>
+  </sect2>
+</sect1>
+
+<sect1 id="finding">
+  <title>Rychlé hledávání klíčů</title>
+  <para>Abyste mohli klíče rychle vyhledávat, nabízí vám <application>Editor nastavení</application> funkci na vyhledávání klíčů v <application>GConf</application> podle názvu. Navíc můžete používat záložky pro vyhledávání klíčů, ke kterým potřebujete přistupovat často.</para>
+
+  <sect2 id="using-bookmark">
+    <title>Používání záložek</title>
+    <para>Pro přístup k umístění složky ze svých záložek zvolte příslušné umístění v nabídce <guimenu>Záložky</guimenu>. Umístění můžete do nabídky <guimenu>Záložky</guimenu> přidávat a odebírat.</para>
+    <para>Pokud chcete přidat záložku, vyberte v panelu se stromem umístění, pro které záložku chcete. Po té zvolte <menuchoice><guimenu>Záložky</guimenu><guimenuitem>Přidat záložku</guimenuitem></menuchoice>.</para>
+    <para>Pokud chcete záložku odstranit, postupujte následovně:</para>
+    <procedure>
+      <step><para>Zvolte <menuchoice><guimenu>Záložky</guimenu><guimenuitem>Upravit záložky</guimenuitem></menuchoice>.</para></step>
+      <step><para>V dialogovém okně <application>Upravit záložky</application> vyberte záložku a potom klikněte na <guibutton>Smazat</guibutton>.</para></step>
+      <step><para>Klikněte na <guibutton>Zavřít</guibutton>.</para></step>
+    </procedure>
+  </sect2>
+  <sect2 id="search">
+    <title>Vyhledávání klíčů</title>
+    <para>Pokud chcete vyhledat klíč, proveďte to následovně:</para>
+    <procedure>
+      <step><para>Zvolte <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Hledat</guimenuitem></menuchoice>.</para></step>
+      <step><para>Zadejte do pole <guilabel>Vyhledat</guilabel> klíč, který chcete najít. Můžete také volitelně vybrat zaškrtávací pole <guilabel>Hledat také v názvech klíčů</guilabel> a <guilabel>Hledat také v hodnotách klíčů</guilabel>. Pokud nejsou tyto možnosti zvolené, bude se prohledávat pouze názvy složek. Výběrem těchto zaškrtávacích polí rozšíříte záběr hledání.</para></step>
+      <step><para>Klikněte na <guibutton>Hledat</guibutton>.</para></step>
+    </procedure>
+    <para>Výsledky hledání se objeví v panelu výsledků. Pokud chcete seznam výsledků procházet, tak nejdříve vyberte tento panel. Potom si můžete výsledky procházet pomocí posuvníků nebo klávesových šipek. Pro vybraný klíč se ihned budou objevovat informace v ostatních panelech.</para>
+    <!-- REMARK -->
+    <remark>Hodil by se snímek obrazovky. A bylo by dobré vysvětlit tlačítka Zavřít, Kopírovat a Smazat v panelu výsledků.</remark>
+  </sect2> 
+</sect1>
+
+<sect1 id="defaults-mandatory">
+  <title>Výchozí a povinná nastavení</title>
+  <para>Pokud jste správce systému, můžete v <application>GConf</application> nastavovat výchozí a povinná nastavení, která se týkají všech uživatelů. Výchozí nastavení se použijí v případě, že uživatel nemá danou hodnotu přímo nastavenou, a uživatel je může kdykoliv přepsat. Povinná nastavení se použijí vždy a pro všechny uživatele a uživatel je nemůže přepsat.</para>
+  <para>K úpravě a odstraňování výchozích a povinných nastavení můžete použít okna <application>Výchozí nastavení</application> a <application>Povinná nastavení</application>. Okna <application>Výchozí nastavení</application> a <application>Povinná nastavení</application> zobrazují pouze ta nastavení, která již byla určena jako výchozí nebo povinná. Tato okna nelze použít k vytvoření nových výchozích a povinných nastavení. Místo toho můžete v okně <application>Nastavení</application> určit u nastavení, zda je výchozí nebo povinné.</para>
+  <para>Pokud chcete otevřít okno <application>Výchozí nastavení</application>, zvolte <menuchoice><guimenu>Soubor</guimenu><guimenuitem>Nové okno výchozích nastavení</guimenuitem></menuchoice>. Pokud chcete otevřít okno <application>Povinná nastavení</application>, zvolte <menuchoice><guimenu>Soubor</guimenu><guimenuitem>Nové okno povinných nastavení</guimenuitem></menuchoice>.</para>
+
+  <sect2 id="creating-defaults">
+    <title>Vytváření výchozích nastavení</title>
+    <para>Výchozí nastavení vytvoříte podle následujících kroků:</para>
+    <procedure>
+      <step><para>V okně <application>Nastavení</application> použijte panel se stromem k zobrazení klíče, který chcete nastavit jako výchozí.</para></step>
+      <step><para>Klikněte na klíč pravým tlačítkem a ve vyskakovací nabídce zvolte <guimenuitem>Nastavit jako výchozí</guimenuitem>.</para></step>
+    </procedure>
+  </sect2>
+  <sect2 id="creating-mandatory">
+    <title>Vytváření povinných nastavení</title>
+    <para>Povinné nastavení vytvoříte podle následujících kroků:</para>
+    <procedure>
+      <step><para>V okně <application>Nastavení</application> použijte panel se stromem k zobrazení klíče, který chcete nastavit jako povinný.</para></step>
+      <step><para>Klikněte na klíč pravým tlačítkem a ve vyskakovací nabídce zvolte <guimenuitem>Nastavit jako povinné</guimenuitem>.</para></step>
+    </procedure>
+  </sect2>
+  <sect2 id="modifying-defaults-mandatory">
+    <title>Změna a odstraňování výchozích a povinných nastavení</title>
+    <para>Ke změně nebo odstranění výchozích a povinných nastavení můžete použít okna <application>Výchozí nastavení</application> a <application>Povinná nastavení</application>. Ke změně výchozího nebo povinného nastavení použijte příslušné okno a změňte klíč stejně jako když měníte klíče v okně <application>Nastavení</application>. Podrobné vysvětlení ke změnám klíčů podává <xref linkend="modify-key"/>.</para>
+    <para>Pokud chcete výchozí nebo povinný klíč odstranit, postupujte následovně:</para>
+    <procedure>
+      <step><para>V příslušném okně použijte panel se stromem k zobrazení klíče, který chcete odstranit z výchozího nebo povinného nastavení.</para></step>
+      <step><para>Klikněte pravým tlačítkem na klíč a ve vyskakovací nabídce zvolte <guimenuitem>Odstranit klíč</guimenuitem>.</para></step>
+    </procedure>
+  </sect2>
+</sect1>
+
+<sect1 id="icons">
+  <title>Ikony a typy klíčů</title>
+  <para>Ikony po straně klíčů v panelu úprav označují, jaké typy hodnot můžete do klíče zadávat. V následujícím seznamu jsou uvedené možné ikony a typy hodnot, které představují.</para>
+  <variablelist>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+        <imagedata fileref="figures/entry-bool.png" format="PNG"/>
+      </imageobject></inlinemediaobject> Klíč s pravdivostní hodnotou</term>
+      <listitem><para>Může nabývat hodnoty pravda a nepravda. <application>Editor nastavení</application> poskytuje k nastavení tohoto typu klíče zaškrtávací pole.</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-number.png" format="PNG"/>
+      </imageobject></inlinemediaobject> Klíč s číselnou hodnotou</term>
+      <listitem><para>Může obsahovat čísla. Ta mohou být buď celá nebo desetinná.</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-string.png" format="PNG"/>
+      </imageobject></inlinemediaobject> Klíč s řetězcem</term>
+      <listitem><para>Může obsahovat libovolný textový řetězec.</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-schema.png" format="PNG"/>
+      </imageobject></inlinemediaobject> Klíč se schématem</term>
+      <listitem><para>Používá se pro dokumentaci k dalším klíčům. Dokumentace pro každý z klíčů je uváděná v samostatném klíči, typicky ve složce <literal>/schemas</literal>. Uživatelé ani správci systému obvykle nepotřebují přímo pracovat s klíči se schématy.</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-list.png" format="PNG"/>
+      </imageobject></inlinemediaobject> Klíč se seznamem</term>
+      <listitem><para>Seznam libovolné délky. Všechny prvky seznamu musí být stejného typu a to jednoho ze základních typů - pravdivostní, číselný nebo řetězcový.</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-blank.png" format="PNG"/>
+      </imageobject></inlinemediaobject> Klíč s párovou hodnotou</term>
+      <listitem><para>Může obsahovat přesně dvě hodnoty. Tyto dvě hodnoty musí být základního typu, ale ne nutně stejného. V současné době nelze v <application>Editoru nastavení</application> párové klíče upravovat.</para></listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><inlinemediaobject><imageobject>
+      <imagedata fileref="figures/entry-blank.png" format="PNG"/>
+      </imageobject></inlinemediaobject> Neznámý</term>
+      <listitem><para>Prázdnou ikonu používá <application>Editor nastavení</application> v případě, že daný typ klíče nezná. V současnosti se prázdná ikona používá pro párové klíče.</para></listitem>
+    </varlistentry>
+  </variablelist>
+</sect1>
+</article>

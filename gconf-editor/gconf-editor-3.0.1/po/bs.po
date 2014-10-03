@@ -1,0 +1,438 @@
+# translation of gconf-editor.HEAD.po to Bosnian
+# This file is distributed under the same license as the gconf-editor package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2004.
+# Kenan Hadžiavdić <kenanh@gmail.com>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gconf-editor.HEAD.bs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-09-09 11:45+0200\n"
+"PO-Revision-Date: 2004-09-10 19:27+0200\n"
+"Last-Translator: Kenan Hadžiavdić <kenanh@gmail.com>\n"
+"Language-Team: Bosnian <lokal@linux.org.ba>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3.1\n"
+
+#: data/gconf-editor.desktop.in.h:1
+msgid "Configuration Editor"
+msgstr "Editor za podešavanja"
+
+#: data/gconf-editor.desktop.in.h:2
+msgid "Directly edit your entire configuration database"
+msgstr "Neposredno izmijenite cijelu bazu podataka sa podešavanjima"
+
+#: data/gconf-editor.schemas.in.h:1
+msgid "Bookmarks"
+msgstr "Zabilješke"
+
+#: data/gconf-editor.schemas.in.h:2
+msgid "gconf-editor folder bookmarks"
+msgstr "gconf-editor direktorij zabilješki"
+
+#: src/gconf-bookmarks-dialog.c:207
+msgid "Edit Bookmarks"
+msgstr "Izmijeni zabilješke"
+
+#: src/gconf-editor-application.c:58 src/gconf-editor-application.c:69
+#: src/gconf-editor-window.c:653 src/gconf-editor-window.c:698
+#, c-format
+msgid ""
+"Cannot create GConf engine. Error was:\n"
+"%s"
+msgstr ""
+"Ne mogu napraviti GConf motor. Greška:\n"
+"%s"
+
+#: src/gconf-editor-window.c:341
+#, c-format
+msgid "Couldn't display help: %s"
+msgstr "Nisam mogao prikazati pomoć: %s"
+
+#: src/gconf-editor-window.c:376
+msgid "translator_credits"
+msgstr "Kenan Hadžiavdić <kenanh@frisurf.no>"
+
+#: src/gconf-editor-window.c:386
+msgid "GConf-Editor"
+msgstr "GConf editor"
+
+#: src/gconf-editor-window.c:388
+msgid "An editor for the GConf configuration system."
+msgstr "Editor za GConf sistem podešavanja"
+
+#: src/gconf-editor-window.c:423
+#, c-format
+msgid ""
+"Couldn't unset key. Error was:\n"
+"%s"
+msgstr ""
+"Nisam mogao poništiti ključ. Greška:\n"
+"%s"
+
+#: src/gconf-editor-window.c:448
+#, c-format
+msgid ""
+"Could not create key. The error is:\n"
+"%s"
+msgstr ""
+"Nisam mogao napraviti ključ. Greška:\n"
+"%s"
+
+#: src/gconf-editor-window.c:530
+#, c-format
+msgid ""
+"Could not change key value. Error message:\n"
+"%s"
+msgstr ""
+"Nisam mogao promijeniti vrijednost ključa. Greška:\n"
+"%s"
+
+#: src/gconf-editor-window.c:562
+msgid ""
+"Currently pairs and schemas can't be edited. This will be changed in a later "
+"version."
+msgstr ""
+"Trenutno se parovi i šeme ne mogu mijenjati. Ovo će biti promijenjeno u "
+"nekoj budućoj verziji."
+
+#: src/gconf-editor-window.c:677 src/gconf-editor-window.c:722
+#, c-format
+msgid ""
+"Could not sync value. Error was:\n"
+"%s"
+msgstr ""
+"Nisam mogao sinhronizirati vrijednost. Greška:\n"
+"%s"
+
+#: src/gconf-editor-window.c:728
+msgid "_File"
+msgstr "_Datoteka"
+
+#: src/gconf-editor-window.c:729
+msgid "_Edit"
+msgstr "_Izmijeni"
+
+#: src/gconf-editor-window.c:730
+msgid "_Search"
+msgstr "_Traži"
+
+#: src/gconf-editor-window.c:731
+msgid "_Bookmarks"
+msgstr "_Zabilješke"
+
+#: src/gconf-editor-window.c:732
+msgid "_Help"
+msgstr "_Pomoć"
+
+#: src/gconf-editor-window.c:734
+msgid "New _Settings Window"
+msgstr "Novi prozor za _podešavanja"
+
+#: src/gconf-editor-window.c:735
+msgid "Open a new gconf editor window editing current settings"
+msgstr "Otvori u novom prozoru gconf editor za mijenjanje trenutnih postavki"
+
+#: src/gconf-editor-window.c:737
+msgid "New _Defaults Window"
+msgstr "Novi prozor za _uobičajeno"
+
+#: src/gconf-editor-window.c:738
+msgid "Open a new gconf editor window editing system default settings"
+msgstr ""
+"Otvori u novom prozoru gconf editor za mijenjanje uobičajenih postavki "
+"sistema"
+
+#: src/gconf-editor-window.c:740
+msgid "New _Mandatory Window"
+msgstr "Novi _prinudni prozor"
+
+#: src/gconf-editor-window.c:741
+msgid "Open a new gconf editor window editing system mandatory settings"
+msgstr "Otvori u novom prozoru gconf editor za mijenjanje prinudnih postavki sistema"
+
+#: src/gconf-editor-window.c:743
+msgid "_Close Window"
+msgstr "_Zatvori prozor"
+
+#: src/gconf-editor-window.c:743
+msgid "Close this window"
+msgstr "Zatvori ovaj prozor"
+
+#: src/gconf-editor-window.c:745
+msgid "_Quit"
+msgstr "_Izađi"
+
+#: src/gconf-editor-window.c:745
+msgid "Quit the gconf editor"
+msgstr "Izađi iz gconf editora"
+
+#: src/gconf-editor-window.c:748
+msgid "_Copy Key Name"
+msgstr "_Kopiraj ime ključa"
+
+#: src/gconf-editor-window.c:748
+msgid "Copy the name of the selected key"
+msgstr "Kopiraj ime izabranog ključa"
+
+#: src/gconf-editor-window.c:750
+msgid "_Find..."
+msgstr "_Nađi..."
+
+#: src/gconf-editor-window.c:750
+msgid "Find patterns in keys and values"
+msgstr "Pronađi šablone u ključevima i vrijednostima"
+
+#: src/gconf-editor-window.c:752
+msgid "_List Recent Keys"
+msgstr "Iz_listaj nedavne ključeve"
+
+#: src/gconf-editor-window.c:752
+msgid "Show recently modified keys"
+msgstr "Pokaži nedavno promijenjene ključeve"
+
+#: src/gconf-editor-window.c:755
+msgid "_Add Bookmark"
+msgstr "_Dodaj zabilješku"
+
+#: src/gconf-editor-window.c:755
+msgid "Add a bookmark to the selected directory"
+msgstr "Dodaj zabilješku za izabrani direktorij"
+
+#: src/gconf-editor-window.c:757
+msgid "_Edit Bookmarks"
+msgstr "_Izmijeni zabilješke"
+
+#: src/gconf-editor-window.c:757
+msgid "Edit the bookmarks"
+msgstr "Izmijeni zabilješke"
+
+#: src/gconf-editor-window.c:760
+msgid "_Contents"
+msgstr "_Sadržaj"
+
+#: src/gconf-editor-window.c:760
+msgid "Open the help contents for the gconf editor"
+msgstr "Otvori sadržaj pomoći za gconf editor"
+
+#: src/gconf-editor-window.c:762
+msgid "_About"
+msgstr "_O"
+
+#: src/gconf-editor-window.c:762
+msgid "Show the about dialog for the gconf editor"
+msgstr "Pokaži dijalog o gconf editoru"
+
+#: src/gconf-editor-window.c:765
+msgid "_New Key..."
+msgstr "_Novi ključ..."
+
+#: src/gconf-editor-window.c:765
+msgid "Create a new key"
+msgstr "Napravi novi ključ"
+
+#: src/gconf-editor-window.c:767
+msgid "_Edit Key..."
+msgstr "_Izmijeni ključ..."
+
+#: src/gconf-editor-window.c:767
+msgid "Edit the selected key"
+msgstr "Izmijeni izabrani ključ"
+
+#: src/gconf-editor-window.c:769
+msgid "_Unset Key..."
+msgstr "_Poništi ključ..."
+
+#: src/gconf-editor-window.c:769
+msgid "Unset the selected key"
+msgstr "Poništi izabrani ključ"
+
+#: src/gconf-editor-window.c:771
+msgid "Set as _Default"
+msgstr "Postavi kao _uobičajeno"
+
+#: src/gconf-editor-window.c:771
+msgid "Set the selected key to be the default"
+msgstr "Postavi izabrani ključ da bude uobičajeno"
+
+#: src/gconf-editor-window.c:773
+msgid "Set as _Mandatory"
+msgstr "Postavi kao _prinudno"
+
+#: src/gconf-editor-window.c:773
+msgid "Set the selected key to the mandatory"
+msgstr "Postavi izabrani ključ kao prinudno"
+
+#: src/gconf-editor-window.c:860 src/gconf-editor-window.c:867
+#: src/gconf-editor-window.c:1321
+msgid "GConf editor"
+msgstr "GConf editor"
+
+#: src/gconf-editor-window.c:875
+#, c-format
+msgid "GConf editor - %s"
+msgstr "GConf editor - %s"
+
+#: src/gconf-editor-window.c:1057 src/gconf-editor-window.c:1058
+#: src/gconf-editor-window.c:1059 src/gconf-editor-window.c:1060
+#: src/gconf-editor-window.c:1089 src/gconf-editor-window.c:1097
+#: src/gconf-editor-window.c:1106 src/gconf-editor-window.c:1566
+#: src/gconf-editor-window.c:1578 src/gconf-editor-window.c:1590
+#: src/gconf-editor-window.c:1605
+msgid "(None)"
+msgstr "(Ništa)"
+
+#: src/gconf-editor-window.c:1463
+msgid "Name"
+msgstr "Ime"
+
+#: src/gconf-editor-window.c:1486
+msgid "Value"
+msgstr "Vrijednost"
+
+#: src/gconf-editor-window.c:1513
+msgid "Key Documentation"
+msgstr "Dokumentacija za ključ"
+
+#: src/gconf-editor-window.c:1542 src/gconf-key-editor.c:600
+msgid "This key is not writable"
+msgstr "U ovaj ključ se ne može pisati"
+
+#: src/gconf-editor-window.c:1555
+msgid "This key has no schema"
+msgstr "Ovaj ključ nema schema-u"
+
+#: src/gconf-editor-window.c:1560
+msgid "Key Name:"
+msgstr "Ime ključa:"
+
+#: src/gconf-editor-window.c:1573
+msgid "Key Owner:"
+msgstr "Vlasnik ključa:"
+
+#: src/gconf-editor-window.c:1585
+msgid "Short Description:"
+msgstr "Kratki opis:"
+
+#: src/gconf-editor-window.c:1598
+msgid "Long Description:"
+msgstr "Dugi opis:"
+
+#: src/gconf-key-editor.c:82
+msgid "T_rue"
+msgstr "_Istinito"
+
+#: src/gconf-key-editor.c:85 src/gconf-key-editor.c:246
+#: src/gconf-key-editor.c:354 src/gconf-key-editor.c:634
+msgid "_False"
+msgstr "_Lažno"
+
+#: src/gconf-key-editor.c:121 src/gconf-key-editor.c:153
+msgid "Integer"
+msgstr "Cijeli broj"
+
+#: src/gconf-key-editor.c:123 src/gconf-key-editor.c:155
+msgid "Boolean"
+msgstr "Bulovski"
+
+#: src/gconf-key-editor.c:125 src/gconf-key-editor.c:157
+msgid "String"
+msgstr "String"
+
+#: src/gconf-key-editor.c:127
+msgid "Float"
+msgstr "Realan broj"
+
+#: src/gconf-key-editor.c:129
+msgid "List"
+msgstr "Lista"
+
+#: src/gconf-key-editor.c:219
+msgid "Add new list entry"
+msgstr "Dodaj novi unos u listu"
+
+#: src/gconf-key-editor.c:237
+msgid "_New list element:"
+msgstr "_Novi element liste:"
+
+#: src/gconf-key-editor.c:324
+msgid "Edit list entry"
+msgstr "Izmijeni unos liste"
+
+#: src/gconf-key-editor.c:342
+msgid "_Edit list element:"
+msgstr "_Izmijeni element liste:"
+
+#: src/gconf-key-editor.c:554
+msgid "Key path:"
+msgstr "Putanja do ključa:"
+
+#: src/gconf-key-editor.c:566
+msgid "Key _name:"
+msgstr "_Ime ključa:"
+
+#: src/gconf-key-editor.c:579
+msgid "_Type:"
+msgstr "_Tip:"
+
+#: src/gconf-key-editor.c:620 src/gconf-key-editor.c:633
+#: src/gconf-key-editor.c:646 src/gconf-key-editor.c:657
+#: src/gconf-key-editor.c:680
+msgid "Key _value:"
+msgstr "_Vrijednost ključa:"
+
+#: src/gconf-key-editor.c:672
+msgid "List _type:"
+msgstr "_Tip liste:"
+
+#: src/gconf-key-editor.c:785
+msgid "New key"
+msgstr "Novi ključ"
+
+#: src/gconf-key-editor.c:789
+msgid "Edit key"
+msgstr "Izmijeni ključ"
+
+#: src/gconf-search-dialog.c:61
+msgid "Pattern not found"
+msgstr "Šablon nije pronađen"
+
+#: src/gconf-search-dialog.c:143
+msgid "Find"
+msgstr "Nađi"
+
+#: src/gconf-search-dialog.c:145
+msgid "_Search for: "
+msgstr "_Traži: "
+
+#: src/gconf-search-dialog.c:166
+msgid "Search also in key _names"
+msgstr "Traži također u _imenima ključeva"
+
+#: src/gconf-search-dialog.c:169
+msgid "Search also in key _values"
+msgstr "Traži također u _vrijednostima ključeva"
+
+#: src/gedit-output-window.c:350
+msgid "Close the output window"
+msgstr "Zatvori prozor za ispis"
+
+#: src/gedit-output-window.c:388
+msgid "Copy selected lines"
+msgstr "Kopiraj izabrane linije"
+
+#: src/gedit-output-window.c:408
+msgid "Clear the output window"
+msgstr "Očisti prozor za ispis"
+
+#: src/gedit-output-window.c:448
+msgid "Output Lines"
+msgstr "Linije ispisa"
+
+#: src/main.c:40
+#, c-format
+msgid "Invalid key \"%s\": %s"
+msgstr "Nevažeći ključ \"%s\": %s"
+

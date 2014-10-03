@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_install:
+	dh_install --list-missing
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		--libexecdir=/usr/lib/mate-power-manager \
+		--disable-scrollkeeper \
+		--enable-applets \
+		--enable-deprecated \
+		--disable-strict \
+		--with-gtk=2.0
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..

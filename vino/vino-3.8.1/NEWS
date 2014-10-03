@@ -1,0 +1,2598 @@
+Vino 3.8.1
+==========
+
+Andika Triwidada (1):
+      Updated Indonesian translation
+
+Daniel Korostil (1):
+      Update uk translation
+
+Daniel Mustieles (1):
+      Fixed syntax in translation of Keywords string
+
+David King (3):
+      Post-release version bump to 3.8.1
+      Back out "authentication-method" setting change
+      Update NEWS for 3.8.1 release
+
+Kjartan Maraas (1):
+      Updated Norwegian bokmål translation
+
+Vino 3.8.0
+==========
+
+Arash Mousavi (1):
+      L10N: Updated Persian Translation
+
+Ask H. Larsen (1):
+      Updated Danish translation
+
+David King (2):
+      Post-release version bump to 3.8.0
+      Update NEWS for 3.8.0 release
+
+Dr.T.Vasudevan (1):
+      Updated Tamil translation
+
+Khaled Hosny (1):
+      Update Arabic translation
+
+Krishnababu Krothapalli (1):
+      Updated Telugu Translations
+
+ManojKumar Giri (1):
+      Updated Odia Language along with FUEL implementation
+
+Rajesh Ranjan (1):
+      hindi translation
+
+Sandeep Sheshrao Shedmake (1):
+      Updated Marathi Translations
+
+Shankar Prasad (1):
+      Updated kn translations
+
+Victor Ibragimov (1):
+      [l10n] Added Tadjik translation
+
+Vino 3.7.92
+===========
+
+Balázs Úr (1):
+      Updated Hungarian translation
+
+Carles Ferrando (1):
+      [l10n] Updated Catalan (Valencian) translation
+
+Changwoo Ryu (1):
+      Updated Korean translation
+
+Claude Paroz (1):
+      Updated French translation
+
+Claudio Arseni (1):
+      [l10n] Updated Italian translation.
+
+David King (3):
+      Post-release version bump to 3.7.92
+      Remove choices from authentication-methods setting
+      Update NEWS for 3.7.92 release
+
+Duarte Loreto (1):
+      Updated Portuguese translation and converted to New Spelling (Novo AO)
+
+Enrico Nicoletto (1):
+      Updated Brazilian Portuguese translation
+
+Ihar Hrachyshka (1):
+      Updated Belarusian translation.
+
+Joan Duran (1):
+      [l10] Updated Catalan translation
+
+Joe Hansen (1):
+      Updated Danish translation
+
+Jonathan Kamens (1):
+      Reset sockets when changing ports, bug 668187
+
+Mattias Põldaru (1):
+      [l10n] Updated Estonian translation
+
+Nilamdyuti Goswami (1):
+      Assamese translation updated for gnome 3.8
+
+Richard Stanislavský (1):
+      Updated slovak translation
+
+Rūdolfs Mazurs (1):
+      Updated Latvian translation
+
+Sweta Kothari (1):
+      Updated gujarati file
+
+Ville-Pekka Vainio (1):
+      Finnish translation update by Jiri Grönroos
+
+Vino 3.7.91
+===========
+
+A S Alam (1):
+      Punjabi: Translation updated (aalam)
+
+David King (2):
+      Post-release version bump to 3.7.91
+      Update NEWS for 3.7.91
+
+Dimitris Spingos (1):
+      Updated Greek translation
+
+Kjartan Maraas (1):
+      Updated Norwegian bokmål translation
+
+Marek Černocký (1):
+      Updated Czech translation
+
+Mario Blättermann (1):
+      [l10n] Updated German translation
+
+Yuri Myasoedov (1):
+      Updated Russian translation
+
+Vino 3.7.90
+===========
+
+Anish A (1):
+      Updated Malayalam Localization
+
+Aurimas Černius (1):
+      Updated Lithuanian translation
+
+Bastien Nocera (4):
+      Export whether the server is connected to through D-Bus
+      server: Make libnotify a hard dependency
+      Use notifications to prompt
+      Fix notification desktop hint
+
+Chao-Hsiung Liao (1):
+      Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+Daniel Mustieles (1):
+      Updated Spanish translation
+
+David King (2):
+      Post-release version bump to 3.7.5
+      Update NEWS for 3.7.90 release
+
+Fran Diéguez (1):
+      Updated Galician translations
+
+Gheyret Kenji (3):
+      Updated Uyghur translation
+      Updated Uyghur translation
+      Updated Uyghur translation
+
+Ihar Hrachyshka (1):
+      Updated Belarusian translation.
+
+Inaki Larranaga Murgoitio (1):
+      Updated Basque language
+
+Kjartan Maraas (1):
+      Updated Norwegian bokmål translation
+
+Matej Urbančič (2):
+      Updated Slovenian translation
+      Updated Slovenian translation
+
+Matthias Clasen (2):
+      Don't show vino-preferences in GNOME
+      Bring up the sharing panel when available
+
+Piotr Drąg (3):
+      Updated POTFILES.in
+      Updated Polish translation
+      Updated Polish translation
+
+Robert Ancell (1):
+      Change schema path to standard format
+
+Wouter Bolsterlee (1):
+      Updated Dutch translation
+
+Yaron Shahrabani (1):
+      Updated Hebrew translation.
+
+Мирослав Николић (2):
+      Updated Serbian translation
+      Updated Serbian translation
+
+Vino 3.7.4
+==========
+
+Adrián Arévalo (1):
+      Updated Spanish translation
+
+Alexander Shopov (1):
+      Updated Bulgarian translation
+
+Aurimas Černius (1):
+      Updated Lithuanian translation
+
+Daniel Mustieles (1):
+      Added keywords to .desktop file, bug 691062
+
+David King (3):
+      Post-release version bump to 3.7.4
+      Add "desktop-entry" notification hint, bug 691045
+      Update NEWS for 3.7.4 release
+
+Dimitris Spingos (1):
+      Updated Greek translation
+
+Fran Diéguez (1):
+      Updated Galician translations
+
+Gheyret Kenji (1):
+      Updated Uyghur translation
+
+Khaled Hosny (1):
+      Update Arabic translation
+
+Kjartan Maraas (2):
+      Updated Norwegian bokmål translation
+      Updated Norwegian bokmål translation
+
+Mattias Põldaru (1):
+      [l10n] Updated Estonian translation
+
+Piotr Drąg (1):
+      Updated Polish translation
+
+Shankar Prasad (1):
+      Updated Kannada Translations
+
+Yaron Shahrabani (1):
+      Updated Hebrew translation.
+
+Vino 3.7.3
+==========
+
+Alexandre Rostovtsev (1):
+      Consistently use SECRET_DEPS, not LIBSECRET_DEPS
+
+David King (4):
+      Post-release version bump to 3.7.1
+      Update GSettings schema descriptions and summaries
+      Use https URLs where possible in DOAP file
+      Update NEWS for 3.7.3 release
+
+Dr.T.Vasudevan (1):
+      Updated Tamil translation
+
+Fran Diéguez (1):
+      Updated Galician translations
+
+Huzaifa Sidhpurwala (1):
+      Do not leak clipboard to unauthenticated clients
+
+Ihar Hrachyshka (1):
+      Updated Belarusian translation.
+
+Khoem Sokhem (1):
+      [l10n] Added Khmer translation
+
+ManojKumar Giri (1):
+      Updated Odia Translation with FUEL implementation.
+
+Nilamdyuti Goswami (1):
+      Assamese translation updated
+
+Richard Stanislavský (3):
+      Updated Slovak translation
+      Updated Slovak translation
+      Updated slovak translation
+
+Ryan Lortie (1):
+      server/miniupnp/: -Wmissing-prototypes fixups
+
+Rūdolfs Mazurs (1):
+      Updated Latvian translation
+
+Wolfgang Stoeggl (1):
+      Updated German translation
+
+ozu17928 (1):
+      Set quality level if JPEG support is enabled
+
+Vino 3.6.0
+==========
+
+Alexander Shopov (1):
+      Updated Bulgarian translation
+
+Carles Ferrando (1):
+      [l10n]Updated Catalan (Valencian) translation
+
+Daniel Korostil (1):
+      Uploaded Ukranian
+
+David King (2):
+      Add a translation comment for tube mode
+      Update NEWS for 3.6.0 release
+
+Ihar Hrachyshka (2):
+      Updated Belarusian translation.
+      Updated Belarusian translation.
+
+Joan Duran (1):
+      [l10n] Updated Catalan translation
+
+Krishnababu Krothapalli (1):
+      Updated Telugu Translations
+
+Mattias Põldaru (1):
+      [l10n] Updated Estonian translation
+
+Milo Casagrande (1):
+      [l10n] Updated Italian translation.
+
+Rajesh Ranjan (1):
+      hindi update by Chandan Kumar
+
+Runa Bhattacharjee (1):
+      Updated Bengali India Translation
+
+Rūdolfs Mazurs (1):
+      Updated Latvian translation
+
+YunQiang Su (1):
+      update Simplified Chinese (zh_CN) translation
+
+Vino 3.5.92
+===========
+
+A S Alam (1):
+      update Punjabi Translation
+
+Ani Peter (1):
+      Updated Malayalam file
+
+Ask H. Larsen (1):
+      Updated Danish translation
+
+Aurimas Černius (1):
+      Updated Lithuanian translation
+
+Changwoo Ryu (2):
+      Updated Korean translation
+      Updated Korean translation
+
+Chao-Hsiung Liao (1):
+      Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+Chris Leonard (1):
+      Updated British English translation
+
+Claude Paroz (1):
+      Updated French translation
+
+Daniel Mustieles (1):
+      Updated Spanish translation
+
+Daniel Nylander (1):
+      Updated Swedish translation
+
+David King (1):
+      Post-release version bump to 3.5.91
+      Update NEWS for 3.5.92 release
+
+Dirgita (1):
+      Updated Indonesian translation
+
+Dr.T.Vasudevan (1):
+      updated Tamil translation
+
+Duarte Loreto (1):
+      Updated Portuguese translation
+
+Fran Diéguez (1):
+      Updated Galician translations
+
+Gabor Kelemen (1):
+      Updated Hungarian translation
+
+Kjartan Maraas (1):
+      Updated Norwegian bokmål translation
+
+Marek Černocký (1):
+      Updated Czech translation
+
+Matej Urbančič (1):
+      Updated Slovenian translation
+
+Muhammet Kara (1):
+      [l10n]Updated Turkish translation
+
+Nguyễn Thái Ngọc Duy (2):
+      po/vi: import from Damned Lies
+      Updated Vietnamese translation
+
+Nilamdyuti Goswami (2):
+      Assamese translation updated
+      Implemented FUEL entries to Assamese translation
+
+Piotr Drąg (2):
+      Updated Polish translation
+      Updated Polish translation
+
+Rafael Ferreira (1):
+      Updated Brazilian Portuguese translation
+
+Sandeep Sheshrao Shedmake (1):
+      Updated Marathi Translations
+
+Sweta Kothari (1):
+      Updated gujarati file
+
+Takayuki KUSANO (1):
+      [l10n] Update Japanese translation
+
+Theppitak Karoonboonyanan (1):
+      Updated Thai translation.
+
+Timo Jyrinki (1):
+      Finnish translation update by Jiri Grönroos
+
+Tom Tryfonidis (1):
+      Updated Greek translation
+
+Vincent Untz (1):
+      Fix license headers of a few files
+
+Yaron Shahrabani (2):
+      Updated Hebrew translation.
+      Updated Hebrew translation.
+
+Yuri Myasoedov (1):
+      Updated Russian translation
+
+Мирослав Николић (1):
+      Updated Serbian translation
+
+Vino 3.5.90
+===========
+
+Alexander Shopov (1):
+      Updated Bulgarian translation
+
+Chao-Hsiung Liao (1):
+      Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+Daniel Mustieles (1):
+      Updated Spanish translation
+
+David King (5):
+      Post-release version bump to 3.5.3
+      Post-release version bump to 3.5.90
+      Rename defines from gnome-keyring to secret
+      Update POTFILES.in
+      Update NEWS for 3.5.90 release
+
+Duarte Loreto (1):
+      Updated Portuguese translation
+
+Fran Diéguez (2):
+      Updated Galician translations
+      Updated Galician translations
+
+Jiro Matsuzawa (1):
+      [l10n] Update Japanese translation
+
+Kjartan Maraas (2):
+      Updated Norwegian bokmål translation
+      Updated Norwegian bokmål translation
+
+Matej Urbančič (1):
+      Updated Slovenian translation
+
+Mattias Põldaru (2):
+      [l10n] Updated Estonian translation
+      [l10n] Updated Estonian translation
+
+Mitsuya Shibata (1):
+      [l10n] Update Japanese translation
+
+Nilamdyuti Goswami (1):
+      Assamese translation reviewed
+
+Sandeep Sheshrao Shedmake (1):
+      Updated Marathi Translations
+
+Stef Walter (1):
+      Migrate from libgnome-keyring to libsecret
+
+Sweta Kothari (2):
+      Updated gujarati file
+      Updated gujarati file
+
+Tom Tryfonidis (1):
+      Updated Greek translation
+
+Yaron Shahrabani (1):
+      Updated Hebrew translation.
+
+Мирослав Николић (1):
+      Updated Serbian translation
+
+Vino 3.5.2
+==========
+
+Bruno Brouard (2):
+      Updated French translation
+      Updated French translation
+
+David King (3):
+      Depend on intltool 0.50 for GSettings translations
+      Post-release version bump to 3.5.2
+      Update NEWS for 3.5.2 release
+
+Fabrice Bellet (3):
+      Use XFixes to provide RFB cursor image
+      Fix the cursor bounds computation
+      Fix iteration of the cursor->source[] array
+
+Kostas Papadimas (2):
+      Updated Greek translation
+      Updated Greek translation
+
+Luca Ferretti (1):
+      l10n: updated Italian translation
+
+Mantas Kriaučiūnas (1):
+      Updated Lithuanian translation
+
+Vino 3.5.1
+==========
+
+Carles Ferrando (1):
+      [l10n]Updated Catalan (Valencian) translation
+
+Daniel Mustieles (1):
+      Updated Spanish translation
+
+David King (3):
+      Post-release version bump to 3.5.1
+      Add vino_server_set_notify_on_connect()
+      Update NEWS for 3.5.1 release
+
+Fran Diéguez (1):
+      Updated Galician translations
+
+Guillaume Desmottes (13):
+      Add vino_dbus_listener_get_server()
+      Add VinoServer:reject-incoming property
+      Add --tube arg to launch Vino in ‘tube only’ mode
+      VinoTubeServersManager::tube-disconnected signal
+      Relay tube-disconnected signal in VinoDbusListener
+      Exit when tube is closed if run in tube mode
+      Depend on telepathy-glib 0.18.0
+      Use tp_simple_handler_new_with_factory()
+      Rely on the factory to prepare the TpContact
+      Rename VinoTubeServer.tp_channel to .tube
+      Remove VinoTubeServer::connection property
+      Use TP_CONTACT_FEATURE_AVATAR_DATA
+      Use tp_stream_tube_channel_get_service()
+
+Jordi Serratosa (1):
+      [l10n] Fixes on Catalan translation
+
+Khaled Hosny (1):
+      Updated Arabic translation
+
+Mitsuya Shibata (1):
+      [l10n] Update Japanese translation
+
+Yaron Shahrabani (1):
+      Updated Hebrew translation.
+
+Vino 3.4.0
+==========
+
+Alexander Shopov (1):
+      Updated Bulgarian translation
+
+David King (2):
+      Post-release version bump to 3.4.0
+      Update NEWS for 3.4.0 release
+
+Krishnababu Krothapalli (1):
+      Translations Updated with FUEL
+
+Sweta Kothari (1):
+      Updated Gujarati Translations
+
+YunQiang Su (1):
+      update Simplified Chinese (zh_CN) translation
+
+Vino 3.3.92
+===========
+
+A S Alam (1):
+      update Punjabi Translation
+
+Alexander Shopov (1):
+      Updated Bulgarian translation
+
+Anita Reitere (1):
+      Updated Latvian translation.
+
+Antonio Fernandes C. Neto (1):
+      Updated Brazilian Portuguese translation
+
+Arash Mousavi (1):
+      Updated Persian Translation
+
+Ask H. Larsen (1):
+      Updated Danish translation
+
+Bruce Cowan (1):
+      Updated British English translation
+
+Carles Ferrando (1):
+      [l10n]Updated Catalan (Valencian) translation
+
+Changwoo Ryu (1):
+      Updated Korean translation
+
+Chao-Hsiung Liao (1):
+      Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+Claudio Arseni (1):
+      [l10n] Updated Italian translation
+
+Daniel Korostil (1):
+      Uploaded Ukranian
+
+Daniel Nylander (1):
+      Updated Swedish translation
+
+David King (3):
+      Post-release version bump to 3.3.4
+      Version bump to 3.3.92
+      Update NEWS for 3.3.92 release
+
+Dr.T.Vasudevan (1):
+      updated Tamil translation
+
+Duarte Loreto (1):
+      Updated Portuguese translation
+
+Fran Diéguez (1):
+      Updated Galician translations
+
+Gabor Kelemen (1):
+      Updated Hungarian translation
+
+Inaki Larranaga Murgoitio (1):
+      Updated Basque language
+
+Joan Duran (1):
+      [l10n] Updated Catalan translation
+
+Kjartan Maraas (1):
+      Updated Norwegian bokmål translation
+
+Krishnababu Krothapalli (1):
+      Updated Telugu Translations
+
+Kristjan SCHMIDT (1):
+      Updated Esperanto translation
+
+Marek Černocký (1):
+      Updated Czech translation
+
+Mario Blättermann (1):
+      [l10n] Updated German translation
+
+Mattias Põldaru (1):
+      [l10n] Updated Estonian translation
+
+Nilamdyuti Goswami (1):
+      Assamese translation completed
+
+Piotr Drąg (1):
+      Updated Polish translation
+
+Rajesh Ranjan (3):
+      hindi translation by Chandan Kumar
+      hindi translation by Chandan Kumar
+      hindi translation by Chandan Kumar, correcting and commiting right file
+
+Timo Jyrinki (1):
+      Updated Finnish translation by Jiri Grönroos
+
+Yuri Myasoedov (1):
+      Updated Russian translation
+
+Мирослав Николић (1):
+      Updated Serbian translation
+
+Vino 3.3.3
+==========
+
+Alexandre Franke (1):
+      Update French translation
+
+Daniel Mustieles (1):
+      Updated Spanish translation
+
+David King (2):
+      Post-release version bump to 3.3.2
+      Update NEWS for 3.3.3 release
+
+Hideki Yamane (1):
+      Updated Japanese translation
+
+Kjartan Maraas (1):
+      Updated Norwegian bokmål translation
+
+Matej Urbančič (1):
+      Updated Slovenian translation
+
+Mateusz Maćkowski (1):
+      Added option to disable connect notifications
+
+Mattias Põldaru (1):
+      [l10n] Updated Estonian translation
+
+Muhammet Kara (1):
+      [l10n]Updated Turkish translation
+
+Yaron Shahrabani (1):
+      Updated Hebrew translation.
+
+Vino 3.3.1
+==========
+
+David King (3):
+      Post-release version bump to 3.3.1
+      Update smclient to latest libegg version
+      Update NEWS for 3.3.1 release
+
+Ihar Hrachyshka (1):
+      Updated Belarusian translation.
+
+krishnababu k (1):
+      Updated Telugu Translations
+
+Vino 3.2.0
+==========
+
+Carles Ferrando (1):
+      [l10n]Updated Catalan (Valencian) translation
+
+Changwoo Ryu (1):
+      Updated Korean translation
+
+David King (2):
+      Post-release version bump to 3.2.0
+      Update NEWS for 3.2.0 release
+
+Gabor Kelemen (1):
+      Updated Hungarian translation
+
+Inaki Larranaga Murgoitio (1):
+      Updated Basque language
+
+Nilamdyuti Goswami (1):
+      Update Assamese translation
+
+Piotr Drąg (2):
+      Updated Polish translation
+      Updated Polish translation
+
+Vino 3.1.92
+===========
+
+Bruce Cowan (1):
+      Updated British English translation
+
+Claudio Arseni (1):
+      l10n: Updated Italian translation
+
+David King (3):
+      Post-release version bump to 3.1.92
+      Enable AM_MAINTAINER_MODE in configure.ac
+      Update NEWS for 3.1.92 release
+
+Duarte Loreto (1):
+      Updated Portuguese translation
+
+Ihar Hrachyshka (1):
+      Updated Belarusian translation.
+
+Jeremy Bicha (1):
+      Corrected new help links
+
+Jiro Matsuzawa (1):
+      Updated Japanese translation
+
+Joan DUran (1):
+      [l10n]Updated Catalan translation
+
+Joe Hansen (1):
+      Updated Danish translation
+
+Piotr Drąg (1):
+      Updated Polish translation
+
+Wouter Bolsterlee (1):
+      Updated Dutch translation by Wouter Bolsterlee
+
+Yinghua Wang (1):
+      update Simplified Chinese (zh_CN) translation
+
+Vino 3.1.91
+===========
+
+David King (4):
+      Post-release version bump to 3.1.91
+      Use new location for Mallard help, bug 657927
+      Make all targets use compiler warning flags
+      Update NEWS for 3.1.91 release
+
+Dr.T.Vasudevan (1):
+      updated Tamil translation
+
+Og B. Maciel (1):
+      Updated Brazilian Portuguese translation.
+
+Yuri Myasoedov (1):
+      Updated Russian translation
+
+Vino 3.1.90
+===========
+
+A S Alam (1):
+      update translation for Punjabi
+
+David King (2):
+      Post-release version bump to 3.1.90
+      Update NEWS for 3.1.90 release
+
+Marek Černocký (1):
+      Updated Czech translation
+
+Mario Blättermann (1):
+      [l10n] Updated German translation
+
+Vino 3.1.5
+==========
+
+Alexander Shopov (1):
+      Updated Bulgarian translation
+
+Aurimas Černius (1):
+      Updated Lithuanian translation
+
+Claude Paroz (1):
+      Updated French translation
+
+Daniel Nylander (1):
+      Updated Swedish translation
+
+David King (3):
+      Post-release version bump to 3.1.5
+      Use GtkBox rather than GtkHBox or GtkVBox
+      Update NEWS for 3.1.5 release
+
+Theppitak Karoonboonyanan (1):
+      Updated Thai translation.
+
+Vino 3.1.4
+==========
+
+Abduxukur Abdurixit (1):
+      Added UG translation
+
+Bastien Nocera (1):
+      Add GConf to GSettings convert file, bug 654901
+
+David King (3):
+      Post-release version bump to 3.1.4
+      Only call g_settings_sync() when necessary
+      Update NEWS for 3.1.4 release
+
+Rudolfs Mazurs (1):
+      Updated Latvian translation.
+
+Tommi Vainikainen (1):
+      Updated Finnish translation
+
+Vino 3.1.3
+==========
+
+David King (2):
+      Post-release version bump to 3.1.3
+      Add more categories to preferences desktop file
+
+Javier Jardón (1):
+      Use const instead deprecated G_CONST_RETURN
+
+Michael Terry (1):
+      Make desktop files appear in Unity too, bug 653802
+
+Vino 3.1.2
+==========
+
+Abduxukur Abdurixit (1):
+      Added UG translation
+
+Andika Triwidada (1):
+      Updated Indonesian translation
+
+Arash Mousavi (1):
+      Updated Persian translation
+
+Carles Ferrando (1):
+      [l10n]Updated Catalan (Valencian) translation
+
+Chao-Hsiung Liao (1):
+      Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+David King (2):
+      Post-release version bump to 3.1.2
+      Remove gettext macros from configure.ac
+
+Kjartan Maraas (1):
+      Updated Norwegian bokmål translation
+
+Kristjan SCHMIDT (1):
+      Updated Esperanto translation
+
+Sjoerd Simons (2):
+      Fix _TELEPATHY_GLIB mistyped as _TELEPATHY_GLUB
+      Do not set non-existent use-dbus-listener property
+
+Мирослав Николић (1):
+      Updated Serbian translation
+
+Vino 3.1.1
+==========
+
+Abduxukur Abdurixit (2):
+      Added UG translation
+      Added UG translation
+
+Daniel Korostil (1):
+      Uploaded Ukranian
+
+Daniel Mustieles (3):
+      Updated Spanish translation
+      Updated Spanish translation
+      Updated Spanish translation
+
+David King (8):
+      Improve description of UPnP feature, bug 594521
+      Improve status icon tooltip string, bug 594253
+      Post-release version bump to 3.1.1
+      Update copyright information in about dialog
+      Do not use deprecated GnuTLS functions, bug 648606
+      Use ‘Desktop Sharing’ rather than ‘Remote Desktop’
+      Avoid out-of-bounds memory accesses
+      Change *.tar.gz to *.tar.xz in .gitignore
+
+Fran Diéguez (1):
+      Updated galician translations
+
+Jordi Mallach (1):
+      Fix defines to match configure script output
+
+Jordi Serratosa (1):
+      [l10n]Fixes on Catalan translation
+
+Kjartan Maraas (1):
+      Updated Norwegian bokmål translation
+
+Marek Černocký (1):
+      Updated Czech translation
+
+Matej Urbančič (2):
+      Updated Slovenian translation
+      Updated Slovenian translation
+
+Muhammet Kara (2):
+      Updated Turkish translation
+      Updated Turkish translation
+
+Oliver Gerlich (2):
+      Fix cursor update logic, bug 617436
+      Only send a motion event when the pointer moved
+
+Theppitak Karoonboonyanan (1):
+      Updated Thai translation.
+
+Thorsten Glaser (1):
+      Bind both an IPv4 and an IPv6 socket
+
+Travis B. Hartwell (1):
+      String improvements in preferences capplet
+
+Yaron Shahrabani (1):
+      Updated Hebrew translation.
+
+Vino 3.0.0
+==========
+
+Abduxukur Abdurixit (1):
+      Added UG translation
+
+Ask H. Larsen (1):
+      Updated Danish translation
+
+Chao-Hsiung Liao (1):
+      Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+David King (4):
+      Add description to DOAP file
+      Require automake 1.11.1 and dist as .xz only
+      Add dbus-glib-1 to telepathy-glib pkg-config check
+      Add translator comments from eggsmclient
+
+Dr.T.Vasudevan (1):
+      Updated Tamil translation
+
+Inaki Larranaga Murgoitio (1):
+      Updated Basque language
+
+Kjartan Maraas (1):
+      Include config.h where necessary
+
+Vino 2.99.5
+===========
+
+Brett Witherspoon (1):
+      Use GSettings autostart condition
+
+Claudio Arseni (1):
+      Updated Italian translation
+
+David King (1):
+      Post-release version bump to 2.99.5
+
+Rodrigo Padula de Oliveira (1):
+      Updated Brazilian Portuguese translation
+
+Runa Bhattacharjee (1):
+      Updated Bengali India Translation
+
+==============
+Version 2.99.4
+==============
+
+Amitakhya Phukan (1):
+      Updated Assamese translations
+
+Bruce Cowan (1):
+      Updated British English translation
+
+Claudio Arseni (1):
+      Updated Italian translation
+
+David King (13):
+      Post-release bump to 2.99.4
+      Fix configure options containing extra dashes
+      Fix underlinking with libX11 and libz
+      Fix non-functional PKG_CHECK_EXISTS checks
+      Correct gcrypt CFLAGS and LIBS variable usage
+      Add website to AC_INIT and use in about dialog
+      Check for the inline keyword with AC_C_INLINE
+      Generate ChangeLog from commit log during 'dist'
+      Tidy the marshal and enums generation rules
+      Update README for upcoming release
+      Remove some unnecessary code in the capplet
+      Generate enums and marshalers before they are used
+      Remove server reachability message from the UI
+        This is a workaround that addresses CVE-2011-1164.
+
+Dirgita (1):
+      Updated Indonesian translation
+
+Duarte Loreto (1):
+      Updated Portuguese translation
+
+Fran Diéguez (1):
+      Updated Galician translations
+
+Gabor Kelemen (1):
+      Updated Hungarian translation
+
+Joan Duran (1):
+      [l10n] Updated Catalan translation
+
+Lucian Adrian Grijincu (2):
+      Updated Romanian translation
+      Updated Romanian translation
+
+Marek Černocký (1):
+      Updated Czech translation
+
+Mario Blättermann (1):
+      [l10n] Updated German translation
+
+Mattias Põldaru (1):
+      [l10n] Updated Estonian translation
+
+Piotr Drąg (1):
+      Updated Polish translation
+
+Priit Laes (1):
+      [l10n] Updated Estonian translation
+
+Rudolfs Mazurs (1):
+      Updated Latvian translation.
+
+Wouter Bolsterlee (1):
+      Updated Dutch translation by Wouter Bolsterlee
+
+Yunqiang Su (1):
+      Update Simplified Chinese translation.
+
+Yuri Myasoedov (1):
+      Updated Russian translation
+
+==============
+Version 2.99.3
+==============
+
+  Fixes:
+
+	+ Overhaul build system. (David King)
+	  Note to packagers: Arguments to the configure script were changed.
+	  All functionality is now automagically enabled, and can be disabled
+	  or explicitly enabled with the appropriate configure arguments.
+	  Please check `configure --help`.
+
+  Translations:
+
+	+ Bruno Brouard (fr)
+	+ Sweta Kothari (gu)
+	+ Changwoo Ryu (ko)
+	+ Manoj Kumar Giri (or)
+	+ A S Alam (pa)
+	+ Matej Urbančič (sl)
+
+==============
+Version 2.99.2
+==============
+
+  Fixes:
+
+	+ Added back telepathy functionality. (Pierre Wieser)
+	+ Added DISTCHECK_CONFIGURE_FLAGS to Makefile.am. (Chris Kühl)
+
+==============
+Version 2.99.1
+==============
+
+  Fixes:
+
+	+ Added back basic mdns functionality. (Chris Kühl)
+	+ Fixed typo in configure.in (Chris Kühl)
+
+  Translations:
+
+	+ Daniel Mustieles (es)
+	+ Kjartan Maraas (nb)
+	+ Daniel Nylander (sv)
+	+ Alexander Shopov (bg)
+
+==============
+Version 2.99.0
+==============
+
+  Fixes:
+
+	+ Port to Gtk3 (Ryan Lortie, Matthias Clasen)
+	+ Port to GSettings (Ryan Lortie, Chris Kühl)
+	+ Port to GtkApplication (Ryan Lortie, Chris Kühl)
+	+ Port to GDBus (Ryan Lortie)
+
+  Translations:
+
+	+ Daniel Korostil (uk)
+	+ Yaron Shahrabani (he)
+
+==============
+Version 2.32.1
+==============
+
+  Fixes:
+
+	+ Be compatible with old (< 0.7.0) and new (>= 0.7.0) libnotify
+
+  Translations:
+
+	+ Joan Duran (ca@valencia)
+	+ Thanos Lefteris (el)
+	+ Priit Laes (et)
+	+ Takayuki KUSANO (ja)
+	+ Changwoo Ryu (ko)
+	+ Sahran (ug)
+
+Vino 2.32.0
+===========
+
+  Translations:
+
+	+ Baurzhan Muftakhidinov (kk)
+	+ Takayuki KUSANO (ja)
+
+Vino 2.31.91
+============
+
+  Translations:
+
+	+ Fran Diéguez (gl)
+	+ krishnababu k (te)
+	+ Kristjan Schmidt (eo)
+	+ Petr Kovar (cs)
+
+Vino 2.31.4
+===========
+
+  Features:
+
+	+ Improvements on Telepathy tubes stuff
+	+ Various internal work on replacing deprecated stuff
+
+  Translations:
+
+	+ Andika Triwidada (id)
+	+ Carles Ferrando (ca@valencia)
+	+ Leonid Kanter (ru)
+	+ Luca Ferretti (it)
+	+ Matej Urbančič (sl)
+	+ Priit Laes (et)
+	+ Sira Nokyoongtong (th)
+	+ Theppitak Karoonboonyanan (th)
+	+ Thomas Thurman (en@shaw)
+
+Vino 2.28.2
+===========
+
+  Fixes:
+
+	- Check if mDNS is active before asking for a local hostname.
+
+
+  Translations:
+
+	+ Fran Diéguez (gl)
+	+ Inaki Larranaga Murgoitio (eu)
+	+ Jamil Ahmed (bn)
+	+ Jordi Serratosa (ca)
+	+ Kenneth Nielsen (da)
+	+ Kjartan Maraas (nb)
+	+ Peteris Krisjanis (lv)
+	+ Piotr Drąg (pl)
+	+ Sweta Kothari (gu)
+	+ Tao Wei (zh_CN)
+	+ Thomas Thurman (en@shaw)
+	+ Torstein Adolf Winterseth (nn)
+	+ Wouter Bolsterlee (nl)
+	+ Xandru Armesto Fernandez (ast)
+	+ Yaron Shahrabani (he)
+
+Vino 2.28.1
+===========
+
+  Fixes
+
+	- Fix build in OpenBSD
+	- Don't use restart feature of session manager
+
+  Translations:
+
+	+ Leonid Kanter (ru)
+	+ Takeshi AIHANA (ja)
+	+ Tomasz Dominikowski (pl)
+
+Vino 2.28.0
+===========
+
+  Translations
+
+	+ Adi Roiban (ro)
+	+ Amitakhya Phukan (as)
+	+ Ani (ml)
+	+ Ask H. Larsen (da)
+	+ Bruce Cowan (en_GB)
+	+ Carles Ferrando (ca@valencia)
+	+ Christian Kirbach (de)
+	+ Fábio Nogueira (pt_BR)
+	+ Gabor Kelemen (hu)
+	+ Joan Duran (ca)
+	+ Kjartan Maraas (nb)
+	+ Kostas Papadimas (el)
+	+ krishnababu k (te)
+	+ Luca Ferretti (it)
+	+ Manoj Kumar Giri (or)
+	+ Matej Urbančič (sl)
+	+ Maxim V. Dziumanenko (uk)
+	+ Pavel Šefránek (cs)
+	+ Rajesh Ranjan (hi)
+	+ Rajesh Ranjan (mai)
+	+ Shankar Prasad (kn)
+
+Vino 2.27.92
+============
+
+  Fixes
+
+	+ Fix a regression that allows more than one instance of the server to run.
+	+ Use vino's debug framework instead of g_printerr (mainly in tube code).
+	+ Make Avahi use the network interface defined in vino preferences.
+	+ Use integer (instead of double) as the port parameter in dbus calls.
+	  (This fix 'localhost' appearing in preferences applet)
+	+ Fixed a warning in libgcrypt initialization.
+
+  Translations
+	+ A S Alam (pa)
+	+ Baris Cicek (tr)
+	+ Changwoo Ryu (ko)
+	+ Chao-Hsiung Liao (zh_HK) (zh_TW)
+	+ Duarte Loreto (pt)
+	+ G Karunakar (hi)
+	+ ifelix (ta)
+	+ Inaki Larranaga Murgoitio (eu)
+	+ Ivar Smolin (et)
+	+ Jamil Ahmed (bn)
+	+ Jonh Wendell (pt_BR)
+	+ Khaled Hosny (ar)
+	+ Kjartan Maraas (nb)
+	+ Miloš Popović (sr) (sr@latin)
+	+ Sandeep Shedmake (mr)
+	+ Sweta Kothari (gu)
+	+ Tomasz Dominikowski (pl)
+
+Vino 2.27.91
+============
+
+  Fixes
+	+ (vino-passwd): Do not crash if a GConf server is not available.
+	+ Improvements in Telepathy tubes (Arnaud Maillet).
+
+  Translations:
+	+ Alexander Shopov (bg)
+	+ Antón Méixome (gl)
+	+ Claude Paroz (fr)
+	+ Daniel Nylander (sv)
+	+ Gintautas Miliauskas (lt)
+	+ Jochen Skulj (de)
+	+ Jorge González (es)
+	+ Mattias Põldaru (et)
+	+ Runa Bhattacharjee (bn_IN)
+	+ Seán de Búrca (ga)
+	+ Tommi Vainikainen (fi)
+
+
+Vino 2.27.90
+============
+
+  Fixes
+	+ Minor fixes
+
+  Translations
+
+	+ Chao-Hsiung Liao (zh_HK) (zh_TW)
+	+ Daniel Nylander (sv)
+	+ Fran Dieguez (gl)
+	+ Jorge González (es)
+	+ Kjartan Maraas (nb)
+	+ Mattias Põldaru (et)
+
+Vino 2.27.5
+===========
+
+  Features and Fixes
+	+ Added an (GConf) option to disable XDamage extension. See #533613.
+	+ Added Telepathy tubes support, allowing you to share the desktop
+	with an IM buddy. (Arnaud Maillet)
+	+ Dropped libgnome dependency. Using EggSmClient.
+	+ Migrate from libglade to GtkBuilder. (Javier Jardón)
+	+ Many small bug fixes.
+
+  Translations
+
+	+ Alexander Shopov (bg)
+	+ A S Alam (pa)
+	+ Ask H. Larsen (da)
+	+ Chao-Hsiung Liao (zh_HK) (zh_TW)
+	+ Claude Paroz (fr)
+	+ Daniel Nylander (sv)
+	+ drtvasudevan (ta)
+	+ Gabor Kelemen (hu)
+	+ Ihar Hrachyshka (be)
+	+ Ivar Smolin (et)
+	+ Jonh Wendell (pt_BR)
+	+ Jorge Gonzalez (es)
+	+ Laurent Coudeur (fr)
+	+ Luca Ferretti (it)
+	+ Marios Zindilis (el)
+	+ Matej Urban (sl)
+	+ Mattias Põldaru (et)
+	+ Maxim V. Dziumanenko (uk)
+	+ Yaron Shahrabani (he)
+
+Vino 2.26.1
+===========
+
+  Fixes
+
+	+ #575860 – Regenerating autotools always tries to compile local
+	libifaddr. Thanks to Patryk Zawadzki.
+
+  Translations
+
+	+ Usama Akkad (ar)
+	+ Suso Baleato (gl)
+	+ Shankar Prasad (kn)
+	+ Kjartan Maraas (nb)
+	+ Ray Wang (zh_CN)
+
+Vino 2.26.0
+===========
+
+  Translations
+
+	+ Amitakhya Phukan (as)
+	+ Alexander Shopov (bg)
+	+ Runa Bhattacharjee (bn_IN)
+	+ Pavel Šefránek (cs)
+	+ Hendrik Richter (de)
+	+ Jennie Petoumenou (el)
+	+ Jorge González (es)
+	+ Sweta Kothari (gu)
+	+ Yaron Shahrabani (he)
+	+ Takeshi AIHANA (ja)
+	+ Žygimantas Beručka (lt)
+	+ Sandeep Shedmake (mr)
+	+ Manoj Kumar Giri (or)
+	+ Duarte Loreto (pt)
+	+ Yuriy Penkin (ru)
+
+
+Vino 2.25.92
+============
+
+  Fixes
+
+	+ Added dependency on NetworkManager for monitoring when network
+	state changes. New configure flag: --enable-network-manager. If not
+	set, enable it anyway if NetworkManager libraries are found.
+	Requires NM 0.7.
+	+ #330691 – show .local hostname if avahi is present.
+
+  Translations
+
+	+ Ihar Hrachyshka (be@latin)
+	+ Joan Duran (ca)
+	+ David Lodge (en_GB)
+	+ Mattias Põldaru (et)
+	+ Iñaki Larrañaga Murgoitio (eu)
+	+ Ilkka Tuohela (fi)
+	+ Claude Paroz (fr)
+	+ Gabor Kelemen (hu)
+	+ Milo Casagrande (it)
+	+ Changwoo Ryu (ko)
+	+ Kjartan Maraas (nb)
+	+ Dr.T.vasudevan (ta)
+	+ Baris Cicek (tr)
+	+ 甘露(Gan Lu) (zh_CN)
+	+ Chao-Hsiung Liao (zh_HK)
+	+ Chao-Hsiung Liao (zh_TW)
+
+Vino 2.25.91
+============
+
+  Fixes
+
+	+ Install autostart file in $sysconfdir/xgd/autostart. Usually you
+	should pass the argument --sysconfdir=/etc to configure (or autogen.sh)
+	script.
+	+ i18n related fixes.
+	+ Minor fixes.
+
+  Translations
+
+	+ xa (ast)
+	+ Alexander Shopov (bg)
+	+ Joan Duran (ca)
+	+ Ask Hjorth Larsen (da)
+	+ Jorge González (es)
+	+ Mattias Põldaru (et)
+	+ Iñaki Larrañaga Murgoitio (eu)
+	+ Gabor Kelemen (hu)
+	+ Wouter Bolsterlee (nl)
+	+ Manoj Kumar Giri (or)
+	+ Tomasz Dominikowski (pl)
+	+ Jonh Wendell (pt_BR)
+	+ Duarte Loreto (pt)
+	+ Adi Roiban (ro)
+	+ Daniel Nylander (sv)
+	+ Theppitak Karoonboonyanan (th)
+	+ Clytie Siddall (vi)
+	+ Chao-Hsiung Liao (zh_HK)
+	+ Chao-Hsiung Liao (zh_TW)
+
+Vino 2.25.90
+============
+
+  Fixes
+
+	+ Only show notification if the status icon is visible.
+	+ Fix drawing issues in the connectivity label.
+	+ Uses a file containing links to webservices, instead of use a hard
+	coded one.
+	+ Shows an IP address instead of the local hostname in the connectivity
+	label.
+
+  Translations
+
+	+ Runa Bhattacharjee (bn_IN)
+	+ Jorge González (es)
+	+ Changwoo Ryu (ko)
+	+ Kjartan Maraas (nb)
+	+ Daniel Nylander (sv)
+
+Vino 2.25.5
+===========
+
+  Features
+
+	+ New capplet.
+
+  Translations
+
+	+ Runa Bhattacharjee (bn_IN)
+	+ Andre Klapper (de)
+	+ Jorge González (es)
+	+ Claude Paroz (fr)
+	+ Oldie (he)
+	+ Kjartan Maraas (nb)
+
+Vino 2.25.4
+===========
+
+  Features
+
+	+ Added UPnP support. Created a new boolean gconf key called use_upnp.
+	For now, no GUI changes
+
+  Translations
+
+	+ Jorge González (es)
+	+ Mattias Põldaru (et)
+	+ Kjartan Maraas (nb)
+
+
+Vino 2.25.3
+===========
+
+  Features
+
+	+ Removed local_only preference, and allow you to specify the network
+	interface to listen.
+
+  Fixes
+
+	+ Some minor fixes
+
+  Translations
+
+	+ Jorge González (es)
+	+ Mattias Põldaru (et)
+	+ Iñaki Larrañaga Murgoitio (eu)
+	+ Oldie (he)
+	+ Gabor Kelemen (hu)
+
+Vino 2.24.1
+===========
+
+  Fixes
+	+ Bug #555105: Propagates port changes via avahi.
+	+ Update label in vino-preferences when the port changes.
+	+ Bug #161180: Hopefully fix an window empty bug.
+	+ LP: #266932: Only restore the wallpaper when the last
+	client disconnects.
+
+  Translations
+
+	+ Usama Akkad (ar)
+	+ Ihar Hrachyshka (be@latin)
+	+ Alexander Shopov (bg)
+	+ Milo Casagrande (it)
+
+Vino 2.24.0
+===========
+
+  Translations
+
+	+ Usama Akkad (ar)
+	+ Joan Duran (ca)
+	+ Pavel Šefránek (cs)
+	+ Ask Hjorth Larsen (da)
+	+ Andre Klapper (de)
+	+ Ankit Patel (gu)
+	+ Ante Karamatić (hr)
+	+ Gabor Kelemen (hu)
+	+ Milo Casagrande (it)
+	+ Shankar Prasad (kn)
+	+ Young-Ho Cha (ko)
+	+ Žygimantas Beručka (lt)
+	+ പ്രവീണ്‍ (ml)
+	+ Dan Damian (ro)
+	+ Alexandre Prokoudine (ru)
+	+ Laurent Dhima (sq)
+	+ Данило Шеган (sr)
+	+ Baris Cicek (tr)
+	+ Chao-Hsiung Liao (zh_HK)
+	+ Chao-Hsiung Liao (zh_TW)
+
+Vino 2.23.92
+============
+
+  Fixes
+
+	+ Added an icon to session desktop file.
+
+  Translations
+
+	+ Alexander Shopov (bg)
+	+ Runa Bhattacharjee (bn_IN)
+	+ David Lodge (en_GB)
+	+ Takeshi AIHANA (ja)
+	+ Kjartan Maraas (nb)
+	+ Wouter Bolsterlee (nl)
+	+ Manoj Kumar Giri (or)
+	+ Tomasz Dominikowski (pl)
+	+ Duarte Loreto (pt)
+
+Vino 2.23.91
+============
+
+  Fixes
+
+	+ Make vino work correctly with new gnome-session. (Jonh Wendell)
+
+  Translations
+
+	+ Jorge González (es)
+	+ Ivar Smolin (et)
+	+ Iñaki Larrañaga Murgoitio (eu)
+	+ Ilkka Tuohela (fi)
+	+ Claude Paroz (fr)
+	+ Oldie (he)
+	+ Arangel Angov (mk)
+	+ Sandeep Shedmake (mr)
+	+ Kjartan Maraas (nb)
+	+ Og Maciel (pt_BR)
+	+ Daniel Nylander (sv)
+	+ Tirumurthi Vasudevan (ta)
+	+ Theppitak Karoonboonyanan (th)
+
+Vino 2.23.90
+============
+
+  Features
+
+	+ Added the ability to hide the background on connections. (Jorge Pereira)
+	+ New compile-time option (--enable-libunique), allows only one
+	instance of capplet running. (Jorge, Jonh Wendell)
+	+ Added vino-server.desktop file required by new gnome-session. (Halton Huo)
+	+ Get rif of libgnome[ui] in the capplet. (Jonh)
+
+  Fixes
+
+	+ Minor bug fixes
+
+  Translations
+
+	+ Djihed Afifi (ar)
+	+ Jorge González (es)
+	+ Ivar Smolin (et)
+	+ Ilkka Tuohela (fi)
+	+ Claude Paroz (fr)
+	+ Ignacio Casal Quinteiro (gl)
+	+ Oldie (he)
+	+ Arangel Angov (mk)
+	+ Kjartan Maraas (nb)
+	+ Wouter Bolsterlee (nl)
+	+ Enrico Nicoletto (pt_BR)
+	+ Duarte Loreto (pt)
+	+ Daniel Nylander (sv)
+	+ Theppitak Karoonboonyanan (th)
+
+Vino 2.23.5
+============
+
+  Features
+
+	+ New command-line tool, vino-passwd, which allows you to change
+	vino password. Similar to Unix passwd command. (Jorge Pereira)
+
+  Fixes
+
+	+ Bug #534262 - cyclic clipboard propagation (Jonh Wendell)
+	+ Minor bug fixes
+
+  Translations
+
+	+ Djihed Afifi (ar)
+	+ Rostislav "zbrox" Raykov (bg)
+	+ Jorge González (es)
+	+ Ivar Smolin (et)
+	+ Ignacio Casal Quinteiro (gl)
+	+ Oldie (he)
+	+ Kjartan Maraas (nb)
+	+ Wouter Bolsterlee (nl)
+	+ Yannig Marchegay (Kokoyaya) (oc)
+	+ Matej Urbančič (sl)
+	+ Laurent Dhima (sq)
+	+ Daniel Nylander (sv)
+	+ Theppitak Karoonboonyanan (th)
+
+Vino 2.22.1
+============
+
+  Fixes
+
+	+ Don't lock the screen in fake connections (Jonh Wendell)
+
+  Translations
+
+	+ Kostas Papadimas (el)
+	+ Ivar Smolin (et)
+	+ Eskild Hustvedt (nn)
+	+ Marcel Telka (sk)
+	+ Baris Cicek (tr)
+
+Vino 2.22.0
+===========
+
+  Translations
+
+	+ Djihed Afifi (ar)
+	+ Ihar Hrachyshka (be@latin)
+	+ Runa Bhattacharjee (bn_IN)
+	+ Kenneth Nielsen (da)
+	+ David Lodge (en_GB)
+	+ Jorge González (es)
+	+ Stéphane Raimbault (fr)
+	+ Gabor Kelemen (hu)
+	+ Milo Casagrande (it)
+	+ Takeshi AIHANA (ja)
+	+ Žygimantas Beručka (lt)
+	+ I. Felix (ta)
+	+ Maxim Dziumanenko (uk)
+	+ Chao-Hsiung Liao (zh_HK)
+	+ Chao-Hsiung Liao (zh_TW)
+
+Vino 2.21.92
+============
+
+  Fixes
+
+	+ Fix a crash with the vinagre client. (Mark McLoughlin)
+	+ Fix a crash when client disconnects just after connecting. (Jonh Wendell)
+	+ Fix the build with recent	glibc. (Matthias Clasen)
+
+  Translations
+
+	+ Josep Puigdemont (ca)
+	+ Pavel Šefránek (cs)
+	+ Ilkka Tuohela (fi)
+	+ Robert-André Mauchin (fr)
+	+ Nyitrai István (hu)
+	+ Shankar Prasad (kn)
+	+ Young-Ho Cha (ko)
+	+ Arangel Angov (mk)
+	+ Badral (mn)
+	+ Shyam Krishna Bal (ne)
+	+ Duarte Loreto (pt)
+	+ Clytie Siddall (vi)
+
+Vino 2.21.91
+============
+
+  Translations
+
+	+ Djihed Afifi (ar)
+	+ Amitakhya Phukan (as)
+	+ Petr Kovar (cs)
+	+ Andre Klapper (de)
+	+ Arangel Angov (mk)
+	+ Wouter Bolsterlee (nl)
+	+ Tomasz Dominikowski (pl)
+	+ Vladimir Melo (pt_BR)
+	+ Zhovner Pavel (ru)
+	+ Theppitak Karoonboonyanan (th)
+
+Vino 2.21.90
+============
+
+  Translations
+
+	+ Runa Bhattacharjee (bn_IN)
+	+ Andre Klapper (de)
+	+ Iñaki Larrañaga Murgoitio (eu)
+	+ sandeep shedmake (mr)
+	+ Kjartan Maraas (nb)
+	+ Yannig Marchegay (Kokoyaya) (oc)
+	+ Marcel Telka (sk)
+	+ Daniel Nylander (sv)
+	+ Clytie Siddall (vi)
+
+Vino 2.21.3
+============
+
+  Fixes
+
+    + Minor fixes
+
+  Translations
+
+	+ Ivar Smolin (et)
+	+ Ignacio Casal Quinteiro (gl)
+	+ Matapathi Pramod (te)
+	+ Zhovner Pavel, Vasiliy Faronov (ru)
+
+Vino 2.21.2
+============
+
+  Features
+
+    + New gconf key to control the status icon behaviour
+    + Added more options in the configuration applet
+
+  Translations
+
+	+ Jorge González (es)
+	+ Matej Urbančič (sl)
+	+ Daniel Nylander (sv)
+
+Vino 2.21.1
+============
+
+  Features
+
+    + Handles clipboard copy and paste (Jonh)
+    + Don't ship icons/ directory anymore (Jaap A. Haitsma)
+
+  Fixes
+
+    + Fixes some key presses issues (Dan Winship)
+    + Only show 'disconnect all' popup item in status icon if we have
+	  more than one client connected (Jonh)
+	+ Better handles disconnection from avahi-daemon (Sebastien Estienne)
+
+  Translations
+
+    + Djihed Afifi (ar)
+    + Oldie (he)
+    + Matej Urbančič (sl)
+
+Vino 2.20.1
+===========
+
+  Translations
+
+    + Djihed Afifi (ar)
+    + Rostislav "zbrox" Raykov (bg)
+    + Iñaki Larrañaga Murgoitio (eu)
+    + Young-Ho Cha (ko)
+    + Dr.T.Vasudevan (ta)
+
+Vino 2.20.0
+===========
+
+  Translations
+
+    + Khaled Hosny (ar)
+    + Iñaki Larrañaga Murgoitio (eu)
+    + Gabor Kelemen (hu)
+    + Arangel Angov (mk)
+    + Wouter Bolsterlee (nl)
+    + Og Maciel (pt_BR)
+    + Duarte Loreto (pt)
+    + Nickolay V. Shmyrev (ru)
+    + Laurent Dhima (sq)
+    + Данило Шеган (sr)
+    + Maxim Dziumanenko (uk)
+    + Clytie Siddall (vi)
+
+Vino 2.19.92
+============
+
+  Fixes
+
+    + Bug #353304 - using Alt-Gr from a Windows VNC client to vino
+    + Bug #383147 - beryl windows manager does not support vino only metacity
+
+  Translations
+
+    + Josep Puigdemont (ca)
+    + Ask Hjorth Larsen (da)
+    + Hendrik Richter (de)
+    + Ivar Smolin (et)
+    + Stéphane Raimbault (fr)
+    + Takeshi AIHANA (ja)
+    + Young-Ho Cha (ko)
+    + Žygimantas Beručka (lt)
+    + Arangel Angov (mk)
+    + Tomasz Dominikowski (pl)
+    + Og Maciel (pt_BR)
+
+Vino 2.19.90
+============
+
+  Features
+
+    + Included hostname in Avahi service name
+    + Show the configure summary
+
+  Fixes
+
+    + Minor fixes
+
+  Translations
+
+    + Runa Bhattacharjee (bn_IN)
+    + Denis Radovanović (bs)
+    + Hendrik Richter (de)
+    + Athanasios Lefteris (el)
+    + David Lodge (en_GB)
+    + Jorge González (es)
+    + Ivar Smolin (et)
+    + Iñaki Larrañaga Murgoitio (eu)
+    + Ilkka Tuohela (fi)
+    + Ankit Patel (gu)
+    + Rajesh Ranjan (hi)
+    + Takeshi AIHANA (ja)
+    + Vladimer Sichinava (ka)
+    + Raivis Dejus (lv)
+    + Hasbullah Bin Pit (ms)
+    + Kjartan Maraas (nb)
+    + Wouter Bolsterlee (nl)
+    + Gora Mohanty (or)
+    + Og Maciel (pt_BR)
+    + Leonid Kanter (ru)
+    + Daniel Nylander (sv)
+    + Theppitak Karoonboonyanan (th)
+    + Baris Cicek (tr)
+    + Maxim Dziumanenko (uk)
+
+Vino 2.19.5
+===========
+
+  Features
+
+    + Show http server address in vino-preferences if vino is compiled
+      with http support (Halton Huo)
+    + Added a new configuration option (gconf key)
+	  'lock_screen_on_disconnect', which locks the screen when last
+	  user disconnects (Jonh)
+    + Build against libnotify, if it's available (added
+	  --enable-libnotify=auto and make it the default)
+
+  Fixes
+
+    + Only publish VNC service under Avahi when server is enabled,
+      bug #330690 (Jonh)
+    + Don't assert on a NULL find result from gnome-keyring,
+      bug #450074 (Stef Walter)
+    + Fix a crash when dbus Introspect() method is called,
+      bug #445525 (Jonh)
+    + Fix keyboard mapping problem, bug #440429 (Jonh)
+    + Use $prefix/share/vino for data in favor of $prefix/share/gnome/vino,
+      bug #436460 (Matthias Clasen)
+    + Fix gtk-update-icon-cache	for install and uninstall-hook (David Farning)
+    + Fix crash in mouse wheel movement on non-Xorg system,
+      bug #431627 (Halton Huo)
+
+  Translations
+
+    + Khaled Hosny (ar)
+    + Jakub Friedl (cs)
+    + Tshewang Norbu (dz)
+    + David Lodge (en_GB)
+    + Jorge González (es)
+    + Ivar Smolin (et)
+    + Ignacio Casal Quinteiro (gl)
+    + Oldie (he)
+    + Espen Stefansen (nb)
+    + Danishka Navin (si)
+    + Daniel Nylander (sv)
+    + Dr.T.Vasudevan (ta)
+    + Theppitak Karoonboonyanan (th)
+    + Clytie Siddall (vi)
+    + Yang Zhang (zh_CN)
+
+Vino 2.18.1
+===========
+
+  Fixes
+
+    + Fix the non-XDAMAGE, non-XSHM support, bug #423887 (Mark)
+    + Fix crash on vino_input_init(), bug #425863 (Jonh, Mark)
+    + Fix crashes on critical warning in vino-preferences applet,
+      bug #418836 and bug #423027 (Halton Huo, Jonh)
+
+  Translations
+
+    + Peter Bach (da)
+    + Maria Majadas (es)
+    + Iñaki Larrañaga Murgoitio (eu)
+    + Ignacio Casal Quinteiro (gl)
+
+Vino 2.18.0
+===========
+
+  Fixes
+
+    + Fix build fail with --enable-http-server (Halton Huo)
+    + Fix crash when 'disconnect client' menu item is called twice (Jonh, Mark)
+    + Adjusts in .desktop file, making it valid according with freedesktop.org (Jonh)
+
+  Translations
+
+    + norbu (dz)
+    + Athanasios Lefteris (el)
+    + Ankit Patel (gu)
+    + Milo Casagrande (it)
+    + Takeshi AIHANA (ja)
+    + Žygimantas Beručka (lt)
+    + Kjartan Maraas (nb)
+    + Reinout van Schouwen (nl)
+    + Gnome PL Team (pl)
+    + Leonardo Ferreira Fontenelle (pt_BR)
+    + Данило Шеган (sr)
+    + Maxim Dziumanenko (uk)
+
+Vino 2.17.92
+===========
+
+  Fixes
+
+    + A few issues related to new Vino Status Icon (Jonh, Christian Persch)
+    + Adjust Categories in desktop file according with new Control Center (Denis Washington)
+    + Fix minor issues about GnomeIconTheme usage (Jani Monoses)
+    + Updates port number in preferences window when server starts (Jonh)
+
+  Translations
+
+    + Khaled Hosny (ar)
+    + Rostislav Raykov (bg)
+    + Josep Puigdemont (ca)
+    + Hendrik Richter (de)
+    + David Lodge (en_GB)
+    + Ivar Smolin (et)
+    + Ilkka Tuohela (fi)
+    + Jonathan Ernst (fr)
+    + Oldie (he)
+    + Gabor Kelemen (hu)
+    + Young-Ho Cha (ko)
+    + Jovan Naumovski (mk)
+    + Kjartan Maraas (nb)
+    + Reinout van Schouwen (nl)
+    + Leonardo Ferreira Fontenelle (pt_BR)
+    + Duarte Loreto (pt)
+    + Leonid Kanter (ru)
+    + Daniel Nylander (sv)
+    + Theppitak Karoonboonyanan (th)
+    + Nguyễn Thái Ngọc Duy (vi)
+    + Chao-Hsiung Liao (zh_HK, zh_TW)
+
+Vino 2.17.5
+===========
+
+  Features
+
+    + Add D-Bus support so that capplet can find out the port number
+      from the server (Jonh, Mark)
+    + Display a notification bubble when someone connects if we
+      haven't already prompted the user for authorization (Jonh, Mark)
+
+  Fixes
+
+    + Replace deprecated GnomeIconTheme usage with GtkIconTheme (Christian Persch)
+    + Don't mark GObject property descriptions for translation (Mark)
+
+  Translations
+
+    + Khaled Hosny (ar)
+    + Hendrik Richter (de)
+    + David Lodge (en_GB)
+    + Francisco Javier F. Serrador (es)
+    + Satrou SATOH (ja)
+    + Raivis Dejus (lv)
+    + Kjartan Maraas (nb)
+    + Daniel Nylander (sv)
+    + Theppitak Karoonboonyanan (th)
+
+Vino 2.17.4
+===========
+
+  Features
+
+    + Add a status icon allowing you to disconnect users
+      (Jonh Wendell, Christian Persch, Mark, Calum, Andre Klapper)
+
+  Fixes
+
+    + Hide the help button in the prompt dialog (Mark)
+    + Fix broken keyboard under Xsun (Halton Huo, Mark)
+    + Fix the desktop name remoted to the client (Jonh Wendell)
+    + Fix the stringification of the client hostname (Jonh Wendell)
+
+  Translators
+
+    + Khaled Hosny (ar)
+    + Francisco Javier F. Serrador (es)
+    + Mohammad DAMT (id)
+    + Kjartan Maraas (nb)
+    + Daniel Nylander (sv)
+    + Theppitak Karoonboonyanan (th)
+ 
+Vino 2.17.2
+===========
+
+  Features
+
+    + Add "local_only" GConf key for use with SSH tunnels (Mark, Shaya Potter)
+    + Add "alternative_port" GConf key (Mark, John Wendell)
+    + Add ability to use gnome-keyring to store VNC password (Mark, Steven Zhang)
+    + Add IPv6 support (Mark, Srirama Sharma)
+
+  Fixes
+
+    + Update for RFB 3.8 (Dan Winship)
+    + Fix for X servers which don't support XShm (Dan Winship)
+    + Fix CoRRE encoding problem (Mark)
+    + Back-port some fixes from upstream libvncserver (Mark)
+    + Add GTK category to .desktop file (Mark)
+    + Mark some weird glade strings as non-translatable (Mark)
+    + Fix icons not changing when icon theme changes (Mark)
+    + Use glib's base64 functions instead of our own (Mark)
+    + Use GtkLinkButton instead of VinoURL (Mariano Suárez-Alvarez)
+
+  Translators
+
+    + Rostislav \"zbrox\" Raykov (bg)
+    + Francisco Javier F. Serrador (es)
+    + Ivar Smolin (et)
+    + Ilkka Tuohela (fi)
+    + Christophe Merlet (RedFox) (fr)
+    + Ankit Patel (gu)
+    + Satrou SATOH (ja)
+    + Jovan Naumovski (mk)
+    + Shiva Prasad Pokharel (ne)
+    + Marcel Telka (sk)
+    + Daniel Nylander (sv)
+    + Clytie Siddall (vi)
+
+Vino 2.16.0
+===========
+
+  Fixes
+
+    + Fix hang on wrong login (Gary Coady)
+    + Build fixes for FreeBSD (Diego Pettenò) 
+    + Build fixes (Leonardo Boshell)
+
+Vino 2.13.5
+===========
+
+  Features
+
+    + Publish services over mDNS (Sebastien Estienne, Mark McLoughlin)
+
+  Fixes
+
+    + Fix keyboard brokeness with some X server configurations (Alexandre Oliva)
+    + Fix crash with unicode mapped keysyms (Gary Coady)
+
+  Translators
+
+    + Rostislav Raykov (bg)
+    + Iñaki Larrañaga Murgoitio (eu)
+    + Alessio Frusciante (it)
+    + Erdal Ronahi (ku)
+
+Vino 2.12.0
+===========
+
+  Translators
+
+   + Rhys Jones (cy)
+   + Hendrik Richter (de)
+   + Meelad Zakaria (fa)
+   + Christophe Merlet (RedFox) (fr)
+   + Satrou SATOH (ja)
+   + Young-Ho Cha (ko)
+   + Žygimantas Beručka (lt)
+   + Leonid Kanter (ru)
+   + Андрија Зарић (sr)
+   + Baris Cicek (tr)
+
+Vino 2.11.92
+============
+
+  Translators
+
+   + Josep Puigdemont (ca)
+   + Ivar Smolin (et)
+   + Gabor Kelemen (hu)
+   + Gnome PL Team (pl)
+   + Raphael Higino (pt_BR)
+   + Duarte Loreto (pt)
+   + Dan Damian (ro)
+   + Maxim Dziumanenko (uk)
+   + storm (zh_CN)
+   + Chi-Wei Chen (zh_TW)
+
+Vino 2.11.90
+============
+
+  Fixes
+
+   + Performance improvement using DamageReportDeltaRectangles (Mark)
+   + Plug a leak (Kjartan Maraas)
+
+  Translators
+
+   + Rostislav "zbrox" Raykov (bg)
+   + Miloslav Trmac (cs)
+   + Martin Willemoes Hansen (da)
+   + Hendrik Richter (de)
+   + Adam Weinberger (en_CA)
+   + Francisco Javier F. Serrador (es)
+   + Priit Laes (et)
+   + Ilkka Tuohela (fi)
+   + Ignacio Casal Quinteiro (gl)
+   + Ankit Patel (gu)
+   + Oldie (he)
+   + Kjartan Maraas (nb, no)
+   + Ronald van Engelen (nl)
+   + Marcel Telka (sk)
+   + Elian Myftiu (sq)
+   + Theppitak Karoonboonyanan (th)
+   + Clytie Siddall (vi)
+   + Chi-Wei Chen (zh_TW)
+
+Vino 2.11.1.2
+=============
+
+  Fixes
+
+   + Fix Caps Lock not working (Mark)
+   + Fix Shift not working for some keys (Mark)
+   + Fix over-eager key repeat issue (Mark)
+
+Vino 2.11.1.1
+=============
+
+  Fixes
+
+   + Fix build failure with not-CVS-HEAD ORBit2 (Mark)
+
+Vino 2.11.1
+===========
+
+  Fixes
+
+   + Fix crasher when changing screen size (Leena Gunda, Mark)
+   + Fix accumulation of signal handlers with ever screen size change (Leena Gunda)
+   + Don't let the help button on the prompt dialog terminate it (Mark)
+   + Fix warning spew when deleting password in capplet (Mark)
+
+  Translators
+
+   + Adam Weinberger (en_CA)
+   + Priit Laes (et)
+   + Gabor Kelemen (hu)
+   + Jyotsna Shrestha (ne)
+   + Steve Murphy (rw)
+   + Abduxukur Abdurixit (ug)
+   + Pablo Saratxaga (wa)
+   + Canonical Ltd (xh)
+
+Vino 2.10.0
+===========
+
+  Translators
+
+   + Rostislav Raykov (bg)
+   + Josep Puigdemont (ca)
+   + Rhys Jones (cy)
+   + Priit Laes (et)
+   + Rajesh Ranjan (hi)
+   + Žygimantas Beručka (lt)
+   + Kjartan Maraas (nb)
+   + Rajeev Shrestha (ne)
+   + Åsmund Skjæveland (nn)
+   + Kjartan Maraas (no)
+   + Leonid Kanter (ru)
+   + Elian Myftiu (sq)
+   + Chi-Wei Chen (zh_TW)
+
+Vino 2.9.2
+==========
+
+  Fixes
+
+   + New icon (Jakub Steiner)
+   + Add X-GNOME-Bugzilla-Version to .desktop file for bug-buddy (Christoffer Olsen)
+   + Install icon into hicolor icon theme (Mark)
+   + Update to automake 1.7 (Mark)
+   + Install .desktop file in $(datadir)/applications (Mark)
+
+  Translators
+
+   + Rostislav Raykov (bg)
+   + Alessio Frusciante (it)
+   + Žygimantas Beručka (lt)
+   + Badral (mn)
+   + Kjartan Maraas (nb)
+   + Gora Mohanty (or)
+   + Marcel Telka (sk)
+
+Vino 2.8.1
+==========
+
+  Fixes
+
+   + Improve the key repeat rate situation a lot (Mark)
+   + Don't get screwed up with Metacity's reduced_resources mode (Mark)
+
+  Translators
+
+   + Mohammad DAMT (id)
+
+Vino 2.8.0.1
+============
+
+  Fixes
+
+   + Fix typo which caused problems at 800x600 (Gregory Thiemong)
+   + Hook up help dialog to docs in gnome-user-docs (Mark)
+
+  Translators
+
+   + Adam Weinberger (en_CA)
+   + Åsmund Skjæveland (nn)
+   + Gora Mohanty (or)
+
+Vino 2.8.0
+==========
+
+  Translators
+
+   + Ayman Hourieh (ar)
+   + Mətin Əmirov (az)
+   + Josep Puigdemont (ca)
+   + Miloslav Trmac (cs)
+   + Nikos Charonitakis (el)
+   + Luca Ferretti (it)
+   + Mişu Moldovan (ro)
+   + Jayaradha N (ta)
+   + Baris Cicek (tr)
+   + Chi-Wei Chen (zh_TW)
+
+Vino 2.7.92
+===========
+
+  Translators
+
+   + Denis Radovanović (bs)
+   + Ole Laursen (da)
+   + Christian Neumair (de)
+   + Kostas Papadimas (el)
+   + Iñaki Larrañaga Murgoitio (eu)
+   + Sami Pesonen (fi)
+   + Audrey Simons (fr)
+   + Satrou SATOH (ja)
+   + Young-Ho Cha (ko)
+   + Hasbullah Bin Pit (ms)
+   + Kjartan Maraas (nb)
+   + Elian Myftiu (sq)
+   + Christian Rose (sv)
+   + Maxim Dziumanenko (uk)
+
+Vino 2.7.91
+===========
+
+  Fixes
+
+   + Make the DAMAGE support actually work (Mark)
+   + Link against Xfixes when building DAMAGE support (Mark)
+
+  Translators
+
+   + Gnome PL Team (pl)
+   + Duarte Loreto (pt)
+
+Vino 2.7.90
+===========
+
+  Fixes
+
+   + Remove the Java client (Mark)
+   + Don't build the http server by default but add a --enable-http-server arg (Mark)
+
+  Translators
+
+   + Rostislav Raykov (bg)
+   + Runa Bhattacharjee (bn)
+   + Adam Weinberger (en_CA)
+   + Gareth Owen (en_GB)
+   + Francisco Javier F. Serrador (es)
+   + Ankit Patel (gu)
+   + Gabor Kelemen (hu)
+   + Vincent van Adrighem (nl)
+   + Kjartan Maraas (no)
+   + Amanpreet Singh Alam (pa)
+   + Duarte Loreto (pt)
+   + Elian Myftiu (sq)
+   + Данило Шеган (sr)
+   + storm (zh_CN)
+
+Vino 2.7.4
+==========
+
+  Fixes
+
+    + Don't crash with an RFB 3.3 client when require_encryption is set (Mark)
+    + Change the layout of the preferences dialog to be HIG compliant (Dennis Cranston)
+
+  Translators
+
+    + Miloslav Trmac (cs)
+    + Raphael Higino (pt_BR)
+    + Christian Rose (sv)
+
+Vino 2.7.3.1
+============
+
+  Build Stuff
+
+    + Add --disable-gnutls and --disable-gcrypt configure args (Mark)
+
+Vino 2.7.3
+==========
+
+  Server
+
+    + Add support for XDAMAGE (Federico Mena, Mark)
+    + Don't require clients to support encryption by default (Mark)
+    + Fix a shared memory leak (Mark)
+
+  Capplet
+
+    + Remove the require encryption toggle (Mark)
+    + Display a vncviewer command line instead of a url (Mark)
+
+  Build Stuff
+
+    + Make GNU TLS a conditional build requirement (Mark)
+    + Add a --enable-java configure arg (Mark)
+
+  Translators
+
+    + Rostislav Raykov (bg)
+    + Miloslav Trmac (cs)
+    + Adam Weinberger (en_CA)
+    + Gareth Owen (en_GB)
+    + Elros Cyriatan (nl)
+    + Raphael Higino (pt_BR)
+    + Duarte Loreto (pt)
+    + Christian Rose (sv)
+    + storm (zh_CN)
+
+Vino 0.14
+=========
+
+  Server
+
+    + Modify the way the protocol uses TLS
+
+  Client
+
+    + Update for protocol changes
+    + Fix compile failure
+
+  Preferences Dialog
+
+    + Use new gtk+ APIs rather than egg_screen_blah()
+
+Vino 0.12
+=========
+
+  Server
+
+    + Don't leave the client on hold after user accepts them (Leena Gunda)
+
+  Preferences Dialog
+
+    + Display the correct hostname in the URL (Mark)
+
+Vino 0.11
+=========
+
+  Server
+
+    + Fix inefficiency when clients are on hold
+    + After an unsuccessful authentication attempt, defer the next one for 5 seconds
+    + Use libgcrypt to generate a wholly unpredictable challenge
+    + Properly manage the prompt dialog when multiple clients connect
+
+
+  Preferences Dialog
+
+    + Fix some mnemonic conflicts
+    + Put HTTP URL for the server in the dialog based on Calum's feedback
+
+Vino 0.10
+=========
+
+  Server
+
+    + Implement a HTTP server which returns a web page with the applet
+    + Handle RandR screen size changes
+    + Register with bonobo-activation-server to support activation
+    + Don't poll the screen/pointer unless a client is connected
+    + Fix cursor updates for clients that don't support CursorShape encoding
+    + Re-do the prompt dialog incorporating suggestions from Calum
+    + Fix problem with blocking during the TLS handshake
+
+  Preferences Dialog
+
+    + Completely new look designed by Calum
+    + Add back the "Allow encrypted connections" preference
+
+  Client
+
+    + Support 24-bit color instead of 8-bit color
+    + Focus the window on startup
+    + Show the security type in the info dialog
+    + Make the applet draw our icon instead of a RealVNC blurb
+
+  Misc
+
+    + Add a session managed client to handle activating the server
+
+Vino 0.9
+========
+
+  Server
+
+    + VNC server based on the same concepts as x0rfbserver, krfb etc.
+    + TLS/SSL support for encrypted communication
+    + Preferences in GConf
+    + User may authorize each connection individually
+    + Uses GTK+, GDK, GObject and glib
+
+  Preferences Dialog
+
+    + GNOME HIG compliant preferences dialog
+
+  Client
+
+    + Java client from RealVNC's distribution
+    + Support for TLS/SSL
+
+
+
+

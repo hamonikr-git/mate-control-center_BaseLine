@@ -1,0 +1,477 @@
+# gconf-editor ja.po.
+# Copyright (C) 2002-2004,2006,2007,2009,2011 gconf-editor's COPYRIGHT HOLDER
+# Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2002.
+# KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2004,2006,2007,2009.
+# Satoru SATOH <ss@gnome.gr.jp>, 2006.
+# Jiro Matsuzawa <jmatsuzawa@src.gnome.org>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gconf-editor master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gconf-"
+"editor&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-07-28 18:38+0000\n"
+"PO-Revision-Date: 2011-09-11 07:04+0900\n"
+"Last-Translator: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>\n"
+"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+
+#: ../data/gconf-editor.desktop.in.in.h:1 ../src/gconf-editor-window.c:393
+#: ../src/gconf-editor-window.c:395 ../src/gconf-editor-window.c:873
+#: ../src/gconf-editor-window.c:1360
+msgid "Configuration Editor"
+msgstr "設定エディター"
+
+#: ../data/gconf-editor.desktop.in.in.h:2
+msgid "Directly edit your entire configuration database"
+msgstr "設定データベースを直接編集します"
+
+#: ../data/gconf-editor.schemas.in.h:1
+msgid "Bookmarks"
+msgstr "ブックマーク"
+
+#: ../data/gconf-editor.schemas.in.h:2
+msgid "gconf-editor folder bookmarks"
+msgstr "GConf エディターのフォルダー式ブックマークです。"
+
+#: ../src/gconf-bookmarks-dialog.c:202
+msgid "Edit Bookmarks"
+msgstr "ブックマークの編集"
+
+#: ../src/gconf-cell-renderer.c:149 ../src/gconf-cell-renderer.c:351
+msgid "<no value>"
+msgstr "<値なし>"
+
+#: ../src/gconf-editor-window.c:359
+#, c-format
+msgid "Couldn't display help: %s"
+msgstr "ヘルプを表示できませんでした: %s"
+
+#: ../src/gconf-editor-window.c:399
+msgid "An editor for the GConf configuration system."
+msgstr "GConf 設定システム向けのエディターです。"
+
+#: ../src/gconf-editor-window.c:402
+msgid "translator-credits"
+msgstr ""
+"相花 毅 <takeshi.aihana@gmail.com>\n"
+"KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>\n"
+"草野 貴之 <AE5T-KSN@asahi-net.or.jp>\n"
+"Satoru SATOH <ss@gnome.gr.jp>\n"
+"Jiro Matsuzawa <jmatsuzawa@src.gnome.org>\n"
+"日本GNOMEユーザー会 http://www.gnome.gr.jp"
+
+#: ../src/gconf-editor-window.c:429
+#, c-format
+msgid ""
+"Couldn't unset key. Error was:\n"
+"%s"
+msgstr ""
+"キーを空にできませんでした。エラー:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:454
+#, c-format
+msgid ""
+"Could not create key. The error is:\n"
+"%s"
+msgstr ""
+"キーを生成できませんでした。エラー:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:536
+#, c-format
+msgid ""
+"Could not change key value. Error message:\n"
+"%s"
+msgstr ""
+"キーの値を変更できませんでした。エラー・メッセージ:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:568
+msgid ""
+"Currently pairs and schemas can't be edited. This will be changed in a later "
+"version."
+msgstr ""
+"現在のところ、ペアとスキーマは編集できません。将来のバージョンで変更される予"
+"定です。"
+
+#: ../src/gconf-editor-window.c:648
+#, c-format
+msgid ""
+"Could not set value. Error was:\n"
+"%s"
+msgstr ""
+"値をセットできませんでした。エラー:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:684 ../src/gconf-editor-window.c:728
+#, c-format
+msgid ""
+"Could not sync value. Error was:\n"
+"%s"
+msgstr ""
+"値を同期できませんでした。エラー:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:740
+msgid "_File"
+msgstr "ファイル(_F)"
+
+#: ../src/gconf-editor-window.c:741
+msgid "_Edit"
+msgstr "編集(_E)"
+
+#: ../src/gconf-editor-window.c:742
+msgid "_Search"
+msgstr "検索(_S)"
+
+#: ../src/gconf-editor-window.c:743
+msgid "_Bookmarks"
+msgstr "ブックマーク(_B)"
+
+#: ../src/gconf-editor-window.c:744
+msgid "_Help"
+msgstr "ヘルプ(_H)"
+
+#: ../src/gconf-editor-window.c:746
+msgid "New _Settings Window"
+msgstr "新しい設定(_S)"
+
+#: ../src/gconf-editor-window.c:747
+msgid "Open a new Configuration Editor window editing current settings"
+msgstr "現在の設定を編集するために新しい設定エディターのウィンドウを開きます"
+
+#: ../src/gconf-editor-window.c:749
+msgid "New _Defaults Window"
+msgstr "新しいデフォルトの設定(_D)"
+
+#: ../src/gconf-editor-window.c:750
+msgid "Open a new Configuration Editor window editing system default settings"
+msgstr ""
+"システムのデフォルトの設定を編集するために新しい設定エディターのウィンドウを"
+"開きます"
+
+#: ../src/gconf-editor-window.c:752
+msgid "New _Mandatory Window"
+msgstr "新しいシステムの設定(_M)"
+
+#: ../src/gconf-editor-window.c:753
+msgid ""
+"Open a new Configuration Editor window editing system mandatory settings"
+msgstr ""
+"システム規模で強制する設定を編集するために新しい設定エディターのウィンドウを"
+"開きます"
+
+#: ../src/gconf-editor-window.c:755
+msgid "_Close Window"
+msgstr "ウィンドウを閉じる(_C)"
+
+#: ../src/gconf-editor-window.c:755
+msgid "Close this window"
+msgstr "このウィンドウを閉じます"
+
+#: ../src/gconf-editor-window.c:757
+msgid "_Quit"
+msgstr "終了(_Q)"
+
+#: ../src/gconf-editor-window.c:757
+msgid "Quit the Configuration Editor"
+msgstr "設定エディターを終了します"
+
+#: ../src/gconf-editor-window.c:760
+msgid "_Copy Key Name"
+msgstr "キーの名前のコピー(_C)"
+
+#: ../src/gconf-editor-window.c:760
+msgid "Copy the name of the selected key"
+msgstr "選択したキーの名前をコピーします"
+
+#: ../src/gconf-editor-window.c:762
+msgid "_Find..."
+msgstr "検索(_F)..."
+
+#: ../src/gconf-editor-window.c:762
+msgid "Find patterns in keys and values"
+msgstr "キーと値を検索します"
+
+#: ../src/gconf-editor-window.c:764
+msgid "_List Recent Keys"
+msgstr "最近変更したキーの一覧(_L)"
+
+#: ../src/gconf-editor-window.c:764
+msgid "Show recently modified keys"
+msgstr "最近変更したキーを表示します"
+
+#: ../src/gconf-editor-window.c:767
+msgid "_Add Bookmark"
+msgstr "ブックマークの追加(_A)"
+
+#: ../src/gconf-editor-window.c:767
+msgid "Add a bookmark to the selected directory"
+msgstr "選択したディレクトリを指すブックマークを追加します"
+
+#: ../src/gconf-editor-window.c:769
+msgid "_Edit Bookmarks"
+msgstr "ブックマークの編集(_E)"
+
+#: ../src/gconf-editor-window.c:769
+msgid "Edit the bookmarks"
+msgstr "ブックマークを編集します"
+
+#: ../src/gconf-editor-window.c:772
+msgid "_Contents"
+msgstr "目次(_C)"
+
+#: ../src/gconf-editor-window.c:772
+msgid "Open the help contents for the Configuration Editor"
+msgstr "設定エディターのヘルプの目次を開きます"
+
+#: ../src/gconf-editor-window.c:774
+msgid "_About"
+msgstr "情報(_A)"
+
+#: ../src/gconf-editor-window.c:774
+msgid "Show the about dialog for the Configuration Editor"
+msgstr "設定エディターの情報ダイアログを表示します"
+
+#: ../src/gconf-editor-window.c:777
+msgid "_New Key..."
+msgstr "新しいキー(_N)..."
+
+#: ../src/gconf-editor-window.c:777
+msgid "Create a new key"
+msgstr "新しいキーを作成します"
+
+#: ../src/gconf-editor-window.c:779
+msgid "_Edit Key..."
+msgstr "キーの編集(_E)..."
+
+#: ../src/gconf-editor-window.c:779
+msgid "Edit the selected key"
+msgstr "選択したキーを編集します"
+
+#: ../src/gconf-editor-window.c:781
+msgid "_Unset Key"
+msgstr "キーを空にする(_U)"
+
+#: ../src/gconf-editor-window.c:781
+msgid "Unset the selected key"
+msgstr "選択したキーを空にします"
+
+#: ../src/gconf-editor-window.c:783
+msgid "Set as _Default"
+msgstr "デフォルトに戻す(_D)"
+
+#: ../src/gconf-editor-window.c:783
+msgid "Set the selected key to be the default"
+msgstr "選択したキーにデフォルト値をセットします"
+
+#: ../src/gconf-editor-window.c:785
+msgid "Set as _Mandatory"
+msgstr "システムの設定にする(_M)"
+
+#: ../src/gconf-editor-window.c:785
+msgid "Set the selected key to the mandatory"
+msgstr "選択したキーにシステム規模の値をセットします"
+
+#: ../src/gconf-editor-window.c:867
+msgid "Configuration Editor (Default settings)"
+msgstr "設定エディター (デフォルトの設定)"
+
+#: ../src/gconf-editor-window.c:870 ../src/gconf-editor-window.c:1357
+msgid "Configuration Editor (Mandatory settings)"
+msgstr "設定エディター (システムの設定)"
+
+#: ../src/gconf-editor-window.c:1115 ../src/gconf-editor-window.c:1116
+#: ../src/gconf-editor-window.c:1117 ../src/gconf-editor-window.c:1118
+#: ../src/gconf-editor-window.c:1147 ../src/gconf-editor-window.c:1155
+#: ../src/gconf-editor-window.c:1164 ../src/gconf-editor-window.c:1704
+#: ../src/gconf-editor-window.c:1716 ../src/gconf-editor-window.c:1728
+#: ../src/gconf-editor-window.c:1743
+msgid "(None)"
+msgstr "(なし)"
+
+#: ../src/gconf-editor-window.c:1316 ../src/gconf-editor-window.c:1326
+#, c-format
+msgid ""
+"Cannot create GConf engine. Error was:\n"
+"%s"
+msgstr ""
+"GConf デーモンを起動できません。エラーは:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:1354
+msgid "Configuration Editor (Defaults settings)"
+msgstr "設定エディター (デフォルトの設定)"
+
+#: ../src/gconf-editor-window.c:1600
+msgid "Name"
+msgstr "名前"
+
+#: ../src/gconf-editor-window.c:1624
+msgid "Value"
+msgstr "値"
+
+#: ../src/gconf-editor-window.c:1651
+msgid "Key Documentation"
+msgstr "キーの情報"
+
+#: ../src/gconf-editor-window.c:1680 ../src/gconf-key-editor.c:611
+msgid "This key is not writable"
+msgstr "このキーは書き込み可能ではありません"
+
+#: ../src/gconf-editor-window.c:1693
+msgid "This key has no schema"
+msgstr "このキーにはスキームがありません"
+
+#: ../src/gconf-editor-window.c:1698
+msgid "Key name:"
+msgstr "キーの名前:"
+
+#: ../src/gconf-editor-window.c:1711
+msgid "Key owner:"
+msgstr "キーの所有者:"
+
+#: ../src/gconf-editor-window.c:1723
+msgid "Short description:"
+msgstr "簡単な説明:"
+
+#: ../src/gconf-editor-window.c:1736
+msgid "Long description:"
+msgstr "詳細な説明:"
+
+#: ../src/gconf-key-editor.c:87
+msgid "T_rue"
+msgstr "有効(_R)"
+
+#: ../src/gconf-key-editor.c:90 ../src/gconf-key-editor.c:246
+#: ../src/gconf-key-editor.c:353 ../src/gconf-key-editor.c:642
+msgid "_False"
+msgstr "無効(_F)"
+
+#. These have to be ordered so the EDIT_ enum matches the
+#. * menu indices
+#.
+#. These have to be ordered so the EDIT_ enum matches the
+#. * combobox indices
+#.
+#: ../src/gconf-key-editor.c:125 ../src/gconf-key-editor.c:155
+msgid "Integer"
+msgstr "整数値"
+
+#: ../src/gconf-key-editor.c:126 ../src/gconf-key-editor.c:156
+msgid "Boolean"
+msgstr "論理値"
+
+#: ../src/gconf-key-editor.c:127 ../src/gconf-key-editor.c:157
+msgid "String"
+msgstr "文字列"
+
+#. Translators: this refers to "Floating point":
+#. * see http://en.wikipedia.org/wiki/Floating_point
+#.
+#: ../src/gconf-key-editor.c:131
+msgid "Float"
+msgstr "実数値"
+
+#: ../src/gconf-key-editor.c:132
+msgid "List"
+msgstr "リスト"
+
+#: ../src/gconf-key-editor.c:220
+msgid "Add New List Entry"
+msgstr "新しいリスト型エントリの追加"
+
+#: ../src/gconf-key-editor.c:237
+msgid "_New list value:"
+msgstr "新しいリスト型の要素(_N):"
+
+#: ../src/gconf-key-editor.c:324
+msgid "Edit List Entry"
+msgstr "リスト型エントリの編集"
+
+#: ../src/gconf-key-editor.c:341
+msgid "_Edit list value:"
+msgstr "編集するリスト型の要素(_E):"
+
+#: ../src/gconf-key-editor.c:563
+msgid "Path:"
+msgstr "パス:"
+
+#: ../src/gconf-key-editor.c:574
+msgid "_Name:"
+msgstr "名前(_N):"
+
+#: ../src/gconf-key-editor.c:586
+msgid "_Type:"
+msgstr "キーの型(_T):"
+
+#: ../src/gconf-key-editor.c:623 ../src/gconf-key-editor.c:641
+#: ../src/gconf-key-editor.c:660 ../src/gconf-key-editor.c:677
+msgid "_Value:"
+msgstr "値(_V):"
+
+#: ../src/gconf-key-editor.c:699
+msgid "List _type:"
+msgstr "リストの型(_T):"
+
+#: ../src/gconf-key-editor.c:707
+msgid "_Values:"
+msgstr "値(_V):"
+
+#: ../src/gconf-key-editor.c:809
+msgid "New Key"
+msgstr "新しいキー"
+
+#: ../src/gconf-key-editor.c:813
+msgid "Edit Key"
+msgstr "キーの編集"
+
+#: ../src/gconf-search-dialog.c:60
+msgid "Pattern not found"
+msgstr "検索パターンが見つかりません"
+
+#: ../src/gconf-search-dialog.c:141
+msgid "Find"
+msgstr "検索"
+
+#: ../src/gconf-search-dialog.c:143
+msgid "_Search for: "
+msgstr "検索(_S): "
+
+#: ../src/gconf-search-dialog.c:164
+msgid "Search also in key _names"
+msgstr "キーの名前も検索する(_N)"
+
+#: ../src/gconf-search-dialog.c:167
+msgid "Search also in key _values"
+msgstr "キーの値も検索する(_V)"
+
+#: ../src/gedit-output-window.c:340
+msgid "Close the output window"
+msgstr "検索ウィンドウを閉じます"
+
+#: ../src/gedit-output-window.c:375
+msgid "Copy selected lines"
+msgstr "選択した行をコピーします"
+
+#: ../src/gedit-output-window.c:392
+msgid "Clear the output window"
+msgstr "検索ウィンドウをクリアします"
+
+#: ../src/gedit-output-window.c:431
+msgid "Output Lines"
+msgstr "行番号を表示します"
+
+#: ../src/main.c:69
+msgid "[KEY]"
+msgstr "[キー]"
+
+#: ../src/main.c:77
+msgid "- Directly edit your entire configuration database"
+msgstr "- 設定データベースを直接編集する"

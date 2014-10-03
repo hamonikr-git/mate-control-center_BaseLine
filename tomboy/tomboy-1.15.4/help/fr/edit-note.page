@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="edit-notes" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="create-notes"/>
+    <link type="seealso" xref="delete-notes"/>
+    <desc>Modifier et formater vos notes.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Modification de notes</title>    
+  
+		<p>Notes Tomboy vous permet de formater le texte d'une note de multiples façons dont les fonctions annuler et refaire, la mise en gras ou en italique, le soulignement et plus encore.</p>
+		
+   <section id="redo-undo">
+	
+	<title>Fonction annuler et refaire</title>
+	
+		<p>Pour annuler la dernière action, y compris la saisie d'un mot ou le formatage du texte, cliquez sur l'icône <gui>Texte</gui> dans la barre d'outils et choisissez <gui>Annuler</gui>.</p>
+
+		<p>Si vous souhaitez refaire votre dernière action sur un mot ou un texte, cliquez sur l'icône <gui>Texte</gui> dans la barre d'outils et choisissez <gui>Refaire</gui>.</p>
+	
+  </section>
+	 
+  <section id="text-format">
+	
+	<title>Formatage du texte</title>
+	
+		<p>Vous pouvez formater le texte de vos notes de plusieurs façons dont le soulignement, la mise en gras ou en italique, le surlignage des mots ou des phrases ou la rature.</p>
+  </section>
+	 
+  <section id="text-size">
+	
+	<title>Modification de la taille du texte</title>
+	
+		<p>Vous pouvez modifier la taille du texte dans vos notes de deux façons.</p>
+		<p>Sélectionnez le texte que vous souhaitez agrandir ou diminuer et appuyez sur les touches <keyseq><key>Ctrl</key><key>+</key></keyseq> pour agrandir ou <keyseq><key>Ctrl</key><key>-</key></keyseq> pour diminuer.</p>
+		<p>Vous pouvez également cliquer sur l'icône <gui>texte</gui> dans la barre d'outils et choisir l'une des quatre tailles prédéfinies, petite, normale, grande et énorme.</p>
+	
+  </section>
+	 
+  <section id="bullets">
+	
+	<title>Formatage des puces</title>
+	
+		<p>Les puces peuvent être créées à l'aide du clavier ou en cliquant sur l'icône <gui>texte</gui> dans la barre d'outils.</p>
+		<p>Pour créer une puce manuellement, saisissez la clé astérisque <key>*</key> et ensuite votre texte. Après avoir appuyé sur la touche Entrée, Tomboy convertit automatiquement les lignes commençant par un astérisque en puce et la ligne suivante commence aussi par une puce. Si vous souhaitez créer une sous-puce, appuyez sur <key>Tab</key> immédiatement après avoir appuyé sur <key>Entrée</key>.</p>
+		<p>Vous pouvez aussi sélectionner une ligne spécifique et choisir l'icône <gui>Texte</gui> dans la barre d'outils, puis cocher la case <gui>Puces</gui> pour ajouter une puce à une ligne.</p>
+
+	
+  </section>
+</page>

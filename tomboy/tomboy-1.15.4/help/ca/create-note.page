@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="create-notes" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="edit-notes"/>
+    <link type="seealso" xref="delete-notes"/>
+    <desc>Creació d'una nota nova al Tomboy</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Creació d'una nota nova</title>    
+  
+  <p>Per crear una nota nova feu clic a la icona del Tomboy al quadre del GNOME, a la barra de tasques del Windows o al llançador de l'OS X i trieu <gui>Crea una nota nova</gui>. També podeu crear-la si premeu la drecera de teclat <keyseq><key>Alt + F12</key></keyseq>.</p>
+  
+  <p>La nota nova us mostrarà una nova finestra amb el títol Nota nova <em>N</em>. La nota conté una barra de tasques amb opcions per cercar les notes, enllaçar-les o formatar-ne el text. Si voleu més informació, llegiu <link xref="edit-notes"/>.</p>
+	
+</page>

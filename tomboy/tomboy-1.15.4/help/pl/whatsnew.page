@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="new" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#new"/>
+    <revision pkgversion="2.30" version="0.1" date="2010-05-29" status="draft"/>
+    <desc>Nowości w programie <app>Tomboy</app>.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Nowości w programie <app>Tomboy</app></title>
+
+  <p>Usprawniono kilka funkcji programu <app>Tomboy</app>. Dzięki zwiększeniu szybkości uruchamiania, start programu zajmuje teraz mniej czasu.</p>
+  <p>Dodano obsługę formatowania przy kopiowaniu i wklejaniu tekstu do programów obsługujących format HTML, takich jak Evolution, OpenOffice.org i innych programów.</p>
+  <p>Po włączeniu opcji synchronizowania program <app>Tomboy</app> automatycznie synchronizuje notatki.</p>
+
+  <p>Dodano obsługę list szybkiego dostępu systemu Microsoft Windows 7. Umożliwia ona użytkownikowi szybszy dostęp do notatek i ich przeszukiwanie, a także tworzenie nowych notatek z paska zadań systemu Windows.</p>
+
+</page>

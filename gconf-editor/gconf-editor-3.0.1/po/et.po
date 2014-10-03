@@ -1,0 +1,475 @@
+# GConf seadistuste redaktori eesti keele tõlge.
+# Estonian translation of GConf-Editor.
+#
+# Copyright (C) 2002, 2005, 2006 The Free Sowtware Foundation
+# This file is distributed under the same license as the gconf-editor package.
+#
+# Ilmar Kerm <ikerm@hot.ee>, 2002.
+# Ivar Smolin <okul@linux.ee>, 2005-2008.
+# Priit Laes <amd@store20.com>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gconf-editor HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-11-07 11:22+0100\n"
+"PO-Revision-Date: 2008-12-22 21:19+0200\n"
+"Last-Translator: Ivar Smolin <okul@linux.ee>\n"
+"Language-Team: Estonian <gnome-et@linux.ee>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/gconf-editor.desktop.in.in.h:1 ../src/gconf-editor-window.c:392
+#: ../src/gconf-editor-window.c:394 ../src/gconf-editor-window.c:879
+#: ../src/gconf-editor-window.c:1376
+msgid "Configuration Editor"
+msgstr "Seadistuste redaktor"
+
+#: ../data/gconf-editor.desktop.in.in.h:2
+msgid "Directly edit your entire configuration database"
+msgstr "Kogu seadistuste andmebaasi vahetu redigeerimine"
+
+#: ../data/gconf-editor.schemas.in.h:1
+msgid "Bookmarks"
+msgstr "Järjehoidjad"
+
+#: ../data/gconf-editor.schemas.in.h:2
+msgid "gconf-editor folder bookmarks"
+msgstr "gconf-editor'i kataloogijärjehoidjaid"
+
+#: ../src/gconf-bookmarks-dialog.c:197
+msgid "Edit Bookmarks"
+msgstr "Järjehoidjate redigeerimine"
+
+#: ../src/gconf-cell-renderer.c:144 ../src/gconf-cell-renderer.c:341
+msgid "<no value>"
+msgstr "<väärtus puudub>"
+
+#: ../src/gconf-editor-window.c:358
+#, c-format
+msgid "Couldn't display help: %s"
+msgstr "Abiteavet pole võimalik kuvada: %s"
+
+#: ../src/gconf-editor-window.c:398
+msgid "An editor for the GConf configuration system."
+msgstr "GConf seadistuste süsteemi redaktor."
+
+#: ../src/gconf-editor-window.c:401
+msgid "translator-credits"
+msgstr ""
+"Ilmar Kerm <ikerm@hot.ee>, 2002.\n"
+"Ivar Smolin <okul@linux.ee>, 2005-2008.\n"
+"Priit Laes <amd@store20.com>, 2006"
+
+#: ../src/gconf-editor-window.c:428
+#, c-format
+msgid ""
+"Couldn't unset key. Error was:\n"
+"%s"
+msgstr ""
+"Võtit pole võimalik tühistada. Viga:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:453
+#, c-format
+msgid ""
+"Could not create key. The error is:\n"
+"%s"
+msgstr ""
+"Võtit pole võimalik luua. Viga:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:535
+#, c-format
+msgid ""
+"Could not change key value. Error message:\n"
+"%s"
+msgstr ""
+"Võtme väärtust pole võimalik muuta. Veateade:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:567
+msgid ""
+"Currently pairs and schemas can't be edited. This will be changed in a later "
+"version."
+msgstr ""
+"Käesolevaga pole paare ja skeeme võimalik redigeerida. Seda saab teha "
+"järgmistes versioonides."
+
+#: ../src/gconf-editor-window.c:646
+#, c-format
+msgid ""
+"Could not set value. Error was:\n"
+"%s"
+msgstr ""
+"Väärtust pole võimalik määrata. Veateade:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:684 ../src/gconf-editor-window.c:732
+#, c-format
+msgid ""
+"Could not sync value. Error was:\n"
+"%s"
+msgstr ""
+"Väärtust pole võimalik sünkroniseerida. Veateade:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:746
+msgid "_File"
+msgstr "_Fail"
+
+#: ../src/gconf-editor-window.c:747
+msgid "_Edit"
+msgstr "_Redaktor"
+
+#: ../src/gconf-editor-window.c:748
+msgid "_Search"
+msgstr "_Otsing"
+
+#: ../src/gconf-editor-window.c:749
+msgid "_Bookmarks"
+msgstr "_Järjehoidjad"
+
+#: ../src/gconf-editor-window.c:750
+msgid "_Help"
+msgstr "A_bi"
+
+#: ../src/gconf-editor-window.c:752
+msgid "New _Settings Window"
+msgstr "_Uus sätete aken"
+
+#: ../src/gconf-editor-window.c:753
+msgid "Open a new Configuration Editor window editing current settings"
+msgstr ""
+"Seadistusteredaktori uue akna avamine käesolevate sätete redigeerimiseks"
+
+#: ../src/gconf-editor-window.c:755
+msgid "New _Defaults Window"
+msgstr "Uus _vaikesätete aken"
+
+#: ../src/gconf-editor-window.c:756
+msgid "Open a new Configuration Editor window editing system default settings"
+msgstr ""
+"Seadistusteredaktori uue akna avamine süsteemi vaikesätete redigeerimiseks"
+
+#: ../src/gconf-editor-window.c:758
+msgid "New _Mandatory Window"
+msgstr "Uus _kohustuslike sätete aken"
+
+#: ../src/gconf-editor-window.c:759
+msgid ""
+"Open a new Configuration Editor window editing system mandatory settings"
+msgstr ""
+"Seadistusteredaktori uue akna avamine süsteemi kohustuslike sätete "
+"redigeerimiseks"
+
+#: ../src/gconf-editor-window.c:761
+msgid "_Close Window"
+msgstr "_Sulge aken"
+
+#: ../src/gconf-editor-window.c:761
+msgid "Close this window"
+msgstr "Selle akna sulgemine"
+
+#: ../src/gconf-editor-window.c:763
+msgid "_Quit"
+msgstr "_Lõpeta"
+
+#: ../src/gconf-editor-window.c:763
+msgid "Quit the Configuration Editor"
+msgstr "Seadistuste redaktori töö lõpetamine"
+
+#: ../src/gconf-editor-window.c:766
+msgid "_Copy Key Name"
+msgstr "_Kopeeri võtme nimi"
+
+#: ../src/gconf-editor-window.c:766
+msgid "Copy the name of the selected key"
+msgstr "Valitud võtme nime kopeerimine"
+
+#: ../src/gconf-editor-window.c:768
+msgid "_Find..."
+msgstr "_Otsi..."
+
+#: ../src/gconf-editor-window.c:768
+msgid "Find patterns in keys and values"
+msgstr "Mustri otsimine võtmetest ja väärtustest"
+
+#: ../src/gconf-editor-window.c:770
+msgid "_List Recent Keys"
+msgstr "_Viimaste võtmete loend"
+
+#: ../src/gconf-editor-window.c:770
+msgid "Show recently modified keys"
+msgstr "Viimati muudetud võtmete näitamine"
+
+#: ../src/gconf-editor-window.c:773
+msgid "_Add Bookmark"
+msgstr "_Lisa järjehoidja"
+
+#: ../src/gconf-editor-window.c:773
+msgid "Add a bookmark to the selected directory"
+msgstr "Järjehoidja lisamine valitud kataloogi"
+
+#: ../src/gconf-editor-window.c:775
+msgid "_Edit Bookmarks"
+msgstr "_Redigeeri järjehoidjaid"
+
+#: ../src/gconf-editor-window.c:775
+msgid "Edit the bookmarks"
+msgstr "Järjehoidjate redigeerimine"
+
+#: ../src/gconf-editor-window.c:778
+msgid "_Contents"
+msgstr "_Sisukord"
+
+#: ../src/gconf-editor-window.c:778
+msgid "Open the help contents for the Configuration Editor"
+msgstr "Seadistuste redaktori abiteabe sisukorra avamine"
+
+#: ../src/gconf-editor-window.c:780
+msgid "_About"
+msgstr "_Programmist lähemalt"
+
+#: ../src/gconf-editor-window.c:780
+msgid "Show the about dialog for the Configuration Editor"
+msgstr "Lähema teabe näitamine Seadistuste redaktori kohta"
+
+#: ../src/gconf-editor-window.c:783
+msgid "_New Key..."
+msgstr "_Uus võti..."
+
+#: ../src/gconf-editor-window.c:783
+msgid "Create a new key"
+msgstr "Uue võtme loomine"
+
+#: ../src/gconf-editor-window.c:785
+msgid "_Edit Key..."
+msgstr "_Redigeeri võtit..."
+
+#: ../src/gconf-editor-window.c:785
+msgid "Edit the selected key"
+msgstr "Võtme redigeerimine"
+
+#: ../src/gconf-editor-window.c:787
+msgid "_Unset Key"
+msgstr "_Tühista võti"
+
+#: ../src/gconf-editor-window.c:787
+msgid "Unset the selected key"
+msgstr "Valitud võtme tühistamine"
+
+#: ../src/gconf-editor-window.c:789
+msgid "Set as _Default"
+msgstr "Määra _vaikimisi"
+
+#: ../src/gconf-editor-window.c:789
+msgid "Set the selected key to be the default"
+msgstr "Valitud võtme määramine vaikimisi võtmeks"
+
+#: ../src/gconf-editor-window.c:791
+msgid "Set as _Mandatory"
+msgstr "Märgi _kohustuslikuks"
+
+#: ../src/gconf-editor-window.c:791
+msgid "Set the selected key to the mandatory"
+msgstr "Valitud võtme määramine kohustuslikuks"
+
+#: ../src/gconf-editor-window.c:873
+msgid "Configuration Editor (Default settings)"
+msgstr "Seadistuste redaktor (Vaikimisi sätted)"
+
+#: ../src/gconf-editor-window.c:876 ../src/gconf-editor-window.c:1373
+msgid "Configuration Editor (Mandatory settings)"
+msgstr "Seadistuste redaktor (Kohustuslikud sätted)"
+
+#: ../src/gconf-editor-window.c:1122 ../src/gconf-editor-window.c:1123
+#: ../src/gconf-editor-window.c:1124 ../src/gconf-editor-window.c:1125
+#: ../src/gconf-editor-window.c:1154 ../src/gconf-editor-window.c:1162
+#: ../src/gconf-editor-window.c:1171 ../src/gconf-editor-window.c:1725
+#: ../src/gconf-editor-window.c:1737 ../src/gconf-editor-window.c:1749
+#: ../src/gconf-editor-window.c:1764
+msgid "(None)"
+msgstr "(Puudub)"
+
+#: ../src/gconf-editor-window.c:1332 ../src/gconf-editor-window.c:1342
+#, c-format
+msgid ""
+"Cannot create GConf engine. Error was:\n"
+"%s"
+msgstr ""
+"GConf mootorit pole võimalik luua. Veateade:\n"
+"%s"
+
+#: ../src/gconf-editor-window.c:1370
+msgid "Configuration Editor (Defaults settings)"
+msgstr "Seadistuste redaktor (Vaikimisi sätted)"
+
+#: ../src/gconf-editor-window.c:1621
+msgid "Name"
+msgstr "Nimi"
+
+#: ../src/gconf-editor-window.c:1645
+msgid "Value"
+msgstr "Väärtus"
+
+#: ../src/gconf-editor-window.c:1672
+msgid "Key Documentation"
+msgstr "Võtme dokumentatsioon"
+
+#: ../src/gconf-editor-window.c:1701 ../src/gconf-key-editor.c:604
+msgid "This key is not writable"
+msgstr "See võti pole kirjutatav"
+
+#: ../src/gconf-editor-window.c:1714
+msgid "This key has no schema"
+msgstr "Sel võtmel pole skeemi"
+
+#: ../src/gconf-editor-window.c:1719
+msgid "Key name:"
+msgstr "Võtme nimi:"
+
+#: ../src/gconf-editor-window.c:1732
+msgid "Key owner:"
+msgstr "Võtme omanik:"
+
+#: ../src/gconf-editor-window.c:1744
+msgid "Short description:"
+msgstr "Lühikirjeldus:"
+
+#: ../src/gconf-editor-window.c:1757
+msgid "Long description:"
+msgstr "Pikk kirjeldus:"
+
+#: ../src/gconf-key-editor.c:87
+msgid "T_rue"
+msgstr "Tõ_ene"
+
+#: ../src/gconf-key-editor.c:90 ../src/gconf-key-editor.c:244
+#: ../src/gconf-key-editor.c:349 ../src/gconf-key-editor.c:635
+msgid "_False"
+msgstr "Vää_r"
+
+#. These have to be ordered so the EDIT_ enum matches the
+#. * menu indices
+#.
+#. These have to be ordered so the EDIT_ enum matches the
+#. * combobox indices
+#.
+#: ../src/gconf-key-editor.c:125 ../src/gconf-key-editor.c:155
+msgid "Integer"
+msgstr "Täisarv"
+
+#: ../src/gconf-key-editor.c:126 ../src/gconf-key-editor.c:156
+msgid "Boolean"
+msgstr "Tõeväärtus"
+
+#: ../src/gconf-key-editor.c:127 ../src/gconf-key-editor.c:157
+msgid "String"
+msgstr "String"
+
+#. Translators: this refers to "Floating point":
+#. * see http://en.wikipedia.org/wiki/Floating_point
+#.
+#: ../src/gconf-key-editor.c:131
+msgid "Float"
+msgstr "Ujukomaarv"
+
+#: ../src/gconf-key-editor.c:132
+msgid "List"
+msgstr "Loend"
+
+#: ../src/gconf-key-editor.c:219
+msgid "Add New List Entry"
+msgstr "Uue loendikirje lisamine"
+
+#: ../src/gconf-key-editor.c:235
+msgid "_New list value:"
+msgstr "_Uus loendi väärtus:"
+
+#: ../src/gconf-key-editor.c:321
+msgid "Edit List Entry"
+msgstr "Loendikirje muutmine"
+
+#: ../src/gconf-key-editor.c:337
+msgid "_Edit list value:"
+msgstr "_Loendi väärtuse muutmine"
+
+#: ../src/gconf-key-editor.c:558
+msgid "Path:"
+msgstr "Rada:"
+
+#: ../src/gconf-key-editor.c:569
+msgid "_Name:"
+msgstr "_Nimi"
+
+#: ../src/gconf-key-editor.c:581
+msgid "_Type:"
+msgstr "_Tüüp:"
+
+#: ../src/gconf-key-editor.c:616 ../src/gconf-key-editor.c:634
+#: ../src/gconf-key-editor.c:653 ../src/gconf-key-editor.c:670
+msgid "_Value:"
+msgstr "_Väärtus"
+
+#: ../src/gconf-key-editor.c:693
+msgid "List _type:"
+msgstr "Loendi _tüüp:"
+
+#: ../src/gconf-key-editor.c:701
+msgid "_Values:"
+msgstr "_Väärtused:"
+
+#: ../src/gconf-key-editor.c:803
+msgid "New Key"
+msgstr "Uus võti"
+
+#: ../src/gconf-key-editor.c:807
+msgid "Edit Key"
+msgstr "Võtme redigeerimine"
+
+#: ../src/gconf-search-dialog.c:60
+msgid "Pattern not found"
+msgstr "Mustrit ei leitud"
+
+#: ../src/gconf-search-dialog.c:142
+msgid "Find"
+msgstr "Otsing"
+
+#: ../src/gconf-search-dialog.c:144
+msgid "_Search for: "
+msgstr "_Mida otsida:"
+
+#: ../src/gconf-search-dialog.c:165
+msgid "Search also in key _names"
+msgstr "Otsida ka võtmete _nimedest"
+
+#: ../src/gconf-search-dialog.c:168
+msgid "Search also in key _values"
+msgstr "Otsida ka võtmete _väärtustest"
+
+#: ../src/gedit-output-window.c:347
+msgid "Close the output window"
+msgstr "Väljundakna sulgemine"
+
+#: ../src/gedit-output-window.c:382
+msgid "Copy selected lines"
+msgstr "Valitud ridade kopeerimine"
+
+#: ../src/gedit-output-window.c:399
+msgid "Clear the output window"
+msgstr "Väljundakna puhastamine"
+
+#: ../src/gedit-output-window.c:438
+msgid "Output Lines"
+msgstr "Väljundread"
+
+#: ../src/main.c:69
+msgid "[KEY]"
+msgstr "[VÕTI]"
+
+#: ../src/main.c:77
+msgid "- Directly edit your entire configuration database"
+msgstr "- Kogu seadistuste andmebaasi vahetu redigeerimine"

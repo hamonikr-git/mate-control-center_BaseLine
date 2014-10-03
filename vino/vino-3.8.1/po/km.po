@@ -1,0 +1,752 @@
+# translation of vino-master-po-km-100338.merged.po to Khmer
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+# Sok Sophea <sophea@khmeros.info>, 2012.
+# Khoem Sokhem <sokhem@open.org.kh>, 2012.
+# Khmer translation for vino
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the vino package.
+msgid ""
+msgstr ""
+"Project-Id-Version: vino-master-po-km-100338.merged\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=vino&keywords=I18N+L10N&component=Preferences Dialog\n"
+"POT-Creation-Date: 2012-09-25 22:56+0000\n"
+"PO-Revision-Date: 2012-10-01 09:00+0700\n"
+"Last-Translator: Khoem Sokhem <sokhem@open.org.kh>\n"
+"Language-Team: Khmer <support@khmeros.info>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Language: km-KH\n"
+
+#: ../capplet/vino-message-box.c:55
+#, c-format
+msgid "There was an error showing the URL \"%s\""
+msgstr "មាន​កំហុស​ក្នុង​ការ​បង្ហាញ URL \"%s\""
+
+#: ../capplet/vino-preferences.c:245
+#, c-format
+msgid ""
+"There was an error displaying help:\n"
+"%s"
+msgstr ""
+"មាន​កំហុស​ក្នុង​ការ​បង្ហាញ​ជំនួយ ៖\n"
+"%s"
+
+#: ../capplet/vino-preferences.c:278
+msgid "Checking the connectivity of this machine..."
+msgstr "កំពុង​ពិនិត្យមើល​ការ​ភ្ជាប់​ម៉ាស៊ីន​នេះ..."
+
+#: ../capplet/vino-preferences.c:298
+msgid "Your desktop is only reachable over the local network."
+msgstr "ផ្ទៃតុ​របស់​អ្នក​គឺ​អាច​ប្រើ​បាន​តែ​នៅ​លើ​បណ្ដាញ​មូលដ្ឋាន​ប៉ុណ្ណោះ ។"
+
+#: ../capplet/vino-preferences.c:311
+msgid " or "
+msgstr "ឬ"
+
+#: ../capplet/vino-preferences.c:315
+#, c-format
+msgid "Others can access your computer using the address %s."
+msgstr "អ្នក​ផ្សេង​ទៀត​អាច​ចូល​ដំណើរការ​កុំព្យូទ័រ​របស់​អ្នក​បាន​​ដោយ​ប្រើ​អាសយដ្ឋាន %s ។"
+
+#: ../capplet/vino-preferences.c:324
+msgid "Nobody can access your desktop."
+msgstr "គ្មាន​​អ្នកណាម្នាក់​​​ចូល​ដំណើរការ​ផ្ទៃតុ​របស់​អ្នក​បាន​ឡើយ ។"
+
+#: ../capplet/vino-preferences.desktop.in.in.h:1
+#: ../server/vino-server.desktop.in.in.h:1
+msgid "Desktop Sharing"
+msgstr "ការ​ចែករំលែក​ផ្ទៃតុ"
+
+#: ../capplet/vino-preferences.desktop.in.in.h:2
+msgid "Choose how other users can remotely view your desktop"
+msgstr "ជ្រើស​របៀប​អ្នក​ប្រើ​ផ្សេង​ទៀត​​អាច​មើល​ផ្ទៃតុ​របស់​អ្នក​ពី​ចម្ងាយ"
+
+#: ../common/vino-keyring.c:54 ../tools/vino-passwd.c:54
+msgid "Remote desktop sharing password"
+msgstr "ពាក្យ​សម្ងាត់​ការ​ចែករំលែក​ផ្ទៃតុ​ពី​ចម្ងាយ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:1
+msgid "Enable remote access to the desktop"
+msgstr "បើក​ការ​ចូល​ដំណើរការ​ពី​ចម្ងាយ​ចំពោះ​ផ្ទៃតុ​នេះ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:2
+msgid ""
+"If true, allows remote access to the desktop via the RFB protocol. Users on "
+"remote machines may then connect to the desktop using a VNC viewer."
+msgstr ""
+"ប្រសិនបើ​ពិត អនុញ្ញាត​ឲ្យ​ការ​ចូល​ដំណើរការ​​ផ្ទៃ​តុ​ពី​ចម្ងាយ​តាម​ពិធីការ RFB ។ អ្នក​ប្រើ​នៅ​លើ​ម៉ាស៊ីន​ពី​ចម្ងាយ​អាច​"
+"តភ្ជាប់​ទៅកាន់​ផ្ទៃតុ​បាន​ដោយ​ប្រើ​កម្មវិធី​មើល VNC ។"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:3
+msgid "Prompt the user before completing a connection"
+msgstr "ប្រអប់​បញ្ចូល​អ្នក​ប្រើ មុន​ពេល​បញ្ចប់​ការ​តភ្ជាប់"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:4
+msgid ""
+"If true, remote users accessing the desktop are not allowed access until the "
+"user on the host machine approves the connection. Recommended especially "
+"when access is not password protected."
+msgstr ""
+"ប្រសិនបើ​ពិត អ្នក​ប្រើ​ពី​ចម្ងាយ​ក្នុង​ការ​ចូល​ដំណើរការ​ផ្ទៃតុ​មិន​ត្រូវ​បាន​អនុញ្ញាត​​ឲ្យ​ចូល​ដំណើរការ រហូត​ដល់​អ្នក​ប្រើ​"
+"នៅ​លើ​ម៉ាស៊ីន​យល់ព្រម​​ការ​តភ្ជាប់​សិន ។ ផ្ដល់​បាន​អនុសាសន៍​ នៅ​ពេល​ចូល​ដំណើរការ​មិន​ត្រូវ​ការពារ​ពាក្យសម្ងាត់​ ។"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:5
+msgid "Only allow remote users to view the desktop"
+msgstr "អនុញ្ញាត​ឲ្យ​តែ​អ្នក​ប្រើ​ពី​ចម្ងាយ​ប៉ុណ្ណោះ​​ដែល​អាច​មើល​ផ្ទៃតុ​បាន"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:6
+msgid ""
+"If true, remote users accessing the desktop are only allowed to view the "
+"desktop. Remote users will not be able to use the mouse or keyboard."
+msgstr ""
+"ប្រសិនបើ​ពិត អ្នក​ប្រើ​ដែល​ចូល​ដំណើរការ​ផ្ទៃតុ​ពី​ចម្ងាយ​មិន​ត្រូវ​បាន​អនុញ្ញាត​ឲ្យ​មើល​ផ្ទៃ​តុ​បាន​ទេ ។ អ្នក​ប្រើ​ពី​"
+"ចម្ងាយ​នឹង​មិន​អាច​ប្រើ​កណ្ដុរ ឬ​ក្ដារ​ចុច​បាន​ទេ ។"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:7
+msgid "Network interface for listening"
+msgstr "ចំណុច​ប្រទាក់​បណ្ដាញ​សម្រាប់​ស្ដាប់"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:8
+msgid ""
+"If not set, the server will listen on all network interfaces.\n"
+"\n"
+"Set this if you want that accept connections only from some specific network "
+"interface. eg: eth0, wifi0, lo, ..."
+msgstr ""
+"ប្រសិនបើ​មិន​កំណត់​ទេ ម៉ាស៊ីន​បម្រើ​នឹង​ប្រើ​ចំណុច​ប្រទាក់​បណ្ដាញ​ទាំងអស់ ។\n"
+" \n"
+"កំណត់​វា​ប្រសិនបើ​អ្នក​ចង់​ឲ្យ​វា​ព្រម​ទទួល​ការ​តភ្ជាប់​តែ​មកពី​ចំណុចប្រទាក់​បណ្ដាញ​ជាក់លាក់​ខ្លះ​​ប៉ុណ្ណោះ ។ ឧ. "
+"eth0, wifi0, lo, ..."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:11
+msgid "Listen on an alternative port"
+msgstr "ប្រើ​ច្រក​ឆ្លាស់"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:12
+msgid ""
+"If true, the server will listen to another port, instead of the default "
+"(5900). The port must be specified in the 'alternative-port' key."
+msgstr ""
+"ប្រសិនបើ​ពិត ម៉ាស៊ីន​បម្រើ​នឹង​ប្រើ​ច្រក​ផ្សេងទៀត​ជំនួស​ឲ្យ​ច្រក​លំនាំដើម (៥៩០០) ។ ច្រក​ត្រូវតែ​បាន​បញ្ជាក់​នៅ​ក្នុង​"
+"ពាក្យ​គន្លឹះ 'alternative-port' ។"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:13
+msgid "Alternative port number"
+msgstr "លេខ​ច្រក​ជំនួស"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:14
+msgid ""
+"The port which the server will listen to if the 'use-alternative-port' key "
+"is set to true. Valid values are in the range from 5000 to 50000."
+msgstr ""
+"ច្រក​ដែល​ម៉ាស៊ីន​បម្រើ​នឹង​ប្រើ​ប្រសិនបើ​ពាក្យ​គន្លឹះ 'use-alternative-port' ត្រូវ​បាន​កំណត់​ទៅ​ពិត ។ តម្លៃ​"
+"ដែល​ត្រឹមត្រូវ​គឺ​នៅ​ចន្លោះ​ពី ៥០០០ ទៅ ៥០០០០ ។"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:15
+msgid "Require encryption"
+msgstr "ទាមទារការ​អ៊ិនគ្រីប"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:16
+msgid ""
+"If true, remote users accessing the desktop are required to support "
+"encryption. It is highly recommended that you use a client which supports "
+"encryption unless the intervening network is trusted."
+msgstr ""
+"ប្រសិនបើ​ពិត ផ្ទៃតុ​ការ​ចូល​ដំណើរការ​អ្នកប្រើ​ពី​ចម្ងាយ​ត្រូវ​បាន​ទាមទារ​ដើម្បី​គាំទ្រ​ការ​អ៊ិនគ្រីប ។ វា​ត្រូវ​បាន​"
+"ផ្ដល់​អនុសាសន៍​ដ៏​ខ្ពង់ខ្ពស់​ថា អ្នក​គួរតែ​ប្រើ​ម៉ាស៊ីន​ភ្ញៀវ​ដែល​គាំទ្រ​ការ​អ៊ិនគ្រីប បើមិនដូច្នោះទេ បណ្ដាញ​"
+"អន្តរាគមន៍​គឺ​ត្រូវ​បាន​ទុកចិត្ត ។"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:17
+msgid "Allowed authentication methods"
+msgstr "វិធីសាស្ត្រ​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​ដែល​បាន​អនុញ្ញាត"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:18
+msgid ""
+"Lists the authentication methods with which remote users may access the "
+"desktop.\n"
+"\n"
+"There are two possible authentication methods; \"vnc\" causes the remote "
+"user to be prompted for a password (the password is specified by the vnc-"
+"password key) before connecting and \"none\" which allows any remote user to "
+"connect."
+msgstr ""
+"រាយ​វិធីសាស្ត្រ​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​ជាមួយ​អ្នកប្រើ​ពី​ចម្ងាយ​ណាមួយ​ដែល​អាច​ចូល​ដំណើរការ​ផ្ទៃតុ​បាន ។\n"
+"\n"
+"មាន​វិធីសាស្ត្រ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​ពីរ​ដែល​អាច​ប្រើ​បាន​គឺ ៖ \"vnc\" ធ្វើឲ្យ​អ្នកប្រើ​ពី​ចម្ងាយ​​ទទួល​ប្រអប់​"
+"ពាក្យសម្ងាត់ (ពាក្យសម្ងាត់​ត្រូវ​បាន​បញ្ជាក់​ដោយ vnc-password key) នៅ​មុន​ពេល​តភ្ជាប់ និង \"none"
+"\" គឺ​អនុញ្ញាត​ឲ្យ​អ្នកប្រើ​ពី​ចម្ងាយ​ទាំងអស់​តភ្ជាប់ ។"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:21
+msgid "Password required for \"vnc\" authentication"
+msgstr "ទាមទារ​ពាក្យសម្ងាត់​សម្រាប់​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​របស់ \"vnc\""
+
+#: ../common/org.gnome.Vino.gschema.xml.h:22
+msgid ""
+"The password which the remote user will be prompted for if the \"vnc\" "
+"authentication method is used. The password specified by the key is base64 "
+"encoded.\n"
+"\n"
+"The special value of 'keyring' (which is not valid base64) means that the "
+"password is stored in the GNOME keyring."
+msgstr ""
+"ពាក្យសម្ងាត់​ដែល​អ្នកប្រើ​ពី​ចម្ងាយ​នឹង​ត្រូវ​ទទួល ប្រសិនបើ​វិធីសាស្ត្រ​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ \"vnc\" "
+"ត្រូវ​បាន​ប្រើ ។ ពាក្យសម្ងាត់​ត្រូវ​បាន​បញ្ជាក់​ដោយ​ពាក្យគន្លឹះ​គឺ base64 ដែល​បាន​អ៊ិនកូដ ។\n"
+"\n"
+"តម្លៃ​ពិសេស​របស់ 'keyring' (ដែល​មិនមែន​ជា base64 ​ត្រឹមត្រូវ) មានន័យថា​ពាក្យសម្ងាត់​ត្រូវ​បាន​ផ្ទុក​នៅ​"
+"ក្នុង GNOME keyring ។"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:25
+msgid "E-mail address to which the remote desktop URL should be sent"
+msgstr "អាសយដ្ឋាន​អ៊ីមែល​ដែល​ URL ផ្ទៃតុ​ពី​ចម្ងាយ​គួរ​ផ្ញើ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:26
+msgid ""
+"This key specifies the e-mail address to which the remote desktop URL should "
+"be sent if the user clicks on the URL in the Desktop Sharing preferences "
+"dialog."
+msgstr ""
+"ពាក្យ​គន្លឹះ​នេះ​បញ្ជាក់​​អំពី​អាសយដ្ឋាន​អ៊ីមែល​ដែល​ URL ផ្ទៃតុ​ពី​ចម្ងាយ​គួរ​ផ្ញើ ប្រសិនបើ​អ្នកប្រើ​ចុច​លើ URL នៅ​"
+"ក្នុង​ប្រអប់​ចំណូលចិត្ត​ការ​ចែករំលែក​ផ្ទៃតុ ។"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:27
+msgid "Lock the screen when last user disconnect"
+msgstr "ចាក់សោ​អេក្រង់​នៅ​ពេល​ដែល​អ្នកប្រើ​ចុងក្រោយ​​ផ្ដាច់"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:28
+msgid "If true, screen will be locked after the last remote client disconnect."
+msgstr "ប្រសិនបើ​ពិត អេក្រង់​នឹង​ត្រូវ​បាន​ចាក់សោ​បន្ទាប់ពី​ម៉ាស៊ីន​ភ្ញៀវ​ពី​ចម្ងាយ​ចុងក្រោយ​ផ្ដាច់ ។"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:29
+msgid "When the status icon should be shown"
+msgstr "នៅ​ពេល​ដែល​រូបតំណាង​ស្ថានភាព​គួរ​ត្រូវ​បាន​បង្ហាញ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:30
+msgid ""
+"This key controls the behavior of the status icon. There are three options: "
+"\"always\" - The icon will be always there; \"client\" - You will see the "
+"icon only when there is someone connected, this is the default behavior; "
+"\"never\" - Never shows the icon."
+msgstr ""
+"ពាក្យ​គន្លឹះ​នេះ​គ្រប់គ្រង​ឥរិយាបថ​របស់​រូបតំណាង​ស្ថានភាព ។ មាន​ជម្រើស​បី​គឺ ៖ \"ជានិច្ច\" រូបតំណាង​គឺ​បង្ហាញ​"
+"ជានិច្ច \"ម៉ាស៊ីន​ភ្ញៀវ\" អ្នក​នឹង​មើល​ឃើញ​រូបតំណាង​តែ​នៅ​ពេល​ដែល​មាន​នរណា​ម្នាក់​បាន​តភ្ជាប់​ប៉ុណ្ណោះ (នេះ​ជា​"
+"ឥរិយាបថ​លំនាំដើម) \"កុំ\" រូបតំណាង​មិន​ត្រូវ​បាន​បង្ហាញ​ទេ ។"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:31
+msgid "When true, disable the background on receive valid session"
+msgstr "ប្រសិនបើ​ពិត វា​នឹង​បិទ​ផ្ទៃ​ខាងក្រោយ​នៅ​ពេល​ទទួល​សម័យ​ត្រឹមត្រូវ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:32
+msgid "Whether we should use UPNP to forward the port in routers"
+msgstr "ថា​តើ​យើង​ត្រូវ​ប្រើ UPNP ដើម្បី​បញ្ជូន​បន្ត​ច្រក​នៅ​ក្នុង​រ៉ោតទ័រ​ដែរ​ឬទេ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:33
+msgid ""
+"If true, we will use UPNP protocol to automatically forward the port used by "
+"vino in the router."
+msgstr ""
+"ប្រសិនបើ​ពិត យើង​នឹង​ប្រើ​ពិធីការ UPNP ដើម្បី​បញ្ជូន​បន្ត​ដោយ​ស្វ័យប្រវត្តិ​នូវ​ច្រក​ដែល​បាន​ប្រើ​ដោយ vino នៅ​"
+"ក្នុង​រ៉ោតទ័រ ។"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:34
+msgid "Whether we should disable the XDamage extension of X.org"
+msgstr "ថា​តើ​យើង​គួរ​បិទ​ផ្នែក​បន្ថែម XDamage របស់ X.org ដែរ​ឬទេ"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:35
+msgid ""
+"If true, we will not use the XDamage extension of X.org. This extension does "
+"not work properly on some video drivers when using 3D effects. Disabling it "
+"will make vino work on these environments with a slower rendering as side "
+"effect."
+msgstr ""
+"ប្រសិនបើ​ពិត យើង​នឹង​មិន​ប្រើ​ផ្នែក​បន្ថែម XDamage របស់ X.org ទេ ។ ផ្នែក​បន្ថែម​នេះ​មិន​ដំណើរការ​ល្អ​ទេ​"
+"សម្រាប់​កម្មវិធី​បញ្ជា​វីដេអូ​មួយ​ចំនួន​នៅ​ពេល​ប្រើ​បែបផែន 3D ។ ការ​បិទ​វា នឹង​ធ្វើឲ្យ vino ដំណើរការ​នៅ​លើ​"
+"បរិស្ថាន​ទាំងនេះ​ដោយ​ការ​បង្ហាញ​យឺតៗ​ដូចជា​បែបផែន​ចំហៀង ។"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:36
+msgid "Notify on connect"
+msgstr "ជូនដំណឹង​នៅ​ពេល​តភ្ជាប់"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:37
+msgid "If true, we will notify, when the user connects to the system."
+msgstr "ប្រសិនបើ​ពិត យើង​នឹង​ជូន​ដំណឹង នៅ​ពេល​មាន​អ្នកប្រើ​តភ្ជាប់​ទៅកាន់​ប្រព័ន្ធ ។"
+
+#: ../capplet/vino-preferences.ui.h:1
+msgid "Desktop Sharing Preferences"
+msgstr "ចំណូលចិត្ត​ការ​ចែករំលែក​ផ្ទៃតុ"
+
+#: ../capplet/vino-preferences.ui.h:2
+msgid "Sharing"
+msgstr "ការចែករំលែក"
+
+#: ../capplet/vino-preferences.ui.h:3
+msgid "Some of these preferences are locked down"
+msgstr "ចំណូលចិត្ត​មួយ​ចំនួន​ត្រូវ​បាន​ចាក់សោ"
+
+#: ../capplet/vino-preferences.ui.h:4
+msgid "Allow other users to _view your desktop"
+msgstr "អនុញ្ញាត​ឲ្យ​អ្នកប្រើ​ផ្សេងទៀត​​មើល​ផ្ទៃតុ​របស់​អ្នក"
+
+#: ../capplet/vino-preferences.ui.h:5
+msgid "Your desktop will be shared"
+msgstr "ផ្ទៃតុរបស់អ្នកនឹងត្រូវ​បានចែករំលែក"
+
+#: ../capplet/vino-preferences.ui.h:6
+msgid "_Allow other users to control your desktop"
+msgstr "អនុញ្ញាត​ឲ្យ​អ្នកប្រើ​ផ្សេងទៀត​គ្រប់គ្រង​ផ្ទៃតុ​របស់​អ្នក"
+
+#: ../capplet/vino-preferences.ui.h:7
+msgid "Remote users are able to control your mouse and keyboard"
+msgstr "អ្នកប្រើ​ពី​ចម្ងាយ​គឺ​អាច​គ្រប់គ្រង​កណ្ដុរ និង​ក្ដារចុច​របស់​អ្នក"
+
+#: ../capplet/vino-preferences.ui.h:8
+msgid "Security"
+msgstr "សុវត្ថិភាព"
+
+#: ../capplet/vino-preferences.ui.h:9
+msgid "_You must confirm each access to this machine"
+msgstr "អ្នក​ត្រូវតែ​អះអាង​ការ​ចូល​ដំណើរការ​នីមួយ​ទៅកាន់​ម៉ាស៊ីន​នេះ"
+
+#: ../capplet/vino-preferences.ui.h:10
+msgid "_Require the user to enter this password:"
+msgstr "ទាមទារ​ឲ្យ​អ្នកប្រើ​បញ្ចូល​ពាក្យសម្ងាត់​នេះ ។"
+
+#: ../capplet/vino-preferences.ui.h:11
+msgid "Automatically _configure UPnP router to open and forward ports"
+msgstr "កំណត់​រចនា​សម្ព័ន្ធ​រ៉ោតទ័រ UPnP ដោយ​ស្វ័យប្រវត្តិ​ទៅកាន់​ច្រក​បើក និង​ច្រក​បញ្ជូន​បន្ត"
+
+#: ../capplet/vino-preferences.ui.h:12
+msgid "The router must have the UPnP feature enabled"
+msgstr "រ៉ោតទ័រ​ត្រូវតែ​បើក​លក្ខណៈ UPnP"
+
+#: ../capplet/vino-preferences.ui.h:13
+msgid "Show Notification Area Icon"
+msgstr "បង្ហាញ​រូបតំណាង​ផ្ទៃ​ការ​ជូនដំណឹង"
+
+#: ../capplet/vino-preferences.ui.h:14
+msgid "Al_ways"
+msgstr "ជានិច្ច"
+
+#: ../capplet/vino-preferences.ui.h:15
+msgid "_Only when someone is connected"
+msgstr "នៅ​ពេល​ដែល​មាន​មនុស្ស​បាន​តភ្ជាប់​ប៉ុណ្ណោះ"
+
+#: ../capplet/vino-preferences.ui.h:16
+msgid "_Never"
+msgstr "កុំ"
+
+#: ../server/smclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "ឯកសារ​មិនមែន​ជា​ .desktop ត្រឹមត្រូវ​ទេ"
+
+#. translators: 'Version' is from a desktop file, and
+#. * should not be translated. '%s' would probably be a
+#. * version number.
+#: ../server/smclient/eggdesktopfile.c:191
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "មិន​ស្គាល់​ឯកសារ​ផ្ទៃតុ​កំណែ '%s'"
+
+#: ../server/smclient/eggdesktopfile.c:974
+#, c-format
+msgid "Starting %s"
+msgstr "កំពុងចាប់ផ្តើម %s"
+
+#: ../server/smclient/eggdesktopfile.c:1116
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "កម្មវិធី​មិន​ព្រម​ទទួល​ឯកសារ​នៅ​លើ​បន្ទាត់​ពាក្យ​បញ្ជា"
+
+#: ../server/smclient/eggdesktopfile.c:1184
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "មិន​ស្គាល់​ជម្រើស​បើក​ដំណើរការ ៖ %d"
+
+#. translators: The 'Type=Link' string is found in a
+#. * desktop file, and should not be translated.
+#: ../server/smclient/eggdesktopfile.c:1391
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "មិន​អាច​បញ្ជូន​ឯកសារ URIs ទៅកាន់​ធាតុ​ផ្ទៃតុ 'Type=Link'"
+
+#: ../server/smclient/eggdesktopfile.c:1412
+#, c-format
+msgid "Not a launchable item"
+msgstr "មិនមែន​ជា​ធាតុ​ដែល​អាច​បើក​ដំណើរការ​បាន​ទេ"
+
+#: ../server/smclient/eggsmclient.c:226
+msgid "Disable connection to session manager"
+msgstr "ផ្ដាច់​ការ​តភ្ជាប់​ទៅកាន់​កម្មវិធី​គ្រប់គ្រង​សម័យ"
+
+#: ../server/smclient/eggsmclient.c:229
+msgid "Specify file containing saved configuration"
+msgstr "បញ្ជាក់​ឯកសារ​ដែល​មាន​ការ​កំណត់​រចនាសម្ព័ន្ធ​បាន​រក្សាទុក"
+
+#: ../server/smclient/eggsmclient.c:229
+msgid "FILE"
+msgstr "ឯកសារ"
+
+#: ../server/smclient/eggsmclient.c:232
+msgid "Specify session management ID"
+msgstr "បញ្ជាក់​លេខ​សម្គាល់​ការ​គ្រប់គ្រង​សម័យ"
+
+#: ../server/smclient/eggsmclient.c:232
+msgid "ID"
+msgstr "លេខ​សម្គាល់"
+
+#: ../server/smclient/eggsmclient.c:253
+msgid "Session management options:"
+msgstr "ជម្រើស​ការ​គ្រប់គ្រង​សម័យ ៖"
+
+#: ../server/smclient/eggsmclient.c:254
+msgid "Show session management options"
+msgstr "បង្ហាញ​ជម្រើស​ការ​គ្រប់គ្រង​សម័យ"
+
+#: ../server/vino-main.c:202
+msgid ""
+"Your XServer does not support the XTest extension - remote desktop access "
+"will be view-only\n"
+msgstr ""
+"XServer របស់​អ្នក​មិន​គាំទ្រ​ផ្នែក​បន្ថែម XTest - ការ​ចូល​ដំណើរការ​ផ្ទៃតុ​ពី​ចម្ងាយ​នឹង​បានតែ​មើល​ប៉ុណ្ណោះ\n"
+
+#. Tube mode uses Telepathy's Tubes to share a user's desktop directly
+#. * with another IM contact. http://telepathy.freedesktop.org/wiki/Tubes
+#.
+#: ../server/vino-main.c:301
+msgid "Start in tube mode, for the ‘Share my Desktop’ feature"
+msgstr "ចាប់ផ្ដើម​ក្នុង​របៀប​បំពង់ សម្រាប់​លក្ខណៈ ‘ការ​ចែករំលែក​ផ្ទៃតុ​របស់​ខ្ញុំ’"
+
+#: ../server/vino-main.c:307
+msgid "- VNC Server for GNOME"
+msgstr "- ម៉ាស៊ីន​បម្រើ VNC សម្រាប់ GNOME"
+
+#: ../server/vino-main.c:315
+msgid ""
+"Run 'vino-server --help' to see a full list of available command line options"
+msgstr ""
+"ដំណើរការ 'vino-server --help' ដើម្បី​មើល​បញ្ជី​ពេញលេញ​របស់​ជម្រើស​បន្ទាត់​ពាក្យ​បញ្ជា​ដែល​មាន"
+
+#: ../server/vino-main.c:336
+msgid "GNOME Desktop Sharing"
+msgstr "ការ​ចែករំលែក​ផ្ទៃតុ GNOME"
+
+#.
+#. * Translators: translate "vino-mdns:showusername" to
+#. * "1" if "%s's remote desktop" doesn't make sense in
+#. * your language.
+#.
+#: ../server/vino-mdns.c:62
+msgid "vino-mdns:showusername"
+msgstr "vino-mdns:showusername"
+
+#.
+#. * Translators: this string is used ONLY if you
+#. * translated "vino-mdns:showusername" to anything
+#. * other than "1"
+#.
+#: ../server/vino-mdns.c:74
+#, c-format
+msgid "%s's remote desktop on %s"
+msgstr "ផ្ទៃតុ​ពី​ចម្ងាយ​របស់ %s នៅ​លើ %s"
+
+#: ../server/vino-prefs.c:111
+#, c-format
+msgid "Received signal %d, exiting."
+msgstr "បាន​ទទួល​សញ្ញា %d នៅ​ពេល​ចេញ ។"
+
+#: ../server/vino-prompt.c:141
+msgid "Screen"
+msgstr "អេក្រង់"
+
+#: ../server/vino-prompt.c:142
+msgid "The screen on which to display the prompt"
+msgstr "អេក្រង់​ដែល​ត្រូវ​បង្ហាញ​​ប្រអប់​បញ្ចូល"
+
+#: ../server/vino-prompt.c:345
+#, c-format
+msgid ""
+"A user on the computer '%s' is trying to remotely view or control your "
+"desktop."
+msgstr "អ្នកប្រើ​នៅ​លើ​កុំព្យូទ័រ '%s' កំពុង​ព្យាយាម​មើល ឬ​គ្រប់គ្រង​ផ្ទៃតុ​របស់​អ្នក​ពី​ចម្ងាយ ។"
+
+#: ../server/vino-prompt.ui.h:1
+msgid "Question"
+msgstr "សំណួរ"
+
+#: ../server/vino-prompt.ui.h:2
+msgid "Another user is trying to view your desktop."
+msgstr "មាន​អ្នកប្រើ​ផ្សេងទៀត​កំពុង​ព្យាយាម​មើល​ផ្ទៃតុ​របស់​អ្នក ។"
+
+#: ../server/vino-prompt.ui.h:3
+msgid ""
+"A user on another computer is trying to remotely view or control your "
+"desktop."
+msgstr "អ្នកប្រើ​នៅ​លើ​កុំព្យូទ័រ​ផ្សេងទៀត​កំពុង​ព្យាយាម​មើល ឬ​គ្រប់គ្រង​ផ្ទៃតុ​របស់​អ្នក​ពី​ចម្ងាយ ។"
+
+#: ../server/vino-prompt.ui.h:4
+msgid "Do you want to allow them to do so?"
+msgstr "តើ​អ្នក​ចង់​អនុញ្ញាត​ឲ្យ​ពួកគេ​ធ្វើ​ដូច្នេះ​ដែរ​ឬទេ ?"
+
+#: ../server/vino-prompt.ui.h:5 ../server/vino-util.c:90
+msgid "_Refuse"
+msgstr "បដិសេធ"
+
+#: ../server/vino-prompt.ui.h:6 ../server/vino-util.c:89
+msgid "_Allow"
+msgstr "អនុញ្ញាត"
+
+#: ../server/vino-server.c:162 ../server/vino-server.c:185
+#, c-format
+msgid "Failed to open connection to bus: %s\n"
+msgstr "បាន​បរាជ័យ​ក្នុង​បើក​ការ​តភ្ជាប់​ទៅកាន់​ខ្សែ​បញ្ជូន ៖ %s\n"
+
+#: ../server/vino-server.desktop.in.in.h:2
+msgid "GNOME Desktop Sharing Server"
+msgstr "ម៉ាស៊ីន​បម្រើ​ការ​ចែករំលែក​ផ្ទៃតុ​របស់ GNOME"
+
+#: ../server/vino-status-icon.c:103 ../server/vino-status-tube-icon.c:96
+msgid "Desktop sharing is enabled"
+msgstr "បាន​បើក​ការ​ចែករំលែក​ផ្ទៃតុ"
+
+#: ../server/vino-status-icon.c:111
+#, c-format
+msgid "One person is viewing your desktop"
+msgid_plural "%d people are viewing your desktop"
+msgstr[0] "មាន​មនុស្ស​ចំនួន %d កំពុង​មើល​ផ្ទៃតុ​របស់​អ្នក"
+
+#: ../server/vino-status-icon.c:212 ../server/vino-status-tube-icon.c:180
+msgid "Error displaying preferences"
+msgstr "មាន​កំហុស​ក្នុង​ការ​បង្ហាញ​ចំណូលចិត្ត"
+
+#: ../server/vino-status-icon.c:234 ../server/vino-status-tube-icon.c:200
+msgid "Error displaying help"
+msgstr "មាន​កំហុស​ក្នុង​ការ​បង្ហាញ​ជំនួយ"
+
+#: ../server/vino-status-icon.c:267
+msgid ""
+"Licensed under the GNU General Public License Version 2\n"
+"\n"
+"Vino is free software; you can redistribute it and/or\n"
+"modify it under the terms of the GNU General Public License\n"
+"as published by the Free Software Foundation; either version 2\n"
+"of the License, or (at your option) any later version.\n"
+"\n"
+"Vino is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n"
+"02110-1301, USA.\n"
+msgstr ""
+"បាន​ផ្ដល់​អាជ្ញាប័ណ្ណ​ក្រោម​កិច្ច​ព្រមព្រៀង​អាជ្ញាប័ណ្ណ​សាធារណៈ​ទូទៅ GNU កំណែ ២\n"
+"\n"
+"Vino គឺជា​កម្មវិធី​ឥត​បង់​ថ្លៃ​ដែល​អ្នក​អាច​ចែកចាយ ឬ\n"
+"កែប្រែ​វា​ឡើងវិញ​បាន​ក្រោម​លក្ខខ័ណ្ឌ​នៃ​កិច្ច​​ព្រមព្រៀង​អាជ្ញាប័ណ្ណ​សាធារណៈ​ទូទៅ GNU\n"
+"ដូច​ដែល​បាន​បោះពុម្ពផ្សាយ​ដោយ​មូលនិធិ​កម្មវិធី​ឥត​បង់​ថ្លៃ កំណែ ២\n"
+"នៃ​អាជ្ញាប័ណ្ណ ឬ (នៅ​ជម្រើស​របស់​អ្នក) ក្នុង​កំណែ​ក្រោយ ។\n"
+"\n"
+"Vino ត្រូវ​បាន​ចែកចាយ​ដើម្បី​ជា​ប្រយោជន៍​ទូទៅ\n"
+"ប៉ុន្តែ​ដោយ​គ្មាន​ការ​ធានា​ទេ សូម្បីតែ​ការ​ធានា​ចំពោះ\n"
+"ការ​ធ្វើ​ពាណិជ្ជកម្ម ឬ​គោលបំណង​ជាក់លាក់​ណាមួយ​ក៏ដោយ ។ សូម​មើល\n"
+"អាជ្ញាប័ណ្ណ​សាធារណៈ​ទូទៅ GNU សម្រាប់​សេចក្ដី​លម្អិត ។\n"
+"\n"
+"អ្នក​គួរតែ​បាន​ទទួល​ច្បាប់​ចម្លង​នៃ​អាជ្ញាប័ណ្ណ​សាធារណៈ​ទូទៅ GNU\n"
+"ដែល​ជាប់​មក​ជាមួយ​កម្មវិធី​នេះ ប្រសិនបើ​មិន​បាន​ទទួល​ទេ សូម​សរសេរ​ទៅកាន់ Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n"
+"02110-1301, USA ។\n"
+
+#. Translators comment: put your own name here to appear in the about dialog.
+#: ../server/vino-status-icon.c:282
+msgid "translator-credits"
+msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា, ចាន់ សម្បត្តិរតនៈ, សុខ សុភា"
+
+#: ../server/vino-status-icon.c:288
+msgid "Share your desktop with other users"
+msgstr "ចែករំលែក​ផ្ទៃតុ​របស់​អ្នក​ជាមួយ​អ្នកប្រើ​ផ្សេងទៀត"
+
+#: ../server/vino-status-icon.c:355 ../server/vino-status-tube-icon.c:232
+#, c-format
+msgid "Are you sure you want to disconnect '%s'?"
+msgstr "តើ​អ្នក​ពិតជា​ចង់​ផ្ដាច់​ការ​តភ្ជាប់ '%s' មែន​ឬ ?"
+
+#: ../server/vino-status-icon.c:358
+#, c-format
+msgid "The remote user from '%s' will be disconnected. Are you sure?"
+msgstr "អ្នកប្រើ​ពី​ចម្ងាយ​នៃ '%s' នឹង​ត្រូវ​បាន​ផ្ដាច់ ។ តើ​អ្នក​ពិតជា​ចង់​ផ្ដាច់​មែន​ឬ ?"
+
+#: ../server/vino-status-icon.c:364
+msgid "Are you sure you want to disconnect all clients?"
+msgstr "តើ​អ្នក​ពិតជា​ចង់​ផ្ដាច់​ម៉ាស៊ីន​ភ្ញៀវ​ទាំងអស់​មែន​ឬ ?"
+
+#: ../server/vino-status-icon.c:366
+msgid "All remote users will be disconnected. Are you sure?"
+msgstr "អ្នកប្រើ​ពី​ចម្ងាយ​ទាំងអស់​នឹង​ត្រូវ​បាន​ផ្ដាច់ ។ តើ​អ្នក​ពិតជា​ចង់​ផ្ដាច់​មែន​ឬ ?"
+
+#: ../server/vino-status-icon.c:378 ../server/vino-status-tube-icon.c:246
+msgid "Disconnect"
+msgstr "ផ្ដាច់"
+
+#: ../server/vino-status-icon.c:404 ../server/vino-status-tube-icon.c:271
+msgid "_Preferences"
+msgstr "ចំណូលចិត្ត"
+
+#: ../server/vino-status-icon.c:419
+msgid "Disconnect all"
+msgstr "ផ្ដាច់​ទាំងអស់"
+
+#. Translators: %s is a hostname
+#. Translators: %s is the alias of the telepathy contact
+#: ../server/vino-status-icon.c:443 ../server/vino-status-tube-icon.c:284
+#, c-format
+msgid "Disconnect %s"
+msgstr "ផ្តាច់ %s"
+
+#: ../server/vino-status-icon.c:464 ../server/vino-status-tube-icon.c:303
+msgid "_Help"
+msgstr "ជំនួយ"
+
+#: ../server/vino-status-icon.c:472
+msgid "_About"
+msgstr "អំពី"
+
+#: ../server/vino-status-icon.c:605 ../server/vino-status-tube-icon.c:400
+#, c-format
+msgid "Error initializing libnotify\n"
+msgstr "កំហុស​ក្នុង​ការ​ចាប់ផ្ដើម libnotify\n"
+
+#. Translators: %s is a hostname
+#: ../server/vino-status-icon.c:626
+msgid "Another user is viewing your desktop"
+msgstr "មាន​អ្នកប្រើ​ផ្សេងទៀត​កំពុង​មើល​ផ្ទៃតុ​របស់​អ្នក"
+
+#: ../server/vino-status-icon.c:628
+#, c-format
+msgid "A user on the computer '%s' is remotely viewing your desktop."
+msgstr "អ្នកប្រើ​នៅ​លើ​កុំព្យូទ័រ '%s' កំពុង​មើល​ផ្ទៃតុ​របស់​អ្នក​ពី​ចម្ងាយ ។"
+
+#. Translators: %s is a hostname
+#: ../server/vino-status-icon.c:634
+msgid "Another user is controlling your desktop"
+msgstr "មាន​អ្នកប្រើ​ផ្សេងទៀត​កំពុង​គ្រប់គ្រង​ផ្ទៃតុ​របស់​អ្នក"
+
+#: ../server/vino-status-icon.c:636
+#, c-format
+msgid "A user on the computer '%s' is remotely controlling your desktop."
+msgstr "អ្នកប្រើ​នៅ​លើ​កុំព្យូទ័រ '%s' កំពុង​គ្រប់គ្រង​ផ្ទៃតុ​របស់​អ្នក​ពី​ចម្ងាយ ។"
+
+#: ../server/vino-status-icon.c:664 ../server/vino-status-tube-icon.c:437
+#, c-format
+msgid "Error while displaying notification bubble: %s\n"
+msgstr "មាន​កំហុស​នៅ​ពេល​បង្ហាញ​ការ​ជូនដំណឹង​ពពុះ ៖ %s\n"
+
+#: ../server/vino-status-tube-icon.c:235
+#, c-format
+msgid "The remote user '%s' will be disconnected. Are you sure?"
+msgstr "អ្នកប្រើ​ពី​ចម្ងាយ '%s' នឹង​ត្រូវ​បាន​ផ្ដាច់ ។ តើ​អ្នក​ពិតជា​ចង់​ផ្ដាច់​មែន​ឬ ?"
+
+#: ../server/vino-tube-server.c:220 ../server/vino-tube-server.c:249
+msgid "Share my desktop information"
+msgstr "ចែករំលែកព័ត៌មាន​​ផ្ទៃតុ​របស់​ខ្ញុំ"
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:224
+#, c-format
+msgid "'%s' rejected the desktop sharing invitation."
+msgstr "'%s' បាន​បដិសេធ​ការ​អញ្ជើញ​ចូលរួម​ចែករំលែក​ផ្ទៃតុ ។"
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:228
+#, c-format
+msgid "'%s' disconnected"
+msgstr "'%s' បានផ្តាច់"
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:255
+#, c-format
+msgid "'%s' is remotely controlling your desktop."
+msgstr "'%s' កំពុង​គ្រប់គ្រង​ផ្ទៃតុ​របស់​អ្នក​ពី​ចម្ងាយ ។"
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:264
+#, c-format
+msgid "Waiting for '%s' to connect to the screen."
+msgstr "កំពុង​រង់ចាំ '%s' ដើម្បី​តភ្ជាប់​អេក្រង់ ។"
+
+#: ../server/vino-util.c:140
+msgid "An error has occurred:"
+msgstr "កំហុស​បាន​កើតឡើង ៖"
+
+#: ../tools/vino-passwd.c:108
+#, c-format
+msgid "Cancelled"
+msgstr "បានបោះបង់"
+
+#: ../tools/vino-passwd.c:115
+#, c-format
+msgid ""
+"ERROR: Maximum length of password is %d character. Please, re-enter the "
+"password."
+msgid_plural ""
+"ERROR: Maximum length of password is %d characters. Please, re-enter the "
+"password."
+msgstr[0] "កំហុស ៖ ប្រវែង​ពាក្យសម្ងាត់​អតិបរមា​គឺ %d តួអក្សរ ។ សូម​បញ្ចូល​ពាក្យសម្ងាត់​ឡើងវិញ ។"
+
+#: ../tools/vino-passwd.c:149
+#, c-format
+msgid "Changing Vino password.\n"
+msgstr "ការ​ផ្លាស់ប្ដូរ​ពាក្យសម្ងាត់​របស់ Vino ។\n"
+
+#: ../tools/vino-passwd.c:151
+msgid "Enter new Vino password: "
+msgstr "បញ្ចូល​ពាក្យសម្ងាត់ Vino ថ្មី ៖"
+
+#: ../tools/vino-passwd.c:154
+msgid "Retype new Vino password: "
+msgstr "វាយ​ពាក្យសម្ងាត់ Vino ថ្មី​ឡើងវិញ ៖"
+
+#: ../tools/vino-passwd.c:160
+#, c-format
+msgid "vino-passwd: password updated successfully.\n"
+msgstr "vino-passwd: បាន​ធ្វើ​បច្ចុប្បន្នភាព​ពាក្យសម្ងាត់​ដោយ​ជោគជ័យ ។\n"
+
+#: ../tools/vino-passwd.c:165
+#, c-format
+msgid "Sorry, passwords do not match.\n"
+msgstr "សុំទោស ! ពាក្យសម្ងាត់​មិន​ផ្គូផ្គង​ទេ ។\n"
+
+#: ../tools/vino-passwd.c:166
+#, c-format
+msgid "vino-passwd: password unchanged.\n"
+msgstr "vino-passwd: មិន​បាន​ប្ដូរ​ពាក្យសម្ងាត់ ។\n"
+
+#: ../tools/vino-passwd.c:182
+msgid "Show Vino version"
+msgstr "បង្ហាញ​កំណែ​របស់ Vino"
+
+#: ../tools/vino-passwd.c:191
+msgid "- Updates Vino password"
+msgstr "- ធ្វើ​បច្ចុប្បន្នភាព​ពាក្យសម្ងាត់​របស់ Vino"
+
+#: ../tools/vino-passwd.c:201
+msgid ""
+"Run 'vino-passwd --help' to see a full list of available command line options"
+msgstr ""
+"ដំណើរការ 'vino-passwd --help' ដើម្បី​មើល​បញ្ជី​ពេញលេញ​របស់​ជម្រើស​បន្ទាត់​ពាក្យ​បញ្ជា​ដែល​មាន"
+
+#: ../tools/vino-passwd.c:208
+#, c-format
+msgid "VINO Version %s\n"
+msgstr "VINO កំណែ %s\n"
+
+#: ../tools/vino-passwd.c:219
+#, c-format
+msgid "ERROR: You do not have enough permissions to change Vino password.\n"
+msgstr "កំហុស ៖ អ្នក​មិន​មាន​សិទ្ធិ​គ្រប់គ្រាន់​ក្នុង​ការ​ប្ដូរ​ពាក្យសម្ងាត់​របស់ Vino ទេ ។\n"

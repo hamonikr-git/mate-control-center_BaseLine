@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="hotkeys" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Možnosti za tipkovne bližnjice.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Tipkovne bližnjice</title>
+
+	<p>Tipkovne bližnjice vam omogočajo dostop do svojih sporočilc in zmožnosti Tomboy od kjerkoli, tudi iz drugih programov na vašem namizju. Tipkovne bližnjice omogočite s pritiskom več tipk na vaši tipkovnici hkrati.</p>
+	
+	<p>Hitre tipke lahko omogočite z odpiranjem <gui>Možnosti Tomboy</gui>, kar storite z desnim miškinim klikom na ikono Tomboy v vašem pultu, opravilni vrstici ali sidrišču in izbiro <gui>Možnosti</gui>. Nato izberite zavihek <gui>Tipkovne bližnjice</gui>. <gui>Možnosti Tomboy</gui> je mogoče nastaviti tudi iz pogovornega okna <gui>Iskanje vseh sporočilc</gui>. V meniju izberite <guiseq><gui>Uredi</gui><gui>Možnosti</gui></guiseq>.</p>	
+	
+	<p>Dejanja, ki jih je mogoče v Tomboyu omogočiti s tipkovnimi bližnjicami so: </p>
+	
+	<list>
+	  <item><p><gui>Pokaži meni sporočilc</gui>: <keyseq><key>Alt</key><key>F12</key></keyseq></p></item>
+	  <item><p><gui>Odpri "Začnite tukaj"</gui>: <keyseq><key>Alt</key><key>F11</key></keyseq></p></item>
+	  <item><p><gui>Ustvari novo sporočilce</gui>: Privzeto onemogočeno. Za ustvarjanje tipkovne bližnjice v to polje vnesite zaporedje tipk.</p></item>
+	  <item><p><gui>Odpri "Iskanje vseh sporočilc"</gui>: Privzeto onemogočeno. Za ustvarjanje tipkovne bližnjice v to polje vnesite zaporedje tipk.</p></item>
+	</list>  
+	    
+ </page>

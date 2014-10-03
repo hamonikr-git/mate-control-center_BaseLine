@@ -1,0 +1,782 @@
+# Translation of vino to Bahasa Indonesia
+# Copyright (C) 2004 THE vino'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the vino package.
+#
+# Mohammad DAMT <mdamt@bisnisweb.com>, 2004, 2006.
+# Dirgita <dirgitadevina@yahoo.co.id>, 2011, 2012.
+# Andika Triwidada <andika@gmail.com>, 2010, 2011, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: vino master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=vino&keywords=I18N+L10N&component=Preferences Dialog\n"
+"POT-Creation-Date: 2013-03-13 22:48+0000\n"
+"PO-Revision-Date: 2013-03-16 06:09+0700\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <gnome@i15n.org>\n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#: ../capplet/vino-message-box.c:55
+#, c-format
+msgid "There was an error showing the URL \"%s\""
+msgstr "Ada kesalahan menampilkan URL \"%s\""
+
+#: ../capplet/vino-preferences.c:245
+#, c-format
+msgid ""
+"There was an error displaying help:\n"
+"%s"
+msgstr ""
+"Ada kesalahan menampilkan bantuan: \n"
+"%s"
+
+#: ../capplet/vino-preferences.c:278
+msgid "Checking the connectivity of this machine..."
+msgstr "Memeriksa ketersambungan mesin ini..."
+
+#: ../capplet/vino-preferences.c:298
+msgid "Your desktop is only reachable over the local network."
+msgstr "Desktop Anda hanya dapat dicapai melalui jaringan lokal."
+
+#: ../capplet/vino-preferences.c:311
+msgid " or "
+msgstr " atau "
+
+#: ../capplet/vino-preferences.c:315
+#, c-format
+msgid "Others can access your computer using the address %s."
+msgstr "Pihak lain dapat mengakses komputer Anda memakai alamat %s."
+
+#: ../capplet/vino-preferences.c:324
+msgid "Nobody can access your desktop."
+msgstr "Tak seorangpun dapat mengakses desktop Anda."
+
+#: ../capplet/vino-preferences.desktop.in.in.h:1
+#: ../server/vino-server.desktop.in.in.h:1
+msgid "Desktop Sharing"
+msgstr "Berbagi Desktop"
+
+#: ../capplet/vino-preferences.desktop.in.in.h:2
+msgid "Choose how other users can remotely view your desktop"
+msgstr "Pilih bagaimana pengguna lain dapat melihat desktop Anda jarak jauh"
+
+#: ../capplet/vino-preferences.ui.h:1
+msgid "Desktop Sharing Preferences"
+msgstr "Preferensi Desktop Jauh"
+
+#: ../capplet/vino-preferences.ui.h:2
+msgid "Sharing"
+msgstr "Berbagi"
+
+#: ../capplet/vino-preferences.ui.h:3
+msgid "Some of these preferences are locked down"
+msgstr "Beberapa preferensi di bawah ini telah dikunci"
+
+#: ../capplet/vino-preferences.ui.h:4
+msgid "Allow other users to _view your desktop"
+msgstr "_Izinkan pengguna lainnya melihat desktop Anda"
+
+#: ../capplet/vino-preferences.ui.h:5
+msgid "Your desktop will be shared"
+msgstr "Desktop Anda akan dipakai bersama"
+
+#: ../capplet/vino-preferences.ui.h:6
+msgid "_Allow other users to control your desktop"
+msgstr "Izink_an pengguna lainnya mengambil alih desktop Anda"
+
+#: ../capplet/vino-preferences.ui.h:7
+msgid "Remote users are able to control your mouse and keyboard"
+msgstr "Pengguna jauh dapat mengendalikan tetikus dan papan tik Anda"
+
+#: ../capplet/vino-preferences.ui.h:8
+msgid "Security"
+msgstr "Keamanan"
+
+#: ../capplet/vino-preferences.ui.h:9
+msgid "_You must confirm each access to this machine"
+msgstr "Anda _mesti mengkonfirmasi setiap akses ke mesin ini"
+
+#: ../capplet/vino-preferences.ui.h:10
+msgid "_Require the user to enter this password:"
+msgstr "Pengguna ha_rus memasukkan sandi:"
+
+#: ../capplet/vino-preferences.ui.h:11
+msgid "Automatically _configure UPnP router to open and forward ports"
+msgstr "Otomatis _menata router UPnP untuk membuka dan meneruskan port"
+
+#: ../capplet/vino-preferences.ui.h:12
+msgid "The router must have the UPnP feature enabled"
+msgstr "Fitur UPnP router mesti diaktifkan"
+
+#: ../capplet/vino-preferences.ui.h:13
+msgid "Show Notification Area Icon"
+msgstr "Tunjukkan Ikon Area Notifikasi"
+
+#: ../capplet/vino-preferences.ui.h:14
+msgid "Al_ways"
+msgstr "S_elalu"
+
+#: ../capplet/vino-preferences.ui.h:15
+msgid "_Only when someone is connected"
+msgstr "Hanya bila ketika sese_orang terhubung"
+
+#: ../capplet/vino-preferences.ui.h:16
+msgid "_Never"
+msgstr "Janga_n Pernah"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:1
+msgid "Enable remote access to the desktop"
+msgstr "Aktifkan akses jarak jauh ke desktop"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:2
+msgid ""
+"If true, allows remote access to the desktop via the RFB protocol. Users on "
+"remote machines may then connect to the desktop using a VNC viewer."
+msgstr ""
+"Jika ya, mengijinkan akses jauh ke desktop melalui protokol RFB. Pengguna "
+"pada komputer jauh dapat menyambung ke desktop dengan menggunakan VNC viewer."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:3
+msgid "Prompt the user before completing a connection"
+msgstr "Menanyakan pengguna sebelum melakukan koneksi"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:4
+msgid ""
+"If true, remote users accessing the desktop are not allowed access until the "
+"user on the host machine approves the connection. Recommended especially "
+"when access is not password protected."
+msgstr ""
+"Jika ya, berarti pengguna jauh yang mengakses desktop tidak diizinkan hingga "
+"pengguna pada komputer host menyetujui koneksi. Disarankan khususnya bila "
+"akses tidak dilindungi sandi."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:5
+msgid "Only allow remote users to view the desktop"
+msgstr "Hanya mengizinkan pengguna untuk melihat-lihat desktop"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:6
+msgid ""
+"If true, remote users accessing the desktop are only allowed to view the "
+"desktop. Remote users will not be able to use the mouse or keyboard."
+msgstr ""
+"Jika ya, pengguna jauh yang mengakses desktop hanya diizinkan untuk melihat-"
+"lihat desktop saja. Pengguna jauh tersebut tidak dapat menggunakan tetikus "
+"atau papan tik."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:7
+msgid "Network interface for listening"
+msgstr "Antarmuka jaringan yang mendengarkan"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:8
+msgid ""
+"If not set, the server will listen on all network interfaces.\n"
+"\n"
+"Set this if you want to accept connections only from some specific network "
+"interface. For example, eth0, wifi0, lo and so on."
+msgstr ""
+"Apabila tak ditentukan, server akan mendengar pada semua antarmuka "
+"jaringan.\n"
+"\n"
+"Tentukanlah ini apabila Anda hanya ingin menerima sambungan dari antarmuka "
+"jaringan tertentu. Misalnya eth0, wifi0, lo, dan seterusnya."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:11
+msgid "Listen on an alternative port"
+msgstr "Mendengar pada port alternatif"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:12
+msgid ""
+"If true, the server will listen on another port, instead of the default "
+"(5900). The port must be specified in the 'alternative-port' key."
+msgstr ""
+"Apabila bernilai benar (true), server akan mendengar port lain, bukan pada "
+"port baku (5900). Port lain tersebut harus dinyatakan pada kunci "
+"'alternative-port'."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:13
+msgid "Alternative port number"
+msgstr "Nomor port alternatif"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:14
+msgid ""
+"The port which the server will listen to if the 'use-alternative-port' key "
+"is set to true. Valid values are in the range of 5000 to 50000."
+msgstr ""
+"Port yang dipakai oleh server untuk mendengarkan permintaan apabila kunci "
+"'use-alternative-port' memiliki nilai benar (true). Nilai yang sah mulai "
+"dari 5000 sampai 50000."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:15
+msgid "Require encryption"
+msgstr "Haruskan enkripsi"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:16
+msgid ""
+"If true, remote users accessing the desktop are required to support "
+"encryption. It is highly recommended that you use a client which supports "
+"encryption unless the intervening network is trusted."
+msgstr ""
+"Jika ya, pengguna jauh yang mengakses desktop diharuskan memakai enkripsi. "
+"Sangat dianjurkan untuk menggunakan klien yang mendukung enkripsi kecuali "
+"jika jaringan yang mengaturnya Anda percayai."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:17
+msgid "Allowed authentication methods"
+msgstr "Metode pengesahan yang diizinkan"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:18
+msgid ""
+"Lists the authentication methods with which remote users may access the "
+"desktop.\n"
+"\n"
+"There are two possible authentication methods; \"vnc\" causes the remote "
+"user to be prompted for a password (the password is specified by the vnc-"
+"password key) before connecting and \"none\" which allows any remote user to "
+"connect."
+msgstr ""
+"Daftar metode otentikasi yang tersedia untuk mengakses desktop dari jarak "
+"jauh.\n"
+"\n"
+"Terdapat dua metode yang dapat digunakan; \"vnc\" untuk akses dengan meminta "
+"sandi (yang telah ditentukan pada kunci vnc-password) dan \"none\" untuk "
+"akses tanpa meminta sandi."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:21
+msgid "Password required for \"vnc\" authentication"
+msgstr "Sandi yang diperlukan untuk pengesahan \"vnc\""
+
+#: ../common/org.gnome.Vino.gschema.xml.h:22
+msgid ""
+"The password which the remote user will be prompted for if the \"vnc\" "
+"authentication method is used. The password specified by the key is base64 "
+"encoded.\n"
+"\n"
+"The special value of 'keyring' (which is not valid base64) means that the "
+"password is stored in the GNOME keyring."
+msgstr ""
+"Sandi yang dipinta untuk pengguna jarak jauh apabila mengakses dengan metode "
+"\"vnc\". Sandi yang ditentukan melalui kunci ini memakai enkode base64.\n"
+"\n"
+"Nilai khusus 'keyring' (bukanlah base64 yang sah) berarti sandi disimpan "
+"pada ring kunci milik GNOME."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:25
+msgid "E-mail address to which the remote desktop URL should be sent"
+msgstr "Alamat surel untuk dikirimi alamat URL desktop jauh"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:26
+msgid ""
+"This key specifies the e-mail address to which the remote desktop URL should "
+"be sent if the user clicks on the URL in the Desktop Sharing preferences "
+"dialog."
+msgstr ""
+"Kunci ini berisi alamat surel untuk dikirimi alamat URL desktop jauh. Surel "
+"akan dikirim jika pengguna mengklik URL dalam dialog preferensi Desktop Jauh."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:27
+msgid "Lock the screen when last user disconnect"
+msgstr "Kunci layar ketika pengguna terakhir putus"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:28
+msgid ""
+"If true, the screen will be locked after the last remote client disconnects."
+msgstr "Bila ya, layar akan dikunci setelah klien jauh terakhir putus."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:29
+msgid "When the status icon should be shown"
+msgstr "Kapan ikon status mesti ditampilkan"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:30
+msgid ""
+"This key controls the behavior of the status icon. There are three options: "
+"\"always\" - the icon will always be present; \"client\" - the icon will "
+"only be present when someone is connected (this is the default behavior); "
+"\"never\" - the icon will not be present."
+msgstr ""
+"Kunci ini mengendalikan perilaku ikon status. Ada tiga opsi: \"always\" - "
+"Ikon akan selalu ada; \"client\" - Anda akan melihat ikon bila ada seseorang "
+"tersambung, ini adalah perilaku baku; \"never\" - Ikon tidak akan hadir."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:31
+msgid "Whether to disable the desktop background when a user is connected"
+msgstr ""
+"Apakah mematikan latar belakang desktop ketika seorang pengguna tersambung"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:32
+msgid ""
+"When true, disable the desktop background and replace it with a single block "
+"of color when a user successfully connects."
+msgstr ""
+"Bila bernilai true, latar belakang desktop tak difungsikan dan digantikan "
+"dengan suatu blok warna tunggal ketika seorang pengguna berhasil menyambung."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:33
+msgid "Whether a UPnP router should be used to forward and open ports"
+msgstr ""
+"Apakah sebuah router UPnP mesti dipakai untuk meneruskan dan membuka port"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:34
+msgid ""
+"If true, request that a UPnP-capable router should forward and open the port "
+"used by Vino."
+msgstr ""
+"Bila bernilai true, meminta suatu router yang berkemampuan UPnP untuk "
+"meneruskan dan membuka port yang dipakai oleh Vino."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:35
+msgid "Whether we should disable the XDamage extension of X.org"
+msgstr "Apakah mesti mematikan ekstensi XDamage dari X.org"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:36
+msgid ""
+"If true, do not use the XDamage extension of X.org. This extension does not "
+"work properly on some video drivers when using 3D effects. Disabling it will "
+"make Vino work in these environments, with slower rendering as a side effect."
+msgstr ""
+"Bila berisi true, jangan memakai ekstensi XDamage dari X.org. Ekstensi ini "
+"tidak bekerja dengan benar pada beberapa penggerak video ketika memakai efek "
+"3D. Mematikannya menyebabkan Vino bekerja pada lingkungan ini dengan efek "
+"samping perenderan yang lebih lambat."
+
+#: ../common/org.gnome.Vino.gschema.xml.h:37
+msgid "Notify on connect"
+msgstr "Beritahu saat menyambung"
+
+#: ../common/org.gnome.Vino.gschema.xml.h:38
+msgid "If true, show a notification when a user connects to the system."
+msgstr ""
+"Bila bernilai true, menampilkan pemberitahuan ketika seorang pengguna "
+"menyambung ke sistem."
+
+#: ../common/vino-keyring.c:54 ../tools/vino-passwd.c:54
+msgid "Remote desktop sharing password"
+msgstr "Sandi berbagi desktop remote"
+
+#: ../server/smclient/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr "Ini bukan berkas .desktop yang valid"
+
+#. translators: 'Version' is from a desktop file, and
+#. * should not be translated. '%s' would probably be a
+#. * version number.
+#: ../server/smclient/eggdesktopfile.c:191
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr "Berkas desktop tak dikenal Versi '%s'"
+
+#: ../server/smclient/eggdesktopfile.c:974
+#, c-format
+msgid "Starting %s"
+msgstr "Memulai %s"
+
+#: ../server/smclient/eggdesktopfile.c:1116
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr "Aplikasi tak menerima dokumen pada baris perintah"
+
+#: ../server/smclient/eggdesktopfile.c:1184
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr "Opsi peluncuran tak dikenal: %d"
+
+#. translators: The 'Type=Link' string is found in a
+#. * desktop file, and should not be translated.
+#: ../server/smclient/eggdesktopfile.c:1391
+#, c-format
+msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+msgstr "Tak bisa melewatkan URI dokumen ke suatu entri desktop 'Type=Link'"
+
+#: ../server/smclient/eggdesktopfile.c:1412
+#, c-format
+msgid "Not a launchable item"
+msgstr "Bukan item yang dapat diluncurkan"
+
+#: ../server/smclient/eggsmclient.c:226
+msgid "Disable connection to session manager"
+msgstr "Menonaktifkan koneksi ke manajer sesi"
+
+#: ../server/smclient/eggsmclient.c:229
+msgid "Specify file containing saved configuration"
+msgstr "Nyatakan berkas yang memuat konfigurasi tersimpan"
+
+#: ../server/smclient/eggsmclient.c:229
+msgid "FILE"
+msgstr "FILE"
+
+#: ../server/smclient/eggsmclient.c:232
+msgid "Specify session management ID"
+msgstr "Nyatakan ID manajemen sesi"
+
+#: ../server/smclient/eggsmclient.c:232
+msgid "ID"
+msgstr "ID"
+
+#: ../server/smclient/eggsmclient.c:253
+msgid "Session management options:"
+msgstr "Opsi manajemen sesi:"
+
+#: ../server/smclient/eggsmclient.c:254
+msgid "Show session management options"
+msgstr "Tampilkan opsi manajemen sesi"
+
+#: ../server/vino-main.c:202
+msgid ""
+"Your XServer does not support the XTest extension - remote desktop access "
+"will be view-only\n"
+msgstr ""
+"XServer ini tidak mendukung ekstensi XTest - akses ke desktop jauh dibatasi "
+"hanya untuk melihat saja\n"
+
+#. Tube mode uses Telepathy's Tubes to share a user's desktop directly
+#. * with another IM contact. http://telepathy.freedesktop.org/wiki/Tubes
+#.
+#: ../server/vino-main.c:301
+msgid "Start in tube mode, for the ‘Share my Desktop’ feature"
+msgstr "Mulai dalam mode tabung, bagi fitur 'Berbagi Desktopku'"
+
+#: ../server/vino-main.c:307
+msgid "- VNC Server for GNOME"
+msgstr "- Server VNC untuk GNOME"
+
+#: ../server/vino-main.c:315
+msgid ""
+"Run 'vino-server --help' to see a full list of available command line options"
+msgstr ""
+"Jalankan 'vino-server --help' untuk melihat daftar lengkap dari opsi baris "
+"perintah yang tersedia"
+
+#: ../server/vino-main.c:336
+msgid "GNOME Desktop Sharing"
+msgstr "Desktop Jauh GNOME"
+
+#.
+#. * Translators: translate "vino-mdns:showusername" to
+#. * "1" if "%s's remote desktop" doesn't make sense in
+#. * your language.
+#.
+#: ../server/vino-mdns.c:62
+msgid "vino-mdns:showusername"
+msgstr "0"
+
+#.
+#. * Translators: this string is used ONLY if you
+#. * translated "vino-mdns:showusername" to anything
+#. * other than "1"
+#.
+#: ../server/vino-mdns.c:74
+#, c-format
+msgid "%s's remote desktop on %s"
+msgstr "Desktop jauh milik %s pada %s"
+
+#: ../server/vino-prefs.c:111
+#, c-format
+msgid "Received signal %d, exiting."
+msgstr "Menerima sinyal %d, keluar."
+
+#: ../server/vino-prompt.c:144
+msgid "Screen"
+msgstr "Layar"
+
+#: ../server/vino-prompt.c:145
+msgid "The screen on which to display the prompt"
+msgstr "Layar tempat menampilkan prompt"
+
+#: ../server/vino-prompt.c:263 ../server/vino-status-icon.c:598
+#: ../server/vino-status-tube-icon.c:389
+#, c-format
+msgid "Error initializing libnotify\n"
+msgstr "Galat menginisialisasi libnotify\n"
+
+#: ../server/vino-prompt.c:282
+#, c-format
+msgid ""
+"A user on the computer '%s' is trying to remotely view or control your "
+"desktop."
+msgstr ""
+"Pengguna komputer '%s' mencoba mengakses atau mengambil alih desktop Anda."
+
+#: ../server/vino-prompt.c:285
+msgid "Another user is trying to view your desktop."
+msgstr "Pengguna lain sedang mencoba menilik desktop Anda."
+
+#: ../server/vino-prompt.c:291
+msgid "Refuse"
+msgstr "Tolak"
+
+#: ../server/vino-prompt.c:297
+msgid "Accept"
+msgstr "Terima"
+
+#: ../server/vino-server.c:166 ../server/vino-server.c:189
+#, c-format
+msgid "Failed to open connection to bus: %s\n"
+msgstr "Gagal membuka koneksi ke bus: %s\n"
+
+#: ../server/vino-server.desktop.in.in.h:2
+msgid "GNOME Desktop Sharing Server"
+msgstr "Server Desktop Jauh GNOME"
+
+#: ../server/vino-server.desktop.in.in.h:3
+msgid "vnc;share;remote;"
+msgstr "vnc;berbagi;jarak jauh;"
+
+#: ../server/vino-status-icon.c:97 ../server/vino-status-tube-icon.c:90
+msgid "Desktop sharing is enabled"
+msgstr "Berbagi desktop diaktifkan"
+
+#: ../server/vino-status-icon.c:105
+#, c-format
+msgid "One person is viewing your desktop"
+msgid_plural "%d people are viewing your desktop"
+msgstr[0] "%d pengguna lain sedang menilik desktop Anda"
+
+#: ../server/vino-status-icon.c:208 ../server/vino-status-tube-icon.c:172
+msgid "Error displaying preferences"
+msgstr "Ada kesalahan menampilkan preferensi"
+
+#: ../server/vino-status-icon.c:230 ../server/vino-status-tube-icon.c:192
+msgid "Error displaying help"
+msgstr "Ada kesalahan menampilkan bantuan"
+
+#: ../server/vino-status-icon.c:263
+msgid ""
+"Licensed under the GNU General Public License Version 2\n"
+"\n"
+"Vino is free software; you can redistribute it and/or\n"
+"modify it under the terms of the GNU General Public License\n"
+"as published by the Free Software Foundation; either version 2\n"
+"of the License, or (at your option) any later version.\n"
+"\n"
+"Vino is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA\n"
+"02110-1301, USA.\n"
+msgstr ""
+"Dilisensikan di bawah GNU General Public License Versi 2\n"
+"\n"
+"Vino adalah perangkat lunak bebas; Anda dapat menyebarluaskannya\n"
+"dan / atau mengubahnya di bawah syarat GNU General Public License\n"
+" sebagaimana dipublikasikan oleh Free Software Foundation; baik versi 2\n"
+"dari Lisensi, atau (terserah pilihan Anda) versi setelahnya.\n"
+"\n"
+"Vino didistribusikan dengan harapan akan berguna,\n"
+"tetapi TANPA ADANYA JAMINAN; termasuk tanpa jaminan\n"
+"KETERDAGANGAN atau KECOCOKAN UNTUK TUJUAN TERTENTU.\n"
+"Lihat GNU General Public License untuk rincian lebih lanjut.\n"
+"\n"
+"Anda seharusnya menerima salinan dari GNU General Public License\n"
+"bersama dengan program ini; jika tidak, kirimkan surat Anda\n"
+"ke Free Software Foundation, Inc, 51 Franklin Street, Fifth Floor,\n"
+"Boston, MA 02110-1301, USA.\n"
+
+#. Translators comment: put your own name here to appear in the about dialog.
+#: ../server/vino-status-icon.c:278
+msgid "translator-credits"
+msgstr ""
+"Mohammad DAMT <mdamt@gnome.org>, 2004, 2006.\n"
+"Imam Musthaqim <userindesign@gmail.com>, 2009.\n"
+"Dirgita <dirgitadevina@yahoo.co.id>, 2011, 2012.\n"
+"Andika Triwidada <andika@gmail.com>, 2010, 2011, 2012, 2013."
+
+#: ../server/vino-status-icon.c:284
+msgid "Share your desktop with other users"
+msgstr "Berbagi desktop Anda dengan pengguna lain"
+
+#: ../server/vino-status-icon.c:351 ../server/vino-status-tube-icon.c:224
+#, c-format
+msgid "Are you sure you want to disconnect '%s'?"
+msgstr "Anda yakin ingin memutus '%s'?"
+
+#: ../server/vino-status-icon.c:354
+#, c-format
+msgid "The remote user from '%s' will be disconnected. Are you sure?"
+msgstr "Pengguna jauh dari '%s' akan diputus. Anda yakin?"
+
+#: ../server/vino-status-icon.c:360
+msgid "Are you sure you want to disconnect all clients?"
+msgstr "Anda yakin ingin memutus semua klien?"
+
+#: ../server/vino-status-icon.c:362
+msgid "All remote users will be disconnected. Are you sure?"
+msgstr "Semua pengguna jauh akan diputus. Anda yakin?"
+
+#: ../server/vino-status-icon.c:374 ../server/vino-status-tube-icon.c:238
+msgid "Disconnect"
+msgstr "Putus"
+
+#: ../server/vino-status-icon.c:400 ../server/vino-status-tube-icon.c:263
+msgid "_Preferences"
+msgstr "_Preferensi"
+
+#: ../server/vino-status-icon.c:415
+msgid "Disconnect all"
+msgstr "Putus semua"
+
+#. Translators: %s is a hostname
+#. Translators: %s is the alias of the telepathy contact
+#: ../server/vino-status-icon.c:439 ../server/vino-status-tube-icon.c:276
+#, c-format
+msgid "Disconnect %s"
+msgstr "Putus %s"
+
+#: ../server/vino-status-icon.c:460 ../server/vino-status-tube-icon.c:295
+msgid "_Help"
+msgstr "Ba_ntuan"
+
+#: ../server/vino-status-icon.c:468
+msgid "_About"
+msgstr "Ihw_al"
+
+#. Translators: %s is a hostname
+#: ../server/vino-status-icon.c:619
+msgid "Another user is viewing your desktop"
+msgstr "Pengguna lain sedang menilik desktop Anda"
+
+#: ../server/vino-status-icon.c:621
+#, c-format
+msgid "A user on the computer '%s' is remotely viewing your desktop."
+msgstr ""
+"Seorang pengguna pada komputer '%s' sedang menilik desktop Anda jarak jauh."
+
+#. Translators: %s is a hostname
+#: ../server/vino-status-icon.c:627
+msgid "Another user is controlling your desktop"
+msgstr "Pengguna lain sedang mengendalikan desktop Anda"
+
+#: ../server/vino-status-icon.c:629
+#, c-format
+msgid "A user on the computer '%s' is remotely controlling your desktop."
+msgstr ""
+"Seorang pengguna pada komputer '%s' sedang mengendalikan desktop Anda jarak "
+"jauh."
+
+#: ../server/vino-status-icon.c:651 ../server/vino-status-tube-icon.c:423
+#, c-format
+msgid "Error while displaying notification bubble: %s\n"
+msgstr "Galat ketika menampilkan gelembung pemberitahuan: %s\n"
+
+#: ../server/vino-status-tube-icon.c:227
+#, c-format
+msgid "The remote user '%s' will be disconnected. Are you sure?"
+msgstr "Pengguna jauh '%s' akan diputus. Anda yakin?"
+
+#: ../server/vino-tube-server.c:220 ../server/vino-tube-server.c:249
+msgid "Share my desktop information"
+msgstr "Berbagi informas desktopku"
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:224
+#, c-format
+msgid "'%s' rejected the desktop sharing invitation."
+msgstr "'%s' menolak undangan berbagi desktop."
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:228
+#, c-format
+msgid "'%s' disconnected"
+msgstr "'%s' diputus"
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:255
+#, c-format
+msgid "'%s' is remotely controlling your desktop."
+msgstr "'%s' sedang mengendalikan desktop Anda jarak jauh."
+
+#. Translators: '%s' is the name of a contact, buddy coming from Empathy
+#: ../server/vino-tube-server.c:264
+#, c-format
+msgid "Waiting for '%s' to connect to the screen."
+msgstr "Menunggu '%s' menyambung ke layar."
+
+#: ../server/vino-util.c:89
+msgid "_Allow"
+msgstr "Ijink_an"
+
+#: ../server/vino-util.c:90
+msgid "_Refuse"
+msgstr "_Tolak"
+
+#: ../server/vino-util.c:140
+msgid "An error has occurred:"
+msgstr "Terjadi suatu kesalahan:"
+
+#: ../tools/vino-passwd.c:108
+#, c-format
+msgid "Cancelled"
+msgstr "Dibatalkan"
+
+#: ../tools/vino-passwd.c:115
+#, c-format
+msgid ""
+"ERROR: Maximum length of password is %d character. Please, re-enter the "
+"password."
+msgid_plural ""
+"ERROR: Maximum length of password is %d characters. Please, re-enter the "
+"password."
+msgstr[0] ""
+"GALAT: Panjang sandi maksimum adalah %d karakter. Silakan masukkan ulang "
+"sandi,"
+
+#: ../tools/vino-passwd.c:149
+#, c-format
+msgid "Changing Vino password.\n"
+msgstr "Mengubah sandi Vino.\n"
+
+#: ../tools/vino-passwd.c:151
+msgid "Enter new Vino password: "
+msgstr "Masukkan sandi baru Vino: "
+
+#: ../tools/vino-passwd.c:154
+msgid "Retype new Vino password: "
+msgstr "Tik ulang sandi baru Vino: "
+
+#: ../tools/vino-passwd.c:160
+#, c-format
+msgid "vino-passwd: password updated successfully.\n"
+msgstr "vino-passwd: sandi sukses dimutakhirkan.\n"
+
+#: ../tools/vino-passwd.c:165
+#, c-format
+msgid "Sorry, passwords do not match.\n"
+msgstr "Maaf, sandi tak cocok.\n"
+
+#: ../tools/vino-passwd.c:166
+#, c-format
+msgid "vino-passwd: password unchanged.\n"
+msgstr "vino-passwd: sandi tak diubah.\n"
+
+#: ../tools/vino-passwd.c:182
+msgid "Show Vino version"
+msgstr "Tampilkan versi Vino"
+
+#: ../tools/vino-passwd.c:191
+msgid "- Updates Vino password"
+msgstr "- Memutakhirkan sandi Vino"
+
+#: ../tools/vino-passwd.c:201
+msgid ""
+"Run 'vino-passwd --help' to see a full list of available command line options"
+msgstr ""
+"Jalankan 'vino-passwd --help' untuk melihat daftar lengkap dari opsi baris "
+"perintah yang tersedia"
+
+#: ../tools/vino-passwd.c:208
+#, c-format
+msgid "VINO Version %s\n"
+msgstr "VINO Versi %s\n"
+
+#: ../tools/vino-passwd.c:219
+#, c-format
+msgid "ERROR: You do not have enough permissions to change Vino password.\n"
+msgstr "GALAT: Anda tak punya cukup hak untuk mengubah sandi Vino.\n"

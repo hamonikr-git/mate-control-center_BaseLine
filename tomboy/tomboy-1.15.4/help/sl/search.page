@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="search" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="create-notebook"/>
+    <desc>Iščite svoja sporočilca</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+        <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Iskanje sporočilc</title>
+
+
+	<p>Besedo ali frazo v kateremkoli od svojih sporočilc lahko najdete s pomočjo orodja Iskanje. Desno kliknite na ikono Tomboy v pultu ali pritisnite ikono <gui>Iskanje</gui> v orodni vrstici sporočilca. To bo priklicalo pogovorno okno iskanje vseh sporočilc.</p>
+	<p>Vnesite iskalni izraz v polje <gui>Iskanje</gui> in pritisnite <key>Vnosno tipko</key> in našteta bodo vsa sporočilca, ki vsebujejo vaš iskalni niz. </p>
+	<p>V primeru, da imate svoja sporočila organizirana v beležke, lahko iščete tudi izraze le v eni beležki. To storite z izbiro beležke, ki jo želite iskati in vnosom svojih iskalnih kriterijev.</p>
+
+ </page>

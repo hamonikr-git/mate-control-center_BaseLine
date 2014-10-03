@@ -1,0 +1,86 @@
+Source: mate-utils
+Section: mate
+Priority: optional
+Maintainer: Stefano Karapetsas <stefano@karapetsas.com>
+Build-Depends: debhelper (>= 9),
+               autotools-dev,
+               intltool,
+               mate-common,
+               xsltproc,
+               libxt-dev,
+               libglib2.0-dev,
+               libgtk2.0-dev,
+               libmate-panel-applet-dev,
+               libgtop2-dev,
+               libcanberra-gtk-dev,
+               x11proto-xext-dev,
+               libxext-dev,
+               libx11-dev,
+               zlib1g-dev,
+               gtk-doc-tools,
+               yelp-tools
+Standards-Version: 3.9.5
+Homepage: http://www.mate-desktop.org/
+
+Package: mate-utils
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         mate-utils-common (= ${source:Version}),
+         mate-desktop-common
+Description: MATE desktop utilities
+ This package contains all the tools bundled the MATE utilities:
+  - mate-disk-usage-analyzer, a disk usage analyser
+  - mate-dictionary, a program which can look up the definition of words
+    over the internet (including a panel applet to do the same)
+  - mate-search-tool, with which one can find files by name or content
+  - mate-system-log, a log viewing application
+  - mate-screenshot, a tool to take desktop screenshots and save them into
+    a file
+
+Package: mate-utils-common
+Architecture: any
+Depends: ${misc:Depends}
+Breaks: mate-utils (<< 1.5.0)
+Description: MATE desktop utilities (common files)
+ This package contains all the tools bundled the MATE utilities:
+  - mate-disk-usage-analyzer, a disk usage analyser
+  - mate-dictionary, a program which can look up the definition of words
+    over the internet (including a panel applet to do the same)
+  - mate-search-tool, with which one can find files by name or content
+  - mate-system-log, a log viewing application
+  - mate-screenshot, a tool to take desktop screenshots and save them into
+    a file
+ .
+ This package contains the architecture independent files.
+
+Package: mate-utils-dev
+Architecture: all
+Section: devel
+Depends: ${misc:Depends},
+         mate-utils (= ${source:Version})
+Breaks: mate-utils (<< 1.5.0)
+Description: MATE desktop utilities (development files)
+ This package contains all the tools bundled the MATE utilities:
+  - mate-disk-usage-analyzer, a disk usage analyser
+  - mate-dictionary, a program which can look up the definition of words
+    over the internet (including a panel applet to do the same)
+  - mate-search-tool, with which one can find files by name or content
+  - mate-system-log, a log viewing application
+  - mate-screenshot, a tool to take desktop screenshots and save them into
+    a file
+ .
+ This package is required to build plugins for MATE desktop utilities.
+
+Package: mate-utils-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         mate-utils (= ${binary:Version})
+Description: MATE desktop utilities (debugging symbols)
+ This package contains debugging symbols for MATE desktop utilities. It
+ is provided to help debugging problems.
+ .
+ The debugging symbols are installed  in /usr/lib/debug and will
+ automatically be used by gdb.

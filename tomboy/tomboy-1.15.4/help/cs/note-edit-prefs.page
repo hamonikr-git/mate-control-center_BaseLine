@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="edit-prefs" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Předvolby pro úpravy poznámky.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Předvolby poznámek</title>
+ 
+ 	<p>Můžete měnit výchozí nastavení pro psaní poznámek Tomboy. Pokud tak chcete učinit, otevřete <gui>Předvolby Tomboy</gui> pomocí kliknutí pravým tlačítkem myši na svém panelu, na pruhu úloh nebo v doku a zvolte <gui>Předvolby</gui> a následně vyberte kartu <gui>Úpravy</gui>. <gui>Předvolby Tomboy</gui> můžete otevřít také z dialogového okna <gui>Hledat ve všech poznámkách</gui>. V nabídce zvolte <guiseq><gui>Upravit</gui><gui>Předvolby</gui></guiseq>.</p>
+ 
+ <section id="spellcheck">
+   <title>Kontrola pravopisu</title>
+   <p>Aplikace Tomboy umí kontrolovat pravopis slov během psaní poznámky. Kontrola pravopisu je standardně zapnutá a aplikace Tomboy bude chybně napsaná slova podtrhávat. Kliknutím pravým tlačítkem myši na chybné slovo si můžete zobrazit návrhy na opravu.</p>
+   
+   <p>Pokud chcete kontrolu pravopisu vypnout, použijte svoji myš nebo mezerník ke zrušení zaškrtnutí <gui>Kontrola překlepů během psaní</gui> na kartě <gui>Úpravy</gui> v předvolbách aplikace Tomboy.</p>
+   
+ </section>
+
+ <section id="wikiwords">
+   <title>WikiSlova</title>
+   <p>Aplikace Tomboy umí zvýrazňovat slova <gui>KteráVypadajíTakto</gui>. Spojením slov s velkými prvními písmeny dohromady bez mezer, podobně jak se to používá na wiki, docílíte jejich zvýraznění v aplikaci Tomboy a vytvoření odkazu na ně. Kliknutím na odkaz se vytvoří nová poznámka s názvem daným dotyčným WikiSlovem.</p>
+   
+   <p>WikiSlova jsou standardně vypnutá. Pokud chcete WikiSlova zapnout, použijte myš nebo mezerník k zaškrtnutí políčka <gui>Zvýrazňovat 
+WikiSlova</gui> na kartě <gui>Úpravy</gui> v předvolbách aplikace Tomboy.</p>
+   
+ </section>
+
+ <section id="bullets">
+   <title>Automatické seznamy s odrážkami</title>
+   <p>Aplikace Tomboy umí vytvářet seznamy s odrážkami automaticky. Tato volba je ve výchozím stavu zapnutá a když upravujete poznámku a napíšete <key>*</key> následovanou textem a zmáčknete klávesu <key>Enter</key>, vytvoří se automaticky seznam s odrážkami. Po dalším zmáčknutí <key>Enter</key> bude rovněž následující řádek začínat odrážkou.</p>
+   
+   <p>Pokud chcete funkci automatických seznamů s odrážkami vypnout, použijte myš nebo mezerník k odškrtnutí políčka <gui>Povolit automatické seznamy s odrážkami</gui> na kartě <gui>Úpravy</gui> v předvolbách aplikace Tomboy.</p>
+   
+ </section>
+
+ <section id="customfont">
+   <title>Vlastní písmo</title>
+   <p>Můžete si zvolit použití vlastního písma a jeho velikosti v aplikaci Tomboy, odlišného od toho, které je výchozí ve vašem pracovním prostředí. </p>
+   
+   <p>Pokud chcete zapnout jiné písmo, použijte myš nebo mezerník k zaškrtnutí políčka <gui>Použít vlastní písmo</gui> na kartě <gui>Úpravy</gui> v předvolbách aplikace Tomboy.</p>
+
+   <p>Pak můžete zmáčknout tlačítko písma a objeví se dialogové okno pro výběr písma, ve kterém si zvolíte, které písmo chcete použít, jeho styl, jako je tučnost a kurzíva, a jeho velikost. Zmáčknutím <key>Ok</key> svůj výběr uložíte.</p>
+   
+ </section>
+
+ <section id="renamelinks">
+ 
+   <title>Přejmenování odkazovaných poznámek</title>
+   <p>Aplikace Tomboy automaticky vytváří odkazy mezi poznámkami v situaci, kdy napíšete v aktuální poznámce název nějaké uložené poznámky. Pro případy, když zkusíte přejmenovat poznámku, na kterou je odkazováno z jiné poznámky, můžete zvolit výchozí chování, které by se mělo při takovéto změně použít. Volby máte následující:</p>
+   
+   <list>
+     <item><p><gui>Dotázat se mě, co udělat</gui>: Aplikace Tomboy se vás pokaždé, když je zjištěna změna, dotáže na jednu z možností uvedených dále.</p></item>
+     <item><p><gui>Odkaz nikdy nepřejmenovávat</gui>: Aplikace Tomboy ponechá ostatní poznámky tak, jak jsou a zruší odkazy.</p></item>
+     <item><p><gui>Odkazy vždy přejmenovat</gui>: Aplikace Tomboy bude automaticky přejmenovávat všechny odkazy z jiných poznámek vedoucí na tu přejmenovanou.</p></item>
+   </list>
+   
+   <p>Zvolte jednu z předchozích možnosti v rozbalovacím seznamu napravo od <gui>Při přejmenování odkazované poznámky:</gui> na kartě <gui>Úpravy</gui> v předvolbách aplikace Tomboy.</p>
+   
+ </section>
+
+<section id="newnotetemplate">
+  <title>Vytváření nové šablony poznámky</title>
+  <p>Můžete si vytvořit novou šablonu, která se zobrazí pokaždé, když vytvoříte novou poznámku.</p>
+  
+  <p>Zmáčkněte tlačítko <gui>Otevřít šablonu nové poznámky</gui> na kartě <gui>Úpravy</gui> v předvolbách aplikace Tomboy. Zobrazí se nová šablona podobně, jako poznámka Tomboy. Text <gui>Sem napište svou novou poznámku.</gui> v poznámce nahraďte textem, který by měl být novou šablonou. Zavřením poznámky vytvoření nové šablony dokončíte. Pokaždé když vytvoříte novou poznámku, zobrazí se v podobě této nové šablony.</p>
+   
+</section>
+
+ </page>

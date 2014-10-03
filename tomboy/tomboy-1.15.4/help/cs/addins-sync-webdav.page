@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-sync-webdav" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="addins#sync"/>
+    <desc>Jak synchronizovat své poznámky do serveru WebDav.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-16" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Služba synchronizace přes WebDav</title>
+
+  <p>Doplněk pro synchronizaci do služby WebDav vám umožňuje synchronizovat své poznámky se vzdáleným serverem WebDav. Ve výchozím stavu je tento doplněk povolen.</p>
+
+  <p>Aby šlo používat službu synchronizace do WebDav, musíte mít nainstalován balíček <em>souborového systému wdfs FUSE</em> pro svoji linuxovou distribuci. Nápověda, jak to udělat, ale to přesahuje rámec tohoto dokumentu.</p>
+
+ </page>

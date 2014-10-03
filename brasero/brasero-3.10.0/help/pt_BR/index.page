@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="index" xml:lang="pt-BR">
+
+  <info>
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@googlemail.com</email>
+    </credit>
+    <license>
+      <p>Licença Creative Commons Atribuição Compartilhada 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title><media type="image" src="figures/logo32.png"/> Ajuda do Brasero</title>
+
+  <section id="new-project" style="2column">
+    <title>Criando um novo projeto</title>
+  </section>
+
+  <section id="troubleshooting" style="2column">
+    <title>Resolução de problemas</title>
+  </section>
+
+  <section id="tools" style="2column">
+    <title>Outras ferramentas</title>
+  </section>
+
+</page>

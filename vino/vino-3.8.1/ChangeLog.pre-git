@@ -1,0 +1,3638 @@
+2009-04-13  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.26.2
+
+==================== 2.26.1 =======================
+
+2009-03-19  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: Fixes bug #575860 – Regenerating autotools always
+	tries to compile libifaddr. Thanks to Patryk Zawadzki.
+
+2009-03-16  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.26.1
+
+==================== 2.26.0 =======================
+
+2009-03-02  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.26.0
+
+==================== 2.25.92 =======================
+
+2009-03-02  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-upnp.c: More work on NetworkManager integration as
+	well be more careful when adding ports on the router.
+
+2009-02-27  Jonh Wendell  <jwendell@gnome.org>
+
+	* capplet/vino-preferences.c,
+	* server/vino-mdns.[ch],
+	* server/vino-dbus-listener.c:
+	Fixes #330691 – show .local hostname if avahi is present.
+
+2009-02-26  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in,
+	* server/Makefile.am,
+	* server/vino-upnp.c: Added dependency on NetworkManager. Monitor for
+	network state changes and redo the UPnP forward.
+	New configure flag: --enable-network-manager. If not set, enable it
+	anyway if NetworkManager libraries are found. Requires NM 0.7.
+
+2009-02-16  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.25.92
+
+==================== 2.25.91 =======================
+
+2009-02-13  Jonh Wendell  <jwendell@gnome.org>
+
+	* session/: Removed. It's unsed since 2.24, which makes use of new
+	gnome-session to control vino's life cycle. This avoids things like
+	bug #571751 being reported.
+
+2009-02-13  Jonh Wendell  <jwendell@gnome.org>
+
+	* capplet/vino-preferences.desktop.in.in:
+	Changed the tooltip of capplet menu item. Closes #542338.
+
+2009-02-13  Jonh Wendell  <jwendell@gnome.org>
+
+	Moved ifaddrs.h and getifaddrs.c to their own directory, and only
+	#include them if system ifaddrs.h is not present.
+
+2009-02-13  Claude Paroz  <claude@2xlibre.net>
+
+	reviewed by: Jonh Wendell  <jwendell@gnome.org> 
+
+	* tools/vino-passwd.c: (vino_passwd_read): Use ngettext to handle
+	translation of "%d characters".
+	Closes #556767.
+
+2009-02-12  Claude Paroz  <claude@2xlibre.net>
+
+	* capplet/vino-preferences.glade: Don't mark "spacing" labels as
+	translatable.
+
+2009-02-05  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/Makefile.am: Install autostart desktop file in
+	$sysconfdir/xdg/autostart. Usually you should pass the argument
+	--sysconfdir=/etc to configure (or autogen.sh) script.
+	Closes #568755.
+
+2009-02-02  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.25.91
+
+==================== 2.25.90 =======================
+
+2009-01-25  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-dbus-listener.c (get_local_hostname): Show an IP address
+	instead of the machine name.
+
+2009-01-25  Jonh Wendell  <jwendell@gnome.org>
+
+	* capplet/vino-preferences.glade: Put a tooltip in the password entry
+	telling that the maximum size is 8 chars. Closes #569031.
+
+2009-01-23  Jonh Wendell  <jwendell@gnome.org>
+
+	Make use of a file containinig URLs of WebServices, instead of hard
+	code.
+	* capplet/webservices: The file with the URLs.
+	* capplet/vino-url-webservice.[ch]: Provide a function to retrieve
+	a URL from the file.
+	* capplet/vino-preferences.c: Use the function above instead of
+	hard coding the URL.
+
+2009-01-22  Jonh Wendell  <jwendell@gnome.org>
+
+	* capplet/vino-preferences.[c,glade]:
+	Use an eventbox in the connectivity label, closes #568690.
+
+2009-01-22  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-status-icon.c (vino_status_icon_add_client):
+	Only show notification if the status icon is visible.
+	Closes Ubuntu #318708.
+
+2009-01-22  Halton Huo <halton.huo@sun.com>
+
+	Fix typo. Closes #568646
+	* server/vino-dbus-listener.c:
+	(vino_dbus_listener_handle_get_internal_data):
+
+2009-01-21  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.25.90
+
+==================== 2.25.5 =======================
+
+2009-01-21  Jonh Wendell  <jwendell@gnome.org>
+
+	* lots of files: Rewrite of capplet, hiding some advanced features.
+	Also, we check now if the machine can be accessed through the Internet.
+
+2009-01-08  Halton Huo <halton.huo@sun.com>
+
+	Use self-implmented getifaddrs() and freeifaddrs() when system like
+	Solaris does not have them. Closes #565422
+	* capplet/Makefile.am:
+	* configure.in:
+	* server/libvncserver/Makefile.am:
+	* server/libvncserver/getifaddrs.c: (get_lifreq), (nbytes),
+	(addrcpy), (populate), (getifaddrs), (freeifaddrs):
+	* server/libvncserver/ifaddrs.h:
+
+2009-01-05  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.25.5
+
+==================== 2.25.4 =======================
+
+2008-12-23  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-fb.c (vino_fb_init_xdamage):
+	  Don't check if we are running at a composited screen and disable
+	  XDamage extension. This should work fine nowadays.
+
+2008-12-22  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/libvncserver/rfbserver.c (rfbSendFramebufferUpdate):
+	Resets cursorWasMoved and cursorWasChanged flags, thus eliminating
+	mouse update changes, when there's no mouse change. Closes #494059.
+	Thanks to Oliver Gerlich for the patch.
+
+2008-12-17  Jonh Wendell  <jwendell@gnome.org>
+
+	Added UPnP support. Created a new boolean gconf key called use_upnp.
+	For now, no GUI changes. Closes #564853.
+
+	* server/miniupnp/*: miniUPnP files
+	* server/vino-upnp.[ch]: New class
+	* server/vino-server.[ch]: Use new VinoUpnp class
+	* server/vino-prefs.c: New gconf key: use_upnp
+	* server/vino-utils.[ch],
+	* docs/debugging.txt: Added UPnP debug stuff
+
+2008-12-16  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-server.c: Simulate a user activity through gnome-screensaver
+	when a client connects, thus not showing the screensaver animation
+	to the client. Closes #562548.
+
+2008-12-16  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.25.4
+
+==================== 2.25.3 =======================
+
+2008-11-25  Jorge Pereira  <jorge@jorgepereira.com.br>
+
+	* server/vino-background.c: (vino_background_get_status):
+	* server/vino-background.h:
+	* server/vino-prefs.c: (vino_prefs_init), (vino_prefs_shutdown),
+	(vino_prefs_restore), (vino_prefs_lock), (vino_prefs_unlock):
+	Disable wallpaper on connection + restart = wallpaper gone 
+	forever. Closes #562281.
+
+2008-11-25  Jorge Pereira  <jorge@jorgepereira.com.br>
+
+	* capplet/vino-preferences.c:
+	(vino_preferences_dialog_update_for_allowed),
+	(vino_preferences_load_network_interfaces),
+	(vino_preferences_dialog_network_interface_update_combox),
+	(vino_preferences_dialog_network_interface_notify),
+	(vino_preferences_dialog_network_interface_changed),
+	(vino_preferences_dialog_setup_network_interface_combox),
+	(vino_preferences_dialog_init):
+	* capplet/vino-preferences.glade:
+	* configure.in:
+	* server/libvncserver/main.c: (rfbGetScreen):
+	* server/libvncserver/rfb/rfb.h:
+	* server/libvncserver/rfbserver.c: (rfbNewClient):
+	* server/libvncserver/sockets.c: (rfbInitListenSock),
+	(rfbSetAutoPort), (rfbSetPort), (rfbProcessNewConnection),
+	(rfbCheckFds), (ListenOnTCPPort), (NewSocketListenTCP),
+	(rfbSetNetworkInterface):
+	* server/vino-prefs.c: (vino_prefs_network_interface_changed),
+	(vino_prefs_create_server), (vino_prefs_init):
+	* server/vino-server.c: (vino_server_new_connection_pending),
+	(vino_server_init_from_screen), (vino_server_finalize),
+	(vino_server_set_property), (vino_server_get_property),
+	(vino_server_class_init), (vino_server_get_network_interface),
+	(vino_server_set_network_interface):
+	* server/vino-server.h:
+	* server/vino-server.schemas.in:
+	Removed the feature localOnly, added correct support for IPv4 mapped 
+	IPv6, and added a new feature to able to set network interface for 
+	accept connection. Closes #403183,#403192,#488354.
+
+2008-11-17  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-utils.[ch]: Added a new utility function:
+	vino_util_show_error().
+	* server/vino-status-icon.c: Don't use gnome-open anymore. Use
+	gtk_show_uri instead, and, in case of error, use the new helper
+	function to show an error dialog. Based on a patch from  Emilio
+	Pozuelo Monfort. Closes #561034.
+
+2008-11-13  Jonh Wendell  <jwendell@gnome.org>
+
+	* tools/vino-passwd.c (vino_passwd_change): Remove a deprecated
+	GLib symbol. Closes #560450.
+
+2008-11-13  Jorge Pereira  <jorge@jorgepereira.com.br>
+	* server/libvncserver/auth.c:
+	* server/libvncserver/main.c:
+	* server/libvncserver/rfbserver.c:
+	* server/vino-prefs.c:
+	* server/vino-util.h:
+	* tools/vino-passwd.c:
+	Drop some warning messages.
+	Closes #558135.
+
+2008-10-22  Jorge Pereira  <jorge@jorgepereira.com.br>
+	* tools/vino-passwd.c: (vino_passwd_read):
+	Do not show "Core Dumped" when receive "Ctrl+C". 
+	Closes #557454.
+
+2008-10-22  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: bump version to 2.25.1
+	* capplet/vino-preferences.[c,glade]:
+	Replaced the LinkButton with a Label and a Button, this allows the
+	user to copy the text and gives more space to add more buttons in
+	the future.
+	Also, we show a message when the server is not running, instead of
+	always show the URL. This closes #513705.
+
+2008-10-20  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.24.2
+
+==================== 2.24.1 ======================
+
+2008-10-20  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-server.c: Only restore the wallpaper when the last
+	client disconnects. Closes LP: #266932.
+
+2008-10-10  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-prompt.[c,glade]: Hopefully fix an window empty bug.
+	Closes #161180.
+
+2008-10-08  Jonh Wendell  <jwendell@gnome.org>
+
+	Update label in vino-preferences when the port changes.
+
+	* server/vino-dbus-listener.c: Send a dbus signal when port changes.
+	* capplet/vino-preferences.c: Listen to this signal and updates
+	the label.
+
+2008-10-08  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-prefs.c: Propagates port changes via avahi.
+	Closes #555105.
+
+2008-09-22  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.24.1
+
+==================== 2.24.0 =======================
+
+2008-09-08  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.24.0
+
+==================== 2.23.92 ======================
+
+2008-09-04  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-server.desktop.in.in: Added an icon, closes #550743.
+
+2008-09-01  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.23.92
+
+==================== 2.23.91 ======================
+
+2008-09-01  Jonh Wendell  <jwendell@gnome.org>
+
+	Make vino work correctly with new gnome-session:
+	- Dropped bonobo activation. Vino is controlled by gnome-session.
+	- Made vino-server a gnome-session client, still using libgnomeui.
+	- The directory session/ is now obsolete.
+
+	* configure.in:
+	- drop "--enable-session-support";
+	- bump d-bus dependency to 1.2.3
+	- drop bonobo stuff
+	* server/GNOME_RemoteDesktop.idl,
+	* server/GNOME_RemoteDesktop.server.in.in,
+	* server/vino-shell.[ch]: Deleted
+	* server/vino-dbus-listener.[ch] (vino_dbus_request_name):
+	Returns gboolean instead of void. Returns FALSE if there is another
+	instance running.
+	* server/vino-main.c (main): Don't use bonobo shell function. Instead,
+	use vino_dbus_request_name() to exit if there is already an instance
+	running.
+
+2008-08-18  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.23.91
+
+==================== 2.23.90 ======================
+
+2008-08-18  Jonh Wendell <jwendell@gnome.org>
+
+	* capplet/vino-preferences.c:
+	* configure.in: Get rid of libgnomeui. Requires gtk+ >= 2.13.1 and
+	glib >= 2.17.0.
+
+2008-08-11  Halton Huo <halton.huo@sun.com>
+
+	Add vino-server.desktop under /usr/share/gnome/autostart. This is new
+	autostart mechanism in gnome-session. Closes #546747
+	* server/Makefile.am:
+	* server/vino-server.desktop.in.in: (added)
+
+2008-07-29  Jonh Wendell <jwendell@gnome.org>
+
+	* capplet/Makefile.am:
+	* capplet/vino-preferences.c:
+	* configure.in: Added a compile-time option (--enable-libunique)
+	to use the LibUnique library, which allows only one instance of
+	capplet running.
+	Based on a patch provided by Jorge Pereira <jorge@jorgepereira.com.br>.
+	
+2008-07-26  Wouter Bolsterlee  <wbolster@svn.gnome.org>
+
+	Bug 544735 – Use single GTK+ includes
+
+	* server/vino-http.c:
+	* server/vino-shell.c:
+	* server/vino-status-icon.h:
+	* session/vino-session.c:
+
+	Use single <gtk/gtk.h> includes.
+
+2008-07-25  Jorge Pereira  <jorge@jorgepereira.com.br>
+
+	* capplet/vino-preferences.c:
+	(vino_preferences_dialog_update_for_allowed),
+	(vino_preferences_dialog_disable_background_toggled),
+	(vino_preferences_dialog_disable_background_notify),
+	(vino_preferences_dialog_setup_disable_background_toggle),
+	(vino_preferences_dialog_init):
+	* capplet/vino-preferences.glade:
+	* server/Makefile.am:
+	* server/vino-background.c: (vino_background_handler),
+	(vino_background_draw):
+	* server/vino-background.h:
+	* server/vino-prefs.c: (vino_prefs_disable_background_changed),
+	(vino_prefs_create_server), (vino_prefs_init):
+	* server/vino-server.c: (vino_server_set_disable_background),
+	(vino_server_get_disable_background),
+	(vino_server_client_accepted), (vino_server_client_disconnected),
+	(vino_server_set_property), (vino_server_get_property),
+	(vino_server_class_init):
+	* server/vino-server.h:
+	* server/vino-server.schemas.in:
+	New feature to disable wallpaper when connected to vino.
+	Close #515072.
+
+2008-07-25  Matthias Clasen  <mclasen@redhat.com>
+
+	* capplet/vino-preferences.glade: Use a standard icon name.
+	Closes #544639.
+
+2008-07-24  Halton Huo <halton.huo@sun.com>
+
+	* configure.in: Fix build error in folder tools. Closes #544277.
+
+2008-07-22  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.23.6
+
+==================== 2.23.5 ======================
+
+2008-07-22  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: pre-release bump version to 2.23.5
+
+2008-07-22  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-input.c: Fix variable declaration. Closes #544038.
+	Patch by Alban Crequy.
+
+2008-07-06  Jorge Pereira  <jorge@jorgepereira.com.br>
+
+	* Makefile.am:
+	* configure.in:
+	* tools/Makefile.am:
+	* tools/vino-passwd.c:
+	* po/POTFILES.in:
+	* configure.in:
+	Added a tool to change Vino password, similar to Unix passwd command.
+	Closes #540853.
+
+2008-07-02  Jonh Wendell  <jwendell@gnome.org>
+
+	* capplet/vino-preferences.glade: Use default invisible character in
+	password entry. Closes #541248.
+
+2008-07-01  Jonh Wendell  <jwendell@gnome.org>
+
+	* capplet/vino-preferences.c: Reverted the fix in bug #423027.
+	The fix was wrong. It's not a vino bug.
+
+2008-06-25  Jonh Wendell  <jwendell@gnome.org>
+
+	* capplet/vino-preferences.glade: Fix silly strings in the UI.
+	Closes #516139.
+
+2008-06-25  Jonh Wendell  <jwendell@gnome.org>
+
+	* capplet/vino-preferences.c: Tell people to use vinagre instead of
+	vncviewer. Closes #521971.
+
+2008-05-24  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-server.c,
+	* server/vino-input.[ch]: Fix bug #534262 – cyclic clipboard propagation.
+
+2008-05-05  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: pre-release bump version to 2.23.2
+
+==================== 2.22.1 ======================
+
+2008-03-13  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-status-icon.c (vino_status_icon_remove_client):
+	Ignore if the client being disconnected is not in our list of
+	connected clients, thus avoiding the screen to be locked when
+	that option is enabled. Closes #522058.
+
+2008-03-13  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.22.1
+
+==================== 2.22.0 ======================
+
+2008-02-25  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.22.0
+
+==================== 2.21.92 =====================
+
+2008-02-18  Mark McLoughlin  <markmc@redhat.com>
+
+	Fix an issue with vinagre/gtk-vnc where the first
+	attempted connection fails because gtk-vnc doesn't
+	send a SetPixelFormat message.
+
+	Narrowed down and tested by Jonh Wendell.
+
+	* server/vino-server.c: (vino_server_handle_new_client): set
+	the client's pixel format after we've initialized it.
+
+2008-02-17  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-server.c:
+	* server/vino-status-icon.c: Fix a crash when client disconnect just
+	after connecting.
+
+2008-02-12  Matthias Clasen <mclasen@redhat.com> 
+
+	* server/libvncserver/rfbserver.c:
+	* capplet/vino-preferences.c: Fix the build with recent
+	glibc by declaring where we use GNU extensions. (#515941)
+
+2008-02-11  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.21.92
+
+==================== 2.21.91 =====================
+
+2008-01-28  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.21.91
+
+==================== 2.21.90 =====================
+
+2008-01-28  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in, README: pre-release bump version to 2.21.90
+
+==================== 2.21.3 =====================
+
+2007-12-03  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in, README: pre-release bump version to 2.21.3
+
+2007-11-30  Ross Burton  <ross@openedhand.com>
+
+	* configure.in:
+	The server doesn't need libgnome, just libbonobo (#500632).
+
+2007-11-27  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-server.c (vino_server_client_disconnected):
+	Fix a regression, only locks the screen when the *last* client disconnect.
+
+==================== 2.21.2 =====================
+
+2007-11-11  Jonh Wendell  <jwendell@gnome.org>
+
+	* capplet/vino-preferences.c,
+	* capplet/vino-preferences.glade:
+	More work on user interface
+
+2007-11-10  Jonh Wendell  <jwendell@gnome.org>
+
+	* capplet/vino-preferences.c,
+	* capplet/vino-preferences.glade:
+	Added extra stuff, advanced configuration based on tabs (#361891)
+
+2007-11-09  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-main.c,
+	* server/vino-status-icon.c: Make use of g_[gs]et_application_name()
+
+2007-11-09  Jonh Wendell  <jwendell@gnome.org>
+
+	Added a gconf key to control the behavior of the status icon.
+	Closes #442696.
+	
+	* server/vino-server.[ch]:
+	  (vino_server_get_status_icon): New function
+	  (vino_server_client_accepted),
+	  (vino_server_client_disconnected): Don't create or destroy the icon
+	  object, its life time is the server's life time.
+	* server/vino-status-icon.[ch]: New property: visibility
+	  (vino_status_icon_update_state): New function, combines tooltip and 
+	  visibility properties.
+	* server/vino-prefs.c,
+	  server/vino-server.schemas.in: Added a new gconf key (icon_visibility)
+	* server/Makefile.am: Added vino-status-icon.h to vino_enum_headers macro
+
+==================== 2.21.1 =====================
+
+2007-10-19  Dan Winship  <danw@gnome.org>
+
+	* server/vino-input.c (vino_input_initialize_keycodes_core):
+	Finish up the previous fix to completely fix #480544.
+
+2007-10-19  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-status-icon.c (vino_status_icon_popup_menu):
+	  Only show 'disconnect all' popup item in status icon if we have
+	  more than one client connected.
+
+2007-10-18  Dan Winship  <danw@gnome.org>
+
+	* server/vino-input.c (vino_input_initialize_keycodes_core):
+	Handle another oddity of core keymaps.
+	(vino_input_init): fix up a bug in the XKB merge; the pointer
+	mapping was only being initialized in the XKB case, causing clicks
+	to not work in the core case. #480544
+
+2007-10-15  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-mdns.c: Better handles disconnection from
+	  avahi-daemon. Thanks to Sebastien Estienne. Closes #415321.
+
+2007-10-15  Jonh Wendell  <jwendell@gnome.org>
+
+	* capplet/vino-preferences.c,
+	* capplet/vino-preferences.desktop.in.in,
+	* server/vino-main.c,
+	* server/vino-status-icon.c,
+	* server/vino-http.c,
+	* server/vino-prompt.c: Replaced occurrences of 'gnome-remote-desktop' to
+	  'preferences-desktop-remote-desktop'. We are not shipping our
+	  own icons anymore.
+	* configure.in,
+	* Makefile.am: Dropped references to 'icon/' directory
+	* icons/ : Dropped
+	
+	Thanks to Jaap A. Haitsma for the patch, closes #446523.
+
+2007-10-15  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: Correct version is 2.21.1, am i on drugs?
+
+2007-10-15  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-server.c,
+	* server/vino-input.c: Handles clipboard text (Closes #306252)
+
+2007-10-15  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.21.3
+
+==================== 2.20.1 =====================
+
+2007-09-17  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump version to 2.20.1
+
+==================== 2.20.0 =====================
+
+2007-09-17  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: pre-release bump version to 2.20.0
+
+==================== 2.19.92 ====================
+
+2007-09-02  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: pre-release bump version to 2.19.92
+
+2007-09-02  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-fb.c (vino_fb_init_xdamage):
+	  Check if we are running at a composited screen and disable XDamage
+	  extension. We should remove this check when XDamage work perfectly
+	  with 3d desktop. Thanks to Pretto for the testing. Closes #383147.
+
+2007-09-01  Dan Winship  <danw@novell.com>
+
+	* configure.in: check for XKB
+
+	* server/vino-input.c: If the server supports XKB, use that rather
+	than core X calls to get the keyboard mapping. Add support for
+	multiple keyboard groups, and watch xkb events to notice when the
+	keyboard layout changes.
+
+2007-08-31  Jonh Wendell  <jwendell@gnome.org>
+
+	* MAINTAINERS:
+	  Updated to the new format.
+
+2007-08-30  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-server.c (vino_server_client_disconnected):
+	  Check if the icon exists before trying to unref it.
+
+2007-08-13  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump to 2.19.91
+
+==================== 2.19.90 ====================
+
+2007-08-13  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: bump version to to 2.19.90
+
+2007-08-06  Jonh Wendell  <jwendell@gnome.org>
+	* server/vino-server.c: (vino_server_auth_client):
+	  Don't call vncEncryptBytes() if the password is NULL, avoiding a
+	  crash (See: Ubuntu #128746)
+
+2007-08-06  Jonh Wendell  <jwendell@gnome.org>
+	* server/vino-mdns.c: Include hostname in Avahi service name,
+	  closes #461773.
+
+2007-08-06  Jonh Wendell  <jwendell@gnome.org>
+	* configure.in: Show the configure summary
+
+2007-07-20  Jonh Wendell  <jwendell@gnome.org>
+	* server/vino-server.schemas.in: Fix some grammar issues,
+	  closes #457138. Thanks to Og Maciel.
+
+2007-07-09  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump to 2.19.6
+
+==================== 2.19.5 ====================
+
+2007-07-09  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: bump version to to 2.19.5
+
+2007-06-30  Jonh Wendell <jwendell@gnome.org>
+
+	* capplet/Makefile.am,
+	  capplet/vino-preferences.c,
+	  server/vino-http.[hc],
+	  server/vino-dbus-listener.c: Show http server address in vino-preferences
+	  if vino is compiled with http support.
+	  Patch from Halton Huo, closes #431635.
+
+2007-06-30  Jonh Wendell <jwendell@gnome.org>
+
+	* server/vino-main.c,
+	  server/vino-mdns.[hc],
+	  server/vino-prefs.c: Only publish VNC service under Avahi when server
+	  is enabled. Closes #330690.
+
+2007-06-29  Jonh Wendell <jwendell@gnome.org>
+
+	* server/vino-server.schemas.in,
+	  server/vino-server.[hc],
+	  server/vino-prefs.c: Added a new configuration option (gconf key)
+	  'lock_screen_on_disconnect', which locks the screen when last
+	  user disconnects. Closes #355586.
+
+2007-06-27  Stef Walter  <stef@memberwebs.com>
+
+	* capplet/vino-preferences.c: 
+	* server/vino-server.c: Don't assert on a NULL find result from 
+	  gnome-keyring. Closes bug #450074
+
+2007-06-09  Jonh Wendell <jwendell@gnome.org>
+
+	* server/vino-dbus-listener.c: Changed introspect_xml variable type
+	  from array to pointer, fixing a crash when dbus Introspect() method
+	  is called. Closes #445525.
+
+2007-05-23  Jonh Wendell <jwendell@gnome.org>
+
+	* server/vino-input.c: Fix keyboard mapping problem, closes #440429
+
+2007-05-08  Jonh Wendell <jwendell@gnome.org>
+
+	* configure.in: Build against libnotify, if it's available (added
+	  --enable-libnotify=auto and make it the default), closes #394467
+
+2007-05-07  Jonh Wendell <jwendell@gnome.org>
+
+	* server/Makefile.am,
+	  capplet/Makefile.am:
+	  Use $prefix/share/vino for data in favor of $prefix/share/gnome/vino
+	  Patch from Matthias Clasen, closes #436460
+
+2007-05-02  David Farning  <dfarning@gmail.com>
+
+	* icons/Makefile.am (update-icon-cache): fix gtk-update-icon-cache
+	for install and uninstall-hook.
+
+2007-04-23  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-input.c:
+	Fix crash in mouse wheel movement on non-Xorg system, bug #431627
+	Patch from Halton Huo <halton.huo@sun.com>
+
+2007-04-13  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-status-icon.c:
+	(vino_status_handle_new_client_notification_closed):
+	Unref notification object, as libnotify bug was fixed.
+
+2007-04-10  Jonh Wendell  <jwendell@gnome.org>
+
+	* server/vino-server.schemas.in: Fix a typo in text, bug #409000
+
+2007-04-09  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump to 2.19.1
+	
+==================== 2.18.1 ====================
+
+2007-04-04  Jonh Wendell  <jwendell@gnome.org>
+	* capplet/vino-preferences.c:
+	(vino_preferences_dialog_password_changed):
+	Fix crash on critical warning when calling g_base64_encode,
+	this and previous patch hopefully fix bug #423027
+
+2007-04-04  Jonh Wendell  <jwendell@gnome.org>
+	* capplet/vino-preferences.c:
+	(vino_preferences_dialog_setup_password_entry),
+	(vino_preferences_vnc_password_notify):
+	Fix crash on critical warning when calling g_base64_decode, bug #418836
+	Patch from Halton Huo <halton.huo@sun.com>
+
+2007-04-04  Jonh Wendell  <jwendell@gnome.org>
+
+	Fix crash on vino_input_init(), fixes bug #425863
+
+	* server/vino-input.c: Updated VINO_IS_LATIN1_KEYSYM define to check if
+	the value is less than 0x100.
+
+2007-03-29  Mark McLoughlin  <mark@skynet.ie>
+
+	Fix the non-XDAMAGE, non-XSHM support (bug #423887)
+
+	* server/vino-fb.c: (vino_fb_create_image): create the
+	XImage data only after allocating the XImage itself
+	where the actual rowstride is calculated, rather than
+	making a lame attempt at guessing what rowstride will
+	be used.
+
+2007-03-12  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump to 2.18.1
+	
+==================== 2.18.0 ====================
+
+2007-03-06  Jonh Wendell <jwendell@gnome.org>
+	* capplet/vino-preferences.desktop.in.in:
+	  Remove deprecated categories from the .desktop file
+
+2007-03-05  Jonh Wendell <jwendell@gnome.org>
+	* server/vino-status-icon.c:
+	  Allows only one disconnect confirmation dialog running, and
+          don't use modal window on that dialog, closes #414905.
+
+2007-02-27  Halton Huo <halton.huo@sun.com>
+
+	* server/vino-http.c: 
+	  Add gtk/gtkicontheme.h in vino-http.c for bug #412559.
+
+2007-02-26  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: post-release bump to 2.18.0
+
+==================== 2.17.92 ====================
+
+2007-02-26  Jonh Wendell  <jwendell@gnome.org>
+
+	* configure.in: Version 2.17.92.
+	
+
+2007-02-09  Jonh Wendell <jwendell@svn.gnome.org>
+
+	* capplet/vino-preferences.c:
+	  Update the port number (in vino applet) when the server starts,
+          closes #394005
+
+2007-02-02  Jonh Wendell <jwendell@svn.gnome.org>
+
+	* server/vino-status-icon.c:
+	  Show the notification bubble after a timeout, as a workaround
+          for bug #394462
+
+2007-02-02  Mark McLoughlin  <mark@skynet.ie>
+
+	Hopefully fix crash when connecting after changing the
+	screen resolution (bug #357778)
+
+	Thanks to Jonh Wendell for reproducing and suggesting
+	fixes.
+
+	* server/vino-server.c: (vino_server_setup_framebuffer):
+	Make sure the screen size gets updated when the first
+	client connects.
+
+2007-01-30  Jonh Wendell <jwendell@svn.gnome.org>
+
+	* capplet/vino-preferences.c:
+	  (vino_preferences_vnc_password_notify):
+	  (vino_preferences_dialog_setup_password_entry):
+	  Better handling of gconf values in password field (Bug #400260)
+
+2007-01-30  Jonh Wendell <jwendell@svn.gnome.org>
+
+	* session/vino-session.c,
+	  server/vino-http.c,
+	  server/vino-prompt.c:	Fix minor issues about GnomeIconTheme usage,
+          yet bug #391850.
+
+2007-01-18  Jonh Wendell <jwendell@svn.gnome.org>
+
+	* capplet/vino-preferences.desktop.in.in:
+	Put Vino preferences into the control center's "Internet and Network"
+	category - Patch from Denis Washington (Closes #394523)
+
+2007-01-18  Jonh Wendell <jwendell@svn.gnome.org>
+
+	* server/vino-status-icon.c: (vino_status_icon_help):
+	Uses gnome-open instead of yelp (Closes #391848)
+
+2007-01-08  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.17.6
+	
+==================== 2.17.5 ====================
+
+2007-01-08  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.17.5.
+	
+2007-01-08  Mark McLoughlin  <mark@skynet.ie>
+
+	Display a notification bubble when someone connects
+	if we haven't already asked the user whether to
+	allow them.
+
+	Based on a patch from Jonh Wendell in bug #387095
+
+	* configure.in: add --enable-libnotify
+	
+	* server/Makefile.am: link to libnotify
+	
+	* server/vino-status-icon.c: Display a notification
+	bubble when a client connects if the authorization
+	prompt is disabled.
+
+2007-01-08  Christian Persch  <chpe@svn.gnome.org>
+
+	* server/vino-http.c: (vino_http_lookup_client_logo):
+	* server/vino-prompt.c: (vino_prompt_setup_icons):
+	Replace deprecated GnomeIconTheme usage with GtkIconTheme. Bug
+	#391850.
+
+2007-01-07  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-fb.c,
+	  server/vino-server.c,
+	  server/vino-dbus-listener.c: don't mark object
+	property descriptions for translation, but do mark
+	them as static with G_PARAM_STATIC_NAME etc.
+
+2007-01-07  Mark McLoughlin  <mark@skynet.ie>
+
+	Re-work a fair bit of the D-Bus support e.g.
+	  - Re-name the interface to org.gnome.VinoScreen
+	  - Share a connection between all listeners so that
+	    we don't e.g. request the name more than once
+	  - Remove strange AddMatch/Disconnected handling
+	  - Error handling fixes
+	  - Fix some leaks
+	  - Misc. fixes and code cleanups
+
+	* server/vino-dbus-listener.c: re-name interface, add 
+	shared connection stuff, kill AddMatch/Disconnceted
+	message handling, fix error handling, fix leaks and
+	lots of misc. fixing
+	
+	* server/vino-dbus-listener.h: add shared connection api
+	
+	* server/vino-main.c: (main): request the D-Bus name
+	here once all the listeners have been created.
+	
+	* capplet/vino-preferences.c: (vino_preferences_get_server_port):
+	Update for interface re-name, fix leak, don't handle impossible
+	NULL return from dbus_g_proxy_new_for_name(), misc. cleanups.
+	
+2006-12-21  Jonh Wendell <jwendell@cvs.gnome.org>
+	
+	Added initial d-bus support, fixing bug #319798
+
+	* configure.in: Require dbus-glib-1
+
+	* server/vino-dbus-listener.[ch]: New files
+
+	* server/Makefile.am: Added vino-dbus-listener.[ch]
+
+	* capplet/vino-preferences.c:
+	(vino_preferences_get_server_port): New function, get server port
+	number via dbus.
+	(vino_preferences_get_local_hostname): Call new function; append port
+	number to function result.
+
+	* server/vino-server.[ch]: Added new object VinoDBusListener; Added new
+	read-only 'port' property.
+
+	* server/vino-util.[ch]: Added new debug flag: DBUS
+
+2006-12-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.17.5.
+	
+==================== 2.17.4 ====================
+
+2006-12-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.17.4.
+
+2006-12-18  Mark McLoughlin  <mark@skynet.ie>
+
+	Implement Calum's suggestions from his review of the
+	status icon UI. Also some code cleanups. Fixes bug #384704
+
+	* server/vino-main.c: (main): set the default window icon here
+	
+	* server/vino-server.[ch]:
+	(vino_client_disconnect): re-name from vino_server_disconnect_client()
+	
+	* server/vino-status-icon.c:
+	(vino_status_icon_spawn_command): split this helper function out
+	(vino_status_icon_preferences): user it here
+	(vino_status_icon_help): and here
+	(vino_status_icon_about): clean this up; add more authors
+	(vino_status_icon_disconnect_confirm): split this helper function out
+	(vino_status_icon_disconnect_client): use it here
+	(vino_status_icon_disconnect_all_clients): add new function
+	(vino_status_icon_popup_menu): clean this up and implement calum's
+	suggestions
+	(vino_status_icon_activate): pop-up the preferences dialog here
+
+2006-12-12  Christian Persch  <chpe@cvs.gnome.org>
+
+	* server/vino-status-icon.c: (vino_status_icon_finalize),
+	(vino_status_icon_init), (vino_status_icon_new),
+	(vino_status_icon_popup_menu), (vino_status_icon_activate),
+	(vino_status_icon_update_tooltip), (vino_status_icon_class_init):
+	Fix some buglets and add some improvements. Bug #385058.
+
+2006-12-12  Andre Klapper  <a9016009@gmx.de>
+	
+	* server/vino-status-icon.c: correct license string.
+	fixes bug #384874.
+
+2006-12-08  Jonh Wendell <jwendell@cvs.gnome.org>
+	Initial status icon support (Fixes bug #154467)
+
+	* server/vino-status-icon.[ch]: New files
+	
+	* server/Makefile.am: Added vino-status-icon.[ch]
+
+	* server/vino-server.[ch]:
+	(vino_client_get_hostname),
+	(vino_server_disconnect_client): new functions
+	(vino_server_handle_prompt_response),
+	(vino_server_handle_authenticated_client): Call the new 
+	vino_server_client_accepted()
+	(vino_server_handle_client_gone): Call the new 
+	vino_server_client_disconnected()
+
+2006-12-07  Mark McLoughlin  <mark@skynet.ie>
+
+	Fixes bug #337214
+
+	* server/vino-prompt.c: (vino_prompt_setup_dialog):
+	Hide the help button rather than making it insensitive
+
+2006-12-06  Jonh Wendell <jwendell@cvs.gnome.org>
+
+	* server/vino-server.c: rename VinoServerClientInfo
+        struct to VinoClient.
+
+2006-12-06  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-prompt.c: use G_DEFINE_TYPE instead of
+	manually defining it.
+
+2006-12-06  Mark McLoughlin  <mark@skynet.ie>
+
+	Fix broken keyboard handling on Xsun by making use of
+	Xlib's strange "guess lowercase keysym from upper-case
+	keycode mapping" logic in XKeycodeToKeysym()
+
+	Based on patch from Halton Huo <halton.huo@sun.com> in
+	bug #369884
+
+	* server/vino-input.c: (vino_input_initialize_keycodes): use
+	XKeycodeToKeysym() rather than XGetKeyboardMapping() to build
+	our keysym->keycode mapping.
+
+2006-11-30  Mark McLoughlin  <mark@skynet.ie>
+
+	Based on patch from John Wendell <wendell_listas@bani.com.br>
+	in bug #156967.
+
+	* server/libvncserver/main.c:
+	(rfbGetScreen): strdup the default desktop name.
+	(rfbSetDesktopName): add new function.
+	(rfbScreenCleanup): free the desktop name
+	
+	* server/libvncserver/rfb/rfb.h: make desktopName not const
+	and add rfbSetDesktopName()
+	
+	* server/vino-server.c: (vino_server_init_from_screen): set the
+	desktop name here to user@host
+
+2006-11-17  Jonh Wendell <jwendell@cvs.gnome.org>
+
+	Fixes bug #376287 - Vino shows the wrong host in 2.17.2
+
+	* vino/server/libvncserver/rfbserver.c : remove rfbSockaddrToHostname()
+	function and updated rfbNewClient() so that it gets the right ip/name
+	from remote machine.
+
+2006-11-06  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.17.3.
+	
+==================== 2.17.2 ====================
+
+2006-11-06  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.17.2.
+
+2006-10-27  Mark McLoughlin  <mark@skynet.ie>
+
+	Use GtkLinkButton instead of VinoURL.
+
+	Patch from Mariano Suárez-Alvarez <mariano.suarezalvarez@gmail.com>
+	in bug #159216.
+
+	* vino/configure.in: require gtk+ 2.10
+	
+	* vino/capplet/vino-preferences.c: use GtkLinkButton
+	
+	* vino/capplet/vino-url.[ch]: remove
+
+	* vino/capplet/Makefile.am: remove vino-url.[ch]
+
+2006-10-27  Mark McLoughlin  <mark@skynet.ie>
+
+	Use glib's base64 functions instead of our own.
+
+	* vino/configure.in: require glib 2.12
+	
+	* vino/server/vino-server.c: (vino_server_auth_client):
+	Use g_base64_decode()
+	
+	* vino/server/vino-util.[ch]: kill vino_base64_unencode()
+	
+	* vino/capplet/vino-preferences.c: kill
+	vino_preferences_dialog_base64_encode() and
+	vino_preferences_dialog_base64_unencode()
+	(vino_preferences_vnc_password_notify),
+	(vino_preferences_dialog_setup_password_entry):
+	Use g_base64_decode()
+	(vino_preferences_dialog_password_changed):
+	Use g_base64_encode()
+
+2006-10-23  Mark McLoughlin  <mark@skynet.ie>
+
+	Fixes bug #345394 - icons do not change when the
+	icon theme changes.
+
+	* capplet/vino-preferences.c:
+	(vino_preferences_dialog_setup_icons): use GtkImage
+	and GtkWindow's icon theme support instead of
+	GnomeIconTheme.
+
+2006-10-23  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.glade: manually mark
+	a few strings as not-translatable. Fingers crossed
+	that glade won't re-mark them again later. Fixes
+	bug #331700
+
+2006-10-23  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.desktop.in.in: add GTK
+	category. Fixes bug #328046
+
+2006-10-20  Mark McLoughlin  <mark@skynet.ie>
+
+	Thanks to Srirama Sharma <srirama.sharma@wipro.com> for
+	the first cut at ipv6 support in bug #310965
+
+	* vino/server/vino-http.c: (vino_http_create_listening_socket):
+	Again, if ipv6 support is compiled in, create an ipv6 socket
+	and fallback to ipv4 if it fails
+
+2006-10-20  Mark McLoughlin  <mark@skynet.ie>
+
+	And here's where we actually create an IPv6 socket.
+
+	* vino/server/libvncserver/sockets.c:
+	(ListenOnTCPPort): if ipv6 support is compiled in,
+	always try and create an AF_INET6 socket and fallback
+	to an AF_INET one if it fails.
+
+2006-10-20  Mark McLoughlin  <mark@skynet.ie>
+
+	* vino/configure.in: add --enable-ipv6 and check for
+	IPv6 support.
+
+2006-10-20  Mark McLoughlin  <mark@skynet.ie>
+
+	Use inet_ntop() instead of inet_ntoa()
+
+	* vino/server/libvncserver/rfbserver.c:
+	(rfbSockaddrToHostname): function to use inet_ntop
+	on ipv4, ipv4-mapped ipv6 and ipv6 addresses.
+	(rfbNewClient): use it.
+
+	* vino/server/libvncserver/CHANGES: add note.
+
+2006-10-20  Mark McLoughlin  <mark@skynet.ie>
+
+	* vino/capplet/vino-preferences.c:
+	(vino_preferences_get_local_hostname): use getaddrinfo()
+	instead of gethostbyname()
+
+2006-10-20  Mark McLoughlin  <mark@skynet.ie>
+
+	* vino/server/libvncserver/main.c,
+	vino/server/libvncserver/sockets.c,
+	vino/server/libvncserver/rfbserver.c,
+	vino/server/libvncserver/rfb/rfb.h: remove
+	a heap of threading stuff which we don't
+	use.
+
+	* vino/server/libvncserver/CHANGES: add note.
+
+2006-10-20  Mark McLoughlin  <mark@skynet.ie>
+
+	Remove some unused sockets code so we don't have
+	to fix it for IPv6 support.
+
+	* vino/server/libvncserver/sockets.c:
+	(rfbProcessNewConnection): remove libwrap usage
+	(rfbConnect), (ConnectToTcpAddr): remove unused
+	functions
+
+	* vino/server/libvncserver/rfb/rfb.h: remove
+	rfbConnect() and ConnectToTcpAddr()
+
+	* vino/server/libvncserver/CHANGES: add note
+
+2006-10-20  Mark McLoughlin  <mark@skynet.ie>
+
+	* vino/server/vino-http.c: (vino_http_construct_response):
+	Fix warning
+
+2006-10-19  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-server.c: (vino_server_handle_client_gone):
+	Don't remove the io_watch if it's zero - fixes assertion
+	where client disconnects while it's on hold.
+
+2006-10-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/libvncserver/rfbserver.c: cherry-pick some more
+	fixes from upstream libvncserver.
+
+2006-10-18  Mark McLoughlin  <mark@skynet.ie>
+
+	Fix issue with the CoRRE encoding saying its only sending
+	a single rectangle, but sending lots more. Problem identified
+	by Detlef Schmicker <d.schmicker@physik.de>
+
+	Fix is backported from libvncserver upstream.
+
+	* server/libvncserver/rfbserver.c:
+	(rfbSendFramebufferUpdate): handle maxRectsPerUpdate for
+	CoRRE and Zlib encodings.
+
+2006-10-17  Mark McLoughlin  <mark@skynet.ie>
+
+	Add a --enable-gnome-keyring option which causes Vino
+	to store its configured password in the user's keyring.
+	Disabled by default, because it's not really a good
+	idea. See comments in bug #344839
+
+	Based on a patch from Steven Zhang <steven.zhang@sun.com>
+
+	* configure.in: add --enable-gnome-keyring
+	
+	* server/vino-server.c:
+	(vino_server_get_password_from_keyring): helper to
+	read the password from the keyring.
+	(vino_server_auth_client): if keyring support is enabled,
+	authenticate against the password stored in the keyring.
+	If there's no password in the keyring, authenticate against
+	the password in GConf.
+	
+	* capplet/vino-preferences.c:
+	(vino_preferences_dialog_get_password_from_keyring): lookup
+	the password from the user's keyring.
+	(vino_preferences_dialog_set_password_in_keyring): store
+	the password in the user's keyring.
+	(vino_preferences_dialog_password_changed): store the new
+	password in the keyring, falling back to GConf if that
+	fails.
+	(vino_preferences_dialog_setup_password_entry): read the
+	password from the keyring, falling back to GConf. Only
+	watch for changes from GConf if we actually used the
+	one from GConf in the first place.
+	(vino_preferences_dialog_init): hack to allow variable
+	number of listeners.
+
+	* server/Makefile.am, capplet/Makefile.am: build against
+	gnome-keyring
+	
+2006-10-16  Dan Winship  <danw@novell.com>
+
+	* server/vino-fb.c (vino_fb_xdamage_idle_handler): If not using
+	XShm, use XGetSubImage to get the damaged pixels.
+	(vino_fb_init_fb_image): Don't call XShmCreatePixmap if not using
+	XShm.
+	(vino_fb_init_from_screen): Don't use XShm if the server doesn't
+	support the shared_pixmaps option. Fixes vino on Xgl. #341186
+
+2006-10-16  Dan Winship  <danw@novell.com>
+
+	* server/libvncserver/rfb/rfbproto.h (rfbProtocolMinorVersion8):
+	define this.
+
+	* server/libvncserver/auth.c (rfbAuthNewClient,
+	rfbAuthProcessSecurityTypeMessage, rfbAuthPasswordChecked):
+	Minor updates to support RFB 3.8.
+
+	* server/libvncserver/rfbserver.c
+	(rfbProcessClientProtocolVersion): allow the client to specify
+	protocol version 3.8 even though we still only advertise 3.7. See
+	bug #356131.
+
+2006-10-13  Mark McLoughlin  <mark@skynet.ie>
+
+	Add "use_alternative_port" and "alternative_port" GConf
+	keys, allowing people to specify a specific port to listen
+	on.
+
+	Based on patch from John Wendell <wendell_listas@bani.com.br>
+	in bug #333752.
+
+	* vino/server/vino-server.schemas.in: add new keys.
+
+	* vino/server/vino-prefs.c:
+	(vino_prefs_use_alternative_port_changed),
+	(vino_prefs_alternative_port_changed): handle changes to new keys
+	(vino_prefs_create_server): create server with new props
+	(vino_prefs_init): read new keys and set up notify handlers
+
+	* vino/server/vino-server.[ch]:
+	(vino_server_init_from_screen): explictly set port and turn
+	off autoPort if use_alternative_port is set.
+	(vino_server_set_property), (vino_server_get_property),
+	(vino_server_class_init): add new properties.
+	(vino_server_get_use_alternative_port),
+	(vino_server_set_use_alternative_port),
+	(vino_server_get_alternative_port),
+	(vino_server_set_alternative_port): add accessors - re-init
+	the listening port if things change after the server is running.
+
+	* vino/server/libvncserver/sockets.c:
+	(rfbInitSockets): split out some of this into
+	(rfbInitListenSock): this.
+	(rfbSetAutoPort), (rfbSetPort): add these two.
+
+	* vino/server/libvncserver/rfb/rfb.h: add rfbSetAutoPort()
+	and rfbSetPort().
+
+	* vino/server/libvncserver/CHANGES: add note.
+
+2006-10-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* vino/server/vino-prefs.c,
+	  vino/server/vino-server.h: re-indent some stuff
+	for the next patch.
+
+2006-10-12  Mark McLoughlin  <mark@skynet.ie>
+
+	Add a "local_only" GConf key, for people who want to exclusively
+	use SSH tunnels to access the server.
+
+	Based on patch from Shaya Potter <spotter@cs.columbia.edu>
+	in bug #156242
+
+	* server/libvncserver/sockets.c:
+	(rfbInitSockets): pass rfbScreen->localOnly to ListenOnTcpPort()
+	(rfbSetLocalOnly): re-bind the socket if localOnly changes.
+	(ListenOnTcpPort): add localOnly argument and bind with
+	INADDR_LOOPBACK if true.
+
+	* server/libvncserver/rfb/rfb.h: modify ListenOnTcpPort()
+	prototype and add rfbSetLocalOnly()
+
+	* server/libvncserver/main.c: (rfbGetScreen): init localOnly.
+
+	* server/libvncserver/CHANGES: add note.
+
+	* server/vino-server.schemas.in: add local_only GConf key
+
+	* server/vino-prefs.c:
+	(vino_prefs_local_only_changed),
+	(vino_prefs_create_server),
+	(vino_prefs_init): add handling for local_only key
+
+	* server/vino-server.[ch]:
+	(vino_server_init_from_screen): propogate local_only to rfbScreen.
+	(vino_server_set_property), (vino_server_get_property),
+	(vino_server_class_init): add "local-only" property
+	(vino_server_get_local_only),
+	(vino_server_set_local_only): add accessors. Call rfbSetLocalOnly()
+	if it changes.
+
+2006-10-11  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-server.c:
+	(vino_server_init_from_screen): call update_security_types()
+	(vino_server_update_security_types): don't segv if the
+	screen hasn't been set yet.
+
+	* server/vino-prefs.c: (vino_prefs_create_server): set the
+	screen last when constructing the server
+
+2006-10-11  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-server.c: (vino_server_get_property):
+	Fix typo
+
+2006-10-10  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* server/vino-prefs.c: (vino_prefs_init):
+	Revert the broken leak fix here too.
+
+2006-10-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/libvncserver/Makefile.am:
+	* server/vino-server.c: (vino_server_set_client_on_hold):
+	Fix couple of nits
+
+2006-10-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: bump version to 2.17.1 - 2.16 development
+	continues on the gnome-2-16 branch.
+	
+2006-10-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.16.1
+
+==================== 2.16.0 ====================
+
+2006-10-05  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* NEWS: Updated.
+	* server/libvncserver/Makefile.am: Fix for compile error with
+	LDFLAGS="-Wl,--as-needed". Patch from dgrenier at easyconnect fr.
+	Closes bug #340377.
+
+2006-10-05  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* server/vino-server.c: (vino_server_set_client_on_hold),
+	(vino_server_handle_new_client): Fix from Gary Coady to fix
+	problem where vino-server takes 90% CPU on wrong login.
+	Closes bug #332011.
+
+2006-10-05  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* server/libvncserver/rfb/rfbproto.h:
+	* server/vino-fb.c: Build fixes for FreeBSD. Patch from
+	Diego Pettenò. Closes bug 314311.
+
+2006-10-05  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* server/libvncserver/zrle.c: Fix compilation if
+	--without-zlib and --withoug-libz are passed. Patch from
+	Leonardo Boshell. Closes bug #314224.
+	* server/vino-prefs.c: (vino_prefs_init): Fix a small leak.
+	* configure.in: Set version to 2.16.0.
+
+2006-08-15  Brian Pepple  <bdpepple@gmail.com>
+
+	* po/LINGUAS: New file listing all supported languages.
+
+	* configure.in: Use po/LINGUAS instead of including all languages
+	directly in this file. See the wiki for more information:
+	http://live.gnome.org/GnomeGoals/PoLinguas
+
+2006-08-05  Ani Peter <peter.ani@gmail.com>
+
+	* configure.in: Added Malayalam (ml.po) to ALL_LINGUAS
+
+2006-08-01 Arangel Angov <ufo@linux.net.mk>
+
+	* configure.in: Added Slovenian Translation.
+
+2006-07-03  Runa Bhattacharjee <runabh@gmail.com>
+
+        * configure.in: Added Bengali India (bn_IN) to ALL_LINGUAS.
+
+2006-04-26  Gora Mohanty  <gmohanty@cvs.gnome.org>
+
+        * configure.in: Added 'lv' (Latvian) to ALL_LINGUAS.
+
+2006-04-18  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* .cvsignore: Update
+	* capplet/.cvsignore: Update
+	* configure.in: Remove obsolete entry for no_NO
+	* po/.cvsignore: Update
+	* po/no.po: Remove.
+
+2006-03-28 Vladimer Sichinava  <vlsichinava@gmail.com>
+
+        * configure.in: Added "ka" (Georgian) to ALL_LINGUAS
+
+2006-02-25  Chao-Hsiung Liao  <j_h_liau@yahoo.com.tw>
+
+	* configure.in: Add "zh_HK" to ALL_LINGUAS.
+	
+2006-02-03  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-mdns.c: (vino_mdns_get_service_name):
+	Change the second comment for translators so that 
+	it actually makes sense.
+
+2006-01-15  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.13.6.
+
+==================== 2.13.5 ====================
+
+2006-01-15  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.13.5.
+
+2006-01-13  Mark McLoughlin  <mark@skynet.ie>
+
+	Add support for publishing over mDNS. Based on patch from very
+	patient Sebastien Estienne <sebastien.estienne@gmail.com> in
+	bug #159874
+
+	* configure.in: add --enable-avahi
+	
+	* server/Makefile.am: add vino-mdns.[ch] and build against
+	avahi if enabled
+	
+	* server/vino-mdns.[ch]:
+	(vino_mdns_add_service),
+	(vino_mdns_start),
+	(vino_mdns_stop): add internal publishing API.
+	
+	* server/vino-main.c: (main): start and stop the mDNS support
+	before and after entering the mainloop.
+	
+	* server/vino-server.c: (vino_server_init_from_screen): advertise
+	the rfb service
+	
+	* server/vino-http.c: (vino_http_create_listening_socket): advertise
+	the http service
+	
+	* server/vino-util.[ch]: (vino_setup_debug_flags): add mdns
+	debugging flag
+
+2006-01-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: bump version to 2.13.1 - 2.12 development
+	continues on the gnome-2-12 branch
+
+2005-11-16  Mark McLoughlin  <mark@skynet.ie>
+
+	Fix crash with unicode mapped keysyms (bug #321516)
+	Patch from Gary Coady <gary@lyranthe.org>
+
+	* server/vino-input.c: update VINO_IS_LATIN1_KEYSYM
+	to not match keysyms with byte 4 set.
+
+2005-10-27  Erdal Ronahi  <erdal.ronahi@gmail.com>
+
+	* configure.in: Added ku (Kurdish) to ALL_LINGUAS
+
+2005-09-26  Mark McLoughlin  <mark@skynet.ie>
+
+	Based on patch from  Alexandre Oliva <oliva@lsd.ic.unicamp.br>
+	Fixes keyboard brokeness with some X server configurations.
+
+	https://bugzilla.redhat.com/158713
+
+	* server/vino-input.c: (vino_input_handle_key_event): don't
+	send press/release pairs for each XK_Mode_switch and XK_ISO_Level3_Shift
+	keypress.
+
+2005-09-06  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.12.1.
+	
+==================== 2.12.0 ====================
+
+2005-09-06  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.12.0.
+
+2005-09-04  Roozbeh Pournader  <roozbeh@farsiweb.info>
+
+	* configure.in: Added "fa" (Persian) to ALL_LINGUAS.
+
+2005-08-22  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.11.93
+	
+==================== 2.11.92 ====================
+
+2005-08-22  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.11.92.
+
+2005-07-26  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.11.91
+	
+==================== 2.11.90 ====================
+
+2005-07-26  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.11.90
+
+2005-07-25  Mark McLoughlin  <mark@skynet.ie>
+
+	Use DamageReportDeltaRectangles rather than
+	DamageReportRawRectangles, hopefully speeding things
+	up a tad.
+
+	* server/vino-fb.c:
+	(vino_fb_xdamage_idle_handler): correctly subtract
+	the updated region from the damage region *before*
+	calling CopyArea in order to avoid a race condition.
+	(vino_fb_xdamage_event_filter): add a small bit more
+	debug spew.
+	(vino_fb_init_xdamage): use DamageReportDeltaRectangles
+
+2005-07-18  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	* configure.in: Added "th" (Thai) to ALL_LINGUAS.
+
+2005-06-28  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* capplet/vino-url.c: (vino_url_finalize): Plug a
+	leak. Closes bug #309177.
+
+2005-06-06  Ignacio Casal Quinteiro  <nacho.resa@gmail.com>
+
+	* configure.in: Added 'gl' to ALL_LINGUAS.
+
+2005-05-26  Mark McLoughlin  <mark@skynet.ie>
+
+	* docs/Makefile.am: add debugging.txt to EXTRA_DIST.
+
+2005-05-25  Mark McLoughlin  <mark@skynet.ie>
+
+	* docs/debugging.txt: add.
+	
+2005-05-20  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.11.2
+
+==================== 2.11.1.2 ====================
+
+2005-05-20  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.11.1.2.
+
+2005-05-20  Mark McLoughlin  <mark@skynet.ie>
+
+	Fix some keyboard handling bugs:
+	  1) Shift key not working for some charactes (bug #155900)
+	  2) Caps lock not working (bug #157685)
+	  3) Key repeat issue:
+	       https://bugzilla.redhat.com/134451
+
+	* server/vino-input.c:
+	(vino_input_initialize_keycodes): if the keysym is
+	defined multiple times in the mapping, choose the
+	first one.
+	(vino_input_handle_key_event): ignore Caps Lock altogether
+	and send a key press/release pair to the Xserver for
+	each press, rather than waiting for the release. The
+	Xserver on the client can handle key repeating.
+
+2005-05-20  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.11.2
+
+==================== 2.11.1.1 ====================
+
+2005-05-20  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.11.1.1.
+	
+2005-05-20  Mark McLoughlin  <mark@skynet.ie>
+
+	Fix build failure with released tarball and 
+	not-CVS-HEAD ORBit2. Bug #304843
+
+	* autogen.sh: build with automake 1.8.
+	
+	* server/Makefile.am: add dist-hook hack.
+
+2005-05-19  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.11.2.
+
+==================== 2.11.1 ====================
+
+2005-05-19  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.11.1.
+
+2005-05-19  Mark McLoughlin  <mark@skynet.ie>
+
+	Patch from Thierry Moisan <thierryn@videotron.ca> in
+	bug #150460
+
+	* server/vino-server.schemas.in: fix typo.
+
+2005-05-19  Mark McLoughlin  <mark@skynet.ie>
+
+	Fix crash when switching resolution in bug #166167.
+	Root cause identified by Leena Gunda <leena.gunda@wipro.com>.
+
+	* server/libvncserver/rfb/rfb.h,
+	  server/libvncserver/main.c: (rfbNewFramebuffer): remove the
+	arguments relating to format switching, we only ever want to
+	just update the size of the framebuffer.
+	
+	* server/vino-server.c: (vino_server_screen_size_changed):
+	Update for above change.
+
+2005-05-16  Mark McLoughlin  <mark@skynet.ie>
+
+	Patch from Leena Gunda in bug #166167
+
+	* server/vino-fb.c: (vino_fb_finalize_screen_data):
+	Disconnect the size-changed handler.
+	
+2005-05-16  Mark McLoughlin  <mark@skynet.ie>
+	
+	* server/vino-server.c: (vino_server_init_from_screen):
+	update comment
+
+2005-05-16  Mark McLoughlin  <mark@skynet.ie>
+
+	Fix for bug #168904 - clicking on help terminates vino-server
+
+	* server/vino-prompt.c: (vino_prompt_setup_dialog): Set the
+	help button to be insensitive.
+	
+	* server/vino-prompt.glade: put an id on the help_button.
+
+2005-05-16  Mark McLoughlin  <mark@skynet.ie>
+
+	Fix for bug #158710
+
+	* capplet/vino-preferences.c:
+	(vino_preferences_vnc_password_notify): Don't pass
+	NULL to gtk_entry_set_text()
+
+2005-04-19  Pablo Saratxaga  <pablo@mandriva.com>
+
+	* configure.in: Added Walloon (wa) to ALL_LINGUAS.
+
+2005-4-14  Abduxukur Abdurixit <abduxukur.abdurixit@t-systems.ch>
+
+	* configure.in: Added "ug" to ALL_LINGUAS.
+
+2005-03-31  Steve Murphy  <murf@e-tools.com>
+
+	* configure.in: Added "rw" to ALL_LINGUAS.
+
+2005-03-30  Adi Attar  <aattar@cvs.gnome.org>
+
+	* configure.in: Added "xh" to ALL_LINGUAS.
+
+2005-03-07  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.10.1.
+
+==================== 2.10.0 ====================
+
+2005-03-07  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.10.0.
+
+2005-03-05  Abel Cheung  <maddog@linuxhall.org>
+
+	* configure.in: Added "vi" to ALL_LINGUAS.
+
+2005-03-02  Rajesh Ranjan <rranjan@redhat.com>
+
+	* configure.in : Added hi to ALL_LINGUAS.
+
+2005-02-21  Pawan Chitrakar  <pawan@nplinux.org>
+
+	* configure.in: Added ne "Nepali" in ALL_LINGUAS
+
+2004-12-01  Dafydd Harries  <daf@muse.19inch.net>
+
+	* configure.in: Add "cy" (Welsh) to ALL_LINGUAS.
+
+2004-11-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.9.3.
+
+==================== 2.9.2 ====================
+
+2004-11-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.9.2.
+
+2004-11-29  Christoffer Olsen  <co@deworks.net>
+
+	This adds support for bug buddy autocompletion of
+	version number when filing a bug report.
+
+	* capplet/vino-preferences.desktop.in: Removed and
+	replaced with *.desktop.in.in
+	* capplet/vino-preferences.desktop.in.in: Added
+	X-GNOME-Bugzilla-Version header
+	* configure.in: Generates capplet/vino-preferences.desktop.in
+	from AC_OUTPUT
+	* po/POTFILES.in: Lists *.desktop.in.in instead
+
+2004-11-14  Žygimantas Beručka  <uid0@akl.lt>
+
+	* configure.in: Added "lt" (Lithuanian) to ALL_LINGUAS.
+
+2004-11-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* icons/gnome-remote-desktop.png: new icon
+	from Jakub Steiner.
+
+2004-11-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* icons/Makefile.am: install icon into hicolor
+	icon theme.
+
+2004-11-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* autogen.sh: require automake 1.7.
+	
+	* configure.in: modernise.
+	
+	* server/Makefile.am: use DISTCLEANFILES.
+
+	* Makefile.am: add intltool stuff to $DISTCLEANFILES.
+	
+	* acconfig.h: remove, not needed.
+
+2004-11-09  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/Makefile.am: install .desktop file
+	in $(datadir)/applications.
+	
+	* capplet/vino-preferences.desktop.in:
+	add OnlyShowIn=GNOME;
+
+2004-11-09  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: bump version to 2.9.1 - 2.8.x
+	development continues on the gnome-2-8 branch.
+
+2004-10-25  Sanlig Badral  <badral@openmn.org>
+	
+	* configure.in: added mn (MONGOLIAN) to ALL_LINGUAS.
+	
+2004-10-16  Marcel Telka  <marcel@telka.sk>
+
+	* configure.in (ALL_LINGUAS): Added sk.
+
+2004-10-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.8.2.
+
+==================== 2.8.1 ====================
+
+2004-10-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.8.1.
+
+2004-10-12  Mohammad DAMT  <mdamt@bisnisweb.com>
+
+	* configure.in: added "id" (Indonesian) to ALL_LINGUAS
+	* po/id.po: added Indonesian translation
+
+2004-10-07  Leonid Kanter <leon@asplinux.ru>
+
+	* configure.in: added "ru" (Russian) to ALL_LINGUAS
+
+2004-10-06  Mark McLoughlin  <mark@skynet.ie>
+
+	Fixes for two Fedora bugs:
+	  http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=134240
+	  http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=134451
+
+	* server/vino-fb.c:
+	(vino_fb_xdamage_idle_handler),
+	(vino_fb_xdamage_event_filter): process damage events in an
+	idle handler, compressing the events as they come in. This
+	both prevents us from ignoring incoming client messages for
+	long periods and being swamped by duplicate damage events.
+	
+	* server/vino-input.c: (vino_input_init): use XTestGrabControl()
+	to snup our noses at metacity and its nasty server grabs.
+	
+	* server/vino-server.c:
+	(vino_server_client_data_pending): process all pending client
+	messages before updating the client.
+
+2004-09-29  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.8.1
+	
+==================== 2.8.0.1 ====================
+
+2004-09-29  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.8.0.1.
+
+2004-09-28  Gora Mohanty  <gmohanty@cvs.gnome.org>
+                                                                                
+        * configure.in: Added 'or' to ALL_LINGUAS.
+     
+2004-09-28  Åsmund Skjæveland  <aasmunds@fys.uio.no>
+
+	* configure.in: Added nn to ALL_LINGUAS.
+	* po/nn.po: Started Norwegian Nynorsk translation.
+
+2004-09-27  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.c:
+	(vino_preferences_dialog_response): pass the correct point
+	as the error dialog's parent.
+
+2004-09-27  Mark McLoughlin  <mark@skynet.ie>
+
+	Hook up the help button to the docs in gnome-user-docs.
+	Fixes bug #153804.
+
+	* capplet/vino-preferences.c:
+	(vino_preferences_dialog_response): hook up the docs.
+	(main): use gnome_program_init().
+
+2004-09-21  Mark McLoughlin  <mark@skynet.ie>
+
+	Fix from Gregory Thiemonge <gregory.thiemonge@libertysurf.fr>
+	in bug #153081
+
+	* server/vino-fb.c: (vino_fb_get_image): fix typo which caused
+	problems at 800x600
+
+2004-09-14  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.8.1.
+
+==================== 2.8.0 ====================
+
+2004-09-14  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.8.0.
+
+2004-09-12  Mugurel Tudor  <mugurelu@go.ro>
+
+	* configure.in: Added "ro" to ALL_LINGUAS
+
+2004-09-12  Abel Cheung  <maddog@linuxhall.org>
+
+	* configure.in: Added "mk" "zh_CN" "zh_TW" to ALL_LINGUAS.
+
+2004-09-11  Jordi Mallach  <jordi@sindominio.net>
+
+	* configure.in (ALL_LINGUAS): Added "ca" (Catalan).
+
+2004-09-11  Baris Cicek <baris@teamforce.name.tr>
+
+	* configure.in: Added 'tr' to ALL_LINGUAS.
+
+2004-09-08  Arafat Medini  <lumina@arabeyes.org>
+
+	* configure.in: Added Arabic locale "ar" to ALL_LINGUAS.
+
+2004-09-04  Jayaradha <njaya@redhat.com>
+
+	* configure.in: Added "ta" to ALL_LINGUAS.
+2004-09-02  Alessio Frusciante  <algol@firenze.linux.it>
+
+	* configure.in: Added "it" (Italian) to ALL_LINGUAS.
+
+2004-08-31  Mark McLoughlin  <mark@skynet.ie>
+
+	Fixes bug where authentication would hang if built without
+	GNU TLS and require_encryption is TRUE.
+
+	* server/libvncserver/auth.c: append non-TLS security types
+	if built without GNU TLS.
+	
+	* server/vino-server.c: (vino_server_update_security_types):
+	Fix warning when built without GNU TLS.
+
+2004-08-31  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: don't build vino-session by default - we
+	have a patch in gnome-session now which does the same thing.
+
+2004-08-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.7.93.
+
+==================== 2.7.92 ====================
+
+2004-08-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.7.92.
+
+2004-08-30  Christian Neumair  <chris@gnome-de.org>
+
+        * configure.in: Added German (de) to ALL_LINGUAS.
+
+2004-08-28  Akagic Amila  <bono@linux.org.ba>
+
+        * configure.in: Added 'bs' to ALL_LINGUAS.
+
+2004-08-27  Iñaki Larrañaga  <dooteo@euskalgnu.org>
+
+	* configure.in: Added "eu" (Basque) to ALL_LINGUAS.
+
+2004-08-27  Kostas Papadimas  <pkst@gnome.org>
+
+	* configure.in: Added "el" to ALL_LINGUAS.
+
+2004-08-27  Mark McLoughlin  <mark@skynet.ie>
+
+	* Makefile.am: add MAINTAINERS to EXTRA_DIST.
+
+2004-08-25  Maxim Dziumanenko <mvd@mylinux.com.ua>
+
+	* configure.in: Added uk (Ukrainian) to ALL_LINGUAS.
+
+2004-08-22  Sami Pesonen  <sampeson@iki.fi>
+
+	* configure.in: Added "fi" to ALL_LINGUAS.
+
+2004-08-21  Changwoo Ryu  <cwryu@debian.org>
+
+	* configure.in: Added "ko" to ALL_LINGUAS.
+
+2004-08-21  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* configure.in: Added «nb» to ALL_LINGUAS.
+
+2004-08-19  Takeshi AIHANA <aihana@gnome.gr.jp>
+
+	* configure.in: Added "ja" (Japanese) to ALL_LINGUAS.
+
+2004-08-18  Ole Laursen  <olau@hardworking.dk>
+
+	* configure.in: Added "da" (Danish) to ALL_LINGUAS.
+
+2003-08-18  Hasbullah Bin Pit  <sebol@my-penguin.org>
+                                                                                
+        * configure.in: Added 'ms' (Malay) to ALL_LINGUAS.
+
+2004-08-18  Christophe Merlet  <redfox@redfoxcenter.org>
+
+	* configure.in: Added "fr" (French) to ALL_LINGUAS.
+
+2004-08-17  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.7.92.
+
+==================== 2.7.91 ====================
+
+2004-08-17  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.7.91.
+
+2004-08-17  Mark McLoughlin  <mark@skynet.ie>
+
+	Make the DAMAGE support actually work.
+
+	* server/vino-fb.c:
+	(vino_fb_get_image),
+	(vino_fb_xdamage_event_filter): spew X error details in debug mode.
+	(vino_fb_create_image),
+	(vino_fb_init_fb_image): don't confuse the pixmap's bits_per_pixel
+	with the pixmap's depth.
+	(vino_fb_init_from_screen): query the MIT-XSHM extension before
+	setting up the damage stuff.
+	
+2004-08-14  Artur Flinta <aflinta@cvs.gnome.org>
+
+	* configure.in: Added "pl" to ALL_LINGUAS.
+
+2004-08-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: link against Xfixes when building
+	with DAMAGE support.
+
+2004-08-11  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.7.91.
+
+==================== 2.7.90 ====================
+
+2004-08-11  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.7.90.
+
+2004-08-11  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: add a --enable-http-server arg which
+	is off by default, disable all Java stuff.
+	
+	* Makefile.am: remove the client subdir.
+	
+	* client/*: remove.
+	
+	* server/Makefile.am: don't build http-server.[ch] unless
+	built with --enable-http-server.
+	
+	* server/vino-server.c:
+	(vino_server_init_from_screen),	(vino_server_finalize):
+	#ifdef the http server initialization/destruction.
+
+2004-08-07  Danilo Šegan  <dsegan@gmx.net>
+
+	* configure.in: Added "sr" and "sr@Latn" to ALL_LINGUAS.
+
+2004-08-01  Sayamindu Dasgupta <sayamindu@gnome.org>
+
+	* configure.in: Added "bn" to ALL_LINGUAS.
+
+2004-07-31  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* configure.in: Added "no" to ALL_LINGUAS.
+
+2004-07-31  Francisco Javier F. Serrador  <serrador@cvs.gnome.org>
+
+	* configure.in: added Spanish (es) translation
+
+2004-07-21  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.7.5.
+
+==================== 2.7.4 ====================
+
+2004-07-21  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.7.4.
+
+2004-07-21  Mark McLoughlin  <mark@skynet.ie>
+
+	Fix for bug #143567 - crasher when connecting with a
+	RFB 3.3 client and require_encryption is TRUE.
+
+	* server/libvncserver/auth.c: (rfbAuthNewClient3_3): don't
+	call rfbCloseClient() after calling rfbClientConnFailed().
+
+2004-07-17  Dennis Cranston <dennis_cranston at yahoo com>
+
+	* capplet/vino-prefences.glade:  HIG alignment adjustments.
+	
+2004-07-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.7.4.
+
+==================== 2.7.3.1 ====================
+
+2004-07-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.7.3.1.
+	
+2004-07-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: add --disable-gnutls and --disable-gcrypt.
+
+2004-07-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: post-release bump to 2.7.4.
+
+==================== 2.7.3 ====================
+
+2004-07-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 2.7.3.
+
+2004-07-12  Mark McLoughlin  <mark@skynet.ie>
+
+	Support building without GNU TLS.
+
+	* configure.in: only warn if gnutls or libgcrypt isn't
+	found.
+	
+	* server/libvncserver/auth.c,
+	  server/libvncserver/main.c,
+	  server/libvncserver/rfb/rfb.h,
+	  server/libvncserver/rfb/rfbproto.h,
+	  server/libvncserver/rfbserver.c,
+	  server/libvncserver/sockets.c,
+	  server/libvncserver/vncauth.c,
+	  server/vino-main.c,
+	  server/vino-server.c,
+	  server/vino-util.[ch]: add a bunch of #ifdef HAVE_GNUTLS.
+
+2004-07-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-server.schemas.in: by default don't require
+	clients which support encryption.
+
+2004-07-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.c,
+	  capplet/vino-preferences.glade: remove the "require
+	encryption" stuff since vncviewer doesn't support it
+	yet and change it to display the vncviewer command to
+	run rather than the url to the java applet.
+
+2004-07-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: fix the check for XDAMAGE.
+	
+	* server/vino-fb.c: make it actually build with XDAMAGE.
+	No guarantees that it really works since the Xnest I built
+	with damage support core dumps all over the shop.
+
+2004-07-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: add a test for XDAMAGE.
+	
+	* server/Makefile.am: use XDAMAGE libs.
+	
+	* server/vino-fb.c: update.
+
+2004-07-05  Mark McLoughlin  <mark@skynet.ie>
+
+	Add code to allow using the XDAMAGE extension if available.
+	Based on a patch from Federico Mena Quintero <federico@ximian.com>.
+
+	* server/vino-fb.c: 
+	(vino_fb_copy_tile): clean up substantially.
+	(vino_fb_finalize_xdamage): free XDAMAGE releated resources.
+	(vino_fb_finalize_polling): split out from finalize_screen_data().
+	(vino_fb_xdamage_event_filter),
+	(vino_fb_init_xdamage): XDAMAGE support.
+	(vino_fb_init_fb_image): if using XDAMAGE, create an XShm image for
+	the framebuffer and wrap it with an XShm Pixmap.
+	(vino_fb_init_from_screen): upd. for XDAMAGE support.
+
+2004-06-10  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.in: added "pt_BR" to ALL_LINGUAS
+
+2004-06-06  Alexander Shopov <ash@contact.bg>
+
+	* configure.in: Added "bg" (Bulgarian) to ALL_LINGUAS
+
+2004-06-02  Gareth Owen  <gowen72@yahoo.com>
+
+	* configure.in: Added en_GB to ALL_LINGUAS
+
+2004-05-31  Duarte Loreto <happyguy_pt@hotmail.com>
+
+	* configure.in: Added Portuguese (pt) to ALL_LINGUAS.
+
+2004-05-30  Adam Weinberger  <adamw@gnome.org>
+
+	* configure.in: Added en_CA to ALL_LINGUAS.
+
+2004-05-28  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-fb.c:
+	(vino_fb_destroy_image): detach the shared image.
+
+2004-05-27  Christian Rose  <menthos@menthos.com>
+
+	* configure.in: Added "sv" to ALL_LINGUAS.
+
+2004-04-16  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: don't rebuild the jar file by default even when
+	javac is installed. Add a --enable-java option.
+
+==================== 0.14 ====================
+
+2004-02-06  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 0.14.
+
+2004-02-06  Mark McLoughlin  <mark@skynet.ie>
+
+	Change the way we use TLS with the RFB protocol after discussions
+	with the RFB maintainers:
+	
+	  + Only use a single extra security type (rfbTLS == 18) which has
+	    been registered with the RFB maintainers rather than the original
+	    rfbTlsWithNoAuth(3) and rfbTlsWithVncAuth(4).
+	  + Negotiation the authentication type (rfbNoAuth or rfbVncAuth) once
+	    the TLS handshake has completed. The authentication type negotiation
+	    is exactly the same format as the security type negotiation.
+
+	Server changes:
+	
+	* server/vino-server.c: (vino_server_update_security_types):
+	Update for security/authentication types split.
+
+	* server/libvncserver/auth.c:
+	(rfbAuthListAuthTypes): impl. listing the authentication types.
+	(rfbAuthProcessSecurityTypeMessage): don't start authenticating
+	when the TLS handshake has completed. Instead, just list the
+	security types and wait for a response.
+	(rfbAuthProcessTLSHandshake): ditto.
+	(rfbAuthProcessAuthTypeMessage): begin authenticating with whatever
+	authentication type the client returns.
+	
+	* server/libvncserver/main.c:
+	(rfbAddAuthType), (rfbClearAuthTypes): API for maintaining the
+	authentication types list.
+	
+	* server/libvncserver/rfb/rfb.h: add the RFB_AUTH_TYPE client
+	processing state and add the authTypes list to the server
+	structure.
+	
+	* server/libvncserver/rfb/rfbproto.h: update with details of
+	new TLS security type protocol.
+	
+	Client changes:
+	
+	* client/java/rfb/CConnection.java:
+	(CConnection.addAuthType): function for building up a list
+	of supported authentication types.
+	(CConnection.processSecurityMsg): handle new return values
+	from CSecurity::processMsg().
+	(CConnection.processAuthTypesMsg): impl. negotiating authentication
+	type.
+	
+	* client/java/rfb/CSecurity.java: (CSecurity): define return values
+	for processMsg() rather than using silly magic numbers.
+	
+	* client/java/rfb/CSecurityNone.java: (CSecurityNone.processMsg): upd.
+	
+	* client/java/rfb/CSecurityTls.java:
+	(CSecurityTls.CSecurityTls.processMsg): re-work so as to not chain
+	up to the authentication implementation.
+	
+	* client/java/rfb/CSecurityVncAuth.java:
+	(CSecurityVncAuth.processMsg): return proper return codes.
+	
+	* client/java/rfb/SecTypes.java: remove the TlsWithNone(3) and
+	TlsWithVncAuth(4) and add the TLS(18) security type which has
+	been registered with the protocol maintainers.
+
+	* client/java/vncviewer/CConn.java: update for security types
+	change.
+	
+2004-02-06  Mark McLoughlin  <mark@skynet.ie>
+	
+	* client/java/vncviewer/AboutDialog.java:
+	(AboutDialog.AboutDialog): fix bug #133529 - compile failure
+	because the about dialog text wasn't defined.
+
+2004-02-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* docs/TODO: update.
+
+2004-02-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: require libgnomeui >= 2.5.2
+	
+	* capplet/vino-url.c: (vino_url_activate):
+	Use gnome_url_show_on_screen() instead of the
+	egg-screen-help thing.
+	
+	* cut-n-paste/screen-exec/*: kill all this.
+
+==================== 0.12 ====================
+
+2004-01-16  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 0.12.
+
+2004-01-16  Mark McLoughlin  <mark@skynet.ie>
+
+	Based on patch from Leen Gunda.
+
+	* server/vino-server.c: (vino_server_set_client_on_hold):
+	Set the rfbClient's onHold flag.
+
+2004-01-16  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.c:
+	(vino_preferences_get_local_hostname): use the fully
+	qualified host name.
+	
+	* session/vino-session.c: (remote_desktop_start):
+	Fix minor indendation issue.
+
+2003-12-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.c:
+	(vino_preferences_get_local_hostname),
+	(vino_preferences_dialog_get_server_url): actuall use
+	the proper host name in the url.
+
+==================== 0.11 ====================
+
+2003-12-11  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 0.11.
+
+2003-12-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.c:
+	(vino_preferences_dialog_update_for_allowed): make the URL
+	insensitive if allowed is FALSE.
+	(vino_preferences_vnc_password_notify): fix crasher when
+	unsetting the key.
+	(vino_preferences_dialog_construct_mailto): simplify to
+	just use the e-mail address and URL.
+	(vino_preferences_dialog_update_url_label),
+	(vino_preferences_dialog_mailto_notify),
+	(vino_preferences_dialog_setup_url_labels): Don't make the
+	URL small or italicised. Also, use the "mailto" key when
+	constructing the mailto and handle notifications on the key.
+	(vino_preferences_dialog_finalize): free up some stuff.
+	
+	* capplet/vino-preferences.glade: Fix mnemonic conflicts and
+	put the URL labels on a row of their own so they are padded
+	more.
+	
+	* capplet/vino-url.c:
+	(vino_url_realize): only set the cursor if we're sensitive.
+	(vino_url_state_changed): set/unset the cursor based on
+	the sensitivity.
+	(vino_url_set_address): don't set the label with the
+	address.
+	
+	* server/vino-server.schemas.in: add a "mailto" key.
+
+2003-12-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-url.c: (vino_url_class_init),
+	(vino_url_instance_init), (vino_url_finalize):
+	Don't use GObject's new instance private data as
+	we don't want to depend on glib 2.3.
+
+2003-12-03  Mark McLoughlin  <mark@skynet.ie>
+
+	First bit of work to allow the URL in the preferences
+	dialog be clicked on allowing you to send it by email.
+
+	* capplet/vino-preferences.c:
+	(vino_preferences_dialog_get_server_url):
+	(vino_preferences_dialog_construct_mailto):
+	Impl. skeletal versions of these. More work
+	needed here.
+	(vino_preferences_dialog_setup_url_labels):
+	Set up the server URL label.
+	(vino_preferences_dialog_init): use it.
+	(main): init and shutdown gnome-vfs. Its needed
+	for the url handler.
+	
+	* capplet/vino-preferences.glade: Remove the
+	default URL label.
+	
+	* capplet/vino-url.[ch]: implementation of a
+	clickable label which points at a URL. Basically,
+	just GnomeHref as a label.
+
+	* configure.in: Build the cut-n-paste stuff.
+	
+	* cut-n-paste/screen-exec/*: add the screen exec
+	stuff here as a utility library.
+
+2003-12-03  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.glade: updates from Calum.
+	Main change is to shove the URL in there the best way
+	we can.
+
+2003-12-01  Mark McLoughlin  <mark@skynet.ie>
+
+	Remove the update_timeout when the client is on hold.
+
+	* server/vino-server.c:
+	(vino_server_handle_client_gone): conditionally remove
+	the update timeout.
+	(vino_server_set_client_priority): move into set_client_on_hold().
+	(vino_server_set_client_on_hold): add and remove the update timeout
+	depending on whether the client is on hold.
+	(vino_server_handle_new_client): don't add the update timeout
+	here.
+	(vino_server_handle_authenticated_client):
+	use set_client_on_hold() instead of set_client_priority().
+	(vino_server_set_on_hold): add FIXME.
+
+2003-12-01  Mark McLoughlin  <mark@skynet.ie>
+
+	Implement deferring authentication attempts by 5 seconds
+	if the previous attempt failed. Simple protection against
+	brute force guessing the password.
+
+	* server/vino-server.c:
+	(vino_server_handle_client_gone): free up the deferred auth
+	resources.
+	(vino_server_set_client_on_hold): don't process input from
+	the client directly here - if there is data pending the
+	io_watch will be triggered and we'll process it then.
+	(vino_server_auth_client_deferred),
+	(vino_server_defer_client_auth): impl. verifying the password
+	after a 5 second timeout.
+	(vino_server_auth_client),
+	(vino_server_check_vnc_password): if the check fails, flag the
+	server to delay the next attempt by 5 seconds.
+	(vino_server_set_on_hold): don't touch existing clients unless
+	they have been fully initialized.
+	
+	* server/libvncserver/auth.c:
+	(rfbAuthProcessClientMessage): split out returning the result
+	to the client.
+	(rfbAuthPasswordChecked): Allow the deferred authentication.
+	
+	* server/libvncserver/rfb/rfb.h: add RFB_CLIENT_AUTH_DEFERRED
+	state.
+	
+	* server/libvncserver/rfbserver.c: if we're in the AUTH_DEFERRED
+	state ignore any client messages. We'll be onHold so this is
+	just paranoia.
+	
+	* docs/TODO, docs/remote-desktop.txt: update.
+
+2003-12-01  Mark McLoughlin  <mark@skynet.ie>
+
+	* docs/TODO: update.
+	
+	* server/libvncserver/auth.c:
+	(rfbAuthClientAuthenticated): return FALSE by default.
+	(rfbAuthNewClient3_3): change error message.
+	(rfbAuthNewClient), (rfbAuthCleanupClient): fixup
+	coding style.
+	
+	* server/libvncserver/main.c:
+	(rfbClearSecurityTypes): fix up coding style.
+	
+	* server/vino-server.c:
+	(vino_server_check_vnc_password): ditto.
+
+2003-12-01  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: detect the location of libcrypt.
+	
+	* server/Makefile.am,
+	  server/libvncserver/Makefile.am: link against libgcrypt
+	
+	* server/libvncserver/vncauth.c: (vncRandomBytes): use
+	libgcrypt to generate the challenge to ensure it is
+	wholly unpredictable.
+	
+	* server/libvncserver/CHANGES: document the change.
+
+	* server/libvncserver/auth.c: (rfbAuthTlsHandshake): fix
+	coding style.
+	
+2003-11-22  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-prompt.c:
+	(vino_prompt_process_pending_clients): impl. processing
+	pending clients.
+	(vino_prompt_handle_dialog_response): use it.
+	
+	* server/vino-server.c:
+	(vino_server_init_from_screen): make the server
+	shared always.
+	
+	* docs/TODO: update.
+
+==================== 0.10 ====================
+
+2003-11-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 0.10.
+
+2003-11-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* client/java/Makefile.am: distcheck fix.
+
+2003-11-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* client/java/vncviewer/VNCViewer.java:
+	(VNCViewer.init): get vino-client.png as the logo.
+	(VNCViewer.paint): draw the logo and a label for now.
+	Pretty crappy, but it will do for the moment.
+	
+	* server/vino-http.c:
+	(vino_http_lookup_client_logo): lookup the icon according
+	to the icon theme.
+	(vino_http_construct_response): if the client requests
+	"vino-client.png" return them "gnome-remote-desktop"
+	(vino_http_data_pending): don't return an invalid response
+	on EOF. Just close the connection.
+
+2003-11-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* docs/TODO: add a "why does the cursor flicker" item.
+	
+	* server/vino-prompt.glade: remove the seperator and
+	tweak some padding.
+
+2003-11-18  Mark McLoughlin  <mark@skynet.ie>
+
+	Fix problem when we block on writing the HTTP response.
+
+	* server/vino-http.c:
+	(vino_http_finalize_client): impl.
+	(vino_http_queue_pending_response),
+	(vino_http_write_string): implement queueing the rest
+	of the response if we block half way through.
+	(vino_http_data_writable): finish writing.
+	(vino_http_write_response): use write_string().
+	(vino_http_new_connection_pending): update.
+	(vino_http_finalize): use finalize_client().
+
+2003-11-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/libvncserver/rfbserver.c: re-try the handshake
+	if the client is in the RFB_TLS_HANDSHAKE state.
+	
+	* server/libvncserver/auth.c:
+	(rfbAuthTlsHandshake): don't block until the handshake
+	completes.
+	(rfbAuthProcessSecurityTypeMessage): update.
+	(rfbAuthProcessTlsHandshake): implement re-trying the
+	handshake if it hasn't completed and there is data
+	pending.
+	
+	* server/libvncserver/rfb/rfb.h: add rfbAuthProcessTlsHandshake
+	and the RFB_TLS_HANDSHAKE client state.
+
+2003-11-18  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-http.[ch]:
+	(vino_http_insert_applet_text),
+	(vino_http_perform_substitutions),
+	(vino_http_construct_response): implement substituting
+	$APPLET with an <applet> tag.
+	(start_probing_at), (vino_http_create_listening_socket):
+	die magic numbers.
+	(vino_http_set_property), 
+	(vino_http_get_property),
+	(vino_http_class_init): remove the "rfb-port" property.
+	(vino_http_get): rename from vino_http_new() - its
+	a singleton now.
+	(vino_http_sort_ports), (vino_http_add_rfb_port),
+	(vino_http_remove_rfb_port): maintain a list of rfb
+	ports.
+	
+	* server/vino-server.c: (vino_server_init_from_screen),
+	(vino_server_finalize): update for VinoHTTP changes.
+
+	* client/java/Makefile.am: install vino-client.html.
+	* client/java/vino-client.html: Template file for the
+	client web page. $APPLET gets substituted with the
+	appropriate <applet>.
+	
+2003-11-17  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.c:
+	(vino_preferences_dialog_setup_icons): make
+	the icon size #define local to the function.
+	
+	* configure.in: make the server require libgnomeui
+	(for GnomeIconTheme) and libglade. Suck.
+	
+	* docs/TODO: add item.
+
+2003-11-17  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/Makefile.am: install the glade file.
+	
+	* server/vino-prompt.glade: glade file for the message dialog
+	according to Calum's input.
+	
+	* server/vino-prompt.c:
+	(vino_prompt_setup_icons), (vino_prompt_setup_dialog),
+	(vino_prompt_display): re-implement the dialog.
+
+2003-11-17  Mark McLoughlin  <mark@skynet.ie>
+
+	* docs/remote-desktop.txt: update for changes to the capplet.
+
+2003-11-17  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.glade: add the fairly widespread
+	changes suggested by Calum. Looks much better now.
+	
+	* capplet/vino-preferences.c:
+	(vino_preferences_dialog_encryption_toggled),
+	(vino_preferences_dialog_encryption_notify),
+	(vino_preferences_dialog_setup_encryption_toggle): Change
+	the sense to reflect the changed semantics in the UI.
+	(vino_preferences_dialog_setup_icons): setup the icons
+	using the icon theme.
+	(vino_preferences_dialog_init): upd.
+	
+	* configure.in: make the capplet require libgnomeui for
+	GnomeIconTheme.
+
+2003-11-17  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-http.[ch]: implement a http server which listens
+	in the range 5800-5899 and returns a html page pointing which
+	loads the Java client.
+	
+	* server/Makefile.am: build vino-http.[ch].
+	
+	* server/vino-server.c:
+	(vino_server_init_from_screen): set up the http server.
+	(vino_server_finalize): chain up to the parent finalize.
+	
+	* server/vino-util.[ch]: (vino_setup_debug_flags): setup
+	http debugging.
+	
+	* server/vino-fb.c: (vino_fb_finalize): chain up to parent
+	finalize.
+
+	* server/vino-prompt.c: (vino_prompt_finalize): ditto.
+	
+2003-11-14  Mark McLoughlin  <mark@skynet.ie>
+
+	* client/java/rfb/CConnection.java: (CConnection):
+	Show the security type in the connection info dialog.
+
+	* client/java/vncviewer/CConn.java: (CConn.showInfo):
+	Make the CSecurity protected.
+
+2003-11-14  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.c: (vino_preferences_dialog_init):
+	Find the glade file correctly.
+	
+	* docs/TODO: update.
+	
+	* docs/remote-desktop.txt: add back the require_encryption
+	toggle button.
+
+2003-11-14  Mark McLoughlin  <mark@skynet.ie>
+
+	* client/java/vncviewer/CConn.java: (CConn.recreateViewport):
+	Focus the DesktopWindow. It took me way too long to figure
+	out that one :/
+
+2003-11-13  Mark McLoughlin  <mark@skynet.ie>
+
+	* session/gsm-remote-desktop.diff: actually add the
+	gnome-session patch.
+
+2003-11-13  Mark McLoughlin  <mark@skynet.ie>
+
+	Make the client only support 24 bit colour instead of 8 bit
+	colour. Not ideal ... it would have been nicer to support
+	all colour depths but ...
+
+	* client/java/rdr/InStream.java:
+	(InStream.readPixel), (InStream.readPixels): impl reading a
+	number of 32 bit pixels.
+	(InStream.readCPixel), (InStream.readCPixels): impl reading
+	a number of compressed pixels. We can assume they will be
+	compressed into 24 bits because of our pixel format.
+	
+	* client/java/rfb/CMsgHandler.java:
+	(CMsgHandler.setCursor), (CMsgHandler.imageRect): Take an
+	int[] instead of a byte[] for the image data.
+	
+	* client/java/rfb/CMsgReader.java:
+	(CMsgReader.getImageBuf): simplify - we never used imageBufIdealSize
+	and hence always returned the "required" number of bytes and never
+	the "requested". Take only a single "size" now and always return
+	a buffer of that size. Also, return an int[] instead of a byte[].
+	(CMsgReader.readSetCursor), (CMsgReader): store the image data
+	in an int[].
+	
+	* client/java/rfb/HextileDecoder.java:
+	(HextileDecoder.readRect): update for 24 bit colour.
+	
+	* client/java/rfb/ManagedPixelBuffer.java:
+	(ManagedPixelBuffer.dataLen), (ManagedPixelBuffer.checkDataSize):
+	data is an int[] now.
+	
+	* client/java/rfb/PixelBuffer.java:
+	(PixelBuffer.setPF): pixel format must be 32 bits per pixel now
+	instead of 8.
+	(getStride): remove, just use the width.
+	(PixelBuffer.fillRect), (PixelBuffer.imageRect),
+	(PixelBuffer.copyRect), (PixelBuffer.maskRect): update to use
+	an int[] for the image data.
+	
+	* client/java/rfb/PixelFormat.java:
+	(PixelFormat.PixelFormat): change the default pixel format to
+	24 bit depth, 32 bits per pixel and true-colour rgb888 packed
+	encoding.
+	
+	* client/java/rfb/RREDecoder.java:
+	(RREDecoder.readRect): update to decode 24 bit color.
+	
+	* client/java/rfb/RawDecoder.java:
+	(RawDecoder.readRect): simplify because we know getImageBuf()
+	will always return the required buffer size. Also, update for
+	24 bit colour.
+	
+	* client/java/rfb/ZRLEDecoder.java:
+	(ZRLEDecoder.readRect): update to decode 24 bit colour.
+	
+	* client/java/vncviewer/CConn.java:
+	(CConn.setColourMapEntries): kill - we use true-colour now.
+	(CConn.imageRect): don't take an offset and take an int[]
+	instead of a byte[].
+	(CConn.setCursor): take an int[] for the cursor data. Mask
+	is still a byte[], though.
+	
+	* client/java/vncviewer/DesktopWindow.java:
+	(DesktopWindow): don't implement Runnable anymore.
+	(DesktopWindow.setCursor): take an int[].
+	(DesktopWindow.setColourMapEntries): kill, unneeded.
+	(DesktopWindow.imageRect): don't take an offset and take an int[]
+        instead of a byte[].
+	(DesktopWindow.run): kill.
+	
+	* client/java/vncviewer/PixelBufferImage.java:
+	(PixelBufferImage.PixelBufferImage): change the default pixel
+	format to 24 bit depth, 32 bits per pixel and true-colour
+	rgb888 packed encoding. Use DirectColorModel instead of
+	IndexColorModel.
+	(PixelBufferImage.resize): update to use an int[] for the
+	image data.
+	(PixelBufferImage.setColourMapEntries),
+	(PixelBufferImage.updateColourMap): Kill, we do true-color now.
+
+2003-11-12  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.c,
+	  capplet/vino-preferences.glade: add back
+	the "Allow unencrypted connections" preference.
+	
+	* docs/remote-desktop.txt: update.
+
+2003-11-11  Mark McLoughlin  <mark@skynet.ie>
+
+	* client/java/vncviewer/CConn.java:
+	(CConn.autoSelectFormatAndEncoding),
+	(requestNewUpdate): we don't actually support anything
+	but 8 bit colour, so comment out the code that pretends
+	to support more.
+	
+	* docs/TODO: add a couple more items.
+
+2003-11-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/libvncserver/rfbserver.c:
+	(rfbSendFrameBufferUpdate): undraw the cursor *after*
+	encoding the modified rectangles. Doh. Fixes cursor
+	display on clients which don't support position updates.
+
+2003-11-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-server.c:
+	(vino_server_setup_framebuffer),
+	(vino_server_release_framebuffer): only monitor the
+	cursor when we actually have a client.
+	(vino_server_init_from_screen): don't init the cursor
+	here.
+
+2003-11-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/Makefile.am: distcheck fix.
+	
+	* server/vino-server.c:
+	(vino_server_handle_client_gone): release the framebuffer copy
+	if this is the last client.
+	(vino_server_handle_new_client): setup our copy of the framebuffer
+	if this is the first client.
+	(vino_server_setup_framebuffer), (vino_server_release_framebuffer):
+	implement.
+	(vino_server_init_from_screen): split bits out.
+
+2003-11-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-prefs.c:
+	(vino_prefs_enabled_changed),
+	(vino_prefs_create_server),
+	(vino_prefs_init): put the server on hold when "enabled"
+	is FALSE.
+	
+	* server/vino-server.c:
+	(vino_server_set_client_on_hold): take a VinoServerClientInfo
+	instead of a rfbClientPtr.
+	(vino_server_handle_prompt_response): update.
+
+2003-11-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: add --enable-session-support argument.
+	
+	* server/vino-shell.c:
+	(vino_shell_idle_quit),	(vino_shell_destroy),
+	(vino_shell_class_init): quit the server in idle when
+	the shell is unrefed and chain up to the BonoboObject
+	destroy() implementatin.
+	
+	* session/README: blurb.
+	
+	* session/vino-session.c: small session managed program
+	to control the lifecyle of the server. Alternative to
+	the gnome-session patch.
+
+2003-11-10  Mark McLoughlin  <mark@skynet.ie>
+
+	Lots of voodoo goodness to allow the server to
+	be activated and shutdown by gnome-session depending
+	on the /desktop/gnome/remote_access/enabled key.
+
+	* configure.in: make the server require libbbonob, figure
+	out the location of orbit-idl and Bonobo's IDL files.
+	
+	* server/GNOME_RemoteDesktop.idl: add dummy interface for
+	the service.
+	
+	* server/GNOME_RemoteDesktop.server.in.in: bonobo-activation
+	service definition file.
+	
+	* server/Makefile.am: create and install the .server file.
+	Install	vino-server into libexec instead of bin. Build the
+	CORBA skels from the IDL.
+	
+	* server/vino-main.c: (main): quit if we fail to
+	register the service.
+	
+	* server/vino-shell.[ch]: implement registering the
+	GNOME_RemoteDesktop service with bonobo-activation.
+	* server/vino-shell.h:
+
+2003-11-10  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-server.schemas.in,
+	  capplet/vino-preferences.c,
+	  docs/remote-desktop.txt: rename the "allowed" key
+	to "enabled".
+
+2003-11-06  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-fb.c:
+	(vino_fb_get_image): handle X errors and return a bool.
+	(vino_fb_copy_tile): return a bool.
+	(vino_fb_poll_scanline): only mark a region as damaged
+	if we sucessfully copied the tile.
+
+2003-11-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-fb.c: (vino_fb_init_from_screen): remove
+	pre-condition causing us to crash when the screen
+	size changed. Handling screen size changes is still
+	pretty broken though - we seem to not get the
+	ConfigureNotify on the root window for ages and in the
+	mean time we get a BadMatch for doing a GetImage with
+	the wrong size.
+
+2003-11-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-fb.[ch]:
+	(emit_size_changed): emit "size-changed" signal.
+	(vino_fb_finalize_screen_data): split out from finalize().
+	(vino_fb_screen_size_changed): re-initialize the screen.
+	(vino_fb_init_from_screen): connect to the GdkScreen
+	"size-changed" signal.
+	(vino_fb_finalize): update.
+	(vino_fb_class_init): initialize the "size-changed" signal.
+	
+	* server/vino-server.c:
+	(vino_server_update_client), (vino_server_handle_new_client),
+	(vino_server_handle_prompt_response),
+	(vino_server_handle_authenticated_client),
+	(vino_server_new_connection_pending),
+	(vino_server_handle_key_event), (vino_server_handle_pointer_event),
+	(vino_server_handle_clipboard_event),
+	(vino_server_check_vnc_password),
+	(vino_server_handle_damage_notify): add a bunch of preconditions.
+	(vino_server_screen_size_changed): re-initialize the screen.
+	(vino_server_init_from_screen): connect to the VinoFB "size-changed"
+	signal.
+	
+	* docs/TODO: update.
+
+==================== 0.9 ====================
+
+2003-11-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 0.9.
+
+2003-11-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* docs/remote-desktop.txt: update.
+
+2003-11-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-server.schemas.in: change
+	require_encryption default to true.
+	
+	* docs/TODO: move from toplevel dir.
+	
+	* docs/remote-desktop.txt: add.
+
+==================== 0.8 ====================
+
+2003-11-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: Version 0.8.
+
+2003-11-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* client/java/Makefile.am: fixed distcheck build.
+	
+	* server/libvncserver/cursor.c,
+	  server/libvncserver/main.c,
+	  server/libvncserver/rfb/rfb.h,
+	  server/libvncserver/rfb/rfbregion.h,
+	  server/libvncserver/rfbregion.c,
+	  server/libvncserver/sockets.c,
+	  server/libvncserver/tight.c,
+	  server/libvncserver/zlib.c,
+	  server/libvncserver/zrleencodetemplate.c: loads
+	of warnings fixes.
+
+	* server/libvncserver/CHANGES: update.
+	
+2003-11-05  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: define JAVA_SDK_AVAILABLE if both
+	jar and javac are found.
+	
+	* client/java/Makefile.am: only rebuild if the SDK
+	is available.
+	
+	* client/java/vino-client.jar: check in to CVS.
+
+2003-11-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.glade: removed the "label-for" and
+	"labelled-by" a11y relations - apparently gail does that
+	automatically if you set the focus target.
+	
+	* server/vino-server.c:
+	(vino_server_set_client_priority): impl. setting down the priority
+	on the io watch for the client's socket. If we put the client on
+	hold we don't want any pending data on the socket starving the
+	rest of the mainloop.
+	(vino_server_set_client_on_hold), (vino_server_handle_new_client),
+	(vino_server_handle_authenticated_client): use it here.
+
+2003-11-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* client/java/rfb/CSecurity.java: (CSecurity): added
+	a getDescription() abstract methdo.
+	
+	* client/java/rfb/CSecurityNone.java,
+	  client/java/rfb/CSecurityTls.java,
+	  client/java/rfb/CSecurityVncAuth.java: implement the
+	getDescription() methods.
+	
+	* client/java/vncviewer/CConn.java: (CConn.getCSecurity):
+	Output the security type description here.
+
+2003-11-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-server.schemas.in: change the require_encryption
+	default to false. In the common case this will be a policy
+	decision of the client, not the server.
+
+2003-11-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.desktop.in: add a .desktop
+	file for the capplet.
+
+	* capplet/Makefile.am: install the .desktop file.
+	
+	* capplet/vino-preferences.c,
+	  capplet/vino-preferences.glade: remove the "Allow
+	unencrypted connections" preference from here. We'll
+	have it on by default and you can turn it off using
+	gconf-editor.
+	
+2003-11-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.c:
+	(vino_preferences_dialog_init): use the icon
+	as the window icon.
+	
+	* server/vino-prompt.c:
+	(vino_prompt_display): ditto.
+
+2003-11-04  Mark McLoughlin  <mark@skynet.ie>
+
+	* icons/gnome-remote-desktop.png: add an icon.
+
+	* Makefile.am, configure.in: build icons dir.
+	
+2003-11-03  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-server.schemas.in: add prompt_enabled
+	preference.
+
+	* capplet/vino-preferences.glade: add it here.
+	
+	* capplet/vino-preferences.c: hook it up in here.
+	
+	* server/vino-prefs.c: hook it up here too.
+	
+	* server/vino-prompt.c: some random stuff to try and
+	make this a little less broken.
+
+2003-11-03  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: check for glib-genmarshal.
+	
+	* server/Makefile.am: generate the masrhallers and
+	build against vino-prompt.[ch]
+	
+	* server/vino-marshal.list: add.
+	
+	* server/vino-prompt.[ch]: implement a dialog to
+	prompt the user before allowing someone to connect.
+	
+	* server/vino-server.[ch]: use it here.
+
+	* server/vino-util.[ch]:
+	(vino_init_stock_items): impl registering a couple
+	of stock items for the prompt dialog.
+
+	* server/libvncserver/auth.c,
+	  server/libvncserver/rfb/rfb.h: add a hook to enable
+	reject/accepting clients which have alread been
+	authenticated.
+	
+	* server/libvncserver/rfbserver.c: if newClientHook
+	isn't defined, accept by default.
+	
+	* server/libvncserver/CHANGES: upd.
+	
+2003-11-03  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.glade: setup the label-for
+	and labelled-by relations.
+
+2003-11-03  Mark McLoughlin  <mark@skynet.ie>
+
+	* capplet/vino-preferences.c: impl. the capplet.
+	
+	* capplet/Makefile.am: build it.
+	
+	* capplet/vino-preferences.glade: add writability warning thing
+	and a label for the password entry.
+	
+	* server/vino-main.c: (main): initialize i18n stuff.
+	
+	* server/vino-prefs.c: (vino_prefs_authentication_methods_changed):
+	check the list consists of strings.
+
+2003-11-01  Mark McLoughlin  <mark@skynet.ie>
+
+	* Makefile.am: build the capplet subdir.
+	
+	* capplet/Makefile.am: install the glade file.
+	
+	* capplet/vino-preferences.glade: glade file for
+	the preferences dialog.
+	
+	* client/java/Makefile.am: install jar file to
+	$(datadir)/gnome/vino
+	
+	* configure.in: require libglade for the capplet.
+
+2003-11-01  Mark McLoughlin  <mark@skynet.ie>
+
+	* client/java/vncviewer/CConn.java:
+	(CConn.CConn): choose a TLS based SecurityType over
+	a non-encrypted type.
+
+2003-11-01  Mark McLoughlin  <mark@skynet.ie>
+
+	* client/java/Makefile.am: put ViewportFrame.class in
+	the jar file.
+	
+	* server/libvncserver/auth.c:
+	(rfbAuthProcessSecurityTypeMessage): actually do something
+	after completing the handshake.
+	
+	* server/libvncserver/sockets.c:
+	(WriteExactOverTls): fix silly buglet.
+
+2003-10-31  Mark McLoughlin  <mark@skynet.ie>
+
+	* client/java/Makefile.am: add rfb/CSecurityTls.java.
+	
+	* client/java/rfb/CSecurityTls.java: implement TLS security
+	handler.
+
+	* client/java/rfb/SecTypes.java: add tlsWithNone and
+	tlsWithVncAuth.
+	
+	* client/java/vncviewer/CConn.java:
+	(CConn.CConn): use tlsWithNone and tlsWithVncAuth.
+	(CConn.init): don't set jis and jos here.
+	(CConn.getCSecurity): handle creating rfb.CSecurityTls.
+	(CConn.serverInit): set jis and jos here after the
+	handshake has completed.
+	
+	* server/libvncserver/auth.c: (rfbAuthTlsHandshake),
+	(rfbAuthCleanupClient): don't crash if the handshake fails.
+
+2003-10-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/Makefile.am: distcheck fix.
+
+2003-10-30  Mark McLoughlin  <mark@skynet.ie>
+	
+	* configure.in: check for javac and jar. Output
+	Makefiles.
+
+	* client/java/*: add Java vncview from realVNC.
+
+2003-10-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/libvncserver/sockets.c:
+	(ReadExactOverTls), (WriteExactOverTls): imlement
+	reading/writing from/to the TLS stream.
+
+2003-10-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: check for gnutls.
+	
+	* server/libvncserver/Makefile.am: build against gnutls.
+	
+	* server/libvncserver/auth.c:
+	(rfbAuthInitScreen), (rfbAuthCleanupScreen): implement
+	global initialisation.
+	(rfbAuthTlsHandshake): implement TLS handshaking.
+	(rfbAuthCleanupClient): impl cleaning up TLS session.
+	(rfbAuthProcessSecurityTypeMessage): initiate a TLS handshake
+	for rfbTlsWithNoAuth and rfbTlsWithVncAuth.
+	
+	* server/libvncserver/main.c: 
+	(rfbGetScreen): init auth params.
+	(rfbScreenCleanup): cleanup auth params.
+	
+	* server/libvncserver/rfb/rfb.h: add anonCredentials and
+	dhParams to rfbScreenInfo and tlsSession and useTls to
+	rfbClientRec. Also add rfbAuthInitScreen, 
+	rfbAuthCleanupScreen and rfbAuthCleanupClient.
+	
+	* server/libvncserver/sockets.c:
+	(rfbCloseClient): cleanup client's auth params.
+	
+	* server/Makefile.am: build against gnutls.
+	
+	* server/vino-main.c,
+	  server/vino-util.[ch]: setup gnutls debugging.
+
+2003-10-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-main.c: (main): create a server for each
+	screen.
+	
+	* server/vino-prefs.[ch]:
+	(vino_prefs_create_server): rename from add_server()
+	and set all the properties in one go
+	(vino_prefs_init): split out from add_server() and
+	only honour the view_only preference if the XServer
+	has support for XTest.
+	(vino_prefs_shutdown): unref the servers here.
+	
+	* server/vino-server.[ch]:
+	(vino_server_set_client_on_hold): implement starting an
+	on hold client.
+	(vino_server_update_client_timeout): don't update on
+	hold clients.
+	(vino_server_handle_new_client): put the client on
+	hold if the server is on hold.
+	(vino_server_set_property),
+	(vino_server_get_property), (vino_server_class_init),
+	(vino_server_get_on_hold), (vino_server_set_on_hold):
+	implement the "on-hold" property.
+	(vino_server_update_security_types): impl. setting
+	the security types.
+	(vino_server_set_require_encryption),
+	(vino_server_set_auth_methods): use it here.
+
+	* server/libvncserver/auth.c:
+	(rfbAuthNewClient3_3): only send rfbNoAuth or rfbVncAuth,
+	otherwise error out.
+	
+	* server/libvncserver/main.c:
+	(securityTypeToName): impl for debuggin.
+	(rfbAddSecurityType): add support for encrypted security
+	types.
+	(rfbClearSecurityTypes): don't clear unless there's
+	actually something to clear.
+	
+	* server/libvncserver/rfb/rfbproto.h: add rfbTlsWithNoAuth
+	and rfbTlsWithVncAuth. Not implement yet, though.
+		
+2003-10-30  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/libvncserver/auth.c:
+	(rfbAuthNewClient3_7), (rfbAuthNewClient3_3),
+	(rfbAuthNewClient): implement support for sending the security
+	types list if the client is using version 3.7 of the protocol.
+	(rfbAuthProcessSecurityTypeMessage): complete the security
+	type negotiation.
+	
+	* server/libvncserver/main.c: (rfbAddSecurityType): upd.
+	
+	* server/libvncserver/rfbserver.c: add support for version
+	3.7 of the protocol.
+	
+	* server/libvncserver/rfb/rfb.h: add SECURITY_TYPE state,
+	securityType and minorVersion client members and add
+	rfbProcessClientInitMessage() and
+	rfbAuthProcessSecurityTypeMessage();
+	
+	* server/libvncserver/rfb/rfbproto.h: add details of RFB 3.7.
+	
+	* server/libvncserver/CHANGES: update.
+	
+	* server/vino-prefs.c: (vino_prefs_translate_auth_methods_list):
+	Return VINO_SERVER_NONE if none of the authentication methods
+	are recognised.
+
+2003-10-29  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: add --disable-rebuilds option.
+	
+	* server/Makefile.am: build vino-enums.[ch] with
+	glib-mkenums.
+	
+	* server/vino-prefs.c:
+	(vino_prefs_view_only_changed),
+	(vino_prefs_require_encryption_changed): fix buglets and
+	add debugging.
+	(vino_prefs_translate_auth_methods_list): sometimes its a
+	list of strings. Sometimes its a list of values. Sigh.
+	(vino_prefs_authentication_methods_changed),
+	(vino_prefs_vnc_password_changed): fix buglets and add
+	debugging.
+	(vino_prefs_add_server): monitor the directory so we get
+	notifications, add debugging and initialize the VinoServer
+	with the values we got from GConf.
+	
+	* server/vino-server.c:
+	(vino_server_check_vnc_password): implement VNC authentication.
+	(vino_server_init_from_screen): hook up.
+	(vino_server_finalize): free the password.
+	(vino_server_set_property), (vino_server_get_property),
+	(vino_server_class_init), (vino_server_set_require_encryption),
+	(vino_server_get_require_encryption),
+	(vino_server_set_auth_methods), (vino_server_get_auth_methods),
+	(vino_server_set_vnc_password), (vino_server_get_vnc_password):
+	impl the view-only, require-encryption, auth-methods and
+	vnc-password properties.
+
+	* server/vino-server.h: make 0 and invalid auth method.
+	
+	* server/vino-util.[ch]:
+	(vino_setup_debug_flags): add prefs debug flag.
+	(vino_base64_unencode): add base64 encoding implementation.
+
+	* server/libvncserver/main.c,
+	  server/libvncserver/rfb/rfb.h:
+	(rfbClearSecurityTypes): add function to clear the
+	securityTypes array.
+	
+	* server/libvncserver/rfb/rfbproto.h: make TRUE == 1 to
+	agree with glib's idea of the truth.
+	
+	* server/libvncserver/CHANGES: upd.
+	
+2003-10-29  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-prefs.c:
+	(vino_prefs_add_server), (vino_prefs_shutdown): make
+	it compile.
+	
+	* server/vino-main.c: (main): hook up the prefs.
+	
+	* server/vino-server.[ch]:
+	(vino_server_set_require_encryption),
+	(vino_server_get_require_encryption),
+	(vino_server_set_auth_methods),
+	(vino_server_get_auth_methods),
+	(vino_server_set_vnc_password),
+	(vino_server_get_vnc_password): add stubs for these.
+
+2003-10-29  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/Makefile.am: add vino-prefs.[ch].
+	
+	* server/vino-prefs.[ch]: first cut at implementing
+	preferences handling.
+
+2003-10-29  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: require gconf.
+	
+	* server/vino-server.schemas.in: first draft of
+	configuration schemas.
+	
+	* server/Makefile.am: install the schemas.
+
+2003-10-29  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/libvncserver/rfb/rfb.h: remove rfbAuthPasswdData
+	and rfbAuthPasswdFirstViewOnly from the screen struct.
+	Add securityTypes, nSecurityTypes and rfbAddSecurityType.
+	
+	* server/libvncserver/main.c:
+	(defaultPasswordCheck), (rfbCheckPasswordByList):
+	remove default password checking implementations.
+	(rfbGetScreen): upd.
+	(rfbAddSecurityType): implement.
+	
+	* server/libvncserver/rfb/rfbproto.h: add
+	RFB_MAX_SECURITY_TYPES. Remove vncEncryptAndStorePasswd
+	and vncDecryptPasswdFromFile.
+	
+	* server/libvncserver/vncauth.c:
+	(vncEncryptAndStorePasswd),
+	(vncDecryptPasswdFromFile): remove.
+	
+	* server/libvncserver/auth.c: decide on which
+	authentication method to use using securityTypes.
+
+	* server/libvncserver/CHANGES: upd.
+
+2003-10-29  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/libvncserver/auth.c:
+	* server/libvncserver/rfb/rfb.h:
+	* server/libvncserver/rfbserver.c: remove
+	reverseConnection support.
+
+	* server/libvncserver/CHANGES: upd.
+
+2003-10-29  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/Makefile.am: add vino-cursor.[ch].
+	
+	* server/vino-cursor.[ch]: simple implementation of
+	cursor position and shape monitoring.
+
+	* server/vino-server.c:
+	(vino_server_update_client): update the cursor shape
+	and position.
+	(vino_server_init_from_screen),
+	(vino_server_finalize): initialize and finalize the
+	cursor monitor.
+	
+	* server/libvncserver/cursor.c:
+	(rfbMakeXCursor): take const char *.
+	(rfbDrawCursor): fix indexing bug.
+	(rfbSetCursorPosition): don't unset cursorHasMoved
+	on the client if its NULL.
+	
+	* server/libvncserver/rfb/rfb.h: make rfbMakeXCursor
+	take const char *.
+
+2003-10-29  Mark McLoughlin  <mark@skynet.ie>
+	
+	* server/libvncserver/cursor.c,
+	  server/libvncserver/rfb/rfb.h:
+	(rfbSetCursorPosition): expose function to set the
+	cursor position.
+	
+	* server/libvncserver/main.c: (defaultPtrAddEvent):
+	Use it here.
+	
+	* server/libvncserver/CHANGES: upd.
+
+2003-10-28  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-server.c:
+	(vino_server_handle_client_gone): remove the timeout.
+	(vino_server_update_client): split out from data_pending.
+	(vino_server_client_data_pending): upd.
+	(vino_server_update_client_timeout),
+	(vino_server_handle_new_client): add timeout to periodically
+	update the client.
+	
+2003-10-23  Mark McLoughlin  <mark@skynet.ie>
+
+	Re-work libvncserver's cursor handling so that the cursor
+	is drawn to the frame buffer only for the purpose of
+	sending the FramebufferUpdate message - i.e. we immediately
+	undraw it after updating the client.
+
+	This should simplify things quite a bit - exposing the
+	posibility of the cursor being drawn into the frame buffer
+	made implementing cursor hadnling a lot more complex.
+
+	* server/libvncserver/cursor.c:
+	(rfbGetCursorBounds): split out from draw/undraw and
+	cleanup.
+	(rfbUndrawCursor), (rfbDrawCursor): allow the pre-computed
+	bounds to be passed in. Clean up these functions a lot.
+	(rfbSetCursor): no need to undraw the cursor.
+	
+	* server/libvncserver/main.c: upd. for the fact that
+	the cursor doesn't need to be undrawn and that the
+	enableCursorPosUpdates and enableCursorShapeUpdates
+	flags have been combined.
+	
+	* server/libvncserver/rfb/rfb.h: kill the cursorIsDrawn
+	and dontConvertRichCursorToXCursor ScreenInfo flags.
+	Add a ClientRec member which saves the last region we
+	drew the cursor so that we can update this region with
+	the client when the cursor moves.
+	Combine the ShapeUpdates and PosUpdates flags.
+	Add rfbGetCursorBounds and update rfbDraw/UndrawCursor.
+	Upd. the FB_UPDATE_PENDING macro.
+	
+	* server/libvncserver/rfbserver.c:
+	(rfbProcessClientNormalMessage): combine the enableCursorPosUpdates
+	and enableCursorShapeUpdates flags. We either use support
+	for both or neither.
+	(rfbSendFramebufferUpdate): draw the cursor before sending
+	the update and then undraw it after.
+
+2003-10-22  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/libvncserver/main.c: (rfbGetScreen):
+	* server/libvncserver/rfb/rfb.h:
+	remove unused dontSendFramebufferUpdate flag.
+	
+	* server/libvncserver/rfbserver.c: disable
+	both shape/position updates if support for either
+	is not available.
+
+	* server/libvncserver/CHANGES: upd.
+
+2003-10-22  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: test for the MIT-SHM and XTest
+	extensions. Also include standard "did pango include
+	-lX11?" check.
+	
+	* server/Makefile.am: link against $X_LIBS, $XSHM_LIBS
+	and $XTEST_LIBS.
+	
+	* server/vino-fb.c: compile without XShm.
+	
+	* server/vino-input.[ch]: implement keyboard and pointer
+	event handling.
+	
+	* server/vino-main.c: (main): make the server view-only
+	if XTest isn't supported.
+	
+	* server/vino-server.[ch]:
+	(vino_server_new): add "view-only" flag to constructor.
+	
+	* server/vino-util.[ch]: rename "server" debug flag
+	to "rfb" and add new "input" debug flag.
+
+2003-10-22  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/libvncserver/*: fixup the various hooks and kill
+	the UDP and backchannel crackrock.
+	
+	* server/Makefile.am: add vino-input.[ch].
+
+	* server/vino-input.[ch]: add skeletal input event handling.
+	
+	* server/vino-fb.c: fixup the pre-conditions.
+
+	* server/vino-server.[ch]:
+	(vino_server_handle_pointer_event),
+	(vino_server_handle_clipboard_event),
+	(vino_server_handle_damage_notify),
+	(vino_server_init_from_screen): hook up the input event
+	handling.
+	(vino_server_set_property), (vino_server_get_property),
+	(vino_server_class_init), (vino_server_new),
+	(vino_server_set_view_only),
+	(vino_server_get_view_only): add a "view-only" property.
+
+2003-10-21  Mark McLoughlin  <mark@skynet.ie>
+
+	* configure.in: add a bunch of autoconf crap
+	for libvncserver.
+	
+	* server/Makefile.am: add libvncserver.
+	
+	* server/libvncserver/*: import a copy of libvncserver,
+	hack it up a bit and cut out some stuff we don't need.
+	Changes are documented in the CHANGES file.
+
+2003-10-21  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/vino-fb.c, server/vino-server.c: get it all
+	more or less working, re-factor and cleanup a bit.
+
+2003-10-20  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/Makefile.am: link against libvncserver.
+	
+	* server/vino-main.c: (main): use VinoServer.
+	
+	* server/vino-server.c: flesh out some more.
+	
+	* server/vino-util.[ch]: (vino_setup_debug_flags):
+	Add server debug flags.
+
+2003-10-20  Mark McLoughlin  <mark@skynet.ie>
+
+	* server/Makefile.am: add vinfo-server.[ch] and
+	vinfo-util.c.
+	
+	* server/vino-fb.[ch]: get a first cut of the screen
+	polling going.
+	
+	* server/vino-main.c: test it out.
+	
+	* server/vino-util.[ch]: add debugging foo.
+	
+	* server/vino-server.[ch]: skeletal server object.
+
+2003-10-20  Mark McLoughlin  <mark@skynet.ie>
+
+	* Initial import.

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="edit-prefs" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Jegyzetszerkesztés beállításai.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Jegyzet beállításai</title>
+ 
+ 	<p>A jegyzetek írásának alapértelmezett beállításai módosíthatók. Jegyzetbeállításainak módosításához nyissa meg a <gui>Tomboy beállításait</gui> a jobb egérgombbal kattintva a panelen, tálcán vagy dokkon lévő Tomboy ikonra, és a <gui>Beállítások</gui> menüpont, majd a <gui>Szerkesztés</gui> lap kiválasztásával. Megnyithatja a <gui>Tomboy beállításait</gui> a <gui>Keresés minden jegyzetben</gui> ablakból is. Itt a menüből válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui></guiseq> menüpontot.</p>
+ 
+ <section id="spellcheck">
+   <title>Helyesírás-ellenőrzés</title>
+   <p>A Tomboy képes ellenőrizni a helyesírást a jegyzet szövegének gépelésekor. A helyesírás-ellenőrzés alapértelmezésben be van kapcsolva, és a Tomboy aláhúzza az elgépelt szavakat. A helyesírási javaslatokat az elgépelt szavakra való jobb kattintással jelenítheti meg.</p>
+   
+   <p>Az automatikus helyesírás-ellenőrzés kikapcsolásához törölje a Tomboy beállításai <gui>Szerkesztés</gui> lapjának <gui>Helyesírás-ellenőrzés gépelés közben</gui> négyzetét.</p>
+   
+ </section>
+
+ <section id="wikiwords">
+   <title>WikiSzavak</title>
+   <p>A Tomboy képes kiemelni azokat a szavakat, <gui>AmikÍgyNéznekKi</gui>. Több szót nagybetűvel kezdve és a szóközöket kihagyva a Tomboy kiemeli a szót, és létrehoz egy hivatkozást, a wiki szoftverekhez hasonlóan. A hivatkozásra kattintva létrejön egy új jegyzet, amelynek címe a WikiSzó lesz.</p>
+   
+   <p>A WikiSzavak alapértelmezésben ki vannak kapcsolva. A WikiSzavak engedélyezéséhez jelölje be a Tomboy beállításai <gui>Szerkesztés</gui> lapján a <gui>Wiki-szavak kiemelése</gui> négyzetet.</p>
+   
+ </section>
+
+ <section id="bullets">
+   <title>Automatikusan felsorolásjelezett listák</title>
+   <p>A Tomboy képes automatikusan felsorolásjelezett listák létrehozására. Ez alapértelmezésben engedélyezett, és jegyzet szerkesztésekor a <key>*</key> és szöveg beírása, majd az <key>Enter</key> megnyomása automatikusan felsorolásjelezett listát hoz létre. Az <key>Enter</key> megnyomása után a következő sor is felsorolásjellel fog kezdődni.</p>
+   
+   <p>Az automatikusan felsorolásjelezett listák kikapcsolásához törölje a Tomboy beállításai ablak <gui>Szerkesztés</gui> lapján a <gui>Automatikusan felsorolásjelezett listák engedélyezése</gui> négyzetet.</p>
+   
+ </section>
+
+ <section id="customfont">
+   <title>Egyéni betűkészletek</title>
+   <p>A Tomboyban választhat az asztali környezet alapértelmezésétől eltérő betűkészletet vagy betűméretet. Ez a szolgáltatás alapértelmezésben ki van kapcsolva.</p>
+   
+   <p>Eltérő betűkészlet engedélyezéséhez jelölje be a Tomboy beállításai ablak <gui>Szerkesztés</gui> lapján az <gui>Egyéni betűkészletek használata</gui> négyzetet.</p>
+
+   <p>Ezután megnyomhatja a betűkészlet gombot, és a megjelenő ablakban kiválaszthatja a betűkészletet, a -stílust és a -méretet. A kijelölés mentéséhez nyomja meg az <key>OK</key> gombot.</p>
+   
+ </section>
+
+ <section id="renamelinks">
+ 
+   <title>Hivatkozott jegyzet átnevezése</title>
+   <p>A Tomboy automatikusan hivatkozásokat hoz létre a jegyzetek közt, ha az aktuális jegyzetbe egy mentett jegyzet nevét írja. Ha átnevez egy olyan jegyzetet, amelyre más Tomboy jegyzetek hivatkoznak, akkor kiválaszthatja a Tomboy viselkedését az ilyen módosítás észlelésekor. A lehetőségek:</p>
+   
+   <list>
+     <item><p><gui>Mindig kérdezzen</gui>: A Tomboy minden módosítás észlelésekor felajánlja az alábbi lehetőségeket.</p></item>
+     <item><p><gui>Soha ne nevezze át a hivatkozásokat</gui>: A Tomboy a többi jegyzetet változatlanul hagyja, és megszünteti a hivatkozást.</p></item>
+     <item><p><gui>Mindig nevezze át a hivatkozásokat</gui>: A Tomboy automatikusan átnevezi az átnevezett jegyzetre mutató, más jegyzetekben lévő hivatkozásokat.</p></item>
+   </list>
+   
+   <p>Válassza ki a fentiek egyikét a Tomboy beállításai ablak <gui>Szerkesztés</gui> lapján a <gui>Hivatkozott jegyzet átnevezésekor</gui> legördülő listából.</p>
+   
+ </section>
+
+<section id="newnotetemplate">
+  <title>Új jegyzet sablon létrehozása</title>
+  <p>Létrehozhat egy új sablont, amely új jegyzet létrehozásakor mindig megjelenik.</p>
+  
+  <p>Nyomja meg a Tomboy beállításai ablak <gui>Szerkesztés</gui> lapján lévő <gui>Új jegyzetek sablonjának megnyitása</gui> gombot. Egy Tomboy jegyzethez hasonló új sablon jelenik meg. Cserélje le az új jegyzetben az <gui>Ide írhatja a jegyzet tartalmát.</gui> szöveget az új sablonként használandó szövegre. Zárja be a jegyzetet az új sablon létrehozásának befejezéséhez. Új jegyzet létrehozásakor ezután mindig ez a sablon jelenik meg az új jegyzetben.</p>
+   
+</section>
+
+ </page>

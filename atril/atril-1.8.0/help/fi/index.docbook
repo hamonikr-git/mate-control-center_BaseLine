@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "0.2">
+<!ENTITY manrevision "1.1">
+<!ENTITY date "April 2008">
+<!ENTITY app "<application>Atril Document Viewer</application>">
+<!ENTITY appname "Atril Document Viewer">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.mate.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fi">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Atril-asiakirjakatselimen käyttöohje</title>       
+    <abstract role="description">
+      <para>Atril-asiakirjakatselimella voi katsella mm. PDF- ja PostScript-muotoisia asiakirjoja</para>
+    </abstract>
+    <copyright lang="en">
+      <year>2005</year>
+      <holder>Nickolay V. Shmyrev</holder>
+    </copyright>
+    <copyright lang="en">
+      <year>2004</year>
+      <holder>Sun Microsystems</holder>
+    </copyright>
+
+<!-- translators: uncomment this:
+    <copyright>
+      <year>2002</year>
+      <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+-->
+
+    <publisher> 
+      <publishername>Maten dokumentointiprojekti</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+	<para>Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software Foundationin julkaiseman GNU Free Documentation Licensen (GFDL) version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. Kopion GFDL:stä voi nähdä napsauttamalla <ulink type="help" url="help:fdl">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-nimisen tiedoston.</para>
+         <para>Tämä käyttöohje on osa Maten käyttöohjekokoelmaa ja levitetään GFDL-lisenssin alaisena. Jos haluat levittää tätä käyttöohjetta erillään kokoelmasta, voit tehdä sen liittämällä lisenssin kopion ohjeen mukaan, kuten lisenssin luku 6 sanelee.</para>
+
+	<para>Monet tuotteiden ja palveluiden nimet ovat tuotemerkkejä. Maten dokumentointiprojektissa nämä nimet pyritään kirjoittamaan suuraakkosin tai isolla alkukirjaimella, sikäli kun projektin jäsenet tietävät kyseisistä tuotemerkeistä.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+    <!-- This file  contains link to license for the documentation (GNU FDL), and 
+         other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	 any of this. -->
+
+    <authorgroup> 
+      <author lang="en">
+        <firstname>Sun</firstname>
+        <surname>MATE Documentation Team</surname>
+        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+      </author>
+      <author role="maintainer" lang="en"> 
+	<firstname>Nickolay V. </firstname> 
+	<surname>Shmyrev</surname> 
+	<affiliation> 
+  	  <orgname>MATE Documentation Project</orgname> 
+	  <address> <email>nshmyrev@yandex.ru</email> </address> 
+	</affiliation> 
+      </author> 
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+      <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+          <orgname>Latin Translation Team</orgname> 
+  	  <address> <email>translator@gnome.org</email> </address> 
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+    <revhistory>
+      <revision lang="en"> 
+        <revnumber>Atril Document Viewer Manual V1.1</revnumber> 
+	<date>2008-04-05</date>
+        <revdescription>
+          <para role="author" lang="en">Niels Giesen</para>
+          <para role="author" lang="en">Claude Paroz</para>
+          <para role="publisher" lang="en">MATE Documentation Project</para>
+        </revdescription>
+      </revision> 
+      <revision lang="en"> 
+        <revnumber>Atril Document Viewer Manual V1.0</revnumber> 
+	<date>2005-04-06</date>
+        <revdescription>
+          <para role="author" lang="en">Nickolay V. Shmyrev</para>
+          <para role="publisher" lang="en">MATE Documentation Project</para>
+        </revdescription>
+      </revision> 
+    </revhistory> 
+
+    <releaseinfo>Tämä käyttöohje kuvaa Atril-asiakirjakatselimen version 0.2</releaseinfo> 
+    <legalnotice> 
+      <title>Palaute</title> 
+      <para>Ilmoittaaksesi viasta tai tehdäksesi ehdotuksen Atril-asiakirjakatselimeen taikka tähän käyttöohjeeseen liittyen, seuraa ohjeita <ulink url="help:mate-feedback" type="help">Maten palautesivulla</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm zone="index" lang="en"> 
+    <primary>Atril Document Viewer</primary> 
+  </indexterm> 
+  <indexterm zone="index" lang="en"> 
+    <primary>atril</primary> 
+  </indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="atril-introduction"> 
+    <title>Johdanto</title> 
+    <para><application>Atril-asiakirjakatselimella</application> voit katsoa asiakirjoja eri tiedostomuodoissa kuten Portable Document Format (PDF) ja PostScript. <application>Atril-asiakirjakatselin</application> noudattaa Freedesktop.org- ja Mate-standardeja ja sulautuu sen ansiosta luontevasti työpöytäympäristöön.</para>
+  </sect1>
+
+<!-- =========== Getting Started ============================== -->
+
+  <sect1 id="atril-getting-started"> 
+    <title>Aloittaminen</title> 
+
+    <sect2 id="atril-start">
+    <title>Atril-asiakirjakatselimen käynnistäminen</title>
+    <para><application>Atril-asiakirjakatselin</application> käynnistyy kun avaat asiakirjan kuten PDF- tai PostScript-tiedoston.</para>
+    <para>Vaihtoehtoisesti voit käynnistää <application>Atril-asiakirjakatselimen</application> komentoriviltä komennolla: <command>atril</command>.</para>
+    
+    </sect2>
+
+    <sect2 id="atril-when-start">
+    <title>Kun käynnistät Atril-asiakirjakatselimen</title>
+    <para>Kun käynnistät <application>Atril-asiakirjakatselimen</application>, seuraava ikkuna ilmaantuu näkyviin.</para>
+
+    <!-- ==== Figure ==== -->
+      <figure id="mainwindow-fig"> 
+	<title>Atril-asiakirjakatselimen ikkuna</title> 
+	<screenshot> 
+	  <mediaobject lang="en"> 
+	    <imageobject><imagedata fileref="figures/atril_start_window.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Shows Atril Document Viewer main window. Contains titlebar, menubar, toolbar and display area. Menubar contains File, Edit, View, Go and Help menus. </phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+
+    <para><application>Atril-asiakirjakatselimen</application> ikkuna sisältää seuraavat osat:</para>
+      <variablelist>
+	<varlistentry>
+  	  <term>Valikkopalkki</term>
+ 	  <listitem>
+	    <para>Valikkopalkin valikot sisältävät kaikki komennot, joita tarvitset asiakirjojen kanssa työskennellessä <application>Atril-asiakirjakatselimella</application>.</para>
+	  </listitem>
+ 	</varlistentry>
+	<varlistentry>
+	  <term>Työkalupalkki</term>
+	  <listitem>
+	    <para>Työkalupalkki sisältää tärkeimmät valikkopalkista löytyvistä komennoista.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Näyttöalue</term>
+	  <listitem>
+ 	    <para>Asiakirja on näkyvissä näyttöalueella.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+
+      <para lang="en">
+        In <application>Atril Document Viewer</application>, you can perform the same action in several ways. For example, you can open a document in the following ways:
+                  <informaltable frame="all">
+                    <tgroup cols="2" colsep="1" rowsep="1">
+                      <colspec colname="COLSPEC0" colwidth="50*"/>
+                      <colspec colname="COLSPEC1" colwidth="50*"/>
+                      <thead>
+                        <row valign="top">
+                          <entry colname="COLSPEC0">
+                            <para lang="en">UI Component</para></entry>
+                          <entry colname="COLSPEC1" align="left"> 
+                            <para lang="en">Action</para></entry>
+                        </row>
+                      </thead>
+                      <tbody>
+                        <row valign="top">               
+                          <entry><para lang="en">Window</para></entry>
+                          <entry>
+                            <itemizedlist>
+                              <listitem>
+                                <para lang="en">Drag a file into the <application>Atril Document Viewer</application> window from another application such as a file manager.</para>
+                              </listitem>
+                              <listitem>
+                                <para lang="en">Double-click on the file name in the file manager</para>
+                              </listitem>
+                            </itemizedlist>
+                          </entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Menubar</para></entry>
+                          <entry><para lang="en">Choose <menuchoice><guimenu>File</guimenu><guimenuitem>Open</guimenuitem></menuchoice>.</para>
+</entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Shortcut keys</para></entry>
+                          <entry><para lang="en">Press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo>.</para></entry>
+                        </row>
+                      </tbody>
+                    </tgroup>
+                  </informaltable>
+      </para>
+      <para>Tämä käyttöohje opastaa toiminnallisuuden valikkopalkista käsin.</para>
+    </sect2>
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+  <sect1 id="atril-usage"> 
+    <title>Käyttö</title> 
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="atril-open-file"> 
+      <title>Asiakirjan avaaminen</title> 
+      <para>Tiedosto avataan seuraavasti:</para>
+      <orderedlist>
+        <listitem>
+          <para lang="en">
+            Choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice>.  </para>
+        </listitem>
+        <listitem>
+          <para>Valitse avattava tiedosto <guilabel>Avaa tiedosto</guilabel> -valintaikkunassa.</para>
+        </listitem>
+        <listitem>
+          <para>Napsauta <guibutton>Avaa</guibutton>. <application>Atril-asiakirjakatselin</application> näyttää asiakirjan nimen ikkunan otsikkopalkissa.</para>
+        </listitem>
+      </orderedlist>
+      <para lang="en"> 
+	To open another document, choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice> again. <application>Atril Document Viewer</application> opens each file in a new window.
+      </para>
+      <para>Mikäli yrität avata <application>Atril-asiakirjakatselimella</application> asiakirjan, jonka tiedostomuotoa ei tunnisteta, sovellus näyttää virheilmoituksen.</para>
+    </sect2>
+
+    <sect2 id="atril-navigate-file">
+    <title>Asiakirjan selaus</title>
+      <para>Voit selata tiedoston läpi seuraavin tavoin:</para>
+      <itemizedlist>
+        <listitem>
+          <para lang="en">To view the next page, choose <menuchoice> <guimenu>Go</guimenu> <guimenuitem>Next Page</guimenuitem> </menuchoice>.
+          </para>
+        </listitem>
+	<listitem>
+	  <para lang="en">To view the previous page, choose <menuchoice> <guimenu>Go</guimenu> <guimenuitem>Previous Page</guimenuitem> </menuchoice>.
+          </para>
+        </listitem>
+	<listitem>
+	  <para lang="en">To view the first page in the document, choose <menuchoice> <guimenu>Go</guimenu> <guimenuitem>First Page</guimenuitem> </menuchoice>.
+          </para>
+        </listitem>
+	<listitem>
+	  <para lang="en">To view the last page in the document, choose <menuchoice> <guimenu>Go</guimenu> <guimenuitem>Last Page</guimenuitem> </menuchoice>.
+          </para>
+        </listitem>
+	<listitem>
+	  <para>Katsoaksesi tiettyä sivua, syötä sivunumero taikka sivun nimi tekstikenttään työkalupalkissa ja paina <keycap>Return</keycap>.</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="atril-scroll-page"> 
+      <title>Sivun selaus</title> 
+      <para>Näyttääksesi sivun sisällöstä sen osan, joka ei juuri nyt näy näyttöalueessa, käytä seuraavia menetelmiä:</para> 
+        <itemizedlist> 
+	  <listitem> 
+  	    <para>Käytä nuolinäppäimiä tai välilyöntiä näppäimistöltä.</para> 
+  	  </listitem> 
+	  <listitem> 
+  	    <para>Vedä näyttöaluetta painamalla hiiren keskimmäinen nappula pohjaan ja siirtämällä hiirtä vastakkaiseen suuntaan selattavan suunnan kanssa. Esimerkiksi selataksesi alaspäin vedä näyttöaluetta ylöspäin ikkunassa.</para> 
+	  </listitem> 
+	  <listitem> 
+	    <para>Käytä ikkunan vierityspalkkeja.</para> 
+  	  </listitem> 
+      </itemizedlist> 
+    </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+	 <sect2 id="atril-manipulate-zoom-factor"> 
+      <title>Sivukoon muuttaminen</title> 
+      <para>Voit käyttää seuraavia tapoja sivukoon muuttamiseksi <application>Atril-asiakirjakatselimen</application> näyttöalueessa:</para> 
+      <itemizedlist> 
+	<listitem> 
+	  <para lang="en">
+            To increase the page size, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Zoom In</guimenuitem> </menuchoice>.
+          </para> 
+	</listitem> 
+	<listitem> 
+	  <para lang="en">
+            To decrease the page size, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Zoom Out</guimenuitem> </menuchoice>.
+          </para> 
+	</listitem> 
+	<listitem> 
+	  <para lang="en">
+            To resize a page to have the same width as the <application>Atril Document Viewer</application> display area, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Fit page width</guimenuitem> </menuchoice>.
+          </para> 
+	</listitem> 
+	<listitem> 
+	  <para lang="en">
+            To resize a page to fit within the <application>Atril Document Viewer</application> display area, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Best Fit</guimenuitem> </menuchoice>.
+          </para> 
+	</listitem> 
+	<listitem> 
+	  <para lang="en">
+            To resize the <application>Atril Document Viewer</application> window to have the same width and height as the screen, choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Full Screen</guimenuitem> </menuchoice>. To resize the <application>Atril Document Viewer</application> window to the original size, click on the <guibutton>Exit Full Screen</guibutton> button.
+          </para> 
+	</listitem> 
+      </itemizedlist> 
+    </sect2> 
+
+    <sect2 id="atril-view-pages">
+      <title>Sivujen ja asiakirjarakenteen katselu</title>
+      <para>Katsellaksesi kirjanmerkkejä tai tiettyjä sivuja, tee seuraavat toimenpiteet:</para>
+      <orderedlist>
+        <listitem>
+          <para lang="en">
+	    Choose <menuchoice> <guimenu>View</guimenu> <guimenuitem>Sidebar</guimenuitem> </menuchoice> or press <keycap>F9</keycap>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Valitse sivupaneeliotsikon alasvetoluettelosta näytetäänkö asiakirjarakenne vaiko sivut sivupaneelissa.</para>
+        </listitem>
+        <listitem>
+          <para>Käytä sivupaneelin vierityspalkkia näyttääksesi tarvittavan kohdan tai sivun sivupaneelissa.</para>
+        </listitem>
+        <listitem>
+          <para>Napsauta haluamaasi kohtaa siirtyäksesi siihen. Napsuta sivua siirtyäksesi kyseiselle sivulle asiakirjassa.</para>
+        </listitem>
+      </orderedlist>
+    </sect2> 
+
+    <sect2 id="atril-view-properties">
+      <title>Asiakirjan ominaisuuksien katselu</title>
+      <para lang="en">To view the properties of a document, choose 
+        <menuchoice>
+          <guimenu>File</guimenu>
+          <guimenuitem>Properties</guimenuitem>
+        </menuchoice>. 
+      </para>
+      <para><guilabel>Ominaisuudet</guilabel>-ikkunassa näkyy kaikki saatavilla oleva tieto</para>
+    </sect2>
+
+    <sect2 id="atril-print-file">
+      <title>Asiakirjan tulostaminen</title>
+      <para lang="en">
+        To print a Document, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Print</guimenuitem> </menuchoice>.
+      </para>
+      <note>
+        <para>Mikäli <guimenuitem>Tulosta</guimenuitem> ei ole valittavissa valikosta, asiakirjan tekijä on estänyt tämän asiakirjan tulostamisen. Asiakirja voidaan tulostaa, jos sitä avattaessa syötetään pääsalasanan. Katso kappaleesta <xref linkend="atril-password"/> lisätietoa salasanasuojatuista tiedostoista.</para>
+      </note>
+      <para><guilabel>Tulosta</guilabel>-valintaikkunassa on seuraavat välilehdet:</para>
+      <itemizedlist>
+        <listitem>
+          <para lang="en">
+            <link linkend="print-dialog-job">Job</link>
+          </para>
+        </listitem>
+        <listitem>
+          <para lang="en">
+            <link linkend="print-dialog-printer">Printer</link>
+          </para>
+        </listitem>
+        <listitem>
+          <para lang="en">
+            <link linkend="print-dialog-paper">Paper</link>
+          </para>
+        </listitem>
+      </itemizedlist>
+
+      <sect3 id="print-dialog-job">
+      <title>Työ</title>
+	<variablelist>
+	  <varlistentry> <term lang="en"><guilabel>Print range</guilabel> </term> 
+	    <listitem> 
+	      <para>Valitse yksi seuraavista vaihtoehdoista määrittämään kuinka monta sivua tulostetaan:</para>
+	      <itemizedlist>
+		<listitem>
+		  <para lang="en"><guilabel>All</guilabel></para>
+		  <para>Valitse tämä vaihtoehto kun haluat tulostaa kaikki asiakirjan sivut.</para>
+		</listitem>
+		<listitem>
+		  <para lang="en"><guilabel>Pages From</guilabel></para>
+		  <para>Valitse tämä vaihtoehto tulostaaksesi valitun alueen asiakirjan sivuista. Määritä ensimmäinen ja viimeinen tulostettava sivu säätimillä.</para>
+		</listitem>							
+	      </itemizedlist>
+	    </listitem>
+	  </varlistentry>
+        </variablelist>  
+      </sect3>
+		
+	<sect3 id="print-dialog-printer">
+	<title>Tulostin</title>
+	<variablelist>
+	  <varlistentry> <term lang="en"><guilabel>Printer</guilabel> </term> 
+	    <listitem> 
+	      <para>Valitse alasvetoluettelosta käytettävä tulostin.</para>
+              <note>
+              <para>Tämä versio <application>Atril-asiakirjakatselimesta</application> ei tue vaihtoehtoa <guilabel>Luo PDF-asiakirja</guilabel>.</para>
+              </note>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Settings</guilabel> </term> 
+	    <listitem> 
+	      <para>Valitse alasvetoluettelosta tulostimen asetukset.</para>
+	      <para>Muokataksesi tulostimen asetuksia napsauta <guibutton>Muokkaa</guibutton>. Voit esimerkiksi ottaa käyttöön tai poistaa käytöstä kaksipuoleisen tulostuksen taikka ajastaa tulostuksen mikäli tulostin tukee sitä.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Location</guilabel> </term> 
+	    <listitem> 
+	      <para>Valitse alasvetoluettelosta yksi seuraavista tulostuskohteista:</para>
+	      <variablelist>
+	        <varlistentry>
+	          <term lang="en"><guilabel>CUPS</guilabel></term>
+	          <listitem>
+	            <para>Tulosta asiakirja CUPS-tulostimella.</para>
+	            <note>
+	              <para>Mikäli valittu tulostin on CUPS-tulostin, <guilabel>CUPS</guilabel> on ainoa vaihtoehto tässä alasvetoluettelossa.</para>
+	            </note>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>lpr</guilabel></term>
+	          <listitem>
+	            <para>Tulosta asiakirja tulostimella.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>File</guilabel></term>
+	          <listitem>
+	            <para>Tulosta asiakirja PostScript-tiedostoon.</para>
+	            <para>Napsauta <guibutton>Tallenna nimellä</guibutton> määrittääksesi PostScript-tiedoston nimen ja sijainnin tiedostonvalintaikkunassa.</para>
+	          </listitem>
+	        </varlistentry>
+	        <varlistentry>
+	          <term lang="en"><guilabel>Custom</guilabel></term>
+	          <listitem>
+	            <para>Käytä erillistä komentoa asiakirjan tulostamiseen.</para>
+	            <para>Syötä komento ja käytettävät argumentit tekstikenttään.</para>
+	          </listitem>
+	        </varlistentry>
+	      </variablelist>
+            </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>State</guilabel> </term> 
+	    <listitem> 
+	      <para>Tämä versio <application>Atril-asiakirjakatselimesta</application> ei tue tätä toimintoa.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Type</guilabel> </term> 
+	    <listitem> 
+	      <para>Tämä versio <application>Atril-asiakirjakatselimesta</application> ei tue tätä toimintoa.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Comment</guilabel> </term> 
+	    <listitem> 
+	      <para>Tämä versio <application>Atril-asiakirjakatselimesta</application> ei tue tätä toimintoa.</para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+	</sect3>
+		
+	<sect3 id="print-dialog-paper">
+	<title>Paperi</title>
+	<variablelist>
+	  <varlistentry> <term lang="en"><guilabel>Paper size</guilabel> </term> 
+	    <listitem> 
+	      <para>Valitse alasvetoluettelosta paperikoko, jolle haluat asiakirjan tulostaa.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Width</guilabel> </term> 
+	    <listitem> 
+	      <para>Määritä paperin leveys tällä säätimellä. Valitse viereistä alasvetoluettelosta mittayksikkö.</para>
+	    </listitem>
+	  </varlistentry>
+	    <varlistentry> <term lang="en"><guilabel>Height</guilabel> </term> 
+	    <listitem> 
+	      <para>Määritä paperin korkeus tällä säätimellä.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Feed orientation</guilabel> </term> 
+	    <listitem> 
+	      <para>Valitse alasvetoluettelosta paperin syöttösuunta tulostimessa.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Page orientation</guilabel> </term> 
+	    <listitem> 
+	      <para>Valitse alasvetoluettelosta sivun suunta.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Layout</guilabel> </term> 
+	    <listitem> 
+	      <para>Valitse alasvetoluettelosta sivun asemointi. Valittua asemointia voi tarkastella <guilabel>Esikatselu</guilabel>-ruudussa.</para>
+	    </listitem>
+	  </varlistentry>
+	  <varlistentry> <term lang="en"><guilabel>Paper Tray</guilabel> </term> 
+	    <listitem> 
+	      <para>Valitse alasvetoluettelosta paperilokero</para>
+	    </listitem>
+	  </varlistentry>
+	</variablelist>
+      </sect3>
+    </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="atril-copy-file"> 
+      <title>Asiakirjan kopiointi</title> 
+      <para>Tiedosto kopioidaan seuraavasti:</para>
+      <orderedlist>
+        <listitem>
+          <para lang="en">
+            Choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Save a Copy</guimenuitem> </menuchoice>. 
+          </para> 
+        </listitem>
+        <listitem>
+          <para>Kirjoita uusi tiedostonimi <guilabel>Tiedostonimi</guilabel>-tekstikenttään <guilabel>Tallenna kopio</guilabel> -valintaikkunassa.</para> 
+          <para>Määritä kopioidun asiakirjan sijainti mikäli se on tarpeen. Oletusarvoisesti kopiot tallennetaan kotihakemistoosi.</para> 
+        </listitem>
+        <listitem>
+          <para>Napsauta <guibutton>Tallenna</guibutton>.</para> 
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+    <!-- this id must be kept in sync with atril-persist-file.cc/atril-persist-stream.cc -->
+    <sect2 id="atril-password">
+      <title>Työskentely salasanasuojatuilla asiakirjoilla</title>
+      <para>Asiakirjan suojaamiseen voi käyttää seuraavia salasanatasoja:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Käyttäjäsalasana sallii muiden ainoastaan lukea asiakirjaa.</para>
+        </listitem>        
+        <listitem>
+          <para>Pääsalasana sallii muiden tehdä muita toimintoja kuten tulostaa asiakirjan.</para>
+        </listitem>        
+      </itemizedlist>
+      <para>Kun yrität avata salasanasuojatun asiakirjan, <application>Atril-asiakirjakatselin</application> näyttää turvakyselyn. Syötä joko käyttäjä- tai pääsalasana <guilabel>Syötä salasana</guilabel> -tekstikenttään ja napsauta <guibutton>Avaa asiakirja</guibutton>.</para>
+    </sect2>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="atril-close-file"> 
+      <title>Asiakirjan sulkeminen</title> 
+      <para lang="en">To close a document, choose <menuchoice> <guimenu>File</guimenu> <guimenuitem>Close</guimenuitem> </menuchoice>. 
+      </para> 
+      <para>Mikäli ikkuna on viimeinen <application>Atril-asiakirjakatselimen</application> avoinna oleva ikkuna, sovellus lopetetaan.</para> 
+    </sect2> 
+
+  </sect1>
+
+  <!-- ================ Shortcuts ================================ -->
+  <sect1 id="atril-shortcuts"> 
+    <title>Pikanäppäimet</title> 
+    <para><application>Atril-asiakirjakatselimessa</application> käytettävissä olevat pikanäppäimet on lueteltu alla:</para>
+    <informaltable frame="all">
+      <tgroup cols="2" colsep="1" rowsep="1">
+        <colspec colname="COLSPEC0" colwidth="50*"/>
+        <colspec colname="COLSPEC1" colwidth="50*"/>
+        <thead>
+          <row valign="top">
+            <entry colname="COLSPEC0">
+            <para>Pikanäppäin</para></entry>
+            <entry colname="COLSPEC1" align="left"> 
+            <para>Toiminto</para></entry>
+          </row>
+        </thead>
+        <tbody>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo></para></entry>
+            <entry><para>Asiakirjan avaaminen</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>S</keycap></keycombo></para></entry>
+            <entry><para>Asiakirjan kopiointi</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>P</keycap></keycombo></para></entry>
+            <entry><para>Asiakirjan tulostaminen</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo></para></entry>
+            <entry><para>Ikkunan sulkeminen</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>C</keycap></keycombo></para></entry>
+            <entry><para>Kopioi valinta</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>A</keycap></keycombo></para></entry>
+            <entry><para>Valitse kaikki</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+              <para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>F</keycap></keycombo></para>
+              <para><keycap>/</keycap> (kauttaviiva)</para>
+            </entry>
+            <entry><para>Etsi sanaa tai lausetta asiakirjasta</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+              <para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>G</keycap></keycombo></para>
+              <para lang="en"><keycap>F3</keycap></para> 
+            </entry>
+            <entry><para>Etsi seuraava</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+              <para><keycombo><keycap>Ctrl</keycap><keycap>+</keycap></keycombo> (plus-merkki)</para>
+              <para lang="en"><keycap>+</keycap></para>
+              <para lang="en"><keycap>=</keycap></para>
+            </entry>
+            <entry><para>Lähennä</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+              <para><keycombo><keycap>Ctrl</keycap><keycap>-</keycap></keycombo> (miinus-merkki)</para>
+              <para lang="en"><keycap>-</keycap></para>
+            </entry>
+            <entry><para>Loitonna</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>R</keycap></keycombo></para></entry>
+            <entry><para>Lataa asiakirja uudelleen</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+            <para lang="en"><keycap>Page Up</keycap></para></entry>
+            <entry><para>Mene edelliselle sivulle</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycap>Page Down</keycap></para></entry>
+            <entry><para>Mene seuraavalle sivulle</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+              <para lang="en"><keycap>Space</keycap></para>
+              <para lang="en"><keycombo><keycap>Shift</keycap><keycap>Backspace</keycap></keycombo></para>
+              <para lang="en"><keycap>Return</keycap></para>
+            </entry>
+            <entry><para>Vieritä eteenpäin</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+              <para lang="en"><keycombo><keycap>Shift</keycap><keycap>Space</keycap></keycombo></para>
+              <para lang="en"><keycap>Backspace</keycap></para>
+              <para lang="en"><keycombo><keycap>Shift</keycap><keycap>Return</keycap></keycombo></para>
+            </entry>
+            <entry><para>Vieritä taaksepäin</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry>
+            <para lang="en"><keycombo><keycap>Shift</keycap><keycap>Page Up</keycap></keycombo></para></entry>
+            <entry><para>Mene muutama sivu taaksepäin</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Shift</keycap><keycap>Page Down</keycap></keycombo></para></entry>
+            <entry><para>Mene muutama sivu eteenpäin</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycap>Home</keycap></para></entry>
+            <entry><para>Mene ensimmäiselle sivulle</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycap>End</keycap></para></entry>
+            <entry><para>Mene viimeiselle sivulle</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycombo><keycap>Ctrl</keycap><keycap>L</keycap></keycombo></para></entry>
+            <entry><para>Mene tietylle sivulle numeron tai tai nimen mukaan</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycap>F1</keycap></para></entry>
+            <entry><para>Ohje</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycap>F5</keycap></para></entry>
+            <entry><para>Näytä asiakirja esityksenä</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycap>F9</keycap></para></entry>
+            <entry><para>Näytä tai piilota sivupaneeli</para></entry>
+          </row>
+          <row valign="middle">               
+            <entry><para lang="en"><keycap>F11</keycap></para></entry>
+            <entry><para>Kokoruututila</para></entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </informaltable>
+  </sect1>
+
+</article>

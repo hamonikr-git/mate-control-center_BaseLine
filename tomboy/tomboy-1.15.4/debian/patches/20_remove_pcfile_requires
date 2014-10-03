@@ -1,0 +1,16 @@
+Description: Remove unnecessary Requires: from gtk-sharp in tomboy-addins pcfile
+Forwarded: not-needed
+Origin: vendor
+Author: Iain Lane <laney@ubuntu.com>
+
+Index: tomboy/data/tomboy-addins.pc.in
+===================================================================
+--- tomboy.orig/data/tomboy-addins.pc.in	2012-05-03 21:16:57.232547251 +0100
++++ tomboy/data/tomboy-addins.pc.in	2012-05-03 21:17:01.720547051 +0100
+@@ -5,6 +5,5 @@
+ 
+ Name: Tomboy Addin Library
+ Description: Library providing the interfaces for Tomboy addins
+-Requires: gtk-sharp-2.0
+ Version: @VERSION@
+ Libs: -r:${libdir}/tomboy/Tomboy.exe

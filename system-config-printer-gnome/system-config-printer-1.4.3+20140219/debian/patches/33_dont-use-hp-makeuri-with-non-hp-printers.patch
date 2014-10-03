@@ -1,0 +1,34 @@
+diff -Nur -x '*.orig' -x '*~' system-config-printer-1.4.3+20140219/newprinter.py system-config-printer-1.4.3+20140219.new/newprinter.py
+--- system-config-printer-1.4.3+20140219/newprinter.py	2014-04-28 23:16:02.996314521 +0200
++++ system-config-printer-1.4.3+20140219.new/newprinter.py	2014-04-28 23:16:18.492314936 +0200
+@@ -2793,7 +2793,11 @@
+                         device_dict['device-id'] = device.id
+                         device_dict['device-location'] = device.location
+ 
+-            if not hp_drivable and is_network and not remotecups:
++            if not hp_drivable and is_network and not remotecups and \
++               (not device.make_and_model or \
++                device.make_and_model == "Unknown" or \
++                device.make_and_model.lower ().startswith ("hp") or \
++                device.make_and_model.lower ().startswith ("hewlett")):
+                 if (hasattr (physicaldevice, "dnssd_hostname") and \
+                     physicaldevice.dnssd_hostname):
+                     hpliphost = physicaldevice.dnssd_hostname
+diff -Nur -x '*.orig' -x '*~' system-config-printer-1.4.3+20140219/probe_printer.py system-config-printer-1.4.3+20140219.new/probe_printer.py
+--- system-config-printer-1.4.3+20140219/probe_printer.py	2014-01-06 18:31:49.000000000 +0100
++++ system-config-printer-1.4.3+20140219.new/probe_printer.py	2014-04-28 23:16:18.492314936 +0200
+@@ -357,6 +357,14 @@
+         debugprint ("lpd: done")
+ 
+     def _probe_hplip (self):
++        if (self._cached_attributes.has_key ('device-make-and-model') and \
++            self._cached_attributes['device-make-and-model'] != "Unknown" and \
++            not self._cached_attributes['device-make-and-model'].lower ().startswith ("hp") and \
++            not self._cached_attributes['device-make-and-model'].lower ().startswith ("hewlett")):
++            debugprint ("hplip: no good (Non-HP printer: %s)" %
++                        self._cached_attributes['device-make-and-model'])
++            return
++
+         null = file ("/dev/null", "r+")
+         try:
+             debugprint ("hplip: trying")

@@ -1,0 +1,3481 @@
+/* -*- Mode: C; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 8 -*-
+  *
+  * Copyright (C) 2004-2005 James M. Cape <jcape@ignore-your.tv>.
+  * Copyright (C) 2007-2008 William Jon McCann <mccann@jhu.edu>
+  * Copyright (C) 2009-2010 Red Hat, Inc.
+  * Copyright © 2013 Canonical Limited
+  *
+  * This program is free software; you can redistribute it and/or modify
+  * it under the terms of the GNU General Public License as published by
+  * the Free Software Foundation; either version 2 of the License, or
+  * (at your option) any later version.
+  *
+  * This program is distributed in the hope that it will be useful,
+  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  * GNU General Public License for more details.
+  *
+  * You should have received a copy of the GNU General Public License
+  * along with this program; if not, write to the Free Software
+  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+  */
+
+#define _BSD_SOURCE
+
+#include "config.h"
+
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/wait.h>
+#include <unistd.h>
+#include <errno.h>
+#include <grp.h>
+#ifdef HAVE_SHADOW_H
+#include <shadow.h>
+#endif
+
+#include <glib.h>
+#include <glib/gi18n.h>
+#include <glib-object.h>
+#include <glib/gstdio.h>
+#include <gio/gio.h>
+#include <gio/gunixinputstream.h>
+#include <polkit/polkit.h>
+
+#define GCR_API_SUBJECT_TO_CHANGE
+#include <gcr/gcr-base.h>
+
+#include "user-classify.h"
+#include "daemon.h"
+#include "user.h"
+#include "accounts-user-generated.h"
+#include "util.h"
+
+enum {
+        PROP_0,
+        PROP_UID,
+        PROP_USER_NAME,
+        PROP_REAL_NAME,
+        PROP_ACCOUNT_TYPE,
+        PROP_HOME_DIR,
+        PROP_SHELL,
+        PROP_EMAIL,
+        PROP_LANGUAGE,
+        PROP_FORMATS_LOCALE,
+        PROP_INPUT_SOURCES,
+        PROP_X_SESSION,
+        PROP_LOCATION,
+        PROP_LOGIN_FREQUENCY,
+        PROP_LOGIN_TIME,
+        PROP_LOGIN_HISTORY,
+        PROP_X_HAS_MESSAGES,
+        PROP_X_KEYBOARD_LAYOUTS,
+        PROP_BACKGROUND_FILE,
+        PROP_ICON_FILE,
+        PROP_LOCKED,
+        PROP_PASSWORD_MODE,
+        PROP_PASSWORD_HINT,
+        PROP_AUTOMATIC_LOGIN,
+        PROP_SYSTEM_ACCOUNT,
+        PROP_LOCAL_ACCOUNT,
+};
+
+struct User {
+        AccountsUserSkeleton parent;
+
+        GDBusConnection *system_bus_connection;
+        gchar *object_path;
+
+        Daemon       *daemon;
+
+        GKeyFile     *keyfile;
+
+        GHashTable *secret_exchanges;
+
+        uid_t         uid;
+        gid_t         gid;
+        gchar        *user_name;
+        gchar        *real_name;
+        AccountType   account_type;
+        PasswordMode  password_mode;
+        gchar        *password_hint;
+        gchar        *home_dir;
+        gchar        *shell;
+        gchar        *email;
+        gchar        *language;
+        gchar        *formats_locale;
+        GVariant     *input_sources;
+        gchar        *x_session;
+        gchar        *location;
+        guint64       login_frequency;
+        gboolean      x_has_messages;
+        gchar       **x_keyboard_layouts;
+        gchar        *background_file;
+        gint64        login_time;
+        GVariant     *login_history;
+        gchar        *icon_file;
+        gchar        *default_icon_file;
+        gboolean      locked;
+        gboolean      automatic_login;
+        gboolean      system_account;
+        gboolean      local_account;
+
+        guint        *extension_ids;
+        guint         n_extension_ids;
+};
+
+typedef struct UserClass
+{
+        AccountsUserSkeletonClass parent_class;
+} UserClass;
+
+static void user_accounts_user_iface_init (AccountsUserIface *iface);
+
+G_DEFINE_TYPE_WITH_CODE (User, user, ACCOUNTS_TYPE_USER_SKELETON, G_IMPLEMENT_INTERFACE (ACCOUNTS_TYPE_USER, user_accounts_user_iface_init));
+
+static gint
+account_type_from_pwent (struct passwd *pwent)
+{
+        struct group *grp;
+        gid_t sudo;
+        gid_t admin;
+        gid_t *groups;
+        gint ngroups;
+        gint i;
+
+        if (pwent->pw_uid == 0) {
+                g_debug ("user is root so account type is administrator");
+                return ACCOUNT_TYPE_ADMINISTRATOR;
+        }
+
+        grp = getgrnam (ADMIN_GROUP);
+        if (grp == NULL) {
+                g_debug (ADMIN_GROUP " group not found");
+                return ACCOUNT_TYPE_STANDARD;
+        }
+        sudo = grp->gr_gid;
+
+        /* Ubuntu prior to 12.04 used "admin" */
+        grp = getgrnam ("admin");
+        if (grp == NULL) {
+                g_debug ("admin group not found");
+                admin = -1;
+        } else {
+                admin = grp->gr_gid;
+        }
+
+        ngroups = get_user_groups (pwent->pw_name, pwent->pw_gid, &groups);
+
+        for (i = 0; i < ngroups; i++) {
+                if (groups[i] == sudo || groups[i] == admin) {
+                        g_free (groups);
+                        return ACCOUNT_TYPE_ADMINISTRATOR;
+                }
+        }
+
+        g_free (groups);
+
+        return ACCOUNT_TYPE_STANDARD;
+}
+
+void
+user_update_from_pwent (User          *user,
+                        struct passwd *pwent)
+{
+#ifdef HAVE_SHADOW_H
+        struct spwd *spent;
+#endif
+        gchar *real_name;
+        gboolean changed;
+        const gchar *passwd;
+        gboolean locked;
+        PasswordMode mode;
+        AccountType account_type;
+
+        g_object_freeze_notify (G_OBJECT (user));
+
+        changed = FALSE;
+
+        if (pwent->pw_gecos && pwent->pw_gecos[0] != '\0') {
+                gchar *first_comma = NULL;
+                gchar *valid_utf8_name = NULL;
+
+                if (g_utf8_validate (pwent->pw_gecos, -1, NULL)) {
+                        valid_utf8_name = pwent->pw_gecos;
+                        first_comma = g_utf8_strchr (valid_utf8_name, -1, ',');
+                }
+                else {
+                        g_warning ("User %s has invalid UTF-8 in GECOS field. "
+                                   "It would be a good thing to check /etc/passwd.",
+                                   pwent->pw_name ? pwent->pw_name : "");
+                }
+
+                if (first_comma) {
+                        real_name = g_strndup (valid_utf8_name,
+                                                  (first_comma - valid_utf8_name));
+                }
+                else if (valid_utf8_name) {
+                        real_name = g_strdup (valid_utf8_name);
+                }
+                else {
+                        real_name = NULL;
+                }
+
+                if (real_name && real_name[0] == '\0') {
+                        g_free (real_name);
+                        real_name = NULL;
+                }
+        }
+        else {
+                real_name = NULL;
+        }
+        if (g_strcmp0 (real_name, user->real_name) != 0) {
+                g_free (user->real_name);
+                user->real_name = real_name;
+                changed = TRUE;
+                g_object_notify (G_OBJECT (user), "real-name");
+        }
+        else {
+                g_free (real_name);
+        }
+
+        /* UID */
+        if (pwent->pw_uid != user->uid) {
+                user->uid = pwent->pw_uid;
+                changed = TRUE;
+                g_object_notify (G_OBJECT (user), "uid");
+        }
+
+        /* GID */
+        user->gid = pwent->pw_gid;
+
+        account_type = account_type_from_pwent (pwent);
+        if (account_type != user->account_type) {
+                user->account_type = account_type;
+                changed = TRUE;
+                g_object_notify (G_OBJECT (user), "account-type");
+        }
+
+        /* Username */
+        if (g_strcmp0 (user->user_name, pwent->pw_name) != 0) {
+                g_free (user->user_name);
+                user->user_name = g_strdup (pwent->pw_name);
+                changed = TRUE;
+                g_object_notify (G_OBJECT (user), "user-name");
+        }
+
+        /* Home Directory */
+        if (g_strcmp0 (user->home_dir, pwent->pw_dir) != 0) {
+                g_free (user->home_dir);
+                user->home_dir = g_strdup (pwent->pw_dir);
+                g_free (user->default_icon_file);
+                user->default_icon_file = g_build_filename (user->home_dir, ".face", NULL);
+                changed = TRUE;
+                g_object_notify (G_OBJECT (user), "home-directory");
+        }
+
+        /* Shell */
+        if (g_strcmp0 (user->shell, pwent->pw_shell) != 0) {
+                g_free (user->shell);
+                user->shell = g_strdup (pwent->pw_shell);
+                changed = TRUE;
+                g_object_notify (G_OBJECT (user), "shell");
+        }
+
+        passwd = NULL;
+#ifdef HAVE_SHADOW_H
+        spent = getspnam (pwent->pw_name);
+        if (spent)
+                passwd = spent->sp_pwdp;
+#endif
+
+        if (passwd && passwd[0] == '!') {
+                locked = TRUE;
+        }
+        else {
+                locked = FALSE;
+        }
+
+        if (user->locked != locked) {
+                user->locked = locked;
+                changed = TRUE;
+                g_object_notify (G_OBJECT (user), "locked");
+        }
+
+        if (passwd == NULL || passwd[0] != 0) {
+                mode = PASSWORD_MODE_REGULAR;
+        }
+        else {
+                mode = PASSWORD_MODE_NONE;
+        }
+
+#ifdef HAVE_SHADOW_H
+        if (spent) {
+                if (spent->sp_lstchg == 0) {
+                        mode = PASSWORD_MODE_SET_AT_LOGIN;
+                }
+        }
+#endif
+
+        if (user->password_mode != mode) {
+                user->password_mode = mode;
+                changed = TRUE;
+                g_object_notify (G_OBJECT (user), "password-mode");
+        }
+
+        user->system_account = !user_classify_is_human (user->uid, user->user_name, pwent->pw_shell, passwd);
+
+        g_object_thaw_notify (G_OBJECT (user));
+
+        if (changed)
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+}
+
+static gint
+intcmp (gconstpointer a,
+        gconstpointer b,
+        gpointer      user_data)
+{
+        return GPOINTER_TO_INT (a) - GPOINTER_TO_INT (b);
+}
+
+static GVariant *
+key_file_get_input_sources (GKeyFile *key_file)
+{
+        GVariantBuilder builder;
+        GSequence *indices;
+        GSequenceIter *indices_iter;
+        gchar **groups;
+        gchar **groups_iter;
+
+        indices = g_sequence_new (NULL);
+        groups = g_key_file_get_groups (key_file, NULL);
+
+        for (groups_iter = groups; *groups_iter; groups_iter++) {
+                if (g_str_has_prefix (*groups_iter, "InputSource") && (*groups_iter)[11]) {
+                        gchar *end;
+                        guint64 index;
+
+                        index = g_ascii_strtoull (*groups_iter + 11, &end, 0);
+
+                        if (!*end)
+                                g_sequence_insert_sorted (indices, GINT_TO_POINTER (index), intcmp, NULL);
+                }
+        }
+
+        g_strfreev (groups);
+
+        g_variant_builder_init (&builder, G_VARIANT_TYPE ("aa{ss}"));
+
+        indices_iter = g_sequence_get_begin_iter (indices);
+
+        while (!g_sequence_iter_is_end (indices_iter)) {
+                guint index;
+                gchar *group;
+                gchar **keys;
+                gchar **keys_iter;
+
+                g_variant_builder_open (&builder, G_VARIANT_TYPE ("a{ss}"));
+
+                index = GPOINTER_TO_UINT (g_sequence_get (indices_iter));
+                group = g_strdup_printf ("InputSource%u", index);
+                keys = g_key_file_get_keys (key_file, group, NULL, NULL);
+
+                for (keys_iter = keys; *keys_iter; keys_iter++) {
+                        gchar *value = g_key_file_get_string (key_file, group, *keys_iter, NULL);
+                        g_variant_builder_add (&builder, "{ss}", *keys_iter, value);
+                        g_free (value);
+                }
+
+                g_strfreev (keys);
+                g_free (group);
+
+                g_variant_builder_close (&builder);
+
+                indices_iter = g_sequence_iter_next (indices_iter);
+        }
+
+        g_sequence_free (indices);
+
+        return g_variant_ref_sink (g_variant_builder_end (&builder));
+}
+
+void
+user_update_from_keyfile (User     *user,
+                          GKeyFile *keyfile)
+{
+        gchar *s;
+
+        g_object_freeze_notify (G_OBJECT (user));
+
+        s = g_key_file_get_string (keyfile, "User", "Language", NULL);
+        if (s != NULL) {
+                /* TODO: validate / normalize */
+                g_free (user->language);
+                user->language = s;
+                g_object_notify (G_OBJECT (user), "language");
+        }
+
+        s = g_key_file_get_string (keyfile, "User", "FormatsLocale", NULL);
+        if (s != NULL) {
+                g_free (user->formats_locale);
+                user->formats_locale = s;
+                g_object_notify (G_OBJECT (user), "formats-locale");
+        }
+
+        if (user->input_sources != NULL)
+                g_variant_unref (user->input_sources);
+        user->input_sources = key_file_get_input_sources (keyfile);
+        g_object_notify (G_OBJECT (user), "input-sources");
+
+        s = g_key_file_get_string (keyfile, "User", "XSession", NULL);
+        if (s != NULL) {
+                g_free (user->x_session);
+                user->x_session = s;
+                g_object_notify (G_OBJECT (user), "xsession");
+        }
+
+        s = g_key_file_get_string (keyfile, "User", "Email", NULL);
+        if (s != NULL) {
+                g_free (user->email);
+                user->email = s;
+                g_object_notify (G_OBJECT (user), "email");
+        }
+
+        s = g_key_file_get_string (keyfile, "User", "Location", NULL);
+        if (s != NULL) {
+                g_free (user->location);
+                user->location = s;
+                g_object_notify (G_OBJECT (user), "location");
+        }
+
+        s = g_key_file_get_string (keyfile, "User", "PasswordHint", NULL);
+        if (s != NULL) {
+                g_free (user->password_hint);
+                user->password_hint = s;
+                g_object_notify (G_OBJECT (user), "password-hint");
+        }
+
+        s = g_key_file_get_string_list (keyfile, "User", "XKeyboardLayouts", NULL, NULL);
+        if (s != NULL) {
+                g_strfreev (user->x_keyboard_layouts);
+                user->x_keyboard_layouts = s;
+                g_object_notify (G_OBJECT (user), "xkeyboard-layouts");
+        }
+
+        s = g_key_file_get_string (keyfile, "User", "Background", NULL);
+        if (s != NULL) {
+                g_free (user->background_file);
+                user->background_file = s;
+                g_object_notify (G_OBJECT (user), "background-file");
+        }
+
+        s = g_key_file_get_string (keyfile, "User", "Icon", NULL);
+        if (s != NULL) {
+                g_free (user->icon_file);
+                user->icon_file = s;
+                g_object_notify (G_OBJECT (user), "icon-file");
+        }
+
+        if (g_key_file_has_key (keyfile, "User", "SystemAccount", NULL)) {
+            gboolean system_account;
+
+            system_account = g_key_file_get_boolean (keyfile, "User", "SystemAccount", NULL);
+            if (system_account != user->system_account) {
+                    user->system_account = system_account;
+                    g_object_notify (G_OBJECT (user), "system-account");
+            }
+        }
+
+        g_clear_pointer (&user->keyfile, g_key_file_unref);
+        user->keyfile = g_key_file_ref (keyfile);
+
+        g_object_thaw_notify (G_OBJECT (user));
+}
+
+void
+user_update_local_account_property (User          *user,
+                                    gboolean       local)
+{
+        if (local == user->local_account)
+                return;
+        user->local_account = local;
+        g_object_notify (G_OBJECT (user), "local-account");
+}
+
+void
+user_update_system_account_property (User          *user,
+                                     gboolean       system)
+{
+        if (system == user->system_account)
+                return;
+        user->system_account = system;
+        g_object_notify (G_OBJECT (user), "system-account");
+}
+
+static void
+key_file_set_input_sources (GKeyFile *key_file,
+                            GVariant *input_sources)
+{
+        gchar **groups;
+        gchar **groups_iter;
+        GVariantIter sources;
+        GVariantIter *source;
+        guint i;
+
+        /* Remove all groups matching regex "InputSource\d+". */
+
+        groups = g_key_file_get_groups (key_file, NULL);
+
+        for (groups_iter = groups; *groups_iter; groups_iter++) {
+                if (g_str_has_prefix (*groups_iter, "InputSource")) {
+                        for (i = 11; g_ascii_isdigit ((*groups_iter)[i]); i++);
+
+                        if (i > 11 && !(*groups_iter)[i])
+                                g_key_file_remove_group (key_file, *groups_iter, NULL);
+                }
+        }
+
+        g_strfreev (groups);
+
+        /* Write all input sources to key file. */
+
+        g_variant_iter_init (&sources, input_sources);
+
+        for (i = 0; g_variant_iter_next (&sources, "a{ss}", &source); i++) {
+                gchar *group;
+                const gchar *key;
+                const gchar *value;
+
+                group = g_strdup_printf ("InputSource%u", i);
+
+                while (g_variant_iter_next (source, "{&s&s}", &key, &value))
+                        g_key_file_set_string (key_file, group, key, value);
+
+                g_free (group);
+
+                g_variant_iter_free (source);
+        }
+}
+
+static void
+user_save_to_keyfile (User     *user,
+                      GKeyFile *keyfile)
+{
+        g_key_file_remove_group (keyfile, "User", NULL);
+
+        if (user->email)
+                g_key_file_set_string (keyfile, "User", "Email", user->email);
+
+        if (user->language)
+                g_key_file_set_string (keyfile, "User", "Language", user->language);
+
+        if (user->formats_locale)
+                g_key_file_set_string (keyfile, "User", "FormatsLocale", user->formats_locale);
+
+        if (user->input_sources)
+                key_file_set_input_sources (keyfile, user->input_sources);
+
+        if (user->x_session)
+                g_key_file_set_string (keyfile, "User", "XSession", user->x_session);
+
+        if (user->location)
+                g_key_file_set_string (keyfile, "User", "Location", user->location);
+
+        if (user->password_hint)
+                g_key_file_set_string (keyfile, "User", "PasswordHint", user->password_hint);
+
+        if (user->x_keyboard_layouts)
+                g_key_file_set_string_list (keyfile, "User", "XKeyboardLayouts", (const gchar * const *) user->x_keyboard_layouts, g_strv_length (user->x_keyboard_layouts));
+
+        if (user->background_file)
+                g_key_file_set_string (keyfile, "User", "Background", user->background_file);
+
+        if (user->icon_file)
+                g_key_file_set_string (keyfile, "User", "Icon", user->icon_file);
+
+        g_key_file_set_boolean (keyfile, "User", "SystemAccount", user->system_account);
+}
+
+static void
+save_extra_data (User *user)
+{
+        gchar *filename;
+        gchar *data;
+        GError *error;
+
+        user_save_to_keyfile (user, user->keyfile);
+
+        error = NULL;
+        data = g_key_file_to_data (user->keyfile, NULL, &error);
+        if (error == NULL) {
+                filename = g_build_filename (USERDIR,
+                                             user->user_name,
+                                             NULL);
+                g_file_set_contents (filename, data, -1, &error);
+                g_free (filename);
+        }
+        if (error) {
+                g_warning ("Saving data for user %s failed: %s",
+                           user->user_name, error->message);
+                g_error_free (error);
+        }
+}
+
+static void
+move_extra_data (const gchar *old_name,
+                 const gchar *new_name)
+{
+        gchar *old_filename;
+        gchar *new_filename;
+
+        old_filename = g_build_filename (USERDIR,
+                                         old_name, NULL);
+        new_filename = g_build_filename (USERDIR,
+                                         new_name, NULL);
+
+        g_rename (old_filename, new_filename);
+
+        g_free (old_filename);
+        g_free (new_filename);
+}
+
+static GVariant *
+user_extension_get_value (User                    *user,
+                          GDBusInterfaceInfo      *interface,
+                          const GDBusPropertyInfo *property)
+{
+        const GVariantType *type = G_VARIANT_TYPE (property->signature);
+        GVariant *value;
+        gchar *printed;
+        gint i;
+
+        /* First, try to get the value from the keyfile */
+        printed = g_key_file_get_value (user->keyfile, interface->name, property->name, NULL);
+        if (printed) {
+                value = g_variant_parse (type, printed, NULL, NULL, NULL);
+                g_free (printed);
+
+                if (value != NULL)
+                        return value;
+        }
+
+        /* If that didn't work, try for a default value annotation */
+        for (i = 0; property->annotations && property->annotations[i]; i++) {
+                GDBusAnnotationInfo *annotation = property->annotations[i];
+
+                if (g_str_equal (annotation->key, "org.freedesktop.Accounts.DefaultValue.String")) {
+                        if (g_str_equal (property->signature, "s"))
+                                return g_variant_ref_sink (g_variant_new_string (annotation->value));
+                }
+                else if (g_str_equal (annotation->key, "org.freedesktop.Accounts.DefaultValue")) {
+                        value = g_variant_parse (type, annotation->value, NULL, NULL, NULL);
+                        if (value != NULL)
+                                return value;
+                }
+        }
+
+        /* Nothing found... */
+        return NULL;
+}
+
+static void
+user_extension_get_property (User                  *user,
+                             Daemon                *daemon,
+                             GDBusInterfaceInfo    *interface,
+                             GDBusMethodInvocation *invocation)
+{
+        const GDBusPropertyInfo *property = g_dbus_method_invocation_get_property_info (invocation);
+        GVariant *value;
+
+        value = user_extension_get_value (user, interface, property);
+
+        if (value) {
+                g_dbus_method_invocation_return_value (invocation, g_variant_new ("(v)", value));
+                g_variant_unref (value);
+        }
+        else {
+                g_dbus_method_invocation_return_error (invocation, G_DBUS_ERROR, G_DBUS_ERROR_INVALID_ARGS,
+                                                       "Key '%s' is not set and has no default value",
+                                                       property->name);
+        }
+}
+
+static void
+user_extension_get_all_properties (User                  *user,
+                                   Daemon                *daemon,
+                                   GDBusInterfaceInfo    *interface,
+                                   GDBusMethodInvocation *invocation)
+{
+        GVariantBuilder builder;
+        gint i;
+
+        g_variant_builder_init (&builder, G_VARIANT_TYPE_VARDICT);
+        for (i = 0; interface->properties && interface->properties[i]; i++) {
+                GDBusPropertyInfo *property = interface->properties[i];
+                GVariant *value;
+
+                value = user_extension_get_value (user, interface, property);
+
+                if (value) {
+                        g_variant_builder_add (&builder, "{sv}", property->name, value);
+                        g_variant_unref (value);
+                }
+        }
+
+        g_dbus_method_invocation_return_value (invocation, g_variant_new ("(a{sv})", &builder));
+}
+
+static void
+user_extension_set_property (User                  *user,
+                             Daemon                *daemon,
+                             GDBusInterfaceInfo    *interface,
+                             GDBusMethodInvocation *invocation)
+{
+        const GDBusPropertyInfo *property = g_dbus_method_invocation_get_property_info (invocation);
+        GVariant *value;
+        gchar *printed;
+        gchar *prev;
+
+        g_variant_get_child (g_dbus_method_invocation_get_parameters (invocation), 2, "v", &value);
+
+        /* We'll always have the type when we parse it back so
+         * we don't need it to be printed with annotations.
+         */
+        printed = g_variant_print (value, FALSE);
+
+        /* May as well try to avoid the thrashing... */
+        prev = g_key_file_get_value (user->keyfile, interface->name, property->name, NULL);
+
+        if (!prev || !g_str_equal (printed, prev)) {
+                g_key_file_set_value (user->keyfile, interface->name, property->name, printed);
+
+                /* Emit a change signal.  Use invalidation
+                 * because the data may not be world-readable.
+                 */
+                g_dbus_connection_emit_signal (g_dbus_method_invocation_get_connection (invocation),
+                                               NULL, /* destination_bus_name */
+                                               g_dbus_method_invocation_get_object_path (invocation),
+                                               "org.freedesktop.DBus.Properties", "PropertiesChanged",
+                                               g_variant_new_parsed ("( %s, %a{sv}, [ %s ] )",
+                                                                     interface->name, NULL, property->name),
+                                               NULL);
+
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+                save_extra_data (user);
+        }
+
+        g_variant_unref (value);
+        g_free (printed);
+        g_free (prev);
+
+        g_dbus_method_invocation_return_value (invocation, g_variant_new ("()"));
+}
+
+static void
+user_extension_authentication_done (Daemon                *daemon,
+                                    User                  *user,
+                                    GDBusMethodInvocation *invocation,
+                                    gpointer               user_data)
+{
+        GDBusInterfaceInfo *interface = user_data;
+        const gchar *method_name;
+
+        method_name = g_dbus_method_invocation_get_method_name (invocation);
+
+        if (g_str_equal (method_name, "Get"))
+                user_extension_get_property (user, daemon, interface, invocation);
+        else if (g_str_equal (method_name, "GetAll"))
+                user_extension_get_all_properties (user, daemon, interface, invocation);
+        else if (g_str_equal (method_name, "Set"))
+                user_extension_set_property (user, daemon, interface, invocation);
+        else
+                g_assert_not_reached ();
+}
+
+static void
+user_extension_method_call (GDBusConnection       *connection,
+                            const gchar           *sender,
+                            const gchar           *object_path,
+                            const gchar           *interface_name,
+                            const gchar           *method_name,
+                            GVariant              *parameters,
+                            GDBusMethodInvocation *invocation,
+                            gpointer               user_data)
+{
+        User *user = user_data;
+        GDBusInterfaceInfo *iface_info;
+        const gchar *annotation_name;
+        const gchar *action_id;
+        gint uid;
+        gint i;
+
+        /* We don't allow method calls on extension interfaces, so we
+         * should only ever see property calls here.
+         */
+        g_assert_cmpstr (interface_name, ==, "org.freedesktop.DBus.Properties");
+
+        /* Now get the real interface name */
+        g_variant_get_child (parameters, 0, "&s", &interface_name);
+
+        if (get_caller_uid (invocation, &uid) && (uid_t) uid == user->uid) {
+                /* Operation on sender's own User object */
+                if (g_str_equal (method_name, "Set")) {
+                        annotation_name = "org.freedesktop.Accounts.Authentication.ChangeOwn";
+                        action_id = "org.freedesktop.accounts.change-own-user-data";
+                }
+                else {
+                        annotation_name = "org.freedesktop.Accounts.Authentication.ReadOwn";
+                        action_id = ""; /* reading allowed by default */
+                }
+        }
+        else {
+                /* Operation on someone else's User object */
+                if (g_str_equal (method_name, "Set")) {
+                        annotation_name = "org.freedesktop.Accounts.Authentication.ChangeAny";
+                        action_id = "org.freedesktop.accounts.user-administration";
+                }
+                else {
+                        annotation_name = "org.freedesktop.Accounts.Authentication.ReadAny";
+                        action_id = ""; /* reading allowed by default */
+                }
+        }
+
+        iface_info = g_hash_table_lookup (daemon_get_extension_ifaces (user->daemon), interface_name);
+        g_assert (iface_info != NULL);
+
+        for (i = 0; iface_info->annotations && iface_info->annotations[i]; i++) {
+                if (g_str_equal (iface_info->annotations[i]->key, annotation_name)) {
+                        action_id = iface_info->annotations[i]->value;
+                        break;
+                }
+        }
+
+        if (action_id[0] == '\0') {
+                /* Should always allow this call, so just do it now */
+                user_extension_authentication_done (user->daemon, user, invocation, iface_info);
+        }
+        else {
+                daemon_local_check_auth (user->daemon, user, action_id, TRUE,
+                                         user_extension_authentication_done,
+                                         invocation, iface_info, NULL);
+        }
+}
+
+static void
+user_register_extensions (User *user)
+{
+        static const GDBusInterfaceVTable vtable = {
+                user_extension_method_call,
+                NULL /* get_property */,
+                NULL /* set_property */
+        };
+        GHashTable *extensions;
+        GHashTableIter iter;
+        gpointer iface;
+        gint i = 0;
+
+        g_assert (user->extension_ids == NULL);
+        g_assert (user->n_extension_ids == 0);
+
+        extensions = daemon_get_extension_ifaces (user->daemon);
+        user->n_extension_ids = g_hash_table_size (extensions);
+        user->extension_ids = g_new (guint, user->n_extension_ids);
+        g_hash_table_iter_init (&iter, extensions);
+
+        /* Ignore errors when registering more interfaces because (a)
+         * they won't happen and (b) even if they do, we still want to
+         * publish the main user interface.
+         */
+        while (g_hash_table_iter_next (&iter, NULL, &iface))
+                user->extension_ids[i++] = g_dbus_connection_register_object (user->system_bus_connection,
+                                                                              user->object_path, iface,
+                                                                              &vtable, user, NULL, NULL);
+}
+
+static gchar *
+compute_object_path (User *user)
+{
+        gchar *object_path;
+
+        object_path = g_strdup_printf ("/org/freedesktop/Accounts/User%ld",
+                                       (long) user->uid);
+
+        return object_path;
+}
+
+void
+user_register (User *user)
+{
+        GError *error = NULL;
+
+        user->system_bus_connection = g_bus_get_sync (G_BUS_TYPE_SYSTEM, NULL, &error);
+        if (user->system_bus_connection == NULL) {
+                if (error != NULL) {
+                        g_critical ("error getting system bus: %s", error->message);
+                        g_error_free (error);
+                }
+                return;
+        }
+
+        user->object_path = compute_object_path (user);
+
+        if (!g_dbus_interface_skeleton_export (G_DBUS_INTERFACE_SKELETON (user),
+                                               user->system_bus_connection,
+                                               user->object_path,
+                                               &error)) {
+                if (error != NULL) {
+                        g_critical ("error exporting user object: %s", error->message);
+                        g_error_free (error);
+                }
+                return;
+        }
+
+        user_register_extensions (user);
+}
+
+void
+user_save (User *user)
+{
+    save_extra_data (user);
+}
+
+void
+user_unregister (User *user)
+{
+        g_dbus_interface_skeleton_unexport (G_DBUS_INTERFACE_SKELETON (user));
+
+        if (user->extension_ids) {
+                guint i;
+
+                for (i = 0; i < user->n_extension_ids; i++) {
+                        /* In theory, if an error happened during registration, we could have 0 here. */
+                        if (user->extension_ids[i] == 0)
+                                continue;
+
+                        g_dbus_connection_unregister_object (user->system_bus_connection, user->extension_ids[i]);
+                }
+
+                g_clear_pointer (&user->extension_ids, g_free);
+                user->n_extension_ids = 0;
+        }
+}
+
+void
+user_changed (User *user)
+{
+        accounts_user_emit_changed (ACCOUNTS_USER (user));
+}
+
+User *
+user_new (Daemon *daemon,
+          uid_t   uid)
+{
+        User *user;
+
+        user = g_object_new (TYPE_USER, NULL);
+        user->daemon = daemon;
+        user->uid = uid;
+
+        return user;
+}
+
+const gchar *
+user_get_user_name (User *user)
+{
+        return user->user_name;
+}
+
+gboolean
+user_get_system_account (User *user)
+{
+        return user->system_account;
+}
+
+gboolean
+user_get_local_account (User *user)
+{
+        return user->local_account;
+}
+
+const gchar *
+user_get_object_path (User *user)
+{
+        return user->object_path;
+}
+
+uid_t
+user_get_uid (User *user)
+{
+        return user->uid;
+}
+
+const gchar *
+user_get_shell(User *user)
+{
+	return user->shell;
+}
+
+static void
+throw_error (GDBusMethodInvocation *context,
+             gint                   error_code,
+             const gchar           *format,
+             ...)
+{
+        va_list args;
+        gchar *message;
+
+        va_start (args, format);
+        message = g_strdup_vprintf (format, args);
+        va_end (args);
+
+        g_dbus_method_invocation_return_error (context, ERROR, error_code, "%s", message);
+
+        g_free (message);
+}
+
+static void
+user_change_real_name_authorized_cb (Daemon                *daemon,
+                                     User                  *user,
+                                     GDBusMethodInvocation *context,
+                                     gpointer               data)
+
+{
+        gchar *name = data;
+        GError *error;
+        const gchar *argv[6];
+
+        if (g_strcmp0 (user->real_name, name) != 0) {
+                sys_log (context,
+                         "change real name of user '%s' (%d) to '%s'",
+                         user->user_name, user->uid, name);
+
+                argv[0] = "/usr/sbin/usermod";
+                argv[1] = "-c";
+                argv[2] = name;
+                argv[3] = "--";
+                argv[4] = user->user_name;
+                argv[5] = NULL;
+
+                error = NULL;
+                if (!spawn_with_login_uid (context, argv, &error)) {
+                        throw_error (context, ERROR_FAILED, "running '%s' failed: %s", argv[0], error->message);
+                        g_error_free (error);
+                        return;
+                }
+
+                g_free (user->real_name);
+                user->real_name = g_strdup (name);
+
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+                g_object_notify (G_OBJECT (user), "real-name");
+        }
+
+        accounts_user_complete_set_real_name (ACCOUNTS_USER (user), context);
+}
+
+static gboolean
+user_set_real_name (AccountsUser          *auser,
+                    GDBusMethodInvocation *context,
+                    const gchar           *real_name)
+{
+        User *user = (User*)auser;
+        int uid;
+        const gchar *action_id;
+
+        if (!get_caller_uid (context, &uid)) {
+                throw_error (context, ERROR_FAILED, "identifying caller failed");
+                return FALSE;
+        }
+
+        if (user->uid == (uid_t) uid)
+                action_id = "org.freedesktop.accounts.change-own-user-data";
+        else
+                action_id = "org.freedesktop.accounts.user-administration";
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 action_id,
+                                 TRUE,
+                                 user_change_real_name_authorized_cb,
+                                 context,
+                                 g_strdup (real_name),
+                                 (GDestroyNotify)g_free);
+
+        return TRUE;
+}
+
+static void
+user_change_user_name_authorized_cb (Daemon                *daemon,
+                                     User                  *user,
+                                     GDBusMethodInvocation *context,
+                                     gpointer               data)
+
+{
+        gchar *name = data;
+        gchar *old_name;
+        GError *error;
+        const gchar *argv[6];
+
+        if (g_strcmp0 (user->user_name, name) != 0) {
+                old_name = g_strdup (user->user_name);
+                sys_log (context,
+                         "change name of user '%s' (%d) to '%s'",
+                         old_name, user->uid, name);
+
+                argv[0] = "/usr/sbin/usermod";
+                argv[1] = "-l";
+                argv[2] = name;
+                argv[3] = "--";
+                argv[4] = user->user_name;
+                argv[5] = NULL;
+
+                error = NULL;
+                if (!spawn_with_login_uid (context, argv, &error)) {
+                        throw_error (context, ERROR_FAILED, "running '%s' failed: %s", argv[0], error->message);
+                        g_error_free (error);
+                        return;
+                }
+
+                g_free (user->user_name);
+                user->user_name = g_strdup (name);
+
+                move_extra_data (old_name, name);
+
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+                g_object_notify (G_OBJECT (user), "user-name");
+        }
+
+        accounts_user_complete_set_user_name (ACCOUNTS_USER (user), context);
+}
+
+
+static gboolean
+user_set_user_name (AccountsUser          *auser,
+                    GDBusMethodInvocation *context,
+                    const gchar           *user_name)
+{
+        User *user = (User*)auser;
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 "org.freedesktop.accounts.user-administration",
+                                 TRUE,
+                                 user_change_user_name_authorized_cb,
+                                 context,
+                                 g_strdup (user_name),
+                                 (GDestroyNotify)g_free);
+
+        return TRUE;
+}
+
+static void
+user_change_email_authorized_cb (Daemon                *daemon,
+                                 User                  *user,
+                                 GDBusMethodInvocation *context,
+                                 gpointer               data)
+
+{
+        gchar *email = data;
+
+        if (g_strcmp0 (user->email, email) != 0) {
+                g_free (user->email);
+                user->email = g_strdup (email);
+
+                save_extra_data (user);
+
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+                g_object_notify (G_OBJECT (user), "email");
+        }
+
+        accounts_user_complete_set_email (ACCOUNTS_USER (user), context);
+}
+
+
+
+static gboolean
+user_set_email (AccountsUser          *auser,
+                GDBusMethodInvocation *context,
+                const gchar           *email)
+{
+        User *user = (User*)auser;
+        int uid;
+        const gchar *action_id;
+
+        if (!get_caller_uid (context, &uid)) {
+                throw_error (context, ERROR_FAILED, "identifying caller failed");
+                return FALSE;
+        }
+
+        if (user->uid == (uid_t) uid)
+                action_id = "org.freedesktop.accounts.change-own-user-data";
+        else
+                action_id = "org.freedesktop.accounts.user-administration";
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 action_id,
+                                 TRUE,
+                                 user_change_email_authorized_cb,
+                                 context,
+                                 g_strdup (email),
+                                 (GDestroyNotify)g_free);
+
+        return TRUE;
+}
+
+static gboolean
+user_drop_privileges_to_user (User *user)
+{
+        if (setresgid (user->gid, user->gid, -1) != 0) {
+                g_warning ("setresgid() failed");
+                return FALSE;
+        }
+        if (setresuid (user->uid, user->uid, -1) != 0) {
+                g_warning ("setresuid() failed");
+                return FALSE;
+        }
+        return TRUE;
+}
+
+static void
+user_regain_privileges ()
+{
+        if (setresuid (0, 0, -1) != 0)
+                g_warning ("setresuid() failed");
+        if (setresgid (0, 0, -1) != 0)
+                g_warning ("setresgid() failed");
+}
+
+static gchar *
+user_locale_utf8_fix (const gchar *locale)
+{
+        if (locale == NULL || !g_strrstr (locale, ".utf8"))
+                return g_strdup (locale);
+
+        gchar **tokens = g_strsplit_set (locale, ".8", 3);
+        gchar *fixed_locale = g_strconcat (tokens[0], ".UTF-8", tokens[2], NULL);
+        g_strfreev (tokens);
+
+        return fixed_locale;
+}
+
+static gchar *
+user_language_validate (User        *user,
+                        const gchar *lang)
+{
+        gboolean     ret;
+        const gchar *program = "/usr/share/language-tools/language-validate";
+        gchar       *command = g_strconcat (program, " ", lang, NULL);
+        gchar       *validated_language;
+        GError      *error = NULL;
+
+        if (!user_drop_privileges_to_user (user))
+                return NULL;
+        ret = g_spawn_command_line_sync (command, &validated_language, NULL, NULL, &error);
+        user_regain_privileges ();
+
+        g_free (command);
+        if (!ret) {
+                g_warning ("Couldn't get validated language: %s", error->message);
+                g_error_free (error);
+                return NULL;
+        }
+        return g_strchomp (validated_language);
+}
+
+static gchar *
+user_locale_validate (User                  *user,
+                      const gchar           *locale,
+                      GDBusMethodInvocation *context)
+{
+        gchar    *validated_locale = NULL;
+        gchar    *tmp_locale = NULL;
+        gchar    *tmp_locale_utf8 = NULL;
+        gboolean  ret = FALSE;
+        gchar    *output = NULL;
+        GError   *error = NULL;
+        gboolean  found = FALSE;
+
+        if (locale == NULL || strlen (locale) < 2)
+                goto out;
+        tmp_locale = g_strdup (locale);
+        g_strchomp (tmp_locale);
+
+        /* When a new language has been installed, we want to be able to instantly
+           set a locale for that language to denote the regional formats. For that
+           reason we make use of 'locale -a' instead of calling setlocale(). */
+
+        if (!user_drop_privileges_to_user (user))
+                goto out;
+        ret = g_spawn_command_line_sync ("locale -a", &output, NULL, NULL, &error);
+        user_regain_privileges ();
+        if (!ret) {
+                throw_error (context, ERROR_FAILED, "Failed to run 'locale -a': %s", error->message);
+                g_clear_error (&error);
+                goto out;
+        }
+
+        /* Replace 'UTF-8' with 'utf8' since 'locale -a' outputs the latter. */
+        tmp_locale_utf8 = g_strdup (tmp_locale);
+        if (g_strrstr (tmp_locale_utf8, ".UTF-8")) {
+                gchar **tokens = g_strsplit_set (tmp_locale_utf8, ".8", 3);
+                g_free (tmp_locale_utf8);
+                tmp_locale_utf8 = g_strconcat (tokens[0], ".utf8", tokens[2], NULL);
+                g_strfreev (tokens);
+        }
+
+        gchar **tokens;
+        int i;
+        g_strchomp (output);
+        tokens = g_strsplit (output, "\n", -1);
+        for (i = 0; tokens[i]; i++) {
+                if (g_strcmp0 (tokens[i], "C") == 0 ||
+                    g_strcmp0 (tokens[i], "C.UTF-8") == 0 ||
+                    g_strcmp0 (tokens[i], "POSIX") == 0)
+                        continue;
+
+                if (g_strcmp0 (tokens[i], tmp_locale_utf8) == 0) {
+                        found = TRUE;
+                        break;
+                }
+        }
+        g_strfreev (tokens);
+
+        if (!found) {
+                throw_error (context, ERROR_FAILED, "'%s' is not a valid locale name", tmp_locale);
+                goto out;
+        }
+        validated_locale = user_locale_utf8_fix (tmp_locale);
+
+out:
+        g_free (tmp_locale);
+        g_free (tmp_locale_utf8);
+        g_free (output);
+
+        return validated_locale;
+}
+
+static gchar *
+strip_quotes (const gchar *str)
+{
+        if ((g_str_has_prefix (str, "\"") && g_str_has_suffix (str, "\""))
+          || (g_str_has_prefix (str, "'") && g_str_has_suffix (str, "'")))
+                return g_strndup (str + 1, strlen (str) - 2);
+        else
+                return g_strdup (str);
+}
+
+static gchar *
+user_get_fallback_value (User        *user,
+                         const gchar *property)
+{
+        gchar *fallback_value = NULL;
+        gchar *language = NULL;
+        gchar *lang = NULL;
+        gchar *lctime = NULL;
+
+        FILE  *fp;
+        if ((fp = fopen ("/etc/default/locale", "r"))) {
+                gchar line[50];
+                while ((fgets (line, 50, fp)) != NULL) {
+                        g_strchomp (line);
+                        if (g_str_has_prefix (line, "LANGUAGE="))
+                                language = strip_quotes (line + strlen ("LANGUAGE="));
+                        else if (g_str_has_prefix (line, "LANG="))
+                                lang = strip_quotes (line + strlen ("LANG="));
+                        else if (g_str_has_prefix (line, "LC_TIME="))
+                                lctime = strip_quotes (line + strlen ("LC_TIME="));
+                }
+                fclose (fp);
+        }
+
+        if (g_strcmp0 (property, "Language") == 0) {
+                gchar *tmp = NULL;
+                if (language)
+                        tmp = language;
+                else if (lang)
+                        tmp = lang;
+                fallback_value = user_language_validate (user, tmp);
+        }
+        
+        if (g_strcmp0 (property, "FormatsLocale") == 0) {
+                gchar *tmp = NULL;
+                if (lctime)
+                        tmp = lctime;
+                else if (lang)
+                        tmp = lang;
+                fallback_value = user_locale_utf8_fix (tmp);
+        }
+
+        g_free (language);
+        g_free (lang);
+        g_free (lctime);
+
+        return fallback_value;
+}
+
+static gchar *
+user_update_environment (User                  *user,
+                         gchar                 *data,
+                         const gchar           *script,
+                         GDBusMethodInvocation *context)
+
+/* This function updates ~/.pam_environment by means of the help files in /usr/share/language-tools. */
+{
+        gchar        *program;
+        gchar        *validated_data = NULL;
+        gint          i;
+        const gchar  *allowed_chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890._+-:/ @";
+        gboolean      ret;
+        GError       *error = NULL;
+
+        if (data == NULL)
+               return NULL;
+
+        program = g_build_path ("/", "/usr/share/language-tools", script, NULL);
+        gchar *command[] = { program, user->home_dir, data, NULL };
+
+        /* test for odd characters in arguments */
+        for (i = 1; i <= 2; i++) {
+                if (strlen (command[i]) != strspn (command[i], allowed_chars)) {
+                        throw_error (context, ERROR_FAILED, "non-permitted character(s) in argument");
+                        goto out;
+                }
+        }
+
+        /* set applicable environment variables in ~/.pam_environment */
+        if (!user_drop_privileges_to_user (user))
+                goto out;
+        ret = g_spawn_sync ( NULL,
+                             command,
+                             NULL,
+                             G_SPAWN_STDERR_TO_DEV_NULL,
+                             NULL,
+                             NULL,
+                             &validated_data,
+                             NULL,
+                             NULL,
+                             &error );
+        user_regain_privileges ();
+        if (!ret) {
+                throw_error (context, ERROR_FAILED, "running '%s' failed: %s", program, error->message);
+                g_error_free (error);
+                validated_data = NULL;
+                goto out;
+        }
+        if (validated_data == NULL || strlen (validated_data) <= 1) {
+                throw_error (context, ERROR_FAILED, "running '%s' failed: no output", program);
+                validated_data = NULL;
+                goto out;
+        }
+
+out:
+        g_free (program);
+        if (validated_data == NULL)
+                return NULL;
+
+        return g_strchomp (validated_data);
+}
+
+static gboolean
+user_HOME_available (User *user)
+{
+        /* run these tests as user to prevent incorrect
+           failures when HOME is on NFS */
+        user_drop_privileges_to_user (user);
+
+        GDir* homedir = g_dir_open (user->home_dir, 0, NULL);
+
+        if (homedir == NULL) {  // HOME not found
+                user_regain_privileges ();
+                return FALSE;
+        } else {
+                do {
+                        const gchar *entry = g_dir_read_name (homedir);
+                        gchar *path_to_entry = g_build_path ("/", user->home_dir, entry, NULL);
+                        if (g_file_test (path_to_entry, G_FILE_TEST_IS_SYMLINK)) {
+                                g_free (path_to_entry);
+                                continue;
+                        }
+                        if (g_strcmp0 (entry, NULL) == 0) {  // HOME contains only symlinks
+                                g_free (path_to_entry);
+                                g_dir_close (homedir);
+                                user_regain_privileges ();
+                                return FALSE;
+                        } else
+                                g_free (path_to_entry);
+                                break;
+                } while (TRUE);
+        }
+
+        g_dir_close (homedir);
+        user_regain_privileges ();
+
+        return TRUE;
+}
+
+static void
+user_change_language_authorized_cb (Daemon                *daemon,
+                                    User                  *user,
+                                    GDBusMethodInvocation *context,
+                                    gpointer               data)
+
+{
+        const gchar *fallback_language = user_get_fallback_value (user, "Language");
+        gboolean     is_language_changed = (user->language && g_strcmp0 (user->language, data) != 0)
+                         || (!user->language && g_strcmp0 (data, fallback_language) != 0);
+
+        if (!user_HOME_available (user)) {
+
+                /* SetLanguage was probably called from a login greeter,
+                   and HOME not mounted and/or not decrypted.
+                   Hence don't save anything, or else accountsservice
+                   and ~/.pam_environment would become out of sync. */
+                throw_error (context, ERROR_FAILED, "not access to HOME yet so language not saved");
+                goto out2;
+        }
+
+        if (is_language_changed) {
+                gchar *language = user_update_environment (user,
+                                                           data,
+                                                           "set-language-helper",
+                                                           context);
+                if (language != NULL) {
+                        g_free (user->language);
+                        user->language = language;
+                }
+
+                gchar *locale = NULL;
+
+                if (!user->formats_locale) {
+
+                        /* set the user formats (certain LC_* variables) explicitly
+                           in order to prevent surprises when LANG is changed */
+                        FILE *fp;
+                        if ((fp = fopen ("/etc/default/locale", "r"))) {
+                                gchar line[50];
+                                while ((fgets (line, 50, fp)) != NULL) {
+                                        if (g_str_has_prefix (line, "LC_TIME=")) {
+                                                g_strchomp (line);
+                                                locale = strip_quotes (line + strlen ("LC_TIME="));
+                                                break;
+                                        }
+                                }
+                                fclose (fp);
+                        }
+                        if (locale == NULL) {
+                                GError *error = NULL;
+                                const gchar *program = "/usr/share/language-tools/language2locale";
+                                if (!user_drop_privileges_to_user (user))
+                                        goto out1;
+                                gchar *command = g_strconcat (program, " ", fallback_language, NULL);
+                                gboolean ret = g_spawn_command_line_sync (command, &locale, NULL, NULL, &error);
+                                user_regain_privileges ();
+                                if (!ret) {
+                                        throw_error (context, ERROR_FAILED,
+                                            "language-to-locale conversion failed: %s", error->message);
+                                        g_error_free (error);
+                                        locale = NULL;
+                                }
+                                g_free (command);
+                        }
+                }
+
+                if (locale != NULL && strlen (locale) > 0) {
+                        gchar *formats_locale = user_update_environment (user,
+                                                                         user_locale_validate (user, locale, context),
+                                                                         "save-to-pam-env",
+                                                                         context);
+                        if (formats_locale != NULL) {
+                                g_free (user->formats_locale);
+                                user->formats_locale = formats_locale;
+                        }
+                }
+out1:
+                g_free (locale);
+
+                save_extra_data (user);
+
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+                g_object_notify (G_OBJECT (user), "language");
+        }
+
+out2:
+        accounts_user_complete_set_language (ACCOUNTS_USER (user), context);
+}
+
+
+
+static gboolean
+user_set_language (AccountsUser          *auser,
+                   GDBusMethodInvocation *context,
+                   const gchar           *language)
+{
+        User *user = (User*)auser;
+        int uid;
+        const gchar *action_id;
+
+        if (!get_caller_uid (context, &uid)) {
+                throw_error (context, ERROR_FAILED, "identifying caller failed");
+                return FALSE;
+        }
+
+        if (user->uid == (uid_t) uid)
+                action_id = "org.freedesktop.accounts.change-own-user-data";
+        else
+                action_id = "org.freedesktop.accounts.user-administration";
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 action_id,
+                                 TRUE,
+                                 user_change_language_authorized_cb,
+                                 context,
+                                 g_strdup (language),
+                                 (GDestroyNotify)g_free);
+
+        return TRUE;
+}
+
+static void
+user_change_formats_locale_authorized_cb (Daemon                *daemon,
+                                          User                  *user,
+                                          GDBusMethodInvocation *context,
+                                          gpointer               data)
+
+{
+        if (g_strcmp0 (user->formats_locale, data) != 0) {
+                gchar *formats_locale = user_update_environment (user,
+                                                                 user_locale_validate (user, data, context),
+                                                                 "save-to-pam-env",
+                                                                 context);
+                if (formats_locale != NULL) {
+                        g_free (user->formats_locale);
+                        user->formats_locale = formats_locale;
+                }
+
+                save_extra_data (user);
+
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+                g_object_notify (G_OBJECT (user), "formats_locale");
+        }
+
+        accounts_user_complete_set_formats_locale (ACCOUNTS_USER (user), context);
+}
+
+gboolean
+user_set_formats_locale (AccountsUser          *auser,
+                         GDBusMethodInvocation *context,
+                         const gchar           *formats_locale)
+{
+        User *user = (User*)auser;
+
+        int uid;
+        const gchar *action_id;
+
+        if (!get_caller_uid (context, &uid)) {
+                throw_error (context, ERROR_FAILED, "identifying caller failed");
+                return FALSE;
+        }
+
+        if (user->uid == (uid_t) uid)
+                action_id = "org.freedesktop.accounts.change-own-user-data";
+        else
+                action_id = "org.freedesktop.accounts.user-administration";
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 action_id,
+                                 TRUE,
+                                 user_change_formats_locale_authorized_cb,
+                                 context,
+                                 g_strdup (formats_locale),
+                                 (GDestroyNotify) g_free);
+
+        return TRUE;
+}
+
+static void
+user_change_input_sources_authorized_cb (Daemon                *daemon,
+                                         User                  *user,
+                                         GDBusMethodInvocation *context,
+                                         gpointer               data)
+
+{
+        GVariant *sources = data;
+
+        if (sources != user->input_sources &&
+            (!sources || !user->input_sources ||
+             !g_variant_equal (sources, user->input_sources))) {
+                if (user->input_sources)
+                        g_variant_unref (user->input_sources);
+
+                user->input_sources = sources;
+
+                if (user->input_sources)
+                        g_variant_ref (user->input_sources);
+
+                save_extra_data (user);
+
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+                g_object_notify (G_OBJECT (user), "input-sources");
+        }
+
+        accounts_user_complete_set_input_sources (ACCOUNTS_USER (user), context);
+}
+
+static gboolean
+user_set_input_sources (AccountsUser          *auser,
+                        GDBusMethodInvocation *context,
+                        GVariant              *sources)
+{
+        User *user = (User*)auser;
+        int uid;
+        const gchar *action_id;
+
+        if (!get_caller_uid (context, &uid)) {
+                throw_error (context, ERROR_FAILED, "identifying caller failed");
+                return FALSE;
+        }
+
+        if (user->uid == (uid_t) uid)
+                action_id = "org.freedesktop.accounts.change-own-user-data";
+        else
+                action_id = "org.freedesktop.accounts.user-administration";
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 action_id,
+                                 TRUE,
+                                 user_change_input_sources_authorized_cb,
+                                 context,
+                                 sources ? g_variant_ref (sources) : NULL,
+                                 sources ? (GDestroyNotify) g_variant_unref : NULL);
+
+        return TRUE;
+}
+
+static void
+user_change_x_session_authorized_cb (Daemon                *daemon,
+                                     User                  *user,
+                                     GDBusMethodInvocation *context,
+                                     gpointer               data)
+
+{
+        gchar *x_session = data;
+
+        if (g_strcmp0 (user->x_session, x_session) != 0) {
+                g_free (user->x_session);
+                user->x_session = g_strdup (x_session);
+
+                save_extra_data (user);
+
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+                g_object_notify (G_OBJECT (user), "xsession");
+        }
+
+        accounts_user_complete_set_xsession (ACCOUNTS_USER (user), context);
+}
+
+static gboolean
+user_set_x_session (AccountsUser          *auser,
+                    GDBusMethodInvocation *context,
+                    const gchar           *x_session)
+{
+        User *user = (User*)auser;
+        int uid;
+        const gchar *action_id;
+
+        if (!get_caller_uid (context, &uid)) {
+                throw_error (context, ERROR_FAILED, "identifying caller failed");
+                return FALSE;
+        }
+
+        if (user->uid == (uid_t) uid)
+                action_id = "org.freedesktop.accounts.change-own-user-data";
+        else
+                action_id = "org.freedesktop.accounts.user-administration";
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 action_id,
+                                 TRUE,
+                                 user_change_x_session_authorized_cb,
+                                 context,
+                                 g_strdup (x_session),
+                                 (GDestroyNotify) g_free);
+
+        return TRUE;
+}
+
+static void
+user_change_location_authorized_cb (Daemon                *daemon,
+                                    User                  *user,
+                                    GDBusMethodInvocation *context,
+                                    gpointer               data)
+
+{
+        gchar *location = data;
+
+        if (g_strcmp0 (user->location, location) != 0) {
+                g_free (user->location);
+                user->location = g_strdup (location);
+
+                save_extra_data (user);
+
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+                g_object_notify (G_OBJECT (user), "location");
+        }
+
+        accounts_user_complete_set_location (ACCOUNTS_USER (user), context);
+}
+
+static gboolean
+user_set_location (AccountsUser          *auser,
+                   GDBusMethodInvocation *context,
+                   const gchar           *location)
+{
+        User *user = (User*)auser;
+        int uid;
+        const gchar *action_id;
+
+        if (!get_caller_uid (context, &uid)) {
+                throw_error (context, ERROR_FAILED, "identifying caller failed");
+                return FALSE;
+        }
+
+        if (user->uid == (uid_t) uid)
+                action_id = "org.freedesktop.accounts.change-own-user-data";
+        else
+                action_id = "org.freedesktop.accounts.user-administration";
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 action_id,
+                                 TRUE,
+                                 user_change_location_authorized_cb,
+                                 context,
+                                 g_strdup (location),
+                                 (GDestroyNotify)g_free);
+
+        return TRUE;
+}
+
+static void
+user_change_home_dir_authorized_cb (Daemon                *daemon,
+                                    User                  *user,
+                                    GDBusMethodInvocation *context,
+                                    gpointer               data)
+
+{
+        gchar *home_dir = data;
+        GError *error;
+        const gchar *argv[7];
+
+        if (g_strcmp0 (user->home_dir, home_dir) != 0) {
+                sys_log (context,
+                         "change home directory of user '%s' (%d) to '%s'",
+                         user->user_name, user->uid, home_dir);
+
+                argv[0] = "/usr/sbin/usermod";
+                argv[1] = "-m";
+                argv[2] = "-d";
+                argv[3] = home_dir;
+                argv[4] = "--";
+                argv[5] = user->user_name;
+                argv[6] = NULL;
+
+                error = NULL;
+                if (!spawn_with_login_uid (context, argv, &error)) {
+                        throw_error (context, ERROR_FAILED, "running '%s' failed: %s", argv[0], error->message);
+                        g_error_free (error);
+                        return;
+                }
+
+                g_free (user->home_dir);
+                user->home_dir = g_strdup (home_dir);
+                g_free (user->default_icon_file);
+                user->default_icon_file = g_build_filename (user->home_dir, ".face", NULL);
+
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+                g_object_notify (G_OBJECT (user), "home-directory");
+        }
+
+        accounts_user_complete_set_home_directory (ACCOUNTS_USER (user), context);
+}
+
+static gboolean
+user_set_home_directory (AccountsUser          *auser,
+                         GDBusMethodInvocation *context,
+                         const gchar           *home_dir)
+{
+        User *user = (User*)auser;
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 "org.freedesktop.accounts.user-administration",
+                                 TRUE,
+                                 user_change_home_dir_authorized_cb,
+                                 context,
+                                 g_strdup (home_dir),
+                                 (GDestroyNotify)g_free);
+
+        return TRUE;
+}
+
+static void
+user_change_shell_authorized_cb (Daemon                *daemon,
+                                 User                  *user,
+                                 GDBusMethodInvocation *context,
+                                 gpointer               data)
+
+{
+        gchar *shell = data;
+        GError *error;
+        const gchar *argv[6];
+
+        if (g_strcmp0 (user->shell, shell) != 0) {
+                sys_log (context,
+                         "change shell of user '%s' (%d) to '%s'",
+                         user->user_name, user->uid, shell);
+
+                argv[0] = "/usr/sbin/usermod";
+                argv[1] = "-s";
+                argv[2] = shell;
+                argv[3] = "--";
+                argv[4] = user->user_name;
+                argv[5] = NULL;
+
+                error = NULL;
+                if (!spawn_with_login_uid (context, argv, &error)) {
+                        throw_error (context, ERROR_FAILED, "running '%s' failed: %s", argv[0], error->message);
+                        g_error_free (error);
+                        return;
+                }
+
+                g_free (user->shell);
+                user->shell = g_strdup (shell);
+
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+                g_object_notify (G_OBJECT (user), "shell");
+        }
+
+        accounts_user_complete_set_shell (ACCOUNTS_USER (user), context);
+}
+
+static gboolean
+user_set_shell (AccountsUser          *auser,
+                GDBusMethodInvocation *context,
+                const gchar           *shell)
+{
+        User *user = (User*)auser;
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 "org.freedesktop.accounts.user-administration",
+                                 TRUE,
+                                 user_change_shell_authorized_cb,
+                                 context,
+                                 g_strdup (shell),
+                                 (GDestroyNotify)g_free);
+
+        return TRUE;
+}
+
+static void
+become_user (gpointer data)
+{
+        struct passwd *pw = data;
+
+        if (pw == NULL ||
+            initgroups (pw->pw_name, pw->pw_gid) != 0 ||
+            setgid (pw->pw_gid) != 0 ||
+            setuid (pw->pw_uid) != 0) {
+                exit (1);
+        }
+}
+
+static void
+user_change_x_has_messages_authorized_cb (Daemon                *daemon,
+                                          User                  *user,
+                                          GDBusMethodInvocation *context,
+                                          gpointer               data)
+{
+        user->x_has_messages = GPOINTER_TO_INT (data);
+
+        accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+        g_object_notify (G_OBJECT (user), "xhas-messages");
+
+        accounts_user_complete_set_xhas_messages (ACCOUNTS_USER (user), context);
+}
+
+gboolean
+user_set_xhas_messages (AccountsUser          *auser,
+                        GDBusMethodInvocation *context,
+                        gboolean               has_messages)
+{
+        User *user = (User*)auser;
+        int uid;
+        const gchar *action_id;
+
+        if (!get_caller_uid (context, &uid)) {
+                throw_error (context, ERROR_FAILED, "identifying caller failed");
+                return FALSE;
+        }
+
+        if (user->uid == (uid_t) uid)
+                action_id = "org.freedesktop.accounts.change-own-user-data";
+        else
+                action_id = "org.freedesktop.accounts.user-administration";
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 action_id,
+                                 TRUE,
+                                 user_change_x_has_messages_authorized_cb,
+                                 context,
+                                 GINT_TO_POINTER (has_messages),
+                                 NULL);
+
+        return TRUE;
+}
+
+static void
+user_change_x_keyboard_layouts_authorized_cb (Daemon                *daemon,
+                                              User                  *user,
+                                              GDBusMethodInvocation *context,
+                                              gpointer               data)
+{
+        g_strfreev (user->x_keyboard_layouts);
+        user->x_keyboard_layouts = g_strdupv (data);
+
+        save_extra_data (user);
+
+        accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+        g_object_notify (G_OBJECT (user), "xkeyboard-layouts");
+
+        accounts_user_complete_set_xkeyboard_layouts (ACCOUNTS_USER (user), context);
+}
+
+gboolean
+user_set_xkeyboard_layouts (AccountsUser          *auser,
+                            GDBusMethodInvocation *context,
+                            const gchar * const   *layouts)
+{
+        User *user = (User*)auser;
+        int uid;
+        const gchar *action_id;
+
+        if (!get_caller_uid (context, &uid)) {
+                throw_error (context, ERROR_FAILED, "identifying caller failed");
+                return FALSE;
+        }
+
+        if (user->uid == (uid_t) uid)
+                action_id = "org.freedesktop.accounts.change-own-user-data";
+        else
+                action_id = "org.freedesktop.accounts.user-administration";
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 action_id,
+                                 TRUE,
+                                 user_change_x_keyboard_layouts_authorized_cb,
+                                 context,
+                                 g_strdupv (layouts),
+                                 (GDestroyNotify)g_strfreev);
+
+        return TRUE;
+}
+
+static void
+user_change_background_file_authorized_cb (Daemon                *daemon,
+                                           User                  *user,
+                                           GDBusMethodInvocation *context,
+                                           gpointer               data)
+{
+        gchar *filename;
+        GFile *file;
+        GFileInfo *info;
+        GFileType type;
+
+        filename = g_strdup (data);
+
+        if (filename == NULL ||
+            *filename == '\0') {
+                g_free (filename);
+                filename = NULL;
+
+                goto background_saved;
+        }
+
+        file = g_file_new_for_path (filename);
+        info = g_file_query_info (file, G_FILE_ATTRIBUTE_STANDARD_TYPE,
+                                  0, NULL, NULL);
+        type = g_file_info_get_file_type (info);
+
+        g_object_unref (info);
+        g_object_unref (file);
+
+        if (type != G_FILE_TYPE_REGULAR) {
+                g_debug ("not a regular file\n");
+                throw_error (context, ERROR_FAILED, "file '%s' is not a regular file", filename);
+                g_free (filename);
+                return;
+        }
+
+background_saved:
+        g_free (user->background_file);
+        user->background_file = filename;
+
+        save_extra_data (user);
+
+        accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+        g_object_notify (G_OBJECT (user), "background-file");
+
+        accounts_user_complete_set_background_file (ACCOUNTS_USER (user), context);
+}
+
+gboolean
+user_set_background_file (AccountsUser          *auser,
+                          GDBusMethodInvocation *context,
+                          const gchar           *filename)
+{
+        User *user = (User*)auser;
+        int uid;
+        const gchar *action_id;
+
+        if (!get_caller_uid (context, &uid)) {
+                throw_error (context, ERROR_FAILED, "identifying caller failed");
+                return FALSE;
+        }
+
+        if (user->uid == (uid_t) uid)
+                action_id = "org.freedesktop.accounts.change-own-user-data";
+        else
+                action_id = "org.freedesktop.accounts.user-administration";
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 action_id,
+                                 TRUE,
+                                 user_change_background_file_authorized_cb,
+                                 context,
+                                 g_strdup (filename),
+                                 (GDestroyNotify)g_free);
+
+        return TRUE;
+}
+
+static void
+user_change_icon_file_authorized_cb (Daemon                *daemon,
+                                     User                  *user,
+                                     GDBusMethodInvocation *context,
+                                     gpointer               data)
+
+{
+        gchar *filename;
+        GFile *file;
+        GFileInfo *info;
+        guint32 mode;
+        GFileType type;
+        guint64 size;
+
+        filename = g_strdup (data);
+
+        if (filename == NULL ||
+            *filename == '\0') {
+                char *dest_path;
+                GFile *dest;
+                GError *error;
+
+                g_free (filename);
+                filename = NULL;
+
+                dest_path = g_build_filename (ICONDIR, user->user_name, NULL);
+                dest = g_file_new_for_path (dest_path);
+                g_free (dest_path);
+
+                error = NULL;
+                if (!g_file_delete (dest, NULL, &error) &&
+                    !g_error_matches (error, G_IO_ERROR, G_IO_ERROR_NOT_FOUND)) {
+                        g_object_unref (dest);
+                        throw_error (context, ERROR_FAILED, "failed to remove user icon, %s", error->message);
+                        g_error_free (error);
+                        return;
+                }
+                g_object_unref (dest);
+                goto icon_saved;
+        }
+
+        file = g_file_new_for_path (filename);
+        info = g_file_query_info (file, G_FILE_ATTRIBUTE_UNIX_MODE ","
+                                        G_FILE_ATTRIBUTE_STANDARD_TYPE ","
+                                        G_FILE_ATTRIBUTE_STANDARD_SIZE,
+                                  0, NULL, NULL);
+        mode = g_file_info_get_attribute_uint32 (info, G_FILE_ATTRIBUTE_UNIX_MODE);
+        type = g_file_info_get_file_type (info);
+        size = g_file_info_get_attribute_uint64 (info, G_FILE_ATTRIBUTE_STANDARD_SIZE);
+
+        g_object_unref (info);
+        g_object_unref (file);
+
+        if (type != G_FILE_TYPE_REGULAR) {
+                g_debug ("not a regular file");
+                throw_error (context, ERROR_FAILED, "file '%s' is not a regular file", filename);
+                g_free (filename);
+                return;
+        }
+
+        if (size > 1048576) {
+                g_debug ("file too large");
+                /* 1MB ought to be enough for everybody */
+                throw_error (context, ERROR_FAILED, "file '%s' is too large to be used as an icon", filename);
+                g_free (filename);
+                return;
+        }
+
+        if ((mode & S_IROTH) == 0 ||
+            (!g_str_has_prefix (filename, DATADIR) &&
+             !g_str_has_prefix (filename, ICONDIR))) {
+                gchar *dest_path;
+                GFile *dest;
+                const gchar *argv[3];
+                gint std_out;
+                GError *error;
+                GInputStream *input;
+                GOutputStream *output;
+                gint uid;
+                gssize bytes;
+                struct passwd *pw;
+
+                if (!get_caller_uid (context, &uid)) {
+                        throw_error (context, ERROR_FAILED, "failed to copy file, could not determine caller UID");
+                        g_free (filename);
+                        return;
+                }
+
+                dest_path = g_build_filename (ICONDIR, user->user_name, NULL);
+                dest = g_file_new_for_path (dest_path);
+
+                error = NULL;
+                output = G_OUTPUT_STREAM (g_file_replace (dest, NULL, FALSE, 0, NULL, &error));
+                if (!output) {
+                        throw_error (context, ERROR_FAILED, "creating file '%s' failed: %s", dest_path, error->message);
+                        g_error_free (error);
+                        g_free (filename);
+                        g_free (dest_path);
+                        g_object_unref (dest);
+                        return;
+                }
+
+                argv[0] = "/bin/cat";
+                argv[1] = filename;
+                argv[2] = NULL;
+
+                pw = getpwuid (uid);
+
+                error = NULL;
+                if (!g_spawn_async_with_pipes (NULL, (gchar**)argv, NULL, 0, become_user, pw, NULL, NULL, &std_out, NULL, &error)) {
+                        throw_error (context, ERROR_FAILED, "reading file '%s' failed: %s", filename, error->message);
+                        g_error_free (error);
+                        g_free (filename);
+                        g_free (dest_path);
+                        g_object_unref (dest);
+                        return;
+                }
+
+                input = g_unix_input_stream_new (std_out, FALSE);
+
+                error = NULL;
+                bytes = g_output_stream_splice (output, input, G_OUTPUT_STREAM_SPLICE_CLOSE_TARGET, NULL, &error);
+                if (bytes < 0 || (gsize)bytes != size) {
+                        throw_error (context, ERROR_FAILED, "copying file '%s' to '%s' failed: %s", filename, dest_path, error ? error->message : "unknown reason");
+                        if (error)
+                                g_error_free (error);
+
+                        g_file_delete (dest, NULL, NULL);
+
+                        g_free (filename);
+                        g_free (dest_path);
+                        g_object_unref (dest);
+                        g_object_unref (input);
+                        g_object_unref (output);
+                        return;
+                }
+
+                g_object_unref (dest);
+                g_object_unref (input);
+                g_object_unref (output);
+
+                g_free (filename);
+                filename = dest_path;
+        }
+
+icon_saved:
+        g_free (user->icon_file);
+        user->icon_file = filename;
+
+        save_extra_data (user);
+
+        accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+        g_object_notify (G_OBJECT (user), "icon-file");
+
+        accounts_user_complete_set_icon_file (ACCOUNTS_USER (user), context);
+}
+
+static gboolean
+user_set_icon_file (AccountsUser          *auser,
+                    GDBusMethodInvocation *context,
+                    const gchar           *filename)
+{
+        User *user = (User*)auser;
+        int uid;
+        const gchar *action_id;
+
+        if (!get_caller_uid (context, &uid)) {
+                throw_error (context, ERROR_FAILED, "identifying caller failed");
+                return FALSE;
+        }
+
+        if (user->uid == (uid_t) uid)
+                action_id = "org.freedesktop.accounts.change-own-user-data";
+        else
+                action_id = "org.freedesktop.accounts.user-administration";
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 action_id,
+                                 TRUE,
+                                 user_change_icon_file_authorized_cb,
+                                 context,
+                                 g_strdup (filename),
+                                 (GDestroyNotify)g_free);
+
+        return TRUE;
+}
+
+static void
+user_change_locked_authorized_cb (Daemon                *daemon,
+                                  User                  *user,
+                                  GDBusMethodInvocation *context,
+                                  gpointer               data)
+
+{
+        gboolean locked = GPOINTER_TO_INT (data);
+        GError *error;
+        const gchar *argv[5];
+
+        if (user->locked != locked) {
+                sys_log (context,
+                         "%s account of user '%s' (%d)",
+                         locked ? "locking" : "unlocking", user->user_name, user->uid);
+                argv[0] = "/usr/sbin/usermod";
+                argv[1] = locked ? "-L" : "-U";
+                argv[2] = "--";
+                argv[3] = user->user_name;
+                argv[4] = NULL;
+
+                error = NULL;
+                if (!spawn_with_login_uid (context, argv, &error)) {
+                        throw_error (context, ERROR_FAILED, "running '%s' failed: %s", argv[0], error->message);
+                        g_error_free (error);
+                        return;
+                }
+
+                user->locked = locked;
+
+                if (user->automatic_login) {
+                    User *automatic_login_user;
+
+                    automatic_login_user = daemon_local_get_automatic_login_user (daemon);
+                    if (user->locked) {
+                            /* If automatic login is enabled for the user then
+                             * disable it in the config file, but keep the state
+                             * attached to the user unharmed so it can be restored
+                             * later in the session
+                             */
+                            if (user == automatic_login_user) {
+                                    daemon_local_set_automatic_login (daemon, user, FALSE, NULL);
+                                    user->automatic_login = TRUE;
+                            }
+                    } else {
+                            if (automatic_login_user == NULL) {
+                                    user->automatic_login = FALSE;
+                                    daemon_local_set_automatic_login (daemon, user, TRUE, NULL);
+                            }
+                    }
+                }
+
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+                g_object_notify (G_OBJECT (user), "locked");
+        }
+
+        accounts_user_complete_set_locked (ACCOUNTS_USER (user), context);
+}
+
+static gboolean
+user_set_locked (AccountsUser          *auser,
+                 GDBusMethodInvocation *context,
+                 gboolean               locked)
+{
+        User *user = (User*)auser;
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 "org.freedesktop.accounts.user-administration",
+                                 TRUE,
+                                 user_change_locked_authorized_cb,
+                                 context,
+                                 GINT_TO_POINTER (locked),
+                                 NULL);
+
+        return TRUE;
+}
+
+static void
+user_change_account_type_authorized_cb (Daemon                *daemon,
+                                        User                  *user,
+                                        GDBusMethodInvocation *context,
+                                        gpointer               data)
+
+{
+        AccountType account_type = GPOINTER_TO_INT (data);
+        GError *error;
+        gid_t *groups;
+        gint ngroups;
+        GString *str;
+        gid_t admin;
+        struct group *grp;
+        gint i;
+        const gchar *argv[6];
+
+        if (user->account_type != account_type) {
+                sys_log (context,
+                         "change account type of user '%s' (%d) to %d",
+                         user->user_name, user->uid, account_type);
+
+                grp = getgrnam (ADMIN_GROUP);
+                if (grp == NULL) {
+                        throw_error (context, ERROR_FAILED, "failed to set account type: sudo group not found");
+                        return;
+                }
+                admin = grp->gr_gid;
+
+                ngroups = get_user_groups (user->user_name, user->gid, &groups);
+
+                str = g_string_new ("");
+                for (i = 0; i < ngroups; i++) {
+                        if (groups[i] == admin)
+                                continue;
+                        g_string_append_printf (str, "%d,", groups[i]);
+                }
+                switch (account_type) {
+                case ACCOUNT_TYPE_ADMINISTRATOR:
+                        g_string_append_printf (str, "%d", admin);
+                        break;
+                case ACCOUNT_TYPE_STANDARD:
+                default:
+                        /* remove excess comma */
+                        g_string_truncate (str, str->len - 1);
+                        break;
+                }
+
+                g_free (groups);
+
+                argv[0] = "/usr/sbin/usermod";
+                argv[1] = "-G";
+                argv[2] = str->str;
+                argv[3] = "--";
+                argv[4] = user->user_name;
+                argv[5] = NULL;
+
+                g_string_free (str, FALSE);
+
+                error = NULL;
+                if (!spawn_with_login_uid (context, argv, &error)) {
+                        throw_error (context, ERROR_FAILED, "running '%s' failed: %s", argv[0], error->message);
+                        g_error_free (error);
+                        return;
+                }
+
+                user->account_type = account_type;
+
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+                g_object_notify (G_OBJECT (user), "account-type");
+        }
+
+        accounts_user_complete_set_account_type (ACCOUNTS_USER (user), context);
+}
+
+static gboolean
+user_set_account_type (AccountsUser          *auser,
+                       GDBusMethodInvocation *context,
+                       gint                   account_type)
+{
+        User *user = (User*)auser;
+        if (account_type < 0 || account_type > ACCOUNT_TYPE_LAST) {
+                throw_error (context, ERROR_FAILED, "unknown account type: %d", account_type);
+                return FALSE;
+        }
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 "org.freedesktop.accounts.user-administration",
+                                 TRUE,
+                                 user_change_account_type_authorized_cb,
+                                 context,
+                                 GINT_TO_POINTER (account_type),
+                                 NULL);
+
+        return TRUE;
+}
+
+static void
+user_change_password_mode_authorized_cb (Daemon                *daemon,
+                                         User                  *user,
+                                         GDBusMethodInvocation *context,
+                                         gpointer               data)
+
+{
+        PasswordMode mode = GPOINTER_TO_INT (data);
+        GError *error;
+        const gchar *argv[6];
+
+        if (user->password_mode != mode) {
+                sys_log (context,
+                         "change password mode of user '%s' (%d) to %d",
+                         user->user_name, user->uid, mode);
+
+                g_object_freeze_notify (G_OBJECT (user));
+
+                if (mode == PASSWORD_MODE_SET_AT_LOGIN ||
+                    mode == PASSWORD_MODE_NONE) {
+
+                        argv[0] = "/usr/bin/passwd";
+                        argv[1] = "-d";
+                        argv[2] = "--";
+                        argv[3] = user->user_name;
+                        argv[4] = NULL;
+
+                        error = NULL;
+                        if (!spawn_with_login_uid (context, argv, &error)) {
+                                throw_error (context, ERROR_FAILED, "running '%s' failed: %s", argv[0], error->message);
+                                g_error_free (error);
+                                return;
+                        }
+
+                        if (mode == PASSWORD_MODE_NONE) {
+                                argv[0] = "/usr/bin/gpasswd";
+                                argv[1] = "-a";
+                                argv[2] = user->user_name;
+                                argv[3] = "nopasswdlogin";
+                                argv[4] = NULL;
+
+                                error = NULL;
+                                if (!spawn_with_login_uid (context, argv, &error)) {
+                                        throw_error (context, ERROR_FAILED, "running '%s' failed: %s", argv[0], error->message);
+                                        g_error_free (error);
+                                        return;
+                                }
+                        }
+
+                        if (mode == PASSWORD_MODE_SET_AT_LOGIN) {
+                                argv[0] = "/usr/bin/chage";
+                                argv[1] = "-d";
+                                argv[2] = "0";
+                                argv[3] = "--";
+                                argv[4] = user->user_name;
+                                argv[5] = NULL;
+
+                                error = NULL;
+                                if (!spawn_with_login_uid (context, argv, &error)) {
+                                        throw_error (context, ERROR_FAILED, "running '%s' failed: %s", argv[0], error->message);
+                                        g_error_free (error);
+                                        return;
+                                }
+                        }
+
+                        g_free (user->password_hint);
+                        user->password_hint = NULL;
+
+                        g_object_notify (G_OBJECT (user), "password-hint");
+
+                        /* removing the password has the side-effect of
+                         * unlocking the account
+                         */
+                        if (user->locked) {
+                                user->locked = FALSE;
+                                g_object_notify (G_OBJECT (user), "locked");
+                        }
+                }
+                else if (user->locked) {
+                        argv[0] = "/usr/sbin/usermod";
+                        argv[1] = "-U";
+                        argv[2] = "--";
+                        argv[3] = user->user_name;
+                        argv[4] = NULL;
+
+                        error = NULL;
+                        if (!spawn_with_login_uid (context, argv, &error)) {
+                                throw_error (context, ERROR_FAILED, "running '%s' failed: %s", argv[0], error->message);
+                                g_error_free (error);
+                                return;
+                        }
+
+                        user->locked = FALSE;
+                        g_object_notify (G_OBJECT (user), "locked");
+                }
+
+                /* Remember to remove user from nopasswdlogin group if we're
+                   switching away from no-password mode */
+                if (user->password_mode == PASSWORD_MODE_NONE) {
+                        argv[0] = "/usr/bin/gpasswd";
+                        argv[1] = "-d";
+                        argv[2] = user->user_name;
+                        argv[3] = "nopasswdlogin";
+                        argv[4] = NULL;
+
+                        error = NULL;
+                        if (!spawn_with_login_uid (context, argv, &error)) {
+                                throw_error (context, ERROR_FAILED, "running '%s' failed: %s", argv[0], error->message);
+                                g_error_free (error);
+                                return;
+                        }
+                }
+
+                user->password_mode = mode;
+
+                g_object_notify (G_OBJECT (user), "password-mode");
+
+                save_extra_data (user);
+
+                g_object_thaw_notify (G_OBJECT (user));
+
+                accounts_user_emit_changed (ACCOUNTS_USER (user));
+        }
+
+        accounts_user_complete_set_password_mode (ACCOUNTS_USER (user), context);
+}
+
+static gboolean
+user_set_password_mode (AccountsUser          *auser,
+                        GDBusMethodInvocation *context,
+                        gint                   mode)
+{
+        User *user = (User*)auser;
+        const gchar *action_id;
+
+        if (mode < 0 || mode > PASSWORD_MODE_LAST) {
+                throw_error (context, ERROR_FAILED, "unknown password mode: %d", mode);
+                return FALSE;
+        }
+
+        action_id = "org.freedesktop.accounts.user-administration";
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 action_id,
+                                 TRUE,
+                                 user_change_password_mode_authorized_cb,
+                                 context,
+                                 GINT_TO_POINTER (mode),
+                                 NULL);
+
+        return TRUE;
+}
+
+static char *
+build_pam_helper_stdin (const char *password,
+                        const char *pin)
+{
+        char *encoded_pin, *encoded_password, *result;
+
+        encoded_password = g_uri_escape_string (password, NULL, FALSE);
+
+        if (pin != NULL) {
+                encoded_pin = g_uri_escape_string (pin, NULL, FALSE);
+
+                result = g_strdup_printf ("%s\n%s\n", encoded_password, encoded_pin);
+                g_free (encoded_pin);
+        } else {
+                result = g_strdup_printf ("%s\n", encoded_password);
+        }
+
+        g_free (encoded_password);
+        return result;
+}
+
+static void
+user_change_password_authorized_cb (Daemon                *daemon,
+                                    User                  *user,
+                                    GDBusMethodInvocation *context,
+                                    gpointer               data)
+
+{
+        gchar **strings = data;
+        GError *error;
+        const gchar *argv[6];
+        gchar *pin_filename;
+
+        sys_log (context,
+                 "set password and hint of user '%s' (%d)",
+                 user->user_name, user->uid);
+
+        g_object_freeze_notify (G_OBJECT (user));
+
+        argv[0] = "/usr/sbin/usermod";
+        argv[1] = "-p";
+        argv[2] = strings[0];
+        argv[3] = "--";
+        argv[4] = user->user_name;
+        argv[5] = NULL;
+
+        error = NULL;
+        if (!spawn_with_login_uid (context, argv, &error)) {
+                throw_error (context, ERROR_FAILED, "running '%s' failed: %s", argv[0], error->message);
+                g_error_free (error);
+                return;
+        }
+
+        /* Drop user from nopasswdlogin group */
+        argv[0] = "/usr/bin/gpasswd";
+        argv[1] = "-d";
+        argv[2] = user->user_name;
+        argv[3] = "nopasswdlogin";
+        argv[4] = NULL;
+
+        error = NULL;
+        if (!spawn_with_login_uid (context, argv, &error)) {
+                /* It is OK for this to fail, it will do so if the user isn't
+                   in the group, which is a valid situation.
+                throw_error (context, ERROR_FAILED, "running '%s' failed: %s", argv[0], error->message);
+                g_error_free (error);
+                return;
+                */
+        }
+
+        /* Make sure to delete PIN file too, to erase any PIN.  If we ended up
+           in this function, the user interacted with an interface that did not
+           offer a PIN entry. */
+        pin_filename = g_build_filename (PASSWDDIR, user->user_name, NULL);
+        g_unlink (pin_filename);
+        g_free (pin_filename);
+
+        if (user->password_mode != PASSWORD_MODE_REGULAR) {
+                user->password_mode = PASSWORD_MODE_REGULAR;
+                g_object_notify (G_OBJECT (user), "password-mode");
+        }
+
+        if (user->locked) {
+                user->locked = FALSE;
+                g_object_notify (G_OBJECT (user), "locked");
+        }
+
+        if (g_strcmp0 (user->password_hint, strings[1]) != 0) {
+                g_free (user->password_hint);
+                user->password_hint = g_strdup (strings[1]);
+                g_object_notify (G_OBJECT (user), "password-hint");
+        }
+
+        save_extra_data (user);
+
+        g_object_thaw_notify (G_OBJECT (user));
+
+        accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+        accounts_user_complete_set_password (ACCOUNTS_USER (user), context);
+}
+
+static void
+free_passwords (gchar **strings)
+{
+        memset (strings[0], 0, strlen (strings[0]));
+        g_strfreev (strings);
+}
+
+static gboolean
+user_set_password (AccountsUser          *auser,
+                   GDBusMethodInvocation *context,
+                   const gchar           *password,
+                   const gchar           *hint)
+{
+        User *user = (User*)auser;
+        gchar **data;
+
+        data = g_new (gchar *, 3);
+        data[0] = g_strdup (password);
+        data[1] = g_strdup (hint);
+        data[2] = NULL;
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 "org.freedesktop.accounts.user-administration",
+                                 TRUE,
+                                 user_change_password_authorized_cb,
+                                 context,
+                                 data,
+                                 (GDestroyNotify)free_passwords);
+
+        memset ((char*)password, 0, strlen (password));
+
+        return TRUE;
+}
+
+static void
+user_continue_change_password_authorized_cb (Daemon                *daemon,
+                                             User                  *user,
+                                             GDBusMethodInvocation *context,
+                                             gpointer               data)
+
+{
+        GVariant *passwords = data;
+        GVariantIter iter;
+        GcrSecretExchange *exchange;
+        GError *error;
+        const gchar *argv[6];
+        unsigned int type;
+        const char *encrypted_password;
+        char *password_hint, *password, *pin;
+        char *stdin;
+
+        sys_log (context, "change password of user '%s' (%d)",
+                 user->user_name, user->uid);
+
+        exchange = g_hash_table_lookup (user->secret_exchanges,
+                                        g_dbus_method_invocation_get_sender (context));
+        g_object_ref (exchange);
+        g_hash_table_remove (user->secret_exchanges, g_dbus_method_invocation_get_sender (context));
+
+        if (exchange == NULL) {
+                /* The caller never called BeginSetPassword */
+                throw_error (context, ERROR_INVALID, "secret exchange not initialized");
+                return;
+        }
+
+        g_object_freeze_notify (G_OBJECT (user));
+
+        password_hint = NULL;
+        password = NULL;
+        pin = NULL;
+        g_variant_iter_init (&iter, passwords);
+        while (g_variant_iter_next (&iter, "(u&s)", &type, &encrypted_password)) {
+                if (!gcr_secret_exchange_receive (exchange, encrypted_password)) {
+                        throw_error (context, ERROR_INVALID, "could not decrypt password");
+                        goto out;
+                }
+
+                switch (type) {
+                case 0:
+                        g_free (password);
+                        password = g_strdup (gcr_secret_exchange_get_secret (exchange, NULL));
+                        break;
+                case 1:
+                        g_free (password_hint);
+                        password_hint = g_strdup (gcr_secret_exchange_get_secret (exchange, NULL));
+                        break;
+                case 2:
+                        g_free (pin);
+                        pin = g_strdup (gcr_secret_exchange_get_secret (exchange, NULL));
+                        break;
+
+                default:
+                        throw_error (context, ERROR_INVALID, "invalid password type");
+                        goto out;
+                }
+        }
+
+        argv[0] = LIBEXECDIR "/accounts-daemon-pam-password-helper";
+        argv[1] = user->user_name;
+        argv[2] = NULL;
+
+        stdin = build_pam_helper_stdin (password, pin);
+        error = NULL;
+
+        if (!spawn_with_login_uid_and_stdin (context, argv, stdin, &error)) {
+                throw_error (context, ERROR_FAILED, "running '%s' failed: %s", argv[0], error->message);
+                goto out;
+        }
+
+        if (user->password_mode != PASSWORD_MODE_REGULAR) {
+                user->password_mode = PASSWORD_MODE_REGULAR;
+                g_object_notify (G_OBJECT (user), "password-mode");
+        }
+
+        if (user->locked) {
+                user->locked = FALSE;
+                g_object_notify (G_OBJECT (user), "locked");
+        }
+
+        if (password_hint != NULL &&
+            g_strcmp0 (user->password_hint, password_hint) != 0) {
+                g_free (user->password_hint);
+                /* An empty password hint means no password hint */
+                if (*password_hint)
+                        user->password_hint = g_strdup (password_hint);
+                else
+                        user->password_hint = NULL;
+                g_object_notify (G_OBJECT (user), "password-hint");
+        }
+
+        save_extra_data (user);
+
+        accounts_user_emit_changed (ACCOUNTS_USER (user));
+
+        accounts_user_complete_continue_set_password (ACCOUNTS_USER (user), context);
+
+ out:
+        g_free (password_hint);
+        g_free (password);
+        g_free (pin);
+        g_object_thaw_notify (G_OBJECT (user));
+        g_object_unref (exchange);
+}
+
+static gboolean
+user_continue_set_password (AccountsUser          *auser,
+                            GDBusMethodInvocation *context,
+                            GVariant              *passwords)
+{
+        User *user = (User*)auser;
+
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 "org.freedesktop.accounts.user-administration",
+                                 TRUE,
+                                 user_continue_change_password_authorized_cb,
+                                 context,
+                                 g_variant_ref (passwords),
+                                 (GDestroyNotify)g_variant_unref);
+
+        return TRUE;
+}
+
+static void
+on_name_vanished (GDBusConnection *connection,
+                  const gchar     *name,
+                  gpointer         user_data)
+{
+        User *user = USER (user_data);
+
+        g_hash_table_remove (user->secret_exchanges, name);
+}
+
+static void
+on_exchange_unreffed (gpointer  user_data,
+                      GObject  *object)
+{
+        g_bus_unwatch_name (GPOINTER_TO_INT (user_data));
+}
+
+static gboolean
+user_begin_set_password (AccountsUser          *auser,
+                         GDBusMethodInvocation *context)
+{
+        User *user = (User*)auser;
+        const char *who;
+        GcrSecretExchange *exchange;
+        char *begin_str;
+        int name_id;
+
+        who = g_dbus_method_invocation_get_sender (context);
+        exchange = g_hash_table_lookup (user->secret_exchanges, who);
+
+        if (exchange != NULL) {
+                throw_error (context, ERROR_INVALID, "secret exchange already in progress");
+                return TRUE;
+        }
+
+        exchange = gcr_secret_exchange_new (GCR_SECRET_EXCHANGE_PROTOCOL_1);
+        g_hash_table_insert (user->secret_exchanges, g_strdup (who), exchange);
+
+        name_id = g_bus_watch_name (G_BUS_TYPE_SYSTEM, who,
+                                    G_BUS_NAME_WATCHER_FLAGS_NONE,
+                                    NULL, /* name appeared */
+                                    on_name_vanished,
+                                    auser, /* weak ref */
+                                    NULL);
+        g_object_weak_ref (G_OBJECT (exchange), on_exchange_unreffed, GINT_TO_POINTER (name_id));
+
+        begin_str = gcr_secret_exchange_begin (exchange);
+        accounts_user_complete_begin_set_password (auser, context, begin_str);
+        g_free (begin_str);
+
+        return TRUE;
+}
+
+static void
+user_change_automatic_login_authorized_cb (Daemon                *daemon,
+                                           User                  *user,
+                                           GDBusMethodInvocation *context,
+                                           gpointer               data)
+{
+        gboolean enabled = GPOINTER_TO_INT (data);
+        GError *error = NULL;
+
+        sys_log (context,
+                 "%s automatic login for user '%s' (%d)",
+                 enabled ? "enable" : "disable", user->user_name, user->uid);
+
+        if (user->locked) {
+                throw_error (context, ERROR_FAILED, "failed to change automatic login: user is locked");
+                return;
+        }
+
+        if (!daemon_local_set_automatic_login (daemon, user, enabled, &error)) {
+                throw_error (context, ERROR_FAILED, "failed to change automatic login: %s", error->message);
+                g_error_free (error);
+                return;
+        }
+
+        accounts_user_complete_set_automatic_login (ACCOUNTS_USER (user), context);
+}
+
+static gboolean
+user_set_automatic_login (AccountsUser          *auser,
+                          GDBusMethodInvocation *context,
+                          gboolean               enabled)
+{
+        User *user = (User*)auser;
+        daemon_local_check_auth (user->daemon,
+                                 user,
+                                 "org.freedesktop.accounts.user-administration",
+                                 TRUE,
+                                 user_change_automatic_login_authorized_cb,
+                                 context,
+                                 GINT_TO_POINTER (enabled),
+                                 NULL);
+
+        return TRUE;
+}
+
+static guint64
+user_real_get_uid (AccountsUser *user)
+{
+        return (guint64) USER (user)->uid;
+}
+
+static const gchar *
+user_real_get_user_name (AccountsUser *user)
+{
+        return USER (user)->user_name;
+}
+
+static const gchar *
+user_real_get_real_name (AccountsUser *user)
+{
+        return USER (user)->real_name;
+}
+
+static gint
+user_real_get_account_type (AccountsUser *user)
+{
+        return (gint) USER (user)->account_type;
+}
+
+static const gchar *
+user_real_get_home_directory (AccountsUser *user)
+{
+        return USER (user)->home_dir;
+}
+
+static const gchar *
+user_real_get_shell (AccountsUser *user)
+{
+        return USER (user)->shell;
+}
+
+static const gchar *
+user_real_get_email (AccountsUser *user)
+{
+        return USER (user)->email;
+}
+
+static const gchar *
+user_real_get_language (AccountsUser *user)
+{
+        return USER (user)->language;
+}
+
+static GVariant *
+user_real_get_input_sources (AccountsUser *user)
+{
+        return USER (user)->input_sources;
+}
+
+static const gchar *
+user_real_get_xsession (AccountsUser *user)
+{
+        return USER (user)->x_session;
+}
+
+static const gchar *
+user_real_get_location (AccountsUser *user)
+{
+        return USER (user)->location;
+}
+
+static guint64
+user_real_get_login_frequency (AccountsUser *user)
+{
+        return USER (user)->login_frequency;
+}
+
+static gint64
+user_real_get_login_time (AccountsUser *user)
+{
+        return USER (user)->login_time;
+}
+
+static GVariant *
+user_real_get_login_history (AccountsUser *user)
+{
+        return USER (user)->login_history;
+}
+
+static const gchar *
+user_real_get_icon_file (AccountsUser *user)
+{
+        if (USER (user)->icon_file)
+                return USER (user)->icon_file;
+        else
+                return USER (user)->default_icon_file;
+}
+
+static gboolean
+user_real_get_locked (AccountsUser *user)
+{
+        return USER (user)->locked;
+}
+
+static gint
+user_real_get_password_mode (AccountsUser *user)
+{
+        return USER (user)->password_mode;
+}
+
+static const gchar *
+user_real_get_password_hint (AccountsUser *user)
+{
+        return USER (user)->password_hint;
+}
+
+static gboolean
+user_real_get_automatic_login (AccountsUser *user)
+{
+        return USER (user)->automatic_login;
+}
+
+static gboolean
+user_real_get_system_account (AccountsUser *user)
+{
+        return USER (user)->system_account;
+}
+
+static void
+user_finalize (GObject *object)
+{
+        User *user;
+
+        user = USER (object);
+
+        g_clear_pointer (&user->keyfile, g_key_file_unref);
+
+        g_hash_table_unref (user->secret_exchanges);
+
+        g_free (user->object_path);
+        g_free (user->user_name);
+        g_free (user->real_name);
+        g_free (user->home_dir);
+        g_free (user->shell);
+        g_strfreev (user->x_keyboard_layouts);
+        g_free (user->icon_file);
+        g_free (user->default_icon_file);
+        g_free (user->background_file);
+        g_free (user->email);
+        g_free (user->language);
+        g_free (user->formats_locale);
+        g_free (user->x_session);
+        g_free (user->location);
+        g_free (user->password_hint);
+
+	if (user->login_history)
+		g_variant_unref (user->login_history);
+
+        if (user->input_sources)
+                g_variant_unref (user->input_sources);
+
+        if (G_OBJECT_CLASS (user_parent_class)->finalize)
+                (*G_OBJECT_CLASS (user_parent_class)->finalize) (object);
+}
+
+static void
+user_set_property (GObject      *object,
+                   guint         param_id,
+                   const GValue *value,
+                   GParamSpec   *pspec)
+{
+        User *user = USER (object);
+        GVariant *variant;
+
+        switch (param_id) {
+        case PROP_ACCOUNT_TYPE:
+                user->account_type = g_value_get_int (value);
+                break;
+        case PROP_LANGUAGE:
+                user->language = g_value_dup_string (value);
+                break;
+        case PROP_FORMATS_LOCALE:
+                user->formats_locale = g_value_dup_string (value);
+                break;
+        case PROP_INPUT_SOURCES:
+                variant = g_value_get_variant (value);
+
+                if (variant != user->input_sources) {
+                        if (user->input_sources)
+                                g_variant_unref (user->input_sources);
+                        user->input_sources = variant;
+                        if (user->input_sources)
+                                g_variant_ref (user->input_sources);
+                }
+
+                break;
+        case PROP_X_SESSION:
+                user->x_session = g_value_dup_string (value);
+                break;
+        case PROP_EMAIL:
+                user->email = g_value_dup_string (value);
+                break;
+        case PROP_LOGIN_FREQUENCY:
+                user->login_frequency = g_value_get_uint64 (value);
+                break;
+        case PROP_LOGIN_TIME:
+                user->login_time = g_value_get_int64 (value);
+                break;
+        case PROP_LOGIN_HISTORY:
+                if (user->login_history)
+                        g_variant_unref (user->login_history);
+                user->login_history = g_variant_ref (g_value_get_variant (value));
+                break;
+        case PROP_AUTOMATIC_LOGIN:
+                user->automatic_login = g_value_get_boolean (value);
+                break;
+        case PROP_SYSTEM_ACCOUNT:
+                user->system_account = g_value_get_boolean (value);
+                break;
+        default:
+                G_OBJECT_WARN_INVALID_PROPERTY_ID (object, param_id, pspec);
+                break;
+        }
+}
+
+static void
+user_get_property (GObject    *object,
+                   guint       param_id,
+                   GValue     *value,
+                   GParamSpec *pspec)
+{
+        User *user = USER (object);
+
+        switch (param_id) {
+        case PROP_UID:
+                g_value_set_uint64 (value, user->uid);
+                break;
+        case PROP_USER_NAME:
+                g_value_set_string (value, user->user_name);
+                break;
+        case PROP_REAL_NAME:
+                g_value_set_string (value, user->real_name);
+                break;
+        case PROP_ACCOUNT_TYPE:
+                g_value_set_int (value, user->account_type);
+                break;
+        case PROP_PASSWORD_MODE:
+                g_value_set_int (value, user->password_mode);
+                break;
+        case PROP_PASSWORD_HINT:
+                g_value_set_string (value, user->password_hint);
+                break;
+        case PROP_HOME_DIR:
+                g_value_set_string (value, user->home_dir);
+                break;
+        case PROP_SHELL:
+                g_value_set_string (value, user->shell);
+                break;
+        case PROP_EMAIL:
+                g_value_set_string (value, user->email);
+                break;
+        case PROP_LANGUAGE:
+                if (user->language)
+                        g_value_set_string (value, user->language);
+                else
+                        g_value_set_string (value, user_get_fallback_value (user, "Language"));
+                break;
+        case PROP_FORMATS_LOCALE:
+                if (user->formats_locale)
+                        g_value_set_string (value, user->formats_locale);
+                else
+                        g_value_set_string (value, user_get_fallback_value (user, "FormatsLocale"));
+                break;
+        case PROP_INPUT_SOURCES:
+                g_value_set_variant (value, user->input_sources);
+                break;
+        case PROP_X_SESSION:
+                g_value_set_string (value, user->x_session);
+                break;
+        case PROP_LOCATION:
+                g_value_set_string (value, user->location);
+                break;
+        case PROP_X_HAS_MESSAGES:
+                g_value_set_boolean (value, user->x_has_messages);
+                break;
+        case PROP_X_KEYBOARD_LAYOUTS:
+                g_value_set_boxed (value, g_strdupv (user->x_keyboard_layouts));
+                break;
+        case PROP_BACKGROUND_FILE:
+                g_value_set_string (value, user->background_file);
+                break;
+        case PROP_ICON_FILE:
+                if (user->icon_file)
+                        g_value_set_string (value, user->icon_file);
+                else {
+                        gchar *icon_file;
+
+                        icon_file = g_build_filename (user->home_dir, ".face", NULL);
+                        g_value_take_string (value, icon_file);
+                }
+                break;
+        case PROP_LOGIN_FREQUENCY:
+                g_value_set_uint64 (value, user->login_frequency);
+                break;
+        case PROP_LOGIN_TIME:
+                g_value_set_int64 (value, user->login_time);
+                break;
+        case PROP_LOGIN_HISTORY:
+                g_value_set_variant (value, user->login_history);
+                break;
+        case PROP_LOCKED:
+                g_value_set_boolean (value, user->locked);
+                break;
+        case PROP_AUTOMATIC_LOGIN:
+                g_value_set_boolean (value, user->automatic_login);
+                break;
+        case PROP_SYSTEM_ACCOUNT:
+                g_value_set_boolean (value, user->system_account);
+                break;
+        case PROP_LOCAL_ACCOUNT:
+                g_value_set_boolean (value, user->local_account);
+                break;
+        default:
+                G_OBJECT_WARN_INVALID_PROPERTY_ID (object, param_id, pspec);
+                break;
+        }
+}
+
+static void
+user_class_init (UserClass *class)
+{
+        GObjectClass *gobject_class;
+
+        gobject_class = G_OBJECT_CLASS (class);
+
+        gobject_class->get_property = user_get_property;
+        gobject_class->set_property = user_set_property;
+        gobject_class->finalize = user_finalize;
+
+        accounts_user_override_properties (gobject_class, 1);
+}
+
+static void
+user_accounts_user_iface_init (AccountsUserIface *iface)
+{
+        iface->handle_set_account_type = user_set_account_type;
+        iface->handle_set_automatic_login = user_set_automatic_login;
+        iface->handle_set_background_file = user_set_background_file;
+        iface->handle_set_email = user_set_email;
+        iface->handle_set_formats_locale = user_set_formats_locale;
+        iface->handle_set_home_directory = user_set_home_directory;
+        iface->handle_set_icon_file = user_set_icon_file;
+        iface->handle_set_language = user_set_language;
+        iface->handle_set_input_sources = user_set_input_sources;
+        iface->handle_set_location = user_set_location;
+        iface->handle_set_locked = user_set_locked;
+        iface->handle_continue_set_password = user_continue_set_password;
+        iface->handle_begin_set_password = user_begin_set_password;
+        iface->handle_set_password = user_set_password;
+        iface->handle_set_password_mode = user_set_password_mode;
+        iface->handle_set_real_name = user_set_real_name;
+        iface->handle_set_shell = user_set_shell;
+        iface->handle_set_user_name = user_set_user_name;
+        iface->handle_set_xhas_messages = user_set_xhas_messages;
+        iface->handle_set_xkeyboard_layouts = user_set_xkeyboard_layouts;
+        iface->handle_set_xsession = user_set_x_session;
+        iface->get_uid = user_real_get_uid;
+        iface->get_user_name = user_real_get_user_name;
+        iface->get_real_name = user_real_get_real_name;
+        iface->get_account_type = user_real_get_account_type;
+        iface->get_home_directory = user_real_get_home_directory;
+        iface->get_shell = user_real_get_shell;
+        iface->get_email = user_real_get_email;
+        iface->get_language = user_real_get_language;
+        iface->get_input_sources = user_real_get_input_sources;
+        iface->get_xsession = user_real_get_xsession;
+        iface->get_location = user_real_get_location;
+        iface->get_login_frequency = user_real_get_login_frequency;
+        iface->get_login_time = user_real_get_login_time;
+        iface->get_login_history = user_real_get_login_history;
+        iface->get_icon_file = user_real_get_icon_file;
+        iface->get_locked = user_real_get_locked;
+        iface->get_password_mode = user_real_get_password_mode;
+        iface->get_password_hint = user_real_get_password_hint;
+        iface->get_automatic_login = user_real_get_automatic_login;
+        iface->get_system_account = user_real_get_system_account;
+}
+
+static void
+user_init (User *user)
+{
+        user->system_bus_connection = NULL;
+        user->object_path = NULL;
+
+        user->secret_exchanges = g_hash_table_new_full (g_str_hash, g_str_equal,
+                                                        g_free, g_object_unref);
+
+        user->user_name = NULL;
+        user->real_name = NULL;
+        user->account_type = ACCOUNT_TYPE_STANDARD;
+        user->home_dir = NULL;
+        user->shell = NULL;
+        user->x_has_messages = FALSE;
+        user->x_keyboard_layouts = NULL;
+        user->background_file = NULL;
+        user->icon_file = NULL;
+        user->default_icon_file = NULL;
+        user->email = NULL;
+        user->language = NULL;
+        user->formats_locale = NULL;
+        user->input_sources = NULL;
+        user->x_session = NULL;
+        user->location = NULL;
+        user->password_mode = PASSWORD_MODE_REGULAR;
+        user->password_hint = NULL;
+        user->locked = FALSE;
+        user->automatic_login = FALSE;
+        user->system_account = FALSE;
+        user->login_history = NULL;
+        user->keyfile = g_key_file_new ();
+}

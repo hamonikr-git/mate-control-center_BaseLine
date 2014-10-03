@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.2.2">
+<!ENTITY manrevision "2.1">
+<!ENTITY date "February 2004">
+<!ENTITY app "<application>MATE Volume Control</application>">
+<!ENTITY appname "MATE Volume Control">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.mate.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 2, 2002
+-->
+<article id="index" lang="el">
+<articleinfo> 
+   <title>Έλεγχος έντασης ήχου του MATE. Εγχειρίδιο V2.1</title>
+
+    <copyright lang="en">
+      <year>2004</year>
+      <holder>Sun Microsystems</holder>
+    </copyright>
+
+   <copyright lang="en">
+     <year>2003</year>
+     <holder>Christian Schaller</holder>
+   </copyright>
+
+   <copyright lang="en">
+     <year>2002</year>
+     <holder>Michael Froh</holder>
+   </copyright>
+
+   <copyright lang="en">
+     <year>2000</year>
+     <holder>Erik Jarvi</holder>
+   </copyright>
+
+<!-- translators: uncomment this:
+                                                                                                
+  <copyright>
+   <year>2004</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+                                                                                                
+   -->
+
+  <abstract role="description">
+    <para>Η εφαρμογή <application>Έλεγχος έντασης ήχου του MATE</application> είναι ένας μίκτης ήχου</para>
+  </abstract>
+
+  <publisher>
+    <publishername>Έργο τεκμηρίωσης MATE</publishername>
+  </publisher>
+
+    <legalnotice id="legalnotice">
+	<para>Δίνεται άδεια για αντιγραφή, διανομή και/ή τροποποίηση του εγγράφου υπό τους όρους της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), Έκδοση 1.1 ή μεταγενέστερη εκδιδόμενη από το Ίδρυμα Ελεύθερου Λογισμικού χωρίς Σταθερά Εδάφια, χωρίς Εξώφυλλα Κειμένου, και χωρίς Οπισθόφυλλα Κειμένου. Μπορείτε να βρείτε ένα αντίγραφο της GFDL σε αυτόν τον <ulink type="help" url="help:fdl">σύνδεσμο</ulink> ή στο αρχείο COPYING-DOCS που διανεμήθηκε με αυτόν τον οδηγό.</para>
+         <para>Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του MATE όπως διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 της άδειας.</para>
+
+	<para>Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέν. Όπου αυτά τα ονόματα εμφανίζονται στην τεκμηρίωση MATE, και τα μέλη της ομάδας τεκμηρίωσης MATE έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με αρχικούς κεφαλαίους χαρακτήρες.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+        other legal stuff such as "NO WARRANTY" statement. Please do not change
+        any of this. -->
+
+  <authorgroup>
+
+      <author role="maintainer" lang="en">
+        <firstname>Sun</firstname>
+        <surname>MATE Documentation Team</surname>
+        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
+      </author>
+
+    <author lang="en">
+      <firstname>Christian Fredrik</firstname>
+      <surname>Kalager Schaller</surname>
+      <affiliation>
+        <orgname>MATE Documentation Project</orgname>
+        <address>
+              <email>uraeus@gnome.org</email>
+        </address>
+      </affiliation>
+    </author>
+
+    <author lang="en">
+      <firstname>Michael</firstname>
+      <surname>Froh</surname>
+      <affiliation>
+        <orgname>MATE Documentation Project</orgname>
+        <address>
+              <email>msfroh@uwaterloo.ca</email>
+        </address>
+      </affiliation>
+    </author>
+
+    <author lang="en">
+      <firstname>Erik</firstname>
+      <surname>Jarvi</surname>
+      <affiliation>
+        <orgname>MATE Documentation Project</orgname>
+        <address>
+              <email>ejarvi@megsinet.net</email>
+        </address>
+      </affiliation>
+    </author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+        <firstname>Latin</firstname>
+        <surname>Translator 1</surname>
+        <affiliation>
+          <orgname>Latin Translation Team</orgname>
+          <address> <email>translator@gnome.org</email> </address>
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+
+  </authorgroup>
+
+
+  <revhistory>
+
+      <revision lang="en">
+        <revnumber>MATE Volume Control Manual V2.1</revnumber>
+        <date>February 2004</date>
+        <revdescription>
+          <para role="author" lang="en">Sun GNOME Documentation Team</para>
+          <para role="publisher" lang="en">MATE Documentation Project</para>
+        </revdescription>
+      </revision>
+
+    <revision lang="en">
+      <revnumber>2.0</revnumber>
+      <date>25 October 2003</date> 
+      <revdescription>
+                   <para role="author" lang="en">Christian Schaller
+                     <email>uraeus@gnome.org</email></para>
+                   <para role="publisher" lang="en">MATE Documentation Project</para>
+      </revdescription>
+    </revision>
+
+    <revision lang="en">
+      <revnumber>1.0</revnumber>
+      <date>19 Feb 2002</date> <!-- or use &date; -->
+      <revdescription>
+                   <para role="author" lang="en">Michael Froh
+                     <email>msfroh@uwaterloo.ca</email></para>
+                   <para role="publisher" lang="en">MATE Documentation Project</para>
+				   <para lang="en">Updated to Docbook 4.1.2, for MATE 2.0</para>
+          </revdescription>
+
+    </revision>
+
+    <revision lang="en">
+      <revnumber>0.1</revnumber>
+      <date>23 Mar 2001</date>
+      <revdescription>
+                   <para role="author" lang="en">Erik Jarvi
+                    <email>ejarvi@megsinet.net</email></para>
+                   <para role="publisher" lang="en">MATE Documentation
+                    Project</para>
+                <para lang="en">This was the original release, for MATE 1.2</para>
+          </revdescription>
+    </revision>
+
+  </revhistory>
+
+    <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 2.2.2 της εφαρμογής «Έλεγχος έντασης ήχου του MATE».</releaseinfo>
+
+    <legalnotice>
+      <title>Ανάδραση</title>
+      <para>Για να αναφέρετε κάποιο σφάλμα ή να κάνετε υποδείξεις που αφορούν την εφαρμογή «Έλεγχος έντασης ήχου του MATE» ή αυτό το εγχειρίδιο, ακολουθήστε τις οδηγίες στην σελίδα <ulink url="help:mate-feedback" type="help">MATE Feedback Page</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+
+</articleinfo>
+
+<indexterm zone="index" lang="en"><primary>mate-volume-control</primary></indexterm>
+<indexterm zone="index" lang="en"><primary>MATE Volume Control</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+ <!-- ============= Introduction ============================== -->
+
+  <sect1 id="mate-volume-control-intro">
+    <title>Εισαγωγή</title>
+    <para>Η εφαρμογή <application>Έλεγχος έντασης ήχου του MATE</application> είναι ένας μίκτης ήχου που σας επιτρέπει να κάνετε μίξη με κάρτες ήχου 2 καναλιών.</para>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="mate-volume-control-getting-started">
+    <title>Ξεκινώντας</title>
+                                                                                                  
+<!-- ============= To Start Volume Control ============================ -->
+    <sect2 id="mate-volume-control-to-start">
+      <title>Εκκίνηση της εφαρμογής «Έλεγχος έντασης ήχου του MATE»</title>
+      <para>Μπορείτε να εκκινήσετε την εφαρμογή «<application>Έλεγχος έντασης ήχου του MATE</application>» με τους παρακάτω τρόπους:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Μενού <guimenu>Εφαρμογές</guimenu></term>
+          <listitem>
+            <para>Επιλέξτε <menuchoice><guisubmenu>Ήχος &amp; Βίντεο</guisubmenu><guimenuitem>Έλεγχος έντασης ήχου</guimenuitem></menuchoice>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Γραμμή εντολών</term>
+          <listitem>
+            <para>Εκτελέστε την εντολή: <command>mate-volume-control</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+                                                                                                  
+    <sect2 id="mate-volume-control-when-you-start">
+      <title>Κατά την εκκίνηση του ελέγχου έντασης ήχου του MATE</title>
+      <para>Στην εκκίνηση της εφαρμογής «<application>Έλεγχος έντασης ήχου του MATE</application>», προβάλλεται το εξής παράθυρο:</para>
+      <figure id="mate-volume-control-window">
+        <title>Παράθυρο του ελέγχου έντασης ήχου</title>
+        <screenshot>
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-volume-control_window.png" format="PNG"/>
+            </imageobject>
+            <textobject> <phrase>Shows Volume Control main window.</phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+      <para>Το παράθυρο του <application>ελέγχου έντασης ήχου</application> περιέχει τα εξής στοιχεία:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Γραμμή μενού</term>
+          <listitem>
+            <para>Τα αναπτυσσόμενα μενού στην γραμμή μενού περιέχουν όλες τις εντολές που χρειάζονται για να εργαστείτε με την εφαρμογή <application>Έλεγχος έντασης ήχου του MATE</application>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Περιοχή προβολής</term>
+          <listitem>
+            <para>Η περιοχή προβολής περιέχει τους ρυθμιστές καναλιών και σχετικές επιλογές για διάφορους μίκτες, οι ρυθμιστές σας επιτρέπουν να ελέγχετε την ένταση σε αυτούς τους μίκτες.</para>
+            <note>
+              <para>Ο <application>Έλεγχος έντασης ήχου του MATE</application> διαμορφώνει την περιοχή προβολής δυναμικά, με βάση τις λειτουργίες που υποστηρίζει η κάρτα ήχου. Οι μίκτες που προβάλλονται στο παράθυρο της εφαρμογής <application>Έλεγχος έντασης ήχου του MATE</application> στην δική σας εγκατάσταση μπορεί να διαφέρουν από αυτούς που εμφανίζονται στην εικόνα 1.</para>
+            </note>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+ <!-- ================ Usage ================================ -->
+
+  <sect1 id="mate-volume-control-usage">
+    <title>Χρήση</title>
+  
+    <sect2 id="mate-volume-control-usage-vol">
+      <title>Αλλαγή έντασης σε μίκτη</title>
+      <para>Για να αλλάξετε την ένταση ενός μίκτη, χρησιμοποιήστε τους ρυθμιστές καναλιών του μίκτη, με τον εξής τρόπο:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Για να αυξήσετε την ένταση, μετακινήστε τον ρυθμιστή προς τα επάνω.</para>
+        </listitem>
+        <listitem>
+          <para>Για να μειώσετε την ένταση, μετακινήστε τον ρυθμιστή προς τα κάτω.</para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+  
+    <sect2 id="mate-volume-control-usage-lock">
+      <title>Κλείδωμα καναλιών του μίκτη</title>
+      <para>Για να κλειδώσετε μαζί το δεξί και αριστερό κανάλι ενός μίκτη, ενεργοποιήστε την επιλογή <guilabel>Κλείδωμα</guilabel> για αυτόν. Όταν κλειδώνετε τα κανάλια του μίκτη, ο <application>Έλεγχος έντασης ήχου του MATE</application> συνχρονίζει τους δύο ρυθμιστές.</para>
+    </sect2>
+  
+    <sect2 id="mate-volume-control-usage-mute">
+      <title>Σίγαση μίκτη</title>
+      <para>Για να σιγήσει ένας μίκτης, ενεργοποιήστε την επιλογή <guilabel>Σιγή</guilabel> για αυτόν.</para>
+      <note>
+        <para>Όταν μετακινείτε τον ρυθμιστή ενός καναλιού σε σιγή, ο <application>Έλεγχος έντασης ήχου του MATE</application> απενεργοποιεί την επιλογή <guilabel>Σιγή</guilabel> για αυτόν.</para>
+      </note>
+<!-- Note from original author:
+  [I find this to be anti-intutive, IMHO this should be
+  an option.  If this feature was on a real console, I'd probably be fired
+  more than a few times. :)] 
+-->
+    </sect2>
+  
+    <sect2 id="mate-volume-control-usage-rec">
+      <title>Ορισμός τρέχουσας πηγής ηχογράφησης</title>
+      <para>Οποιοσδήποτε μίκτης έχει την επιλογή <guilabel>Εγγραφή ήχου</guilabel> μπορεί να είναι πηγή ηχογράφησης.</para>
+      <para>Για να ορίσετε την τρέχουσα πηγή ηχογράφησης, ενεργοποιήστε την επιλογή <guilabel>Εγγραφή ήχου</guilabel> για αυτόν τον μίκτη.</para>
+    </sect2>
+
+  </sect1>
+
+  <sect1 id="prefs">
+    <title>Προτιμήσεις</title>
+    <para>Για να διαμορφώσετε την εφαρμογή <application>Έλεγχος έντασης ήχου του MATE</application>, επιλέξτε <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Προτιμήσεις</guimenuitem></menuchoice>.</para>
+    <note>
+      <para>Ο <application>Έλεγχος έντασης ήχου του MATE</application> διαμορφώνει τον διάλογο <guilabel>Προτιμήσεις ελέγχου έντασης ήχου</guilabel> δυναμικά, με βάση τις λειτουργίες που υποστηρίζει η κάρτα ήχου σας.</para>
+    </note>
+    <para>Χρησιμοποιήστε τις επιλογές στην στήλη <guilabel>Επιλογή των μικτών που θα είναι ορατοί</guilabel> για να επιλέξετε τους μίκτες που θα προβάλλονται στο κύριο παράθυρο της εφαρμογής <application>Έλεγχος έντασης ήχου του MATE</application>.</para>
+    <variablelist>
+      <varlistentry>
+        <term lang="en"><guilabel>vol</guilabel></term>
+        <listitem>
+          <para>Ενεργοποιήστε αυτή την επιλογή για προβάλετε τους ρυθμιστές που ελέγχουν την κύρια ρύθμιση ήχου.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en"><guilabel>pcm</guilabel></term>
+        <listitem>
+          <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλετε τους ρυθμιστές που ελέγχουν τα αρχεία wave.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en"><guilabel>speaker</guilabel></term>
+        <listitem>
+          <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλετε τους ρυθμιστές που ελέγχουν την σύνδεση εξόδου για τα ηχεία.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en"><guilabel>line</guilabel></term>
+        <listitem>
+          <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλετε τους ρυθμιστές που ελέγχουν την είσοδο γραμμής στην κάρτα ήχου, αν η κάρτα έχει είσοδο γραμμής.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en"><guilabel>mic</guilabel></term>
+        <listitem>
+          <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλετε τους ρυθμιστές που ελέγχουν την είσοδο του σήματος από το μικρόφωνο στην κάρτα ήχου.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en"><guilabel>cd</guilabel></term>
+        <listitem>
+          <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλετε τους ρυθμιστές που ελέγχουν την ενίσχυση του σήματος εισόδου από την συσκευή αναπαραγωγής CD.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en"><guilabel>igain</guilabel></term>
+        <listitem>
+          <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλετε τους ρυθμιστές που ελέγχουν το επίπεδο έντασης της επιλεγμένης συσκευής ηχογράφησης.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en"><guilabel>line1</guilabel></term>
+        <listitem>
+          <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλετε τους ρυθμιστές που ελέγχουν την δεύτερη είσοδο γραμμής της κάρτας ήχου, αν η κάρτα έχει δεύτερη είσοδο.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en"><guilabel>phin</guilabel></term>
+        <listitem>
+          <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλετε τους ρυθμιστές που ελέγχουν την ένταση της συσκευής phin.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term lang="en"><guilabel>video</guilabel></term>
+        <listitem>
+          <para>Ενεργοποιήστε αυτή την επιλογή για να προβάλετε τους ρυθμιστές που ελέγχουν την ένταση των συσκευών βίντεο.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+    <para>Για να αλλάξετε την ετικέτα ενός μίκτη, κάντε διπλό κλικ στο κείμενο στην στήλη <guilabel>Ετικέτα μίκτη</guilabel>, και εισάγετε το νέο κείμενο της ετικέτας.</para>
+    <para>Για να επαναφέρετε τις ετικέτες των μικτών στις προεπιλεγμένες τους τιμές, κάντε κλικ στο πλήκτρο <guibutton>Επαναφορά ετικετών στις προεπιλεγμένες τιμές</guibutton>.</para>
+
+  </sect1>  
+
+</article>

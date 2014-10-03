@@ -1,0 +1,1374 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Fano Rajaonarisoa <rajfanhar@yahoo.fr>, 2006
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-09 18:21+0100\n"
+"PO-Revision-Date: 2014-02-09 18:19+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Malagasy (http://www.transifex.com/projects/p/MATE/language/mg/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: mg\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../copy-n-paste/eggdesktopfile.c:165
+#, c-format
+msgid "File is not a valid .desktop file"
+msgstr ""
+
+#: ../copy-n-paste/eggdesktopfile.c:190
+#, c-format
+msgid "Unrecognized desktop file Version '%s'"
+msgstr ""
+
+#: ../copy-n-paste/eggdesktopfile.c:960
+#, c-format
+msgid "Starting %s"
+msgstr ""
+
+#: ../copy-n-paste/eggdesktopfile.c:1102
+#, c-format
+msgid "Application does not accept documents on command line"
+msgstr ""
+
+#: ../copy-n-paste/eggdesktopfile.c:1170
+#, c-format
+msgid "Unrecognized launch option: %d"
+msgstr ""
+
+#: ../copy-n-paste/eggdesktopfile.c:1375
+#, c-format
+msgid "Can't pass documents to this desktop element"
+msgstr ""
+
+#: ../copy-n-paste/eggdesktopfile.c:1394
+#, c-format
+msgid "Not a launchable item"
+msgstr ""
+
+#: ../copy-n-paste/eggsmclient.c:225
+msgid "Disable connection to session manager"
+msgstr ""
+
+#: ../copy-n-paste/eggsmclient.c:228
+msgid "Specify file containing saved configuration"
+msgstr ""
+
+#: ../copy-n-paste/eggsmclient.c:228
+msgid "FILE"
+msgstr ""
+
+#: ../copy-n-paste/eggsmclient.c:231
+msgid "Specify session management ID"
+msgstr ""
+
+#: ../copy-n-paste/eggsmclient.c:231
+msgid "ID"
+msgstr ""
+
+#: ../copy-n-paste/eggsmclient.c:252
+msgid "Session management options:"
+msgstr ""
+
+#: ../copy-n-paste/eggsmclient.c:253
+msgid "Show session management options"
+msgstr ""
+
+#: ../data/engrampa.desktop.in.in.h:1
+msgid "Engrampa Archive Manager"
+msgstr ""
+
+#: ../data/engrampa.desktop.in.in.h:2 ../src/fr-window.c:1991
+#: ../src/fr-window.c:5419
+msgid "Archive Manager"
+msgstr "Mpandrindra arsiva"
+
+#: ../data/engrampa.desktop.in.in.h:3
+msgid "Create and modify an archive"
+msgstr "Mamorona sy manova arsiva"
+
+#: ../data/ui/add-options.ui.h:1
+msgid "Load Options"
+msgstr "Safidin'ny fakana"
+
+#: ../data/ui/batch-add-files.ui.h:1
+msgid "Compress"
+msgstr ""
+
+#: ../data/ui/batch-add-files.ui.h:2
+msgid "_Filename:"
+msgstr ""
+
+#. Translators: after the colon there is a folder name.
+#: ../data/ui/batch-add-files.ui.h:3 ../src/fr-window.c:5844
+msgid "_Location:"
+msgstr ""
+
+#: ../data/ui/batch-add-files.ui.h:4
+msgid "Location"
+msgstr "Toerana"
+
+#: ../data/ui/batch-add-files.ui.h:5 ../data/ui/batch-password.ui.h:2
+#: ../data/ui/new.ui.h:1 ../data/ui/password.ui.h:3
+msgid "_Password:"
+msgstr "_Teny fanalahidy:"
+
+#: ../data/ui/batch-add-files.ui.h:6 ../data/ui/new.ui.h:2
+#: ../data/ui/password.ui.h:2
+msgid "_Encrypt the file list too"
+msgstr ""
+
+#. this is part of a sentence, for example "split into volumes of 10.0 MB",
+#. where MB stands for megabyte.
+#: ../data/ui/batch-add-files.ui.h:8 ../data/ui/new.ui.h:3
+msgid "Split into _volumes of"
+msgstr ""
+
+#. MB means megabytes
+#: ../data/ui/batch-add-files.ui.h:10 ../data/ui/new.ui.h:5
+msgid "MB"
+msgstr ""
+
+#: ../data/ui/batch-add-files.ui.h:11 ../data/ui/new.ui.h:6
+msgid "_Other Options"
+msgstr ""
+
+#: ../data/ui/batch-add-files.ui.h:12 ../src/fr-stock.c:42
+msgid "C_reate"
+msgstr "Ha_morona"
+
+#: ../data/ui/batch-password.ui.h:1
+msgid "<span weight=\"bold\" size=\"larger\">Password required</span>"
+msgstr "<span weight=\"bold\" size=\"larger\">Teny fanalahidy ilaina</span>"
+
+#: ../data/ui/delete.ui.h:1
+msgid "Delete"
+msgstr "Fafao"
+
+#: ../data/ui/delete.ui.h:2 ../src/dlg-extract.c:349
+msgid "_Files:"
+msgstr "_Rakitra:"
+
+#: ../data/ui/delete.ui.h:3 ../src/dlg-extract.c:360
+msgid "example: *.txt; *.doc"
+msgstr "Ohatra: *.txt; *.doc"
+
+#: ../data/ui/delete.ui.h:4 ../src/dlg-extract.c:363
+msgid "_All files"
+msgstr "Ny rakitra _rehetra:"
+
+#: ../data/ui/delete.ui.h:5 ../src/dlg-extract.c:370
+msgid "_Selected files"
+msgstr "_Rakitra _voafaritra"
+
+#: ../data/ui/open-with.ui.h:1
+msgid "Open Files"
+msgstr "Hanokatra rakitra"
+
+#: ../data/ui/open-with.ui.h:2
+msgid "A_vailable application:"
+msgstr "_Rindranasa misy:"
+
+#: ../data/ui/open-with.ui.h:3
+msgid "R_ecent applications:"
+msgstr "Rindranasa _vao haingana:"
+
+#: ../data/ui/open-with.ui.h:4
+msgid "_Application:"
+msgstr "_Rindranasa:"
+
+#: ../data/ui/password.ui.h:1
+msgid "Password"
+msgstr "Teny fanalahidy"
+
+#: ../data/ui/password.ui.h:4
+msgid ""
+"<i><b>Note:</b> the password will be used to encrypt files you add to the "
+"current archive, and to decrypt files you extract from the current archive. "
+"When the archive is closed the password will be deleted.</i>"
+msgstr "<i><b>Fanamarihana:</b> io teny fanalahidy io dia hampiasaina rehefa hamadika ho sora-miafina izay rakitra ampidirinao anatin'ity arsiva ity ary rehefa hanafoana izany sora-miafina izany amin'izay rakitra alainao tato. Hovoafafa io teny fanalahidy io rehefa hidina ilay arsiva.</i>"
+
+#. secondary text
+#: ../data/ui/update.ui.h:1 ../src/dlg-update.c:176 ../src/dlg-update.c:204
+#, c-format
+msgid ""
+"The file has been modified with an external application. If you don't update"
+" the file in the archive, all of your changes will be lost."
+msgid_plural ""
+"%d files have been modified with an external application. If you don't "
+"update the files in the archive, all of your changes will be lost."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../data/ui/update.ui.h:2
+msgid "_Update"
+msgstr "_Ovay"
+
+#: ../data/ui/update.ui.h:3
+msgid "S_elect the files you want to update:"
+msgstr "Safidio ireo rakitra tianao ovaina:"
+
+#: ../caja/caja-engrampa.c:314
+msgid "Extract Here"
+msgstr "Aboray eto"
+
+#. Translators: the current position is the current folder
+#: ../caja/caja-engrampa.c:316
+msgid "Extract the selected archive to the current position"
+msgstr ""
+
+#: ../caja/caja-engrampa.c:333
+msgid "Extract To..."
+msgstr "Aboray mankany amin'ny..."
+
+#: ../caja/caja-engrampa.c:334
+msgid "Extract the selected archive"
+msgstr "Manaboraka ilay arsiva voafaritra"
+
+#: ../caja/caja-engrampa.c:353
+msgid "Compress..."
+msgstr ""
+
+#: ../caja/caja-engrampa.c:354
+msgid "Create a compressed archive with the selected objects"
+msgstr ""
+
+#: ../src/actions.c:157 ../src/actions.c:196 ../src/actions.c:232
+#: ../src/dlg-batch-add.c:171 ../src/dlg-batch-add.c:187
+#: ../src/dlg-batch-add.c:216 ../src/dlg-batch-add.c:261
+#: ../src/dlg-batch-add.c:307 ../src/fr-window.c:2944
+msgid "Could not create the archive"
+msgstr "Tsy afaka namorona ilay arsiva"
+
+#: ../src/actions.c:159 ../src/dlg-batch-add.c:173 ../src/dlg-batch-add.c:309
+msgid "You have to specify an archive name."
+msgstr "Tsy maintsy milaza anaran'arsiva ianao."
+
+#: ../src/actions.c:198
+msgid "You don't have permission to create an archive in this folder"
+msgstr "Tsy manana alalana hamorona arsiva anatin'ity lahatahiry ity ianao"
+
+#: ../src/actions.c:234 ../src/dlg-package-installer.c:267
+#: ../src/dlg-package-installer.c:276 ../src/dlg-package-installer.c:304
+#: ../src/fr-archive.c:1146 ../src/fr-window.c:6059 ../src/fr-window.c:6235
+msgid "Archive type not supported."
+msgstr "Tsy raisina an-tànana io karazan'arsiva io."
+
+#: ../src/actions.c:248
+msgid "Could not delete the old archive."
+msgstr "Tsy afaka namafa ilay arsiva taloha."
+
+#: ../src/actions.c:382 ../src/fr-window.c:5902
+msgid "Open"
+msgstr "Sokafy"
+
+#: ../src/actions.c:393 ../src/dlg-new.c:313 ../src/fr-window.c:5242
+msgid "All archives"
+msgstr "Ny arsiva rehetra"
+
+#: ../src/actions.c:400 ../src/dlg-new.c:320
+msgid "All files"
+msgstr "Ny rakitra rehetra"
+
+#: ../src/actions.c:794 ../src/fr-window.c:7081
+msgid "Last Output"
+msgstr "Famoahana farany"
+
+#: ../src/actions.c:860
+msgid ""
+"Engrampa is free software; you can redistribute it and/or modify it under "
+"the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+
+#: ../src/actions.c:864
+msgid ""
+"Engrampa is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details."
+msgstr ""
+
+#: ../src/actions.c:868
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" Engrampa; if not, write to the Free Software Foundation, Inc., 51 Franklin "
+"St, Fifth Floor, Boston, MA  02110-1301 USA"
+msgstr ""
+
+#: ../src/actions.c:878
+msgid "Copyright © 2001–2010 Free Software Foundation, Inc."
+msgstr ""
+
+#: ../src/actions.c:879
+msgid "An archive manager for MATE."
+msgstr "Mpandrindra arsiva ho an'ny MATE."
+
+#: ../src/actions.c:882
+msgid "translator-credits"
+msgstr "fankaditrahana ny mpandika teny"
+
+#: ../src/dlg-add-files.c:100 ../src/dlg-add-folder.c:136
+msgid "Could not add the files to the archive"
+msgstr "Tsy afaka nampiditra ireo rakitra tanatin'ilay arsiva"
+
+#: ../src/dlg-add-files.c:101 ../src/dlg-add-folder.c:137
+#, c-format
+msgid "You don't have the right permissions to read files from folder \"%s\""
+msgstr "Tsy manana ny alalana ahafahana mamaky rakitra avy ao anatin'ny lahatahiry \"%s\" ianao"
+
+#: ../src/dlg-add-files.c:149 ../src/ui.h:49
+msgid "Add Files"
+msgstr "Hampiditra rakitra"
+
+#. Translators: add a file to the archive only if the disk version is
+#. * newer than the archive version.
+#: ../src/dlg-add-files.c:165 ../src/dlg-add-folder.c:238
+msgid "Add only if _newer"
+msgstr ""
+
+#: ../src/dlg-add-folder.c:224
+msgid "Add a Folder"
+msgstr "Hampiditra lahatahiry"
+
+#: ../src/dlg-add-folder.c:239
+msgid "_Include subfolders"
+msgstr "_Ampidiro ireo zana-dahatahiry"
+
+#: ../src/dlg-add-folder.c:240
+msgid "Exclude folders that are symbolic lin_ks"
+msgstr "Ampidiro izay lahatahiry miendrika _rohy misolotena"
+
+#: ../src/dlg-add-folder.c:243 ../src/dlg-add-folder.c:249
+#: ../src/dlg-add-folder.c:255
+msgid "example: *.o; *.bak"
+msgstr "ohatra: *.o; *.bak"
+
+#: ../src/dlg-add-folder.c:244
+msgid "Include _files:"
+msgstr ""
+
+#: ../src/dlg-add-folder.c:250
+msgid "E_xclude files:"
+msgstr "_Aza ampidirina ny rakitra:"
+
+#: ../src/dlg-add-folder.c:256
+msgid "_Exclude folders:"
+msgstr ""
+
+#: ../src/dlg-add-folder.c:260
+msgid "_Load Options"
+msgstr "_Safidin'ny fakana:"
+
+#: ../src/dlg-add-folder.c:261
+msgid "Sa_ve Options"
+msgstr "Safidin'ny fand_raiketana"
+
+#: ../src/dlg-add-folder.c:262
+msgid "_Reset Options"
+msgstr ""
+
+#: ../src/dlg-add-folder.c:890
+msgid "Save Options"
+msgstr "Safidin'ny fandraiketana"
+
+#: ../src/dlg-add-folder.c:891
+msgid "Options Name:"
+msgstr "Anaran'ilay safidy:"
+
+#: ../src/dlg-ask-password.c:124
+#, c-format
+msgid "Enter the password for the archive '%s'."
+msgstr ""
+
+#. Translators: the name references to a filename.  This message can appear
+#. when renaming a file.
+#: ../src/dlg-batch-add.c:188 ../src/fr-window.c:7404
+#, c-format
+msgid ""
+"The name \"%s\" is not valid because it cannot contain the characters: %s\n"
+"\n"
+"%s"
+msgstr "Tsy mety ny anarana \"%s\" satria tsy mety asiana ny marika: %s\n\n%s"
+
+#: ../src/dlg-batch-add.c:191 ../src/fr-window.c:7394 ../src/fr-window.c:7399
+#: ../src/fr-window.c:7404 ../src/fr-window.c:7440 ../src/fr-window.c:7442
+msgid "Please use a different name."
+msgstr "Mampiasà anarana hafa."
+
+#: ../src/dlg-batch-add.c:218
+msgid ""
+"You don't have the right permissions to create an archive in the destination"
+" folder."
+msgstr "Tsy manana alalana hamorona arsiva anatin'ilay lahatahiry iantefana ianao."
+
+#: ../src/dlg-batch-add.c:234 ../src/dlg-extract.c:103 ../src/fr-window.c:6656
+#, c-format
+msgid ""
+"Destination folder \"%s\" does not exist.\n"
+"\n"
+"Do you want to create it?"
+msgstr "Tsy misy ilay lahatahiry iantefana \"%s\".\n\nTianao foronina ilay izy?"
+
+#: ../src/dlg-batch-add.c:243 ../src/dlg-extract.c:112 ../src/fr-window.c:6665
+msgid "Create _Folder"
+msgstr "Hamorona _lahatahiry"
+
+#: ../src/dlg-batch-add.c:262 ../src/dlg-extract.c:132 ../src/fr-window.c:6685
+#, c-format
+msgid "Could not create the destination folder: %s."
+msgstr "Tsy afaka namorona ilay lahatahiry iantefana: %s."
+
+#: ../src/dlg-batch-add.c:279
+msgid "Archive not created"
+msgstr "Tsy voaforona ilay arsiva"
+
+#: ../src/dlg-batch-add.c:327
+msgid "The archive is already present.  Do you want to overwrite it?"
+msgstr "Efa misy io arsiva io. Tianao tsindriana ve izy io?"
+
+#: ../src/dlg-batch-add.c:330
+msgid "_Overwrite"
+msgstr "_Tsindrio"
+
+#: ../src/dlg-extract.c:131 ../src/dlg-extract.c:149 ../src/dlg-extract.c:176
+#: ../src/fr-window.c:4169 ../src/fr-window.c:6684 ../src/fr-window.c:6701
+msgid "Extraction not performed"
+msgstr "Tsy natao ilay fanaborahana"
+
+#: ../src/dlg-extract.c:177 ../src/fr-window.c:4338 ../src/fr-window.c:4418
+#, c-format
+msgid ""
+"You don't have the right permissions to extract archives in the folder "
+"\"%s\""
+msgstr "Tsy manana alalana hanaboraka arsiva anatin'ny lahatahiry \"%s\" ianao"
+
+#: ../src/dlg-extract.c:332 ../src/dlg-extract.c:430 ../src/ui.h:124
+msgid "Extract"
+msgstr "Aboray"
+
+#: ../src/dlg-extract.c:381
+msgid "Actions"
+msgstr "Asa"
+
+#: ../src/dlg-extract.c:397
+msgid "Re-crea_te folders"
+msgstr ""
+
+#: ../src/dlg-extract.c:401
+msgid "Over_write existing files"
+msgstr "Man_indry ireo rakitra misy"
+
+#: ../src/dlg-extract.c:405
+msgid "Do not e_xtract older files"
+msgstr "Aza _aboraka ireo rakitra taloha"
+
+#: ../src/dlg-new.c:438
+msgctxt "File"
+msgid "New"
+msgstr ""
+
+#: ../src/dlg-new.c:451
+msgctxt "File"
+msgid "Save"
+msgstr ""
+
+#: ../src/dlg-package-installer.c:108 ../src/dlg-package-installer.c:218
+msgid "There was an internal error trying to search for applications:"
+msgstr ""
+
+#: ../src/dlg-package-installer.c:286
+#, c-format
+msgid ""
+"There is no command installed for %s files.\n"
+"Do you want to search for a command to open this file?"
+msgstr ""
+
+#: ../src/dlg-package-installer.c:291
+msgid "Could not open this file type"
+msgstr ""
+
+#: ../src/dlg-package-installer.c:294
+msgid "_Search Command"
+msgstr ""
+
+#. Translators: after the colon there is a folder name.
+#: ../src/dlg-prop.c:107
+msgid "Location:"
+msgstr "Toerana:"
+
+#: ../src/dlg-prop.c:119
+msgctxt "File"
+msgid "Name:"
+msgstr ""
+
+#: ../src/dlg-prop.c:125
+#, c-format
+msgid "%s Properties"
+msgstr "Toetoetran'ny %s"
+
+#: ../src/dlg-prop.c:134
+msgid "Modified on:"
+msgstr "Novana tamin'ny:"
+
+#: ../src/dlg-prop.c:144
+msgid "Archive size:"
+msgstr "Haben'ilay arsiva:"
+
+#: ../src/dlg-prop.c:159
+msgid "Content size:"
+msgstr "Haben'ny mpiatiny:"
+
+#: ../src/dlg-prop.c:183
+msgid "Compression ratio:"
+msgstr "Tahan'ny famintinana:"
+
+#: ../src/dlg-prop.c:198
+msgid "Number of files:"
+msgstr "Isan'ny rakitra:"
+
+#: ../src/dlg-update.c:164
+#, c-format
+msgid "Update the file \"%s\" in the archive \"%s\"?"
+msgstr ""
+
+#: ../src/dlg-update.c:193
+#, c-format
+msgid "Update the files in the archive \"%s\"?"
+msgstr ""
+
+#: ../src/eggfileformatchooser.c:236
+#, c-format
+msgid "File _Format: %s"
+msgstr ""
+
+#: ../src/eggfileformatchooser.c:397
+msgid "All Files"
+msgstr ""
+
+#: ../src/eggfileformatchooser.c:398
+msgid "All Supported Files"
+msgstr ""
+
+#: ../src/eggfileformatchooser.c:407
+msgid "By Extension"
+msgstr ""
+
+#: ../src/eggfileformatchooser.c:422
+msgid "File Format"
+msgstr ""
+
+#: ../src/eggfileformatchooser.c:440
+msgid "Extension(s)"
+msgstr ""
+
+#: ../src/eggfileformatchooser.c:675
+#, c-format
+msgid ""
+"The program was not able to find out the file format you want to use for "
+"`%s'. Please make sure to use a known extension for that file or manually "
+"choose a file format from the list below."
+msgstr ""
+
+#: ../src/eggfileformatchooser.c:682
+msgid "File format not recognized"
+msgstr ""
+
+#: ../src/fr-archive.c:1126
+msgid "File not found."
+msgstr ""
+
+#: ../src/fr-archive.c:1229
+#, c-format
+msgid "The file doesn't exist"
+msgstr ""
+
+#: ../src/fr-archive.c:2394
+msgid "You don't have the right permissions."
+msgstr "Tsy manana ny fahazoan-dàlana ilaina ianao."
+
+#: ../src/fr-archive.c:2394
+msgid "This archive type cannot be modified"
+msgstr ""
+
+#: ../src/fr-archive.c:2406
+msgid "You can't add an archive to itself."
+msgstr "Tsy azonao atao ny mampiditra arsiva anatin'ny tenany."
+
+#. Translators: after the colon there is a filename.
+#: ../src/fr-command-7z.c:296 ../src/fr-command-rar.c:518
+#: ../src/fr-command-tar.c:308
+msgid "Adding file: "
+msgstr "Mampiditra ny rakitra:"
+
+#. Translators: after the colon there is a filename.
+#: ../src/fr-command-7z.c:417 ../src/fr-command-rar.c:645
+#: ../src/fr-command-tar.c:427
+msgid "Extracting file: "
+msgstr "Manaboaraka ny rakitra:"
+
+#. Translators: after the colon there is a filename.
+#: ../src/fr-command-rar.c:596 ../src/fr-command-tar.c:373
+msgid "Removing file: "
+msgstr "Manesotra ny rakitra:"
+
+#: ../src/fr-command-rar.c:779
+#, c-format
+msgid "Could not find the volume: %s"
+msgstr ""
+
+#: ../src/fr-command-tar.c:382 ../src/fr-window.c:2327
+msgid "Deleting files from archive"
+msgstr "Mamafa ireo rakitra tanatin'ilay arsiva"
+
+#: ../src/fr-command-tar.c:486
+msgid "Recompressing archive"
+msgstr "Mamnintina ilay arsiva indray"
+
+#: ../src/fr-command-tar.c:737
+msgid "Decompressing archive"
+msgstr "Manaboraka ilay arsiva"
+
+#: ../src/fr-stock.c:43 ../src/fr-stock.c:44
+msgid "_Add"
+msgstr "_Ampidiro"
+
+#: ../src/fr-stock.c:45
+msgid "_Extract"
+msgstr "_Aboray"
+
+#: ../src/fr-window.c:1519
+#, c-format
+msgid "%d object (%s)"
+msgid_plural "%d objects (%s)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/fr-window.c:1524
+#, c-format
+msgid "%d object selected (%s)"
+msgid_plural "%d objects selected (%s)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../src/fr-window.c:1598
+msgid "Folder"
+msgstr "Lahatahiry"
+
+#: ../src/fr-window.c:1999
+msgid "[read only]"
+msgstr "[vakiana fotsiny]"
+
+#: ../src/fr-window.c:2250
+#, c-format
+msgid "Could not display the folder \"%s\""
+msgstr "Tsy afaka nampiseho ny lahatahiry \"%s\""
+
+#: ../src/fr-window.c:2318 ../src/fr-window.c:2348
+msgid "Creating archive"
+msgstr ""
+
+#: ../src/fr-window.c:2321
+msgid "Loading archive"
+msgstr ""
+
+#: ../src/fr-window.c:2324
+msgid "Reading archive"
+msgstr "Mamaky ilay arsiva"
+
+#: ../src/fr-window.c:2330
+msgid "Testing archive"
+msgstr "Mitsapa ilay arsiva"
+
+#: ../src/fr-window.c:2333
+msgid "Getting the file list"
+msgstr "Maka ilay lisitry ny rakitra"
+
+#: ../src/fr-window.c:2336 ../src/fr-window.c:2345
+msgid "Copying the file list"
+msgstr ""
+
+#: ../src/fr-window.c:2339
+msgid "Adding files to archive"
+msgstr "Mampiditra rakitra anatin'ilay arsiva"
+
+#: ../src/fr-window.c:2342
+msgid "Extracting files from archive"
+msgstr "Manaboraka rakitra avy ao anatin'ilay arsiva"
+
+#: ../src/fr-window.c:2351
+msgid "Saving archive"
+msgstr "Mandraikitra ilay arsiva"
+
+#: ../src/fr-window.c:2508
+msgid "_Open the Archive"
+msgstr "S_okafy ilay Arsiva"
+
+#: ../src/fr-window.c:2509
+msgid "_Show the Files"
+msgstr ""
+
+#: ../src/fr-window.c:2557
+msgid "Archive:"
+msgstr "Arsiva:"
+
+#: ../src/fr-window.c:2719
+msgid "Extraction completed successfully"
+msgstr ""
+
+#: ../src/fr-window.c:2742
+msgid "Archive created successfully"
+msgstr ""
+
+#: ../src/fr-window.c:2790
+msgid "please wait..."
+msgstr ""
+
+#: ../src/fr-window.c:2949
+msgid "An error occurred while extracting files."
+msgstr "Nisy olana nitranga teo am-panaborahana ireo rakitra."
+
+#: ../src/fr-window.c:2955
+#, c-format
+msgid "Could not open \"%s\""
+msgstr "Tsy afaka nanokatra ny \"%s\""
+
+#: ../src/fr-window.c:2960
+msgid "An error occurred while loading the archive."
+msgstr "Nisy olana nitranga teo am-pakana ilay arsiva."
+
+#: ../src/fr-window.c:2964
+msgid "An error occurred while deleting files from the archive."
+msgstr "Nisy olana nitranga teo am-pamafana ireo rakitra tao anatin'ilay arsiva."
+
+#: ../src/fr-window.c:2970
+msgid "An error occurred while adding files to the archive."
+msgstr "Nisy olana nitranga teo am-pampidirana rakitra tao anatin'ilay arsiva."
+
+#: ../src/fr-window.c:2974
+msgid "An error occurred while testing archive."
+msgstr "Nisy olana nitranga teo am-pitsapana ilay arsiva."
+
+#: ../src/fr-window.c:2978
+msgid "An error occurred while saving the archive."
+msgstr ""
+
+#: ../src/fr-window.c:2982
+msgid "An error occurred."
+msgstr ""
+
+#: ../src/fr-window.c:2988
+msgid "Command not found."
+msgstr "Tsy hita ilay baiko."
+
+#: ../src/fr-window.c:2991
+msgid "Command exited abnormally."
+msgstr "Nijanona tampoka ilay baiko."
+
+#: ../src/fr-window.c:3190
+msgid "Test Result"
+msgstr "Valin'ny fitsapana"
+
+#: ../src/fr-window.c:4012 ../src/fr-window.c:7991 ../src/fr-window.c:8020
+#: ../src/fr-window.c:8275
+msgid "Could not perform the operation"
+msgstr "Tsy afaka nanatanteraka ilay asa"
+
+#: ../src/fr-window.c:4038
+msgid ""
+"Do you want to add this file to the current archive or open it as a new "
+"archive?"
+msgstr "Tianao ampidirina anatin'ity arsiva ity ve io rakitra io sa sokafana anatina arsiva iray vaovao?"
+
+#: ../src/fr-window.c:4068
+msgid "Do you want to create a new archive with these files?"
+msgstr "Tianao ve ny hamorona arsiva vaovao amin'ny alalan'ireo rakitra ireo?"
+
+#: ../src/fr-window.c:4071
+msgid "Create _Archive"
+msgstr "Hamorona _arsiva"
+
+#: ../src/fr-window.c:4667 ../src/fr-window.c:5747
+msgid "Folders"
+msgstr ""
+
+#: ../src/fr-window.c:4705
+msgctxt "File"
+msgid "Size"
+msgstr ""
+
+#: ../src/fr-window.c:4706
+msgctxt "File"
+msgid "Type"
+msgstr ""
+
+#: ../src/fr-window.c:4707
+msgctxt "File"
+msgid "Date Modified"
+msgstr ""
+
+#: ../src/fr-window.c:4708
+msgctxt "File"
+msgid "Location"
+msgstr ""
+
+#: ../src/fr-window.c:4717
+msgctxt "File"
+msgid "Name"
+msgstr ""
+
+#: ../src/fr-window.c:5668
+msgid "Find:"
+msgstr "Tadiavo:"
+
+#: ../src/fr-window.c:5755
+msgid "Close the folders pane"
+msgstr ""
+
+#: ../src/fr-window.c:5899 ../src/fr-window.c:5902 ../src/ui.h:142
+#: ../src/ui.h:146
+msgid "Open archive"
+msgstr "Hanokatra arsiva"
+
+#: ../src/fr-window.c:5900
+msgid "Open a recently used archive"
+msgstr "Manokatra arsiva nampiasaina vao haingana"
+
+#: ../src/fr-window.c:6227
+#, c-format
+msgid "Could not save the archive \"%s\""
+msgstr "Tsy afaka nandraikitra ny arsiva \"%s\""
+
+#. Translators: the name references to a filename.  This message can appear
+#. when renaming a file.
+#: ../src/fr-window.c:7394
+msgid "The new name is void."
+msgstr "Foana ilay anarana vaovao."
+
+#. Translators: the name references to a filename.  This message can appear
+#. when renaming a file.
+#: ../src/fr-window.c:7399
+msgid "The new name is equal to the old one."
+msgstr "Mitovy amin'ilay taloha ilay anarana vaovao."
+
+#: ../src/fr-window.c:7440
+#, c-format
+msgid ""
+"A folder named \"%s\" already exists.\n"
+"\n"
+"%s"
+msgstr "Efa misy ny lahatahiry mitondra ny anarana \"%s\".\n\n%s"
+
+#: ../src/fr-window.c:7442
+#, c-format
+msgid ""
+"A file named \"%s\" already exists.\n"
+"\n"
+"%s"
+msgstr "Efa misy ny rakitra mitondra ny anarana \"%s\".\n\n%s"
+
+#: ../src/fr-window.c:7512
+msgid "Rename"
+msgstr "Ovay anarana"
+
+#: ../src/fr-window.c:7513
+msgid "New folder name"
+msgstr "Anaran-dahatahiry vaovao"
+
+#: ../src/fr-window.c:7513
+msgid "New file name"
+msgstr "Anaran-drakitra vaovao"
+
+#: ../src/fr-window.c:7517
+msgid "_Rename"
+msgstr "_Ovay anarana"
+
+#: ../src/fr-window.c:7534 ../src/fr-window.c:7554
+msgid "Could not rename the folder"
+msgstr "Tsy afaka nanova ny anaran'ilay lahatahiry"
+
+#: ../src/fr-window.c:7534 ../src/fr-window.c:7554
+msgid "Could not rename the file"
+msgstr "Tsy afaka nanova ny anaran'ilay rakitra"
+
+#: ../src/fr-window.c:7952
+msgid "Paste Selection"
+msgstr "Apetao izay voafaritra"
+
+#: ../src/fr-window.c:7953
+msgid "Destination folder"
+msgstr "Lahatahiry iantefana"
+
+#: ../src/fr-window.c:8545
+msgid "Add files to an archive"
+msgstr "Hampiditra rakitra anaty arsiva iray"
+
+#: ../src/fr-window.c:8589
+msgid "Extract archive"
+msgstr "Hanaboraka arsiva"
+
+#. This is the time format used in the "Date Modified" column and
+#. * in the Properties dialog.  See the man page of strftime for an
+#. * explanation of the values.
+#: ../src/glib-utils.c:560
+msgid "%d %B %Y, %H:%M"
+msgstr ""
+
+#. Expander
+#: ../src/gtk-utils.c:447
+msgid "Command _Line Output"
+msgstr "Fivoahan'ny _lazam-baiko"
+
+#: ../src/gtk-utils.c:784
+msgid "Could not display help"
+msgstr "Tsy afaka naneho ny toro-làlana"
+
+#: ../src/main.c:85
+msgid "7-Zip (.7z)"
+msgstr "7-Zip (.7z)"
+
+#: ../src/main.c:86
+msgid "Tar compressed with 7z (.tar.7z)"
+msgstr ""
+
+#: ../src/main.c:87
+msgid "Ace (.ace)"
+msgstr "Ace (.ace)"
+
+#: ../src/main.c:89
+msgid "Ar (.ar)"
+msgstr "Ar (.ar)"
+
+#: ../src/main.c:90
+msgid "Arj (.arj)"
+msgstr "Arj (.arj)"
+
+#: ../src/main.c:92
+msgid "Tar compressed with bzip2 (.tar.bz2)"
+msgstr "Tar nafintina tamin'ny bzip2 (.tar.bz2)"
+
+#: ../src/main.c:94
+msgid "Tar compressed with bzip (.tar.bz)"
+msgstr "Tar nafintina tamin'ny bzip (.tar.bz)"
+
+#: ../src/main.c:95
+msgid "Cabinet (.cab)"
+msgstr ""
+
+#: ../src/main.c:96
+msgid "Rar Archived Comic Book (.cbr)"
+msgstr ""
+
+#: ../src/main.c:97
+msgid "Zip Archived Comic Book (.cbz)"
+msgstr ""
+
+#: ../src/main.c:100
+msgid "Tar compressed with gzip (.tar.gz)"
+msgstr "Tar nafintina tamin'ny gzip (.tar.gz)"
+
+#: ../src/main.c:103
+msgid "Ear (.ear)"
+msgstr "Ear (.ear)"
+
+#: ../src/main.c:104
+msgid "Self-extracting zip (.exe)"
+msgstr "zip nanaboraka irery (.exe)"
+
+#: ../src/main.c:106
+msgid "Jar (.jar)"
+msgstr "Jar (.jar)"
+
+#: ../src/main.c:107
+msgid "Lha (.lzh)"
+msgstr "Lha (.lzh)"
+
+#: ../src/main.c:108
+msgid "Lrzip (.lrz)"
+msgstr ""
+
+#: ../src/main.c:109
+msgid "Tar compressed with lrzip (.tar.lrz)"
+msgstr ""
+
+#: ../src/main.c:111
+msgid "Tar compressed with lzip (.tar.lz)"
+msgstr ""
+
+#: ../src/main.c:113
+msgid "Tar compressed with lzma (.tar.lzma)"
+msgstr ""
+
+#: ../src/main.c:115
+msgid "Tar compressed with lzop (.tar.lzo)"
+msgstr "Tar nafintina tamin'ny lzop (.tar.lzo)"
+
+#: ../src/main.c:116
+msgid "Windows Imaging Format (.wim)"
+msgstr ""
+
+#: ../src/main.c:117
+msgid "Rar (.rar)"
+msgstr "Rar (.rar)"
+
+#: ../src/main.c:120
+msgid "Tar uncompressed (.tar)"
+msgstr "Tar tsy voafintina (.tar)"
+
+#: ../src/main.c:121
+msgid "Tar compressed with compress (.tar.Z)"
+msgstr "Tar nafintina tamin'ny compress (.tar.Z)"
+
+#: ../src/main.c:123
+msgid "War (.war)"
+msgstr "War (.war)"
+
+#: ../src/main.c:124
+msgid "Xz (.xz)"
+msgstr ""
+
+#: ../src/main.c:125
+msgid "Tar compressed with xz (.tar.xz)"
+msgstr ""
+
+#: ../src/main.c:126
+msgid "Zoo (.zoo)"
+msgstr "Zoo (.zoo)"
+
+#: ../src/main.c:127
+msgid "Zip (.zip)"
+msgstr "Zip (.zip)"
+
+#: ../src/main.c:197
+msgid "Add files to the specified archive and quit the program"
+msgstr "Ampidiro anatin'ny arsiva voalaza ireo rakitra dia ajanony ilay rindranasa"
+
+#: ../src/main.c:198
+msgid "ARCHIVE"
+msgstr "ARSIVA"
+
+#: ../src/main.c:201
+msgid "Add files asking the name of the archive and quit the program"
+msgstr "Anontanio ny anaran'ilay arsiva ampidirana ireo rakitra dia ajanony ilay rindranasa"
+
+#: ../src/main.c:205
+msgid "Extract archives to the specified folder and quit the program"
+msgstr "Aboray mankany amin'ny lahatahiry voalaza ireo rakitra dia ajanony ilay rindranasa"
+
+#: ../src/main.c:206 ../src/main.c:218
+msgid "FOLDER"
+msgstr "LAHATAHIRY"
+
+#: ../src/main.c:209
+msgid "Extract archives asking the destination folder and quit the program"
+msgstr "Anontanio ilay lahatahiry iantefana hanaborahana ireo arsiva dia ajanony ilay rindranasa"
+
+#: ../src/main.c:213
+msgid ""
+"Extract the contents of the archives in the archive folder and quit the "
+"program"
+msgstr ""
+
+#: ../src/main.c:217
+msgid "Default folder to use for the '--add' and '--extract' commands"
+msgstr "Ny lahatahiry atao fampiasa ho an'ny baiko '--add' sy '--extract'"
+
+#: ../src/main.c:221
+msgid "Create destination folder without asking confirmation"
+msgstr "Avy dia mamorona lahatahiry iantefana"
+
+#: ../src/main.c:303
+msgid "- Create and modify an archive"
+msgstr ""
+
+#: ../src/main.c:319
+msgid "Engrampa"
+msgstr "Engrampa"
+
+#: ../src/ui.h:32
+msgid "_Archive"
+msgstr "_Arsiva"
+
+#: ../src/ui.h:33
+msgid "_Edit"
+msgstr "_Fanovana"
+
+#: ../src/ui.h:34
+msgid "_View"
+msgstr "_Jerena"
+
+#: ../src/ui.h:35
+msgid "_Help"
+msgstr "_toro-làlana"
+
+#: ../src/ui.h:36
+msgid "_Arrange Files"
+msgstr "_Handamina rakitra"
+
+#. Translators: this is the label for the "open recent file" sub-menu.
+#: ../src/ui.h:38
+msgid "Open _Recent"
+msgstr ""
+
+#: ../src/ui.h:42
+msgid "Information about the program"
+msgstr "Mombamomba ilay rindranasa"
+
+#: ../src/ui.h:45
+msgid "_Add Files..."
+msgstr "_Hampiditra rakitra..."
+
+#: ../src/ui.h:46 ../src/ui.h:50
+msgid "Add files to the archive"
+msgstr "Mampiditra rakitra anatin'ilay arsiva"
+
+#: ../src/ui.h:53
+msgid "Add a _Folder..."
+msgstr "Hampiditra _lahatahiry..."
+
+#: ../src/ui.h:54 ../src/ui.h:58
+msgid "Add a folder to the archive"
+msgstr "Mampiditra lahatahiry anatin'ilay arsiva"
+
+#: ../src/ui.h:57
+msgid "Add Folder"
+msgstr ""
+
+#: ../src/ui.h:62
+msgid "Close the current archive"
+msgstr "Manidy ilay arsiva iasana"
+
+#: ../src/ui.h:65
+msgid "Contents"
+msgstr ""
+
+#: ../src/ui.h:66
+msgid "Display the Engrampa Manual"
+msgstr "Maneho ny toro-làlan'ny Engrampa"
+
+#: ../src/ui.h:71 ../src/ui.h:92
+msgid "Copy the selection"
+msgstr "Mandika izay voafaritra"
+
+#: ../src/ui.h:75 ../src/ui.h:96
+msgid "Cut the selection"
+msgstr "Manesotra izay voafaritra"
+
+#: ../src/ui.h:79 ../src/ui.h:100
+msgid "Paste the clipboard"
+msgstr "Mametaka izay anatin'ny fanindri-taratasy"
+
+#: ../src/ui.h:82 ../src/ui.h:103
+msgid "_Rename..."
+msgstr "_Hanova anarana..."
+
+#: ../src/ui.h:83 ../src/ui.h:104
+msgid "Rename the selection"
+msgstr "Manova ny anaran'izay voafaritra"
+
+#: ../src/ui.h:87 ../src/ui.h:108
+msgid "Delete the selection from the archive"
+msgstr "Mamafa izay voafaritra tanatin'ilay arsiva"
+
+#: ../src/ui.h:112
+msgid "Dese_lect All"
+msgstr "Aza _faritana  izy rehetra"
+
+#: ../src/ui.h:113
+msgid "Deselect all files"
+msgstr "Manafoana ny famaritana ny rakitra rehetra"
+
+#: ../src/ui.h:116 ../src/ui.h:120
+msgid "_Extract..."
+msgstr "_Hanaboraka..."
+
+#: ../src/ui.h:117 ../src/ui.h:121 ../src/ui.h:125
+msgid "Extract files from the archive"
+msgstr "Manaboraka rakitra avy anatin'ilay arsiva"
+
+#: ../src/ui.h:128
+msgid "Find..."
+msgstr ""
+
+#: ../src/ui.h:133
+msgid "_Last Output"
+msgstr "_Famoahana farany"
+
+#: ../src/ui.h:134
+msgid "View the output produced by the last executed command"
+msgstr "Hijery ny famoahana azo avy amin'ny baiko notanterahana farany"
+
+#: ../src/ui.h:137
+msgid "New..."
+msgstr ""
+
+#: ../src/ui.h:138
+msgid "Create a new archive"
+msgstr "Hamorona arsiva vaovao"
+
+#: ../src/ui.h:141
+msgid "Open..."
+msgstr ""
+
+#: ../src/ui.h:149
+msgid "_Open With..."
+msgstr ""
+
+#: ../src/ui.h:150
+msgid "Open selected files with an application"
+msgstr "Manokatra ny rakitra voafaritra amin'ny alalan'ny rindranasa iray"
+
+#: ../src/ui.h:153
+msgid "Pass_word..."
+msgstr "Teny _fanalahidy..."
+
+#: ../src/ui.h:154
+msgid "Specify a password for this archive"
+msgstr "Manomeza teny fanalahidy ho an'ity arsiva ity"
+
+#: ../src/ui.h:158
+msgid "Show archive properties"
+msgstr "Maneho ny toetoetr'ilay arsiva"
+
+#: ../src/ui.h:162
+msgid "Reload current archive"
+msgstr "Avereno aseho ny arsiva vao haingana teo"
+
+#: ../src/ui.h:165
+msgid "Save As..."
+msgstr ""
+
+#: ../src/ui.h:166
+msgid "Save the current archive with a different name"
+msgstr "Mandraikitra io arsiva io amin'ny anarana hafa"
+
+#: ../src/ui.h:170
+msgid "Select all files"
+msgstr "Mamaritra ireo rakitra rehetra"
+
+#: ../src/ui.h:174
+msgid "Stop current operation"
+msgstr "Manajanona ny asa atao izao"
+
+#: ../src/ui.h:177
+msgid "_Test Integrity"
+msgstr "_Fitsapana fahafenoana"
+
+#: ../src/ui.h:178
+msgid "Test whether the archive contains errors"
+msgstr "Mitsapa ireo arsiva sao dia misy tsy fetezana"
+
+#: ../src/ui.h:182 ../src/ui.h:186
+msgid "Open the selected file"
+msgstr ""
+
+#: ../src/ui.h:190 ../src/ui.h:194
+msgid "Open the selected folder"
+msgstr ""
+
+#: ../src/ui.h:199
+msgid "Go to the previous visited location"
+msgstr "Ho any amin'ny toerana nozahana taloha"
+
+#: ../src/ui.h:203
+msgid "Go to the next visited location"
+msgstr ""
+
+#: ../src/ui.h:207
+msgid "Go up one level"
+msgstr "Hiakatra dingana iray"
+
+#. Translators: the home location is the home folder.
+#: ../src/ui.h:212
+msgid "Go to the home location"
+msgstr "Ho any amin'ny toeran'ny fandraisana"
+
+#: ../src/ui.h:220
+msgid "_Toolbar"
+msgstr "_Anjan'ny fitaovana"
+
+#: ../src/ui.h:221
+msgid "View the main toolbar"
+msgstr "Maneho ny anjan'ny fitaovana fototra"
+
+#: ../src/ui.h:225
+msgid "Stat_usbar"
+msgstr "Anjan'ny _fivoarana"
+
+#: ../src/ui.h:226
+msgid "View the statusbar"
+msgstr "Maneho ny anjan'ny fivoarana"
+
+#: ../src/ui.h:230
+msgid "_Reversed Order"
+msgstr "_Avadio ny filaharana"
+
+#: ../src/ui.h:231
+msgid "Reverse the list order"
+msgstr "Mamadika ny filaharan'ireo rakitra"
+
+#: ../src/ui.h:235
+msgid "_Folders"
+msgstr ""
+
+#: ../src/ui.h:236
+msgid "View the folders pane"
+msgstr ""
+
+#: ../src/ui.h:245
+msgid "View All _Files"
+msgstr "Asehoy ireo _rakitra rehetra"
+
+#: ../src/ui.h:248
+msgid "View as a F_older"
+msgstr "Asehoy toa _lahatahiry"
+
+#: ../src/ui.h:256
+msgid "by _Name"
+msgstr "araka ny _anarana"
+
+#: ../src/ui.h:257
+msgid "Sort file list by name"
+msgstr "Mandahatra ireo rakitra araka ny anarany"
+
+#: ../src/ui.h:259
+msgid "by _Size"
+msgstr "araka ny _habe"
+
+#: ../src/ui.h:260
+msgid "Sort file list by file size"
+msgstr "Mandahatra ireo rakitra araka ny habeny"
+
+#: ../src/ui.h:262
+msgid "by T_ype"
+msgstr "araka ny _karazana"
+
+#: ../src/ui.h:263
+msgid "Sort file list by type"
+msgstr "Mandahatra ireo rakitra araka ny karazany"
+
+#: ../src/ui.h:265
+msgid "by _Date Modified"
+msgstr ""
+
+#: ../src/ui.h:266
+msgid "Sort file list by modification time"
+msgstr "Mandahatra ireo rakitra araka ny fotoana nanaovana fanovana"
+
+#. Translators: this is the "sort by file location" menu item
+#: ../src/ui.h:269
+msgid "by _Location"
+msgstr "araka ny _toerana"
+
+#. Translators: location is the file location
+#: ../src/ui.h:271
+msgid "Sort file list by location"
+msgstr "Mandahatra ireo rakitra araka ny toerany"

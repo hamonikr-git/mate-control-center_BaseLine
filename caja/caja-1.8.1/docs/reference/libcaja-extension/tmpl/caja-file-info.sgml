@@ -1,0 +1,49 @@
+<!-- ##### SECTION Title ##### -->
+caja-file-info
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO CAJA_FILE_DEFINED ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### TYPEDEF CajaFile ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### TYPEDEF CajaFileInfo ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT CajaFileInfoIface ##### -->
+<para>
+
+</para>
+
+

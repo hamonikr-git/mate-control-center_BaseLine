@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "March 2009">
+<!ENTITY app "Search for Files">
+<!ENTITY ug "MATE Desktop User Guide">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.mate.org/projects/gdp 
+  Template version: 2.0 beta
+  Template last modified Jan 25, 2005  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sv">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Handbok för Sök efter filer</title>
+
+    <abstract role="description">
+      <para>Ett sökverktyg för att hitta filer, mappar och dokument på din dator</para>
+    </abstract>
+
+    <copyright lang="en"> 
+      <year>2005</year> 
+      <holder>Dennis Cranston</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2002</year> 
+      <year>2003</year> 
+      <year>2004</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>Alexander Kirillov</holder> 
+    </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+    <publisher> 
+      <publishername>Dokumentationsprojekt för MATE</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Tillstånd att kopiera, distribuera och/eller modifiera detta dokument ges under villkoren i GNU Free Documentation License (GFDL), version 1.1 eller senare, utgivet av Free Software Foundation utan standardavsnitt och omslagstexter.  En kopia av GFDL finns att hämta på denna <ulink type="help" url="help:fdl">länk</ulink> eller i filen COPYING-DOCS som medföljer denna handbok.</para>
+         <para>Denna handbok utgör en av flera MATE-handböcker som distribueras under villkoren i GFDL.  Om du vill distribuera denna handbok separat från övriga handböcker kan du göra detta genom att lägga till en kopia av licensavtalet i handboken enligt instruktionerna i avsnitt 6 i licensavtalet.</para>
+
+	<para>Flera namn på produkter och tjänster är registrerade varumärken. I de fall dessa namn förekommer i MATE-dokumentation - och medlemmarna i MATE-dokumentationsprojektet är medvetna om dessa varumärken - är de skrivna med versaler eller med inledande versal.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+
+    <authorgroup> 
+      <author role="maintainer" lang="en"> 
+	<firstname>Dennis</firstname> 
+	<surname>Cranston</surname> 
+	<affiliation> 
+	  <orgname>Search for Files Maintainer</orgname> 
+	  <address lang="en">dennis_cranston@yahoo.com</address> 
+	</affiliation> 
+      </author> 
+      <author lang="en"> 
+	<firstname>Sun</firstname> 
+	<surname>MATE Documentation Team</surname> 
+	<affiliation> 
+	  <orgname>Sun Microsystems</orgname> 
+	  <address/> 
+	</affiliation> 
+      </author> 
+      <author lang="en"> 
+	<firstname>Alexander</firstname> 
+	<surname>Kirillov</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	  <address> <email>kirillov@math.sunysb.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+ <revhistory>
+ <!-- <revision> 
+	<revnumber>&app; Manual V&manrevision;</revnumber> 
+	<date>&date;</date> 
+	<revdescription> 
+	  <para role="author">Sun GNOME Documentation Team</para>
+	  <para role="publisher">MATE Documentation Project</para>
+	</revdescription> 
+ </revision>
+-->
+   <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.7</revnumber> 
+			<date>June 2005</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Joachim Noreiko
+				<email>jnoreiko@yahoo.com</email>
+			</para>
+	  		<para role="publisher" lang="en">Search for Files Maintainer</para>
+			</revdescription> 
+  </revision>
+  <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.6</revnumber> 
+			<date>January 2005</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Dennis Cranston
+				<email>dennis_cranston@yahoo.com</email>
+			</para>
+	  		<para role="publisher" lang="en">Search for Files Maintainer</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.4</revnumber> 
+			<date>February 2004</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.3</revnumber> 
+			<date>September 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Filesl Manual V2.2</revnumber> 
+			<date>August 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.1</revnumber> 
+			<date>July 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.0</revnumber> 
+			<date>May 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+	<revnumber>Search for Files Manual</revnumber> 
+	<date>2000</date> 
+	<revdescription> 
+	  <para role="author" lang="en">Alexander Kirillov
+	    <email>kirillov@math.sunysb.edu</email>
+	  </para>
+	  <para role="publisher" lang="en">MATE Documentation Project</para>
+	</revdescription> 
+ </revision> 
+ </revhistory> 
+
+    <releaseinfo lang="en">This manual describes version 2.26 of Search for Files.
+    </releaseinfo> 
+    <legalnotice> 
+      <title>Återkoppling</title> 
+      <para>För att rapportera ett fel eller komma med ett förslag angående programmet Sök efter filer eller denna handbok, följ instruktionerna på <ulink url="help:mate-feedback" type="help">MATE:s återkopplingssida</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm lang="en"> 
+    <primary>Search Tool</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="gsearchtool-introduction"> 
+    <title>Introduktion</title> 
+    <para>Programmet <application>Sök efter filer</application> låter dig söka efter filer på ditt system. För att genomföra en enkel sökning kan du skriva in ett filnamn eller en del av ett filnamn, med eller utan jokertecken. För att förfina din sökning kan du ställa in ytterligare sökalternativ.</para>
+    <para><application>Sök efter filer</application> använder UNIX-kommandona <command>find</command>, <command>grep</command>, och <command>locate</command>. Som standard, när en enkel sökning genomförs använder <application>Sök efter filer</application> först kommandot <command>locate</command>, och använder sedan det långsammare men mer genomgående kommandot <command>find</command>.</para>
+    <para>Skiftläget för sökningen beror på ditt operativsystem. Till exempel, på Linux har kommandona <command>find</command>, <command>grep</command>, och <command>locate</command> stöd för flaggan <literal>-i</literal>, så alla sökningar är okänsliga för skiftläget.</para>
+  </sect1>
+
+  <sect1 id="gsearchtool-getting-started">
+    <title>Komma igång</title> 
+
+    <para>Du kan starta <application>Sök efter filer</application> på följande sätt:</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Från en <guimenu>Menyrad</guimenu> i en panel</term>
+    		<listitem>
+    		<para>Välj <menuchoice><guisubmenu>Platser</guisubmenu><guimenuitem>Sök efter filer...</guimenuitem></menuchoice></para>
+    		</listitem>
+    	</varlistentry>
+   	<varlistentry>
+    		<term>Från en <guimenu>Huvudmeny</guimenu> i en panel</term>
+    		<listitem>
+    		<para>Välj <menuchoice><guimenuitem>Sök efter filer...</guimenuitem></menuchoice></para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Från en kommandorad</term>
+    		<listitem>
+    		<para>Kör följande kommando: <command>mate-search-tool</command></para>
+    		<para> 		 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+
+    <para>När du startar <application>Sök efter filer</application> kommer följande fönster att visas.</para>
+
+    <!-- ==== Figure ==== -->
+      <figure id="mainwindow-fig"> 
+	<title>Fönstret Sök efter filer</title> 
+	<screenshot> 
+	  <mediaobject lang="en"> 
+	    <imageobject><imagedata fileref="figures/mate-search-tool_window.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Shows Search for Files main window. </phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="gsearchtool-usage"> 
+    <title>Användning</title>
+
+    <sect2 id="gsearchtool-simple">
+    <title>Genomför en enkel sökning</title>
+    
+    <para>Genomför följande steg för att genomföra en enkel sökning efter en fil på systemet:</para>
+    <orderedlist>
+    <listitem><para>Ange söktexen i fältet <guilabel>Namnet innehåller</guilabel>. Söktexten kan vara ett filnamn eller en del av ett filnamn, med eller utan jokertecken, som visas i följande tabell:</para>
+
+      <informaltable frame="all">
+        <tgroup cols="3" colsep="1" rowsep="1">
+          <colspec colname="COLSPEC0" colwidth="33*"/>
+          <colspec colname="COLSPEC1" colwidth="33*"/>
+          <colspec colname="COLSPEC2" colwidth="34*"/>
+          <thead>
+            <row valign="top">
+              <entry colname="COLSPEC0">
+                <para>Namnet innehåller texten</para></entry>
+              <entry colname="COLSPEC1">
+                <para>Exempel</para></entry>
+              <entry colname="COLSPEC2">
+                <para>Resultat</para></entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">
+              <entry>
+                <para>Fullständigt eller del av filnamn</para>
+              </entry>
+              <entry>
+                <para lang="en"><userinput>myfile.txt</userinput>
+                </para>
+              </entry>
+              <entry>
+                <para><application>Sök efter filer</application> söker efter alla filer som innehåller texten <userinput>minfil.txt</userinput> i filnamnet.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para>Del av filnamn kombinerat med jokertecknen (*, [, ])</para>
+              </entry>
+              <entry>
+                <para lang="en"><userinput>*.[ch]</userinput>
+                </para>
+              </entry>
+              <entry>
+                <para><application>Sök efter filer</application> söker efter alla filer som har filändelsen <userinput>.c</userinput> eller <userinput>.h</userinput>.</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </listitem>
+    <listitem><para>I fältet <guilabel>Leta i mappen</guilabel>, välj mappen eller enheten från vilken du vill att <application>Sök efter filer</application> ska börja sökningen i.</para></listitem>
+    <listitem><para>Klicka på <guibutton>Sök</guibutton> för att genomföra sökningen.</para>
+    </listitem>
+    </orderedlist>
+    <para><application>Sök efter filer</application> söker i katalogen som du anger och dess underkataloger. <application>Sök efter filer</application> visar resultatet för sökningen i listrutan <guilabel>Sökresultat</guilabel>. Om <application>Sök efter filer</application> inte hittar några filer som matchar sökkriteriet, kommer programmet att visa meddelandet "Inga filer hittades" i listrutan <guilabel>Sökresultat</guilabel>.</para>
+    <para>Som standard kommer <application>Sök efter filer</application> att genomföra en snabbsökning med kommandot <command>locate</command> följt av en mer genomgående andra sökning med kommandot <command>find</command>. Kommandot <command>locate</command> är snabbare därför att det använder en databas med information filer. Om den här databasen är äldre än en vecka, kan <application>Sök efter filer</application> varna dig att sökresultaten kan vara utdaterade och ge dig möjligheten att inaktivera snabbsökningen. För att uppdatera databasen, kör kommandot <command>updatedb</command> som root-användaren.</para>
+  </sect2>
+    
+    <sect2 id="gsearchtool-advanced">
+    <title>Lägg till sökalternativ</title>
+    <para>Du kan lägga till ytterligare alternativ för att söka efter en fil på systemet. Genomför följande steg för att lägga till sökalternativ:</para>
+  	<orderedlist>
+    		<listitem><para>Klicka på texten <guilabel>Välj fler alternativ</guilabel>.</para></listitem>
+    		<listitem><para>Klicka på rullgardinsmenyn <guilabel>Tillgängliga alternativ</guilabel>.</para></listitem>
+    		<listitem><para>Välj det sökalternativ som du vill använda.</para></listitem>
+    		<listitem><para>Klicka på <guibutton>Lägg till</guibutton>.</para></listitem>
+    		<listitem><para>Ange den nödvändiga sökinformationen för sökalternativet, som beskrivs i <xref linkend="tbl-search-rules"/>.</para></listitem>
+    		<listitem><para>Upprepa ovanstående steg för varje sökalternativ som du vill använda.</para></listitem>
+    	</orderedlist>	
+    	<para>För att ta bort ett sökalternativ från den aktuella sökningen, klicka på knappen <guibutton>Ta bort</guibutton> bredvid alternativet.</para>
+    	<para>För att inaktivera sökalternativen från den aktuella sökningen, klicka på texten <guilabel>Välj flera alternativ</guilabel>.</para>
+    
+    <table id="tbl-search-rules" frame="topbot">
+    <title>Sökalternativ</title> 
+		  <tgroup cols="2" colsep="1" rowsep="1">
+			 <colspec colname="COLSPEC0" colwidth="33*"/>
+			 <colspec colname="COLSPEC1" colwidth="33*"/>
+			 <thead> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Alternativ</para></entry> 
+				  <entry> 
+					 <para>Beskrivning</para></entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Innehåller texten</para></entry> 
+				  <entry> 
+					 <para>Sök efter vanliga textfiler som innehåller den angivna texten.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Ändringsdatum mindre än</para></entry> 
+				  <entry> 
+					 <para>Sök efter filer som har ändrats inom den angivna perioden (i antal dagar).</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Ändringsdatum större än</para></entry> 
+				  <entry> 
+					 <para>Sök efter filer som har ändrats innan den angivna perioden (i antal dagar).</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Storleken är minst</para></entry> 
+				  <entry> 
+					 <para>Sök efter filer som har samma eller större storlek (i kilobyte).</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Storleken är som mest</para></entry> 
+				  <entry> 
+					 <para>Sök efter filer som har mindre eller samma storlek (i kilobyte).</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Filen är tom</para></entry> 
+				  <entry> 
+					 <para>Sök efter tomma filer.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Ägs av användaren</para></entry> 
+				  <entry> 
+					 <para>Sök efter filer som ägs av den angivna användaren. Ange namnet på användaren i textrutan.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Ägs av gruppen</para></entry> 
+				  <entry> 
+					 <para>Sök efter filer som ägs av den angivna gruppen. Ange namnet på gruppen i textrutan.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Ägaren är okänd</para></entry> 
+				  <entry> 
+					 <para>Sök efter filer som ägs av en användare eller grupp som är okänd för systemet.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Namnet innehåller inte</para></entry> 
+				  <entry> 
+					 <para>Sök efter filnamn som inte innehåller strängen som du angav. Ange ett fullständigt filnamn eller en del av ett filnamn med jokertecken i fältet. Använd * för att indikera en teckensekvens. Använd ? för att indikera ett enstaka tecken. Sökningen är skiftlägeskänslig.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Namnet matchar reguljärt uttryck</para></entry> 
+				  <entry> 
+					 <para>Sök efter filer som innehåller det angivna reguljära uttrycket i sin katalogsökväg eller filnamn. Ange det reguljära uttrycket i textrutan.</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>Visa dolda filer och säkerhetskopior</para></entry> 
+				  <entry> 
+					 <para>Inkludera dolda filer och säkerhetskopior i sökningen.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>Följ symboliska länkar</para></entry> 
+				  <entry> 
+					 <para>Följ symboliska länkar vid sökning efter filer.</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para lang="en">Exclude other filesystems</para></entry> 
+				  <entry> 
+					 <para lang="en">Search in directories that are in the same filesystem as the start directory.</para></entry>  
+				</row> 
+				 				
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+    
+    </sect2>
+
+    <sect2 id="gsearchtool-stop">
+    <title>Stoppa en sökning</title>
+    <para>Klicka på <guibutton>Stoppa</guibutton> för att stoppa en sökning innan <application>Sök efter filer</application> har färdigställt sökningen.</para>
+    </sect2>
+    
+    <sect2 id="gsearchtool-view">
+    <title>Öppna en visad fil</title>
+    <para>Genomför ett av följande steg för att öppna en fil som visas i listrutan <guilabel>Sökresultat</guilabel>:</para>
+    <itemizedlist>
+    <listitem><para>Högerklicka på filen, välj sedan <guimenuitem>Öppna</guimenuitem>.</para></listitem>
+     <listitem><para>Dubbelklicka på filen.</para></listitem>
+    </itemizedlist>
+    <para>För att öppna mappen som innehåller en fil som visas i listrutan <guilabel>Sökresultat</guilabel>, högerklicka på filen, välj sedan <guimenuitem>Öppna mapp</guimenuitem>.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-delete">
+    <title>Ta bort en visad fil</title>
+    <para>För att ta bort en fil som visas i listrutan <guilabel>Sökresultat</guilabel>, högerklicka på filen, välj sedan <guimenuitem>Flytta till papperskorgen</guimenuitem>.</para>
+    </sect2>
+    
+    <!--
+    <sect2 id="gsearchtool-search-command">
+    <title>To View the Search Command Used by &app;</title>
+    <para>To view the command that <application>&app;</application> used to perform the previous search, choose <menuchoice><guimenu>Search</guimenu><guimenuitem>Show Command</guimenuitem></menuchoice>. The <guilabel>Search Command Line</guilabel> displays the command. </para>
+    </sect2>
+    -->
+    
+    <sect2 id="gsearchtool-savetofile">
+    <title>Spara sökresultaten</title>
+    <para>För att spara resultaten för den senaste sökningen som <application>Sök efter filer</application> genomförde, högerklicka i listan i rutan <guilabel>Sökresultat</guilabel>, välj sedan <guimenuitem>Spara resultaten som</guimenuitem>. Ange namnet på filen som du vill spara resultaten till, klicka sedan på Spara.</para>
+    </sect2>
+ 
+  </sect1>
+
+<!-- ============= Settings ============================== -->
+
+  <sect1 id="gsearchtool-settings-gsettings-keys">
+    <title>Inställningar</title> 
+
+    <para lang="en"><application>Search for Files</application> provides gsettings keys to modify some of its behavior.  The gsettings values can be changed by starting the <application>Configuration Editor</application> in the following ways:
+    </para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>Menyn <guimenu>Program</guimenu></term>
+    		<listitem>
+    		<para lang="en">Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>dconf Editor</guimenuitem></menuchoice>. </para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>Kommandorad</term>
+    		<listitem>
+    		<para lang="en">Execute the following command: <command>dconf-editor</command></para> 
+    		</listitem>
+    	</varlistentry>	
+    </variablelist>
+    
+    <sect2 id="gsearchtool-disablequicksearch">
+    <title>Inaktivera snabbsökning</title>
+    <para lang="en">Key name: org.mate.search-tool.disable-quick-search</para>
+    <para>Standardvärde: false</para>
+    <para><application>Sök efter filer</application> snabbar upp sökningar efter filnamn genom att använda kommandot <command>locate</command>. <command>Locate</command> tillhandahåller ett säkert sätt att indexera och snabbt söka efter filnamn. På grund av att <command>locate</command> förlitar sig på ett filindex, kan listan i <guilabel>Sökresultat</guilabel> inte alltid vara uppdaterad.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-disablesecondscan">
+    <title>Inaktivera andra snabbsökningen</title>
+    <para lang="en">Key name: org.mate.search-tool.disable-quick-search-second-scan</para>
+    <para>Standardvärde: false</para>
+    <para>Efter färdigställandet av en snabbsökning, kommer <application>Sök efter filer</application> att genomföra en genomgående sökning med kommandot <command>find</command>. Syftet med en här andra sökningen är att hitta filer som inte har blivit indexerade. Filer som matchar sökkriteriet läggs till i listan för <guilabel>Sökresultat</guilabel> och håller listan uppdaterad.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-quicksearchexclude">
+    <title>Undantagna sökvägar för snabbsökning</title>
+    <para lang="en">Key name: org.mate.search-tool.quick-search-excluded-paths</para>
+    <para>Standardvärden: [/mnt/*,/media/*,/dev/*,/tmp/*,/proc/*,/var/*]</para>
+    <para><application>Sök efter filer</application> kommer inte att genomföra en snabbsökning i de sökvägar angivna av den här nyckeln. Sökningar efter filnamn i de angivna sökvägarna kommer att använda kommandot <command>find</command>. Jokertecknen "*" och "?" stöds.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-secondscanexclude">
+    <title>Undantagna sökvägar för andra snabbsökningen</title>
+    <para lang="en">Key name: org.mate.search-tool.quick-search-second-scan-excluded-paths</para>
+    <para>Standardvärden: [/]</para>
+    <para><application>Sök efter filer</application> kommer inte att genomföra en andra sökning efter snabbsökningen i de sökvägar angivna av den här nyckeln. Snabbsökningar i de angivna sökvägarna kommer inte att efterföljas av en genomgående sökning med kommandot <command>find</command>. Jokertecknen "*" och "?" stöds.</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-showoptions">
+    <title>Visa ytterligare alternativ</title>
+    <para lang="en">Key name: org.mate.search-tool.show-additional-options</para>
+    <para>Standardvärde: false</para>
+    <para>Den här nyckeln bestämmer om sektionen <guilabel>Välj fler alternativ</guilabel> ska vara utfälld när <application>Sök efter filer</application> startas.</para>
+    </sect2>
+    
+  </sect1>
+
+</article>

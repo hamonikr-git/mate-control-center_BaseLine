@@ -1,0 +1,11 @@
+Source: mintinstall-icons
+Section: admin
+Priority: optional
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Build-Depends: debhelper (>= 5), imagemagick
+Standards-Version: 3.7.2
+
+Package: mintinstall-icons
+Architecture: all
+Description: Icons for the Software Manager
+ All the icons used for the applications in the software manager.

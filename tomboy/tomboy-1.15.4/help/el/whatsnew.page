@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="new" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#new"/>
+    <revision pkgversion="2.30" version="0.1" date="2010-05-29" status="draft"/>
+    <desc>Τι καινούργιο θα δείτε στις <app>Σημειώσεις Tomboy</app>.</desc>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Τι καινούργιο θα δείτε στο <app>Tomboy</app></title>
+
+  <p>Το <app>Tomboy</app> έχει υποστεί διάφορες νέες βελτιώσεις. Το Tomboy θα πρέπει να εκκινείται αρκετά γρηγορότερα χάρη στις βελτιώσεις που έγιναν στο χρόνο εκκίνησής του.</p>
+  <p>Η αντιγραφή και η επικόλληση από το Tomboy σε άλλες εφαρμογές έχουν βελτιωθεί για να υποστηρίζουν τη μορφοποίηση σε άλλες εφαρμογές που μπορούν να κάνουν ανάγνωση αρχείων τύπου HTML, όπως το Evolution, το OpenOffice.org και άλλες.</p>
+  <p>
+    <app>Tomboy</app> can now synchronize your notes automatically for you
+    when you when you have synchronize enabled.
+  </p>
+
+  <p>Η υπστήριξη για Microsoft Windows 7 έχει προστεθεί για να σας βοηθά να έχετε πρόσβαση στις σημειώσεις σας, να αναζητείτε ή να δημιουργείτε μία νέα σημειώση γρηγορότερα και άμεσα από τη γραμμή εργασιών των Windows.</p>
+
+</page>

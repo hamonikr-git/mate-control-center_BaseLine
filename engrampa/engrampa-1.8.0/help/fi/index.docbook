@@ -1,0 +1,1554 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26.0">
+<!ENTITY manrevision "2.26.0">
+<!ENTITY date "April 2006">
+<!ENTITY appname "Archive Manager">
+<!ENTITY app "<application>Archive Manager</application>">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file. 
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.MATE.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="fi">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title><application>Pakettienkäsittelyohjelman</application> käyttöopas</title>
+     <abstract role="description">
+       <para lang="en">Archive Manager, also known as Engrampa, allows you to create, view, modify, or unpack an archive.</para>
+     </abstract>
+    <copyright lang="en">
+      <year>2009</year>
+      <holder>Paul Cutler</holder>
+    </copyright>	    
+	<copyright lang="en"> 
+      <year>2006</year> 
+      <year>2008</year>
+      <holder>Paolo Bacchilega</holder> 
+    </copyright> 
+     <copyright lang="en">
+        <year>2003</year>
+        <year>2004</year>
+        <holder>Sun Microsystems</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2003</year> 
+      <holder>Paolo Bacchilega</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2002</year> 
+      <holder>Alexander Kirillov</holder> 
+    </copyright> 
+
+
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>MATE Documentation Project</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+         <para>Tätä asiakirjaa saa kopioida, jakaa edelleen ja/tai muokata Free Software Foundationin julkaiseman GNU Free Documentation Licensen (GFDL) version 1.1 tai valinnaisesti myöhemmän version mukaisesti, ilman vaatimuksia muuttamattomista osioista ja etu- tai takakansiteksteistä. Kopion GFDL:stä voi nähdä napsauttamalla <ulink type="help" url="help:fdl">tätä linkkiä</ulink>, tai lukemalla ohjeen mukana toimitetun COPYING-DOCS-nimisen tiedoston.</para>
+          <para>Tämä käyttöohje on osa Maten käyttöohjekokoelmaa ja levitetään GFDL-lisenssin alaisena. Jos haluat levittää tätä käyttöohjetta erillään kokoelmasta, voit tehdä sen liittämällä lisenssin kopion ohjeen mukaan, kuten lisenssin luku 6 sanelee.</para>
+ 
+         <para>Monet tuotteiden ja palveluiden nimet ovat tuotemerkkejä. Maten dokumentointiprojektissa nämä nimet pyritään kirjoittamaan suuraakkosin tai isolla alkukirjaimella, sikäli kun projektin jäsenet tietävät kyseisistä tuotemerkeistä.</para>
+ 
+         <para lang="en">
+           DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+           UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+           WITH THE FURTHER UNDERSTANDING THAT:
+ 
+           <orderedlist>
+                 <listitem>
+                   <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                     WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                     IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                     THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                     A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                     RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                     OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                     MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                     YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                     CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                     SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                     OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                     LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                     VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                     EXCEPT UNDER THIS DISCLAIMER; AND
+                   </para>
+                 </listitem>
+                 <listitem>
+                   <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                        THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                        CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                        INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                        DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                        OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                        PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                        DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                        CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                        INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                        OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                        MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                        LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                        DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                        EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                        THE POSSIBILITY OF SUCH DAMAGES.
+                   </para>
+                 </listitem>
+           </orderedlist>
+         </para>
+   </legalnotice>
+  <!-- This file contains link to license for the
+   documentation (GNU FDL), and other legal stuff such as "NO
+   WARRANTY" statement. Please do not change any of this. -->
+
+    <authorgroup> 
+       <author lang="en"> 
+         <firstname>Sun </firstname>
+         <surname>MATE Documentation Team</surname>
+         <affiliation> 
+            <orgname>Sun Microsystems</orgname>
+        </affiliation>
+      </author>
+      <author lang="en"> 
+	<firstname>Paolo</firstname> 
+	<surname>Bacchilega</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+      </author> 
+      <author lang="en"> 
+	<firstname>Alexander</firstname> 
+	<surname>Kirillov</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	  <address> <email>kirillov@math.sunysb.edu</email> </address> 
+	</affiliation> 
+      </author> 
+      <author lang="en">
+        <firstname>Paul</firstname>
+        <surname>Cutler</surname>
+        <affiliation>
+          <orgname>MATE Documentation Project</orgname>
+          <address><email>pcutler@foresightlinux.org</email></address>
+        </affiliation>
+      </author>	  
+    </authorgroup>
+	
+	<releaseinfo revision="2.26" role="review">
+		<ulink type="techreview" url="http://bugzilla.mate.org/show_bug.cgi?id=575419"/>
+	</releaseinfo>
+
+         <revhistory>
+                <revision lang="en">
+                  <revnumber>Archive Manager Manual V2.26.0</revnumber>
+                  <date>March 2009</date>
+                  <revdescription>
+                         <para role="author" lang="en">Paul Cutler</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+				
+                <revision lang="en">
+                  <revnumber>Archive Manager Manual V2.24.0</revnumber>
+                  <date>July 2008</date>
+                  <revdescription>
+                         <para role="author" lang="en">Paolo Bacchilega</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+				
+                <revision lang="en">
+                  <revnumber>Archive Manager Manual V2.6</revnumber>
+                  <date>April 2006</date>
+                  <revdescription>
+                         <para role="author" lang="en">Paolo Bacchilega</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.5</revnumber>
+                  <date>March 2004</date>
+                  <revdescription>
+                         <para role="author" lang="en">Sun GNOME Documentation Team</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.4</revnumber>
+                  <date>February 2004</date>
+                  <revdescription>
+                         <para role="author" lang="en">Sun GNOME Documentation Team</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.3</revnumber>
+                  <date>August 2003</date>
+                  <revdescription>
+                         <para role="author" lang="en">Sun GNOME Documentation Team</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.2</revnumber>
+                  <date>June 2003</date>
+                  <revdescription>
+                         <para role="author" lang="en">Sun GNOME Documentation Team</para>
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.1</revnumber>
+                  <date>January 2003</date>
+                  <revdescription>
+                         <para role="author" lang="en">Paolo Bacchilega</para>                         
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+                <revision lang="en">
+                  <revnumber>Engrampa Manual V2.0</revnumber>
+                  <date>June 2002</date>
+                  <revdescription>
+                         <para role="author" lang="en">Alexander Kirillov</para>                         
+                         <para role="publisher" lang="en">MATE Documentation Project</para>
+                  </revdescription>
+                </revision>
+         </revhistory>
+
+    <releaseinfo lang="en"> This manual describes version 2.26.0 of Archive Manager.
+    </releaseinfo> 
+    <legalnotice> 
+        <title>Palaute</title>
+        <para lang="en">To report a bug or make a suggestion regarding the <application>Archive Manager</application> application or this manual, follow the directions in the
+        <ulink url="help:mate-feedback" type="help">MATE Feedback Page</ulink>.
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo> 
+  <indexterm zone="index" lang="en"> 
+    <primary>Engrampa</primary> 
+  </indexterm> 
+  <indexterm zone="index" lang="en"> 
+    <primary>engrampa</primary> 
+  </indexterm>
+  <indexterm zone="index" lang="en"> 
+    <primary>Archiving</primary> 
+  </indexterm>
+  <indexterm zone="engrampa-add-files" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Adding files to</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-delete-files" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Deleting files from</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-open" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Opening</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-view" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Viewing</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-extract" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Extracting</secondary>
+  </indexterm> 
+  <indexterm zone="engrampa-create" lang="en"> 
+    <primary>Archives</primary> 
+    <secondary>Creating</secondary>
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="engrampa-intro"> 
+    <title>Johdanto</title> 
+    <para>Voit käyttää <application>Pakettienhallintaohjelmaa</application> arkistojen luontiin, katseluun, muokkaukseen tai purkamiseen. Arkisto on tiedosto, joka toimii tiedostojen paketointimateriaalina. Arkisto voi sisältää useita tiedostoja kansioita ja alikansioita, tavallisesti tiivistetyssä muodossa.</para>
+    <para><application>Pakettienkäsittelyohjelma</application> tarjoaa ainoastaan graafisen käyttöliittymän ja se nojaa komentorivipohjaisiin arkistointityökaluihin, kuten <command>tar</command>,<command>gzip</command>, ja <command>bzip2</command>.</para>
+    <para>Jos sinulla on tarvittavat komentorivityökalut asennettuna järjestelmääsi, <application>Pakettienkäsittelyohjelma</application> tukee seuraavan taulukon arkistomuotoja.</para> 
+      <informaltable frame="all">
+        <tgroup cols="2" colsep="1" rowsep="1">
+          <colspec colname="COLSPEC0" colwidth="50*"/>
+          <colspec colname="COLSPEC1" colwidth="50*"/>
+          <thead>
+            <row valign="top">
+              <entry colname="COLSPEC0">
+                <para>Muoto</para></entry>
+              <entry colname="COLSPEC1" align="left">
+                <para>Tiedostopääte</para></entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">
+              <entry><para>7-Zip-arkisto</para></entry>
+              <entry align="left"><para lang="en"><filename>.7z</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>WinAce-arkisto</para></entry>
+              <entry align="left"><para lang="en"><filename>.ace</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>ALZip-arkisto</para></entry>
+              <entry align="left"><para lang="en"><filename>.alz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>AIX pieni-indeksinen arkisto</para></entry>
+              <entry align="left"><para lang="en"><filename>.ar</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>ARJ-arkisto</para></entry>
+              <entry align="left"><para lang="en"><filename>.arj</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Cabinet-tiedosto</para></entry>
+              <entry align="left"><para lang="en"><filename>.cab</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>UNIX CPIO-arkisto</para></entry>
+              <entry align="left"><para lang="en"><filename>.cpio</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Debian Linux-paketti</para></entry>
+              <entry align="left"><para lang="en"><filename>.deb</filename></para></entry>
+            </row>            
+            <row valign="top">
+              <entry><para>ISO9660 CD-levykuva</para></entry>
+              <entry align="left"><para lang="en"><filename>.iso</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Java-arkisto</para></entry>
+              <entry align="left"><para lang="en"><filename>.jar</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Java enterprise -arkisto</para></entry>
+              <entry align="left"><para lang="en"><filename>.ear</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Java web-arkisto</para></entry>
+              <entry align="left"><para lang="en"><filename>.war</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>LHA-arkisto</para></entry>
+              <entry align="left"><para><filename>.lha</filename>, <filename>.lzh</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>WinRAR-pakattu arkisto</para></entry>
+              <entry align="left"><para lang="en"><filename>.rar</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>RAR-arkistoitu sarjakuvakirja</para></entry>
+              <entry align="left"><para lang="en"><filename>.cbr</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>RPM Linux -paketti</para></entry>
+              <entry align="left"><para lang="en"><filename>.rpm</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Tiivistämätön tar-arkisto</para></entry>
+              <entry align="left"><para lang="en"><filename>.tar</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para><command>bzip</command>-tiivistetty tar-arkisto.</para></entry>
+              <entry align="left"><para><filename>.tar.bz</filename> tai <filename>.tbz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para><command>bzip2</command>-tiivistetty tar-arkisto</para></entry>
+              <entry align="left"><para><filename>.tar.bz2</filename> tai <filename>.tbz2</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para><command>gzip</command>-tiivistetty tar-arkisto</para></entry>
+              <entry align="left"><para><filename>.tar.gz</filename> tai <filename>.tgz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para lang="en">Tar archive compressed with <command>lzip</command></para></entry>
+              <entry align="left"><para lang="en"><filename>.tar.lz</filename> or <filename>.tlz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para><command>lzop</command>-tiivistetty tar-arkisto</para></entry>
+              <entry align="left"><para><filename>.tar.lzo</filename> tai <filename>.tzo</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para><command>compress</command>-tiivistetty tar-arkisto</para></entry>
+              <entry align="left"><para><filename>.tar.Z</filename> tai <filename>.taz</filename></para></entry>
+            </row>
+             <row valign="top">
+              <entry><para><command>7zip</command>-tiivistetty tar-arkisto.</para></entry>
+              <entry align="left"><para lang="en"><filename>.tar.7z</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Stuffit-arkistot</para></entry>
+              <entry align="left"><para><filename>.bin</filename> tai <filename>.sit</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>PKZIP tai WinZip-arkisto</para></entry>
+              <entry align="left"><para lang="en"><filename>.zip</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>ZIP-pakattu sarjakuvakirja</para></entry>
+              <entry align="left"><para lang="en"><filename>.cbz</filename></para></entry>
+            </row>
+            <row valign="top">
+              <entry><para>Zoo-arkisto</para></entry>
+              <entry align="left"><para lang="en"><filename>.zoo</filename></para></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    <para>Yleisin arkistomuoto UNIX- ja Linux-järjestelmissä on <command>gzip</command>- tai <command>bzip2</command>-tiivistetty tar-arkisto.</para>  
+    <para lang="en">The most common archive format on Microsoft Windows systems is the archive created with <application>PKZIP</application> or <application>WinZip</application>.  </para>
+    <sect2 id="engrampa-intro-nonarchive">
+      <title>Tiivistetyt arkistoimattomat tiedostot</title> 
+      <para lang="en">A compressed non-archive file is a file that is created when you use <command>bzip2</command>, <command>gzip</command>, <command>lzip</command>, <command>lzop</command>, <command>compress</command> or <command>rzip</command> to compress a non-archive file. For example, <filename>file.txt.gz</filename> is created when you use <command>gzip</command> to compress <filename>file.txt</filename>.</para>
+      <para>Voit käyttää <application>Pakettienkäsittelyohjelma</application> tiivistettyjen arkistoimattomien tiedostojen luontiin, avaukseen ja purkamiseen.</para> 
+    </sect2>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="engrampa-get-start">
+    <title>Aloittaminen</title>
+    <para>Tämä osio tarjoaa tietoa siitä, kuinka käynnistetään <application>Pakettienkäsittelyohjelma</application> ja kertoo <application>Pakettienkäsittelyohjelman</application> käyttöliittymästä.</para>
+
+<!-- ============= To Start Engrampa ============================ -->
+         <sect2 id="engrampa-to-start">
+                <title>Käynnistääksesi <application>Pakettienkäsittelyohjelman</application></title>
+                <para>Voit käynnistää <application>Pakettienkäsittelyohjelman</application> seuraavin tavoin:</para>
+                <variablelist>
+                <varlistentry>
+                <term><guimenu>Sovellukset</guimenu>-valikosta</term>
+                <listitem>
+                <para>Valitse <menuchoice><guisubmenu>Apuohjelmat</guisubmenu><guimenuitem>Pakettienkäsittelyohjelma</guimenuitem></menuchoice>.</para>
+                </listitem>
+                </varlistentry>
+                <varlistentry>
+                <term>Komentoriviltä</term>
+                <listitem>
+                <para>Suorita seuraava komento: <command>engrampa</command></para>
+                </listitem>
+                </varlistentry>
+                </variablelist>
+        </sect2>
+
+         <sect2 id="engrampa-when-start">
+                <title>Kun käynnistät <application>Pakettienkäsittelyohjelman</application>.</title>
+                <para>Kun käynnistät <application>Pakettienkäsittelyohjelman</application>, seuraavanlainen ikkuna aukeaa:</para>
+
+                <figure id="engrampa-FIG-main-window">
+                  <title><application>Pakettienkäsittelyohjelma</application>-ikkuna</title>
+                  <screenshot>
+                         <mediaobject lang="en">
+                                <imageobject>
+                                  <imagedata fileref="figures/engrampa_main_window.png" format="PNG"/>
+                                         </imageobject>
+                                <textobject> <phrase>Shows Engrampa main window.</phrase>
+                                </textobject>
+                        </mediaobject>
+                  </screenshot>
+                </figure>
+
+                <para><application>Pakettienkäsittelyohjelma</application>-ikkuna sisältää seuraavat osat:</para>
+                <variablelist>
+                  <varlistentry> <term>Valikkorivi</term>
+                         <listitem>
+                                <para>Valikkorivin valikot sisältävät kaikki komennot, joita tarvitset arkistojen käsittelyyn <application>Pakettienkäsittelyohjelmalla</application>.</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Työkalupalkki</term>
+                         <listitem>
+                                <para>Työkalupalkki sisältää joukon komentoja, joihin pääset myös valikkoriviltä. <application>Pakettienkäsittelyohjelma</application> näyttää työkalupalkin oletuksena. Piilottaaksesi sen, valitse <menuchoice><guimenu>Näytä</guimenu><guimenuitem>Työkalupalkki</guimenuitem></menuchoice>. Näyttääksesi työkalupalkin, valitse jälleen <menuchoice><guimenu>Näytä</guimenu><guimenuitem>Työkalupalkki</guimenuitem></menuchoice>.</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Kansiopalkki</term>
+                         <listitem>
+                                <para>Kansiopalkki mahdollistaa arkiston kansioissa suunnistamisen. <application>Pakettienkäsittelyohjelma</application> näyttää kansiopalkin vain, kansionäkymässä. Lisätietoa: <xref linkend="engrampa-view-type-folder"/></para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Näyttöalue</term>
+                         <listitem>
+                                <para>Näyttöalue näyttää arkiston sisällön.</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Tilarivi</term>
+                         <listitem>
+                                <para>Tilarivi näyttää ajankohtaista tietoa <application>Pakettienkäsittelyohjelman</application> toiminnasta ja arkiston sisällöstä. <application>Pakettienkäsittelyohjelma</application> näyttää tilarivin oletuksena. Piilottaaksesi sen, valitse <menuchoice><guimenu>Näytä</guimenu><guimenuitem>Tilarivi</guimenuitem></menuchoice>. Näyttääksesi tilarivin valitse jälleen <menuchoice><guimenu>Näytä</guimenu><guimenuitem>Tilarivi</guimenuitem></menuchoice>.</para>
+                         </listitem>
+                  </varlistentry>
+                </variablelist>
+                <para>Kun napsautat oikealla hiirenpainikkeella <application>Pakettienkäsittelyohjelma</application>-ikkunaa, ikkuna näyttää ponnahdusvalikon. Ponnahdusvalikko sisältää yleisimmät arkistoihin liittyvät arkistokomennot.</para>
+
+     <sect3 id="engrampa-bookmarks">
+        <title>Tiedostojärjestelmän selaus</title>
+        <para>Muutamat <application>Pakettienkäsittelyohjelman</application>-valintaikkunat (<guilabel>Uusi</guilabel>, <guilabel>Avaa</guilabel>, <guilabel>Pura</guilabel>,...) mahdollistavat tietokoneesi tiedostojen ja kansioiden selauksen. Käytä <ulink type="help" url="help:user-guide?filechooser-open">Työpöytäkäyttäjän opasta</ulink> apuna lukeaksesi lisää tiedostonselausvalintaikkunoista.</para>
+        <para>Voit myös käyttää Työpöytäkäyttäjän oppaan <ulink type="help" url="help:user-guide?caja-bookmarks">Kirjanmerkit-osiota</ulink> lukeaksesi, kuinka käytät <guilabel>Sijainnit</guilabel>-paneelia päästäksesi suosikkikohteisiisi.</para>
+     </sect3>
+   </sect2>
+</sect1>
+
+
+
+<!-- ======= Working with archives ============= --> 
+
+<sect1 id="engrampa-working">
+      <title>Arkistojen käsittely</title>
+      <para>Kun käytät <application>Pakettienkäsittelyohjelmaa</application> arkistojen käsittelyyn se tallentaa kaikki muutokset levylle välittömästi. Esimerkiksi, jos poistat tiedoston arkistosta <application>Pakettienkäsittelyohjelma</application> poistaa myös tiedoston heti, kun napsautat <guibutton>OK</guibutton>. Tämä käytös eroaa useista sovelluksista, jotka tallentavat muutokset levylle ainoastaan silloin, kun poistut sovelluksesta tai valitset valikosta <guimenuitem>Tallenna</guimenuitem>.</para>
+      <para>Jos arkisto on erittäin suuri tai sinulla on hidas järjestelmä, osaan arkistointitoiminnoista voi kulua paljon aikaa. Keskeyttääksesi nykyisen toiminnon, paina <keycap>Esc</keycap>. Voit myös valita <menuchoice><guimenu>Näytä</guimenu><guimenuitem>Pysäytä</guimenuitem></menuchoice> tai napsauta <guibutton>Pysäytä</guibutton> työkalupalkista.</para>      
+      <para lang="en">
+        In <application>Archive Manager</application>, you can perform the same action in several ways. For example, you can open an archive in the following ways:
+                  <informaltable frame="all">
+                    <tgroup cols="2" colsep="1" rowsep="1">
+                      <colspec colname="COLSPEC0" colwidth="50*"/>
+                      <colspec colname="COLSPEC1" colwidth="50*"/>
+                      <thead>
+                        <row valign="top">
+                          <entry colname="COLSPEC0">
+                            <para lang="en">UI Component</para></entry>
+                          <entry colname="COLSPEC1" align="left"> 
+                            <para lang="en">Action</para></entry>
+                        </row>
+                      </thead>
+                      <tbody>
+                        <row valign="top">               
+                          <entry><para lang="en">Window</para></entry>
+                          <entry><para lang="en">Drag an archive into the <application>Archive Manager</application> window from another application such as a file manager.</para></entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Menubar</para></entry>
+                          <entry><para lang="en">Choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Open</guimenuitem></menuchoice>.</para>
+           <para lang="en">If you have recently opened the archive, it will be listed directly in the <menuchoice><guimenu>Archive</guimenu></menuchoice> menu.</para> 
+</entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Toolbar</para></entry>
+                          <entry><para lang="en">Click on the <guibutton>Open</guibutton> toolbar button.</para>
+           <para lang="en">If you have recently opened the archive, click on the down arrow near the <guibutton>Open</guibutton> toolbar button.</para></entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Right-click popup menu</para></entry>
+                          <entry><para lang="en">Right-click on the archive, then choose <guilabel>Open</guilabel> from the popup menu.</para></entry>
+                        </row>
+                        <row valign="top">               
+                          <entry><para lang="en">Shortcut keys</para></entry>
+                          <entry><para lang="en">Press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo>.</para></entry>
+                        </row>
+                      </tbody>
+                    </tgroup>
+                  </informaltable>
+      </para>
+      <para>Tämä käyttöopas ohjeistaa valikkorivin toiminnallisuutta.</para>
+
+    <sect2 id="engrampa-pattern">
+      <title>Tiedostonimilausekkeet</title>
+      <para lang="en"><application>Archive Manager</application> enables you to add, extract, or delete several files at once. To apply an action to all files that match a certain pattern, enter the pattern in the text box. The pattern can include standard wildcard symbols such as <keycap>*</keycap> to match any string, and <keycap>?</keycap> to match any single symbol. You can enter several patterns separated by semicolons. <application>Archive Manager</application> applies the action to all files that match at least one of the patterns. The examples in the following table show how to use filename patterns to select files.
+      </para>
+      <informaltable frame="all">
+        <tgroup cols="2" colsep="1" rowsep="1">
+          <colspec colname="COLSPEC0" colwidth="50*"/>
+          <colspec colname="COLSPEC1" colwidth="50*"/>
+          <thead>
+            <row valign="top">
+              <entry colname="COLSPEC0">
+                <para>Lauseke</para></entry>
+              <entry colname="COLSPEC1" align="left"> 
+                <para>Täsmäävät tiedostot</para></entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">               
+              <entry><para lang="en"><filename>*</filename></para></entry>
+              <entry align="left"><para>Kaikki tiedostot</para></entry>
+            </row>
+            <row valign="top">               
+              <entry><para lang="en"><filename>*.tar*</filename></para></entry>
+              <entry align="left"><para>Kaikki <filename>tar</filename>-päätteiset tiedostot, mukaan lukien ne, joissa <filename>tar</filename>-päätteen jälkeen on myös muita merkkejä. Esimerkiksi <filename>tiedostonimi.tar.gz</filename></para></entry>
+            </row>
+            <row valign="top">               
+              <entry><para lang="en"><filename>*.jpg; *.jpeg</filename></para></entry>
+              <entry align="left"><para>Kaikki <filename>jpg</filename>- ja <filename>jpeg</filename>-loppuiset tiedostot.</para></entry>
+            </row>
+            <row valign="top">               
+              <entry><para lang="en"><filename>file?.gz</filename></para></entry>
+              <entry align="left"><para>Kaikki <filename>gz</filename>-päätteiset tiedostot, joissa on nimen "tiedosto" jälkeen jokin yksittäinen merkki, esim. <filename>file2.gz</filename>, <filename>filex.gz</filename>.</para></entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </sect2>
+
+<!-- ======= To open an archive ============= --> 
+
+<sect2 id="engrampa-open">
+      <title>Arkiston avaaminen</title>
+      <para lang="en">
+	To open an archive, perform the following steps:
+        <orderedlist>
+          <listitem>
+           <para lang="en">Choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Open</guimenuitem></menuchoice> to display the <guilabel>Open</guilabel> dialog. Alternatively press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo>, or click <guibutton>Open</guibutton> in the toolbar.</para> 
+          </listitem>
+          <listitem>
+           <para lang="en">Select the archive that you want to open.</para> 
+          </listitem>
+          <listitem>
+           <para lang="en">Click <guibutton>Open</guibutton>.</para> 
+          </listitem>
+        </orderedlist>
+      </para>
+      <para lang="en"><application>Archive Manager</application> automatically determines the archive type, and displays:
+        <itemizedlist>
+          <listitem>
+            <para lang="en">The archive name in the window titlebar</para>
+          </listitem>
+          <listitem>
+            <para lang="en">The archive contents in the display area</para>
+          </listitem>
+          <listitem>
+            <para lang="en">The number files and folders (objects) in the current location, and their size when uncompressed, in the statusbar</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>Avataksesi toisen arkiston, valitse jälleen <menuchoice><guimenu>Arkisto</guimenu><guimenuitem>Avaa</guimenuitem></menuchoice>. Jokainen arkisto aukeaa uuteen ikkunaan. Et voi avata toista arkistoa samaan ikkunaan.</para>
+      <para>Jos yrität avata arkistoa, joka on muodossa, jota <application>Pakettienkäsittelyohjelma</application> ei tunnista, sovellus näyttää virheilmoituksen. Lisätietoa tuetuista arkistomuodoista: <xref linkend="engrampa-intro"/>.</para>
+  </sect2>
+
+<!-- ======= Selecting files in an archive  ============= --> 
+    <sect2 id="engrampa-select-files">
+      <title>Valitse tiedostot arkistoon</title>
+    <para>Valitaksesi kaikki tiedostot arkistoon, valitse <menuchoice><guimenu>Muokkaa</guimenu><guimenuitem>Valitse kaikki</guimenuitem></menuchoice> tai paina <keycombo><keycap>Ctrl</keycap><keycap>A</keycap></keycombo>.</para>
+      <para>Poistaaksesi valinnan kaikista arkiston tiedostoista, valitse <menuchoice><guimenu>Muokkaa</guimenu><guimenuitem>Älä valitse mitään</guimenuitem></menuchoice> tai paina <keycombo><keycap>Vaihto</keycap><keycap>Ctrl</keycap><keycap>A</keycap></keycombo>.</para>
+    </sect2>
+
+  <!-- =========== Extracting Files From an Archive ==================== -->
+
+  <sect2 id="engrampa-extract"> 
+    <title>Tiedostojen purkaminen arkistosta</title> 
+    <para lang="en">
+	To extract files from an open archive, perform the following steps:
+        <orderedlist>
+        <listitem><para lang="en">
+        Select the files that you want to extract.  To select more files, press-and-hold <keycap>Ctrl</keycap> and click on the files you want to select.</para>
+        </listitem>
+        <listitem><para lang="en">
+        Choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Extract</guimenuitem></menuchoice> to display the <guilabel>Extract</guilabel> dialog.  Alternatively click <guibutton>Extract</guibutton> in the toolbar.</para>
+        </listitem>
+        <listitem><para lang="en">
+        Select the folder where <application>Archive Manager</application> extracts the files.</para>
+        </listitem>
+        <listitem><para lang="en">
+        Select the required extract options. For more information about the extract options, see <xref linkend="engrampa-extract-options"/>.</para>
+        </listitem>
+        <listitem><para lang="en">
+        Click <guibutton>Extract</guibutton>.</para>
+        <note>
+          <para lang="en">
+            If all of the files in the archive are protected by a password, and you have not specified it, <application>Archive Manager</application> asks you to enter the password.
+          </para>
+          <para lang="en">
+            If some but not all of the files in the archive are protected by a password, and you have not specified the password, <application>Archive Manager</application> does not ask for a password. However, <application>Archive Manager</application> extracts only the unprotected files.
+          </para>
+          <para lang="en">
+            For more information about passwords, see <xref linkend="engrampa-encrypt-files"/>.
+          </para>
+        </note>
+        </listitem>
+        </orderedlist>
+        </para>
+      <para><application>Pakettienkäsittelyohjelma</application> tarjoaa myös tapoja tiedostojen purkamiseen avaamatta tiedostonhallintaikkunaa <application>Pakettienkäsittelyohjelma</application>-ikkunaan. Lisätietoa: <xref linkend="engrampa-fmgr"/></para>
+    <para>Purkutoiminto purkaa <emphasis>kopion</emphasis> määritetyistä arkiston tiedostoista. Puretuilla tiedostoilla on samat oikeudet ja muokkauspäivämäärä kuin alkuperäisillä tiedostoilla arkistossa.</para>
+    <para>Purkutoiminto ei muuta arkiston sisältöä. Lisätietoa tiedostojen poistamisesta arkistosta: <xref linkend="engrampa-delete-files"/></para>
+  </sect2>
+    
+<!-- ======= Closing the Archive ============= --> 
+  <sect2 id="engrampa-archive-close">
+    <title>Arkiston sulkeminen</title>
+    <para lang="en">To close the current archive and the current <application>Archive Manager</application> window, choose <menuchoice> <guimenu>Archive</guimenu> <guimenuitem>Close</guimenuitem> </menuchoice>, or press <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>.
+    </para>
+    <note>
+      <para>Ei ole mahdollista sulkea arkistoa sulkematta <application>Pakettienkäsittelyohjelma</application>-ikkunaa.</para>
+    </note>
+  </sect2>
+</sect1>
+
+
+<!-- =============  Creating Archives ============================= -->
+<sect1 id="engrampa-creating"> 
+    <title>Arkistojen luonti</title> 
+    <para>Olemassa olevien arkistojen avaamisen lisäksi, voit myös luoda uusia arkistoja <application>Pakettienkäsittelyohjelmalla</application>.</para>
+    <sect2 id="engrampa-create"> 
+    <title>Arkiston luominen</title> 
+    <para lang="en">
+      To create an archive, perform the following steps:
+      <orderedlist>
+        <listitem>
+          <para lang="en">Choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>New</guimenuitem></menuchoice> to display the <guilabel>New</guilabel> dialog.  Alternatively press <keycombo><keycap>Ctrl</keycap><keycap>N</keycap></keycombo>, or click <guibutton>New</guibutton> in the toolbar.
+          </para>
+        </listitem>
+        <listitem>
+          <para lang="en">Specify the folder where <application>Archive Manager</application> places the new archive clicking on the entry in the <guilabel>Save in folder</guilabel> drop-down list. If the folder is not present in list, click on <guilabel>Browse for other folders</guilabel>, and select the folder. Alternatively, enter the path in the <guilabel>Name</guilabel> text box.
+          </para>
+        </listitem>
+        <listitem>
+          <para lang="en">Enter the name of the new archive, including the file extension, in the <guilabel>Name</guilabel> text box.  Alternatively you can specify the archive name without extension, and then select the archive type from the <guilabel>Archive type</guilabel> drop-down menu, this way the extension will be added automatically.  
+          </para>
+        </listitem>
+        <listitem><para lang="en">
+        Select the required create options clicking on <guilabel>Other Options</guilabel>. For more information about the create options, see <xref linkend="engrampa-create-options"/>.</para>
+        </listitem>
+        <listitem>
+          <para lang="en">Click <guibutton>New</guibutton>. <application>Archive Manager</application> creates an empty archive, but does not yet write the archive to disk. 
+          </para>
+        </listitem>
+        <listitem>
+          <para lang="en">Add files to the new archive as described in <xref linkend="engrampa-add-files"/>.  
+                <note>
+                  <para lang="en"><application>Archive Manager</application> writes a new archive to disk only when the archive contains at least one file. If you create a new archive and quit <application>Archive Manager</application> before you add any files to the archive, <application>Archive Manager</application> deletes the archive.
+                  </para>
+                </note>
+          </para>
+        </listitem>
+      </orderedlist>
+    </para>
+</sect2>
+
+    <!-- ======= Adding files to an archive  ============= --> 
+  <sect2 id="engrampa-add-files">
+    <title>Tiedostojen lisääminen arkistoon</title>
+    <para lang="en">
+      To add files to an archive, perform the following steps:
+      <orderedlist>
+         <listitem>
+           <para lang="en">Decide where in the archive you want to add the files, then open that location in the archive.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Add Files</guimenuitem></menuchoice> to display the <guilabel>Add Files</guilabel> dialog, or click <guibutton>Add Files</guibutton> in the toolbar.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Select the files that you want to add.  To select more files press-and-hold <keycap>Ctrl</keycap> and click the files.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Click <guibutton>Add</guibutton>. <application>Archive Manager</application> adds the files to the current folder in the archive.
+          </para> 
+         </listitem>
+      </orderedlist>
+    </para>
+    <para>Et voi lisätä kansioita arkistoon <guilabel>Lisää tiedostoja</guilabel>-valintaikkunassa. Lisätietoa kansion lisäämisestä: <xref linkend="engrampa-add-folder"/>.</para>
+    <para><guilabel>Lisää tiedostoja</guilabel>-valintaikkuna tarjoaa <guilabel>Lisää vain jos uudempi</guilabel>-valitsimen. Lisätietoa: <xref linkend="engrampa-add-options"/></para>
+    <para>Voit myös lisätä tiedostoja arkistoon tiedostonhallintaikkunassa, avaamatta <application>Pakettienkäsittelyohjelma</application>-ikkunaa. Lisätietoa: <xref linkend="engrampa-fmgr"/></para>
+    <para>Lisää-toiminto lisää <emphasis>kopion</emphasis> valituista tiedostoista tai kansioista arkistoon. <application>Pakettienkäsittelyohjelma</application> ei poista alkuperäisiä tiedostoja, jotka jäävät muuttumattomiksi tiedostojärjestelmään. Arkistoon lisättävillä kopioilla on samat oikeudet ja muokkauspäivämäärä kuin alkuperäisilläkin tiedostoilla.</para>
+    </sect2>
+
+<!-- ======= Adding files - Adding folder  ============= --> 
+    <sect2 id="engrampa-add-folder">
+      <title>Kansion lisäys arkistoon</title>
+    <para lang="en">
+      To add a folder to an archive, perform the following steps:
+      <orderedlist>
+         <listitem>
+           <para lang="en">Decide where in the archive you want to add the files, then open that location in the archive.</para>
+         </listitem>
+         <listitem>
+           <para lang="en">Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Add a Folder</guimenuitem></menuchoice> to display the <guilabel>Add a Folder</guilabel> dialog.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Select the folder that you want to add.</para> 
+         </listitem>
+         <listitem>
+           <para lang="en">Click <guibutton>Add</guibutton>. <application>Archive Manager</application> adds the folder to the current folder in the archive.
+          </para> 
+         </listitem>
+      </orderedlist>
+    </para>
+    <para><guilabel>Lisää kansio</guilabel>-valintaikkuna tarjoaa muutamia lisäasetuksia. Lisätietoa: <xref linkend="engrampa-add-options"/></para>
+    </sect2>
+
+  <!-- ======= Converting an Archive to Another Format ============= --> 
+  <sect2 id="engrampa-convert-archive">
+    <title>Arkiston muuntaminen toiseen muotoon</title>
+    <para>Muuntaaksesi arkiston toiseen muotoon ja tallentaaksesi uuden tiedoston, toimi seuraavasti:</para>
+    <orderedlist>
+      <listitem>
+        <para>Avaa arkisto, jonka haluat muuntaa.</para>
+      </listitem>
+      <listitem>
+        <para>Valitse <menuchoice><guimenu>Arkisto</guimenu><guimenuitem>Tallenna nimellä</guimenuitem></menuchoice> avataksesi <guilabel>Tallenna</guilabel>-valintaikkunan.</para>
+      </listitem>
+      <listitem>
+        <para>Syötä uuden arkiston nimi <guilabel>Nimi</guilabel>-tekstikenttään.</para>
+      </listitem>
+      <listitem>
+        <para>Valitse uusi arkistotyyppi <guilabel>Arkistotyyppi</guilabel>-pudotuslistasta. Vaihtoehtoisesti, syötä tiedostopääte <guilabel>Nimi</guilabel>-tekstikenttään ja valitse <guilabel>Automaattinen</guilabel> <guilabel>Arkistotyyppi</guilabel>-pudotuslistasta.</para>
+      </listitem>
+      <listitem>
+        <para lang="en">Select the required create options clicking on <guilabel>Other Options</guilabel>. For more information about the create options, see <xref linkend="engrampa-create-options"/>.
+        </para>
+      </listitem>      
+      <listitem>
+        <para>Napsauta <guibutton>Tallenna</guibutton>.</para>
+        <note>
+          <para>Jo kaikki arkiston tiedostot suojataan salasanalla, etkä ole määrittänyt sitä, <application>Pakettienkäsittelyohjelma</application> kysyy sinulta salasanan.</para>
+          <para>Jos osa (ei kaikki) arkiston tiedostoista on suojattu salasanalla, etkä ole määrittänyt sitä, <application>Pakettienkäsittelyohjelma&gt;</application> ei kysy salasanaa. Kuitenkaan <application>Pakettienkäsittelyohjelma</application> kopioi ainoastaan suojaamattomat tiedostot uuteen arkistoon.</para>
+          <para>Lisätietoa salasanoista: <xref linkend="engrampa-encrypt-files"/>.</para>
+        </note>
+      </listitem>
+    </orderedlist>
+  </sect2>
+</sect1>
+
+<!-- ======= Operations on Archive Contents ============= --> 
+<sect1 id="engrampa-modify-contents">
+  <title>Arkiston sisällön muokkaus</title>
+  <para>Voit muokata arkiston sisältöä muutamin eri tavoin.</para>
+
+<!-- ======= Encrypting files in an archive  ============= --> 
+    <sect2 id="engrampa-encrypt-files">
+      <title>Salaa arkiston tiedostoja</title>
+    <para>Turvallisuussyistä voit haluta salata arkistoon lisättävät tiedostot.</para>
+      <para>Jos arkistomuoto tukee salausta, voit määrittää salasanan salataksesi arkistoon lisättävät tiedostot.</para>
+      <note>
+        <para>Toistaiseksi, vain 7-Zip, ZIP, RAR ja ARJ-arkistot tukevat salausta.</para>
+      </note>
+     <para>Määrittääksesi salasanan tiedostojen salaukseen, toimi seuraavasti:</para>
+       <orderedlist>
+          <listitem><para lang="en">Choose <menuchoice><guimenu>Edit</guimenu> <guimenuitem>Password</guimenuitem></menuchoice> to display the <guilabel>Password</guilabel> dialog.</para></listitem> 
+<listitem><para>Syötä salasana <guilabel>Salasana</guilabel>-tekstikenttään.</para></listitem>
+<listitem><para>Napsauta <guibutton>OK</guibutton>.</para></listitem>
+       </orderedlist>
+    <para><application>Pakettienkäsittelyohjelma</application> käyttää salasanaa arkiston nykyisten tiedostojen salaukseen ja salauksen purkuun tiedostoja purettaessa. <application>Pakettienkäsittelyohjelma</application> poistaa salasanan, kun suljet arkiston.</para>
+      <para>Tietoa siitä, miten tarkistat, sisältääkö arkisto salattuja tiedostoja, katso <xref linkend="engrampa-extra-info"/>.</para>
+      <note>
+      <para>Arkistointityökalujen tarjoama salaus on heikko ja turvaton. Jos turvallisuus on tärkeää, käytä vahvoja salaustyökaluja, kuten <ulink url="http://www.gnupg.org" type="http">GNU Privacy Guard</ulink>.</para>
+      </note>
+    </sect2>
+
+<!-- ======= Renaming files in an archive  ============= --> 
+  <sect2 id="engrampa-rename-files">
+    <title>Arkiston uudelleennimeäminen</title>
+    <para>Nimetäksesi arkistossa olevan tiedoston uudelleen, toimi seuraavasti:</para>
+      <orderedlist>
+        <listitem>
+          <para>Valitse tiedosto, jonka haluat nimetä uudelleen.</para>
+        </listitem>
+        <listitem>
+          <para lang="en">Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Rename</guimenuitem></menuchoice>, or press <keycombo><keycap>F2</keycap></keycombo>, to display the <guilabel>Rename</guilabel> dialog.</para>
+        </listitem>
+        <listitem>
+          <para>Anna tiedoston uusi nimi <guilabel>Uuden tiedoston nimi</guilabel>-tekstikenttään.</para>
+        </listitem>
+        <listitem>
+          <para>Napsauta <guibutton>Nimeä uudelleen</guibutton>.</para>
+        </listitem>
+      </orderedlist>
+  </sect2>
+
+<!-- ======= Copying files in an archive  ============= --> 
+  <sect2 id="engrampa-copy-files">
+    <title>Tiedostojen kopiointi arkistossa</title>
+    <para>Kopioidaksesi tiedostoja arkistossa, toimi seuraavasti:</para>
+      <orderedlist>
+        <listitem>
+          <para>Valitse tiedostot, jotka haluat kopioida.</para>
+        </listitem>
+        <listitem>
+          <para>Valitse <menuchoice><guimenu>Muokkaa</guimenu><guimenuitem>Kopioi</guimenuitem></menuchoice>, tai paina <keycombo><keycap>Ctrl</keycap><keycap>C</keycap></keycombo>.</para>
+        </listitem>
+        <listitem>
+          <para>Avaa sijainti, johon haluat kopioida tiedostot.</para>
+        </listitem>
+        <listitem>
+          <para>Valitse <menuchoice><guimenu>Muokkaa</guimenu><guimenuitem>Liitä</guimenuitem></menuchoice> tai paina <keycombo><keycap>Ctrl</keycap><keycap>V</keycap></keycombo>.</para>
+        </listitem>
+      </orderedlist>
+  </sect2>
+
+<!-- ======= Moving files in an archive  ============= --> 
+  <sect2 id="engrampa-move-files">
+    <title>Tiedostojen siirto arkistossa</title>
+    <para>Siirtääksesi tiedostoja arkistossa, toimi seuraavasti:</para>
+      <orderedlist>
+        <listitem>
+          <para>Valitse tiedostot, jotka haluat siirtää.</para>
+        </listitem>
+        <listitem>
+          <para>Valitse <menuchoice><guimenu>Muokkaa</guimenu><guimenuitem>Leikkaa</guimenuitem></menuchoice>, tai paina <keycombo><keycap>Ctrl</keycap><keycap>X</keycap></keycombo>.</para>
+        </listitem>
+        <listitem>
+          <para>Avaa sijainti, johon haluat laittaa siirrettävät tiedostot.</para>
+        </listitem>
+        <listitem>
+          <para>Valitse <menuchoice><guimenu>Muokkaa</guimenu><guimenuitem>Liitä</guimenuitem></menuchoice> tai paina <keycombo><keycap>Ctrl</keycap><keycap>V</keycap></keycombo>.</para>
+        </listitem>
+      </orderedlist>
+  </sect2>
+
+<!-- ======= Deleting files from an archive  ============= --> 
+  <sect2 id="engrampa-delete-files">
+    <title>Tiedostojen poisto arkistosta</title>
+    <para>Poistaaksesi tiedostoja arkistosta, toimi seuraavasti:</para>
+      <orderedlist>
+        <listitem>
+          <para>Valitse tiedostot, jotka haluat poistaa.</para>
+        </listitem>
+        <listitem>
+          <para>Valitse <menuchoice><guimenu>Muokkaa</guimenu><guimenuitem>Poista</guimenuitem></menuchoice> tai paina <keycap>Delete</keycap> avataksesi <guilabel>Poista</guilabel>-valintaikkunan.</para>
+        </listitem>
+        <listitem>
+          <para>Valitse yksi seuraavista poistovaihtoehdoista:</para>
+          <variablelist>
+            <varlistentry>
+              <term lang="en"><guilabel>All files</guilabel></term>
+              <listitem>
+                <para>Poista kaikki arkiston tiedostot.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term lang="en"><guilabel>Selected files</guilabel></term>
+              <listitem>
+                <para>Poistaa kaikki valitut tiedostot arkistosta.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term lang="en"><guilabel>Files</guilabel></term>
+              <listitem>
+                <para>Poistaa arkistosta kaikki lauseketta täsmäävät tiedostot. Lisätietoa: <xref linkend="engrampa-pattern"/></para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+        </listitem>
+        <listitem>
+          <para>Napsauta <guibutton>OK</guibutton>.</para>
+        </listitem>
+      </orderedlist>
+  </sect2>
+
+<!-- =============  Modify a File in an Archive ==================== -->
+  <sect2 id="engrampa-modify-archive-file"> 
+    <title>Arkiston tiedoston muokkaus</title> 
+    <para lang="en">
+      To modify a file in an archive perform the following steps:
+      <orderedlist>
+      <listitem><para lang="en">Double-click the file that you want to open. Alternatively right-click the file and choose <menuchoice><guimenuitem>Open</guimenuitem></menuchoice>.</para></listitem>
+      <listitem><para lang="en">Edit the file opened in step 1, and then save your changes.</para></listitem>
+      <listitem><para lang="en"><application>Archive Manager</application> shows a confirmation dialog, asking confirmation to update the file in the archive with the changes you made.</para></listitem>
+      <listitem><para lang="en">Click on <guilabel>Update</guilabel>.</para></listitem>
+      </orderedlist>
+    </para>
+    <para><application>Pakettienkäsittelyohjelma</application> käyttää järjestelmän määritelmiä tiedostotyypeille ja ohjelmille valitessaan sopivan sovelluksen tiedostotyypille, jonka avaa. Jos <application>Pakettienkäsittelyohjelma</application> ei voi määrittää sopivaa sovellusta, <application>Pakettienkäsittelyohjelma</application> näyttää <guilabel>Avaa ohjelmalla</guilabel>-valintaikkunan, josta voit valita sovelluksen.</para>
+    <sect3 id="engrampa-modifiy-archive-file-custom-app">
+    <title>Arkiston tiedoston muokkaus muulla sovelluksella</title>
+    <para lang="en">
+      You can use an application specified by you, rather than the default application, to modify a file. To use an external application to open a file:
+      <orderedlist>
+      <listitem><para lang="en">Right click the file.</para></listitem>
+      <listitem><para lang="en">Choose <menuchoice><guimenuitem>Open With...</guimenuitem></menuchoice>.</para></listitem>
+      </orderedlist>
+    </para>    
+    <para><application>Pakettienkäsittelyohjelma</application> näyttää <guilabel>Avaa tiedostoja</guilabel>-valintaikkunan, jossa on lista kaikista sovelluksista, jotka voivat avata määritetyn tyyppisiä tiedostoja. Valitaksesi yhden sovelluksen, kaksoisnapsauta sovelluksen nimeä tai napsauta sovelluksen nimeä kerran ja napsauta sitten <guibutton>Avaa</guibutton>. Vaihtoehtoisesti, syötä sovelluksen nimi <guilabel>Sovellus</guilabel>-tekstikenttään ja napsauta <guibutton>Avaa</guibutton> käynnistääksesi valitsemasi sovelluksen.</para>
+    <para>Kun sovellus käynnistyy, seuraa ohjeita vaiheesta 2, osiosta <xref linkend="engrampa-modify-archive-file"/>.</para>
+    </sect3>
+  </sect2>
+</sect1>
+
+
+<!-- ======= Viewing an archive ============= --> 
+<sect1 id="engrampa-view">
+  <title>Arkistojen katselu</title>
+  <para><application>Pakettienkäsittelyohjelma</application> mahdollistaa katsella arkistoa muutamin eri tavoin.</para>
+
+<!-- ======= Archive Properties ============= --> 
+    <sect2 id="engrampa-view-archive-properties">
+      <title>Arkiston ominaisuuksien katselu</title>
+      <para lang="en">To view the properties of an archive, choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Properties</guimenuitem></menuchoice> to display the <guilabel>Properties</guilabel> dialog. The <guilabel>Properties</guilabel> dialog displays the following information about the archive:
+            <variablelist>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Name</guilabel></term>
+	        <listitem><para lang="en">The name of the archive. 
+                </para></listitem>
+	      </varlistentry>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Location</guilabel></term>
+	        <listitem><para lang="en">The position of the archive in the file system. 
+                </para></listitem>
+	      </varlistentry>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Modified on</guilabel></term>
+	        <listitem><para lang="en">The date and time at which the archive was last modified. 
+                </para></listitem>
+	      </varlistentry>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Archive size</guilabel></term>
+	        <listitem><para lang="en">The size of the archive contents when compressed.
+                </para></listitem>
+	      </varlistentry>
+	      <varlistentry>
+	        <term lang="en"><guilabel>Content size</guilabel></term>
+	        <listitem><para lang="en">The size of the archive contents when uncompressed.  This information is also available in the statusbar.
+                </para></listitem>
+	      </varlistentry>
+
+	      <varlistentry>
+	        <term lang="en"><guilabel>Compression ratio</guilabel></term>
+	        <listitem><para lang="en">The compression ratio is a value used to describe the reduction in size of the data. For example a compression ratio of 5 means that the compressed archive is 1/5th the size of the original data. 
+                </para></listitem>
+	      </varlistentry>
+
+	      <varlistentry>
+	        <term lang="en"><guilabel>Number of files</guilabel></term>
+	        <listitem><para lang="en">The number of files in the archive. 
+                </para></listitem>
+	      </varlistentry>
+            </variablelist>
+      </para>
+    </sect2>
+ 
+
+<!-- ======= Archive Contents ============= --> 
+    <sect2 id="engrampa-view-archive-contents">
+      <title>Arkiston sisällön katselu</title>
+
+      <para lang="en"> <application>Archive Manager</application> displays the archive contents in the main window as a file list with the following columns:
+        <variablelist>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Name</guilabel></term>
+	    <listitem><para lang="en">The name of a file or folder in the archive. 
+            </para></listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Size</guilabel></term>
+	    <listitem><para lang="en">The size of the file when the file is extracted from the archive. For a folder, the <guilabel>Size</guilabel> field is blank. For information on how to display the size of the compressed file, see <xref linkend="engrampa-extra-info"/>.
+            </para></listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Type</guilabel></term>
+	    <listitem><para lang="en">The type of the file. For a folder, the value in the <guilabel>Type</guilabel> field is <literal>Folder</literal>.
+            </para></listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Date modified</guilabel></term>
+	    <listitem><para lang="en">The date on which the file was last modified. For a folder, the <guilabel>Date modified</guilabel> field is blank.
+            </para></listitem>
+	  </varlistentry>
+	  <varlistentry>
+	    <term lang="en"><guilabel>Location</guilabel></term>
+	    <listitem><para lang="en">The path to the file within the archive. This column is visible only when the window is in file view, when in folder view the location of the files is displayed in the <guilabel>Location</guilabel> text box of the folderbar. For more information about view types see <xref linkend="engrampa-view-type-folder"/>.
+            </para></listitem>
+	  </varlistentry>
+        </variablelist>
+      </para>
+      <para>Jos toinen ohjelma on muokannut arkistoa <application>Pakettienkäsittelyohjelman</application> avaamisen jälkeen, valitse <menuchoice><guimenu>Näytä</guimenu><guimenuitem>Päivitä</guimenuitem></menuchoice> päivittääksesi arkiston sisällön levyltä.</para>
+      <para>Lisätietoa <application>Pakettienkäsittelyohjelman</application> arkiston sisällön näyttötavan yksilöinnistä: <xref linkend="engrampa-archive-custom"/>.</para>
+      <para>Käytä vaativammille tehtäville järjestelmääsi asennettua sovellusta. Lisätietoa: <xref linkend="engrampa-view-archive-file"/>.</para>
+    </sect2>
+
+  <!-- =============  Viewing a File in an Archive ==================== -->
+  <sect2 id="engrampa-view-archive-file"> 
+    <title>Arkiston tiedoston katselu</title> 
+    <para>Katsellaksesi arkistossa olevaa tiedostoa, toimi <xref linkend="engrampa-modify-archive-file"/>-ohjeen mukaisesti. Jos tallennat avatun tiedoston, napsauta <guilabel>Peruuta</guilabel>, kun <application>Pakettienkäsittelyohjelma</application> kysyy vahvistusta tiedoston päivittämiseen arkistoon.</para>
+  </sect2>
+
+<!-- =============  Testing the Integrity of an Archive ==================== -->
+  <sect2 id="engrampa-test-archive"> 
+    <title>Arkiston eheyden tarkistus</title> 
+    <para lang="en">Sometimes an archive can be damaged for some reason, to check whether an archive is damaged, choose <menuchoice><guimenu>Archive</guimenu><guimenuitem>Test Integrity</guimenuitem></menuchoice>:
+            <itemizedlist>
+              <listitem>
+                <para lang="en">If the archive contains no errors, <application>Archive Manager</application> opens the <guilabel>Test Result</guilabel> dialog to list each file in the archive, and indicates that each file has status <literal>OK</literal>.
+                </para>
+              </listitem>
+              <listitem>
+                <para lang="en">If the archive contains some error, <application>Archive Manager</application> opens the <guilabel>Test Result</guilabel> dialog displaying the part of the archive contains the error.
+                </para>
+              </listitem>
+            </itemizedlist>
+    </para>
+    <para>Vahingoittunutta arkistoa voi olla mahdoton purkaa, joka voi aiheuttaa tiedon katoamista. Tästä syystä sinun tulisi tarkistaa arkiston eheys ennen alkuperäisten tiedostojen poistoa.</para>
+    <para>Jos arkisto sisältää salattuja tiedostoja <application>Pakettienkäsittelyohjelma</application> kysyy arkiston salasanaa ennen testin aloittamista.</para>
+    <note>
+      <para>Kaikki arkistotyypit eivät tue eheyden tarkistusta, seuraavien arkistotyyppien eheys voidaan tarkistaa: 7-Zip, RAR, ZIP, ACE, ARJ ja Zoo.</para>
+    </note>
+    <tip>
+      <title>Vinkki</title>
+      <para>Tarkistaaksesi ei-tuetun arkiston eheyden, pura kaikki arkiston tiedostot ja tarkista, että tehtävä suoriutuu onnistuneesti.</para>      
+    </tip>
+  </sect2>  
+</sect1>
+    
+<!-- ======= Customizing the Archive Display ============= --> 
+<sect1 id="engrampa-archive-custom">
+  <title>Arkistonäytön yksilöinti</title>
+  <para>Voit yksilöidä <application>Pakettienkäsittelyohjelman</application> tapaa näyttää arkiston sisältöä seuraavasti:</para>
+  <itemizedlist>
+    <listitem>
+      <para>Vaihda kansio- ja tiedostonäkymän välillä. Lisätietoa: <xref linkend="engrampa-view-type"/>.</para>
+    </listitem>
+    <listitem>
+      <para>Määritä järjestys, jossa tiedostot näytetään listassa. Lisätietoa: <xref linkend="engrampa-view-sort"/>.</para>
+    </listitem> 
+    <listitem>
+      <para>Näytä lisätietoja arkiston sisällöstä. Lisätietoa: <xref linkend="engrampa-extra-info"/>.</para>
+    </listitem> 
+  </itemizedlist>
+  <para><application>Pakettienkäsittelyohjelma</application> päivittää näytön välittömästi, kun teet jonkin yllä olevista mukautuksista.</para>
+
+  <sect2 id="engrampa-view-type">
+    <title>Näyttötyypin asettaminen</title>
+    <para>Jos arkisto sisältää kansioita, voit näyttää arkiston sisällön joko <link linkend="engrampa-view-type-folder">kansionäkymässä</link> tai <link linkend="engrampa-view-type-file">tiedostonäkymässä</link>.</para>
+
+    <sect3 id="engrampa-view-type-folder">
+      <title>Kansionäkymä</title>
+      <para><application>Pakettienkäsittelyohjelma</application> näyttää arkiston sisällön oletuksena kansionäkymässä. Valitaksesi kansionäkymän, valitse <menuchoice><guimenu>Näytä</guimenu><guimenuitem>Näytä kansiona</guimenuitem></menuchoice>.</para>
+      <para>Kansionäkymässä, <application>Pakettienkäsittelyohjelma</application> näyttää kansiot samalla tavalla kuin tiedostonhallinnassa. <application>Pakettienkäsittelyohjelma</application> merkitsee kansioita näyttöalueella kansiokuvakkeella ja kansion nimellä. Nähdäksesi kansion sisällön, kaksoisnapsauta kansiota.</para>
+      <para>Kansiopalkki, jonka <application>Pakettienkäsittelyohjelma</application> näyttää vain kansionäkymässä, sisältää osia, jotka esitellään seuraavassa taulukossa.</para>
+      <informaltable frame="all">
+        <tgroup cols="2" colsep="1" rowsep="1">
+          <colspec colname="COLSPEC0" colwidth="50*"/>
+          <colspec colname="COLSPEC1" colwidth="50*"/>
+          <thead>
+            <row valign="top">
+              <entry colname="COLSPEC0">
+                <para>Osa</para></entry>
+              <entry colname="COLSPEC1">
+                <para>Kuvaus</para></entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="figures/engrampa_leftarrow.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                      <phrase>Shows icon to navigate backwards in location history list.</phrase>
+                    </textobject>
+                  </inlinemediaobject>
+                </para>
+              </entry>
+              <entry>
+                <para>Napsauta tätä painiketta suunnistaaksesi taaksepäin sijaintihistorialistassa.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="figures/engrampa_rightarrow.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                      <phrase>Shows icon to navigate forwards in location history list.</phrase>
+                    </textobject>
+                  </inlinemediaobject>
+                </para>
+              </entry>
+              <entry>
+                <para>Napsauta tätä painiketta suunnistaaksesi eteenpäin sijaintihistorialistassa.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="figures/engrampa_uparrow.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                      <phrase>Shows icon to navigate up one level in folder tree.</phrase>
+                    </textobject>
+                  </inlinemediaobject>
+                </para>
+              </entry>
+              <entry>
+                <para>Napsauta tätä painiketta suunnistaaksesi ylöspäin kansiopuussa.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <inlinemediaobject>
+                    <imageobject>
+                      <imagedata fileref="figures/engrampa_home.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                      <phrase>Shows icon to open the top-level folder in the archive.</phrase>
+                    </textobject>
+                  </inlinemediaobject>
+                </para>
+              </entry>
+              <entry>
+                <para>Napsauta tätä painiketta avataksesi ylimmän kansiotason arkistossa.</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para lang="en">
+                  <guilabel>Location</guilabel>
+                </para>
+              </entry>
+              <entry>
+                <para>Tämä kenttä näyttää täydellisen hakemistopolun arkiston nykyiseen kansioon.</para>
+                <para>Vaihtaaksesi eri tasoon kansiopuussa, syötä uusi sijainti <guilabel>Sijainti</guilabel>-tekstikenttään ja paina <keycap>Return</keycap>. <application>Pakettienkäsittelyohjelma</application> näyttää uuden sijainnin sisällön.</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </sect3>
+
+    <sect3 id="engrampa-view-type-file">
+      <title>Tiedostonäkymä</title>
+      <para>Valitaksesi näkymän, valitse <menuchoice><guimenu>Näytä</guimenu><guimenuitem>Näytä kaikki tiedostot</guimenuitem></menuchoice>.</para>
+      <para>Tiedostonäkymässä <application>Pakettienkäsittelyohjelma</application> näyttää kaikki arkiston tiedostot, mukaanlukien alikansioiden tiedostot, yhtenä listana.</para>
+    </sect3>
+
+  </sect2>
+
+  <sect2 id="engrampa-view-sort">
+    <title>Tiedostolistauksen järjestäminen</title>
+    <para>Voit järjestää tiedostolistauksen nimen, koon, tyypin, muokkausajankohdan tai sijainnin mukaan.</para>
+    <para>Määrittääksesi järjestyssäännön, napsauta sitä vastaavan sarakkeen ylätunnistetta.</para>
+    <para>Järjestääksesi tiedostot käänteisesti, napsauta sarakkeen ylätunnistetta uudelleen.</para>
+    <para>Esimerkiksi, järjestääksesi tiedostolistauksen muokkausajankohdan mukaan, napsauta <guilabel>Muokattu</guilabel>-ylätunnistetta. <application>Pakettienkäsittelyohjelma</application> järjestää tiedostolistauksen uudelleen näyttänään tiedot muokkausajankohdan mukaan, alkaen uusimmista. Näyttääksesi vanhimmat tiedostot ensin, napsauta <guilabel>Muokattu</guilabel>-ylätunnistetta uudelleen.</para>
+    <para><application>Pakettienkäsittelyohjelma</application> suorittaa aina toissijaisen järjestyksen tiedostonimen perusteella. Yllä olevassa esimerkissä <application>Pakettienkäsittelyohjelma</application> järjestää nimen perusteella kaikki tiedostot, joilla on sama muokkausajankohta.</para>
+  </sect2>
+
+  <sect2 id="engrampa-extra-info">
+    <title>Lisätietojen katselu</title>
+      <para lang="en">To open the <guilabel>Last Output</guilabel> dialog, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Last Output</guimenuitem></menuchoice>: 
+            <itemizedlist>
+              <listitem>
+                <para lang="en">If you tested the archive in the current <application>Archive Manager</application> session, the <guilabel>Last Output</guilabel> dialog displays the results of the last test.
+                </para>
+              </listitem>
+              <listitem>
+                <para lang="en">If you did not test the archive in the current <application>Archive Manager</application> session, the <guilabel>Last Output</guilabel> dialog displays a list of all files in the archive, but does not indicate any status for the files. Instead, the <guilabel>Last Output</guilabel> dialog provides the compressed size of each file and the percentage of compression, and the date and time at which the file was last modified.
+                </para>
+              </listitem>
+            </itemizedlist>
+    </para>
+  </sect2>
+</sect1>
+
+<!-- ====== Using the File Manager Popup Menu to Manipulate an Archive ===== -->
+
+<sect1 id="engrampa-fmgr"> 
+    <title>Tiedostohallinnan käyttö arkistojen käsittelyssä</title> 
+    <para>Voit käyttää tiedostohallintaa lisätäksesi tiedostoja arkistoon ja purkaaksesi tiedostoja arkistosta.</para>
+
+<!-- ======= Adding files Using File Manager Menu  ============= --> 
+    <sect2 id="engrampa-fmgr-add">
+      <title>Lisää tiedostoja arkistoon tiedostohallinnalla</title>
+           <para lang="en">You can use the file manager to add files to an archive, in the following ways:
+           <itemizedlist>
+             <listitem><para lang="en">Drag the files into a <application>Archive Manager</application> window from a file manager window.</para>
+             </listitem>
+             <listitem><para lang="en">Use the file manager popup menu to add the files to the archive.</para>
+             </listitem>
+          </itemizedlist>
+           </para>
+      <para>Käyttääksesi tiedostohallinnan ponnahdusvalikkoa tiedostojen lisäämiseen arkistoon, toimi seuraavasti:</para>
+      <orderedlist>
+        <listitem><para>Napsauta oikealla hiirenpainikkeella tiedostoja tai kansioita tiedostohallinnassa.</para>
+        </listitem>
+        <listitem><para lang="en">Choose <guimenuitem>Create Archive</guimenuitem> from the file manager popup menu to display the <application>Archive Manager</application> <guilabel>Create Archive</guilabel> dialog.  </para>
+        </listitem>
+        <listitem><para>Syötä arkiston nimi ilman tiedostopäätettä <guilabel>Arkisto</guilabel>-tekstikenttään.</para>
+        </listitem>
+        <listitem><para>Valitse arkistotyyppi pudotuslistasta.</para>
+        </listitem>
+        <listitem><para>Valitse sijainti, jonne arkistotiedosto tallennetaan <guilabel>Sijainti</guilabel>-pudotuslistasta. Jos sijaintia ei löydy listasta, valitse <guilabel>Muu...</guilabel> valitaksesi sijainnin <guilabel>Sijainti</guilabel>-valintaikkunasta.</para>
+        </listitem>
+        <listitem><para lang="en">
+        Select the required create options clicking on <guilabel>Other Options</guilabel>. For more information about the create options, see <xref linkend="engrampa-create-options"/>.</para>
+        </listitem>
+        <listitem><para>Napsauta <guilabel>Luo</guilabel> lisätäksesi valitut tiedostot määritetyn arkiston juurikansioon.</para>
+                 <note><para>Valitaksesi erikoisempia lisäysasetuksia, sinun täytyy käynnistää <application>Pakettienkäsittelyohjelma</application>, kuten kohdassa <xref linkend="engrampa-to-start"/> neuvotaan.</para></note>
+        </listitem>
+      </orderedlist>
+    </sect2>
+
+<!-- ======= Extracting files Using File Manager Menu  ============= --> 
+  <sect2 id="engrampa-fmgr-extract">
+      <title>Pura tiedostoja arkistosta tiedostohallinnassa</title>
+           <para lang="en">You can use the file manager to extract files from an archive, in the following ways:
+           <itemizedlist>
+             <listitem><para lang="en">Drag the files from a <application>Archive Manager</application> window into a file manager window.</para>
+             </listitem>
+             <listitem><para lang="en">Use the file manager popup menu to extract the files from the archive.</para>
+             </listitem>
+          </itemizedlist>
+           </para>
+      <para>Käyttääksesi tiedostohallinnan ponnahdusvalikkoa tiedostojen purkamiseen arkistosta, toimi seuraavasti:</para>
+      <orderedlist>
+        <listitem><para>Napsauta oikealla hiirenpainikkeella arkistoa tiedostohallintaikkunassa.</para>
+        </listitem>
+        <listitem><para>Valitse <guimenuitem>Pura tähän</guimenuitem> purkaaksesi koko arkisto sisällön hakemistoon, jossa arkisto sijaitsee.</para>
+        </listitem>
+      </orderedlist>
+      <note><para>Jos arkisto on salattu, <application>Pakettienkäsittelyohjelma</application> pyytää syöttämään salasanan ennen tiedostojen purkua.</para></note>
+    </sect2>
+
+</sect1>
+
+<!-- ======= Create Archive Advanced Options  ============= --> 
+    <sect1 id="engrampa-create-options">
+      <title>Luontiasetukset</title>
+      <para lang="en">When creating a new archive, or when converting an existing archive to another format, click on <guilabel>Other Options</guilabel> to specify the following advanced options: 
+      </para>
+      <variablelist>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Password</guilabel></term>
+	  <listitem>
+	  <para>Syötä salasana, jota käytetään arkiston salaukseen. Jos salasanaa ei määritetä, arkistoa ei salata.</para>
+	  <note>
+	    <para lang="en">Not all archive types support encryption.  For more information about file encryption, see <xref linkend="engrampa-encrypt-files"/>.</para>
+	  </note>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>	  
+	  <term lang="en"><guilabel>Encrypt the file list too</guilabel></term>
+	  <listitem>
+	  <para>Jos asetus valitaan, salasana tarvitaan myös arkistossa olevan hakemistorakenteen sekä tiedosto- ja hakemistonimien katseluun, muussa tapauksessa salasanaa tarvitaan vain tiedostojen purkamiseen arkistosta. Tämä asetus on valittavissa vain jos salasana määritetään.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>	  
+	  <term lang="en"><guilabel>Split in volumes</guilabel></term>
+	  <listitem>
+	  <para>Valitse tämä asetus jakaaksesi arkiston useampiin halutun kokoisiin osiin.</para>
+	  <note>
+	    <para>Vain 7-Zip ja RAR-arkistot tukevat tätä toimintoa.</para>
+	  </note>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect1>
+
+<!-- ======= Add Advanced Options  ============= --> 
+    <sect1 id="engrampa-add-options">
+      <title>Lisää-asetukset</title>
+      <para><guilabel>Lisää tiedostoja</guilabel> ja <guilabel>Lisää kansio</guilabel>-valintaikkunat tarjoavat seuraavan asetuksen:</para>
+      <variablelist>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Add only if newer</guilabel></term>
+	  <listitem>
+            <para>Valitse tämä asetus lisätäksesi määritetyn tiedoston arkistoon, jos siellä ei jo ole kyseistä tiedostoa tai arkiston tiedosto on vanhempi kuin määritetty tiedosto. <application>Pakettienkäsittelyohjelma</application> käyttää muokkausajankohtaa määrittääkseen, mikä tiedostoista on uusin. Jos arkistossa oleva tiedosto on uusin, <application>Pakettienkäsittelyohjelma</application> ei lisää määritettyä tiedostoa arkistoon.</para>
+	    <para>Jos et valitse tätä asetusta, <application>Pakettienkäsittelyohjelma</application> lisää tiedoston arkistoon ja ylikirjoittaa mahdollisen arkistossa olevan tiedoston.</para>
+	    <tip>
+	      <title>Vinkki</title>
+	      <para lang="en">If you use <application>Archive Manager</application> to create backups, the <guilabel>Add only if newer</guilabel> option is very useful. For example, the archive <filename>backup.tar.gz</filename> contains a week-old backup of your home folder. To update the archive to contain a current backup of your home folder, perform the following steps: 
+                    <orderedlist>
+                      <listitem>
+                        <para lang="en">
+                          Open the <filename>backup.tar.gz</filename> archive in <application>Archive Manager</application>. 
+                        </para>
+                      </listitem>
+                      <listitem>
+                        <para lang="en">
+                          Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Add</guimenuitem></menuchoice> to display the <guilabel>Add a Folder</guilabel> dialog.</para> 
+                      </listitem>
+                      <listitem>
+                        <para lang="en">
+		          Select your home folder. 
+                        </para>
+                      </listitem>
+                      <listitem>
+                        <para lang="en">
+                          Select the <guilabel>Add only if newer</guilabel> option.
+                        </para>
+                      </listitem>
+                      <listitem>
+                        <para lang="en">
+                          Click <guibutton>Add</guibutton>. 
+                        </para>
+                      </listitem>
+                    </orderedlist>
+                </para>
+                <para><application>Pakettienkäsittelyohjelma</application> lisää arkistoon automaattisesti kaikki tiedostot, jotka olet luonut viimeisen viikon aikana ja päivittää kaikki tiedostot, joita olet muokannut viikon aikana. <application>Pakettienkäsittelyohjelma</application> ei kuitenkaan poista arkistosta tiedostoja, jotka olet poistanut viime viikolla. Arkiston päivitystehtävä on kuitenkin paljon nopeampi kuin täyden varmuuskopion luonti kotikansiostasi.</para>
+	  </tip>
+	</listitem>
+      </varlistentry>
+      </variablelist>
+      <sect2 id="engrampa-add-folder-options">
+      <title>Lisää kansioon -asetukset</title>
+      <para>Seuraavat asetukset ovat valittavissa <guilabel>Lisää kansio</guilabel>-valintaikkunassa ja mahdollistavat automaattisen tiedostojen valinnan ja lisäyksen annettujen vaatimusten mukaisesti:</para>
+      <variablelist>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Include files</guilabel></term>
+	  <listitem>
+            <para>Syötä tiedostonimilauseke tekstikenttään sisällyttääksesi lauseketta vastaavat tiedostot. Lisätietoa lausekkeista: <xref linkend="engrampa-pattern"/></para>
+          </listitem>
+	</varlistentry>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Exclude files</guilabel></term>
+	  <listitem>
+            <para>Syötä tiedostonimilauseke tekstikenttään jättääksesi pois lauseketta vastaavat tiedostot. Lisätietoa lausekkeista: <xref linkend="engrampa-pattern"/></para>
+          </listitem>
+	</varlistentry>
+        <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Exclude folders</guilabel></term>
+	  <listitem>
+            <para>Syötä tiedostonimilauseke tekstikenttään jättääksesi pois lauseketta vastaavat kansiot. Lisätietoa lausekkeista: <xref linkend="engrampa-pattern"/></para>
+          </listitem>
+	</varlistentry>      
+       <!-- ============= -->	
+      <varlistentry>
+	<term lang="en"><guilabel>Include subfolders</guilabel></term>
+	<listitem>
+          <para>Valitse tämä asetus lisätäksesi kaikki lauseketta vastaavat alikansiot nykyisestä kansiosta ja alikansioista.</para>
+          <note>
+          <para>Tiedostonimen, ei alikansion nimen, täytyy olla lauseketta vastaava.</para>
+          </note>
+	  <para>Jos et valitse tätä asetusta, <application>Pakettienkäsittelyohjelma</application> lisää vastaavat tiedostot vain nykyisestä kansiosta.</para>
+        </listitem>
+      </varlistentry>
+       <!-- ============= -->	
+     <varlistentry>
+	<term lang="en"><guilabel>Exclude folders that are symbolic links</guilabel></term>
+	  <listitem>
+            <para>Valitse tämä asetus karsiaksesi tiedostot, jotka ovat symbolisia linkkejä. Symboliset linkit ovat osoittimia tai pikakuvakkeita toisiin kansioihin.</para>
+	    <para>Jos et valitse tätä asetusta, <application>Pakettienkäsittelyohjelma</application> lisää lauseketta vastaavat tiedostot kansioista, jotka ovat symbolisia linkkejä.</para>
+          </listitem>
+	</varlistentry>
+       <!-- ============= -->
+     <varlistentry>
+	<term lang="en"><guibutton>Save Options</guibutton></term>
+	  <listitem>
+            <para>Napsauta tätä painiketta tallentaaksesi nykyiset valinnat lisäasetuksista tiedostoon. <guilabel>Tallenna asetukset</guilabel>-valintaikkuna tulee näkyviin. Syötä kuvaava tiedostonimi <guilabel>Asetusten nimi</guilabel>-tekstikenttään ja napsauta <guibutton>Tallenna</guibutton>.</para>
+          </listitem>
+	</varlistentry>
+       <!-- ============= -->	
+     <varlistentry>
+	<term lang="en"><guibutton>Load Options</guibutton></term>
+	  <listitem>
+            <para>Napsauta tätä painiketta ladataksesi tai poistaaksesi aikaisemmin tallennetut lisää-toiminnon lisäasetukset. <guilabel>Lataa asetukset</guilabel>-valintaikkuna näytetään.</para>
+            <itemizedlist>
+              <listitem>
+                <para lang="en">
+                  To load a set of options, select the options file in the list box, then click <guibutton>Apply</guibutton>. 
+                </para>
+              </listitem>
+              <listitem>
+                <para>Poistaaksesi asetuskokoelman, valitse asetustiedosto luettelokentästä ja napsauta <guibutton>Poista</guibutton>. Napsauta <guibutton>Sulje</guibutton> sulkeaksesi <guilabel>Lataa asetukset</guilabel>-valintaikkunan.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+	</varlistentry>
+       <!-- ============= -->	
+     <varlistentry>
+	<term lang="en"><guibutton>Reset Options</guibutton></term>
+	  <listitem>
+            <para>Napsauta tätä painiketta nollataksesi nykyiset lisää-toiminnon lisäasetukset oletusarvoihinsa.</para>
+          </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+<!-- ======= Extract Options  ============= --> 
+  <sect1 id="engrampa-extract-options">
+    <title>Purkuasetukset</title>
+      
+    <para><guilabel>Pura</guilabel>-valintaikkuna tarjoaa seuraavat asetukset, jotka tallennetaan, kun suljet <application>Pakettienkäsittelyohjelman</application>.</para>
+      <variablelist>
+       <!-- ============= -->	
+	<varlistentry>
+	  <term lang="en"><guilabel>Extract</guilabel></term>
+	  <listitem>
+            <para>Valitse purettavat tiedostot:</para>
+            <variablelist>
+              <varlistentry>
+                <term lang="en"><guilabel>All files</guilabel></term>
+                <listitem>
+                  <para>Pura kaikki tiedostot arkistosta</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Selected files</guilabel></term>
+                <listitem>
+                  <para>Pura valitut tiedostot arkistosta.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term lang="en"><guilabel>Files</guilabel></term>
+                <listitem>
+                  <para>Pura arkistosta kaikki lauseketta vastaavat tiedostot. Lisätietoa lausekkeista: <xref linkend="engrampa-pattern"/></para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+	  </listitem>
+	</varlistentry>
+	<!-- ============= -->	
+	<varlistentry>
+      <term lang="en"><guilabel>Actions</guilabel></term>
+        <listitem>
+          <para>Valitse seuraavat purkutoiminnot:</para>	
+          <variablelist>
+	        <varlistentry>
+	          <term lang="en"><guilabel>Re-create folders</guilabel></term>
+	          <listitem><para>Valitse tämä asetus rakentaaksesi uudelleen kansiorakenteen valittuja tiedostoja purettaessa.</para> 
+                <para lang="en">For example, you specify <filename>/tmp</filename> in the <guilabel>Filename</guilabel> text box and choose to extract all files. The archive contains a subfolder called <filename>doc</filename>. 
+                <itemizedlist>
+                  <listitem><para lang="en">
+                    If you select the <guilabel>Re-create folders</guilabel> option, <application>Archive Manager</application> extracts the contents of the subfolder to <filename>/tmp/doc</filename>.
+                    </para>
+                 </listitem>
+                 <listitem><para lang="en">
+                   If you do not select the <guilabel>Re-create folders</guilabel> option, <application>Archive Manager</application> does not create any subfolders. Instead, <application>Archive Manager</application> extracts all files from the archive, including files from subfolders, to <filename>/tmp</filename>.
+                   </para>
+                 </listitem>
+               </itemizedlist>
+	           </para></listitem>
+	         </varlistentry>
+             <!-- ============= -->	
+	         <varlistentry>
+	           <term lang="en"><guilabel>Overwrite existing files</guilabel> </term>
+	           <listitem><para>Valitse tämä asetus, jos haluat korvata kaikki kohdehakemistossa olevat tiedostot arkiston samannimisillä tiedostoilla.</para>
+	             <para>Jos et valitse tätä asetusta, <application>Pakettienkäsittelyohjelma</application> ei pura määritettyjä tiedostoja, jotka ovat saman nimisiä kuin kohdekansiossa.</para>
+	           </listitem>
+	         </varlistentry>
+             <!-- ============= -->	
+	         <varlistentry>
+	           <term lang="en"><guilabel>Do not extract older files</guilabel> </term>
+	           <listitem>
+	             <para>Tällä asetuksella on merkitystä vain, jos <guilabel>Korvaa olemassa olevat tiedostot</guilabel>-asetus on valittu.</para>
+	             <para>Valitse <guilabel>Älä pura vanhempia tiedostoja</guilabel> purkaaksesi valitut tiedostot vain, jos kohdehakemistossa ei ole valittua tiedostoa tai hakemistossa oleva tiedosto on vanhempi. <application>Pakettienkäsittelyohjelma</application> käyttää muokkausajankohtaa määrittääkseen, mikä tiedostoista on viimeisin. Jos arkistossa oleva versio on vanhempi, <application>Pakettienkäsittelyohjelma</application> ei pura valittua tiedostoa kohdehakemistoon.</para>
+	             <para>Jos et valitse <guilabel>Älä pura vanhempia tiedostoja</guilabel>-asetusta, kun <guilabel>Korvaa olemassa olevat tiedostot</guilabel>-asetus on käytössä, <application>Pakettienkäsittelyohjelma</application> purkaa valitun tiedoston arkistosta ja korvaa sillä aikaisemman tiedoston kohdehakemistossa.</para>
+	           </listitem>
+	         </varlistentry>
+	       </variablelist>
+	     </listitem>
+	   </varlistentry>
+     </variablelist>	
+  </sect1>
+
+
+</article>

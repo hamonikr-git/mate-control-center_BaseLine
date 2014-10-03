@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-tools-backlinks" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="addins#tools"/>
+    <desc>Ver las notas que enlazan con otras.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2013-08-02" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Retroenlaces</title>
+
+	<p>El complemento <gui>Retroenlaces</gui> está activado de manera predeterminada y le permite ver qué notas enlazan con la nota que está viendo actualmente. Estos enlaces se llaman <em>Retroenlaces</em></p>
+
+  <steps>
+    <title>Para crear y ver los retroenlaces de una nota:</title>
+    <item>
+      <p>Empiece a escribir el título de una nota en cualquier nota.</p>
+    </item>
+  </steps>
+  <note style="important">
+    <p>Para que <app>Tomboy</app> cree enlaces automáticamente a las notas existentes, el texto que escriba debe coincidir con el título de una nota que ya exista.</p>
+  </note>
+ </page>

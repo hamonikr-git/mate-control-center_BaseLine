@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>BraseroBurnOptions</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Libbrasero-burn Reference Manual">
+<link rel="up" href="ch01.html" title="API Reference for Libbrasero-burn">
+<link rel="prev" href="libbrasero-burn-BraseroSessionCfg.html" title="BraseroSessionCfg">
+<link rel="next" href="libbrasero-burn-BraseroBurn.html" title="BraseroBurn">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libbrasero-burn-BraseroSessionCfg.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Libbrasero-burn Reference Manual</th>
+<td><a accesskey="n" href="libbrasero-burn-BraseroBurn.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libbrasero-burn-BraseroBurnOptions.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libbrasero-burn-BraseroBurnOptions.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libbrasero-burn-BraseroBurnOptions"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libbrasero-burn-BraseroBurnOptions.top_of_page"></a>BraseroBurnOptions</span></h2>
+<p>BraseroBurnOptions</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libbrasero-burn-BraseroBurnOptions.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">                    <a class="link" href="libbrasero-burn-BraseroBurnOptions.html#BraseroBurnOptions" title="BraseroBurnOptions">BraseroBurnOptions</a>;
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         <a class="link" href="libbrasero-burn-BraseroBurnOptions.html#brasero-burn-options-new" title="brasero_burn_options_new ()">brasero_burn_options_new</a>            (<em class="parameter"><code><a class="link" href="libbrasero-burn-BraseroSessionCfg.html#BraseroSessionCfg" title="BraseroSessionCfg"><span class="type">BraseroSessionCfg</span></a> *session</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="libbrasero-burn-BraseroBurnOptions.html#brasero-burn-options-add-options" title="brasero_burn_options_add_options ()">brasero_burn_options_add_options</a>    (<em class="parameter"><code><a class="link" href="libbrasero-burn-BraseroBurnOptions.html#BraseroBurnOptions" title="BraseroBurnOptions"><span class="type">BraseroBurnOptions</span></a> *dialog</code></em>,
+                                                         <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *options</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="libbrasero-burn-BraseroBurnOptions.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="libbrasero-burn-BraseroBurnOptions.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="BraseroBurnOptions"></a><h3>BraseroBurnOptions</h3>
+<pre class="programlisting">typedef struct _BraseroBurnOptions BraseroBurnOptions;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="brasero-burn-options-new"></a><h3>brasero_burn_options_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         brasero_burn_options_new            (<em class="parameter"><code><a class="link" href="libbrasero-burn-BraseroSessionCfg.html#BraseroSessionCfg" title="BraseroSessionCfg"><span class="type">BraseroSessionCfg</span></a> *session</code></em>);</pre>
+<p>
+Creates a new <a class="link" href="libbrasero-burn-BraseroBurnOptions.html#BraseroBurnOptions" title="BraseroBurnOptions"><span class="type">BraseroBurnOptions</span></a> object.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>session</code></em> :</span></p></td>
+<td>a <a class="link" href="libbrasero-burn-BraseroSessionCfg.html#BraseroSessionCfg" title="BraseroSessionCfg"><span class="type">BraseroSessionCfg</span></a> object</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> object.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="brasero-burn-options-add-options"></a><h3>brasero_burn_options_add_options ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                brasero_burn_options_add_options    (<em class="parameter"><code><a class="link" href="libbrasero-burn-BraseroBurnOptions.html#BraseroBurnOptions" title="BraseroBurnOptions"><span class="type">BraseroBurnOptions</span></a> *dialog</code></em>,
+                                                         <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *options</code></em>);</pre>
+<p>
+Adds some new options to be displayed in the dialog.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>dialog</code></em> :</span></p></td>
+<td>a <a class="link" href="libbrasero-burn-BraseroBurnOptions.html#BraseroBurnOptions" title="BraseroBurnOptions"><span class="type">BraseroBurnOptions</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>options</code></em> :</span></p></td>
+<td>a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.19</div>
+</body>
+</html>

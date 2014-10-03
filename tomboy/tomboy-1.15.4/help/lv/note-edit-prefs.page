@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="edit-prefs" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Piezīmju rediģēšanas iestatījumi</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Piezīmju iestatījumi</title>
+ 
+ 	<p>Tu vari pamainīt noklusētos iestatījumus, kad raksti piezīmes. Lai nomainītu piezīmju iestatījumus, atver <gui>Tomboy Iestatījumi</gui>, spiežot labo peles klikšķi uz Tomboy ikonas savā panelī, uzdevumu joslā vai dokā. Izvēlies <gui>Iestatījumi</gui> un paņem <gui>Rediģēšana</gui> cilni. Kā arī, tu vari atvērt <gui>Tomboy Iestatījumi</gui> no <gui>Meklēt visās piezīmēs</gui> loga. No izvēlnes paņem  <guiseq><gui>Rediģēt</gui><gui>Iestatījumi</gui></guiseq>.</p>
+ 
+ <section id="spellcheck">
+   <title>Pareizrakstības pārbaude</title>
+   <p>Tomboy var pārbaudīt tevis uzrakstīto vārdu pareizrakstību rakstīšanas laikā. Pareizrakstības pārbaude ir aktivēta pēc noklusējuma un Tomboy pasvītros visus nepareizi uzrakstītos vārdus. Pareizrakstības ieteikumi ir redzami, ar peles labo pogu nospiežot uz nepareizi uzrakstītā vārda.</p>
+   
+   <p>Lai deaktivētu automātisko pareizrakstības pārbaudi, izmanto peli vai atstarpes taustiņu, lai atslēgtu <gui>Pareizrakstības pārbaude rakstīšanas laikā</gui> <gui>Rediģēšana</gui> cilnē, Tomboy iestatījumos.</p>
+   
+ </section>
+
+ <section id="wikiwords">
+   <title>WikiWords</title>
+   <p>Tomboy var iezīmēt vārdus, kuri <gui>KasIzskatāsŠādi</gui>. Bez atstarpēm savienojot kopā vairākus vārdus ar lielajiem sākumburtiem, Tomboy izcels vārdu un pārveidos to par saiti, līdzīgi kā strādā Wiki. Uzspiežot uz saites, tiks izveidota jauna piezīme ar WikiWord kā tās virsrakstu.</p>
+   
+   <p>WikiWords pēc noklusējuma ir deaktivēts. Lai aktivētu WikiWords, izmanto savu peli vai atstarpes taustiņu lai atzīmētu <gui>Izcelt WikiWords</gui>, <gui>Rediģēšana</gui> cilnē, Tomboy iestatījumos.</p>
+   
+ </section>
+
+ <section id="bullets">
+   <title>Automātisko aizzīmju saraksti</title>
+   <p>Tomboy var automātiski izveidot aizzīmju sarakstus. Šī iespēja ir aktivēta pēc noklusējuma. Sākot rindu ar <key>*</key> simbolu un pēc teksta uzrakstīšanasnospiežot <key>Enter</key>, automātiski tiek izveidots aizzīmju saraksts. Pēc vēl viena<key>Enter</key> nospiešanas, nākošā rinda arī sāksies ar aizzīmi.</p>
+   
+   <p>Lai deaktivētu automātisko aizzīmju sarakstu, izmanto peli vai atstarpes taustiņu, lai atceltu <gui>Aktivizēt automātisko aizzīmju sarakstu</gui>, <gui>Rediģēšana</gui> cilnē, Tomboy iestatījumos.</p>
+   
+ </section>
+
+ <section id="customfont">
+   <title>Pielāgoti fonti</title>
+   <p>Tu vari izvēlēties izmantot citu fontu vai fonta izmēru Tomboy lietotnē, atšķirīgu no noklusētās darbvirsmas fonta. Šī iespēja pēc noklusējuma ir deaktivēta.</p>
+   
+   <p>Lai aktivētu kādu citu fontu, izmanto peli vai atstarpes taustiņu, lai iezīmētu <gui>Lietot pielāgotu fontu</gui>, <gui>Rediģēšana</gui> cilnē, Tomboy iestatījumos.</p>
+
+   <p>Tad tu vari nospiest fonta pogu un tiks parādīts fonta dialoglodziņš, kurā var izvēlēties fontu, kuru vēlies izmantot, stilu, piemēram treknrakstu vai slīprakstu, kā arī fonta lielumu. Nospied <key>Labi</key>, lai saglabātu izvēli.</p>
+   
+ </section>
+
+ <section id="renamelinks">
+ 
+   <title>Saistīto Piezīmju Pārsaukšana</title>
+   <p>Tomboy automātiski izveido saites starp piezīmēm, kad tu ierakstīsi saglabātas piezīmes virsrakstu pašreizējā piezīmē. Ja tu mēģināsi pārsaukt piezīmi, kurai ir saites citās piezīmēs, tu vari izvēlēties noklusēto rīcību, kas jāveic Tomboy šādā gadījumā. Iespējamās rīcības ir šādas:</p>
+   
+   <list>
+     <item><p><gui>Jautāt man, kā rīkoties</gui>: Katru reizi, kad Tomboy konstatēs izmaiņas, tas piedāvās kādu no zemāk redzamajām rīcības iespējām.</p></item>
+     <item><p><gui>Nekad nepārsaukt saites</gui>: Tomboy nemainīs pārējās piezīmēs un dzēsīs saites starp šīm piezīmēm.</p></item>
+     <item><p><gui>Vienmēr pārsaukt saites</gui>: Tomboy automātiski pārsauks saites visās piezīmēs uz jauno virsrakstu.</p></item>
+   </list>
+   
+   <p>Izvēlies vienu no iepriekšminētajām iespējām no krītošā saraksta, pa labi no <gui>Pārsaucot saistīto piezīmi:</gui>  <gui>Rediģēšana</gui> cilnē, Tomboy Iestatījumos.</p>
+   
+ </section>
+
+<section id="newnotetemplate">
+  <title>Izveido jaunu piezīmju sagatavi</title>
+  <p>Tu vari izveidot jaunu sagatavi, kura tiks attēlota katru reizi, kad izveidosi jaunu piezīmi.</p>
+  
+  <p>Spied <gui>Atvērt jaunu piezīmes sagatavi</gui> pogu, <gui>Rediģēšana</gui> cilnē, Tomboy Iestatījumos. Tiks izveidota jauna, Tomboy piezīmei līdzīga sagatave. Aizvieto <gui>Aprakstiet savu piezīmi šeit.</gui> tekstu piezīmē ar tekstu, kuram vajadzētu būt jaunajā sagatavē. Aizver piezīmi, lai pabeigtu sagataves izveidi. Katru reizi, kad atvērsi jaunu piezīmi, šī sagatave tiks attēlota jaunajā piezīmē.</p>
+   
+</section>
+
+ </page>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="hotkeys" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Opcje klawiszy skrótów.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Klawisze skrótów</title>
+
+	<p>Klawisze skrótów pozwalają na szybki dostęp do notatek i funkcji programu również z innych programów pulpitu. Klawisze skrótów uruchamia się naciskając równocześnie kilka klawiszy.</p>
+	
+	<p>Aby włączyć klawisze skrótów, należy otworzyć okno <gui>Preferencje</gui>, klikając prawym przyciskiem myszy na ikonę programu w panelu GNOME, na pasku zadań systemu Microsoft Windows lub w docku systemu Mac OS X, a następnie wybrać w oknie <gui>Preferencje</gui> kartę <gui>Klawisze skrótów</gui>. Okno <gui>Preferencje</gui> można także otworzyć w oknie <gui>"Przeszukiwanie notatek"</gui>, wybierając z menu opcje <guiseq><gui>Edycja</gui><gui>Preferencje</gui></guiseq>.</p>	
+	
+	<p>Działania programu Tomboy, które można uruchomić za pomocą klawiszy skrótów:</p>
+	
+	<list>
+	  <item><p><gui>Wyświetlanie menu notatek</gui>: <keyseq><key>Alt</key><key>F12</key></keyseq></p></item>
+	  <item><p><gui>Otwarcie notatki "Start"</gui>: <keyseq><key>Alt</key><key>F11</key></keyseq></p></item>
+	  <item><p><gui>Utworzenie nowej notatki</gui>: Opcja domyślnie wyłączona. Aby utworzyć klawisz skrótu, należy wpisać w polu sekwencję klawiszy.</p></item>
+	  <item><p><gui>Otwarcie okna "Przeszukiwanie notatek"</gui>: Opcja domyślnie wyłączona. Aby utworzyć klawisz skrótu, należy wpisać w polu sekwencję klawiszy.</p></item>
+	</list>  
+	    
+ </page>

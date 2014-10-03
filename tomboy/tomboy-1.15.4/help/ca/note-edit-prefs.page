@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="edit-prefs" xml:lang="ca">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Preferències d'edició de les notes.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Preferències de les notes</title>
+ 
+ 	<p>Per canviar els paràmetres per defecte a mesura que escriviu al Tomboy. Obriu les <gui>Preferències del Tomboy</gui>, feu clic amb el botó secundari a la icona del Tomboy al quadre, a la barra de tasques o al llançador d'aplicacions, trieu <gui>Preferències</gui> i després seleccioneu la pestanya <gui>Edició</gui>. També podeu obrir les <gui>Preferències del Tomboy</gui> des del diàleg <gui>Cerca totes les notes</gui><guiseq><gui>Edita</gui><gui>Preferències</gui></guiseq>.</p>
+ 
+ <section id="spellcheck">
+   <title>Verificació de l'ortografia</title>
+   <p>El Tomboy pot verificar l'ortografia de les paraules a mesura que escriviu una nota. Per defecte la verificació ortogràfica està habilitada, així el Tomboy subratllarà qualsevol paraula que estigui mal escrita. Si feu clic amb el botó secundari del ratolí veureu suggeriments ortogràfics damunt de les paraules mal escrites.</p>
+   
+   <p>Per inhabilitar la verificació ortogràfica automàtica, utilitzeu el ratolí o la barra espaiadora per desactivar <gui>Verifica l'ortografia a mesura que escric</gui> a la pestanya <gui>Edició</gui> de les preferències del Tomboy.</p>
+   
+ </section>
+
+ <section id="wikiwords">
+   <title>WikiWords (Paraules wiki)</title>
+   <p>El Tomboy pot realçar les paraules <gui>ComAquesta</gui>. Si escriviu en majúscula diverses paraules juntes sense cap espai, tal i com funciona un lloc wiki, el Tomboy realçarà la paraula i la convertirà en un enllaç. Si feu clic a l'enllaç creareu una nota nova que tindrà la paraula wiki com a nom.</p>
+   
+   <p>Per defecte les paraules wiki estan inhabilitades. Per habilitar-les, utilitzeu el ratolí o la barra espaiadora per activar la casella <gui>Realça les WikiWords</gui> a la pestanya <gui>Edició</gui> de les preferències del Tomboy.</p>
+   
+ </section>
+
+ <section id="bullets">
+   <title>Llistes de pics automàtiques</title>
+   <p>El Tomboy pot crear llistes de pics automàticament. Aquesta opció està habilitada per defecte. Quan editeu una nota, si escriviu <key>*</key> seguit de text i a continuació premeu la <key>Tecla de retorn</key>, el Tomboy crearà una llista de pics de forma automàtica. Després de prémer la <key>Tecla de retorn</key> la línia nova també començarà amb un pic.</p>
+   
+   <p>Per inhabilitar la llista de pics automàtics utilitzeu el ratolí o la barra espaiadora per desactivar <gui>Habilita llistes de vinyetes automàtiques</gui> de la pestanya <gui>Edició</gui> de les preferències del Tomboy.</p>
+   
+ </section>
+
+ <section id="customfont">
+   <title>Tipus de lletra personalitzat</title>
+   <p>Al Tomboy podeu utilitzar una mida i un tipus de lletra diferent al tipus de lletra que l'escriptori utilitza per defecte. Per defecte aquesta funció està inhabilitada.</p>
+   
+   <p>Per habilitar un tipus de lletra diferent utilitzeu el ratolí o la barra espaiadora per activar <gui>Usa el tipus de lletra personalitzat</gui> a la pestanya <gui>Edició</gui> de les preferències del Tomboy.</p>
+
+   <p>Llavors premeu el botó del tipus de lletra i apareixerà un quadre de diàleg que us permetrà triar el tipus de lletra que voleu utilitzar, així com l'estil, negreta o cursiva i la mida del tipus. Premeu <key>D'acord</key> per desar la selecció.</p>
+   
+ </section>
+
+ <section id="renamelinks">
+ 
+   <title>Canvi de nom d'una nota enllaçada</title>
+   <p>El Tomboy crea automàticament enllaços entre les notes quan escriviu el títol d'una nota desada a la nota actual. Si proveu de canviar el nom d'una nota que conté enllaços en altres notes, podeu triar el comportament per defecte que voleu que tingui el Tomboy quan detecti un canvi. Les opcions que teniu són:</p>
+   
+   <list>
+     <item><p><gui>Demana'm què vull fer</gui>: el Tomboy us preguntarà cada vegada que detecti un canvi una de les opcions següents.</p></item>
+     <item><p><gui>No canviïs mai el nom dels enllaços</gui>: el Tomboy deixarà les altres notes com estan i no les enllaçarà.</p></item>
+     <item><p><gui>Canvia sempre el nom dels enllaços</gui>: el Tomboy canviarà automàticament tots els enllaços a les notes on hàgiu canviat els noms.</p></item>
+   </list>
+   
+   <p>Trieu una de les opcions anteriors del quadre desplegable que hi ha a la dreta d'<gui>En canviar el nom d'una nota enllaçada:</gui> a la pestanya <gui>Edició</gui> de les preferències del Tomboy.</p>
+   
+ </section>
+
+<section id="newnotetemplate">
+  <title>Creació d'una plantilla de nota nova</title>
+  <p>Podeu crear una plantilla nova que es farà servir cada vegada que creeu una nota nova.</p>
+  
+  <p>Premeu el botó <gui>Obre la plantilla de nota nova</gui> de la pestanya <gui>Edició</gui> de les preferències del Tomboy. Visualitzareu una plantilla nova que serà semblant a una nota del Tomboy. Substituïu el text <gui>Descriviu la vostra nota nova aquí.</gui> de la nota amb el text que voldríeu que aparegués a la plantilla nova i tanqueu la nota per acabar de crear-la. Així cada vegada que creeu una nota nova visualitzareu aquesta plantilla nova.</p>
+   
+</section>
+
+ </page>

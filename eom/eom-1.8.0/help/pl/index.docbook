@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "February 2007">
+<!ENTITY app "<application>Image Viewer</application>">
+<!ENTITY appname "Image Viewer">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="pl">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Podręcznik przeglądarki obrazów</title>
+    
+    <copyright lang="en"> 
+      <year>2006</year> 
+      <year>2007</year>
+      <holder>MATE Documentation Project</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2002</year> 
+      <year>2003</year> 
+      <year>2004</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>Eliot Landrum</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>The Free Software Foundation</holder> 
+    </copyright>	 
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>Projekt dokumentacji MATE</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+         <para>Udziela się zezwolenia do kopiowania rozpowszechniania i/lub modyfikację tego dokumentu zgodnie z zasadami Licencji GNU Wolnej Dokumentacji w wersji 1.1 lub dowolnej późniejszej opublikowanej przez Free Software Foundation; wraz z zawartymi Sekcjami Niezmiennymi, wraz z Tekstem na Przedniej Okładce i z Tekstem na Tylnej Okładce. Kopia licencji dostępna jest pod adresem <ulink type="help" url="help:fdl">link</ulink> oraz w pliku COPYING-DOCS dystrybuowanym z niniejszym podręcznikiem</para>
+          <para>Ten podręcznik jest częścią kolekcji podręczników użytkownika MATE dystrybutowanych na zasadach GFDL. Aby rozpowszechniać ten podręcznik w odłączeniu od kolekcji, należy dołączyć kopię kopię licencji do podręcznika, jak wyjaśniono to w sekcji 6. licencji.</para>
+ 
+         <para>Nazwy używane przez firmy by wyróżniać swoje produkty i usługi są zazwyczaj zarejestrowanymi znakami towarowymi. Jeśli występują one w dokumentacji MATE, w przypadku gdy są znane przez członków Projektu Dokumentacji MATE, są one napisane wielkimi literami lub zaczynają się od wielkiej litery.</para>
+ 
+         <para lang="en">
+           DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+           UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+           WITH THE FURTHER UNDERSTANDING THAT:
+ 
+           <orderedlist>
+                 <listitem>
+                   <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                     WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                     IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                     THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                     A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                     RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                     OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                     MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                     YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                     CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                     SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                     OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                     LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                     VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                     EXCEPT UNDER THIS DISCLAIMER; AND
+                   </para>
+                 </listitem>
+                 <listitem>
+                   <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                        THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                        CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                        INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                        DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                        OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                        PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                        DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                        CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                        INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                        OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                        MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                        LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                        DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                        EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                        THE POSSIBILITY OF SUCH DAMAGES.
+                   </para>
+                 </listitem>
+           </orderedlist>
+         </para>
+   </legalnotice>
+ 
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+   <authorgroup>
+   <author lang="en"> 
+	<firstname>Jens</firstname> 
+	<surname>Finke</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Angela</firstname> 
+	<surname>Boyle</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Stuart</firstname> 
+	<surname>Ellis</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Sun</firstname> 
+	<surname>MATE Documentation Team</surname> 
+	<affiliation> 
+	  <orgname>Sun Microsystems</orgname>  
+	</affiliation> 
+   </author> 
+   <author lang="en"> 
+	<firstname>Eliot</firstname> 
+	<surname>Landrum</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+   </author> 
+   <author lang="en"> 
+	<firstname>Federico</firstname> 
+	<surname>Mena Quintero</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+   </author>	
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <email>translator@gnome.org</email> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+ 
+    <revhistory>
+    <revision lang="en"> 
+		<revnumber>Image Viewer Manual V2.8</revnumber> 
+		<date>February 2007</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">MATE Documentation Project</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en">
+		<revnumber>Image Viewer Manual V2.7</revnumber>
+		<date>February 2004</date>
+		<revdescription>
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription>
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.6</revnumber> 
+		<date>November 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.5</revnumber> 
+		<date>September 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.4</revnumber> 
+		<date>January 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.3</revnumber> 
+		<date>October 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.2</revnumber> 
+		<date>August 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.1</revnumber> 
+		<date>July 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.0</revnumber> 
+		<date>May 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en"> 
+		<revnumber>Eye of MATE User's Guide</revnumber> 
+		<date>2000</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Eliot Landrum 
+	    		  <email>eliot@landrum.cx</email>
+	  		</para>
+	  		<para role="author" lang="en">Federico Mena Quintero 
+	    		  <email>federico@gnu.org</email>
+	  		</para>	  
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+    <releaseinfo>Niniejszy podręcznik opisuje wersję 2.18 przeglądarki obrazów.</releaseinfo> 
+    <legalnotice> 
+      <title>Opinie</title> 
+      <para>Aby zgłosić błąd lub sugestię dotyczące programu <application>Przeglądarka obrazów</application> lub niniejszego podręcznika, proszę postępować zgodnie ze wskazówkami opublikowanymi na stronie <ulink url="help:mate-feedback" type="help">MATE Feedback Page</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+    <abstract role="description">
+      <para>Podręcznik użytkownika dla <application>Eye of MATE</application>.</para>
+    </abstract>
+
+  </articleinfo> 
+
+  <indexterm lang="en">
+    <primary>Eye of MATE</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+<sect1 id="eom-introduction">
+  <title>Wstęp</title>
+  <para>Program <application>Eye of MATE</application> pozwala na przeglądanie zarówno pojedyńczych plików graficznych, jak i całych kolekcji obrazów.</para>
+
+  <sect2 id="eom-tostartapp">
+    <title>Uruchamianie przeglądarki obrazów</title>
+    <para><application>Przeglądarkę obrazów</application> można uruchomić w jeden z następujących sposobów:</para>
+    <itemizedlist>
+      <listitem>
+        <para>otwierając plik graficzny w programie <application>Caja</application>,</para>
+      </listitem>
+      <listitem>
+	<para lang="en">Choose <menuchoice><guimenu>Graphics</guimenu>
+	<guimenuitem>Image Viewer</guimenuitem></menuchoice>
+	from the <guimenu>Applications</guimenu> menu.</para>
+      </listitem>
+      <listitem>
+	<para>wpisując w oknie terminala (takiego jak <application>mate-terminal</application>) polecenie <command>eom</command> lub w oknie <application>Uruchom program</application>.</para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
+
+  <sect2 id="eom-closeapp">
+    <title>Zamykanie przeglądarki obrazów</title>
+    <para lang="en">To close the current <application>Image Viewer</application> window choose <menuchoice><guimenu>File</guimenu>
+    <guimenuitem>Close</guimenuitem></menuchoice>, or press
+    <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>.</para>
+  </sect2>
+
+  <sect2 id="eom-filetypes">
+    <title>Obsługiwane typy plików</title>
+    <para><application>Przeglądarka obrazów</application> obsługuje szeroki wybór formatów plików. Następujące formaty obrazów mogą być otwierane:</para>
+		<itemizedlist>
+			<listitem><para>ANI - Animacje</para>
+			</listitem>
+			<listitem><para>BMP - Mapy bitowe</para>
+			</listitem>
+			<listitem><para>GIF - Graphics Interchange Format</para>
+			</listitem>
+			<listitem><para>ICO - Ikony Windows</para>
+			</listitem>
+			<listitem><para>JPEG - Joint Photographic Experts Group</para>
+			</listitem>
+			<listitem><para>PCX - PC Paintbrush</para>
+			</listitem>
+			<listitem><para>PNG - Portable Network Graphics</para>
+			</listitem>
+			<listitem><para>PNM - Portable Anymap z pakietu narzędziowego PPM</para>
+			</listitem>
+			<listitem><para>RAS - Sun Raster</para>
+			</listitem>
+			<listitem><para>SVG - Scalable Vector Graphics</para>
+			</listitem>
+			<listitem><para>TGA - Targa</para>
+			</listitem>
+			<listitem><para>TIFF - Tagged Image File Format</para>
+			</listitem>
+			<listitem><para>WBMP - Wireless Bitmap</para>
+			</listitem>
+			<listitem><para>XBM - X Bitmap</para>
+			</listitem>
+			<listitem><para>XPM - X Pixmap</para>
+			</listitem>
+		</itemizedlist>
+
+  <para><application>Przeglądarka obrazów</application> potrafi zapisywać pliki w nastepujących formatach:</para>
+		<itemizedlist>
+			<listitem><para>BMP - Mapy bitowe</para>
+			</listitem>
+			<listitem><para>ICO - Ikony Windows</para>
+			</listitem>
+			<listitem><para>JPEG - Joint Photographic Experts Group</para>
+			</listitem>
+			<listitem><para>PNG - Portable Network Graphics</para>
+			</listitem>
+		</itemizedlist>
+		<para><application>Przeglądarka obrazów</application> może również otwierać i zapisywać inne formaty obrazów, w zależności od konfiguracji systemu i innego zainstalowanego oprogramowania.</para>
+  </sect2>
+
+  <sect2 id="eom-features">
+    <title>Funkcje przeglądarki obrazów</title>
+    <para><application>Przeglądarka obrazów</application> posiada wiele funkcji przydatnych przy ich przeglądaniu. Można powiększać lub pomniejszać obraz, wyświetlać na pełnym ekranie, jak i obracać oraz odbijać go. <application>Przeglądarka obrazów</application> zużywa małą ilość pamięci bez względu na stopień powiększenia obrazu. </para>
+
+    <para>Widok kolekcji pozwala na edycję i przeglądanie dużych kolekcji obrazów. W widoku tym operacje mogą być naraz zastosowane do wszystkich zaznaczonych obrazów naraz.</para>
+
+    <para><application>Przeglądarka obrazów</application> obsługuje zdjęcia zrobione aparatami cyfrowymi i wyświetla informacje EXIF zapisane wraz z obrazem. Do skorzystania z tej możliwości wymagana jest biblioteka <systemitem class="library">libexif</systemitem>. Wszystkie modyfikacje wprowadzone w obrazach JPEG nie powodują utraty jakości obrazu. Oznacza to, że podczas zapisywanie obróconego lub odbitego obrazu w formacie JPEG nie następuje jego ponowna kompresja. Oprócz tego wszystkie metadane (jak np. EXIF) zostają zachowane i odpowiednio zmodyfikowane.</para>
+  </sect2>
+</sect1>
+
+<!--============== When You Start ===========-->
+<sect1 id="eom-whenyoustart">
+  <title>Pierwsze kroki</title>
+  <para>Po uruchomieniu <application>przeglądarki obrazów</application> zostanie wyświetlone następujące okno:</para>
+  <figure id="mainwindow-fig">
+		<title>Okno startowe przeglądarki obrazów</title>
+		<screenshot>
+		  <mediaobject lang="en">
+		    <imageobject>
+		      <imagedata fileref="figures/eom_start_window.png" format="PNG"/>
+		    </imageobject>
+		    <textobject>
+		      <phrase>Shows <application>Image Viewer</application> main window. Contains titlebar, menubar, toolbar, and display area. Menubar contains File, Edit, View, and Help menus.</phrase>
+		    </textobject>
+		  </mediaobject>
+		</screenshot>
+  </figure>
+  <para>Okno <application>przeglądarki obrazów</application> zawiera następujące elementy:</para>
+  <variablelist>
+	<varlistentry>
+  	  <term>pasek menu</term>
+ 	  <listitem>
+	    <para>Menu w pasku menu zawierają wszystkie niezbędne polecenia, które są potrzebne do pracy z obrazami w <application>przeglądarce obrazów</application>.</para>
+	  </listitem>
+ 	</varlistentry>
+	<varlistentry>
+	  <term>pasek narzędziowy</term>
+	  <listitem>
+	    <para>Pasek narzędziowy zawiera podzbiór poleceń, które można wywołać z paska menu. Aby wyświetlić lub ukryć pasek narzędzi, proszę wybrać z menu polecenie <menuchoice><guimenu>Widok</guimenu><guimenuitem>Pasek narzędziowy</guimenuitem></menuchoice>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>obszar wyświetlania</term>
+	  <listitem>
+ 	    <para>Obszar wyświetlania zawiera wyświetlany obraz.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>pasek stanu</term>
+	  <listitem>
+	    <para>Pasek stanu zawiera informacje o obrazie. Aby wyświetlić lub ukryć pasek stanu, proszę wybrać z menu polecenie <menuchoice><guimenu>Widok</guimenu><guimenuitem>Pasek stanu</guimenuitem></menuchoice>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>kolekcję obrazów</term>
+	  <listitem>
+	    <para>Kolekcja obrazów zawiera wszystkie obsługiwane obrazy w aktualnym katalogu roboczym. Jest wyświetlana się zaraz po wczytaniu obrazu. Aby wyświetlić lub ukryć kolekcję, proszę wybrać z menu polecenie <menuchoice><guimenu>Widok</guimenu><guimenuitem>Kolekcja obrazów</guimenuitem></menuchoice> lub nacisnąć klawisz <keycap>F9</keycap>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>boczny panel</term>
+	  <listitem>
+	    <para>Boczny panel zawiera dodatkowe informacje o aktualnie oglądanym obrazie, jak np. dane EXIF (jeśli są dostępne). Panel zostaje wyświetlony po załadowaniu obrazu. W celu wyświetlenia lub ukrycia panelu, proszę wybrać z menu polecenie <menuchoice><guimenu>Widok</guimenu><guimenuitem>Boczny panel</guimenuitem></menuchoice> lub użyć skrótu klawiszowowego <keycombo><keycap>Ctrl</keycap><keycap>I</keycap></keycombo>.</para>
+	  </listitem>
+	</varlistentry>
+  </variablelist>
+  <para>Większość działań w <application>przeglądarce obrazów</application> można wykonać na kilka różnych sposobów. Przykładowo, aby otworzyć plik można:</para>
+  <itemizedlist>
+    <listitem><para>przeciągnąć plik obrazu do okna <application>przeglądarki obrazów</application> z innego programu lub okna,</para></listitem>
+    <listitem><para>kliknąć dwukrotnie plik obrazu w menedżerze plików lub w innym programie,</para></listitem>
+    <listitem><para lang="en">Choose <menuchoice><guimenu>File</guimenu>
+    <guimenuitem>Open</guimenuitem></menuchoice> and select an image file
+    in the <application>Load Image</application> dialog.</para></listitem>
+    <listitem><para lang="en">Press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap>
+    </keycombo> and select an image file in the <application>Load
+    Image</application> dialog.</para></listitem>
+  </itemizedlist>
+</sect1>
+
+
+<!-- ============= Viewing Images ============================== -->
+<sect1 id="eom-view">
+	<title>Wyświetlanie obrazów</title>
+
+	<!--=========== To Open an Image ============================= -->
+	<sect2 id="eom-open-image">
+		<title>Otwieranie obrazu</title>
+                <para>W celu otwarcia obrazu należy wykonać nastepujące kroki:</para>
+                <orderedlist>
+                  <listitem>
+                    <para lang="en">
+                      Choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice>, or press <keycombo> <keycap>Ctrl</keycap><keycap>O</keycap> </keycombo>.  </para>
+                  </listitem>
+                  <listitem>
+                    <para>W oknie dialogowym <guilabel>Wczytanie obrazu</guilabel> wybrać plik, który należy otworzyć.</para>
+                  </listitem>
+                  <listitem>
+                    <para>Kliknąć przycisk <guibutton>Otwórz</guibutton>. Nazwa pliku zostanie wyświetlona na pasku tytułowym przeglądarki obrazów.</para>
+                  </listitem>
+                </orderedlist>
+                <para lang="en"> 
+	          To open another image, choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice> again. <application>Image Viewer</application> opens each image in a new window.
+                </para>
+	</sect2>
+
+	<!--=========== To View the Images in a Directory ==================== -->
+	<sect2 id="eom-open-folder">
+		<title>Wyświetlanie obrazów w katalogu</title>
+		<para>W celu wyświetlenia wszystkich obrazów w katalogu należy wykonać następujące kroki:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Otworzyć jeden z obrazów w katalogu (zobacz <xref linkend="eom-open-image"/>),</para>
+                  </listitem>
+                  <listitem>
+                    <para>Otworzyć kolekcję obrazów za pomocą polecenia menu <menuchoice><guimenu>Widok</guimenu><guimenuitem>Kolekcja obrazów</guimenuitem></menuchoice> lub naciśnięcie klawisza <keycap>F9</keycap>.</para>
+                  </listitem>
+		</orderedlist>
+	     <para>Kolekcja obrazów zawiera miniaturki wszystkich obrazów w katalogu. Można je przeglądać klikając na jakiś z nich, lub za pomocą jednej z opcji w menu <guimenu>Idź</guimenu>, jak i przy użyciu skrótów klawiszowych <keycombo><keycap>Alt</keycap><keycap>W lewo</keycap></keycombo> oraz <keycombo><keycap>Alt</keycap><keycap>W prawo</keycap></keycombo>.</para>
+             <para lang="en">To view all of the images in the directory fullscreen, choose <menuchoice> <guimenu>View</guimenu><guimenuitem>Full Screen</guimenuitem> </menuchoice> or press <keycap>F11</keycap>. To view them as a slide show, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Slideshow</guimenuitem></menuchoice> or press <keycap>F5</keycap>. To return to the collection view, press the <keycap>Esc</keycap> key, or <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>. For more information about how to customize the slide show, see <xref linkend="eom-prefs-slideshow"/>.
+                    </para>
+	</sect2>
+
+	<!--============ To Scroll an Image ======================= -->
+	<sect2 id="eom-scroll-image">
+		<title>Przewijanie obrazu</title>
+		<para>W celu przewinięcia obrazu, który jest większy niż okno lub ekran, można użyć następujących sposobów:</para>
+		<itemizedlist>
+			<listitem><para>Użyć klawiszy strzałek na klawiaturze.</para>
+			</listitem>
+			<listitem><para>Przeciągać obraz w oknie. (Oznacza to, że należy przeciągać obraz w przeciwnym kierunku do tego w którym chcemy go przewinąć, a więc aby ujrzeć dolną część obrazu, należy przeciągnąć go w górę.)</para>
+			</listitem>
+			<listitem><para>Użyć pasków przewijania w oknie.</para>
+			</listitem>
+		</itemizedlist>
+	</sect2>
+
+	<!--=========== To Zoom In and Out ==================== -->
+	<sect2 id="eom-zoom">
+		<title>Powiększanie</title>
+		<para>Można powiększyć lub zmniejszyć obraz w jeden z następujących sposobów:</para>
+			<itemizedlist>
+				<listitem><para>używając <mousebutton>kółka</mousebutton>  myszy. Przewijanie w dół pomniejsza obraz przewijanie w górę powiększa go</para></listitem>
+ 			  <listitem><para>wybierając z menu polecenie <menuchoice><guimenu>Widok</guimenu><guimenuitem>Powiększ</guimenuitem></menuchoice> lub <menuchoice><guimenu>Widok</guimenu><guimenuitem>Pomniejsz</guimenuitem></menuchoice>. W celu przywrócenia oryginalnego rozmiaru obrazu nalezy wybrać z menu polecenie <menuchoice><guimenu>Widok</guimenu><guimenuitem>Normalny</guimenuitem></menuchoice>. Z kolei polecenie menu<menuchoice><guimenu>Widok</guimenu><guimenuitem>Dopasuj</guimenuitem></menuchoice> sprawia, że obraz zostaje dopasowany do wielkości okna.</para></listitem>				
+ 				<listitem><para>używając przycisków powiększania na pasku narzędziowym. Przycisk <guilabel>Zwykły</guilabel> przywraca oryginalny rozmiar obrazu. Przycisk <guilabel>Dopasuj</guilabel> zmieni rozmiar obrazu (jeśli jest on zbyt duży) tak, by mieścił się w oknie przeglądarki.</para></listitem>
+
+				<listitem><para lang="en">Use the keyboard. To zoom in, <keycombo> <keycap>Ctrl</keycap><keycap>+</keycap> </keycombo> or <keycap>+</keycap>. To zoom out, <keycombo> <keycap>Ctrl</keycap><keycap>-</keycap> </keycombo> or <keycap>-</keycap>. To go back to the normal size, <keycombo> <keycap>Ctrl</keycap><keycap>0</keycap> </keycombo> or <keycap>1</keycap>. To scale the image to fit the window, press <keycap>F</keycap>.</para></listitem>
+			</itemizedlist>
+			<para>Jeśli obraz jest dopasowany do okna, zmiana rozmiaru okna zmieni również stopień jego powiększenia, tak by nadal mieścił się w oknie.</para>
+	</sect2>
+
+	<!--=========== To View Image Fullscreen ==================== -->
+	<sect2 id="eom-fullscreen">
+		<title>Wyświetlanie obrazów na pełnym ekraniu lub jako pokaz slajdów</title>
+		<para>W celu wyświetlenia obrazu na całej dostępnej powierzchni ekranu, należy wybrać z menu polecenie <menuchoice><guimenu>Widok</guimenu><guimenuitem>Pełny ekran</guimenuitem></menuchoice>.</para>
+		<para>W tym trybie nie są widoczne żadne ramki lub paski menu. Aby powrócić do normalnego widoku, należy nacisnąć klawisz <keycap>Esc</keycap> albo <keycap>F11</keycap> lub użyć skrótu klawiszowego <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>.</para>
+		<para>Mozna też powiększać i przewijać obraz za pomocą myszy lub klawiatury tak jak w normalnym trybie.</para>
+		<para>Jeśli w kolekcji znajduje się wiele obrazów, można użyć klawisza <keycap>Spacja</keycap> lub strzałek w prawo/w dół aby przejść do nastepnego obrazu. Aby powrócić do poprzedniego obrazu, należy wcisnąć <keycap>Backspace</keycap> lub strzałek w lewo/w górę.</para>
+	<para>W tym wypadku dostępny jest także tryb pokazu slajdów, w którym obrazy w kolekcji są automatycznie przełączane. W celu uruchomienia pokazu slajdów należy wybrać z menu polecenie<menuchoice><guimenu>Widok</guimenu><guimenuitem>Pokaz slajdów</guimenuitem></menuchoice> lub nacisnąć klawisz <keycap>F5</keycap>. Można wstrzymać lub kontynuować pokaz naciskając klawisz<keycap>P</keycap>. Aby przerwać pokaz slajdów, należy wcisnąć <keycap>Esc</keycap> albo <keycap>F5</keycap> lub użyć skrótu klawiszowego <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>. Więcej informacji o konfigurowaniu pokazu slajdów znajduje się w sekcji <xref linkend="eom-prefs-slideshow"/>.</para>
+	</sect2>
+</sect1>
+
+
+<!-- ============= Manipulating Images ============================== -->
+<sect1 id="eom-manipulate">
+	<title>Operacje na obrazach</title>
+
+	<para>Operacje na obrazach są stosowane dla wszystkich zaznaczonych obrazów równocześnie. Wszelkie zmiany są robione jedynie w pamięci komputera i aby zmienić oryginalne pliki muszą one zostać zapisane (zobacz <xref linkend="eom-save-image"/>).</para>
+
+	<!--============ To Flip an Image ======================= -->
+	<sect2 id="eom-flip">
+		<title>Odbijanie obrazu</title>
+		<para lang="en">To flip an image along the horizontal axis of the image, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Flip Horizontal</guimenuitem>
+		</menuchoice>.</para>
+		<para lang="en">To flip an image along the vertical axis of the image, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Flip Vertical</guimenuitem>
+		</menuchoice>.</para>
+	</sect2>
+
+	<!--============ To Rotate an Image ======================= -->
+	<sect2 id="eom-rotate">
+		<title>Obracanie obrazu</title>
+		<para lang="en">To rotate an image 90 degrees in a clockwise direction, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Rotate Clockwise</guimenuitem>
+		</menuchoice>.</para>
+		<para lang="en">To rotate an image 90 degrees in an anticlockwise direction, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Rotate Counter Clockwise</guimenuitem>
+		</menuchoice>.</para>
+	</sect2>
+
+	<!--============ To Undo an Action ======================= -->
+	<sect2 id="eom-undo">
+		<title>Cofanie zmian</title>
+		<para lang="en">To undo a flip or rotate action, choose 
+		<menuchoice>
+		<guimenu>Edit</guimenu>
+		<guimenuitem>Undo</guimenuitem>
+		</menuchoice> or press 
+		<keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>
+		.</para>
+	</sect2>
+
+	<!--============ To Delete An Image ======================== -->
+	<sect2 id="eom-delete-image">
+		<title>Usuwanie obrazu</title>
+		<para lang="en">To move an image to the Trash, choose
+			<menuchoice>
+			<guimenu>Edit</guimenu>
+			<guimenuitem>Move to Trash</guimenuitem>
+			</menuchoice>.
+			This moves the file to the Trash folder. Multiple images can also be moved to the trash in the same way: select them all first.</para>
+	    <para>W celu przywrócenia obrazu z kosza, należy otworzyć Kosz w menedżerze plików <application>Caja</application> i przesunąć obraz do innego katalogu. Aby trwale usunąć obraz wystarczy opróżnić kosz. Więcej informacji o korzystaniu z Kosza znajduje się w <ulink type="help" url="help:user-guide?caja-trash">podręczniku użytkownika</ulink>.</para>
+				
+			<note><para>Można również skorzystać z klawisza <keycap>Del</keycap> aby przesunąć obraz do kosza, jednakże w tym wypadku zostanie wyświetlona prośba o potwierdzenie.</para></note>
+			
+	</sect2>
+</sect1> 
+
+<!-- ============= Saving Images ============================== -->
+<sect1 id="eom-save-rename">
+	<title>Zapisywanie obrazów</title>
+
+	<para><application>Przeglądarka obrazów</application> próbuje zawsze wybrać format pliku, który będzie miał najmniejszy wpływ na jakość obrazu. Dla przykładu jeśli jakiś niezmodyfikowany obraz zostanie zapisany pod inną nazwą, lecz w tym samym formacie, zostanie on po prostu skopiowany. Jeśli zainstalowana jest biblioteka <systemitem class="library">libjpeg</systemitem>, wszystkie zmiany w plikach JPEG są dokonywane bezstratnie.</para>
+
+<!--============ To Save an Image ======================= -->
+	<sect2 id="eom-save-image">
+		<title>Zapisywanie obrazu</title>
+		<para lang="en">To save an image, choose 
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save</guimenuitem>
+			</menuchoice>.
+		The image will be saved under the same name and file type. Therefore, unmodified images needn't be saved.</para>
+	</sect2>
+
+	<!--============ To Save As an Image ======================= -->
+	<sect2 id="eom-save-as-image">
+		<title>Zapisywanie obrazu pod inną nazwą</title>
+		<para lang="en">To save an image under a different name, or convert it to a different file type, choose
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save As</guimenuitem>
+			</menuchoice>.</para>
+		<para>Należy podać nazwę w polu <guilabel>Nazwa</guilabel> okna dialogowego <guilabel>Zapis obrazu</guilabel>, a następnie nacisnąć przycisk <guibutton>Zapisz</guibutton>. Domyślnie plik zostanie zapisany w bieżącym katalogu. Format pliku jest wykrywany na podstawie podanego rozszerzenia. Jeśli obraz miałby zostać zapisany w innym katalogu lub wykrycie typu pliku zakończyło się niepowodzeniem, należy powiększyć okno naciskając przycisk <guilabel>Przeglądaj inne katalogi</guilabel>. Pozwala to na dokładniejsze przeglądanie katalogów i wybranie typu pliku z listy wyboru.</para>
+		<para>Można też zapisywać wiele obrazów naraz, zostanie to opisane w następnej sekcji.</para>
+	</sect2>    
+
+	<!--============ To Save As an Image ======================= -->
+	<sect2 id="eom-save-as-multiple">
+		<title>Zapisywanie wielu obrazów</title>
+		<para>Zapisywanie wielu obrazów naraz pozwala na zmianę ich formatu lub nadanie im podobnych nazw.</para>
+		<para lang="en">To save multiple images, select the images and choose 
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save As</guimenuitem>
+			</menuchoice>. 		
+		The following window is displayed:</para>
+  		<figure id="saveas-dialog-fig">
+			<title>Okno dialogowe "Zapisz jako" dla wielu obrazów naraz</title>
+			<screenshot>
+			  <mediaobject lang="en">
+			    <imageobject>
+			      <imagedata fileref="figures/eom_save_as_window.png" format="PNG"/>
+			    </imageobject>
+			    <textobject>
+			      <phrase>Shows Eye of MATE <guilabel>Save As</guilabel> dialog when saving multiple images.</phrase>
+			    </textobject>
+			  </mediaobject>
+			</screenshot>
+  		</figure>
+		<para>Katalog, w którym zostaną zapisane obrazy jest określany w menu rozwijanym <guilabel>Katalog docelowy</guilabel>. Domyślnie jest on ustawione na bieżący katalog. Należy wybrać <guilabel>Inne...</guilabel>, aby wyświetlić standardowe okno przeglądania katalogów. Docelowa nazwa pliku jest określana w polu <guilabel>Format nazwy pliku</guilabel>. Szablon nazwy jest zbudowany ze znaków oraz specjalnych znaczników. Dostępne są następujące znaczniki: </para>
+		<itemizedlist>
+			<listitem><para><guilabel>Nazwa pliku (%f)</guilabel> - oryginalna nazwa pliku bez rozszerzenia.</para>
+			</listitem>
+			<listitem><para><guilabel>Licznik (%n)</guilabel> - automatycznie zwiększana liczba (począwszy od wartości ustawionej w polu <guilabel>Początek licznika</guilabel>). </para>
+			</listitem>			
+		</itemizedlist>	
+		<para>Wszystko, co nie jest tymi znacznikami uznawane jest za zwykły tekst.</para>
+		<para>Format obrazu określany jest przez rozwijaną listę za definicją szablonu. Należy wybrać konkretny format pliku lub zostawić opcję <guilabel>jak jest</guilabel>, aby zapisać w tym samym formacie co oryginalny plik.</para>
+	
+		<para>W sekcji <guilabel>Ustawienia</guilabel> znajdują się opcje pozwalające na zamianę wszystkich spacji w nazwie pliku na znaki podkreślenia. W tym celu należy zaznaczyć pole wyboru <guilabel>Zamiana spacji na podkreślenia</guilabel>. Ponadto, ustawiając odpowiednią wartość w polu <guilabel>Początek licznika</guilabel>, można zdecydować od jakiej liczby ma zacząć biec wartość znacznika %n w nazwie pliku.</para>
+		<para>Sekcja <guilabel>Podgląd nazwy pliku</guilabel> zawiera przykład wynikowej nazwy pliku zgodnie z powyższymi ustawieniami.</para>
+	</sect2>
+
+
+
+</sect1>
+
+<sect1 id="eom-print">
+	<title>Drukowanie obrazów</title>
+	<sect2 id="eom-print-pagesettings">
+		<title>Ustawienia strony</title>
+		<para>Przed drukowaniem należy ustawić odpowiedni układ strony. Aby tego dokonać, należy wybrać z menu polecenie <menuchoice><guimenu>Plik</guimenu><guimenuitem>Układ strony...</guimenuitem></menuchoice>.</para>
+		<para>W oknie dialogowym <guilabel>Ustawienia strony</guilabel> można dostosować zarówno format papieru jak i położenie obrazu. Jeśli to możliwe, należy również ustawić poprawne wartości marginesów dla drukarki.</para>
+	</sect2>
+
+	<sect2 id="eom-print-image">
+		<title>Drukowanie obrazu</title>
+		<para>W celu wydrukowania obrazu należy wykonać następujące kroki:</para>
+		<orderedlist>
+			<listitem>
+				<para>Wybrać z menu polecenie <menuchoice><guimenu>Plik</guimenu><guimenuitem>Drukuj...</guimenuitem></menuchoice>.</para>
+			</listitem>
+			<listitem>
+				<para>W oknie dialogowym <guilabel>Wydruk</guilabel> wybrać odpowiednią drukarkę z listy.</para>
+			</listitem>
+			<listitem>
+				<para>Nacisnąć przycisk <guilabel>Drukuj</guilabel>. Rozpocznie się drukowanie.</para>
+			</listitem>
+		</orderedlist>
+		<para>Obrazy, które są zbyt duże aby zmieścić się na stronie są automatycznie zmniejszane. Obrazy mniejsze od strony zostaną na niej wyśrodkowane.</para>
+		<important>
+			<para>Uwaga: w chwili obecnej postęp drukowania nie jest raportowany. W tym czasie interfejs użytkownika może przestać reagować.</para>
+		</important>
+	</sect2>
+
+	<sect2 id="eom-print-settings">
+		<title>Ustawianie obrazów na stronie</title>
+		<para>Jeśli obraz nie ma zostać wycentrowany na stronie lub jeszcze bardziej pomniejszony, należy w oknie dialogowym <guilabel>Wydruk</guilabel> (zobacz <xref linkend="eom-print-image"/>) przejść do karty <guilabel>Ustawienia obrazu</guilabel>. Pozwala ona na ustawienie następujących opcji:</para>
+		<itemizedlist>
+			<listitem>
+				<para>Sekcja <guilabel>Położenie</guilabel> pozwala na dokładne ustalenie pozycji obrazu na stronie.</para>
+			</listitem>
+			<listitem>
+				<para>Można także zmienić położenie obrazu na stronie poprzez przeciąganie go w polu <guilabel>Podgląd</guilabel>.</para>
+			</listitem>
+			<listitem>
+				<para>Opcje w sekcji <guilabel>Rozmiar</guilabel> pozwalają dowolnie przeskalować obraz. Jest ono ograniczone jedynie rozmiarem obrazu lub rozmiarem strony, w zależności od tego co nastąpi pierwsze.</para>
+			</listitem>
+			<listitem>
+				<para>Lista wyboru <guilabel>Jednostka</guilabel> pozwala na zmianę jednostki miary, która jest używana w innych polach karty <guilabel>Ustawienia obrazu</guilabel> - po jego zmianie wszystkie pola zostaną odpowiednio zmienione.</para>
+			</listitem>
+		</itemizedlist>
+	</sect2>
+		
+</sect1>
+<sect1 id="eom-toolbareditor">
+	<title>Dostosowywanie paska narzędziowego</title>
+	<para>Domyślnie pasek narzędziowy przeglądarki obrazów zawiera tylko podstawowe operacje, by zachować prostotę. Można jednakże zmodyfikować jego wygląd, tak by bardziej odpowiadał własnym potrzebom.</para>
+	<sect2 id="eom-toolbareditor-use">
+		<title>Modyfikowanie paska narzędziowego</title>
+		<para>W celu zmiany elementów na pasku, należy otworzyć edytor paska narzędziowego za pomocą polecenia menu <menuchoice><guimenu>Edycja</guimenu><guimenuitem>Pasek narzędziowy</guimenuitem></menuchoice>. Zostanie wtedy wyświetlone nastepujące okno:</para>
+		<figure id="toolbar-editor-fig">
+			<title>Okno edytora paska narzędziowego</title>
+			<screenshot>
+				<mediaobject lang="en">
+					<imageobject>
+						<imagedata fileref="figures/eom_toolbar_editor_window.png" format="PNG"/>
+					</imageobject>
+					<textobject>
+						<phrase>Shows Eye of MATE toolbar editor window.</phrase>
+					</textobject>
+				</mediaobject>
+			</screenshot>
+		</figure>
+		<para>Zawiera ono elementy, które obecnie nie znajdują się na pasku narzędziowy i rozdzielacz. W tym momencie można edytować pasek:</para>
+		<itemizedlist>
+			<listitem>
+				<para>W celu dodania nowych elementów do paska, należy przeciągnąć je z edytora paska narzędziowego na pasek.</para>
+			</listitem>
+			<listitem>
+				<para>W celu usunięcia elementów z paska narzędziowego, należy przeciągnąć je do okna edytora paska narzędziowego.</para>
+			</listitem>
+			<listitem>
+				<para>W celu zmiany kolejności elementów paska narzędziowego, należy przeciągnąć je na żądaną pozycję.</para>
+			</listitem>
+		</itemizedlist>
+		<para>Po zakończeniu edycji paska narzędziowego, należy nacisnąć przycisk <guibutton>Zamknij</guibutton> w oknie edytora. Spowoduje to zamknięcie edytora i uaktywnienie zmodyfikowanego paska narzędziowego.</para>
+		</sect2>
+		<sect2 id="eom-toolbareditor-reset">
+			<title>Przywracanie domyślnej konfiguracji paska narzędziowego</title>
+			<para>W celu przywrócenia paska narzędziowego do pierwotnego stanu, nalezy wykonać nastepujące kroki:</para>
+			<orderedlist>
+				<listitem>
+					<para>Otworzyć edytor paska narzędziowego (zobacz <xref linkend="eom-toolbareditor-use"/>).</para>
+				</listitem>
+				<listitem>
+					<para>Nacisnąć przycisk <guibutton>Przywróć domyślne</guibutton>.</para>
+				</listitem>
+				<listitem>
+					<para>Nacisnąć przycisk <guibutton>Zamknij</guibutton>, aby zamknąć okno edytora paska nrzędziowego. Pasek zostanie przywrócony do ustawień domyślnych.</para>
+				</listitem>
+			</orderedlist>
+		</sect2>
+</sect1>
+<sect1 id="eom-prefs">
+	<title>Preferencje</title>
+	<para>Można zmienić ustawienia wyświetlania obrazu i pokazu slajdów. W tym celu należy z menu wybrać polecenie <menuchoice><guimenu>Edycja</guimenu><guimenuitem>Preferencje</guimenuitem></menuchoice>. Wszelkie zmiany  zostaną natychmiast zastosowane dla wszystkich otwartych okien.</para>
+
+	<!--============ Image View ======================= -->
+  <sect2 id="eom-prefs-image">
+         <title>Wyświetlanie obrazu</title>
+	<variablelist>
+	<varlistentry>
+		<term lang="en"><guilabel>Image Enhancements</guilabel></term>
+		<listitem>
+		<para>Aby włączyć rozmywanie obrazu podczas zmiany stopnia powiększenia, należy zaznaczyć pole wyboru <guilabel>Interpolacja obrazy przy powiększeniu</guilabel>. Po zaznaczeniu tej opcji wszystkie obrazy będą interpolowane podczas wyświetlania ich za pomocą <application>Przeglądarki obrazów</application>.</para>
+                <para>Po zaznaczeniu opcji <guilabel>Orientacja automatyczna</guilabel>, wszystkie obrazy zostaną obrócone zgodnie z informacjami zapisanymi w ich metadanych. Przykładowo obrazy portretowe zostaną obrócone do pionu. Funkcja ta wymaga poprawnie zapisanego znacznika orientacji w metadanych obrazu i może nie działać dla wszystkich obrazów.</para>
+		</listitem>
+	</varlistentry>
+
+	<varlistentry>
+		<term lang="en"><guilabel>Transparent Parts</guilabel></term>
+		<listitem>
+		<para>Należy wybrać jedną z poniższych opcji, aby określić jak <application>przeglądarka obrazów</application> ma traktować przeźroczyste części obrazu:</para>
+		<itemizedlist>
+			<listitem><para lang="en"><guilabel>As check pattern</guilabel> </para>
+			<para>Wyświetla wszystkie przeźroczyste części obrazu jako szachownicę.</para>
+			</listitem>
+			<listitem><para lang="en"><guilabel>As custom color</guilabel> </para>
+			<para>Wyświetla wszystkie przeźroczyste części obrazu w wybranym kolorze. Należy nacisnąć przycisk wyboru koloru, aby go ustawić.</para>
+			</listitem>
+			<listitem><para lang="en"><guimenuitem>As background</guimenuitem> </para>
+			<para>Wyświetla wszystkie przeźroczyste części obrazu w kolorze tła <application>przeglądarki obrazów</application>.</para>
+			</listitem>
+		</itemizedlist>
+		</listitem>
+	</varlistentry>		
+	</variablelist>
+  </sect2>
+		
+	<!--============ Slide Show ==================-->                                                                                               
+  <sect2 id="eom-prefs-slideshow">
+         <title>Pokaz slajdów</title>
+	<variablelist>
+	<varlistentry>
+		<term lang="en"><guilabel>Image Zoom</guilabel></term>
+		<listitem>
+		<para>W celu dopasowania obrazu do wielkości ekranu podczas pokazu slajdów, należy zaznaczyć opcję <guilabel>Dopasowywanie obrazów do rozmiaru ekranu</guilabel>. Jeśli ta opcja nie zostanie wybrana, obrazy które są mniejsze niż rozmiar ekranu nie zostaną powiększone.</para>
+		</listitem>
+	</varlistentry>
+	<varlistentry>
+		<term lang="en"><guilabel>Sequence</guilabel></term>
+		<listitem>
+		<para>Zaznaczenie opcji <guilabel>Zapętlanie</guilabel>, spowoduje nieskończone przełączanie między obrazami w kolekcji podczas pokazu slajdów. Jeśli ta opcja nie zostanie wybrana, pokaz slajdów powróci do widoku kolekcji po wyświetleniu ostatniego obrazu.</para>
+		<para>Pole <guilabel>Zmiana obrazu po: ... sekundach</guilabel> pozwala na określenie, jak długo ma zostać wyświetlony dany obraz podczas pokazu slajdów. Jeśli wartość tego pola będzie wynosiła 0, wówczas funkcja automatycznego przechodzenia między obrazami zostanie wyłączona i dostępna będzie tylko ręczna zmiana obrazów (zobacz<xref linkend="eom-fullscreen"/>).</para>
+		</listitem>
+	</varlistentry>		
+	</variablelist>
+  </sect2>
+</sect1>
+</article>

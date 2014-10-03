@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="hotkeys" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Préférences des raccourcis clavier.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Raccourcis clavier</title>
+
+	<p>Les raccourcis clavier vous permettent d'accéder à vos notes et aux fonctionnalités de Tomboy de n'importe où, même si vous utilisez d'autres applications sur votre bureau. Les raccourcis clavier sont activés en pressant simultanément des touches de votre clavier.</p>
+	
+	<p>Vous pouvez activer les raccourcis clavier dans les <gui>Préférences de Tomboy</gui> en faisant un clic droit sur l'icône de Tomboy de votre tableau de bord, de la barre des tâches ou du dock et en choisissant <gui>Préférences</gui> puis en sélectionnant l'onglet <gui>Raccourcis clavier</gui>. Vous pouvez aussi ouvrir les <gui>Préférences de Tomboy</gui> depuis la boîte de dialogue <gui>Rechercher dans toutes les notes</gui>. Choisissez <guiseq><gui>Édition</gui><gui>Préférences</gui></guiseq> dans le menu.</p>	
+	
+	<p>Les actions de Tomboy qui peuvent être activées à l'aide des raccourcis clavier sont :</p>
+	
+	<list>
+	  <item><p><gui>Afficher le menu des notes</gui> : <keyseq><key>Alt</key><key>F12</key></keyseq></p></item>
+	  <item><p><gui>Ouvrir « Démarrer ici »</gui> : <keyseq><key>Alt</key><key>F11</key></keyseq></p></item>
+	  <item><p><gui>Créer une nouvelle note</gui> : désactivé par défaut. Vous pouvez saisir une séquence de touches dans ce champ pour créer un raccourci clavier.</p></item>
+	  <item><p><gui>Ouvrir « Rechercher dans toutes les notes »</gui> : désactivé par défaut. Vous pouvez saisir une séquence de touches dans ce champ pour créer un raccourci clavier.</p></item>
+	</list>  
+	    
+ </page>

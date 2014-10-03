@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY app "Dictionary">
+<!ENTITY applet "Dictionary Applet">
+<!ENTITY appversion "2.14.0">
+<!ENTITY date "January 2005">
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY manrevision "1.0.0">
+]>
+<!-- This file describes the Dictionary applet and application. -->
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.mate.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified 11 April, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="da">
+<!-- please do not change the id; for translations, change language to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>Ordbogsmanual</title>
+
+    <abstract role="description">
+      <para>Ordbog gør, at du kan slå orddefinitioner og korrekt stavning op.</para>
+    </abstract>
+    
+    <copyright lang="en">
+      <year>2005</year>
+      <holder>Emmanuele Bassi</holder>
+    </copyright>
+    
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2006</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+   
+    <publisher> 
+      <publishername>MATE-dokumentationsprojekt</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>Tilladelse er givet til at kopiere, distribuere og/eller ændre dette dokument under betingelserne i GNU Free Documentation License (GFDL), version 1.1 eller enhver senere version udgivet af Free Software Foundation; uden invariante afsnit, forsidetekster, samt bagsidetekster. Du kan se en kopi af GFDL her <ulink type="help" url="help:fdl">link</ulink> eller i filen COPYING-DOCS som distribueres sammen med denne manual.</para>
+         <para>Denne manual er en del af den samling af MATE-manualer som udgives under GFDL. Hvis du ønsker at distribuere denne manuel adskilt fra samlingen, kan du gøre dette ved at tilføje en kopi af licensen til manualen, som beskrevet i afsnit 6 af licensen.</para>
+
+	<para>En stor del af de navne som anvendes af firmaer til at identificere deres produkter og tjenester hævdes som værende varemærker. Hvor disse navne fremgår i en hvilken som helst MATE-dokumentation, og medlemmerne af MATE-dokumentationsprojeket er gjort opmærksom på disse varemærker, så er disse navne vist med store bogstaver eller stort begyndelsesbogstav.</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+
+    <authorgroup> 
+      <author role="maintainer" lang="en"> 
+	<firstname>Emmanuele</firstname> 
+	<surname>Bassi</surname> 
+	<affiliation> 
+	  <address><email>ebassi@gmail.com</email></address> 
+	</affiliation> 
+      </author> 
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+
+    </authorgroup>
+
+    <revhistory>
+      <revision lang="en"> 
+	<revnumber>Dictionary Manual V1.0.0</revnumber> 
+	<date>January 2005</date> 
+	<revdescription> 
+	  <para role="author" lang="en">Emmanuele Bassi</para>
+	  <para role="publisher" lang="en">MATE Documentation Project</para>
+	</revdescription> 
+      </revision>
+    </revhistory> 
+
+    <releaseinfo>Denne manual beskriver version 2.14.0 af ordbog.</releaseinfo> 
+    <legalnotice> 
+      <title>Tilbagemeldinger</title> 
+      <para>Hvis du ønsker at indrapportere en fejl eller komme med et forslag vedrørende ordbog eller denne manual så følg vejledningen på siden <ulink url="help:user-guide?feedback-bugs" type="help">tilbagemeldinger omkring MATE</ulink>.</para>
+      
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm lang="en"> 
+    <primary>Dictionary</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="mate-dictionary-introduction"> 
+    <title>Indledning</title>
+
+    <para>Programmet <application>Ordbog</application> gør det muligt for dig at søge blandt ord og termer fra en ordbogskilde.</para>
+    
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->  
+  <sect1 id="mate-dictionary-getting-started">
+    <title>Kom i gang</title>
+    
+<!-- ============= To Start Dictionary ======================= -->
+    <sect2 id="mate-dictionary-start-application">
+      <title>For at starte ordbog</title>
+      
+      <para>Du kan starte <application>Ordbog</application> på følgende måder:</para>
+      
+      <variablelist>
+        	<varlistentry>
+        	  <term>Menuen <guimenu>Programmer</guimenu></term>
+        	  <listitem>
+        	    <para lang="en">Choose <menuchoice><guisubmenu>Accessories</guisubmenu>
+        	      <guimenuitem>Dictionary</guimenuitem></menuchoice>.
+        	    </para>
+        	  </listitem>
+        	</varlistentry>
+    	<varlistentry>
+    	  <term>Kommandolinje</term>
+    	  <listitem>
+    	    <para>Udfør den følgende kommando: <command>mate-dictionary</command></para>
+    	  </listitem>
+    	</varlistentry>
+      </variablelist>
+      
+      <para>Når startet vises vinduet <application>Ordbog</application>:</para>
+      
+      <figure id="mate-dictionary-fig">
+        <title>Ordbogsvindue</title>
+        <screenshot> 
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-dictionary-application.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows Dictionary main window.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+    </sect2>
+
+  </sect1>
+  
+<!-- ============= Usage ===================================== -->
+  <sect1 id="mate-dictionary-usage">
+    <title>Brug</title>
+    
+    <sect2 id="mate-dictionary-lookup">
+      <title>Slå et ord op</title>
+      
+      <para>For at slå et ord op tastes det i <guilabel>indtastningsfeltet</guilabel> efterfulgt af <keycap>Retur</keycap>.</para>
+    
+      <para>Hvis en definition på et ord findes, vil denne vises inden i hovedvinduets område:</para>
+
+      <figure id="mate-dictionary-lookup-fig">
+        <title>Ordbogsvindue</title>
+        <screenshot> 
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-dictionary-lookup.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows a definition inside the Dictionary main window.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+      
+      <para>Ellers vil en fejlbesked komme frem, med en besked der forklarer årsagen til fejlen.</para>
+    
+    </sect2>
+    
+    <sect2 id="mate-dictionary-save">
+      <title>Gem opslagsresultater</title>
+      
+      <para>For at gemme resultatet af et opslag vælges <menuchoice><guimenu>Fil</guimenu><guimenuitem>Gem en kopi</guimenuitem></menuchoice>. Indtast et navn på filen i vinduet <guilabel>Gem en kopi</guilabel>, og klik på <guibutton>Gem</guibutton>.</para>
+    
+    </sect2>
+    
+    <sect2 id="mate-dictionary-print">
+      <title>Udskriv opslagsresultater</title>
+      
+      <para>For at udskrive et opslagsresultat vælges <menuchoice><guimenu>Fil</guimenu><guimenuitem>Udskriv</guimenuitem></menuchoice>.</para>
+
+      <para>I vinduet <guilabel>Udskriv</guilabel> kan du vælge den ønskede printer, papirformatet og antallet af kopier.</para>
+
+      <para>For at se en forhåndsvisning af det udskrevne klikkes på <guibutton>Forhåndsvisning</guibutton>.</para>
+
+      <para>For at udskrive klikkes på <guibutton>Udskriv</guibutton>.</para>
+    
+    </sect2>
+    
+    <sect2 id="mate-dictionary-find">
+      <title>Find tekst</title>
+
+      <figure id="mate-dictionary-find-fig">
+        <title>Ordbogsvindue</title>
+        <screenshot> 
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-dictionary-find.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows the Dictionary Find pane inside the main window.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      
+      <para>For at finde tekst i resultaterne af et opslag gøres følgende:</para>
+      
+      <orderedlist>
+        <listitem><para lang="en">Choose <menuchoice> <guimenu>Edit</guimenu> <guimenuitem>Find</guimenuitem> </menuchoice>
+        to display the <guilabel>Find</guilabel> pane.</para></listitem>
+        <listitem><para>Indtast teksten du ønsker at finde inden i indtastningsfeltet <guilabel>Find</guilabel>.</para></listitem>
+        <listitem><para>For at finde den næste forekomst af teksten klikkes på <guibutton>Næste</guibutton>. For at finde den forrige forekomst af teksten klikkes på <guibutton>Forrige</guibutton>.</para></listitem>
+      </orderedlist>
+    
+    </sect2>
+      
+  </sect1>
+
+<!-- ============= Preferences =============================== -->
+  <sect1 id="mate-dictionary-preferences">
+    <title>Indstillinger</title>
+    
+    <para>For at ændre programindstillingerne for <application>Ordbog</application> vælges <menuchoice><guimenu>Redigér</guimenu><guimenuitem>Indstillinger</guimenuitem></menuchoice>.</para>
+
+<!-- ============= Source Tab ================================ -->
+    <sect2 id="mate-dictionary-source-tab">
+      <title>Ordbogskilder</title>
+
+      <figure id="mate-dictionary-sources-fig">
+        <title>Ordbogsvindue</title>
+        <screenshot> 
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-dictionary-preferences-source.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows the Source tab of the Preferences dialog.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <para>Vælg den kilde fra listen som ønskes brugt til at slå ord op med.</para>
+    </sect2>
+    
+<!-- ============= Add Source ================================ -->
+    <sect2 id="mate-dictionary-add-source">
+      <title>Tilføjelse af en ny kilde</title>
+
+      <figure id="mate-dictionary-add-source-fig">
+        <title>Ordbogsvindue</title>
+        <screenshot> 
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-dictionary-add-source.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows the Add Source dialog.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <para>For at tilføje en ny ordbogskilde gøres følgende:</para>
+
+      <orderedlist>
+        <listitem><para>Klip på knappen <guibutton>Tilføj</guibutton></para></listitem>
+	<listitem><para>Rediger navnet på den nye kilde inden i indtastningsfeltet <guilabel>Beskrivelse</guilabel></para></listitem>
+	<listitem><para>Ændre transportypen på den nye kilde med brug af valgboksen <guilabel>Transport</guilabel></para></listitem>
+	<listitem><para>Rediger attributterne på den nye kilde</para></listitem>
+	<listitem><para>Klik <guibutton>Tilføj</guibutton></para></listitem>
+      </orderedlist>
+
+      <para>Forskellige kildetransporttyper anvender forskellige attributter. Dette er listen over tilgængelige attributter per transporttype:</para>
+
+      <informaltable frame="all">
+        <tgroup cols="2" colsep="1" rowsep="1">
+	  <thead>
+	    <row valign="top">
+	      <entry><para>Transport</para></entry>
+	      <entry><para>Attributter</para></entry>
+	    </row>
+	  </thead>
+	  <tbody>
+	    <row valign="top">
+	      <entry><para>Ordbogsserver</para></entry>
+	      <entry>
+	        <para>Værtsnavn: Værtsnavnet på ordbogsserveren</para>
+		<para>Port: Porten for ordbogsserveren</para>
+              </entry>
+	    </row>
+	  </tbody>
+	</tgroup>
+      </informaltable>
+    
+    </sect2>
+
+<!-- ============= Remove Source ============================= -->
+    <sect2 id="mate-dictionary-remove-source">
+      <title>Fjern en kilde</title>
+      
+      <para>For at fjerne en ordbogskilde, gøres følgende:</para>
+
+      <orderedlist>
+        <listitem><para>Vælg kilden du ønsker at fjerne</para></listitem>
+	<listitem><para>Klik på knappen <guibutton>Fjern</guibutton></para></listitem>
+      </orderedlist>
+
+      <warning><para>Hvis du fjerner en ordbogskilde, vil den permanent blive slettet fra listen over tilgængelige kilder. Bemærk også at nogle kilder måske er generelt defineret, og at du måske ikke kan fjerne dem uden at have de korrekte ejerskabsprivilegier.</para></warning>
+      
+    </sect2>
+    
+<!-- ============= Print Tab ================================= -->
+    <sect2 id="mate-dictionary-print-tab">
+      <title>Udskrivningsindstillinger</title>
+
+      <figure id="mate-dictionary-print-fig">
+        <title>Ordbogsvindue</title>
+        <screenshot> 
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-dictionary-preferences-print.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows the Print tab inside the Preferences dialog.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+
+      <para>Hvis du ønsker at ændre den brugte skrifttype og størrelse under udskrivning så udfør de følgende trin:</para>
+
+      <orderedlist>
+        <listitem><para>Klik på knappen <guilabel>Udskriv skrifttype</guilabel></para></listitem>
+	<listitem><para>Vælg skrifttypen og størrelse du ønsker at bruge</para></listitem>
+	<listitem><para>Klik <guibutton>O.k.</guibutton></para></listitem>
+      </orderedlist>
+	
+    </sect2>
+    
+  </sect1>
+
+<!-- ============= Dictionary Applet ======================== -->
+  <sect1 id="mate-dictionary-applet">
+  <title>Ordbogspanelprogrammet</title>
+  
+  <para>Programmet <application>Ordbog</application> kommer med et panelprogram, <application>Ordbogsopslag</application>. Du kan tilføje panelprogrammet <application>Ordbogsopslag</application> til et panel og slå ord op i ordbøger.</para>
+
+  <figure id="mate-dictionary-applet-fig">
+    <title>Vindue for ordbogsopslag</title>
+    <screenshot> 
+      <mediaobject lang="en">
+        <imageobject>
+          <imagedata fileref="figures/mate-dictionary-applet.png" format="PNG"/>
+        </imageobject>
+        <textobject><phrase>Shows Dictionary Applet.</phrase></textobject> 
+      </mediaobject>
+    </screenshot>
+  </figure>
+
+
+<!-- ============= Dictionary Applet Start ================== -->
+    <sect2 id="mate-dictionary-applet-start">
+      <title>For at starte panelprogrammet ordbogsopslag</title>
+    
+      <para>For at tilføje <application>Ordbogsopslag</application> til et panel højreklikkes på panelet, og der vælges <guimenuitem>Tilføj til panel</guimenuitem>. Vælg ordbogsopslag i vinduet <application>Tilføj til panelet</application> og klik på <guibutton>O.k.</guibutton>.</para>
+      
+    </sect2>
+
+<!-- ============= Dictionary Applet Start ================== -->
+    <sect2 id="mate-dictionary-applet-usage">
+      <title>Brug af panelprogrammet ordbogsopslag</title>
+      
+      <para>For at slå et ord op, tastes det i <guilabel>indtastningsfeltet</guilabel>, og der trykkes på <keycap>Retur</keycap> eller højreklik på ordbogsikonet og så vælge <guimenuitem>Slå op</guimenuitem>.</para>
+      
+      <para>Hvis en definition for ordet blev fundet, vil et vindue vise sig med teksten på definitionerne:</para>
+
+      <figure id="mate-dictionary-applet-window-fig">
+        <title>Vindue for ordbogsopslag</title>
+        <screenshot> 
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/mate-dictionary-applet-window.png" format="PNG"/>
+            </imageobject>
+            <textobject><phrase>Shows Dictionary Applet main window.</phrase></textobject> 
+          </mediaobject>
+        </screenshot>
+      </figure>
+      
+      <para>Klik <guibutton>Gem</guibutton> for at gemme definitionerne til en tekstfil. Klik <guibutton>Udskriv</guibutton> for at udskrive definitionerne. Klik <guibutton>Ryd</guibutton> for at rydde definitionerne.</para>
+      
+      <para>Du får vinduet til at forsvinde ved at venstreklikke på ordbogsikonet eller ved at trykke på <keycap>Esc</keycap>.</para>
+
+    </sect2>
+    
+    <sect2 id="mate-dictionary-applet-preferences">
+      <title>Indstillinger</title>
+      
+      <para lang="en">To configure the <application>Dictionary Applet</application>, right-click on
+      the dictionary icon, then choose <guimenuitem>Preferences</guimenuitem>.</para>
+      
+      <para>Vinduet <guilabel>Indstillinger</guilabel> er det samme som brugt af <application>Ordbog</application>, så se i <xref linkend="mate-dictionary-preferences"/></para>
+      
+    </sect2>
+    
+  </sect1>
+
+</article>

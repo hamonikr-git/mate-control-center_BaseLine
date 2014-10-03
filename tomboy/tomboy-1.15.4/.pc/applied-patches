@@ -1,0 +1,4 @@
+01_dllmaps.patch
+04_app_indicator.patch
+20_remove_pcfile_requires
+use_dbussharp_2.patch

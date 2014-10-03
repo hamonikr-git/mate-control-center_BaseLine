@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.18">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "February 2007">
+<!ENTITY app "<application>Image Viewer</application>">
+<!ENTITY appname "Image Viewer">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Feb 12, 2002
+  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ar">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>دليل عارض الصّور</title>
+    
+    <copyright lang="en"> 
+      <year>2006</year> 
+      <year>2007</year>
+      <holder>MATE Documentation Project</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2002</year> 
+      <year>2003</year> 
+      <year>2004</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>Eliot Landrum</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>The Free Software Foundation</holder> 
+    </copyright>	 
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2003</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is 
+     not specified, the publisher/author is the same for all versions of the 
+     document.  -->
+    <publisher role="maintainer"> 
+      <publishername>مشروع توثيق جنوم</publishername> 
+    </publisher> 
+
+      <legalnotice id="legalnotice">
+         <para lang="en">
+           Permission is granted to copy, distribute and/or modify this
+           document under the terms of the GNU Free Documentation
+           License (GFDL), Version 1.1 or any later version published
+           by the Free Software Foundation with no Invariant Sections,
+           no Front-Cover Texts, and no Back-Cover Texts.  You can find
+           a copy of the GFDL at this <ulink type="help" url="help:fdl">link</ulink> or in the file COPYING-DOCS
+           distributed with this manual.
+          </para>
+          <para lang="en"> This manual is part of a collection of MATE manuals
+           distributed under the GFDL.  If you want to distribute this
+           manual separately from the collection, you can do so by
+           adding a copy of the license to the manual, as described in
+           section 6 of the license.
+         </para>
+ 
+         <para lang="en">
+           Many of the names used by companies to distinguish their
+           products and services are claimed as trademarks. Where those
+           names appear in any MATE documentation, and the members of
+           the MATE Documentation Project are made aware of those
+           trademarks, then the names are in capital letters or initial
+           capital letters.
+         </para>
+ 
+         <para lang="en">
+           DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+           UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+           WITH THE FURTHER UNDERSTANDING THAT:
+ 
+           <orderedlist>
+                 <listitem>
+                   <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                     WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                     IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                     THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                     A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                     RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                     OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                     DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                     MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                     YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                     CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                     SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                     OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                     LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                     VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                     EXCEPT UNDER THIS DISCLAIMER; AND
+                   </para>
+                 </listitem>
+                 <listitem>
+                   <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                        THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                        CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                        INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                        DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                        OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                        PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                        DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                        CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                        INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                        OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                        MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                        LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                        DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                        EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                        THE POSSIBILITY OF SUCH DAMAGES.
+                   </para>
+                 </listitem>
+           </orderedlist>
+         </para>
+   </legalnotice>
+ 
+   <!-- This file  contains link to license for the documentation (GNU FDL), and 
+        other legal stuff such as "NO WARRANTY" statement. Please do not change 
+	any of this. -->
+   <authorgroup>
+   <author lang="en"> 
+	<firstname>Jens</firstname> 
+	<surname>Finke</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Angela</firstname> 
+	<surname>Boyle</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Stuart</firstname> 
+	<surname>Ellis</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname>
+	</affiliation>
+   </author>
+   <author lang="en"> 
+	<firstname>Sun</firstname> 
+	<surname>MATE Documentation Team</surname> 
+	<affiliation> 
+	  <orgname>Sun Microsystems</orgname>  
+	</affiliation> 
+   </author> 
+   <author lang="en"> 
+	<firstname>Eliot</firstname> 
+	<surname>Landrum</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+   </author> 
+   <author lang="en"> 
+	<firstname>Federico</firstname> 
+	<surname>Mena Quintero</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	</affiliation> 
+   </author>	
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <email>translator@gnome.org</email> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+ 
+    <revhistory>
+    <revision lang="en"> 
+		<revnumber>Image Viewer Manual V2.8</revnumber> 
+		<date>February 2007</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">MATE Documentation Project</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en">
+		<revnumber>Image Viewer Manual V2.7</revnumber>
+		<date>February 2004</date>
+		<revdescription>
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription>
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.6</revnumber> 
+		<date>November 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.5</revnumber> 
+		<date>September 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.4</revnumber> 
+		<date>January 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.3</revnumber> 
+		<date>October 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.2</revnumber> 
+		<date>August 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision>
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.1</revnumber> 
+		<date>July 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en"> 
+		<revnumber>Eye of MATE Manual V2.0</revnumber> 
+		<date>May 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+    </revision> 
+    <revision lang="en"> 
+		<revnumber>Eye of MATE User's Guide</revnumber> 
+		<date>2000</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Eliot Landrum 
+	    		  <email>eliot@landrum.cx</email>
+	  		</para>
+	  		<para role="author" lang="en">Federico Mena Quintero 
+	    		  <email>federico@gnu.org</email>
+	  		</para>	  
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+		</revdescription> 
+      </revision> 
+    </revhistory> 
+    <releaseinfo>الدليل يشرح الإصدار 2.18 من عارض الصور.</releaseinfo> 
+    <legalnotice> 
+      <title>الاقتراحات</title> 
+      <para>للتبليغ عن خطأ برمجي أو لإرسال اقتراح بخصوص عارض الصور أو هذا الدليل، اتبع التعليمات في   <ulink url="help:user-guide?feedback-bugs" type="help">MATE Feedback Page</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+    <abstract role="description">
+      <para>دليل المستخدم ل<application>عارض الصور عين جنوم</application>.</para>
+    </abstract>
+
+  </articleinfo> 
+
+  <indexterm lang="en">
+    <primary>Eye of MATE</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+<sect1 id="eom-introduction">
+  <title>مقدمة</title>
+  <para>تطبيق <application>عارض الصور عين جنوم</application> يسمح لك بعرض ملفات صور وحيدة، بالإضافة إلى مجموعات عريضة.</para>
+
+  <sect2 id="eom-tostartapp">
+    <title>بدء عارض الصور</title>
+    <para>تستطيع بدء <application>عارض الصور</application> بالطرق التالية:</para>
+    <itemizedlist>
+      <listitem>
+        <para>افتح ملف صورة في <application>نيوتلوس</application>.</para>
+      </listitem>
+      <listitem>
+	<para lang="en">Choose <menuchoice><guimenu>Graphics</guimenu>
+	<guimenuitem>Image Viewer</guimenuitem></menuchoice>
+	from the <guimenu>Applications</guimenu> menu.</para>
+      </listitem>
+      <listitem>
+	<para>شغّل <command>eom</command> في المحث في طرفية مثل <application>طرفية-جنوم</application>، أو من حوار <application>شغّل تطبيقا</application>.</para>
+      </listitem>
+    </itemizedlist>
+  </sect2>
+
+  <sect2 id="eom-closeapp">
+    <title>إغلاق عارض الصّور</title>
+    <para lang="en">To close the current <application>Image Viewer</application> window choose <menuchoice><guimenu>File</guimenu>
+    <guimenuitem>Close</guimenuitem></menuchoice>, or press
+    <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>.</para>
+  </sect2>
+
+  <sect2 id="eom-filetypes">
+    <title>أنواع الملفات المدعومة</title>
+    <para>يدعم <application>عارض الصور</application> أنساق ملفات صور متعددة. الأنساق التالية يمكن فتحها:</para>
+		<itemizedlist>
+			<listitem><para>ANI - تحريكة</para>
+			</listitem>
+			<listitem><para>BMP - خارطة ويندوز الثنائية</para>
+			</listitem>
+			<listitem><para>GIF - نسق تبادل الرسوميات</para>
+			</listitem>
+			<listitem><para>ICO - أيقونة ويندوز</para>
+			</listitem>
+			<listitem><para>JPEG - عقدة مجموعة الخبراء الفوتوغرافيين</para>
+			</listitem>
+			<listitem><para>PCX - فرشاة رسم الحاسوب الشخصي</para>
+			</listitem>
+			<listitem><para>PNG - رسوميات الشبكة المحمولة</para>
+			</listitem>
+			<listitem><para>PNM - Portable Anymap from the PPM Toolkit</para>
+			</listitem>
+			<listitem><para>RAS - رافع صن</para>
+			</listitem>
+			<listitem><para>SVG - الرسوميات المتجهة القياسية</para>
+			</listitem>
+			<listitem><para>TGA - تارغا</para>
+			</listitem>
+			<listitem><para>TIFF - نسق ملف الصور الموسوم</para>
+			</listitem>
+			<listitem><para>WBMP - خارطة ثنائية لاسلكية</para>
+			</listitem>
+			<listitem><para>XBM - خارطة إكس الثنائية</para>
+			</listitem>
+			<listitem><para>XPM - خارطة إكس البكسلية</para>
+			</listitem>
+		</itemizedlist>
+
+  <para>يدعم <application>عارض الصّور</application> الأنساق التالية للحفظ:</para>
+		<itemizedlist>
+			<listitem><para>BMP - خارطة ويندوز الثنائية</para>
+			</listitem>
+			<listitem><para>ICO - أيقونة ويندوز</para>
+			</listitem>
+			<listitem><para>JPEG - عقدة مجموعة الخبراء الفوتوغرافيين</para>
+			</listitem>
+			<listitem><para>PNG - رسوميات الشبكة المحمولة</para>
+			</listitem>
+		</itemizedlist>
+		<para>قد يتمكن <application>عارض الصّور</application>  من فتح وحفظ أنساق صور أخرى، بناءً على تعريفات نظامك وبرمجيات أخرى مثبتة.</para>
+  </sect2>
+
+  <sect2 id="eom-features">
+    <title>مزايا عارض الصّور</title>
+    <para>لدى <application>عارض الصور</application> مزايا متعددة لمساعدتك في عرض صورك. تستطيع التكبير والتصغير أو عرض الصورة في ملء الشاشة. بغض النظر عن مستوى تكبيرك، <application>عارض الصور</application> يستخدم كمية قليلة من الذاكرة. تستطيع أيضا تدوير وقلب الصورة التي تعرضها.</para>
+
+    <para>عرض المجموعة يسمح بالعرض والنحرير لمجموعات صور عريضة. في عرض الصور هذا يمكن تطبيق العمليات على كل الصور المنتقاة مرة واحدة.</para>
+
+    <para>لدى <application>عارض الصور</application> دعم خاص للكاميرات الرقمية ويعرض بيانات إي‌إكس‌آي‌إف الإضافية مع الصورة. هذه الميزة تتطلب <systemitem class="library">libexif</systemitem> أن تكون مثبتة على نظامك. كل التعديلات المُصيّرة على صور جي‌بي‌إي‌جي غير قابلة للفقدان. لهذا، حفظ صور جي‌بي‌إي‌جي المُدوّرة والمقلوبة لن يعيد تركيب الصورة. بالإضافة إلى هذا، كل البيانات الإضافية المتاحة (مثل إي‌إكس‌آي‌إف) سوف تحدث وتخدم تبعا.</para>
+  </sect2>
+</sect1>
+
+<!--============== When You Start ===========-->
+<sect1 id="eom-whenyoustart">
+  <title>البدء</title>
+  <para>عند بدء <application>عارض الصور</application>، النافذة التالية تُعرض:</para>
+  <figure id="mainwindow-fig">
+		<title>نافذة بدء عارض الصّور</title>
+		<screenshot>
+		  <mediaobject lang="en">
+		    <imageobject>
+		      <imagedata fileref="figures/eom_start_window.png" format="PNG"/>
+		    </imageobject>
+		    <textobject>
+		      <phrase>Shows <application>Image Viewer</application> main window. Contains titlebar, menubar, toolbar, and display area. Menubar contains File, Edit, View, and Help menus.</phrase>
+		    </textobject>
+		  </mediaobject>
+		</screenshot>
+  </figure>
+  <para>نافذة <application>عارض الصور</application> تتضمن العناصر التالي:</para>
+  <variablelist>
+	<varlistentry>
+  	  <term>شريط القوائم</term>
+ 	  <listitem>
+	    <para>القوائم في شريط القوائم تحتوي كل الأوامر التي تحتاجها للعمل مع الصور في <application>عارض الصّور</application>.</para>
+	  </listitem>
+ 	</varlistentry>
+	<varlistentry>
+	  <term>شريط الأدوات</term>
+	  <listitem>
+	    <para>شريط الأدوات يحتوي رصّات فرعية من الأوامر التي يمكنك الوصول إليها من شريط القوائم. لإظهار أو إخفاء شريط الأدوات، اختر <menuchoice><guimenu>عرض</guimenu><guimenuitem>شريط الأدوات</guimenuitem></menuchoice>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>منطقة العرض</term>
+	  <listitem>
+ 	    <para>منطقة العرض تظهر ملف الصورة.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>شريط الحالة</term>
+	  <listitem>
+	    <para>شريط الحالة يقدم معلومات حول الصور. لإظهار أو إخفاء شريط الحال، اختر <menuchoice><guimenu>عرض</guimenu><guimenuitem>شريط الحالة</guimenuitem></menuchoice>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>مجموعة الصور</term>
+	  <listitem>
+	    <para>تظهر مجموعة الصور كل الصور المدعومة في دليل العمل الحالي. تظهر عندما تحُمّل صورة. لإظهار أو إخفاء المجموعة، اختر <menuchoice><guimenu>عرض</guimenu><guimenuitem>مجموعة الصور</guimenuitem></menuchoice> أو اضغط <keycap>F9</keycap>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>لوح معلومات الصورة</term>
+	  <listitem>
+	    <para>لوح معلومات الصورة يقدم معلومات أخرى حول الصورة الحالية، على سبيل المثال بيانات إي‌إكس‌آي‌إف الإضافية (إذا أتيحت). يظهر بعد تحميل الصورة. لإظهار أو إخفاء لوح معلومات الصورة، اختر <menuchoice><guimenu>عرض</guimenu><guimenuitem>معلومات الصورة</guimenuitem></menuchoice> أو اضغط <keycombo><keycap>Ctrl</keycap><keycap>I</keycap></keycombo>.</para>
+	  </listitem>
+	</varlistentry>
+  </variablelist>
+  <para>معظم الإجراءات في <application>عارض الصور</application> يمكن تشكيلها بطرق عدة. على سبيل المثال، تستطيع فتح ملف بالطرق التالية:</para>
+  <itemizedlist>
+    <listitem><para>ألقِ ملف صورة إلى نافذة <application>عارض الصور</application> من تطبيق أو نافذة أخرى.</para></listitem>
+    <listitem><para>انقر مزدوجا على ملف صورة في مدير الملفات أو تطبيق آخر.</para></listitem>
+    <listitem><para lang="en">Choose <menuchoice><guimenu>File</guimenu>
+    <guimenuitem>Open</guimenuitem></menuchoice> and select an image file
+    in the <application>Load Image</application> dialog.</para></listitem>
+    <listitem><para lang="en">Press <keycombo><keycap>Ctrl</keycap><keycap>O</keycap>
+    </keycombo> and select an image file in the <application>Load
+    Image</application> dialog.</para></listitem>
+  </itemizedlist>
+</sect1>
+
+
+<!-- ============= Viewing Images ============================== -->
+<sect1 id="eom-view">
+	<title>عرص الصور</title>
+
+	<!--=========== To Open an Image ============================= -->
+	<sect2 id="eom-open-image">
+		<title>فتح صورة</title>
+                <para>لفتح صورة، شكّل الخطوات التالية:</para>
+                <orderedlist>
+                  <listitem>
+                    <para lang="en">
+                      Choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice>, or press <keycombo> <keycap>Ctrl</keycap><keycap>O</keycap> </keycombo>.  </para>
+                  </listitem>
+                  <listitem>
+                    <para>في حوار <guilabel>تحميل صورة</guilabel>، انتقِ الملف الذي تريد فتحه.</para>
+                  </listitem>
+                  <listitem>
+                    <para>`انقر <guibutton>افتح</guibutton>. <application>Image Viewer</application> يعرض اسم ملف الصورة في شريط عنوان النافذة.</para>
+                  </listitem>
+                </orderedlist>
+                <para lang="en"> 
+	          To open another image, choose <menuchoice> <guimenu>File</guimenu><guimenuitem>Open</guimenuitem> </menuchoice> again. <application>Image Viewer</application> opens each image in a new window.
+                </para>
+	</sect2>
+
+	<!--=========== To View the Images in a Directory ==================== -->
+	<sect2 id="eom-open-folder">
+		<title>عرض الصور في مجلد</title>
+		<para>لعرض كل الصور في مجلد، شكّل الخطوات التالية:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>افتح واحدة من الصور في المجلد (راجع <xref linkend="eom-open-image"/>).</para>
+                  </listitem>
+                  <listitem>
+                    <para>افتح مجموعة الصور عن طريق اختيار <menuchoice><guimenu>عرض</guimenu><guimenuitem>مجموعة الصور</guimenuitem></menuchoice> أو ضغط <keycap>F9</keycap>.</para>
+                  </listitem>
+		</orderedlist>
+	     <para>المجموعة تعرض مصغرات كل الصور المدعومة في المجلد. تستطيع تصفح الصور عن طريق النقر على الصورة في المجموعة، أو عن طريق اختيار خيار المظهر في قائمة <guimenu>اذهب</guimenu>، أو ضغط <keycombo><keycap>Alt</keycap><keycap>Left</keycap></keycombo> أو <keycombo><keycap>Alt</keycap><keycap>Right</keycap></keycombo>.</para>
+             <para lang="en">To view all of the images in the directory fullscreen, choose <menuchoice> <guimenu>View</guimenu><guimenuitem>Full Screen</guimenuitem> </menuchoice> or press <keycap>F11</keycap>. To view them as a slide show, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Slideshow</guimenuitem></menuchoice> or press <keycap>F5</keycap>. To return to the collection view, press the <keycap>Esc</keycap> key, or <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>. For more information about how to customize the slide show, see <xref linkend="eom-prefs-slideshow"/>.
+                    </para>
+	</sect2>
+
+	<!--============ To Scroll an Image ======================= -->
+	<sect2 id="eom-scroll-image">
+		<title>لفّ صورة</title>
+		<para>للف حول صورة أكبر من نافذة الصور أو عرض ملء الشاشة، تستطيع استخدام الأساليب التالية:</para>
+		<itemizedlist>
+			<listitem><para>استخدم مفاتيح الأسهم على لوحة المفاتيح.</para>
+			</listitem>
+			<listitem><para>ألقِ الصورة في النافذة. (هذا يعني أن تلقي الصورة في عكس المقصد الذي تريد اللف إليه: للف الصورة إلى الأسفل، ألقها نحو أعلى النافذة.)</para>
+			</listitem>
+			<listitem><para>استخدم أشرطة التمرير على النافذة.</para>
+			</listitem>
+		</itemizedlist>
+	</sect2>
+
+	<!--=========== To Zoom In and Out ==================== -->
+	<sect2 id="eom-zoom">
+		<title>التكبير</title>
+		<para>تستطيع تكبير أو تصغير الصورة بالطرق التالية:</para>
+			<itemizedlist>
+				<listitem><para>استخدم <mousebutton>عجلة اللّف</mousebutton> في فأرتك. اللّف لأسفل يصغّر، اللّف لأعلى يكبّر.</para></listitem>
+ 			  <listitem><para>اختر <menuchoice><guimenu>عرض</guimenu><guimenuitem>تكبير</guimenuitem></menuchoice> أو <menuchoice><guimenu>عرض</guimenu><guimenuitem>تصغير</guimenuitem></menuchoice>. لاسترجاع الصورة إلى حجمها الأصلي، اختر <menuchoice><guimenu>عرض</guimenu><guimenuitem>حجم عادي</guimenuitem></menuchoice>. لملائمة الصورة مع النافذة، اختر <menuchoice><guimenu>عرض</guimenu><guimenuitem>أفضل ملائمة</guimenuitem></menuchoice>.</para></listitem>				
+ 				<listitem><para>استخدم أزرار التكبير في شريط الأدوات، <guilabel>عادي</guilabel> سوف يستعيد الصورة إلى حجمها غير المُقاس. <guilabel>ملائمة</guilabel> سوف تعيد تحجيم الصورة حينها سوف تلائم النافذة إذا كانت كبيرة جدا.</para></listitem>
+
+				<listitem><para lang="en">Use the keyboard. To zoom in, <keycombo> <keycap>Ctrl</keycap><keycap>+</keycap> </keycombo> or <keycap>+</keycap>. To zoom out, <keycombo> <keycap>Ctrl</keycap><keycap>-</keycap> </keycombo> or <keycap>-</keycap>. To go back to the normal size, <keycombo> <keycap>Ctrl</keycap><keycap>0</keycap> </keycombo> or <keycap>1</keycap>. To scale the image to fit the window, press <keycap>F</keycap>.</para></listitem>
+			</itemizedlist>
+			<para>عندما تُكبّر الصورة لملائمة النافذة، إعادة تحجيم النافذة سوف تغير مستوى التكبير أيضا، حينها تبقى الصورة ملائمة للنافذة.</para>
+	</sect2>
+
+	<!--=========== To View Image Fullscreen ==================== -->
+	<sect2 id="eom-fullscreen">
+		<title>عرض صورة في ملء الشاشة/عرض الشرائح</title>
+		<para>لعرض الصورة باستخدام كامل الشاشة، اختر <menuchoice><guimenu>عرض</guimenu><guimenuitem>ملء الشاشة</guimenuitem></menuchoice>.</para>
+		<para>لا أشرطة، أو إطارات نافذة، أو أشرطة قائمة ظاهر عندنا تعرض الصورة بهذه الطريقة. للعودة إلى العرض الطبيعي، اضغط <keycap>Esc</keycap>، أو <keycap>F11</keycap>، أو <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>.</para>
+		<para>تستطيع تكبير أو اللف حول الصورة بنفس الطريقة عندما عُرضت في نافذة، باستخدام الفأرة أو لوحة المفاتيح.</para>
+		<para>إذا كان لديك صور عددية في مجموعتك تستطيع نقر <keycap>مسافة</keycap> أو استخدام مفاتيح مؤشر الفأرة الأيمن/الأسفل للتقدم إلى الصورة التالية. يمكن الوصول إلى الصورة السابقة عن طريق نقر <keycap>Backspace</keycap> أو استخدام مفاتيح مؤشر الفأرة الأيسر/الأعلى.</para>
+	<para>في هذه الحالة يمكنك أيضا استخدام وضع عرض الشرائح، حيث يبدل <application>عارض الصور</application> تلقائيا إلى الصورة التالية في مجموعتك. تستطيع بدء عرض شرائح عن طريق اختيار <menuchoice><guimenu>عرض</guimenu><guimenuitem>عرض الشرائح</guimenuitem></menuchoice> أو عن طريق نقر <keycap>F5</keycap>. يمكن إيقاف عرض الشرائح مؤقتا/إكماله عن طريق نقر <keycap>P</keycap>. لإيقاف عرض الشرائح، انقر <keycap>Esc</keycap> أو مفتاح <keycap>F5</keycap>، أو <keycombo><keycap>Ctrl</keycap><keycap>W</keycap></keycombo>. للمزيد من المعلومات حول كيفية تخصيص عرض الشرائح، راجع <xref linkend="eom-prefs-slideshow"/>.</para>
+	</sect2>
+</sect1>
+
+
+<!-- ============= Manipulating Images ============================== -->
+<sect1 id="eom-manipulate">
+	<title>التلاعب بالصور</title>
+
+	<para>كل تلاعبات الصور تطبق على كل الصور المختارة مرة واحدة. التغييرات تتم في الذاكرة وتعديل الملفات على القرص فقط عندما تُحفظ الصور  بدالة الحفظ (راجع <xref linkend="eom-save-image"/>).</para>
+
+	<!--============ To Flip an Image ======================= -->
+	<sect2 id="eom-flip">
+		<title>قلب صورة</title>
+		<para lang="en">To flip an image along the horizontal axis of the image, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Flip Horizontal</guimenuitem>
+		</menuchoice>.</para>
+		<para lang="en">To flip an image along the vertical axis of the image, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Flip Vertical</guimenuitem>
+		</menuchoice>.</para>
+	</sect2>
+
+	<!--============ To Rotate an Image ======================= -->
+	<sect2 id="eom-rotate">
+		<title>تدوير صورة</title>
+		<para lang="en">To rotate an image 90 degrees in a clockwise direction, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Rotate Clockwise</guimenuitem>
+		</menuchoice>.</para>
+		<para lang="en">To rotate an image 90 degrees in an anticlockwise direction, choose 
+		<menuchoice>
+		<guimenu>Image</guimenu>
+		<guimenuitem>Rotate Counter Clockwise</guimenuitem>
+		</menuchoice>.</para>
+	</sect2>
+
+	<!--============ To Undo an Action ======================= -->
+	<sect2 id="eom-undo">
+		<title>استرجاع إجراء</title>
+		<para lang="en">To undo a flip or rotate action, choose 
+		<menuchoice>
+		<guimenu>Edit</guimenu>
+		<guimenuitem>Undo</guimenuitem>
+		</menuchoice> or press 
+		<keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo>
+		.</para>
+	</sect2>
+
+	<!--============ To Delete An Image ======================== -->
+	<sect2 id="eom-delete-image">
+		<title>حذف صورة</title>
+		<para lang="en">To move an image to the Trash, choose
+			<menuchoice>
+			<guimenu>Edit</guimenu>
+			<guimenuitem>Move to Trash</guimenuitem>
+			</menuchoice>.
+			This moves the file to the Trash folder. Multiple images can also be moved to the trash in the same way: select them all first.</para>
+	    <para>لاستعادة صورة من المهملات، افتح مجلد المهملات في مدير الملفات <application>نيوتلوس</application> وانقل الصورة إلى مجلد آخر. لحذف الصورة إلى الأبد، أفرغ سلة المهملات. لإيجاد المزيد حول استخدام المهملات، راجع <ulink type="help" url="help:user-guide?caja-trash">دليل المستخدم</ulink>.</para>
+				
+			<note><para>تستطيع أيضا استخدام مفتاح <keycap>Del</keycap> لنقل صورة إلى المهملات، في هذه الحالة سوف تُسأل للتأكيد.</para></note>
+			
+	</sect2>
+</sect1> 
+
+<!-- ============= Saving Images ============================== -->
+<sect1 id="eom-save-rename">
+	<title>حفظ الصور</title>
+
+	<para>يحاول <application>عارض الصور</application> دائما اختيار طريقة الحفظ بأقل تضارب معلومات الصورة. على سبيل المثالن إذا تم حفظ صورة غير معدلة باسم آخر بتفس النسق، الملف ببساطة يٌنسخ. إذا توفرت <systemitem class="library">libjpeg</systemitem> على النظام، كل النعديلات على صور جي‌بي‌إي‌جي ال تتم بدون فقط المعلومات.</para>
+
+<!--============ To Save an Image ======================= -->
+	<sect2 id="eom-save-image">
+		<title>حفظ صورة</title>
+		<para lang="en">To save an image, choose 
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save</guimenuitem>
+			</menuchoice>.
+		The image will be saved under the same name and file type. Therefore, unmodified images needn't be saved.</para>
+	</sect2>
+
+	<!--============ To Save As an Image ======================= -->
+	<sect2 id="eom-save-as-image">
+		<title>حفظ صورة تحت اسم مختلف</title>
+		<para lang="en">To save an image under a different name, or convert it to a different file type, choose
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save As</guimenuitem>
+			</menuchoice>.</para>
+		<para>حدد اسم الملف في حقل <guilabel>الاسم</guilabel> في حوار <guilabel>حفظ الصورة</guilabel>، ثم انقر <guibutton>احفظ</guibutton>. الملف يحفظ في المجلد الحالي مبدئيا. يحاول  <application>عارض الصور</application> تقرير نوع الملف من لاحقة اسم الملف. إذا كانت الصورة يجب أن تحفظ في مجلد آخر أو إذا فشل تحديد نوع الملف، وسّع الحوار عن طريق النقر على <guilabel>تصفح لأجل مجلدات أخرى</guilabel>. هذا يسمح بالإبحار إلى مجلد آخر وتحديد نوع الملف من صندوق منسدل.</para>
+		<para>تستطيع حفظ صور متعددة في نفس اللحظة: راجع القسم التالي.</para>
+	</sect2>    
+
+	<!--============ To Save As an Image ======================= -->
+	<sect2 id="eom-save-as-multiple">
+		<title>حفظ صور متعددة</title>
+		<para>حفظ صور متعددة مرة واحدة يسمح لك بتحويل صورة عديدة إلى نسق مختلف، أو إعطائها أسماء ملفات متشابهة.</para>
+		<para lang="en">To save multiple images, select the images and choose 
+			<menuchoice>
+			<guimenu>File</guimenu>
+			<guimenuitem>Save As</guimenuitem>
+			</menuchoice>. 		
+		The following window is displayed:</para>
+  		<figure id="saveas-dialog-fig">
+			<title>حوار حفظ باسم للصورة المتعددة</title>
+			<screenshot>
+			  <mediaobject lang="en">
+			    <imageobject>
+			      <imagedata fileref="figures/eom_save_as_window.png" format="PNG"/>
+			    </imageobject>
+			    <textobject>
+			      <phrase>Shows Eye of MATE <guilabel>Save As</guilabel> dialog when saving multiple images.</phrase>
+			    </textobject>
+			  </mediaobject>
+			</screenshot>
+  		</figure>
+		<para>المجلد الذي ستحفظ فيه الصور محدد بواسطة <guilabel>المجلد المقصد</guilabel>. ابتدءًا، المجلد مضبوط للمجلد الحالي. الزر <guilabel>أخرى...</guilabel> يفتح حوار فتح مجلد القياسي لتصفح نظام الملفات. اسم الملف الناتج لكل صورة محددة بواسطة <guilabel>صيغة اسم الملف</guilabel>. مخطط اسم الملف مكون من محارف بسيطة ووسوم خاصة. الوسوم الخاصة التالية متاحة:</para>
+		<itemizedlist>
+			<listitem><para><guilabel>اسم الملف (%f)</guilabel> - اسم الملف الأصلي بدون لاحقة نسق الملف.</para>
+			</listitem>
+			<listitem><para><guilabel>عدّاد (%n)</guilabel> - رقم مَزيد تلقائيا (يبدأ عند بداية عدّاد محددة)</para>
+			</listitem>			
+		</itemizedlist>	
+		<para>أي شيء عدا هذه الوسوم الخاص يعد نصا عاديا.</para>
+		<para>نسق الصورة يُحدّد بواسطة صندوق منسدل بعد تعريف التخطيط. اختر نسق صورة مُحدّد أو استخدام خيار <guilabel>كما هي</guilabel> لاختيار نفس النسق مثل الملف الأصلي.</para>
+	
+		<para>الجزء <guilabel>خيارات</guilabel> يسمح باستبدال كل محارف المسافات بشُرط سفلية في نتائج اسم الملف إذا عُلّمت <guilabel>استبدل الفراغات بشرطة تحتية</guilabel>. الصندوق <guilabel>ابدأ العدّاد عند</guilabel> يقرر على أي عدد يبدأ العدّاد إذا استخدم وسم %n لتحديد نسق الملف.</para>
+		<para>الجزء <guilabel>معاينة أسماء الملفّات</guilabel> من الحوار يظهر نتائج تناسق اسم الملف مع الإعدادات أعلاه على سبيل المثال اسم الملف من الصور المنتقاة.</para>
+	</sect2>
+
+
+
+</sect1>
+
+<sect1 id="eom-print">
+	<title>طباعة الصور</title>
+	<sect2 id="eom-print-pagesettings">
+		<title>ضبط إعدادات صفحتك</title>
+		<para>قبل الطباعة عليك ضبط إعدادات الصفحة التي تريد استخدامها. لفعل ذلك اختر <menuchoice><guimenu>ملف</guimenu><guimenuitem>إعداد الصفحة</guimenuitem></menuchoice>.</para>
+		<para>في حوار <guilabel>إعداد الصفحة</guilabel> تستطيع اختيار حجم الورقة والاتجاه. إذا أمكن انتقِ طابعتك لتنال ضبط حدود الصفحة بشكل صحيح.</para>
+	</sect2>
+
+	<sect2 id="eom-print-image">
+		<title>طباعة صورة</title>
+		<para>لطباعة صورة، شكّل الخطوات التالية:</para>
+		<orderedlist>
+			<listitem>
+				<para>انتقِ <menuchoice><guimenu>ملف</guimenu><guimenuitem>اطبع</guimenuitem></menuchoice></para>
+			</listitem>
+			<listitem>
+				<para>في حوار <guilabel>طباعة</guilabel>، انتقِ الطابعة التي تريد استخدامها من القائمة.</para>
+			</listitem>
+			<listitem>
+				<para>انقر <guilabel>اطبع</guilabel>. <application>عارض الصّور</application> يبدأ الطباعة الآن.</para>
+			</listitem>
+		</orderedlist>
+		<para>الصور الكبيرة جدا بالنسبة للصفحة يتم تقليصها لملائمة الصفحة. الصور الأصغر من الصفحة تُوسّط فيها.</para>
+		<important>
+			<para>من فضلك لاحظ أن <application>عارض الصور</application> يفقد حاليا تقرير العملية أثناء الطبع. نظرا لوقت واجهة المستخدم التي قد تصبح غير مستجيبة لوقت قصير.</para>
+		</important>
+	</sect2>
+
+	<sect2 id="eom-print-settings">
+		<title>ترتيب الصور على الصفحة</title>
+		<para>ربما لا تريد توسط الصورة أو تريد مضاءلتها بشكل آخر. لفعل ذلك تحتاج لفتح حوار <guilabel>طباعة</guilabel> (راجع <xref linkend="eom-print-image"/>) ومن ثم انتقِ اللسان <guilabel>إعدادات الصورة</guilabel> الذي يوفر الخيارات التالية:</para>
+		<itemizedlist>
+			<listitem>
+				<para>الخيرات في قسم <guilabel>الموضع</guilabel> تسمح لك بتغيير موثع الصور على الصفحة.</para>
+			</listitem>
+			<listitem>
+				<para>من الممكن أيضا وضع الصورة على الصفحة عن طريق سحبها حول حقل <guilabel>معاينة</guilabel>.</para>
+			</listitem>
+			<listitem>
+				<para>الخيارات في قسم <guilabel>الحجم</guilabel> تسمح لك بقياس صورتك  إلى ما يعجبك. القياس محدود بحجم الصور أو بحجم الصفحة، بناءً على أي المغيارين يستوفي أولا.</para>
+			</listitem>
+			<listitem>
+				<para>خيار <guilabel>الوحدة</guilabel> يسمح لك بتغيير الوحدة المترية التي تستخدم بواسطة خيارات لسان  <guilabel>إعدادات الصورة</guilabel>. عندما تغير هذا الخيار، تُحول الحقول الأخرى تبعا.</para>
+			</listitem>
+		</itemizedlist>
+	</sect2>
+		
+</sect1>
+<sect1 id="eom-toolbareditor">
+	<title>تخصيص شريط الأدوات</title>
+	<para>شريط أدوات عارض الصّور المبدئي يتضمن رصّة أساسية من العناصر لإبقائه سهلا. لكن تستطيع تعديل شريط الأدوات إذا فضّلت رصّة أخرى.</para>
+	<sect2 id="eom-toolbareditor-use">
+		<title>تعديل شريط الأدوات</title>
+		<para>إذا أردت تغيير شريط الأدوات تحتاج إلى فتح محرر شريط الأدوات عن طريق الذهاب إلى <menuchoice><guimenu>تحرير</guimenu><guimenuitem>شريط الأدوات</guimenuitem></menuchoice>. النافذة التالية سوف تنبثق:</para>
+		<figure id="toolbar-editor-fig">
+			<title>نافذة محرّر شريط الأدوات</title>
+			<screenshot>
+				<mediaobject lang="en">
+					<imageobject>
+						<imagedata fileref="figures/eom_toolbar_editor_window.png" format="PNG"/>
+					</imageobject>
+					<textobject>
+						<phrase>Shows Eye of MATE toolbar editor window.</phrase>
+					</textobject>
+				</mediaobject>
+			</screenshot>
+		</figure>
+		<para>تحتوي العناصر التي ليست في شريط الأدوات والعنصر الفاصل. تستطيع الآن تحرير شريط الأدوات:</para>
+		<itemizedlist>
+			<listitem>
+				<para>لإضافة عناصر جديدة إلى شريط الأدوات، ألقهم من محرّر شريط الأدوات إلى شريط الأدوات.</para>
+			</listitem>
+			<listitem>
+				<para>لحذف عناصر من شريط الأدوات، ألقهم من شريط الأدوات إلى محرّر شريط الأدوات.</para>
+			</listitem>
+			<listitem>
+				<para>لإعادة تنظيم العناصر على شريط الأدوات، اسحبها إلى مواضعها الجديدة على شريط الأدوات.</para>
+			</listitem>
+		</itemizedlist>
+		<para>عندما تنهي تحرير شريط الأدوات، انقر زر <guibutton>أغلق</guibutton> في نافذة محرر شريط الأدوات. هذا سوف يغلق محرر شريط الأدوات ويجعل شريطك المُعدّل نشطا.</para>
+		</sect2>
+		<sect2 id="eom-toolbareditor-reset">
+			<title>إعادة ضبط شريط الأدوات</title>
+			<para>لاسترجاع تعديلاتك على شريط الأدوات واستعادة التخطيط المبدئي، شكّل الخطوات التالية:</para>
+			<orderedlist>
+				<listitem>
+					<para>افتح محرّر شريط الأدوات (راجع <xref linkend="eom-toolbareditor-use"/>).</para>
+				</listitem>
+				<listitem>
+					<para>انقر الزر <guibutton>أعد الضبط للمبدئي</guibutton>.</para>
+				</listitem>
+				<listitem>
+					<para>انقر زر <guibutton>أغلق</guibutton> لإغلاق محرر شريط الأدوات. شريط الأدوات أعيد ضبطه إلى التخطيط المبدئي الآن.</para>
+				</listitem>
+			</orderedlist>
+		</sect2>
+</sect1>
+<sect1 id="eom-prefs">
+	<title>التفضيلات</title>
+	<para>يمكن تغيير التفضيلات عن طريق الذهاب إلى <menuchoice><guimenu>تحرير</guimenu><guimenuitem>التّفضيلات</guimenuitem></menuchoice>. ستكون قادرا على تغيير خيارات عرض الصورة وعرض الشرائح. التغييرات تطبق على كل النوافذ المفتوحة بعد لحظة.</para>
+
+	<!--============ Image View ======================= -->
+  <sect2 id="eom-prefs-image">
+         <title>عرض الصورة</title>
+	<variablelist>
+	<varlistentry>
+		<term lang="en"><guilabel>Image Enhancements</guilabel></term>
+		<listitem>
+		<para>انتقِ الخيار  <guilabel>اجعل الصور ناعمة عند تكبيرها</guilabel> لتفعيل تنعيم الصورة عندما تغير قيمة التكبير. إذا انتقيت هذا الخيار، سوف يتم تنعيم صورك لتحسين جودة عرضها أثناء عرضها مع <application>عارض الصور</application>.</para>
+                <para>إذا انتقيت الخيار <guilabel>توجه تلقائي</guilabel>، سوف يتم تدوير صورك عند التحميل بناءً على بياناتها الإضافية. على سبيل المثال الطويلة سوف يتم تدويرها جهة اليمين. لاحظ أن هذه الخاصية تتطلب صحة وسم التوجه في معلومات الصورة الإضافية، لهذا السبب، لا تنجح مع كل الصور. الاستدارة لا تُحفظ حتى تحفظ الصورة المُدارة (راجع <xref linkend="eom-save-rename"/>).</para>
+		</listitem>
+	</varlistentry>
+
+	<varlistentry>
+		<term lang="en"><guilabel>Transparent Parts</guilabel></term>
+		<listitem>
+		<para>انتق الخيارات التالية لتقرير كيف يعرض <application>عارض الصور</application> الأجزاء الشفافة من الصورة:</para>
+		<itemizedlist>
+			<listitem><para lang="en"><guilabel>As check pattern</guilabel> </para>
+			<para>يعرض أي أجزاء شفافة من الصورة على نمط شبكة.</para>
+			</listitem>
+			<listitem><para lang="en"><guilabel>As custom color</guilabel> </para>
+			<para>يعرض أي أجزاء شفافة من الصورة باللون المشبّع الذي اخترته. انقر على زر منتقِ  لتحديد لون.</para>
+			</listitem>
+			<listitem><para lang="en"><guimenuitem>As background</guimenuitem> </para>
+			<para>يعرض أي جزء شفّاف من الصورة في لون خلفية تطبيق <application>عارض الصّور</application>.</para>
+			</listitem>
+		</itemizedlist>
+		</listitem>
+	</varlistentry>		
+	</variablelist>
+  </sect2>
+		
+	<!--============ Slide Show ==================-->                                                                                               
+  <sect2 id="eom-prefs-slideshow">
+         <title>عرض الشرائح</title>
+	<variablelist>
+	<varlistentry>
+		<term lang="en"><guilabel>Image Zoom</guilabel></term>
+		<listitem>
+		<para>انتق الخيار <guilabel>وسع الصور لتلائم الشاشة</guilabel> لتكبير الصور لملائمة الشاشة أثناء عرض الشرائح. إذا لم تنتق هذا الخيار، الصور الأصغر من حجم الشاشة لن يعاد تحجيمها لملائمة الشاشة.</para>
+		</listitem>
+	</varlistentry>
+	<varlistentry>
+		<term lang="en"><guilabel>Sequence</guilabel></term>
+		<listitem>
+		<para>انتقِ خيار <guilabel>متتالية حلقيّة</guilabel> لتدوير لا نهائي لقائمة صور أثناء عرض الشرائح. إذا لم تنتقِ هذا الخيار، يعود عرض الشرائح إلى عرض المجموعة بعد عرض آخر صورة.</para>
+		<para>انتقِ صندوق <guilabel>بدّل الصورة بعد ... ثوان</guilabel> لتحديد طول عرض كل صورة أثناء عرض الشرائح. إذا ضبطت هذه القيمة إلى صفر، تُعطّل خاصيّة الدفع التلقائي والتصفح اليدوي فقط يتاح (راجع <xref linkend="eom-fullscreen"/>).</para>
+		</listitem>
+	</varlistentry>		
+	</variablelist>
+  </sect2>
+</sect1>
+</article>

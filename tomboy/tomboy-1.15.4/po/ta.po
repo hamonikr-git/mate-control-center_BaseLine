@@ -1,0 +1,2549 @@
+# translation of tomboy.master.ta.po to Tamil
+# translation of tomboy.HEAD.ta.po to
+# translation of ta.po to
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Felix <ifelix@redhat.com>, 2006.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007, 2008, 2009, 2010, 2011.
+# Dr.T.vasudevan <agnihot3@gmail.com>, 2009.
+# I. Felix <ifelix@redhat.com>, 2009.
+# Dr,T,Vasudevan <agnihot3@gmail.com>, 2010, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: tomboy.master.ta\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-09-06 12:31+0530\n"
+"PO-Revision-Date: 2011-09-06 15:04+0530\n"
+"Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"X-Generator: Lokalize 1.1\n"
+
+#: ../data/GNOME_TomboyApplet.server.in.in.h:1
+msgid "Accessories"
+msgstr "துணை பொருட்கள் "
+
+#: ../data/GNOME_TomboyApplet.server.in.in.h:2
+msgid "Simple and easy to use note-taking"
+msgstr "எளிய குறிப்பெடுக்கும் பயன்பாடு"
+
+#: ../data/GNOME_TomboyApplet.server.in.in.h:3
+msgid "Tomboy Applet Factory"
+msgstr "Tomboy Applet Factory"
+
+#: ../data/GNOME_TomboyApplet.server.in.in.h:4 ../data/tomboy.desktop.in.h:3
+#: ../Tomboy/Tray.cs:579
+msgid "Tomboy Notes"
+msgstr "Tomboy குறிப்புகள்"
+
+#: ../data/GNOME_TomboyApplet.xml.h:1 ../Tomboy/ActionManager.cs:179
+#: ../Tomboy/Tray.cs:274
+msgid "S_ynchronize Notes"
+msgstr "குறிப்புகளை _ஒத்திசைவு செய்க"
+
+#: ../data/GNOME_TomboyApplet.xml.h:2 ../Tomboy/ActionManager.cs:164
+msgid "_About"
+msgstr "_பற்றி"
+
+#: ../data/GNOME_TomboyApplet.xml.h:3 ../Tomboy/ActionManager.cs:157
+#: ../Tomboy/Tray.cs:288
+msgid "_Help"
+msgstr "_உதவி"
+
+#: ../data/GNOME_TomboyApplet.xml.h:4 ../Tomboy/ActionManager.cs:153
+#: ../Tomboy/Tray.cs:283
+msgid "_Preferences"
+msgstr "_ம முன்னுரிமைகள்"
+
+#: ../data/tomboy.desktop.in.h:1
+msgid "Note-taker"
+msgstr "குறிப்பேடு"
+
+#: ../data/tomboy.desktop.in.h:2
+msgid "Take notes, link ideas, and stay organized"
+msgstr "குறிப்பு எடுங்கள் யோசனைகளை  இணையுங்கள் மற்றும் கட்டுக்கோப்பாக இருங்கள்"
+
+#: ../data/tomboy.schemas.in.h:1
+msgid "Accept SSL Certificates"
+msgstr "எஸ்எஸ்எல் சான்றிதழ்கள் ஐ ஏற்றுக்கொள்க"
+
+#: ../data/tomboy.schemas.in.h:2
+msgid "Automatic Background Synchronization Timeout"
+msgstr "தானியங்கி பின்னணி ஒத்திசைவு காலாவதி நேர.ம்"
+
+#: ../data/tomboy.schemas.in.h:3
+msgid "Create a new Note"
+msgstr "ஒரு புதிய குறிப்பினை உருவாக்கு"
+
+#: ../data/tomboy.schemas.in.h:4
+msgid "Custom Font Face"
+msgstr "தனிபயன் எழுத்துரு முகம்"
+
+#: ../data/tomboy.schemas.in.h:5
+msgid ""
+"Determines X coordinate of \"Search All Notes\" window; stored on Tomboy "
+"exit."
+msgstr ""
+"எல்லா குறிப்புகளையும் தேடு சாளரத்தின்  X ஆயத்தொலைவை நிர்ணயிக்கிறது. டாம்பாய் வெளியேறும் போது "
+"சேமிக்கிறது"
+
+#: ../data/tomboy.schemas.in.h:6
+msgid ""
+"Determines Y coordinate of \"Search All Notes\" window; stored on Tomboy "
+"exit."
+msgstr ""
+"எல்லா குறிப்புகளையும் தேடு சாளரத்தின்  Y ஆயத்தொலைவை நிர்ணயிக்கிறது. டாம்பாய் வெளியேறும் போது "
+"சேமிக்கிறது"
+
+#: ../data/tomboy.schemas.in.h:7
+msgid ""
+"Determines pixel height of \"Search All Notes\" window; stored on Tomboy "
+"exit."
+msgstr ""
+"எல்லா குறிப்புகளையும் தேடு சாளரத்தின்   உயரத்தை பிக்ஸல் இல்  நிர்ணயிக்கிறது.  டாம்பாய் "
+"வெளியேறும் போது சேமிக்கிறது."
+
+#: ../data/tomboy.schemas.in.h:8
+msgid "Determines pixel width of \"Search All Notes\" window; stored on Tomboy exit."
+msgstr ""
+"எல்லா குறிப்புகளையும் தேடு சாளரத்தின் அகலத்தை பிக்ஸல் இல்  நிர்ணயிக்கிறது.  டாம்பாய் "
+"வெளியேறும் போது சேமிக்கிறது."
+
+#: ../data/tomboy.schemas.in.h:9
+msgid "Enable Middle-Click Paste On Icon."
+msgstr "நடு சொடுக்கு ஒட்டு சின்னத்தை இயல்படுத்து "
+
+#: ../data/tomboy.schemas.in.h:10
+msgid "Enable Tray Icon"
+msgstr "அறிவிப்பு இடத்தில் சின்னத்தை  செயல்படுத்து"
+
+#: ../data/tomboy.schemas.in.h:11
+msgid "Enable WikiWord highlighting"
+msgstr "விகிவோர்ட் சிறப்புச்சுட்டலை செயல்படச்செய்"
+
+#: ../data/tomboy.schemas.in.h:12
+msgid "Enable automatic bulleted lists."
+msgstr "தானியங்கி எண்ணிட்ட பட்டியலை இயல்படுத்து "
+
+#: ../data/tomboy.schemas.in.h:13
+msgid "Enable closing notes with escape."
+msgstr "எஸ்கேப் விசையால் குறிப்பை மூடுதலை செயல்படுத்து."
+
+#: ../data/tomboy.schemas.in.h:14
+msgid "Enable custom font"
+msgstr "தனிபயன் எழுத்துருவை செயல்படுத்து"
+
+#: ../data/tomboy.schemas.in.h:15
+msgid "Enable global keybindings"
+msgstr "உலகளாவிய விசை பிணைப்பை செயல்படச்செய்"
+
+#: ../data/tomboy.schemas.in.h:16
+msgid "Enable spellchecking"
+msgstr "சொல்திருத்தத்தை செயல்படுத்து"
+
+#: ../data/tomboy.schemas.in.h:17
+msgid "Enable startup notes"
+msgstr "துவக்க குறிப்புகளை செயல்படச்செய்"
+
+#: ../data/tomboy.schemas.in.h:18
+msgid "Enable the Delete Note confirmation dialog"
+msgstr "இந்த குறிப்பினை அழி உறிதிப்படுத்தல்  உரையாடலை செயலாக்கு"
+
+#: ../data/tomboy.schemas.in.h:19
+msgid ""
+"Enable this option if you want bulleted lists to be automatic when you place "
+"- or * at the beginning of a line."
+msgstr ""
+"வரியின் ஆரம்பத்தில் - அல்லது * இருந்தால் தானியங்கி எண்ணிட்ட பட்டியல் இயல்படுத்தப்பட இந்த "
+"தேர்வை செயல்படுத்து "
+
+#: ../data/tomboy.schemas.in.h:20
+msgid ""
+"Enable this option if you want to be able to middle-click the Tomboy icon to "
+"paste timestamped content into the Start Here note."
+msgstr ""
+"நீங்கள் டாம்பாய் சின்னத்தை நடு சொடுக்கி இங்கு துவங்கு குறிப்பில் நேர முத்திரையுடன் ஒட்ட "
+"விரும்பினால் இந்த தேர்வை இயல்படுத்துக"
+
+#: ../data/tomboy.schemas.in.h:21
+msgid ""
+"Enable this option to highlight words ThatLookLikeThis. Clicking the word "
+"will create a note with that name."
+msgstr ""
+"ThatLookLikeThis போல் காணப்படும் சொற்களை சிறப்புச்சுட்டலை செயல்படச்செய். அந்த சொல்லை "
+"சொடுக்கினால் அந்த பெயருடன் ஒரு குறிப்பு பக்கம் உருவாகும்."
+
+#: ../data/tomboy.schemas.in.h:22
+msgid "FUSE Mounting Timeout (ms)"
+msgstr "ப்யூஸ் ஏற்ற  நேரம் முடிந்தது (மி.செ)"
+
+#: ../data/tomboy.schemas.in.h:23
+msgid "HTML Export All Linked Notes"
+msgstr "எல்லாம் இணைந்த குறிப்புகளை HTML ஏற்றுமதி செய்க"
+
+#: ../data/tomboy.schemas.in.h:24
+msgid "HTML Export Linked Notes"
+msgstr "இணைந்த குறிப்புகளை HTML ஏற்றுமதி செய்க"
+
+#: ../data/tomboy.schemas.in.h:25
+msgid "If disabled, the \"Delete Note\" confirmation dialog will be suppressed."
+msgstr "செயல் நீக்கினால் \" குறிப்பை நீக்கு\" உறுதிப்படுத்தல் உரையாடல் கட்டுப்படுத்தப்படும்."
+
+#: ../data/tomboy.schemas.in.h:26
+msgid ""
+"If enable_custom_font is true, the font name set here will be used as the "
+"font when displaying notes."
+msgstr ""
+"enable_custom_font உண்மையானால் இங்கு பெயர் அமைத்த எழுத்துரு குறிப்புகளை காட்டும் "
+"எழுதுருவாக பயன்படுத்தப்படும்"
+
+#: ../data/tomboy.schemas.in.h:27
+msgid ""
+"If enabled, all notes that were open when Tomboy quit will automatically be "
+"reopened at startup."
+msgstr ""
+"செயல்படுத்தினால் டாம்பாய் வெளியேறியபோது திறந்து இருந்த அனைத்து குறிப்புகளும் கணினி "
+"துவக்கத்தின் போது திறக்கும்."
+
+#: ../data/tomboy.schemas.in.h:28
+msgid "If enabled, an opened note can be closed by hitting the escape key."
+msgstr "செயற்படுத்தினால் திறந்த  குறிப்பை எஸ்கேப்  விசையை அழுத்தி மூட முடியும்"
+
+#: ../data/tomboy.schemas.in.h:29
+msgid ""
+"If true, Tomboy's tray icon will be displayed in the notification area. "
+"Disabling this may be useful when another application is providing the "
+"functionality of the tray icon."
+msgstr ""
+"உண்மையெனில் டாம்பாயின் ட்ரே சின்னம் அறிவிப்பு இடத்தில் காட்டப்படும். இதை செயல் நீக்கல் ட்ரே "
+"சின்னத்தின் பயன்பாட்டை மற்றொரு பயன்பாடு தரும் போது பயன்படலாம்."
+
+#: ../data/tomboy.schemas.in.h:30
+msgid ""
+"If true, misspellings will be underlined in red, and correct spelling "
+"suggestions shown in the right-click menu."
+msgstr ""
+"உண்மை என அமைத்தால் சொற்பிழைகளுக்கு சிவப்பு அடிக்கோடு இடப்படும். பரிந்துரைகளை வலது "
+"சொடுக்கு பட்டியில் காணலாம்."
+
+#: ../data/tomboy.schemas.in.h:31
+msgid ""
+"If true, the desktop-global keybindings set in /apps/tomboy/"
+"global_keybindings will be enabled, allowing for useful Tomboy actions to be "
+"available from any application."
+msgstr ""
+"உண்மை என அமைத்தால் /apps/tomboy/global_keybindings இல் அமைத்த மேல்மேசை-உலகளாவிய "
+"விசை பிணைப்புகள் செயல்படும். இதனால் டாம்பாய் செயல்கள் அனைத்து நிரல்களிலிருந்தும் கிடைக்கும்."
+
+#: ../data/tomboy.schemas.in.h:32
+msgid ""
+"If true, the font name set in custom_font_face will be used as the font when "
+"displaying notes. Otherwise the desktop default font will be used."
+msgstr ""
+"உண்மை என அமைத்தால் custom_font_face இல் உள்ள எழுத்துரு குறிப்புகளை காட்டும் "
+"எழுதுருவாக பயன்படுத்தப்படும். இல்லாவிட்டால் மேல்மேசையின் முன்னிருப்பு எழுத்துரு "
+"பயன்படுத்தப்படும்."
+
+#: ../data/tomboy.schemas.in.h:33
+msgid ""
+"Indicates that the Sticky Note Importer plugin has not been run, so it "
+"should run automatically the next time Tomboy starts."
+msgstr ""
+"ஒட்டு குறிப்பு இறக்குமதி சொருகி இது வரை இயக்கப்படவில்லை என குறிக்கிறது. அடுத்த முறை "
+"டாம்பாய் துவங்கும் போது அது தானியங்கியாக இயக்கப்பட வேண்டும்."
+
+#: ../data/tomboy.schemas.in.h:34
+msgid ""
+"Integer determining the minimum number of notes to show in the Tomboy note "
+"menu."
+msgstr "டாம்பாய் பட்டியில் காட்டப்படவேண்டிய குறிப்புகளின் எண்ணிக்கையை நிர்ணயிக்கும் முழு எண்."
+
+#: ../data/tomboy.schemas.in.h:35
+msgid ""
+"Integer value indicating how frequently to perform a background sync of your "
+"notes (when sync is configured). Any value less than 1 indicates that "
+"autosync is disabled. The lowest acceptable positive value is 5. Value is in "
+"minutes."
+msgstr ""
+"உங்கள்குறிப்புகளை எவ்வளவு நேர இடைவெளியில் பின்னணி ஒத்திசைவு செய்ய வேண்டுமென (ஒத்திசைவு "
+"அமைத்து இருந்தால்) குறிக்கும் முழு எண். 1 க்கு கீழான மதிப்பு தானியங்கி செயலிழப்பதை "
+"குறிக்கிறது. மதிப்பு குறைந்தது 5 ஆக இருக்க வேண்டும். மதிப்பு நிமிடங்களில் உள்ளது."
+
+#: ../data/tomboy.schemas.in.h:36
+msgid ""
+"Integer value indicating if there is a preference to always perform a "
+"specific behavior when a conflict is detected, instead of prompting the "
+"user. The values map to an internal enumeration. 0 indicates that the user "
+"wishes to be prompted when a conflict occurs, so that they may handle each "
+"conflict situation on a case-by-case basis."
+msgstr ""
+"ஒரு முரண்பாடு எழும்போது பயனரை கேட்காமல் ஒரு குறிப்பிட்ட நடத்தையை பின்பற்ற ஒரு "
+"தேர்வுக்கான முழு எண். மதிப்புகள் ஒரு உள்ளமை கணக்கெடுத்தில் நிறைவுறும்.0 எனில் முரண்பாடு "
+"எழும் போது அந்த அந்த நேரம் பொருத்து சரி செய்ய பயனரை கேட்க வேண்டும்."
+
+#: ../data/tomboy.schemas.in.h:37
+msgid ""
+"Integer value indicating if there is a preference to always perform a "
+"specific link updating behavior when a note is renamed, instead of prompting "
+"the user. The values map to an internal enumeration. 0 indicates that the "
+"user wishes to be prompted when renaming a note may impact links that exist "
+"in other notes. 1 indicates that links should automatically be removed. 2 "
+"indicates that link text should be updated to the new note name so that it "
+"will continue linking to the renamed note."
+msgstr ""
+"ஒரு முரண்பாடு எழும்போது பயனரை கேட்காமல் ஒரு குறிப்பிட்ட நடத்தையை பின்பற்ற ஒரு "
+"தேர்வுக்கான முழு எண். மதிப்புகள் ஒரு உள்ளமை கணக்கெடுத்தில் நிறைவுறும்.0 எனில் முரண்பாடு "
+"எழும் போது அந்த அந்த நேரம் பொருத்து சரி செய்ய பயனரை கேட்க வேண்டும். 1 எனில் அந்த "
+"தொடுப்பை நீக்க வேண்டும். 2 எனில் தொடுப்பு உரையை புதுப்பெயர் இட்டு மேம்படுத்தி அதை "
+"தொடர்ந்து சுட்ட வேண்டும்."
+
+#: ../data/tomboy.schemas.in.h:38
+msgid "Last Directory used in HTML Export"
+msgstr "ஹெச்டிஎம்எல் ஏற்றுமதிக்கு பயன்படுத்திய கடைசி அடைவு"
+
+#: ../data/tomboy.schemas.in.h:39
+msgid "Link Updating Behavior on Note Rename"
+msgstr "குறிப்பை மறுபெயரிட்டா ல் இணைப்பை மேம்படுத்தும் நடத்தை"
+
+#: ../data/tomboy.schemas.in.h:40
+msgid "List of pinned notes."
+msgstr "பின் செய்யப்பட்ட குறிப்புகளின் பட்டியல்"
+
+#: ../data/tomboy.schemas.in.h:41
+msgid ""
+"Maximum characters of note title to show in the Tomboy tray or panel applet "
+"note menu."
+msgstr ""
+"Tomboy தட்டு அல்லது பலக குறூநிரல் குறிப்பு மெனுவில் காட்ட வேண்டிய அதிகபட்ச குறிப்பு "
+"எழுத்துகளின் எண்ணிக்கை."
+
+#: ../data/tomboy.schemas.in.h:42
+msgid "Maximum note title length to show in tray menu."
+msgstr "குறிப்புகளின் குறைந்த பட்ச தலைப்பை மெனு தட்டில் காட்டு"
+
+#: ../data/tomboy.schemas.in.h:43
+msgid "Minimum number of notes to show in menu"
+msgstr "பட்டியில் காட்டப்படவேண்டிய குறிப்புகளின் குறைந்த பட்ச எண்ணிக்கை"
+
+#: ../data/tomboy.schemas.in.h:44
+msgid "Note Synchronization Conflict Saved Behavior"
+msgstr "முரண்பாடு தவிர்த்த நடத்தையுள்ள குறிப்பு ஒத்திசைவு."
+
+#: ../data/tomboy.schemas.in.h:45
+msgid "Open Recent Changes"
+msgstr "சமீபத்திய மாற்றங்களை திற"
+
+#: ../data/tomboy.schemas.in.h:46
+msgid "Open Search Dialog"
+msgstr "தேடு உரையாடலை திறக்கவும்."
+
+#: ../data/tomboy.schemas.in.h:47
+msgid "Open Start Here"
+msgstr "இங்கே தொடங்கு ஐ திறக்கவும்."
+
+#: ../data/tomboy.schemas.in.h:48
+msgid "Path on SSH server to Tomboy synchronization directory (optional)."
+msgstr "SSH  சேவையகத்தில் டாம்பாய் அடைவுக்குஒத்திசைவு பாதை (விருப்பம்)"
+
+#: ../data/tomboy.schemas.in.h:49
+msgid ""
+"Path to the synchronization server when using the filesystem synchronization "
+"service addin."
+msgstr "கோப்பு அமைப்பு ஒத்திசைவு சேவை உள்கூட்டு இருக்கும்போது ஒத்திசைவு சேவையகத்துக்கு பாதை"
+
+#: ../data/tomboy.schemas.in.h:50
+msgid "SSHFS Remote Synchronization Folder"
+msgstr "SSHFS தொலை ஒத்திசைவு அடைவை தேர்ந்தெடு..."
+
+#: ../data/tomboy.schemas.in.h:51
+msgid "SSHFS Remote Synchronization User Name"
+msgstr "SSHFS தொலை ஒத்திசைவு சேவை உள்கூட்டு"
+
+#: ../data/tomboy.schemas.in.h:52
+msgid "SSHFS Synchronization Server Port"
+msgstr "SSHFS தொலை ஒத்திசைவு சேவை துறை"
+
+#: ../data/tomboy.schemas.in.h:53
+msgid "SSHFS Synchronization Server URL"
+msgstr "SSHFS ஒத்திசைவு சேவையக யூஆர்எல்"
+
+#: ../data/tomboy.schemas.in.h:54
+msgid "Saved height of \"Search All Notes\" window"
+msgstr "எல்லா குறிப்புகளையும் தேடுக சாளரத்தின் சேமித்த உயரம்"
+
+#: ../data/tomboy.schemas.in.h:55
+msgid "Saved horizontal position of \"Search All Notes\" window"
+msgstr "எல்லா குறிப்புகளையும் தேடுக சாளரத்தின் சேமித்த கிடைமட்ட இடம்"
+
+#: ../data/tomboy.schemas.in.h:56
+msgid "Saved vertical position of \"Search All Notes\" window"
+msgstr "எல்லா குறிப்புகளையும் தேடுக சாளரத்தின் சேமித்த செங்குத்து இடம்"
+
+#: ../data/tomboy.schemas.in.h:57
+msgid "Saved width of \"Search All Notes\" window"
+msgstr "எல்லா குறிப்புகளையும் தேடுக சாளரத்தின் சேமித்த அகலம்."
+
+#: ../data/tomboy.schemas.in.h:58
+msgid "Selected Synchronization Service Addin"
+msgstr "தேர்ந்தெடுத்த ஒத்திசைவு சேவை உள்கூட்டு"
+
+#: ../data/tomboy.schemas.in.h:59
+msgid "Set to TRUE to activate"
+msgstr "செயல்படுத்த உண்மை என அமை."
+
+#: ../data/tomboy.schemas.in.h:60
+msgid "Show applet menu"
+msgstr "குறுநிரல் பட்டியை காட்டு"
+
+#: ../data/tomboy.schemas.in.h:61
+msgid "Start Here Note"
+msgstr "இங்கே தொடங்கு குறிப்பு"
+
+#: ../data/tomboy.schemas.in.h:62
+msgid "Sticky Note Importer First Run"
+msgstr "ஒட்டுக் குறிப்பு இறக்குமதியாளர் முதல் இயக்கம்"
+
+#: ../data/tomboy.schemas.in.h:63
+msgid "Synchronization Client ID"
+msgstr "ஒத்திசைவு சார்ந்தோன் அடையாளம்"
+
+#: ../data/tomboy.schemas.in.h:64
+msgid "Synchronization Local Server Path"
+msgstr "ஒத்திசைவு உள்ளமை சேவையக பாதை"
+
+#: ../data/tomboy.schemas.in.h:65
+msgid "The date format that is used for the timestamp."
+msgstr "நேரமுத்திரைக்கு பயன்படும் தேதி முறைமை"
+
+#: ../data/tomboy.schemas.in.h:66
+msgid ""
+"The global keybinding for creating and displaying a new Note. The format "
+"looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The "
+"parser is fairly liberal and allows lower or upper case, and also "
+"abbreviations such as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the "
+"option to the special string \"disabled\", then there will be no keybinding "
+"for this action."
+msgstr ""
+"புதிய குறிப்பை உருவாக்கி காட்ட உலகளாவிய விசை பந்தம்: முறை இது போல் உள்ளது \"&lt;"
+"Control&gt;a\" அல்லது \"&lt;Shift&gt;&lt;Alt&gt;F1\". பகுப்பி மிக தாளார "
+"மனதுடையது. மேல் கீழ் நிலை எழுத்துக்களையும் பின் வருவது போன்ற குறுக்கங்களையும் "
+"அனுமதிக்கும்.\"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". விஷேஷ சரமாகிய  \"disabled\" "
+"க்கு தேர்வை அமைத்தால் இந்த செயலுக்கு விசை பந்தம் இராது."
+
+#: ../data/tomboy.schemas.in.h:67
+msgid ""
+"The global keybinding for opening the \"Start Here\" note. The format looks "
+"like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
+"fairly liberal and allows lower or upper case, and also abbreviations such "
+"as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
+"special string \"disabled\", then there will be no keybinding for this "
+"action."
+msgstr ""
+"\"இங்கு துவங்கு\" குறிப்புக்கு உலகளாவிய விசை பந்தம்: முறை இது போல் உள்ளது \"&lt;"
+"Control&gt;a\" அல்லது \"&lt;Shift&gt;&lt;Alt&gt;F1\". பகுப்பி மிக தாளார "
+"மனதுடையது. மேல் கீழ் நிலை எழுத்துக்களையும் பின் வருவது போன்ற குறுக்கங்களையும் "
+"அனுமதிக்கும்.\"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". விஷேஷ சரமாகிய  \"disabled\" "
+"க்கு தேர்வை அமைத்தால் இந்த செயலுக்கு விசை பந்தம் இராது."
+
+#: ../data/tomboy.schemas.in.h:68
+msgid ""
+"The global keybinding for opening the Note Search dialog. The format looks "
+"like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
+"fairly liberal and allows lower or upper case, and also abbreviations such "
+"as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
+"special string \"disabled\", then there will be no keybinding for this "
+"action."
+msgstr ""
+"குறிப்பை தேடு உரையாடலுக்கு உலகளாவிய விசை பந்தம்: முறை இது போல் உள்ளது \"&lt;"
+"Control&gt;a\" அல்லது \"&lt;Shift&gt;&lt;Alt&gt;F1\". பகுப்பி மிக தாளார "
+"மனதுடையது. மேல் கீழ் நிலை எழுத்துக்களையும் பின் வருவது போன்ற குறுக்கங்களையும் "
+"அனுமதிக்கும்.\"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". விஷேஷ சரமாகிய  \"disabled\" "
+"க்கு தேர்வை அமைத்தால் இந்த செயலுக்கு விசை பந்தம் இராது."
+
+#: ../data/tomboy.schemas.in.h:69
+msgid ""
+"The global keybinding for opening the Recent Changes dialog. The format "
+"looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The "
+"parser is fairly liberal and allows lower or upper case, and also "
+"abbreviations such as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the "
+"option to the special string \"disabled\", then there will be no keybinding "
+"for this action."
+msgstr ""
+"The global keybinding for opening the Recent Changes dialog. The format "
+"looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The "
+"parser is fairly liberal and allows lower or upper case, and also "
+"abbreviations such as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the "
+"option to the special string \"disabled\", then there will be no keybinding "
+"for this action."
+
+#: ../data/tomboy.schemas.in.h:70
+msgid ""
+"The global keybinding for showing the Tomboy applet's menu. The format looks "
+"like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
+"fairly liberal and allows lower or upper case, and also abbreviations such "
+"as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
+"special string \"disabled\", then there will be no keybinding for this "
+"action."
+msgstr ""
+"The global keybinding for showing the Tomboy applet's menu. The format looks "
+"like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is "
+"fairly liberal and allows lower or upper case, and also abbreviations such "
+"as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
+"special string \"disabled\", then there will be no keybinding for this "
+"action."
+
+#: ../data/tomboy.schemas.in.h:71
+msgid "The handler for \"note://\" URLs"
+msgstr "\"note://\" URLs க்கு கையாளுனர்"
+
+#: ../data/tomboy.schemas.in.h:72
+msgid "The last directory a note was exported to using the Export To HTML plugin."
+msgstr "Export To HTML சொருகியால் கடைசியாக குறிப்பு ஏற்றுமதி செய்யப்பட்ட அடைவு "
+
+#: ../data/tomboy.schemas.in.h:73
+msgid ""
+"The last setting for the 'Export linked notes' checkbox in the Export to "
+"HTML plugin."
+msgstr ""
+"ஹெச்டிஎம்எல் க்கு ஏற்றுமதி செய் சொருகி இல் 'ஏற்றுமதி இணைத்த குறிப்புகள்' அடையாளப்பெட்டி "
+"இன் கடைசி அமைப்பு."
+
+#: ../data/tomboy.schemas.in.h:74
+msgid ""
+"The last setting for the 'Include all other linked notes' checkbox in the "
+"Export to HTML plugin. This setting is used in conjunction with the 'HTML "
+"Export Linked Notes' setting and is used to specify whether all notes (found "
+"recursively) should be included during an export to HTML."
+msgstr ""
+"ஹெச்டிஎம்எல் க்கு ஏற்றுமதி செய் சொருகி இல் 'எல்லா இணைத்த குறிப்புகளையும் சேர்க்க' "
+"அடையாளப்பெட்டி இன் கடைசி அமைப்பு. இந்த அமைப்பு 'ஏற்றுமதி இணைத்த குறிப்புகள் அமைப்புடன் "
+"சேர்ந்து வேலை செய்யும். பயன்பாடு ஹெச்டிஎம்எல் க்கு ஏற்றுமதி செய்யும் போது சுழல் தேடலில் "
+"உள்ள எல்லாகுறிப்புகளையும் சேர்க்க வேண்டுமா என குறிப்பதாகும்."
+
+#: ../data/tomboy.schemas.in.h:75
+msgid ""
+"The note URI of the note that should be considered the \"Start Here\" note, "
+"which is always placed at the bottom of the Tomboy note menu and also "
+"accessible by hotkey."
+msgstr ""
+"டாம்பாய் குறிப்பு பட்டியில் கீழே காண்பதும் விரைவிசையால் அணுகக்கூடியதுமான  \"இதில் தொடங்கு"
+"\" குறிப்பாக கருத வேண்டிய குறிப்பின் யூஆர்ஐ."
+
+#: ../data/tomboy.schemas.in.h:76
+msgid ""
+"The port to use when connecting to the synchronization server via SSH. Set "
+"to -1 or less if default SSH port settings should be used instead."
+msgstr ""
+"ஒத்திசைக்கப்பட்ட SSH சர்வர் வழியாக இணைக்கும் போது துறையை பயன்படுத்து . -1லிருந்து அல்லது "
+"குறைவாக முன்னிருப்பு இருந்தால் அமை SSH துறை அமைவுகள் இதற்கு பதிலாக பயன்படுத்தப்படும்."
+
+#: ../data/tomboy.schemas.in.h:77
+msgid ""
+"Time (in milliseconds) Tomboy should wait for a response when using FUSE to "
+"mount a sync share."
+msgstr ""
+"ப்யூஸ் ஐ ஒரு ஒத்திசைவு பகிர்தலை ஏற்ற பயன்படுத்துகையில்  காத்திருக்க வேண்டிய நேரம் (மில்லி "
+"வினாடிகளில்)"
+
+#: ../data/tomboy.schemas.in.h:78
+msgid "Timestamp format"
+msgstr "நேரலமுத்திர முறைமைை"
+
+#: ../data/tomboy.schemas.in.h:79
+msgid "URL of SSH server containing Tomboy synchronization directory."
+msgstr "டாம்பாய் ஒத்திசைவு  அடைவு உள்ள SSH சேவையகத்தின் யூஆர்எல்(URL) "
+
+#: ../data/tomboy.schemas.in.h:80
+msgid ""
+"Unique identifier for the currently configured note synchronization service "
+"addin."
+msgstr "இப்போது வடிவமைத்துள்ள குறிப்பு ஒத்திசைவு சேவை உள்கூட்டுக்கு தனித்தன்மையான அடையாளம்."
+
+#: ../data/tomboy.schemas.in.h:81
+msgid ""
+"Unique identifier for this Tomboy client, used when communicating with a "
+"sychronization server."
+msgstr "ஒத்திசைவு சேவையகத்துடன் தொடர்பு கொள்ள டாம்பாய் சார்ந்தோனுக்கு  தனித்தன்மையான அடையாளம்."
+
+#: ../data/tomboy.schemas.in.h:82
+msgid ""
+"Use wdfs option \"-ac\" to accept SSL certificates without prompting the "
+"user."
+msgstr ""
+"wdfs தேர்வு \"-ac\" ஐ எஸ்எஸ்எல் (SSL) பயனரை சான்றிதழ் தேர்வு கேளாமல்  ஒத்துக்கொள்ள "
+"பயன்படுத்து"
+
+#: ../data/tomboy.schemas.in.h:83
+msgid "User name to use when connecting to the synchronization server via SSH."
+msgstr "ஒத்திசைவு சேவையகத்துடன் எஸ்எஸ்ஹெச் வழியாக  இணைக்க பயன்படுத்த பயனர் பெயர்"
+
+#: ../data/tomboy.schemas.in.h:84
+msgid ""
+"Whitespace-separated list of note URIs for notes that should always appear "
+"in the Tomboy note menu."
+msgstr ""
+"டாம்பாய் குறிப்பு பட்டியில் எப்போதும் காண வேண்டிய, குறிப்புகளின் யூஆர்ஐ களின் வெற்று "
+"இடத்தால் பிரித்த பட்டியல்."
+
+#: ../Tomboy/ActionManager.cs:127
+msgid "_File"
+msgstr "_F கோப்பு"
+
+#: ../Tomboy/ActionManager.cs:130
+msgid "_New"
+msgstr "_N புதியது"
+
+#: ../Tomboy/ActionManager.cs:131 ../Tomboy/ActionManager.cs:172
+msgid "Create a new note"
+msgstr "ஒரு புதிய குறிப்பினை உருவாக்கு"
+
+#: ../Tomboy/ActionManager.cs:134
+msgid "_Open..."
+msgstr "_த திற..."
+
+#: ../Tomboy/ActionManager.cs:135
+msgid "Open the selected note"
+msgstr "தேர்ந்தெடுத்த குறிப்பை திற"
+
+#: ../Tomboy/ActionManager.cs:138
+msgid "_Delete"
+msgstr "_அழி"
+
+#: ../Tomboy/ActionManager.cs:139
+msgid "Delete the selected note"
+msgstr "தேர்ந்தெடுத்த குறிப்பை நீக்கு"
+
+#: ../Tomboy/ActionManager.cs:142 ../Tomboy/NoteWindow.cs:411
+msgid "_Close"
+msgstr "மூடு (_C)"
+
+#: ../Tomboy/ActionManager.cs:143
+msgid "Close this window"
+msgstr "இந்த சாளரத்தை மூடு"
+
+#: ../Tomboy/ActionManager.cs:146 ../Tomboy/Tray.cs:300
+msgid "_Quit"
+msgstr "வெளியேறு (_Q)"
+
+#: ../Tomboy/ActionManager.cs:147
+msgid "Quit Tomboy"
+msgstr "டாம்பாய் ஐ விட்டு வெளிச்செல்"
+
+#: ../Tomboy/ActionManager.cs:150
+msgid "_Edit"
+msgstr "_த திருத்து"
+
+#: ../Tomboy/ActionManager.cs:154 ../Tomboy/PreferencesDialog.cs:65
+msgid "Tomboy Preferences"
+msgstr "Tomboy முன்னுரிமைகள்"
+
+#: ../Tomboy/ActionManager.cs:160
+msgid "_Contents"
+msgstr "_உள்ளடக்கங்கள்"
+
+#: ../Tomboy/ActionManager.cs:161
+msgid "Tomboy Help"
+msgstr "டாம்பாய் உதவி"
+
+#: ../Tomboy/ActionManager.cs:165 ../Tomboy/MacApplication.cs:233
+msgid "About Tomboy"
+msgstr "டாம்பாய் பற்றி"
+
+#: ../Tomboy/ActionManager.cs:168
+msgid "TrayIcon"
+msgstr "தட்டு சின்னம்."
+
+#: ../Tomboy/ActionManager.cs:171
+msgid "Create _New Note"
+msgstr "புதிய குறிப்பினை உருவாக்கு (_N)"
+
+#: ../Tomboy/ActionManager.cs:175 ../Tomboy/NoteWindow.cs:354
+msgid "_Search All Notes"
+msgstr "_எல்லா குறிப்புகளையும் தேடுக"
+
+#: ../Tomboy/ActionManager.cs:176
+msgid "Open the Search All Notes window"
+msgstr "எல்லா குறிப்புகளையும் தேடுக சாளரத்தி திற"
+
+#: ../Tomboy/ActionManager.cs:180
+msgid "Start synchronizing notes"
+msgstr "குறிப்புகளை ஒத்திசைவு செய்ய ஆரம்பி"
+
+#. Addin's tab caption
+#: ../Tomboy/Addins/AdvancedPreferences/AdvancedPreferencesAddin.cs:38
+msgid "Advanced"
+msgstr "மேம்பட்ட"
+
+#. Menu Note Count option
+#: ../Tomboy/Addins/AdvancedPreferences/AdvancedPreferencesAddin.cs:56
+msgid "Minimum number of notes to show in Recent list (maximum 18)"
+msgstr "அண்மை பட்டியில் காட்டப்படவேண்டிய குறிப்புகளின் குறைந்த பட்ச எண்ணிக்கை (அதிகபட்சம் 18)"
+
+#: ../Tomboy/Addins/Backlinks/BacklinksNoteAddin.cs:38
+msgid "What links here?"
+msgstr "இங்கு என்ன தொடுப்புகள்?"
+
+#. This is a disabled placeholder item for an empty menu
+#: ../Tomboy/Addins/Backlinks/BacklinksNoteAddin.cs:85
+msgid "(none)"
+msgstr "(எதுவும் இல்லை)"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:23
+msgid ""
+"You can use any bugzilla just by dragging links into notes.  If you want a "
+"special icon for certain hosts, add them here."
+msgstr ""
+"நீங்கள் தொடுப்புகளை குறிப்புகளில் இழுத்துவிட்டு எந்த பக் சில்லாவையும் பயன் படுத்தலாம் சில "
+"புரவலன்களுக்கு சிறப்பு சின்னம் தேவையானால் இங்கு அவற்றை சேர்க்கவும்."
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:41
+msgid "Host Name"
+msgstr "புரவலன் பெயர்"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:58
+msgid "Icon"
+msgstr "சின்னம்"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:176
+msgid "Select an icon..."
+msgstr "ஒரு சின்னத்தை தேர்ந்தெடு..."
+
+#. Extra Widget
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:191
+msgid "_Host name:"
+msgstr "புரவலன் பெயர்:"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:220
+msgid "No host name specified"
+msgstr "புரவலன் பெயர் குறிப்பிடவில்லை"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:221
+msgid "You must specify the Bugzilla host name to use with this icon."
+msgstr "இந்த சின்னத்துடன் பக் சில்லா புரவலன் பெயரையும் குறிக்க வேண்டும்."
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:247
+msgid "Error saving icon"
+msgstr "சின்னத்தை சேமிப்பதில் பிழை"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:248
+msgid "Could not save the icon file."
+msgstr "சின்ன கோப்பை சேமிக்க முடியவில்லை. "
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:302
+msgid "Really remove this icon?"
+msgstr "இந்த சின்னத்தை நிச்சயம் நீக்கவா?"
+
+#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:303
+msgid "If you remove an icon it is permanently lost."
+msgstr "இந்த சின்னத்தை நீக்கினால் அது நிரந்தரமாக நீக்கப்படும்."
+
+#: ../Tomboy/Addins/Evolution/EvolutionNoteAddin.cs:273
+msgid "Cannot open email"
+msgstr "மின்னஞ்சல் திறக்க முடியவில்லை"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlApplicationAddin.cs:59
+msgid "HTML"
+msgstr "ஹெச்டிஎம்எல்"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:13
+msgid "Destination for HTML Export"
+msgstr "HTML ஏற்றுமதிக்கு இலக்கு"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:23
+msgid "Export linked notes"
+msgstr "இணைக்கப்பட்ட குறிப்புகளை ஏற்று"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:28
+msgid "Include all other linked notes"
+msgstr "மற்ற இணைப்புள்ள குறிப்புகளையும் சேர்த்துக் கொள்க"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:67
+msgid "Export to HTML"
+msgstr "HTML க்கு ஏற்று"
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:115
+#, csharp-format
+msgid "Your note was exported to \"{0}\"."
+msgstr "உங்கள் குறிப்பு \"{0}\" க்கு ஏற்றுமதி செய்யப்பட்டது."
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:126
+msgid "Note exported successfully"
+msgstr "உங்கள் குறிப்பு வெற்றிகரமாக ஏற்றுமதி செய்யப்பட்டது."
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:132
+#: ../Tomboy/ExportAllApplicationAddin.cs:195
+#: ../Tomboy/ExportAllApplicationAddin.cs:273
+msgid "Access denied."
+msgstr "அணுக்கம் மறுக்கப்பட்டது."
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:134
+#: ../Tomboy/ExportAllApplicationAddin.cs:200
+#: ../Tomboy/ExportAllApplicationAddin.cs:278
+msgid "Folder does not exist."
+msgstr "அடைவு இல்லை."
+
+#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:149
+#, csharp-format
+msgid "Could not save the file \"{0}\""
+msgstr "கோப்பு  \"{0}\" ஐ சேமிக்க முடியவில்லை."
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:93
+msgid "_Folder Path:"
+msgstr "_F அடைவு பாதை:"
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:100
+msgid "Select Synchronization Folder..."
+msgstr "ஒத்திசைவு அடைவை தேர்ந்தெடு..."
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:127
+msgid "Folder path field is empty."
+msgstr "அடைவு தடம் புலம் காலியாக உள்ளது"
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:136
+msgid "Specified folder path does not exist, and Tomboy was unable to create it."
+msgstr "குறிப்பிட்ட அடைவு தடம் இல்லை மற்றும் டாம்பாயால் அதை உருவாக்க இயலவில்லை"
+
+#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:214
+msgid "Local Folder"
+msgstr "உள் அடைவு"
+
+#: ../Tomboy/Addins/FixedWidth/FixedWidthMenuItem.cs:13
+msgid "Fixed Wid_th"
+msgstr "நிலையான அகலம் (_t)"
+
+#: ../Tomboy/Addins/GalagoPresence/GalagoPresenceNoteAddin.cs:244
+#, csharp-format
+msgid "Cannot contact '{0}'"
+msgstr "'{0}'ஐ தொடர்பு கொள்ள முடியவில்லை"
+
+#: ../Tomboy/Addins/GalagoPresence/GalagoPresenceNoteAddin.cs:247
+#, csharp-format
+msgid "Error running gaim-remote: {0}"
+msgstr "தொலை கெய்ம் ஐ இயக்குவதில் பிழை: {0}"
+
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampNoteAddin.cs:29
+msgid "Insert Timestamp"
+msgstr "காலமுத்திரையை நுழை "
+
+#. initial newline
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:29
+#: ../Tomboy/Applet.cs:223 ../Tomboy/Preferences.cs:154
+msgid "dddd, MMMM d, h:mm tt"
+msgstr "dddd, MMMM d, h:mm tt"
+
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:54
+msgid "Choose one of the predefined formats or use your own."
+msgstr ""
+"முன்னிருப்பு ஒழங்கு முறைமையை தேர்வு செய்க  அல்லது உங்கள் தனிப்பயன் முறைமையை பயன்படுத்துக"
+
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:62
+msgid "Use _Selected Format"
+msgstr " தேர்ந்தெடுக்கப்பட்ட முறைமையை பயன்படுத்து"
+
+#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:87
+msgid "_Use Custom Format"
+msgstr " தனிப்பயன் முறைமையை பயன்படுத்து"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:10
+msgid "Today: Template"
+msgstr "இன்று: வார்ப்புரு"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:12
+msgid "Today: "
+msgstr "இன்று: "
+
+#. Format: "Today: Friday, July 01 2005"
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:17
+msgid "dddd, MMMM d yyyy"
+msgstr "dddd, MMMM d yyyy"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:43
+msgid "Tasks"
+msgstr "பணிகள்"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:44
+msgid "Appointments"
+msgstr "சந்திப்பு ஏற்பாடுகள்"
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDayPreferences.cs:16
+msgid ""
+"Change the <b>Today: Template</b> note to customize the text that new Today "
+"notes have."
+msgstr ""
+"புதிய இன்றைய குறிப்புகளுக்கு இருக்கும் உரையை தனிப்பயன் ஆக்க <b>"
+"இன்றைய: வார்ப்புரு</b> குறிப்பை மாற்றுக."
+
+#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDayPreferences.cs:24
+msgid "_Open Today: Template"
+msgstr "இன்றைய:வார்ப்புரு ஐ திற "
+
+#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:52
+msgid "Print"
+msgstr "அச்சிடு"
+
+#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:82
+msgid "Error printing note"
+msgstr "குறிப்பு அச்சிடுவதில் பிழை"
+
+#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:223
+#, csharp-format
+msgid "Page {0} of {1}"
+msgstr "{1} இல் {0} பக்கம்"
+
+#. Translators: Explanation of the date and time format specifications can be found here:
+#. * http://msdn.microsoft.com/en-us/library/system.globalization.datetimeformatinfo.aspx
+#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:242
+msgid "dddd MM/dd/yyyy, hh:mm:ss tt"
+msgstr "dddd MM/dd/yyyy, hh:mm:ss tt"
+
+#. Adding menu item when note is opened and window created
+#: ../Tomboy/Addins/RemoveBrokenLinks/RemoveBrokenLinksAddin.cs:32
+msgid "Remove broken links"
+msgstr "சிதைந்த இணைப்புகளை நீக்கு"
+
+#: ../Tomboy/Addins/Sketching/SketchingNoteAddin.cs:19
+msgid "Add a sketch"
+msgstr "ஒரு கோட்டு சித்திரத்தை சேர்"
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:48
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:59
+msgid "Se_rver:"
+msgstr "சேவையகம்:"
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:52
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:61
+msgid "User_name:"
+msgstr "(_n)பயனீட்டாளர் பெயர்"
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:56
+msgid "_Folder Path (optional):"
+msgstr "அடைவு பாதை(தேவையானால்):"
+
+#. Text for label describing setup required for SSH sync addin to work
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:59
+msgid ""
+"SSH synchronization requires an existing SSH key for this server and user, "
+"added to a running SSH daemon."
+msgstr ""
+"SSH ஒத்திசைவுக்கு இந்த வழங்கன் மற்றும் பயனருக்கு ஒரு இருப்பில் உள்ள SSH விசை இயங்கும் SSH "
+"கிங்கரனுக்கு சேர்க்கப்பட வேண்டும்."
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:83
+msgid "Server or username field is empty."
+msgstr "சேவையகம் அல்லது பயனர் பெயர் புலம் காலியாக உள்ளது"
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:143
+msgid "SSH"
+msgstr "SSH"
+
+#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:192
+msgid ""
+"Timeout connecting to server. Please ensure that your SSH key has been added "
+"to a running SSH daemon."
+msgstr ""
+"இந்த வழங்கன் உடன் இணைப்பு காலாவதியானது. உங்கள் SSH விசை இயங்கும் SSH கிங்கரனுக்கு "
+"சேர்க்கப்பட்டதா என உறுதி செய்து கொள்க"
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:50
+msgid "Import from Sticky Notes"
+msgstr "ஒட்டு குறிப்புகள் ஐ இறக்குமதி செய்க"
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:133
+msgid "No Sticky Notes found"
+msgstr "ஒட்டு குறிப்புகள் இல்லை"
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:134
+#, csharp-format
+msgid "No suitable Sticky Notes file was found at \"{0}\"."
+msgstr "\"{0}\" இல் இசைவான ஒட்டு குறிப்புகள் ஏதும் இல்லை"
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:143
+msgid "Sticky Notes import completed"
+msgstr "ஒட்டு குறிப்புகள் இறக்குமதி பூர்த்தி ஆயிற்று."
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:144
+#, csharp-format
+msgid "<b>{0}</b> of <b>{1}</b> Sticky Note was successfully imported."
+msgid_plural "<b>{0}</b> of <b>{1}</b> Sticky Notes were successfully imported."
+msgstr[0] "<b>{0}</b> <b>{1}</b> இதில் . ஒட்டு குறிப்பு இறக்குமதி வெற்றிகரமாக முடிந்தது."
+msgstr[1] "<b>{0}</b> <b>{1}</b> இதில் . ஒட்டு குறிப்புகள் இறக்குமதி வெற்றிகரமாக முடிந்தது."
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:159
+msgid "Untitled"
+msgstr "தலைப்பில்லாத"
+
+#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:188
+msgid "Sticky Note: "
+msgstr "ஒட்டுக் குறிப்பு: "
+
+#: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:62
+msgid "Tasque"
+msgstr "டாஸ்க்"
+
+#. Note to translators: "All" here must match up with the "All"
+#. category translation in Tasque for this to work properly.  "All"
+#. is used here to allow Tasque to decide which default category
+#. will be used to create the new task.
+#: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:86
+msgid "All"
+msgstr "அனைத்து"
+
+#: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:145
+msgid "--- Tasque is not running ---"
+msgstr "--- டாஸ்க் இயங்கவில்லை--- "
+
+#: ../Tomboy/Addins/Underline/UnderlineMenuItem.cs:12
+msgid "_Underline"
+msgstr "(_U) அடிக்கோடிடுக"
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:56
+msgid "_URL:"
+msgstr "_URL:"
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:67
+msgid "_Password:"
+msgstr "_கடவுச்சொல்:"
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:80
+msgid "URL, username, or password field is empty."
+msgstr "URL, பயனர் பெயர் அல்லது கடவுச்சொல் புலம் காலியாக உள்ளது"
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:133
+msgid "WebDAV"
+msgstr "WebDAV"
+
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:192
+msgid ""
+"There was an error connecting to the server.  This may be caused by using an "
+"incorrect user name and/or password."
+msgstr ""
+"சேவையகத்துடன் இணைப்பதில் பிழை. பயனர் பெயர் மற்றும் அல்லது கடவுச்சொல் தவறுதலாக உள்ளிட்டதால் "
+"இருக்கலாம்."
+
+#. TODO: If the above fails (no keyring daemon), save all but password
+#. to GConf, and notify user.
+#. Save configuration into GConf
+#. Preferences.Set ("/apps/tomboy/sync_wdfs_url", url ?? string.Empty);
+#. Preferences.Set ("/apps/tomboy/sync_wdfs_username", username ?? string.Empty);
+#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:268
+msgid "Saving configuration to the GNOME keyring failed with the following message:"
+msgstr "க்னோம் விசை வளைய வடிவமைப்பை சேமிப்பது இயலவில்லை இதனுடன் பின்வருபவை செய்திகள்வந்தன:"
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:66
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:97
+msgid "Connect to Server"
+msgstr "சேவையகத்துடன் இணை"
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:68
+msgid "Connected"
+msgstr "இணைக்கப்பட்டது"
+
+#. Translators: The web service supporting Tomboy WebSync is not responding as expected
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:126
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:157
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:171
+msgid "Server not responding. Try again later."
+msgstr "சேவையகம் பதில் தரவில்லை. மீண்டும் பிறகு முயற்சி செய்யவும்."
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:202
+msgid "Authorization Failed, Try Again"
+msgstr "ஒத்திசைவு தோல்வியடைந்தது. மீண்டும் முயற்சி செய்யவும்."
+
+#. Translators: Title of web page presented to user after they authorized Tomboy for sync
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:211
+msgid "Tomboy Web Authorization Successful"
+msgstr "Tomboy இணைய அங்கீகாரம் வெற்றி"
+
+#. Translators: Body of web page presented to user after they authorized Tomboy for sync
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:213
+msgid ""
+"Please return to the Tomboy Preferences window and press Save to start "
+"synchronizing."
+msgstr "Tomboy விருப்பங்கள் சாளரத்திற்கு வந்து சேமி என்பதை அழுத்தி ஒத்திசைவை துவக்கவும்."
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:222
+msgid "Connected. Press Save to start synchronizing"
+msgstr "இணைக்கப்பட்டது. ஒத்திசைவு ஆரம்பிக்க சேமி என்பதை அழுத்தவும்"
+
+#. Translators: The user must take action in their web browser to continue the authorization process
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:228
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:240
+msgid "Authorizing in browser (Press to reset connection)"
+msgstr "உலாவியில் அங்கீகரிக்கிறது (இணைப்பை மறுஅமைக்க அழுத்தவும்)"
+
+#. Translators: Sometimes a user's default browser is not set, so we recommend setting it and trying again
+#: ../Tomboy/Addins/WebSyncService/WebSyncPreferencesWidget.cs:236
+msgid "Set the default browser and try again"
+msgstr "முன்னிருப்பு உலாவியை அமைதது மீண்டும் முயற்சி செய்யவும்"
+
+#: ../Tomboy/Addins/WebSyncService/WebSyncServiceAddin.cs:70
+msgid "Tomboy Web"
+msgstr "டாம்பாய் வலை"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:53
+#, csharp-format
+msgid "Export All Notes to {0}"
+msgstr "எல்லா குறிப்புகளைகளையும் {0} க்கு ஏற்றுமதி செய்க"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:54
+#, csharp-format
+msgid "Start exporting notes to {0}"
+msgstr "{0} க்கு குறிப்புகளை ஏற்றுமதி செய்ய ஆரம்பி"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:58
+#, csharp-format
+msgid "Export selected notebook to {0}"
+msgstr "தேர்ந்தெடுக்கப்பட்ட குறிப்பு புத்தகத்தை {0} க்கு ஏற்றுமதி செய்க"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:59
+#, csharp-format
+msgid "Start exporting notebook to {0}"
+msgstr "{0} க்கு நோட்டுப்புத்தகத்தை ஏற்றுமதி செய்யத் துவங்கு"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:65
+#: ../Tomboy/Synchronization/SyncManager.cs:161
+msgid "_Tools"
+msgstr "_T கருவிகள்"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:68
+msgid "Export"
+msgstr "ஏற்றுமதி செய்க"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:69
+msgid "Export your notes."
+msgstr "குறிப்புகளை ஏற்றுமதி செய்க"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:72
+#, csharp-format
+msgid "Export All Notes To {0}"
+msgstr "எல்லா குறிப்புகளையும்  {0} க்கு ஏற்றுமதி செய்க"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:77
+#, csharp-format
+msgid "Export Selected Notebook To {0}"
+msgstr "{0}  க்கு தேர்வு செய்த குறிப்பு புத்தகத்தை ஏற்றுமதி செய்க"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:153
+#, csharp-format
+msgid "All Notes {0} Export"
+msgstr "அனைத்து குறிப்புகள்  {0} ஏற்றுமதி"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:193
+#: ../Tomboy/ExportAllApplicationAddin.cs:271
+msgid "Could not export, access denied."
+msgstr "ஏற்றுமதி செய்ய  முடியவில்லை, அணுகல் மறுக்கப்பட்டது."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:198
+#: ../Tomboy/ExportAllApplicationAddin.cs:276
+msgid "Could not export, folder does not exist."
+msgstr "ஏற்றுமதி செய்ய  முடியவில்லை. அடைவு இருப்பில் இல்லை."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:203
+#: ../Tomboy/ExportAllApplicationAddin.cs:281
+#, csharp-format
+msgid "Could not export: {0}"
+msgstr "ஏற்றுமதி செய்ய முடியவில்லை: {0}"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:205
+#: ../Tomboy/ExportAllApplicationAddin.cs:283
+msgid "Unknown error."
+msgstr "தெரியாத பிழை."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:236
+#: ../Tomboy/Notebooks/Notebook.cs:237
+msgid "Unfiled Notes"
+msgstr "நிரப்பாத குறிப்புகள்"
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:389
+#, csharp-format
+msgid "Your notes were exported to \"{0}\"."
+msgstr "உங்கள் குறிப்புகள் \"{0}\" க்கு ஏற்றுமதி செய்யப்பட்டது."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:398
+msgid "Notes exported successfully"
+msgstr "குறிப்புகள் வெற்றிகரமாக ஏற்றுமதி செய்யப்பட்டது."
+
+#: ../Tomboy/ExportAllApplicationAddin.cs:421
+#, csharp-format
+msgid "Could not save the files in \"{0}\""
+msgstr "கோப்புகளை  \"{0}\" இல் சேமிக்க முடியவில்லை."
+
+#. Translators: {0} is the export type, e.g. HTML
+#: ../Tomboy/ExportAllApplicationAddin.cs:507
+#, csharp-format
+msgid "Create destination folder for {0} export"
+msgstr "{0} ஏற்றுமதிக்கு இலக்கு அடைவை உருவாக்கு"
+
+#: ../Tomboy/JumpListManager.cs:96 ../Tomboy/RecentChanges.cs:85
+msgid "Search All Notes"
+msgstr "அனைத்து குறிப்புகளையும் தேடு"
+
+#. IShellLink new_notebook = CreateShellLink("New Notebook", topmboy_path, "--new-notebook",
+#. icons_path, (int)TomboyIcons.NewNotebook);
+#. if (new_notebook != null)
+#. object_collection.AddObject(new_notebook);
+#: ../Tomboy/JumpListManager.cs:106
+msgid "Create New Note"
+msgstr "புதிய குறிப்பினை உருவாக்கு"
+
+#: ../Tomboy/JumpListManager.cs:136
+#, csharp-format
+msgid "{0} (new)"
+msgstr "{0} (புதிய)"
+
+#: ../Tomboy/JumpListManager.cs:158
+msgid "Recent Notes"
+msgstr "சமீபத்திய குறிப்புகள்"
+
+#. Translators: This is the name of "Window" menu in the Mac menubar
+#: ../Tomboy/MacApplication.cs:215
+msgid "_Window"
+msgstr "சாளரம் (_W)"
+
+#: ../Tomboy/MacApplication.cs:234
+msgid "Preferences..."
+msgstr "முன்னுரிமைகள்..."
+
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:24
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:53
+msgid "Create a new notebook"
+msgstr "புதிய குறிப்பு புத்தகம் உருவாக்கு "
+
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:25
+msgid "Type the name of the notebook you'd like to create."
+msgstr "உருவாக்க விரும்பும் குறிப்பு புத்தகத்தின் பெயரை உள்ளிடுக"
+
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:31
+msgid "N_otebook name:"
+msgstr "_o குறிப்பு புத்தகத்தின் பெயர்:"
+
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:45
+msgid "Name already taken"
+msgstr "பெயர் ஏற்கெனவே பயனில் உள்ளது"
+
+#. Translation note: This is the Create button in the Create
+#. New Note Dialog.
+#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:59
+msgid "C_reate"
+msgstr "_உருவாக்கு"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:48
+msgid "Note_books"
+msgstr "_b குறிப்பு புத்தகங்கள்"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:49
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:69
+msgid "Create a new note in a notebook"
+msgstr "குறிப்பு புத்தகத்தில் புதிய குறிப்பு உருவாக்கு"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:52
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:223
+msgid "New Note_book..."
+msgstr "புதிய குறிப்பு புத்தகம்..."
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:56
+msgid "_New Note"
+msgstr "_புதிய குறிப்பு"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:57
+msgid "Create a new note in this notebook"
+msgstr "இந்த குறிப்பு புத்தகத்தில் புதிய குறிப்பு உருவாக்கு"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:60
+msgid "_Open Template Note"
+msgstr "குறிப்பு வார்ப்புருவை திற"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:61
+msgid "Open this notebook's template note"
+msgstr "இந்த குறிப்பு புத்தகத்தின் குறிப்பு வார்ப்புருவை திற"
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:64
+msgid "Delete Note_book"
+msgstr "குறிப்பு புத்தகம் நீக்கு "
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:65
+msgid "Delete the selected notebook"
+msgstr "தேர்ந்தெடுக்கப்பட்ட குறிப்பு புத்தகத்தை நீக்கு "
+
+#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:68
+#: ../Tomboy/RecentChanges.cs:276
+msgid "Notebooks"
+msgstr "குறிப்புப் புத்தகங்கள்"
+
+#. The templateNoteTite should show the name of the
+#. notebook.  For example, if the name of the notebooks
+#. "Meetings", the templateNoteTitle should be "Meetings
+#. Notebook Template".  Translators should place the
+#. name of the notebook accordingly using "{0}".
+#. TODO: Figure out how to make this note for
+#. translators appear properly.
+#: ../Tomboy/Notebooks/Notebook.cs:79
+#, csharp-format
+msgid "{0} Notebook Template"
+msgstr "{0} கையேடு வார்ப்புரு"
+
+#: ../Tomboy/Notebooks/Notebook.cs:153
+msgid "New Note"
+msgstr "புதிய குறிப்பு"
+
+#: ../Tomboy/Notebooks/Notebook.cs:205
+msgid "All Notes"
+msgstr "அனைத்து குறிப்புகள்"
+
+#: ../Tomboy/Notebooks/NotebookManager.cs:367
+msgid "Really delete this notebook?"
+msgstr "நிச்சயம் இந்த குறிப்பு புத்தகத்தை  அழிக்க வேண்டுமா?"
+
+#: ../Tomboy/Notebooks/NotebookManager.cs:369
+msgid ""
+"The notes that belong to this notebook will not be deleted, but they will no "
+"longer be associated with this notebook.  This action cannot be undone."
+msgstr ""
+"இந்த குறிப்பு புத்தகத்தில் உள்ள குறிப்புகள் நீக்கப்பட மாட்டா. ஆனால் இந்த குறிப்பு "
+"புத்தகத்துடன் அவை தொடர்பு செய்யப்பட மாட்டா. இந்த செயலை மீட்க இயலாது."
+
+#: ../Tomboy/Notebooks/NotebookMenuItem.cs:14
+msgid "No notebook"
+msgstr "குறிப்பு புத்தகம் இல்லை"
+
+#. Translators should preserve the "{0}" in the following
+#. string.  After being formatted for a notebook named,
+#. "Meetings", for example, the resultant string would be:
+#. New "Meetings" Note
+#: ../Tomboy/Notebooks/NotebookNewNoteMenuItem.cs:27
+#, csharp-format
+msgid "New \"{0}\" Note"
+msgstr "புதிய \"{0}\" குறிப்பு"
+
+#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:56
+msgid "Place this note into a notebook"
+msgstr "இந்த குறிப்பை ஒரு குறிப்பு புத்தகத்தில் வைக்கவும்"
+
+#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:148
+msgid "Notebook"
+msgstr "குறிப்பு புத்தகம்"
+
+#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:177
+msgid "_New notebook..."
+msgstr "(_N) புதிய குறிப்பு புத்தகம்..."
+
+#: ../Tomboy/Note.cs:515 ../Tomboy/NoteManager.cs:475
+#, csharp-format
+msgid "New Note {0}"
+msgstr "புதிய குறிப்பு {0}"
+
+#: ../Tomboy/Note.cs:1607
+#, csharp-format
+msgid "Really delete \"{0}\"?"
+msgstr "நிச்சயம்  \"{0}\" ஐ அழிக்க வேண்டுமா?"
+
+#: ../Tomboy/Note.cs:1610
+#, csharp-format
+msgid "Really delete this {0} note?"
+msgid_plural "Really delete these {0} notes?"
+msgstr[0] "நிச்சயம் இந்த {0} குறிப்பினை அழிக்க வேண்டுமா?"
+msgstr[1] "நிச்சயம் இந்த {0} குறிப்புகளை அழிக்க வேண்டுமா?"
+
+#: ../Tomboy/Note.cs:1621
+msgid "If you delete a note it is permanently lost."
+msgstr "ஒரு குறிப்பை அழித்தால் அது நிரந்தரமாக அழிக்கப்படும்."
+
+#: ../Tomboy/Note.cs:1655
+#, csharp-format
+msgid ""
+"An error occurred while saving your notes. Please check that you have "
+"sufficient disk space, and that you have appropriate rights on {0}. Error "
+"details can be found in {1}."
+msgstr ""
+"உங்கள் குறிப்பு தரவை  சேமிப்பதில் பிழை ஏற்பட்டது. போதிய இடம் வட்டில் உள்ளதா  என "
+"சோதிக்கவும். {0}. க்கு உங்களுக்கு உரிமை  உள்ளதா என்றும் பார்க்க. பிழை  விவரங்கள்  {1} இல் "
+"உள்ளது "
+
+#: ../Tomboy/Note.cs:1671
+msgid "Error saving note data."
+msgstr "குறிப்பு தரவை  சேமிப்பதில் பிழை"
+
+#. New Note Template
+#. Translators: This is 'New Note' Template, not New 'Note Template'
+#: ../Tomboy/NoteManager.cs:21 ../Tomboy/PreferencesDialog.cs:257
+msgid "New Note Template"
+msgstr "புதிய குறிப்பு வார்ப்புரு"
+
+#. Create migration notification note
+#. Translators: The title of the data migration note
+#: ../Tomboy/NoteManager.cs:147
+msgid "Your Notes Have Moved!"
+msgstr "உங்களின் குறிப்புகள் நகர்த்தப்பட்டது!"
+
+#. Translators: The contents (not including the title) of the data migration note. {0}, {1}, {2}, {3}, and {4} are replaced by directory paths and should not be changed
+#: ../Tomboy/NoteManager.cs:160
+#, csharp-format
+msgid ""
+"In the latest version of Tomboy, your note files have moved.  You have "
+"probably never cared where your notes are stored, and if you still don't "
+"care, please go ahead and <bold>delete this note</bold>.  :-)\n"
+"\n"
+"Your old note directory is still safe and sound at <link:url>{0}</link:"
+"url> . If you go back to an older version of Tomboy, it will look for notes "
+"there.\n"
+"\n"
+"But we've copied your notes and configuration info into new directories, "
+"which will be used from now on:\n"
+"\n"
+"<list><list-item dir=\"ltr\">Notes can now be found at <link:url>{1}</link:"
+"url>\n"
+"</list-item><list-item dir=\"ltr\">Configuration is at <link:url>{2}</link:"
+"url>\n"
+"</list-item><list-item dir=\"ltr\">You can install add-ins at <link:url>{3}</"
+"link:url>\n"
+"</list-item><list-item dir=\"ltr\">Log files can be found at <link:url>{4}</"
+"link:url></list-item></list>\n"
+"\n"
+"Ciao!"
+msgstr ""
+"In the latest version of Tomboy, your note files have moved.  You have "
+"probably never cared where your notes are stored, and if you still don't "
+"care, please go ahead and <bold>delete this note</bold>.  :-)\n"
+"\n"
+"Your old note directory is still safe and sound at <link:url>{0}</link:"
+"url> . If you go back to an older version of Tomboy, it will look for notes "
+"there.\n"
+"\n"
+"But we've copied your notes and configuration info into new directories, "
+"which will be used from now on:\n"
+"\n"
+"<list><list-item dir=\"ltr\">Notes can now be found at <link:url>{1}</link:"
+"url>\n"
+"</list-item><list-item dir=\"ltr\">Configuration is at <link:url>{2}</link:"
+"url>\n"
+"</list-item><list-item dir=\"ltr\">You can install add-ins at <link:url>{3}</"
+"link:url>\n"
+"</list-item><list-item dir=\"ltr\">Log files can be found at <link:url>{4}</"
+"link:url></list-item></list>\n"
+"\n"
+"Ciao!"
+
+#: ../Tomboy/NoteManager.cs:265
+msgid ""
+"<note-content>Start Here\n"
+"\n"
+"<bold>Welcome to Tomboy!</bold>\n"
+"\n"
+"Use this \"Start Here\" note to begin organizing your ideas and thoughts.\n"
+"\n"
+"You can create new notes to hold your ideas by selecting the \"Create New "
+"Note\" item from the Tomboy Notes menu in your GNOME Panel. Your note will "
+"be saved automatically.\n"
+"\n"
+"Then organize the notes you create by linking related notes and ideas "
+"together!\n"
+"\n"
+"We've created a note called <link:internal>Using Links in Tomboy</link:"
+"internal>.  Notice how each time we type <link:internal>Using Links in "
+"Tomboy</link:internal> it automatically gets underlined?  Click on the link "
+"to open the note.</note-content>"
+msgstr ""
+"<note-content>இங்கு துவங்கு\n"
+"\n"
+"<bold>டாம்பாய் க்கு நல்வரவு!</bold>\n"
+"\n"
+"இந்த\"இங்கு துவங்கு\" குறிப்பை உங்கள் எண்ணங்களை ஒழுங்கு படுத்த பயன்படுத்தவும்.\n"
+"\n"
+"உங்கள் எண்ணங்களை  எழுதி வைக்க புதிய குறிப்புகளை \"Create New Note\" உங்கள் க்னோம் "
+"பலகத்தில் உள்ள டாம்பாய் குறிப்புகள் பட்டியிலிருந்து தேர்வு செய்து அமைக்கலாம். குறிப்பு "
+"தானாகவே சேமிக்கப்படும்.\n"
+"\n"
+"பிறகு அந்த குறிப்புக்களை சம்பந்தப்படுத்துமாறு இணைத்து ஒழுங்கு செய்து கொள்ளலாம்.!\n"
+"\n"
+"<link:internal>டாம்பாயில் இணப்புகள்</link:internal> என்ற ஒரு குறிப்பை உருவாக்கி "
+"உள்ளோம்.  <link:internal>டாம்பாயில் இணப்புகள்</link:internal> என உள்ளிடும்போதெல்லாம் "
+"எப்படி அது தானாக அடிகோடிட்டுகொள்கிறது என பார்த்தீர்களா? அதை சொடுக்கி அந்த குறிப்பை "
+"திறக்கலாம்.</note-content> "
+
+#: ../Tomboy/NoteManager.cs:284
+msgid ""
+"<note-content>Using Links in Tomboy\n"
+"\n"
+"Notes in Tomboy can be linked together by highlighting text in the current "
+"note and clicking the <bold>Link</bold> button above in the toolbar.  Doing "
+"so will create a new note and also underline the note's title in the current "
+"note.\n"
+"\n"
+"Changing the title of a note will update links present in other notes.  This "
+"prevents broken links from occurring when a note is renamed.\n"
+"\n"
+"Also, if you type the name of another note in your current note, it will "
+"automatically be linked for you.</note-content>"
+msgstr ""
+"<note-content>டாம்பாய் இல் இணைப்புகளை பயன்படுத்துதல்\n"
+"\n"
+"தற்போதைய குறிப்பில் உள்ள உரையை சிறப்பு சுட்டி விட்டு <bold>இணைப்பு</bold> பொத்தானை "
+"சொடுக்குவதால் டாம்பாயில் குறிப்புகளை இணக்கலாம். அப்படிச் செய்வது அந்த தலைப்பில் புதிய "
+"குறிப்பை உருவாக்குவதுடன் அந்த பெயரை தற்போதைய குறிப்பில் அடிக்கோடிட்டு காட்டும்.\n"
+"\n"
+"ஒரி தலைப்பை மாற்றினால் அது மற்ற குறிப்புகளில் உள்ள இணைப்புகளை தானாகவே மாற்றிக்கொள்ளும். "
+"இதனால் ஒரு குறிப்பை பெயர் மாற்றுவதால் இணைப்புகள் சிதைந்து போகா.\n"
+"\n"
+"மேலும் தற்போதைய குறிப்பில் மற்றொரு குறிப்பின் பெயரை உள்ளிட்டால் தானாகவே இணப்பு "
+"ஏற்படுத்தப்படும். </note-content>"
+
+#. Attempt to find an existing Start Here note
+#: ../Tomboy/NoteManager.cs:299 ../Tomboy/NoteManager.cs:395
+msgid "Start Here"
+msgstr "இங்கே தொடங்கு"
+
+#: ../Tomboy/NoteManager.cs:304
+msgid "Using Links in Tomboy"
+msgstr "டாம்பாயில்  தொடுப்புகளை பயன்படுத்துதல்"
+
+#. Use a simple "Describe..." body and highlight
+#. it so it can be easily overwritten
+#: ../Tomboy/NoteManager.cs:543 ../Tomboy/NoteManager.cs:646
+msgid "Describe your new note here."
+msgstr "இங்கு உங்களை புதிய குறிப்பினை குறிப்பிடவும்."
+
+#: ../Tomboy/NoteRenameDialog.cs:50
+msgid "Rename Note Links?"
+msgstr "குறிப்பு இணைப்புகளை மறுபெயரிடவா ?"
+
+#: ../Tomboy/NoteRenameDialog.cs:56
+msgid "_Rename Links"
+msgstr "இணைப்புகளை மறுபெயரிடு (_R)"
+
+#: ../Tomboy/NoteRenameDialog.cs:59
+msgid "_Don't Rename Links"
+msgstr "இணைப்புகளை மறுபெயரிடாதே (_D)"
+
+#: ../Tomboy/NoteRenameDialog.cs:67
+#, csharp-format
+msgid ""
+"Rename links in other notes from \"<span underline=\"single\">{0}</span>\" "
+"to \"<span underline=\"single\">{1}</span>\"?\n"
+"\n"
+"If you do not rename the links, they will no longer link to anything."
+msgstr ""
+"பின்வரும்  குறிப்பு இணைப்புகளை மறுபெயரிடு\"<span underline=\"single\">{0}</span>"
+"\" to \"<span underline=\"single\">{1}</span>\"?\n"
+"\n"
+"மறு பெயரிடாவிட்டால் அவை மேலும் எதையும்சுட்டிக்காட்ட மாட்டா."
+
+#: ../Tomboy/NoteRenameDialog.cs:83
+msgid "Rename Links"
+msgstr "இணைப்புகளை மறுபெயரிடு"
+
+#: ../Tomboy/NoteRenameDialog.cs:95
+#: ../Tomboy/Synchronization/SyncDialog.cs:119
+msgid "Note Title"
+msgstr "குறிப்பு தலைப்பு"
+
+#. Translators: This button causes all notes in the list to be selected
+#: ../Tomboy/NoteRenameDialog.cs:118
+msgid "Select All"
+msgstr "அனைத்தையும் தேர்வு செய்"
+
+#. Translators: This button causes all notes in the list to be unselected
+#: ../Tomboy/NoteRenameDialog.cs:127
+msgid "Select None"
+msgstr "எதையும் தேர்ந்தெடுக்காதே "
+
+#: ../Tomboy/NoteRenameDialog.cs:144
+msgid "Ad_vanced"
+msgstr "_v மேம்பட்ட."
+
+#: ../Tomboy/NoteRenameDialog.cs:147
+msgid "Always show this _window"
+msgstr "_w இந்த சாளரத்தை எப்போதும் காட்டு"
+
+#: ../Tomboy/NoteRenameDialog.cs:155
+msgid "Never rename _links"
+msgstr "_l இணைப்புகளை  எப்போதும் மறுபெயரிடாதே"
+
+#: ../Tomboy/NoteRenameDialog.cs:163
+msgid "Alwa_ys rename links"
+msgstr "_y  எப்போதும் இணைப்புகளை மறுபெயரிடு"
+
+#: ../Tomboy/NoteWindow.cs:59
+msgid "Find in This Note"
+msgstr "இந்த குறிப்பில் தேடுக"
+
+#: ../Tomboy/NoteWindow.cs:366
+msgid "_Link to New Note"
+msgstr "புதிய குறிப்புக்கு இணைப்பு (_L)"
+
+#: ../Tomboy/NoteWindow.cs:378
+msgid "Te_xt"
+msgstr "உரை (_x)"
+
+#: ../Tomboy/NoteWindow.cs:386
+msgid "_Find in This Note"
+msgstr "இந்த குறிப்பில் தேடுக"
+
+#: ../Tomboy/NoteWindow.cs:401
+msgid "Clos_e All Notes"
+msgstr "அனைத்து குறிப்புகளையும் மூடு (_e)"
+
+#: ../Tomboy/NoteWindow.cs:441
+msgid "Search"
+msgstr "தேடு"
+
+#. TODO: If we ever add a way to customize internal keybindings, this will need to change
+#: ../Tomboy/NoteWindow.cs:445
+msgid "Search your notes"
+msgstr "உங்கள் குறிப்புகளை தேடு"
+
+#: ../Tomboy/NoteWindow.cs:457
+msgid "Link"
+msgstr "இணைப்பு"
+
+#: ../Tomboy/NoteWindow.cs:464
+msgid "Link selected text to a new note"
+msgstr "தேர்ந்தெடுத்த உரையை ஒரு புதிய குறிப்புக்கு இணைக்கவும்"
+
+#: ../Tomboy/NoteWindow.cs:477
+msgid "_Text"
+msgstr "உரை (_T)"
+
+#: ../Tomboy/NoteWindow.cs:482
+msgid "Set properties of text"
+msgstr "உரைக்கு பண்புகளை அமை"
+
+#: ../Tomboy/NoteWindow.cs:487
+msgid "T_ools"
+msgstr "கருவிகள் (_o)"
+
+#: ../Tomboy/NoteWindow.cs:491
+msgid "Use tools on this note"
+msgstr "இந்த குறிப்புக்கான கருவிகளை பயன்படுத்து"
+
+#: ../Tomboy/NoteWindow.cs:499
+msgid "Delete this note"
+msgstr "இந்த குறிப்பினை அழி"
+
+#: ../Tomboy/NoteWindow.cs:507 ../Tomboy/Synchronization/SyncManager.cs:163
+msgid "Synchronize Notes"
+msgstr "குறிப்புகளை ஒத்திசை"
+
+#: ../Tomboy/NoteWindow.cs:565
+msgid ""
+"This note is a template note. It determines the default content of regular "
+"notes, and will not show up in the note menu or search window."
+msgstr ""
+"இது ஒரு வார்புரு குறிப்பு. இது வழக்கமான குறிப்புகளின் முன்னிருப்பு உள்ளடக்கத்தை "
+"நிர்ணயிக்கிறது. அது குறிப்பு மெனுவிலோ தெடல் சாளரத்திலோ காணாது."
+
+#: ../Tomboy/NoteWindow.cs:571
+msgid "Convert to regular note"
+msgstr "வழக்கமான குறிப்பாக மாற்றவும்"
+
+#: ../Tomboy/NoteWindow.cs:576
+msgid "Save Si_ze"
+msgstr "_z அளவை சேமி"
+
+#: ../Tomboy/NoteWindow.cs:585
+msgid "Save Se_lection"
+msgstr "_l தேர்வை சேமி"
+
+#: ../Tomboy/NoteWindow.cs:594
+msgid "Save _Title"
+msgstr "_T தலைப்பை சேமி "
+
+#: ../Tomboy/NoteWindow.cs:639
+msgid "_Find..."
+msgstr "தேடு... (_F)"
+
+#: ../Tomboy/NoteWindow.cs:650
+msgid "Find _Next"
+msgstr "அடுத்ததை தேடு (_N)"
+
+#: ../Tomboy/NoteWindow.cs:663
+msgid "Find _Previous"
+msgstr "முந்தையதை தேடு (_P)"
+
+#: ../Tomboy/NoteWindow.cs:751
+msgid "Cannot create note"
+msgstr "குறிப்பினை உருவாக்க முடியவில்லை"
+
+#: ../Tomboy/NoteWindow.cs:832
+msgid "_Find:"
+msgstr "தேடு: (_F)"
+
+#: ../Tomboy/NoteWindow.cs:843
+msgid "_Previous"
+msgstr "முந்தையது (_P)"
+
+#: ../Tomboy/NoteWindow.cs:852
+msgid "_Next"
+msgstr "(_N) அடுத்து"
+
+#: ../Tomboy/NoteWindow.cs:1335
+msgid "_Bold"
+msgstr "தடிமன் (_B)"
+
+#: ../Tomboy/NoteWindow.cs:1347
+msgid "_Italic"
+msgstr "சாய்வு (_I)"
+
+#: ../Tomboy/NoteWindow.cs:1359
+msgid "_Strikeout"
+msgstr "அடித்தல் (_S)"
+
+#: ../Tomboy/NoteWindow.cs:1371
+msgid "_Highlight"
+msgstr "முன்னிலைப்படுத்தல் (_H)"
+
+#: ../Tomboy/NoteWindow.cs:1384
+msgid "Font Size"
+msgstr "எழுத்துரு அளவு"
+
+#: ../Tomboy/NoteWindow.cs:1387
+msgid "_Normal"
+msgstr "இயல்பான (_N)"
+
+#: ../Tomboy/NoteWindow.cs:1404
+msgid "Hu_ge"
+msgstr "மிகப்பெரிய"
+
+#: ../Tomboy/NoteWindow.cs:1412
+msgid "_Large"
+msgstr "பெரிய (_L)"
+
+#: ../Tomboy/NoteWindow.cs:1420
+msgid "S_mall"
+msgstr "சிறிய (_m)"
+
+#: ../Tomboy/NoteWindow.cs:1429
+msgid "Increase Font Size"
+msgstr "எழுத்துரு அளவு ஐ அதிகமாக்குக"
+
+#: ../Tomboy/NoteWindow.cs:1447
+msgid "Decrease Font Size"
+msgstr "எழுத்துரு அளவு ஐ குறைவாக்குக"
+
+#: ../Tomboy/NoteWindow.cs:1467
+msgid "Bullets"
+msgstr "குண்டு அடையாளக் குறிப்புகள்"
+
+#: ../Tomboy/PreferencesDialog.cs:81
+msgid "Editing"
+msgstr "திருத்தம்"
+
+#: ../Tomboy/PreferencesDialog.cs:84
+msgid "Hotkeys"
+msgstr "விரைவு விசைகள்"
+
+#: ../Tomboy/PreferencesDialog.cs:86
+msgid "Synchronization"
+msgstr "ஒத்திசைவு"
+
+#: ../Tomboy/PreferencesDialog.cs:88
+msgid "Add-ins"
+msgstr "உள்கூட்டு"
+
+#: ../Tomboy/PreferencesDialog.cs:174
+msgid "_Spell check while typing"
+msgstr "உள்ளிடுும்போதே_ எழுத்துப்பிழை சோதனை"
+
+#: ../Tomboy/PreferencesDialog.cs:183
+msgid ""
+"Misspellings will be underlined in red, with correct spelling suggestions "
+"shown in the context menu."
+msgstr ""
+"சொற்பிழைகளுக்கு சிவப்பு அடிக்கோடு இடப்படும். பரிந்துரைகளை வலது சொடுக்கு பட்டியில் "
+"காணலாம்."
+
+#. WikiWords...
+#: ../Tomboy/PreferencesDialog.cs:194
+msgid "Highlight _WikiWords"
+msgstr "_வ விகி வார்த்தைகளை சிறப்புச்சுட்டுக"
+
+#: ../Tomboy/PreferencesDialog.cs:202
+msgid ""
+"Enable this option to highlight words <b>ThatLookLikeThis</b>. Clicking the "
+"word will create a note with that name."
+msgstr ""
+"<b>ThatLookLikeThis</b> போல் காணப்படும் சொற்களை சிறப்புச்சுட்டலை செயல்படச்செய். அந்த "
+"சொல்லை சொடுக்கினால் அந்த பெயருடன் ஒரு குறிப்பு பக்கம் உருவாகும்."
+
+#. Auto bulleted list
+#: ../Tomboy/PreferencesDialog.cs:209
+msgid "Enable auto-_bulleted lists"
+msgstr "தானியங்கி எண்ணிட்ட பட்டியலை இயல்படுத்து "
+
+#: ../Tomboy/PreferencesDialog.cs:218
+msgid "Use custom _font"
+msgstr "தனிபயன் எழுத்துருவை செயல்படுத்து"
+
+#: ../Tomboy/PreferencesDialog.cs:236
+msgid "When renaming a linked note: "
+msgstr "எப்போ து இணைத்த குறிப்பை ம று பெயரிடுவது: "
+
+#: ../Tomboy/PreferencesDialog.cs:239
+msgid "Ask me what to do"
+msgstr "என்ன செய்வதென கேள்"
+
+#: ../Tomboy/PreferencesDialog.cs:240
+msgid "Never rename links"
+msgstr "இணைப்புகளை  எப்போதும் மறுபெயரிடாதே "
+
+#: ../Tomboy/PreferencesDialog.cs:241
+msgid "Always rename links"
+msgstr "இணைப்புகளை  எப்போதும் மறுபெயரி டு"
+
+#: ../Tomboy/PreferencesDialog.cs:261
+msgid ""
+"Use the new note template to specify the text that should be used when "
+"creating a new note."
+msgstr ""
+"புதிய குறிப்பு உருவாக்கும்போது பயன்பட வேண்டிய உரையை குறிக்க புதிய குறிப்பு "
+"வார்ப்புருவை பயன்படுத்து"
+
+#: ../Tomboy/PreferencesDialog.cs:270
+msgid "Open New Note Template"
+msgstr "புதிய குறிப்பு வார்ப்புருவை திற "
+
+#. Hotkeys...
+#: ../Tomboy/PreferencesDialog.cs:327
+msgid "Listen for _Hotkeys"
+msgstr "_வ விரைவு விசைகளுக்கு செவி சாய்க்கவும்"
+
+#: ../Tomboy/PreferencesDialog.cs:336
+msgid ""
+"Hotkeys allow you to quickly access your notes from anywhere with a "
+"keypress. Example Hotkeys: <b>&lt;Control&gt;&lt;Shift&gt;F11</b>, <b>&lt;"
+"Alt&gt;N</b>"
+msgstr ""
+"விரைவு விசைகள் எந்த இடத்திலிருந்தும் உங்கள் குறிப்புகளை ஒரே விசை அழுத்தல் மூலம் அணுக "
+"உதவுகிறது. எ-டு: <b>&lt;Control&gt;&lt;Shift&gt;F11</b>, <b>&lt;Alt&gt;N</b>"
+
+#. Show notes menu keybinding...
+#: ../Tomboy/PreferencesDialog.cs:356
+msgid "Show notes _menu"
+msgstr "குறிப்புகள் பட்டியை காட்டு"
+
+#. Open Start Here keybinding...
+#: ../Tomboy/PreferencesDialog.cs:373
+msgid "Open \"_Start Here\""
+msgstr "\"_இங்கே தொடங்கு\" ஐ திறக்கவும்."
+
+#. Create new note keybinding...
+#: ../Tomboy/PreferencesDialog.cs:390
+msgid "Create _new note"
+msgstr "ஒரு புதிய குறிப்பினை உருவாக்கு"
+
+#. Open Search All Notes window keybinding...
+#: ../Tomboy/PreferencesDialog.cs:407
+msgid "Open \"Search _All Notes\""
+msgstr "\"_அனைத்து குறிப்புகளையும் தேடு\" ஐ திறக்கவும்"
+
+#: ../Tomboy/PreferencesDialog.cs:434
+msgid "Ser_vice:"
+msgstr "_v சேவை:"
+
+#: ../Tomboy/PreferencesDialog.cs:487 ../Tomboy/PreferencesDialog.cs:1106
+msgid "Not configurable"
+msgstr "வடிவமைக்க இயலாது"
+
+#: ../Tomboy/PreferencesDialog.cs:513
+msgid "Automaticall_y Sync in Background Every"
+msgstr "_y பின்னணியில் தானியங்கியாக ஒவ்வொ ரு காலத்திலும் இசைவி"
+
+#. Translators: See above comment for details on
+#. this string.
+#: ../Tomboy/PreferencesDialog.cs:519
+msgid "Minutes"
+msgstr "நிமிடங்கள்"
+
+#. "Advanced..." button to bring up extra sync config dialog
+#: ../Tomboy/PreferencesDialog.cs:541
+msgid "_Advanced..."
+msgstr "_A மேம்பட்ட..."
+
+#: ../Tomboy/PreferencesDialog.cs:602
+msgid "The following add-ins are installed"
+msgstr "பின் வரும் உள்கூட்டுகள் நிறுவப்பட்டுள்ளன:"
+
+#: ../Tomboy/PreferencesDialog.cs:623
+msgid "Get More Add-Ins..."
+msgstr "மேலும் கூடுதல் சேர்ப்புகளை பெறு..."
+
+#: ../Tomboy/PreferencesDialog.cs:641
+msgid "_Enable"
+msgstr "செயல்படுத்து (_E)"
+
+#: ../Tomboy/PreferencesDialog.cs:647
+msgid "_Disable"
+msgstr "செயல் _ந நீக்கு"
+
+#: ../Tomboy/PreferencesDialog.cs:778
+msgid "Not Implemented"
+msgstr "அமுல் படுத்தவில்லை"
+
+#: ../Tomboy/PreferencesDialog.cs:792
+#, csharp-format
+msgid "{0} Preferences"
+msgstr "{0} முன்னுரிமைகள்"
+
+#: ../Tomboy/PreferencesDialog.cs:931
+msgid "Choose Note Font"
+msgstr "குறிப்பு எழுத்துருவை தேர்ந்தெடுக்கவும்"
+
+#: ../Tomboy/PreferencesDialog.cs:975
+msgid "Other Synchronization Options"
+msgstr "மற்ற ஒத்திசைவு விருப்பங்கள்"
+
+#: ../Tomboy/PreferencesDialog.cs:981
+msgid ""
+"When a conflict is detected between a local note and a note on the "
+"configured synchronization server:"
+msgstr "உள்ளமை குறிப்பு மற்றும் வடிவமைத்த வழங்கன் குறிப்பு இடையே முரண்பாடு கண்டால்:"
+
+#: ../Tomboy/PreferencesDialog.cs:988
+msgid "Always ask me what to do."
+msgstr "என்ன செய்வதென எப்போதும் கேள்"
+
+#: ../Tomboy/PreferencesDialog.cs:992
+msgid "Rename my local note."
+msgstr "என் உள்ளமை குறிப்பை பெயர் மாற்றுக:"
+
+#: ../Tomboy/PreferencesDialog.cs:996
+msgid "Replace my local note with the server's update."
+msgstr "என் உள் குறிப்பு ஐ வழங்கனின் குறிப்பால் இற்றைப்படுத்துக"
+
+#: ../Tomboy/PreferencesDialog.cs:1142
+msgid "Are you sure?"
+msgstr " நிச்சயமாக?"
+
+#: ../Tomboy/PreferencesDialog.cs:1144
+msgid ""
+"Clearing your synchronization settings is not recommended.  You may be "
+"forced to synchronize all of your notes again when you save new settings."
+msgstr ""
+"உங்கள் ஒத்திசைவு அமைப்பை நீக்குவது பரிந்துரைக்கப்படவில்லை.நீங்கள் புதிய அமைப்பை சேமிக்கும் "
+"போது உங்கள் குறிப்புகளனைத்தையும் ஒத்திசைக்க கட்டாயப்படுத்தப்ப்டலாம்."
+
+#: ../Tomboy/PreferencesDialog.cs:1157
+msgid "Resetting Synchronization Settings"
+msgstr "ஒத்திசைவு அமைப்பை மறுஅமைப்பு செய்கிறது"
+
+#: ../Tomboy/PreferencesDialog.cs:1159
+msgid ""
+"You have disabled the configured synchronization service.  Your "
+"synchronization settings will now be cleared.  You may be forced to "
+"synchronize all of your notes again when you save new settings."
+msgstr ""
+"நீங்கள் வடிவமைத்த ஒத்திசைவு சேவையை செயல் முடக்கம் செய்துள்ளீர்கள். உங்கள் ஒத்திசைவு "
+"வடிவமைப்பு இப்போது "
+"சுத்தப்படும். நீங்கள் புதிய அமைப்பை சேமிக்கும் போது உங்கள் குறிப்புகளனைத்தையும் "
+"ஒத்திசைக்க கட்டாயப்படுத்தப்படலாம்."
+
+#: ../Tomboy/PreferencesDialog.cs:1237
+msgid "Connection successful"
+msgstr "இணைப்பு வெற்றி"
+
+#: ../Tomboy/PreferencesDialog.cs:1239
+msgid ""
+"Tomboy is ready to synchronize your notes. Would you like to synchronize "
+"them now?"
+msgstr "டாம்பாய் உங்கல் குறிப்புகளை ஒத்திசைக்க தயார். அவற்றை இப்போது ஒத்திசைக்கலாமா?"
+
+#: ../Tomboy/PreferencesDialog.cs:1262
+#, csharp-format
+msgid ""
+"Please check your information and try again.  The log file {0} may contain "
+"more information about the error."
+msgstr ""
+"உங்கள் தகவலை சரி பார்த்து மீண்டும் முயற்சி செய்க.  பதிவேடு {0} பிழை குறித்து மேலும் தகவால்களை "
+"தரலாம்."
+
+#: ../Tomboy/PreferencesDialog.cs:1274
+msgid "Error connecting"
+msgstr "இணைப்பதில் பிழை"
+
+#: ../Tomboy/PreferencesDialog.cs:1357
+msgid "Version:"
+msgstr "பதிப்பு:"
+
+#: ../Tomboy/PreferencesDialog.cs:1364
+msgid "Author:"
+msgstr "ஆசிரியர்:"
+
+#: ../Tomboy/PreferencesDialog.cs:1371
+msgid "Copyright:"
+msgstr "காப்புரிமை:"
+
+#: ../Tomboy/PreferencesDialog.cs:1377
+msgid "Add-in Dependencies:"
+msgstr "உள்கூட்டு சார்புகள்"
+
+#: ../Tomboy/RecentChanges.cs:100
+msgid "_Search:"
+msgstr "_த தேடல்:"
+
+#: ../Tomboy/RecentChanges.cs:350
+msgid "Note"
+msgstr "குறிப்பு"
+
+#: ../Tomboy/RecentChanges.cs:373
+msgid "Last Changed"
+msgstr "கடைசியான மாற்றம்"
+
+#: ../Tomboy/RecentChanges.cs:512
+msgid "Matches"
+msgstr "ஒத்திசைவு"
+
+#: ../Tomboy/RecentChanges.cs:563
+msgid "Title match"
+msgstr "தலைப்பு பொருத்தம்"
+
+#: ../Tomboy/RecentChanges.cs:566
+#, csharp-format
+msgid "{0} match"
+msgid_plural "{0} matches"
+msgstr[0] "({0} ஒப்பீடு)"
+msgstr[1] "({0} ஒப்பீடுகள்)"
+
+#: ../Tomboy/RecentChanges.cs:580
+#, csharp-format
+msgid "Total: {0} note"
+msgid_plural "Total: {0} notes"
+msgstr[0] "மொத்தம்:{0} குறிப்பு"
+msgstr[1] "மொத்தம்:{0} குறிப்புகள்"
+
+#: ../Tomboy/RecentChanges.cs:591
+#, csharp-format
+msgid "Matches: {0} note"
+msgid_plural "Matches: {0} notes"
+msgstr[0] "ஒத்திசைவு: {0} குறிப்பு"
+msgstr[1] "ஒத்திசைவு: {0} குறிப்புகள்"
+
+#: ../Tomboy/RecentChanges.cs:603
+msgid ""
+"No results found in the selected notebook.\n"
+"Click here to search across all notes."
+msgstr ""
+"தெர்ந்தெடுத்த குறிப்பு புத்தகத்தில் விடைகள் இல்லை.\n"
+"எல்லா குறிப்பு புத்தகங்களிடையேயும் தேட இங்கு சொடுக்கவும்."
+
+#: ../Tomboy/RecentChanges.cs:609
+msgid "Click here to search across all notebooks"
+msgstr "எல்லா குறிப்பு புத்தகங்களிடையேயும் தேட இங்கு சொடுக்கவும்."
+
+#: ../Tomboy/RecentChanges.cs:775
+msgid "Notes"
+msgstr "குறிப்புகள்"
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:94
+#, csharp-format
+msgid ""
+"This synchronization addin is not supported on your computer. Please make "
+"sure you have FUSE and {0} correctly installed and configured"
+msgstr ""
+"உங்கள் கணினியில் இந்த ஒத்திசைவு சொருகி ஆதரிக்கப்படவில்லை. ப்யூஸ் மற்றும் {0} சரியாக "
+"நிறுவப்பட்டதா வடிவமைக்கப்பட்டதா என உறுதி செய்து கொள்க."
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:129
+msgid "Could not read testfile."
+msgstr "சோதனை கோப்பை படிக்க முடியவில்லை. "
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:132
+msgid "Write test failed."
+msgstr "எழுதும் சோதனை தோல்வியுற்றது"
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:176
+msgid "Timeout connecting to server."
+msgstr "சேவையகத்துடன் தொடர்பு கொள்கையில் நேரம் காலாவதியானது."
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:184
+msgid "Error connecting to server."
+msgstr "சேவையகத்துடன் தொடர்பு கொள்கையில் தவறு."
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:198
+msgid "FUSE could not be enabled."
+msgstr "ப்யூஸ்(FUSE) ஐ செயல்படுத்த முடியவில்லை"
+
+#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:233
+msgid "An error ocurred while connecting to the specified server:"
+msgstr "குறிப்பிட்ட சேவையகத்துடன் தொடர்பு கொள்கையில் தவறு நேர்ந்தது:"
+
+#. Expander containing TreeView
+#: ../Tomboy/Synchronization/SyncDialog.cs:89
+msgid "Details"
+msgstr "விவரங்கள்"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:126
+msgid "Status"
+msgstr "நிலை"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:236
+msgid "Acquiring sync lock..."
+msgstr "ஒத்திசைவு பூட்டை பெறுகிறது..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:239
+msgid "Committing changes..."
+msgstr "மாறுதல்களை பதிக்கிறது."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:242
+msgid "Synchronizing Notes"
+msgstr "குறிப்புகளை ஒத்திசைக்கிறது"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:243
+msgid "Synchronizing your notes..."
+msgstr "குறிப்புகளை ஒத்திசைக்கிறது..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:244
+msgid "This may take a while, kick back and enjoy!"
+msgstr "இதற்கு சற்று நேரம் ஆகும், சற்று ஓய்வெடுங்கள்!"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:246
+msgid "Connecting to the server..."
+msgstr "சேவையகத்துடன் இணக்கப்படுகிறது..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:252
+msgid "Deleting notes off of the server..."
+msgstr "சேவையகத்திலி இருந்து குறிப்புகளை நீக்குகிறது..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:256
+msgid "Downloading new/updated notes..."
+msgstr "புதிய/மேம்படுத்திய குறிப்புகளை தரவிறக்குகிறது..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:268
+msgid "Server Locked"
+msgstr "சேவையகம் பூட்டப்பட்டது"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:269
+msgid "Server is locked"
+msgstr "சேவையகம் பூட்டப்பட்டது"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:270
+msgid ""
+"One of your other computers is currently synchronizing.  Please wait 2 "
+"minutes and try again."
+msgstr ""
+"உங்கள் கணினியில் ஒன்று இபோது ஒத்திசைக்கிறது. தயை செய்து இரு நிமிடங்கள் பொறுத்து பின்னர் "
+"முயற்சி செய்க."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:274
+msgid "Preparing to download updates from server..."
+msgstr "இற்றப்படுத்தலை சேவையகத்திலிருந்து தரவிறக்க தயாராகிறது..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:277
+msgid "Preparing to upload updates to server..."
+msgstr "இற்றப்படுத்தலை சேவையகத்துக்கு தரவேற்ற தயாராகிறது..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:280
+msgid "Uploading notes to server..."
+msgstr "சேவையகத்துக்கு குறிப்புகளை ஏற்றுகிறது..."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:283
+msgid "Synchronization Failed"
+msgstr "ஒத்திசைவு தோல்வியடைந்தது"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:284
+msgid "Failed to synchronize"
+msgstr "ஒத்திசைவு தோல்வியடைந்தது"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:285
+msgid "Could not synchronize notes.  Check the details below and try again."
+msgstr ""
+"குறிப்புகளை ஒத்திசைத்தல் தோல்வியடைந்தது. கீழுள்ள விவரங்களை பார்த்து பின் மீண்டும் முயற்சி "
+"செய்க."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:291
+msgid "Synchronization Complete"
+msgstr "ஒத்திசைவு பூர்த்தியானது."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:292
+msgid "Synchronization is complete"
+msgstr "ஒத்திசைவு பூர்த்தியானது."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:294
+#, csharp-format
+msgid "{0} note updated."
+msgid_plural "{0} notes updated."
+msgstr[0] "{0} குறிப்பு இற்றைப்படுத்தப்பட்டது"
+msgstr[1] "{0} குறிப்புகள் இற்றைப்படுத்தப்பட்டன"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:299
+msgid "Your notes are now up to date."
+msgstr "இப்போது உங்கள் குறிப்புகள் இற்றைப்படுத்தப்பட்டன."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:303
+msgid "Synchronization Canceled"
+msgstr "ஒத்திசைவு இரத்து செய்யப்பட்டது."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:304
+msgid "Synchronization was canceled"
+msgstr "ஒத்திசைவு இரத்து செய்யப்பட்டது."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:305
+msgid "You canceled the synchronization.  You may close the window now."
+msgstr "நீங்கள் ஒத்திசைவை இரத்து செய்தீர்கள். சாளரத்தை இப்போது மூடலாம்."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:309
+msgid "Synchronization Not Configured"
+msgstr "ஒத்திசைவு வடிவமைக்கப்படவில்லை"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:310
+msgid "Synchronization is not configured"
+msgstr "ஒத்திசைவு வடிவமைக்கப்படவில்லை"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:311
+msgid "Please configure synchronization in the preferences dialog."
+msgstr "தயை செய்து விருப்பங்கள் உரையாடலில் ஒத்திசைவை வடிவமைக்கவும்."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:315
+msgid "Synchronization Service Error"
+msgstr "ஒத்திசைவு சேவை பிழை"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:316
+msgid "Service error"
+msgstr "சேவை பிழை"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:317
+msgid "Error connecting to the synchronization service.  Please try again."
+msgstr "ஒத்திசைவு சேவையுடன் இணைப்பதில் பிழை. மீண்டும் முயற்சி செய்க."
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:334
+msgid "Deleted locally"
+msgstr "உள்ளமைப்பிலிருந்து நீக்குகிறது"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:337
+msgid "Deleted from server"
+msgstr "சேவையகத்திலிருந்து நீக்கப்பட்டது"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:340
+msgid "Updated"
+msgstr "புதுப்பிக்கப்பட்டது"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:343
+msgid "Added"
+msgstr "சேர்க்கப்பட்டது"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:346
+msgid "Uploaded changes to server"
+msgstr "சேவையகத்துக்கு  மாறுதல்கள் தரவேற்றப்பட்டன"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:349
+msgid "Uploaded new note to server"
+msgstr "சேவையகத்துக்கு புதிய குறிப்பு தரவேற்றப்பட்டது"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:496
+msgid "Note Conflict"
+msgstr "குறிப்பு முரண்பாடு"
+
+#. Suggest renaming note by appending " (old)" to the existing title
+#: ../Tomboy/Synchronization/SyncDialog.cs:502
+msgid " (old)"
+msgstr " (பழைய)"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:541
+msgid "Rename local note:"
+msgstr "உள்ளமை குறிப்பை பெயர் மாற்றுக:"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:547
+msgid "Update links in referencing notes"
+msgstr "ஒப்படக்கும் குறிப்புகளில் இணைப்புகளை இற்றைப்படுத்துக"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:554
+msgid "Overwrite local note"
+msgstr "உள்ளமை குறிப்பை மேலெழுதுக"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:558
+msgid "Always perform this action"
+msgstr "எப்போதுமே இந்த செயலை செய்க"
+
+#. Set initial dialog text
+#: ../Tomboy/Synchronization/SyncDialog.cs:564
+msgid "Note conflict detected"
+msgstr "குறிப்பு முரண்பாடு காணப்படுகிறது"
+
+#: ../Tomboy/Synchronization/SyncDialog.cs:565
+#, csharp-format
+msgid ""
+"The server version of \"{0}\" conflicts with your local note.  What do you "
+"want to do with your local note?"
+msgstr ""
+"\"{0}\"  இன் சேவையக பிரதி உங்கள் உள்ளமை குறிப்புடன் முரண்படுகிறது. உங்கள் உள்ளமை "
+"குறிப்பை என்ன செய்ய?"
+
+#: ../Tomboy/Synchronization/SyncUtils.cs:119
+#: ../Tomboy/Synchronization/SyncUtils.cs:163
+msgid "Could not enable FUSE"
+msgstr "ப்யூஸ்(FUSE) ஐ செயல்படுத்த முடியவில்லை"
+
+#: ../Tomboy/Synchronization/SyncUtils.cs:120
+#: ../Tomboy/Synchronization/SyncUtils.cs:164
+msgid ""
+"The FUSE module could not be loaded. Please check that it is installed "
+"properly and try again."
+msgstr ""
+"ப்யூஸ்(FUSE) ஐ ஏற்ற முடியவில்லை.  தயவு செய்து அது சர்யாக நிறுவப்பட்டுள்ளதா என சோதித்து "
+"மீண்டும் முயற்சி செய்யவும்."
+
+#: ../Tomboy/Synchronization/SyncUtils.cs:135
+msgid "Enable FUSE?"
+msgstr "ப்யூஸ்(FUSE) ஐ செயல்படச்செய்யவா?"
+
+#. TODO: This message isn't entirely accurate.
+#. We should fix it.
+#: ../Tomboy/Synchronization/SyncUtils.cs:139
+msgid ""
+"The synchronization you've chosen requires the FUSE module to be loaded.\n"
+"\n"
+"To avoid getting this prompt in the future, you should load FUSE at "
+"startup.  Add \"modprobe fuse\" to /etc/init.d/boot.local or \"fuse\" to /"
+"etc/modules."
+msgstr ""
+"நீங்கள் தேர்ந்தெடுத்த ஒத்திசைவுக்கு ப்யூஸ் கூறு ஏற்ற தேவை\n"
+"\n"
+"மீண்டும் இந்த எச்சரிக்கை எழாது தடுக்க நீங்கள் ப்யூஸ் ஐ துவக்கத்தில் ஏற்ற வேண்டும். \"modprobe "
+"fuse\" ஐ /etc/init.d/boot.local க்கு அல்லது \"fuse\" ஐ /etc/modules க்கு "
+"சேர்கவும்."
+
+#: ../Tomboy/Tomboy.cs:251
+msgid "Cannot create new note"
+msgstr "புதிய குறிப்பினை உருவாக்க முடியவில்லை"
+
+#: ../Tomboy/Tomboy.cs:317
+msgid "Primary Development:"
+msgstr "முதன்மை வளர்ச்சி:"
+
+#: ../Tomboy/Tomboy.cs:330
+msgid "Contributors:"
+msgstr "கொடையாளர்கள்:"
+
+#: ../Tomboy/Tomboy.cs:415
+msgid "translator-credits"
+msgstr "I. Felix <ifelix@redhat.com>. Dr. T. Vasudevan <agnihot3@gmail.com>"
+
+#: ../Tomboy/Tomboy.cs:424
+msgid ""
+"Copyright © 2004-2007 Alex Graveley\n"
+"Copyright © 2004-2011 Others\n"
+msgstr ""
+"பதிப்புரிமை © 2004-2007 அலெக்ஸ் க்ராவலி \n"
+"பதிப்புரிமை © 2004-2011 மற்றவர்கள்\n"
+
+#: ../Tomboy/Tomboy.cs:426
+msgid "A simple and easy to use desktop note-taking application."
+msgstr "மேல்மேசை குறிப்பெடுத்தலுக்கு ஒரு எளிய பயன்பாடு."
+
+#: ../Tomboy/Tomboy.cs:436
+msgid "Homepage"
+msgstr "ஆரம்ப பக்கம்"
+
+#: ../Tomboy/Tomboy.cs:554
+msgid ""
+"Tomboy: A simple, easy to use desktop note-taking application.\n"
+"Copyright © 2004-2007 Alex Graveley\n"
+"<alex@beatniksoftware.com>\n"
+"\n"
+"Copyright © 2004-2011 Others\n"
+msgstr ""
+"மேல்மேசை குறிப்பெடுத்தலுக்கு ஒரு எளிய பயன்பாடு.\n"
+"பதிப்புரிமை © 2004-20067அலெக்ஸ் க்ராவலி \n"
+"<alex@beatniksoftware.com>\n"
+"பதிப்புரிமை © 2004-2011 மற்றவர்கள்\n"
+
+#: ../Tomboy/Tomboy.cs:568
+msgid ""
+"Usage:\n"
+"  --version\t\t\tPrint version information.\n"
+"  --help\t\t\tPrint this usage message.\n"
+"  --note-path [path]\t\tLoad/store note data in this directory.\n"
+"  --search [text]\t\tOpen the search all notes window with the search text.\n"
+msgstr ""
+"பயன்பாடு:\n"
+"  --version\t\t\tபதிப்புத் தகவலை அச்சிடுக.\n"
+"  --help\t\t\tஇந்த பயன்பாடு செய்தியை அச்சிடுக.\n"
+"  --note-path [path]\t\tஇந்த அடைவில் தரவை ஏற்று/சேமி.\n"
+"  --search [text]\t\tஎல்லா குறிப்புகளையும் தேடு சாளரத்தை தேடும் உரையுடன் "
+"திறக்கவும்.\n"
+
+#: ../Tomboy/Tomboy.cs:578
+msgid ""
+"  --new-note\t\t\tCreate and display a new note.\n"
+"  --new-note [title]\t\tCreate and display a new note, with a title.\n"
+"  --open-note [title/url]\tDisplay the existing note matching title.\n"
+"  --start-here\t\t\tDisplay the 'Start Here' note.\n"
+"  --highlight-search [text]\tSearch and highlight text in the opened note.\n"
+msgstr ""
+"  --new-note\t\t\tபுதிய குறிப்பை உருவாக்கி அதைக்காட்டவும்.\n"
+"  --new-note [title]\t\tபுதிய குறிப்பை உருவாக்கி அதை தலைப்புடன் காட்டவும்.\n"
+"  --open-note [title/url]\tஇருப்பில் உள்ள தலைப்பு ஒத்திசைவான குறிப்பை காட்டவும்.\n"
+"  --start-here\t\t\tஇங்கே துவங்கு குறிப்பை காட்டவும்.\n"
+"  --highlight-search [text]\t உரையை தேடி திறந்த குறிப்பில் சிறப்புச் சுட்டவும்.\n"
+
+#: ../Tomboy/Tomboy.cs:592
+#, csharp-format
+msgid "Version {0}"
+msgstr "பதிப்பு {0}"
+
+#: ../Tomboy/Tray.cs:68
+msgid " (new)"
+msgstr " (புதிய)"
+
+#: ../Tomboy/Tray.cs:293
+msgid "_About Tomboy"
+msgstr "டாம்பாய் _பற்றி"
+
+#: ../Tomboy/Utils.cs:189
+msgid ""
+"The \"Tomboy Notes Manual\" could not be found.  Please verify that your "
+"installation has been completed successfully."
+msgstr ""
+"\"டாம்பாய் குறிப்புகள் கையேடு\" காணப்படவில்லை. உங்கள் நிறுவல் முழுமை பெற்றதா என "
+"சோதிக்கவும்."
+
+#: ../Tomboy/Utils.cs:198
+msgid "Help not found"
+msgstr "உதவி காணப்படவில்லை"
+
+#: ../Tomboy/Utils.cs:214
+msgid "Cannot open location"
+msgstr "இடத்தினை திறக்க முடியவில்லை"
+
+#: ../Tomboy/Utils.cs:236
+#, csharp-format
+msgid "Today, {0}"
+msgstr "இன்று, {0}"
+
+#: ../Tomboy/Utils.cs:238
+msgid "Today"
+msgstr "இன்று"
+
+#: ../Tomboy/Utils.cs:242
+#, csharp-format
+msgid "Yesterday, {0}"
+msgstr "நேற்று, {0}"
+
+#: ../Tomboy/Utils.cs:244
+msgid "Yesterday"
+msgstr "நேற்று"
+
+#: ../Tomboy/Utils.cs:249
+#, csharp-format
+msgid "{0} day ago, {1}"
+msgid_plural "{0} days ago, {1}"
+msgstr[0] "{0} நாளுக்கு முன், {1}"
+msgstr[1] "{0} நாட்களுக்கு முன், {1}"
+
+#: ../Tomboy/Utils.cs:253
+#, csharp-format
+msgid "{0} day ago"
+msgid_plural "{0} days ago"
+msgstr[0] "{0} நாளுக்கு முன்"
+msgstr[1] "{0} நாட்களுக்கு முன்"
+
+#: ../Tomboy/Utils.cs:259
+#, csharp-format
+msgid "Tomorrow, {0}"
+msgstr "நாளை, {0}"
+
+#: ../Tomboy/Utils.cs:261
+msgid "Tomorrow"
+msgstr "நாளை"
+
+#: ../Tomboy/Utils.cs:266
+#, csharp-format
+msgid "In {0} day, {1}"
+msgid_plural "In {0} days, {1}"
+msgstr[0] "{0} தினத்தில், {1}"
+msgstr[1] "{0} தினங்களில், {1}"
+
+#: ../Tomboy/Utils.cs:270
+#, csharp-format
+msgid "In {0} day"
+msgid_plural "In {0} days"
+msgstr[0] "{0} தினத்தில்"
+msgstr[1] "{0} தினங்களில்"
+
+#: ../Tomboy/Utils.cs:275
+msgid "MMMM d, h:mm tt"
+msgstr "MMMM d, h:mm tt"
+
+#: ../Tomboy/Utils.cs:276
+msgid "MMMM d"
+msgstr "MMMM d"
+
+#: ../Tomboy/Utils.cs:278
+msgid "No Date"
+msgstr "தேதி இல்லை"
+
+#: ../Tomboy/Utils.cs:281
+msgid "MMMM d yyyy, h:mm tt"
+msgstr "MMMM d yyyy, h:mm tt"
+
+#: ../Tomboy/Utils.cs:282
+msgid "MMMM d yyyy"
+msgstr "MMMM d yyyy"
+
+#: ../Tomboy/Watchers.cs:155
+#, csharp-format
+msgid "(Untitled {0})"
+msgstr "(தலைப்பில்லாத {0})"
+
+#: ../Tomboy/Watchers.cs:189
+#, csharp-format
+msgid ""
+"A note with the title <b>{0}</b> already exists. Please choose another name "
+"for this note before continuing."
+msgstr ""
+"<b>{0}</b> என்ற பெயரில் ஒரு குறிப்பு ஏற்கெனவே உள்ளது. தொடரு முன் வேறு ஒரு பெயரை "
+"தேர்ந்தெடுக்கவும்."
+
+#: ../Tomboy/Watchers.cs:204
+msgid "Note title taken"
+msgstr "குறிப்பு தலைப்பு கிடைக்காது."
+
+#: ../Tomboy/Watchers.cs:587
+msgid "_Copy Link Address"
+msgstr "இணைப்பு முகவரியை நகலெடு (_C)"
+
+#: ../Tomboy/Watchers.cs:592
+msgid "_Open Link"
+msgstr "இணைப்பினை திற (_O)"
+
+#~ msgid "HTML Export Last Directory"
+#~ msgstr "கடைசி அடைவை HTML ஏற்றுமதி செய்க"
+
+#~ msgid "SSH (sshfs FUSE)"
+#~ msgstr "SSH (sshfs FUSE)"
+
+#~ msgid "WebDAV (wdfs FUSE)"
+#~ msgstr "WebDAV (wdfs FUSE)"
+
+#~ msgid "Really delete this note?"
+#~ msgstr "நிச்சயம் இந்த குறிப்பினை அழிக்க வேண்டுமா?"
+
+#~ msgid "Search your notes (Ctrl-Shift-F)"
+#~ msgstr "உங்கள் குறிப்புகளில் தேடுக (Ctrl-Shift-F)"
+
+#~ msgid "Success! You're connected!"
+#~ msgstr "வெற்றி! நீங்கள் இணக்கப்பட்டுவிட்டீர்கள்!"
+
+#~ msgid "_Browse..."
+#~ msgstr "_மேலோடு..."
+
+#~ msgid "D-BUS remote control disabled.\n"
+#~ msgstr "டி பஸ் தொலை கட்டுப்பாடு செயலிழக்கப்பட்டது.\n"
+
+#~ msgid ""
+#~ "Tomboy: unsupported option '{0}'\n"
+#~ "Try 'tomboy --help' for more information.\n"
+#~ "D-BUS remote control disabled."
+#~ msgstr ""
+#~ "டாம்பாய்: ஆதரவில்லாத தேர்வு '{0}'\n"
+#~ "'tomboy --help'  ஐ மேலும் விவர்னgகளுக்கு பார்க்க.\n"
+#~ "D-BUS தொலை கட்டுப்பாடு செயலிழக்கப்பட்டது. "

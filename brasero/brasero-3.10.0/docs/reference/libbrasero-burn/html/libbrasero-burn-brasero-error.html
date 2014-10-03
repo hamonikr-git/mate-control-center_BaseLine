@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>brasero-error</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Libbrasero-burn Reference Manual">
+<link rel="up" href="ch01.html" title="API Reference for Libbrasero-burn">
+<link rel="prev" href="libbrasero-burn-brasero-burn-lib.html" title="brasero-burn-lib">
+<link rel="next" href="libbrasero-burn-brasero-tags.html" title="brasero-tags">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libbrasero-burn-brasero-burn-lib.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Libbrasero-burn Reference Manual</th>
+<td><a accesskey="n" href="libbrasero-burn-brasero-tags.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libbrasero-burn-brasero-error.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libbrasero-burn-brasero-error.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libbrasero-burn-brasero-error"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libbrasero-burn-brasero-error.top_of_page"></a>brasero-error</span></h2>
+<p>brasero-error</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libbrasero-burn-brasero-error.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">enum                <a class="link" href="libbrasero-burn-brasero-error.html#BraseroBurnError" title="enum BraseroBurnError">BraseroBurnError</a>;
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>              <a class="link" href="libbrasero-burn-brasero-error.html#brasero-burn-quark" title="brasero_burn_quark ()">brasero_burn_quark</a>                  (<em class="parameter"><code><span class="type">void</span></code></em>);
+#define             <a class="link" href="libbrasero-burn-brasero-error.html#BRASERO-BURN-ERROR:CAPS" title="BRASERO_BURN_ERROR">BRASERO_BURN_ERROR</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="libbrasero-burn-brasero-error.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="libbrasero-burn-brasero-error.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="BraseroBurnError"></a><h3>enum BraseroBurnError</h3>
+<pre class="programlisting">typedef enum {
+	BRASERO_BURN_ERROR_NONE,
+	BRASERO_BURN_ERROR_GENERAL,
+
+	BRASERO_BURN_ERROR_PLUGIN_MISBEHAVIOR,
+
+	BRASERO_BURN_ERROR_SLOW_DMA,
+	BRASERO_BURN_ERROR_PERMISSION,
+	BRASERO_BURN_ERROR_DRIVE_BUSY,
+	BRASERO_BURN_ERROR_DISK_SPACE,
+
+	BRASERO_BURN_ERROR_EMPTY,
+	BRASERO_BURN_ERROR_INPUT_INVALID,
+
+	BRASERO_BURN_ERROR_OUTPUT_NONE,
+
+	BRASERO_BURN_ERROR_FILE_INVALID,
+	BRASERO_BURN_ERROR_FILE_FOLDER,
+	BRASERO_BURN_ERROR_FILE_PLAYLIST,
+	BRASERO_BURN_ERROR_FILE_NOT_FOUND,
+	BRASERO_BURN_ERROR_FILE_NOT_LOCAL,
+
+	BRASERO_BURN_ERROR_WRITE_MEDIUM,
+	BRASERO_BURN_ERROR_WRITE_IMAGE,
+
+	BRASERO_BURN_ERROR_IMAGE_INVALID,
+	BRASERO_BURN_ERROR_IMAGE_JOLIET,
+	BRASERO_BURN_ERROR_IMAGE_LAST_SESSION,
+
+	BRASERO_BURN_ERROR_MEDIUM_NONE,
+	BRASERO_BURN_ERROR_MEDIUM_INVALID,
+	BRASERO_BURN_ERROR_MEDIUM_SPACE,
+	BRASERO_BURN_ERROR_MEDIUM_NO_DATA,
+	BRASERO_BURN_ERROR_MEDIUM_NOT_WRITABLE,
+	BRASERO_BURN_ERROR_MEDIUM_NOT_REWRITABLE,
+	BRASERO_BURN_ERROR_MEDIUM_NEED_RELOADING,
+
+	BRASERO_BURN_ERROR_BAD_CHECKSUM,
+
+	BRASERO_BURN_ERROR_MISSING_APP_AND_PLUGIN,
+
+	/* these are not necessarily error */
+	BRASERO_BURN_WARNING_CHECKSUM,
+	BRASERO_BURN_WARNING_INSERT_AFTER_COPY,
+
+	BRASERO_BURN_ERROR_TMP_DIRECTORY,
+	BRASERO_BURN_ERROR_ENCRYPTION_KEY
+} BraseroBurnError;
+</pre>
+<p>
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-NONE:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_NONE</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-GENERAL:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_GENERAL</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-PLUGIN-MISBEHAVIOR:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_PLUGIN_MISBEHAVIOR</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-SLOW-DMA:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_SLOW_DMA</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-PERMISSION:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_PERMISSION</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-DRIVE-BUSY:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_DRIVE_BUSY</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-DISK-SPACE:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_DISK_SPACE</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-EMPTY:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_EMPTY</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-INPUT-INVALID:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_INPUT_INVALID</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-OUTPUT-NONE:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_OUTPUT_NONE</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-FILE-INVALID:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_FILE_INVALID</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-FILE-FOLDER:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_FILE_FOLDER</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-FILE-PLAYLIST:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_FILE_PLAYLIST</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-FILE-NOT-FOUND:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_FILE_NOT_FOUND</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-FILE-NOT-LOCAL:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_FILE_NOT_LOCAL</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-WRITE-MEDIUM:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_WRITE_MEDIUM</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-WRITE-IMAGE:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_WRITE_IMAGE</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-IMAGE-INVALID:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_IMAGE_INVALID</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-IMAGE-JOLIET:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_IMAGE_JOLIET</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-IMAGE-LAST-SESSION:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_IMAGE_LAST_SESSION</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-MEDIUM-NONE:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_MEDIUM_NONE</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-MEDIUM-INVALID:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_MEDIUM_INVALID</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-MEDIUM-SPACE:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_MEDIUM_SPACE</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-MEDIUM-NO-DATA:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_MEDIUM_NO_DATA</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-MEDIUM-NOT-WRITABLE:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_MEDIUM_NOT_WRITABLE</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-MEDIUM-NOT-REWRITABLE:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_MEDIUM_NOT_REWRITABLE</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-MEDIUM-NEED-RELOADING:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_MEDIUM_NEED_RELOADING</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-BAD-CHECKSUM:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_BAD_CHECKSUM</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-MISSING-APP-AND-PLUGIN:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_MISSING_APP_AND_PLUGIN</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-WARNING-CHECKSUM:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_WARNING_CHECKSUM</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-WARNING-INSERT-AFTER-COPY:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_WARNING_INSERT_AFTER_COPY</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-TMP-DIRECTORY:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_TMP_DIRECTORY</code></span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><a name="BRASERO-BURN-ERROR-ENCRYPTION-KEY:CAPS"></a><span class="term"><code class="literal">BRASERO_BURN_ERROR_ENCRYPTION_KEY</code></span></p></td>
+<td>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="brasero-burn-quark"></a><h3>brasero_burn_quark ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>              brasero_burn_quark                  (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BRASERO-BURN-ERROR:CAPS"></a><h3>BRASERO_BURN_ERROR</h3>
+<pre class="programlisting">#define             BRASERO_BURN_ERROR</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.19</div>
+</body>
+</html>

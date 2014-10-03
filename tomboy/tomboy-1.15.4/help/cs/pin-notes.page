@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="pin-notes" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#notes"/>
+    <link type="seealso" xref="addins-preferences"/>
+    <desc>Jak se dostat ke svým poznámkám přes ikonu <app>Tomboy</app> na oznamovací liště.</desc>
+    <revision pkgversion="3.10" version="0.1" date="2013-10-10" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@gnome.org</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Připíchnutí poznámky</title>
+
+  <p>Po kliknutí na <link xref="">ikonu v oznamovací oblasti</link> se vám zobrazí seznam poznámek <app>Tomboy</app>, které jste použili naposledy. Tento seznam je omezen na dvanáct poznámek. Pokud máte poznámek více než dvanáct, musíte k otevření poznámky, která v tomto seznamu není, použít <link xref="">hledání ve všech poznámkách</link>.</p>
+
+  <p>Pokud potřebujete rychlý přístup k některým méně často používaným poznámkám, můžete si je do seznamu nedávných poznámek <em>připíchnout</em>.</p>
+
+  <steps>
+    <title>Pro připíchnutí poznámky:</title>
+    <item>
+      <p>Klikněte na ikonu <app>Tomboy</app> na oznamovací liště.</p>
+    </item>
+    <item>
+      <p>V seznamu nedávných poznámek klikněte na šedou ikonu připínáčku napravo od poznámky, kterou chcete připíchnout. Barva ikony připínáčku se změní na zelenou.</p>
+    </item>
+  </steps>
+
+  <p>Zelená ikona signalizuje, že daná poznámka je do seznamu <em>připíchnutá</em>.</p>
+
+  <note style="tip">
+    <p>Pro odstranění <em>připíchnuté</em> poznámky ze seznamu stačí kliknout na zelenou ikonu připínáčku.</p>
+  </note>
+
+</page>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="sync-setup" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#sync"/>
+    <desc>Jak nastavit aplikaci Tomboy pro synchronizaci poznámek.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+    <credit type="author copyright">
+      <name>Dokumentační projekt GNOME</name>
+      <years>2010 – 2012</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Nastavení synchronizace</title>
+
+ <section id="enablesync">
+
+	<title>Zapnutí synchronizace</title>
+	
+	<p>Aplikace <app>Tomboy</app> umí synchronizovat vaše poznámky mezi více počítači. To vám umožňuje pořizovat zálohy svých poznámek na jiné počítače nebo sdílet své poznámky mezi počítači, takže se k nim dostanete odkudkoliv.</p>
+	
+	<p>Synchronizaci můžete zapnout otevřením <gui>Předvoleb Tomboy</gui> pomocí kliknutí pravým tlačítkem myši na svém panelu, na pruhu úloh nebo na doku a zvolením <gui>Předvolby</gui> a následným výběrem karty <gui>Synchronizace</gui>. <gui>Předvolby Tomboy</gui> můžete otevřít také z dialogového okna <gui>Hledat ve všech poznámkách</gui>. V nabídce zvolte <guiseq><gui>Upravit</gui><gui>Předvolby</gui></guiseq>.</p>
+
+ </section>
+
+ <section id="conflict">
+
+	<title>Řešení konfliktů poznámek</title>
+	
+	<p>Můžete nastavit chování aplikace Tomboy, když je objeven konflikt mezi poznámkami. Ten se může vyskytnout, když nejsou poznámky synchronizovány běžným způsobem.</p>
+	
+	<p>Zmáčkněte tlačítko <gui>Pokročilé…</gui> v dialogovém okně <gui>Předvolby</gui>. Můžete si vybrat ze tří možností výchozího chování při řešení konfliktů:</p>
+	
+	<list>
+		<item><p><gui>Vždy se mě zeptat, co dělat.</gui> Jedná se o výchozí volbu a když aplikace Tomboy narazí na konflikt, dotáže se vás, zda chcete místní poznámku přejmenovat nebo ji nahradit tou, co je uložená na serveru.</p></item>
+		<item><p><gui>Přejmenovat místní poznámku.</gui> Když je vybrána tato volba, bude aplikace Tomboy automaticky nahrazovat poznámku kopií ze vzdáleného počítače a poznámku v vašem počítači přejmenuje, takže informace v poznámce neztratíte.</p>
+		</item>
+		
+		<item><p><gui>Zaměnit místní poznámku s poznámkou na serveru.</gui> Když máte vybránu tuto volbu, pak Tomboy při synchronizaci přepíše a nahradí vaši poznámku uloženou na vašem počítači kopií ze vzdáleného serveru.</p>
+		
+		<note style="warning">
+		<p>Automatické přepsání poznámky je trvalé. Vaše místní poznámka bude přepsána kopií ze vzdáleného počítače a tím se ztratí informace, které jste měli uložené před započetím synchronizace.</p>
+		</note>
+                </item>
+		
+	</list>
+		
+
+ </section> 
+ 
+  <section id="webdav">
+
+	<title>Nastavení synchronizace přes WebDav</title>
+	
+	<p>Abyste mohli synchronizovat své poznámky se serverem WebDAV, musíte mít nainstalovaný souborový systém wdfs FUSE. Jak nainstalovat FUSE najdete v dokumentaci ke svému operačnímu systému. Dále ještě musíte mít nainstalovanou Klíčenku GNOME.</p>
+	
+	<p>V rozbalovacím seznamu <gui>Služba</gui> vyberte <gui>WebDAV</gui>. Vyplňte připojovací údaje pro svůj server a zmáčkněte tlačítko <gui>Uložit</gui>. Tím jste připraveni k synchronizaci svých poznámek.</p>
+
+ </section>
+ 
+  <section id="ssh">
+
+	<title>Nastavení synchronizace přes SSH</title>
+	
+	<p>Abyste mohli synchronizovat své poznámky se serverem SSH, musíte mít nainstalovaný souborový systém FUSE nazývaný <app>sshfs</app>. Jak nainstalovat FUSE se dozvíte v dokumentaci ke svému operačnímu systému. Budete také potřebovat klíč SSH ke svému účtu na serveru SSH, což lze udělat pomocí aplikace <app>Seahorse</app>, která bývá také nazývaná <app>Hesla a šifrovací klíče</app>.</p>
+	
+	<p>Je doporučené použít jako vzdálený počítač pro uchování synchronizovaných poznámek třetí počítač nebo server, abyste mohli synchronizaci provádět mezi více počítači.</p>
+
+	<p>Otevřete aplikaci <app>Hesla a šifrovací klíče</app> volbou <guiseq><gui>Aplikace</gui><gui>Příslušenství</gui><gui>Hesla a šifrovací klíče</gui></guiseq>. Klikněte na svůj klíč a v nabídce vyberte <guiseq><gui>Vzdálené</gui><gui>Nastavit klíč pro SSH</gui></guiseq> a zadejte do <gui>Název počítače</gui> název domény nebo adresu IP počítače, na který chcete synchronizovat. Do <gui>Přihlašovací jméno:</gui> zadejte uživatelské jméno pro vzdálený počítač a klikněte na tlačítko <gui>Nastavit</gui>. Po zobrazení dotazu zadejte heslo a nastavení vašeho klíče bude hotovo.</p>
+	
+	<p>V aplikaci Tomboy v rozbalovacím seznamu <gui>Služba</gui> vyberte <gui>SSH</gui>. Vyplňte připojovací údaje pro svůj server a zmáčkněte tlačítko <gui>Uložit</gui>. <gui>Umístění složky</gui> je volitelné a mělo by odkazovat na prázdnou složku. Tím máte vše připravené k synchronizaci svých poznámek.</p>
+
+ </section>
+
+ <section id="local">
+
+	<title>Nastavení synchronizace do místní složky</title>
+	
+	<p>Můžete chtít synchronizovat své poznámky do místní složky v případech, kdy je tato složka dostupná i pro jiné systémy nebo představuje místní připojení vzdáleného serveru.</p>
+
+	<p>V rozbalovacím seznamu zvolte <gui>Místní složku</gui>. Vyberte požadované <gui>Umístění složky</gui> pro synchronizaci a zmáčkněte tlačítko <gui>Uložit</gui>. Tím je vše připravené k synchronizaci vašich poznámek.</p>
+
+ </section>
+ 
+ </page>

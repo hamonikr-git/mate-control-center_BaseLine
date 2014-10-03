@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="addins-sync-webservice" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="addins#sync"/>
+    <desc>Jak synchronizovat své poznámky do služby na Internetu.</desc>
+    <revision pkgversion="3.8" version="0.1" date="2010-08-01" status="draft"/>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Služba synchronizace přes Web</title>
+
+  <p>Doplněk pro synchronizaci do webové služby vám umožňuje synchronizovat své poznámky do vzdáleného webového serveru nebo jiné kompatibilní webové služby.</p>
+
+ </page>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" type="topic" style="task" id="hotkeys" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <desc>Preferencias de teclas rápidas e atallos de teclado.</desc>
+    <revision pkgversion="3.0" version="0.1" date="2010-05-29" status="candidate"/>
+    <credit type="author">
+      <name>Paul Cutler</name>
+      <email>pcutler@gnome.org</email>
+    </credit>    
+<!--
+    <copyright>
+      <year>2010</year>
+      <name>GNOME Documentation Project</name>
+    </copyright>
+-->
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+ <title>Teclas rápidas</title>
+
+	<p>As teclas rápidas permítenlle acceder ás súas notas e ás características de Tomboy desde calquera lugar, incluso usando outros aplicativos no seu escritorio. As teclas rápidas actívanse premendo múltiples teclas xuntas no seu teclado.</p>
+	
+	<p>Pode activar as teclas rápidas abrindo as <gui>Preferencias de Tomboy</gui> usando o seu rato para premer co botón dereito sobre a icona de Tomboy no seu panel, barra de tarefas ou «dock», elixa <gui>Preferencias</gui> e seleccione a lapela <gui>Teclas rápidas</gui>. Tamén pode abrir as <gui>Preferencias de Tomboy</gui> desde o diálogo <gui>Buscar en todas as notas</gui>. Desde o menú, elixa <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>.</p>	
+	
+	<p>As accións dispoñíbeis en Tomboy e que se pode activar con atallos de teclado son:</p>
+	
+	<list>
+	  <item><p><gui>Menú mostrar notas</gui>: <keyseq><key>Alt</key><key>F12</key></keyseq></p></item>
+	  <item><p><gui>Abrir «Comezar aquí»</gui>: <keyseq><key>Alt</key><key>F11</key></keyseq></p></item>
+	  <item><p><gui>Crear nota nova</gui>: desactivado de maneira predeterminada. Pode introducir unha secuencia de teclas neste campo para crear unha tecla rápida.</p></item>
+	  <item><p><gui>Abrir «Buscar en todas as notas»</gui>: desactivado de maneira predeterminada. Pode introducir unha secuencia de teclas neste campo para crear unha tecla rápida.</p></item>
+	</list>  
+	    
+ </page>

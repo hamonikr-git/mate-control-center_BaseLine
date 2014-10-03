@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Atril View Library Reference Manual" link="index.html" author="" name="libatrilview" version="2" language="c">
+  <chapters>
+    <sub name="Atril View" link="view-view.html">
+      <sub name="ev-annotation-window" link="libatrilview-ev-annotation-window.html"/>
+      <sub name="ev-view" link="libatrilview-ev-view.html"/>
+      <sub name="ev-page-cache" link="libatrilview-ev-page-cache.html"/>
+      <sub name="ev-print-operation" link="libatrilview-ev-print-operation.html"/>
+      <sub name="ev-view-presentation" link="libatrilview-ev-view-presentation.html"/>
+      <sub name="EvJob" link="EvJob.html"/>
+      <sub name="ev-document-model" link="libatrilview-ev-document-model.html"/>
+      <sub name="ev-stock-icons" link="libatrilview-ev-stock-icons.html"/>
+      <sub name="ev-view-type-builtins" link="libatrilview-ev-view-type-builtins.html"/>
+      <sub name="ev-job-scheduler" link="libatrilview-ev-job-scheduler.html"/>
+      <sub name="ev-view-cursor" link="libatrilview-ev-view-cursor.html"/>
+    </sub>
+    <sub name="Object Hierarchy" link="object-tree.html"/>
+    <sub name="API Index" link="api-index-full.html"/>
+    <sub name="Licence" link="licence.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="ev_annotation_window_new ()" link="libatrilview-ev-annotation-window.html#ev-annotation-window-new"/>
+    <keyword type="function" name="ev_annotation_window_get_annotation ()" link="libatrilview-ev-annotation-window.html#ev-annotation-window-get-annotation"/>
+    <keyword type="function" name="ev_annotation_window_set_annotation ()" link="libatrilview-ev-annotation-window.html#ev-annotation-window-set-annotation"/>
+    <keyword type="function" name="ev_annotation_window_is_open ()" link="libatrilview-ev-annotation-window.html#ev-annotation-window-is-open"/>
+    <keyword type="function" name="ev_annotation_window_get_rectangle ()" link="libatrilview-ev-annotation-window.html#ev-annotation-window-get-rectangle"/>
+    <keyword type="function" name="ev_annotation_window_set_rectangle ()" link="libatrilview-ev-annotation-window.html#ev-annotation-window-set-rectangle"/>
+    <keyword type="function" name="ev_annotation_window_grab_focus ()" link="libatrilview-ev-annotation-window.html#ev-annotation-window-grab-focus"/>
+    <keyword type="function" name="ev_annotation_window_ungrab_focus ()" link="libatrilview-ev-annotation-window.html#ev-annotation-window-ungrab-focus"/>
+    <keyword type="struct" name="EvAnnotationWindow" link="libatrilview-ev-annotation-window.html#EvAnnotationWindow-struct"/>
+    <keyword type="struct" name="EvAnnotationWindowClass" link="libatrilview-ev-annotation-window.html#EvAnnotationWindowClass"/>
+    <keyword type="property" name="The “annotation” property" link="libatrilview-ev-annotation-window.html#EvAnnotationWindow--annotation"/>
+    <keyword type="property" name="The “parent” property" link="libatrilview-ev-annotation-window.html#EvAnnotationWindow--parent"/>
+    <keyword type="signal" name="The “closed” signal" link="libatrilview-ev-annotation-window.html#EvAnnotationWindow-closed"/>
+    <keyword type="signal" name="The “moved” signal" link="libatrilview-ev-annotation-window.html#EvAnnotationWindow-moved"/>
+    <keyword type="function" name="ev_view_new ()" link="libatrilview-ev-view.html#ev-view-new"/>
+    <keyword type="function" name="ev_view_set_model ()" link="libatrilview-ev-view.html#ev-view-set-model"/>
+    <keyword type="function" name="ev_view_set_loading ()" link="libatrilview-ev-view.html#ev-view-set-loading"/>
+    <keyword type="function" name="ev_view_reload ()" link="libatrilview-ev-view.html#ev-view-reload"/>
+    <keyword type="function" name="ev_view_copy ()" link="libatrilview-ev-view.html#ev-view-copy"/>
+    <keyword type="function" name="ev_view_copy_link_address ()" link="libatrilview-ev-view.html#ev-view-copy-link-address"/>
+    <keyword type="function" name="ev_view_select_all ()" link="libatrilview-ev-view.html#ev-view-select-all"/>
+    <keyword type="function" name="ev_view_get_has_selection ()" link="libatrilview-ev-view.html#ev-view-get-has-selection"/>
+    <keyword type="function" name="ev_view_can_zoom_in ()" link="libatrilview-ev-view.html#ev-view-can-zoom-in"/>
+    <keyword type="function" name="ev_view_zoom_in ()" link="libatrilview-ev-view.html#ev-view-zoom-in"/>
+    <keyword type="function" name="ev_view_can_zoom_out ()" link="libatrilview-ev-view.html#ev-view-can-zoom-out"/>
+    <keyword type="function" name="ev_view_zoom_out ()" link="libatrilview-ev-view.html#ev-view-zoom-out"/>
+    <keyword type="function" name="ev_view_find_next ()" link="libatrilview-ev-view.html#ev-view-find-next"/>
+    <keyword type="function" name="ev_view_find_previous ()" link="libatrilview-ev-view.html#ev-view-find-previous"/>
+    <keyword type="function" name="ev_view_find_search_changed ()" link="libatrilview-ev-view.html#ev-view-find-search-changed"/>
+    <keyword type="function" name="ev_view_find_set_highlight_search ()" link="libatrilview-ev-view.html#ev-view-find-set-highlight-search"/>
+    <keyword type="function" name="ev_view_find_changed ()" link="libatrilview-ev-view.html#ev-view-find-changed"/>
+    <keyword type="function" name="ev_view_find_cancel ()" link="libatrilview-ev-view.html#ev-view-find-cancel"/>
+    <keyword type="function" name="ev_view_hide_cursor ()" link="libatrilview-ev-view.html#ev-view-hide-cursor"/>
+    <keyword type="function" name="ev_view_show_cursor ()" link="libatrilview-ev-view.html#ev-view-show-cursor"/>
+    <keyword type="function" name="ev_view_scroll ()" link="libatrilview-ev-view.html#ev-view-scroll"/>
+    <keyword type="function" name="ev_view_handle_link ()" link="libatrilview-ev-view.html#ev-view-handle-link"/>
+    <keyword type="function" name="ev_view_next_page ()" link="libatrilview-ev-view.html#ev-view-next-page"/>
+    <keyword type="function" name="ev_view_previous_page ()" link="libatrilview-ev-view.html#ev-view-previous-page"/>
+    <keyword type="function" name="ev_view_autoscroll_start ()" link="libatrilview-ev-view.html#ev-view-autoscroll-start"/>
+    <keyword type="function" name="ev_view_autoscroll_stop ()" link="libatrilview-ev-view.html#ev-view-autoscroll-stop"/>
+    <keyword type="struct" name="EvView" link="libatrilview-ev-view.html#EvView-struct"/>
+    <keyword type="struct" name="EvViewClass" link="libatrilview-ev-view.html#EvViewClass"/>
+    <keyword type="enum" name="enum EvViewSelectionMode" link="libatrilview-ev-view.html#EvViewSelectionMode"/>
+    <keyword type="signal" name="The “annot-added” signal" link="libatrilview-ev-view.html#EvView-annot-added"/>
+    <keyword type="signal" name="The “binding-activated” signal" link="libatrilview-ev-view.html#EvView-binding-activated"/>
+    <keyword type="signal" name="The “external-link” signal" link="libatrilview-ev-view.html#EvView-external-link"/>
+    <keyword type="signal" name="The “handle-link” signal" link="libatrilview-ev-view.html#EvView-handle-link"/>
+    <keyword type="signal" name="The “popup” signal" link="libatrilview-ev-view.html#EvView-popup"/>
+    <keyword type="signal" name="The “selection-changed” signal" link="libatrilview-ev-view.html#EvView-selection-changed"/>
+    <keyword type="signal" name="The “sync-source” signal" link="libatrilview-ev-view.html#EvView-sync-source"/>
+    <keyword type="function" name="ev_page_cache_new ()" link="libatrilview-ev-page-cache.html#ev-page-cache-new"/>
+    <keyword type="function" name="ev_page_cache_set_page_range ()" link="libatrilview-ev-page-cache.html#ev-page-cache-set-page-range"/>
+    <keyword type="function" name="ev_page_cache_get_flags ()" link="libatrilview-ev-page-cache.html#ev-page-cache-get-flags"/>
+    <keyword type="function" name="ev_page_cache_set_flags ()" link="libatrilview-ev-page-cache.html#ev-page-cache-set-flags"/>
+    <keyword type="function" name="ev_page_cache_get_link_mapping ()" link="libatrilview-ev-page-cache.html#ev-page-cache-get-link-mapping"/>
+    <keyword type="function" name="ev_page_cache_get_image_mapping ()" link="libatrilview-ev-page-cache.html#ev-page-cache-get-image-mapping"/>
+    <keyword type="function" name="ev_page_cache_get_form_field_mapping ()" link="libatrilview-ev-page-cache.html#ev-page-cache-get-form-field-mapping"/>
+    <keyword type="function" name="ev_page_cache_get_annot_mapping ()" link="libatrilview-ev-page-cache.html#ev-page-cache-get-annot-mapping"/>
+    <keyword type="function" name="ev_page_cache_get_text_mapping ()" link="libatrilview-ev-page-cache.html#ev-page-cache-get-text-mapping"/>
+    <keyword type="struct" name="EvPageCache" link="libatrilview-ev-page-cache.html#EvPageCache-struct"/>
+    <keyword type="struct" name="EvPageCacheClass" link="libatrilview-ev-page-cache.html#EvPageCacheClass"/>
+    <keyword type="function" name="ev_print_operation_exists_for_document ()" link="libatrilview-ev-print-operation.html#ev-print-operation-exists-for-document"/>
+    <keyword type="function" name="ev_print_operation_new ()" link="libatrilview-ev-print-operation.html#ev-print-operation-new"/>
+    <keyword type="function" name="ev_print_operation_set_current_page ()" link="libatrilview-ev-print-operation.html#ev-print-operation-set-current-page"/>
+    <keyword type="function" name="ev_print_operation_set_print_settings ()" link="libatrilview-ev-print-operation.html#ev-print-operation-set-print-settings"/>
+    <keyword type="function" name="ev_print_operation_get_print_settings ()" link="libatrilview-ev-print-operation.html#ev-print-operation-get-print-settings"/>
+    <keyword type="function" name="ev_print_operation_set_default_page_setup ()" link="libatrilview-ev-print-operation.html#ev-print-operation-set-default-page-setup"/>
+    <keyword type="function" name="ev_print_operation_get_default_page_setup ()" link="libatrilview-ev-print-operation.html#ev-print-operation-get-default-page-setup"/>
+    <keyword type="function" name="ev_print_operation_set_job_name ()" link="libatrilview-ev-print-operation.html#ev-print-operation-set-job-name"/>
+    <keyword type="function" name="ev_print_operation_get_job_name ()" link="libatrilview-ev-print-operation.html#ev-print-operation-get-job-name"/>
+    <keyword type="function" name="ev_print_operation_run ()" link="libatrilview-ev-print-operation.html#ev-print-operation-run"/>
+    <keyword type="function" name="ev_print_operation_cancel ()" link="libatrilview-ev-print-operation.html#ev-print-operation-cancel"/>
+    <keyword type="function" name="ev_print_operation_get_error ()" link="libatrilview-ev-print-operation.html#ev-print-operation-get-error"/>
+    <keyword type="function" name="ev_print_operation_set_embed_page_setup ()" link="libatrilview-ev-print-operation.html#ev-print-operation-set-embed-page-setup"/>
+    <keyword type="function" name="ev_print_operation_get_embed_page_setup ()" link="libatrilview-ev-print-operation.html#ev-print-operation-get-embed-page-setup"/>
+    <keyword type="function" name="ev_print_operation_get_status ()" link="libatrilview-ev-print-operation.html#ev-print-operation-get-status"/>
+    <keyword type="function" name="ev_print_operation_get_progress ()" link="libatrilview-ev-print-operation.html#ev-print-operation-get-progress"/>
+    <keyword type="struct" name="EvPrintOperation" link="libatrilview-ev-print-operation.html#EvPrintOperation-struct"/>
+    <keyword type="struct" name="EvPrintOperationClass" link="libatrilview-ev-print-operation.html#EvPrintOperationClass"/>
+    <keyword type="property" name="The “document” property" link="libatrilview-ev-print-operation.html#EvPrintOperation--document"/>
+    <keyword type="signal" name="The “begin-print” signal" link="libatrilview-ev-print-operation.html#EvPrintOperation-begin-print"/>
+    <keyword type="signal" name="The “done” signal" link="libatrilview-ev-print-operation.html#EvPrintOperation-done"/>
+    <keyword type="signal" name="The “status-changed” signal" link="libatrilview-ev-print-operation.html#EvPrintOperation-status-changed"/>
+    <keyword type="function" name="ev_view_presentation_new ()" link="libatrilview-ev-view-presentation.html#ev-view-presentation-new"/>
+    <keyword type="function" name="ev_view_presentation_get_current_page ()" link="libatrilview-ev-view-presentation.html#ev-view-presentation-get-current-page"/>
+    <keyword type="struct" name="EvViewPresentation" link="libatrilview-ev-view-presentation.html#EvViewPresentation-struct"/>
+    <keyword type="struct" name="EvViewPresentationClass" link="libatrilview-ev-view-presentation.html#EvViewPresentationClass"/>
+    <keyword type="property" name="The “current-page” property" link="libatrilview-ev-view-presentation.html#EvViewPresentation--current-page"/>
+    <keyword type="property" name="The “document” property" link="libatrilview-ev-view-presentation.html#EvViewPresentation--document"/>
+    <keyword type="property" name="The “inverted-colors” property" link="libatrilview-ev-view-presentation.html#EvViewPresentation--inverted-colors"/>
+    <keyword type="property" name="The “rotation” property" link="libatrilview-ev-view-presentation.html#EvViewPresentation--rotation"/>
+    <keyword type="signal" name="The “change-page” signal" link="libatrilview-ev-view-presentation.html#EvViewPresentation-change-page"/>
+    <keyword type="signal" name="The “finished” signal" link="libatrilview-ev-view-presentation.html#EvViewPresentation-finished"/>
+    <keyword type="function" name="ev_job_run ()" link="EvJob.html#ev-job-run"/>
+    <keyword type="function" name="ev_job_cancel ()" link="EvJob.html#ev-job-cancel"/>
+    <keyword type="function" name="ev_job_failed ()" link="EvJob.html#ev-job-failed"/>
+    <keyword type="function" name="ev_job_failed_from_error ()" link="EvJob.html#ev-job-failed-from-error"/>
+    <keyword type="function" name="ev_job_succeeded ()" link="EvJob.html#ev-job-succeeded"/>
+    <keyword type="function" name="ev_job_is_finished ()" link="EvJob.html#ev-job-is-finished"/>
+    <keyword type="function" name="ev_job_is_failed ()" link="EvJob.html#ev-job-is-failed"/>
+    <keyword type="function" name="ev_job_get_run_mode ()" link="EvJob.html#ev-job-get-run-mode"/>
+    <keyword type="function" name="ev_job_set_run_mode ()" link="EvJob.html#ev-job-set-run-mode"/>
+    <keyword type="function" name="ev_job_links_new ()" link="EvJob.html#ev-job-links-new"/>
+    <keyword type="function" name="ev_job_attachments_new ()" link="EvJob.html#ev-job-attachments-new"/>
+    <keyword type="function" name="ev_job_export_new ()" link="EvJob.html#ev-job-export-new"/>
+    <keyword type="function" name="ev_job_export_set_page ()" link="EvJob.html#ev-job-export-set-page"/>
+    <keyword type="function" name="ev_job_render_new ()" link="EvJob.html#ev-job-render-new"/>
+    <keyword type="function" name="ev_job_render_set_selection_info ()" link="EvJob.html#ev-job-render-set-selection-info"/>
+    <keyword type="function" name="ev_job_page_data_new ()" link="EvJob.html#ev-job-page-data-new"/>
+    <keyword type="function" name="ev_job_thumbnail_new ()" link="EvJob.html#ev-job-thumbnail-new"/>
+    <keyword type="function" name="ev_job_fonts_new ()" link="EvJob.html#ev-job-fonts-new"/>
+    <keyword type="function" name="ev_job_load_new ()" link="EvJob.html#ev-job-load-new"/>
+    <keyword type="function" name="ev_job_load_set_uri ()" link="EvJob.html#ev-job-load-set-uri"/>
+    <keyword type="function" name="ev_job_load_set_password ()" link="EvJob.html#ev-job-load-set-password"/>
+    <keyword type="function" name="ev_job_save_new ()" link="EvJob.html#ev-job-save-new"/>
+    <keyword type="function" name="ev_job_find_new ()" link="EvJob.html#ev-job-find-new"/>
+    <keyword type="function" name="ev_job_find_get_n_results ()" link="EvJob.html#ev-job-find-get-n-results"/>
+    <keyword type="function" name="ev_job_find_get_progress ()" link="EvJob.html#ev-job-find-get-progress"/>
+    <keyword type="function" name="ev_job_find_has_results ()" link="EvJob.html#ev-job-find-has-results"/>
+    <keyword type="function" name="ev_job_find_get_results ()" link="EvJob.html#ev-job-find-get-results"/>
+    <keyword type="function" name="ev_job_layers_new ()" link="EvJob.html#ev-job-layers-new"/>
+    <keyword type="function" name="ev_job_print_new ()" link="EvJob.html#ev-job-print-new"/>
+    <keyword type="function" name="ev_job_print_set_page ()" link="EvJob.html#ev-job-print-set-page"/>
+    <keyword type="function" name="ev_job_print_set_cairo ()" link="EvJob.html#ev-job-print-set-cairo"/>
+    <keyword type="struct" name="struct EvJob" link="EvJob.html#EvJob-struct"/>
+    <keyword type="struct" name="struct EvJobClass" link="EvJob.html#EvJobClass"/>
+    <keyword type="struct" name="struct EvJobRender" link="EvJob.html#EvJobRender-struct"/>
+    <keyword type="struct" name="struct EvJobRenderClass" link="EvJob.html#EvJobRenderClass"/>
+    <keyword type="struct" name="struct EvJobPageData" link="EvJob.html#EvJobPageData-struct"/>
+    <keyword type="struct" name="struct EvJobPageDataClass" link="EvJob.html#EvJobPageDataClass"/>
+    <keyword type="struct" name="struct EvJobThumbnail" link="EvJob.html#EvJobThumbnail-struct"/>
+    <keyword type="struct" name="struct EvJobThumbnailClass" link="EvJob.html#EvJobThumbnailClass"/>
+    <keyword type="struct" name="struct EvJobLinks" link="EvJob.html#EvJobLinks-struct"/>
+    <keyword type="struct" name="struct EvJobLinksClass" link="EvJob.html#EvJobLinksClass"/>
+    <keyword type="struct" name="struct EvJobAttachments" link="EvJob.html#EvJobAttachments-struct"/>
+    <keyword type="struct" name="struct EvJobAttachmentsClass" link="EvJob.html#EvJobAttachmentsClass"/>
+    <keyword type="struct" name="struct EvJobFonts" link="EvJob.html#EvJobFonts-struct"/>
+    <keyword type="struct" name="struct EvJobFontsClass" link="EvJob.html#EvJobFontsClass"/>
+    <keyword type="struct" name="struct EvJobLoad" link="EvJob.html#EvJobLoad-struct"/>
+    <keyword type="struct" name="struct EvJobLoadClass" link="EvJob.html#EvJobLoadClass"/>
+    <keyword type="struct" name="struct EvJobSave" link="EvJob.html#EvJobSave-struct"/>
+    <keyword type="struct" name="struct EvJobSaveClass" link="EvJob.html#EvJobSaveClass"/>
+    <keyword type="struct" name="struct EvJobFind" link="EvJob.html#EvJobFind-struct"/>
+    <keyword type="struct" name="struct EvJobFindClass" link="EvJob.html#EvJobFindClass"/>
+    <keyword type="struct" name="struct EvJobLayers" link="EvJob.html#EvJobLayers-struct"/>
+    <keyword type="struct" name="struct EvJobLayersClass" link="EvJob.html#EvJobLayersClass"/>
+    <keyword type="struct" name="struct EvJobExport" link="EvJob.html#EvJobExport-struct"/>
+    <keyword type="struct" name="struct EvJobExportClass" link="EvJob.html#EvJobExportClass"/>
+    <keyword type="struct" name="struct EvJobPrint" link="EvJob.html#EvJobPrint-struct"/>
+    <keyword type="struct" name="struct EvJobPrintClass" link="EvJob.html#EvJobPrintClass"/>
+    <keyword type="enum" name="enum EvJobRunMode" link="EvJob.html#EvJobRunMode"/>
+    <keyword type="enum" name="enum EvJobPageDataFlags" link="EvJob.html#EvJobPageDataFlags"/>
+    <keyword type="signal" name="The “cancelled” signal" link="EvJob.html#EvJob-cancelled"/>
+    <keyword type="signal" name="The “finished” signal" link="EvJob.html#EvJob-finished"/>
+    <keyword type="signal" name="The “updated” signal" link="EvJob.html#EvJobFonts-updated"/>
+    <keyword type="signal" name="The “updated” signal" link="EvJob.html#EvJobFind-updated"/>
+    <keyword type="function" name="ev_document_model_new ()" link="libatrilview-ev-document-model.html#ev-document-model-new"/>
+    <keyword type="function" name="ev_document_model_new_with_document ()" link="libatrilview-ev-document-model.html#ev-document-model-new-with-document"/>
+    <keyword type="function" name="ev_document_model_set_document ()" link="libatrilview-ev-document-model.html#ev-document-model-set-document"/>
+    <keyword type="function" name="ev_document_model_get_document ()" link="libatrilview-ev-document-model.html#ev-document-model-get-document"/>
+    <keyword type="function" name="ev_document_model_set_page ()" link="libatrilview-ev-document-model.html#ev-document-model-set-page"/>
+    <keyword type="function" name="ev_document_model_set_page_by_label ()" link="libatrilview-ev-document-model.html#ev-document-model-set-page-by-label"/>
+    <keyword type="function" name="ev_document_model_get_page ()" link="libatrilview-ev-document-model.html#ev-document-model-get-page"/>
+    <keyword type="function" name="ev_document_model_set_scale ()" link="libatrilview-ev-document-model.html#ev-document-model-set-scale"/>
+    <keyword type="function" name="ev_document_model_get_scale ()" link="libatrilview-ev-document-model.html#ev-document-model-get-scale"/>
+    <keyword type="function" name="ev_document_model_set_max_scale ()" link="libatrilview-ev-document-model.html#ev-document-model-set-max-scale"/>
+    <keyword type="function" name="ev_document_model_get_max_scale ()" link="libatrilview-ev-document-model.html#ev-document-model-get-max-scale"/>
+    <keyword type="function" name="ev_document_model_set_min_scale ()" link="libatrilview-ev-document-model.html#ev-document-model-set-min-scale"/>
+    <keyword type="function" name="ev_document_model_get_min_scale ()" link="libatrilview-ev-document-model.html#ev-document-model-get-min-scale"/>
+    <keyword type="function" name="ev_document_model_set_sizing_mode ()" link="libatrilview-ev-document-model.html#ev-document-model-set-sizing-mode"/>
+    <keyword type="function" name="ev_document_model_get_sizing_mode ()" link="libatrilview-ev-document-model.html#ev-document-model-get-sizing-mode"/>
+    <keyword type="function" name="ev_document_model_set_rotation ()" link="libatrilview-ev-document-model.html#ev-document-model-set-rotation"/>
+    <keyword type="function" name="ev_document_model_get_rotation ()" link="libatrilview-ev-document-model.html#ev-document-model-get-rotation"/>
+    <keyword type="function" name="ev_document_model_set_inverted_colors ()" link="libatrilview-ev-document-model.html#ev-document-model-set-inverted-colors"/>
+    <keyword type="function" name="ev_document_model_get_inverted_colors ()" link="libatrilview-ev-document-model.html#ev-document-model-get-inverted-colors"/>
+    <keyword type="function" name="ev_document_model_set_continuous ()" link="libatrilview-ev-document-model.html#ev-document-model-set-continuous"/>
+    <keyword type="function" name="ev_document_model_get_continuous ()" link="libatrilview-ev-document-model.html#ev-document-model-get-continuous"/>
+    <keyword type="function" name="ev_document_model_set_dual_page ()" link="libatrilview-ev-document-model.html#ev-document-model-set-dual-page"/>
+    <keyword type="function" name="ev_document_model_get_dual_page ()" link="libatrilview-ev-document-model.html#ev-document-model-get-dual-page"/>
+    <keyword type="function" name="ev_document_model_set_fullscreen ()" link="libatrilview-ev-document-model.html#ev-document-model-set-fullscreen"/>
+    <keyword type="function" name="ev_document_model_get_fullscreen ()" link="libatrilview-ev-document-model.html#ev-document-model-get-fullscreen"/>
+    <keyword type="enum" name="enum EvSizingMode" link="libatrilview-ev-document-model.html#EvSizingMode"/>
+    <keyword type="struct" name="EvDocumentModel" link="libatrilview-ev-document-model.html#EvDocumentModel-struct"/>
+    <keyword type="struct" name="EvDocumentModelClass" link="libatrilview-ev-document-model.html#EvDocumentModelClass"/>
+    <keyword type="property" name="The “continuous” property" link="libatrilview-ev-document-model.html#EvDocumentModel--continuous"/>
+    <keyword type="property" name="The “document” property" link="libatrilview-ev-document-model.html#EvDocumentModel--document"/>
+    <keyword type="property" name="The “dual-page” property" link="libatrilview-ev-document-model.html#EvDocumentModel--dual-page"/>
+    <keyword type="property" name="The “fullscreen” property" link="libatrilview-ev-document-model.html#EvDocumentModel--fullscreen"/>
+    <keyword type="property" name="The “inverted-colors” property" link="libatrilview-ev-document-model.html#EvDocumentModel--inverted-colors"/>
+    <keyword type="property" name="The “page” property" link="libatrilview-ev-document-model.html#EvDocumentModel--page"/>
+    <keyword type="property" name="The “rotation” property" link="libatrilview-ev-document-model.html#EvDocumentModel--rotation"/>
+    <keyword type="property" name="The “scale” property" link="libatrilview-ev-document-model.html#EvDocumentModel--scale"/>
+    <keyword type="property" name="The “sizing-mode” property" link="libatrilview-ev-document-model.html#EvDocumentModel--sizing-mode"/>
+    <keyword type="signal" name="The “page-changed” signal" link="libatrilview-ev-document-model.html#EvDocumentModel-page-changed"/>
+    <keyword type="function" name="ev_stock_icons_init ()" link="libatrilview-ev-stock-icons.html#ev-stock-icons-init"/>
+    <keyword type="function" name="ev_stock_icons_shutdown ()" link="libatrilview-ev-stock-icons.html#ev-stock-icons-shutdown"/>
+    <keyword type="function" name="ev_stock_icons_set_screen ()" link="libatrilview-ev-stock-icons.html#ev-stock-icons-set-screen"/>
+    <keyword type="macro" name="EV_STOCK_ZOOM" link="libatrilview-ev-stock-icons.html#EV-STOCK-ZOOM:CAPS"/>
+    <keyword type="macro" name="EV_STOCK_ZOOM_PAGE" link="libatrilview-ev-stock-icons.html#EV-STOCK-ZOOM-PAGE:CAPS"/>
+    <keyword type="macro" name="EV_STOCK_ZOOM_WIDTH" link="libatrilview-ev-stock-icons.html#EV-STOCK-ZOOM-WIDTH:CAPS"/>
+    <keyword type="macro" name="EV_STOCK_VIEW_DUAL" link="libatrilview-ev-stock-icons.html#EV-STOCK-VIEW-DUAL:CAPS"/>
+    <keyword type="macro" name="EV_STOCK_VIEW_CONTINUOUS" link="libatrilview-ev-stock-icons.html#EV-STOCK-VIEW-CONTINUOUS:CAPS"/>
+    <keyword type="macro" name="EV_STOCK_ROTATE_LEFT" link="libatrilview-ev-stock-icons.html#EV-STOCK-ROTATE-LEFT:CAPS"/>
+    <keyword type="macro" name="EV_STOCK_ROTATE_RIGHT" link="libatrilview-ev-stock-icons.html#EV-STOCK-ROTATE-RIGHT:CAPS"/>
+    <keyword type="macro" name="EV_STOCK_RUN_PRESENTATION" link="libatrilview-ev-stock-icons.html#EV-STOCK-RUN-PRESENTATION:CAPS"/>
+    <keyword type="macro" name="EV_STOCK_VISIBLE" link="libatrilview-ev-stock-icons.html#EV-STOCK-VISIBLE:CAPS"/>
+    <keyword type="macro" name="EV_STOCK_RESIZE_SE" link="libatrilview-ev-stock-icons.html#EV-STOCK-RESIZE-SE:CAPS"/>
+    <keyword type="macro" name="EV_STOCK_RESIZE_SW" link="libatrilview-ev-stock-icons.html#EV-STOCK-RESIZE-SW:CAPS"/>
+    <keyword type="macro" name="EV_STOCK_CLOSE" link="libatrilview-ev-stock-icons.html#EV-STOCK-CLOSE:CAPS"/>
+    <keyword type="macro" name="EV_STOCK_INVERTED_COLORS" link="libatrilview-ev-stock-icons.html#EV-STOCK-INVERTED-COLORS:CAPS"/>
+    <keyword type="function" name="ev_view_selection_mode_get_type ()" link="libatrilview-ev-view-type-builtins.html#ev-view-selection-mode-get-type"/>
+    <keyword type="macro" name="EV_TYPE_VIEW_SELECTION_MODE" link="libatrilview-ev-view-type-builtins.html#EV-TYPE-VIEW-SELECTION-MODE:CAPS"/>
+    <keyword type="function" name="ev_job_scheduler_push_job ()" link="libatrilview-ev-job-scheduler.html#ev-job-scheduler-push-job"/>
+    <keyword type="function" name="ev_job_scheduler_update_job ()" link="libatrilview-ev-job-scheduler.html#ev-job-scheduler-update-job"/>
+    <keyword type="enum" name="enum EvJobPriority" link="libatrilview-ev-job-scheduler.html#EvJobPriority"/>
+    <keyword type="function" name="ev_view_cursor_new ()" link="libatrilview-ev-view-cursor.html#ev-view-cursor-new"/>
+    <keyword type="enum" name="enum EvViewCursor" link="libatrilview-ev-view-cursor.html#EvViewCursor"/>
+  </functions>
+</book>

@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "March 2009">
+<!ENTITY app "Search for Files">
+<!ENTITY ug "MATE Desktop User Guide">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://developer.mate.org/projects/gdp 
+  Template version: 2.0 beta
+  Template last modified Jan 25, 2005  
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="zh-CN">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+    <title>文件搜索工具手册</title>
+
+    <abstract role="description">
+      <para>搜索工具可以查找你计算机上的文件、文件夹和文档。</para>
+    </abstract>
+
+    <copyright lang="en"> 
+      <year>2005</year> 
+      <holder>Dennis Cranston</holder> 
+    </copyright>
+    <copyright lang="en"> 
+      <year>2002</year> 
+      <year>2003</year> 
+      <year>2004</year> 
+      <holder>Sun Microsystems</holder> 
+    </copyright> 
+    <copyright lang="en"> 
+      <year>2000</year> 
+      <holder>Alexander Kirillov</holder> 
+    </copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+    <publisher> 
+      <publishername>MATE 文档项目</publishername> 
+    </publisher> 
+
+     <legalnotice id="legalnotice">
+	<para>对于本文档的复制、分发和/或修改必须遵循自由软件基金会 (Free Software Foundation) 发布的 GNU 自由文档许可证 (GFDL) 版本 1.1 或更高版本，该许可证没有固定的部分、没有封面和背页文本。您可以在此<ulink type="help" url="help:fdl">链接</ulink>上或在随本手册一起分发的 COPYING-DOCS 文件中找到 GFDL 的副本。</para>
+         <para>本手册是在 GFDL 许可之下分发的 MATE 手册集合的一部分。如果想要单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6 部分所述。</para>
+
+	<para>各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 MATE 文档以及 MATE 文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+
+    <authorgroup> 
+      <author role="maintainer" lang="en"> 
+	<firstname>Dennis</firstname> 
+	<surname>Cranston</surname> 
+	<affiliation> 
+	  <orgname>Search for Files Maintainer</orgname> 
+	  <address lang="en">dennis_cranston@yahoo.com</address> 
+	</affiliation> 
+      </author> 
+      <author lang="en"> 
+	<firstname>Sun</firstname> 
+	<surname>MATE Documentation Team</surname> 
+	<affiliation> 
+	  <orgname>Sun Microsystems</orgname> 
+	  <address/> 
+	</affiliation> 
+      </author> 
+      <author lang="en"> 
+	<firstname>Alexander</firstname> 
+	<surname>Kirillov</surname> 
+	<affiliation> 
+	  <orgname>MATE Documentation Project</orgname> 
+	  <address> <email>kirillov@math.sunysb.edu</email> </address> 
+	</affiliation> 
+      </author> 
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+	<firstname>Latin</firstname> 
+	<surname>Translator 1</surname> 
+	<affiliation> 
+	  <orgname>Latin Translation Team</orgname> 
+	  <address> <email>translator@gnome.org</email> </address> 
+	</affiliation>
+	<contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+
+ <revhistory>
+ <!-- <revision> 
+	<revnumber>&app; Manual V&manrevision;</revnumber> 
+	<date>&date;</date> 
+	<revdescription> 
+	  <para role="author">Sun GNOME Documentation Team</para>
+	  <para role="publisher">MATE Documentation Project</para>
+	</revdescription> 
+ </revision>
+-->
+   <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.7</revnumber> 
+			<date>June 2005</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Joachim Noreiko
+				<email>jnoreiko@yahoo.com</email>
+			</para>
+	  		<para role="publisher" lang="en">Search for Files Maintainer</para>
+			</revdescription> 
+  </revision>
+  <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.6</revnumber> 
+			<date>January 2005</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Dennis Cranston
+				<email>dennis_cranston@yahoo.com</email>
+			</para>
+	  		<para role="publisher" lang="en">Search for Files Maintainer</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.4</revnumber> 
+			<date>February 2004</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.3</revnumber> 
+			<date>September 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision>
+ <revision lang="en"> 
+			<revnumber>Search for Filesl Manual V2.2</revnumber> 
+			<date>August 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.1</revnumber> 
+			<date>July 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+			<revnumber>Search for Files Manual V2.0</revnumber> 
+			<date>May 2002</date> 
+			<revdescription> 
+	  		<para role="author" lang="en">Sun GNOME Documentation Team</para>
+	  		<para role="publisher" lang="en">MATE Documentation Project</para>
+			</revdescription> 
+ </revision> 
+ <revision lang="en"> 
+	<revnumber>Search for Files Manual</revnumber> 
+	<date>2000</date> 
+	<revdescription> 
+	  <para role="author" lang="en">Alexander Kirillov
+	    <email>kirillov@math.sunysb.edu</email>
+	  </para>
+	  <para role="publisher" lang="en">MATE Documentation Project</para>
+	</revdescription> 
+ </revision> 
+ </revhistory> 
+
+    <releaseinfo>本手册讲述的是文件搜索工具 2.26 版。</releaseinfo> 
+    <legalnotice> 
+      <title>反馈</title> 
+      <para>要报告关于文件搜索工具或使用手册中的缺陷，或者提出建议，请参照 <ulink url="help:mate-feedback" type="help">MATE 反馈页</ulink> 上的指导。</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+  </articleinfo> 
+
+  <indexterm lang="en"> 
+    <primary>Search Tool</primary> 
+  </indexterm> 
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="gsearchtool-introduction"> 
+    <title>介绍</title> 
+    <para><application>文件搜索</application> 程序允许您搜索系统中的文件。要执行一次基本的搜索，你可以输入一个文件名或一部分，使用或不使用通配符。要使您搜索更精确，还可以使用额外的搜索选项。</para>
+    <para><application>文件搜索</application> 使用 <command>find</command>、<command>grep</command> 和 <command>locate</command> 等 UNIX 命令。一般情况下，当进行一次基本搜索时，<application>文件搜索</application> 会首先使用 <command>locate</command> 命令，然后再使用较慢但更广泛的 <command>find</command> 命令。</para>
+    <para>大小写敏感搜索依赖于您的系统。例如，在 Linux 上，<command>find</command>、<command>grep</command> 和 <command>locate</command> 命令支持 <literal>-i</literal> 选项，所有的搜索都可以是大小写敏感的。</para>
+  </sect1>
+
+  <sect1 id="gsearchtool-getting-started">
+    <title>快速入门</title> 
+
+    <para>您可以用下面的方法开始 <application>文件搜索</application>：</para> 
+    <variablelist>
+    	<varlistentry>
+    		<term>从面板上的 <guimenu>菜单栏</guimenu></term>
+    		<listitem>
+    		<para>点菜单 <menuchoice><guisubmenu>位置</guisubmenu><guimenuitem>文件搜索...</guimenuitem></menuchoice></para>
+    		</listitem>
+    	</varlistentry>
+   	<varlistentry>
+    		<term>从面板上的 <guimenu>主菜单</guimenu></term>
+    		<listitem>
+    		<para>点菜单 <menuchoice><guimenuitem>文件搜索...</guimenuitem></menuchoice></para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>从命令行</term>
+    		<listitem>
+    		<para>输入下面的命令：<command>mate-search-tool</command></para>
+    		<para> 		 
+    		</para> 
+    		</listitem>
+    	</varlistentry>
+    </variablelist>
+
+    <para>当你启动 <application>文件搜索</application>，会出来一个下面的窗口：</para>
+
+    <!-- ==== Figure ==== -->
+      <figure id="mainwindow-fig"> 
+	<title>文件搜索窗口</title> 
+	<screenshot> 
+	  <mediaobject lang="en"> 
+	    <imageobject><imagedata fileref="figures/mate-search-tool_window.png" format="PNG"/> 
+	    </imageobject>
+	    <textobject> 
+	      <phrase>Shows Search for Files main window. </phrase> 
+	    </textobject> 
+	  </mediaobject> 
+	</screenshot> 
+      </figure>
+    <!-- ==== End of Figure ==== -->
+
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="gsearchtool-usage"> 
+    <title>用法</title>
+
+    <sect2 id="gsearchtool-simple">
+    <title>执行一次基本搜索</title>
+    
+    <para>要在系统中执行一次基本的文件搜索，请按下面的步骤操作：</para>
+    <orderedlist>
+    <listitem><para>在 <guilabel>包含文件名</guilabel> 文本框里输入搜索文本。搜索的文本可以是一个文件名或文件名的一部分，带或不带通配符，像下表列出的那样：</para>
+
+      <informaltable frame="all">
+        <tgroup cols="3" colsep="1" rowsep="1">
+          <colspec colname="COLSPEC0" colwidth="33*"/>
+          <colspec colname="COLSPEC1" colwidth="33*"/>
+          <colspec colname="COLSPEC2" colwidth="34*"/>
+          <thead>
+            <row valign="top">
+              <entry colname="COLSPEC0">
+                <para>文件名包含的文本</para></entry>
+              <entry colname="COLSPEC1">
+                <para>举例</para></entry>
+              <entry colname="COLSPEC2">
+                <para>搜索结果</para></entry>
+            </row>
+          </thead>
+          <tbody>
+            <row valign="top">
+              <entry>
+                <para>全称或部分文件名</para>
+              </entry>
+              <entry>
+                <para lang="en"><userinput>myfile.txt</userinput>
+                </para>
+              </entry>
+              <entry>
+                <para><application>文件搜索</application> 会搜索所有在文件名称里，包含 <userinput>myfile.txt</userinput> 文本的文件。</para>
+              </entry>
+            </row>
+            <row valign="top">
+              <entry>
+                <para>部分文件名与通配符组合 (*, [, ])</para>
+              </entry>
+              <entry>
+                <para lang="en"><userinput>*.[ch]</userinput>
+                </para>
+              </entry>
+              <entry>
+                <para><application>文件搜索</application> 会搜索所有扩展名是 <userinput>.c</userinput> 或 <userinput>.h</userinput> 的文件。</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </listitem>
+    <listitem><para>在 <guilabel>搜索的文件夹</guilabel> 框里，选择一个您想让 <application>文件搜索</application> 查找的文件夹或设备。</para></listitem>
+    <listitem><para>点 <guibutton>查找</guibutton> 开始执行搜索任务</para>
+    </listitem>
+    </orderedlist>
+    <para><application>文件搜索</application> 会在您指定的文件夹及其子文件夹中进行搜索。<application>文件搜索</application> 会在 <guilabel>搜索结果</guilabel> 列表框里显示搜索结果。如果 <application>文件搜索</application> 没有找到任何匹配项，程序会在 <guilabel>搜索结果</guilabel> 显示一条信息 “未找到文件”。</para>
+    <para>一般情况下，<application>文件搜索</application> 将会使用 <command>locate</command> 命令执行快速搜索，然后第二次使用更广泛的 <command>find</command> 命令。<command>locate</command> 命令较快的原因是，它使用了一个文件相关的数据库。如果这个数据库是一周前的，<application>文件搜索</application> 会提醒您死哦所结果可能超出日期，并给出一个选项禁用快速搜索。要更新数据库，以管理员身份运行 <command>updatedb</command> 命令。</para>
+  </sect2>
+    
+    <sect2 id="gsearchtool-advanced">
+    <title>添加搜索选项</title>
+    <para>您可以在系统搜索时，添加额外的搜索选项。要添加搜索选项，请按下面的步骤操作：</para>
+  	<orderedlist>
+    		<listitem><para>点击 <guilabel>选择更多选项</guilabel> 标签。</para></listitem>
+    		<listitem><para>点击 <guilabel>可用的选项</guilabel> 下拉列表。</para></listitem>
+    		<listitem><para>选择您想使用的搜索选项。</para></listitem>
+    		<listitem><para>点 <guibutton>添加</guibutton> 按钮。</para></listitem>
+    		<listitem><para>在搜索选项中指定需要搜索的相关信息，如下表所示：<xref linkend="tbl-search-rules"/>。</para></listitem>
+    		<listitem><para>重复以上的步骤，添加其他搜索选项。</para></listitem>
+    	</orderedlist>	
+    	<para>要删除一个搜索选项，点击选项右边的 <guibutton>删除</guibutton> 按钮。</para>
+    	<para>要禁用搜索选项，再点击 <guilabel>选择更多选项</guilabel> 标签。</para>
+    
+    <table id="tbl-search-rules" frame="topbot">
+    <title>搜索选项</title> 
+		  <tgroup cols="2" colsep="1" rowsep="1">
+			 <colspec colname="COLSPEC0" colwidth="33*"/>
+			 <colspec colname="COLSPEC1" colwidth="33*"/>
+			 <thead> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>选项名称</para></entry> 
+				  <entry> 
+					 <para>描述</para></entry> 
+				</row> 
+			 </thead> 
+			 <tbody> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>包含文本</para></entry> 
+				  <entry> 
+					 <para>搜索内容里包含指定文本的所有文件。(译注：点“添加”按钮后输入文本)</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>修改日期少于</para></entry> 
+				  <entry> 
+					 <para>搜索文件修改日期少于指定天数的文件。</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>修改日期多于</para></entry> 
+				  <entry> 
+					 <para>搜索文件修改日期多于指定天数的文件。</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>文件大小至少是</para></entry> 
+				  <entry> 
+					 <para>搜索文件大小大于或等于指定大小(KB)的文件。</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>文件大小最多是</para></entry> 
+				  <entry> 
+					 <para>搜索文件大小是小于或等于指定大小(KB)的文件。</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>空文件</para></entry> 
+				  <entry> 
+					 <para>搜索没有内容的空文件。</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>文件所属用户</para></entry> 
+				  <entry> 
+					 <para>搜索属于指定用户的文件。在文本框里输入用户名(先点“添加”按钮)。</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>文件所属用户组</para></entry> 
+				  <entry> 
+					 <para>搜索属于指定用户组的文件。在文本框里输入用户组名称(先点“添加”按钮)。</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>所属用户未知</para></entry> 
+				  <entry> 
+					 <para>搜索那些所属用户或用户组未知的文件。</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>文件名不包含</para></entry> 
+				  <entry> 
+					 <para>搜索文件名不包含指定字符串的文件，输入一个完整文件名或带有通配符的部分文件名。使用 * 代表一系列字符，使用 ? 代表一个字符。搜索是区分大小写的。</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>文件名称匹配正则表达式</para></entry> 
+				  <entry> 
+					 <para>搜索那些包含指定正则表达式的文件名或文件夹名称。在文本框里输入一个正则表达式。</para></entry>  
+				</row>
+				<row valign="top"> 
+				  <entry> 
+					 <para>显示隐藏和备份文件</para></entry> 
+				  <entry> 
+					 <para>搜索时包括隐藏文件和备份文件。</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>跟踪符号链接</para></entry> 
+				  <entry> 
+					 <para>搜索文件时跟踪符号链接。</para></entry>  
+				</row> 
+				<row valign="top"> 
+				  <entry> 
+					 <para>包括其他文件系统</para></entry> 
+				  <entry> 
+					 <para>在同一个文件系统中，作为启动文件夹中搜索。</para></entry>  
+				</row> 
+				 				
+			 </tbody> 
+		  </tgroup> 
+		</table> 
+    
+    </sect2>
+
+    <sect2 id="gsearchtool-stop">
+    <title>停止搜索</title>
+    <para>点 <guibutton>停止</guibutton> 按钮，在 <application>文件搜索</application> 完成之前停止搜索。</para>
+    </sect2>
+    
+    <sect2 id="gsearchtool-view">
+    <title>打开显示的文件</title>
+    <para>要打开在 <guilabel>搜索结果</guilabel> 列表框里显示的文件，请按下面的步骤操作：</para>
+    <itemizedlist>
+    <listitem><para>在文件上点右键，然后选 <guimenuitem>打开</guimenuitem> 命令。</para></listitem>
+     <listitem><para>双击该文件。</para></listitem>
+    </itemizedlist>
+    <para>要打开存放这个 <guilabel>搜索结果</guilabel> 列表框里显示文件的文件夹，在这个文件上点右键，然后选 <guimenuitem>打开文件夹</guimenuitem> 命令。</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-delete">
+    <title>删除显示的文件</title>
+    <para>要删除在 <guilabel>搜索结果</guilabel> 列表框里显示的文件，在文件上点右键，然后选 <guimenuitem>移到回收站</guimenuitem> 命令。</para>
+    </sect2>
+    
+    <!--
+    <sect2 id="gsearchtool-search-command">
+    <title>To View the Search Command Used by &app;</title>
+    <para>To view the command that <application>&app;</application> used to perform the previous search, choose <menuchoice><guimenu>Search</guimenu><guimenuitem>Show Command</guimenuitem></menuchoice>. The <guilabel>Search Command Line</guilabel> displays the command. </para>
+    </sect2>
+    -->
+    
+    <sect2 id="gsearchtool-savetofile">
+    <title>保存搜索结果</title>
+    <para>要保存最近一次执行 <application>文件搜索</application> 的结果，在 <guilabel>搜索结果</guilabel> 框里点右键，然后选 <guimenuitem>结果另存为</guimenuitem>，然后点保存。</para>
+    </sect2>
+ 
+  </sect1>
+
+<!-- ============= Settings ============================== -->
+
+  <sect1 id="gsearchtool-settings-gsettings-keys">
+    <title>设置</title> 
+
+    <para lang="en"><application>Search for Files</application> provides gsettings keys to modify some of its behavior.  The gsettings values can be changed by starting the <application>Configuration Editor</application> in the following ways:
+    </para> 
+    <variablelist>
+    	<varlistentry>
+    		<term><guimenu>应用程序</guimenu> 菜单</term>
+    		<listitem>
+    		<para lang="en">Choose <menuchoice><guisubmenu>System Tools</guisubmenu><guimenuitem>dconf Editor</guimenuitem></menuchoice>. </para>
+    		</listitem>
+    	</varlistentry>
+    	<varlistentry>
+    		<term>命令行</term>
+    		<listitem>
+    		<para lang="en">Execute the following command: <command>dconf-editor</command></para> 
+    		</listitem>
+    	</varlistentry>	
+    </variablelist>
+    
+    <sect2 id="gsearchtool-disablequicksearch">
+    <title>禁用快速搜索</title>
+    <para lang="en">Key name: org.mate.search-tool.disable-quick-search</para>
+    <para>默认值：false</para>
+    <para><application>文件搜索</application> 通过使用 <command>locate</command> 命令加速文件名搜索。<command>Locate</command> 命令提供一个安全的方法索引和快速搜索文件。由于 <command>locate</command> 基于索引文件，<guilabel>搜索结果</guilabel> 列表可能没有及时更新到当前。</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-disablesecondscan">
+    <title>禁用快速搜索两次扫描</title>
+    <para lang="en">Key name: org.mate.search-tool.disable-quick-search-second-scan</para>
+    <para>默认值：false</para>
+    <para>当完成一次快速搜索后，<application>文件搜索</application> 将通过 <command>find</command> 命令再执行一次搜索，用以发现没有被索引的文件。符合条件的结果会添加到 <guilabel>搜索结果</guilabel> 列表框里。</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-quicksearchexclude">
+    <title>快速搜索排除的路径文件夹</title>
+    <para lang="en">Key name: org.mate.search-tool.quick-search-excluded-paths</para>
+    <para>默认值：[/mnt/*,/media/*,/dev/*,/tmp/*,/proc/*,/var/*]</para>
+    <para><application>文件搜索</application> 将不会搜索定义在这个键名中的路径。用 <command>find</command> 命令可以搜索定义在这个路径里文件。支持 “*” 和 “?” 通配符。</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-secondscanexclude">
+    <title>快速搜索第二次扫描时排除的路径</title>
+    <para lang="en">Key name: org.mate.search-tool.quick-search-second-scan-excluded-paths</para>
+    <para>默认值：[/]</para>
+    <para><application>文件搜索</application> 在第一次快速搜索后将不会扫描定义在这个键名中的路径。这些路径快速搜索完后，将不会再用 <command>find</command> 命令扫描。支持 “*” 和 “?” 通配符。</para>
+    </sect2>
+
+    <sect2 id="gsearchtool-showoptions">
+    <title>显示额外的选项</title>
+    <para lang="en">Key name: org.mate.search-tool.show-additional-options</para>
+    <para>默认值：false</para>
+    <para>这个键名决定了，在 <application>文件搜索</application> 运行后，是否显示 <guilabel>选择更多选项</guilabel> 段。</para>
+    </sect2>
+    
+  </sect1>
+
+</article>

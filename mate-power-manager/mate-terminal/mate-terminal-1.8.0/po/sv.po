@@ -1,0 +1,1504 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: MATE Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-25 23:34+0100\n"
+"PO-Revision-Date: 2014-01-25 22:35+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Swedish (http://www.transifex.com/projects/p/MATE/language/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../mate-terminal.desktop.in.in.h:1 ../src/terminal-options.c:188
+#: ../src/terminal-window.c:4168
+msgid "MATE Terminal"
+msgstr "MATE-terminal"
+
+#: ../mate-terminal.desktop.in.in.h:2 ../src/terminal-accels.c:325
+#: ../src/terminal.c:567 ../src/terminal-profile.c:158
+#: ../src/terminal-window.c:2140
+msgid "Terminal"
+msgstr "Terminal"
+
+#: ../mate-terminal.desktop.in.in.h:3
+msgid "Use the command line"
+msgstr "Använd kommandoraden"
+
+#: ../src/eggsmclient.c:229
+msgid "Disable connection to session manager"
+msgstr "Inaktivera anslutning till sessionshanteraren"
+
+#: ../src/eggsmclient.c:234
+msgid "Specify file containing saved configuration"
+msgstr "Ange filen som innehåller sparad konfiguration"
+
+#: ../src/eggsmclient.c:234 ../src/terminal-options.c:958
+#: ../src/terminal-options.c:967
+msgid "FILE"
+msgstr "FIL"
+
+#: ../src/eggsmclient.c:239
+msgid "Specify session management ID"
+msgstr "Ange id för sessionshanterare"
+
+#: ../src/eggsmclient.c:239
+msgid "ID"
+msgstr "ID"
+
+#: ../src/eggsmclient.c:265
+msgid "Session management options:"
+msgstr "Flaggor för sessionshantering:"
+
+#: ../src/eggsmclient.c:266
+msgid "Show session management options"
+msgstr "Visa flaggor för sessionshantering"
+
+#: ../src/profile-editor.c:44
+msgid "Black on light yellow"
+msgstr "Svart på ljusgult"
+
+#: ../src/profile-editor.c:48
+msgid "Black on white"
+msgstr "Svart på vitt"
+
+#: ../src/profile-editor.c:52
+msgid "Gray on black"
+msgstr "Grått på svart"
+
+#: ../src/profile-editor.c:56
+msgid "Green on black"
+msgstr "Grönt på svart"
+
+#: ../src/profile-editor.c:60
+msgid "White on black"
+msgstr "Vitt på svart"
+
+#: ../src/profile-editor.c:487
+#, c-format
+msgid "Error parsing command: %s"
+msgstr "Fel vid tolkning av kommando: %s"
+
+#: ../src/profile-editor.c:505
+#, c-format
+msgid "Editing Profile “%s”"
+msgstr "Redigerar profilen \"%s\""
+
+#. Translators: This is the name of a colour scheme
+#: ../src/profile-editor.c:538 ../src/profile-preferences.ui.h:11
+#: ../src/extra-strings.c:80
+msgid "Custom"
+msgstr "Anpassad"
+
+#: ../src/profile-editor.c:673
+msgid "Images"
+msgstr "Bilder"
+
+#: ../src/profile-editor.c:847
+#, c-format
+msgid "Choose Palette Color %d"
+msgstr "Välj palettfärg %d"
+
+#: ../src/profile-editor.c:851
+#, c-format
+msgid "Palette entry %d"
+msgstr "Palettpost %d"
+
+#: ../src/encodings-dialog.ui.h:1
+msgid "Add or Remove Terminal Encodings"
+msgstr "Lägg till eller ta bort terminalkodningar"
+
+#: ../src/encodings-dialog.ui.h:2
+msgid "A_vailable encodings:"
+msgstr "_Tillgängliga kodningar:"
+
+#: ../src/encodings-dialog.ui.h:3
+msgid "E_ncodings shown in menu:"
+msgstr "_Kodningar som visas i menyn:"
+
+#: ../src/find-dialog.ui.h:1
+msgid "Find"
+msgstr "Sök"
+
+#: ../src/find-dialog.ui.h:2
+msgid "_Search for:"
+msgstr "_Sök efter: "
+
+#: ../src/find-dialog.ui.h:3
+msgid "_Match case"
+msgstr "_Gör skillnad på gemener/VERSALER"
+
+#: ../src/find-dialog.ui.h:4
+msgid "Match _entire word only"
+msgstr "Sök endast _hela ord"
+
+#: ../src/find-dialog.ui.h:5
+msgid "Match as _regular expression"
+msgstr "Matcha som _reguljärt uttryck"
+
+#: ../src/find-dialog.ui.h:6
+msgid "Search _backwards"
+msgstr "Sök _baklänges"
+
+#: ../src/find-dialog.ui.h:7
+msgid "_Wrap around"
+msgstr "_Börja om från början"
+
+#: ../src/keybinding-editor.ui.h:1
+msgid "Keyboard Shortcuts"
+msgstr "Tangentbordsgenvägar"
+
+#: ../src/keybinding-editor.ui.h:2
+msgid "_Enable menu access keys (such as Alt+F to open the File menu)"
+msgstr "_Aktivera menyåtkomsttangenter (exempelvis Alt+A för att öppna Arkiv-menyn)"
+
+#: ../src/keybinding-editor.ui.h:3
+msgid "Enable the _menu shortcut key (F10 by default)"
+msgstr "Aktivera snabbtangent för m_enyåtkomst (F10 som standard)"
+
+#: ../src/keybinding-editor.ui.h:4
+msgid "_Shortcut keys:"
+msgstr "_Snabbtangenter:"
+
+#: ../src/profile-manager.ui.h:1
+msgid "Profiles"
+msgstr "Profiler"
+
+#: ../src/profile-manager.ui.h:2
+msgid "_Profile used when launching a new terminal:"
+msgstr "_Profil som används vid start av en ny terminal:"
+
+#: ../src/profile-new-dialog.ui.h:1 ../src/terminal-accels.c:152
+msgid "New Profile"
+msgstr "Ny profil"
+
+#: ../src/profile-new-dialog.ui.h:2
+msgid "C_reate"
+msgstr "S_kapa"
+
+#: ../src/profile-new-dialog.ui.h:3
+msgid "Profile _name:"
+msgstr "Profil_namn:"
+
+#: ../src/profile-new-dialog.ui.h:4
+msgid "_Base on:"
+msgstr "_Basera på:"
+
+#. Translators: Cursor shape: ...
+#: ../src/profile-preferences.ui.h:1 ../src/extra-strings.c:35
+msgid "Block"
+msgstr "Block"
+
+#. Translators: Cursor shape: ...
+#: ../src/profile-preferences.ui.h:2 ../src/extra-strings.c:37
+msgid "I-Beam"
+msgstr "I-Beam"
+
+#. Translators: Cursor shape: ...
+#: ../src/profile-preferences.ui.h:3 ../src/extra-strings.c:39
+msgid "Underline"
+msgstr "Understreck"
+
+#. Translators: When terminal commands set their own titles: ...
+#: ../src/profile-preferences.ui.h:4 ../src/extra-strings.c:63
+msgid "Replace initial title"
+msgstr "Ersätt initial titel"
+
+#. Translators: When terminal commands set their own titles: ...
+#: ../src/profile-preferences.ui.h:5 ../src/extra-strings.c:65
+msgid "Append initial title"
+msgstr "Kommer före initial titel"
+
+#. Translators: When terminal commands set their own titles: ...
+#: ../src/profile-preferences.ui.h:6 ../src/extra-strings.c:67
+msgid "Prepend initial title"
+msgstr "Kommer efter initial titel"
+
+#. Translators: When terminal commands set their own titles: ...
+#: ../src/profile-preferences.ui.h:7 ../src/extra-strings.c:69
+msgid "Keep initial title"
+msgstr "Behåll initial titel"
+
+#. Translators: When command exits: ...
+#: ../src/profile-preferences.ui.h:8 ../src/extra-strings.c:49
+msgid "Exit the terminal"
+msgstr "Avsluta terminal"
+
+#. Translators: When command exits: ...
+#: ../src/profile-preferences.ui.h:9 ../src/extra-strings.c:51
+msgid "Restart the command"
+msgstr "Starta om kommandot"
+
+#. Translators: When command exits: ...
+#: ../src/profile-preferences.ui.h:10 ../src/extra-strings.c:53
+msgid "Hold the terminal open"
+msgstr "Håll terminalen öppen"
+
+#. Translators: This is the name of a colour scheme
+#: ../src/profile-preferences.ui.h:12 ../src/extra-strings.c:72
+msgid "Tango"
+msgstr "Tango"
+
+#. Translators: This is the name of a colour scheme
+#: ../src/profile-preferences.ui.h:13 ../src/extra-strings.c:74
+msgid "Linux console"
+msgstr "Linux-konsoll"
+
+#. Translators: This is the name of a colour scheme
+#: ../src/profile-preferences.ui.h:14 ../src/extra-strings.c:76
+msgid "XTerm"
+msgstr "XTerm"
+
+#. Translators: This is the name of a colour scheme
+#: ../src/profile-preferences.ui.h:15 ../src/extra-strings.c:78
+msgid "Rxvt"
+msgstr "Rxvt"
+
+#. Translators: Scrollbar is: ...
+#: ../src/profile-preferences.ui.h:16 ../src/extra-strings.c:56
+msgid "On the left side"
+msgstr "På vänster sida"
+
+#. Translators: Scrollbar is: ...
+#: ../src/profile-preferences.ui.h:17 ../src/extra-strings.c:58
+msgid "On the right side"
+msgstr "På höger sida"
+
+#. Translators: Scrollbar is: ...
+#: ../src/profile-preferences.ui.h:18 ../src/terminal-accels.c:383
+#: ../src/extra-strings.c:60
+msgid "Disabled"
+msgstr "Inaktiverad"
+
+#. * Copyright © 2009 Christian Persch
+#. *
+#. * Mate-terminal is free software; you can redistribute it and/or modify
+#. * it under the terms of the GNU General Public License as published by
+#. * the Free Software Foundation; either version 3 of the License, or
+#. * (at your option) any later version.
+#. *
+#. * Mate-terminal is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#. * GNU General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU General Public License
+#. * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#. This file contains extra strings that need to be translated, but
+#. * can't be extracted by intltool since the ui files aren't in git, and
+#. * the glade files don't contain them in the right form. See bug #553357.
+#. Translators: This refers to the Delete keybinding option
+#: ../src/profile-preferences.ui.h:19 ../src/extra-strings.c:24
+msgid "Automatic"
+msgstr "Automatisk"
+
+#. Translators: This refers to the Delete keybinding option
+#: ../src/profile-preferences.ui.h:20 ../src/extra-strings.c:26
+msgid "Control-H"
+msgstr "Control-H"
+
+#. Translators: This refers to the Delete keybinding option
+#: ../src/profile-preferences.ui.h:21 ../src/extra-strings.c:28
+msgid "ASCII DEL"
+msgstr "ASCII DEL"
+
+#. Translators: This refers to the Delete keybinding option
+#: ../src/profile-preferences.ui.h:22 ../src/extra-strings.c:30
+msgid "Escape sequence"
+msgstr "Escape-sekvens"
+
+#. Translators: This refers to the Delete keybinding option
+#: ../src/profile-preferences.ui.h:23 ../src/extra-strings.c:32
+msgid "TTY Erase"
+msgstr "TTY Erase"
+
+#. Translators: Cursor blink: ...
+#: ../src/profile-preferences.ui.h:24 ../src/extra-strings.c:42
+msgid "Use system settings"
+msgstr ""
+
+#. Translators: Cursor blink: ...
+#: ../src/profile-preferences.ui.h:25 ../src/extra-strings.c:44
+msgid "Always blink"
+msgstr ""
+
+#. Translators: Cursor blink: ...
+#: ../src/profile-preferences.ui.h:26 ../src/extra-strings.c:46
+msgid "Never blink"
+msgstr ""
+
+#: ../src/profile-preferences.ui.h:27
+msgid "Profile Editor"
+msgstr "Profilredigerare"
+
+#: ../src/profile-preferences.ui.h:28
+msgid "_Profile name:"
+msgstr "_Profilnamn:"
+
+#: ../src/profile-preferences.ui.h:29
+msgid "_Use the system fixed width font"
+msgstr "_Använd systemets typsnitt med fast breddsteg"
+
+#: ../src/profile-preferences.ui.h:30
+msgid "_Font:"
+msgstr "_Typsnitt:"
+
+#: ../src/profile-preferences.ui.h:31
+msgid "Choose A Terminal Font"
+msgstr "Välj ett typsnitt för terminalen"
+
+#: ../src/profile-preferences.ui.h:32
+msgid "_Allow bold text"
+msgstr "_Tillåt fet text"
+
+#: ../src/profile-preferences.ui.h:33
+msgid "Show _menubar by default in new terminals"
+msgstr "Visa _menyrad som standard i nya terminalfönster"
+
+#: ../src/profile-preferences.ui.h:34
+msgid "Terminal _bell"
+msgstr "Terminal_ljud"
+
+#: ../src/profile-preferences.ui.h:35
+msgid "Cursor blin_k:"
+msgstr ""
+
+#: ../src/profile-preferences.ui.h:36
+msgid "Cursor _shape:"
+msgstr "Markör_typ:"
+
+#: ../src/profile-preferences.ui.h:37
+msgid "Select-by-_word characters:"
+msgstr "Tecken för _välj-per-ord:"
+
+#: ../src/profile-preferences.ui.h:38
+msgid "Use custom default terminal si_ze"
+msgstr "Använd anpassad standar_dstorlek för terminal"
+
+#: ../src/profile-preferences.ui.h:39
+msgid "Default size:"
+msgstr "Standardstorlek:"
+
+#: ../src/profile-preferences.ui.h:40
+msgid "columns"
+msgstr "kolumner"
+
+#: ../src/profile-preferences.ui.h:41
+msgid "rows"
+msgstr "rader"
+
+#: ../src/profile-preferences.ui.h:42
+msgid "General"
+msgstr "Allmänt"
+
+#: ../src/profile-preferences.ui.h:43
+msgid "<b>Title</b>"
+msgstr "<b>Titel</b>"
+
+#: ../src/profile-preferences.ui.h:44
+msgid "Initial _title:"
+msgstr "Start_titel:"
+
+#: ../src/profile-preferences.ui.h:45
+msgid "When terminal commands set their o_wn titles:"
+msgstr "När terminalkommandon ställer in sina e_gna titlar:"
+
+#: ../src/profile-preferences.ui.h:46
+msgid "<b>Command</b>"
+msgstr "<b>Kommando</b>"
+
+#: ../src/profile-preferences.ui.h:47
+msgid "_Run command as a login shell"
+msgstr "_Kör kommando som ett inloggningsskal"
+
+#: ../src/profile-preferences.ui.h:48
+msgid "_Update login records when command is launched"
+msgstr "_Uppdatera inloggningsposter då kommandot startas"
+
+#: ../src/profile-preferences.ui.h:49
+msgid "Ru_n a custom command instead of my shell"
+msgstr "K_ör ett eget kommando istället för mitt skal"
+
+#: ../src/profile-preferences.ui.h:50
+msgid "Custom co_mmand:"
+msgstr "Eget ko_mmando:"
+
+#: ../src/profile-preferences.ui.h:51
+msgid "When command _exits:"
+msgstr "Då kommandot a_vslutar:"
+
+#: ../src/profile-preferences.ui.h:52
+msgid "Title and Command"
+msgstr "Titel och kommando"
+
+#: ../src/profile-preferences.ui.h:53
+msgid "<b>Foreground, Background, Bold and Underline</b>"
+msgstr "<b>Förgrund, bakgrund, fet text och understrykning</b>"
+
+#: ../src/profile-preferences.ui.h:54
+msgid "_Use colors from system theme"
+msgstr "Använd färger från s_ystemtemat"
+
+#: ../src/profile-preferences.ui.h:55
+msgid "Built-in sche_mes:"
+msgstr "Inbyggda sche_man:"
+
+#: ../src/profile-preferences.ui.h:56
+msgid "_Text color:"
+msgstr "_Textfärg:"
+
+#: ../src/profile-preferences.ui.h:57
+msgid "_Background color:"
+msgstr "_Bakgrundsfärg:"
+
+#: ../src/profile-preferences.ui.h:58
+msgid "Choose Terminal Background Color"
+msgstr "Välj bakgrundsfärg för terminalen"
+
+#: ../src/profile-preferences.ui.h:59
+msgid "Choose Terminal Text Color"
+msgstr "Välj textfärg för terminalen"
+
+#: ../src/profile-preferences.ui.h:60
+msgid "_Underline color:"
+msgstr "_Understrykningsfärg:"
+
+#: ../src/profile-preferences.ui.h:61
+msgid "_Same as text color"
+msgstr "_Samma som textfärgen"
+
+#: ../src/profile-preferences.ui.h:62
+msgid "Bol_d color:"
+msgstr "Färg för fet te_xt:"
+
+#: ../src/profile-preferences.ui.h:63
+msgid "<b>Palette</b>"
+msgstr "<b>Palett</b>"
+
+#: ../src/profile-preferences.ui.h:64
+msgid "Built-in _schemes:"
+msgstr "Inbyggda _scheman:"
+
+#: ../src/profile-preferences.ui.h:65
+msgid ""
+"<small><i><b>Note:</b> Terminal applications have these colors available to "
+"them.</i></small>"
+msgstr "<small><i><b>Notera:</b> Terminalprogram har dessa färger tillgängliga.</i></small>"
+
+#: ../src/profile-preferences.ui.h:66
+msgid "Color p_alette:"
+msgstr "Färgp_alett:"
+
+#: ../src/profile-preferences.ui.h:67
+msgid "Colors"
+msgstr "Färger"
+
+#: ../src/profile-preferences.ui.h:68
+msgid "_Solid color"
+msgstr "_Enfärgad"
+
+#: ../src/profile-preferences.ui.h:69
+msgid "_Background image"
+msgstr "_Bakgrundsbild"
+
+#: ../src/profile-preferences.ui.h:70
+msgid "Image _file:"
+msgstr "Bild_fil:"
+
+#: ../src/profile-preferences.ui.h:71
+msgid "Select Background Image"
+msgstr "Välj bakgrundsbild"
+
+#: ../src/profile-preferences.ui.h:72
+msgid "Background image _scrolls"
+msgstr "Bakgrundsbilden _rullar"
+
+#: ../src/profile-preferences.ui.h:73
+msgid "_Transparent background"
+msgstr "_Genomskinlig bakgrund"
+
+#: ../src/profile-preferences.ui.h:74
+msgid "S_hade transparent or image background:"
+msgstr "För_mörka genomskinlig bakgrund eller bildbakgrund:"
+
+#: ../src/profile-preferences.ui.h:75
+msgid "<small><i>None</i></small>"
+msgstr "<small><i>Ingen</i></small>"
+
+#: ../src/profile-preferences.ui.h:76
+msgid "<small><i>Maximum</i></small>"
+msgstr "<small><i>Maximal</i></small>"
+
+#: ../src/profile-preferences.ui.h:77
+msgid "Background"
+msgstr "Bakgrund"
+
+#: ../src/profile-preferences.ui.h:78
+msgid "_Scrollbar is:"
+msgstr "_Rullningslisten är:"
+
+#: ../src/profile-preferences.ui.h:79
+msgid "Scroll_back:"
+msgstr "Rullnings_historik:"
+
+#: ../src/profile-preferences.ui.h:80
+msgid "Scroll on _keystroke"
+msgstr "Rulla vid _tangentnedtryckning"
+
+#: ../src/profile-preferences.ui.h:81
+msgid "Scroll on _output"
+msgstr "Ru_lla vid utdata"
+
+#: ../src/profile-preferences.ui.h:82
+msgid "_Unlimited"
+msgstr "_Obegränsat"
+
+#: ../src/profile-preferences.ui.h:83
+msgid "lines"
+msgstr "rader"
+
+#: ../src/profile-preferences.ui.h:84
+msgid "Scrolling"
+msgstr "Rullning"
+
+#: ../src/profile-preferences.ui.h:85
+msgid ""
+"<small><i><b>Note:</b> These options may cause some applications to behave "
+"incorrectly.  They are only here to allow you to work around certain "
+"applications and operating systems that expect different terminal "
+"behavior.</i></small>"
+msgstr "<small><i><b>Notera:</b> Dessa alternativ kan orsaka att en del program inte beter sig som de ska. De finns endast här för att låta dig kunna använda vissa program och operativsystem som förväntar sig ett annat terminalbeteende.</i></small>"
+
+#: ../src/profile-preferences.ui.h:86
+msgid "_Delete key generates:"
+msgstr "_Delete-tangenten genererar:"
+
+#: ../src/profile-preferences.ui.h:87
+msgid "_Backspace key generates:"
+msgstr "_Backstegstangenten genererar:"
+
+#: ../src/profile-preferences.ui.h:88
+msgid "_Reset Compatibility Options to Defaults"
+msgstr "_Återställ kompatibilitetsalternativ till standardvärden"
+
+#: ../src/profile-preferences.ui.h:89
+msgid "Compatibility"
+msgstr "Kompatibilitet"
+
+#: ../src/skey-challenge.ui.h:1
+msgid "S/Key Challenge Response"
+msgstr "Svar på S/key-utmaning"
+
+#: ../src/skey-challenge.ui.h:2
+msgid "_Password:"
+msgstr "_Lösenord:"
+
+#: ../src/skey-popup.c:165
+msgid "The text you clicked on doesn't seem to be a valid S/Key challenge."
+msgstr "Texten du klickade på verkar inte vara en giltig S/key-utmaning."
+
+#: ../src/skey-popup.c:176
+msgid "The text you clicked on doesn't seem to be a valid OTP challenge."
+msgstr "Texten du klickade på verkar inte vara en giltig OTP-utmaning."
+
+#: ../src/terminal-accels.c:144
+msgid "New Tab"
+msgstr "Ny flik"
+
+#: ../src/terminal-accels.c:148
+msgid "New Window"
+msgstr "Nytt fönster"
+
+#: ../src/terminal-accels.c:157
+msgid "Save Contents"
+msgstr "Spara innehåll"
+
+#: ../src/terminal-accels.c:162
+msgid "Close Tab"
+msgstr "Stäng flik"
+
+#: ../src/terminal-accels.c:166
+msgid "Close Window"
+msgstr "Stäng fönster"
+
+#: ../src/terminal-accels.c:174
+msgid "Copy"
+msgstr "Kopiera"
+
+#: ../src/terminal-accels.c:178
+msgid "Paste"
+msgstr "Klistra in"
+
+#: ../src/terminal-accels.c:186
+msgid "Hide and Show menubar"
+msgstr "Dölj och visa menyrad"
+
+#: ../src/terminal-accels.c:190
+msgid "Full Screen"
+msgstr "Helskärmsläge"
+
+#: ../src/terminal-accels.c:194
+msgid "Zoom In"
+msgstr "Zooma in"
+
+#: ../src/terminal-accels.c:198
+msgid "Zoom Out"
+msgstr "Zooma ut"
+
+#: ../src/terminal-accels.c:202
+msgid "Normal Size"
+msgstr "Normal storlek"
+
+#: ../src/terminal-accels.c:210 ../src/terminal-window.c:3933
+msgid "Set Title"
+msgstr "Ställ in titel"
+
+#: ../src/terminal-accels.c:214
+msgid "Reset"
+msgstr "Återställ"
+
+#: ../src/terminal-accels.c:218
+msgid "Reset and Clear"
+msgstr "Återställ och töm"
+
+#: ../src/terminal-accels.c:222
+msgid "Switch to Previous Profile"
+msgstr ""
+
+#: ../src/terminal-accels.c:226
+msgid "Switch to Next Profile"
+msgstr ""
+
+#: ../src/terminal-accels.c:234
+msgid "Switch to Previous Tab"
+msgstr "Växla till föregående flik"
+
+#: ../src/terminal-accels.c:238
+msgid "Switch to Next Tab"
+msgstr "Växla till nästa flik"
+
+#: ../src/terminal-accels.c:242
+msgid "Move Tab to the Left"
+msgstr "Flytta flik till vänster"
+
+#: ../src/terminal-accels.c:246
+msgid "Move Tab to the Right"
+msgstr "Flytta flik till höger"
+
+#: ../src/terminal-accels.c:250
+msgid "Detach Tab"
+msgstr "Frigör flik"
+
+#: ../src/terminal-accels.c:254
+msgid "Switch to Tab 1"
+msgstr "Växla till flik 1"
+
+#: ../src/terminal-accels.c:259
+msgid "Switch to Tab 2"
+msgstr "Växla till flik 2"
+
+#: ../src/terminal-accels.c:264
+msgid "Switch to Tab 3"
+msgstr "Växla till flik 3"
+
+#: ../src/terminal-accels.c:269
+msgid "Switch to Tab 4"
+msgstr "Växla till flik 4"
+
+#: ../src/terminal-accels.c:274
+msgid "Switch to Tab 5"
+msgstr "Växla till flik 5"
+
+#: ../src/terminal-accels.c:279
+msgid "Switch to Tab 6"
+msgstr "Växla till flik 6"
+
+#: ../src/terminal-accels.c:284
+msgid "Switch to Tab 7"
+msgstr "Växla till flik 7"
+
+#: ../src/terminal-accels.c:289
+msgid "Switch to Tab 8"
+msgstr "Växla till flik 8"
+
+#: ../src/terminal-accels.c:294
+msgid "Switch to Tab 9"
+msgstr "Växla till flik 9"
+
+#: ../src/terminal-accels.c:299
+msgid "Switch to Tab 10"
+msgstr "Växla till flik 10"
+
+#: ../src/terminal-accels.c:304
+msgid "Switch to Tab 11"
+msgstr "Växla till flik 11"
+
+#: ../src/terminal-accels.c:309
+msgid "Switch to Tab 12"
+msgstr "Växla till flik 12"
+
+#: ../src/terminal-accels.c:317
+msgid "Contents"
+msgstr "Innehåll"
+
+#: ../src/terminal-accels.c:322
+msgid "File"
+msgstr "Arkiv"
+
+#: ../src/terminal-accels.c:323
+msgid "Edit"
+msgstr "Redigera"
+
+#: ../src/terminal-accels.c:324
+msgid "View"
+msgstr "Visa"
+
+#: ../src/terminal-accels.c:326
+msgid "Tabs"
+msgstr "Flikar"
+
+#: ../src/terminal-accels.c:327
+msgid "Help"
+msgstr "Hjälp"
+
+#: ../src/terminal-accels.c:831
+#, c-format
+msgid "The shortcut key “%s” is already bound to the “%s” action"
+msgstr "Snabbtangenten \"%s\" är redan bunden till \"%s\"-åtgärden"
+
+#: ../src/terminal-accels.c:987
+msgid "_Action"
+msgstr "_Åtgärd"
+
+#: ../src/terminal-accels.c:1006
+msgid "Shortcut _Key"
+msgstr "Snabb_tangent"
+
+#: ../src/terminal-app.c:460
+msgid "Click button to choose profile"
+msgstr "Klicka på knappen för att välja profil"
+
+#: ../src/terminal-app.c:543
+msgid "Profile list"
+msgstr "Profillista"
+
+#: ../src/terminal-app.c:604
+#, c-format
+msgid "Delete profile “%s”?"
+msgstr "Ta bort profilen \"%s\"?"
+
+#: ../src/terminal-app.c:620
+msgid "Delete Profile"
+msgstr "Ta bort profil"
+
+#: ../src/terminal-app.c:1053
+#, c-format
+msgid ""
+"You already have a profile called “%s”. Do you want to create another "
+"profile with the same name?"
+msgstr "Du har redan en profil med namnet \"%s\". Vill du skapa en annan profil med samma namn?"
+
+#: ../src/terminal-app.c:1148
+msgid "Choose base profile"
+msgstr "Välj basprofil"
+
+#: ../src/terminal-app.c:1751
+#, c-format
+msgid "No such profile \"%s\", using default profile\n"
+msgstr "Det finns ingen profil \"%s\", använder standardprofilen\n"
+
+#: ../src/terminal-app.c:1775
+#, c-format
+msgid "Invalid geometry string \"%s\"\n"
+msgstr "Ogiltig geometristräng \"%s\"\n"
+
+#: ../src/terminal-app.c:1953
+msgid "User Defined"
+msgstr "Avändardefinierad"
+
+#: ../src/terminal.c:562
+#, c-format
+msgid "Failed to parse arguments: %s\n"
+msgstr "Misslyckades med att tolka argument: %s\n"
+
+#: ../src/terminal-encoding.c:53 ../src/terminal-encoding.c:66
+#: ../src/terminal-encoding.c:80 ../src/terminal-encoding.c:102
+#: ../src/terminal-encoding.c:113
+msgid "Western"
+msgstr "Västerländsk"
+
+#: ../src/terminal-encoding.c:54 ../src/terminal-encoding.c:81
+#: ../src/terminal-encoding.c:92 ../src/terminal-encoding.c:111
+msgid "Central European"
+msgstr "Centraleuropeisk"
+
+#: ../src/terminal-encoding.c:55
+msgid "South European"
+msgstr "Sydeuropeisk"
+
+#: ../src/terminal-encoding.c:56 ../src/terminal-encoding.c:64
+#: ../src/terminal-encoding.c:118
+msgid "Baltic"
+msgstr "Baltisk"
+
+#: ../src/terminal-encoding.c:57 ../src/terminal-encoding.c:82
+#: ../src/terminal-encoding.c:88 ../src/terminal-encoding.c:89
+#: ../src/terminal-encoding.c:94 ../src/terminal-encoding.c:112
+msgid "Cyrillic"
+msgstr "Kyrillisk"
+
+#: ../src/terminal-encoding.c:58 ../src/terminal-encoding.c:85
+#: ../src/terminal-encoding.c:91 ../src/terminal-encoding.c:117
+msgid "Arabic"
+msgstr "Arabisk"
+
+#: ../src/terminal-encoding.c:59 ../src/terminal-encoding.c:97
+#: ../src/terminal-encoding.c:114
+msgid "Greek"
+msgstr "Grekisk"
+
+#: ../src/terminal-encoding.c:60
+msgid "Hebrew Visual"
+msgstr "Synlig hebreisk"
+
+#: ../src/terminal-encoding.c:61 ../src/terminal-encoding.c:84
+#: ../src/terminal-encoding.c:100 ../src/terminal-encoding.c:116
+msgid "Hebrew"
+msgstr "Hebreisk"
+
+#: ../src/terminal-encoding.c:62 ../src/terminal-encoding.c:83
+#: ../src/terminal-encoding.c:104 ../src/terminal-encoding.c:115
+msgid "Turkish"
+msgstr "Turkisk"
+
+#: ../src/terminal-encoding.c:63
+msgid "Nordic"
+msgstr "Nordisk"
+
+#: ../src/terminal-encoding.c:65
+msgid "Celtic"
+msgstr "Keltisk"
+
+#: ../src/terminal-encoding.c:67 ../src/terminal-encoding.c:103
+msgid "Romanian"
+msgstr "Rumänsk"
+
+#. These encodings do NOT pass-through ASCII, so are always rejected.
+#. * FIXME: why are they in this table; or rather why do we need
+#. * the ASCII pass-through requirement?
+#: ../src/terminal-encoding.c:68 ../src/terminal-encoding.c:125
+#: ../src/terminal-encoding.c:126 ../src/terminal-encoding.c:127
+#: ../src/terminal-encoding.c:128
+msgid "Unicode"
+msgstr "Unicode"
+
+#: ../src/terminal-encoding.c:69
+msgid "Armenian"
+msgstr "Armensk"
+
+#: ../src/terminal-encoding.c:70 ../src/terminal-encoding.c:71
+#: ../src/terminal-encoding.c:75
+msgid "Chinese Traditional"
+msgstr "Traditionell kinesisk"
+
+#: ../src/terminal-encoding.c:72
+msgid "Cyrillic/Russian"
+msgstr "Kyrillisk/Rysk"
+
+#: ../src/terminal-encoding.c:73 ../src/terminal-encoding.c:86
+#: ../src/terminal-encoding.c:106
+msgid "Japanese"
+msgstr "Japansk"
+
+#: ../src/terminal-encoding.c:74 ../src/terminal-encoding.c:87
+#: ../src/terminal-encoding.c:109 ../src/terminal-encoding.c:129
+msgid "Korean"
+msgstr "Koreansk"
+
+#: ../src/terminal-encoding.c:76 ../src/terminal-encoding.c:77
+#: ../src/terminal-encoding.c:78
+msgid "Chinese Simplified"
+msgstr "Förenklad kinesisk"
+
+#: ../src/terminal-encoding.c:79
+msgid "Georgian"
+msgstr "Georgisk"
+
+#: ../src/terminal-encoding.c:90 ../src/terminal-encoding.c:105
+msgid "Cyrillic/Ukrainian"
+msgstr "Kyrillisk/Ukrainsk"
+
+#: ../src/terminal-encoding.c:93
+msgid "Croatian"
+msgstr "Kroatisk"
+
+#: ../src/terminal-encoding.c:95
+msgid "Hindi"
+msgstr "Hindi"
+
+#: ../src/terminal-encoding.c:96
+msgid "Persian"
+msgstr "Persisk"
+
+#: ../src/terminal-encoding.c:98
+msgid "Gujarati"
+msgstr "Gujarati"
+
+#: ../src/terminal-encoding.c:99
+msgid "Gurmukhi"
+msgstr "Gurmukhi"
+
+#: ../src/terminal-encoding.c:101
+msgid "Icelandic"
+msgstr "Isländsk"
+
+#: ../src/terminal-encoding.c:107 ../src/terminal-encoding.c:110
+#: ../src/terminal-encoding.c:119
+msgid "Vietnamese"
+msgstr "Vietnamesisk"
+
+#: ../src/terminal-encoding.c:108
+msgid "Thai"
+msgstr "Thai"
+
+#: ../src/terminal-encoding.c:506 ../src/terminal-encoding.c:531
+msgid "_Description"
+msgstr "_Beskrivning"
+
+#: ../src/terminal-encoding.c:515 ../src/terminal-encoding.c:540
+msgid "_Encoding"
+msgstr "_Kodning"
+
+#: ../src/terminal-encoding.c:598
+msgid "Current Locale"
+msgstr "Aktuell lokal"
+
+#: ../src/terminal-options.c:175
+#, c-format
+msgid ""
+"Option \"%s\" is no longer supported in this version of mate-terminal; you "
+"might want to create a profile with the desired setting, and use the new '--"
+"profile' option\n"
+msgstr "Flaggan \"%s\" stöds inte längre i denna version av mate-terminal. Du vill kanske skapa en profil med den önskade inställningen och använda den nya flaggan \"--profile\"\n"
+
+#: ../src/terminal-options.c:208
+#, c-format
+msgid "Argument to \"%s\" is not a valid command: %s"
+msgstr "Argumentet till \"%s\" är inte ett giltigt kommando: %s"
+
+#: ../src/terminal-options.c:343
+msgid "Two roles given for one window"
+msgstr "Två roller angivna för ett fönster"
+
+#: ../src/terminal-options.c:364 ../src/terminal-options.c:397
+#, c-format
+msgid "\"%s\" option given twice for the same window\n"
+msgstr "Flaggan \"%s\" angavs två gånger för samma fönster\n"
+
+#: ../src/terminal-options.c:596
+#, c-format
+msgid "\"%s\" is not a valid zoom factor"
+msgstr "\"%s\" är inte en giltig zoomfaktor"
+
+#: ../src/terminal-options.c:603
+#, c-format
+msgid "Zoom factor \"%g\" is too small, using %g\n"
+msgstr "Zoomfaktorn \"%g\" är för liten, använder %g\n"
+
+#: ../src/terminal-options.c:611
+#, c-format
+msgid "Zoom factor \"%g\" is too large, using %g\n"
+msgstr "Zoomfaktorn \"%g\" är för stor, använder %g\n"
+
+#: ../src/terminal-options.c:646
+#, c-format
+msgid ""
+"Option \"%s\" requires specifying the command to run on the rest of the "
+"command line"
+msgstr "Flaggan \"%s\" kräver att det kommando som ska köras anges på resten av kommandoraden"
+
+#: ../src/terminal-options.c:807
+msgid "Not a valid terminal config file."
+msgstr "Inte en giltig terminalkonfigurationsfil."
+
+#: ../src/terminal-options.c:820
+msgid "Incompatible terminal config file version."
+msgstr "Inkompatibel version för terminalkonfigurationsfil."
+
+#: ../src/terminal-options.c:948
+msgid ""
+"Do not register with the activation nameserver, do not re-use an active "
+"terminal"
+msgstr "Registrera inte i aktiveringsnamnservern, återanvänd inte en aktiv terminal"
+
+#: ../src/terminal-options.c:957
+msgid "Load a terminal configuration file"
+msgstr "Läs in en terminalkonfigurationsfil"
+
+#: ../src/terminal-options.c:966
+msgid "Save the terminal configuration to a file"
+msgstr "Spara terminalkonfigurationen till en fil"
+
+#: ../src/terminal-options.c:981
+msgid "Open a new window containing a tab with the default profile"
+msgstr "Öppna ett nytt fönster som innehåller en flik med standardprofilen"
+
+#: ../src/terminal-options.c:990
+msgid "Open a new tab in the last-opened window with the default profile"
+msgstr "Öppna en ny flik i det senast öppnade fönstret med standardprofilen"
+
+#: ../src/terminal-options.c:1004
+msgid "Turn on the menubar"
+msgstr "Aktivera menyraden"
+
+#: ../src/terminal-options.c:1013
+msgid "Turn off the menubar"
+msgstr "Stäng av menyraden"
+
+#: ../src/terminal-options.c:1022
+msgid "Maximise the window"
+msgstr "Maximera fönstret"
+
+#: ../src/terminal-options.c:1031
+msgid "Full-screen the window"
+msgstr "Helskärm för fönstret"
+
+#: ../src/terminal-options.c:1040
+msgid ""
+"Set the window size; for example: 80x24, or 80x24+200+200 (ROWSxCOLS+X+Y)"
+msgstr "Ställ in fönsterstorleken; till exempel: 80x24 eller 80x24+200+200 (ROWSxCOLS+X+Y)"
+
+#: ../src/terminal-options.c:1041
+msgid "GEOMETRY"
+msgstr "GEOMETRI"
+
+#: ../src/terminal-options.c:1049
+msgid "Set the window role"
+msgstr "Ställ in fönsterrollen"
+
+#: ../src/terminal-options.c:1050
+msgid "ROLE"
+msgstr "ROLL"
+
+#: ../src/terminal-options.c:1058
+msgid "Set the last specified tab as the active one in its window"
+msgstr "Ställ in den senast angivna fliken som den aktiva i dess fönster"
+
+#: ../src/terminal-options.c:1072
+msgid "Execute the argument to this option inside the terminal"
+msgstr "Kör argumentet till denna flagga inuti terminalen."
+
+#: ../src/terminal-options.c:1081
+msgid "Use the given profile instead of the default profile"
+msgstr "Använd angiven profil istället för standardprofilen"
+
+#: ../src/terminal-options.c:1082
+msgid "PROFILE-NAME"
+msgstr "PROFILNAMN"
+
+#: ../src/terminal-options.c:1090
+msgid "Set the terminal title"
+msgstr "Ställ in terminaltiteln"
+
+#: ../src/terminal-options.c:1091
+msgid "TITLE"
+msgstr "TITEL"
+
+#: ../src/terminal-options.c:1099
+msgid "Set the working directory"
+msgstr "Ställ in arbetskatalogen"
+
+#: ../src/terminal-options.c:1100
+msgid "DIRNAME"
+msgstr "KATNAMN"
+
+#: ../src/terminal-options.c:1108
+msgid "Set the terminal's zoom factor (1.0 = normal size)"
+msgstr "Ställ in terminalens zoomfaktor (1,0 = normal storlek)"
+
+#: ../src/terminal-options.c:1109
+msgid "ZOOM"
+msgstr "ZOOM"
+
+#: ../src/terminal-options.c:1360 ../src/terminal-options.c:1363
+msgid "MATE Terminal Emulator"
+msgstr "MATE-terminalemulator"
+
+#: ../src/terminal-options.c:1364
+msgid "Show MATE Terminal options"
+msgstr "Visa flaggor för MATE-terminal"
+
+#: ../src/terminal-options.c:1374
+msgid ""
+"Options to open new windows or terminal tabs; more than one of these may be "
+"specified:"
+msgstr "Flaggor för att öppna nya fönster eller terminalflikar; fler än en av dessa kan anges:"
+
+#: ../src/terminal-options.c:1375
+msgid "Show terminal options"
+msgstr "Visa terminalflaggor"
+
+#: ../src/terminal-options.c:1383
+msgid ""
+"Window options; if used before the first --window or --tab argument, sets "
+"the default for all windows:"
+msgstr "Fönsterflaggor; om används innan första argumentet --window eller --tab, ställer in standarden för alla fönster:"
+
+#: ../src/terminal-options.c:1384
+msgid "Show per-window options"
+msgstr "Visa flaggor för per-fönster"
+
+#: ../src/terminal-options.c:1392
+msgid ""
+"Terminal options; if used before the first --window or --tab argument, sets "
+"the default for all terminals:"
+msgstr "Terminalflaggor; om används innan första argumentet --window eller --tab, ställer in standarden för alla terminaler:"
+
+#: ../src/terminal-options.c:1393
+msgid "Show per-terminal options"
+msgstr "Visa flaggor för per-terminal"
+
+#: ../src/terminal-profile.c:165
+msgid "Unnamed"
+msgstr "Namnlös"
+
+#: ../src/terminal-screen.c:1519
+msgid "_Profile Preferences"
+msgstr "Profil_inställningar"
+
+#: ../src/terminal-screen.c:1520 ../src/terminal-screen.c:1909
+msgid "_Relaunch"
+msgstr "Sta_rta igen"
+
+#: ../src/terminal-screen.c:1523
+msgid "There was an error creating the child process for this terminal"
+msgstr "Ett fel uppstod vid skapande av barnprocessen för denna terminal"
+
+#: ../src/terminal-screen.c:1914
+#, c-format
+msgid "The child process exited normally with status %d."
+msgstr "Barnprocessen avslutades normalt med status %d."
+
+#: ../src/terminal-screen.c:1919
+#, c-format
+msgid "The child process was terminated by signal %d."
+msgstr "Barnprocessen terminerades av signal %d."
+
+#: ../src/terminal-screen.c:1924
+msgid "The child process was terminated."
+msgstr "Barnprocessen terminerades."
+
+#: ../src/terminal-tab-label.c:151
+msgid "Close tab"
+msgstr "Stäng flik"
+
+#: ../src/terminal-tabs-menu.c:198
+msgid "Switch to this tab"
+msgstr "Växla till denna flik"
+
+#: ../src/terminal-util.c:167
+msgid "There was an error displaying help"
+msgstr "Ett fel uppstod vid visning av hjälpen"
+
+#: ../src/terminal-util.c:239
+#, c-format
+msgid "Could not open the address “%s”"
+msgstr "Kunde inte öppna adressen \"%s\""
+
+#: ../src/terminal-util.c:347
+msgid ""
+"MATE Terminal is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 3 of the License, or (at your option) "
+"any later version."
+msgstr "MATE-terminal är fri programvara. Du kan distribuera det och/eller modifiera det under villkoren i GNU General Public License, publicerad av Free Software Foundation, antingen version 3 eller (om du så vill) någon senare version."
+
+#: ../src/terminal-util.c:351
+msgid ""
+"MATE Terminal is distributed in the hope that it will be useful, but WITHOUT"
+" ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr "MATE-terminal distribueras i hopp om att det ska vara användbart, men UTAN NÅGON SOM HELST GARANTI, även utan underförstådd garanti om SÄLJBARHET eller LÄMPLIGHET FÖR NÅGOT SPECIELLT ÄNDAMÅL. Se GNU General Public License för ytterligare information."
+
+#: ../src/terminal-util.c:355
+msgid ""
+"You should have received a copy of the GNU General Public License along with"
+" MATE Terminal; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin St, Fifth Floor, Boston, MA  02110-1301 USA"
+msgstr "Du bör ha fått en kopia av GNU General Public License tillsammans med detta program. Om inte, skriv till Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA"
+
+#. Translators: This is the label of a menu item to choose a profile.
+#. * _%d is used as the accelerator (with d between 1 and 9), and
+#. * the %s is the name of the terminal profile.
+#: ../src/terminal-window.c:477
+#, c-format
+msgid "_%d. %s"
+msgstr "_%d. %s"
+
+#. Translators: This is the label of a menu item to choose a profile.
+#. * _%c is used as the accelerator (it will be a character between A and Z),
+#. * and the %s is the name of the terminal profile.
+#: ../src/terminal-window.c:483
+#, c-format
+msgid "_%c. %s"
+msgstr "_%c. %s"
+
+#. Toplevel
+#: ../src/terminal-window.c:1818
+msgid "_File"
+msgstr "_Arkiv"
+
+#: ../src/terminal-window.c:1819 ../src/terminal-window.c:1832
+#: ../src/terminal-window.c:2073
+msgid "Open _Terminal"
+msgstr "Öppna _terminalfönster"
+
+#: ../src/terminal-window.c:1820 ../src/terminal-window.c:1837
+#: ../src/terminal-window.c:2078
+msgid "Open Ta_b"
+msgstr "Öppna _flik"
+
+#: ../src/terminal-window.c:1821
+msgid "_Edit"
+msgstr "_Redigera"
+
+#: ../src/terminal-window.c:1822
+msgid "_View"
+msgstr "_Visa"
+
+#: ../src/terminal-window.c:1823
+msgid "_Search"
+msgstr "_Sök"
+
+#: ../src/terminal-window.c:1824
+msgid "_Terminal"
+msgstr "_Terminal"
+
+#: ../src/terminal-window.c:1825
+msgid "Ta_bs"
+msgstr "_Flikar"
+
+#: ../src/terminal-window.c:1826
+msgid "_Help"
+msgstr "_Hjälp"
+
+#: ../src/terminal-window.c:1842
+msgid "New _Profile…"
+msgstr "Ny _profil..."
+
+#: ../src/terminal-window.c:1847
+msgid "_Save Contents"
+msgstr "_Spara innehåll"
+
+#: ../src/terminal-window.c:1852 ../src/terminal-window.c:2088
+msgid "C_lose Tab"
+msgstr "S_täng flik"
+
+#: ../src/terminal-window.c:1857
+msgid "_Close Window"
+msgstr "Stän_g fönster"
+
+#: ../src/terminal-window.c:1874 ../src/terminal-window.c:2068
+msgid "Paste _Filenames"
+msgstr "Klistra in _filnamn"
+
+#: ../src/terminal-window.c:1884
+msgid "P_rofiles…"
+msgstr "P_rofiler..."
+
+#: ../src/terminal-window.c:1889
+msgid "_Keyboard Shortcuts…"
+msgstr "Tan_gentbordsgenvägar..."
+
+#: ../src/terminal-window.c:1894
+msgid "Pr_ofile Preferences"
+msgstr "Profil_inställningar"
+
+#: ../src/terminal-window.c:1918
+msgid "_Find..."
+msgstr "_Sök..."
+
+#: ../src/terminal-window.c:1923
+msgid "Find Ne_xt"
+msgstr "Sök n_ästa"
+
+#: ../src/terminal-window.c:1928
+msgid "Find Pre_vious"
+msgstr "Sök före_gående"
+
+#: ../src/terminal-window.c:1933
+msgid "_Clear Highlight"
+msgstr "_Töm markering"
+
+#: ../src/terminal-window.c:1939
+msgid "Go to _Line..."
+msgstr "Gå till _rad..."
+
+#: ../src/terminal-window.c:1944
+msgid "_Incremental Search..."
+msgstr "_Inkrementell sökning..."
+
+#. Terminal menu
+#: ../src/terminal-window.c:1951
+msgid "Change _Profile"
+msgstr "Ändra _profil"
+
+#: ../src/terminal-window.c:1953
+msgid "_Previous Profile"
+msgstr ""
+
+#: ../src/terminal-window.c:1958
+msgid "_Next Profile"
+msgstr ""
+
+#: ../src/terminal-window.c:1963
+msgid "_Set Title…"
+msgstr "A_nge titel..."
+
+#: ../src/terminal-window.c:1967
+msgid "Set _Character Encoding"
+msgstr "Ställ in _teckenkodning"
+
+#: ../src/terminal-window.c:1969
+msgid "_Reset"
+msgstr "_Återställ"
+
+#: ../src/terminal-window.c:1974
+msgid "Reset and C_lear"
+msgstr "Återställ och t_öm"
+
+#: ../src/terminal-window.c:1981
+msgid "_Add or Remove…"
+msgstr "_Lägg till eller ta bort..."
+
+#: ../src/terminal-window.c:1988
+msgid "_Previous Tab"
+msgstr "_Föregående flik"
+
+#: ../src/terminal-window.c:1993
+msgid "_Next Tab"
+msgstr "_Nästa flik"
+
+#: ../src/terminal-window.c:1998
+msgid "Move Tab _Left"
+msgstr "Flytta flik till _vänster"
+
+#: ../src/terminal-window.c:2003
+msgid "Move Tab _Right"
+msgstr "Flytta flik till _höger"
+
+#: ../src/terminal-window.c:2008
+msgid "_Detach tab"
+msgstr "Koppla _loss flik"
+
+#: ../src/terminal-window.c:2015
+msgid "_Contents"
+msgstr "_Innehåll"
+
+#: ../src/terminal-window.c:2020
+msgid "_About"
+msgstr "_Om"
+
+#: ../src/terminal-window.c:2027
+msgid "_Send Mail To…"
+msgstr "_Skicka e-post till..."
+
+#: ../src/terminal-window.c:2032
+msgid "_Copy E-mail Address"
+msgstr "_Kopiera e-postadress"
+
+#: ../src/terminal-window.c:2037
+msgid "C_all To…"
+msgstr "Rin_g till…"
+
+#: ../src/terminal-window.c:2042
+msgid "_Copy Call Address"
+msgstr "_Kopiera samtalsadress"
+
+#: ../src/terminal-window.c:2047
+msgid "_Open Link"
+msgstr "_Öppna länk"
+
+#: ../src/terminal-window.c:2052
+msgid "_Copy Link Address"
+msgstr "_Kopiera länkadress"
+
+#: ../src/terminal-window.c:2056
+msgid "P_rofiles"
+msgstr "P_rofiler"
+
+#: ../src/terminal-window.c:2083 ../src/terminal-window.c:3334
+msgid "C_lose Window"
+msgstr "Stän_g fönster"
+
+#: ../src/terminal-window.c:2093
+msgid "L_eave Full Screen"
+msgstr "L_ämna helskärm"
+
+#: ../src/terminal-window.c:2097
+msgid "_Input Methods"
+msgstr "I_nmatningsmetoder"
+
+#: ../src/terminal-window.c:2104
+msgid "Show _Menubar"
+msgstr "Visa _menyrad"
+
+#: ../src/terminal-window.c:2110
+msgid "_Full Screen"
+msgstr "_Helskärmsläge"
+
+#: ../src/terminal-window.c:3321
+msgid "Close this window?"
+msgstr "Stäng detta fönster?"
+
+#: ../src/terminal-window.c:3321
+msgid "Close this terminal?"
+msgstr "Stäng denna terminal?"
+
+#: ../src/terminal-window.c:3325
+msgid ""
+"There are still processes running in some terminals in this window. Closing "
+"the window will kill all of them."
+msgstr "Det finns fortfarande processer igång i några terminaler i detta fönster. Stängning av fönstret kommer att döda dem alla."
+
+#: ../src/terminal-window.c:3329
+msgid ""
+"There is still a process running in this terminal. Closing the terminal will"
+" kill it."
+msgstr "Det finns fortfarande en process igång i denna terminal. Stängning av terminalen kommer att döda den."
+
+#: ../src/terminal-window.c:3334
+msgid "C_lose Terminal"
+msgstr "S_täng terminal"
+
+#: ../src/terminal-window.c:3407
+msgid "Could not save contents"
+msgstr "Kunde inte spara innehåll"
+
+#: ../src/terminal-window.c:3431
+msgid "Save as..."
+msgstr "Spara som..."
+
+#: ../src/terminal-window.c:3956
+msgid "_Title:"
+msgstr "_Titel:"
+
+#: ../src/terminal-window.c:4151
+msgid "Contributors:"
+msgstr "Bidragsgivare:"
+
+#: ../src/terminal-window.c:4170
+msgid "A terminal emulator for the MATE desktop"
+msgstr "En terminalemulator för skrivbordsmiljön MATE"
+
+#: ../src/terminal-window.c:4177
+msgid "translator-credits"
+msgstr "Daniel Nylander <po@danielnylander.se>\nChristian Rose\nRichard Hult\n\nSkicka synpunkter på översättningen till\n<tp-sv@listor.tp-sv.se>."

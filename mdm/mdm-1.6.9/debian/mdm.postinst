@@ -1,0 +1,76 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+THIS_PACKAGE=mdm
+DEFAULT_DISPLAY_MANAGER_FILE=/etc/X11/default-display-manager
+
+# creating mdm group if it isn't already there
+if ! getent group mdm >/dev/null; then
+        addgroup --system mdm
+fi
+
+# creating mdm user if it isn't already there
+if ! getent passwd mdm >/dev/null; then
+        adduser --system --ingroup mdm --home /var/lib/mdm mdm
+        usermod -c "MDM Display Manager" mdm
+        usermod -d "/var/lib/mdm"          mdm
+        usermod -g "mdm"                   mdm
+        usermod -s "/bin/false"            mdm
+fi
+
+# Creating the nopasswdlogin group if it isn't already there.
+# Needed for passwordless logins, working thanks to MDM's PAM policy.
+if ! getent group nopasswdlogin >/dev/null; then
+        addgroup --system nopasswdlogin
+fi
+
+if [ -d /var/lib/mdm ]; then
+  chown -R mdm:mdm /var/lib/mdm
+  chmod 0750 /var/lib/mdm
+fi
+
+# debconf is not a registry, so we only fiddle with the default file if it
+# does not exist
+if [ ! -e $DEFAULT_DISPLAY_MANAGER_FILE ]; then
+  if db_get shared/default-x-display-manager; then
+    # workaround debconf passthru bug (#379198)
+    if [ -z "$RET" ]; then
+      $RET="$THIS_PACKAGE"
+    fi
+    if [ "$THIS_PACKAGE" != "$RET" ]; then
+      echo "Please be sure to run \"dpkg --configure $RET\"."
+    fi
+    if db_get "$RET"/daemon_name; then
+      echo "$RET" > $DEFAULT_DISPLAY_MANAGER_FILE
+    fi
+  fi
+fi
+
+# remove the displaced old default display manager file if it exists
+if [ -e "$DEFAULT_DISPLAY_MANAGER_FILE.dpkg-tmp" ]; then
+  rm "$DEFAULT_DISPLAY_MANAGER_FILE.dpkg-tmp"
+fi
+
+# debconf hangs if mdm gets started below without this
+db_stop || true
+
+if [ -d /usr/lib/upstart ]; then
+  echo "Upstart detected. Removing rc.d links."
+  update-rc.d -f mdm remove  
+else
+  echo "Init.d detected. Setting up rc.d links."
+  update-rc.d -f mdm remove
+  update-rc.d -f mdm defaults 30 01 >/dev/null 2>&1
+fi
+
+if [ ! -e /usr/bin/gdmflexiserver ]; then
+  echo "Linking /usr/bin/gdmflexiserver to /usr/bin/mdmflexiserver"
+  ln -s /usr/bin/mdmflexiserver /usr/bin/gdmflexiserver
+fi
+
+#DEBHELPER#
+
+exit 0
